@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://marcosci.netlify.io/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/blog/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/cv/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/about-me/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/blog/authors/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/categories/announcement/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/tags/blog/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/categories/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/tags/config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/authors/marcosci/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/tags/og/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/page/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/tags/r/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcosci.netlify.io/tags/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

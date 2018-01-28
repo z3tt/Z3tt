@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.Language.Lang }}'>
+
+{{ partial "head/head" . }}
+
+<body class='{{ partial "header/bodyClasses" . }}'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>{{ i18n "skipToContent" }}</a>
+
+    <header id='header' class='header-container'>
+    <div class='header site-header'>
+        {{ partial "nav/menus/main" . }}
+        <div class='header-info'>
+          {{ if eq .Kind "home" }}
+          <h1 class='site-title title'>{{ .Site.Title }}</h1>
+          {{ else }}
+          <p class='site-title title'>{{ .Site.Title }}</p>
+          {{ end }}
+          <p class='site-description subtitle'>{{ .Site.Params.info.description }}</p>
+          <img src="https://avatars2.githubusercontent.com/u/10864574?s=400&u=6459c325c8685c875fcb8459a38228e9474fa4d1&v=4" alt="my-image" height="170" width="170" align="right" class="circular-image" />
+        </div>
+      </div>
+    </header>

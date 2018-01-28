@@ -1,0 +1,13 @@
+id = "marcosci"
+
+[email]
+username = "marcosci"
+host = "gmail.com"
+
+[name]
+display = "Munif Tanjim"
+
+[social]
+email = ""
+facebook  = "marcosci"
+twitter = "marcosci"

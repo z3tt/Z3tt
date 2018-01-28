@@ -1,0 +1,18 @@
+<div class='copyright'>
+  <p>
+  {{- with .Site.Copyright -}}
+    {{ . }}
+  {{- else -}}
+    {{- with .Site.Params.copyright -}}
+
+      {{ with .startyear }}
+        {{ if lt ( int . ) now.Year }}
+          {{ $.Scratch.Set "copyrightStartYear" . }}
+        {{ end }}
+      {{ end }}
+
+      {{ .prefix }} &copy; {{ with ( $.Scratch.Get "copyrightStartYear" ) }}{{ . }}-{{ end }}{{ now.Year }} {{ or .holder $.Site.Title }} {{ .suffix }}
+    {{- end -}}
+  {{ end }}
+  </p>
+</div>

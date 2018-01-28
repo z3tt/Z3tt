@@ -1,0 +1,54 @@
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family__main;
+  font-weight: 700;
+  line-height: $line-height__heading;
+  color: $color__text-heading;
+
+  margin: 0 0 0.625em;
+}
+
+.entry-content {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.site-title,
+h1 {
+  @include font-size($font-size__h1);
+}
+
+h2 {
+  @include font-size($font-size__h2);
+}
+
+h3 {
+  @include font-size($font-size__h3);
+}
+
+.home-section-title,
+h4 {
+  @include font-size($font-size__h4);
+}
+
+h5 {
+  @include font-size($font-size__h5);
+}
+
+h6 {
+  @include font-size($font-size__h6);
+}

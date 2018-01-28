@@ -1,0 +1,157 @@
+---
+date: 2017-11-26
+title: CV
+authors: ["CedScherer"]
+slug: cv
+menu: main
+weight: -230
+---
+
+# Curriculum Vitae
+
+<p class="contact">
+<a href="mailto:cedricphilippscherer@gmail.com"><i class="fa fa-envelope-o"></i> cedricphilippscherer@gmail.com</a>
+</p>
+
+
+
+## Education
+
+#### PhD Training (in progress)
+- *Oct 2015-today* – [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany
+- **Project:** Research Training Group [BioMove](https://www.biomove.org/) (DFG-GRK 2118/1)
+- **Thesis:** “Individual movement decisions shape disease dynamics in heterogeneous landscapes.”
+- **Advisors:** [Stephanie Kramer-Schadt](http://www.izw-berlin.de/kramer-schadt-stefanie.html), [Volker Grimm](https://www.ufz.de/index.php?en=36522) and [Niels Blaum](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/dr-niels-blaum.html)
+
+#### Master of Science “Ecology, Evolution and Nature Conservation”
+- *Oct 2008-Sep 2011* – [University of Potsdam](http://www.uni-potsdam.de/en/), Germany
+- **Thesis:** “Responses of bird functional types to climatic and land use changes in African savannas – an individual-based modelling approach”
+- **Advisors:** [Florian Jeltsch](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/prof-dr-florian-jeltsch.html) and [Volker Grimm](https://www.ufz.de/index.php?en=36522)
+
+#### Bachelor of Science “Life Sciences”
+- *Oct 2008-Sep 2011* – [University of Potsdam](http://www.uni-potsdam.de/en/), Germany
+- **Thesis:** “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”
+- **Advisors:** [Florian Jeltsch](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/prof-dr-florian-jeltsch.html) and [Anne Berger](http://www.izw-berlin.de/dr-berger-anne.html)
+
+
+## Professional Experience
+
+#### Visiting Research Student
+- *Sep 2017-Nov 2017* – University of California, Berkeley, CA, USA
+- Short-term researcher at [Getz Lab](https://nature.berkeley.edu/getzlab/)
+
+#### Research Assistant
+- *Jan 2015-Sep 2015* – Department of Plant Ecology and Nature Conservation, University of Potsdam, Germany
+- Scientific researcher in the project “RootHerbII” within the DFG Priority Program ["Infrastructure-Biodiversity-Exploratories”](http://www.biodiversity-exploratories.de/1/home/)
+
+#### Research Assistant
+- *Sep 2014-Dec 2012* – Department of Plant Ecology and Nature Conservation, University of Potsdam, Germany
+- Assistant for a successfull proposal at [Deutsche Forschungsgemeinschaft (DFG)](http://www.dfg.de/en/)
+
+#### Internship
+- *Mar 2011-Aug 2011* – Leibniz Centre for Agricultural Landscape Research (ZALF), Muencheberg, Germany
+- Trainee in the "AgroScapeLabs" project
+- Support for catching, sampling and collaring of red foxes, brown hares and raccoons; large-scale vegetation surveys
+
+
+## Further Education
+
+- **Workshop “Creative Visualization”**
+  - *Jan 2018* – organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
+
+- **Workshop “Scientific Communication”**
+  - *Apr 2017* – organized by "BioMove" Research Training Group
+
+- **Workshop “Patch Occupancy Modelling”**
+  - *Feb 2017* – held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
+
+- **Workshop “Scientific Writing”**
+  - *Feb 2017* – held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
+
+- **Workshop “Modelling Approach: Wildlife Populations and Diseases”**
+  - *Aug 2016* – held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ) within the setting of the 12th Conference of the European Wildlife Disease Association (EWDA)
+
+- **Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System”**
+  - *Jun 2016* – organized by Ran Nathan and his team at the Minerva Center for Movement Ecology, Jerusalem, Israel
+
+- **Summer School “Spatio-Temporal Data Analyses and Big Data Processing“**
+  - *Jun 2015* – held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
+
+- **Workshop “Movement Ecology“**
+  - *Dec 2014* – organized by Niko Balkenhol and Johannes Signer, University of Goettingen
+
+- **Workshop “Movement Ecology and Biodiversity“**
+  - *Jul 2012* – organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
+
+
+## Conference & Workshop Organisation
+
+ - **13th Workshop of the “Young Modellers in Ecology (YoMos)”**
+    - *upcoming May 2018* - Höllviken, Sweden
+
+  - **Thematic Topic Session at the “Ecology Across Borders” Symposium**
+    - *Dec 2017* – Joint Annual Meeting of the British Ecological Society (BES) and the Ecological Society of Germany, Austria & Switzerland (GfOe), Ghent, Belgium
+    - entitled “Are we any good at simulating ecology? Success and future challenges in ecological simulation models.”, organized together with the working groups ["Computational Ecology"](https://akcomputationalecology.wordpress.com/) and ["Quantitative Ecology"](https://besquantitativeecology.wordpress.com/)
+
+ - **12th Workshop of the “Young Modellers in Ecology (YoMos)”**
+    - *May 2017* - Buchenbach, Germany
+
+ - **11th Workshop of the “Young Modellers in Ecology (YoMos)”**
+    - *May 2016* - Neunzehnhain, Germany
+    -  including a Pre-Workshop on “Data Visualization”
+
+ - **Annual symposium of the Ecological Society of Germany, Austria and Switzerland (GfOe)**
+    - *Sep 2013* - Potsdam, Germany
+    - IT assistance and organizational tasks   
+
+
+## Teaching
+
+- **Practical workshop "Zoology"**
+  - *Oct 2009-Mar 2014* – Department for Zoology, University of Potsdam, Germany
+
+- **Workshop “Research and Presentation“**
+  - *Oct 2013 - Feb 2014* – Department for Didactics of Biology, University of Potsdam, Germany
+
+- **Field workshop “Systematic Zoology II“**
+  - *Sep 2012 - Oct 2012* – Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Germany
+
+
+## Publications
+
+see <a href="{{ site.baseurl }}/cedric_pubs">List of Publications</a>
+
+
+## Awards
+
+- [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA - *Mar 2017*
+
+
+## Skills
+
+#### Languages
+- German *(native)*
+- English *(fluent)*
+
+#### Programming
+- R, NetLogo, Python, C++, Matlab, SQL/SQLite
+
+#### Statistics
+- R, SPSS, Excel
+
+#### GIS
+- QGIS, GRASS, ArcGIS
+
+#### Markup
+- Markdown, LaTeX
+
+
+## Memberships
+- *since 2013* – [Young Modellers in Ecology (YoMos)](https://www.yomos.de)
+- *since 2015* – [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
+
+
+## Services
+- *since 2014* – Reviewer for [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
+- *since 2015* – Speaker of the [Young Modellers in Ecology (YoMos)](https://www.yomos.de)
+- *since 2017* – Reviewer for [BMC Ecology](https://bmcecol.biomedcentral.com/)
