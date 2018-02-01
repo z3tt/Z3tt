@@ -1,11 +1,12 @@
 ---
-date: 2017-11-26
+date: 2018-02-01
 title: CV
 authors: ["CedScherer"]
 slug: cv
 menu: main
 weight: -230
 ---
+
 
 # Curriculum Vitae
 

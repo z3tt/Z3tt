@@ -1,9 +1,7 @@
 ---
-layout: page
-title: "Cédric Scherer"
-subtitle: "Personal Site"
-tags: [personal]
-permalink: /cedric
+title: About me
+menu: main
+weight: -210
 ---
 
 <p class="contact">
