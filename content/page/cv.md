@@ -18,42 +18,45 @@ weight: -230
 
 ## Education
 
-#### PhD Training (in progress)
-- *Oct 2015 – today* – [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany
+##### PhD Training (in progress)
+- **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
+- *Oct 2015 – today*
 - **Project:** Research Training Group [BioMove](https://www.biomove.org/) (DFG-GRK 2118/1)
 - **Thesis:** “Individual movement decisions shape disease dynamics in heterogeneous landscapes.”
 - **Advisors:** [Stephanie Kramer-Schadt](http://www.izw-berlin.de/kramer-schadt-stefanie.html), [Volker Grimm](https://www.ufz.de/index.php?en=36522) and [Niels Blaum](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/dr-niels-blaum.html)
 
-#### Master of Science “Ecology, Evolution and Nature Conservation”
-- *Oct 2008 – Sep 2011* – [University of Potsdam](http://www.uni-potsdam.de/en/), Germany
+##### Master of Science “Ecology, Evolution and Nature Conservation”
+- **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
+- *Oct 2008 – Sep 2011*
 - **Thesis:** “Responses of bird functional types to climatic and land use changes in African savannas – an individual-based modelling approach”
 - **Advisors:** [Florian Jeltsch](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/prof-dr-florian-jeltsch.html) and [Volker Grimm](https://www.ufz.de/index.php?en=36522)
 
-#### Bachelor of Science “Life Sciences”
-- *Oct 2008 – Sep 2011* – [University of Potsdam](http://www.uni-potsdam.de/en/), Germany
+##### Bachelor of Science “Life Sciences”
+- **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
+- *Oct 2008 – Sep 2011*
 - **Thesis:** “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”
 - **Advisors:** [Florian Jeltsch](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/prof-dr-florian-jeltsch.html) and [Anne Berger](http://www.izw-berlin.de/dr-berger-anne.html)
 
 
 ## Professional Experience
 
-#### Visiting Research Student
+##### Visiting Research Student
 - **University of California, Berkeley, CA, USA**
 - *Sep 2017 – Nov 2017*
 - Short-term researcher at [Getz Lab](https://nature.berkeley.edu/getzlab/)
 
-#### Research Assistant
-- **Department of Plant Ecology and Nature Conservation, University of Potsdam, Germany**
+##### Research Assistant
+- **Department of Plant Ecology and Nature Conservation**, University of Potsdam, Germany
 - *Jan 2015 – Sep 2015*
 - Scientific researcher in the project “RootHerbII” within the DFG Priority Program ["Infrastructure-Biodiversity-Exploratories”](http://www.biodiversity-exploratories.de/1/home/)
 
-#### Research Assistant
-- **Department of Plant Ecology and Nature Conservation, University of Potsdam, Germany**
+##### Research Assistant
+- **Department of Plant Ecology and Nature Conservation**, University of Potsdam, Germany
 - *Sep 2014 – Dec 2012*
 - Assistant for a RTG proposal at [Deutsche Forschungsgemeinschaft (DFG)](http://www.dfg.de/en/)
 
-#### Internship
-- Leibniz Centre for Agricultural Landscape Research (ZALF), Muencheberg, Germany
+##### Internship
+- **Leibniz Centre for Agricultural Landscape Research (ZALF)**, Muencheberg, Germany
 - *Mar 2011 – Aug 2011*
 - Trainee in the "AgroScapeLabs" project
 - Support for catching, sampling and collaring of red foxes, brown hares and raccoons; large-scale vegetation surveys
@@ -61,68 +64,68 @@ weight: -230
 
 ## Further Education
 
-#### **Workshop “Creative Visualization”**
+##### **Workshop “Creative Visualization”**
 - *Jan 2018*
 - organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
 
-#### **Workshop “Scientific Communication”**
+##### **Workshop “Scientific Communication”**
 - *Apr 2017*
 - organized by "BioMove" Research Training Group
 
-#### **Workshop “Patch Occupancy Modelling”**
+##### **Workshop “Patch Occupancy Modelling”**
 - *Feb 2017*
 - held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
 
-#### **Workshop “Scientific Writing”**
+##### **Workshop “Scientific Writing”**
 - *Feb 2017*
 - held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
 
-#### **Workshop “Modelling Approach: Wildlife Populations and Diseases”**
+##### **Workshop “Modelling Approach: Wildlife Populations and Diseases”**
 - *Aug 2016*
 - 12th Conference of the European Wildlife Disease Association (EWDA)
 - held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ)
 
-#### **Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System”**
+##### **Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System”**
 - *Jun 2016*
 - organized by Ran Nathan and his team at the Minerva Center for Movement Ecology, Jerusalem, Israel
 
-#### **Summer School “Spatio-Temporal Data Analyses and Big Data Processing“**
+##### **Summer School “Spatio-Temporal Data Analyses and Big Data Processing“**
 - *Jun 2015*
 - held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
 
-#### **Workshop “Movement Ecology“**
+##### **Workshop “Movement Ecology“**
 - *Dec 2014*
 - organized by Niko Balkenhol and Johannes Signer, University of Goettingen
 
-#### **Workshop “Movement Ecology and Biodiversity“**
+##### **Workshop “Movement Ecology and Biodiversity“**
 - *Jul 2012*
 - organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
 
 
 ## Conference & Workshop Organisation
 
-#### **13th Workshop of the “Young Modellers in Ecology (YoMos)”**
+##### **13th Workshop of the “Young Modellers in Ecology (YoMos)”**
 - *upcoming May 2018*
 - Höllviken, Sweden
 - organizer and chair
 
-#### **Thematic Topic Session at the “Ecology Across Borders” Symposium**
+##### **Thematic Topic Session at the “Ecology Across Borders” Symposium**
 - *Dec 2017*
-- Joint Annual Meeting of the British Ecological Society (BES) and the Ecological Society of Germany, Austria & Switzerland (GfOe), Ghent, Belgium
-- entitled “Are we any good at simulating ecology? Success and future challenges in ecological simulation models.”, organized together with the working groups ["Computational Ecology"](https://akcomputationalecology.wordpress.com/) and ["Quantitative Ecology"](https://besquantitativeecology.wordpress.com/)
+- “Are we any good at simulating ecology? Success and future challenges in ecological simulation models” at Joint Annual Meeting of the British Ecological Society (BES) and the Ecological Society of Germany, Austria & Switzerland (GfOe), Ghent, Belgium
+- organized by ["Young Modellers in Ecology"](https://youngmodellers.github.io/), ["Computational Ecology"](https://akcomputationalecology.wordpress.com/), and ["Quantitative Ecology"](https://besquantitativeecology.wordpress.com/)
 
-#### **12th Workshop of the “Young Modellers in Ecology (YoMos)”**
+##### **12th Workshop of the “Young Modellers in Ecology (YoMos)”**
 - *May 2017*
 - Buchenbach, Germany
 - organizer and chair
 
-#### **11th Workshop of the “Young Modellers in Ecology (YoMos)”**
+##### **11th Workshop of the “Young Modellers in Ecology (YoMos)”**
 - *May 2016*
 - Neunzehnhain, Germany
 - organizer and chair
 - including a pre-workshop on “Data Visualization”
 
-#### **Annual symposium of the Ecological Society of Germany, Austria and Switzerland (GfOe)**
+##### **Annual symposium of the Ecological Society of Germany, Austria and Switzerland (GfOe)**
 - *Sep 2013*
 - Potsdam, Germany
 - IT assistance and organizational tasks   
@@ -130,15 +133,15 @@ weight: -230
 
 ## Teaching
 
-#### **Practical workshop "Zoology"**
+##### **Practical workshop "Zoology"**
 - *Oct 2009-Mar 2014*
 - Department for Zoology, University of Potsdam, Germany
 
-#### **Workshop “Research and Presentation“**
+##### **Workshop “Research and Presentation“**
 - *Oct 2013 - Feb 2014*
 - Department for Didactics of Biology, University of Potsdam, Germany
 
-#### **Field workshop “Systematic Zoology II“**
+##### **Field workshop “Systematic Zoology II“**
 - *Sep 2012 - Oct 2012*
 - Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Germany
 
@@ -155,20 +158,20 @@ see <a href="{{ site.baseurl }}/cedric_pubs">List of Publications</a>
 
 ## Skills
 
-#### Languages
+##### Languages
 - German *(native)*
 - English *(fluent)*
 
-#### Programming
+##### Programming
 - R, NetLogo, Python, C++, Matlab, SQL/SQLite
 
-#### Statistics
+##### Statistics
 - R, SPSS, Excel
 
-#### GIS
+##### GIS
 - QGIS, GRASS, ArcGIS
 
-#### Markup
+##### Markup
 - Markdown, LaTeX
 
 
