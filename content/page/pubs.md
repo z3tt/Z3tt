@@ -46,8 +46,8 @@ weight: -230
 - <span style="font-variant:small-caps;">J.-P. Wevers, **C. Scherer**, A. Berger, N. Blaum, C. Fischer, F. Jeltsch & B. Schröder</span> 2011: Identifying movement behaviour from 3–dimensional acceleration data for European brown hares (*Lepus europaeus*) and wild boars (*Sus scrofa*).  
 *8th International Conference on Behaviour, Physiology and Genetics of Wildlife – Berlin, Germany*
 
-## Software Development
+## R Packages
 
 - <span style="font-variant:small-caps;">M. Sciaini, C. Simpkins, M. Fritsch & **C. Scherer**</span> 2017: NLMR: Simulating neutral landscape models with R. R package version 0.2. GitHub: https://github.com/marcosci/NLMR. CRAN: https://cran.r-project.org/web/packages/NLMR/index.html.
 
-- <span style="font-variant:small-caps;">M. Sciaini & **C. Scherer**</span> 2018: cividis: An optimized color maps for the scientific R community. R package version 0.1. GitHub: https://github.com/marcosci/cividis. Now merged with the viridis R package; CRAN: https://cran.r-project.org/web/packages/viridis/index.html.
+- <span style="font-variant:small-caps;">M. Sciaini & **C. Scherer**</span> 2018: cividis: An optimized color map for the scientific R community. R package version 0.1. GitHub: https://github.com/marcosci/cividis. Now merged with the viridis R package, CRAN: https://cran.r-project.org/web/packages/viridis/index.html.

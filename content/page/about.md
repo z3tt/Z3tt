@@ -8,16 +8,14 @@ weight: -210
 <a href="mailto:cedricphilippscherer@gmail.com"><i class="fa fa-envelope-o"></i> cedricphilippscherer@gmail.com</a>
 </p>
 
-
-## News
-
-
 ## About Me
 
+I am a PhD candidate at the [IZW Berlin](http://www.izw-berlin.de/welcome.html) in the research fields of movement ecology, disease dynamics and biodiversity research using spatial-explicit modeling approaches and spatiotemporal analyses. My PhD project within the [DFG research training group "BioMove"](https://www.biomove.org/) is entitled "Combined effects of land-use and individual movement decisions shape disease dynamics through mobile mammal links". The project aims to study spatial effects of fragmentation and dynamic landscapes on host movement and thus on disease dynamics using individual-based and spatial-explicit modelling approaches.     
+In my previous theses I have predicted behaviors of wild boar by using acceleration data and I have built an [agent-based model to investigate responses of birds to global change using an animal functional type (AFT) approach](https://doi.org/10.1016/j.ecolmodel.2015.07.005).  
+Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecology"](https://youngmodellers.github.io/) and together with other motivated team members we organised three annual workshops and a [thematic topic session at the joint conference of BES and GfOe](https://www.britishecologicalsociety.org/events/annual-meeting-2017/thematic-topic-ghent-2017/) in December 2017.   
+Beside science, I am highly interested in (challenges in) data wrangling and (good ways of) data visualization.
+
 <ul class="fa-ul">
-  <li><i class="fa fa-id-badge  fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ site.baseurl }}/cedric_cv">Curriculum Vitae</a></li>
-  <li><i class="fa fa-file-text-o  fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ site.baseurl }}/cedric_pubs">List of Publications</a></li>
+  <li><i class="fa fa-id-badge  fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ site.baseurl }}/cv">Curriculum Vitae</a></li>
+  <li><i class="fa fa-file-text-o  fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ site.baseurl }}/pubs">List of Publications</a></li>
 </ul>
-
-
-## Personal Stuff
