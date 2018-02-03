@@ -1,6 +1,6 @@
 ---
 date: 2018-02-01
-title: CV
+title: Curriculum Vitae
 authors: ["CedScherer"]
 slug: cv
 menu: main
@@ -11,7 +11,7 @@ cover:
 ---
 
 
-# Curriculum Vitae
+# Cédric Scherer
 
 <p class="contact">
 <a href="mailto:cedricphilippscherer@gmail.com"><i class="fa fa-envelope-o"></i> cedricphilippscherer@gmail.com</a>
@@ -67,20 +67,22 @@ cover:
 
 ## Further Education
 
-Workshop “Creative Visualization”
+
+###### **Workshop “Creative Visualization”**
 - *January 2018*
 - organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
 
-Workshop “Scientific Communication”
+###### **Workshop “Scientific Communication”**
 - *April 2017*
 - organized by "BioMove" Research Training Group
 
-**Workshop “Patch Occupancy Modelling”**
+
 - *February 2017*
+###### **Workshop “Patch Occupancy Modelling”**
 - held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
 
-**Workshop “Scientific Writing”**
 - *February 2017*
+###### **Workshop “Scientific Writing”**
 - held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
 
 ###### **Workshop “Modelling Approach: Wildlife Populations and Diseases”**
@@ -92,15 +94,15 @@ Workshop “Scientific Communication”
 - *June 2016*
 - organized by Ran Nathan and his team at the Minerva Center for Movement Ecology, Jerusalem, Israel
 
-####### **Summer School “Spatio-Temporal Data Analyses and Big Data Processing“**
+###### **Summer School “Spatio-Temporal Data Analyses and Big Data Processing“**
 - *June 2015*
 - held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
 
-####### **Workshop “Movement Ecology“**
+###### **Workshop “Movement Ecology“**
 - *December 2014*
 - organized by Niko Balkenhol and Johannes Signer, University of Goettingen
 
-######## **Workshop “Movement Ecology and Biodiversity“**
+###### **Workshop “Movement Ecology and Biodiversity“**
 - *July 2012*
 - organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
 
@@ -114,7 +116,7 @@ Workshop “Scientific Communication”
 
 ###### **Thematic Topic Session at the “Ecology Across Borders” Symposium**
 - *December 2017*
-- “Are we any good at simulating ecology? Success and future challenges in ecological simulation models” at Joint Annual Meeting of the British Ecological Society (BES) and the Ecological Society of Germany, Austria & Switzerland (GfOe), Ghent, Belgium
+- *“Are we any good at simulating ecology? Success and future challenges in ecological simulation models”* at Joint Annual Meeting of the British Ecological Society (BES) and the Ecological Society of Germany, Austria & Switzerland (GfOe), Ghent, Belgium
 - organized by ["Young Modellers in Ecology"](https://youngmodellers.github.io/), ["Computational Ecology"](https://akcomputationalecology.wordpress.com/), and ["Quantitative Ecology"](https://besquantitativeecology.wordpress.com/)
 
 ###### **12th Workshop of the “Young Modellers in Ecology (YoMos)”**
