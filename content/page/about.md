@@ -1,7 +1,9 @@
 ---
 title: About Me
+authors: ["CedScherer"]
+slug: about
 menu: main
-weight: -210
+weight: -230
 cover:
   image: /images/nlm.png
   style: full
