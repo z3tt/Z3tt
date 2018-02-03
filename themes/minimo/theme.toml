@@ -1,6 +1,6 @@
 name = "Minimo"
 license = "MIT"
-licenselink = "https://github.com/marcosci/minimo/blob/master/LICENSE"
+licenselink = "https://github.com/Z3tt/minimo/blob/master/LICENSE"
 description = "Minimalist theme for Hugo"
 homepage = "https://minimo.netlify.com"
 tags = [
@@ -30,4 +30,4 @@ min_version = 0.28
 
 [author]
   name = "Munif Tanjim"
-  homepage = "https://marcosci.com"
+  homepage = "https://minimo.netlify.com/authors/muniftanjim/"
