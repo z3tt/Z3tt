@@ -5,7 +5,7 @@ slug: pubs
 menu: main
 weight: -230
 cover:
-  image: /images/pubs.jpg
+  image: /images/pubs_Malte-Baumann.jpg
   caption: Photo by Malte Baumann
   style: full
 ---
