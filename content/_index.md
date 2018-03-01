@@ -1,6 +1,6 @@
 ---
-menu: main
 title: Home
+menu: main
 weight: -270
 cover:
   image: /images/nlm.png
