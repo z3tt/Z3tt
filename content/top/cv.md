@@ -2,7 +2,7 @@ I have a Bachelor of Science in *Life Sciences* and a Master of Science in *Ecol
 
 Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecology"](https://youngmodellers.github.io/) and together with other motivated team members we organised three annual workshops and a [thematic topic session at the joint conference of BES and GfOe](https://www.britishecologicalsociety.org/events/annual-meeting-2017/thematic-topic-ghent-2017/) in December 2017.   
 
-<i class="fa fa-file-text-o  fa-fw" aria-hidden="true"></i>&nbsp; <a href="ttps://cedricscherer.netlify.com/top/pubs">List of Publications</a>
+<i class="fa fa-file-text-o  fa-fw" aria-hidden="true"></i>&nbsp; <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
 ## Education
 
