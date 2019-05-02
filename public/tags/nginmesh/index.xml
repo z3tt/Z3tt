@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginmesh on Cédric Scherer</title>
+    <link>/tags/nginmesh/</link>
+    <description>Recent content in nginmesh on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jan 2018 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nginmesh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nginx开源Service Mesh组件Nginmesh安装指南</title>
+      <link>/2018/01/02/nginmesh-install/</link>
+      <pubDate>Tue, 02 Jan 2018 12:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/02/nginmesh-install/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

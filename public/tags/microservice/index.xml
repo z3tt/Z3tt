@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microservice on Cédric Scherer</title>
+    <link>/tags/microservice/</link>
+    <description>Recent content in Microservice on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 May 2018 18:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/microservice/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>微服务安全沉思录之三</title>
+      <link>/2018/05/23/external_system_auth/</link>
+      <pubDate>Wed, 23 May 2018 18:00:00 +0000</pubDate>
+      
+      <guid>/2018/05/23/external_system_auth/</guid>
+      <description>外部系统访问控制 除用户访问和微服务之间的相互访问外，外部的第三方系统也可能需要访问系统内部的微服务。例如在上一篇博客的网上商店例子中，外部的</description>
+    </item>
+    
+    <item>
+      <title>微服务安全沉思录之二</title>
+      <link>/2018/05/23/service_2_service_auth/</link>
+      <pubDate>Wed, 23 May 2018 15:00:00 +0000</pubDate>
+      
+      <guid>/2018/05/23/service_2_service_auth/</guid>
+      <description>&lt;h2 id=&#34;服务间认证与鉴权&#34;&gt;服务间认证与鉴权&lt;/h2&gt;
+
+&lt;p&gt;除来自用户的访问请求以外，微服务应用中的各个微服务相互之间还有大量的访问，包括下述场景：
+* 用户间接触发的微服务之间的相互访问&lt;BR&gt;
+  例如在一个网上商店应用中，用户访问购物车微服务进行结算时，购物车微服务可能需要访问用户评级微服务获取用户的会员级别，以得到用户可以享受购物折扣。
+* 非用户触发的微服务之间的相互访问&lt;BR&gt;
+  例如数据同步或者后台定时任务导致的微服务之间的相互访问。&lt;/p&gt;
+
+&lt;p&gt;根据应用系统的数据敏感程度的不同，对于系统内微服务的相互访问可能有不同的安全要求。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>微服务安全沉思录之一</title>
+      <link>/2018/05/22/user_authentication_authorization/</link>
+      <pubDate>Wed, 23 May 2018 10:00:00 +0000</pubDate>
+      
+      <guid>/2018/05/22/user_authentication_authorization/</guid>
+      <description>这段时间对之前微服务安全相关的一些想法进行了进一步总结和归纳，理清了在之前文章里面没有想得太清楚的地方，例如服务间的认证与鉴权以及用户身份在</description>
+    </item>
+    
+    <item>
+      <title>Service Mesh 和 API Gateway的关系探讨（译文）</title>
+      <link>/2018/04/11/service-mesh-vs-api-gateway/</link>
+      <pubDate>Wed, 11 Apr 2018 09:32:00 +0000</pubDate>
+      
+      <guid>/2018/04/11/service-mesh-vs-api-gateway/</guid>
+      <description>Service Mesh vs API Gateway 在前一篇关于Service Mesh的文章中,我提到了几个关于Service Mesh和API Gateway之间关系的问题，在本篇文章</description>
+    </item>
+    
+    <item>
+      <title>谈谈微服务架构中的基础设施：Service Mesh与Istio</title>
+      <link>/2018/03/29/what-is-service-mesh-and-istio/</link>
+      <pubDate>Thu, 29 Mar 2018 12:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/29/what-is-service-mesh-and-istio/</guid>
+      <description>&lt;h2 id=&#34;微服务架构的演进&#34;&gt;微服务架构的演进&lt;/h2&gt;
+
+&lt;p&gt;作为一种架构模式，微服务将复杂系统切分为数十乃至上百个小服务，每个服务负责实现一个独立的业务逻辑。这些小服务易于被小型的软件工程师团队所理解和修改，并带来了语言和框架选择灵活性，缩短应用开发上线时间，可根据不同的工作负载和资源要求对服务进行独立缩扩容等优势。&lt;/p&gt;
+
+&lt;p&gt;另一方面，当应用被拆分为多个微服务进程后，进程内的方法调用变成了了进程间的远程调用。引入了对大量服务的连接、管理和监控的复杂性。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何构建安全的微服务应用？</title>
+      <link>/2018/05/22/user_authentication_authorization/</link>
+      <pubDate>Sat, 03 Feb 2018 12:00:00 +0000</pubDate>
+      
+      <guid>/2018/05/22/user_authentication_authorization/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;微服务架构的引入为软件应用带来了诸多好处：包括小开发团队，缩短开发周期，语言选择灵活性，增强服务伸缩能力等。与此同时，也引入了分布式系统的诸多复杂问题。其中一个挑战就是如何在微服务架构中实现一个灵活，安全，高效的认证和鉴权方案。本文将尝试就此问题进行一次比较完整的探讨。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
