@@ -1,4 +1,5 @@
-You can also find me on [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions) and [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra). My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
+You can also find me on [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions) and [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra).  
+My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Peer-Reviewed Publications
 - <span style="font-variant:small-caps;">V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, **C. Scherer**, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
@@ -64,5 +65,3 @@ You can also find me on [ResearchGate](https://www.researchgate.net/profile/Cedr
 ## R Packages
 
 - <span style="font-variant:small-caps;">M. Sciaini, C. Simpkins, M. Fritsch & **C. Scherer**</span> 2017: NLMR: Simulating neutral landscape models with R. R package version 0.2. GitHub: https://github.com/marcosci/NLMR. CRAN: https://cran.r-project.org/web/packages/NLMR/index.html.
-
-- <span style="font-variant:small-caps;">M. Sciaini & **C. Scherer**</span> 2018: cividis: An optimized color map for the scientific R community. R package version 0.1. GitHub: https://github.com/marcosci/cividis. Now merged with the viridis R package, CRAN: https://cran.r-project.org/web/packages/viridis/index.html.

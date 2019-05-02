@@ -1,6 +1,6 @@
 [Rstats](#rstats)  |  [DataViz](#dataviz)
 
-## Rstats {#rstats}
+## Rstats
 
 ### {tidyverse}
 
