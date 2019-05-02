@@ -1,4 +1,4 @@
-#baseurl = "https://zhaohuabing.com"
+baseurl = "https://cedricscherer.netlify.com/"
 title = "Cédric Scherer"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
