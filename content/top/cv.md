@@ -2,9 +2,7 @@ I have a Bachelor of Science in *Life Sciences* and a Master of Science in *Ecol
 
 Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecology"](https://youngmodellers.github.io/) and together with other motivated team members we organised three annual workshops and a [thematic topic session at the joint conference of BES and GfOe](https://www.britishecologicalsociety.org/events/annual-meeting-2017/thematic-topic-ghent-2017/) in December 2017.   
 
-<i class="fa fa-file-text-o  fa-fw" aria-hidden="true"></i>&nbsp; <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
-
-## Education
+### Education
 
 ##### PhD Training (in progress)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
@@ -26,7 +24,7 @@ Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecolo
 - *Advisors:* [Florian Jeltsch](http://www.uni-potsdam.de/en/ibb/researchgroups/fullprofessors/plant-ecology/staff/prof-dr-florian-jeltsch.html) and [Anne Berger](http://www.izw-berlin.de/dr-berger-anne.html)
 
 
-## Professional Experience
+### Professional Experience
 
 ##### Visiting Research Student
 - **[University of California, Berkeley](https://www.berkeley.edu/)**, CA, USA
@@ -50,7 +48,7 @@ Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecolo
 - Support for catching, sampling and collaring of red foxes, brown hares and raccoons; large-scale vegetation surveys
 
 
-## Further Education
+### Further Education
 
 
 - **Workshop “Creative Visualization”**  
@@ -78,7 +76,7 @@ Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecolo
   *July 2012* – organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
 
 
-## Conference & Workshop Organisation
+### Conference & Workshop Organisation
 
 - **1st BioMove Symposium "Integrating Biodiversity Research with Movement Ecology"**  
   *upcoming September 2018*, Potsdam, Germany – part of organizational comitee
@@ -102,7 +100,7 @@ Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecolo
   *September 2013*, Potsdam, Germany – IT assistance and organizational tasks   
 
 
-## Teaching
+### Teaching
 
 - **Practical workshop "Zoology"**  
   Department for Zoology, University of Potsdam, Germany  
@@ -117,17 +115,17 @@ Since 2015 I am the speaker of the GfOe working group ["Young Modellers in Ecolo
   *August 2012 – October 2012*
 
 
-## Publications
+### Publications
 
-see <a href="{{ site.baseurl }}/pubs">List of Publications</a>
+see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
 
-## Awards
+### Awards
 
 - [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA - *March 2017*
 
 
-## Skills
+### Skills
 
 - **Languages:** German *(native)*, English *(fluent)*
 - **Programming:** R, NetLogo, Python, C++, Matlab, SQL/SQLite
@@ -136,13 +134,13 @@ see <a href="{{ site.baseurl }}/pubs">List of Publications</a>
 - **Markup:** Markdown, LaTeX
 
 
-## Memberships
+### Memberships
 
 - *since 2013* – [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
 - *since 2015* – [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
 
 
-## Services
+### Services
 
 - *since 2014* – Reviewer for [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
 - *since 2015* – Speaker of the [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
