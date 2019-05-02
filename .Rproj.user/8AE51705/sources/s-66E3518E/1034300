@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556706646591.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1034300",
+    "lastKnownWriteTime" : 1556708856,
+    "last_content_update" : 1556708856466,
+    "path" : "C:/Users/Cedric/Google Drive/Bio/Projects/netlify/static/img/404-gg.R",
+    "project_path" : "static/img/404-gg.R",
+    "properties" : {
+        "cursorPosition" : "16,19",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

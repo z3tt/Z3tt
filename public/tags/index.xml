@@ -1,48 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Marco Sciaini</title>
-    <link>https://marcosci.netlify.io/tags/</link>
-    <description>Recent content in Tags on Marco Sciaini</description>
+    <title>Tags on Cédric Scherer</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marcosci.netlify.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blog</title>
-      <link>https://marcosci.netlify.io/tags/blog/</link>
-      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <title>Misc</title>
+      <link>/tags/misc/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/tags/blog/</guid>
+      <guid>/tags/misc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>https://marcosci.netlify.io/tags/config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>DataViz</title>
+      <link>/tags/dataviz/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/tags/config/</guid>
+      <guid>/tags/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Opengraph</title>
-      <link>https://marcosci.netlify.io/tags/og/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Rstats</title>
+      <link>/tags/rstats/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/tags/og/</guid>
+      <guid>/tags/rstats/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R</title>
-      <link>https://marcosci.netlify.io/tags/r/</link>
-      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <title>TidyTuesday</title>
+      <link>/tags/tidytuesday/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/tags/r/</guid>
+      <guid>/tags/tidytuesday/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556576559535.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3C20B40B",
+    "lastKnownWriteTime" : 1556791818,
+    "last_content_update" : 1556791818719,
+    "path" : "C:/Users/Cedric/Google Drive/Bio/Projects/netlify/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "90,28",
+        "scrollLine" : "69"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

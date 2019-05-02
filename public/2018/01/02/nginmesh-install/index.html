@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="//img/blog_Joanna-Kosinska.jpg">
+    <meta property="twitter:image" content="//img/blog_Joanna-Kosinska.jpg" />
+    
+
+    
+    <meta name="title" content="Nginx开源Service Mesh组件Nginmesh安装指南" />
+    <meta property="og:title" content="Nginx开源Service Mesh组件Nginmesh安装指南" />
+    <meta property="twitter:title" content="Nginx开源Service Mesh组件Nginmesh安装指南" />
+    
+
+    
+    <meta name="description" content="Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。本文介绍如何采用kubeadmin安装kubernetes集群并部署Nginmesh sidecar。">
+    <meta property="og:description" content="Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。本文介绍如何采用kubeadmin安装kubernetes集群并部署Nginmesh sidecar。" />
+    <meta property="twitter:description" content="Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。本文介绍如何采用kubeadmin安装kubernetes集群并部署Nginmesh sidecar。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Nginx开源Service Mesh组件Nginmesh安装指南-Cédric Scherer</title>
+
+    <link rel="canonical" href="/2018/01/02/nginmesh-install/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/life">life</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/note">note</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/r">r</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tech">tech</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tips">tips</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/cv/">About Me</a></li>
+                    
+                        <li><a href="/top/projects/">Projects</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/post-bg-2015.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/istio" title="Istio">
+                            Istio
+                        </a>
+                        
+                        <a class="tag" href="/tags/service-mesh" title="service Mesh">
+                            service Mesh
+                        </a>
+                        
+                        <a class="tag" href="/tags/nginmesh" title="nginmesh">
+                            nginmesh
+                        </a>
+                        
+                    </div>
+                    <h1>Nginx开源Service Mesh组件Nginmesh安装指南</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by 
+			
+			    赵化冰
+			 
+			on 
+			Tuesday, January 2, 2018
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#安装kubernetes-cluster">安装Kubernetes Cluster</a></li>
+<li><a href="#安装istio控制面和bookinfo">安装Istio控制面和Bookinfo</a></li>
+<li><a href="#查看自动注入的sidecar">查看自动注入的sidecar</a></li>
+<li><a href="#关联阅读">关联阅读</a></li>
+<li><a href="#参考">参考</a></li>
+</ul></li>
+</ul>
+</nav>
+                
+                <h2 id="前言">前言</h2>
+
+<p>Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。</p>
+
+<p><img src="https://raw.githubusercontent.com/nginmesh/nginmesh/master/images/nginx_sidecar.png" alt="Nginmesh sidecar proxy" /></p>
+
+<blockquote>
+<p>备注：本文安装指南基于Ubuntu 16.04，在Centos上某些安装步骤的命令可能需要稍作改动。</p>
+</blockquote>
+
+<h2 id="安装kubernetes-cluster">安装Kubernetes Cluster</h2>
+
+<p>Kubernetes Cluster包含etcd, api server, scheduler，controller manager等多个组件，组件之间的配置较为复杂，如果要手动去逐个安装及配置各个组件，需要了解kubernetes，操作系统及网络等多方面的知识，对安装人员的能力要求较高。kubeadm提供了一个简便，快速安装Kubernetes Cluster的方式，并且可以通过安装配置文件提供较高的灵活性，因此我们采用kubeadm安装kubernetes cluster。</p>
+
+<p>首先参照<a href="https://kubernetes.io/docs/setup/independent/install-kubeadm">kubeadm的说明文档</a>在计划部署kubernetes cluster的每个节点上安装docker，kubeadm, kubelet 和 kubectl。</p>
+
+<p>安装docker</p>
+
+<pre><code>apt-get update
+apt-get install -y docker.io
+</code></pre>
+
+<p>使用google的源安装kubelet kubeadm和kubectl</p>
+
+<pre><code>apt-get update &amp;&amp; apt-get install -y apt-transport-https
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+cat &lt;&lt;EOF &gt;/etc/apt/sources.list.d/kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+apt-get update
+apt-get install -y kubelet kubeadm kubectl
+</code></pre>
+
+<p>使用kubeadmin安装kubernetes cluster</p>
+
+<p>Nginmesh使用Kubernetes的<a href="https://kubernetes.io/docs/admin/extensible-admission-controllers/#initializers">Initializer机制</a>来实现sidecar的自动注入。Initializer目前是kubernetes的一个Alpha feature，缺省是未启用的，需要<a href="https://kubernetes.io/docs/admin/extensible-admission-controllers/#enable-initializers-alpha-feature">通过api server的参数</a>打开。因此我们先创建一个kubeadm-conf配置文件，用于配置api server的启动参数</p>
+
+<pre><code>apiVersion: kubeadm.k8s.io/v1alpha1
+kind: MasterConfiguration
+apiServerExtraArgs:
+  admission-control: Initializers,NamespaceLifecycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,ValidatingAdmissionWebhook,ResourceQuota,DefaultTolerationSeconds,MutatingAdmissionWebhook
+  runtime-config: admissionregistration.k8s.io/v1alpha1
+</code></pre>
+
+<p>使用kubeadmin init命令创建kubernetes master节点。
+可以先试用&ndash;dry-run参数验证一下配置文件。</p>
+
+<pre><code>kubeadm init --config kubeadm-conf --dry-run
+</code></pre>
+
+<p>如果一切正常，kubeadm将提示：Finished dry-running successfully. Above are the resources that would be created.</p>
+
+<p>下面再实际执行创建命令</p>
+
+<pre><code>kubeadm init --config kubeadm-conf
+</code></pre>
+
+<p>kubeadm会花一点时间拉取docker image，命令完成后，会提示如何将一个work node加入cluster。如下所示：</p>
+
+<pre><code> kubeadm join --token fffbf6.13bcb3563428cf23 10.12.5.15:6443 --discovery-token-ca-cert-hash sha256:27ad08b4cd9f02e522334979deaf09e3fae80507afde63acf88892c8b72f143f
+</code></pre>
+
+<blockquote>
+<p>备注：目前kubeadm只能支持在一个节点上安装master，支持高可用的安装将在后续版本实现。kubernetes官方给出的workaround建议是定期备份 etcd 数据<a href="https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#limitations">kubeadm limitations</a>。</p>
+</blockquote>
+
+<p>Kubeadm并不会安装Pod需要的网络，因此需要手动安装一个Pod网络，这里采用的是Calico</p>
+
+<pre><code>kubectl apply -f https://docs.projectcalico.org/v2.6/getting-started/kubernetes/installation/hosted/kubeadm/1.6/calico.yaml
+</code></pre>
+
+<p>使用kubectl 命令检查master节点安装结果</p>
+
+<pre><code>ubuntu@kube-1:~$ kubectl get all
+NAME             TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+svc/kubernetes   ClusterIP   10.96.0.1    &lt;none&gt;        443/TCP   12m
+</code></pre>
+
+<p>在每台工作节点上执行上述kubeadm join命令，即可把工作节点加入集群中。使用kubectl 命令检查cluster中的节点情况。</p>
+
+<pre><code> ubuntu@kube-1:~$ kubectl get nodes
+NAME      STATUS    ROLES     AGE       VERSION
+kube-1    Ready     master    21m       v1.9.0
+kube-2    Ready     &lt;none&gt;    47s       v1.9.0
+</code></pre>
+
+<h2 id="安装istio控制面和bookinfo">安装Istio控制面和Bookinfo</h2>
+
+<p>参考<a href="https://github.com/nginmesh/nginmesh">Nginmesh文档</a>安装Istio控制面和Bookinfo
+该文档的步骤清晰明确，这里不再赘述。</p>
+
+<p>需要注意的是，在Niginmesh文档中，建议通过Ingress的External IP访问bookinfo应用程序。但<a href="https://kubernetes.io/docs/concepts/services-networking/service/#type-loadbalancer">Loadbalancer只在支持的云环境中才会生效</a>，并且还需要进行一定的配置。如我在Openstack环境中创建的cluster，则需要参照<a href="https://docs.openstack.org/magnum/ocata/dev/kubernetes-load-balancer.html">该文档</a>对Openstack进行配置后，Openstack才能够支持kubernetes的Loadbalancer service。如未进行配置，通过命令查看Ingress External IP一直显示为pending状态。</p>
+
+<pre><code>NAME            TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)                                                            AGE
+istio-ingress   LoadBalancer   10.111.158.10   &lt;pending&gt;     80:32765/TCP,443:31969/TCP                                         11m
+istio-mixer     ClusterIP      10.107.135.31   &lt;none&gt;        9091/TCP,15004/TCP,9093/TCP,9094/TCP,9102/TCP,9125/UDP,42422/TCP   11m
+istio-pilot     ClusterIP      10.111.110.65   &lt;none&gt;        15003/TCP,443/TCP                                                  11m
+</code></pre>
+
+<p>如不能配置云环境提供Loadbalancer特性, 我们可以直接使用集群中的一个节点IP:Nodeport访问Bookinfo应用程序。</p>
+
+<pre><code>http://10.12.5.31:32765/productpage
+</code></pre>
+
+<p>想要了解更多关于如何从集群外部进行访问的内容，可以参考<a href="http://zhaohuabing.com/2017/11/28/access-application-from-outside/">如何从外部访问Kubernetes集群中的应用？</a></p>
+
+<h2 id="查看自动注入的sidecar">查看自动注入的sidecar</h2>
+
+<p>使用 kubectl get pod reviews-v3-5fff595d9b-zsb2q -o yaml 命令查看Bookinfo应用的reviews服务的Pod。</p>
+
+<pre><code>apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    sidecar.istio.io/status: injected-version-0.2.12
+  creationTimestamp: 2018-01-02T02:33:36Z
+  generateName: reviews-v3-5fff595d9b-
+  labels:
+    app: reviews
+    pod-template-hash: &quot;1999151856&quot;
+    version: v3
+  name: reviews-v3-5fff595d9b-zsb2q
+  namespace: default
+  ownerReferences:
+  - apiVersion: extensions/v1beta1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: reviews-v3-5fff595d9b
+    uid: 5599688c-ef65-11e7-8be6-fa163e160c7d
+  resourceVersion: &quot;3757&quot;
+  selfLink: /api/v1/namespaces/default/pods/reviews-v3-5fff595d9b-zsb2q
+  uid: 559d8c6f-ef65-11e7-8be6-fa163e160c7d
+spec:
+  containers:
+  - image: istio/examples-bookinfo-reviews-v3:0.2.3
+    imagePullPolicy: IfNotPresent
+    name: reviews
+    ports:
+    - containerPort: 9080
+      protocol: TCP
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-48vxx
+      readOnly: true
+  - args:
+    - proxy
+    - sidecar
+    - -v
+    - &quot;2&quot;
+    - --configPath
+    - /etc/istio/proxy
+    - --binaryPath
+    - /usr/local/bin/envoy
+    - --serviceCluster
+    - reviews
+    - --drainDuration
+    - 45s
+    - --parentShutdownDuration
+    - 1m0s
+    - --discoveryAddress
+    - istio-pilot.istio-system:15003
+    - --discoveryRefreshDelay
+    - 1s
+    - --zipkinAddress
+    - zipkin.istio-system:9411
+    - --connectTimeout
+    - 10s
+    - --statsdUdpAddress
+    - istio-mixer.istio-system:9125
+    - --proxyAdminPort
+    - &quot;15000&quot;
+    - --controlPlaneAuthPolicy
+    - NONE
+    env:
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.namespace
+    - name: INSTANCE_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    image: nginmesh/proxy_debug:0.2.12
+    imagePullPolicy: Always
+    name: istio-proxy
+    resources: {}
+    securityContext:
+      privileged: true
+      readOnlyRootFilesystem: false
+      runAsUser: 1337
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/istio/proxy
+      name: istio-envoy
+    - mountPath: /etc/certs/
+      name: istio-certs
+      readOnly: true
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-48vxx
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  initContainers:
+  - args:
+    - -p
+    - &quot;15001&quot;
+    - -u
+    - &quot;1337&quot;
+    image: nginmesh/proxy_init:0.2.12
+    imagePullPolicy: Always
+    name: istio-init
+    resources: {}
+    securityContext:
+      capabilities:
+        add:
+        - NET_ADMIN
+      privileged: true
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-48vxx
+      readOnly: true
+  nodeName: kube-2
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - emptyDir:
+      medium: Memory
+    name: istio-envoy
+  - name: istio-certs
+    secret:
+      defaultMode: 420
+      optional: true
+      secretName: istio.default
+  - name: default-token-48vxx
+    secret:
+      defaultMode: 420
+      secretName: default-token-48vxx
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: 2018-01-02T02:33:54Z
+    status: &quot;True&quot;
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: 2018-01-02T02:36:06Z
+    status: &quot;True&quot;
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: 2018-01-02T02:33:36Z
+    status: &quot;True&quot;
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://5d0c189b9dde8e14af4c8065ee5cf007508c0bb2b3c9535598d99dc49f531370
+    image: nginmesh/proxy_debug:0.2.12
+    imageID: docker-pullable://nginmesh/proxy_debug@sha256:6275934ea3a1ce5592e728717c4973ac704237b06b78966a1d50de3bc9319c71
+    lastState: {}
+    name: istio-proxy
+    ready: true
+    restartCount: 0
+    state:
+      running:
+        startedAt: 2018-01-02T02:36:05Z
+  - containerID: docker://aba3e114ac1aa87c75e969dcc1b0725696de78d3407c5341691d9db579429f28
+    image: istio/examples-bookinfo-reviews-v3:0.2.3
+    imageID: docker-pullable://istio/examples-bookinfo-reviews-v3@sha256:6e100e4805a8c10c47040ea7b66f10ad619c7e0068696032546ad3e35ad46570
+    lastState: {}
+    name: reviews
+    ready: true
+    restartCount: 0
+    state:
+      running:
+        startedAt: 2018-01-02T02:35:47Z
+  hostIP: 10.12.5.31
+  initContainerStatuses:
+  - containerID: docker://b55108625832a3205a265e8b45e5487df10276d5ae35af572ea4f30583933c1f
+    image: nginmesh/proxy_init:0.2.12
+    imageID: docker-pullable://nginmesh/proxy_init@sha256:f73b68839f6ac1596d6286ca498e4478b8fcfa834e4884418d23f9f625cbe5f5
+    lastState: {}
+    name: istio-init
+    ready: true
+    restartCount: 0
+    state:
+      terminated:
+        containerID: docker://b55108625832a3205a265e8b45e5487df10276d5ae35af572ea4f30583933c1f
+        exitCode: 0
+        finishedAt: 2018-01-02T02:33:53Z
+        reason: Completed
+        startedAt: 2018-01-02T02:33:53Z
+  phase: Running
+  podIP: 192.168.79.138
+  qosClass: BestEffort
+  startTime: 2018-01-02T02:33:39Z
+
+</code></pre>
+
+<p>该命令行输出的内容相当长，我们可以看到Pod中注入了一个 nginmesh/proxy_debug container,还增加了一个initContainer nginmesh/proxy_init。这两个容器是通过kubernetes initializer自动注入到pod中的。这两个container分别有什么作用呢？让我们看一下<a href="https://github.com/nginmesh/nginmesh/tree/49cd69a61d7d330685ef39ccd63fac06421c3da2/istio/agent">Nginmesh源代码中的说明</a>：</p>
+
+<ul>
+<li><p>proxy_debug, which comes with the agent and NGINX.</p></li>
+
+<li><p>proxy_init, which is used for configuring iptables rules for transparently injecting an NGINX proxy from the proxy_debug image into an application pod.</p></li>
+</ul>
+
+<p>proxy_debug就是sidecar代理，proxy_init则用于配置iptable 规则，以将应用的流量导入到sidecar代理中。</p>
+
+<p>查看proxy_init的Dockerfile文件，可以看到proxy_init其实是调用了<a href="https://github.com/nginmesh/nginmesh/blob/49cd69a61d7d330685ef39ccd63fac06421c3da2/istio/agent/docker-init/prepare_proxy.sh">prepare_proxy.sh</a>这个脚本来创建iptable规则。</p>
+
+<p>proxy_debug Dockerfile</p>
+
+<pre><code>FROM debian:stretch-slim
+RUN apt-get update &amp;&amp; apt-get install -y iptables
+ADD prepare_proxy.sh /
+ENTRYPOINT [&quot;/prepare_proxy.sh&quot;]
+</code></pre>
+
+<p>prepare_proxy.sh节选</p>
+
+<pre><code>...omitted for brevity 
+
+# Create a new chain for redirecting inbound and outbound traffic to
+# the common Envoy port.
+iptables -t nat -N ISTIO_REDIRECT                                             -m comment --comment &quot;istio/redirect-common-chain&quot;
+iptables -t nat -A ISTIO_REDIRECT -p tcp -j REDIRECT --to-port ${ENVOY_PORT}  -m comment --comment &quot;istio/redirect-to-envoy-port&quot;
+
+# Redirect all inbound traffic to Envoy.
+iptables -t nat -A PREROUTING -j ISTIO_REDIRECT                               -m comment --comment &quot;istio/install-istio-prerouting&quot;
+
+# Create a new chain for selectively redirecting outbound packets to
+# Envoy.
+iptables -t nat -N ISTIO_OUTPUT                                               -m comment --comment &quot;istio/common-output-chain&quot;
+
+...omitted for brevity
+</code></pre>
+
+<h2 id="关联阅读">关联阅读</h2>
+
+<p><a href="http://zhaohuabing.com/2017/11/04/istio-install_and_example/">Istio及Bookinfo示例程序安装试用笔记</a></p>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><p><a href="https://github.com/nginmesh/nginmesh/">Service Mesh with Istio and NGINX</a></p></li>
+
+<li><p><a href="https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#14-installing-kubeadm-on-your-hosts">Using kubeadm to Create a Cluster</a></p></li>
+
+<li><p><a href="https://kubernetes.io/docs/admin/extensible-admission-controllers/#enable-initializers-alpha-feature">Kubernetes Reference Documentation-Dynamic Admission Control</a></p></li>
+</ul>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/11/28/access-application-from-outside/" data-toggle="tooltip" data-placement="top" title="如何从外部访问Kubernetes集群中的应用？">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/05/22/user_authentication_authorization/" data-toggle="tooltip" data-placement="top" title="如何构建安全的微服务应用？">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://ecological-dynamics-izw.com/">Department Ecological Dynamics</a></li>
+                        
+                        <li><a target="_blank" href="https://www.yomos.org/">Young Modellers in Ecology</a></li>
+                        
+                        <li><a target="_blank" href="https://akcomputationalecology.wordpress.com/">Computational Ecology</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Cédric Scherer 2019
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -3,84 +3,115 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcosci.netlify.io/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/blog/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/cv/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/about-me/</loc>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/blog/authors/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/categories/announcement/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/authors/</loc>
+    <loc>/2019/04/29/welcome/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/tags/blog/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/tags/misc/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/categories/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/tags/config/</loc>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/authors/marcosci/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/tags/og/</loc>
-  </url>
-  
-  <url>
-    <loc>https://marcosci.netlify.io/page/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/tags/dataviz/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/tags/r/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/tags/rstats/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcosci.netlify.io/tags/</loc>
-    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+    <loc>/tags/tidytuesday/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/2019-04-23-tidytuesday_201917_animes/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ggplot2/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tidyverse/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/search/placeholder/</loc>
+  </url>
+  
+  <url>
+    <loc>/top/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/top/cv/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/top/dataviz/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/top/links/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/top/projects/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/top/pubs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/search/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/top/</loc>
     <priority>0</priority>
   </url>
   

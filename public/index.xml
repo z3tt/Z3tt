@@ -1,50 +1,104 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Marco Sciaini</title>
-    <link>https://marcosci.netlify.io/</link>
-    <description>Recent content in Home on Marco Sciaini</description>
+    <title>Cédric Scherer</title>
+    <link>/</link>
+    <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marcosci.netlify.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CV</title>
-      <link>https://marcosci.netlify.io/cv/</link>
-      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <title>Hello, World!</title>
+      <link>/2019/04/29/welcome/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/cv/</guid>
-      <description>Curriculum Vitae  sciaini.marco@gmail.com Research Interests My research interests are broad but ultimately linked to ecological patterns and the processes that created them. From this linkage one can derive various insights on how organisms shape their environment and vice versa. To tackle questions arising from linkage I design spatial explicit agent-based models, where all agents are described as unique and autonomous entities that usually interact with each other and their environment locally.</description>
+      <guid>/2019/04/29/welcome/</guid>
+      <description>Hi, I am glad you found your way here! Come in, have a look.
+I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package blogdown Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;Clean White&amp;rdquo; theme!
+Header image &amp;copy; Negative Space</description>
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>https://marcosci.netlify.io/projects/</link>
+      <title>TidyTuesday Challenge 2019/17: Anime Data</title>
+      <link>/post/2019-04-23-tidytuesday_201917_animes/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-04-23-tidytuesday_201917_animes/</guid>
+      <description>PreparationDataPlotsSession InfoPreparation## packageslibrary(tidyverse)library(ggrepel)library(patchwork)library(ghibli)## ggplot theme updatessource(&amp;quot;./tidytuesday/tidy_grey.R&amp;quot;)Datadf_ghibli &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-04-23/tidy_anime.csv&amp;quot;) %&amp;gt;% filter(studio == &amp;quot;Studio Ghibli&amp;quot;, type == &amp;quot;Movie&amp;quot;) %&amp;gt;% dplyr::select(animeID, title_english, title_japanese, genre, score, scored_by, members)## Parsed with column specification:## cols(## .default = col_character(),## animeID = col_integer(),## episodes = col_integer(),## airing = col_logical(),## start_date = col_date(format = &amp;quot;&amp;quot;),## end_date = col_date(format = &amp;quot;&amp;quot;),## score = col_double(),## scored_by = col_integer(),## rank = col_integer(),## popularity = col_integer(),## members = col_integer(),## favorites = col_integer()## )## See spec(.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/projects/</guid>
-      <description> R Packages  NLMR - Simulating neutral landscape models in R  </description>
+      <guid>/search/placeholder/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>About me</title>
-      <link>https://marcosci.netlify.io/about-me/</link>
+      <title></title>
+      <link>/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/about-me/</guid>
-      <description>Overview &amp;nbsp; PhD Student &amp;nbsp; Ecological and spatial modelling &amp;nbsp; R, Open Software &amp;amp; Science, Spatial Ecology &amp;nbsp; Goettingen, Germany &amp;nbsp; Department of Ecosystem Modelling, University of Goettingen &amp;nbsp; sciaini.marco@gmail.com &amp;nbsp; marcosci &amp;nbsp; @msciain  Research interests  Landscape Ecology Spatially explicit simulation models Spatial statistics  Academic career   PhD studies  since 2016
-  DFG Research Unit FOR2432 B01 / Agricultural biodiversity and associated services across rural-urban landscapes – modelling studies      Master of Science  2013 - 2016</description>
+      <guid>/top/about/</guid>
+      <description>I have a Bachelor of Science in Life Sciences and a Master of Science in Ecology, Evolution &amp;amp; Nature Conservation at the University of Potsdam. In my theses I have predicted behaviors of wild boar by using acceleration data and I have built an agent-based model to investigate responses of birds to global change using an animal functional type (AFT) approach.
+Since 2015 I am the speaker of the GfOe working group &amp;ldquo;Young Modellers in Ecology&amp;rdquo; and together with other motivated team members we organised three annual workshops and a thematic topic session at the joint conference of BES and GfOe in December 2017.</description>
     </item>
     
     <item>
-      <title>Welcome to marcosci.rbind.io</title>
-      <link>https://marcosci.netlify.io/blog/authors/</link>
-      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/top/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://marcosci.netlify.io/blog/authors/</guid>
-      <description>RStudio is so kind to offer free domains (*.rbind.io) what motivated me to start this blog :)</description>
+      <guid>/top/cv/</guid>
+      <description>I have a Bachelor of Science in Life Sciences and a Master of Science in Ecology, Evolution &amp;amp; Nature Conservation at the University of Potsdam. In my theses I have predicted behaviors of wild boar by using acceleration data and I have built an agent-based model to investigate responses of birds to global change using an animal functional type (AFT) approach.
+Since 2015 I am the speaker of the GfOe working group &amp;ldquo;Young Modellers in Ecology&amp;rdquo; and together with other motivated team members we organised three annual workshops and a thematic topic session at the joint conference of BES and GfOe in December 2017.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/top/dataviz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/top/dataviz/</guid>
+      <description> #TidyTuesday challenges </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/top/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/top/links/</guid>
+      <description> Rstats | DataViz
+Rstats {tidyverse} {ggplot2} DataViz </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/top/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/top/projects/</guid>
+      <description>BioMove The DFG funded Research Training Group &amp;lsquo;Integrating Biodiversity Research with Movement Ecology in dynamic agricultural landscapes (BioMove)&amp;rsquo; aims to:
+ link innovative individual research projects that overcome the apparent gap between movement ecology and biodiversity research, employing a joint conceptual framework;
+ strategically combine empirical, experimental and modelling approaches based in one common study area (AgroScapeLab-Quillow, Brandenburg, Germany) of sufficient size to address questions of varying spatial scales;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/top/pubs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/top/pubs/</guid>
+      <description>You can also find me on ResearchGate and Google Scholar. My ORCID ID is 0000-0003-0465-2543.
+Peer-Reviewed Publications  V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, C. Scherer, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm &amp;amp; S. Kramer-Schadt (2019) The dimensionality of stability depends on disturbance type. Ecology Letters 22:647–684.
+ M. Sciaini, M. Fritsch, C. Scherer &amp;amp; C.E. Simpkins (2018) NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R.</description>
     </item>
     
   </channel>

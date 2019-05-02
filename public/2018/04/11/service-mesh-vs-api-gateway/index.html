@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="//img/blog_Joanna-Kosinska.jpg">
+    <meta property="twitter:image" content="//img/blog_Joanna-Kosinska.jpg" />
+    
+
+    
+    <meta name="title" content="Service Mesh 和 API Gateway的关系探讨（译文）" />
+    <meta property="og:title" content="Service Mesh 和 API Gateway的关系探讨（译文）" />
+    <meta property="twitter:title" content="Service Mesh 和 API Gateway的关系探讨（译文）" />
+    
+
+    
+    <meta name="description" content="API Gateway和Service Mesh的关系是我最近一直在思考的问题，也和同事及社区的朋友之间进行了一些讨论。这篇短文很清晰地总结了两者之间的相似之处以及这两者在微服务架构中的不同用途。">
+    <meta property="og:description" content="API Gateway和Service Mesh的关系是我最近一直在思考的问题，也和同事及社区的朋友之间进行了一些讨论。这篇短文很清晰地总结了两者之间的相似之处以及这两者在微服务架构中的不同用途。" />
+    <meta property="twitter:description" content="API Gateway和Service Mesh的关系是我最近一直在思考的问题，也和同事及社区的朋友之间进行了一些讨论。这篇短文很清晰地总结了两者之间的相似之处以及这两者在微服务架构中的不同用途。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Service Mesh 和 API Gateway的关系探讨（译文）-Cédric Scherer</title>
+
+    <link rel="canonical" href="/2018/04/11/service-mesh-vs-api-gateway/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/life">life</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/note">note</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/r">r</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tech">tech</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tips">tips</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/cv/">About Me</a></li>
+                    
+                        <li><a href="/top/projects/">Projects</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('https://img.zhaohuabing.com/in-post/2018-04-11-service-mesh-vs-api-gateway/background.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/microservice" title="Microservice">
+                            Microservice
+                        </a>
+                        
+                        <a class="tag" href="/tags/service-mesh" title="Service Mesh">
+                            Service Mesh
+                        </a>
+                        
+                        <a class="tag" href="/tags/api-gateway" title="API Gateway">
+                            API Gateway
+                        </a>
+                        
+                    </div>
+                    <h1>Service Mesh 和 API Gateway的关系探讨（译文）</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by 
+			
+			    赵化冰
+			 
+			on 
+			Wednesday, April 11, 2018
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#service-mesh-vs-api-gateway">Service Mesh vs API Gateway</a></li>
+<li><a href="#api-gateway-将服务作为被管理的api向外部暴露">API Gateway: 将服务作为被管理的API向外部暴露</a></li>
+<li><a href="#service-mesh-微服务的网络通信基础设施">Service Mesh：微服务的网络通信基础设施</a></li>
+<li><a href="#api-gateway和service-mesh实践">API Gateway和Service Mesh实践</a></li>
+<li><a href="#译者按">译者按</a></li>
+<li><a href="#原文">原文</a></li>
+</ul></li>
+</ul>
+</nav>
+                
+                
+
+<h2 id="service-mesh-vs-api-gateway">Service Mesh vs API Gateway</h2>
+
+<p>在<a href="https://medium.com/microservices-in-practice/service-mesh-for-microservices-2953109a3c9a">前一篇关于Service Mesh的文章</a>中,我提到了几个关于Service Mesh和API Gateway之间关系的问题，在本篇文章中，我打算就Service Mesh和API Gateway的用途进行进一步讨论。</p>
+
+<p>为了区分API Gateway和Service Mesh，让我们先分别看看两者各自的关键特征。</p>
+
+<h2 id="api-gateway-将服务作为被管理的api向外部暴露">API Gateway: 将服务作为被管理的API向外部暴露</h2>
+
+<p>使用API Gateway的主要目的是将微服务作为被管理的API暴露（给外部系统）。因此，我们在API Gateway层开发的API或者边界服务对外提供了业务功能。</p>
+
+<p>API/边界服务调用下游的组合或者原子微服务，通过组合/混装多个下游微服务的方式来提供业务逻辑。</p>
+
+<p>在API/Edge服务调用下游服务时，需要采用一种可靠的通信方式，应用了断路器，超时，负载均衡/故障转移等可靠性模式。因此大部分的API Gateway解决方案都内置了这些特性。</p>
+
+<p>API Gateway也内置了以下特性的支持，包括：服务发现，分析（可见性：性能指标，监控，分布式日志，分布式调用追踪）和安全。</p>
+
+<p>API Gateway和API管理生态系统的其他组件的关系紧密，比如： API 市场/商店， API 发布门户。</p>
+
+<h2 id="service-mesh-微服务的网络通信基础设施">Service Mesh：微服务的网络通信基础设施</h2>
+
+<p>现在我们来看看Service Mesh有哪些不同。</p>
+
+<p>Service Mesh是一个网络通信基础设施， 可以用于将应用层的网络通信功能从你的服务代码中剥离出来。</p>
+
+<p>采用Service Mesh， 你不用在服务代码中实现用于可靠通信的模式如断路，超时等，类似地，Service Mesh也提供了服务发现，服务可见性等其他功能。</p>
+
+<h2 id="api-gateway和service-mesh实践">API Gateway和Service Mesh实践</h2>
+
+<p>API Gateway和Service Mesh之间的主要不同点：API Gateway是暴露API/边界服务的关键组件，而Service Mesh则仅仅是一个服务间通信的基础设施，并不了解应用中的业务逻辑。</p>
+
+<p>下图说明了API Gateway和Service Mesh的关系。如同前面所说，这两者之间也有一些重叠的部分（例如断路器等），但重要的是需要理解这两者是用于完全不同的用途。</p>
+
+<p>图1： API Gateway和Service Mesh实践</p>
+
+<p><img src="https://img.zhaohuabing.com/in-post/2018-04-11-service-mesh-vs-api-gateway/service-mesh-vs-api-gateway.png" alt="" /></p>
+
+<p>如上图所示，Service Mesh作为Sidecar（边车）和服务一起部署，它是独立于服务的业务逻辑的。</p>
+
+<p>另一方面，API Gateway 提供了所有的API服务（这些API服务有明确定义的业务功能），它是应用业务逻辑的一部分。API Gateway可以具有内建的服务间通信能力，但它也可以使用Service Mesh来调用下游服务（API Gateway-&gt;Service Mesh-&gt;Microservices）。</p>
+
+<p>在API管理层次，你可以使用API Gateway内建的服务间通信能力；也可以通过Service Mesh来调用下游服务，以将应用网络通信功能从应用程序转移到Service Mesh中。</p>
+
+<h2 id="译者按">译者按</h2>
+
+<p>API Gateway和Service Mesh的关系是我最近一直在思考的问题，也和同事及社区的朋友之间进行了一些讨论。这篇短文很清晰地总结了两者之间的相似之处以及这两者在微服务架构中的不同用途。</p>
+
+<p>文章中提到“可以使用API Gateway内建的服务间通信能力；也可以通过Service Mesh来调用下游服务”。在和同事讨论时，大家提到一个比较重要的考虑因素是在API Gateway处引入一个Sidecar可能带来的额外延迟。</p>
+
+<p>API Gateway作为微服务引用的流量入口，其对效率要求较高，如果随API Gateway部署一个Sidecar，可能对效率有一定影响。</p>
+
+<p>我对此未进行测试，但从理论上来说，服务发现，重试，断路等逻辑无论放到API Gateway还是Service Mesh中耗时应该是差不多的，部署Sidecar只是增加了创建一个本地链接的消耗，如下图所示:
+<img src="https://img.zhaohuabing.com/in-post/2018-04-11-service-mesh-vs-api-gateway/api-gateway-with-service-mesh.png" alt="" /></p>
+
+<p>将API Gateway和Service Mesh的功能进行清晰划分，API Gateway负责应用逻辑，Service Mesh负责服务通讯，Metrics收集等微服务基础设施，这样划分后在架构上更为清晰。对于效率问题，我们可以考虑对API Gateway进行水平扩展来解决。</p>
+
+<h2 id="原文">原文</h2>
+
+<p>本译文发表已征得原作者同意，原文参见 <a href="https://medium.com/microservices-in-practice/service-mesh-vs-api-gateway-a6d814b9bf56">Service Mesh vs API Gateway</a></p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/03/29/what-is-service-mesh-and-istio/" data-toggle="tooltip" data-placement="top" title="谈谈微服务架构中的基础设施：Service Mesh与Istio">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/04/16/using-helm-to-deploy-to-kubernetes/" data-toggle="tooltip" data-placement="top" title="Helm介绍">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://ecological-dynamics-izw.com/">Department Ecological Dynamics</a></li>
+                        
+                        <li><a target="_blank" href="https://www.yomos.org/">Young Modellers in Ecology</a></li>
+                        
+                        <li><a target="_blank" href="https://akcomputationalecology.wordpress.com/">Computational Ecology</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Cédric Scherer 2019
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

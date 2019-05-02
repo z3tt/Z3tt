@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataViz on Cédric Scherer</title>
+    <link>/tags/dataviz/</link>
+    <description>Recent content in DataViz on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TidyTuesday Challenge 2019/17: Anime Data</title>
+      <link>/post/2019-04-23-tidytuesday_201917_animes/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-04-23-tidytuesday_201917_animes/</guid>
+      <description>PreparationDataPlotsSession InfoPreparation## packageslibrary(tidyverse)library(ggrepel)library(patchwork)library(ghibli)## ggplot theme updatessource(&amp;quot;./tidytuesday/tidy_grey.R&amp;quot;)Datadf_ghibli &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-04-23/tidy_anime.csv&amp;quot;) %&amp;gt;% filter(studio == &amp;quot;Studio Ghibli&amp;quot;, type == &amp;quot;Movie&amp;quot;) %&amp;gt;% dplyr::select(animeID, title_english, title_japanese, genre, score, scored_by, members)## Parsed with column specification:## cols(## .default = col_character(),## animeID = col_integer(),## episodes = col_integer(),## airing = col_logical(),## start_date = col_date(format = &amp;quot;&amp;quot;),## end_date = col_date(format = &amp;quot;&amp;quot;),## score = col_double(),## scored_by = col_integer(),## rank = col_integer(),## popularity = col_integer(),## members = col_integer(),## favorites = col_integer()## )## See spec(.</description>
+    </item>
+    
+  </channel>
+</rss>

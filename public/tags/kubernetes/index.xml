@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on Cédric Scherer</title>
+    <link>/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Istio Sidecar自动注入原理</title>
+      <link>/2018/05/23/istio-auto-injection-with-webhook/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/05/23/istio-auto-injection-with-webhook/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Kubernets 1.9版本引入了Admission Webhook(web 回调)扩展机制，通过Webhook,开发者可以非常灵活地对Kubernets API Server的功能进行扩展，在API Server创建资源时对资源进行验证或者修改。&lt;/p&gt;
+
+&lt;p&gt;使用webhook的优势是不需要对API Server的源码进行修改和重新编译就可以扩展其功能。插入的逻辑实现为一个独立的web进程，通过参数方式传入到kubernets中，由kubernets在进行自身逻辑处理时对扩展逻辑进行回调。&lt;/p&gt;
+
+&lt;p&gt;Istio 0.7版本就利用了Kubernets webhook实现了sidecar的自动注入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Helm介绍</title>
+      <link>/2018/04/16/using-helm-to-deploy-to-kubernetes/</link>
+      <pubDate>Mon, 16 Apr 2018 15:00:00 +0000</pubDate>
+      
+      <guid>/2018/04/16/using-helm-to-deploy-to-kubernetes/</guid>
+      <description>前言 Helm是Kubernetes生态系统中的一个软件包管理工具。本文将介绍为何要使用Helm进行Kubernetes软件包管理，澄清Hel</description>
+    </item>
+    
+    <item>
+      <title>如何从外部访问Kubernetes集群中的应用？</title>
+      <link>/2017/11/28/access-application-from-outside/</link>
+      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/28/access-application-from-outside/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
