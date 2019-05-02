@@ -3,7 +3,7 @@ URL: /2019/04/29/welcome/
 title: Hello, World!
 author: Cédric
 date: "2019-04-29"
-image: img/banner/code_Negative-Space.jpg
+image: img/banner/code_NegativeSpace.jpg
 layout: post
 description: "Hi, I am glad you found your way here! Come in, have a look."
 tags: [Misc]

@@ -13,7 +13,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "img/banner/blog_Joanna-Kosinska.jpg"
+  header_image = "img/banner/mountainsnstars_RichardStrozynski.jpg"
   copyright = "C. Scherer"
   SEOTitle = "Cédric Scherer"
   description = "Blog by Cédric Scherer"
@@ -88,7 +88,7 @@ home = ["HTML", "RSS", "Algolia"]
   href =  "https://serialmentor.com/dataviz/"
   
   [[params.addtional_menus]]
-  title =  "Curriculum Vitae"
+  title =  "About Me"
   href =  "/top/about/"
   
   [[params.addtional_menus]]
@@ -100,7 +100,7 @@ home = ["HTML", "RSS", "Algolia"]
   href =  "/top/pubs/"
 
   [[params.addtional_menus]]
-  title =  "Visualizations"
+  title =  "DataViz"
   href =  "/top/dataviz/"
 
   [[params.addtional_menus]]
