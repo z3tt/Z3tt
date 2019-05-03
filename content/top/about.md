@@ -1,4 +1,4 @@
-[About Me](#about)  |  [Contact](#contact)  |  [Curiculum Vitae](#cv)
+[About Me](#about)  |  [Contact](#contact)  |  [Curriculum Vitae](#cv)
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
@@ -42,16 +42,16 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 ##### Scientific Researcher (since 2019)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
-- *Project:* Research Training Group [BioMove](https://www.biomove.org/) (DFG-GRK 2118-1)
+- *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
 ##### PhD Training (2015-2019)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
 - *Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”
-- *Project:* Research Training Group [BioMove](https://www.biomove.org/) (DFG-GRK 2118-1)
+- *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
 ##### Parental leave (2017-2018)
-- Full-time: December 2017 and May-July 2018
-- Part-time: April and August-November 2018
+- *Full-time:* December 2017 and May-July 2018
+- *Part-time:* April and August-November 2018
 
 ##### Visiting Research Student (2017)
 - **[University of California, Berkeley](https://www.berkeley.edu/)**, CA, USA
@@ -75,7 +75,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 ##### Internship (2011)
 - **[Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx)**, Muencheberg, Germany
-- Tasks: catching, sampling and collaring of red foxes, brown hares and raccoons; large-scale vegetation surveys
+- *Tasks:* catching, sampling and collaring of red foxes, brown hares and raccoons; large-scale vegetation surveys
 - *Project:* [AgroScapeLabs](https://www.bbib.org/scapelabs.html), now part of [BIBS](https://www.bbib.org/bibs-project.html)
 
 
@@ -108,13 +108,13 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 #### Conference Organisation {#orga}
 
-- **14th Workshop of the “Young Modellers in Ecology (YoMos)”**  
+- **14th Workshop of the Young Modellers in Ecology (YoMos)**  
   *upcoming May 2019* – Goettingen, Germany – organizer
 
 - **1st InternationalBioMove Symposium**  
   *September 2018*, Potsdam, Germany – organizer and chair
 
-- **13th Workshop of the “Young Modellers in Ecology (YoMos)”**  
+- **13th Workshop of the Young Modellers in Ecology (YoMos)**  
   *May 2018* – Höllviken, Sweden – organizer and chair
 
 - **Thematic Topic Session “Are we any good at simulating ecology? Success and future challenges in ecological simulation models”** at the Joint Annual Meeting of BES, GfOe, NecoV & EEF
@@ -123,10 +123,10 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 - **Leibniz PhD Symposium "What future do we have as scientists? Rethinking scientific publishing & careers"**   
   *September 2017* – Berlin, Germany – part of organizational comitee
 
-- **12th Workshop of the “Young Modellers in Ecology (YoMos)”**  
+- **12th Workshop of the Young Modellers in Ecology (YoMos)**  
   *May 2017* – Buchenbach, Germany – organizer and chair
 
-- **11th Workshop of the “Young Modellers in Ecology (YoMos)”**  
+- **11th Workshop of the Young Modellers in Ecology (YoMos)**  
   *May 2016* – Neunzehnhain, Germany – organizer and chair
 
 - **Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (GfOe)**  
@@ -146,6 +146,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 - **Field workshop “Systematic Zoology II“** (2012)  
   Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Germany
+
 
 #### Publications
 
@@ -171,5 +172,5 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 - *since 2013* – Member of [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
 - *since 2014* – Reviewer for [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
 - *since 2015* – Member of [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
-- *since 2015* – Speaker of the [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
+- *since 2015* – Speaker of [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
 - *since 2017* – Reviewer for [BMC Ecology](https://bmcecol.biomedcentral.com/)

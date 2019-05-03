@@ -23,7 +23,7 @@ Header image &amp;copy; Negative Space</description>
     </item>
     
     <item>
-      <title>TidyTuesday Challenge 2019/17: Anime Data</title>
+      <title>#TidyTuesday Challenges 2019/17: Anime Data</title>
       <link>/post/2019-04-23-tidytuesday_201917_animes/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -46,7 +46,7 @@ Header image &amp;copy; Negative Space</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/about/</guid>
-      <description>About Me | Contact | Curiculum Vitae
+      <description>About Me | Contact | Curriculum Vitae
 About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. Data visualizations are mostly done in R using the package ggplot2 from the amazing tidyverse which I use for all kinds of data preparation.</description>
     </item>
     
@@ -56,10 +56,9 @@ About Me I am a computational ecologist by training and a data visualization des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/dataviz/</guid>
-      <description> TidyTuesday | Scientific Figures
+      <description>TidyTuesday | Scientific Figures
 A collection of data visualizations I&amp;rsquo;ve produced for scientific publications and fun using the ggplot2 package in the programming language R. Click on a image to enlarge it.
-#TidyTuesday challenges If you have some data and would like to get it visualized, don&amp;rsquo;t hesitate to contact me!
-Scientific Figures </description>
+#TidyTuesday challenges #TidyTuesday is a weekly data project aimed at the R ecosystem with an emphasis on understanding how to summarize and arrange data to make meaningful charts with ggplot2, tidyr, dplyr and other tools in the tidyverse ecosystem.</description>
     </item>
     
     <item>
@@ -78,8 +77,7 @@ Rstats {tidyverse} {ggplot2} DataViz </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/projects/</guid>
-      <description>BioMove | NLMR | Multidimensionality of Stability
-BioMove The DFG funded Research Training Group &amp;lsquo;Integrating Biodiversity Research with Movement Ecology in dynamic agricultural landscapes (BioMove)&amp;rsquo; aims to:
+      <description>Poject Overview  BioMove NLMR (Neutral Landscape Models in R) Multidimensionality of Stability AFT (Animal Functional Type Approach) #TidyTuesday  BioMove The DFG funded Research Training Group &amp;lsquo;Integrating Biodiversity Research with Movement Ecology in dynamic agricultural landscapes (BioMove)&amp;rsquo; aims to:
  link innovative individual research projects that overcome the apparent gap between movement ecology and biodiversity research, employing a joint conceptual framework;
  strategically combine empirical, experimental and modelling approaches based in one common study area (AgroScapeLab-Quillow, Brandenburg, Germany) of sufficient size to address questions of varying spatial scales;</description>
     </item>
@@ -90,10 +88,11 @@ BioMove The DFG funded Research Training Group &amp;lsquo;Integrating Biodiversi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/pubs/</guid>
-      <description>You can also find me on ResearchGate and Google Scholar.
+      <description>Peer-Reviewed Publications | Conference Contributions | R packages
+You can also find me on Google Scholar and ResearchGate.
 My ORCID ID is 0000-0003-0465-2543.
 Peer-Reviewed Publications  V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, C. Scherer, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm &amp;amp; S. Kramer-Schadt (2019) The dimensionality of stability depends on disturbance type. Ecology Letters 22:647–684.
- M. Sciaini, M. Fritsch, C. Scherer &amp;amp; C.E. Simpkins (2018) NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R.</description>
+ M.</description>
     </item>
     
   </channel>

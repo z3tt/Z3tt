@@ -1,5 +1,5 @@
 ---
-title: "TidyTuesday Challenge 2019/17: Anime Data"
+title: "#TidyTuesday Challenges 2019/17: Anime Data"
 author: "Cédric"
 date: 2019-04-23
 image: "img/banner/milkyway_RichardStrozynski.jpg"
