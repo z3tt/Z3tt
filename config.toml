@@ -14,11 +14,11 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/banner/mountainsnstars_RichardStrozynski.jpg"
-  copyright = "C. Scherer"
+  copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
   description = "Blog by Cédric Scherer"
   keyword = ""
-  slogan = "Computational Ecology & Data Visualization"
+  slogan = "Computational Ecology & Data Visualisation"
 
   image_404 = "img/404-gg.png"
   title_404 = ""
@@ -36,7 +36,7 @@ home = ["HTML", "RSS", "Algolia"]
 
   # Sidebar settings
   sidebar_about_description = "Computational Ecologist, DataViz Enthusiast and Proud Dad"
-  sidebar_avatar = "img/cedric.png"
+  sidebar_avatar = "img/cedric_round.png"
 
   featured_tags = true 
   featured_condition_size = 0
@@ -100,7 +100,7 @@ home = ["HTML", "RSS", "Algolia"]
   href =  "/top/pubs/"
 
   [[params.addtional_menus]]
-  title =  "DataViz"
+  title =  "Visualizations"
   href =  "/top/dataviz/"
 
   [[params.addtional_menus]]

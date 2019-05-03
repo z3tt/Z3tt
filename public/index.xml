@@ -46,8 +46,8 @@ Header image &amp;copy; Negative Space</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/about/</guid>
-      <description>I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. Data visualizations are mostly done in R using the package ggplot2 from the amazing tidyverse which I use for all kinds of data preparation.
-My PhD and PostDoc project are part of the BioMove project working in the Department &amp;ldquo;Ecologcial Dynamics&amp;rdquo; at the Leibniz Institute for Zoo and Wildlife Research (IZW) in Berlin.</description>
+      <description>About Me | Contact | Curiculum Vitae
+About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. Data visualizations are mostly done in R using the package ggplot2 from the amazing tidyverse which I use for all kinds of data preparation.</description>
     </item>
     
     <item>
@@ -56,8 +56,10 @@ My PhD and PostDoc project are part of the BioMove project working in the Depart
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/dataviz/</guid>
-      <description>A collection of data visualizations I&amp;rsquo;ve produced for scientific publications and fun using the ggplot2 package in the programming language R. Click on a image to enlarge it.
-#TidyTuesday challenges If you have some data and would like to get it visualized, don&amp;rsquo;t hesitate to contact me!</description>
+      <description> TidyTuesday | Scientific Figures
+A collection of data visualizations I&amp;rsquo;ve produced for scientific publications and fun using the ggplot2 package in the programming language R. Click on a image to enlarge it.
+#TidyTuesday challenges If you have some data and would like to get it visualized, don&amp;rsquo;t hesitate to contact me!
+Scientific Figures </description>
     </item>
     
     <item>
