@@ -13,7 +13,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-  header_image = "img/banner/mountainsnstars_RichardStrozynski.jpg"
+  header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
   description = "Blog by Cédric Scherer"
