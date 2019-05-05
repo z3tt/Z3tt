@@ -6,17 +6,17 @@
     <description>Recent content in Misc on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello, World!</title>
-      <link>/2019/04/29/welcome/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <link>/2019/05/02/welcome/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/04/29/welcome/</guid>
+      <guid>/2019/05/02/welcome/</guid>
       <description>Hi, I am glad you found your way here! Come in, have a look.
 I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package blogdown Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;Clean White&amp;rdquo; theme!
 Header image &amp;copy; Negative Space</description>
