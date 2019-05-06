@@ -1,8 +1,8 @@
 ---
-URL: /2019/05/05/tidytuesday_intro/
+URL: /2019/05/06/tidytuesday_intro/
 title: Hello, TidyTuesday!
 author: Cédric
-date: "2019-05-05"
+date: "2019-05-06"
 image: img/banner/milkyway_RichardStrozynski.jpg
 layout: post
 description: "During my after-thesis-vacation, I managed to tick off two long-term todo's on my list - set up a homepage and to participate in the #TidyTuesday challenge!"

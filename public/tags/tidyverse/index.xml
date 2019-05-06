@@ -6,17 +6,17 @@
     <description>Recent content in tidyverse on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello, TidyTuesday!</title>
-      <link>/2019/05/05/tidytuesday_intro/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <link>/2019/05/06/tidytuesday_intro/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/05/tidytuesday_intro/</guid>
+      <guid>/2019/05/06/tidytuesday_intro/</guid>
       <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opprtunity to do so!
 What is it about? The R4DS (&amp;rdquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
     </item>
