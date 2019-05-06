@@ -5,7 +5,7 @@ author: Cédric
 date: "2019-05-05"
 image: img/banner/milkyway_RichardStrozynski.jpg
 layout: post
-description: "Hi, I am glad you found your way here! Come in, have a look."
+description: "During my after-thesis-vacation, I managed to tick off two long-term todo's on my list - set up a homepage and to participate in the #TidyTuesday challenge!"
 tags:
     - TidyTuesday
     - R
