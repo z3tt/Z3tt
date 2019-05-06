@@ -6,18 +6,19 @@
     <description>Recent content in ggplot2 on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>#TidyTuesday Challenges 2019/17: Anime Data</title>
-      <link>/post/2019-05-05-tidytuesday_201917_animes/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Hello, TidyTuesday!</title>
+      <link>/2019/05/05/tidytuesday_intro/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-05-05-tidytuesday_201917_animes/</guid>
-      <description>PreparationDataPlotsSession InfoPreparation## packageslibrary(tidyverse)library(ggrepel)library(patchwork)library(ghibli)## ggplot theme updatessource(&amp;quot;./tidytuesday/tidy_grey.R&amp;quot;)Datadf_ghibli &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-04-23/tidy_anime.csv&amp;quot;) %&amp;gt;% filter(studio == &amp;quot;Studio Ghibli&amp;quot;, type == &amp;quot;Movie&amp;quot;) %&amp;gt;% dplyr::select(animeID, title_english, title_japanese, genre, score, scored_by, members)## Parsed with column specification:## cols(## .default = col_character(),## animeID = col_integer(),## episodes = col_integer(),## airing = col_logical(),## start_date = col_date(format = &amp;quot;&amp;quot;),## end_date = col_date(format = &amp;quot;&amp;quot;),## score = col_double(),## scored_by = col_integer(),## rank = col_integer(),## popularity = col_integer(),## members = col_integer(),## favorites = col_integer()## )## See spec(.</description>
+      <guid>/2019/05/05/tidytuesday_intro/</guid>
+      <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opprtunity to do so!
+What is it about? The R4DS (&amp;rdquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
     </item>
     
   </channel>

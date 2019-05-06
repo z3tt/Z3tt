@@ -1,7 +1,7 @@
 ---
 title: "#TidyTuesday Challenges 2019/17: Anime Data"
 author: "Cédric"
-date: 2019-04-23
+date: 2019-05-05
 image: "img/banner/milkyway_RichardStrozynski.jpg"
 tags: ["DataViz", "Rstats", "ggplot2", "tidyverse", "TidyTuesday"]
 description: "My first participation in the #TidyTuesday challenge exploring data listed on MyAnimeList.net."

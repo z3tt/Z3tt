@@ -69,6 +69,9 @@ home = ["HTML", "RSS", "Algolia"]
   #wechat        = "your wechat qr code image"
   #medium        = "full profile url in medium"
   #pinterest     = "full profile url in pinterest"
+                icon = "orcid"
+                icon_pack = "ai"
+                link = "https://orcid.org/0000-000X-XXXX-XXXX"
   
   [[params.friend_link]]
   title = "Department Ecological Dynamics"
