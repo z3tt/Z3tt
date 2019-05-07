@@ -6,7 +6,7 @@
 
 I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. Data visualizations are mostly done in `R` using the package [`ggplot2`](https://ggplot2.tidyverse.org/) from the amazing [`tidyverse`](https://www.tidyverse.org/) which I use for all kinds of data preparation.
 
-My PhD and PostDoc project are part of the [BioMove project](https://www.biomove.org/) working in the [Department "Ecologcial Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin.
+My PhD and PostDoc project are part of the [BioMove project](https://www.biomove.org/) working in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin.
 I obtained a Bachelor of Science in *Life Sciences* and a Master of Science in *Ecology, Evolution & Nature Conservation* at the University of Potsdam. In my theses I used both, empirical and simulation data, to investigate the possibility to predict wild boar behaviour via acceleration (ACC) data, [responses of birds to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005) using an animal functional type approach and [how disease dynamics are influenced by movement behaviour and landscape structure](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) using Classical Swine Fever in its wildlife host, the wild boar (*Sus scrofa* L.).  
 
 
