@@ -75,8 +75,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 ##### Internship (2011)
 - **[Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx)**, Muencheberg, Germany
-- *Tasks:* catching, sampling and collaring of red foxes, brown hares and raccoons; large-scale vegetation surveys
-- *Project:* [AgroScapeLabs](https://www.bbib.org/scapelabs.html), now part of [BIBS](https://www.bbib.org/bibs-project.html)
+- *Project:* Movement ecology of red foxes, brown hares and raccoons in the [AgroScapeLabs](https://www.bbib.org/scapelabs.html)
 
 
 #### Trainings & Workshops {#training}
