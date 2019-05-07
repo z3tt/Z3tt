@@ -40,42 +40,42 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 #### Education & Professional Expericence {#career}
 
-##### Scientific Researcher (since 2019)
+###### Scientific Researcher (since 2019)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
 - *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
-##### PhD Training (2015-2019)
+###### PhD Training (2015-2019)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
 - *Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”
 - *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
-##### Parental leave (2017-2018)
+###### Parental leave (2017-2018)
 - *Full-time:* December 2017 and May-July 2018
 - *Part-time:* April and August-November 2018
 
-##### Visiting Research Student (2017)
+###### Visiting Research Student (2017)
 - **[University of California, Berkeley](https://www.berkeley.edu/)**, CA, USA
 - Short-term researcher at [Getz Lab](https://nature.berkeley.edu/getzlab/)
 
-##### Research Assistant (2015)
+###### Research Assistant (2015)
 - **[Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html)**, University of Potsdam, Germany
 - Scientific researcher in the project “RootHerbII” within the DFG Priority Program ["Infrastructure-Biodiversity-Exploratories”](http://www.biodiversity-exploratories.de/1/home/)
 
-##### Research Assistant (2014)
+###### Research Assistant (2014)
 - **[Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html)**, University of Potsdam, Germany
 - Assistant for a RTG proposal at [Deutsche Forschungsgemeinschaft (DFG)](http://www.dfg.de/en/)
 
-##### Master of Science “Ecology, Evolution and Nature Conservation” (2011-2014)
+###### Master of Science “Ecology, Evolution and Nature Conservation” (2011-2014)
 - **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
 - *Thesis:* “Responses of bird functional types to climatic and land use changes in African savannas – an individual-based modelling approach”
 
-##### Bachelor of Science “Life Sciences” (2008-2011)
-- **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
-- *Thesis:* “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”
-
-##### Internship (2011)
+###### Internship (2011)
 - **[Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx)**, Muencheberg, Germany
 - *Project:* Movement ecology of red foxes, brown hares and raccoons in the [AgroScapeLabs](https://www.bbib.org/scapelabs.html)
+
+###### Bachelor of Science “Life Sciences” (2008-2011)
+- **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
+- *Thesis:* “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”
 
 
 #### Trainings & Workshops {#training}
