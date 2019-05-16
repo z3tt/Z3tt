@@ -52,7 +52,7 @@ home = ["HTML", "RSS", "Algolia"]
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
   reward = false 
 
-  friends = true
+  friends = false
   bookmarks = true
   about_me = true
 
