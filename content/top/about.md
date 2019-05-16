@@ -31,12 +31,14 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
+
 #### Personal Details {#person}
 
 - Day of birth:	September 27th 1986
 - Place of birth:	Berlin, Germany
 - Marital status: commited relationship
 - Family status: 1 daughter
+
 
 #### Education & Professional Expericence {#career}
 
@@ -48,6 +50,10 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
 - *Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”
 - *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
+
+###### Speaker SIG "Young Modellers in Ecology" (2015-2019)
+- Speaker of the **Special Interest Group "YoMos" of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)**
+- Lead of theorganizational teams and chair of international conferences and workshops
 
 ###### Parental leave (2017-2018)
 - *Full-time:* December 2017 and May-July 2018
@@ -160,16 +166,17 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 #### Skills {#skills}
 
 - **Languages:** German *(native)*, English *(fluent)*
-- **Programming:** R, NetLogo, Python, SQL/SQLite (partly C++ and MatLab)
-- **Statistics:** R, SPSS, Excel
-- **GIS:** QGIS, GRASS, ArcGIS
+- **Programming:** R, NetLogo, Python, SQL/SQLite, C++, MatLab, html5
+- **Statistics:** R (e.g. lme4, glmmTMB, CARBayesST, adehabitat), SPSS, Excel
+- **GIS:** R (e.g. sf, sp, raster, rgdal, RQGIS), QGIS, GRASS, ArcGIS
+- **Visualization:** R (e.g. ggplot2, shiny, plotly, sf, sp, leaflet, tmap), CartoDB
 - **Markup:** Markdown, LaTeX
 
 
 #### Memberships and Services {#services}
 
-- *since 2013* – Member of [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
+- *since 2013* – Member of the SIG [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
 - *since 2014* – Reviewer for [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
-- *since 2015* – Member of [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
-- *since 2015* – Speaker of [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
+- *since 2015* – Member of the [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
 - *since 2017* – Reviewer for [BMC Ecology](https://bmcecol.biomedcentral.com/)
+- *since 2019* - Reviewer for [Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/journal/13652664)
