@@ -452,13 +452,13 @@ g &lt;- ggplot(df_sorted, aes(region, student_ratio, color = region)) +
 <p>We can add any <code>geom_</code> to our ggplot-preset <code>g</code> that fits the data (note that until now it is jut an empty plot with pretty axes):</p>
 <p><img src="/post/2019_05-17_evol-ggplot-1_files/figure-html/geoms-1.png" width="960" /></p>
 <p>All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the dot strip plot and the line plot show the raw data. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an <code>alpha</code> argument to <code>geom_point()</code>, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data.</p>
-<pre class="r"><code>g + geom_point(size = 3, alpha = 0.15)</code></pre>
+<pre class="r"><code>g + geom_point(size = 2, alpha = 0.15)</code></pre>
 <p><img src="/post/2019_05-17_evol-ggplot-1_files/figure-html/dot-plot-alpha-1.png" width="768" /></p>
-<p>2Of course, different geoms can also be combined to provide even more information in one plot:</p>
+<p>Of course, different geoms can also be combined to provide even more information in one plot:</p>
 <pre class="r"><code>g + geom_boxplot(color = &quot;grey60&quot;, outlier.alpha = 0) +
-  geom_point(size = 3, alpha = 0.15)</code></pre>
+  geom_point(size = 2, alpha = 0.15)</code></pre>
 <p><img src="/post/2019_05-17_evol-ggplot-1_files/figure-html/box-dot-plot-1.png" width="768" /></p>
-<p>2 <strong>Remove the outliers to avoid overlapping points! You can achieve this via <code>outlier.shape = NA</code> or <code>outlier.alpha = 0</code>.</strong></p>
+<p>⚡ <strong>Remove the outliers to avoid overlapping points! You can achieve this via <code>outlier.shape = NA</code> or <code>outlier.alpha = 0</code>.</strong></p>
 <p>We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
 To achieve a higher readability, we use another geom, <code>geom_jitter()</code> which scatters the points in a given direction (x and/or y via <code>width</code> and <code>height</code>) to prevent overplotting:</p>
 <pre class="r"><code>g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>

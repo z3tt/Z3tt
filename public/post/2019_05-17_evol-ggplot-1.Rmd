@@ -232,17 +232,18 @@ library(patchwork)
 All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the dot strip plot and the line plot show the raw data. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data.
 
 ```{r dot-plot-alpha, fig.width = 8, fig.heigh = 4.5}
-g + geom_point(size = 3, alpha = 0.15)
+g + geom_point(size = 2, alpha = 0.15)
 ```
 
-2Of course, different geoms can also be combined to provide even more information in one plot:
+
+Of course, different geoms can also be combined to provide even more information in one plot:
 
 ```{r box-dot-plot, fig.width = 8, fig.heigh = 4.5}
 g + geom_boxplot(color = "grey60", outlier.alpha = 0) +
-  geom_point(size = 3, alpha = 0.15)
+  geom_point(size = 2, alpha = 0.15)
 ```
 
-2 **Remove the outliers to avoid overlapping points! You can achieve this via `outlier.shape = NA` or `outlier.alpha = 0`.**
+⚡ **Remove the outliers to avoid overlapping points! You can achieve this via `outlier.shape = NA` or `outlier.alpha = 0`.**
 
 We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
 To achieve a higher readability, we use another geom, `geom_jitter()` which scatters the points in a given direction (x and/or y via `width` and `height`) to prevent overplotting:
@@ -609,7 +610,7 @@ g7 <- g + geom_point(size = 2)
 g8 <- g + geom_point(size = 2, alpha = 0.15)
 
 g9 <- g + geom_boxplot(color = "grey50", outlier.alpha = 0) +
-  geom_point(size = 3, alpha = 0.15)
+  geom_point(size = 2, alpha = 0.15)
 
 set.seed(123)
 g10 <- g + geom_boxplot(color = "grey50", outlier.alpha = 0) +
@@ -668,7 +669,7 @@ g16 <- g15 +
 arrows <- tibble(
   x1 = c(6.1, 3.6, 1.77, 1.74, 1.78),
   x2 = c(5.6, 4, 2, 2.6, 1.13),
-  y1 = c(32, 10.1, 11, 11, 70),
+  y1 = c(32, 10.1, 11, 11, 73),
   y2 = c(world_avg + 0.1, 18, 14.1, 12, 83.4)
 )
  
