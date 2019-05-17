@@ -6,10 +6,19 @@
     <description>Recent content in ggplot2 on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Evolution of a ggplot (Ep. 1)</title>
+      <link>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
+      <description>🏁 Aim of this Tutorial🧹 Data Preparation🌱 The Default Boxplot🔀 ️Sort Your Data!💎 Let Your Plot Shine - Get Rid of the Default Settings📊 The Choice of the Chart Type💯 More Geoms, More Fun, More Info!💬 Add Text Boxes to Let The Plot Speaks for Itself🗺️ Bonus: Add a Tile Map as Legend🎄 The Final Evolved Visualization💻 Complete Code for Final Plot🏁 Aim of this TutorialIn this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way.</description>
+    </item>
     
     <item>
       <title>Hello, TidyTuesday!</title>

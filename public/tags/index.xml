@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>DataViz</title>
       <link>/tags/dataviz/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/dataviz/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>TidyTuesday</title>
       <link>/tags/tidytuesday/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/tidytuesday/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>ggplot2</title>
       <link>/tags/ggplot2/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/ggplot2/</guid>
       <description></description>
@@ -50,9 +50,18 @@
     <item>
       <title>tidyverse</title>
       <link>/tags/tidyverse/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
