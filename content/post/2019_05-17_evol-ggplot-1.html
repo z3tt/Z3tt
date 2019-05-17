@@ -16,7 +16,7 @@ editor_options:
 <p><img src="/img/evol-ggplot/evol-ggplot-1.gif" /></p>
 <ul>
 <li><a href="#aim">🏁 Aim of this Tutorial</a></li>
-<li><a href="#data">🧹 Data Preparation</a></li>
+<li>[🗃️ T Data Preparation#data)</li>
 <li><a href="#default">🌱 The Default Boxplot</a></li>
 <li><a href="#sort">🔀 ️Sort Your Data!</a></li>
 <li><a href="#polish">💎 Let Your Plot Shine - Get Rid of the Default Settings</a></li>
@@ -33,7 +33,7 @@ editor_options:
 <p>In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use <a href="http://data.uis.unesco.org/index.aspx?queryid=180">data provided by the UNESCO on global student to teacher ratios</a> that was selected as data <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07">#TidyTuesday challenge 19 of 2019</a>.</p>
 </div>
 <div id="data" class="section level3">
-<h3>🧹 Data Preparation</h3>
+<h3>🗃️ Data Preparation</h3>
 <p>I have prepared the data in the first way to map each countrys most recently reported student to teacher ratio in primary education as a tile map. I used the <a href="%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22">tile-based world data provided by Maarten Lambrechts</a> to create this map as the first visualization for my weekly contribution:</p>
 <p><img src="/post/2019_05-17_evol-ggplot-1_files/figure-html/map-students-1.png" width="768" /></p>
 <p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned dataset looks like:</p>
