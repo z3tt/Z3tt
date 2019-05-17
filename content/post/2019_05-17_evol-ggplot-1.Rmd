@@ -337,7 +337,7 @@ arrows <- tibble(
 )
 
 g + g_text +
-  geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+  geom_curve(_text +, aes(x = x1, y = y1, xend = x2, yend = y2),
              arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
              color = "grey20", curvature = -0.3)
 ```
