@@ -20,8 +20,8 @@ A collection of data visualizations I've produced for scientific publications an
 
 ## "Evolution of a ggplot" blog series
 
-<img src="/img/ggevolution/evol-ggplot-1.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.gif', 'blank');"/>
+<img src="/img/evol-ggplot/evol-ggplot-1.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.gif', 'blank');"/>
 
-<img src="/img/ggevolution/evol-ggplot-1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.png', 'blank');"/>
+<img src="/img/evol-ggplot/evol-ggplot-1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.png', 'blank');"/>
 
 <font size="+1">**If you have some data and would like to get it visualized, don't hesitate to <a href="mailto:cedricphilippscherer@gmail.com">contact me!</a>**</font>
