@@ -65,7 +65,7 @@ df_ratios <- df_students %>%
 ![](/img/evol-ggplot/evol-ggplot-1.gif)
 
 * [🏁 Aim of this Tutorial](#aim)
-* [🗃️ T Data Preparation#data)
+* [🗃️ Data Preparation](#data) 
 * [🌱 The Default Boxplot](#default)
 * [🔀 ️Sort Your Data!](#sort)
 * [💎 Let Your Plot Shine - Get Rid of the Default Settings](#polish)
