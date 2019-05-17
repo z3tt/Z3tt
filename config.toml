@@ -14,9 +14,9 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
-  copyright = "Cédric Scherer"
+  copyright = "C?dric Scherer"
   SEOTitle = "CÃ©dric Scherer"
-  description = "Blog by Cédric Scherer"
+  description = "Blog by C?dric Scherer"
   keyword = "Computational Ecology, Data Visualisation"
   slogan = "Computational Ecology & Data Visualisation"
 
@@ -106,9 +106,9 @@ home = ["HTML", "RSS", "Algolia"]
   title =  "Visualizations"
   href =  "/top/dataviz/"
 
-  [[params.addtional_menus]]
-  title =  "Links  "
-  href =  "/top/links/"
+  #[[params.addtional_menus]]
+  #title =  "Links  "
+  #href =  "/top/links/"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
