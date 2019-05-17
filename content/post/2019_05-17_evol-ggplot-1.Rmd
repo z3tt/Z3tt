@@ -71,7 +71,7 @@ df_ratios <- df_students %>%
 * [💎 Let Your Plot Shine - Get Rid of the Default Settings](#polish)
 * [📊 The Choice of the Chart Type](#geoms)
 * [💯 More Geoms, More Fun, More Info!](#more)
-* [💬 Add Text Boxes to Let The Plot Speaks for Itself](#text)
+* [💬 Add Text Boxes to Let The Plot Speak for Itself](#text)
 * [🗺️ Bonus: Add a Tile Map as Legend]({#legend)
 * [🎄 The Final Evolved Visualization](#final)
 * [💻 Complete Code for Final Plot](#code)
@@ -128,6 +128,7 @@ set.seed(123)
 df_ratios %>%
   group_by(region) %>%
   sample_n(2) %>%
+  ungroup() %>% 
   dplyr::select(indicator, country, region, student_ratio, student_ratio_region) %>%
   head(12)
 ```
@@ -157,7 +158,7 @@ ggplot(df_sorted, aes(region, student_ratio)) +
   geom_boxplot()
 ```
 
-💡 **Sort your data according to the best or worst, highest or lowest value do make your graph easily readable - do not sort them if the categories have an internal logical order such as age groups!**
+💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable - do not sort them if the categories have an internal logical order such as age groups!**
 
 To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot2` call - but this does not work for boxplots so we use `coord_flip()`). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
 
@@ -180,15 +181,16 @@ Let's spice this plot up! One great thing about `ggplot2` is that it is structur
 * use a different theme that comes with the `ggplot2` package by calling `theme_set(theme_light())` (several themes come along with the `ggplot2` package but if you need more check for example the packages [`ggthemes`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) or [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/)),
 * change the font and the overall font size by adding the arguments `base_size` and `base_family` to `theme_light()`,
 * flip the axes by adding `coord_flip()` (as seen before),
-* let the axis start at 0 and reducing the spacing to the plot margin by adding `expand = c(0.005, 0.005)` as argument to the `scale_y_continious()`,
+* let the axis start at 0 and reduce the spacing to the plot margin by adding `expand = c(0.005, 0.005)` as argument to the `scale_y_continious()`,
 * add some color encoding the continent by adding `color = region` to the `aes` argument and piciking a palette from the [`ggsci` package](),
 * add meaningful labels/removing useless labels by adding adding `labs(x = NULL, y = "title y")`
-* do a some adjustedment of the new theme (e.g. changing some font settings and removing the legend and grid) by adding `theme()`.
+* adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding `theme()`.
 
 💡 **You can easily adjust all sizes of the theme by calling theme_xyz(base_size = ) + this is very handy if you need the same viz for a different purpose!**  
+  
 💡 **Do not use c(0, 0) since the zero tick is in most cases too close to the axis - use c(0.005, 0.005) instead!**
 
-I am going to save the ggplot call and the all these visual adjustments in `gg` object called `g` so we can use it for the next plots.
+I am going to save the ggplot call and all these visual adjustments in `gg` object called `g` so we can use it for the next plots.
 
 ```{r gg-preset, message=FALSE}
 extrafont::loadfonts(device = "win")
@@ -206,7 +208,7 @@ g <- ggplot(df_sorted, aes(region, student_ratio, color = region)) +
         panel.grid = element_blank())
 ```
 
-(Note that to use this font we make use of the [`extrafont` package](https://github.com/wch/extrafont). You need to have (a) the font installed on your system, (b) the package `extrafont` installed, (c) import your fonts´by running `extrafont::font_import()` and (d) load them via `extrafont::loadfonts(device = "win")`)
+(Note that to include these fonts we make use of the [`extrafont` package](https://github.com/wch/extrafont). You need to have (a) the fonts installed on your system, (b) the package `extrafont` installed and (c) imported your fonts by running `extrafont::font_import()`.)
 
 
 ### 📊 The Choice of the Chart Type {#geoms}
@@ -219,8 +221,8 @@ library(patchwork)
 (g + geom_boxplot() + labs(title = "Boxplot", subtitle = "g + geom_boxplot()")) +
 (g + geom_violin() + labs(title = "Violin plot", subtitle = "g + geom_violin()")) +
 (g + geom_line(size = 1) + labs(title = "Line plot", subtitle = "g + geom_line(size = 1)")) +
-(g + geom_point(size = 2, alpha = 0.15) + labs(title = "Dot strip plot",
-                                               subtitle = "g + geom_point(size = 2, alpha = 0.15)")) &
+(g + geom_point(size = 1) + labs(title = "Dot strip plot",
+                                 subtitle = "g + geom_point(size = 1)")) &
   theme(plot.title = element_text(face = "bold", size = 14),
         plot.subtitle = element_text(size = 11),
         axis.text.y = element_text(size = 10),
@@ -229,16 +231,18 @@ library(patchwork)
 
 All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the dot strip plot and the line plot show the raw data. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data.
 
-(Of course, different geoms can also be combined to provide even more information in one plot.)
+```{r dot-plot-alpha, fig.width = 8, fig.heigh = 4.5}
+g + geom_point(size = 3, alpha = 0.15)
+```
 
-```{r box-dot-plot, echo=-1, fig.width = 8, fig.heigh = 4.5}
-set.seed(123)
+2Of course, different geoms can also be combined to provide even more information in one plot:
 
+```{r box-dot-plot, fig.width = 8, fig.heigh = 4.5}
 g + geom_boxplot(color = "grey60", outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)
 ```
 
-⚡ **Remove the outliers to avoid overlapping points! You can achieve this via `outlier.shape = NA` or `outlier.alpha = 0`.**
+2 **Remove the outliers to avoid overlapping points! You can achieve this via `outlier.shape = NA` or `outlier.alpha = 0`.**
 
 We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
 To achieve a higher readability, we use another geom, `geom_jitter()` which scatters the points in a given direction (x and/or y via `width` and `height`) to prevent overplotting:
@@ -295,7 +299,7 @@ g +
 
 ⚡ **Check the order of the geoms to prevent any overlapping -  here, for example, draw the line after calling `geom_segment()` to avoid overlapping!**
 
-### 💬 Add Text Boxes to Let The Plot Speaks for Itself {#text}
+### 💬 Add Text Boxes to Let The Plot Speak for Itself {#text}
 
 Since I don't want to include legends, I add some text boxes that explain the different point sizes and the baseline level via `annotate("text")`:
 
@@ -321,7 +325,23 @@ set.seed(123)
 
 💡 **Use [`glue::glue()`](https://glue.tidyverse.org/) to combine strings with variables - this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend `paste0()`.)**
 
-... and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling `geom_curve()`. I am going to draw all arrows with one call - but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes and then adjust, adjust, adjust...
+... and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling `geom_curve()`. I am going to draw all arrows with one call - but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes...
+
+```{r}
+arrows <- tibble(
+  x1 = c(6.3, 3.5, 1.7, 1.7, 1.9),
+  x2 = c(5.6, 4, 1.9, 2.1, 1.1),
+  y1 = c(35, 10, 11, 11, 64),
+  y2 = c(world_avg, 19.4, 14.1, 12, 83.4)
+)
+
+g + g_text +
+  geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+             arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
+             color = "grey20", curvature = -0.3)
+```
+
+... and then adjust, adjust, adjust...
 
 ```{r text-arrows, fig.width = 8, fig.heigh = 4.5}
 arrows <- tibble(
@@ -584,29 +604,31 @@ g5 <- g + geom_boxplot()
 
 g6 <- g + geom_violin()
 
-g7 <- g + geom_point(size = 3, alpha = 0.15)
+g7 <- g + geom_point(size = 2)
 
-g8 <- g + geom_boxplot(color = "grey50", outlier.alpha = 0) +
+g8 <- g + geom_point(size = 2, alpha = 0.15)
+
+g9 <- g + geom_boxplot(color = "grey50", outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)
 
 set.seed(123)
-g9 <- g + geom_boxplot(color = "grey50", outlier.alpha = 0) +
+g10 <- g + geom_boxplot(color = "grey50", outlier.alpha = 0) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
-g10 <- g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
+g11 <- g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
-g11 <- g + geom_point(aes(region, student_ratio_region), size = 5) +
-  geom_jitter(size = 2, alpha = 0.25, width = 0.2)
-
-set.seed(123)
-g12 <- g + geom_hline(aes(yintercept = world_avg), color = "grey70", size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+g12 <- g + geom_point(aes(region, student_ratio_region), size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
 g13 <- g + geom_hline(aes(yintercept = world_avg), color = "grey70", size = 0.6) +
+  geom_point(aes(region, student_ratio_region), size = 5) +
+  geom_jitter(size = 2, alpha = 0.25, width = 0.2)
+
+set.seed(123)
+g14 <- g + geom_hline(aes(yintercept = world_avg), color = "grey70", size = 0.6) +
   geom_segment(aes(x = region, xend = region,
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
@@ -615,7 +637,7 @@ g13 <- g + geom_hline(aes(yintercept = world_avg), color = "grey70", size = 0.6)
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
-g14 <- g +
+g15 <- g +
   geom_segment(aes(x = region, xend = region,
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
@@ -632,21 +654,45 @@ g14 <- g +
            label = "The Central African Republic has by far\nthe most students per teacher")
 
 arrows <- tibble(
+  x1 = c(6.3, 3.5, 1.7, 1.7, 1.9),
+  x2 = c(5.6, 4, 1.9, 2.1, 1.1),
+  y1 = c(35, 10, 11, 11, 64),
+  y2 = c(world_avg, 19.4, 14.1, 12, 83.4)
+)
+
+g16 <- g15 +
+  geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+             arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
+             color = "grey20", curvature = -0.3)
+
+arrows <- tibble(
+  x1 = c(6.1, 3.6, 1.77, 1.74, 1.78),
+  x2 = c(5.6, 4, 2, 2.6, 1.13),
+  y1 = c(32, 10.1, 11, 11, 70),
+  y2 = c(world_avg + 0.1, 18, 14.1, 12, 83.4)
+)
+ 
+g17 <- g15 +
+  geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+             arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
+             color = "grey20", curvature = -0.3)
+
+arrows <- tibble(
   x1 = c(6, 3.65, 1.8, 1.8, 1.8),
   x2 = c(5.6, 4, 2.06, 2.75, 1.11),
   y1 = c(world_avg + 6, 10.5, 11, 11, 76),
   y2 = c(world_avg + 0.2, 17.87, 14.1, 12, 83.4)
 )
 
-g15 <- g14 +
+g18 <- g15 +
   geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
              arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
              color = "grey20", curvature = -0.3)
 
-g16 <- g15 +
+g19 <- g18 +
   scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005), breaks = c(1, seq(20, 80, by = 20)))
 
-g17 <- g16 + annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
+g20 <- g19 + annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
 
 
 ## gif pure plot
@@ -670,9 +716,12 @@ saveGIF({
   print(g15)
   print(g16)
   print(g17)
-  print(g17 + labs(caption = caption) + theme(plot.caption = element_text(size = 7, family = "Poppins", color = "grey50")))
-  print(g17 + labs(caption = caption) + theme(plot.caption = element_text(size = 7, family = "Poppins", color = "grey50")))
-  print(g17 + labs(caption = caption) + theme(plot.caption = element_text(size = 7, family = "Poppins", color = "grey50")))
+  print(g18)
+  print(g19)
+  print(g20)
+  print(g20 + labs(caption = caption) + theme(plot.caption = element_text(size = 7, family = "Poppins", color = "grey50")))
+  print(g20 + labs(caption = caption) + theme(plot.caption = element_text(size = 7, family = "Poppins", color = "grey50")))
+  print(g20 + labs(caption = caption) + theme(plot.caption = element_text(size = 7, family = "Poppins", color = "grey50")))
 }, interval = 1.1, movie.name = "evol-ggplot-1-pure.gif", ani.width = 1800, ani.height = 1050, ani.res = 300)
 
 
@@ -706,7 +755,10 @@ saveGIF({
   print(ggdraw_title(g15))
   print(ggdraw_title(g16))
   print(ggdraw_title(g17))
-  print(ggdraw_title(g17))
-  print(ggdraw_title(g17))
+  print(ggdraw_title(g18))
+  print(ggdraw_title(g19))
+  print(ggdraw_title(g20))
+  print(ggdraw_title(g20))
+  print(ggdraw_title(g20))
 }, interval = 1.1, movie.name = "evol-ggplot-1.gif", ani.width = 1800, ani.height = 1250, ani.res = 300)
 ```
