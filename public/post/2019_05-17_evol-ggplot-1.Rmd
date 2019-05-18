@@ -259,8 +259,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 (I am going to the redundant call of `set.seed(123)` in the next code chunks.)
 
 
-
-### 💯 More Geoms, MoreFun, More Info! {#more}
+### 💯 More Geoms, More Fun, More Info! {#more}
 
 As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding another `geom_point()` which has to differ from the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
 
@@ -287,7 +286,7 @@ g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 ```
 
-(Note that you could derive the worldwide average also within the `geom_hline()` call, but I prefer to keep both steps separated.)
+💡 **One could derive the worldwide average also within the `geom_hline()` call, but I prefer to keep both steps separated.**
 
 We can further highlight that the baseline is the worldwide average ratio rather than a ratio of 0 (or 1?) by adding a line from each continental average to the worldwide average. The result is a combination of a jitter and a lollipop plot:
 
@@ -498,9 +497,9 @@ Thanks for reading, I hope you've enjoyed it! Here you find [more visualizations
 
 ### 💻 Complete Code for Final Plot {#code}
 
-And if you want to create the plot on your own or play around with the code, copy and paste these 60 lines of code:
+And if you want to create the plot on your own or play around with the code, copy and paste these 60 lines:
 
-```{r final-code, eva
+```{r final-code, eval=FALSE}
 ## packages
 library(tidyverse)
 library(ggsci)
