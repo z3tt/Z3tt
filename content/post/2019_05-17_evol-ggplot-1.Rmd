@@ -254,8 +254,13 @@ set.seed(123)
 g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 ```
 
+💡 **Set a seed to keep the jittering of the points fixed every time you call `geom_jitter()` by calling `set.seed()` - this becomes especially important when we later label some of the points.**
 
-### 💯 More Geoms, More Fun, More Info! {#more}
+(I am going to the redundant call of `set.seed(123)` in the next code chunks.)
+
+
+
+### 💯 More Geoms, MoreFun, More Info! {#more}
 
 As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding another `geom_point()` which has to differ from the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
 
@@ -266,10 +271,6 @@ g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   geom_point(aes(region, student_ratio_region), size = 5)
 ```
-
-💡 **Set a seed to keep the jittering of the points fixed every time you call `geom_jitter()` by calling `set.seed()` - this becomes especially important when we later label some of the points.**
-
-(I am goign to the redundant call of `set.seed(123)` in the next code chunks.)
 
 To relate all these points to a baseline, we add a line indicating the worldwide average:
 
@@ -499,7 +500,7 @@ Thanks for reading, I hope you've enjoyed it! Here you find [more visualizations
 
 And if you want to create the plot on your own or play around with the code, copy and paste these 60 lines of code:
 
-```{r final-code, eval=FALSE}
+```{r final-code, eva
 ## packages
 library(tidyverse)
 library(ggsci)
