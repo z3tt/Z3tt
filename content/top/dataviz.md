@@ -3,6 +3,8 @@ A collection of data visualizations I've produced for scientific publications an
 
 ## #TidyTuesday contributions
 
+<img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
+
 <img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_19_StudentTeacher_facet.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher_facet.png', 'blank');"/>

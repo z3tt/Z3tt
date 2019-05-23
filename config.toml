@@ -8,15 +8,16 @@ googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
-  copyright = "C?dric Scherer"
+  copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
-  description = "Blog by C?dric Scherer"
+  description = "Blog by Cédric Scherer"
   keyword = "Computational Ecology, Data Visualisation"
   slogan = "Computational Ecology & Data Visualisation"
 
