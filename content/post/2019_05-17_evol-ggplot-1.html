@@ -336,59 +336,6 @@ df_ratios %&gt;%
 <div id="ps" class="section level3">
 <h3>📝 Post Sciptum: Mean versus Median</h3>
 <p>One thing I want to highlight is that the final plot does not rperesent the same information as the original boxplot. While I have visualized the man values of each country and across the globe, the box show the 25%, 50% and 75% quartile of the data, The 50% quantile is known as the <em>median</em>, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my goal was a visualization that is easily understandable to a large audience that are used to mean (“average”) values, However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:</p>
-<pre class="r"><code>world_med &lt;- df_ratios %&gt;%
-  summarize(med = median(student_ratio, na.rm = T)) %&gt;%
-  pull(med)
-
-arrows &lt;- tibble(
-  x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-  x2 = c(5.6, 4, 2.07, 2.78, 1.1),
-  y1 = c(world_med + 6, 10.5, 9, 9, 76),
-  y2 = c(world_med + 0.1, 18.4, 14.4, 11.85, 83.41195)
-)
-
-set.seed(123)
-
-median &lt;- df_ratios %&gt;%
-  group_by(region) %&gt;% 
-  mutate(student_ratio_region = median(student_ratio, na.rm = T)) %&gt;% 
-  ungroup() %&gt;% 
-  mutate(region = fct_reorder(region, -student_ratio_region)) %&gt;%
-  ggplot(aes(region, student_ratio, color = region)) +
-    geom_segment(aes(x = region, xend = region,
-                     y = world_med, yend = student_ratio_region),
-                 size = 0.8) +
-    geom_hline(aes(yintercept = world_med), color = &quot;grey70&quot;, size = 0.6) +
-    geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-    geom_point(aes(region, student_ratio_region), size = 5) +
-    coord_flip() +
-    annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 2.7, color = &quot;grey20&quot;,
-             label = glue::glue(&quot;Worldwide median:\n{round(world_med, 1)} students per teacher&quot;)) +
-    annotate(&quot;text&quot;, x = 3.5, y = 8, family = &quot;Poppins&quot;, size = 2.7, color = &quot;grey20&quot;,
-             label = &quot;Continental median&quot;) +
-    annotate(&quot;text&quot;, x = 1.7, y = 10, family = &quot;Poppins&quot;, size = 2.7, color = &quot;grey20&quot;,
-             label = &quot;Countries per continent&quot;) +
-    annotate(&quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 2.7, color = &quot;grey20&quot;,
-             label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;) +
-    geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
-               arrow = arrow(length = unit(0.08, &quot;inch&quot;)), size = 0.5,
-               color = &quot;grey20&quot;, curvature = -0.3) +
-    annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85) +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005),
-                       breaks = c(1, seq(20, 80, by = 20))) +
-    scale_color_uchicago() +
-    labs(x = NULL, y = &quot;Student to teacher ratio&quot;, title = &quot;After&quot;,
-         caption = &quot;Data: UNESCO Institute for Statistics\nVisualization by Cédric Scherer&quot;) +
-    theme_light(base_size = 15, base_family = &quot;Poppins&quot;) +
-    theme(legend.position = &quot;none&quot;, 
-          plot.caption = element_text(size = 7, family = &quot;Poppins&quot;, color = &quot;grey50&quot;),
-          plot.title = element_text(size = 22, face = &quot;bold&quot;, hjust = 0.5),
-          axis.title = element_text(size = 12),
-          axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 10),
-          panel.grid = element_blank())
-
-(after + labs(title = &quot;Mean ratios&quot;, caption = &quot;&quot;)) + 
-  (median + ggtitle(&quot;Median ratios&quot;)) + plot_layout(ncol = 1)</code></pre>
 <p><img src="/post/2019_05-17_evol-ggplot-1_files/figure-html/mean-vs-mean-1.png" width="768" /></p>
 <p>As one can see, the differences between continents stay the same but the worldwide median is lower than the average (19.6 students per teacher versus 23.5), showing that the median student-teacher ratio of Asia and oceania are similar to the worldwide median. These plots now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some than the one visualzing average ratios.</p>
 </div>

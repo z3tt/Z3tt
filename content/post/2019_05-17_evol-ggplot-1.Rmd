@@ -587,7 +587,7 @@ df_ratios %>%
 
 One thing I want to highlight is that the final plot does not rperesent the same information as the original boxplot. While I have visualized the man values of each country and across the globe, the box show the 25%, 50% and 75% quartile of the data, The 50% quantile is known as the *median*, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my goal was a visualization that is  easily understandable to a large audience that are used to mean ("average") values, However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
 
-```{r mean-vs-mean, fig.width = 8, fig.height = 10}
+```{r mean-vs-mean, echo=FALSE, message=FALSE, fig.width = 8, fig.height = 10}
 world_med <- df_ratios %>%
   summarize(med = median(student_ratio, na.rm = T)) %>%
   pull(med)
@@ -616,9 +616,9 @@ median <- df_ratios %>%
     coord_flip() +
     annotate("text", x = 6.3, y = 35, family = "Poppins", size = 2.7, color = "grey20",
              label = glue::glue("Worldwide median:\n{round(world_med, 1)} students per teacher")) +
-    annotate("text", x = 3.5, y = 8, family = "Poppins", size = 2.7, color = "grey20",
+    annotate("text", x = 3.5, y = 10, family = "Poppins", size = 2.7, color = "grey20",
              label = "Continental median") +
-    annotate("text", x = 1.7, y = 10, family = "Poppins", size = 2.7, color = "grey20",
+    annotate("text", x = 1.7, y = 9.5, family = "Poppins", size = 2.7, color = "grey20",
              label = "Countries per continent") +
     annotate("text", x = 1.9, y = 64, family = "Poppins", size = 2.7, color = "grey20",
              label = "The Central African Republic has by far\nthe most students per teacher") +
