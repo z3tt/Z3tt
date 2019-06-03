@@ -53,7 +53,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 ###### Speaker SIG "Young Modellers in Ecology" (2015-2019)
 - Speaker of the **Special Interest Group "YoMos" of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)**
-- Lead of theorganizational teams and chair of international conferences and workshops
+- Lead of the organizational teams and chair during international conferences and workshops
 
 ###### Parental leave (2017-2018)
 - *Full-time:* December 2017 and May-July 2018
@@ -114,7 +114,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 #### Conference Organisation {#orga}
 
 - **14th Workshop of the Young Modellers in Ecology (YoMos)**  
-  *upcoming May 2019* – Goettingen, Germany – organizer
+  *May 2019* – Goettingen, Germany – chair
 
 - **1st InternationalBioMove Symposium**  
   *September 2018*, Potsdam, Germany – organizer and chair
