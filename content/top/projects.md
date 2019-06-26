@@ -1,4 +1,4 @@
-### Poject Overview
+### Project Overview
 
 * [BioMove](#biomove)
 * [NLMR (Neutral Landscape Models in R)](#nlmr)
@@ -32,7 +32,7 @@ Neutral landscape models (NLMs) are algorithms which generate landscape patterns
 
 NLMs are often used for spatially explicit models to explore effects of changes in landscape structure on processes such as connectivity between suitable patches or disease spread. During the beginning of our PhD projects, Marco Sciaini and I were not happy about the possibilities to modify NLMs with the current software, especially in `R` that we use for the analyses of our simulations. This was the rise of the "Neutral Landscape Models in `R`" (NLMR) project (splitted into the two packages `NLMR` and `landscapetools`) under the main lead of Marco.
 
-[`NLMR`](https://ropensci.github.io/NLMR/index.html) is an `R` package with a comprehensive collection of algorithms with which to simulate neutral landscape models (NLMs). In combination with [`landscapetools`](https://github.com/ropensci/landscapetools), a utility toolbox to modify simulated NLMs and other raster data, this suite of packages provides a utility toolbox which facilitates an easy workflow with simulated NLMs and other raster data. Both packages are reviewed by the amazing [rOpenSci](https://ropensci.org/) community and published in "Methods in Ecology and Evolution": [NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R](https://doi.org/10.1111/2041-210X.13076).
+[`NLMR`](https://ropensci.github.io/NLMR/index.html) is an `R` package with a comprehensive collection of algorithms with which to simulate neutral landscape models (NLMs). In combination with [`landscapetools`](https://github.com/ropensci/landscapetools), a utility toolbox to modify simulated NLMs and other raster data, this suite of packages provides a utility toolbox which facilitates an easy workflow with simulated NLMs and other raster data. Both packages are reviewed by the amazing [rOpenSci](https://ropensci.org/) community and published in "Methods in Ecology and Evolution": [`NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in `R`](https://doi.org/10.1111/2041-210X.13076).
 
 
 #### Multidimensionality of Stability {#stability}
