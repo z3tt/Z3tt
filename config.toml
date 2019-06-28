@@ -88,8 +88,20 @@ home = ["HTML", "RSS", "Algolia"]
   href = "https://akcomputationalecology.wordpress.com/"
 
   [[params.bookmark_link]]
-  title =  "ggplot2 book by Claus Wilke"
+  title =  "Fundamentals of Data Visualization"
   href =  "https://serialmentor.com/dataviz/"
+  [[params.bookmark_link]]
+  title =  "R for Data Science"
+  href =  "https://r4ds.had.co.nz/"
+  [[params.bookmark_link]]
+  title =  "Geocomputation with R"
+  href =  "https://geocompr.robinlovelace.net/index.html"
+  [[params.bookmark_link]]
+  title =  "Data Visualization"
+  href =  "http://socviz.co/"
+  [[params.bookmark_link]]
+  title =  "Chroma.js Color Palette Helper"
+  href =  "https://gka.github.io/palettes/#/9|s|383838,a19858,cfff44|ffffe0,ff005e,93003a|1|1"
   
   [[params.addtional_menus]]
   title =  "About Me"
