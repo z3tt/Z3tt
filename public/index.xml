@@ -56,8 +56,7 @@ Header image &amp;copy; Negative Space</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/about/</guid>
-      <description>About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. Data visualizations are mostly done in R using the package ggplot2 from the amazing tidyverse which I use for all kinds of data preparation.
-My PhD and PostDoc project are part of the BioMove project working in the Department &amp;ldquo;Ecological Dynamics&amp;rdquo; at the Leibniz Institute for Zoo and Wildlife Research (IZW) in Berlin.</description>
+      <description>About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package ggplot2 from the amazing tidyverse which I also use for all kinds of data preparation.</description>
     </item>
     
     <item>
