@@ -6,7 +6,7 @@ date: "2019-05-05"
 image: img/banner/code_NegativeSpace.jpg
 layout: post
 description: "Hi, I am glad you found your way here! Come in, have a look. I finally managed to set up a personal homepage - and how easy it was!"
-tags: [Misc]
+tags: [misc]
 showtoc: false
 ---
 

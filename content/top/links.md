@@ -3,7 +3,7 @@
 * [Rstats](#rstats)
   + [{tidyverse}](#tidy)
   + [{ggplot2}](#gg)
-  + [Spatial Data](#spatial)
+  + [Spatial Data](#spat)
 * [DataViz](#dataviz)
   + [Colors](#cols)
   + [Chart Types](#charts)
