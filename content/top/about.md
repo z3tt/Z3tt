@@ -1,6 +1,6 @@
 ### About Me {#about}  
 
-I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly `R` and the package [`ggplot2`](https://ggplot2.tidyverse.org/) from the amazing [`tidyverse`](https://www.tidyverse.org/) which I also  use for all kinds of data preparation. In the spare time, I am a proud dad spending as much time as possible with my family.
+I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly [R](https://www.r-project.org/about.html) and the package [ggplot2](https://ggplot2.tidyverse.org/) from the amazing [tidyverse](https://www.tidyverse.org/) which I also  use for all kinds of data preparation. In the spare time, I am a proud dad spending as much time as possible with my family.
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
@@ -42,12 +42,12 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 ###### Scientific Researcher (since 2019)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
-- *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
+- *Project:* [Start-Up PostDoc](https://www.biomove.org/biomove-team/postdoc-synthesis/) in the Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
 ###### PhD Training (2015-2019)
 - **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
 - *Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”
-- *Project:* Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
+- *Project:* [PhD Project P02](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) in the Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
 ###### Speaker SIG "Young Modellers in Ecology" (2015-2019)
 - Speaker of the **Special Interest Group "YoMos" of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)**
