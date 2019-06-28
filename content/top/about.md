@@ -41,16 +41,16 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 #### Education & Professional Expericence {#career}
 
 - <font color=#808080>**Scientific Researcher (since 2019)**</font>  
-  + **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
+  + [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany
   + *Project:* [Start-Up PostDoc](https://www.biomove.org/biomove-team/postdoc-synthesis/) – Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
 - <font color=#808080>**PhD Training (2015–2019)**</font>  
-  + **[Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html)**, Berlin, Germany
+  + [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany
   + *Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”
   + *Project:* [PhD Project P02](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) – Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
 - <font color=#808080>**Speaker SIG "Young Modellers in Ecology" (2015–2019)**</font>  
-  + Speaker of the **Special Interest Group "YoMos" of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)**
+  + Speaker of the Special Interest Group ["YoMos"](https://www.yomos.org/about) of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)
   + Lead of the organizational teams and chair during international conferences and workshops
 
 - <font color=#808080>**Parental leave (2017–2018)**</font>  
@@ -58,27 +58,27 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
   + *Part-time:* April and August-November 2018
 
 - <font color=#808080>**Visiting Research Student (2017)**</font>  
-  + **[University of California, Berkeley](https://www.berkeley.edu/)**, CA, USA
+  + [University of California, Berkeley](https://www.berkeley.edu/), CA, USA
   + Short-term researcher at [Getz Lab](https://nature.berkeley.edu/getzlab/)
 
 - <font color=#808080>**Research Assistant (2015)**</font>  
-  + **[Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html)**, University of Potsdam, Germany
+  + [Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html), University of Potsdam, Germany
   + Scientific researcher in the project “RootHerbII” within the DFG Priority Program ["Infrastructure-Biodiversity-Exploratories”](http://www.biodiversity-exploratories.de/1/home/)
 
 - <font color=#808080>**Research Assistant (2014)**</font>  
-  + **[Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html)**, University of Potsdam, Germany
+  + [Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html), University of Potsdam, Germany
   + Assistant for a RTG proposal at [Deutsche Forschungsgemeinschaft (DFG)](http://www.dfg.de/en/)
 
 - <font color=#808080>**Master of Science “Ecology, Evolution and Nature Conservation” (2011–2014)**</font>  
-  + **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
+  + [University of Potsdam](http://www.uni-potsdam.de/en/), Potsdam, Germany
   + *Thesis:* “Responses of bird functional types to climatic and land use changes in African savannas – an individual-based modelling approach”
 
 - <font color=#808080>**Internship (2011)**</font>  
-  + **[Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx)**, Muencheberg, Germany
+  + [Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx), Muencheberg, Germany
   + *Project:* Movement ecology of red foxes, brown hares and raccoons in the [AgroScapeLabs](https://www.bbib.org/scapelabs.html)
 
 - <font color=#808080>**Bachelor of Science “Life Sciences” (2008–2011)**</font>  
-  + **[University of Potsdam](http://www.uni-potsdam.de/en/)**, Potsdam, Germany
+  + [University of Potsdam](http://www.uni-potsdam.de/en/), Potsdam, Germany
   + *Thesis:* “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”
 
 
