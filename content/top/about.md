@@ -23,7 +23,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 * [Personal Details](#person)
 * [Education & Professional Expericence](#career)
-* [Trainings & Workshops](#training)
+* [Trainings & Further Education](#training)
 * [Conference Organisation](#orga)
 * [Teaching](#teach)
 * <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a>
@@ -84,37 +84,37 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 - *Thesis:* “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”
 
 
-#### Trainings & Workshops {#training}
+#### Trainings & Further Education {#training}
 
-- **Workshop “Creative Visualization”**  
-  *January 2018* – organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
+- **Workshop “Creative Visualization”** (2018)  
+  organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
 
-- **Workshop “Patch Occupancy Modelling”**  
-  *February 2017* – held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
+- **Workshop “Patch Occupancy Modelling”** (2018)  
+  held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
 
-- **Workshop “Scientific Writing”**  
-  *February 2017* – held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
+- **Workshop “Scientific Writing”** (2017)  
+  held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
 
-- **Workshop “Modelling Approach: Wildlife Populations & Diseases”**  
-  *August 2016* – held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ) at the 12th Conference of the European Wildlife Disease Association (EWDA)
+- **Workshop “Modelling Approach: Wildlife Populations & Diseases”** (2016)  
+  held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ)
 
-- **Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System”**  
-  *June 2016* – organized by Ran Nathan and his team at the Minerva Center for Movement Ecology, Jerusalem, Israel
+- **Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System”** (2016)  
+  organized by Ran Nathan and team at the Minerva Center for Movement Ecology, Jerusalem, Israel
 
-- **Summer School “Spatio-Temporal Data Analyses & Big Data Processing“**  
-  *June 2015* – held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
+- **Summer School “Spatio-Temporal Data Analyses & Big Data Processing“** (2015)  
+  held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
 
-- **Workshop “Movement Ecology“**  
-  *December 2014* – organized by Niko Balkenhol and Johannes Signer, University of Goettingen
+- **Workshop “Movement Ecology“** (2014)  
+  organized by Niko Balkenhol and Johannes Signer, University of Goettingen
 
-- **Workshop “Movement Ecology & Biodiversity“**  
-  *July 2012* – organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
+- **Workshop “Movement Ecology & Biodiversity“** (2012)  
+  organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
 
 
 #### Conference Organisation {#orga}
 
 - **14th Workshop of the Young Modellers in Ecology (YoMos)**  
-  *May 2019* – Goettingen, Germany – chair
+  *May 2019* – Goettingen, Germany – organizer and chair
 
 - **1st InternationalBioMove Symposium**  
   *September 2018*, Potsdam, Germany – organizer and chair
@@ -160,7 +160,7 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
 #### Awards {#award}
 
-- [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA - *March 2017*
+- [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA – *March 2017*
 
 
 #### Skills {#skills}
@@ -179,4 +179,4 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 - *since 2014* – Reviewer for [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
 - *since 2015* – Member of the [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
 - *since 2017* – Reviewer for [BMC Ecology](https://bmcecol.biomedcentral.com/)
-- *since 2019* - Reviewer for [Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/journal/13652664)
+- *since 2019* – Reviewer for [Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/journal/13652664)
