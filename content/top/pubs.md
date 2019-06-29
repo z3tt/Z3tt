@@ -5,6 +5,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Peer-Reviewed Publications {#pubs}
 
+- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke & S. Kramer-Schadt</span> (accepted) Seasonal host life-history processes fuel disease dynamics at different spatial scales. *Journal of Animal Ecology*.  
+
 - <span style="font-variant:small-caps;">V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, **C. Scherer**, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
 [*Ecology Letters* 22:647–684.](https://doi.org/10.1111/ele.13226)
 
@@ -15,18 +17,19 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 [*Ecological Modelling* 326:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005)
 
 ##### Manuscripts Under Review
-- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke & S. Kramer-Schadt</span> (in revision) Seasonal host life-history processes fuel disease dynamics at different spatial scales. Submitted to *Journal of Animal Ecology*.  
-
 - <span style="font-variant:small-caps;">U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, **C. Scherer**, G, Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (in revision) Movement-mediated community assembly and coexistence. Submitted to *Biological Reviews*.
 
 
 ### Conference Contributions {#conf}
 
 ##### Oral presentations
-- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, C.Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: The case of classical swine fever in wild boar.
+- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, N. Blaum, V. Grimm & S. Kramer-Schadt (2019)</span> Infection on the move: Individual host movement drives disease persistence in structured landscapes.
+*14th Workshop “Young Modellers in Ecology” – 05/2019 – Goettingen, Germany.*  
+
+- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, C. Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: The case of classical swine fever in wild boar.
 *1st International BioMove Symposium – 09/2018 – Potsdam, Germany.*
 
-- <span style="font-variant:small-caps;">**C. Scherer**, N. Blaum, V. Grimm & S. Kramer-Schadt (2017)</span>: Infections on the move.
+- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, N. Blaum, V. Grimm & S. Kramer-Schadt  (2017)</span>: Infections on the move.
 *12th Workshop “Young Modellers in Ecology” – 05/2017 – Buchenbach, Germany.*  
 
 - <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: Combining movement ecology and epidemiological models.

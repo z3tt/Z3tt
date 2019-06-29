@@ -88,7 +88,7 @@ home = ["HTML", "RSS", "Algolia"]
   href = "https://akcomputationalecology.wordpress.com/"
 
   [[params.bookmark_link]]
-  title =  "Fundamentals of Data Visualization"
+  title =  "Fundamentals of DataViz"
   href =  "https://serialmentor.com/dataviz/"
   [[params.bookmark_link]]
   title =  "R for Data Science"
