@@ -618,7 +618,8 @@ map_regions &lt;- df_ratios %&gt;%
     theme_light() +
     theme(line = element_blank(),
           panel.background = element_rect(fill = &quot;transparent&quot;),
-          plot.background = element_rect(fill = &quot;transparent&quot;, color = &quot;transparent&quot;),
+          plot.background = element_rect(fill = &quot;transparent&quot;, 
+                                         color = &quot;transparent&quot;),
           panel.border = element_rect(color = &quot;transparent&quot;),
           strip.background = element_rect(color = &quot;gray20&quot;),
           axis.text = element_blank(),
@@ -654,19 +655,26 @@ df_ratios %&gt;%
     geom_point(aes(region, student_ratio_region), size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
-    annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 2.7, color = &quot;gray20&quot;,
+    annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, 
+             size = 2.7, color = &quot;gray20&quot;,
              label = glue::glue(&quot;Worldwide average:\n{round(world_avg, 1)} students per teacher&quot;)) +
-    annotate(&quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;, size = 2.7, color = &quot;gray20&quot;,
+    annotate(&quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;, 
+             size = 2.7, color = &quot;gray20&quot;,
              label = &quot;Continental average&quot;) +
-    annotate(&quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;, size = 2.7, color = &quot;gray20&quot;,
+    annotate(&quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;, 
+             size = 2.7, color = &quot;gray20&quot;,
              label = &quot;Countries per continent&quot;) +
-    annotate(&quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 2.7, color = &quot;gray20&quot;,
+    annotate(&quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, 
+             size = 2.7, color = &quot;gray20&quot;,
              label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;) +
-    geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    geom_curve(data = arrows, aes(x = x1, xend = x2, 
+                                  y = y1, yend = y2),
                arrow = arrow(length = unit(0.08, &quot;inch&quot;)), size = 0.5,
                color = &quot;gray20&quot;, curvature = -0.3) +
-    annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85) +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005), breaks = c(1, seq(20, 80, by = 20))) +
+    annotation_custom(ggplotGrob(map_regions), 
+                      xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85) +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005), 
+                       breaks = c(1, seq(20, 80, by = 20))) +
     scale_color_uchicago() +
     labs(x = NULL, y = &quot;Student to teacher ratio&quot;,
          caption = &#39;Data: UNESCO Institute for Statistics&#39;) +
