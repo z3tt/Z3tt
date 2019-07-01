@@ -351,7 +351,10 @@ $(function() {
                 
 
 
-<p><img src="/img/evol-ggplot/evol-ggplot-1.gif" /></p>
+<div class="figure">
+<img src="/img/evol-ggplot/evol-ggplot-1.gif" alt="gif" />
+<p class="caption">gif</p>
+</div>
 <ul>
 <li><a href="#aim">🏁 Aim of this Tutorial</a></li>
 <li><a href="#data">🗃️ Data Preparation</a></li>
@@ -586,7 +589,10 @@ And - oh my! - we almost forgot to mention and acknowledge the data source 😨 
 <p>And here it is, our final plot - evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉</p>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-before-after-1.png" width="1536" /></p>
 <p>Thanks for reading, I hope you’ve enjoyed it! Here you find <a href="https://www.cedricscherer.netlify.com/top/dataviz/">more visualizations I’ve contributed to the #TidyTuesday challenges</a> including my full contribution to week 19 of 2019 we have dissected here:</p>
-<p><img src="/img/tidytuesday/2019_19_StudentTeacher.png" /></p>
+<div class="figure">
+<img src="/img/tidytuesday/2019_19_StudentTeacher.png" alt="tidytuesday" />
+<p class="caption">tidytuesday</p>
+</div>
 </div>
 <div id="code" class="section level3">
 <h3>💻 Complete Code for Final Plot</h3>
@@ -673,9 +679,14 @@ df_ratios %&gt;%
 </div>
 <div id="ps" class="section level3">
 <h3>📝 Post Sciptum: Mean versus Median</h3>
-<p>One thing I want to highlight is that the final plot does not rperesent the same information as the original boxplot. While I have visualized the man values of each country and across the globe, the box show the 25%, 50% and 75% quartile of the data, The 50% quantile is known as the <em>median</em>, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my goal was a visualization that is easily understandable to a large audience that are used to mean (“average”) values, However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:</p>
+<p>One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the man values of each country and across the globe, the box of a boxplot represents the 1st, 2nd and 3rd quartile of the data:</p>
+<div class="figure">
+<img src="/img/evol-ggplot/boxplot.png" alt="boxplot" />
+<p class="caption">boxplot</p>
+</div>
+<p>The 2nd quartile is known as 50% percentile or the <em>median</em>, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean (“average”) values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:</p>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-mean-1.png" width="768" /></p>
-<p>As one can see, the differences between continents stay the same but the worldwide median is lower than the average (19.6 students per teacher versus 23.5), showing that the median student-teacher ratio of Asia and oceania are similar to the worldwide median. These plots now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some than the one visualzing average ratios.</p>
+<p>As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. These plots now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some compared to the one visualzing average ratios.</p>
 </div>
 
 
