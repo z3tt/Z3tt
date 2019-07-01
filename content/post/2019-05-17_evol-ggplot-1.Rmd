@@ -62,7 +62,7 @@ df_ratios <- df_students %>%
   ungroup()
 ```
 
-![gif](/img/evol-ggplot/evol-ggplot-1.gif)
+![](/img/evol-ggplot/evol-ggplot-1.gif)
 
 * [🏁 Aim of this Tutorial](#aim)
 * [🗃️ Data Preparation](#data) 
@@ -493,7 +493,7 @@ before + plot_spacer() + after + plot_layout(widths = c(1, 0.05, 1))
 
 Thanks for reading, I hope you've enjoyed it! Here you find [more visualizations I've contributed to the #TidyTuesday challenges](https://www.cedricscherer.netlify.com/top/dataviz/) including my full contribution to week 19 of 2019 we have dissected here:
 
-![tidytuesday](/img/tidytuesday/2019_19_StudentTeacher.png)
+![](/img/tidytuesday/2019_19_StudentTeacher.png)
 
 
 ### 💻 Complete Code for Final Plot {#code}
@@ -593,11 +593,9 @@ df_ratios %>%
 
 ### 📝 Post Sciptum: Mean versus Median {#ps}
 
-One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the man values of each country and across the globe, the box of a boxplot represents the 1st, 2nd and 3rd quartile of the data: 
+One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the man values of each country and across the globe, the box of a Box-and-Whisker plot represents the 1st, 2nd and 3rd quartile of the da25th, 50th, 75th percentileIer plot the (also known as first, second and third quartile) box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.](/img/evol-ggplot/boxplot.png)
 
-![boxplot](/img/evol-ggplot/boxplot.png)
-
-The 2nd quartile is known as 50% percentile or the *median*, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean ("average") values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
+The 2nd quartile is known as 50% percentile or the *median*, i.epoints fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean ("average") values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
 
 ```{r mean-vs-mean, echo=FALSE, message=FALSE, fig.width = 8, fig.height = 10}
 world_med <- df_ratios %>%
