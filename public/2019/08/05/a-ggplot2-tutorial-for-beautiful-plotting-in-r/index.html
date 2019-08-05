@@ -473,7 +473,7 @@ The raw data that you want to plot.</li>
 <li><strong>Geometries</strong> <code>geom_</code>:<br />
 The geometric shapes that will represent the data.</li>
 <li><strong>Aethetics</strong> <code>aes()</code>:<br />
-Aesthetics of the geometric and statistical objects, such as color, size, shape and position.</li>
+Aesthetics of the geometric and statistical objects, such as color, size, shape, transparency and position.</li>
 <li><strong>Scales</strong> <code>scale_</code>:<br />
 Maps between the data and the aesthetic dimensions, such as data range to plot width or factor values to colors.</li>
 <li><strong>Statistical transformations</strong> <code>stat_</code>:<br />
@@ -483,7 +483,7 @@ The transformation used for mapping data coordinates into the plane of the data 
 <li><strong>Facets</strong> <code>facet_</code>:<br />
 The arrangement of the data into a grid of plots.</li>
 <li><strong>Visual themes</strong> <code>theme()</code>:<br />
-The overall visual defaults of a plot, such as background, grids, axe, default typeface, sizes and colors.</li>
+The overall visual defaults of a plot, such as background, grids, axes, default typeface, sizes and colors.</li>
 </ol>
 </div>
 <div id="default" class="section level2">
@@ -504,7 +504,7 @@ The overall visual defaults of a plot, such as background, grids, axe, default t
 <p>Within this command, you already can insert aesthetics as changing the color of your points:</p>
 <pre class="r"><code>g + geom_point(color = &quot;firebrick&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggplot-default-col-1.png" width="100%" /></p>
-<p>By applying that to our plotting element, the following plots based on <code>g</code> is going to have red points.</p>
+<p>By applying that to our plotting element, the following plots based on <code>g</code> are going to have red points.</p>
 <p><a href="#toc">Jump back to Table of Content.</a></p>
 </div>
 </div>
@@ -559,7 +559,7 @@ The overall visual defaults of a plot, such as background, grids, axe, default t
   labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) +
   ylim(c(0, 50))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/axis-limit-1.png" width="100%" /></p>
-<p>Alternatively you can use <code>g + scale_x_continuous(limits = c(0, 50))</code> or <code>g + coord_cartesian(xlim = c(0, 50))</code>. The former removes all data points outside the range and second adjusts the visible area.</p>
+<p>Alternatively you can use <code>g + scale_x_continuous(limits = c(0, 50))</code> or <code>g + coord_cartesian(xlim = c(0, 50))</code>. The former removes all data points outside the range and the second adjusts the visible area.</p>
 </div>
 <div id="force-plot-to-start-at-origin" class="section level3">
 <h3>Force Plot to Start at Origin</h3>
@@ -613,6 +613,7 @@ chic %&gt;%
 <h2>Working with Titles</h2>
 <div id="add-a-title" class="section level3">
 <h3>Add a Title</h3>
+<p>We can add a title via the <code>ggtitle()</code> function:</p>
 <pre class="r"><code>ggplot(chic, aes(date, temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
   labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
@@ -629,13 +630,15 @@ chic %&gt;%
 </div>
 <div id="make-title-bold-add-a-space-at-the-baseline" class="section level3">
 <h3>Make Title Bold &amp; Add a Space at the Baseline</h3>
+<p>The face argument can be used to make the font bold or italic. The margin argument uses the margin function and you provide the top, right, bottom and left margins (the default unit is points).</p>
 <pre class="r"><code>ggplot(chic, aes(date, temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) +
+  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  ggtitle(&quot;Temperatures in Chicago&quot;) +
   theme(plot.title = element_text(size = 15, face = &quot;bold&quot;, 
                                   margin = margin(10, 0, 10, 0)))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-bold-1.png" width="100%" /></p>
-<p>The margin argument uses the margin function and you provide the top, right, bottom and left margins (the default unit is points).</p>
+<p>(A nice way to remember the order of the margin arguments is <em>TRouBLe</em> that resembles the first letter of the four sides.)</p>
 </div>
 <div id="adjust-position-of-titles" class="section level3">
 <h3>Adjust Position of Titles</h3>
@@ -1063,7 +1066,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x0000000006909648&gt;
+## &lt;bytecode: 0x00000000063d03d8&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {

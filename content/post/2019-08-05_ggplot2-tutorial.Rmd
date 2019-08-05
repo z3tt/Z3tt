@@ -123,7 +123,7 @@ The raw data that you want to plot.
 2.	**Geometries** `geom_`:  
 The geometric shapes that will represent the data.
 3.	**Aethetics** `aes()`:  
-Aesthetics of the geometric and statistical objects, such as color, size, shape and position.
+Aesthetics of the geometric and statistical objects, such as color, size, shape, transparency and position.
 4.	**Scales** `scale_`:  
 Maps between the data and the aesthetic dimensions, such as data range to plot width or factor values to colors.
 5.	**Statistical transformations** `stat_`:  
@@ -133,7 +133,7 @@ The transformation used for mapping data coordinates into the plane of the data 
 7.	**Facets** `facet_`:  
 The arrangement of the data into a grid of plots.
 8.	**Visual themes** `theme()`:  
-The overall visual defaults of a plot, such as background, grids, axe, default typeface, sizes and colors.
+The overall visual defaults of a plot, such as background, grids, axes, default typeface, sizes and colors.
 
 
 ## A Default ggplot {#default}
@@ -169,7 +169,7 @@ Within this command, you already can insert aesthetics as changing the color of 
 g + geom_point(color = "firebrick")
 ```
 
-By applying that to our plotting element, the following plots based on `g` is going to have red points.
+By applying that to our plotting element, the following plots based on `g` are going to have red points.
 
 [Jump back to Table of Content.](#toc)
 
@@ -237,7 +237,7 @@ ggplot(chic, aes(date, temp)) +
   ylim(c(0, 50))
 ```
 
-Alternatively you can use `g + scale_x_continuous(limits = c(0, 50))` or `g + coord_cartesian(xlim = c(0, 50))`. The former removes all data points outside the range and second adjusts the visible area.
+Alternatively you can use `g + scale_x_continuous(limits = c(0, 50))` or `g + coord_cartesian(xlim = c(0, 50))`. The former removes all data points outside the range and the second adjusts the visible area.
 
 ### Force Plot to Start at Origin
 
@@ -302,6 +302,8 @@ ggplot(chic, aes(date, temp)) +
 
 ### Add a Title
 
+We can add a title via the `ggtitle()` function:
+
 ```{r title}
 ggplot(chic, aes(date, temp)) +
   geom_point(color = "firebrick") + 
@@ -322,15 +324,18 @@ ggplot(chic, aes(date, temp)) +
 
 ### Make Title Bold & Add a Space at the Baseline
 
+The face argument can be used to make the font bold or italic. The margin argument uses the margin function and you provide the top, right, bottom and left margins (the default unit is points).
+
 ```{r title-bold}
 ggplot(chic, aes(date, temp)) +
   geom_point(color = "firebrick") + 
-  labs(x = "Date", y = "Temperature (°F)") +
+  labs(x = "Date", y = "Temperature (°F)") + 
+  ggtitle("Temperatures in Chicago") +
   theme(plot.title = element_text(size = 15, face = "bold", 
                                   margin = margin(10, 0, 10, 0)))
 ```
 
-The margin argument uses the margin function and you provide the top, right, bottom and left margins (the default unit is points).
+(A nice way to remember the order of the margin arguments is *TRouBLe* that resembles the first letter of the four sides.)
 
 ### Adjust Position of Titles
 
