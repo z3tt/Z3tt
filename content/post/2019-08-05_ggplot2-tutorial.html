@@ -36,7 +36,7 @@ editor_options:
 <li>how to add labels to your data (and how to do it in a beautiful way)</li>
 </ul></li>
 </ul>
-<p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage!</p>
+<p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic <code>patchwork</code> package. And pie charts because everyone looooves pie charts!)</p>
 </div>
 <div id="toc" class="section level2">
 <h2>Table of Content</h2>
@@ -82,17 +82,8 @@ editor_options:
 <li>shiny</li>
 </ul></li>
 </ul>
-<pre class="r"><code>install.packages(c(&quot;ggplot2&quot;, 
-                   &quot;ggthemes&quot;, 
-                   &quot;tidyverse&quot;, 
-                   &quot;extrafont&quot;, 
-                   &quot;patchwork&quot;, 
-                   &quot;grid&quot;, 
-                   &quot;gridExtra&quot;, 
-                   &quot;ggrepel&quot;, 
-                   &quot;reshape2&quot;, 
-                   &quot;ggridges&quot;, 
-                   &quot;shiny&quot;))</code></pre>
+<pre class="r"><code>install.packages(c(&quot;ggplot2&quot;, &quot;ggthemes&quot;, &quot;tidyverse&quot;, &quot;extrafont&quot;, &quot;patchwork&quot;, 
+                   &quot;grid&quot;, &quot;gridExtra&quot;, &quot;ggrepel&quot;, &quot;reshape2&quot;, &quot;ggridges&quot;, &quot;shiny&quot;))</code></pre>
 <p>(For teaching reasons and if people jump to any plot, I load the package needed beside ggplot2 in the respective chunk.)</p>
 </div>
 <div id="data" class="section level2">
@@ -310,8 +301,9 @@ chic %&gt;%
 <h3>Adjust Position of Titles</h3>
 <p>Allignement is controlled by <code>hjust</code> (which stands for horizontal adjustment):</p>
 <pre class="r"><code>ggplot(chic, aes(date, temp)) +
-  geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  geom_point(color = &quot;firebrick&quot;) +  
+  ggtitle(&quot;Temperatures in Chicago&quot;) +
+  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;)  + 
   theme(plot.title = element_text(size = 15, face = 4, hjust = 1))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-adjust-1.png" width="100%" /></p>
 <p>Of course, there it is also possible to adjust the vertical alignment, controlled by <code>vjust</code>.</p>
@@ -732,7 +724,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x00000000063d03d8&gt;
+## &lt;bytecode: 0x000000000c67d710&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {

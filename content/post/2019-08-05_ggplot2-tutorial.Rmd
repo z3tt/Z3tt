@@ -41,7 +41,7 @@ Major changes I've made:
     + how to change the order in a legend and legend key names
     + how to add labels to your data (and how to do it in a beautiful way)
 
-Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage!
+Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic `patchwork` package. And pie charts because everyone looooves pie charts!)
 
 
 ## Table of Content {#toc}
@@ -85,17 +85,8 @@ Since the blog entry by Zev Ross was not updated for some years, I hosted the up
     + shiny
 
 ```{r install-packages, eval = F}
-install.packages(c("ggplot2", 
-                   "ggthemes", 
-                   "tidyverse", 
-                   "extrafont", 
-                   "patchwork", 
-                   "grid", 
-                   "gridExtra", 
-                   "ggrepel", 
-                   "reshape2", 
-                   "ggridges", 
-                   "shiny"))
+install.packages(c("ggplot2", "ggthemes", "tidyverse", "extrafont", "patchwork", 
+                   "grid", "gridExtra", "ggrepel", "reshape2", "ggridges", "shiny"))
 ```
 
 (For teaching reasons and if people jump to any plot, I load the package needed beside ggplot2 in the respective chunk.)
@@ -343,8 +334,9 @@ Allignement is controlled by `hjust` (which stands for horizontal adjustment):
 
 ```{r title-adjust}
 ggplot(chic, aes(date, temp)) +
-  geom_point(color = "firebrick") + 
-  labs(x = "Date", y = "Temperature (°F)") + 
+  geom_point(color = "firebrick") +  
+  ggtitle("Temperatures in Chicago") +
+  labs(x = "Date", y = "Temperature (°F)")  + 
   theme(plot.title = element_text(size = 15, face = 4, hjust = 1))
 ```
 
