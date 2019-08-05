@@ -262,15 +262,17 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 ### 💯 More Geoms, More Fun, More Info! {#more}
 
-As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding another `geom_point()` which has to differ from the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
+As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding a summary statistic via `stat_summary()`with a different point size as the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
 
 ```{r plot-jitter-regions, echo=-1, fig.width = 8, fig.heigh = 4.5}
 set.seed(123)
 
 g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  geom_point(aes(region, student_ratio_region), size = 5)
+  stat_summary(fun.y = mean, geom = "point", size = 5)
 ```
+
+Note that we could also use `geom_point(aes(region, student_ratio_region), size = 5)` to achieve the same since we already have a regional meanaverage in our data.
 
 To relate all these points to a baseline, we add a line indicating the worldwide average:
 
@@ -283,7 +285,7 @@ world_avg <- df_ratios %>%
 
 g +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 ```
 
@@ -300,7 +302,7 @@ g +
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  geom_point(aes(region, student_ratio_region), size = 5)
+  stat_summary(fun.y = mean, geom = "point", size = 5)
 ```
 
 ⚡ **Check the order of the geoms to prevent any overlapping -  here, for example, draw the line after calling `geom_segment()` to avoid overlapping!**
@@ -317,7 +319,7 @@ set.seed(123)
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate("text", x = 6.3, y = 35, family = "Poppins", size = 2.7, color = "gray20",
            label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")) +
@@ -556,7 +558,7 @@ df_ratios %>%
                      y = world_avg, yend = student_ratio_region),
                  size = 0.8) +
     geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-    geom_point(aes(region, student_ratio_region), size = 5) +
+    stat_summary(fun.y = mean, geom = "point", size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
     annotate("text", x = 6.3, y = 35, family = "Poppins", 
@@ -624,7 +626,7 @@ median <- df_ratios %>%
                  size = 0.8) +
     geom_hline(aes(yintercept = world_med), color = "gray70", size = 0.6) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-    geom_point(aes(region, student_ratio_region), size = 5) +
+    stat_summary(fun.y = median, geom = "point", size = 5) +
     coord_flip() +
     annotate("text", x = 6.3, y = 35, family = "Poppins", size = 2.7, color = "gray20",
              label = glue::glue("Worldwide median:\n{round(world_med, 1)} students per teacher")) +
@@ -704,7 +706,7 @@ g12 <- g + geom_point(aes(region, student_ratio_region), size = 5) +
 
 set.seed(123)
 g13 <- g + geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
@@ -713,7 +715,7 @@ g14 <- g + geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6)
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
@@ -722,7 +724,7 @@ g15 <- g +
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate("text", x = 6.3, y = 35, family = "Poppins", size = 1.8, color = "gray20",
            label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")) +

@@ -135,11 +135,12 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 </div>
 <div id="more" class="section level3">
 <h3>💯 More Geoms, More Fun, More Info!</h3>
-<p>As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding another <code>geom_point()</code> which has to differ from the points of <code>geom_jitter()</code>. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:</p>
+<p>As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding a summary statistic via <code>stat_summary()</code>with a different point size as the points of <code>geom_jitter()</code>. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:</p>
 <pre class="r"><code>g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  geom_point(aes(region, student_ratio_region), size = 5)</code></pre>
+  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png" width="768" /></p>
+<p>Note that we could also use <code>geom_point(aes(region, student_ratio_region), size = 5)</code> to achieve the same since we already have a regional meanaverage in our data.</p>
 <p>To relate all these points to a baseline, we add a line indicating the worldwide average:</p>
 <pre class="r"><code>world_avg &lt;- df_ratios %&gt;%
   summarize(avg = mean(student_ratio, na.rm = T)) %&gt;%
@@ -147,7 +148,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 
 g +
   geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/worldwide-avg-1.png" width="768" /></p>
 <p>💡 <strong>One could derive the worldwide average also within the <code>geom_hline()</code> call, but I prefer to keep both steps separated.</strong></p>
@@ -158,7 +159,7 @@ g +
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  geom_point(aes(region, student_ratio_region), size = 5)</code></pre>
+  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-world-1.png" width="768" /></p>
 <p>⚡ <strong>Check the order of the geoms to prevent any overlapping - here, for example, draw the line after calling <code>geom_segment()</code> to avoid overlapping!</strong></p>
 </div>
@@ -170,7 +171,7 @@ g +
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
-  geom_point(aes(region, student_ratio_region), size = 5) +
+  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 2.7, color = &quot;gray20&quot;,
            label = glue::glue(&quot;Worldwide average:\n{round(world_avg, 1)} students per teacher&quot;)) +
@@ -308,7 +309,7 @@ df_ratios %&gt;%
                      y = world_avg, yend = student_ratio_region),
                  size = 0.8) +
     geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
-    geom_point(aes(region, student_ratio_region), size = 5) +
+    stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
     annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, 

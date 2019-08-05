@@ -6,10 +6,20 @@
     <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A ggplot2 tutorial for beautiful plotting in R</title>
+      <link>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</link>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
+      <description>Last updated: 2019-08-05
+Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using ggplot2 to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
+    </item>
     
     <item>
       <title>The Evolution of a ggplot (Ep. 1)</title>
@@ -56,7 +66,7 @@ Header image &amp;copy; Negative Space</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/about/</guid>
-      <description>About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package ggplot2 from the amazing tidyverse which I also use for all kinds of data preparation.</description>
+      <description>About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package ggplot2 from the tidyverse which I also use for all kinds of data preparation.</description>
     </item>
     
     <item>
@@ -100,8 +110,8 @@ If you have some data and would like to get it visualized, don&amp;rsquo;t hesit
       <description>Peer-Reviewed Publications | Conference Contributions | R packages
 You can also find me on Google Scholar and ResearchGate.
 My ORCID ID is 0000-0003-0465-2543.
-Peer-Reviewed Publications  C. Scherer, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke &amp;amp; S. Kramer-Schadt (accepted) Seasonal host life-history processes fuel disease dynamics at different spatial scales. Journal of Animal Ecology.
- V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F.</description>
+Peer-Reviewed Publications  C. Scherer, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke &amp;amp; S. Kramer-Schadt (accepted) Seasonal host life-history processes fuel disease dynamics at different spatial scales. Journal of Animal Ecology. DOI: 10.1111&amp;frasl;1365-2656.13070
+ V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M.</description>
     </item>
     
   </channel>
