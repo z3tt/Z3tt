@@ -400,7 +400,7 @@ $(function() {
 <h2>Preparation</h2>
 <ul>
 <li>You can download the data we are using in this post <a href="https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv">here</a>.</li>
-<li>You can find an R script with the code executed in this script <a href="https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/ggplot2-tutorial_code.R">here</a>.</li>
+<li>You can find the Rmarkdwon script with the code executed in this blogpost <a href="https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd">here</a>.</li>
 <li>You need to install the following packages to execute this tutorial by using <code>install.packages("package-name")</code>:
 <ul>
 <li>ggplot2</li>
@@ -1063,7 +1063,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x000000000c678f50&gt;
+## &lt;bytecode: 0x0000000006909648&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {

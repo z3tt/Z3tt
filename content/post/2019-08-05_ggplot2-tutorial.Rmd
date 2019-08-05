@@ -70,7 +70,7 @@ Since the blog entry by Zev Ross was not updated for some years, I hosted the up
 ## Preparation {#prep}
 
 * You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv). 
-* You can find an R script with the code executed in this script [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/ggplot2-tutorial_code.R).
+* You can find the Rmarkdwon script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
 * You need to install the following packages to execute this tutorial by using `install.packages("package-name")`:
     + ggplot2
     + ggthemes
