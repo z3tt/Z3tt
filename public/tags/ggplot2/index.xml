@@ -6,10 +6,20 @@
     <description>Recent content in ggplot2 on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A ggplot2 tutorial for beautiful plotting in R</title>
+      <link>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</link>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
+      <description>Last updated: 2019-08-05
+Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using ggplot2 to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
+    </item>
     
     <item>
       <title>The Evolution of a ggplot (Ep. 1)</title>
