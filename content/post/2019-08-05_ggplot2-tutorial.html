@@ -129,7 +129,7 @@ tibble::glimpse(chic)</code></pre>
 The raw data that you want to plot.</li>
 <li><strong>Geometries</strong> <code>geom_</code>:<br />
 The geometric shapes that will represent the data.</li>
-<li><strong>Aethetics</strong> <code>aes()</code>:<br />
+<li><strong>Aesthetics</strong> <code>aes()</code>:<br />
 Aesthetics of the geometric and statistical objects, such as color, size, shape, transparency and position.</li>
 <li><strong>Scales</strong> <code>scale_</code>:<br />
 Maps between the data and the aesthetic dimensions, such as data range to plot width or factor values to colors.</li>
@@ -724,7 +724,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x000000000c67d710&gt;
+## &lt;bytecode: 0x000000000c67d9e8&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {

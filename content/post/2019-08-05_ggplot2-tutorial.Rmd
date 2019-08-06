@@ -113,7 +113,7 @@ Consequently, a ggplot is built up from a few basic elements:
 The raw data that you want to plot.
 2.	**Geometries** `geom_`:  
 The geometric shapes that will represent the data.
-3.	**Aethetics** `aes()`:  
+3.	**Aesthetics** `aes()`:  
 Aesthetics of the geometric and statistical objects, such as color, size, shape, transparency and position.
 4.	**Scales** `scale_`:  
 Maps between the data and the aesthetic dimensions, such as data range to plot width or factor values to colors.
