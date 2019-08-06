@@ -71,12 +71,13 @@ Since the blog entry by Zev Ross was not updated for some years, I hosted the up
 
 * You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv). 
 * You can find the Rmarkdwon script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
-* You need to install the following packages to execute this tutorial by using `install.packages("package-name")`:
+* You need to install the following packages to execute this tutorial:
     + ggplot2
     + ggthemes
     + tidyverse
     + extrafont
     + patchwork
+    + cowplot
     + grid
     + gridExtra
     + ggrepel
@@ -85,8 +86,10 @@ Since the blog entry by Zev Ross was not updated for some years, I hosted the up
     + shiny
 
 ```{r install-packages, eval = F}
-install.packages(c("ggplot2", "ggthemes", "tidyverse", "extrafont", "patchwork", 
+install.packages(c("ggplot2", "ggthemes", "tidyverse", "extrafont", "cowplot", 
                    "grid", "gridExtra", "ggrepel", "reshape2", "ggridges", "shiny"))
+
+devtools::install_github("thomasp85/patchwork")
 ```
 
 (For teaching reasons and if people jump to any plot, I load the package needed beside ggplot2 in the respective chunk.)
@@ -326,7 +329,7 @@ ggplot(chic, aes(date, temp)) +
                                   margin = margin(10, 0, 10, 0)))
 ```
 
-(A nice way to remember the order of the margin arguments is *TRouBLe* that resembles the first letter of the four sides.)
+(A nice way to remember the order of the margin arguments is "**tr**ou**bl**e that resembles the first letter of the four sides.)
 
 ### Adjust Position of Titles
 
@@ -336,7 +339,7 @@ Allignement is controlled by `hjust` (which stands for horizontal adjustment):
 ggplot(chic, aes(date, temp)) +
   geom_point(color = "firebrick") +  
   ggtitle("Temperatures in Chicago") +
-  labs(x = "Date", y = "Temperature (°F)")  + 
+  labs(x = "Date", y = "Temperature (°F)") + 
   theme(plot.title = element_text(size = 15, face = 4, hjust = 1))
 ```
 
@@ -437,6 +440,8 @@ Possible positions are "top", "right", "bottom", and "left".
 
 ### Change Style of Legend Titles
 
+You can change the appearance of the legend title by adjusting the theme element `legend.title`:
+
 ```{r legend-style}
 ggplot(chic, aes(date, temp, color = factor(season))) +
   geom_point() +
@@ -447,9 +452,19 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 
 ### Change Legend Title
 
+The most easiest way to change the title of the legend using the labs argument as well:
+
+```{r legend-title-labs}
+ggplot(chic, aes(date, temp, color = factor(season))) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)", color = "Seasons\nindicated\nby colors:") + 
+  theme(legend.title = element_text(color = "chocolate", 
+                                    size = 14, face = "bold"))
+```
+
 The legend details can be changed via `scale_color_discrete` or `scale_color_continuous` depending on the type of variable displaying.
 
-```{r legend-title}
+```{r legend-title, eval = F}
 ggplot(chic, aes(date, temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
@@ -458,11 +473,11 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
   scale_color_discrete(name = "Seasons\nindicated\nby colors:")
 ```
 
-Note that you can use the short command which is `scale_color_discrete("Seasons\nindicated\nby colors:")`. In most cases the string is interpreted as name (but sometimes you need to include it e.g. when using custom themes). 
 
 ### Change Order of Legend Keys
 
 We can archieve this by changing the levels of **season**:
+
 ```{r legend-order}
 chic$season <- factor(chic$season, levels = c("Spring", "Summer", 
                                               "Autumn", "Winter"))
@@ -487,6 +502,8 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ```
 
 ### Change Background Boxes in the Legend
+
+To change the background color (fill) of the legend keys, we adjust the setting for the theme element `legend.key`:
 
 ```{r legend-boxes}
 ggplot(chic, aes(date, temp, color = factor(season))) +
@@ -530,6 +547,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ```
 
 You can use `show.legend = F` to turn off a layer in the legend:
+
 ```{r legend-layer-2}
 ggplot(chic, aes(date, temp, color = factor(season))) +
   geom_point() +
@@ -617,6 +635,8 @@ ggplot(chic, aes(date, temp)) +
 
 ### Change the Plot Background Color
 
+To change the background color (fill) of the plot area, one needs to adjust the theme element `plot.background`:
+
 ```{r background-color}
 ggplot(chic, aes(date, temp)) +
   geom_point(color = "firebrick") +
@@ -638,8 +658,10 @@ ggplot(chic, aes(date, temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(plot.background = element_rect(fill = "gray60"),
-        plot.margin = unit(c(1, 5, 1, 5), "cm"))  ### top, right, bottom, left => TRouBLe
+        plot.margin = unit(c(1, 5, 1, 5), "cm"))
 ```
+
+The order of the margin sides is top, right, bottom, left - a nice way to remember this order is "**tr**ou**bl**e that sorts the first letter of the four sides.
 
 [Jump back to Table of Content.](#toc)
 
@@ -649,6 +671,8 @@ ggplot(chic, aes(date, temp)) +
 The `ggplot2` package has two nice functions for creating multi-panel plots. They are related but a little different `facet_wrap` creates essentially a ribbon of plots based on a single variable while `facet_grid` can take two variables.
 
 ### Create a Single Row of Plots Based on One Variable 
+
+`facet_wrap` creates a facet of a single variable, written with a tilde in front: `facet_wrap(~ variable)`. The appearance of these subplots is controlled by the arguments `ncol` and `nrow`:
 
 ```{r wrap-plots-1-row}
 g <- ggplot(chic, aes(date, temp)) +
@@ -676,6 +700,8 @@ g + facet_wrap(~ year, nrow = 2, scales = "free")
 Note that both, x and y axes differ in their range!
 
 ### Create a Grid of Plots Based on Two Variables
+
+In case of two variables, `facet_grid` does the job. Here, the order of the variables detemrines the number of rows and columns:
 
 ```{r grid-plots}
 ggplot(chic, aes(date, temp)) +
@@ -940,6 +966,8 @@ In order to use color with your data, most importantly you need to know if you a
 
 ### Categorical Variables: Use Built-In Palettes
 
+One can use the [ColorBrewer palettes](http://colorbrewer2.org/) by calling `scale_*_brewer` that are built-in functions in the `ggplot2` package:
+
 ```{r color-brewer}
 g + scale_color_brewer(palette = "Set1")
 ```
@@ -987,6 +1015,8 @@ ggplot(chic, aes(date, temp, color = o3)) +
 ```
 
 ### Continuous Variables: Manually Set a Sequential Color Scheme
+
+Gradually changing color palettes that are used for continuous variables can be manually set via `scale_*_gradient`:
 
 ```{r scale-color-gradient}
 ggplot(chic, aes(date, temp, color = o3)) + 
@@ -1243,7 +1273,6 @@ chic %>%
     theme(axis.ticks = element_blank())
 ```
 
-
 [Jump back to Table of Content.](#toc)
 
 
@@ -1265,11 +1294,13 @@ Interesting? No.
 
 #### 1. Alternative: Plot of Points
 
+Let's plot just each data point of the raw data:
+
 ```{r point}
 g + geom_point(color = "firebrick")
 ```
 
-Not only boring but uninformative. One could add transparency to deal with overplotting:
+Not only boring but uninformative. To improve the plot, one could add transparency to deal with overplotting:
 
 ```{r point-alpha}
 g + geom_point(color = "firebrick", alpha = 0.1)
@@ -1324,20 +1355,22 @@ g + geom_violin(aes(color = season), fill = "gray80", alpha = 0.5) +
 
 ### Create a Rug Representation to a Plot
 
+A rug represents the data of a single quantitative variable, displayed as marks along an axis. In most cases, it is used in addition to scatterplots or heatmaps to visualize the overall distribution of one or both of the variables:
+
 ```{r rug}
 ggplot(chic, aes(date, temp, color = factor(season))) +
-   geom_point() +
-   geom_rug() +
-   labs(x = "Year", y = "Temperature (°F)") +
-   theme(legend.position = "none")
+  geom_point() +
+  geom_rug() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.position = "none")
 ```
 
 ```{r rug-2}
 ggplot(chic, aes(date, temp, color = factor(season))) +
-   geom_point() +
-   geom_rug(sides = "r", alpha = 0.3) +
-   labs(x = "Year", y = "Temperature (°F)") +
-   theme(legend.position = "none")
+  geom_point() +
+  geom_rug(sides = "r", alpha = 0.3) +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.position = "none")
 ```
 
 ### Create a Tiled Correlation Plot
