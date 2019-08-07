@@ -142,7 +142,7 @@ I was particularly interested to visualize the most-recent student-teacher ratio
 ```{r boxplot-basic, warning=FALSE, fig.width = 8, fig.heigh = 4.5}
 library(tidyverse)
 
-ggplot(df_ratios, aes(region, student_ratio)) +
+ggplot(df_ratios, aes(x = region, y = student_ratio)) +
   geom_boxplot()
 ```
 
@@ -155,7 +155,7 @@ A good routine with such kind of data (qualitative and unsorted) to arrange the 
 df_sorted <- df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region))
 
-ggplot(df_sorted, aes(region, student_ratio)) +
+ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()
 ```
 
@@ -164,7 +164,7 @@ ggplot(df_sorted, aes(region, student_ratio)) +
 To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot2` call - but this does not work for boxplots so we use `coord_flip()`). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
 
 ```{r boxplot-flipped, fig.width = 8, fig.heigh = 4.5}
-ggplot(df_sorted, aes(region, student_ratio)) +
+ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90))
@@ -198,7 +198,7 @@ extrafont::loadfonts(device = "win")
 
 theme_set(theme_light(base_size = 15, base_family = "Poppins"))
 
-g <- ggplot(df_sorted, aes(region, student_ratio, color = region)) +
+g <- ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
   scale_color_uchicago() +
@@ -272,7 +272,7 @@ g +
   stat_summary(fun.y = mean, geom = "point", size = 5)
 ```
 
-Note that we could also use `geom_point(aes(region, student_ratio_region), size = 5)` to achieve the same since we already have a regional meanaverage in our data.
+Note that we could also use `geom_point(aes(x = region, y = student_ratio_region), size = 5)` to achieve the same since we already have a regional meanaverage in our data.
 
 To relate all these points to a baseline, we add a line indicating the worldwide average:
 
@@ -415,7 +415,7 @@ g_final +
 And here it is, our final plot - evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉
 
 ```{r plot-before-after, echo=FALSE, message=FALSE, fig.width = 16, fig.height = 5}
-before <- ggplot(df_ratios, aes(region, student_ratio)) +
+before <- ggplot(df_ratios, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   labs(title = "Before") +
   theme_gray() +
@@ -457,13 +457,13 @@ set.seed(123)
 
 after <- df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
-  ggplot(aes(region, student_ratio, color = region)) +
+  ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
                      y = world_avg, yend = student_ratio_region),
                  size = 0.8) +
     geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-    geom_point(aes(region, student_ratio_region), size = 5) +
+    geom_point(aes(x = region, y = student_ratio_region), size = 5) +
     coord_flip() +
     annotate("text", x = 6.3, y = 35, family = "Poppins", size = 2.7, color = "gray20",
              label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")) +
@@ -553,7 +553,7 @@ set.seed(123)
 ## final plot
 df_ratios %>% 
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
-  ggplot(aes(region, student_ratio, color = region)) +
+  ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
                      y = world_avg, yend = student_ratio_region),
                  size = 0.8) +
@@ -620,7 +620,7 @@ median <- df_ratios %>%
   mutate(student_ratio_region = median(student_ratio, na.rm = T)) %>% 
   ungroup() %>% 
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
-  ggplot(aes(region, student_ratio, color = region)) +
+  ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
                      y = world_med, yend = student_ratio_region),
                  size = 0.8) +
@@ -663,20 +663,20 @@ As one can see, the differences between continents stay roughly the same but the
 library(animation)
 
 ## evo-plots
-g1 <- ggplot(df_ratios, aes(region, student_ratio)) +
+g1 <- ggplot(df_ratios, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   theme_gray()
 
-g2 <- ggplot(df_sorted, aes(region, student_ratio)) +
+g2 <- ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   theme_gray()
 
-g3 <- ggplot(df_sorted, aes(region, student_ratio)) +
+g3 <- ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
   theme_gray()
 
-g4 <- ggplot(df_sorted, aes(region, student_ratio)) +
+g4 <- ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90)) +
@@ -701,7 +701,7 @@ set.seed(123)
 g11 <- g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)
-g12 <- g + geom_point(aes(region, student_ratio_region), size = 5) +
+g12 <- g + geom_point(aes(x = region, y = student_ratio_region), size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(123)

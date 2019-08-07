@@ -1,11 +1,11 @@
 ---
-title: "A ggplot2 tutorial for beautiful plotting in R"
+title: "A ggplot2 Tutorial for Beautiful Plotting in R"
 author: "Cédric"
 date: 2019-08-05
 image: img/banner/sun_RichardStrozynski.jpg
 layout: post
 showtoc: false
-description: "This is a rework of the blog entry called 'Beautiful plotting in R: A ggplot2 cheatsheet' by Zev Ross, posted on 4. August 2014, updated last in January 2016. Most changes were made to have an updated version, to follow the R style guide, to change style and aesthetics of plots to be (more) beautiful and meaningful as well as to include additional tipps."
+description: "This is a rework of the blog entry called 'Beautiful plotting in R: A ggplot2 cheatsheet' by Zev Ross, posted in 2014 and updated last in 2016. Most changes were made to have an updated version, to follow code style guides, to change style and aesthetics of plots to be (more) beautiful and meaningful and to include additional tipps."
 tags: ["R", "ggplot2", "tidyverse", "DataViz", "tutorial"]
 editor_options:
   chunk_output_type: console
@@ -142,7 +142,7 @@ library(ggplot2)
 `ggplot2` syntax is different from base R. As shown before, we always start to define a plotting element by calling `ggplot(data, aes(variable1, variable2))` which just tells `ggplot2` that we are going to work with that data. Thus, only a panel is created when running this because `ggplot2` does not know *how* we want to plot that data.
 
 ```{r ggplot}
-(g <- ggplot(chic, aes(date, temp)))
+(g <- ggplot(chic, aes(x = date, y = temp)))
 ```
 
 **Tipp:** By using parentheses while creating an object the object will be printed immediately (instead of writing `g <- ggplot(...)` and then `g`).
@@ -175,7 +175,7 @@ By applying that to our plotting element, the following plots based on `g` are g
 Let's add some well-written labels to the axes:
 
 ```{r axis-labs}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = expression(paste("Temperature (", degree ~ F, ")")))
 ```
@@ -185,7 +185,7 @@ ggplot(chic, aes(date, temp)) +
 `theme()` is an essential command to modify all kinds of theme elements (texts and titles, boxes, symbols, backgrounds, ...). We will use a lot of them -- to see what is possible have a look [here](http://docs.ggplot2.org/current/theme.html).
 
 ```{r labs-color}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") + 
   theme(axis.title.x = element_text(color = "sienna", 
@@ -199,7 +199,7 @@ ggplot(chic, aes(date, temp)) +
 Using `angle` and `vjust` you can adjust the position of the text (0 = left-alligned, 0.5 = centered, 1 = right-alligned):
 
 ```{r axis-text}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") +
   theme(axis.text.x = element_text(angle = 50, size = 16, 
@@ -211,7 +211,7 @@ ggplot(chic, aes(date, temp)) +
 There may be rarely a reason to do so - but this is how it works:
 
 ```{r axis-no-labs}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") +
   theme(axis.ticks.y = element_blank(), 
@@ -225,7 +225,7 @@ If you want to get rid of a theme element, the element of the argument is always
 Sometimes you want to zoom into your data. You can do this without subsettting your data:
 
 ```{r axis-limit}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") +
   ylim(c(0, 50))
@@ -242,7 +242,7 @@ library(tidyverse)
 
 chic %>% 
   dplyr::filter(temp > 25, o3 > 20) %>% 
-  ggplot(aes(temp, o3)) + 
+  ggplot(aes(x = temp, y = o3)) + 
     geom_point() + 
     labs(x = expression(paste("Temperature higher than 25 ", degree ~ F, "")), 
          y = "Ozone higher than 20 ppb") + 
@@ -256,7 +256,7 @@ But also force it to **literally** start at the origin!
 ```{r origin-force}
 chic %>% 
   dplyr::filter(temp > 25, o3 > 20) %>% 
-  ggplot(aes(temp, o3)) + 
+  ggplot(aes(x = temp, y = o3)) + 
     geom_point() + 
     labs(x = expression(paste("Temperature higher than 25 ", degree ~ F, "")), 
          y = "Ozone higher than 20 ppb") + 
@@ -271,7 +271,7 @@ chic %>%
 For demonstrating purposes, let's plot Temperature against Temperature with some random noise:
 
 ```{r axes-equal}
-ggplot(chic, aes(temp, temp + rnorm(nrow(chic), sd = 20))) +
+ggplot(chic, aes(x = temp, y = temp + rnorm(nrow(chic), sd = 20))) +
    geom_point() +
    labs(x = "Temperature (°F)") +
    xlim(c(0, 100)) + ylim(c(0, 150)) +
@@ -283,7 +283,7 @@ ggplot(chic, aes(temp, temp + rnorm(nrow(chic), sd = 20))) +
 Sometimes it is handy to alter your labels a little, perhaps adding units or percent signs without adding them to your data. You can use a function in this case. Here is an example:
 
 ```{r labs-alt}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
    geom_point(color = "firebrick") +
    labs(x = "Year", y = "Temperature (°F)") +
    scale_y_continuous(label = function(x) {return(paste(x, "Degrees Fahrenheit"))})  
@@ -299,7 +299,7 @@ ggplot(chic, aes(date, temp)) +
 We can add a title via the `ggtitle()` function:
 
 ```{r title}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") + 
   ggtitle("Temperatures in Chicago")
@@ -308,7 +308,7 @@ ggplot(chic, aes(date, temp)) +
 Alternatively, you can use `g + labs("Temperatures in Chicago")`. Here you can add several arguments, e.g. additionally a `subtitle` and a `caption`:
 
 ```{r title-labs}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)",
        title = "Temperatures in Chicago", 
@@ -321,7 +321,7 @@ ggplot(chic, aes(date, temp)) +
 The face argument can be used to make the font bold or italic. The margin argument uses the margin function and you provide the top, right, bottom and left margins (the default unit is points).
 
 ```{r title-bold}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") + 
   ggtitle("Temperatures in Chicago") +
@@ -336,7 +336,7 @@ ggplot(chic, aes(date, temp)) +
 Allignement is controlled by `hjust` (which stands for horizontal adjustment):
 
 ```{r title-adjust}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +  
   ggtitle("Temperatures in Chicago") +
   labs(x = "Date", y = "Temperature (°F)") + 
@@ -360,7 +360,7 @@ You can have a look on your imported font libary, by typing `fonts()` or `fontta
 Now, we can use one of those font families:
 
 ```{r title-style}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") + 
   theme(plot.title = element_text(size = 18, family = "Merriweather"))
@@ -378,7 +378,7 @@ theme_set(theme_gray(base_size = 12, base_family = "Roboto Condensed"))
 You can use the lineheight argument to change the spacing between lines. In this example, I have squished the lines together a bit (lineheight < 1).
 
 ```{r multiline-title}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") + 
   labs(x = "Date", y = "Temperature (°F)") + 
   ggtitle("Temperatures in Chicago\nfrom 1997 to 2001") + 
@@ -394,7 +394,7 @@ ggplot(chic, aes(date, temp)) +
 We will color code the plot based on season. You can see that by default the legend title is what we specified in the color argument:
 
 ```{r plot-seasons}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)")
 ```
@@ -406,7 +406,7 @@ Always one of the first question is: "How can I get rid of the legend?".
 It is quite easy and always works with `legend.position = "none"`:
 
 ```{r legend-none}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.position = "none")
@@ -419,7 +419,7 @@ You can also use `guides(fill = F)` or use ` scale_fill_discrete(guide = F)` dep
 As we already learned, use `element_blank()` to draw *nothing*:
 
 ```{r legend-off}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.title = element_blank())
@@ -430,7 +430,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 If you want to place the legend not on the right, one uses `legend.position` as argument in `theme`:
 
 ```{r legend-bottom}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.position = "bottom")
@@ -443,7 +443,7 @@ Possible positions are "top", "right", "bottom", and "left".
 You can change the appearance of the legend title by adjusting the theme element `legend.title`:
 
 ```{r legend-style}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.title = element_text(color = "chocolate", 
@@ -455,7 +455,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 The most easiest way to change the title of the legend using the labs argument as well:
 
 ```{r legend-title-labs}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)", color = "Seasons\nindicated\nby colors:") + 
   theme(legend.title = element_text(color = "chocolate", 
@@ -465,7 +465,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 The legend details can be changed via `scale_color_discrete` or `scale_color_continuous` depending on the type of variable displaying.
 
 ```{r legend-title, eval = F}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.title = element_text(color = "chocolate", 
@@ -482,7 +482,7 @@ We can archieve this by changing the levels of **season**:
 chic$season <- factor(chic$season, levels = c("Spring", "Summer", 
                                               "Autumn", "Winter"))
 
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)")
 ```
@@ -492,7 +492,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 We are going to replace the seasons by the months which they are covering:
 
 ```{r legend-labels}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.title = element_text(color = "chocolate", 
@@ -506,7 +506,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 To change the background color (fill) of the legend keys, we adjust the setting for the theme element `legend.key`:
 
 ```{r legend-boxes}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.key = element_rect(fill = "darkgoldenrod1"),
@@ -522,7 +522,7 @@ If you want to get rid of them entirely use `fill = NA`.
 Points in the legend get a little lost, especially without the boxes. To override the default try:
 
 ```{r legend-symbols}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(legend.key = element_rect(fill = NA),
@@ -537,7 +537,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 Let's say you have a point layer and you add a rug plot of the same data. By default, both the points and the "line" end up in the legend like this:
 
 ```{r legend-layer-1}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   geom_rug() +
@@ -549,7 +549,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 You can use `show.legend = F` to turn off a layer in the legend:
 
 ```{r legend-layer-2}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   geom_rug(show.legend = F) +
@@ -605,7 +605,7 @@ There are ways to change the entire look of your plot with one function (see bel
 ### Change the Panel Color 
 
 ```{r panel-color}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") +
   theme(panel.background = element_rect(fill = "white"))
@@ -616,7 +616,7 @@ ggplot(chic, aes(date, temp)) +
 There are two types of grid lines: major grid lines indicating the ticks and minor grid lines between the major ones.
 
 ```{r grid-lines}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(panel.grid.major = element_line(color = "gray10", size = 0.5),
@@ -626,7 +626,7 @@ ggplot(chic, aes(date, temp)) +
 Furthermore, you can also define the breaks between both, major and minor grid lines:
 
 ```{r grid-breaks}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") + 
   scale_y_continuous(breaks = seq(0, 100, 10),
@@ -638,7 +638,7 @@ ggplot(chic, aes(date, temp)) +
 To change the background color (fill) of the plot area, one needs to adjust the theme element `plot.background`:
 
 ```{r background-color}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(plot.background = element_rect(fill = "gray60"))
@@ -654,7 +654,7 @@ Sometimes it is useful to add a little space to the plot margin. Similar to the 
 Now let us add extra space to both the left and right. The argument, `plot.margin`, can handle a variety of different units (cm, inches, etc.) but it requires the use of the function unit from the package `grid` to specify the units. Here I am using a 5 cm margin on the right and left.
 
 ```{r margin}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") + 
   theme(plot.background = element_rect(fill = "gray60"),
@@ -675,7 +675,7 @@ The `ggplot2` package has two nice functions for creating multi-panel plots. The
 `facet_wrap` creates a facet of a single variable, written with a tilde in front: `facet_wrap(~ variable)`. The appearance of these subplots is controlled by the arguments `ncol` and `nrow`:
 
 ```{r wrap-plots-1-row}
-g <- ggplot(chic, aes(date, temp)) +
+g <- ggplot(chic, aes(x = date, y = temp)) +
        geom_point(color = "chartreuse4") +
        labs(x = "Year", y = "Temperature (°F)")
 
@@ -704,7 +704,7 @@ Note that both, x and y axes differ in their range!
 In case of two variables, `facet_grid` does the job. Here, the order of the variables detemrines the number of rows and columns:
 
 ```{r grid-plots}
-ggplot(chic, aes(date, temp)) +
+ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "orangered") +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   labs(x = "Year", y = "Temperature (°F)") +
@@ -718,7 +718,8 @@ To change from row to column arrangement you can change `facet_grid(year ~ seaso
 There are several ways how plots can be combined. The most easiest approach in my opinion is the [`patchwork` package](https://github.com/thomasp85/patchwork) by Thomas Lin Pedersen:
 
 ```{r combine-plots-patchwork}
-p1 <- ggplot(chic, aes(date, temp, color = factor(season))) + 
+p1 <- ggplot(chic, aes(x = date, y = temp, 
+                       color = factor(season))) + 
         geom_point() + 
         geom_rug() +
         labs(x = "Year", y = "Temperature (°F)")
@@ -774,7 +775,7 @@ Here is an example copying the [plotting style](https://www.google.de/search?q=e
 ```{r Economist}
 library(ggthemes)
 
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") + 
   ggtitle("Ups and Downs of Chicagos Daily Temperatures") +
@@ -789,7 +790,7 @@ Another example is the plotting style of Tufte, a minimal ink theme based on [Ed
 set.seed(2019)
 chic.red <- chic[sample(nrow(chic), 50), ]
 
-ggplot(chic.red, aes(temp, o3)) +
+ggplot(chic.red, aes(x = temp, y = o3)) +
   geom_point() +
   labs(x = "Temperature (°F)", y = "Ozone") + 
   ggtitle("Temperature and Ozone Levels in Chicago") +
@@ -801,7 +802,7 @@ ggplot(chic.red, aes(temp, o3)) +
 Since Tufte's style is about minimalism, we first reduced the number of data points shown to (at least) try to follow his rules. (Do not care about that `stat_smooth()` command, I will explain it later. Just added it to make plot more interesting.)
 
 ```{r Tufte-2}
-ggplot(chic.red, aes(temp, o3)) +
+ggplot(chic.red, aes(x = temp, y = o3)) +
   geom_point() +
   labs(x = "Temperature (°F)", y = "Ozone") + 
   ggtitle("Temperature and Ozone Levels in Chicago") +
@@ -820,7 +821,7 @@ It is incredibly easy to change the size of all the text elements at once. If yo
 ```{r theme-base-size}
 theme_set(theme_gray(base_size = 30, base_family = "Roboto Condensed"))
 
-ggplot(chic, aes(date, temp, color = factor(season))) + 
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") + 
   guides(color = F) 
@@ -921,7 +922,7 @@ Have a look on the modified aesthetics with its new look of panel and gridlines 
 ```{r theme-set}
 theme_set(theme_custom())
 
-ggplot(chic, aes(date, temp, color = factor(season))) + 
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) + 
   geom_point() + labs(x = "Year", y = "Temperature (°F)") + guides(color = F)
 ```
 
@@ -932,7 +933,7 @@ You can also set quick changes using `theme_update()`:
 ```{r theme-update}
 theme_custom <- theme_update(panel.background = element_rect(fill = "gray60"))
 
-ggplot(chic, aes(date, temp, color = factor(season))) + 
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) + 
   geom_point() + labs(x = "Year", y = "Temperature (°F)") + guides(color = F)
 ```
 
@@ -956,7 +957,7 @@ In order to use color with your data, most importantly you need to know if you a
 ### Categorical Variables: Manually Select Colors 
 
 ```{r color-manual}
-(g <- ggplot(chic, aes(date, temp, color = factor(season))) +
+(g <- ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
         geom_point() + 
         labs(x = "Year", y = "Temperature (°F)") +
         theme(legend.title = element_blank()) +
@@ -990,7 +991,7 @@ In our example we will change the variable we want to color to ozone, a continuo
 Here is the default `ggplot2` continuous color scheme (sequential color scheme):
 
 ```{r colors-seq}
-ggplot(chic, aes(date, temp, color = o3)) + 
+ggplot(chic, aes(x = date, y = temp, color = o3)) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") +
   scale_color_continuous("Ozone:")
@@ -999,7 +1000,7 @@ ggplot(chic, aes(date, temp, color = o3)) +
 This code produces the same plot:
 
 ```{r colors-seq-alt, eval = F}
-ggplot(chic, aes(date, temp, color = o3)) +  
+ggplot(chic, aes(x = date, y = temp, color = o3)) +  
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") +
   scale_color_gradient()
@@ -1008,7 +1009,7 @@ ggplot(chic, aes(date, temp, color = o3)) +
 And here is the diverging default color scheme:
 
 ```{r colors-seq-alt-2}
-ggplot(chic, aes(date, temp, color = o3)) +  
+ggplot(chic, aes(x = date, y = temp, color = o3)) +  
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") +
   scale_color_gradient2()
@@ -1019,7 +1020,7 @@ ggplot(chic, aes(date, temp, color = o3)) +
 Gradually changing color palettes that are used for continuous variables can be manually set via `scale_*_gradient`:
 
 ```{r scale-color-gradient}
-ggplot(chic, aes(date, temp, color = o3)) + 
+ggplot(chic, aes(x = date, y = temp, color = o3)) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") +
   scale_color_gradient(low = "darkkhaki", high = "darkgreen", "Ozone:")
@@ -1030,7 +1031,7 @@ Temperature data is normally distributed so how about a diverging color scheme (
 ```{r scale-color-gradient2}
 mid <- max(chic$o3) / 2  # or mid <- mean(chic$o3)
 
-ggplot(chic, aes(date, temp, color = o3)) + 
+ggplot(chic, aes(x = date, y = temp, color = o3)) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") + 
   scale_color_gradient2(midpoint = mid, low = "blue4", 
@@ -1045,7 +1046,7 @@ You can test how your plots might appear under various form of colorblindness us
 The following multi-panel plot illustrates two out of the four viridis palettes:
 
 ```{r viridis-continuous, fig.width = 10}
-g <- ggplot(chic, aes(date, temp, color = o3)) + 
+g <- ggplot(chic, aes(x = date, y = temp, color = o3)) + 
        geom_point() + 
        labs(x = "Year", y = "Temperature (°F)")
 
@@ -1061,7 +1062,7 @@ library(patchwork)
 It is also possible to use the viridis color palettes for discrete variables:
 
 ```{r viridis-discrete}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") +
   theme(legend.title = element_blank()) +
@@ -1078,14 +1079,14 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 You might want to highlight a given range or threshold, which can be done plotting a line at these defined coordinates using `geom_hline()` (for "horizontal lines") or `geom_vline()` (for "vertical lines"):
 
 ```{r hline}
-ggplot(chic, aes(date, temp, color = o3)) + 
+ggplot(chic, aes(x = date, y = temp, color = o3)) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") + 
   geom_hline(yintercept = c(0, 73))
 ```
 
 ```{r vline}
-ggplot(chic, aes(temp, o3)) +
+ggplot(chic, aes(x = temp, y = o3)) +
   geom_point(alpha = 0.5) +
   labs(x = "Temperature (°F)", y = "Ozone") + 
   geom_vline(aes(xintercept = median(temp)), size = 1.2, 
@@ -1098,7 +1099,7 @@ If you want to add a line with a slope not being 0 or 1, respectively, you need 
 
 ```{r abline}
 reg <- lm(o3 ~ temp, data = chic)
-ggplot(chic, aes(temp, o3)) +
+ggplot(chic, aes(x = temp, y = o3)) +
   geom_point(alpha = 0.5) +
   labs(caption = paste0("y = ", round(coefficients(reg)[2], 2), 
                         " * x + ", round(coefficients(reg)[1], 2)), 
@@ -1132,7 +1133,7 @@ sample <- chic %>%
 chic %>% 
   group_by(season) %>% 
   sample_frac(0.01) %>% 
-  ggplot(aes(date, temp, label = season)) +
+  ggplot(aes(x = date, y = temp, label = season)) +
     geom_point() + 
     geom_text(aes(color = factor(temp)), hjust = 0.5, vjust = -0.5) +
     labs(x = "Year", y = "Temperature (°F)") +
@@ -1146,7 +1147,7 @@ Okay, avoiding overlays of labels did not work out. But don't worry, we are goin
 You can also use `geom_label` for boxes:
 
 ```{r data-label} 
-ggplot(sample, aes(date, temp, label = season)) +
+ggplot(sample, aes(x = date, y = temp, label = season)) +
   geom_point() + 
   geom_label(aes(fill = factor(temp)), color = "white", 
              fontface = "bold", hjust = 0.5, vjust = -0.25) +
@@ -1160,7 +1161,7 @@ A cool thing is the `ggrepel` package which provides geoms for `ggplot2` to repe
 
 ```{r ggrepel}
 library(ggrepel)
-ggplot(chic, aes(date, temp, label = season)) +
+ggplot(chic, aes(x = date, y = temp, label = season)) +
   geom_point(alpha = 0.5) +
   geom_point(data = sample, aes(color = factor(temp)), size = 2.5) +
   geom_label_repel(data = sample, aes(fill = factor(temp)), 
@@ -1185,7 +1186,7 @@ my_grob <- grobTree(textGrob("This text stays in place!",
                                        fontsize = 15, 
                                        fontface = "bold")))
 
-ggplot(chic, aes(temp, o3)) +
+ggplot(chic, aes(x = temp, y = o3)) +
   geom_point(color = "firebrick", alpha = 0.5) + 
   labs(x = "Temperature (°F)", y ="Ozone") +
   annotation_custom(my_grob)
@@ -1194,7 +1195,7 @@ ggplot(chic, aes(temp, o3)) +
 The value of this is particularly evident when you have multiple plots with **different scales**. In the plot below you see that the axis scales vary yet the same code as above can be used to put the annotation is the same place on each facet.
 
 ```{r grobTree-scales-free}
-ggplot(chic, aes(temp, o3)) +
+ggplot(chic, aes(x = temp, y = o3)) +
   geom_point(color = "firebrick") + 
   labs(x = "Temperature (°F)", y ="Ozone") +
   facet_wrap(~ season, scales = "free") +
@@ -1222,7 +1223,7 @@ ggplot(chic, aes(x = season, y = o3)) +
 You can also easily reverse an axis using `scale_x_reverse()` or `scale_y_reverse()`, respectively:
 
 ```{r reversed-axis}
-ggplot(chic, aes(date, temp, color = o3)) + 
+ggplot(chic, aes(x = date, y = temp, color = o3)) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") + 
   scale_y_reverse()
@@ -1233,7 +1234,7 @@ ggplot(chic, aes(date, temp, color = o3)) +
 ... or transform the default linear mapping by using `scale_y_log10()` or `scale_y_sqrt()`. As an example, here is a log<sub>10</sub>-transformed axis (which introduces NA's in this case so be careful):
 
 ```{r log-axis, warning=F}
-ggplot(chic, aes(date, temp, color = o3)) + 
+ggplot(chic, aes(x = date, y = temp, color = o3)) + 
   geom_point() + 
   labs(x = "Year", y = "Temperature (°F)") + 
   scale_y_log10(lim = c(0.1, 100))
@@ -1358,7 +1359,7 @@ g + geom_violin(aes(color = season), fill = "gray80", alpha = 0.5) +
 A rug represents the data of a single quantitative variable, displayed as marks along an axis. In most cases, it is used in addition to scatterplots or heatmaps to visualize the overall distribution of one or both of the variables:
 
 ```{r rug}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   geom_rug() +
   labs(x = "Year", y = "Temperature (°F)") +
@@ -1366,7 +1367,7 @@ ggplot(chic, aes(date, temp, color = factor(season))) +
 ```
 
 ```{r rug-2}
-ggplot(chic, aes(date, temp, color = factor(season))) +
+ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   geom_rug(sides = "r", alpha = 0.3) +
   labs(x = "Year", y = "Temperature (°F)") +
@@ -1398,7 +1399,7 @@ head(corm, 10)
 For the plot we will use `geom_tile` but if you have a lot of data you might consider `geom_raster` which can be much faster.
 
 ```{r tile-corr-plot}
-ggplot(corm, aes(Var2, Var1)) +
+ggplot(corm, aes(x = Var2, y = Var1)) +
    geom_tile(data = corm, aes(fill = value), color = "white") +
    labs(x = "Variable 2", y = "Variable 1") +
    scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
@@ -1525,7 +1526,7 @@ This is not a perfect dataset for demonstrating this, but using ribbon can be us
 ```{r ribbon-default}
 chic$o3run <- as.numeric(stats::filter(chic$o3, rep(1/30, 30), sides = 2))
 
-ggplot(chic, aes(date, o3run)) +
+ggplot(chic, aes(x = date, y = o3run)) +
    geom_line(color = "chocolate", lwd = 0.8) +
    labs(x = "Year", y = "Temperature (°F)")
 ```
@@ -1533,7 +1534,7 @@ ggplot(chic, aes(date, o3run)) +
 How does it look if we fill in the area below the curve using the `geom_ribbon()` function?
 
 ```{r geom-ribbon-AUC}
-ggplot(chic, aes(date, o3run)) +
+ggplot(chic, aes(x = date, y = o3run)) +
    geom_ribbon(aes(ymin = 0, ymax = o3run), fill = "orange", 
                color = "orange", alpha = 0.4) +
    geom_line(color = "chocolate", lwd = 0.8) +
@@ -1546,7 +1547,7 @@ Nice to indicate the [area under the curve (AUC)](https://en.wikipedia.org/wiki/
 chic$mino3 <- chic$o3run - sd(chic$o3run, na.rm = T)
 chic$maxo3 <- chic$o3run + sd(chic$o3run, na.rm = T)
 
-ggplot(chic, aes(date, o3run)) +
+ggplot(chic, aes(x = date, y = o3run)) +
    geom_ribbon(aes(ymin = mino3, ymax = maxo3), alpha = 0.5, 
                fill = "darkseagreen3", color = "transparent") +
    geom_line(color = "aquamarine4", lwd = 0.7) +
@@ -1566,7 +1567,7 @@ You can simply use `stat_smooth()` -- not even a formula is required. This adds 
 
 
 ```{r stat-smooth}
-ggplot(chic, aes(date, temp)) + 
+ggplot(chic, aes(x = date, y = temp)) + 
   geom_point(color = "gray40", alpha = 0.5)+
   labs(x = "Year", y = "Temperature (°F)") +
   stat_smooth()
@@ -1577,7 +1578,7 @@ ggplot(chic, aes(date, temp)) +
 `ggplot2` allows you to specify the model you want it to use. Lets say you want to increase the GAM dimension (add some additional wiggles to the smooth):
 
 ```{r GAM-spec}
-ggplot(chic, aes(date, temp)) + 
+ggplot(chic, aes(x = date, y = temp)) + 
    geom_point(color = "gray40", alpha = 0.3) +
    labs(x = "Year", y = "Temperature (°F)") +
    stat_smooth(method = "gam", formula = y ~ s(x, k = 1000), 
@@ -1596,7 +1597,7 @@ ggplot(chic, aes(date, temp)) +
 Though the default is a LOESS or GAM smoothing, it is also easy to add a standard linear fit:
 
 ```{r GLM}
-ggplot(chic, aes(temp, death)) +
+ggplot(chic, aes(x = temp, y = death)) +
    geom_point(color = "gray40", alpha = 0.5) +
    labs(x = "Temperature (°F)", y = "Deaths") +
    stat_smooth(method = "lm", col = "firebrick", se = F, size = 1.3)

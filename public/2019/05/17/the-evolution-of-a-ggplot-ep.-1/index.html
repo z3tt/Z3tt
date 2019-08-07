@@ -397,7 +397,7 @@ $(function() {
 <p>I was particularly interested to visualize the most-recent student-teacher ratio in primary education as a tile chloropleth map per country. A usual way reresenting several data points per group is to use a boxplot:</p>
 <pre class="r"><code>library(tidyverse)
 
-ggplot(df_ratios, aes(region, student_ratio)) +
+ggplot(df_ratios, aes(x = region, y = student_ratio)) +
   geom_boxplot()</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-basic-1.png" width="768" /></p>
 </div>
@@ -407,12 +407,12 @@ ggplot(df_ratios, aes(region, student_ratio)) +
 <pre class="r"><code>df_sorted &lt;- df_ratios %&gt;%
   mutate(region = fct_reorder(region, -student_ratio_region))
 
-ggplot(df_sorted, aes(region, student_ratio)) +
+ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png" width="768" /></p>
 <p>💡 <strong>Sort your data according to the best or worst, highest or lowest value to make your graph easily readable - do not sort them if the categories have an internal logical order such as age groups!</strong></p>
 <p>To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the <code>ggplot2</code> call - but this does not work for boxplots so we use <code>coord_flip()</code>). It is also a good practice to include the 0 in plots which we can force by adding <code>scale_y_continuous(limits = c(0, 90))</code>.</p>
-<pre class="r"><code>ggplot(df_sorted, aes(region, student_ratio)) +
+<pre class="r"><code>ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90))</code></pre>
@@ -439,7 +439,7 @@ ggplot(df_sorted, aes(region, student_ratio)) +
 
 theme_set(theme_light(base_size = 15, base_family = &quot;Poppins&quot;))
 
-g &lt;- ggplot(df_sorted, aes(region, student_ratio, color = region)) +
+g &lt;- ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
   scale_color_uchicago() +
@@ -478,7 +478,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png" width="768" /></p>
-<p>Note that we could also use <code>geom_point(aes(region, student_ratio_region), size = 5)</code> to achieve the same since we already have a regional meanaverage in our data.</p>
+<p>Note that we could also use <code>geom_point(aes(x = region, y = student_ratio_region), size = 5)</code> to achieve the same since we already have a regional meanaverage in our data.</p>
 <p>To relate all these points to a baseline, we add a line indicating the worldwide average:</p>
 <pre class="r"><code>world_avg &lt;- df_ratios %&gt;%
   summarize(avg = mean(student_ratio, na.rm = T)) %&gt;%
@@ -642,7 +642,7 @@ set.seed(123)
 ## final plot
 df_ratios %&gt;% 
   mutate(region = fct_reorder(region, -student_ratio_region)) %&gt;%
-  ggplot(aes(region, student_ratio, color = region)) +
+  ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
                      y = world_avg, yend = student_ratio_region),
                  size = 0.8) +
@@ -705,7 +705,7 @@ df_ratios %&gt;%
                     
                     
                     <li class="next">
-                        <a href="/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" data-toggle="tooltip" data-placement="top" title="A ggplot2 tutorial for beautiful plotting in R">Next
+                        <a href="/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" data-toggle="tooltip" data-placement="top" title="A ggplot2 Tutorial for Beautiful Plotting in R">Next
                             Post &rarr;</a>
                     </li>
                     
