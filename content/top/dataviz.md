@@ -18,11 +18,13 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_17_Animes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_17_Animes.png', 'blank');"/>
-
 <img src="/img/tidytuesday/2019_28_FIFA_WWCs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs.png', 'blank');"/>
 
+<img src="/img/tidytuesday/2019_17_Animes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_17_Animes.png', 'blank');"/>
+
 <img src="/img/tidytuesday/2019_27_FranchiseRevenue.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_27_FranchiseRevenue.png', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_33_RomanEmperors.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_33_RomanEmperors.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_20_NobelPrizeWinners.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_20_NobelPrizeWinners.png', 'blank');"/>
 
