@@ -5,6 +5,7 @@ A collection of data visualizations I've produced for scientific publications an
 * ["Evolution of a ggplot" blog series](#evolggplot)
 <br/>
 
+
 ## #TidyTuesday contributions {#tidytuesday}
 
 <img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
@@ -15,7 +16,11 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
 
+<img src="/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png', 'blank');"/>
+
 <img src="/img/tidytuesday/2019_17_Animes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_17_Animes.png', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_28_FIFA_WWCs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_27_FranchiseRevenue.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_27_FranchiseRevenue.png', 'blank');"/>
 

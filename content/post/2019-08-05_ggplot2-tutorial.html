@@ -38,6 +38,13 @@ editor_options:
 </ul>
 <p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic <code>patchwork</code> package. And pie charts because everyone looooves pie charts!)</p>
 </div>
+<div id="sneak-peak" class="section level2">
+<h2>Sneak Peak</h2>
+<div class="figure">
+<img src="https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/img/overview.png" alt="overview.png" />
+<p class="caption">overview.png</p>
+</div>
+</div>
 <div id="toc" class="section level2">
 <h2>Table of Content</h2>
 <ul>
@@ -700,10 +707,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 * 
 ##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 * 
 ##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &quot;grey20&quot;), 
-##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.ticks.length.x = NULL, 
-##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
-##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
-##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2), 
+##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.title.x = element_text(margin = margin(t = half_line/2), 
 ##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2), 
 ##             vjust = 0), axis.title.y = element_text(angle = 90, 
 ##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90, 
@@ -739,7 +743,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x00000000066d39c8&gt;
+## &lt;bytecode: 0x00000000162677c0&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {
