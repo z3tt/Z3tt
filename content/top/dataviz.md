@@ -12,9 +12,9 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_18_BirdCollisions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_18_BirdCollisions.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
-
 <img src="/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png', 'blank');"/>
 
