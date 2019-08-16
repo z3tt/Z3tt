@@ -347,7 +347,7 @@ $(function() {
                 
 
 
-<p><em>Last updated: 2019-08-05</em></p>
+<p><em>Last update: 2019-08-16</em></p>
 <div id="introductory-words" class="section level2">
 <h2>Introductory Words</h2>
 <p>Begin of 2016, I had to prepare my PhD introductory talk and I started using <code>ggplot2</code> to visualize my data since I never liked the syntax and style of base plots in <code>R</code>. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called <a href="http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/"><strong>Beautiful plotting in R: A ggplot2 cheatsheet</strong></a> by <a href="https://twitter.com/zevross">Zev Ross</a>, posted on 4. August 2014, updated last in January 2016.</p>
@@ -374,10 +374,7 @@ $(function() {
 </div>
 <div id="sneak-peak" class="section level2">
 <h2>Sneak Peak</h2>
-<div class="figure">
-<img src="https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/img/overview.png" alt="overview.png" />
-<p class="caption">overview.png</p>
-</div>
+<p><img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/></p>
 </div>
 <div id="toc" class="section level2">
 <h2>Table of Content</h2>
@@ -506,6 +503,12 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <pre class="r"><code>g + geom_point(color = &quot;firebrick&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggplot-default-col-1.png" width="100%" /></p>
 <p>By applying that to our plotting element, the following plots based on <code>g</code> are going to have red points.</p>
+<p>And let’s get rid of the greyish default ggplot look by setting a different built-in theme, e.g. <code>theme_bw</code>:</p>
+<pre class="r"><code>theme_set(theme_bw())
+
+g + geom_point(color = &quot;firebrick&quot;)</code></pre>
+<p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/remove-grey-background-1.png" width="100%" /></p>
+<p>(You can find more on how to use built-in themes and how to customize themes in the secion <a href="#themes">“Working with Themes”</a>.)</p>
 <p><a href="#toc">Jump back to Table of Content.</a></p>
 </div>
 </div>
@@ -516,7 +519,7 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <p>Let’s add some well-written labels to the axes:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = expression(paste(&quot;Temperature (&quot;, degree ~ F, &quot;)&quot;)))</code></pre>
+  labs(x = &quot;Year&quot;, y = expression(paste(&quot;Temperature (&quot;, degree ~ F, &quot;)&quot;)))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/axis-labs-1.png" width="100%" /></p>
 </div>
 <div id="move-labels-away-from-the-plot-change-color" class="section level3">
@@ -524,7 +527,7 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <p><code>theme()</code> is an essential command to modify all kinds of theme elements (texts and titles, boxes, symbols, backgrounds, …). We will use a lot of them – to see what is possible have a look <a href="http://docs.ggplot2.org/current/theme.html">here</a>.</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) + 
   theme(axis.title.x = element_text(color = &quot;sienna&quot;, 
                                     size = 15, vjust = -0.35),
         axis.title.y = element_text(color = &quot;orangered&quot;, 
@@ -536,7 +539,7 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <p>Using <code>angle</code> and <code>vjust</code> you can adjust the position of the text (0 = left-alligned, 0.5 = centered, 1 = right-alligned):</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) +
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
   theme(axis.text.x = element_text(angle = 50, size = 16, 
                                    vjust = 0.5))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/axis-text-1.png" width="100%" /></p>
@@ -546,7 +549,7 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <p>There may be rarely a reason to do so - but this is how it works:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) +
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
   theme(axis.ticks.y = element_blank(), 
         axis.text.y = element_blank())</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/axis-no-labs-1.png" width="100%" /></p>
@@ -557,7 +560,7 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <p>Sometimes you want to zoom into your data. You can do this without subsettting your data:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) +
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
   ylim(c(0, 50))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/axis-limit-1.png" width="100%" /></p>
 <p>Alternatively you can use <code>g + scale_x_continuous(limits = c(0, 50))</code> or <code>g + coord_cartesian(xlim = c(0, 50))</code>. The former removes all data points outside the range and the second adjusts the visible area.</p>
@@ -617,13 +620,13 @@ chic %&gt;%
 <p>We can add a title via the <code>ggtitle()</code> function:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) + 
   ggtitle(&quot;Temperatures in Chicago&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-1.png" width="100%" /></p>
-<p>Alternatively, you can use <code>g + labs("Temperatures in Chicago")</code>. Here you can add several arguments, e.g. additionally a <code>subtitle</code> and a <code>caption</code>:</p>
+<p>Alternatively, you can use <code>g + labs(tite = "Temperatures in Chicago")</code>. Here you can add several arguments, e.g. additionally a <code>subtitle</code> and a <code>caption</code>:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;,
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;,
        title = &quot;Temperatures in Chicago&quot;, 
        subtitle = &quot;Seasonal pattern of daily temperatures from 1997 to 2001&quot;, 
        caption = &quot;Data: NMMAPS&quot;)</code></pre>
@@ -634,8 +637,8 @@ chic %&gt;%
 <p>The face argument can be used to make the font bold or italic. The margin argument uses the margin function and you provide the top, right, bottom and left margins (the default unit is points).</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
-  ggtitle(&quot;Temperatures in Chicago&quot;) +
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;, 
+       title = &quot;Temperatures in Chicago&quot;) + 
   theme(plot.title = element_text(size = 15, face = &quot;bold&quot;, 
                                   margin = margin(10, 0, 10, 0)))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-bold-1.png" width="100%" /></p>
@@ -646,8 +649,8 @@ chic %&gt;%
 <p>Allignement is controlled by <code>hjust</code> (which stands for horizontal adjustment):</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) +  
-  ggtitle(&quot;Temperatures in Chicago&quot;) +
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;, 
+       title = &quot;Temperatures in Chicago&quot;) + 
   theme(plot.title = element_text(size = 15, face = 4, hjust = 1))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-adjust-1.png" width="100%" /></p>
 <p>Of course, there it is also possible to adjust the vertical alignment, controlled by <code>vjust</code>.</p>
@@ -664,7 +667,7 @@ extrafont::font_import()</code></pre>
 <p>Now, we can use one of those font families:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;, title = &quot;Temperatures in Chicago&quot;) + 
   theme(plot.title = element_text(size = 18, family = &quot;Merriweather&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-style-1.png" width="100%" /></p>
 <p>(You can also set a non-default font for all text elements of your plots, for more details see section “Working with Themes”. I am going to use <em>Roboto Condensed</em> as new default font for the following plots.)</p>
@@ -675,7 +678,7 @@ extrafont::font_import()</code></pre>
 <p>You can use the lineheight argument to change the spacing between lines. In this example, I have squished the lines together a bit (lineheight &lt; 1).</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) + 
-  labs(x = &quot;Date&quot;, y = &quot;Temperature (°F)&quot;) + 
+  labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) + 
   ggtitle(&quot;Temperatures in Chicago\nfrom 1997 to 2001&quot;) + 
   theme(plot.title = element_text(size = 16, face = &quot;bold&quot;, 
                                   vjust = 1, lineheight = 0.75))</code></pre>
@@ -822,7 +825,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 <p>Here is the default:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = o3)) +
   geom_line(color = &quot;gray&quot;) +
-  geom_point(color = &quot;darkorange1&quot;) +
+  geom_point(color = &quot;darkorange2&quot;) +
   labs(x = &quot;Year&quot;, y = &quot;Ozone&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/legend-default-1.png" width="100%" /></p>
 <p>We can force a legend by mapping a guide to a <strong>variable</strong>. We are mapping the lines and the points using <code>aes()</code> and we are mapping <strong>not</strong> to a variable in our dataset but to a single string (so that we get just one color for each).</p>
@@ -839,7 +842,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point(aes(color = &quot;points&quot;)) +
   labs(x = &quot;Year&quot;, y = &quot;Ozone&quot;) +
   scale_color_manual(&quot;&quot;, guide = &quot;legend&quot;, 
-                     values = c(&quot;points&quot; = &quot;darkorange1&quot;, 
+                     values = c(&quot;points&quot; = &quot;darkorange2&quot;, 
                                 &quot;line&quot; = &quot;gray&quot;)) +
   guides(color = guide_legend(override.aes = list(linetype = c(1, 0), 
                                                   shape = c(NA, 16))))</code></pre>
@@ -855,7 +858,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
-  theme(panel.background = element_rect(fill = &quot;white&quot;))</code></pre>
+  theme(panel.background = element_rect(fill = &quot;moccasin&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/panel-color-1.png" width="100%" /></p>
 </div>
 <div id="change-grid-lines" class="section level3">
@@ -864,7 +867,8 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) + 
-  theme(panel.grid.major = element_line(color = &quot;gray10&quot;, size = 0.5),
+  theme(panel.background = element_rect(fill = &quot;grey90&quot;),
+        panel.grid.major = element_line(color = &quot;gray10&quot;, size = 0.5),
         panel.grid.minor = element_line(color = &quot;gray70&quot;, size = 0.25))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/grid-lines-1.png" width="100%" /></p>
 <p>Furthermore, you can also define the breaks between both, major and minor grid lines:</p>
@@ -947,7 +951,7 @@ g + facet_wrap(~ year, nrow = 1) +
 
 p2 &lt;- ggplot(chic, aes(x = date, y = o3)) + 
         geom_line(color = &quot;gray&quot;) + 
-        geom_point(color = &quot;darkorange1&quot;) + 
+        geom_point(color = &quot;darkorange2&quot;) + 
         labs(x = &quot;Year&quot;, y = &quot;Ozone&quot;)
 
 library(patchwork)
@@ -980,7 +984,7 @@ grid.arrange(p1, p2, ncol = 2)</code></pre>
 ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   geom_point() +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) + 
-  ggtitle(&quot;Ups and Downs of Chicagos Daily Temperatures&quot;) +
+  ggtitle(&quot;Ups and Downs of Chicago&#39;s Daily Temperatures&quot;) +
   theme_economist() + 
   scale_color_economist(name = &quot;Seasons:&quot;) +
   theme(legend.title = element_text(size = 12, face = &quot;bold&quot;))</code></pre>
@@ -1041,7 +1045,10 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 * 
 ##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 * 
 ##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &quot;grey20&quot;), 
-##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.title.x = element_text(margin = margin(t = half_line/2), 
+##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.ticks.length.x = NULL, 
+##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
+##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
+##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2), 
 ##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2), 
 ##             vjust = 0), axis.title.y = element_text(angle = 90, 
 ##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90, 
@@ -1077,7 +1084,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x00000000162677c0&gt;
+## &lt;bytecode: 0x000000000bbeb820&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {
@@ -1297,7 +1304,7 @@ ggplot(chic, aes(x = temp, y = o3)) +
                         &quot; * x + &quot;, round(coefficients(reg)[1], 2)), 
        x = &quot;Temperature (°F)&quot;, y = &quot;Ozone&quot;) + 
   geom_abline(intercept = coefficients(reg)[1], slope = coefficients(reg)[2], 
-              color = &quot;darkorange1&quot;, size = 1.5)</code></pre>
+              color = &quot;darkorange2&quot;, size = 1.5)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/abline-1.png" width="100%" /></p>
 <p>Later, we will learn how to add a linear fit with one command using <code>stat_smooth(method = "lm")</code>. However, there might be other reasons to add a line with a given slope.</p>
 <p><a href="#toc">Jump back to Table of Content.</a></p>
@@ -1364,13 +1371,13 @@ my_grob &lt;- grobTree(textGrob(&quot;This text stays in place!&quot;,
                                        fontface = &quot;bold&quot;)))
 
 ggplot(chic, aes(x = temp, y = o3)) +
-  geom_point(color = &quot;firebrick&quot;, alpha = 0.5) + 
+  geom_point(color = &quot;tan&quot;, alpha = 0.5) + 
   labs(x = &quot;Temperature (°F)&quot;, y =&quot;Ozone&quot;) +
   annotation_custom(my_grob)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/grobTree-1.png" width="100%" /></p>
 <p>The value of this is particularly evident when you have multiple plots with <strong>different scales</strong>. In the plot below you see that the axis scales vary yet the same code as above can be used to put the annotation is the same place on each facet.</p>
 <pre class="r"><code>ggplot(chic, aes(x = temp, y = o3)) +
-  geom_point(color = &quot;firebrick&quot;) + 
+  geom_point(color = &quot;tan&quot;) + 
   labs(x = &quot;Temperature (°F)&quot;, y =&quot;Ozone&quot;) +
   facet_wrap(~ season, scales = &quot;free&quot;) +
   annotation_custom(my_grob)</code></pre>
@@ -1430,8 +1437,10 @@ chic %&gt;%
   dplyr::summarize(rel = n() / unique(n_all)) %&gt;% 
   ggplot(aes(x = &quot;&quot;, y = rel)) +
     geom_col(aes(fill = factor(season)), width = 1) + 
-    labs(x = &quot;&quot;, y = &quot;Proportion of Days Exceeding\nthe Median Ozone Level&quot;) +
+    labs(x = &quot;&quot;, 
+         y = &quot;Proportion of Days Exceeding\nthe Median Ozone Level&quot;) +
     coord_polar(&quot;y&quot;) +
+    scale_fill_brewer(palette = &quot;Set1&quot;, name = &quot;Season:&quot;) +
     theme(axis.ticks = element_blank())</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/pie-chart-1.png" width="100%" /></p>
 <p><a href="#toc">Jump back to Table of Content.</a></p>
@@ -1464,7 +1473,7 @@ Interesting? No.</p>
 <p>Try adding a little jitter to the data. I like this for in-house visualization but be careful using jittering because you are purposely adding noise to your data and this can result in misinterpretation of your data.</p>
 <pre class="r"><code>g + geom_jitter(aes(color = season), alpha = 0.25, 
                 position = position_jitter(width = 0.3)) +
-    theme(legend.title = element_blank())</code></pre>
+    theme(legend.position = &quot;none&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/jitter-1.png" width="100%" /></p>
 </div>
 <div id="alternative-violin-plots" class="section level4">
@@ -1479,19 +1488,25 @@ Interesting? No.</p>
 <pre class="r"><code>g + geom_violin(aes(color = season), fill = &quot;gray80&quot;, alpha = 0.5) +
     geom_jitter(aes(color = season), alpha = 0.25, 
                 position = position_jitter(width = 0.3)) +
-    theme(legend.title = element_blank()) +
+    theme(legend.position = &quot;none&quot;) +
     coord_flip()</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/violin-jitter-1.png" width="100%" /></p>
+<p>The <a href="https://ggforce.data-imaginist.com/"><code>ggforce</code> package</a> provides so-called sina functions where the width of the jitter is controlled by the density distribution of the data - that makes the jittering a bit more visually appealing:</p>
+<pre class="r"><code>library(ggforce)
+
+g + geom_violin(aes(color = season), fill = &quot;gray80&quot;, alpha = 0.5) +
+    geom_sina(aes(color = season), alpha = 0.25) +
+    theme(legend.position = &quot;none&quot;) +
+    coord_flip()</code></pre>
+<p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/unnamed-chunk-1-1.png" width="100%" /></p>
 </div>
-<div id="alternative-combining-violin-plots-with-jitter-and-box-plots" class="section level4">
-<h4>5. Alternative: Combining Violin Plots with Jitter and Box Plots</h4>
+<div id="alternative-combining-violin-plots-with-box-plots" class="section level4">
+<h4>5. Alternative: Combining Violin Plots with Box Plots</h4>
 <p>To allow for easy estimation of quantiles, we can also add the box of the boxplot inside the violins to indicate 25%-quartile, median and 75%-quartile:</p>
-<pre class="r"><code>g + geom_violin(aes(color = season), fill = &quot;gray80&quot;, alpha = 0.5) +
+<pre class="r"><code>g + geom_violin(aes(fill = season), color = &quot;transparent&quot;, alpha = 0.5) +
     geom_boxplot(outlier.alpha = 0, coef = 0, 
                  color = &quot;gray40&quot;, width = 0.1) +
-    geom_jitter(aes(color = season), alpha = 0.25, 
-                position = position_jitter(width = 0.3), alpha = 0.3) +
-    theme(legend.title = element_blank()) +
+    theme(legend.position = &quot;none&quot;) +
     coord_flip()</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/violin-jitter-box-1.png" width="100%" /></p>
 </div>
@@ -1613,8 +1628,8 @@ ggplot(chic, aes(x = temp, y = factor(year))) +
   geom_density_ridges_gradient(scale = 0.9, gradient_lwd = 0.5, 
                                color = &quot;black&quot;) + 
   scale_fill_viridis(option = &quot;plasma&quot;, name = &quot;&quot;) + 
-  labs(x = &quot;Temperature (°F)&quot;, y = &quot;Season&quot;) +
-  theme_ridges(grid = F)</code></pre>
+  labs(x = &quot;Temperature (°F)&quot;, y = &quot;Season:&quot;) +
+  theme_ridges(font_family = &quot;Roboto Condensed&quot;, grid = F)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ridges-viridis-1.png" width="100%" /></p>
 <p>We can also compare several groups per ridgeline and coloring them according to their group. This follows the idea of <a href="https://twitter.com/marcbeldata/status/888697140268204032">Marc Belzunces</a>.</p>
 <pre class="r"><code>library(tidyverse)
@@ -1628,14 +1643,15 @@ ggplot(data = filter(chic, season %in% c(&quot;Summer&quot;, &quot;Winter&quot;)
                       labels = c(`1997 Summer` = &quot;Summer&quot;, 
                                  `1997 Winter` = &quot;Winter&quot;),
                       values = c(&quot;tomato&quot;, &quot;dodgerblue&quot;),
-                      name = &quot;Season&quot;, guide = &quot;legend&quot;) +
-  theme_ridges() + 
+                      name = &quot;Season:&quot;, guide = &quot;legend&quot;) +
+  theme_ridges(font_family = &quot;Roboto Condensed&quot;) + 
   labs(x = &quot;Temperature (°F)&quot;, y = &quot;Year&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ridges-groups-1.png" width="100%" /></p>
 <p>The <code>ggridges</code> packages is also helpful to create histograms for different groups using <code>stat = "binline"</code> in the <code>geom_density_ridges</code> command:</p>
 <pre class="r"><code>ggplot(chic, aes(x = temp, y = factor(year), fill = year)) + 
   geom_density_ridges(stat = &quot;binline&quot;, bins = 25, scale = 0.9, 
                       draw_baseline = F, show.legend = F) + 
+  theme_ridges(font_family = &quot;Roboto Condensed&quot;) +
   labs(x = &quot;Temperature (°F)&quot;, y = &quot;Season&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ridges-histo-1.png" width="100%" /></p>
 </div>
@@ -1692,7 +1708,7 @@ ggplot(chic, aes(x = date, y = o3run)) +
                se = F, size = 1, aes(col = &quot;100&quot;)) +
    stat_smooth(method = &quot;gam&quot;, formula = y ~ s(x, k = 10), 
                se = F, size = 0.8, aes(col = &quot;10&quot;)) +
-   scale_color_manual(name = &quot;k&quot;, values = c(&quot;darkorange1&quot;, 
+   scale_color_manual(name = &quot;k&quot;, values = c(&quot;darkorange2&quot;, 
                                              &quot;firebrick&quot;, 
                                              &quot;dodgerblue3&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/GAM-spec-1.png" width="100%" /></p>
