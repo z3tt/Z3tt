@@ -382,7 +382,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 (You can also set a non-default font for all text elements of your plots, for more details see section "Working with Themes". I am going to use *Roboto Condensed* as new default font for the following plots.)
 
 ```{r default-font}
-theme_set(theme_gray(base_size = 12, base_family = "Roboto Condensed"))
+theme_set(theme_bw(base_size = 12, base_family = "Roboto Condensed"))
 ```
 
 ### Change Spacing in Multi-Line Text

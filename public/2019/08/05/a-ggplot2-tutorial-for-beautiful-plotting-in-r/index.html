@@ -670,7 +670,7 @@ extrafont::font_import()</code></pre>
   theme(plot.title = element_text(size = 18, family = &quot;Merriweather&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-style-1.png" width="100%" /></p>
 <p>(You can also set a non-default font for all text elements of your plots, for more details see section “Working with Themes”. I am going to use <em>Roboto Condensed</em> as new default font for the following plots.)</p>
-<pre class="r"><code>theme_set(theme_gray(base_size = 12, base_family = &quot;Roboto Condensed&quot;))</code></pre>
+<pre class="r"><code>theme_set(theme_bw(base_size = 12, base_family = &quot;Roboto Condensed&quot;))</code></pre>
 </div>
 <div id="change-spacing-in-multi-line-text" class="section level3">
 <h3>Change Spacing in Multi-Line Text</h3>
@@ -1083,7 +1083,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x0000000006628d30&gt;
+## &lt;bytecode: 0x0000000006c89660&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {
