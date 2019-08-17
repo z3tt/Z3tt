@@ -25,6 +25,10 @@ Begin of 2016, I had to prepare my PhD introductory talk and I started using `gg
 
 After giving the talk which contained some quite beautiful plots thanks to the blog post, I decided to go through this tutorial step-by-step. I learned so much from it and directly started modifying the codes and over the time I added some additional code snippets, chart types and resources. 
 
+Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic `patchwork` and `ggforce` packages. And pie charts because everyone looooves pie charts!)
+
+<img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/>
+
 Major changes I've made:
 
 * to follow the R style guide (e.g. by [Hadley Wickham](http://adv-r.had.co.nz/Style.html), [Google](https://google.github.io/styleguide/Rguide.xml) or the [Coding Club](https://ourcodingclub.github.io/2017/04/25/etiquette.html#syntax) style guides),
@@ -36,17 +40,11 @@ Major changes I've made:
     + other plot types (e.g. contour plot, rug representation, ridge plot)
     + how and why to use the viridis color palettes
     + creating minimal plots using the Tufte plotting style
-    + how to adjust the plots title, subtitle and caption
+    + how to adjust the plots title, subtitle and captionl
     + how to add different types of lines to a plot
     + how to change the order in a legend and legend key names
     + how to add labels to your data (and how to do it in a beautiful way)
-
-Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic `patchwork` package. And pie charts because everyone looooves pie charts!)
-
-## Sneak Peak
-
-<img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/>
-
+  
 
 ## Table of Content {#toc}
 
@@ -86,12 +84,14 @@ Since the blog entry by Zev Ross was not updated for some years, I hosted the up
     + gridExtra
     + ggrepel
     + reshape2
+    + ggforce
     + ggridges
     + shiny
 
 ```{r install-packages, eval = F}
-install.packages(c("ggplot2", "ggthemes", "tidyverse", "extrafont", "cowplot", 
-                   "grid", "gridExtra", "ggrepel", "reshape2", "ggridges", "shiny"))
+install.packages(c("ggplot2", "ggthemes", "tidyverse", "extrafont", 
+                   "cowplot", "grid", "gridExtra", "ggrepel", 
+                   "reshape2", "ggforce", "ggridges", "shiny"))
 
 devtools::install_github("thomasp85/patchwork")
 ```

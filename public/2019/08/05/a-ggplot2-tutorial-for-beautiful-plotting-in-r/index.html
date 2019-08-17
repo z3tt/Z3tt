@@ -352,6 +352,8 @@ $(function() {
 <h2>Introductory Words</h2>
 <p>Begin of 2016, I had to prepare my PhD introductory talk and I started using <code>ggplot2</code> to visualize my data since I never liked the syntax and style of base plots in <code>R</code>. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called <a href="http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/"><strong>Beautiful plotting in R: A ggplot2 cheatsheet</strong></a> by <a href="https://twitter.com/zevross">Zev Ross</a>, posted on 4. August 2014, updated last in January 2016.</p>
 <p>After giving the talk which contained some quite beautiful plots thanks to the blog post, I decided to go through this tutorial step-by-step. I learned so much from it and directly started modifying the codes and over the time I added some additional code snippets, chart types and resources.</p>
+<p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic <code>patchwork</code> and <code>ggforce</code> packages. And pie charts because everyone looooves pie charts!)</p>
+<p><img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/></p>
 <p>Major changes I’ve made:</p>
 <ul>
 <li>to follow the R style guide (e.g. by <a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham</a>, <a href="https://google.github.io/styleguide/Rguide.xml">Google</a> or the <a href="https://ourcodingclub.github.io/2017/04/25/etiquette.html#syntax">Coding Club</a> style guides),</li>
@@ -364,17 +366,12 @@ $(function() {
 <li>other plot types (e.g. contour plot, rug representation, ridge plot)</li>
 <li>how and why to use the viridis color palettes</li>
 <li>creating minimal plots using the Tufte plotting style</li>
-<li>how to adjust the plots title, subtitle and caption</li>
+<li>how to adjust the plots title, subtitle and captionl</li>
 <li>how to add different types of lines to a plot</li>
 <li>how to change the order in a legend and legend key names</li>
 <li>how to add labels to your data (and how to do it in a beautiful way)</li>
 </ul></li>
 </ul>
-<p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic <code>patchwork</code> package. And pie charts because everyone looooves pie charts!)</p>
-</div>
-<div id="sneak-peak" class="section level2">
-<h2>Sneak Peak</h2>
-<p><img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/></p>
 </div>
 <div id="toc" class="section level2">
 <h2>Table of Content</h2>
@@ -417,12 +414,14 @@ $(function() {
 <li>gridExtra</li>
 <li>ggrepel</li>
 <li>reshape2</li>
+<li>ggforce</li>
 <li>ggridges</li>
 <li>shiny</li>
 </ul></li>
 </ul>
-<pre class="r"><code>install.packages(c(&quot;ggplot2&quot;, &quot;ggthemes&quot;, &quot;tidyverse&quot;, &quot;extrafont&quot;, &quot;cowplot&quot;, 
-                   &quot;grid&quot;, &quot;gridExtra&quot;, &quot;ggrepel&quot;, &quot;reshape2&quot;, &quot;ggridges&quot;, &quot;shiny&quot;))
+<pre class="r"><code>install.packages(c(&quot;ggplot2&quot;, &quot;ggthemes&quot;, &quot;tidyverse&quot;, &quot;extrafont&quot;, 
+                   &quot;cowplot&quot;, &quot;grid&quot;, &quot;gridExtra&quot;, &quot;ggrepel&quot;, 
+                   &quot;reshape2&quot;, &quot;ggforce&quot;, &quot;ggridges&quot;, &quot;shiny&quot;))
 
 devtools::install_github(&quot;thomasp85/patchwork&quot;)</code></pre>
 <p>(For teaching reasons and if people jump to any plot, I load the package needed beside ggplot2 in the respective chunk.)</p>
@@ -1084,7 +1083,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x000000000bbeb820&gt;
+## &lt;bytecode: 0x000000000c9ebba0&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {
