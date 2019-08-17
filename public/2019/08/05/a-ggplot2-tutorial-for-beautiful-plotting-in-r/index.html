@@ -488,14 +488,14 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 <p>First, we are going to load the <code>ggplot2</code>package (which we can also load via the <a href="https://www.tidyverse.org/">tidyverse package collection</a>):</p>
 <pre class="r"><code>library(ggplot2)
 #library(tidyverse)</code></pre>
-<p><code>ggplot2</code> syntax is different from base R. As shown before, we always start to define a plotting element by calling <code>ggplot(data, aes(variable1, variable2))</code> which just tells <code>ggplot2</code> that we are going to work with that data. Thus, only a panel is created when running this because <code>ggplot2</code> does not know <em>how</em> we want to plot that data.</p>
+<p><code>ggplot2</code> syntax is different from base R. As shown before, we always start to define a plotting element by calling <code>ggplot(data = df, aes(x = variable1, y = variable2))</code> which just tells <code>ggplot2</code> that we are going to work with that data. Thus, only a panel is created when running this because <code>ggplot2</code> does not know <em>how</em> we want to plot that data.</p>
 <pre class="r"><code>(g &lt;- ggplot(chic, aes(x = date, y = temp)))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggplot-1.png" width="100%" /></p>
 <p><strong>Tipp:</strong> By using parentheses while creating an object the object will be printed immediately (instead of writing <code>g &lt;- ggplot(...)</code> and then <code>g</code>).</p>
 <p>Let’s tell <code>ggplot</code> which style we want to use:</p>
 <pre class="r"><code>g + geom_point()</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggplot-default-1.png" width="100%" /></p>
-<p>(No worries, we are going to learn several plot types later.)</p>
+<p>No worries, we are going to learn several plot types at <a href="#charts">a later point</a>.</p>
 <div id="change-color-of-points" class="section level3">
 <h3>Change Color of Points</h3>
 <p>Within this command, you already can insert aesthetics as changing the color of your points:</p>
@@ -1083,7 +1083,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x000000000c9f7928&gt;
+## &lt;bytecode: 0x0000000006628d30&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {

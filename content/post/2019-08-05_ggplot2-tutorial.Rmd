@@ -142,7 +142,7 @@ library(ggplot2)
 #library(tidyverse)
 ```
 
-`ggplot2` syntax is different from base R. As shown before, we always start to define a plotting element by calling `ggplot(data, aes(variable1, variable2))` which just tells `ggplot2` that we are going to work with that data. Thus, only a panel is created when running this because `ggplot2` does not know *how* we want to plot that data.
+`ggplot2` syntax is different from base R. As shown before, we always start to define a plotting element by calling `ggplot(data = df, aes(x = variable1, y = variable2))` which just tells `ggplot2` that we are going to work with that data. Thus, only a panel is created when running this because `ggplot2` does not know *how* we want to plot that data.
 
 ```{r ggplot}
 (g <- ggplot(chic, aes(x = date, y = temp)))
@@ -156,7 +156,7 @@ Let's tell `ggplot` which style we want to use:
 g + geom_point()
 ```
 
-(No worries, we are going to learn several plot types later.)
+No worries, we are going to learn several plot types at [a later point](#charts).
 
 ### Change Color of Points
 
