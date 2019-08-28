@@ -29,7 +29,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
-<a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-05.pdf'>Click here for the pdf of my resume.</a>
+Click <a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-05.pdf'>here</a> for the pdf of my resume.
 
 #### Personal Details {#person}
 
@@ -52,7 +52,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 - <font color=#808080>**Speaker SIG "Young Modellers in Ecology" (2015–2019)**</font>  
   + Speaker of the Special Interest Group ["YoMos"](https://www.yomos.org/about) of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)
-  + Lead of the organizational teams and chair during international conferences and workshops
+  + Lead of the organizational teams and chair during conferences and workshops
 
 - <font color=#808080>**Parental leave (2017–2018)**</font>  
   + *Full-time:* December 2017 and May-July 2018
@@ -85,29 +85,21 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 
 #### Trainings & Further Education {#training}
 
-- <font color=#808080>**Workshop “Creative Visualization” (2018)**</font>  
-  organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
+- <font color=#808080>**Workshop “Creative Visualization” (2018)**</font> organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)
 
-- <font color=#808080>**Workshop “Patch Occupancy Modelling” (2018)**</font>  
-  held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
+- <font color=#808080>**Workshop “Patch Occupancy Modelling” (2018)**</font> held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)
 
-- <font color=#808080>**Workshop “Scientific Writing” (2017)**</font>  
-  held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
+- <font color=#808080>**Workshop “Scientific Writing” (2017)**</font> held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)
 
-- <font color=#808080>**Workshop “Modelling Approach: Wildlife Populations & Diseases” (2016)**</font>  
-  held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ)</font>
+- <font color=#808080>**Workshop “Modelling Approach: Wildlife Populations & Diseases” (2016)**</font> held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ)</font>
 
-- <font color=#808080>**Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System” (2016)**</font>  
-  organized by Ran Nathan and team at the Minerva Center for Movement Ecology, Jerusalem, Israel
+- <font color=#808080>**Symposium “Emerging High-throughput Systems for Wildlife Tracking at the Regional Scale – The ATLAS System” (2016)**</font> organized by Ran Nathan and team at the Minerva Center for Movement Ecology, Jerusalem, Israel
 
-- <font color=#808080>**Summer School “Spatio-Temporal Data Analyses & Big Data Processing“ (2015)**</font>  
-  held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
+- <font color=#808080>**Summer School “Spatio-Temporal Data Analyses & Big Data Processing“ (2015)**</font> held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter
 
-- <font color=#808080>**Workshop “Movement Ecology“ (2014)**</font>  
-  organized by Niko Balkenhol and Johannes Signer, University of Goettingen
+- <font color=#808080>**Workshop “Movement Ecology“ (2014)**</font> organized by Niko Balkenhol and Johannes Signer, University of Goettingen
 
-- <font color=#808080>**Workshop “Movement Ecology & Biodiversity“ (2012)**</font>  
-  organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
+- <font color=#808080>**Workshop “Movement Ecology & Biodiversity“ (2012)**</font> organized by Carsten Buchholz and Florian Jeltsch, University of Potsdam
 
 
 #### Conference Organisation {#orga}
@@ -145,7 +137,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 - <font color=#808080>**Practical workshop "Zoology" (2009–20014)**</font>  
   Department for Zoology, University of Potsdam, Germany  
 
-- <font color=#808080>**Workshop “Research & Presentation“ (2013–2014**)</font>  
+- <font color=#808080>**Workshop “Research & Presentation“ (2013–2014)**</font>  
   Department for Didactics of Biology, University of Potsdam, Germany  
 
 - <font color=#808080>**Field workshop “Systematic Zoology II“ (2012)**</font>  
