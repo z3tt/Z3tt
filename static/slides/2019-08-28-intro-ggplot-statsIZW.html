@@ -74,7 +74,7 @@ a, a &gt; code {
 
 
 &lt;br&gt;&lt;br&gt;
-# **An Introduction to `{ggplot2}`**&lt;br&gt;&lt;font size=7 color="#a7a7a7"&gt;A graphics framework for elegant plotting in **`R`**&lt;/font&gt;
+# **An Introduction to `{ggplot2}`**&lt;br&gt;&lt;font size=7 color="#a7a7a7"&gt;A Graphics Framework for Elegant Plotting in **`R`**&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 ### **Cédric Scherer**&lt;br&gt;&lt;font size=5 color="#a7a7a7"&gt;Leibniz Institute for Zoo and Wildlife Research Berlin&lt;/font&gt;&lt;br&gt;&lt;font size=4 color="#ccba56"&gt;&lt;b&gt;IZW Stats Group  |  28th of August 2019&lt;/b&gt;&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
@@ -130,7 +130,48 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
+.pull-left[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/georgos_bob_ross.png" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;#TidyTuesday Contribution by Georgos Karamanis&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/gkaramanis/tidytuesday)&lt;/i&gt;&lt;/font&gt;
+]
+
+.pull-right[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/jake_bird_collisions.png" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;#TidyTuesday Contribution by Jake Kaupp&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/jkaupp/tidytuesdays)&lt;/i&gt;&lt;/font&gt;
+]
+
+---
+class: inverse, center, middle
+
+.pull-left[
+&lt;br&gt;&lt;br&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/swiss_map.png" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Bivariate Map by Timo Gossenbacher&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(timogrossenbacher.ch/2019/04/bivariate-maps-with-ggplot2-and-sf)&lt;/i&gt;&lt;/font&gt;
+]
+
+.pull-right[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/europe_sprengler.jpeg" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;European Elections by Torsten Sprenger&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(twitter.com/spren9er/status/1138000009306234880)&lt;/i&gt;&lt;/font&gt;
+]
+
+---
+class: inverse, center, middle
+
 &lt;p style="text-align:center;"&gt;&lt;img src="img/bbc-gallery.png" style="width: 120%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Collection of BBC Graphics&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(adapted from bbc.github.io/rcookbook)&lt;/i&gt;&lt;/font&gt;
+
+---
+class: inverse, center, middle
+
+.pull-left[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/gganimate-datasaurus.gif" style="width: 98%"&gt;
+]
+
+.pull-right[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/gganimate-hurricane.gif" style="width: 98%"&gt;
+]
+
+&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Examples of the {gganimate} Package&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/thomasp85/gganimate/wiki)&lt;/i&gt;&lt;/font&gt;
+
+---
+class: inverse, center, middle
+
+&lt;p style="text-align:center;"&gt;&lt;img src="img/rayshader.gif" style="width: 120%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Demonstration of the {rayshader} Package&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(tylermw.com/3d-maps-with-rayshader)&lt;/i&gt;&lt;/font&gt;
 
 ---
 class: inverse, center, middle
@@ -169,7 +210,7 @@ We use data from the *National Morbidity and Mortality Air Pollution Study* (NMM
 
 
 ```r
-chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
+chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv")
 chic$year &lt;- factor(chic$year, levels = as.character(1997:2000))
 tibble::glimpse(chic)
 ```
