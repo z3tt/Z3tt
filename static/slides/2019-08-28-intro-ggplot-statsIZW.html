@@ -190,7 +190,7 @@ library(ggplot2)
 ```
 
 --
-&lt;br&gt;&lt;font size=4&gt;**`{ggplot2}`** is part of the [**`{tidyverse}`**](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.
+&lt;font size=4&gt;**`{ggplot2}`** is part of the [**`{tidyverse}`**](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.
 
 
 ```r
@@ -200,7 +200,7 @@ library(tidyverse)
 
 &lt;font size=4&gt;**`{tidyverse}`** contains **`{ggplot2}`**, **`{dplyr}`**, **`{tidyr}`**, **`{readr}`**, **`{purrr}`**, **`{tibble}`** and some more packages.
 
-&lt;p style="text-align:right;"&gt;&lt;img src="img/tidyverse.png" style="width: 50%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Source: www.dicook.org/files/rstudio/#3&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p style="text-align:right;"&gt;&lt;img src="img/tidyverse.png" style="width: 55%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Source: dicook.org/files/rstudio/#3&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
 
 ---
 ## **The data**
@@ -337,12 +337,12 @@ class: inverse, center, middle
 ---
 ### **2. Layers: `geom_*()` and `stat_*()`**
 
-By adding one or multiple layers we can tell **`{ggplot2}`** *how* to represent the data.&lt;br&gt;
+&lt;font size=4&gt;By adding one or multiple layers we can tell **`{ggplot2}`** *how* to represent the data.&lt;br&gt;
 There are lots of build-in geometrics elements (**`geoms`**) and statistical transformations (**`stats`**):
 
-&lt;p style="text-align:left;"&gt;&lt;img src="img/ggplot-layers.png" style="width: 57%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Adapted from https://ggplot2.tidyverse.org/reference/&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/ggplot-layers.png" style="width: 57%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Adapted from ggplot2.tidyverse.org/reference/&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;font size=3&gt;... and several more in extension packages, e.g. **`ggforce`**, **`ggalt`**, **`ggridges`**, **`ggrepel`**, **`ggcorrplot`**, **`ggraph`** and **`ggdendro`**.
+&lt;font size=2&gt;... and several more in extension packages, e.g. **`{ggforce}`**, **`{ggalt}`**, **`{ggridges}`**, **`{ggrepel}`**, **`{ggcorrplot}`**, **`{ggraph}`**, **`{ggdendro}`** &amp; **`{ggalluvial}`**.
 
 ---
 ### **2. Layers — Geometries: `geom_point()`**
@@ -1560,7 +1560,7 @@ class: inverse, center, middle
   + "Data Visualization: A Practical Introduction" by Kieran Healy  →  [socviz.co](https://socviz.co/)
   + "Fundamentals of Data Visualization" by Claus Wilke  →  [serialmentor.com/dataviz](https://serialmentor.com/dataviz/)
 
-+ **Galleries:**
+* **Galleries:**
 
   + R Graph Gallery  →  [r-graph-gallery.com](https://www.r-graph-gallery.com/)
   + ggplot2 Extension Gallery  →  [ggplot2-exts.org/gallery](http://www.ggplot2-exts.org/gallery/)
@@ -1573,7 +1573,7 @@ class: inverse, center, middle
   + R4DS Learning Community  →  [rfordatasci.com](https://www.rfordatasci.com)
   + &amp;#35;TidyTuesday Community  →  [#TidyTuesday on Twitter](https://twitter.com/hashtag/tidytuesday?lang=en)
 
-* **Useful packages:**
+* **Useful Packages:**
 
   + **`{ggtext}`** — rich-text rendering  →  [github.com/clauswilke/ggtext](https://github.com/clauswilke/ggtext)
   + **`{ggforce}`** — several interesting add-on features   →  [ggforce.data-imaginist.com](https://ggforce.data-imaginist.com/)
@@ -1724,7 +1724,7 @@ ggplot(chic, aes(date, temp)) +
     fontface = "bold",
     color = "firebrick"
   ) +
-* facet_wrap(~year, scales = "free_x")
+* facet_wrap(~ year, scales = "free_x")
 ```
 ]
 
