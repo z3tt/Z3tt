@@ -165,7 +165,6 @@ class: inverse, center, middle
 .pull-right[
 &lt;p style="text-align:center;"&gt;&lt;img src="img/gganimate-hurricane.gif" style="width: 98%"&gt;
 ]
-
 &lt;font color="lightgrey" size=3&gt;&lt;i&gt;Examples of the {gganimate} Package&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/thomasp85/gganimate/wiki)&lt;/i&gt;&lt;/font&gt;
 
 ---
@@ -450,15 +449,16 @@ We need to specify the  variable as **categorial** (**`year`**), not as **contin
 ]
 
 ---
-### **2. Layers — Geometries: `geom_rug()`**
+### **2. Layers — Geometries: Using Multiple `geom_*()`**
 
-Other layers can be added to an existing plot - a rug representation for example:
+Other layers can be added to an existing plot - a line and a rug representation for example:
 
 .pull-left[
 
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point() +
+* geom_line() +
 * geom_rug(sides = "r")
 ```
 ]
@@ -827,13 +827,6 @@ With **`breaks`** and **`labels`** it's also possible to alter the labels withou
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
-  scale_x_date(
-    name = NULL, 
-    limits = c(
-      as.Date("1997-01-01"),
-      as.Date("1999-12-31")
-    )
-  ) + 
   scale_y_continuous(
 *   name = "How I feel...",
 *   breaks = c(0, 30, 60, 90),
@@ -1001,10 +994,10 @@ ggplot(chic, aes(date, temp)) +
 ```
 
 Several packages offer predefined palettes, e.g.:
-* **`{viridis}`** for color-blind safe palettes
+* **`{viridis}`** for perceptually uniform palettes
 * **`{rcartocolor}`** for map color schemes
 * **`{LaCroixColoR}`** for vibrant summery colors
-* **`{ggthemes}`** for colors of popular software and publishers
+* **`{ggthemes}`** for colors of popular software &amp; publishers
 
 Check the [collection by Emil Hvitfeldt](https://github.com/EmilHvitfeldt/r-color-palettes) for a list of color palettes available in **`R`**.
 ]
