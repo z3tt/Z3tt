@@ -6,10 +6,23 @@
     <description>Recent content in DataViz on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Workshop Announcements</title>
+      <link>/2019/xx/xx/workshop-announcement-datascience-dataviz-tidyverse/</link>
+      <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/xx/xx/workshop-announcement-datascience-dataviz-tidyverse/</guid>
+      <description>I am proud to announce three workshops that I am going to lead/teach in autumn 2019 and spring 2020! 🎉 Thanks to all of you for that opportunity!
+→ Data Visualization Workshop in Berlin, Germany (Sep 26th 2019)
+→ Data Exploration in R with tidyverse in Modica, Italy (Nov 4th to 8th 2019)
+→ Data Visualization in R with ggplot2 in Berlin, Germany (Mar 2nd to 6th 2020)
+1-Day Data Visualization Workshop in Berlin (September 2019) I am delighted to be one of the invited workshop host during the 2-day PhD symposium (September 26th and 27th 2019) at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research).</description>
+    </item>
     
     <item>
       <title>A ggplot2 Tutorial for Beautiful Plotting in R</title>

@@ -4,7 +4,7 @@
     <title>An Introduction to {ggplot2}</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2019-08-28" />
+    <meta name="date" content="2019-08-29" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
@@ -74,7 +74,7 @@ a, a &gt; code {
 
 
 &lt;br&gt;&lt;br&gt;
-# **An Introduction to `{ggplot2}`**&lt;br&gt;&lt;font size=7 color="#a7a7a7"&gt;A graphics framework for elegant plotting in **`R`**&lt;/font&gt;
+# **An Introduction to `{ggplot2}`**&lt;br&gt;&lt;font size=7 color="#a7a7a7"&gt;A Graphics Framework for Elegant Plotting in **`R`**&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 ### **Cédric Scherer**&lt;br&gt;&lt;font size=5 color="#a7a7a7"&gt;Leibniz Institute for Zoo and Wildlife Research Berlin&lt;/font&gt;&lt;br&gt;&lt;font size=4 color="#ccba56"&gt;&lt;b&gt;IZW Stats Group  |  28th of August 2019&lt;/b&gt;&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
@@ -130,7 +130,47 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
+.pull-left[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/georgos_bob_ross.png" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;#TidyTuesday Contribution by Georgos Karamanis&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/gkaramanis/tidytuesday)&lt;/i&gt;&lt;/font&gt;
+]
+
+.pull-right[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/jake_bird_collisions.png" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;#TidyTuesday Contribution by Jake Kaupp&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/jkaupp/tidytuesdays)&lt;/i&gt;&lt;/font&gt;
+]
+
+---
+class: inverse, center, middle
+
+.pull-left[
+&lt;br&gt;&lt;br&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/swiss_map.png" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Bivariate Map by Timo Gossenbacher&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(timogrossenbacher.ch/2019/04/bivariate-maps-with-ggplot2-and-sf)&lt;/i&gt;&lt;/font&gt;
+]
+
+.pull-right[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/europe_sprengler.jpeg" style="width: 98%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;European Elections by Torsten Sprenger&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(twitter.com/spren9er/status/1138000009306234880)&lt;/i&gt;&lt;/font&gt;
+]
+
+---
+class: inverse, center, middle
+
 &lt;p style="text-align:center;"&gt;&lt;img src="img/bbc-gallery.png" style="width: 120%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Collection of BBC Graphics&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(adapted from bbc.github.io/rcookbook)&lt;/i&gt;&lt;/font&gt;
+
+---
+class: inverse, center, middle
+
+.pull-left[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/gganimate-datasaurus.gif" style="width: 98%"&gt;
+]
+
+.pull-right[
+&lt;p style="text-align:center;"&gt;&lt;img src="img/gganimate-hurricane.gif" style="width: 98%"&gt;
+]
+&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Examples of the {gganimate} Package&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/thomasp85/gganimate/wiki)&lt;/i&gt;&lt;/font&gt;
+
+---
+class: inverse, center, middle
+
+&lt;p style="text-align:center;"&gt;&lt;img src="img/rayshader.gif" style="width: 120%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Demonstration of the {rayshader} Package&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(tylermw.com/3d-maps-with-rayshader)&lt;/i&gt;&lt;/font&gt;
 
 ---
 class: inverse, center, middle
@@ -150,7 +190,7 @@ library(ggplot2)
 ```
 
 --
-&lt;br&gt;&lt;font size=4&gt;**`{ggplot2}`** is part of the [**`{tidyverse}`**](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.
+&lt;font size=4&gt;**`{ggplot2}`** is part of the [**`{tidyverse}`**](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.
 
 
 ```r
@@ -160,7 +200,7 @@ library(tidyverse)
 
 &lt;font size=4&gt;**`{tidyverse}`** contains **`{ggplot2}`**, **`{dplyr}`**, **`{tidyr}`**, **`{readr}`**, **`{purrr}`**, **`{tibble}`** and some more packages.
 
-&lt;p style="text-align:right;"&gt;&lt;img src="img/tidyverse.png" style="width: 50%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Source: www.dicook.org/files/rstudio/#3&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p style="text-align:right;"&gt;&lt;img src="img/tidyverse.png" style="width: 55%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Source: dicook.org/files/rstudio/#3&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
 
 ---
 ## **The data**
@@ -169,7 +209,7 @@ We use data from the *National Morbidity and Mortality Air Pollution Study* (NMM
 
 
 ```r
-chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
+chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv")
 chic$year &lt;- factor(chic$year, levels = as.character(1997:2000))
 tibble::glimpse(chic)
 ```
@@ -241,7 +281,7 @@ There is only an empty panel because&lt;br&gt;**`{ggplot2}` doesn't know *how* i
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-data-vars-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-data-vars-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -259,7 +299,7 @@ Since almost every **`ggplot()`** takes the same arguments (**`data, mapping = a
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-data-vars2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-data-vars2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -286,7 +326,7 @@ ggplot(chic) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-data-vars4-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-data-vars4-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -297,12 +337,12 @@ class: inverse, center, middle
 ---
 ### **2. Layers: `geom_*()` and `stat_*()`**
 
-By adding one or multiple layers we can tell **`{ggplot2}`** *how* to represent the data.&lt;br&gt;
+&lt;font size=4&gt;By adding one or multiple layers we can tell **`{ggplot2}`** *how* to represent the data.&lt;br&gt;
 There are lots of build-in geometrics elements (**`geoms`**) and statistical transformations (**`stats`**):
 
-&lt;p style="text-align:left;"&gt;&lt;img src="img/ggplot-layers.png" style="width: 57%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Adapted from https://ggplot2.tidyverse.org/reference/&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/ggplot-layers.png" style="width: 57%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Adapted from ggplot2.tidyverse.org/reference/&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
 
-&lt;font size=3&gt;... and several more in extension packages, e.g. **`ggforce`**, **`ggalt`**, **`ggridges`**, **`ggrepel`**, **`ggcorrplot`**, **`ggraph`** and **`ggdendro`**.
+&lt;font size=2&gt;... and several more in extension packages, e.g. **`{ggforce}`**, **`{ggalt}`**, **`{ggridges}`**, **`{ggrepel}`**, **`{ggcorrplot}`**, **`{ggraph}`**, **`{ggdendro}`** &amp; **`{ggalluvial}`**.
 
 ---
 ### **2. Layers — Geometries: `geom_point()`**
@@ -318,7 +358,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-point-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-point-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -335,7 +375,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-line-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-line-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -352,7 +392,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-area-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-area-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -369,7 +409,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-box-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-box-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -388,7 +428,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-box2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-box2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -405,25 +445,26 @@ We need to specify the  variable as **categorial** (**`year`**), not as **contin
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-box-fct-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-box-fct-1.png)&lt;!-- --&gt;
 ]
 
 ---
-### **2. Layers — Geometries: `geom_rug()`**
+### **2. Layers — Geometries: Using Multiple `geom_*()`**
 
-Other layers can be added to an existing plot - a rug representation for example:
+Other layers can be added to an existing plot - a line and a rug representation for example:
 
 .pull-left[
 
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point() +
+* geom_line() +
 * geom_rug(sides = "r")
 ```
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-geom-rug-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-geom-rug-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -444,7 +485,7 @@ ggplot(chic, aes(year, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-stats-sum-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-stats-sum-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -466,7 +507,7 @@ ggplot(tibble(x = c(-8, 8)), aes(x)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-stats-function-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-function-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -483,7 +524,7 @@ ggplot(chic, aes(temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-stats-ecdf-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-ecdf-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -503,7 +544,7 @@ By default this adds a **LOESS** (locally weighted scatterplot smoothing, **`met
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-stats-smooth2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-smooth2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -527,7 +568,7 @@ Other methods such as **`method = "lm"`** for linear regressions and **`method =
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-stats-smooth-gam-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-smooth-gam-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -581,7 +622,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-aes-size-alpha-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-aes-size-alpha-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -605,7 +646,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-aes-col-shape-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-aes-col-shape-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -631,7 +672,7 @@ ggplot(
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-aes-col-shape2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-aes-col-shape2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -653,7 +694,7 @@ ggplot(chic, aes(temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-aes-group-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-aes-group-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -675,7 +716,7 @@ ggplot(chic, aes(temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-aes-group-col-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-aes-group-col-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -744,7 +785,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-axis-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-axis-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -773,7 +814,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-axis2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-axis2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -786,13 +827,6 @@ With **`breaks`** and **`labels`** it's also possible to alter the labels withou
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
-  scale_x_date(
-    name = NULL, 
-    limits = c(
-      as.Date("1997-01-01"),
-      as.Date("1999-12-31")
-    )
-  ) + 
   scale_y_continuous(
 *   name = "How I feel...",
 *   breaks = c(0, 30, 60, 90),
@@ -807,7 +841,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-labels-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-labels-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -832,7 +866,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-axis-expand-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-axis-expand-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -857,7 +891,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-color-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-color-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -883,7 +917,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-color-legend-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-color-legend-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -909,7 +943,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-color-legend-off-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-color-legend-off-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -940,7 +974,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-color-legend-off+shape-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-color-legend-off+shape-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -960,22 +994,22 @@ ggplot(chic, aes(date, temp)) +
 ```
 
 Several packages offer predefined palettes, e.g.:
-* **`{viridis}`** for color-blind safe palettes
+* **`{viridis}`** for perceptually uniform palettes
 * **`{rcartocolor}`** for map color schemes
 * **`{LaCroixColoR}`** for vibrant summery colors
-* **`{ggthemes}`** for colors of popular software and publishers
+* **`{ggthemes}`** for colors of popular software &amp; publishers
 
 Check the [collection by Emil Hvitfeldt](https://github.com/EmilHvitfeldt/r-color-palettes) for a list of color palettes available in **`R`**.
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-color-brewer2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-color-brewer2-1.png)&lt;!-- --&gt;
 ]
 
 ---
 ### **4. Scales: `scale_color_*()` and `scale_fill_*()`** — Color Palettes
 
-![](20190828_statsIZW-intro_files/figure-html/plots-viridis-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plots-viridis-1.png)&lt;!-- --&gt;
 
 ---
 class: inverse, center, middle
@@ -1023,7 +1057,7 @@ Note that this does prevent a removal of the data points outside the plot area!&
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-coord-zoom-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-coord-zoom-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1041,7 +1075,7 @@ ggplot(chic, aes(year, temp)) +
 * )
 ```
 
-![](20190828_statsIZW-intro_files/figure-html/structure-coord-zoom-box-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-zoom-box-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -1054,7 +1088,7 @@ ggplot(chic, aes(year, temp)) +
 * )
 ```
 
-![](20190828_statsIZW-intro_files/figure-html/structure-coord-lim-box-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-lim-box-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1086,7 +1120,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-axis-clip-1.png)&lt;!-- --&gt;![](20190828_statsIZW-intro_files/figure-html/plot-structure-scale-axis-clip-2.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-axis-clip-1.png)&lt;!-- --&gt;![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-axis-clip-2.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1104,7 +1138,7 @@ ggplot(chic, aes(season, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-coord-flip-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-coord-flip-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1120,7 +1154,7 @@ ggplot(chic, aes(season, temp)) +
               geom = "bar")
 ```
 
-![](20190828_statsIZW-intro_files/figure-html/structure-coord-polar-before-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-polar-before-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -1132,7 +1166,7 @@ ggplot(chic, aes(season, temp)) +
 * coord_polar()
 ```
 
-![](20190828_statsIZW-intro_files/figure-html/structure-coord-polar-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-polar-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1150,7 +1184,7 @@ ggplot(chic, aes(o3, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-coord-trans-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-coord-trans-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1174,7 +1208,7 @@ Maps often come as polygons and can be plotted via **`geom_polygon()`**:
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-coord-map-noproj-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-coord-map-noproj-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1189,7 +1223,7 @@ g_world +
 * coord_map(xlim = c(-180,180))
 ```
 
-![](20190828_statsIZW-intro_files/figure-html/structure-coord-map-proj1-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-map-proj1-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -1199,7 +1233,7 @@ g_world +
 * coord_map("ortho")
 ```
 
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-coord-map-proj2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-coord-map-proj2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1230,7 +1264,7 @@ ggplot(chic, aes(temp, o3)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-facet-wrap-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-facet-wrap-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1251,7 +1285,7 @@ It is possible to change the axes range to scale free for each subset (for only 
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-facet-wrap2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-facet-wrap2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1269,7 +1303,7 @@ ggplot(chic, aes(temp, o3)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-facet-grid-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-facet-grid-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1327,7 +1361,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-manual-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-manual-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1349,7 +1383,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-blank-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-blank-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1367,7 +1401,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-builtin-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-builtin-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1385,7 +1419,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-builtin2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-builtin2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1403,7 +1437,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-base-size-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-base-size-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1429,7 +1463,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-override1-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-override1-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1449,7 +1483,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-override2-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-override2-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1477,7 +1511,7 @@ g
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-override3-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-override3-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1508,7 +1542,7 @@ g
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-structure-theme-override4-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-override4-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1526,7 +1560,7 @@ class: inverse, center, middle
   + "Data Visualization: A Practical Introduction" by Kieran Healy  →  [socviz.co](https://socviz.co/)
   + "Fundamentals of Data Visualization" by Claus Wilke  →  [serialmentor.com/dataviz](https://serialmentor.com/dataviz/)
 
-+ **Galleries:**
+* **Galleries:**
 
   + R Graph Gallery  →  [r-graph-gallery.com](https://www.r-graph-gallery.com/)
   + ggplot2 Extension Gallery  →  [ggplot2-exts.org/gallery](http://www.ggplot2-exts.org/gallery/)
@@ -1539,7 +1573,7 @@ class: inverse, center, middle
   + R4DS Learning Community  →  [rfordatasci.com](https://www.rfordatasci.com)
   + &amp;#35;TidyTuesday Community  →  [#TidyTuesday on Twitter](https://twitter.com/hashtag/tidytuesday?lang=en)
 
-* **Useful packages:**
+* **Useful Packages:**
 
   + **`{ggtext}`** — rich-text rendering  →  [github.com/clauswilke/ggtext](https://github.com/clauswilke/ggtext)
   + **`{ggforce}`** — several interesting add-on features   →  [ggforce.data-imaginist.com](https://ggforce.data-imaginist.com/)
@@ -1588,7 +1622,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-title-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-title-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1614,7 +1648,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-labs-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-labs-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1642,7 +1676,7 @@ g +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-labs-mod-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-labs-mod-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1668,7 +1702,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-annotate-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-annotate-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1690,12 +1724,12 @@ ggplot(chic, aes(date, temp)) +
     fontface = "bold",
     color = "firebrick"
   ) +
-* facet_wrap(~year, scales = "free_x")
+* facet_wrap(~ year, scales = "free_x")
 ```
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-annotate-facet-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-annotate-facet-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1726,7 +1760,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-annotate-custom-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-annotate-custom-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1756,7 +1790,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-ggtext-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-ggtext-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1788,7 +1822,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-annotate-img-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-annotate-img-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1814,7 +1848,7 @@ ggplot(iris, aes(Species, Sepal.Width)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-text-ggtext-img-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-ggtext-img-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1850,7 +1884,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-forms-annotate-rect-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-forms-annotate-rect-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1883,7 +1917,7 @@ ggplot(chic) +
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-forms-geom-rect-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-forms-geom-rect-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1913,7 +1947,7 @@ There are also **`geom_abline()`** and **`geom_hline()`**.
 ]
 
 .pull-right[
-![](20190828_statsIZW-intro_files/figure-html/plot-forms-vline-1.png)&lt;!-- --&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-forms-vline-1.png)&lt;!-- --&gt;
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
