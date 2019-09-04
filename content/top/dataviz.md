@@ -15,7 +15,7 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_18_BirdCollisions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_18_BirdCollisions.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_36_MooresLaw.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw.png', 'blank');"/>
+<img src="/img/tidytuesday/2019_36_MooresLaw_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw_left.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
 
