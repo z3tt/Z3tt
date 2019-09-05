@@ -8,7 +8,7 @@
   + [Colors](#cols)
   + [Chart Types](#charts)
   + [Mapping](#maps)
- * [Interesting Blogs](#blogs)
+* [Interesting Personal Blogs](#blogs)
 
 ### Rstats {#rstats}
 
@@ -39,8 +39,8 @@
 
 * ["Data Visualization"](http://socviz.co/) - Free Online Book by Kieran Healy  
 * ["Fundamentals of Data Visualization"](https://serialmentor.com/dataviz/) — Free Online Book by Claus Wilke
-* ["Visualizing Data"](http://www.visualisingdata.com/) — Homepage & Blog by Andy Kirk
-* ["Visual Cinnamon"](https://www.visualcinnamon.com/) — Homepage & Blog by Nadieh Bremer
+* ["Visualizing Data"](http://www.visualisingdata.com/) — Homepage by Andy Kirk
+* ["Visual Cinnamon"](https://www.visualcinnamon.com/) — Homepage by Nadieh Bremer
 * [Explorable Explanations](https://explorabl.es/)
 * ["Multiple Views: Visualization Research Explained"](https://medium.com/multiple-views-visualization-research-explained) — DataViz Blog on Medium
 * [Graphics Principles Cheatsheet](https://graphicsprinciples.github.io/)
@@ -55,7 +55,8 @@
 ###### Chart Types {#charts}
 
 * [From Data to Viz](https://www.data-to-viz.com/)
-* [Visualization Universe](http://visualizationuniverse.com/charts/?sortBy=volume&sortDir=desc)
+* [Data Viz Project](https://datavizproject.com/)
+* [Visualization Universe](http://visualizationuniverse.com/charts/)
 * [Material.io](https://material.io/design/communication/data-visualization.html)
 * [Data Visualization 101](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization)
 * [Chart of Chart Suggestions](https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf)
@@ -67,7 +68,7 @@
 * [Value-by-Alpha Maps](http://andywoodruff.com/blog/value-by-alpha-maps/)
 
 
-### Interesting Personal Blogs (Random Topics, Random Order 🤷) {#blogs}
+### Interesting Personal Blogs<br>(Random Topics, Random Order 🤷) {#blogs}
 
 * [Chisato](https://chichacha.netlify.com/) — Colors & Art with `ggplot2`
 * [Dominic Roye](https://dominicroye.github.io/en/) — Mapping with `ggplot2`
@@ -81,6 +82,6 @@
 * [Ilya Kashnitsky](https://ikashnitsky.github.io/) — Maps & Demography in `R`
 * [Hugo Toscano](https://toscano84.github.io/) — Data Science in `R`
 * [Geoff Boeing](https://geoffboeing.com) — `Python` & GIS
-* [Our World in Data](https://ourworldindata.org/blog) — "Research & data to make progress against the world’s largest problems."
+* [Our World in Data](https://ourworldindata.org/blog) — "Data on the world’s largest problems"
 * [Dynamic Ecology](https://dynamicecology.wordpress.com/) — Population, Community & Evolutionary Ecology
 * [Florian Hartig](https://theoreticalecology.wordpress.com/) — Ecology, Evolution & Statistics
