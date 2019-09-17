@@ -15,11 +15,6 @@
   </url>
   
   <url>
-    <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
-    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -35,6 +30,11 @@
     <loc>/tags/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
