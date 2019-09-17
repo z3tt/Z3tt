@@ -6,10 +6,23 @@
     <description>Recent content in R on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jumping on the Hype Train – Visualizing Temperatures in Berlin with Bar Chart Races</title>
+      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
+ She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race? Do you know these?&amp;rdquo;
+Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
+Me: &amp;ldquo;&amp;hellip;&amp;rdquo;
+She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</description>
+    </item>
     
     <item>
       <title>Workshop Announcements</title>
@@ -21,7 +34,7 @@
 → Data Visualization Workshop in Berlin, Germany (Sep 26th 2019)
 → Data Exploration in R with tidyverse in Modica, Italy (Nov 4th to 8th 2019)
 → Data Visualization in R with ggplot2 in Berlin, Germany (Mar 2nd to 6th 2020)
-1-Day Data Visualization Workshop in Berlin (September 2019) I am delighted to be one of the invited workshop host during the 2-day PhD symposium (September 26th and 27th 2019) at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research).</description>
+&amp;ldquo;Data Visualization&amp;rdquo; Workshop in Berlin (September 2019) I am delighted to be one of the invited workshop host during the 2-day PhD symposium (September 26th and 27th 2019) at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research).</description>
     </item>
     
     <item>

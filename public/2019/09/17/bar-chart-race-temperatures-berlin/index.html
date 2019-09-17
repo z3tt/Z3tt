@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="//img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+    <meta property="twitter:image" content="//img/banner/mountainsnstars_crystal_RichardStrozynski.jpg" />
+    
+
+    
+    <meta name="title" content="Jumping on the Hype Train – Visualizing Temperatures in Berlin with Bar Chart Races" />
+    <meta property="og:title" content="Jumping on the Hype Train – Visualizing Temperatures in Berlin with Bar Chart Races" />
+    <meta property="twitter:title" content="Jumping on the Hype Train – Visualizing Temperatures in Berlin with Bar Chart Races" />
+    
+
+    
+    <meta name="description" content="You have seen Bar Chart Races. You have seen Bart Chart Races of Bar Chart Races. Here come some more using temperature data in Berlin using `ggplot2` and `gganimate`.">
+    <meta property="og:description" content="You have seen Bar Chart Races. You have seen Bart Chart Races of Bar Chart Races. Here come some more using temperature data in Berlin using `ggplot2` and `gganimate`." />
+    <meta property="twitter:description" content="You have seen Bar Chart Races. You have seen Bart Chart Races of Bar Chart Races. Here come some more using temperature data in Berlin using `ggplot2` and `gganimate`." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Computational Ecology, Data Visualisation">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Jumping on the Hype Train – Visualizing Temperatures in Berlin with Bar Chart Races-Cédric Scherer</title>
+
+    <link rel="canonical" href="/2019/09/17/bar-chart-race-temperatures-berlin/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/projects/">Projects</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/dataviz/">Visualizations</a></li>
+                    
+                        <li><a href="/top/links/">Links  </a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/dark_RichardStrozynski.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        <a class="tag" href="/tags/gganimate" title="gganimate">
+                            gganimate
+                        </a>
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                    </div>
+                    <h1>Jumping on the Hype Train – Visualizing Temperatures in Berlin with Bar Chart Races</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Tuesday, September 17, 2019
+                        
+                            <span id="/2019/09/17/bar-chart-race-temperatures-berlin/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+<h4 id="sunday"><em>Sunday</em></h4>
+
+<p>Two days ago, I was sitting in the sun with a friend working in <em>UX and Graphic Design</em>, chatting about DataViz:</p>
+
+<blockquote>
+<p>She: &ldquo;Oh man, last week we had one customer asking for a bar chart race? Do you know these?&rdquo;<br />
+<br>
+Me: &ldquo;Yes&hellip; They are literally EVERYWHERE<a href="#section1"><sup>1</sup></a>.&rdquo; <p id="back1"></p>
+<br>
+She: &ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&rdquo;<br />
+<br>
+Me: &ldquo;&hellip;&rdquo;<br />
+<br>
+She: &ldquo;&hellip; and I wondered if you could have done this in R?&rdquo;</p>
+</blockquote>
+
+<p>Of course, one can! And especially, going through design circles with a customer regarding colors, fonts, size and also simply to map the relevant data to a bar plot is so much easier.</p>
+
+<p>I mean, they have <em>drawn each bar separately</em> during their progress which took them two days in total!</p>
+
+<p>To showcase the capability of <code>R</code>, I immediately sat down after the family went to bed and copied the <a href="https://github.com/amrrs/animated_bar_charts_in_R">example provided by Abdul Majed Raja</a> using the great <a href="https://gganimate.com/">{gganimate} 📦</a> (what else?!) by <a href="https://www.data-imaginist.com/about/">Thomas Lin Pedersen</a> (who else?!).</p>
+
+<p>I am playing around with Berlin weather data from the <a href="https://www.dwd.de/DE/leistungen/klimadatendeutschland/klarchivtagmonat.html">DWD (Deutscher Wetterdienst)</a> for a few days now⁠—for example <a href="https://twitter.com/CedScherer/status/1170674809983905792">my contribution to the #SWDchallenge on &ldquo;Visualizing Uncertainty&rdquo;</a>⁠—so this was an easy choice. I created the <a href="https://twitter.com/jburnmurdoch/status/1107552367795412992?lang=en">usual bar chart race as introduced by John Burn-Murdoch</a> visualizing the daily maximum temperature in Berlin-Dahlem (one of many stations in Berlin), averaged for each month. 15 to 30 minutes later (okay, add one more hour for playing around with different time periods and frame rates) I was very happy  about this gif:
+<img src="/img/bar-races/dwd_anim_max_viridis_short.gif" alt="GIF Chart Race Maximum Temperatures (viridis)" /></p>
+
+<p>Even though I love the <a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">viridis color palettes</a> and they are my default color choice (here: option <code>inferno</code> because it fits the topic), I gave it another try. The <a href="https://github.com/thomasp85/scico">{scico} 📦</a> is another great color palette package, again maintained by Thomas Lin Pedersen, and there one particular palette that matched my animation - blue-redish and called <strong>berlin</strong>!
+<img src="/img/bar-races/dwd_anim_max_scico_short.gif" alt="GIF Chart Race Maximum Temperatures (scico)" /></p>
+
+<p>It was already late and I had to stop. I&rsquo;ve mailed her the animations and while going to bed, I was already thinking about other cool stuff one could use a bar chart race for in this context.</p>
+
+<hr />
+
+<h4 id="monday"><em>Monday</em></h4>
+
+<p>In the morning, on my way to work, I coded a unusual bar chart race showing the difference of monthly average temperatures to the 1951–1980 period, and thus both positive and negative values. While showing the general pattern in the northern hemisphere with summer months being warmer and winter months being colder than average, this illustrates nicely increasing temperatures in the more recent years during the summer months and also in spring and autumn:
+<img src="/img/bar-races/dwd_anim_diff_yrs_label.gif" alt="GIF Chart Race Difference Temperatures (years)" /></p>
+
+<p>I again depicted only the period from 1980 until now since the animation became too long (but see <a href="#section2"><sup>2</sup></a>).<p id="back2"></p>
+To visualize the trend over the whole period (1876–2018), I decided to group the data per decade (to do so in <code>R</code> and the <code>tidyverse</code> use: <code>mutate(decade = year %/% 10 * 10)</code>) and visualize the difference in average monthly temperatures:
+<img src="/img/bar-races/dwd_anim_diff_dec_label.gif" alt="GIF Chart Race Difference Temperatures (decades)" /></p>
+
+<p>Finally, so that the locals can understand it too, I&rsquo;ve created a version in German:
+<img src="/img/bar-races/dwd_anim_diff_dec_label_ger.gif" alt="GIF Chart Race Difference Temperatures (decades)" /></p>
+
+<hr />
+
+<h4 id="tuesday"><em>Tuesday</em></h4>
+
+<p>So, now I am sitting here on my laptop watching bar chart races in various forms, colors, languages, and time periods.</p>
+
+<blockquote>
+<p>Me: Wow, it&rsquo;s amazing what you can do with R! And how easy it is.<br />
+<br>
+Also me: Next time, my friend&rsquo;s agency hopefully contacts someone who knows how to use <code>R</code> and data visualization (me!) to make reproducible, publication-ready bar chart races (or any other DataViz)!<br />
+<br>
+Also me: Maybe I should jump on the hype train before its gone<a href="#section3"><sup>3</sup></a> and write blog post.<p id="back3"></p></p>
+</blockquote>
+
+<p><br></p>
+
+<hr />
+
+<p id="section1"><sup>1</sup> see for example: the <a href="https://twitter.com/jburnmurdoch/status/1107552367795412992?lang=en">already famous bar chart race from John Burn-Murdoch</a>, the <a href="https://twitter.com/JonTheGeek/status/1172259966260064258">#TidyTuesday contribution by Jon 'The Geek' Harmon</a>, a <a href="https://www.youtube.com/watch?v=Qvz6xEkSp94">bar chart race about the popularity of bar chart races on Reddit</a> and the <a href="https://twitter.com/bizweekgraphics/status/1169232409767886848">"Bar Chart Race of Bart Chart Races"</a>.   <a href="#back1"><i>Go back</i> ↑</a></p>
+
+<p id="section2"><sup>2</sup> Here is the long version showing monthly differences for all years (1876–2018).</a>   <a href="#back2"><i>Go back</i> ↑</a></p>
+
+<p><img src="/img/bar-races/dwd_anim_diff_yrs_label_all.gif" alt="GIF Chart Race Difference Temperatures (all years)"></p>
+
+<p id="section3"><sup>3</sup> Probably I am already too late to catch that train... <a href="#back3"><i>Go back</i> ↑</a></p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/" data-toggle="tooltip" data-placement="top" title="Workshop Announcements">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/gganimate" title="gganimate">
+                            gganimate
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ggplot-evolution" title="ggplot-evolution">
+                            ggplot-evolution
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/misc" title="misc">
+                            misc
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Cédric Scherer
+                    <br>
+                    Hugo Theme: <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> by <a href="https://zhaohuabing.com">Huabing</a> | Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
