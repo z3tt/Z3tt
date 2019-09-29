@@ -13,6 +13,8 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
 
+<img src="/img/tidytuesday/2019_39_SchoolDiversity.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity.png', 'blank');"/>
+
 <img src="/img/tidytuesday/2019_18_BirdCollisions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_18_BirdCollisions.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_36_MooresLaw.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw.png', 'blank');"/>
@@ -38,6 +40,8 @@ A collection of data visualizations I've produced for scientific publications an
 <img src="/img/tidytuesday/2019_20_NobelPrizeWinners.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_20_NobelPrizeWinners.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_14_SeattleBikes_month.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_14_SeattleBikes_month.png', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_22_Wines.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_22_Wines.png', 'blank');"/>
 
