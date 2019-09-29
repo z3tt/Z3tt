@@ -42,11 +42,11 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_14_SeattleBikes_month.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_14_SeattleBikes_month.png', 'blank');"/>
 
+<img src="/img/tidytuesday/2019_16_DataVizMistakes_light.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_16_DataVizMistakes_light.png', 'blank');"/>
+
 <img src="/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_22_Wines.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_22_Wines.png', 'blank');"/>
-
-<img src="/img/tidytuesday/2019_16_DataVizMistakes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_16_DataVizMistakes.png', 'blank');"/>
 <br/>
 
 
