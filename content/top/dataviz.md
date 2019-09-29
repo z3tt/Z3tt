@@ -1,13 +1,14 @@
 A collection of data visualizations I've produced for scientific publications and fun using the [`ggplot2`](https://ggplot2.tidyverse.org/) package in the programming language [`R`](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
 <br/>
 
-* [#TidyTuesday contributions](#tidytuesday)
-* [#MakeoverMonday contributions](#makeovermonday)
+* [Contributions to #TidyTuesday](#tidytuesday)
+* [Contributions to #MakeoverMonday](#makeovermonday)
+* [Contributions to the #SWDchallenge](#swdchallenge)
 * ["Evolution of a ggplot" blog series](#evolggplot)
 <br/>
 
 
-## #TidyTuesday contributions {#tidytuesday}
+## Contributions to #TidyTuesday {#tidytuesday}
 
 [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `tidyverse` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/).
 
@@ -49,11 +50,21 @@ A collection of data visualizations I've produced for scientific publications an
 <br/>
 
 
-## #MakeoverMonday contributions {#makeovermonday}
+## Contributions to #MakeoverMonday {#makeovermonday}
 
 [#MakeoverMonday](https://www.makeovermonday.co.uk/) is a weekly social data project aimed to help people learn how to create better, more effective visualizations.
 
 <img src="/img/makeovermonday/2019-08-18_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019-08-18_phone-use.png', 'blank');"/>
+<br/>
+
+
+## Contributions to the #SWDchallenge {#swdchallenge}
+
+[#SWDchallenge](http://www.storytellingwithdata.com/swdchallenge) #SWDchallenge is a monthly challenge where you can practice and apply data visualization and storytelling skills initiated by [Cole Nussbaumer Knaflic]-
+
+<img src="/img/swdchallenge/SWD_2019_09_Uncertainty.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty.png', 'blank');"/>
+
+<img src="/img/swdchallenge/SWD_2019_09_Uncertainty_ger.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty_ger.png', 'blank');"/>
 <br/>
 
 
