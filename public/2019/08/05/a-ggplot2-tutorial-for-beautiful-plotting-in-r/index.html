@@ -1083,7 +1083,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x0000000006c809f0&gt;
+## &lt;bytecode: 0x000000000be9fe28&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {
@@ -1605,9 +1605,9 @@ g + stat_contour(aes(color = ..level.., fill = Dewpoint))</code></pre>
     scale_fill_viridis()</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/contour-and-tile-1.png" width="100%" /></p>
 </div>
-<div id="create-a-joyplot-aka-ridge-plot" class="section level3">
-<h3>Create a Joyplot aka Ridge Plot</h3>
-<p>Joyplots (also called <em>ridgle(line) plots</em>) are a new type of plots which is very popular at the moment. (Fun fact: The name refers to the <a href="https://en.wikipedia.org/wiki/File:Unknown_Pleasures_Joy_Division_LP_sleeve.jpg">cover of Joy Division’s “Unknown Pleasures” LP</a>.)</p>
+<div id="create-a-ridge-plot" class="section level3">
+<h3>Create a Ridge Plot</h3>
+<p><em>Ridge(line) plots</em> are a new type of plots which is very popular at the moment.</p>
 <p>While you can create those plots with <a href="https://github.com/halhen/viz-pub/blob/master/sports-time-of-day/2_gen_chart.R">basic <code>ggplot</code> commands</a> the popularity lead to a package that make it easier create those plots: <a href="https://cran.r-project.org/web/packages/ggridges/index.html"><code>ggridges</code></a>. We are going to use this package here.</p>
 <pre class="r"><code>library(ggridges)
 ggplot(chic, aes(x = temp, y = factor(year))) + 
@@ -1622,7 +1622,7 @@ ggplot(chic, aes(x = temp, y = factor(year))) +
   guides(fill = F) + 
   theme_ridges()</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ridges-spec-1.png" width="100%" /></p>
-<p>You can also get rid of the overlap using values below 1 for the scaling argument (but this somehow contradicts the idea of joyplots…). Here is an example additionally using the <code>viridis</code> color gradient:</p>
+<p>You can also get rid of the overlap using values below 1 for the scaling argument (but this somehow contradicts the idea of ridge plots…). Here is an example additionally using the <code>viridis</code> color gradient:</p>
 <pre class="r"><code>ggplot(chic, aes(x = temp, y = season, fill = ..x..)) + 
   geom_density_ridges_gradient(scale = 0.9, gradient_lwd = 0.5, 
                                color = &quot;black&quot;) + 

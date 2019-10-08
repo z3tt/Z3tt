@@ -1,3 +1,5 @@
+Click <a href='https://cedricscherer.netlify.com/files/Resume_CedricScherer_2019-10-08.pdf'>here</a> for the pdf of my resume.
+
 ### About Me {#about}  
 
 I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly [R](https://www.r-project.org/about.html) and the package [ggplot2](https://ggplot2.tidyverse.org/) from the [tidyverse](https://www.tidyverse.org/) which I also  use for all kinds of data preparation. In the spare time, I am a proud dad and husband spending as much time as possible with my family.
@@ -25,18 +27,14 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 * [Conference Organisation](#orga)
 * [Teaching](#teach)
 * <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a>
-* [Awards](#award)
+* [Awards & Honours](#award)
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
-Click <a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-05.pdf'>here</a> for the pdf of my resume.
-
 #### Personal Details {#person}
 
-- Day of birth:	September 27th 1986
-- Place of birth:	Berlin, Germany
-- Marital status: married
-- Family status: 1 daughter
+- Day and Place of birth: September 27th 1986 in Berlin, Germany
+- Family status: I am married with 1 dependent daughter (5 months parental leave in 2017/18).
 
 
 #### Education & Professional Expericence {#career}
@@ -45,7 +43,7 @@ Click <a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-
   + [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany
   + *Project:* [Start-Up PostDoc](https://www.biomove.org/biomove-team/postdoc-synthesis/) – Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
 
-- <font color=#808080>**PhD Training (2015–2019)**</font>  
+- <font color=#808080>**Ph.D. Training (2015–2019)**</font>  
   + [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany
   + *Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”
   + *Project:* [PhD Project P02](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) – Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)
@@ -107,7 +105,7 @@ Click <a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-
 - <font color=#808080>**14th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
   *May 2019* – Goettingen, Germany – organizer and chair
 
-- <font color=#808080>**1st InternationalBioMove Symposium**</font>  
+- <font color=#808080>**1st International BioMove Symposium**</font>  
   *September 2018*, Potsdam, Germany – organizer and chair
 
 - <font color=#808080>**13th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
@@ -117,7 +115,7 @@ Click <a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-
   *December 2017*, Ghent, Belgium – organizer together with Florian Hartig and Nick Golding
 
 - <font color=#808080>**Leibniz PhD Symposium "What future do we have as scientists? Rethinking scientific publishing & careers"**</font>   
-  *September 2017* – Berlin, Germany – part of organizational comitee
+  *September 2017* – Berlin, Germany – part of organizational committee
 
 - <font color=#808080>**12th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
   *May 2017* – Buchenbach, Germany – organizer and chair
@@ -149,7 +147,12 @@ Click <a href='https://cedricscherer.netlify.com/files/CV_CedricScherer_2019-08-
 see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
 
-#### Awards {#award}
+#### Awards & Honours {#award}
+
+- **Postdoc stipend** funded by the University of Potsdam (9 month full position)
+
+
+#### Awards & Honours {#award}
 
 - [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA – *March 2017*
 
@@ -157,17 +160,15 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 #### Skills {#skills}
 
 - **Languages:** German *(native)*, English *(fluent)*
-- **Programming:** R, NetLogo, Python, SQL/SQLite, C++, MatLab, html5
+- **Programming:** R, NetLogo, Python, SQL/SQLite, html5
 - **Statistics:** R (e.g. lme4, glmmTMB, CARBayesST, adehabitat), SPSS, Excel
 - **GIS:** R (e.g. sf, sp, raster, rgdal, RQGIS), QGIS, GRASS, ArcGIS
-- **Visualization:** R (e.g. ggplot2, shiny, plotly, sf, sp, leaflet, tmap), CartoDB
+- **Visualization:** R (e.g. ggplot2, shiny, plotly, sf, sp, leaflet, tmap), CartoDB, RAWgraphs
 - **Markup:** Markdown, LaTeX
 
 
-#### Memberships and Services {#services}
+#### Services {#services}
 
-- *since 2013* – Member of the SIG [Young Modellers in Ecology (YoMos)](https://www.yomos.org)
-- *since 2014* – Reviewer for [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
-- *since 2015* – Member of the [Ecological Society of Germany, Austria and Switzerland (GfOe)](http://www.gfoe.org/en)
-- *since 2017* – Reviewer for [BMC Ecology](https://bmcecol.biomedcentral.com/)
-- *since 2019* – Reviewer for [Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/journal/13652664)
+- **Peer Review:** [Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/journal/13652664), [BMC Ecology](https://bmcecol.biomedcentral.com/), [Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)
+- **Functional Roles:** Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019), PhD spokesperson in the research training group “BioMove” (2015–2018)
+- **Memberships**: [Ecological Society of Germany, Austria and Switzerland (GfOe)](https://www.gfoe.org/en), SIG [Young Modellers in Ecology (YoMos)](https://www.yomos.org), SIG [Computational Ecology](https://akcomputationalecology.wordpress.com/)

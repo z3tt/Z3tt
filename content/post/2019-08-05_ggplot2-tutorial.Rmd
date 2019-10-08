@@ -1479,9 +1479,9 @@ g + geom_tile(aes(fill = Dewpoint)) +
     scale_fill_viridis()
 ```
 
-### Create a Joyplot aka Ridge Plot
+### Create a Ridge Plot
 
-Joyplots (also called *ridgle(line) plots*) are a new type of plots which is very popular at the moment. (Fun fact: The name refers to the [cover of Joy Division's "Unknown Pleasures" LP](https://en.wikipedia.org/wiki/File:Unknown_Pleasures_Joy_Division_LP_sleeve.jpg).)
+*Ridge(line) plots* are a new type of plots which is very popular at the moment.
 
 While you can create those plots with [basic `ggplot` commands](https://github.com/halhen/viz-pub/blob/master/sports-time-of-day/2_gen_chart.R) the popularity lead to a package that make it easier create those plots: [`ggridges`](https://cran.r-project.org/web/packages/ggridges/index.html). We are going to use this package here.
 
@@ -1503,7 +1503,7 @@ ggplot(chic, aes(x = temp, y = factor(year), fill = year)) +
   theme_ridges()
 ```
 
-You can also get rid of the overlap using values below 1 for the scaling argument (but this somehow contradicts the idea of joyplots...). Here is an example additionally using the `viridis` color gradient:
+You can also get rid of the overlap using values below 1 for the scaling argument (but this somehow contradicts the idea of ridge plots...). Here is an example additionally using the `viridis` color gradient:
 
 ```{r ridges-viridis}
 ggplot(chic, aes(x = temp, y = season, fill = ..x..)) + 

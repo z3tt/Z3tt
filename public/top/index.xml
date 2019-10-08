@@ -16,7 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/about/</guid>
-      <description>About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package ggplot2 from the tidyverse which I also use for all kinds of data preparation.</description>
+      <description>Click here for the pdf of my resume.
+About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package ggplot2 from the tidyverse which I also use for all kinds of data preparation.</description>
     </item>
     
     <item>
@@ -26,7 +27,7 @@
       
       <guid>/top/dataviz/</guid>
       <description>A collection of data visualizations I&amp;rsquo;ve produced for scientific publications and fun using the ggplot2 package in the programming language R. All visualizations are the result of the code without any post-processing. Click on an image to enlarge it. 
- #TidyTuesday contributions #MakeoverMonday contributions &amp;ldquo;Evolution of a ggplot&amp;rdquo; blog series   #TidyTuesday contributions #TidyTuesday is a weekly data project aimed at the R ecosystem and the tidyverse package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
+ Contributions to #TidyTuesday Contributions to #MakeoverMonday Contributions to the #SWDchallenge &amp;ldquo;Evolution of a ggplot&amp;rdquo; blog series   Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the tidyverse package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
     </item>
     
     <item>
