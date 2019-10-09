@@ -6,7 +6,7 @@ image: img/banner/dark_RichardStrozynski.jpg
 layout: post
 showtoc: false
 description: "In this series of blog posts, I provide step-by-step tutorials explaining how my visualization have evolved from a typical basic ggplot. In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot stripplot  and a lollipop plot."
-tags: ["R", "ggplot2", "tidyverse", "TidyTuesday", "DataViz", "tutorial", "ggplot Evolution"]
+tags: ["R", "ggplot2", "tidyverse", "TidyTuesday", "DataViz", "tutorial", "ggplot Evolution", "animations"]
 editor_options:
   chunk_output_type: console
 ---

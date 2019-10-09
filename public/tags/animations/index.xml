@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>animations on Cédric Scherer</title>
+    <link>/tags/animations/</link>
+    <description>Recent content in animations on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/animations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
+      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
+ She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
+Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
+Me: &amp;ldquo;&amp;hellip;&amp;rdquo;
+She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</description>
+    </item>
+    
+    <item>
+      <title>The Evolution of a ggplot (Ep. 1)</title>
+      <link>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
+      <description>🏁 Aim of this Tutorial🗃️ Data Preparation🌱 The Default Boxplot🔀 ️Sort Your Data!💎 Let Your Plot Shine - Get Rid of the Default Settings📊 The Choice of the Chart Type💯 More Geoms, More Fun, More Info!💬 Add Text Boxes to Let The Plot Speak for Itself🗺️ Bonus: Add a Tile Map as Legend🎄 The Final Evolved Visualization💻 Complete Code for Final Plot📝 Post Sciptum: Mean versus Median🏁 Aim of this TutorialIn this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way.</description>
+    </item>
+    
+  </channel>
+</rss>

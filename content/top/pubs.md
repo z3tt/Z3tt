@@ -7,16 +7,15 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ### Peer-Reviewed Publications {#pubs}
 
 - <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke & S. Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales.
-[*Journal of Animal Ecology*.](https://doi.org/10.1111/1365-2656.13070).
+[*Journal of Animal Ecology*](https://doi.org/10.1111/1365-2656.13070).
 
 - <span style="font-variant:small-caps;">V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, **C. Scherer**, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
-[*Ecology Letters* 22:647–684.](https://doi.org/10.1111/ele.13226).
+[*Ecology Letters* 22:647–684](https://doi.org/10.1111/ele.13226).
 
 - <span style="font-variant:small-caps;">M. Sciaini, M. Fritsch, **C. Scherer** & C.E. Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in `R`.
-[*Methods in Ecology and Evolution* 9:2240–2248.](https://doi.org/10.1111/2041-210X.13076)
+[*Methods in Ecology and Evolution* 9:2240–2248](https://doi.org/10.1111/2041-210X.13076).
 
-- <span style="font-variant:small-caps;">**C. Scherer**, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas.
-[*Ecological Modelling* 326:75–89.](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
+- <span style="font-variant:small-caps;">**C. Scherer**, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. [*Ecological Modelling* 326:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
 
 
 ##### Manuscripts Under Review
@@ -24,7 +23,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style="font-variant:small-caps;">V. Radchuk, S. Kramer-Schadt, U. Berger, **C. Scherer**, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (in revision)</span> Individual-based models. *Invited chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
 
-- <span style="font-variant:small-caps;">U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, **C. Scherer**, G, Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (in revision) Movement-mediated community assembly and coexistence. *Submitted to Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
+- <span style="font-variant:small-caps;">U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, **C. Scherer**, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (in revision) Movement-mediated community assembly and coexistence. *Submitted to Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
 
 
 ### Conference Contributions {#conf}
