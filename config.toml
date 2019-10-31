@@ -121,6 +121,7 @@ home = ["HTML", "RSS", "Algolia"]
   href =  "/top/dataviz/"
 
   [[params.addtional_menus]]
+  title = "Links"
   href =  "/top/links/"
 
 [permalinks]
