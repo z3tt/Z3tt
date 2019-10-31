@@ -20,12 +20,13 @@ home = ["HTML", "RSS", "Algolia"]
   description = "Blog by Cédric Scherer"
   keyword = "Computational Ecology, Data Visualisation"
   slogan = "Computational Ecology & Data Visualisation"
+  google_fonts = "//fonts.googleapis.com/?css?family=Poppins|Crete+Round"
 
   image_404 = "img/404-gg.png"
   title_404 = ""
 
   # leancloud storage for page view counter
-  page_view_conter = true 
+  page_view_conter = true
   leancloud_app_id = ""
   leancloud_app_key = ""
 
@@ -39,19 +40,19 @@ home = ["HTML", "RSS", "Algolia"]
   sidebar_about_description = "Computational Ecologist, DataViz Enthusiast and Proud Dad"
   sidebar_avatar = "img/cedric_round.png"
 
-  featured_tags = true 
+  featured_tags = true
   featured_condition_size = 0
 
   # Baidu Analytics
   ba_track_id = ""
-  
+
   # We need a proxy to access Disqus api in Chian
   # Follow https://github.com/zhaohuabing/disqus-php-api to set up your own disqus proxy
   disqus_proxy = ""
   disqus_site = ""
 
-  #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
-  reward = false 
+  #Enable wechat pay & alipay to allow readers send reward money if they like the articles
+  reward = false
 
   friends = false
   bookmarks = true
@@ -73,7 +74,7 @@ home = ["HTML", "RSS", "Algolia"]
                 icon = "orcid"
                 icon_pack = "ai"
                 link = "https://orcid.org/0000-000X-XXXX-XXXX"
-  
+
   [[params.friend_link]]
   title = "Department Ecological Dynamics"
   href =  "https://ecological-dynamics-izw.com/"
@@ -102,15 +103,15 @@ home = ["HTML", "RSS", "Algolia"]
   [[params.bookmark_link]]
   title =  "Chroma.js Color Palette Helper"
   href =  "https://gka.github.io/palettes/#/9|s|383838,a19858,cfff44|ffffe0,ff005e,93003a|1|1"
-  
+
   [[params.addtional_menus]]
   title =  "About Me"
   href =  "/top/about/"
-  
+
   [[params.addtional_menus]]
   title =  "Projects"
   href =  "/top/projects/"
-  
+
   [[params.addtional_menus]]
   title =  "Publications"
   href =  "/top/pubs/"
@@ -134,4 +135,4 @@ notAlternative = true
 
 [params.algolia]
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags"] 
+params = ["categories", "tags"]
