@@ -26,7 +26,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 * [Trainings & Further Education](#training)
 * [Conference Organisation](#orga)
 * [Teaching](#teach)
-* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a>
+* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a> 
 * [Awards & Honours](#award)
 * [Skills](#skills)
 * [Memberships & Services](#services)
