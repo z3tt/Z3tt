@@ -14,21 +14,25 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_39_SchoolDiversity.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity.png', 'blank');"/>
+<img src="/img/tidytuesday/2019_44_Squirrels.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_44_Squirrels.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_18_BirdCollisions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_18_BirdCollisions.png', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_42_Big_Cars_Highway.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_42_Big_Cars_Highway.gif', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_39_SchoolDiversity.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_36_MooresLaw.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
-
-<img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_28_FIFA_WWCs_stellar_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs_stellar_sd.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_28_FIFA_WWCs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_35_SimpsonsGuests_black_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_35_SimpsonsGuests_black_sd.png', 'blank');"/>
+
+<img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
 <img src="/img/tidytuesday/2019_34_NuclearExplosions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_34_NuclearExplosions.png', 'blank');"/>
 
@@ -54,7 +58,13 @@ A collection of data visualizations I've produced for scientific publications an
 
 [#MakeoverMonday](https://www.makeovermonday.co.uk/) is a weekly social data project aimed to help people learn how to create better, more effective visualizations.
 
-<img src="/img/makeovermonday/2019-08-18_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019-08-18_phone-use.png', 'blank');"/>
+<img src="/img/makeovermonday/2019_42_ironman.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_42_ironman.png', 'blank');"/>
+<br/>
+
+<img src="/img/makeovermonday/2019_43_suicide_deaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_43_suicide_deaths.png', 'blank');"/>
+<br/>
+
+<img src="/img/makeovermonday/2019_34_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_34_phone-use.png', 'blank');"/>
 <br/>
 
 
