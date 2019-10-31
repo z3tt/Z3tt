@@ -16,7 +16,7 @@ options(width = 700)
 knitr::opts_chunk$set(warning = F, message = F, out.width = "100%")
 ```
   
-*Last update: 2019-08-16*
+*Last update: 2019-10-31*
 
 
 ## Introductory Words
@@ -132,6 +132,7 @@ The arrangement of the data into a grid of plots.
 8.	**Visual themes** `theme()`:  
 The overall visual defaults of a plot, such as background, grids, axes, default typeface, sizes and colors.
 
+(The number of elelements may vary depending on how you group them and whom you ask.)
 
 ## A Default ggplot {#default}
 
@@ -281,7 +282,7 @@ chic %>%
 
 ### Axes with Same Scaling
 
-For demonstrating purposes, let's plot Temperature against Temperature with some random noise:
+For demonstrating purposes, let's plot temperature against temperature with some random noise:
 
 ```{r axes-equal}
 ggplot(chic, aes(x = temp, y = temp + rnorm(nrow(chic), sd = 20))) +

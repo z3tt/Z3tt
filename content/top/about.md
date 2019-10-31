@@ -52,11 +52,6 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
   + <font size="2">Lead of the organizational teams and chair during conferences and workshops</font>
   + <font size="2">["Young Modellers in Ecology (YoMos)"](https://www.yomos.org/about) are a Special Interest Group of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)</font>
 
-
-- <font color=#808080>**Parental leave (2017–2018)**</font>  
-  + <font size="2">*Full-time:* December 2017 and May-July 2018</font>
-  + <font size="2">*Part-time:* April and August-November 2018</font>
-
 - <font color=#808080>**Visiting Research Student (2017)**</font>  
   + <font size="2">[Getz Lab](https://nature.berkeley.edu/getzlab/), [University of California, Berkeley](https://www.berkeley.edu/), CA, USA</font>
   + <font size="2">*Project:* Genetic algorithms in agent-based models using the [Numerus modelling platform](https://www.numerusinc.com/)</font>

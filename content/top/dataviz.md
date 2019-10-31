@@ -68,7 +68,7 @@ A collection of data visualizations I've produced for scientific publications an
 
 ## Contributions to the #SWDchallenge {#swdchallenge}
 
-[#SWDchallenge](http://www.storytellingwithdata.com/swdchallenge) #SWDchallenge is a monthly challenge where you can practice and apply data visualization and storytelling skills initiated by [Cole Nussbaumer Knaflic]-
+[#SWDchallenge (Storytelling with Data challenge)](http://www.storytellingwithdata.com/swdchallenge) is a monthly challenge where you can practice and apply data visualization and storytelling skills initiated by [Cole Nussbaumer Knaflic]-
 
 <img src="/img/swdchallenge/SWD_2019_09_Uncertainty.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty.png', 'blank');"/>
 
