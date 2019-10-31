@@ -59,10 +59,8 @@ A collection of data visualizations I've produced for scientific publications an
 [#MakeoverMonday](https://www.makeovermonday.co.uk/) is a weekly social data project aimed to help people learn how to create better, more effective visualizations.
 
 <img src="/img/makeovermonday/2019_42_ironman.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_42_ironman.png', 'blank');"/>
-<br/>
 
 <img src="/img/makeovermonday/2019_43_suicide_deaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_43_suicide_deaths.png', 'blank');"/>
-<br/>
 
 <img src="/img/makeovermonday/2019_34_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_34_phone-use.png', 'blank');"/>
 <br/>
