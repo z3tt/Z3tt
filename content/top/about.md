@@ -26,7 +26,7 @@ Phone: +49 30 5168 342 | Mail: <a href="mailto:scherer@izw-berlin.de">scherer[at
 * [Trainings & Further Education](#training)
 * [Conference Organisation](#orga)
 * [Teaching](#teach)
-* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a> 
+* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a>
 * [Awards & Honours](#award)
 * [Skills](#skills)
 * [Memberships & Services](#services)
@@ -163,10 +163,6 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 #### Awards & Honours {#award}
 
 - <font color=#808080>**Postdoc Stipend**</font> funded by the University of Potsdam (9 month full position)
-
-
-#### Awards & Honours {#award}
-
 - [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA – *March 2017*
 
 
