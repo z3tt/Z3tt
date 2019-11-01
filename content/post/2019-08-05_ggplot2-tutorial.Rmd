@@ -16,15 +16,17 @@ options(width = 700)
 knitr::opts_chunk$set(warning = F, message = F, out.width = "100%")
 ```
 
-*Last update: 2019-10-31*
+*Last update: 2019-11-01*
 
 
 ## Introductory Words
 
+[I don't care, just show me the content!](#toc)
+
 Begin of 2016, I had to prepare my PhD introductory talk and I started using `{ggplot2}` to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try'n'error and with the help of lots of googling. The resource I came always back to was a blog entry called [**Beautiful plotting in R: A ggplot2 cheatsheet**](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/) by [Zev Ross](https://twitter.com/zevross), posted on 4. August 2014, updated last in January 2016.
 After giving the talk which contained some quite beautiful plots thanks to the blog post, I decided to go through this tutorial step-by-step. I learned so much from it and directly started modifying the codes and over the time I added some additional code snippets, chart types and resources.
 
-Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic `{patchwork}` and `{ggforce}` packages. And pie charts because everyone looooves pie charts!)
+Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic `{patchwork}` and `{ggforce}` packages. And pie charts because everyone looooves pie charts!)
 
 <img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/>
 
@@ -81,7 +83,7 @@ Major changes I've made:
     + `{cowplot}`
     + `{grid}`
     + `{gridExtra}`
-    + `{ggrepel`}
+    + `{ggrepel}`
     + `{reshape2}`
     + `{ggforce}`
     + `{ggridges}`
@@ -343,7 +345,7 @@ ggplot(chic, aes(x = date, y = temp)) +
                                   margin = margin(10, 0, 10, 0)))
 ```
 
-(A nice way to remember the order of the margin arguments is "**tr**ou**bl**e**" that resembles the first letter of the four sides.)
+(A nice way to remember the order of the margin arguments is "**tr**ou**bl**e" that resembles the first letter of the four sides.)
 
 ### Adjust Position of Titles
 
@@ -380,7 +382,7 @@ ggplot(chic, aes(x = date, y = temp)) +
   theme(plot.title = element_text(size = 18, family = "Merriweather"))
 ```
 
-(You can also set a non-default font for all text elements of your plots, for more details see section "Working with Themes". I am going to use *Roboto Condensed* as new default font for the following plots.)
+(You can also set a non-default font for all text elements of your plots, for more details see section ["Working with Themes"](#themes). I am going to use *Roboto Condensed* as new default font for the following plots.)
 
 ```{r default-font}
 theme_set(theme_bw(base_size = 12, base_family = "Roboto Condensed"))
@@ -675,7 +677,7 @@ ggplot(chic, aes(x = date, y = temp)) +
         plot.margin = unit(c(1, 5, 1, 5), "cm"))
 ```
 
-The order of the margin sides is top, right, bottom, left - a nice way to remember this order is "**tr**ou**bl**e** that sorts the first letter of the four sides.
+The order of the margin sides is top, right, bottom, left - a nice way to remember this order is "**tr**ou**bl**e that sorts the first letter of the four sides.
 
 [Jump back to Table of Content.](#toc)
 
@@ -1658,9 +1660,22 @@ runExample("01_hello")
 
 The grid-based graphics functions in lattice and ggplot2 create a graph object. When you use these functions interactively at the command line, the result is automatically printed, but in `source()` or inside your own functions you will need an explicit `print()` statement, i.e. `print(g)` in most of our examples. See also the [Q&A page of R](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-do-lattice_002ftrellis-graphics-not-work_003f).
 
-### Additional Sources
+### Additional Resources
 
 * ["Fundamentals of Data Visualization"](http://serialmentor.com/dataviz/), an online book by Claus Wilke about data visualization in general but using `{ggplot2}`. (You can find the codes on [his GitHub profile](https://github.com/clauswilke/dataviz).)
 * ["Cookbook for R"](http://www.cookbook-r.com/Graphs/), an online and printed book by Winston Chang with recipes to quickly produce the desired plot.
+* Gallery of the [Top 50 ggplot visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+* Gallery of [`{ggplot2}` extension packages](http://www.ggplot2-exts.org/gallery/)
+* [How to extend `{ggplot2}`](https://cran.r-project.org/web/packages/ggplot2/vignettes/extending-ggplot2.html)
+* [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), a weekly data project aimed at exploring and visualizing a data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/) - check also the [#TidyTuesday hashtag on Twitter](https://twitter.com/hashtag/TidyTuesday?lang=en) and [this collection of contributions by Neil Grantham](https://nsgrantham.com/tidytuesdayrocks/)
 
 [Jump back to Table of Content.](#toc)
+
+***
+
+## Session Info
+
+```{r session-info}
+sessionInfo()
+```
+

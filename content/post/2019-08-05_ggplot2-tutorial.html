@@ -13,12 +13,13 @@ editor_options:
 
 
 
-<p><em>Last update: 2019-10-31</em></p>
+<p><em>Last update: 2019-11-01</em></p>
 <div id="introductory-words" class="section level2">
 <h2>Introductory Words</h2>
+<p><a href="#toc">I don’t care, just show me the content!</a></p>
 <p>Begin of 2016, I had to prepare my PhD introductory talk and I started using <code>{ggplot2}</code> to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called <a href="http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/"><strong>Beautiful plotting in R: A ggplot2 cheatsheet</strong></a> by <a href="https://twitter.com/zevross">Zev Ross</a>, posted on 4. August 2014, updated last in January 2016.
 After giving the talk which contained some quite beautiful plots thanks to the blog post, I decided to go through this tutorial step-by-step. I learned so much from it and directly started modifying the codes and over the time I added some additional code snippets, chart types and resources.</p>
-<p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version (last update Jan 2017) on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic <code>{patchwork}</code> and <code>{ggforce}</code> packages. And pie charts because everyone looooves pie charts!)</p>
+<p>Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic <code>{patchwork}</code> and <code>{ggforce}</code> packages. And pie charts because everyone looooves pie charts!)</p>
 <p><img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/></p>
 <p>Major changes I’ve made:</p>
 <ul>
@@ -78,7 +79,7 @@ After giving the talk which contained some quite beautiful plots thanks to the b
 <li><code>{cowplot}</code></li>
 <li><code>{grid}</code></li>
 <li><code>{gridExtra}</code></li>
-<li><code>{ggrepel</code>}</li>
+<li><code>{ggrepel}</code></li>
 <li><code>{reshape2}</code></li>
 <li><code>{ggforce}</code></li>
 <li><code>{ggridges}</code></li>
@@ -308,7 +309,7 @@ chic %&gt;%
   theme(plot.title = element_text(size = 15, face = &quot;bold&quot;,
                                   margin = margin(10, 0, 10, 0)))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-bold-1.png" width="100%" /></p>
-<p>(A nice way to remember the order of the margin arguments is "<strong>tr</strong>ou<strong>bl</strong>e**" that resembles the first letter of the four sides.)</p>
+<p>(A nice way to remember the order of the margin arguments is “<strong>tr</strong>ou<strong>bl</strong>e” that resembles the first letter of the four sides.)</p>
 </div>
 <div id="adjust-position-of-titles" class="section level3">
 <h3>Adjust Position of Titles</h3>
@@ -336,7 +337,7 @@ extrafont::font_import()</code></pre>
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;, title = &quot;Temperatures in Chicago&quot;) +
   theme(plot.title = element_text(size = 18, family = &quot;Merriweather&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/title-style-1.png" width="100%" /></p>
-<p>(You can also set a non-default font for all text elements of your plots, for more details see section “Working with Themes”. I am going to use <em>Roboto Condensed</em> as new default font for the following plots.)</p>
+<p>(You can also set a non-default font for all text elements of your plots, for more details see section <a href="#themes">“Working with Themes”</a>. I am going to use <em>Roboto Condensed</em> as new default font for the following plots.)</p>
 <pre class="r"><code>theme_set(theme_bw(base_size = 12, base_family = &quot;Roboto Condensed&quot;))</code></pre>
 </div>
 <div id="change-spacing-in-multi-line-text" class="section level3">
@@ -566,7 +567,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
   theme(plot.background = element_rect(fill = &quot;gray60&quot;),
         plot.margin = unit(c(1, 5, 1, 5), &quot;cm&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/margin-1.png" width="100%" /></p>
-<p>The order of the margin sides is top, right, bottom, left - a nice way to remember this order is "<strong>tr</strong>ou<strong>bl</strong>e** that sorts the first letter of the four sides.</p>
+<p>The order of the margin sides is top, right, bottom, left - a nice way to remember this order is "<strong>tr</strong>ou<strong>bl</strong>e that sorts the first letter of the four sides.</p>
 <p><a href="#toc">Jump back to Table of Content.</a></p>
 </div>
 <div id="panels" class="section level2">
@@ -750,7 +751,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ## }
-## &lt;bytecode: 0x000000000ccc1cf8&gt;
+## &lt;bytecode: 0x000000000bf4bc38&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {
@@ -1411,12 +1412,39 @@ runExample(&quot;01_hello&quot;)</code></pre>
 <h3>Using <code>{ggplot2}</code> in Loops and Functions</h3>
 <p>The grid-based graphics functions in lattice and ggplot2 create a graph object. When you use these functions interactively at the command line, the result is automatically printed, but in <code>source()</code> or inside your own functions you will need an explicit <code>print()</code> statement, i.e. <code>print(g)</code> in most of our examples. See also the <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-do-lattice_002ftrellis-graphics-not-work_003f">Q&amp;A page of R</a>.</p>
 </div>
-<div id="additional-sources" class="section level3">
-<h3>Additional Sources</h3>
+<div id="additional-resources" class="section level3">
+<h3>Additional Resources</h3>
 <ul>
 <li><a href="http://serialmentor.com/dataviz/">“Fundamentals of Data Visualization”</a>, an online book by Claus Wilke about data visualization in general but using <code>{ggplot2}</code>. (You can find the codes on <a href="https://github.com/clauswilke/dataviz">his GitHub profile</a>.)</li>
 <li><a href="http://www.cookbook-r.com/Graphs/">“Cookbook for R”</a>, an online and printed book by Winston Chang with recipes to quickly produce the desired plot.</li>
+<li>Gallery of the <a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot visualizations</a></li>
+<li>Gallery of <a href="http://www.ggplot2-exts.org/gallery/"><code>{ggplot2}</code> extension packages</a></li>
+<li><a href="https://cran.r-project.org/web/packages/ggplot2/vignettes/extending-ggplot2.html">How to extend <code>{ggplot2}</code></a></li>
+<li><a href="https://github.com/rfordatascience/tidytuesday">#TidyTuesday</a>, a weekly data project aimed at exploring and visualizing a data set that is provided by the <a href="https://www.rfordatasci.com/">R4DS Online Learning Community</a> - check also the <a href="https://twitter.com/hashtag/TidyTuesday?lang=en">#TidyTuesday hashtag on Twitter</a> and <a href="https://nsgrantham.com/tidytuesdayrocks/">this collection of contributions by Neil Grantham</a></li>
 </ul>
 <p><a href="#toc">Jump back to Table of Content.</a></p>
+<hr />
 </div>
+</div>
+<div id="session-info" class="section level2">
+<h2>Session Info</h2>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 3.5.1 (2018-07-02)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 10 x64 (build 17763)
+## 
+## Matrix products: default
+## 
+## locale:
+## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252    
+## 
+## attached base packages:
+## [1] grid      stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+##  [1] ggridges_0.5.1    akima_0.6-2       reshape2_1.4.3    ggforce_0.3.0     ggrepel_0.8.1     viridis_0.5.1     viridisLite_0.3.0 ggthemes_4.2.0    patchwork_0.0.1   extrafont_0.17    forcats_0.4.0     stringr_1.4.0     dplyr_0.8.3       purrr_0.3.2       readr_1.3.1       tidyr_0.8.99.9000 tibble_2.1.3      tidyverse_1.2.1   ggplot2_3.2.1    
+## 
+## loaded via a namespace (and not attached):
+##  [1] httr_1.4.1         jsonlite_1.6       modelr_0.1.5       assertthat_0.2.1   sp_1.3-1           highr_0.8          cellranger_1.1.0   yaml_2.2.0         Rttf2pt1_1.3.7     pillar_1.4.2       backports_1.1.4    lattice_0.20-35    glue_1.3.1         extrafontdb_1.0    digest_0.6.20      RColorBrewer_1.1-2 polyclip_1.10-0    rvest_0.3.4        colorspace_1.4-1   Matrix_1.2-14      htmltools_0.3.6    plyr_1.8.4         pkgconfig_2.0.2    broom_0.5.2        haven_2.1.1        bookdown_0.12      scales_1.0.0       tweenr_1.0.1       mgcv_1.8-24        generics_0.0.2     farver_1.1.0       withr_2.1.2        lazyeval_0.2.2     cli_1.1.0          magrittr_1.5       crayon_1.3.4      
+## [37] readxl_1.3.1       evaluate_0.14      fansi_0.4.0        nlme_3.1-137       MASS_7.3-51.4      xml2_1.2.2         blogdown_0.14      tools_3.5.1        hms_0.5.0          lifecycle_0.1.0    munsell_0.5.0      compiler_3.5.1     rlang_0.4.0        rstudioapi_0.10    labeling_0.3       rmarkdown_1.15     gtable_0.3.0       curl_4.0           R6_2.4.0           gridExtra_2.3      lubridate_1.7.4    knitr_1.24         utf8_1.1.4         zeallot_0.1.0      stringi_1.4.3      Rcpp_1.0.2         vctrs_0.2.0        tidyselect_0.2.5   xfun_0.9</code></pre>
 </div>

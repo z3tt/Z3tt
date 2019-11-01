@@ -19,7 +19,7 @@
       <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
-Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
+Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE.1&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and to customize it in Adobe Animate.&amp;rdquo;
 Me: &amp;ldquo;&amp;hellip;&amp;rdquo;</description>
     </item>
     
@@ -42,8 +42,9 @@ Me: &amp;ldquo;&amp;hellip;&amp;rdquo;</description>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
-      <description>Last update: 2019-10-31
-Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using {ggplot2} to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
+      <description>Last update: 2019-11-01
+Introductory WordsI don’t care, just show me the content!
+Begin of 2016, I had to prepare my PhD introductory talk and I started using {ggplot2} to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
     </item>
     
     <item>

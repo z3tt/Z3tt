@@ -30,7 +30,7 @@ editor_options:
 </ul>
 <div id="aim" class="section level3">
 <h3>🏁 Aim of this Tutorial</h3>
-<p>In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% <code>ggplot2</code> and 0% Inkscape.</p>
+<p>In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% <code>{ggplot2}</code> and 0% Inkscape.</p>
 <p>In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use <a href="http://data.uis.unesco.org/index.aspx?queryid=180">data provided by the UNESCO on global student to teacher ratios</a> that was selected as data <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07">#TidyTuesday challenge 19 of 2019</a>.</p>
 </div>
 <div id="data" class="section level3">
@@ -73,7 +73,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png" width="768" /></p>
 <p>💡 <strong>Sort your data according to the best or worst, highest or lowest value to make your graph easily readable - do not sort them if the categories have an internal logical order such as age groups!</strong></p>
-<p>To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the <code>ggplot2</code> call - but this does not work for boxplots so we use <code>coord_flip()</code>). It is also a good practice to include the 0 in plots which we can force by adding <code>scale_y_continuous(limits = c(0, 90))</code>.</p>
+<p>To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the <code>{ggplot2}</code> call - but this does not work for boxplots so we use <code>coord_flip()</code>). It is also a good practice to include the 0 in plots which we can force by adding <code>scale_y_continuous(limits = c(0, 90))</code>.</p>
 <pre class="r"><code>ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
@@ -84,9 +84,9 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 </div>
 <div id="let-your-plot-shine---get-rid-of-the-default-settings" class="section level3">
 <h3>💎 Let Your Plot Shine - Get Rid of the Default Settings</h3>
-<p>Let’s spice this plot up! One great thing about <code>ggplot2</code> is that it is structured in an <em>adaptive way</em>, allowing to add further levels to an existing ggplot object. We are going to</p>
+<p>Let’s spice this plot up! One great thing about <code>{ggplot2}</code> is that it is structured in an <em>adaptive way</em>, allowing to add further levels to an existing ggplot object. We are going to</p>
 <ul>
-<li>use a different theme that comes with the <code>ggplot2</code> package by calling <code>theme_set(theme_light())</code> (several themes come along with the <code>ggplot2</code> package but if you need more check for example the packages <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>ggthemes</code></a> or <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a>),</li>
+<li>use a different theme that comes with the <code>{ggplot2}</code> package by calling <code>theme_set(theme_light())</code> (several themes come along with the <code>{ggplot2}</code> package but if you need more check for example the packages <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>ggthemes</code></a> or <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a>),</li>
 <li>change the font and the overall font size by adding the arguments <code>base_size</code> and <code>base_family</code> to <code>theme_light()</code>,</li>
 <li>flip the axes by adding <code>coord_flip()</code> (as seen before),</li>
 <li>let the axis start at 0 and reduce the spacing to the plot margin by adding <code>expand = c(0.005, 0.005)</code> as argument to the <code>scale_y_continious()</code>,</li>
@@ -275,7 +275,7 @@ map_regions &lt;- df_ratios %&gt;%
     theme_light() +
     theme(line = element_blank(),
           panel.background = element_rect(fill = &quot;transparent&quot;),
-          plot.background = element_rect(fill = &quot;transparent&quot;, 
+          plot.background = element_rect(fill = &quot;transparent&quot;,
                                          color = &quot;transparent&quot;),
           panel.border = element_rect(color = &quot;transparent&quot;),
           strip.background = element_rect(color = &quot;gray20&quot;),
@@ -302,7 +302,7 @@ arrows &lt;- tibble(
 set.seed(123)
 
 ## final plot
-df_ratios %&gt;% 
+df_ratios %&gt;%
   mutate(region = fct_reorder(region, -student_ratio_region)) %&gt;%
   ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
@@ -312,25 +312,25 @@ df_ratios %&gt;%
     stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
-    annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, 
+    annotate(&quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;,
              size = 2.7, color = &quot;gray20&quot;,
              label = glue::glue(&quot;Worldwide average:\n{round(world_avg, 1)} students per teacher&quot;)) +
-    annotate(&quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;, 
+    annotate(&quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;,
              size = 2.7, color = &quot;gray20&quot;,
              label = &quot;Continental average&quot;) +
-    annotate(&quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;, 
+    annotate(&quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;,
              size = 2.7, color = &quot;gray20&quot;,
              label = &quot;Countries per continent&quot;) +
-    annotate(&quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, 
+    annotate(&quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;,
              size = 2.7, color = &quot;gray20&quot;,
              label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;) +
-    geom_curve(data = arrows, aes(x = x1, xend = x2, 
+    geom_curve(data = arrows, aes(x = x1, xend = x2,
                                   y = y1, yend = y2),
                arrow = arrow(length = unit(0.08, &quot;inch&quot;)), size = 0.5,
                color = &quot;gray20&quot;, curvature = -0.3) +
-    annotation_custom(ggplotGrob(map_regions), 
+    annotation_custom(ggplotGrob(map_regions),
                       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85) +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005), 
+    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005),
                        breaks = c(1, seq(20, 80, by = 20))) +
     scale_color_uchicago() +
     labs(x = NULL, y = &quot;Student to teacher ratio&quot;,
