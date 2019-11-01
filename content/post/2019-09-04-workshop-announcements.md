@@ -5,7 +5,7 @@ author: Cédric
 date: "2019-09-04"
 image: img/banner/camping_RichardStrozynski.jpg
 layout: post
-description: "I got the opportunity to teach some workshops in the next few months - one 1-day and two 1-week workshops on data exploration and visualization in Berlin and Sicilly! 🎉"
+description: "I got the opportunity to teach some workshops in the next few months - one 1-day and two 1-week workshops on data exploration and visualization in Berlin and Sicily! 🎉"
 tags:
     - workshop
     - DataViz
@@ -30,9 +30,9 @@ I am delighted to be one of the invited workshop host during the [2-day PhD symp
 There are still a few slots available, so if you are a PhD student, interested in that topic and not too far away from Berlin, [register here](http://www.izw-berlin.de/1045.html) and come by!
 
 
-### 5-Day Workshop "Data Exploration in `R`" in Sicily (November 2019)
+### 5-Day Workshop "Data Exploration in R" in Sicily (November 2019)
 
-One of my former PhD colleagues within the [BioMove project](https://cedricscherer.netlify.com/top/projects/#biomove) left the beautiful Brandenburg area to go back to Sicily, Italy (which I guess is at least equally beautiful) in order to start a training school for scientists called [Hyblea Training](https://www.hybleatraining.com/). From this summer on they offer "a wide range of courses dealing with established and emerging topics in life-sciences to deepen your preceding expertise in biology, ecology, remote sensing, data science and related scientific fields." Pierluigi invited me to share my expertise on data wrangling and visualization using the `tidyverse` and that's going to happen in **November 2019**! The course is entitled [**"Data Exploration and Visualization in R with `tidyverse` & `ggplot2`"**](https://www.hybleatraining.com/course/data-exploration-and-visualization-in-r/) and is aimed at beginners and people already using R but without much experience in the `tidyverse`. In general, no programming experience is needed:
+One of my former PhD colleagues within the [BioMove project](https://cedricscherer.netlify.com/top/projects/#biomove) left the beautiful Brandenburg area to go back to Sicily, Italy (which I guess is at least equally beautiful) in order to start a training school for scientists called [Hyblea Training](https://www.hybleatraining.com/). From this summer on they offer "a wide range of courses dealing with established and emerging topics in life-sciences to deepen your preceding expertise in biology, ecology, remote sensing, data science and related scientific fields." Pierluigi invited me to share my expertise on data wrangling and visualization using the `{tidyverse}` and that's going to happen in **November 2019**! The course is entitled [**"Data Exploration and Visualization in R with `{tidyverse}` & `{ggplot2}`"**](https://www.hybleatraining.com/course/data-exploration-and-visualization-in-r/) and is aimed at beginners and people already using R but without much experience in the `{tidyverse}`. In general, no programming experience is needed:
 
 > The upsurge of data sets complexity in evolutionary biology requires researchers the ability to organize, explore and visualize information in an efficient and reproducible way. Data exploration and visualization is a fundamental component of data science and scientific research. Extracting knowledge and insights from structured and unstructured biological data is a key skill and requires not only a good understanding of the scientific methods, but also the ability to process and visualize data in a reproducible way. <br>
 > In this course, you will learn how to explore, transform, analyze and visualize different data sets to gain knowledge and to communicate these insights to a scientific and/or general audience. The course will cover all the necessary steps that are needed for data exploration and visualization in R.
@@ -40,11 +40,11 @@ One of my former PhD colleagues within the [BioMove project](https://cedricscher
 If you like to join, please apply [here](https://www.hybleatraining.com/course/data-exploration-and-visualization-in-r/)!
 
 
-### 5-Day Workshop "Data Visualization in `R` with `ggplot2`" in Berlin (March 2020)
+### 5-Day Workshop "Data Visualization in R with `{ggplot2}`" in Berlin (March 2020)
 
-A few days later, [Physalia Courses](https://www.physalia-courses.org) approached me thanks to my DataViz output on Twitter and showed interest in a `ggplot2` related course. While the course in Sicily aims to train all steps from data import to data analyses and visualization, this course aims to focus only on data visualization with `ggplot2` (and some relevant snippets one need to get the data in the right format). The course named [**"Data Visualization in R with `ggplot2`"**](https://www.physalia-courses.org/courses-workshops/course56/) thus will be significantly different from the on in Italy since I am providing some theoretical background on DataViz history, how-tos and techniques and a much more in-depth hands-on course on `ggplot2`:
+A few days later, [Physalia Courses](https://www.physalia-courses.org) approached me thanks to my DataViz output on Twitter and showed interest in a `{ggplot2}` related course. While the course in Sicily aims to train all steps from data import to data analyses and visualization, this course aims to focus only on data visualization with `{ggplot2}` (and some relevant snippets one need to get the data in the right format). The course named [**"Data Visualization in R with `{ggplot2}`"**](https://www.physalia-courses.org/courses-workshops/course56/) thus will be significantly different from the on in Italy since I am providing some theoretical background on DataViz history, how-tos and techniques and a much more in-depth hands-on course on `{ggplot2}`:
 
-> Data visualization is an important skill in all data-related fields such as scientific research and journalism. An elegant way to produce such visualizations in a reproducible way is the `ggplot2` package providing a structured graphics framework in R. In this course, you learn how to use R to load, transform, explore and visualize data. The course also covers the basic concepts in data visualization and a suite of different chart types and tricks to make appealing and informative-rich plots using `ggplot2`.
+> Data visualization is an important skill in all data-related fields such as scientific research and journalism. An elegant way to produce such visualizations in a reproducible way is the `{ggplot2}` package providing a structured graphics framework in R. In this course, you learn how to use R to load, transform, explore and visualize data. The course also covers the basic concepts in data visualization and a suite of different chart types and tricks to make appealing and informative-rich plots using `{ggplot2}`.
 
 Again, no R programming experience is needed so if you like that topic and my visualizations, I am happy to welcome you in Berlin during the first week of **March 2020**!
 If you like to join, please apply [here](https://www.physalia-courses.org/courses-workshops/course56/)!

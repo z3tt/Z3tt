@@ -53,7 +53,7 @@
 * [Chroma.js](https://gka.github.io/palettes/#/9|s|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1) — color palette helper
 * [HCL Wizard](http://hclwizard.org/) — manipulating and assessing colors & palettes
 * [ColorThief](https://lokeshdhakar.com/projects/color-thief/) — grab color palettes from any image
-* [Data Color Picker](https://learnui.design/tools/data-color-picker.html) — Gneerator of equidistant sequential, monochromatic and diverging palettes
+* [Data Color Picker](https://learnui.design/tools/data-color-picker.html) — Generator of equidistant sequential, monochromatic and diverging palettes
 * DataWrapper's [Friendly Guide to Colors](https://blog.datawrapper.de/colorguide/) and [What to Consider when Choosing Colors](https://blog.datawrapper.de/colors/)
 
 ###### Chart Types {#charts}
@@ -74,18 +74,18 @@
 
 ### Interesting Personal Blogs<br>(Random Topics, Random Order 🤷) {#blogs}
 
-* [Chisato](https://chichacha.netlify.com/) — colors & art with `ggplot2`
-* [Dominic Roye](https://dominicroye.github.io/en/) — mapping with `ggplot2`
-* [David Smale](https://davidsmale.netlify.com/) — `shiny`, `ggplot2` and more
+* [Chisato](https://chichacha.netlify.com/) — colors & art with `{ggplot2}`
+* [Dominic Roye](https://dominicroye.github.io/en/) — mapping with `{ggplot2}`
+* [David Smale](https://davidsmale.netlify.com/) — `{shiny}`, `{ggplot2}` and more
 * [Andy Kirk](https://www.visualisingdata.com/blog/) — all about DataViz!
-* [Maëlle Salmon](https://masalmon.eu/) — "goofing around with `R`"
-* [David Robinson](http://varianceexplained.org/) — data science using the `tidyverse`
+* [Maëlle Salmon](https://masalmon.eu/) — "goofing around with R"
+* [David Robinson](http://varianceexplained.org/) — data science using the `{tidyverse}`
 * [Charlotte Robinson](https://robinsones.github.io/)
-* [Bruno Rodrigues](https://www.brodrigues.co/) — data science in `R` and `Python`
+* [Bruno Rodrigues](https://www.brodrigues.co/) — data science in R and Python
 * [James Cheshire](https://spatial.ly/) — beautiful mapping
-* [Ilya Kashnitsky](https://ikashnitsky.github.io/) — maps & demography in `R`
-* [Hugo Toscano](https://toscano84.github.io/) — data science in `R`
-* [Geoff Boeing](https://geoffboeing.com) — `Python` & GIS
+* [Ilya Kashnitsky](https://ikashnitsky.github.io/) — maps & demography in R
+* [Hugo Toscano](https://toscano84.github.io/) — data science in R
+* [Geoff Boeing](https://geoffboeing.com) — Python & GIS
 * [Our World in Data](https://ourworldindata.org/blog) — "data on the world’s largest problems"
 * [Dynamic Ecology](https://dynamicecology.wordpress.com/) — population, community & evolutionary ecology
 * [Florian Hartig](https://theoreticalecology.wordpress.com/) — ecology, evolution & statistics

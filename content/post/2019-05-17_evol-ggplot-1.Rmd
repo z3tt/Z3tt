@@ -65,7 +65,7 @@ df_ratios <- df_students %>%
 ![](/img/evol-ggplot/evol-ggplot-1.gif)
 
 * [🏁 Aim of this Tutorial](#aim)
-* [🗃️ Data Preparation](#data) 
+* [🗃️ Data Preparation](#data)
 * [🌱 The Default Boxplot](#default)
 * [🔀 ️Sort Your Data!](#sort)
 * [💎 Let Your Plot Shine - Get Rid of the Default Settings](#polish)
@@ -80,7 +80,7 @@ df_ratios <- df_students %>%
 
 ### 🏁 Aim of this Tutorial {#aim}
 
-In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% `ggplot2` and 0% Inkscape.
+In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% `{ggplot2}` and 0% Inkscape.
 
 In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [#TidyTuesday challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
 
@@ -129,7 +129,7 @@ set.seed(123)
 df_ratios %>%
   group_by(region) %>%
   sample_n(2) %>%
-  ungroup() %>% 
+  ungroup() %>%
   dplyr::select(indicator, country, region, student_ratio, student_ratio_region) %>%
   head(12)
 ```
@@ -161,7 +161,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 
 💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable - do not sort them if the categories have an internal logical order such as age groups!**
 
-To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot2` call - but this does not work for boxplots so we use `coord_flip()`). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
+To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `{ggplot2}` call - but this does not work for boxplots so we use `coord_flip()`). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
 
 ```{r boxplot-flipped, fig.width = 8, fig.heigh = 4.5}
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
@@ -177,9 +177,9 @@ The order of the categories is perfect as it is after flipping the coordinates -
 
 ### 💎 Let Your Plot Shine - Get Rid of the Default Settings
 
-Let's spice this plot up! One great thing about `ggplot2` is that it is structured in an *adaptive way*, allowing to add further levels to an existing ggplot object. We are going to
+Let's spice this plot up! One great thing about `{ggplot2}` is that it is structured in an *adaptive way*, allowing to add further levels to an existing ggplot object. We are going to
 
-* use a different theme that comes with the `ggplot2` package by calling `theme_set(theme_light())` (several themes come along with the `ggplot2` package but if you need more check for example the packages [`ggthemes`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) or [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/)),
+* use a different theme that comes with the `{ggplot2}` package by calling `theme_set(theme_light())` (several themes come along with the `{ggplot2}` package but if you need more check for example the packages [`ggthemes`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) or [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/)),
 * change the font and the overall font size by adding the arguments `base_size` and `base_family` to `theme_light()`,
 * flip the axes by adding `coord_flip()` (as seen before),
 * let the axis start at 0 and reduce the spacing to the plot margin by adding `expand = c(0.005, 0.005)` as argument to the `scale_y_continious()`,
@@ -188,7 +188,7 @@ Let's spice this plot up! One great thing about `ggplot2` is that it is structur
 * adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding `theme()`.
 
 💡 **You can easily adjust all sizes of the theme by calling theme_xyz(base_size = ) + this is very handy if you need the same viz for a different purpose!**  
-  
+
 💡 **Do not use c(0, 0) since the zero tick is in most cases too close to the axis - use c(0.005, 0.005) instead!**
 
 I am going to save the ggplot call and all these visual adjustments in `gg` object called `g` so we can use it for the next plots.
@@ -483,7 +483,7 @@ after <- df_ratios %>%
     labs(x = NULL, y = "Student to teacher ratio", title = "After",
          caption = "Data: UNESCO Institute for Statistics\nVisualization by Cédric Scherer") +
     theme_light(base_size = 15, base_family = "Poppins") +
-    theme(legend.position = "none", 
+    theme(legend.position = "none",
           plot.caption = element_text(size = 7, family = "Poppins", color = "gray50"),
           plot.title = element_text(size = 22, face = "bold", hjust = 0.5),
           axis.title = element_text(size = 12),
@@ -524,7 +524,7 @@ map_regions <- df_ratios %>%
     theme_light() +
     theme(line = element_blank(),
           panel.background = element_rect(fill = "transparent"),
-          plot.background = element_rect(fill = "transparent", 
+          plot.background = element_rect(fill = "transparent",
                                          color = "transparent"),
           panel.border = element_rect(color = "transparent"),
           strip.background = element_rect(color = "gray20"),
@@ -551,7 +551,7 @@ arrows <- tibble(
 set.seed(123)
 
 ## final plot
-df_ratios %>% 
+df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
   ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
@@ -561,25 +561,25 @@ df_ratios %>%
     stat_summary(fun.y = mean, geom = "point", size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
-    annotate("text", x = 6.3, y = 35, family = "Poppins", 
+    annotate("text", x = 6.3, y = 35, family = "Poppins",
              size = 2.7, color = "gray20",
              label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")) +
-    annotate("text", x = 3.5, y = 10, family = "Poppins", 
+    annotate("text", x = 3.5, y = 10, family = "Poppins",
              size = 2.7, color = "gray20",
              label = "Continental average") +
-    annotate("text", x = 1.7, y = 11, family = "Poppins", 
+    annotate("text", x = 1.7, y = 11, family = "Poppins",
              size = 2.7, color = "gray20",
              label = "Countries per continent") +
-    annotate("text", x = 1.9, y = 64, family = "Poppins", 
+    annotate("text", x = 1.9, y = 64, family = "Poppins",
              size = 2.7, color = "gray20",
              label = "The Central African Republic has by far\nthe most students per teacher") +
-    geom_curve(data = arrows, aes(x = x1, xend = x2, 
+    geom_curve(data = arrows, aes(x = x1, xend = x2,
                                   y = y1, yend = y2),
                arrow = arrow(length = unit(0.08, "inch")), size = 0.5,
                color = "gray20", curvature = -0.3) +
-    annotation_custom(ggplotGrob(map_regions), 
+    annotation_custom(ggplotGrob(map_regions),
                       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85) +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005), 
+    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005),
                        breaks = c(1, seq(20, 80, by = 20))) +
     scale_color_uchicago() +
     labs(x = NULL, y = "Student to teacher ratio",
@@ -595,7 +595,7 @@ df_ratios %>%
 
 ### 📝 Post Sciptum: Mean versus Median {#ps}
 
-One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile): 
+One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):
 
 ![In a Box-and-Whisker plot the box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.](/img/evol-ggplot/boxplot.png)
 
@@ -616,9 +616,9 @@ arrows <- tibble(
 set.seed(123)
 
 median <- df_ratios %>%
-  group_by(region) %>% 
-  mutate(student_ratio_region = median(student_ratio, na.rm = T)) %>% 
-  ungroup() %>% 
+  group_by(region) %>%
+  mutate(student_ratio_region = median(student_ratio, na.rm = T)) %>%
+  ungroup() %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
   ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(aes(x = region, xend = region,
@@ -646,20 +646,20 @@ median <- df_ratios %>%
     labs(x = NULL, y = "Student to teacher ratio", title = "After",
          caption = "Data: UNESCO Institute for Statistics\nVisualization by Cédric Scherer") +
     theme_light(base_size = 15, base_family = "Poppins") +
-    theme(legend.position = "none", 
+    theme(legend.position = "none",
           plot.caption = element_text(size = 7, family = "Poppins", color = "gray50"),
           plot.title = element_text(size = 22, face = "bold", hjust = 0.5),
           axis.title = element_text(size = 12),
           axis.text.x = element_text(family = "Roboto Mono", size = 10),
           panel.grid = element_blank())
 
-(after + labs(title = "Mean ratios", caption = "")) + 
+(after + labs(title = "Mean ratios", caption = "")) +
   (median + ggtitle("Median ratios")) + plot_layout(ncol = 1)
 ```
 
-As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. These plots now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some compared to the one visualzing average ratios. 
+As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. These plots now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some compared to the one visualzing average ratios.
 
-```{r gif, eval=FALSE, include=FALSE} 
+```{r gif, eval=FALSE, include=FALSE}
 library(animation)
 
 ## evo-plots
@@ -753,7 +753,7 @@ arrows <- tibble(
   y1 = c(32, 10.1, 11, 11, 74),
   y2 = c(world_avg + 0.1, 18, 14.1, 12, 83.4)
 )
- 
+
 g17 <- g15 +
   geom_curve(data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
              arrow = arrow(length = unit(0.07, "inch")), size = 0.4,

@@ -19,9 +19,8 @@
       <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
-Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
-Me: &amp;ldquo;&amp;hellip;&amp;rdquo;
-She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</description>
+Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
+Me: &amp;ldquo;&amp;hellip;&amp;rdquo;</description>
     </item>
     
     <item>
@@ -44,7 +43,7 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</d
       
       <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
       <description>Last update: 2019-10-31
-Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using ggplot2 to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
+Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using {ggplot2} to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
     </item>
     
     <item>
@@ -62,8 +61,8 @@ Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and 
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/05/06/tidytuesday_intro/</guid>
-      <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opprtunity to do so!
-What is it about? The R4DS (&amp;rdquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
+      <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opportunity to do so!
+What is it about? The R4DS (&amp;ldquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
     </item>
     
     <item>
@@ -73,7 +72,7 @@ What is it about? The R4DS (&amp;rdquo;R for Data Science&amp;rdquo;) online lea
       
       <guid>/2019/05/04/welcome/</guid>
       <description>Hi, I am glad you found your way here! Come in, have a look.
-I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package blogdown Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;Clean White&amp;rdquo; theme!
+I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package {blogdown} Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;CleanWhite&amp;rdquo; theme!
 Header image &amp;copy; Negative Space</description>
     </item>
     
@@ -93,7 +92,7 @@ Header image &amp;copy; Negative Space</description>
       
       <guid>/top/about/</guid>
       <description>Click here for the pdf of my resume.
-About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package ggplot2 from the tidyverse which I also use for all kinds of data preparation.</description>
+About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package {ggplot2} from the {tidyverse} which I also use for all kinds of data preparation.</description>
     </item>
     
     <item>
@@ -102,8 +101,8 @@ About Me I am a computational ecologist by training and a data visualization des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/dataviz/</guid>
-      <description>A collection of data visualizations I&amp;rsquo;ve produced for scientific publications and fun using the ggplot2 package in the programming language R. All visualizations are the result of the code without any post-processing. Click on an image to enlarge it. 
- Contributions to #TidyTuesday Contributions to #MakeoverMonday Contributions to the #SWDchallenge &amp;ldquo;Evolution of a ggplot&amp;rdquo; blog series   Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the tidyverse package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
+      <description>A collection of data visualizations I&amp;rsquo;ve produced for scientific publications and fun using the {ggplot2}(https://ggplot2.tidyverse.org/) package in the programming language R. All visualizations are the result of the code without any post-processing. Click on an image to enlarge it. 
+ Contributions to #TidyTuesday Contributions to #MakeoverMonday Contributions to the #SWDchallenge &amp;ldquo;Evolution of a ggplot&amp;rdquo; blog series   Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
     </item>
     
     <item>

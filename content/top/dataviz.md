@@ -1,4 +1,4 @@
-A collection of data visualizations I've produced for scientific publications and fun using the [`ggplot2`](https://ggplot2.tidyverse.org/) package in the programming language [`R`](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
+A collection of data visualizations I've produced for scientific publications and fun using the `{ggplot2}`(https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
 <br/>
 
 * [Contributions to #TidyTuesday](#tidytuesday)
@@ -10,7 +10,7 @@ A collection of data visualizations I've produced for scientific publications an
 
 ## Contributions to #TidyTuesday {#tidytuesday}
 
-[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `tidyverse` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/).
+[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/).
 
 <img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
 

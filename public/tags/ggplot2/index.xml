@@ -19,9 +19,8 @@
       <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
-Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
-Me: &amp;ldquo;&amp;hellip;&amp;rdquo;
-She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</description>
+Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1.&amp;rdquo; She: &amp;ldquo;Yeah, and we had some tough time to make that work and customize it in Adobe Animate.&amp;rdquo;
+Me: &amp;ldquo;&amp;hellip;&amp;rdquo;</description>
     </item>
     
     <item>
@@ -44,7 +43,7 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</d
       
       <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
       <description>Last update: 2019-10-31
-Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using ggplot2 to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
+Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and I started using {ggplot2} to visualize my data since I never liked the syntax and style of base plots in R. Because I was short on time, I plotted these figures by try’n’error and with the help of lots of googling. The resource I came always back to was a blog entry called Beautiful plotting in R: A ggplot2 cheatsheet by Zev Ross, posted on 4.</description>
     </item>
     
     <item>
@@ -62,8 +61,8 @@ Introductory WordsBegin of 2016, I had to prepare my PhD introductory talk and 
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/05/06/tidytuesday_intro/</guid>
-      <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opprtunity to do so!
-What is it about? The R4DS (&amp;rdquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
+      <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opportunity to do so!
+What is it about? The R4DS (&amp;ldquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
     </item>
     
   </channel>

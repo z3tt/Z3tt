@@ -40,18 +40,18 @@ a, a &gt; code {
   background-color: #baa745;
 }
 
-.remark-inline-code { 
-  color: #ebc500; 
+.remark-inline-code {
+  color: #ebc500;
 }
 
-.remark-code-line-highlighted { 
-  background-color: #ffec89; 
+.remark-code-line-highlighted {
+  background-color: #ffec89;
 }
 
 .hljs-github .hljs {
   background: #ececec;
 }
-  
+
 .pull-left {
   float: left;
   width: 50%;
@@ -96,13 +96,13 @@ class: middle
 
 # **Advantages of `{ggplot2}`**
 
-* consistent underlying grammar of graphics (Wilkinson, 2005)  
+* consistent underlying grammar of graphics (Wilkinson, 2005)
 
-* very flexible, layered plot specification  
+* very flexible, layered plot specification
 
 * theme system for polishing plot appearance
-  
-* active and helpful community  
+
+* active and helpful community
   (e.g. [community.rstudio.com](wwww.community.rstudio.com), [R4DS Learning Community](https://www.rfordatasci.com), [Twitter](https://twitter.com/search?q=%23ggplot2&amp;src=typed_query))
 
 ---
@@ -241,16 +241,16 @@ class: inverse, center, middle
 
 1. **Data** &lt;font color="grey"&gt; →  The raw data that you want to visualise&lt;/font&gt;
 
-2. **Layers `geom_` and `stat_`** &lt;font color="grey"&gt; →  The geometric shapes and statistical summaries representing the data&lt;/font&gt; 
+2. **Layers `geom_` and `stat_`** &lt;font color="grey"&gt; →  The geometric shapes and statistical summaries representing the data&lt;/font&gt;
 
-3. **Aesthetics `aes()`** &lt;font color="grey"&gt; →  Aesthetic mappings of the geometric and statistical objects&lt;/font&gt;  
+3. **Aesthetics `aes()`** &lt;font color="grey"&gt; →  Aesthetic mappings of the geometric and statistical objects&lt;/font&gt;
 
 4. **Scales `scale_`** &lt;font color="grey"&gt; →  Maps between the data and the aesthetic dimensions&lt;/font&gt;
 
 5. **Coordinate system `coord_`** &lt;font color="grey"&gt; →  Maps data into the plane of the data rectangle&lt;/font&gt;
-  
+
 6. **Facets `facet_`** &lt;font color="grey"&gt; →  The arrangement of the data into a grid of plots&lt;/font&gt;
-  
+
 7. **Visual themes `theme() and theme_`** &lt;font color="grey"&gt; →  The overall visual defaults of a plot&lt;/font&gt;
 
 ---
@@ -440,7 +440,7 @@ We need to specify the  variable as **categorial** (**`year`**), not as **contin
 
 ```r
 *ggplot(chic, aes(year, temp)) +
-    geom_boxplot() 
+    geom_boxplot()
 ```
 ]
 
@@ -579,7 +579,7 @@ class: inverse, center, middle
 ---
 ### **3. Aesthetics: `aes()`**
 
-Aesthetics of the geometric and statistical objects, such as 
+Aesthetics of the geometric and statistical objects, such as
 
 * **position** via **`x`**, **`y`**, **`xmin`**, **`xmax`**, **`ymin`**, **`ymax`**, ...
 
@@ -658,8 +658,8 @@ Alternatively, all **`aes`**thetics can be grouped together (and are then applie
 
 ```r
 ggplot(
-  chic, 
-  aes(date, 
+  chic,
+  aes(date,
       temp,
 *     color = season,
 *     shape = year)
@@ -799,12 +799,12 @@ ggplot(chic, aes(date, temp)) +
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
   scale_x_date(
-    name = NULL, 
+    name = NULL,
 *   limits = c(
 *     as.Date("1997-01-01"),
 *     as.Date("1999-12-31")
 *   )
-  ) + 
+  ) +
 * scale_y_log10(
     name = "Temperature (°F)",
 *   breaks = c(1, 10, 100),
@@ -857,7 +857,7 @@ ggplot(chic, aes(date, temp)) +
   scale_x_date(
     name = NULL,
 *   expand = c(0, 0)
-  ) + 
+  ) +
   scale_y_continuous(
     name = "Temperature (°F)",
 *   expand = c(0, 0)
@@ -904,15 +904,15 @@ ggplot(chic, aes(date, temp)) +
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
-  scale_color_manual( 
-    values = c( 
+  scale_color_manual(
+    values = c(
       "firebrick",
       "dodgerblue",
       "darkorchid",
       "goldenrod"
     ),
 *   name = "Pretty\ncolored\nsesons:"
-  ) 
+  )
 ```
 ]
 
@@ -930,15 +930,15 @@ ggplot(chic, aes(date, temp)) +
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
-  scale_color_manual( 
-    values = c( 
+  scale_color_manual(
+    values = c(
       "firebrick",
       "dodgerblue",
       "darkorchid",
       "goldenrod"
     ),
 *   guide = FALSE
-  ) 
+  )
 ```
 ]
 
@@ -957,8 +957,8 @@ ggplot(chic, aes(date, temp)) +
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season,
 *                shape = year)) +
-  scale_color_manual( 
-    values = c( 
+  scale_color_manual(
+    values = c(
       "firebrick",
       "dodgerblue",
       "darkorchid",
@@ -990,7 +990,7 @@ ggplot(chic, aes(date, temp)) +
 * scale_color_brewer(
 *   palette = "Set2",
     guide = FALSE
-  ) 
+  )
 ```
 
 Several packages offer predefined palettes, e.g.:
@@ -1024,7 +1024,7 @@ Coordinate systems combine the two position aesthetics (usually **`x`** and **`y
 
 --
 
-The meaning of the position aesthetics depends on the coordinate system used: 
+The meaning of the position aesthetics depends on the coordinate system used:
 
 * Linear coordinate systems that preserve the shape of geoms:&lt;br&gt;&lt;br&gt;
     + **`coord_cartesian()`**: the default with two fixed perpendicular oriented axes
@@ -1111,9 +1111,9 @@ ggplot(chic, aes(date, temp)) +
   geom_point() +
   scale_x_date(
     expand = c(0, 0)
-  ) + 
+  ) +
   coord_cartesian(
-    ylim = c(0, 80), 
+    ylim = c(0, 80),
 *   clip = "off"
   )
 ```
@@ -1195,9 +1195,9 @@ Maps often come as polygons and can be plotted via **`geom_polygon()`**:
 .pull-left[
 
 ```r
-(g_world &lt;- 
+(g_world &lt;-
   ggplot(map_data("world"),
-         aes(long, lat, 
+         aes(long, lat,
              group = group)) +
 *   geom_polygon(
 *     fill = "tan",
@@ -1277,7 +1277,7 @@ ggplot(chic, aes(temp, o3)) +
 ```r
 ggplot(chic, aes(temp, o3)) +
   geom_point(aes(color = year)) +
-  facet_wrap(~ season, 
+  facet_wrap(~ season,
 *            scales = "free")
 ```
 
@@ -1312,10 +1312,10 @@ class: inverse, center, middle
 # **7. Visual Themes&lt;br&gt;&lt;font size=6 color = "grey"&gt;`theme()` and `theme_*()`&lt;/font&gt;**
 
 ---
-### **7. Visual Themes: `theme()` and `theme_*()`** 
+### **7. Visual Themes: `theme()` and `theme_*()`**
 
 * Themes control the display of all non-data elements of the plot&lt;br&gt;
-  
+
   + titles
   + labels
   + fonts
@@ -1333,7 +1333,7 @@ class: inverse, center, middle
 * Themes can be used to give plots a consistent customized look by defining a custom theme using **`theme_update()`** or **`theme_set()`**&lt;br&gt;
 
 ---
-### **7. Visual Themes: `theme()`** 
+### **7. Visual Themes: `theme()`**
 
 To modify the theme of a plot use **`theme()`** in combination with **`element_*()`**:
 
@@ -1365,7 +1365,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme()`** 
+### **7. Visual Themes: `theme()`**
 
 **`element_blank()`** can be used to remove certain theme elements:
 
@@ -1387,7 +1387,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme_*()`** 
+### **7. Visual Themes: `theme_*()`**
 
 Use a built-in theme of **`{ggplot2}`**:
 
@@ -1405,7 +1405,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme_*()`** 
+### **7. Visual Themes: `theme_*()`**
 
 Use a built-in theme of **`{ggplot2}`**:
 
@@ -1423,7 +1423,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme_*()`** 
+### **7. Visual Themes: `theme_*()`**
 
 Using the argument **`base_size()`** you can change the size of the text:
 
@@ -1441,7 +1441,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme_*()`** 
+### **7. Visual Themes: `theme_*()`**
 
 There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  and **`{tvthemes}`**:
 
@@ -1450,7 +1450,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 &lt;p style="text-align:center;"&gt;&lt;img src="img/theme_panel.png" style="width: 92%"&gt;&lt;/p&gt;
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`** 
+### **7. Visual Themes: `theme_set()` and `theme_update()`**
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1467,7 +1467,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 ]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`** 
+### **7. Visual Themes: `theme_set()` and `theme_update()`**
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1478,7 +1478,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
   geom_point())
 
 *old &lt;- theme_set(theme_grey())
-*g 
+*g
 ```
 ]
 
@@ -1487,7 +1487,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 ]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`** 
+### **7. Visual Themes: `theme_set()` and `theme_update()`**
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1505,8 +1505,8 @@ g
 *   fill = "tan",
 *   color = "black"
 * )
-*) 
-*g 
+*)
+*g
 ```
 ]
 
@@ -1515,7 +1515,7 @@ g
 ]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`** 
+### **7. Visual Themes: `theme_set()` and `theme_update()`**
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1537,7 +1537,7 @@ theme_update(
 g
 
 *theme_set(old)
-*g 
+*g
 ```
 ]
 
@@ -1750,7 +1750,7 @@ ggplot(chic, aes(date, temp)) +
 *     col = "firebrick"
 *   )
 * )
-*) 
+*)
 
 ggplot(chic, aes(date, temp)) +
   geom_point() +
@@ -1902,7 +1902,7 @@ If you plot many elements, use **`geom_rect()`**:
 *                  "1999-12-31")),
 * ymin = rep(-Inf, 2),
 * ymax = rep(Inf, 2)
-*) 
+*)
 
 ggplot(chic) +
 * geom_rect(
@@ -1933,7 +1933,7 @@ We could also indicate new years by a vertical line:
 *   as.Date("1997-01-01"),
 *   as.Date("2001-01-01"),
 *   length.out = 5)
-*) 
+*)
 
 ggplot(chic, aes(date, temp)) +
 * geom_vline(
