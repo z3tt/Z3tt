@@ -169,9 +169,9 @@ Within this command, you already can insert aesthetics as changing the color of 
 g + geom_point(color = "firebrick")
 ```
 
-By applying that to our plotting element, the following plots based on `g` are going to have red points.
+(Note: `{ggplot2}` understands both *color* and *colour* as well as the short version *col*.)
 
-And let's get rid of the greyish default ggplot look by setting a different built-in theme, e.g. `theme_bw`:
+And let's get rid of the greyish default `{ggplot2}` look by setting a different built-in theme, e.g. `theme_bw()` - by calling `theme_set()` all following plots will have the same black'n'white theme. The red points look way better now!
 
 ```{r remove-grey-background}
 theme_set(theme_bw())
