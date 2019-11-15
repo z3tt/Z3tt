@@ -7,7 +7,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ### Peer-Reviewed Publications {#pubs}
 
 - <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke & S. Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales.
-[*Journal of Animal Ecology*](https://doi.org/10.1111/1365-2656.13070).
+[*Journal of Animal Ecology* 88:1639–1824](https://doi.org/10.1111/1365-2656.13070).
 
 - <span style="font-variant:small-caps;">V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, **C. Scherer**, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
 [*Ecology Letters* 22:647–684](https://doi.org/10.1111/ele.13226).
