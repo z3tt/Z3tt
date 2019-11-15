@@ -37,10 +37,12 @@
     <meta property="twitter:description" content="{{ .Site.Params.description }}" />
     {{ end }}
 
-    {{ if .Params.summary }}
-    <meta property="twitter:card" content="{{ .Params.summary }}" />
+    {{ if .Params.twitterImg }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ .Params.twitterImg }}" >
     {{ else }}
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_small_image">
+    <meta name="twitter:image" content="{{ .Site.Params.twitter_image }}" >
     {{ end }}
     <!-- end ogp -->
 
