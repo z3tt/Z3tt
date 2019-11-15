@@ -31,7 +31,7 @@
 
     {{ if .Params.twitterImg }}
       <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
-      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitterImg }}" />
+      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.twitterImg }}" />
       <meta property="twitter:card" content="summary_large_image" />
     {{ else }}
       <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
