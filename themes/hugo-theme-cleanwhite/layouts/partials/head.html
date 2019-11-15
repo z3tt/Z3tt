@@ -7,15 +7,7 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
 
-    {{ if .Params.thumbnail }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
-    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" />
-    {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.header_image }}">
-    <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.twitter_image }}" />
-    {{ end }}
-
-    {{ if .Params.title }}
+        {{ if .Params.title }}
     <meta name="title" content="{{ .Params.title }}" />
     <meta property="og:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
     <meta property="twitter:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
@@ -38,12 +30,15 @@
     {{ end }}
 
     {{ if .Params.twitterImg }}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ .Params.twitterImg }}" >
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.twitterImg }}" />
+    <meta property="twitter:card" content="summary_large_image" />
     {{ else }}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ .Site.Params.twitter_image }}" >
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitter_image }}" />
+    <meta property="twitter:card" content="summary_large_image" />
     {{ end }}
+
     <!-- end ogp -->
 
     <meta name="keyword"  content="{{ .Site.Params.keyword }}">
