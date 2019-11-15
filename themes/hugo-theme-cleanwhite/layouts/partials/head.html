@@ -7,11 +7,11 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
 
-    {{ if .Params.Title }}
-      <meta name="title" content="{{ .Params.Title }}" />
-      <meta property="og:title" content="{{ .Params.Title }} - {{ .Site.Params.title }}" />
-      <meta property="twitter:title" content="{{ .Params.Title }} - {{ .Site.Params.title }}" />
-      <meta property="twitter:text:title" content="{{ .Params.Title }} - {{ .Site.Params.title }}" />
+    {{ if .Title }}
+      <meta name="title" content="{{ .Title }}" />
+      <meta property="og:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
+      <meta property="twitter:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
+      <meta property="twitter:text:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
     {{ else }}
       <meta name="title" content="{{ .Site.Params.title }}" />
       <meta property="og:title" content="{{ .Site.Params.title }}" />
