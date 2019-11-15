@@ -16,6 +16,7 @@ home = ["HTML", "RSS", "Algolia"]
 [params]
   header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
   twitter_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
+  twitterImg = ""
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
   title = "Cédric Scherer"
