@@ -7,44 +7,44 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
 
-    {{ if .params.title }}
-      <meta name="title" content="{{ .params.title }}" />
-      <meta property="og:title" content="{{ .params.title }} - {{ .Site.params.title }}" />
-      <meta property="twitter:title" content="{{ .params.title }} - {{ .Site.params.title }}" />
-      <meta property="twitter:text:title" content="{{ .params.title }} - {{ .Site.params.title }}" />
+    {{ if .Params.Title }}
+      <meta name="title" content="{{ .Params.Title }}" />
+      <meta property="og:title" content="{{ .Params.Title }} - {{ .Site.Params.title }}" />
+      <meta property="twitter:title" content="{{ .Params.Title }} - {{ .Site.Params.title }}" />
+      <meta property="twitter:text:title" content="{{ .Params.Title }} - {{ .Site.Params.title }}" />
     {{ else }}
-      <meta name="title" content="{{ .Site.params.title }}" />
-      <meta property="og:title" content="{{ .Site.params.title }}" />
-      <meta property="twitter:title" content="{{ .Site.params.title }}" />
-      <meta property="twitter:text:title" content="{{ .Site.params.title }}" />
+      <meta name="title" content="{{ .Site.Params.title }}" />
+      <meta property="og:title" content="{{ .Site.Params.title }}" />
+      <meta property="twitter:title" content="{{ .Site.Params.title }}" />
+      <meta property="twitter:text:title" content="{{ .Site.Params.title }}" />
     {{ end }}
 
-    {{ if .params.description }}
-      <meta name="description" content="{{ .params.description }}">
-      <meta property="og:description" content="{{ .params.description }}" />
-      <meta property="twitter:description" content="{{ .params.description }}" />
+    {{ if .Params.description }}
+      <meta name="description" content="{{ .Params.description }}">
+      <meta property="og:description" content="{{ .Params.description }}" />
+      <meta property="twitter:description" content="{{ .Params.description }}" />
     {{ else }}
-      <meta name="description" content="{{ .Site.params.description }}">
-      <meta property="og:description" content="{{ .Site.params.description }}" />
-      <meta property="twitter:description" content="{{ .Site.params.description }}" />
+      <meta name="description" content="{{ .Site.Params.description }}">
+      <meta property="og:description" content="{{ .Site.Params.description }}" />
+      <meta property="twitter:description" content="{{ .Site.Params.description }}" />
     {{ end }}
 
-    {{ if .params.twitterImg }}
-      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.params.header_image }}">
-      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.params.twitterImg }}" />
+    {{ if .Params.twitterImg }}
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitterImg }}" />
       <meta property="twitter:card" content="summary_large_image" />
     {{ else }}
-      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.params.header_image }}">
-      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.params.twitter_image }}" />
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitter_image }}" />
       <meta property="twitter:card" content="summary_large_image" />
     {{ end }}
 
     <!-- end ogp -->
 
-    <meta name="keyword"  content="{{ .Site.params.keyword }}">
+    <meta name="keyword"  content="{{ .Site.Params.keyword }}">
     <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
 
-    <title>{{ if .Title }}{{ .Title }}-{{ .Site.params.SEOTitle }}{{ else }}{{ .Site.params.SEOTitle }}{{ end }}</title>
+    <title>{{ if .Title }}{{ .Title }}-{{ .Site.Params.SEOTitle }}{{ else }}{{ .Site.Params.SEOTitle }}{{ end }}</title>
 
     <link rel="canonical" href="{{ .URL | relURL }}">
 
