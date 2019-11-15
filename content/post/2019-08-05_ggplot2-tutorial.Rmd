@@ -29,6 +29,7 @@ After giving the talk which contained some quite beautiful plots thanks to the b
 Since the blog entry by Zev Ross was not updated for some years, I hosted the updated version on my GitHub. Now it finds its proper place on this homepage! (Plus I added some updates, for example the fantastic `{patchwork}` and `{ggforce}` packages. And pie charts because everyone looooves pie charts!)
 
 <img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggplot-tutorial/overview.png', 'blank');"/>
+<p><figcaption class="caption">Some exemplary plots included in this tutorial.</figcaption></p>
 
 Major changes I've made:
 

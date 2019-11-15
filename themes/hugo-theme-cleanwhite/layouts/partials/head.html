@@ -38,7 +38,7 @@
     {{ if .Params.summary }}
     <meta property="twitter:card" content="{{ .Params.summary }}" />
     {{ else }}
-    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:card" content="summary_large_image" />
     {{ end }}
     <!-- end ogp -->
 
@@ -50,7 +50,7 @@
     <link rel="canonical" href="{{ .URL | relURL }}">
 
     <link rel="stylesheet" href="{{ "css/iDisqus.min.css" | relURL }}"/>
-	
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
 
@@ -70,13 +70,13 @@
     -->
     <!-- jQuery -->
     <script src="{{ "js/jquery.min.js" | relURL }}"></script>
-    
+
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-    
+
     <!-- Custom Theme JavaScript -->
     <script src="{{ "js/hux-blog.min.js" | relURL }}"></script>
-	
+
     <!-- Use the docco color scheme of highlight.js to highlight the code in the page -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
