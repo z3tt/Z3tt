@@ -17,14 +17,14 @@
 
     {{ if .Params.title }}
     <meta name="title" content="{{ .Params.title }}" />
-    <meta property="og:title" content="{{ .Params.title }}" />
-    <meta property="twitter:title" content="{{ .Params.title }}" />
-    <meta property="twitter:text:title" content="{{ .Params.title }}" />
+    <meta property="og:title" content="{{ .Params.title }} - {{ .Params.site.title }}" />
+    <meta property="twitter:title" content="{{ .Params.title }} - {{ .Params.site.title }}" />
+    <meta property="twitter:text:title" content="{{ .Params.title }} - {{ .Params.site.title }}" />
     {{ else }}
     <meta name="title" content="{{ .Site.Params.title }}" />
     <meta property="og:title" content="{{ .Site.Params.title }}" />
-    <meta property="twitter:title" content="{{ .Site.Params.title }}" />
-    <meta property="twitter:text:title" content="{{ .Site.Params.title }}" />
+    <meta property="twitter:title" content="{{ .Params.title }} - {{ .Params.site.title }}" />
+    <meta property="twitter:text:title" content="{{ .Params.title }} - {{ .Params.site.title }}" />
     {{ end }}
 
     {{ if .Params.description }}
