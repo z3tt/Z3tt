@@ -8,35 +8,35 @@
     <meta property="og:type" content="article">
 
     {{ if .Params.title }}
-    <meta name="title" content="{{ .Params.title }}" />
-    <meta property="og:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
-    <meta property="twitter:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
-    <meta property="twitter:text:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
+      <meta name="title" content="{{ .Params.title }}" />
+      <meta property="og:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
+      <meta property="twitter:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
+      <meta property="twitter:text:title" content="{{ .Params.title }} - {{ .Site.Params.title }}" />
     {{ else }}
-    <meta name="title" content="{{ .Site.Params.title }}" />
-    <meta property="og:title" content="{{ .Site.Params.title }}" />
-    <meta property="twitter:title" content="{{ .Site.Params.title }}" />
-    <meta property="twitter:text:title" content="{{ .Site.Params.title }}" />
+      <meta name="title" content="{{ .Params.title }}" />
+      <meta property="og:title" content="{{ .Site.Params.title }}" />
+      <meta property="twitter:title" content="{{ .Site.Params.title }}" />
+      <meta property="twitter:text:title" content="{{ .Site.Params.title }}" />
     {{ end }}
 
     {{ if .Params.description }}
-    <meta name="description" content="{{ .Params.description }}">
-    <meta property="og:description" content="{{ .Params.description }}" />
-    <meta property="twitter:description" content="{{ .Params.description }}" />
+      <meta name="description" content="{{ .Params.description }}">
+      <meta property="og:description" content="{{ .Params.description }}" />
+      <meta property="twitter:description" content="{{ .Params.description }}" />
     {{ else }}
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta property="og:description" content="{{ .Site.Params.description }}" />
-    <meta property="twitter:description" content="{{ .Site.Params.description }}" />
+      <meta name="description" content="{{ .Site.Params.description }}">
+      <meta property="og:description" content="{{ .Site.Params.description }}" />
+      <meta property="twitter:description" content="{{ .Site.Params.description }}" />
     {{ end }}
 
     {{ if .Params.twitterImg }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
-    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitterImg }}" />
-    <meta property="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitterImg }}" />
+      <meta property="twitter:card" content="summary_large_image" />
     {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
-    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitter_image }}" />
-    <meta property="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitter_image }}" />
+      <meta property="twitter:card" content="summary_large_image" />
     {{ end }}
 
     <!-- end ogp -->
