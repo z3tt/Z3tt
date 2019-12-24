@@ -5,7 +5,7 @@ author: Cédric
 date: "2019-12-24"
 image: img/banner/snowmountains_RichardStrozynski.jpg
 layout: post
-description: "To the end of the year, I explored the history of snow and white Christmas in Berlin. I wish you a merry Christmas and wonderful holidays 2019!"
+description: "At the end of the year, I explore the history of snow cover and white Christmas in Berlin. I wish you a merry Christmas and wonderful holidays 2019!"
 tags:
     - DataViz
     - R
@@ -16,13 +16,13 @@ tags:
 showtoc: false
 ---
 
-**During this time of the year, lunch conversations often focus around the question "Will there be snow on Christmas Eve here in Berlin/Germany?". I remember white Christmas to be a thing when I was a child but in my memory this happened way more often than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?**
+**During this time of the year, lunch conversations often focus around the question "Will there be snow on Christmas Eve here in Berlin/Germany?". I remember white Christmas to be a thing when I was a child but in my memory this happened way more often back then than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?**
 
 ![white-christmas-dataviz-Berlin](/img/white-christmas/snow_history_fit.png)
 
-This is a Christmas-inspired visualization of the first day of snow and the total amount of snow that fell in Berlin since the beginning of weather recordings on Germany. The color encodes if there was snow on Christmas Eve (white snowflakes) or if not (light blue snowflakes). As one can see, white Christmas was rarely the case but became even more rare recently with the last snow on Christmas happening in 2012. Also, while being quite stable most of the time, the day of first snow tends to be later in December with the trend being after Christmas Eve in the next years. And yes, today there is no snow on sight - it's sunny and temperatures more like spring.
+This is a Christmas-inspired visualization of the first day of snow and the total amount of snow that fell in Berlin since the beginning of weather recordings on Germany. The color encodes if there was snow on Christmas Eve (white snowflakes) or not (light blue snowflakes). As one can see, white Christmas was rarely the case but became even more rare recently with the last snow on Christmas happening in 2012. Also, while being quite stable most of the time, the day of first snow tends to be later in December with the trend being after Christmas Eve in the next years. And yes, today there is no snow on sight - it's sunny and temperatures are more like spring.
 
-So how about snow cover in general? As we already have seen, the amount of snow varies a lot among years with a slight trend of less total amount of snow in more recent years. While the winter of 1969/70 was a record year in terms of snow (most amount with 130cm and 111 days with snow cover), the year with the least snow was 2018/19 - and there also has been no snow this December either.
+So how about snow cover in general? As we already have seen, the amount of snow varies a lot among years with a slight trend of less total amount of snow in more recent years. While the winter of 1969 was a record year in terms of snow (130 cm snow in total and 101 days with snow cover), the year with the least snow was 2018/19 - and there also has been no snow this December either.
 
 ![snow-cover-dataviz-Berlin](/img/white-christmas/snow_history_clean.png)
 
@@ -30,6 +30,6 @@ I am really happy about the overall *snowy* theme of the plot! However, it might
 
 ![snow-cover-dataviz-Berlin-annotated](/img/white-christmas/snow_history.png)
 
-Likely, I will come back to this plot in the next years and, hopefully, I am going to add a white snowflake soon so my daughter can tell her colleagues about snow on Christmas Eve—and also in general—in  and Germany.
+Likely, I will come back to this plot in the next years and, hopefully, I am going to add a white snowflake soon so my daughter can tell her colleagues about snow on Christmas Eve—and also in general—in Berlin and Germany.
 
 **I wish all of you a merry Christmas 2019, no matter if it's white, gray or blue! Enjoy your holidays and I hope to see you again in 2020!**
