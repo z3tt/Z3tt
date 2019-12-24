@@ -22,7 +22,7 @@ showtoc: false
 
 This is a Christmas-inspired visualization of the first day of snow and the total amount of snow that fell in Berlin since the beginning of weather recordings on Germany. The color encodes if there was snow on Christmas Eve (white snowflakes) or not (light blue snowflakes). As one can see, white Christmas was rarely the case but became even more rare recently with the last snow on Christmas happening in 2012. Also, while being quite stable most of the time, the day of first snow tends to be later in December with the trend being after Christmas Eve in the next years. And yes, today there is no snow on sight - it's sunny and temperatures are more like spring.
 
-So how about snow cover in general? As we already have seen, the amount of snow varies a lot among years with a slight trend of less total amount of snow in more recent years. While the winter of 1969 was a record year in terms of snow (130 cm snow in total and 101 days with snow cover), the year with the least snow was 2018/19 - and there also has been no snow this December either.
+So how about snow cover in general? As we already have seen, the amount of snow varies a lot among years with a slight trend of less total amount of snow in more recent years. While the winter of 1969 was a record year in terms of snow (130 cm snow in total and 101 days with snow cover), the year with the least snow was 2018 - and there also has been no snow this winter either.
 
 ![snow-cover-dataviz-Berlin](/img/white-christmas/snow_history_clean.png)
 
