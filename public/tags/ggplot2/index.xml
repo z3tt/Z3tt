@@ -6,10 +6,19 @@
     <description>Recent content in ggplot2 on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Merry (White?) Christmas!</title>
+      <link>/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
+      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
+      <description>During this time of the year, lunch conversations often focus around the question &amp;ldquo;Will there be snow on Christmas Eve here in Berlin/Germany?&amp;rdquo;. I remember white Christmas to be a thing when I was a child but in my memory this happened way more often than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?</description>
+    </item>
     
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
