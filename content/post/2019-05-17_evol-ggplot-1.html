@@ -5,7 +5,7 @@ date: 2019-05-17
 image: img/banner/dark_RichardStrozynski.jpg
 layout: post
 showtoc: false
-description: "In this series of blog posts, I provide step-by-step tutorials explaining how my visualization have evolved from a typical basic ggplot. In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot stripplot and a lollipop plot."
+description: "In this series of blog posts, I provide step-by-step tutorials explaining how my visualizations have evolved from a typical basic ggplot. In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot stripplot and a lollipop plot."
 tags: ["R", "ggplot2", "tidyverse", "TidyTuesday", "DataViz", "tutorial", "ggplot Evolution", "animations"]
 editor_options:
   chunk_output_type: console
@@ -39,20 +39,20 @@ editor_options:
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png" width="768" /></p>
 <p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned dataset looks like, showing 2 examples per continent:</p>
 <pre><code>## # A tibble: 12 x 5
-##    indicator    country            region   student_ratio student_ratio_re~
-##    &lt;chr&gt;        &lt;chr&gt;              &lt;chr&gt;            &lt;dbl&gt;             &lt;dbl&gt;
-##  1 Primary Edu~ Djibouti           Africa            29.4              37.3
-##  2 Primary Edu~ Senegal            Africa            32.8              37.3
-##  3 Primary Edu~ Kazakhstan         Asia              19.6              20.7
-##  4 Primary Edu~ Timor-Leste        Asia              NA                20.7
-##  5 Primary Edu~ The former Yugosl~ Europe            14.4              13.6
-##  6 Primary Edu~ Austria            Europe            10.0              13.6
-##  7 Primary Edu~ Grenada            North A~          16.2              17.7
-##  8 Primary Edu~ Saint Kitts and N~ North A~          13.9              17.7
-##  9 Primary Edu~ Papua New Guinea   Oceania           35.5              24.7
-## 10 Primary Edu~ New Zealand        Oceania           14.9              24.7
-## 11 Primary Edu~ Venezuela (Boliva~ South A~          NA                19.4
-## 12 Primary Edu~ Colombia           South A~          23.6              19.4</code></pre>
+##    indicator     country                region   student_ratio student_ratio_re…
+##    &lt;chr&gt;         &lt;chr&gt;                  &lt;chr&gt;            &lt;dbl&gt;             &lt;dbl&gt;
+##  1 Primary Educ… Mauritius              Africa           17.9               37.3
+##  2 Primary Educ… Djibouti               Africa           29.4               37.3
+##  3 Primary Educ… Indonesia              Asia             16.1               20.7
+##  4 Primary Educ… Azerbaijan             Asia             15.5               20.7
+##  5 Primary Educ… The former Yugoslav R… Europe           14.4               13.6
+##  6 Primary Educ… Greece                 Europe            9.27              13.6
+##  7 Primary Educ… Canada                 North A…         NA                 17.7
+##  8 Primary Educ… Saint Vincent and the… North A…         14.4               17.7
+##  9 Primary Educ… Tonga                  Oceania          21.6               24.7
+## 10 Primary Educ… Samoa                  Oceania          NA                 24.7
+## 11 Primary Educ… Venezuela (Bolivarian… South A…         NA                 19.4
+## 12 Primary Educ… Peru                   South A…         17.4               19.4</code></pre>
 </div>
 <div id="default" class="section level3">
 <h3>🌱 The Default Boxplot</h3>
@@ -216,8 +216,8 @@ And - oh my! - we almost forgot to mention and acknowledge the data source 😨 
                      breaks = c(1, seq(20, 80, by = 20))) +
   labs(caption = &quot;Data: UNESCO Institute for Statistics&quot;) +
   theme(plot.caption = element_text(size = 9, color = &quot;gray50&quot;)))</code></pre>
-<pre><code>## Scale for &#39;y&#39; is already present. Adding another scale for &#39;y&#39;, which
-## will replace the existing scale.</code></pre>
+<pre><code>## Scale for &#39;y&#39; is already present. Adding another scale for &#39;y&#39;, which will
+## replace the existing scale.</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/final-caption-1.png" width="768" /></p>
 </div>
 <div id="legend" class="section level3">
