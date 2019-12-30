@@ -37,7 +37,7 @@ Jake presented a similar design in combination with a geofacet of the United Sta
 
 ![best-tidytuesday-2019-jake-week-30](/img/best-tidytuesday-2019/jake_30.jpg)
 
-### Ramen Ratings by Geogios Karamanis
+### Ramen Ratings by Georgios Karamanis
 
 Of course, [Georgios Karamanis](https://twitter.com/geokaramanis)' contributions also crossed my mind. Georgios started participating in 2019 and impressing visualization  with a particular taste for artistic and creative design. I especially liked this simple but very well-designed contribution to week 23 on [Ramen ratings](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-04):
 
