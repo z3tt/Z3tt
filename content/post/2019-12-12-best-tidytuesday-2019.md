@@ -63,7 +63,7 @@ Have a look at all of Torsten's contributions, it's a rich source of great ggplo
 
 ![best-tidytuesday-2019-storytelling](/img/best-tidytuesday-2019/storytelling.jpg)
 
-Contributions to the #TidyTuesday challenge focus on a single or few graphs, rarely on infographics or long and detailed stories. Anyway, by presenting a simple yet convincing chart in an appealing way and using clever annotations, a single chart can give a lot of insights and tell a (short) story and guide the reader
+Contributions to the #TidyTuesday challenge focus on a single or few graphs, rarely on infographics or long and detailed stories. Anyway, by presenting a simple yet convincing chart in an appealing way and using clever annotations, a single chart can give a lot of insights and tell a (short) story and guide the reader.
 
 ### Global Plastic Waste by Christian Burkhart
 
