@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Best TidyTuesday 2019</title>
+      <link>/2019/12/30/best-tidytuesday-2019/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/30/best-tidytuesday-2019/</guid>
+      <description>At the end of an exiting second #TidyTuesday year, Jon Harmon, host of the TidyTuesday Podcast, asked on Twitter:
+What was your favorite #TidyTuesday dataset of 2019? What were some of your favorite visualizations? Why? Let me know with an @ or via #BestTidyTuesday2019!
+&amp;mdash; TidyTuesday Podcast (@tidypod) December 12, 2019 
+I took this opportunity to recap the last year of contributions to the #TidyTuesday challenge. Immediately, several contributions came to my mind and I tried to pick the best from those I&amp;rsquo;ve seen and which I remember.</description>
+    </item>
     
     <item>
       <title>Merry (White?) Christmas!</title>
