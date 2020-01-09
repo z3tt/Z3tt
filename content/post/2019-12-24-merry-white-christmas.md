@@ -8,11 +8,10 @@ layout: post
 description: "At the end of the year, I explore the history of snow cover and white Christmas in Berlin. I wish you a merry Christmas and wonderful holidays 2019!"
 tags:
     - DataViz
-    - R
-    - ggplot2
-    - tidyverse
     - Christmas
     - Berlin
+    - weather
+    - ggplot2
 showtoc: false
 ---
 
