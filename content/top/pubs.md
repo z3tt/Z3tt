@@ -6,6 +6,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Peer-Reviewed Publications {#pubs}
 
+- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, H.-H. Thulke, M. Lange, V. Grimm & S. Kramer-Schadt</span> (accepted)</span> Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos*](https://doi.org/10.1111/oik.07002).
+
 - <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke & S. Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales.
 [*Journal of Animal Ecology* 88:1639–1824](https://doi.org/10.1111/1365-2656.13070).
 
@@ -19,8 +21,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 
 ##### Manuscripts Under Review
-- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, H.-H. Thulke, M. Lange, V. Grimm & S. Kramer-Schadt</span> (in revision)</span> Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. *Submitted to Oikos*.
-
 - <span style="font-variant:small-caps;">V. Radchuk, S. Kramer-Schadt, U. Berger, **C. Scherer**, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (in revision)</span> Individual-based models. *Invited chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
 
 - <span style="font-variant:small-caps;">U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, **C. Scherer**, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (in revision) Movement-mediated community assembly and coexistence. *Submitted to Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
