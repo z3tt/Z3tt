@@ -13,7 +13,7 @@ Read more about my current and finished projects [here](https://cedricscherer.ne
 
 ### Contact {#contact}
 
-**Cédric Scherer, M.Sc.**  
+**Dr. Cédric Scherer**  
 Leibniz Institute for Zoo and Wildlife Research (IZW)  
 Department "Ecological Dynamics"  
 Alfred-Kowalke-Straße 17, Room 2.4.05, 10315 Berlin, Germany  
