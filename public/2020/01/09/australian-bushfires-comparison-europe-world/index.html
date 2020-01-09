@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+
+    
+      <meta name="title" content="Comparing the Extent of the Australian Bushfires 2019/20" />
+      <meta property="og:title" content="Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer" />
+      <meta property="twitter:title" content="Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer" />
+      <meta property="twitter:text:title" content="Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide.">
+      <meta property="og:description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide." />
+      <meta property="twitter:description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide." />
+    
+
+    
+      <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+      <meta property="twitter:image" content="/img/banner_RichardStrozynski_small.png" />
+      <meta property="twitter:card" content="summary_large_image" />
+    
+
+    
+
+    <meta name="keyword"  content="Computational Ecology, Data Visualisation">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2020/01/09/australian-bushfires-comparison-europe-world/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/projects/">Projects</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/dataviz/">Visualizations</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/fire_MichaelBarth.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/nature" title="nature">
+                            nature
+                        </a>
+                        
+                        <a class="tag" href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        <a class="tag" href="/tags/climate-change" title="climate change">
+                            climate change
+                        </a>
+                        
+                        <a class="tag" href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        <a class="tag" href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        <a class="tag" href="/tags/tidytuesday" title="TidyTuesday">
+                            TidyTuesday
+                        </a>
+                        
+                    </div>
+                    <h1>Comparing the Extent of the Australian Bushfires 2019/20</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Thursday, January 9, 2020
+                        
+                            <span id="/2020/01/09/australian-bushfires-comparison-europe-world/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+<p><font size="-1">Header image by <a href="https://unsplash.com/photos/OjA6F3pSccw">Michael Barth via Unsplash</a></font></p>
+
+<p><strong>During a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: <a href="https://edition.cnn.com/2020/01/01/australia/australia-fires-explainer-intl-hnk-scli/index.html">27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales</a>. 800 million animals have been affected since bushfires in NSW have started with an estimate of one billion animals impacted nationally say <a href="https://sydney.edu.au/news-opinion/news/2020/01/03/a-statement-about-the-480-million-animals-killed-in-nsw-bushfire.html">ecologists from Sydney University</a>. Thick smoke is drifting over the Pacific Ocean towards New Zealand and the South American continent. The massive fires have been fuelled by dry organic matter caused by extraordinary high temperatures and a prolonged period of drought which created excellent fire conditions.</strong></p>
+
+<h3 id="extents-of-burnt-land-and-plume-of-smoke-in-comparison-to-european-countries">Extents of Burnt Land and Plume of Smoke in Comparison to European Countries</h3>
+
+<p>As of the 6th of January, the estimated area burnt in Australia was <a href="https://www.bbc.com/news/world-australia-50951043">63,000 square kilometers (~24,000 suqare miles)</a>—n area as large as the Latvian country in Europe. The plume of smoke created by the bushfires covered <a href="https://www.independent.co.uk/news/world/australasia/australia-fires-latest-smoke-forecast-nsw-victoria-food-water-a9266846.html">an area of 5.5 million square kilometer (2.1 million square miles)</a> and <a href="https://www.businessinsider.de/international/australia-wildfires-space-satellite-pictures-smoke-new-zealand-2020-1/?r=US&amp;IR=T">can be seen from space</a>. This area is as large as the area of Denmark including Greenland and the Faroe Islands, France, Spain, Sweden, Norway, Germany, Finland, Poland &amp; Italy together!</p>
+
+<p><img src="/img/tidytuesday/2020_02_AustralianFires_blog.png" alt="map-burnt-land-smoke-europe" /></p>
+
+<h3 id="how-much-of-your-country-s-area-would-have-been-burnt-if-the-bushfires-had-raged-there">How Much of Your Country&rsquo;s Area would have been Burnt if the Bushfires had Raged there?</h3>
+
+<p>As of 8th of January, the land burnt increased to <a href="https://www.theguardian.com/australia-news/datablog/ng-interactive/2019/dec/07/how-big-are-the-fires-burning-on-the-east-coast-of-australia-interactive-map">107,000 square kilometers (41,300 square miles)</a>. To imagine how large the area is, it might be simpler to compare the area to a country you are familiar with:</p>
+
+<p><img src="/img/tidytuesday/2020_02_AustralianFires_Global_blog.png" alt="map-burnt-land-world" /></p>
+
+<h3 id="how-to-help-victims-of-australia-s-fires">How to Help Victims of Australia’s Fires</h3>
+
+<p>The <a href="https://www.nytimes.com/2020/01/06/world/australia/help-australia-fires.html">NY Times lists several organizations</a> that are currently helping to provide support, emergency grants, and housing. You can support them to by donating money or clothing and household goods.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/12/30/best-tidytuesday-2019/" data-toggle="tooltip" data-placement="top" title="Best TidyTuesday 2019">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/christmas" title="christmas">
+                            christmas
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/climate-change" title="climate-change">
+                            climate-change
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/gganimate" title="gganimate">
+                            gganimate
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ggplot-evolution" title="ggplot-evolution">
+                            ggplot-evolution
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/misc" title="misc">
+                            misc
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/nature" title="nature">
+                            nature
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> page based on <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> and built with <a href="https://github.com/rstudio/blogdown">blogdown</a> • Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+                    <br><br>
+                    &copy; Cédric Scherer 2019. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
