@@ -125,8 +125,7 @@ I finally managed to set up a personal homepage - and how easy it was! Huge than
       
       <guid>/top/about/</guid>
       <description>Click here for the pdf of my resume.
-Click here for the pdf of my resume.
-About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize my results and all types of data I use mostly R and the package {ggplot2} from the {tidyverse} which I also use for all kinds of data preparation.</description>
+About Me I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualise data I use mostly R and the package {ggplot2} from the {tidyverse} which I also use for all kinds of data preparation and analysis.</description>
     </item>
     
     <item>
