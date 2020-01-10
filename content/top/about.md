@@ -2,7 +2,7 @@
 
 ### About Me {#about}  
 
-I am a computational ecologist by training and a data visualization designer by heart. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualise data I use mostly [R](https://www.r-project.org/about.html) and the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}`](https://www.tidyverse.org/) which I also  use for all kinds of data preparation and analysis. In the spare time, I am a proud dad and husband spending as much time as possible with my family.
+I am a computational ecologist by training and a data visualization designer by heart with more than 7 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis and data visualization in R.. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualise data I use mostly [R](https://www.r-project.org/about.html) and the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}`](https://www.tidyverse.org/) which I also  use for all kinds of data preparation and analysis. In the spare time, I am a proud dad and husband spending as much time as possible with my family.
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
