@@ -9,9 +9,9 @@ I obtained a Bachelor of Science in *Life Sciences* and a Master of Science in *
 
 My passion for data, design, and coding is a perfect combination not only for scientific but all types of data visualisation. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge), and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge) as well as by drafting personal projects I am recently strengthen my skills in reproducible data visualisation with R and `{ggplot2}`. My portfolio includes now a number of visualizations for various purposes and covering a diverse range of topics and chart types.
 
-<a href="https://cedricscherer.netlify.com/top/projects/">&rarr Read more about my current and finished projects</a>
-<a href="https://cedricscherer.netlify.com/top/dataviz/">&rarr Have a look at my dataviz portfolio</a>  
-<a href="https://cedricscherer.netlify.com/top/dataviz/">&rarr Get a pdf copy of my resume</a>
+&rarr; [Read more about my current and finished projects](https://cedricscherer.netlify.com/top/projects/)<br>
+&rarr; [Have a look at my dataviz portfolio](https://cedricscherer.netlify.com/top/dataviz/)<br>
+&rarr; [Get a pdf copy of my resume](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
 
 ### Contact {#contact}
 
