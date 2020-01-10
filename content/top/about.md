@@ -1,5 +1,3 @@
-[Click here for the pdf of my resume.](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
-
 ### About Me {#about}  
 
 I am a computational ecologist by training and a data visualization designer by heart with more than 7 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis and data visualization in R.. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualise data I use mostly [R](https://www.r-project.org/about.html) and the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}`](https://www.tidyverse.org/) which I also  use for all kinds of data preparation and analysis. In the spare time, I am a proud dad and husband spending as much time as possible with my family.
@@ -11,7 +9,9 @@ I obtained a Bachelor of Science in *Life Sciences* and a Master of Science in *
 
 My passion for data, design, and coding is a perfect combination not only for scientific but all types of data visualisation. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge), and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge) as well as by drafting personal projects I am recently strengthen my skills in reproducible data visualisation with R and `{ggplot2}`. My portfolio includes now a number of visualizations for various purposes and covering a diverse range of topics and chart types.
 
-[Read more about my current and finished projects](https://cedricscherer.netlify.com/top/projects/) or [have a look at my dataviz portfolio](https://cedricscherer.netlify.com/top/dataviz/)!
+&rarr; [Read more about my current and finished projects](https://cedricscherer.netlify.com/top/projects/)
+&rarr; [Have a look at my dataviz portfolio](https://cedricscherer.netlify.com/top/dataviz/)!  
+&rarr; [Get a pdf copy of my resume](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
 
 ### Contact {#contact}
 
