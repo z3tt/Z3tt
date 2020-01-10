@@ -1,3 +1,5 @@
+[Click here for the pdf of my resume.](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2019-10-08.pdf)
+
 <a href='https://cedricscherer.netlify.com/files/Resume_CedricScherer_2019-10-08.pdf'>Click here for the pdf of my resume.</a>
 
 ### About Me {#about}  
