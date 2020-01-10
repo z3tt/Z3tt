@@ -27,7 +27,7 @@ BioMove is a joint project of the [University of Potsdam](https://www.uni-potsda
 Neutral landscape models (NLMs) are algorithms which generate landscape patterns in the absence of biotic and abiotic processes. [With and King (1997)](https://doi.org/10.2307/3546007) outlined three uses for NLMs which were further highlighted by [Turner and Gardner (2015)](https://link.springer.com/book/10.1007%2F978-1-4939-2794-4):
 
 1. coupling ecological models with NLMs to predict changes in ecological processes,
-2. analyse the extent of structural deviation between real and neutral landscapes, and
+2. analyze the extent of structural deviation between real and neutral landscapes, and
 3. development and testing of novel landscape metrics.
 
 NLMs are often used for spatially explicit models to explore effects of changes in landscape structure on processes such as connectivity between suitable patches or disease spread. During the beginning of our PhD projects, Marco Sciaini and I were not happy about the possibilities to modify NLMs with the current software, especially in R that we use for the analyses of our simulations. This was the rise of the "Neutral Landscape Models in R" (NLMR) project (splitted into the two packages `{NLMR}` and `{landscapetools}`) under the main lead of Marco.
