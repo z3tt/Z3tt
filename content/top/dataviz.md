@@ -1,4 +1,4 @@
-A collection of data visualizations I've produced for scientific publications and fun using the `{ggplot2}`(https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
+A collection of data visualizations I've produced for scientific publications and fun using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
 <br/>
 
 * [Contributions to #TidyTuesday](#tidytuesday)
