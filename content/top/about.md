@@ -1,4 +1,4 @@
-[Click here for the pdf of my resume.](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2019-10-08.pdf)
+[Click here for the pdf of my resume.](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
 
 ### About Me {#about}  
 
