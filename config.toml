@@ -20,8 +20,8 @@ home = ["HTML", "RSS", "Algolia"]
   SEOTitle = "Cédric Scherer"
   title = "Cédric Scherer"
   description = "Blog by Cédric Scherer"
-  keyword = "Computational Ecology, Data Visualisation"
-  slogan = "Computational Ecology & Data Visualisation"
+  keyword = "Computational Ecology, Data Visualization"
+  slogan = "Computational Ecology & Data Visualization"
   google_fonts = "//fonts.googleapis.com/?css?family=Poppins|Crete+Round"
 
   image_404 = "img/404-gg.png"
