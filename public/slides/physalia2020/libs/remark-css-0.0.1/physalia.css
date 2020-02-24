@@ -1,5 +1,5 @@
 a, a > code {
-  color: #28a87d;
+  color: 28a87d;
   font-weight: bold;
   text-decoration: none;
 }
@@ -48,21 +48,52 @@ a, a > code {
 img, video, iframe {
   max-width: 100%;
 }
+h1 {
+  font-family: montserrat;
+  font-size: 30pt;
+  font-weight: bold;
+  line-height: 1.05;
+}
+
+h2 {
+  font-family: montserrat;
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h3 {
+  font-family: montserrat;
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 1;
+}
+body {
+  font-family: oswald;
+  font-size: 13pt;
+}
 blockquote {
   border-left: solid 5px lightgray;
   padding-left: 1em;
+}
+table, th, td  {
+  text-align: left;
+  line-height: 1.8;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+a:link, a:visited {
+  color: #28a87d;
 }
 .remark-slide table {
   margin: auto;
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
 }
-.remark-slide table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
 .remark-slide-number {
   position: inherit;
 }
+
 .remark-slide-number .progress-bar-container {
   position: absolute;
   bottom: 0;
@@ -79,19 +110,9 @@ th, td { padding: 5px; }
   color: #28a87d;
   font-weight: bold;
 }
-
-
-table, th, td  {
-  text-align: left;
-  line-height: 1.8;
-  vertical-align: middle;
-  border-collapse: collapse;
-}
-
-a:link, a:visited {
-  color: #28a87d;
-}
-
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
 @page { margin: 0; }
 @media print {
   .remark-slide-scaler {

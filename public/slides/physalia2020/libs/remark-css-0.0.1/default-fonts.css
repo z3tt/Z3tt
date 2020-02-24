@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,400italic);
-
-body { font-family: 'Oswald', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
-h1, h2, h3 {
-  font-family: 'Montserrat';
-  font-weight: normal;
-}
-.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
