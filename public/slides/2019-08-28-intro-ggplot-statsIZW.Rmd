@@ -91,7 +91,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 <br><br>
 # **The Grammar of `{ggplot2}`**<br><font size=7 color="#a7a7a7">A graphics framework for elegant plotting in **`R`**</font>
-<br><br><br><br>
+<br><br><br><br><br>
 ### **Cédric Scherer**<br><font size=5 color="#a7a7a7">Leibniz Institute for Zoo and Wildlife Research Berlin</font><br><font size=4 color="#ccba56"><b>scherer@izw-berlin.de | cedricscherer.netlifiy.com | @CedScherer</b></font>
 <br><br><br>
 ### <p align="right"><font size=3 color="#767676">Image by Richard Strozynski</font></p>

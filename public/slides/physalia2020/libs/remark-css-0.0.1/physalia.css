@@ -1,5 +1,6 @@
 a, a > code {
-  color: rgb(249, 38, 114);
+  color: #28a87d;
+  font-weight: bold;
   text-decoration: none;
 }
 .footnote {
@@ -8,7 +9,7 @@ a, a > code {
   padding-right: 4em;
   font-size: 90%;
 }
-.remark-code-line-highlighted     { background-color: #ffff88; }
+.remark-code-line-highlighted     { background-color: ffec89}
 
 .inverse {
   background-color: #272822;
@@ -35,11 +36,11 @@ a, a > code {
 }
 .pull-left {
   float: left;
-  width: 47%;
+  width: 50%;
 }
 .pull-right {
   float: right;
-  width: 47%;
+  width: 50%;
 }
 .pull-right ~ * {
   clear: both;
@@ -59,6 +60,37 @@ blockquote {
 .remark-slide table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+.remark-slide-number {
+  position: inherit;
+}
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #baa745;
+}
+.remark-inline-code { 
+  color: #28a87d;
+  font-weight: bold;
+}
+
+
+table, th, td  {
+  text-align: left;
+  line-height: 1.8;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+
+a:link, a:visited {
+  color: #28a87d;
+}
 
 @page { margin: 0; }
 @media print {
