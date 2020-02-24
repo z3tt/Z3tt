@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
   <head>
-    <title>An Introduction to {ggplot2}</title>
+    <title>The Grammar of {ggplot2}</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2019-09-27" />
+    <meta name="date" content="2020-02-24" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
@@ -40,18 +40,18 @@ a, a &gt; code {
   background-color: #baa745;
 }
 
-.remark-inline-code {
-  color: #ebc500;
+.remark-inline-code { 
+  color: #ebc500; 
 }
 
-.remark-code-line-highlighted {
-  background-color: #ffec89;
+.remark-code-line-highlighted { 
+  background-color: #ffec89; 
 }
 
 .hljs-github .hljs {
   background: #ececec;
 }
-
+  
 .pull-left {
   float: left;
   width: 50%;
@@ -61,22 +61,22 @@ a, a &gt; code {
   width: 50%;
 }
 
-.logo {
+.corner {
   margin: 0;
   position: absolute;
-  top: 30%;
+  top: 65%;
   left: 80%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-40%, -40%);
+  transform: translate(-40%, -40%);
 }
 &lt;/style&gt;
 
 
 
 &lt;br&gt;&lt;br&gt;
-# **An Introduction to `{ggplot2}`**&lt;br&gt;&lt;font size=7 color="#a7a7a7"&gt;A Graphics Framework for Elegant Plotting in **`R`**&lt;/font&gt;
+# **The Grammar of `{ggplot2}`**&lt;br&gt;&lt;font size=7 color="#a7a7a7"&gt;A graphics framework for elegant plotting in **`R`**&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
-### **Cédric Scherer**&lt;br&gt;&lt;font size=5 color="#a7a7a7"&gt;Leibniz Institute for Zoo and Wildlife Research Berlin&lt;/font&gt;&lt;br&gt;&lt;font size=4 color="#ccba56"&gt;&lt;b&gt;IZW Stats Group  |  28th of August 2019&lt;/b&gt;&lt;/font&gt;
+### **Cédric Scherer**&lt;br&gt;&lt;font size=5 color="#a7a7a7"&gt;Leibniz Institute for Zoo and Wildlife Research Berlin&lt;/font&gt;&lt;br&gt;&lt;font size=4 color="#ccba56"&gt;&lt;b&gt;scherer@izw-berlin.de | cedricscherer.netlifiy.com | @CedScherer&lt;/b&gt;&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
 ### &lt;p align="right"&gt;&lt;font size=3 color="#767676"&gt;Image by Richard Strozynski&lt;/font&gt;&lt;/p&gt;
 
@@ -96,13 +96,13 @@ class: middle
 
 # **Advantages of `{ggplot2}`**
 
-* consistent underlying grammar of graphics (Wilkinson, 2005)
+* consistent underlying grammar of graphics (Wilkinson, 2005)  
 
-* very flexible, layered plot specification
+* very flexible, layered plot specification  
 
 * theme system for polishing plot appearance
-
-* active and helpful community
+  
+* active and helpful community  
   (e.g. [community.rstudio.com](wwww.community.rstudio.com), [R4DS Learning Community](https://www.rfordatasci.com), [Twitter](https://twitter.com/search?q=%23ggplot2&amp;src=typed_query))
 
 ---
@@ -126,6 +126,13 @@ class: inverse, center, middle
 &lt;p style="text-align:center;"&gt;&lt;img src="img/2019_18_BirdCollisions.png" style="width: 68%"&gt;&lt;br&gt;
 
 &lt;p style="text-align:center;"&gt;&lt;img src="img/2019_19_StudentTeacher.png" style="width: 68%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Contribution to #TidyTuesday&lt;/i&gt;&lt;/font&gt;
+
+---
+class: inverse, center, middle
+
+&lt;p style="text-align:center;"&gt;&lt;img src="img/2019_34_NuclearExplosions.png" style="width: 68%"&gt;&lt;br&gt;
+
+&lt;p style="text-align:center;"&gt;&lt;img src="img/2019_24_Meteorites.png" style="width: 68%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Contribution to #TidyTuesday&lt;/i&gt;&lt;/font&gt;
 
 ---
 class: inverse, center, middle
@@ -155,6 +162,7 @@ class: inverse, center, middle
 
 &lt;p style="text-align:center;"&gt;&lt;img src="img/bbc-gallery.png" style="width: 120%"&gt;&lt;br&gt;&lt;font color="lightgrey" size=3&gt;&lt;i&gt;Collection of BBC Graphics&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(adapted from bbc.github.io/rcookbook)&lt;/i&gt;&lt;/font&gt;
 
+
 ---
 class: inverse, center, middle
 
@@ -165,6 +173,7 @@ class: inverse, center, middle
 .pull-right[
 &lt;p style="text-align:center;"&gt;&lt;img src="img/gganimate-hurricane.gif" style="width: 98%"&gt;
 ]
+
 &lt;font color="lightgrey" size=3&gt;&lt;i&gt;Examples of the {gganimate} Package&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;(github.com/thomasp85/gganimate/wiki)&lt;/i&gt;&lt;/font&gt;
 
 ---
@@ -190,7 +199,7 @@ library(ggplot2)
 ```
 
 --
-&lt;font size=4&gt;**`{ggplot2}`** is part of the [**`{tidyverse}`**](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.
+&lt;br&gt;&lt;font size=4&gt;**`{ggplot2}`** is part of the [**`{tidyverse}`**](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.
 
 
 ```r
@@ -199,8 +208,6 @@ library(tidyverse)
 ```
 
 &lt;font size=4&gt;**`{tidyverse}`** contains **`{ggplot2}`**, **`{dplyr}`**, **`{tidyr}`**, **`{readr}`**, **`{purrr}`**, **`{tibble}`** and some more packages.
-
-&lt;p style="text-align:right;"&gt;&lt;img src="img/tidyverse.png" style="width: 55%"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Source: dicook.org/files/rstudio/#3&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
 
 ---
 ## **The data**
@@ -217,17 +224,19 @@ tibble::glimpse(chic)
 ```
 ## Observations: 1,461
 ## Variables: 10
-## $ city     &lt;chr&gt; "chic", "chic", "chic", "chic", "chic", "chic", "chic...
-## $ date     &lt;date&gt; 1997-01-01, 1997-01-02, 1997-01-03, 1997-01-04, 1997...
-## $ death    &lt;dbl&gt; 137, 123, 127, 146, 102, 127, 116, 118, 148, 121, 110...
-## $ temp     &lt;dbl&gt; 36.0, 45.0, 40.0, 51.5, 27.0, 17.0, 16.0, 19.0, 26.0,...
-## $ dewpoint &lt;dbl&gt; 37.500, 47.250, 38.000, 45.500, 11.250, 5.750, 7.000,...
-## $ pm10     &lt;dbl&gt; 13.052268, 41.948600, 27.041751, 25.072573, 15.343121...
-## $ o3       &lt;dbl&gt; 5.659256, 5.525417, 6.288548, 7.537758, 20.760798, 14...
-## $ time     &lt;dbl&gt; 3654, 3655, 3656, 3657, 3658, 3659, 3660, 3661, 3662,...
-## $ season   &lt;fct&gt; Winter, Winter, Winter, Winter, Winter, Winter, Winte...
-## $ year     &lt;fct&gt; 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997,...
+## $ city     &lt;chr&gt; "chic", "chic", "chic", "chic", "chic", "chic", "chic", "c...
+## $ date     &lt;date&gt; 1997-01-01, 1997-01-02, 1997-01-03, 1997-01-04, 1997-01-0...
+## $ death    &lt;dbl&gt; 137, 123, 127, 146, 102, 127, 116, 118, 148, 121, 110, 127...
+## $ temp     &lt;dbl&gt; 36.0, 45.0, 40.0, 51.5, 27.0, 17.0, 16.0, 19.0, 26.0, 16.0...
+## $ dewpoint &lt;dbl&gt; 37.500, 47.250, 38.000, 45.500, 11.250, 5.750, 7.000, 17.7...
+## $ pm10     &lt;dbl&gt; 13.052268, 41.948600, 27.041751, 25.072573, 15.343121, 9.3...
+## $ o3       &lt;dbl&gt; 5.659256, 5.525417, 6.288548, 7.537758, 20.760798, 14.9408...
+## $ time     &lt;dbl&gt; 3654, 3655, 3656, 3657, 3658, 3659, 3660, 3661, 3662, 3663...
+## $ season   &lt;fct&gt; Winter, Winter, Winter, Winter, Winter, Winter, Winter, Wi...
+## $ year     &lt;fct&gt; 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997...
 ```
+
+&lt;font size="4" color="grey"&gt;For more details about the data set check Roger Peng's book [Statistical Methods in Environmental Epidemiology with R](http://www.springer.com/de/book/9780387781662). 
 
 ---
 class: inverse, center, middle
@@ -241,22 +250,22 @@ class: inverse, center, middle
 
 1. **Data** &lt;font color="grey"&gt; →  The raw data that you want to visualise&lt;/font&gt;
 
-2. **Layers `geom_` and `stat_`** &lt;font color="grey"&gt; →  The geometric shapes and statistical summaries representing the data&lt;/font&gt;
+2. **Layers: `geom_` and `stat_`** &lt;font color="grey"&gt; →  The geometric shapes and statistical summaries representing the data&lt;/font&gt; 
 
-3. **Aesthetics `aes()`** &lt;font color="grey"&gt; →  Aesthetic mappings of the geometric and statistical objects&lt;/font&gt;
+3. **Aesthetics `aes()`** &lt;font color="grey"&gt; →  Aesthetic mappings of the geometric and statistical objects&lt;/font&gt;  
 
 4. **Scales `scale_`** &lt;font color="grey"&gt; →  Maps between the data and the aesthetic dimensions&lt;/font&gt;
 
 5. **Coordinate system `coord_`** &lt;font color="grey"&gt; →  Maps data into the plane of the data rectangle&lt;/font&gt;
-
+  
 6. **Facets `facet_`** &lt;font color="grey"&gt; →  The arrangement of the data into a grid of plots&lt;/font&gt;
-
+  
 7. **Visual themes `theme() and theme_`** &lt;font color="grey"&gt; →  The overall visual defaults of a plot&lt;/font&gt;
 
 ---
 class: inverse, center, middle
 
-# **1. Data&lt;br&gt;&lt;font size=6&gt;`ggplot(data, aes(x, y))`&lt;/font&gt;**
+# **1. Data&lt;br&gt;&lt;font size=6&gt;`ggplot()`&lt;/font&gt;**
 
 ---
 
@@ -440,7 +449,7 @@ We need to specify the  variable as **categorial** (**`year`**), not as **contin
 
 ```r
 *ggplot(chic, aes(year, temp)) +
-    geom_boxplot()
+    geom_boxplot() 
 ```
 ]
 
@@ -528,6 +537,41 @@ ggplot(chic, aes(temp)) +
 ]
 
 ---
+### **2. Layers — Statistical transformations: `stat_summary_hex()`**
+
+With **`stat_summary_hex()`** data is divided into bins defined by **`x`** and **`y`** and then filled with values of **`z`**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp, z = o3)) +
+* stat_summary_hex()
+```
+]
+
+.pull-right[
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-hex-1.png)&lt;!-- --&gt;
+]
+
+---
+### **2. Layers — Statistical transformations: `stat_smooth()`**
+
+You can directly add smoothed conditional means:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+* stat_smooth()
+```
+]
+
+.pull-right[
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-smooth-1.png)&lt;!-- --&gt;
+]
+
+---
 ### **2. Layers — Statistical transformations: `stat_smooth()`**
 
 You can directly add smoothed conditional means:
@@ -572,6 +616,28 @@ Other methods such as **`method = "lm"`** for linear regressions and **`method =
 ]
 
 ---
+### **2. Layers — Statistical transformations: `stat_smooth()`**
+
+You can specify the fitting method and the formula:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+    geom_point() +
+    stat_smooth(
+*       method = "lm",
+*       formula = y ~ poly(x, 10),
+        se = F
+    )
+```
+]
+
+.pull-right[
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-stats-smooth-lm-1.png)&lt;!-- --&gt;
+]
+
+---
 class: inverse, center, middle
 
 # **3. Aesthetics&lt;br&gt;&lt;font size=6&gt;`aes()`&lt;/font&gt;**
@@ -579,7 +645,7 @@ class: inverse, center, middle
 ---
 ### **3. Aesthetics: `aes()`**
 
-Aesthetics of the geometric and statistical objects, such as
+Aesthetics of the geometric and statistical objects, such as 
 
 * **position** via **`x`**, **`y`**, **`xmin`**, **`xmax`**, **`ymin`**, **`ymax`**, ...
 
@@ -658,8 +724,8 @@ Alternatively, all **`aes`**thetics can be grouped together (and are then applie
 
 ```r
 ggplot(
-  chic,
-  aes(date,
+  chic, 
+  aes(date, 
       temp,
 *     color = season,
 *     shape = year)
@@ -729,22 +795,7 @@ class: inverse, center, middle
 
 One can use **`scale_*()`** to change properties of all the **aesthetic dimensions mapped to the data**.
 
-&lt;br&gt;Consequently, there are **`scale_*()`** functions for all aesthetics such as:
-
-* **position** via **`scale_x_*()`** and **`scale_y_*()`**
-
-* **colors** via **`scale_color_*()`** and **`scale_fill_*()`**
-
-* **transparency** via **`scale_alpha_*()`**
-
-* **sizes** via **`scale_size_*()`**
-
-* **shapes** via **`scale_shape_*()`**  and **`scale_linetype_*()`**
-
----
-### **4. Scales: `scale_`**
-
-One can use **`scale_*()`** to change properties of all the **aesthetic dimensions mapped to the data**.
+--
 
 &lt;br&gt;Consequently, there are **`scale_*()`** functions for all aesthetics such as:
 
@@ -757,6 +808,8 @@ One can use **`scale_*()`** to change properties of all the **aesthetic dimensio
 * **sizes** via **`scale_size_*()`**
 
 * **shapes** via **`scale_shape_*()`**  and **`scale_linetype_*()`**
+
+--
 
 ... with extensions (**`*`**) such as
 * **`continuous()`**, **`discrete()`**, **`reverse()`**, **`log10()`**, **`squrt()`**, **`date()`**, **`time()`** for axes
@@ -799,12 +852,12 @@ ggplot(chic, aes(date, temp)) +
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
   scale_x_date(
-    name = NULL,
+    name = NULL, 
 *   limits = c(
 *     as.Date("1997-01-01"),
 *     as.Date("1999-12-31")
 *   )
-  ) +
+  ) + 
 * scale_y_log10(
     name = "Temperature (°F)",
 *   breaks = c(1, 10, 100),
@@ -827,6 +880,13 @@ With **`breaks`** and **`labels`** it's also possible to alter the labels withou
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
+  scale_x_date(
+    name = NULL, 
+    limits = c(
+      as.Date("1997-01-01"),
+      as.Date("1999-12-31")
+    )
+  ) + 
   scale_y_continuous(
 *   name = "How I feel...",
 *   breaks = c(0, 30, 60, 90),
@@ -857,7 +917,7 @@ ggplot(chic, aes(date, temp)) +
   scale_x_date(
     name = NULL,
 *   expand = c(0, 0)
-  ) +
+  ) + 
   scale_y_continuous(
     name = "Temperature (°F)",
 *   expand = c(0, 0)
@@ -904,15 +964,15 @@ ggplot(chic, aes(date, temp)) +
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
-  scale_color_manual(
-    values = c(
+  scale_color_manual( 
+    values = c( 
       "firebrick",
       "dodgerblue",
       "darkorchid",
       "goldenrod"
     ),
-*   name = "Pretty\ncolored\nsesons:"
-  )
+*   name = "Pretty sesons:"
+  ) 
 ```
 ]
 
@@ -930,15 +990,15 @@ ggplot(chic, aes(date, temp)) +
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season)) +
-  scale_color_manual(
-    values = c(
+  scale_color_manual( 
+    values = c( 
       "firebrick",
       "dodgerblue",
       "darkorchid",
       "goldenrod"
     ),
 *   guide = FALSE
-  )
+  ) 
 ```
 ]
 
@@ -957,8 +1017,8 @@ ggplot(chic, aes(date, temp)) +
 ggplot(chic, aes(date, temp)) +
   geom_point(aes(color = season,
 *                shape = year)) +
-  scale_color_manual(
-    values = c(
+  scale_color_manual( 
+    values = c( 
       "firebrick",
       "dodgerblue",
       "darkorchid",
@@ -990,7 +1050,28 @@ ggplot(chic, aes(date, temp)) +
 * scale_color_brewer(
 *   palette = "Set2",
     guide = FALSE
-  )
+  ) 
+```
+]
+
+.pull-right[
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-scale-color-brewer-1.png)&lt;!-- --&gt;
+]
+
+---
+### **4. Scales: `scale_color_*()` and `scale_fill_*()`**
+
+One can of course also use preset color palettes:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = season)) +
+* scale_color_brewer(
+*   palette = "Set2",
+    guide = FALSE
+  ) 
 ```
 
 Several packages offer predefined palettes, e.g.:
@@ -1024,7 +1105,7 @@ Coordinate systems combine the two position aesthetics (usually **`x`** and **`y
 
 --
 
-The meaning of the position aesthetics depends on the coordinate system used:
+The meaning of the position aesthetics depends on the coordinate system used: 
 
 * Linear coordinate systems that preserve the shape of geoms:&lt;br&gt;&lt;br&gt;
     + **`coord_cartesian()`**: the default with two fixed perpendicular oriented axes
@@ -1068,6 +1149,37 @@ In case you want to remove those data points, use **`scale_y_continuous(limits =
 .pull-left[
 
 ```r
+ggplot(chic, aes(date, temp)) +
+  geom_line() +
+* coord_cartesian(
+*   ylim = c(50, 70)
+* )
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-zoom-again-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_line() +
+* scale_y_continuous(
+*   limits = c(50, 70)
+* )
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-lim-1.png)&lt;!-- --&gt;
+]
+
+---
+### **5. Coordinate System: `coord_cartesian()`**
+
+In case you want to remove those data points, use **`scale_y_continuous(limits = c(min, max))`**:
+
+.pull-left[
+
+```r
 ggplot(chic, aes(year, temp)) +
   geom_boxplot()  +
 * coord_cartesian(
@@ -1098,22 +1210,21 @@ ggplot(chic, aes(year, temp)) +
 
 .pull-left[
 
-
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point() +
 * scale_x_date(
 *   expand = c(0, 0)
 * ) +
-* coord_cartesian(ylim = c(0, 80))
+* coord_cartesian(ylim = c(0, 75))
 
 ggplot(chic, aes(date, temp)) +
   geom_point() +
   scale_x_date(
     expand = c(0, 0)
-  ) +
+  ) + 
   coord_cartesian(
-    ylim = c(0, 80),
+    ylim = c(0, 75), 
 *   clip = "off"
   )
 ```
@@ -1170,9 +1281,42 @@ ggplot(chic, aes(season, temp)) +
 ]
 
 ---
+### **5. Coordinate System: `coord_polar()`**
+
+This way, we can create pie charts:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(factor(1), temp, 
+                 fill = season)) +
+  geom_col() +
+* coord_polar() +
+  scale_x_discrete(NULL, expand = c(0, 0)) +
+  scale_y_continuous(NULL, expand = c(0, 0))
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-coord-pie1-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(factor(1), temp, 
+                 fill = season)) +
+  geom_col() +
+* coord_polar(theta = "y") +
+  scale_x_discrete(NULL, expand = c(0, 0)) +
+  scale_y_continuous(NULL, expand = c(0, 0))
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-coord-pie2-1.png)&lt;!-- --&gt;
+]
+
+---
 ### **5. Coordinate System: `coord_trans()`**
 
- The difference between transforming the scales and transforming the coordinate system is that coordinate transformation occurs **after** the statistics:
+**`coord_*()`** functions allow you to zoom in a plot:
 
 .pull-left[
 
@@ -1195,9 +1339,9 @@ Maps often come as polygons and can be plotted via **`geom_polygon()`**:
 .pull-left[
 
 ```r
-(g_world &lt;-
+(g_world &lt;- 
   ggplot(map_data("world"),
-         aes(long, lat,
+         aes(long, lat, 
              group = group)) +
 *   geom_polygon(
 *     fill = "tan",
@@ -1247,7 +1391,7 @@ class: inverse, center, middle
 Facetting generates small multiples each showing a different subset of the data:
 
 &lt;p style="text-align:center;"&gt;&lt;img src="img/position-facets.png" style="width: 75%"&gt;&lt;/p&gt;
-&lt;p style="text-align:right;"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Adapted from "ggplot2: Elegant Graphics for Data Analysis" by Hadley Wickham&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p style="text-align:right;"&gt;&lt;font color="grey" size=2&gt;&lt;i&gt;Adapted from "ggplot2: Elegant graphics for data analysis" by Hadley Wickham&lt;/i&gt;&lt;/font&gt;&lt;/p&gt;
 
 ---
 ### **6. Facets: `facet_wrap()`**
@@ -1277,7 +1421,7 @@ ggplot(chic, aes(temp, o3)) +
 ```r
 ggplot(chic, aes(temp, o3)) +
   geom_point(aes(color = year)) +
-  facet_wrap(~ season,
+  facet_wrap(~ season, 
 *            scales = "free")
 ```
 
@@ -1312,10 +1456,10 @@ class: inverse, center, middle
 # **7. Visual Themes&lt;br&gt;&lt;font size=6 color = "grey"&gt;`theme()` and `theme_*()`&lt;/font&gt;**
 
 ---
-### **7. Visual Themes: `theme()` and `theme_*()`**
+### **7. Visual Themes: `theme()` and `theme_*()`** 
 
 * Themes control the display of all non-data elements of the plot&lt;br&gt;
-
+  
   + titles
   + labels
   + fonts
@@ -1333,7 +1477,7 @@ class: inverse, center, middle
 * Themes can be used to give plots a consistent customized look by defining a custom theme using **`theme_update()`** or **`theme_set()`**&lt;br&gt;
 
 ---
-### **7. Visual Themes: `theme()`**
+### **7. Visual Themes: `theme()`** 
 
 To modify the theme of a plot use **`theme()`** in combination with **`element_*()`**:
 
@@ -1365,7 +1509,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme()`**
+### **7. Visual Themes: `theme()`** 
 
 **`element_blank()`** can be used to remove certain theme elements:
 
@@ -1387,43 +1531,7 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme_*()`**
-
-Use a built-in theme of **`{ggplot2}`**:
-
-.pull-left[
-
-```r
-ggplot(chic, aes(date, temp)) +
-  geom_point() +
-* theme_gray()
-```
-]
-
-.pull-right[
-![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-builtin-1.png)&lt;!-- --&gt;
-]
-
----
-### **7. Visual Themes: `theme_*()`**
-
-Use a built-in theme of **`{ggplot2}`**:
-
-.pull-left[
-
-```r
-ggplot(chic, aes(date, temp)) +
-  geom_point() +
-* theme_minimal()
-```
-]
-
-.pull-right[
-![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-structure-theme-builtin2-1.png)&lt;!-- --&gt;
-]
-
----
-### **7. Visual Themes: `theme_*()`**
+### **7. Visual Themes: `theme()`** 
 
 Using the argument **`base_size()`** you can change the size of the text:
 
@@ -1441,16 +1549,92 @@ ggplot(chic, aes(date, temp)) +
 ]
 
 ---
-### **7. Visual Themes: `theme_*()`**
+### **7. Visual Themes: `theme_*()`** 
 
-There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  and **`{tvthemes}`**:
+Use a built-in theme of **`{ggplot2}`**:
 
+.pull-left[
 
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = season)) +
+* theme_gray()
+```
 
-&lt;p style="text-align:center;"&gt;&lt;img src="img/theme_panel.png" style="width: 92%"&gt;&lt;/p&gt;
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-theme-builtin1-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+&lt;br&gt;
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = season)) +
+* theme_classic()
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-theme-builtin2-1.png)&lt;!-- --&gt;
+]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`**
+### **7. Visual Themes: `theme_*()`** 
+
+... or extension packages such as **`{ggthemes}`**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = season)) +
+* ggthemes::theme_gdocs() +
+* ggthemes::scale_color_gdocs()
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-theme-ggthemes-gdocs-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(color = "black") +
+* ggthemes::theme_tufte()
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-theme-ggthemes-tufte-1.png)&lt;!-- --&gt;
+]
+
+---
+### **7. Visual Themes: `theme_*()`** 
+
+... or extension packages such as **`{hrbrthemes}`**  and **`{tvthemes}`**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = season)) +
+* hrbrthemes::theme_ft_rc(grid = "Y") +
+* hrbrthemes::scale_color_ft()
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-theme-hrbrthemes-ft-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = season)) +
+* tvthemes::theme_simpsons() +
+* tvthemes::scale_color_simpsons()
+```
+
+![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/structure-theme-tvthemes-simpsons-1.png)&lt;!-- --&gt;
+]
+
+---
+### **7. Visual Themes: `theme_set()` and `theme_update()`** 
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1467,7 +1651,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 ]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`**
+### **7. Visual Themes: `theme_set()` and `theme_update()`** 
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1478,7 +1662,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
   geom_point())
 
 *old &lt;- theme_set(theme_grey())
-*g
+*g 
 ```
 ]
 
@@ -1487,7 +1671,7 @@ There are also extension packages such as **`{ggthemes}`**, **`{hrbrthemes}`**  
 ]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`**
+### **7. Visual Themes: `theme_set()` and `theme_update()`** 
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1505,8 +1689,8 @@ g
 *   fill = "tan",
 *   color = "black"
 * )
-*)
-*g
+*) 
+*g 
 ```
 ]
 
@@ -1515,7 +1699,7 @@ g
 ]
 
 ---
-### **7. Visual Themes: `theme_set()` and `theme_update()`**
+### **7. Visual Themes: `theme_set()` and `theme_update()`** 
 
 **`theme_set()`** and **`theme_update()`** override settings completely or partly:
 
@@ -1537,7 +1721,7 @@ theme_update(
 g
 
 *theme_set(old)
-*g
+*g 
 ```
 ]
 
@@ -1546,61 +1730,9 @@ g
 ]
 
 ---
-class: inverse, center, middle
+class: center, middle
 
 # **Some more?**
-
----
-&lt;font size=2&gt;
-
-* **Free Online Books:**
-
-  + "ggplot2: Elegant Graphics for Data Analysis" by Hadley Wickham  →  [ggplot2-book.org](https://ggplot2-book.org/)
-  + "R for Data Science" by Hadley Wickham  →  [r4ds.had.co.nz](https://r4ds.had.co.nz/)
-  + "Data Visualization: A Practical Introduction" by Kieran Healy  →  [socviz.co](https://socviz.co/)
-  + "Fundamentals of Data Visualization" by Claus Wilke  →  [serialmentor.com/dataviz](https://serialmentor.com/dataviz/)
-
-* **Galleries:**
-
-  + R Graph Gallery  →  [r-graph-gallery.com](https://www.r-graph-gallery.com/)
-  + ggplot2 Extension Gallery  →  [ggplot2-exts.org/gallery](http://www.ggplot2-exts.org/gallery/)
-  + Color Palettes in R  →  [github.com/EmilHvitfeldt/r-color-palettes](https://github.com/EmilHvitfeldt/r-color-palettes/)
-  + &amp;#35;TidyTuesday Collection  →  [tidytuesday.rocks](http://tidytuesday.rocks/)
-
-* **Get Help:**
-
-  + RStudio Community  →  [community.rstudio.com](wwww.community.rstudio.com)
-  + R4DS Learning Community  →  [rfordatasci.com](https://www.rfordatasci.com)
-  + &amp;#35;TidyTuesday Community  →  [#TidyTuesday on Twitter](https://twitter.com/hashtag/tidytuesday?lang=en)
-
-* **Useful Packages:**
-
-  + **`{ggtext}`** — rich-text rendering  →  [github.com/clauswilke/ggtext](https://github.com/clauswilke/ggtext)
-  + **`{ggforce}`** — several interesting add-on features   →  [ggforce.data-imaginist.com](https://ggforce.data-imaginist.com/)
-  + **`{ggridges}`** — geoms for joy plots  →  [github.com/clauswilke/ggridges](https://github.com/clauswilke/ggridges)
-  + **`{ggrepel}`** — prevent overlapping text labels  →  [github.com/slowkow/ggrepel](https://github.com/slowkow/ggrepel)
-  + **`{gganimate}`** — create animations  →  [gganimate.com](https://gganimate.com/)
-  + **`{ggplotly}`** — create interactive plots  →  [plot.ly/ggplot2](https://plot.ly/ggplot2/)
-  + **`{ggraph}`** — networks, graphs &amp; trees  →  [github.com/thomasp85/ggraph](https://github.com/thomasp85/ggraph)
-  + **`{ggalt}`** — alternative coords, geoms, stats &amp; scales  →  [github.com/hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt)
-  + **`{ggpubr}`** — publication-ready plot in one line  →  [github.com/kassambara/ggpubr](https://github.com/kassambara/ggpubr)
-  + **`{ggmaps}`** — access to Google &amp; Stamen maps  →  [github.com/dkahle/ggmap](https://github.com/dkahle/ggmap)
-  + **`{ggthemes}`** —  additional themes, sclaes &amp; geoms →  [github.com/jrnold/ggthemes](https://github.com/jrnold/ggthemes)
-  + **`{hrbrthemes}`** — typography-centric themes  →  [github.com/hrbrmstr/hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
-  + **`{lemon}`** — axis &amp; legend add-ons  →  [github.com/stefanedwards/lemon](https://github.com/stefanedwards/lemon)
-  + **`{cowplot}`** — plot arrangements, themes &amp; annotations  →  [wilkelab.org/cowplot](https://wilkelab.org/cowplot/articles/introduction.html)
-  + **`{patchwork}`** — combine ggplots  →  [github.com/thomasp85/patchwork](https://github.com/thomasp85/patchwork)
-  + **`{showtext}`** — use custom fonts  →  [github.com/yixuan/showtext](https://github.com/yixuan/showtext)
-  + **`{rayshader}`** — hillshaded maps in 2D &amp; 3D  →  [github.com/tylermorganwall/rayshader](https://github.com/tylermorganwall/rayshader)
-
-.logo[
-&lt;img src="./img/logo_ressources.png" width="1328" /&gt;
-]
-
----
-class: inverse, center, middle
-
-# **You want even more?**
 
 ---
 class: inverse, center, middle
@@ -1750,7 +1882,7 @@ ggplot(chic, aes(date, temp)) +
 *     col = "firebrick"
 *   )
 * )
-*)
+*) 
 
 ggplot(chic, aes(date, temp)) +
   geom_point() +
@@ -1817,38 +1949,12 @@ ggplot(chic, aes(date, temp)) +
 *   ymin = 0,
 *   ymax = 80
 * ) +
-  geom_point(alpha = 0.2)
+  geom_point()
 ```
 ]
 
 .pull-right[
 ![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-annotate-img-1.png)&lt;!-- --&gt;
-]
-
----
-### **Working with Images: `element_markdown()` via `{ggtext}`**
-
-It also has basic support for the html &lt;img&gt; tag:
-
-.pull-left[
-
-```r
-ggplot(iris, aes(Species, Sepal.Width)) +
-  geom_boxplot() +
-* scale_x_discrete(
-*   name = NULL,
-*   labels = c(
-*     setosa = "*I. setosa*&lt;br&gt;&lt;img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Iris_setosa.JPG/180px-Iris_setosa.JPG' width='100' /&gt;",
-*     virginica = "*I. virginica*&lt;br&gt;&lt;img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Iris_virginica_-_NRCS.jpg/320px-Iris_virginica_-_NRCS.jpg' width='100' /&gt;",
-*     versicolor = "*I. versicolor*&lt;br&gt;&lt;img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/20140427Iris_versicolor1.jpg/320px-20140427Iris_versicolor1.jpg' width='100' /&gt;"
-*   )
-* ) +
-* theme(axis.text.x = element_markdown())
-```
-]
-
-.pull-right[
-![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-text-ggtext-img-1.png)&lt;!-- --&gt;
 ]
 
 ---
@@ -1896,13 +2002,11 @@ If you plot many elements, use **`geom_rect()`**:
 
 ```r
 *rect &lt;- tibble(
-* xmin = as.Date(c("1997-01-01",
-*                  "1999-01-01")),
-* xmax = as.Date(c("1997-12-31",
-*                  "1999-12-31")),
+* xmin = as.Date(c("1997-01-01", "1999-01-01")),
+* xmax = as.Date(c("1997-12-31", "1999-12-31")),
 * ymin = rep(-Inf, 2),
 * ymax = rep(Inf, 2)
-*)
+*) 
 
 ggplot(chic) +
 * geom_rect(
@@ -1921,7 +2025,7 @@ ggplot(chic) +
 ]
 
 ---
-### **Working with Geometric Forms: `geom_vline()`**
+### **Working with Geometric Forms: `geom_abline()`, `geom_vline()` and `geom_hline()`**
 
 We could also indicate new years by a vertical line:
 
@@ -1933,14 +2037,13 @@ We could also indicate new years by a vertical line:
 *   as.Date("1997-01-01"),
 *   as.Date("2001-01-01"),
 *   length.out = 5)
-*)
+*) 
 
 ggplot(chic, aes(date, temp)) +
+  geom_point() +
 * geom_vline(
 *   data = lines,
-*   aes(xintercept = xintercept),
-*   color = "grey30") +
-  geom_point()
+*   aes(xintercept = xintercept))
 ```
 
 There are also **`geom_abline()`** and **`geom_hline()`**.
@@ -1948,6 +2051,101 @@ There are also **`geom_abline()`** and **`geom_hline()`**.
 
 .pull-right[
 ![](2019-08-28-intro-ggplot-statsIZW_files/figure-html/plot-forms-vline-1.png)&lt;!-- --&gt;
+]
+
+---
+class: inverse, center, middle
+
+# **You want even more?**
+
+---
+&lt;font size=2&gt;
+
+* **Free Online Books:**
+
+  + "ggplot2: Elegant Graphics for Data Analysis" by Hadley Wickham  →  [ggplot2-book.org](https://ggplot2-book.org/)
+  + "R for Data Science" by Hadley Wickham  →  [r4ds.had.co.nz](https://r4ds.had.co.nz/)
+  + "Data Visualization: A Practical Introduction" by Kieran Healy  →  [socviz.co](https://socviz.co/)
+  + "Fundamentals of Data Visualization" by Claus Wilke  →  [serialmentor.com/dataviz](https://serialmentor.com/dataviz/)
+  + R Graph Gallery  →  [r-graph-gallery.com](https://www.r-graph-gallery.com/)
+  + ggplot2 Extension Gallery  →  [ggplot2-exts.org/gallery](http://www.ggplot2-exts.org/gallery/)
+  + Color Palettes in R  →  [github.com/EmilHvitfeldt/r-color-palettes](https://github.com/EmilHvitfeldt/r-color-palettes/)
+  + &amp;#35;TidyTuesday Collection  →  [tidytuesday.rocks](http://tidytuesday.rocks/)
+
+* **Get Help:**
+
+  + RStudio Community  →  [community.rstudio.com](wwww.community.rstudio.com)
+  + R4DS Learning Community  →  [rfordatasci.com](https://www.rfordatasci.com)
+  + &amp;#35;TidyTuesday Community  →  [#TidyTuesday on Twitter](https://twitter.com/hashtag/tidytuesday?lang=en)
+
+* **Useful Packages:**
+
+  + **`{ggtext}`** — rich-text rendering  →  [github.com/clauswilke/ggtext](https://github.com/clauswilke/ggtext)
+  + **`{ggforce}`** — several interesting add-on features   →  [ggforce.data-imaginist.com](https://ggforce.data-imaginist.com/)
+  + **`{ggridges}`** — geoms for joy plots  →  [github.com/clauswilke/ggridges](https://github.com/clauswilke/ggridges)
+  + **`{ggrepel}`** — prevent overlapping text labels  →  [github.com/slowkow/ggrepel](https://github.com/slowkow/ggrepel)
+  + **`{gganimate}`** — create animations  →  [gganimate.com](https://gganimate.com/)
+  + **`{ggplotly}`** — create interactive plots  →  [plot.ly/ggplot2](https://plot.ly/ggplot2/)
+  + **`{ggraph}`** — networks, graphs &amp; trees  →  [github.com/thomasp85/ggraph](https://github.com/thomasp85/ggraph)
+  + **`{ggalt}`** — alternative coords, geoms, stats &amp; scales  →  [github.com/hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt)
+  + **`{ggpubr}`** — publication-ready plot in one line  →  [github.com/kassambara/ggpubr](https://github.com/kassambara/ggpubr)
+  + **`{ggmaps}`** — access to Google &amp; Stamen maps  →  [github.com/dkahle/ggmap](https://github.com/dkahle/ggmap)
+  + **`{ggthemes}`** —  additional themes, sclaes &amp; geoms →  [github.com/jrnold/ggthemes](https://github.com/jrnold/ggthemes)
+  + **`{hrbrthemes}`** — typography-centric themes  →  [github.com/hrbrmstr/hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+  + **`{lemon}`** — axis &amp; legend add-ons  →  [github.com/stefanedwards/lemon](https://github.com/stefanedwards/lemon)
+  + **`{cowplot}`** — plot arrangements, themes &amp; annotations  →  [wilkelab.org/cowplot](https://wilkelab.org/cowplot/articles/introduction.html)
+  + **`{patchwork}`** — combine ggplots  →  [github.com/thomasp85/patchwork](https://github.com/thomasp85/patchwork)
+  + **`{showtext}`** — use custom fonts  →  [github.com/yixuan/showtext](https://github.com/yixuan/showtext)
+  + **`{showtext}`** — hillshaded maps in 2D &amp; 3D  →  [github.com/tylermorganwall/rayshader](https://github.com/tylermorganwall/rayshader)
+
+.logo[
+&lt;img src="./img/logo_ressources.png" width="1328" /&gt;
+]---
+&lt;font size=2&gt;
+
+* **Free Online Books:**
+
+  + "ggplot2: Elegant Graphics for Data Analysis" by Hadley Wickham  →  [ggplot2-book.org](https://ggplot2-book.org/)
+  + "R for Data Science" by Hadley Wickham  →  [r4ds.had.co.nz](https://r4ds.had.co.nz/)
+  + "Data Visualization: A Practical Introduction" by Kieran Healy  →  [socviz.co](https://socviz.co/)
+  + "Fundamentals of Data Visualization" by Claus Wilke  →  [serialmentor.com/dataviz](https://serialmentor.com/dataviz/)
+
++ **Galleries:**
+
+  + R Graph Gallery  →  [r-graph-gallery.com](https://www.r-graph-gallery.com/)
+  + ggplot2 Extension Gallery  →  [ggplot2-exts.org/gallery](http://www.ggplot2-exts.org/gallery/)
+  + Color Palettes in R  →  [github.com/EmilHvitfeldt/r-color-palettes](https://github.com/EmilHvitfeldt/r-color-palettes/)
+  + &amp;#35;TidyTuesday Collection  →  [tidytuesday.rocks](http://tidytuesday.rocks/)
+
+* **Get Help:**
+
+  + RStudio Community  →  [community.rstudio.com](wwww.community.rstudio.com)
+  + R4DS Learning Community  →  [rfordatasci.com](https://www.rfordatasci.com)
+  + &amp;#35;TidyTuesday Community  →  [#TidyTuesday on Twitter](https://twitter.com/hashtag/tidytuesday?lang=en)
+
+* **Useful packages:**
+
+  + **`{ggtext}`** — rich-text rendering  →  [github.com/clauswilke/ggtext](https://github.com/clauswilke/ggtext)
+  + **`{ggforce}`** — several interesting add-on features   →  [ggforce.data-imaginist.com](https://ggforce.data-imaginist.com/)
+  + **`{ggridges}`** — geoms for joy plots  →  [github.com/clauswilke/ggridges](https://github.com/clauswilke/ggridges)
+  + **`{ggrepel}`** — prevent overlapping text labels  →  [github.com/slowkow/ggrepel](https://github.com/slowkow/ggrepel)
+  + **`{gganimate}`** — create animations  →  [gganimate.com](https://gganimate.com/)
+  + **`{ggplotly}`** — create interactive plots  →  [plot.ly/ggplot2](https://plot.ly/ggplot2/)
+  + **`{ggraph}`** — networks, graphs &amp; trees  →  [github.com/thomasp85/ggraph](https://github.com/thomasp85/ggraph)
+  + **`{ggalt}`** — alternative coords, geoms, stats &amp; scales  →  [github.com/hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt)
+  + **`{ggpubr}`** — publication-ready plot in one line  →  [github.com/kassambara/ggpubr](https://github.com/kassambara/ggpubr)
+  + **`{ggmaps}`** — access to Google &amp; Stamen maps  →  [github.com/dkahle/ggmap](https://github.com/dkahle/ggmap)
+  + **`{ggthemes}`** —  additional themes, sclaes &amp; geoms →  [github.com/jrnold/ggthemes](https://github.com/jrnold/ggthemes)
+  + **`{hrbrthemes}`** — typography-centric themes  →  [github.com/hrbrmstr/hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+  + **`{tvthemes}`** — TV-inspired themes  →  [github.com/Ryo-N7/tvthemes](https://github.com/Ryo-N7/tvthemes)
+  + **`{lemon}`** — axis &amp; legend add-ons  →  [github.com/stefanedwards/lemon](https://github.com/stefanedwards/lemon)
+  + **`{cowplot}`** — plot arrangements, themes &amp; annotations  →  [wilkelab.org/cowplot](https://wilkelab.org/cowplot/articles/introduction.html)
+  + **`{patchwork}`** — combine ggplots  →  [github.com/thomasp85/patchwork](https://github.com/thomasp85/patchwork)
+  + **`{showtext}`** — use custom fonts  →  [github.com/yixuan/showtext](https://github.com/yixuan/showtext)
+  + **`{rayshader}`** — hillshaded maps in 2D &amp; 3D  →  [github.com/tylermorganwall/rayshader](https://github.com/tylermorganwall/rayshader)
+
+.logo[
+&lt;img src="./img/logo_ressources.png" width="1328" /&gt;
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
@@ -1997,7 +2195,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 (function() {
