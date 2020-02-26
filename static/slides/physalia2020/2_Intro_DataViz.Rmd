@@ -1,6 +1,5 @@
 ---
-title: "Data Visualization in `R` with `ggplot2`"
-subtitle: "Introduction to Data Visualization"
+title: "2. Introduction to Data Visualization - Data Visualization in R with ggplot2"
 author: "Cédric Scherer"
 institute: "" #Leibniz Institute for Zoo and Wildlife Research Berlin
 date: "`r Sys.Date()`"
@@ -22,7 +21,8 @@ output:
 ---
 class: inverse, center
 background-image: url("img/darklight_RichardStrozynski.jpg")
-background-size: contain 
+background-size: contain
+
 
 ```{r options, echo = F}
 hook_source <- knitr::knit_hooks$get('source')
@@ -36,7 +36,9 @@ knitr::opts_chunk$set(
   warning = FALSE, 
   message = FALSE, 
   collapse = TRUE,
-  fig.height = 6.5
+  fig.height = 6.3,
+  fig.allign = 'center',
+  fig.retina = 3.5
 )
 
 options(width = 80)
@@ -173,7 +175,7 @@ class: inverse, center, middle
 ## <p style='text-align:center;'><b><span style='color:#28a87d;'>Data visualization</span><br>is part art and part science.</b></p>
 <br>
 
-<i style='font-size:22pt;'>
+<i style='font-size:21pt;'>
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;The challenge is to get the art right without getting the science wrong and vice versa.
 <br><br>
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;A data visualization first and foremost has to accurately convey the data.
@@ -183,7 +185,7 @@ class: inverse, center, middle
 
 --
 
-<b style='font-size:22pt;color:#28a87d;'>
+<b style='font-size:21pt;color:#28a87d;'>
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;If a visualization is "good" or "bad" matters for both communication and impact!
 </b>
 
@@ -688,10 +690,133 @@ background-size: cover
 background-image: url("img/fontsmatter.jpg")
 background-size: cover
 
+
 ---
 class: center
 
 ## The Choice of the <span style='color:#28a87d;'>Font(s)</span>
+
+<style>
+.left-column { width:10%; }
+.right-column { width:90%; }
+</style>
+
+.left-column[]
+.right-column[
+
+<ul style='text-align:left;font-size:22pt;'>
+<li> The font(s) should fit the topic and audience - <b>context matters</b>.</li><br>
+
+<li> Avoid fancy fonts and squiggeled letters.</li><br>
+
+<li> Use ways to <b>visualize hierarchy</b>.</li><br>
+
+<li> Avoid using ALL CAPS.</li><br>
+
+<li> In most cases use a monospaced font for numbers and avoid old style.</li>
+</ul>
+]
+
+---
+class: center
+
+## The Choice of the <span style='color:#28a87d;'>Font(s)</span>
+
+.left-column[]
+.right-column[
+
+<ul style='text-align:left;font-size:22pt;'>
+<li> The font(s) should fit the topic and audience - <b>context matters</b>.</li><br>
+
+<li> Avoid fancy fonts and squiggeled letters.</li><br>
+
+<li> Use ways to <b>visualize hierarchy</b>.</li><br>
+
+<li> Avoid using ALL CAPS.</li><br>
+
+<li> In most cases use a monospaced font for numbers and avoid old style.</li><br>
+
+<li> <b style='color:#28a87d;'>Consistency is key!</b></li>
+</ul>
+]
+
+---
+class: center
+
+## <span style='color:#28a87d;'>Display Fonts</span>
+
+<img src="img/fonts-display.png" style='width:88%;'><br><i style='font-size:10pt;color:grey;'>Source: wordpress.com</i>
+
+---
+class: center
+
+## <span style='color:#28a87d;'>Text Fonts</span>
+
+<img src="img/fonts-text.png" style='width:88%;'><br><i style='font-size:10pt;color:grey;'>Source: wordpress.com</i>
+
+---
+class: center
+
+## <span style='color:#28a87d;'>Sans-Serif</span> or <span style='color:#28a87d;font-family:merriweather;'>Serif</span> ?</span>
+
+<img src="img/fonts-serifs.png" style='width:88%;'><br><i style='font-size:10pt;color:grey;'>Source: wordpress.com</i>
+
+---
+class: center
+ 
+## <span style='color:#28a87d;'>Tabular (Monospaced) Numbers</span>
+
+<br>
+<img src="img/numbers-2.png" style='width:95%;'><br><i style='font-size:10pt;color:grey;'>Source: invisionapp.com/inside-design/best-free-fonts-for-numbers</i>
+
+---
+class: center
+
+## <span style='color:#28a87d;'>Number Fonts with Lining</span>
+
+<br>
+<img src="img/numbers-1.png" style='width:95%;'><br><i style='font-size:10pt;color:grey;'>Source: invisionapp.com/inside-design/best-free-fonts-for-numbers</i>
+
+---
+class: center
+
+## <span style='color:#28a87d;'>Quality of Number Symbols</span>
+
+<br>
+<img src="img/numbers-3.png" style='width:76%;'><br><i style='font-size:10pt;color:grey;'>Source: invisionapp.com/inside-design/best-free-fonts-for-numbers</i>
+
+---
+class: middle, center
+
+<style>
+.pull-left { width:49.7%; }
+.pull-right { width:49.7%; }
+</style>
+
+.pull-left[
+<img src="img/numbers-serif-droid-serif.png">
+<img src="img/numbers-serif-copse.png">
+]
+
+.pull-right[
+<img src="img/numbers-serif-crimson-text.png">
+<img src="img/numbers-serif-kameron.png">
+]
+<i style='font-size:10pt;color:grey;'>Source: invisionapp.com/inside-design/best-free-fonts-for-numbers</i>
+
+---
+class: middle, center
+
+.pull-left[
+<img src="img/numbers-sans-open-sans.png">
+<img src="img/numbers-sans-lato.png">
+]
+
+.pull-right[
+<img src="img/numbers-sans-roboto-condensed.png">
+<img src="img/numbers-sans-varela-round.png">
+]
+<i style='font-size:10pt;color:grey;'>Source: invisionapp.com/inside-design/best-free-fonts-for-numbers</i>
 
 ---
 class: center
@@ -770,21 +895,27 @@ class: center
 
 ## <span style='color:#28a87d;'>Allign</span> Your Text!
 
+<style>
+.left-column { width:36%; }
+.right-column { width:57%; }
+</style>
+
 .left-column[
 <br><br>
-<ul style='font-weight:bold;font-size:16pt;'>
+<ul style='font-weight:bold;font-size:18pt;'>
   <li>Left-align most text<br><br><br></li>
   <li>Title should be left alligned<br><br><br></li>
-  <li>Labels and subtitles can be center or right alligned</li>
+  <li>Labels and subtitles can be<br>center or right alligned</li>
 </ul>
 ]
+
 .right-column[
-  <img src="img/allignment.png" style='width:57%;'>
+  <img src="img/allignment.png" style='width:74%;'>
 ]
 
 ---
 
-## <span style='color:#28a87d;'>Don't Rotate</span> Your Text!
+## <span style='color:#28a87d;'>(Don't) Rotate</span> Your Text!
 
 <br>
 .pull-left[

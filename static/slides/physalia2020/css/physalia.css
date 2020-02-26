@@ -9,7 +9,7 @@ a, a > code {
   padding-right: 4em;
   font-size: 90%;
 }
-.remark-code-line-highlighted     { background-color: ffec89}
+.remark-code-line-highlighted     { background-color: #ffec89}
 
 .inverse {
   background-color: #272822;
@@ -36,11 +36,11 @@ a, a > code {
 }
 .pull-left {
   float: left;
-  width: 50%;
+  width: 49%;
 }
 .pull-right {
   float: right;
-  width: 50%;
+  width: 49%;
 }
 .pull-right ~ * {
   clear: both;
