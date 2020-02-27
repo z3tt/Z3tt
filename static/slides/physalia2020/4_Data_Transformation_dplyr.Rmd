@@ -6,7 +6,7 @@ date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     seal: false
-    css: ["./css/physalia-fonts.css", "./css/physalia.css", "kunoichi"]
+    css: ["./css/physalia-fonts.css", "./css/physalia.css", "./css/kunoichi-blank.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -91,7 +91,7 @@ class: center
 
 ### The Typical Data Science Project Flow
 
-<img src="img/tidyverse4.png" style='width: 90%;'><br><i style='font-size:10pt;color:grey;'>Source: www.rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png</i><
+<img src="img/tidyverse4.png" style='width: 90%;'><br><i style='font-size:10pt;color:grey;'>Source: www.rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png</i>
 
 ---
 class: center
@@ -235,7 +235,7 @@ ggplot(
   )) +
   geom_bar(
     stat = "count",
-    position = "dodge"
+    position = "dodge" #<<
   )
 ```
 ]
@@ -693,8 +693,8 @@ mutate(babynames, id = row_number())
 `mutate(data, condition)` allows you to create new variables (columns) based or not based on other variables:
 
 ```{r dplyr-mutate-multi}
-mpg <- select(mpg, manufacturer:year, hwy, cty) ## only for visualization
-mutate(mpg, diff = hwy - cty, perc = diff / hwy)
+mpg2 <- select(mpg, model, hwy, cty) ## only for visualization
+mutate(mpg2, diff = hwy - cty, perc = diff / hwy)
 ```
 
 ---
@@ -704,14 +704,74 @@ mutate(mpg, diff = hwy - cty, perc = diff / hwy)
 `mutate(data, condition)` allows you to create new variables (columns) based or not based on other variables:
 
 ```{r dplyr-mutate-multi-2, eval = F}
-mpg <- select(mpg, manufacturer:year, hwy, cty) ## only for visualization
-mutate(mpg, diff = hwy - cty, perc = diff / hwy)
+mpg2 <- select(mpg, model, hwy, cty) ## only for visualization
+mutate(mpg2, diff = hwy - cty, perc = diff / hwy)
 ```
 
 Equivalent code in base `R`:
 ```{r base-mutate-multi}
-mpg_diff <- transform(mpg, diff = hwy - cty)
+mpg_diff <- transform(mpg2, diff = hwy - cty)
 transform(mpg_diff, perc = diff / hwy)
+```
+
+---
+
+## Create New Variables
+
+`mutate_if(data, condition)` allows you to conditionally create several new columns in one step:
+
+```{r dplyr-mutate-if}
+mutate_if(mpg2, is.numeric, as.character)
+```
+
+---
+
+## Create New Variables
+
+`mutate_if(data, condition)` allows you to conditionally create several new columns in one step:
+
+```{r dplyr-mutate-if-2}
+mutate_if(mpg2, is.numeric, list(avg = mean, log_2 = log2))
+```
+
+---
+
+## Create New Variables
+
+`mutate_if(data, condition)` allows you to conditionally create several new columns in one step:
+
+```{r dplyr-mutate-if-3}
+mutate_if(mpg2, is.numeric, list(~mean(., na.rm = T), ~log2(.)))
+```
+
+---
+
+## Create New Variables
+
+`mutate_at(data, condition)` allows you to conditionally transform several columns in one step:
+
+```{r dplyr-mutate-at}
+mutate_at(mpg2, c("hwy", "cty"), mean, na.rm = TRUE)
+```
+
+---
+
+## Create New Variables
+
+`mutate_all(data, condition)` allows you to transform all columns in one step:
+
+```{r dplyr-mutate-all}
+mutate_all(mpg2, mean, na.rm = TRUE)
+```
+
+---
+
+## Create New Variables
+
+`mutate_all(data, condition)` allows you to transform all columns in one step:
+
+```{r dplyr-mutate-all-2}
+mutate_all(mpg2, list(~mean(., na.rm = T), ~nchar(.)))
 ```
 
 ---
@@ -734,7 +794,7 @@ summarize(babynames, unique_children = sum(n, na.rm = TRUE))
 
 ---
 
-## Create New Variables
+## Sum Up Variables
 
 `summarize(data, condition)` allows you to create new variables (columns) based or not based on other variables:
 
@@ -746,6 +806,15 @@ Equivalent code in base `R`:
 ```{r base-summarize}
 sum(babynames$n, na.rm = TRUE)
 ```
+
+---
+class: inverse, center, middle
+
+# <code style='font-size:70pt;color:#ebc500'>group_by()</code><br>
+# <b style='font-size:25pt;color:#a7a7a7;font-weight:400;'>Create Subsets</b><br><br>
+
+<img src="img/dplyr.png" style='width: 18%;'><br>
+
 
 ---
 
@@ -768,12 +837,23 @@ group_by(babynames, sex, year)
 ```
 
 ---
+
+## Remove Subsets
+
+... and `ungroup()` lets you remove any subsets:
+
+```{r dplyr-ungroup}
+grouped <- group_by(babynames, sex, year)
+ungroup(grouped)
+```
+
+---
 class: center, bottom, inverse
 background-image: url("img/superpower_mod.png")
 background-size: cover
 
-# <b style='font-size:55pt;'>THE SUPERPOWER OF </b><code style='font-size:60pt;color:#ebc500;line-height:0.2;'>group_by()<br><br></code>
-# <b style='font-size:32pt;color:lightgrey;line-height:0.5;'>Verbs will be automatically applied "by group"!</b>
+# <b style='font-size:55pt;'>THE SUPERPOWER OF </b><code style='font-size:60pt;color:#ebc500;line-height:0.5;'>group_by()<br><br></code>
+# <b style='font-size:28pt;color:lightgrey;line-height:0.5;'>Verbs will be automatically applied "by group"!</b>
 
 ---
 
@@ -841,27 +921,8 @@ arrange(names_1900_sum, desc(sex), -prop_check)
 ---
 class: inverse, center, middle
 
-# <code style='font-size:70pt;color:#ebc500'>group_by()</code><br>
-# <b style='font-size:25pt;color:#a7a7a7;font-weight:400;'>Create Subsets</b><br><br>
-
-<img src="img/dplyr.png" style='width: 18%;'><br>
-
----
-
-## Ungroup Data Afterwards
-
-... and `ungroup()` lets you ungroup your data:
-
-```{r dplyr-ungroup}
-names_1990_sum <- ungroup(names_1900_sum)
-arrange(names_1990_sum, desc(sex), -prop_check)
-```
-
----
-class: inverse, center, middle
-
 <img src="img/magrittr.png" style='width: 26%;'><br><br>
-# <b style='font-size:60pt'> Excourse: The <code style='color:#ebc500'>magrittr</code> Package<br><br>
+# <b style='font-size:60pt'> The <code style='color:#ebc500'>magrittr</code> Package<br><br>
 
 ---
 class: center
@@ -928,7 +989,15 @@ names_1900 <-
     ),
     sex, year, name
   )
+```
 
+---
+
+## Readability of Code
+
+One could rewrite the code like this:
+
+```{r, wrapped-code-3, eval = F}
 names_1900_sum <-
   ungroup(
     arrange(
@@ -941,7 +1010,6 @@ names_1900_sum <-
     )
   )
 ```
-
 ---
 class: middle
 
@@ -1399,27 +1467,245 @@ babynames %>%
   </tr>
   <tr>
     <td><code style=font-weight:700>slice()</code></td>
-    <td>Filter rows by position</td>
+    <td>Extract rows by ordinal position</td>
   </tr>
   <tr>
     <td><code style=font-weight:700>distinct()</code> and <code style=font-weight:700>n_distinct()</code></td>
-    <td>Find unique values</td>
+    <td>Find and count unique values</td>
   </tr>
   <tr>
     <td><code style=font-weight:700>sample_n()</code> and <code style=font-weight:700>sample_frac()</code></td>
-    <td>Create samples of the data</td>
+    <td>Select rows randomly</td>
   </tr>
   <tr>
     <td><code style=font-weight:700>top_n()</code> and <code style=font-weight:700>top_frac()</code></td>
     <td>Pick top or bottom values by variable</td>
   </tr>
   <tr>
+    <td><code style=font-weight:700>count()</code> and <code style=font-weight:700>top_frac()</code></td>
+    <td>Count number of observations</td>
+  </tr>
+  <tr>
     <td><code style=font-weight:700>complete()</code></td>
-    <td>XCreate all possible combinations of two variables</td>
+    <td>Create all possible combinations of two variables</td>
   </tr>
 </table>
 
 ---
+
+## Extract Rows by Ordinal Position
+
+`slice()` allows you to filter rows based on their row value:
+
+```{r slice}
+slice(mpg, 100:120)
+```
+
+---
+
+## Extract Rows by Ordinal Position
+
+`slice()` allows you to filter rows based on their row value - works also per group:
+
+```{r slice-group}
+mpg %>% group_by(manufacturer) %>% slice(1)
+```
+
+---
+
+## Find Unique Values
+
+`distinct()` allows you to retain only unique values (as `unique()` does):
+
+```{r distinct}
+distinct(mpg, manufacturer)
+```
+
+---
+
+## Find Unique Values
+
+`distinct()` allows you to retain only unique values (as `unique()` does):
+
+```{r distinct-2}
+distinct(mpg, hwy)
+```
+
+---
+
+## Count Unique Values
+
+`n_distinct()` allows you to calculate the number of unique values (as `length(unique())` does):
+
+```{r ndistinct}
+n_distinct(mpg$model)
+```
+
+---
+
+## Select Rows Randomly
+
+`sample_n()` allows you to create random subsets based on a number of rows:
+
+```{r sample-n}
+sample_n(mpg, 5)
+```
+
+---
+
+## Select Rows Randomly
+
+`sample_n()` allows you to create random subsets based on a number of rows - also works woith groups:
+
+```{r sample-n-group}
+mpg %>% group_by(year, manufacturer) %>% sample_n(1)
+```
+
+---
+
+## Select Rows Randomly
+
+`sample_frac()` allows you to create random subsets based on a fraction:
+
+```{r sample-frac}
+sample_frac(mpg, .05)
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_n()` allows you to filter the **top** or bottom values, ranked by a specified variable:
+
+```{r top-n}
+top_n(mpg, 5, hwy)
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_n()` allows you to filter the top or **bottom** values, ranked by a specified variable:
+
+```{r top-n-2}
+top_n(mpg, 5, -hwy)
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_n()` allows you to filter the top or bottom values, ranked by a specified variable:
+
+```{r top-n-group}
+mpg %>% group_by(manufacturer) %>% top_n(1, hwy)
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_frac()` allows you to filter the top or bottom values, ranked by a specified variable:
+
+```{r top-frac}
+top_frac(mpg, .01, displ)
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics:
+
+```{r count}
+count(mpg)
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics:
+
+```{r count-2}
+#count(mpg)
+summarize(mpg, n = n())
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics - also per group:
+
+```{r count-group}
+mpg %>% group_by(manufacturer) %>% count()
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics - also per group:
+
+```{r count-group-2}
+mpg %>% group_by(manufacturer) %>% count(sort = TRUE)
+```
+
+---
+
+## Count Observations
+
+`add_count()` adds the sample size of your data as additional column:
+
+```{r add-count}
+add_count(mpg2)
+```
+
+---
+
+## Count Observations
+
+`add_count()` adds the sample size of your data as additional column:
+
+```{r add-count-2}
+#add_count(mpg2)
+mutate(mpg2, n = n())
+```
+
+---
+
+## Count Observations
+
+`tally()` does basically the same as `count()`:
+
+```{r tally}
+tally(mpg)
+```
+
+---
+
+## Create all possible combinations of two variables
+
+`complete()` turns missing values into explicit missing values:
+
+```{r complete}
+mpg3 <- mpg %>% group_by(manufacturer, class) %>% count() %>% ungroup()
+complete(mpg3, manufacturer, nesting(class))
+```
+
+---
+
+## Create all possible combinations of two variables
+
+`complete()` turns missing values into explicit missing values:
+
+```{r complete-2}
+mpg3 <- mpg %>% group_by(manufacturer, class) %>% count() %>% ungroup()
+complete(mpg3, manufacturer, nesting(class), fill = list(n = 0))
+```
+
+---
 class: center, middle
 
-<img src="img/dplyr_guide_for_one_table_RDataBerlin.png", style='widht:85%;'>
+<img src="img/dplyr_guide_for_one_table_RDataBerlin.png", style='width:85%;'>

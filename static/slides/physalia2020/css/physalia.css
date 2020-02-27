@@ -48,25 +48,47 @@ a, a > code {
 img, video, iframe {
   max-width: 100%;
 }
+.title-slide {
+  width: 60%;
+  text-align: left!important;
+  height:100%;
+  display: table;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 0;
+  border-left-color: white;
+  border-left-style: solid;
+  border-left-width: 0.5em;
+}
+.title-slide h1, .title-slide h2, .title-slide h3  {
+  padding-left: 4%!important;
+  padding-right: 4%!important;
+}
+.title-slide .remark-slide-number { display: none; }
+.title-slide h1 { padding-top: 0%; }
 h1 {
   font-family: montserrat;
   font-size: 30pt;
   font-weight: bold;
   line-height: 1.05;
 }
-
 h2 {
   font-family: montserrat;
   font-size: 18pt;
   font-weight: bold;
   line-height: 1;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
-
 h3 {
   font-family: montserrat;
   font-size: 18pt;
   font-weight: bold;
   line-height: 1;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 body {
   font-family: oswald;
@@ -93,7 +115,6 @@ a:link, a:visited {
 .remark-slide-number {
   position: inherit;
 }
-
 .remark-slide-number .progress-bar-container {
   position: absolute;
   bottom: 0;
@@ -107,12 +128,16 @@ a:link, a:visited {
   background-color: #baa745;
 }
 .remark-inline-code { 
+  font-family: monospace;
   color: #28a87d;
   font-weight: bold;
 }
 .remark-slide table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+.font-mono {
+  font-family: monospace;
+}
 @page { margin: 0; }
 @media print {
   .remark-slide-scaler {

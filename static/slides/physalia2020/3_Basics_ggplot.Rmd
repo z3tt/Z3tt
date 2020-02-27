@@ -1,12 +1,12 @@
 ---
-title: "3. The Structure of ggplot2 (Part 1: Basics) - Cédric Scherer - Data Visualization in R with ggplot2"
+title: "3. The Structure of ggplot2 (Part 1: A Basic ggplot) - Cédric Scherer - Data Visualization in R with ggplot2"
 author: "Cédric Scherer"
 institute: "" #Leibniz Institute for Zoo and Wildlife Research Berlin
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     seal: false
-    css: ["./css/physalia-fonts.css", "./css/physalia.css", "kunoichi"]
+    css: ["./css/physalia-fonts.css", "./css/physalia.css", "./css/kunoichi-blank.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -44,7 +44,7 @@ options(width = 80)
 ```
 
 <br><br>
-## <span style='font-size:40pt;'>Data Visualization in <code style='color:#ebc500;'>R</code> with <code style='color:#ebc500;'>ggplot2</code></span><br><span style='font-size:25pt;color:#a7a7a7;font-weight:400;'>The Structure of <code style='color:#a7a7a7;font-weight:400;'>ggplot2</code> (Part 1: Basics)</span>
+## <span style='font-size:40pt;'>Data Visualization in <code style='color:#ebc500;'>R</code> with <code style='color:#ebc500;'>ggplot2</code></span><br><span style='font-size:25pt;color:#a7a7a7;font-weight:400;'>The Structure of <code style='color:#a7a7a7;font-weight:400;'>ggplot2</code> (Part 1: A Basic ggplot)</span>
 <br><br><br><br><br><br><br>
 ## <span style='font-size:22pt;'>Cédric Scherer</b><b style='font-size:15pt;color:#ccba56;font-weight:400;'><br>Physalia Courses&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;March 2-6 2020</b><br><p align='right;'><span style='font-size:9pt;color:#767676;font-weight:400;'></p>
 
@@ -599,14 +599,12 @@ ggplot(chic, aes(date, temp)) +
 <b style='font-size:18pt;color:#00684a'>
 * Turn our scatter plot into a line chart and into a bar chart!
 
+* What’s the difference between `geom_path()` and `geom_line()`?
+
 * Create a box plot of temperature per date.
 
-</b>
-<b style='font-size:18pt;color:#ea724c'>
 * What is the problem? How could you find out why this is happening?
 
-</b>
-<b style='font-size:18pt;color:#00684a'>
 * Try to create box plots as you would expect them.
 
 * Bonus: Choose the built-in theme you like the most!
@@ -624,12 +622,8 @@ ggplot(chic, aes(date, temp)) +
 
 * Create a box plot of temperature per date.
 
-</b>
-<b style='font-size:18pt;color:#ea724c'>
 * What is the problem? How could you find out why this is happening?
 
-</b>
-<b style='font-size:18pt;color:#00684a'>
 * Try to create box plots as you would expect them.
 
 * Hint: You need to specify one categorical variable!
@@ -832,6 +826,89 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
+## Add Labels
+
+.pull-left[
+```{r axes-labels, eval = F}
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  xlab("Day of the Year") + #<<
+  ylab("Temperature (°F)") #<<
+```
+]
+
+.pull-right[
+```{r plot-axes-labels, ref.label="axes-labels", echo = F}
+```
+]
+
+---
+
+## Add Labels
+
+.pull-left[
+```{r title, eval = F}
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  xlab("Day of the Year") + 
+  ylab("Temperature (°F)") +
+  ggtitle("Seasonal Change of Temperatures in Chicago") #<<
+```
+]
+
+.pull-right[
+```{r plot-title, ref.label="title", echo = F}
+```
+]
+
+---
+
+## Add Labels
+
+.pull-left[
+```{r labs, eval = F}
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  labs( #<<
+    x = "Day of the Year", #<< 
+    y = "Temperature (°F)", #<<
+    title = "Seasonal Change of Temperatures in Chicago",#<<
+    subtitle = "Daily temperatures (°F) in the city of Chicago, IL,\nmeasured between 1997 and 2001",#<<
+    caption = "Data: National Morbidity and Mortality Air Pollution Study (NMMAPS)"#<<
+  ) #<<
+```
+]
+
+.pull-right[
+```{r plot-labs, ref.label="labs", echo = F}
+```
+]
+
+---
+
+## Add Labels
+
+.pull-left[
+```{r labs-2, eval = F}
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  labs( #<<
+    x = "Day of the Year",
+    y = "Temperature (°F)", 
+    title = "Seasonal Change of Temperatures in Chicago",
+    subtitle = "Daily temperatures (°F) in the city of Chicago, IL,\nmeasured between 1997 and 2001",
+    caption = "\nData: National Morbidity and Mortality Air Pollution Study (NMMAPS)" #<<
+  )
+```
+]
+
+.pull-right[
+```{r plot-labs-2, ref.label="labs-2", echo = F}
+```
+]
+
+---
+
 ## `ggplot`s as Object
 
 You can assign ggplot to an object name:
@@ -871,6 +948,33 @@ g +
 ```{r plot-ggplot-object-2, ref.label="ggplot-object-2", echo = F}
 ```
 ]
+
+---
+
+## Saving a `ggplot`
+
+You can export your plot via the `ggsave()` function:
+
+```{r ggsave, eval = F}
+ggsave(filename = "my_first_ggplot.pdf", fig.width = 10, fig.height = 7, device = cairo_pdf)
+ggsave(filename = "my_first_ggplot.png", fig.width = 10, fig.height = 7, dpi = 300)
+```
+
+---
+class: center, middle
+
+<img src="img/canva_vector.png" style='width:100%;'><br><i style='font-size:10pt;color:grey;'>Source: canva.com</i>
+
+---
+
+## Saving a `ggplot`
+
+You can export your plot via the `ggsave()` function:
+
+```{r ggsave-2, eval = F}
+ggsave(filename = "my_first_ggplot.pdf", plot = g, fig.width = 10, fig.height = 7, device = cairo_pdf)
+ggsave(filename = "my_first_ggplot.png", plot = g, fig.width = 10, fig.height = 7, dpi = 300)
+```
 
 ---
 

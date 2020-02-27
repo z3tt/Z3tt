@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>3. The Structure of ggplot2 (Part 1: Basics) - Cédric Scherer - Data Visualization in R with ggplot2</title>
+    <title>3. The Structure of ggplot2 (Part 1: A Basic ggplot) - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-02-26" />
-    <link href="libs/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
+    <meta name="date" content="2020-02-27" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
+    <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -19,7 +19,7 @@ background-size: contain
 
 
 &lt;br&gt;&lt;br&gt;
-## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Structure of &lt;code style='color:#a7a7a7;font-weight:400;'&gt;ggplot2&lt;/code&gt; (Part 1: Basics)&lt;/span&gt;
+## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Structure of &lt;code style='color:#a7a7a7;font-weight:400;'&gt;ggplot2&lt;/code&gt; (Part 1: A Basic ggplot)&lt;/span&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 ## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
 
@@ -339,7 +339,7 @@ ggplot
 ## {
 ##     UseMethod("ggplot")
 ## }
-## &lt;bytecode: 0x000000000cd983b8&gt;
+## &lt;bytecode: 0x000000000ceb9e28&gt;
 ## &lt;environment: namespace:ggplot2&gt;
 ```
 
@@ -802,6 +802,89 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
+## Add Labels
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+* xlab("Day of the Year") +
+* ylab("Temperature (°F)")
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-axes-labels-1.png" width="504" /&gt;
+]
+
+---
+
+## Add Labels
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  xlab("Day of the Year") + 
+  ylab("Temperature (°F)") +
+* ggtitle("Seasonal Change of Temperatures in Chicago")
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-title-1.png" width="504" /&gt;
+]
+
+---
+
+## Add Labels
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+* labs(
+*   x = "Day of the Year",
+*   y = "Temperature (°F)",
+*   title = "Seasonal Change of Temperatures in Chicago",
+*   subtitle = "Daily temperatures in the city of Chicago, IL, measured between 1997 and 2001",
+*   caption = "Data: National Morbidity and Mortality Air Pollution Study (NMMAPS)"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-labs-1.png" width="504" /&gt;
+]
+
+---
+
+## Add Labels
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+* labs(
+    x = "Day of the Year",
+    y = "Temperature (°F)", 
+    title = "Seasonal Change of Temperatures in Chicago",
+    subtitle = "Daily temperatures in the city of Chicago, IL, measured between 1997 and 2001",
+*   caption = "\nData: National Morbidity and Mortality Air Pollution Study (NMMAPS)"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-labs-2-1.png" width="504" /&gt;
+]
+
+---
+
 ## `ggplot`s as Object
 
 You can assign ggplot to an object name:
@@ -841,6 +924,35 @@ g +
 .pull-right[
 &lt;img src="3_Basics_ggplot_files/figure-html/plot-ggplot-object-2-1.png" width="504" /&gt;
 ]
+
+---
+
+## Saving a `ggplot`
+
+You can export your plot via the `ggsave()` function:
+
+
+```r
+ggsave(filename = "my_first_ggplot.pdf", fig.width = 10, fig.height = 7, device = cairo_pdf)
+ggsave(filename = "my_first_ggplot.png", fig.width = 10, fig.height = 7, dpi = 300)
+```
+
+---
+class: center, middle
+
+&lt;img src="img/canva_vector.png" style='width:100%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: canva.com&lt;/i&gt;
+
+---
+
+## Saving a `ggplot`
+
+You can export your plot via the `ggsave()` function:
+
+
+```r
+ggsave(filename = "my_first_ggplot.pdf", plot = g, fig.width = 10, fig.height = 7, device = cairo_pdf)
+ggsave(filename = "my_first_ggplot.png", plot = g, fig.width = 10, fig.height = 7, dpi = 300)
+```
 
 ---
 

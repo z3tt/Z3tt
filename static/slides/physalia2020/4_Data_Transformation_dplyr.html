@@ -4,10 +4,10 @@
     <title>4. Data Transformation with dplyr - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-02-26" />
-    <link href="libs/remark-css-0.0.1/kunoichi.css" rel="stylesheet" />
+    <meta name="date" content="2020-02-27" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
+    <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -66,7 +66,7 @@ class: center
 
 ### The Typical Data Science Project Flow
 
-&lt;img src="img/tidyverse4.png" style='width: 90%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: www.rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png&lt;/i&gt;&lt;
+&lt;img src="img/tidyverse4.png" style='width: 90%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: www.rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png&lt;/i&gt;
 
 ---
 class: center
@@ -226,7 +226,7 @@ ggplot(
   )) +
   geom_bar(
     stat = "count",
-    position = "dodge"
+*   position = "dodge"
   )
 ```
 ]
@@ -17572,21 +17572,21 @@ mutate(babynames, id = row_number())
 
 
 ```r
-mpg &lt;- select(mpg, manufacturer:year, hwy, cty) ## only for visualization
-mutate(mpg, diff = hwy - cty, perc = diff / hwy)
-## # A tibble: 234 x 8
-##    manufacturer model      displ  year   hwy   cty  diff  perc
-##    &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
-##  1 audi         a4           1.8  1999    29    18    11 0.379
-##  2 audi         a4           1.8  1999    29    21     8 0.276
-##  3 audi         a4           2    2008    31    20    11 0.355
-##  4 audi         a4           2    2008    30    21     9 0.3  
-##  5 audi         a4           2.8  1999    26    16    10 0.385
-##  6 audi         a4           2.8  1999    26    18     8 0.308
-##  7 audi         a4           3.1  2008    27    18     9 0.333
-##  8 audi         a4 quattro   1.8  1999    26    18     8 0.308
-##  9 audi         a4 quattro   1.8  1999    25    16     9 0.36 
-## 10 audi         a4 quattro   2    2008    28    20     8 0.286
+mpg2 &lt;- select(mpg, model, hwy, cty) ## only for visualization
+mutate(mpg2, diff = hwy - cty, perc = diff / hwy)
+## # A tibble: 234 x 5
+##    model        hwy   cty  diff  perc
+##    &lt;chr&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1 a4            29    18    11 0.379
+##  2 a4            29    21     8 0.276
+##  3 a4            31    20    11 0.355
+##  4 a4            30    21     9 0.3  
+##  5 a4            26    16    10 0.385
+##  6 a4            26    18     8 0.308
+##  7 a4            27    18     9 0.333
+##  8 a4 quattro    26    18     8 0.308
+##  9 a4 quattro    25    16     9 0.36 
+## 10 a4 quattro    28    20     8 0.286
 ## # ... with 224 more rows
 ```
 
@@ -17598,250 +17598,400 @@ mutate(mpg, diff = hwy - cty, perc = diff / hwy)
 
 
 ```r
-mpg &lt;- select(mpg, manufacturer:year, hwy, cty) ## only for visualization
-mutate(mpg, diff = hwy - cty, perc = diff / hwy)
+mpg2 &lt;- select(mpg, model, hwy, cty) ## only for visualization
+mutate(mpg2, diff = hwy - cty, perc = diff / hwy)
 ```
 
 Equivalent code in base `R`:
 
 ```r
-mpg_diff &lt;- transform(mpg, diff = hwy - cty)
+mpg_diff &lt;- transform(mpg2, diff = hwy - cty)
 transform(mpg_diff, perc = diff / hwy)
-##     manufacturer                  model displ year hwy cty diff      perc
-## 1           audi                     a4   1.8 1999  29  18   11 0.3793103
-## 2           audi                     a4   1.8 1999  29  21    8 0.2758621
-## 3           audi                     a4   2.0 2008  31  20   11 0.3548387
-## 4           audi                     a4   2.0 2008  30  21    9 0.3000000
-## 5           audi                     a4   2.8 1999  26  16   10 0.3846154
-## 6           audi                     a4   2.8 1999  26  18    8 0.3076923
-## 7           audi                     a4   3.1 2008  27  18    9 0.3333333
-## 8           audi             a4 quattro   1.8 1999  26  18    8 0.3076923
-## 9           audi             a4 quattro   1.8 1999  25  16    9 0.3600000
-## 10          audi             a4 quattro   2.0 2008  28  20    8 0.2857143
-## 11          audi             a4 quattro   2.0 2008  27  19    8 0.2962963
-## 12          audi             a4 quattro   2.8 1999  25  15   10 0.4000000
-## 13          audi             a4 quattro   2.8 1999  25  17    8 0.3200000
-## 14          audi             a4 quattro   3.1 2008  25  17    8 0.3200000
-## 15          audi             a4 quattro   3.1 2008  25  15   10 0.4000000
-## 16          audi             a6 quattro   2.8 1999  24  15    9 0.3750000
-## 17          audi             a6 quattro   3.1 2008  25  17    8 0.3200000
-## 18          audi             a6 quattro   4.2 2008  23  16    7 0.3043478
-## 19     chevrolet     c1500 suburban 2wd   5.3 2008  20  14    6 0.3000000
-## 20     chevrolet     c1500 suburban 2wd   5.3 2008  15  11    4 0.2666667
-## 21     chevrolet     c1500 suburban 2wd   5.3 2008  20  14    6 0.3000000
-## 22     chevrolet     c1500 suburban 2wd   5.7 1999  17  13    4 0.2352941
-## 23     chevrolet     c1500 suburban 2wd   6.0 2008  17  12    5 0.2941176
-## 24     chevrolet               corvette   5.7 1999  26  16   10 0.3846154
-## 25     chevrolet               corvette   5.7 1999  23  15    8 0.3478261
-## 26     chevrolet               corvette   6.2 2008  26  16   10 0.3846154
-## 27     chevrolet               corvette   6.2 2008  25  15   10 0.4000000
-## 28     chevrolet               corvette   7.0 2008  24  15    9 0.3750000
-## 29     chevrolet        k1500 tahoe 4wd   5.3 2008  19  14    5 0.2631579
-## 30     chevrolet        k1500 tahoe 4wd   5.3 2008  14  11    3 0.2142857
-## 31     chevrolet        k1500 tahoe 4wd   5.7 1999  15  11    4 0.2666667
-## 32     chevrolet        k1500 tahoe 4wd   6.5 1999  17  14    3 0.1764706
-## 33     chevrolet                 malibu   2.4 1999  27  19    8 0.2962963
-## 34     chevrolet                 malibu   2.4 2008  30  22    8 0.2666667
-## 35     chevrolet                 malibu   3.1 1999  26  18    8 0.3076923
-## 36     chevrolet                 malibu   3.5 2008  29  18   11 0.3793103
-## 37     chevrolet                 malibu   3.6 2008  26  17    9 0.3461538
-## 38         dodge            caravan 2wd   2.4 1999  24  18    6 0.2500000
-## 39         dodge            caravan 2wd   3.0 1999  24  17    7 0.2916667
-## 40         dodge            caravan 2wd   3.3 1999  22  16    6 0.2727273
-## 41         dodge            caravan 2wd   3.3 1999  22  16    6 0.2727273
-## 42         dodge            caravan 2wd   3.3 2008  24  17    7 0.2916667
-## 43         dodge            caravan 2wd   3.3 2008  24  17    7 0.2916667
-## 44         dodge            caravan 2wd   3.3 2008  17  11    6 0.3529412
-## 45         dodge            caravan 2wd   3.8 1999  22  15    7 0.3181818
-## 46         dodge            caravan 2wd   3.8 1999  21  15    6 0.2857143
-## 47         dodge            caravan 2wd   3.8 2008  23  16    7 0.3043478
-## 48         dodge            caravan 2wd   4.0 2008  23  16    7 0.3043478
-## 49         dodge      dakota pickup 4wd   3.7 2008  19  15    4 0.2105263
-## 50         dodge      dakota pickup 4wd   3.7 2008  18  14    4 0.2222222
-## 51         dodge      dakota pickup 4wd   3.9 1999  17  13    4 0.2352941
-## 52         dodge      dakota pickup 4wd   3.9 1999  17  14    3 0.1764706
-## 53         dodge      dakota pickup 4wd   4.7 2008  19  14    5 0.2631579
-## 54         dodge      dakota pickup 4wd   4.7 2008  19  14    5 0.2631579
-## 55         dodge      dakota pickup 4wd   4.7 2008  12   9    3 0.2500000
-## 56         dodge      dakota pickup 4wd   5.2 1999  17  11    6 0.3529412
-## 57         dodge      dakota pickup 4wd   5.2 1999  15  11    4 0.2666667
-## 58         dodge            durango 4wd   3.9 1999  17  13    4 0.2352941
-## 59         dodge            durango 4wd   4.7 2008  17  13    4 0.2352941
-## 60         dodge            durango 4wd   4.7 2008  12   9    3 0.2500000
-## 61         dodge            durango 4wd   4.7 2008  17  13    4 0.2352941
-## 62         dodge            durango 4wd   5.2 1999  16  11    5 0.3125000
-## 63         dodge            durango 4wd   5.7 2008  18  13    5 0.2777778
-## 64         dodge            durango 4wd   5.9 1999  15  11    4 0.2666667
-## 65         dodge    ram 1500 pickup 4wd   4.7 2008  16  12    4 0.2500000
-## 66         dodge    ram 1500 pickup 4wd   4.7 2008  12   9    3 0.2500000
-## 67         dodge    ram 1500 pickup 4wd   4.7 2008  17  13    4 0.2352941
-## 68         dodge    ram 1500 pickup 4wd   4.7 2008  17  13    4 0.2352941
-## 69         dodge    ram 1500 pickup 4wd   4.7 2008  16  12    4 0.2500000
-## 70         dodge    ram 1500 pickup 4wd   4.7 2008  12   9    3 0.2500000
-## 71         dodge    ram 1500 pickup 4wd   5.2 1999  15  11    4 0.2666667
-## 72         dodge    ram 1500 pickup 4wd   5.2 1999  16  11    5 0.3125000
-## 73         dodge    ram 1500 pickup 4wd   5.7 2008  17  13    4 0.2352941
-## 74         dodge    ram 1500 pickup 4wd   5.9 1999  15  11    4 0.2666667
-## 75          ford         expedition 2wd   4.6 1999  17  11    6 0.3529412
-## 76          ford         expedition 2wd   5.4 1999  17  11    6 0.3529412
-## 77          ford         expedition 2wd   5.4 2008  18  12    6 0.3333333
-## 78          ford           explorer 4wd   4.0 1999  17  14    3 0.1764706
-## 79          ford           explorer 4wd   4.0 1999  19  15    4 0.2105263
-## 80          ford           explorer 4wd   4.0 1999  17  14    3 0.1764706
-## 81          ford           explorer 4wd   4.0 2008  19  13    6 0.3157895
-## 82          ford           explorer 4wd   4.6 2008  19  13    6 0.3157895
-## 83          ford           explorer 4wd   5.0 1999  17  13    4 0.2352941
-## 84          ford        f150 pickup 4wd   4.2 1999  17  14    3 0.1764706
-## 85          ford        f150 pickup 4wd   4.2 1999  17  14    3 0.1764706
-## 86          ford        f150 pickup 4wd   4.6 1999  16  13    3 0.1875000
-## 87          ford        f150 pickup 4wd   4.6 1999  16  13    3 0.1875000
-## 88          ford        f150 pickup 4wd   4.6 2008  17  13    4 0.2352941
-## 89          ford        f150 pickup 4wd   5.4 1999  15  11    4 0.2666667
-## 90          ford        f150 pickup 4wd   5.4 2008  17  13    4 0.2352941
-## 91          ford                mustang   3.8 1999  26  18    8 0.3076923
-## 92          ford                mustang   3.8 1999  25  18    7 0.2800000
-## 93          ford                mustang   4.0 2008  26  17    9 0.3461538
-## 94          ford                mustang   4.0 2008  24  16    8 0.3333333
-## 95          ford                mustang   4.6 1999  21  15    6 0.2857143
-## 96          ford                mustang   4.6 1999  22  15    7 0.3181818
-## 97          ford                mustang   4.6 2008  23  15    8 0.3478261
-## 98          ford                mustang   4.6 2008  22  15    7 0.3181818
-## 99          ford                mustang   5.4 2008  20  14    6 0.3000000
-## 100        honda                  civic   1.6 1999  33  28    5 0.1515152
-## 101        honda                  civic   1.6 1999  32  24    8 0.2500000
-## 102        honda                  civic   1.6 1999  32  25    7 0.2187500
-## 103        honda                  civic   1.6 1999  29  23    6 0.2068966
-## 104        honda                  civic   1.6 1999  32  24    8 0.2500000
-## 105        honda                  civic   1.8 2008  34  26    8 0.2352941
-## 106        honda                  civic   1.8 2008  36  25   11 0.3055556
-## 107        honda                  civic   1.8 2008  36  24   12 0.3333333
-## 108        honda                  civic   2.0 2008  29  21    8 0.2758621
-## 109      hyundai                 sonata   2.4 1999  26  18    8 0.3076923
-## 110      hyundai                 sonata   2.4 1999  27  18    9 0.3333333
-## 111      hyundai                 sonata   2.4 2008  30  21    9 0.3000000
-## 112      hyundai                 sonata   2.4 2008  31  21   10 0.3225806
-## 113      hyundai                 sonata   2.5 1999  26  18    8 0.3076923
-## 114      hyundai                 sonata   2.5 1999  26  18    8 0.3076923
-## 115      hyundai                 sonata   3.3 2008  28  19    9 0.3214286
-## 116      hyundai                tiburon   2.0 1999  26  19    7 0.2692308
-## 117      hyundai                tiburon   2.0 1999  29  19   10 0.3448276
-## 118      hyundai                tiburon   2.0 2008  28  20    8 0.2857143
-## 119      hyundai                tiburon   2.0 2008  27  20    7 0.2592593
-## 120      hyundai                tiburon   2.7 2008  24  17    7 0.2916667
-## 121      hyundai                tiburon   2.7 2008  24  16    8 0.3333333
-## 122      hyundai                tiburon   2.7 2008  24  17    7 0.2916667
-## 123         jeep     grand cherokee 4wd   3.0 2008  22  17    5 0.2272727
-## 124         jeep     grand cherokee 4wd   3.7 2008  19  15    4 0.2105263
-## 125         jeep     grand cherokee 4wd   4.0 1999  20  15    5 0.2500000
-## 126         jeep     grand cherokee 4wd   4.7 1999  17  14    3 0.1764706
-## 127         jeep     grand cherokee 4wd   4.7 2008  12   9    3 0.2500000
-## 128         jeep     grand cherokee 4wd   4.7 2008  19  14    5 0.2631579
-## 129         jeep     grand cherokee 4wd   5.7 2008  18  13    5 0.2777778
-## 130         jeep     grand cherokee 4wd   6.1 2008  14  11    3 0.2142857
-## 131   land rover            range rover   4.0 1999  15  11    4 0.2666667
-## 132   land rover            range rover   4.2 2008  18  12    6 0.3333333
-## 133   land rover            range rover   4.4 2008  18  12    6 0.3333333
-## 134   land rover            range rover   4.6 1999  15  11    4 0.2666667
-## 135      lincoln          navigator 2wd   5.4 1999  17  11    6 0.3529412
-## 136      lincoln          navigator 2wd   5.4 1999  16  11    5 0.3125000
-## 137      lincoln          navigator 2wd   5.4 2008  18  12    6 0.3333333
-## 138      mercury        mountaineer 4wd   4.0 1999  17  14    3 0.1764706
-## 139      mercury        mountaineer 4wd   4.0 2008  19  13    6 0.3157895
-## 140      mercury        mountaineer 4wd   4.6 2008  19  13    6 0.3157895
-## 141      mercury        mountaineer 4wd   5.0 1999  17  13    4 0.2352941
-## 142       nissan                 altima   2.4 1999  29  21    8 0.2758621
-## 143       nissan                 altima   2.4 1999  27  19    8 0.2962963
-## 144       nissan                 altima   2.5 2008  31  23    8 0.2580645
-## 145       nissan                 altima   2.5 2008  32  23    9 0.2812500
-## 146       nissan                 altima   3.5 2008  27  19    8 0.2962963
-## 147       nissan                 altima   3.5 2008  26  19    7 0.2692308
-## 148       nissan                 maxima   3.0 1999  26  18    8 0.3076923
-## 149       nissan                 maxima   3.0 1999  25  19    6 0.2400000
-## 150       nissan                 maxima   3.5 2008  25  19    6 0.2400000
-## 151       nissan         pathfinder 4wd   3.3 1999  17  14    3 0.1764706
-## 152       nissan         pathfinder 4wd   3.3 1999  17  15    2 0.1176471
-## 153       nissan         pathfinder 4wd   4.0 2008  20  14    6 0.3000000
-## 154       nissan         pathfinder 4wd   5.6 2008  18  12    6 0.3333333
-## 155      pontiac             grand prix   3.1 1999  26  18    8 0.3076923
-## 156      pontiac             grand prix   3.8 1999  26  16   10 0.3846154
-## 157      pontiac             grand prix   3.8 1999  27  17   10 0.3703704
-## 158      pontiac             grand prix   3.8 2008  28  18   10 0.3571429
-## 159      pontiac             grand prix   5.3 2008  25  16    9 0.3600000
-## 160       subaru           forester awd   2.5 1999  25  18    7 0.2800000
-## 161       subaru           forester awd   2.5 1999  24  18    6 0.2500000
-## 162       subaru           forester awd   2.5 2008  27  20    7 0.2592593
-## 163       subaru           forester awd   2.5 2008  25  19    6 0.2400000
-## 164       subaru           forester awd   2.5 2008  26  20    6 0.2307692
-## 165       subaru           forester awd   2.5 2008  23  18    5 0.2173913
-## 166       subaru            impreza awd   2.2 1999  26  21    5 0.1923077
-## 167       subaru            impreza awd   2.2 1999  26  19    7 0.2692308
-## 168       subaru            impreza awd   2.5 1999  26  19    7 0.2692308
-## 169       subaru            impreza awd   2.5 1999  26  19    7 0.2692308
-## 170       subaru            impreza awd   2.5 2008  25  20    5 0.2000000
-## 171       subaru            impreza awd   2.5 2008  27  20    7 0.2592593
-## 172       subaru            impreza awd   2.5 2008  25  19    6 0.2400000
-## 173       subaru            impreza awd   2.5 2008  27  20    7 0.2592593
-## 174       toyota            4runner 4wd   2.7 1999  20  15    5 0.2500000
-## 175       toyota            4runner 4wd   2.7 1999  20  16    4 0.2000000
-## 176       toyota            4runner 4wd   3.4 1999  19  15    4 0.2105263
-## 177       toyota            4runner 4wd   3.4 1999  17  15    2 0.1176471
-## 178       toyota            4runner 4wd   4.0 2008  20  16    4 0.2000000
-## 179       toyota            4runner 4wd   4.7 2008  17  14    3 0.1764706
-## 180       toyota                  camry   2.2 1999  29  21    8 0.2758621
-## 181       toyota                  camry   2.2 1999  27  21    6 0.2222222
-## 182       toyota                  camry   2.4 2008  31  21   10 0.3225806
-## 183       toyota                  camry   2.4 2008  31  21   10 0.3225806
-## 184       toyota                  camry   3.0 1999  26  18    8 0.3076923
-## 185       toyota                  camry   3.0 1999  26  18    8 0.3076923
-## 186       toyota                  camry   3.5 2008  28  19    9 0.3214286
-## 187       toyota           camry solara   2.2 1999  27  21    6 0.2222222
-## 188       toyota           camry solara   2.2 1999  29  21    8 0.2758621
-## 189       toyota           camry solara   2.4 2008  31  21   10 0.3225806
-## 190       toyota           camry solara   2.4 2008  31  22    9 0.2903226
-## 191       toyota           camry solara   3.0 1999  26  18    8 0.3076923
-## 192       toyota           camry solara   3.0 1999  26  18    8 0.3076923
-## 193       toyota           camry solara   3.3 2008  27  18    9 0.3333333
-## 194       toyota                corolla   1.8 1999  30  24    6 0.2000000
-## 195       toyota                corolla   1.8 1999  33  24    9 0.2727273
-## 196       toyota                corolla   1.8 1999  35  26    9 0.2571429
-## 197       toyota                corolla   1.8 2008  37  28    9 0.2432432
-## 198       toyota                corolla   1.8 2008  35  26    9 0.2571429
-## 199       toyota land cruiser wagon 4wd   4.7 1999  15  11    4 0.2666667
-## 200       toyota land cruiser wagon 4wd   5.7 2008  18  13    5 0.2777778
-## 201       toyota      toyota tacoma 4wd   2.7 1999  20  15    5 0.2500000
-## 202       toyota      toyota tacoma 4wd   2.7 1999  20  16    4 0.2000000
-## 203       toyota      toyota tacoma 4wd   2.7 2008  22  17    5 0.2272727
-## 204       toyota      toyota tacoma 4wd   3.4 1999  17  15    2 0.1176471
-## 205       toyota      toyota tacoma 4wd   3.4 1999  19  15    4 0.2105263
-## 206       toyota      toyota tacoma 4wd   4.0 2008  18  15    3 0.1666667
-## 207       toyota      toyota tacoma 4wd   4.0 2008  20  16    4 0.2000000
-## 208   volkswagen                    gti   2.0 1999  29  21    8 0.2758621
-## 209   volkswagen                    gti   2.0 1999  26  19    7 0.2692308
-## 210   volkswagen                    gti   2.0 2008  29  21    8 0.2758621
-## 211   volkswagen                    gti   2.0 2008  29  22    7 0.2413793
-## 212   volkswagen                    gti   2.8 1999  24  17    7 0.2916667
-## 213   volkswagen                  jetta   1.9 1999  44  33   11 0.2500000
-## 214   volkswagen                  jetta   2.0 1999  29  21    8 0.2758621
-## 215   volkswagen                  jetta   2.0 1999  26  19    7 0.2692308
-## 216   volkswagen                  jetta   2.0 2008  29  22    7 0.2413793
-## 217   volkswagen                  jetta   2.0 2008  29  21    8 0.2758621
-## 218   volkswagen                  jetta   2.5 2008  29  21    8 0.2758621
-## 219   volkswagen                  jetta   2.5 2008  29  21    8 0.2758621
-## 220   volkswagen                  jetta   2.8 1999  23  16    7 0.3043478
-## 221   volkswagen                  jetta   2.8 1999  24  17    7 0.2916667
-## 222   volkswagen             new beetle   1.9 1999  44  35    9 0.2045455
-## 223   volkswagen             new beetle   1.9 1999  41  29   12 0.2926829
-## 224   volkswagen             new beetle   2.0 1999  29  21    8 0.2758621
-## 225   volkswagen             new beetle   2.0 1999  26  19    7 0.2692308
-## 226   volkswagen             new beetle   2.5 2008  28  20    8 0.2857143
-## 227   volkswagen             new beetle   2.5 2008  29  20    9 0.3103448
-## 228   volkswagen                 passat   1.8 1999  29  21    8 0.2758621
-## 229   volkswagen                 passat   1.8 1999  29  18   11 0.3793103
-## 230   volkswagen                 passat   2.0 2008  28  19    9 0.3214286
-## 231   volkswagen                 passat   2.0 2008  29  21    8 0.2758621
-## 232   volkswagen                 passat   2.8 1999  26  16   10 0.3846154
-## 233   volkswagen                 passat   2.8 1999  26  18    8 0.3076923
-## 234   volkswagen                 passat   3.6 2008  26  17    9 0.3461538
+##                      model hwy cty diff      perc
+## 1                       a4  29  18   11 0.3793103
+## 2                       a4  29  21    8 0.2758621
+## 3                       a4  31  20   11 0.3548387
+## 4                       a4  30  21    9 0.3000000
+## 5                       a4  26  16   10 0.3846154
+## 6                       a4  26  18    8 0.3076923
+## 7                       a4  27  18    9 0.3333333
+## 8               a4 quattro  26  18    8 0.3076923
+## 9               a4 quattro  25  16    9 0.3600000
+## 10              a4 quattro  28  20    8 0.2857143
+## 11              a4 quattro  27  19    8 0.2962963
+## 12              a4 quattro  25  15   10 0.4000000
+## 13              a4 quattro  25  17    8 0.3200000
+## 14              a4 quattro  25  17    8 0.3200000
+## 15              a4 quattro  25  15   10 0.4000000
+## 16              a6 quattro  24  15    9 0.3750000
+## 17              a6 quattro  25  17    8 0.3200000
+## 18              a6 quattro  23  16    7 0.3043478
+## 19      c1500 suburban 2wd  20  14    6 0.3000000
+## 20      c1500 suburban 2wd  15  11    4 0.2666667
+## 21      c1500 suburban 2wd  20  14    6 0.3000000
+## 22      c1500 suburban 2wd  17  13    4 0.2352941
+## 23      c1500 suburban 2wd  17  12    5 0.2941176
+## 24                corvette  26  16   10 0.3846154
+## 25                corvette  23  15    8 0.3478261
+## 26                corvette  26  16   10 0.3846154
+## 27                corvette  25  15   10 0.4000000
+## 28                corvette  24  15    9 0.3750000
+## 29         k1500 tahoe 4wd  19  14    5 0.2631579
+## 30         k1500 tahoe 4wd  14  11    3 0.2142857
+## 31         k1500 tahoe 4wd  15  11    4 0.2666667
+## 32         k1500 tahoe 4wd  17  14    3 0.1764706
+## 33                  malibu  27  19    8 0.2962963
+## 34                  malibu  30  22    8 0.2666667
+## 35                  malibu  26  18    8 0.3076923
+## 36                  malibu  29  18   11 0.3793103
+## 37                  malibu  26  17    9 0.3461538
+## 38             caravan 2wd  24  18    6 0.2500000
+## 39             caravan 2wd  24  17    7 0.2916667
+## 40             caravan 2wd  22  16    6 0.2727273
+## 41             caravan 2wd  22  16    6 0.2727273
+## 42             caravan 2wd  24  17    7 0.2916667
+## 43             caravan 2wd  24  17    7 0.2916667
+## 44             caravan 2wd  17  11    6 0.3529412
+## 45             caravan 2wd  22  15    7 0.3181818
+## 46             caravan 2wd  21  15    6 0.2857143
+## 47             caravan 2wd  23  16    7 0.3043478
+## 48             caravan 2wd  23  16    7 0.3043478
+## 49       dakota pickup 4wd  19  15    4 0.2105263
+## 50       dakota pickup 4wd  18  14    4 0.2222222
+## 51       dakota pickup 4wd  17  13    4 0.2352941
+## 52       dakota pickup 4wd  17  14    3 0.1764706
+## 53       dakota pickup 4wd  19  14    5 0.2631579
+## 54       dakota pickup 4wd  19  14    5 0.2631579
+## 55       dakota pickup 4wd  12   9    3 0.2500000
+## 56       dakota pickup 4wd  17  11    6 0.3529412
+## 57       dakota pickup 4wd  15  11    4 0.2666667
+## 58             durango 4wd  17  13    4 0.2352941
+## 59             durango 4wd  17  13    4 0.2352941
+## 60             durango 4wd  12   9    3 0.2500000
+## 61             durango 4wd  17  13    4 0.2352941
+## 62             durango 4wd  16  11    5 0.3125000
+## 63             durango 4wd  18  13    5 0.2777778
+## 64             durango 4wd  15  11    4 0.2666667
+## 65     ram 1500 pickup 4wd  16  12    4 0.2500000
+## 66     ram 1500 pickup 4wd  12   9    3 0.2500000
+## 67     ram 1500 pickup 4wd  17  13    4 0.2352941
+## 68     ram 1500 pickup 4wd  17  13    4 0.2352941
+## 69     ram 1500 pickup 4wd  16  12    4 0.2500000
+## 70     ram 1500 pickup 4wd  12   9    3 0.2500000
+## 71     ram 1500 pickup 4wd  15  11    4 0.2666667
+## 72     ram 1500 pickup 4wd  16  11    5 0.3125000
+## 73     ram 1500 pickup 4wd  17  13    4 0.2352941
+## 74     ram 1500 pickup 4wd  15  11    4 0.2666667
+## 75          expedition 2wd  17  11    6 0.3529412
+## 76          expedition 2wd  17  11    6 0.3529412
+## 77          expedition 2wd  18  12    6 0.3333333
+## 78            explorer 4wd  17  14    3 0.1764706
+## 79            explorer 4wd  19  15    4 0.2105263
+## 80            explorer 4wd  17  14    3 0.1764706
+## 81            explorer 4wd  19  13    6 0.3157895
+## 82            explorer 4wd  19  13    6 0.3157895
+## 83            explorer 4wd  17  13    4 0.2352941
+## 84         f150 pickup 4wd  17  14    3 0.1764706
+## 85         f150 pickup 4wd  17  14    3 0.1764706
+## 86         f150 pickup 4wd  16  13    3 0.1875000
+## 87         f150 pickup 4wd  16  13    3 0.1875000
+## 88         f150 pickup 4wd  17  13    4 0.2352941
+## 89         f150 pickup 4wd  15  11    4 0.2666667
+## 90         f150 pickup 4wd  17  13    4 0.2352941
+## 91                 mustang  26  18    8 0.3076923
+## 92                 mustang  25  18    7 0.2800000
+## 93                 mustang  26  17    9 0.3461538
+## 94                 mustang  24  16    8 0.3333333
+## 95                 mustang  21  15    6 0.2857143
+## 96                 mustang  22  15    7 0.3181818
+## 97                 mustang  23  15    8 0.3478261
+## 98                 mustang  22  15    7 0.3181818
+## 99                 mustang  20  14    6 0.3000000
+## 100                  civic  33  28    5 0.1515152
+## 101                  civic  32  24    8 0.2500000
+## 102                  civic  32  25    7 0.2187500
+## 103                  civic  29  23    6 0.2068966
+## 104                  civic  32  24    8 0.2500000
+## 105                  civic  34  26    8 0.2352941
+## 106                  civic  36  25   11 0.3055556
+## 107                  civic  36  24   12 0.3333333
+## 108                  civic  29  21    8 0.2758621
+## 109                 sonata  26  18    8 0.3076923
+## 110                 sonata  27  18    9 0.3333333
+## 111                 sonata  30  21    9 0.3000000
+## 112                 sonata  31  21   10 0.3225806
+## 113                 sonata  26  18    8 0.3076923
+## 114                 sonata  26  18    8 0.3076923
+## 115                 sonata  28  19    9 0.3214286
+## 116                tiburon  26  19    7 0.2692308
+## 117                tiburon  29  19   10 0.3448276
+## 118                tiburon  28  20    8 0.2857143
+## 119                tiburon  27  20    7 0.2592593
+## 120                tiburon  24  17    7 0.2916667
+## 121                tiburon  24  16    8 0.3333333
+## 122                tiburon  24  17    7 0.2916667
+## 123     grand cherokee 4wd  22  17    5 0.2272727
+## 124     grand cherokee 4wd  19  15    4 0.2105263
+## 125     grand cherokee 4wd  20  15    5 0.2500000
+## 126     grand cherokee 4wd  17  14    3 0.1764706
+## 127     grand cherokee 4wd  12   9    3 0.2500000
+## 128     grand cherokee 4wd  19  14    5 0.2631579
+## 129     grand cherokee 4wd  18  13    5 0.2777778
+## 130     grand cherokee 4wd  14  11    3 0.2142857
+## 131            range rover  15  11    4 0.2666667
+## 132            range rover  18  12    6 0.3333333
+## 133            range rover  18  12    6 0.3333333
+## 134            range rover  15  11    4 0.2666667
+## 135          navigator 2wd  17  11    6 0.3529412
+## 136          navigator 2wd  16  11    5 0.3125000
+## 137          navigator 2wd  18  12    6 0.3333333
+## 138        mountaineer 4wd  17  14    3 0.1764706
+## 139        mountaineer 4wd  19  13    6 0.3157895
+## 140        mountaineer 4wd  19  13    6 0.3157895
+## 141        mountaineer 4wd  17  13    4 0.2352941
+## 142                 altima  29  21    8 0.2758621
+## 143                 altima  27  19    8 0.2962963
+## 144                 altima  31  23    8 0.2580645
+## 145                 altima  32  23    9 0.2812500
+## 146                 altima  27  19    8 0.2962963
+## 147                 altima  26  19    7 0.2692308
+## 148                 maxima  26  18    8 0.3076923
+## 149                 maxima  25  19    6 0.2400000
+## 150                 maxima  25  19    6 0.2400000
+## 151         pathfinder 4wd  17  14    3 0.1764706
+## 152         pathfinder 4wd  17  15    2 0.1176471
+## 153         pathfinder 4wd  20  14    6 0.3000000
+## 154         pathfinder 4wd  18  12    6 0.3333333
+## 155             grand prix  26  18    8 0.3076923
+## 156             grand prix  26  16   10 0.3846154
+## 157             grand prix  27  17   10 0.3703704
+## 158             grand prix  28  18   10 0.3571429
+## 159             grand prix  25  16    9 0.3600000
+## 160           forester awd  25  18    7 0.2800000
+## 161           forester awd  24  18    6 0.2500000
+## 162           forester awd  27  20    7 0.2592593
+## 163           forester awd  25  19    6 0.2400000
+## 164           forester awd  26  20    6 0.2307692
+## 165           forester awd  23  18    5 0.2173913
+## 166            impreza awd  26  21    5 0.1923077
+## 167            impreza awd  26  19    7 0.2692308
+## 168            impreza awd  26  19    7 0.2692308
+## 169            impreza awd  26  19    7 0.2692308
+## 170            impreza awd  25  20    5 0.2000000
+## 171            impreza awd  27  20    7 0.2592593
+## 172            impreza awd  25  19    6 0.2400000
+## 173            impreza awd  27  20    7 0.2592593
+## 174            4runner 4wd  20  15    5 0.2500000
+## 175            4runner 4wd  20  16    4 0.2000000
+## 176            4runner 4wd  19  15    4 0.2105263
+## 177            4runner 4wd  17  15    2 0.1176471
+## 178            4runner 4wd  20  16    4 0.2000000
+## 179            4runner 4wd  17  14    3 0.1764706
+## 180                  camry  29  21    8 0.2758621
+## 181                  camry  27  21    6 0.2222222
+## 182                  camry  31  21   10 0.3225806
+## 183                  camry  31  21   10 0.3225806
+## 184                  camry  26  18    8 0.3076923
+## 185                  camry  26  18    8 0.3076923
+## 186                  camry  28  19    9 0.3214286
+## 187           camry solara  27  21    6 0.2222222
+## 188           camry solara  29  21    8 0.2758621
+## 189           camry solara  31  21   10 0.3225806
+## 190           camry solara  31  22    9 0.2903226
+## 191           camry solara  26  18    8 0.3076923
+## 192           camry solara  26  18    8 0.3076923
+## 193           camry solara  27  18    9 0.3333333
+## 194                corolla  30  24    6 0.2000000
+## 195                corolla  33  24    9 0.2727273
+## 196                corolla  35  26    9 0.2571429
+## 197                corolla  37  28    9 0.2432432
+## 198                corolla  35  26    9 0.2571429
+## 199 land cruiser wagon 4wd  15  11    4 0.2666667
+## 200 land cruiser wagon 4wd  18  13    5 0.2777778
+## 201      toyota tacoma 4wd  20  15    5 0.2500000
+## 202      toyota tacoma 4wd  20  16    4 0.2000000
+## 203      toyota tacoma 4wd  22  17    5 0.2272727
+## 204      toyota tacoma 4wd  17  15    2 0.1176471
+## 205      toyota tacoma 4wd  19  15    4 0.2105263
+## 206      toyota tacoma 4wd  18  15    3 0.1666667
+## 207      toyota tacoma 4wd  20  16    4 0.2000000
+## 208                    gti  29  21    8 0.2758621
+## 209                    gti  26  19    7 0.2692308
+## 210                    gti  29  21    8 0.2758621
+## 211                    gti  29  22    7 0.2413793
+## 212                    gti  24  17    7 0.2916667
+## 213                  jetta  44  33   11 0.2500000
+## 214                  jetta  29  21    8 0.2758621
+## 215                  jetta  26  19    7 0.2692308
+## 216                  jetta  29  22    7 0.2413793
+## 217                  jetta  29  21    8 0.2758621
+## 218                  jetta  29  21    8 0.2758621
+## 219                  jetta  29  21    8 0.2758621
+## 220                  jetta  23  16    7 0.3043478
+## 221                  jetta  24  17    7 0.2916667
+## 222             new beetle  44  35    9 0.2045455
+## 223             new beetle  41  29   12 0.2926829
+## 224             new beetle  29  21    8 0.2758621
+## 225             new beetle  26  19    7 0.2692308
+## 226             new beetle  28  20    8 0.2857143
+## 227             new beetle  29  20    9 0.3103448
+## 228                 passat  29  21    8 0.2758621
+## 229                 passat  29  18   11 0.3793103
+## 230                 passat  28  19    9 0.3214286
+## 231                 passat  29  21    8 0.2758621
+## 232                 passat  26  16   10 0.3846154
+## 233                 passat  26  18    8 0.3076923
+## 234                 passat  26  17    9 0.3461538
+```
+
+---
+
+## Create New Variables
+
+`mutate_if(data, condition)` allows you to conditionally create several new columns in one step:
+
+
+```r
+mutate_if(mpg2, is.numeric, as.character)
+## # A tibble: 234 x 3
+##    model      hwy   cty  
+##    &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;
+##  1 a4         29    18   
+##  2 a4         29    21   
+##  3 a4         31    20   
+##  4 a4         30    21   
+##  5 a4         26    16   
+##  6 a4         26    18   
+##  7 a4         27    18   
+##  8 a4 quattro 26    18   
+##  9 a4 quattro 25    16   
+## 10 a4 quattro 28    20   
+## # ... with 224 more rows
+```
+
+---
+
+## Create New Variables
+
+`mutate_if(data, condition)` allows you to conditionally create several new columns in one step:
+
+
+```r
+mutate_if(mpg2, is.numeric, list(avg = mean, log_2 = log2))
+## # A tibble: 234 x 7
+##    model        hwy   cty hwy_avg cty_avg hwy_log_2 cty_log_2
+##    &lt;chr&gt;      &lt;int&gt; &lt;int&gt;   &lt;dbl&gt;   &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+##  1 a4            29    18    23.4    16.9      4.86      4.17
+##  2 a4            29    21    23.4    16.9      4.86      4.39
+##  3 a4            31    20    23.4    16.9      4.95      4.32
+##  4 a4            30    21    23.4    16.9      4.91      4.39
+##  5 a4            26    16    23.4    16.9      4.70      4   
+##  6 a4            26    18    23.4    16.9      4.70      4.17
+##  7 a4            27    18    23.4    16.9      4.75      4.17
+##  8 a4 quattro    26    18    23.4    16.9      4.70      4.17
+##  9 a4 quattro    25    16    23.4    16.9      4.64      4   
+## 10 a4 quattro    28    20    23.4    16.9      4.81      4.32
+## # ... with 224 more rows
+```
+
+---
+
+## Create New Variables
+
+`mutate_if(data, condition)` allows you to conditionally create several new columns in one step:
+
+
+```r
+mutate_if(mpg2, is.numeric, list(~mean(., na.rm = T), ~log2(.)))
+## # A tibble: 234 x 7
+##    model        hwy   cty hwy_mean cty_mean hwy_log2 cty_log2
+##    &lt;chr&gt;      &lt;int&gt; &lt;int&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+##  1 a4            29    18     23.4     16.9     4.86     4.17
+##  2 a4            29    21     23.4     16.9     4.86     4.39
+##  3 a4            31    20     23.4     16.9     4.95     4.32
+##  4 a4            30    21     23.4     16.9     4.91     4.39
+##  5 a4            26    16     23.4     16.9     4.70     4   
+##  6 a4            26    18     23.4     16.9     4.70     4.17
+##  7 a4            27    18     23.4     16.9     4.75     4.17
+##  8 a4 quattro    26    18     23.4     16.9     4.70     4.17
+##  9 a4 quattro    25    16     23.4     16.9     4.64     4   
+## 10 a4 quattro    28    20     23.4     16.9     4.81     4.32
+## # ... with 224 more rows
+```
+
+---
+
+## Create New Variables
+
+`mutate_at(data, condition)` allows you to conditionally transform several columns in one step:
+
+
+```r
+mutate_at(mpg2, c("hwy", "cty"), mean, na.rm = TRUE)
+## # A tibble: 234 x 3
+##    model        hwy   cty
+##    &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
+##  1 a4          23.4  16.9
+##  2 a4          23.4  16.9
+##  3 a4          23.4  16.9
+##  4 a4          23.4  16.9
+##  5 a4          23.4  16.9
+##  6 a4          23.4  16.9
+##  7 a4          23.4  16.9
+##  8 a4 quattro  23.4  16.9
+##  9 a4 quattro  23.4  16.9
+## 10 a4 quattro  23.4  16.9
+## # ... with 224 more rows
+```
+
+---
+
+## Create New Variables
+
+`mutate_all(data, condition)` allows you to transform all columns in one step:
+
+
+```r
+mutate_all(mpg2, mean, na.rm = TRUE)
+## # A tibble: 234 x 3
+##    model   hwy   cty
+##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1    NA  23.4  16.9
+##  2    NA  23.4  16.9
+##  3    NA  23.4  16.9
+##  4    NA  23.4  16.9
+##  5    NA  23.4  16.9
+##  6    NA  23.4  16.9
+##  7    NA  23.4  16.9
+##  8    NA  23.4  16.9
+##  9    NA  23.4  16.9
+## 10    NA  23.4  16.9
+## # ... with 224 more rows
+```
+
+---
+
+## Create New Variables
+
+`mutate_all(data, condition)` allows you to transform all columns in one step:
+
+
+```r
+mutate_all(mpg2, list(~mean(., na.rm = T), ~nchar(.)))
+## # A tibble: 234 x 9
+##    model   hwy   cty model_mean hwy_mean cty_mean model_nchar hwy_nchar
+##    &lt;chr&gt; &lt;int&gt; &lt;int&gt;      &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;       &lt;int&gt;     &lt;int&gt;
+##  1 a4       29    18         NA     23.4     16.9           2         2
+##  2 a4       29    21         NA     23.4     16.9           2         2
+##  3 a4       31    20         NA     23.4     16.9           2         2
+##  4 a4       30    21         NA     23.4     16.9           2         2
+##  5 a4       26    16         NA     23.4     16.9           2         2
+##  6 a4       26    18         NA     23.4     16.9           2         2
+##  7 a4       27    18         NA     23.4     16.9           2         2
+##  8 a4 q~    26    18         NA     23.4     16.9          10         2
+##  9 a4 q~    25    16         NA     23.4     16.9          10         2
+## 10 a4 q~    28    20         NA     23.4     16.9          10         2
+## # ... with 224 more rows, and 1 more variable: cty_nchar &lt;int&gt;
 ```
 
 ---
@@ -17869,7 +18019,7 @@ summarize(babynames, unique_children = sum(n, na.rm = TRUE))
 
 ---
 
-## Create New Variables
+## Sum Up Variables
 
 `summarize(data, condition)` allows you to create new variables (columns) based or not based on other variables:
 
@@ -17888,6 +18038,15 @@ Equivalent code in base `R`:
 sum(babynames$n, na.rm = TRUE)
 ## [1] 348120517
 ```
+
+---
+class: inverse, center, middle
+
+# &lt;code style='font-size:70pt;color:#ebc500'&gt;group_by()&lt;/code&gt;&lt;br&gt;
+# &lt;b style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;Create Subsets&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;img src="img/dplyr.png" style='width: 18%;'&gt;&lt;br&gt;
+
 
 ---
 
@@ -17942,12 +18101,38 @@ group_by(babynames, sex, year)
 ```
 
 ---
+
+## Remove Subsets
+
+... and `ungroup()` lets you remove any subsets:
+
+
+```r
+grouped &lt;- group_by(babynames, sex, year)
+ungroup(grouped)
+## # A tibble: 1,924,665 x 5
+##     year sex   name          n   prop
+##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt;
+##  1  1880 F     Mary       7065 0.0724
+##  2  1880 F     Anna       2604 0.0267
+##  3  1880 F     Emma       2003 0.0205
+##  4  1880 F     Elizabeth  1939 0.0199
+##  5  1880 F     Minnie     1746 0.0179
+##  6  1880 F     Margaret   1578 0.0162
+##  7  1880 F     Ida        1472 0.0151
+##  8  1880 F     Alice      1414 0.0145
+##  9  1880 F     Bertha     1320 0.0135
+## 10  1880 F     Sarah      1288 0.0132
+## # ... with 1,924,655 more rows
+```
+
+---
 class: center, bottom, inverse
 background-image: url("img/superpower_mod.png")
 background-size: cover
 
-# &lt;b style='font-size:55pt;'&gt;THE SUPERPOWER OF &lt;/b&gt;&lt;code style='font-size:60pt;color:#ebc500;line-height:0.2;'&gt;group_by()&lt;br&gt;&lt;br&gt;&lt;/code&gt;
-# &lt;b style='font-size:32pt;color:lightgrey;line-height:0.5;'&gt;Verbs will be automatically applied "by group"!&lt;/b&gt;
+# &lt;b style='font-size:55pt;'&gt;THE SUPERPOWER OF &lt;/b&gt;&lt;code style='font-size:60pt;color:#ebc500;line-height:0.5;'&gt;group_by()&lt;br&gt;&lt;br&gt;&lt;/code&gt;
+# &lt;b style='font-size:28pt;color:lightgrey;line-height:0.5;'&gt;Verbs will be automatically applied "by group"!&lt;/b&gt;
 
 ---
 
@@ -18085,42 +18270,8 @@ arrange(names_1900_sum, desc(sex), -prop_check)
 ---
 class: inverse, center, middle
 
-# &lt;code style='font-size:70pt;color:#ebc500'&gt;group_by()&lt;/code&gt;&lt;br&gt;
-# &lt;b style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;Create Subsets&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-
-&lt;img src="img/dplyr.png" style='width: 18%;'&gt;&lt;br&gt;
-
----
-
-## Ungroup Data Afterwards
-
-... and `ungroup()` lets you ungroup your data:
-
-
-```r
-names_1990_sum &lt;- ungroup(names_1900_sum)
-arrange(names_1990_sum, desc(sex), -prop_check)
-## # A tibble: 3,730 x 5
-##    sex    year name      prop prop_check
-##    &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;      &lt;dbl&gt;
-##  1 M      1900 John    0.0606     0.0653
-##  2 M      1900 William 0.0529     0.0570
-##  3 M      1900 James   0.0447     0.0481
-##  4 M      1900 George  0.0333     0.0359
-##  5 M      1900 Charles 0.0253     0.0272
-##  6 M      1900 Robert  0.0236     0.0254
-##  7 M      1900 Joseph  0.0229     0.0247
-##  8 M      1900 Frank   0.0214     0.0231
-##  9 M      1900 Edward  0.0168     0.0181
-## 10 M      1900 Henry   0.0161     0.0173
-## # ... with 3,720 more rows
-```
-
----
-class: inverse, center, middle
-
 &lt;img src="img/magrittr.png" style='width: 26%;'&gt;&lt;br&gt;&lt;br&gt;
-# &lt;b style='font-size:60pt'&gt; Excourse: The &lt;code style='color:#ebc500'&gt;magrittr&lt;/code&gt; Package&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:60pt'&gt; The &lt;code style='color:#ebc500'&gt;magrittr&lt;/code&gt; Package&lt;br&gt;&lt;br&gt;
 
 ---
 class: center
@@ -18204,7 +18355,16 @@ names_1900 &lt;-
     ),
     sex, year, name
   )
+```
 
+---
+
+## Readability of Code
+
+One could rewrite the code like this:
+
+
+```r
 names_1900_sum &lt;-
   ungroup(
     arrange(
@@ -18217,7 +18377,6 @@ names_1900_sum &lt;-
     )
   )
 ```
-
 ---
 class: middle
 
@@ -18787,30 +18946,516 @@ babynames %&gt;%
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;&lt;code style=font-weight:700&gt;slice()&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Filter rows by position&lt;/td&gt;
+    &lt;td&gt;Extract rows by ordinal position&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;&lt;code style=font-weight:700&gt;distinct()&lt;/code&gt; and &lt;code style=font-weight:700&gt;n_distinct()&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Find unique values&lt;/td&gt;
+    &lt;td&gt;Find and count unique values&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;&lt;code style=font-weight:700&gt;sample_n()&lt;/code&gt; and &lt;code style=font-weight:700&gt;sample_frac()&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Create samples of the data&lt;/td&gt;
+    &lt;td&gt;Select rows randomly&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;&lt;code style=font-weight:700&gt;top_n()&lt;/code&gt; and &lt;code style=font-weight:700&gt;top_frac()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Pick top or bottom values by variable&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;count()&lt;/code&gt; and &lt;code style=font-weight:700&gt;top_frac()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Count number of observations&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
     &lt;td&gt;&lt;code style=font-weight:700&gt;complete()&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;XCreate all possible combinations of two variables&lt;/td&gt;
+    &lt;td&gt;Create all possible combinations of two variables&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
 
 ---
+
+## Extract Rows by Ordinal Position
+
+`slice()` allows you to filter rows based on their row value:
+
+
+```r
+slice(mpg, 100:120)
+## # A tibble: 21 x 11
+##    manufacturer model  displ  year   cyl trans   drv     cty   hwy fl    class  
+##    &lt;chr&gt;        &lt;chr&gt;  &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  
+##  1 honda        civic    1.6  1999     4 manual~ f        28    33 r     subcom~
+##  2 honda        civic    1.6  1999     4 auto(l~ f        24    32 r     subcom~
+##  3 honda        civic    1.6  1999     4 manual~ f        25    32 r     subcom~
+##  4 honda        civic    1.6  1999     4 manual~ f        23    29 p     subcom~
+##  5 honda        civic    1.6  1999     4 auto(l~ f        24    32 r     subcom~
+##  6 honda        civic    1.8  2008     4 manual~ f        26    34 r     subcom~
+##  7 honda        civic    1.8  2008     4 auto(l~ f        25    36 r     subcom~
+##  8 honda        civic    1.8  2008     4 auto(l~ f        24    36 c     subcom~
+##  9 honda        civic    2    2008     4 manual~ f        21    29 p     subcom~
+## 10 hyundai      sonata   2.4  1999     4 auto(l~ f        18    26 r     midsize
+## # ... with 11 more rows
+```
+
+---
+
+## Extract Rows by Ordinal Position
+
+`slice()` allows you to filter rows based on their row value - works also per group:
+
+
+```r
+mpg %&gt;% group_by(manufacturer) %&gt;% slice(1)
+## # A tibble: 15 x 11
+## # Groups:   manufacturer [15]
+##    manufacturer model    displ  year   cyl trans  drv     cty   hwy fl    class 
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1 audi         a4         1.8  1999     4 auto(~ f        18    29 p     compa~
+##  2 chevrolet    c1500 s~   5.3  2008     8 auto(~ r        14    20 r     suv   
+##  3 dodge        caravan~   2.4  1999     4 auto(~ f        18    24 r     miniv~
+##  4 ford         expedit~   4.6  1999     8 auto(~ r        11    17 r     suv   
+##  5 honda        civic      1.6  1999     4 manua~ f        28    33 r     subco~
+##  6 hyundai      sonata     2.4  1999     4 auto(~ f        18    26 r     midsi~
+##  7 jeep         grand c~   3    2008     6 auto(~ 4        17    22 d     suv   
+##  8 land rover   range r~   4    1999     8 auto(~ 4        11    15 p     suv   
+##  9 lincoln      navigat~   5.4  1999     8 auto(~ r        11    17 r     suv   
+## 10 mercury      mountai~   4    1999     6 auto(~ 4        14    17 r     suv   
+## 11 nissan       altima     2.4  1999     4 manua~ f        21    29 r     compa~
+## 12 pontiac      grand p~   3.1  1999     6 auto(~ f        18    26 r     midsi~
+## 13 subaru       foreste~   2.5  1999     4 manua~ 4        18    25 r     suv   
+## 14 toyota       4runner~   2.7  1999     4 manua~ 4        15    20 r     suv   
+## 15 volkswagen   gti        2    1999     4 manua~ f        21    29 r     compa~
+```
+
+---
+
+## Find Unique Values
+
+`distinct()` allows you to retain only unique values (as `unique()` does):
+
+
+```r
+distinct(mpg, manufacturer)
+## # A tibble: 15 x 1
+##    manufacturer
+##    &lt;chr&gt;       
+##  1 audi        
+##  2 chevrolet   
+##  3 dodge       
+##  4 ford        
+##  5 honda       
+##  6 hyundai     
+##  7 jeep        
+##  8 land rover  
+##  9 lincoln     
+## 10 mercury     
+## 11 nissan      
+## 12 pontiac     
+## 13 subaru      
+## 14 toyota      
+## 15 volkswagen
+```
+
+---
+
+## Find Unique Values
+
+`distinct()` allows you to retain only unique values (as `unique()` does):
+
+
+```r
+distinct(mpg, hwy)
+## # A tibble: 27 x 1
+##      hwy
+##    &lt;int&gt;
+##  1    29
+##  2    31
+##  3    30
+##  4    26
+##  5    27
+##  6    25
+##  7    28
+##  8    24
+##  9    23
+## 10    20
+## # ... with 17 more rows
+```
+
+---
+
+## Count Unique Values
+
+`n_distinct()` allows you to calculate the number of unique values (as `length(unique())` does):
+
+
+```r
+n_distinct(mpg$model)
+## [1] 38
+```
+
+---
+
+## Select Rows Randomly
+
+`sample_n()` allows you to create random subsets based on a number of rows:
+
+
+```r
+sample_n(mpg, 5)
+## # A tibble: 5 x 11
+##   manufacturer model    displ  year   cyl trans   drv     cty   hwy fl    class 
+##   &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+## 1 land rover   range r~   4.4  2008     8 auto(s~ 4        12    18 r     suv   
+## 2 dodge        caravan~   3.3  1999     6 auto(l~ f        16    22 r     miniv~
+## 3 toyota       corolla    1.8  2008     4 auto(l~ f        26    35 r     compa~
+## 4 mercury      mountai~   4    1999     6 auto(l~ 4        14    17 r     suv   
+## 5 honda        civic      1.6  1999     4 manual~ f        25    32 r     subco~
+```
+
+---
+
+## Select Rows Randomly
+
+`sample_n()` allows you to create random subsets based on a number of rows - also works woith groups:
+
+
+```r
+mpg %&gt;% group_by(year, manufacturer) %&gt;% sample_n(1)
+## # A tibble: 30 x 11
+## # Groups:   year, manufacturer [30]
+##    manufacturer model    displ  year   cyl trans  drv     cty   hwy fl    class 
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1 audi         a4         1.8  1999     4 manua~ f        21    29 p     compa~
+##  2 chevrolet    corvette   5.7  1999     8 auto(~ r        15    23 p     2seat~
+##  3 dodge        dakota ~   5.2  1999     8 auto(~ 4        11    15 r     pickup
+##  4 ford         expedit~   5.4  1999     8 auto(~ r        11    17 r     suv   
+##  5 honda        civic      1.6  1999     4 manua~ f        23    29 p     subco~
+##  6 hyundai      sonata     2.4  1999     4 auto(~ f        18    26 r     midsi~
+##  7 jeep         grand c~   4.7  1999     8 auto(~ 4        14    17 r     suv   
+##  8 land rover   range r~   4    1999     8 auto(~ 4        11    15 p     suv   
+##  9 lincoln      navigat~   5.4  1999     8 auto(~ r        11    17 r     suv   
+## 10 mercury      mountai~   4    1999     6 auto(~ 4        14    17 r     suv   
+## # ... with 20 more rows
+```
+
+---
+
+## Select Rows Randomly
+
+`sample_frac()` allows you to create random subsets based on a fraction:
+
+
+```r
+sample_frac(mpg, .05)
+## # A tibble: 12 x 11
+##    manufacturer model     displ  year   cyl trans  drv     cty   hwy fl    class
+##    &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+##  1 volkswagen   jetta       1.9  1999     4 manua~ f        33    44 d     comp~
+##  2 dodge        durango ~   5.7  2008     8 auto(~ 4        13    18 r     suv  
+##  3 hyundai      sonata      2.5  1999     6 auto(~ f        18    26 r     mids~
+##  4 audi         a4 quatt~   2    2008     4 manua~ 4        20    28 p     comp~
+##  5 nissan       altima      3.5  2008     6 auto(~ f        19    26 p     mids~
+##  6 nissan       altima      2.5  2008     4 auto(~ f        23    31 r     mids~
+##  7 volkswagen   passat      2    2008     4 manua~ f        21    29 p     mids~
+##  8 dodge        dakota p~   3.7  2008     6 auto(~ 4        14    18 r     pick~
+##  9 dodge        durango ~   5.2  1999     8 auto(~ 4        11    16 r     suv  
+## 10 jeep         grand ch~   5.7  2008     8 auto(~ 4        13    18 r     suv  
+## 11 toyota       corolla     1.8  1999     4 auto(~ f        24    33 r     comp~
+## 12 toyota       camry       2.2  1999     4 manua~ f        21    29 r     mids~
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_n()` allows you to filter the **top** or bottom values, ranked by a specified variable:
+
+
+```r
+top_n(mpg, 5, hwy)
+## # A tibble: 6 x 11
+##   manufacturer model   displ  year   cyl trans   drv     cty   hwy fl    class  
+##   &lt;chr&gt;        &lt;chr&gt;   &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  
+## 1 honda        civic     1.8  2008     4 auto(l~ f        25    36 r     subcom~
+## 2 honda        civic     1.8  2008     4 auto(l~ f        24    36 c     subcom~
+## 3 toyota       corolla   1.8  2008     4 manual~ f        28    37 r     compact
+## 4 volkswagen   jetta     1.9  1999     4 manual~ f        33    44 d     compact
+## 5 volkswagen   new be~   1.9  1999     4 manual~ f        35    44 d     subcom~
+## 6 volkswagen   new be~   1.9  1999     4 auto(l~ f        29    41 d     subcom~
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_n()` allows you to filter the top or **bottom** values, ranked by a specified variable:
+
+
+```r
+top_n(mpg, 5, -hwy)
+## # A tibble: 5 x 11
+##   manufacturer model      displ  year   cyl trans  drv     cty   hwy fl    class
+##   &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+## 1 dodge        dakota pi~   4.7  2008     8 auto(~ 4         9    12 e     pick~
+## 2 dodge        durango 4~   4.7  2008     8 auto(~ 4         9    12 e     suv  
+## 3 dodge        ram 1500 ~   4.7  2008     8 auto(~ 4         9    12 e     pick~
+## 4 dodge        ram 1500 ~   4.7  2008     8 manua~ 4         9    12 e     pick~
+## 5 jeep         grand che~   4.7  2008     8 auto(~ 4         9    12 e     suv
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_n()` allows you to filter the top or bottom values, ranked by a specified variable:
+
+
+```r
+mpg %&gt;% group_by(manufacturer) %&gt;% top_n(1, hwy)
+## # A tibble: 25 x 11
+## # Groups:   manufacturer [15]
+##    manufacturer model   displ  year   cyl trans   drv     cty   hwy fl    class 
+##    &lt;chr&gt;        &lt;chr&gt;   &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1 audi         a4        2    2008     4 manual~ f        20    31 p     compa~
+##  2 chevrolet    malibu    2.4  2008     4 auto(l~ f        22    30 r     midsi~
+##  3 dodge        carava~   2.4  1999     4 auto(l~ f        18    24 r     miniv~
+##  4 dodge        carava~   3    1999     6 auto(l~ f        17    24 r     miniv~
+##  5 dodge        carava~   3.3  2008     6 auto(l~ f        17    24 r     miniv~
+##  6 dodge        carava~   3.3  2008     6 auto(l~ f        17    24 r     miniv~
+##  7 ford         mustang   3.8  1999     6 manual~ r        18    26 r     subco~
+##  8 ford         mustang   4    2008     6 manual~ r        17    26 r     subco~
+##  9 honda        civic     1.8  2008     4 auto(l~ f        25    36 r     subco~
+## 10 honda        civic     1.8  2008     4 auto(l~ f        24    36 c     subco~
+## # ... with 15 more rows
+```
+
+---
+
+## Pick Top or Bottom Values
+
+`top_frac()` allows you to filter the top or bottom values, ranked by a specified variable:
+
+
+```r
+top_frac(mpg, .01, displ)
+## # A tibble: 2 x 11
+##   manufacturer model     displ  year   cyl trans   drv     cty   hwy fl    class
+##   &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
+## 1 chevrolet    corvette    7    2008     8 manual~ r        15    24 p     2sea~
+## 2 chevrolet    k1500 ta~   6.5  1999     8 auto(l~ 4        14    17 d     suv
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics:
+
+
+```r
+count(mpg)
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   234
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics:
+
+
+```r
+#count(mpg)
+summarize(mpg, n = n())
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   234
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics - also per group:
+
+
+```r
+mpg %&gt;% group_by(manufacturer) %&gt;% count()
+## # A tibble: 15 x 2
+## # Groups:   manufacturer [15]
+##    manufacturer     n
+##    &lt;chr&gt;        &lt;int&gt;
+##  1 audi            18
+##  2 chevrolet       19
+##  3 dodge           37
+##  4 ford            25
+##  5 honda            9
+##  6 hyundai         14
+##  7 jeep             8
+##  8 land rover       4
+##  9 lincoln          3
+## 10 mercury          4
+## 11 nissan          13
+## 12 pontiac          5
+## 13 subaru          14
+## 14 toyota          34
+## 15 volkswagen      27
+```
+
+---
+
+## Count Observations
+
+`count()` calculates the sample size of your data as summary statistics - also per group:
+
+
+```r
+mpg %&gt;% group_by(manufacturer) %&gt;% count(sort = TRUE)
+## # A tibble: 15 x 2
+## # Groups:   manufacturer [15]
+##    manufacturer     n
+##    &lt;chr&gt;        &lt;int&gt;
+##  1 dodge           37
+##  2 toyota          34
+##  3 volkswagen      27
+##  4 ford            25
+##  5 chevrolet       19
+##  6 audi            18
+##  7 hyundai         14
+##  8 subaru          14
+##  9 nissan          13
+## 10 honda            9
+## 11 jeep             8
+## 12 pontiac          5
+## 13 land rover       4
+## 14 mercury          4
+## 15 lincoln          3
+```
+
+---
+
+## Count Observations
+
+`add_count()` adds the sample size of your data as additional column:
+
+
+```r
+add_count(mpg2)
+## # A tibble: 234 x 4
+##    model        hwy   cty     n
+##    &lt;chr&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt;
+##  1 a4            29    18   234
+##  2 a4            29    21   234
+##  3 a4            31    20   234
+##  4 a4            30    21   234
+##  5 a4            26    16   234
+##  6 a4            26    18   234
+##  7 a4            27    18   234
+##  8 a4 quattro    26    18   234
+##  9 a4 quattro    25    16   234
+## 10 a4 quattro    28    20   234
+## # ... with 224 more rows
+```
+
+---
+
+## Count Observations
+
+`add_count()` adds the sample size of your data as additional column:
+
+
+```r
+#add_count(mpg2)
+mutate(mpg2, n = n())
+## # A tibble: 234 x 4
+##    model        hwy   cty     n
+##    &lt;chr&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt;
+##  1 a4            29    18   234
+##  2 a4            29    21   234
+##  3 a4            31    20   234
+##  4 a4            30    21   234
+##  5 a4            26    16   234
+##  6 a4            26    18   234
+##  7 a4            27    18   234
+##  8 a4 quattro    26    18   234
+##  9 a4 quattro    25    16   234
+## 10 a4 quattro    28    20   234
+## # ... with 224 more rows
+```
+
+---
+
+## Count Observations
+
+`tally()` does basically the same as `count()`:
+
+
+```r
+tally(mpg)
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   234
+```
+
+---
+
+## Create all possible combinations of two variables
+
+`complete()` turns missing values into explicit missing values:
+
+
+```r
+mpg3 &lt;- mpg %&gt;% group_by(manufacturer, class) %&gt;% count() %&gt;% ungroup()
+complete(mpg3, manufacturer, nesting(class))
+## # A tibble: 105 x 3
+##    manufacturer class          n
+##    &lt;chr&gt;        &lt;chr&gt;      &lt;int&gt;
+##  1 audi         2seater       NA
+##  2 audi         compact       15
+##  3 audi         midsize        3
+##  4 audi         minivan       NA
+##  5 audi         pickup        NA
+##  6 audi         subcompact    NA
+##  7 audi         suv           NA
+##  8 chevrolet    2seater        5
+##  9 chevrolet    compact       NA
+## 10 chevrolet    midsize        5
+## # ... with 95 more rows
+```
+
+---
+
+## Create all possible combinations of two variables
+
+`complete()` turns missing values into explicit missing values:
+
+
+```r
+mpg3 &lt;- mpg %&gt;% group_by(manufacturer, class) %&gt;% count() %&gt;% ungroup()
+complete(mpg3, manufacturer, nesting(class), fill = list(n = 0))
+## # A tibble: 105 x 3
+##    manufacturer class          n
+##    &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt;
+##  1 audi         2seater        0
+##  2 audi         compact       15
+##  3 audi         midsize        3
+##  4 audi         minivan        0
+##  5 audi         pickup         0
+##  6 audi         subcompact     0
+##  7 audi         suv            0
+##  8 chevrolet    2seater        5
+##  9 chevrolet    compact        0
+## 10 chevrolet    midsize        5
+## # ... with 95 more rows
+```
+
+---
 class: center, middle
 
-&lt;img src="img/dplyr_guide_for_one_table_RDataBerlin.png", style='widht:85%;'&gt;
+&lt;img src="img/dplyr_guide_for_one_table_RDataBerlin.png", style='width:85%;'&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
