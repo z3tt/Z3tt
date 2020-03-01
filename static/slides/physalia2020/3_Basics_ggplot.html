@@ -4,7 +4,7 @@
     <title>3. The Structure of ggplot2 (Part 1: A Basic ggplot) - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-02-27" />
+    <meta name="date" content="2020-03-01" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
     <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
@@ -19,15 +19,22 @@ background-size: contain
 
 
 &lt;br&gt;&lt;br&gt;
-## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Structure of &lt;code style='color:#a7a7a7;font-weight:400;'&gt;ggplot2&lt;/code&gt; (Part 1: A Basic ggplot)&lt;/span&gt;
+## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Structure of &lt;code style='color:#a7a7a7;font-weight:400;'&gt;ggplot2&lt;/code&gt; (Part 1)&lt;/span&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 ## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
+
+---
+class: inverse, center
+
+&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:#9a9a9a;font-family:oswald;'&gt;Part 1&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;A Basic &lt;code style='color:#ebc500;'&gt;ggplot&lt;/code&gt;&lt;/b&gt;
 
 ---
 class: inverse, center, middle
 
 &lt;img src="img/ggplot2.png" style='width: 30%;'&gt;&lt;br&gt;&lt;br&gt;
-# &lt;b style='font-size:60pt'&gt; The &lt;code style='color:#ebc500'&gt;ggplot2&lt;/code&gt; Package
+# &lt;b style='font-size:60pt;'&gt; The &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt; Package
 
 ---
 class: center, middle, inverse
@@ -35,16 +42,16 @@ class: center, middle, inverse
 &lt;p style="text-align:center;"&gt;&lt;img src="img/ggplot2.png" style="width: 20%"&gt;
 &lt;br&gt;&lt;br&gt;
 
-&lt;b style='font-size:30pt'&gt;&lt;code style='color:#ebc500'&gt;ggplot2&lt;/code&gt; is a system for declaratively creating graphics,&lt;br&gt;based on "The Grammar of Graphics" (Wilkinson, 2005).&lt;/b&gt;
+&lt;b style='font-size:30pt;'&gt;&lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt; is a system for declaratively creating graphics,&lt;br&gt;based on "The Grammar of Graphics" (Wilkinson, 2005).&lt;/b&gt;
 &lt;br&gt;&lt;br&gt;
-&lt;span style='font-size:22pt'&gt;You provide the data, tell &lt;code style='color:#ebc500;font-weight:700'&gt;ggplot2&lt;/code&gt; how to map variables to aesthetics,&lt;br&gt;what graphical primitives to use, and it takes care of the details.&lt;/span&gt;&lt;br&gt;
+&lt;span style='font-size:22pt;'&gt;You provide the data, tell &lt;code style='color:#ebc500;font-weight:700;'&gt;ggplot2&lt;/code&gt; how to map variables to aesthetics,&lt;br&gt;what graphical primitives to use, and it takes care of the details.&lt;/span&gt;&lt;br&gt;
 &lt;br&gt;
-&lt;i style='font-size:12pt;color:grey'&gt;ggplot2 package description&lt;/i&gt;
+&lt;i style='font-size:12pt;color:grey;'&gt;ggplot2 package description&lt;/i&gt;
 
 ---
 class: center, middle
 
-&lt;img src="img/ah_ggplot2_exploratory.png" style='width:57%'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+&lt;img src="img/ah_ggplot2_exploratory.png" style='width:57%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
 
 ---
 class: middle
@@ -52,10 +59,11 @@ class: middle
 # Advantages of `ggplot2`
 
 &lt;br&gt;
-&lt;ul style='font-size:22pt;color:#28a87d;font-weight:700'&gt;
+&lt;ul style='font-size:22pt;color:#28a87d;font-weight:700;'&gt;
 &lt;li&gt;consistent underlying grammar of graphics (Wilkinson, 2005)&lt;/li&gt;
 &lt;br&gt;
-&lt;li&gt;very flexible, layered plot specification&lt;/li&gt; 
+&lt;li&gt;very flexible, 
+ed plot specification&lt;/li&gt; 
 &lt;br&gt;
 &lt;li&gt;theme system for polishing plot appearance&lt;/li&gt;
 &lt;br&gt;  
@@ -63,71 +71,76 @@ class: middle
 &lt;/ul&gt;
 
 ---
-class: inverse, center, middle
+class: center, middle
 
-# &lt;b style='font-size:70pt'&gt;The &lt;code style='color:#ebc500'&gt;ggplot2&lt;/code&gt; Showcase&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-
----
-class: inverse, center, middle
-
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/bbc-gallery.png" style='width:100%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Collection of BBC Graphics&lt;br&gt;&lt;span style='color:grey;font-size:8pt'&gt;(modified from bbc.github.io/rcookbook)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;img src="img/evol-ggplot-1.gif", style='width:81%;'&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/SWD_2020_01_SmallMultiples_grey.png" style='width:94%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Contribution to #SWDchallenge&lt;/i&gt;&lt;/p&gt;
+# &lt;b style='font-size:70pt;'&gt;The &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt; Showcase&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/europe_sprengler.jpeg" style='width:49%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;European Elections by Torsten Sprenger&lt;br&gt;&lt;span style='color:grey;font-size:8pt'&gt;(twitter.com/spren9er/status/1138000009306234880)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/bbc-gallery.png" style='width:100%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Collection of BBC Graphics&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(modified from bbc.github.io/rcookbook)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/jake_bird_collisions.png" style='width:81%'&gt;
-&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;#TidyTuesday Contribution by Jake Kaupp&lt;br&gt;&lt;span style='color:grey;font-size:8pt'&gt;(github.com/jkaupp/tidytuesdays)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/SWD_2020_01_SmallMultiples_grey.png" style='width:94%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Contribution to #SWDchallenge&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/georgos_bob_ross.png" style='width:80%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;#TidyTuesday Contribution by Georgos Karamanis&lt;br&gt;&lt;span style='color:grey;font-size:8pt'&gt;(github.com/gkaramanis/tidytuesday)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/europe_sprengler.jpeg" style='width:49%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;European Elections by Torsten Sprenger&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(twitter.com/spren9er/status/1138000009306234880)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/swiss_map.png" style='width:68%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Bivariate Map by Timo Gossenbacher&lt;br&gt;&lt;span style='color:grey;font-size:8pt'&gt;(timogrossenbacher.ch/2019/04/bivariate-maps-with-ggplot2-and-sf)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/jake_bird_collisions.png" style='width:81%;'&gt;
+&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;#TidyTuesday Contribution by Jake Kaupp&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(github.com/jkaupp/tidytuesdays)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/12_Movement_BerlinByBike.png" style='width:59%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Contribution to the #30DayMapChallenge&lt;br&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/georgos_bob_ross.png" style='width:80%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;#TidyTuesday Contribution by Georgos Karamanis&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(github.com/gkaramanis/tidytuesday)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/BuiltEnv_BuildingsXberg.png" style='width:80%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Contribution to the #30DayMapChallenge&lt;br&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/swiss_map.png" style='width:68%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Bivariate Map by Timo Gossenbacher&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(timogrossenbacher.ch/2019/04/bivariate-maps-with-ggplot2-and-sf)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+
+---
+class: inverse, center, middle
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/12_Movement_BerlinByBike.png" style='width:59%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Contribution to the #30DayMapChallenge&lt;br&gt;&lt;/p&gt;
+
+---
+class: inverse, center, middle
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/BuiltEnv_BuildingsXberg.png" style='width:80%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Contribution to the #30DayMapChallenge&lt;br&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
 
 .pull-left[
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/gganimate-hurricane.gif" style='width:73%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Example of the {gganimate} Package&lt;br&gt;&lt;span style='color:grey;font-size:8pt'&gt;(github.com/thomasp85/gganimate/wiki)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/gganimate-hurricane.gif" style='width:73%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Example of the {gganimate} Package&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(github.com/thomasp85/gganimate/wiki)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
 ]
 
 .pull-right[
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/2019_42_BigCars_Highway.gif" style='width:100%'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt'&gt;Contribution to #TidyTuesday&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/2019_42_BigCars_Highway.gif" style='width:100%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Contribution to #TidyTuesday&lt;/i&gt;&lt;/p&gt;
 ]
 
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt;color:#ebc500'&gt;The Setup&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;The Setup&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 ## The package
 
-&lt;span style='font-size:18pt'&gt;`ggplot2` is a **data visualization package** for the programming language `R` created by Hadley Wickham in 2005.&lt;/span&gt;
+&lt;span style='font-size:18pt;'&gt;`ggplot2` is a **data visualization package** for the programming language `R` created by Hadley Wickham in 2005.&lt;/span&gt;
 
 
 ```r
@@ -137,7 +150,7 @@ library(ggplot2)
 
 --
 
-&lt;span style='font-size:15pt'&gt;`ggplot2` is part of the [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.&lt;/span&gt;
+&lt;span style='font-size:15pt;'&gt;`ggplot2` is part of the [`tidyverse`](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/), a set of packages that work in harmony to manipulate and explore data.&lt;/span&gt;
 
 
 ```r
@@ -171,7 +184,7 @@ We use data from the *National Morbidity and Mortality Air Pollution Study*&amp;
 
 ```r
 chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv",
-                  col_types = cols(season = col_factor(), year = col_factor()))
+                        col_types = cols(season = col_factor(), year = col_factor()))
 tibble::glimpse(chic)
 ## Observations: 1,461
 ## Variables: 10
@@ -190,33 +203,33 @@ tibble::glimpse(chic)
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt;'&gt;The Structure of&lt;br&gt;&lt;code style='color:#ebc500'&gt;ggplot2&lt;/code&gt;&lt;/b&gt;&lt;br&gt;
-# &lt;b style='font-size:40pt;color:#a7a7a7;font-weight:400;'&gt;"The Grammar of Graphics"&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;'&gt;The Structure of&lt;br&gt;&lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:#a7a7a7;'&gt;"The Grammar of Graphics"&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 
 ## The Structure of `ggplot2`
 
 &lt;br&gt;
-&lt;table style='width:100%;font-size:16pt'&gt;
+&lt;table style='width:100%;font-size:16pt;'&gt;
   &lt;tr&gt;
     &lt;th&gt;Layer&lt;/th&gt;
     &lt;th&gt;Function&lt;/th&gt;
     &lt;th&gt;Explanation&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Data&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Data&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The raw data that you want to visualise.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;aes()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;aes()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Aesthetic mappings of the geometric and statistical objects.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Layers&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;geom_*()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;stat_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Layers&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;geom_*()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The geometric shapes and statistical summaries representing the data.&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
@@ -226,44 +239,44 @@ class: inverse, center, middle
 ## The Structure of `ggplot2`
 
 &lt;br&gt;
-&lt;table style='width:100%;font-size:16pt'&gt;
+&lt;table style='width:100%;font-size:16pt;'&gt;
   &lt;tr&gt;
     &lt;th&gt;Layer&lt;/th&gt;
     &lt;th&gt;Function&lt;/th&gt;
     &lt;th&gt;Explanation&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Data&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Data&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The raw data that you want to visualise.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;aes()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;aes()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Aesthetic mappings of the geometric and statistical objects.&lt;/td&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Layers&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;geom_*()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;stat_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Layers&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;geom_*()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The geometric shapes and statistical summaries representing the data.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Scales&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;scale_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Scales&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;scale_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Maps between the data and the aesthetic dimensions.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Coordinate System&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;coord_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Coordinate System&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;coord_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Maps data into the plane of the data rectangle.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Facets&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;facet_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Facets&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;facet_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The arrangement of the data into a grid of plots.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Visual Themes&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;theme()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;theme_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Visual Themes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;theme()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code&gt;theme_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The overall visual defaults of a plot.&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
@@ -273,50 +286,50 @@ class: inverse, center, middle
 ## The Structure of `ggplot2`
 
 &lt;br&gt;
-&lt;table style='width:100%;font-size:16pt'&gt;
+&lt;table style='width:100%;font-size:16pt;'&gt;
   &lt;tr&gt;
     &lt;th&gt;Layer&lt;/th&gt;
     &lt;th&gt;Function&lt;/th&gt;
     &lt;th&gt;Explanation&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Data&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Data&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The raw data that you want to visualise.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;aes()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;aes()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Aesthetic mappings of the geometric and statistical objects.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Layers&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;geom_*()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;stat_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Layers&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;geom_*()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;stat_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The geometric shapes and statistical summaries representing the data.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Scales&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;scale_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Scales&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;scale_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Maps between the data and the aesthetic dimensions.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Coordinate System&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;coord_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Coordinate System&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;coord_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Maps data into the plane of the data rectangle.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Facets&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;facet_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Facets&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;facet_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The arrangement of the data into a grid of plots.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Visual Themes&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;theme()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;theme_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Visual Themes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;theme()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;theme_*()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;The overall visual defaults of a plot.&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;b style='color:grey'&gt;Annotations&lt;/b&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;annotate()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Annotations&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;annotate()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Add additional labels, geometries or images to a plot.&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
@@ -324,12 +337,12 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt'&gt;Data&lt;/b&gt;&lt;br&gt;
-# &lt;code style='font-size:40pt;color:#ebc500;font-weight:700'&gt;ggplot(data)&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;'&gt;Data&lt;/b&gt;&lt;br&gt;
+# &lt;code style='font-size:40pt;color:#ebc500;font-weight:700;'&gt;ggplot(data)&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;ggplot2::ggplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;ggplot2::ggplot()&lt;/code&gt;
 
 &lt;br&gt;
 
@@ -339,13 +352,13 @@ ggplot
 ## {
 ##     UseMethod("ggplot")
 ## }
-## &lt;bytecode: 0x000000000ceb9e28&gt;
+## &lt;bytecode: 0x000000000cfe2520&gt;
 ## &lt;environment: namespace:ggplot2&gt;
 ```
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;ggplot(data)&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;ggplot(data)&lt;/code&gt;
 
 We need to specify data in the `ggplot()` call:
 
@@ -364,7 +377,7 @@ There is only an empty panel because `ggplot2`&lt;br&gt;doesn't know **what** of
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;ggplot(data, aes(x, y))&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;ggplot(data, aes(x, y))&lt;/code&gt;
 
 We need to specify data and the two variables we want to plot as `aes`tethics of the `ggplot()` call:
 
@@ -388,7 +401,7 @@ There is only an empty panel because `ggplot2`&lt;br&gt;doesn't know **how** it 
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;ggplot(data, aes(x, y))&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;ggplot(data, aes(x, y))&lt;/code&gt;
 
 We need to specify data and the two variables we want to plot as `aes`tethics of the `ggplot()` call:
 
@@ -407,7 +420,7 @@ Thanks to implicit matching of arguments in `ggplot(data, mapping)` and `aes(x, 
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;ggplot(data) + aes(x, y)&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;ggplot(data) + aes(x, y)&lt;/code&gt;
 
 We need to specify data and the two variables we want to plot as `aes`tethics of the `ggplot()` call:
 
@@ -435,8 +448,8 @@ ggplot(chic, aes(date, temp))
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt'&gt;Layers&lt;/b&gt;&lt;br&gt;
-# &lt;b style='font-size:40pt;color:grey'&gt;&lt;code style='color:#ebc500'&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;code style='color:#ebc500'&gt;stat\_\*()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;'&gt;Layers&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;code style='color:#ebc500;'&gt;stat\_\*()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 
@@ -445,19 +458,19 @@ class: inverse, center, middle
 By adding one or multiple layers we can tell `ggplot2` *how*&amp;nbsp;&amp;nbsp;to represent the data.&lt;br&gt;
 There are lots of build-in geometric elements (`geom's`) and statistical transformations (`stat's`):
 
-&lt;p style="text-align:center;"&gt;&lt;img src="img/ggplot-layers.png" style="width: 51%"&gt;&lt;i style='font-size:10pt;color:grey'&gt;Adapted from ggplot2.tidyverse.org/reference&lt;/i&gt;&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/ggplot-layers.png" style="width: 51%"&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Adapted from ggplot2.tidyverse.org/reference&lt;/i&gt;&lt;/p&gt;
 
-&lt;span style='font-size:11pt'&gt;... and several more in extension packages, e.g. `{ggforce}`, `{ggalt}`, `{ggridges}`, `{ggrepel}`, `{ggcorrplot}`, `{ggraph}`, `{ggdendro}` &amp; `{ggalluvial}`.&lt;/span&gt;
+&lt;span style='font-size:11pt;'&gt;... and several more in extension packages, e.g. `{ggforce}`, `{ggalt}`, `{ggridges}`, `{ggrepel}`, `{ggcorrplot}`, `{ggraph}`, `{ggdendro}` &amp; `{ggalluvial}`.&lt;/span&gt;
 
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt'&gt;2. Layers&lt;/b&gt;&lt;br&gt;
-# &lt;b style='font-size:40pt;color:grey'&gt;Geometric Layers: &lt;code style='color:#ebc500'&gt;geom\_\*()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;'&gt;2. Layers&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;Geometric Layers: &lt;code style='color:#ebc500;'&gt;geom\_\*()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_point()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_point()&lt;/code&gt;
 
 We can tell `ggplot2` to represent the data for example as a **scatter plot**:
 
@@ -475,7 +488,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_area()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_area()&lt;/code&gt;
 
 ## ... or turn it for example into an **area plot**:
 
@@ -566,17 +579,15 @@ ggplot(chic, aes(date, temp)) +
 
 ## Your Turn!
 
-&lt;b style='font-size:18pt;color:#00684a'&gt;
+&lt;b style='font-size:18pt;color:#00684a;'&gt;
 * Turn our scatter plot into a line chart and into a bar chart!
+
+* What’s the difference between `geom_path()` and `geom_line()`?
 
 * Create a box plot of temperature per date.
 
-&lt;/b&gt;
-&lt;b style='font-size:18pt;color:#ea724c'&gt;
 * What is the problem? How could you find out why this is happening?
 
-&lt;/b&gt;
-&lt;b style='font-size:18pt;color:#00684a'&gt;
 * Try to create box plots as you would expect them.
 
 * Bonus: Choose the built-in theme you like the most!
@@ -587,19 +598,15 @@ ggplot(chic, aes(date, temp)) +
 
 ## Your Turn!
 
-&lt;b style='font-size:18pt;color:#00684a'&gt;
+&lt;b style='font-size:18pt;color:#00684a;'&gt;
 * Turn our scatter plot into a line chart and into a bar chart!
 
 * What’s the difference between `geom_path()` and `geom_line()`?
 
 * Create a box plot of temperature per date.
 
-&lt;/b&gt;
-&lt;b style='font-size:18pt;color:#ea724c'&gt;
 * What is the problem? How could you find out why this is happening?
 
-&lt;/b&gt;
-&lt;b style='font-size:18pt;color:#00684a'&gt;
 * Try to create box plots as you would expect them.
 
 * Hint: You need to specify one categorical variable!
@@ -610,7 +617,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_line()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_line()&lt;/code&gt;
 
 Our scatter plot as a **line plot**:
 
@@ -628,7 +635,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_line()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_line()&lt;/code&gt;
 
 ... or as a **bar plot**:
 
@@ -646,7 +653,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_line()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_line()&lt;/code&gt;
 
 ... or as a **bar plot**:
 
@@ -664,7 +671,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_boxplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_boxplot()&lt;/code&gt;
 
 ... or a **box and whiskers plot**:
 
@@ -682,7 +689,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_boxplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_boxplot()&lt;/code&gt;
 
 ... or a **box and whiskers plot**:
 
@@ -693,7 +700,7 @@ ggplot(chic, aes(date, temp)) +
 * geom_boxplot()
 ```
 
-&lt;br&gt;&lt;b style='font-size:22pt'&gt;What's going on here?!&lt;/b&gt;
+&lt;br&gt;&lt;b style='font-size:22pt;'&gt;What's going on here?!&lt;/b&gt;
 ]
 
 .pull-right[
@@ -702,7 +709,7 @@ ggplot(chic, aes(date, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_boxplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_boxplot()&lt;/code&gt;
 
 We need to specify the variable as **categorial** (`as.factor(date)`), not as **continuous** (`date`):
 
@@ -720,7 +727,7 @@ We need to specify the variable as **categorial** (`as.factor(date)`), not as **
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_boxplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_boxplot()&lt;/code&gt;
 
 We need to specify the variable as **categorial** (`as.factor(date)`), not as **continuous** (`date`):
 
@@ -731,7 +738,7 @@ We need to specify the variable as **categorial** (`as.factor(date)`), not as **
     geom_boxplot() 
 ```
 
-&lt;br&gt;&lt;b style='font-size:22pt'&gt;But - why are there no box plots?&lt;/b&gt;
+&lt;br&gt;&lt;b style='font-size:22pt;'&gt;But - why are there no box plots?&lt;/b&gt;
 ]
 
 .pull-right[
@@ -740,7 +747,7 @@ We need to specify the variable as **categorial** (`as.factor(date)`), not as **
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_boxplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_boxplot()&lt;/code&gt;
 
 We need to specify the variable as **categorial** (e.g. `year` or `season`), not as **continuous** (`date`):
 
@@ -758,7 +765,7 @@ We need to specify the variable as **categorial** (e.g. `year` or `season`), not
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;geom_boxplot()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;geom_boxplot()&lt;/code&gt;
 
 We need to specify the variable as **categorial** (e.g. `year` or `season`), not as **continuous** (`date`):
 
@@ -778,11 +785,11 @@ We need to specify the variable as **categorial** (e.g. `year` or `season`), not
 
 ## Box-and-Whisker Plots
 &lt;br&gt;
-&lt;p style='text-align:center'&gt;&lt;img src="img/boxplot.png" style='width:77%'&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/boxplot.png" style='width:77%;'&gt;&lt;/p&gt;
 
 ---
 
-## &lt;b&gt;Multiple &lt;code style='color:#28a87d'&gt;geom_*()&lt;/code&gt;'s&lt;/b&gt;
+## &lt;b&gt;Multiple &lt;code style='color:#28a87d;'&gt;geom_*()&lt;/code&gt;'s&lt;/b&gt;
 
 Other layers can be added to an existing plot - a line and a rug representation for example:
 
@@ -804,6 +811,8 @@ ggplot(chic, aes(date, temp)) +
 
 ## Add Labels
 
+You can change the axes titles by adding `xlab()` and `ylab()` to your ggplot:
+
 .pull-left[
 
 ```r
@@ -821,6 +830,8 @@ ggplot(chic, aes(date, temp)) +
 ---
 
 ## Add Labels
+
+... and a title by adding `ggtitle()`:
 
 .pull-left[
 
@@ -841,6 +852,8 @@ ggplot(chic, aes(date, temp)) +
 
 ## Add Labels
 
+Using `labs()` you can also change all and more in one go:
+
 .pull-left[
 
 ```r
@@ -850,8 +863,9 @@ ggplot(chic, aes(date, temp)) +
 *   x = "Day of the Year",
 *   y = "Temperature (°F)",
 *   title = "Seasonal Change of Temperatures in Chicago",
-*   subtitle = "Daily temperatures in the city of Chicago, IL, measured between 1997 and 2001",
-*   caption = "Data: National Morbidity and Mortality Air Pollution Study (NMMAPS)"
+*   subtitle = "Daily temperatures (°F) in the city of Chicago, IL,\nmeasured between 1997 and 2001",
+    caption = "Data: National Morbidity and Mortality Air Pollution Study (NMMAPS)",
+*   tag = "Fig. 1"
 * )
 ```
 ]
@@ -864,17 +878,20 @@ ggplot(chic, aes(date, temp)) +
 
 ## Add Labels
 
+Using `labs()` you can also change all and more in one go:
+
 .pull-left[
 
 ```r
 ggplot(chic, aes(date, temp)) +
   geom_point() +
-* labs(
+  labs(
     x = "Day of the Year",
     y = "Temperature (°F)", 
     title = "Seasonal Change of Temperatures in Chicago",
-    subtitle = "Daily temperatures in the city of Chicago, IL, measured between 1997 and 2001",
-*   caption = "\nData: National Morbidity and Mortality Air Pollution Study (NMMAPS)"
+    subtitle = "Daily temperatures (°F) in the city of Chicago, IL,\nmeasured between 1997 and 2001",
+*   caption = "\nData: National Morbidity and Mortality Air Pollution Study (NMMAPS)",
+    tag = "Fig. 1"
   )
 ```
 ]
@@ -958,8 +975,8 @@ ggsave(filename = "my_first_ggplot.png", plot = g, fig.width = 10, fig.height = 
 
 ## Your Turn!
 
-&lt;b style='font-size:18pt;color:#00684a'&gt;
-* Import the data on password strength from *Information is Beautiful* via the #TidyTuesday repository&lt;br&gt;&lt;span style='font-size:15pt;'&gt;(https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-14/passwords.csv)
+&lt;b style='font-size:18pt;color:#00684a;'&gt;
+* Import the data on password strength from *Information is Beautiful* from my GitHub repository:&lt;br&gt;&lt;span style='font-size:15pt;'&gt;https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/passwords.csv
 
 * Have a look at the raw data (both in the browser and `R`)
 
@@ -1262,12 +1279,12 @@ ggplot(passwords, aes(category, rank)) +
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt'&gt;Layers&lt;/b&gt;&lt;br&gt;
-# &lt;b style='font-size:40pt;color:grey'&gt;Statistical Layers: &lt;code style='color:#ebc500'&gt;stat\_\*()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;'&gt;Layers&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;Statistical Layers: &lt;code style='color:#ebc500;'&gt;stat\_\*()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;stat_*()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;stat_*()&lt;/code&gt;
 
 A handful of layers with attention to the statistical transformation rather than the visual appearance:
 
@@ -1287,7 +1304,7 @@ ggplot(chic, aes(year, temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;stat_function()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;stat_function()&lt;/code&gt;
 
 `stat_function()` makes it easy to add a function to a plot, either continuous or discrete:
 
@@ -1310,7 +1327,7 @@ ggplot(tibble(x = c(-8, 8)), aes(x)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;stat_ecdf()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;stat_ecdf()&lt;/code&gt;
 
 You can also easily plot the empirical cumulative distribution function (ECDF) of a variable:
 
@@ -1328,7 +1345,7 @@ ggplot(chic, aes(temp)) +
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;stat_smooth()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;stat_smooth()&lt;/code&gt;
 
 You can directly add smoothed conditional means:
 
@@ -1349,7 +1366,7 @@ By default this adds a **LOESS** (locally weighted scatter plot smoothing,&lt;br
 
 ---
 
-## &lt;code style='color:#28a87d;font-weight:700'&gt;stat_smooth()&lt;/code&gt;
+## &lt;code style='color:#28a87d;font-weight:700;'&gt;stat_smooth()&lt;/code&gt;
 
 You can specify the fitting method and the formula:
 
@@ -1377,23 +1394,21 @@ Other methods such as `method = "lm"` (without an explicit&lt;br&gt;formula) for
 
 ## Your Turn!
 
-&lt;b style='font-size:18pt;color:#00684a'&gt;
+&lt;b style='font-size:18pt;color:#00684a;'&gt;
 A famous example datat set is `mtcars` which is pre-loaded in `R`.
 
-* Have a look at the data set.
-
-* Create the following three visualizations:
+* Have a look at the data set and create the following three visualizations:
 
 &lt;/b&gt;
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/exercise-geom.png" style='width:95%;'&gt;&lt;/p&gt;
+&lt;img src="3_Basics_ggplot_files/figure-html/exercise-1-panel-1.png" width="1152" /&gt;
 
 ---
 class: inverse, center
 
 ## Your Turn: Create this Box Plot!
 
-&lt;img src="3_Basics_ggplot_files/figure-html/exercise-plot-mtcars-box-mean-1.png" width="504" /&gt;
+&lt;img src="3_Basics_ggplot_files/figure-html/exercise-plot-mtcars-box-mean-1.png" width="864" /&gt;
 
 ---
 class: inverse, center
@@ -1527,7 +1542,7 @@ ggplot(
 
 ---
 
-## rur Turn: Box Plots with Raw Data
+## Your Turn: Box Plots with Raw Data
 
 .pull-left[
 
@@ -1773,6 +1788,38 @@ ggplot(
 ]
 
 ---
+
+## Your Turn: Violin Plot
+
+.pull-left[
+
+```r
+ggplot(
+  mtcars, 
+  aes(as.factor(cyl), hp)
+  ) + 
+  geom_violin(
+    fill = "grey70"
+  ) +
+  geom_boxplot(
+    width = .05, 
+    coef = 0,
+    #outlier.shape = NA
+    outlier.alpha = 0
+  ) +
+* labs(
+*   x = "Number of cylinders",
+*   y = "Gross horsepower",
+*   caption = '\nData: 1974 "Motor Trend" US magazine'
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-mtcars-violin-labs-1.png" width="504" /&gt;
+]
+
+---
 class: inverse, center
 
 ## Your Turn: Create this Scatter Plot!
@@ -1953,6 +2000,13 @@ ggplot(mtcars, aes(wt, disp)) +
 
 ## Your Turn: Scatter Plot with Linear Fitting
 
+&lt;br&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/points-symbols.png" style="width: 71%"&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: ggplot2.tidyverse.org/articles/ggplot2-specs.html&lt;/i&gt;&lt;/p&gt;
+
+---
+
+## Your Turn: Scatter Plot with Linear Fitting
+
 .pull-left[
 
 ```r
@@ -2038,11 +2092,44 @@ ggplot(mtcars, aes(wt, disp)) +
 .pull-right[
 &lt;img src="3_Basics_ggplot_files/figure-html/plot-mtcars-point-fitting-red-7-1.png" width="504" /&gt;
 ]
+
+---
+
+## Your Turn: Scatter Plot with Linear Fitting
+
+.pull-left[
+
+```r
+ggplot(mtcars, aes(wt, disp)) +
+  stat_smooth(method = "lm",
+              se = FALSE,
+              color = "red") +
+  geom_point(shape = 21,
+             fill = "red",
+             color = "transparent",
+             size = 5, 
+             alpha = .3) +
+  geom_point(shape = 21,
+             fill = "transparent",
+             color = "black",
+             stroke = 1.25,
+             size = 5) +
+* labs(x = "Weight (1000 lbs)",
+*      y = "Displacement (cu.in.)",
+*      title = "Correlation \u2260 Causality",
+*      subtitle = "Displacement increases with weight")
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-mtcars-point-fitting-red-labs-1.png" width="504" /&gt;
+]
+
 ---
 class: inverse, center, middle
 
-# &lt;b style='font-size:70pt'&gt;Aesthetics&lt;/b&gt;&lt;br&gt;
-# &lt;b style='font-size:40pt;color:grey'&gt;&lt;code style='color:#ebc500'&gt;aes()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;'&gt;Aesthetics&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;aes()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 ---
 
@@ -2223,7 +2310,7 @@ ggplot(chic, aes(temp)) +
 
 ## Your Turn!
 
-&lt;b style='font-size:18pt;color:#00684a'&gt;
+&lt;b style='font-size:18pt;color:#00684a;'&gt;
 * Run the same code without the grouping. Guess first what's going to happen.
 
 * Replace the&lt;br&gt;&lt;br&gt;`stat_ecdf(aes(grouop = year))` by `geom_boxplot(aes(group = year))`&lt;br&gt;&lt;br&gt;and run the code.How does this plot differ from previous ones?
@@ -2308,14 +2395,15 @@ ggplot(chic, aes(temp)) +
 
 ## Your Turn!
 
-&lt;b style='font-size:18pt;color:#00684a'&gt;
+&lt;b style='font-size:18pt;color:#00684a;'&gt;
 Another training data set focussing on cars comes with `ggplot2` and is called `mpg`:
 
 * Create the following visualizations:
 
 &lt;/b&gt;
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/exercise-aes.png" style='width:77%;'&gt;&lt;/p&gt;
+&lt;img src="3_Basics_ggplot_files/figure-html/exercise-2-panel-1.png" width="1152" /&gt;
+
 
 ---
 class: inverse, center
@@ -2442,6 +2530,36 @@ ggplot(
 &lt;img src="3_Basics_ggplot_files/figure-html/plot-scatter-mpg-class-4c-1.png" width="504" /&gt;
 ]
 
+
+---
+
+## Your Turn: Scatter Plot with Diamonds
+
+.pull-left[
+
+```r
+ggplot(
+  mpg, 
+  aes(
+    hwy, 
+    displ,
+    fill = class
+  )) +
+  geom_point(
+    shape = 23,
+    size = 3
+  ) +
+* labs(
+*   x = "Highway Miles per Gallon",
+*   y = "Engine Displacement (litres)"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-scatter-mpg-class-labs-1.png" width="504" /&gt;
+]
+
 ---
 class: inverse, center
 
@@ -2458,7 +2576,8 @@ class: inverse, center
 ```r
 ggplot(mpg, aes(hwy, displ)) +
   geom_point(
-*   size = 3
+*   size = 3,
+*   alpha = .3
   )
 ```
 ]
@@ -2479,10 +2598,11 @@ ggplot(
   aes(
     hwy, 
     displ,
-*   color = hwy &lt;= 30
+*   color = hwy &lt;= 40
   )) +
   geom_point(
-    size = 3
+    size = 3,
+    alpha = .3
   )
 ```
 ]
@@ -2503,11 +2623,12 @@ ggplot(
   aes(
     hwy, 
     displ,
-    color = hwy &lt;= 30
+    color = hwy &lt;= 40
   )) +
 * stat_smooth() +
   geom_point(
-    size = 3
+    size = 3,
+    alpha = .3
   )
 ```
 ]
@@ -2531,10 +2652,9 @@ ggplot(
   )) +
   stat_smooth() +
   geom_point(
-*   aes(
-*     color = hwy &lt;= 30
-*   ),
-    size = 3
+*   aes(color = hwy &lt;= 40),
+    size = 3,
+    alpha = .3
   )
 ```
 ]
@@ -2560,11 +2680,14 @@ ggplot(
     color = "black"
   ) +
   geom_point(
-    aes(
-*     color = hwy &lt;= 30
-    ),
-    size = 3
-  )
+    aes(color = hwy &lt;= 40),
+    size = 3,
+    alpha = .3
+  ) +
+* labs(
+*   x = "Highway Miles per Gallon",
+*   y = "Engine Displacement (litres)"
+* )
 ```
 ]
 
@@ -2575,7 +2698,7 @@ ggplot(
 ---
 class: center, middle
 
-&lt;img src="img/ah_ggplot2_masterpiece.png" style='width:71%'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+&lt;img src="img/ah_ggplot2_masterpiece.png" style='width:71%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

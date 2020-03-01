@@ -4,7 +4,7 @@
     <title>1. Introduction to R and RStudio - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-02-27" />
+    <meta name="date" content="2020-03-01" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
     <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
@@ -189,6 +189,66 @@ class: center
 &lt;img src="img/R_Terminal.png" style='width:58%;'&gt;
 
 ---
+class: center, middle
+
+
+
+&lt;img src="1_Intro_R_files/figure-html/motivational-plot-1-1.png" width="792" /&gt;
+
+---
+
+## The Code
+
+
+```r
+library(ggplot2)
+
+ggplot(mpg, aes(hwy, displ)) +
+  geom_point() + 
+  stat_smooth()
+```
+
+---
+class: center, middle
+
+
+
+&lt;img src="1_Intro_R_files/figure-html/motivational-plot-2-1.png" width="1188" /&gt;
+
+---
+
+
+```r
+ggplot(mpg, aes(hwy, displ)) + 
+  stat_smooth(
+    method = "lm", 
+    color = "black", 
+    se = F
+  ) +
+  geom_point(
+    aes(fill = manufacturer), 
+    shape = 23, 
+    size = 5, 
+    alpha = .3, 
+    color = "black", 
+    stroke = .3
+  ) +
+  labs(
+    x = "Highway Miles per Gallon",
+    y = "Engine Displacement (liters)",
+    title = "Weight and displacement by manufacturers of 38 popular models of cars",
+    subtitle = "Simple linear regression of engine displacement (in liters) versus highway miles per gallon (MPG) for popular models of cars from 1999 to 2008.",
+    caption = "\nData: EPA (www.fueleconomy.gov)"
+  ) +
+  theme_light()
+```
+
+---
+class: center, middle
+
+&lt;img src="1_Intro_R_files/figure-html/motivational-plot-3-1.png" width="1152" /&gt;
+
+---
 
 ## What is `R`?
 
@@ -281,17 +341,17 @@ class:center
 &lt;p style=text-align:center;&gt;
 &lt;img src="img/ah_twitteR.png" width=100%&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
 &lt;/p&gt;
+]
+
 ---
 class:center
 
 ## What is the `tidyverse`?
 
 &lt;br&gt;
-The `tidyverse` provides exemplary support for data wrangling and is the  
-main reason for the recent popularity of `R`, especially in data-driven environments.
+&lt;b style='font-size:17pt;'&gt;The `tidyverse` provides exemplary support for data wrangling and is the main&lt;br&gt;reason for the recent popularity of `R`, especially in data-driven environments.&lt;/b&gt;
 
-&lt;br&gt;&lt;br&gt;
-&lt;img src="img/data-science.png" style='width: 80%;'&gt;&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: Hadley Wickham's "R for Data Science" (R4DS)&lt;/i&gt;&lt;/p&gt;
+&lt;img src="img/data-science.png" style='width: 80%;'&gt;&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: rstudio-education.github.io/tidyverse-cookbook&lt;br&gt;Modified from Hadley Wickham's "R for Data Science" (R4DS)&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: center
@@ -722,7 +782,7 @@ sqrt
 mean
 ## function (x, ...) 
 ## UseMethod("mean")
-## &lt;bytecode: 0x00000000061d3068&gt;
+## &lt;bytecode: 0x0000000006212d70&gt;
 ## &lt;environment: namespace:base&gt;
 ```
 
@@ -844,7 +904,7 @@ citation
 ##         header = header, footer = footer, other = z)
 ##     .citation(rval, package)
 ## }
-## &lt;bytecode: 0x000000000d657ad8&gt;
+## &lt;bytecode: 0x00000000143d7690&gt;
 ## &lt;environment: namespace:utils&gt;
 ```
 
@@ -1104,7 +1164,7 @@ One can *explicitly coerce*&amp;nbsp;&amp;nbsp;atomic vectors to a particular da
 class(v5)
 ## [1] "character"
 
-(v6 &lt;- c(1L,0.2, 3 + 0i))
+(v6 &lt;- c(1L, 0.2, 3 + 0i))
 ## [1] 1.0+0i 0.2+0i 3.0+0i
 class(v6)
 ## [1] "complex"

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>5. The Choice of the Chart Type - Cédric Scherer - Data Visualization in R with ggplot2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Cédric Scherer" />
+    <meta name="date" content="2020-03-01" />
+    <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css\physalia.css" type="text/css" />
+    <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, center
+background-image: url("img/darklight_RichardStrozynski.jpg")
+background-size: contain
+
+
+
+&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Choice of the Chart Type&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
+
+---
+background-image: url("img/chart-selection-diagram.png")
+background-size: contain
+
+---
+background-image: url("img/poster_dataforviz_decisiontree.png")
+background-size: contain
+
+---
+
+&lt;style&gt;
+.pull-right { width:45%; }
+&lt;/style&gt;
+
+.pull-left[&lt;img src="img/charts_raw_1_bar.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Boring&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Not accurate&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Lots of useless space&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_2_error.png"&gt;]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_2_error.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Good: More accurate than a bar plot&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Good: Better data-ink ratio&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+&lt;li&gt;But: unclear what's shown&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_3_box.png"&gt;]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_3_box.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Good: shows important summary stats&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Looks "scientifically"&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+&lt;li&gt;But: no info on sample size&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;But: hard to grasp for broad audience&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_4_violin.png"&gt;]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_4_violin.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Good: shows distribution + sample size&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+&lt;li&gt;But: sample size hard to estimate&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_5_sina.png"&gt;]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_5_sina.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Good: shows sample size + distribution&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+&lt;li&gt;But: difficult with large sample sizes&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_6_bee.png"&gt;]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_6_bee.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Good: shows raw data + distribution&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Good: avoids overplotting&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+&lt;li&gt;But: difficult with large sample sizes&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_7_cloud.png"&gt;]
+
+---
+
+.pull-left[&lt;img src="img/charts_raw_7_cloud.png"&gt;]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Good: shows raw data + distribution&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Good: shows important summary stats&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+&lt;li&gt;But: needs more space&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+]
+
+---
+
+&lt;p style='trext-align:center;'&gt;&lt;img src="img/charts_raw_panel.png"&gt;&lt;p&gt;
+
+.left-column[]
+.right-column[
+&lt;ul style='font-size:20pt;color:#747474;font-weight:700;'&gt;
+&lt;li&gt;Always check raw data and sample size&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Try several chart types&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Be open to combine chart types&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Choose chart type with your audience in mind&lt;/li&gt;
+&lt;/ul&gt;
+]
+
+---
+class: center, middle
+
+&lt;img src="img/weissgerber-1.png" style='width:68%;'&gt;
+&lt;img src="img/weissgerber-2.png" style='width:68%;'&gt;
+
+---
+class: center, mddle
+
+&lt;img src="img/datasauRus.gif" style='width:64%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/same-stats.png" style='width:88%;'&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;b style='font-size:28pt;'&gt;"The Datasaurus Dozen"&lt;/b&gt;&lt;br&gt;
+&lt;span style='font-size:18pt;'&gt;based on Anscombe's Quarter and Alberto Cairo's "Datasaurus" (or "Anscombosaurus")&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="img/datasaurus.png" style='width:88%;'&gt;
+
+---
+background-image: url("img/chart-choice-helpers.png")
+background-size: contain
+
+---
+class: center, middle
+
+&lt;img src="img/data-to-viz-1.png" style='width:64%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/data-to-viz-2.png" style='width:54%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/data-to-viz-3.png" style='width:46%;'&gt;
+
+---
+class: center
+
+## Charts to visualize &lt;span style='color:#28a87d;'&gt;Amounts&lt;/span&gt;
+&lt;br&gt;
+&lt;img src="img/wilke-amounts.png" style='width:80%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Charts to visualize &lt;span style='color:#28a87d;'&gt;Distributions&lt;/span&gt;
+
+&lt;img src="img/wilke-distributions.png" style='width:63%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Charts to visualize &lt;span style='color:#28a87d;'&gt;Proportions&lt;/span&gt;
+
+&lt;img src="img/wilke-proportions.png" style='width:63%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Charts to visualize &lt;span style='color:#28a87d;'&gt;x–y Relationships&lt;/span&gt;
+
+&lt;img src="img/wilke-scatter.png" style='width:63%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Charts to visualize &lt;span style='color:#28a87d;'&gt;Geospatial Data&lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/wilke-geospatial.png" style='width:80%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Charts to visualize &lt;span style='color:#28a87d;'&gt;Uncertainty&lt;/span&gt;
+
+&lt;img src="img/wilke-uncertainty.png" style='width:63%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center, middle, inverse
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Your Turn!&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> ",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

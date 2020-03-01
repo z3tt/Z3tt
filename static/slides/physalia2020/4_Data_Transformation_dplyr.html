@@ -4,7 +4,7 @@
     <title>4. Data Transformation with dplyr - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-02-27" />
+    <meta name="date" content="2020-03-01" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
     <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
@@ -23,6 +23,8 @@ background-size: contain
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 ## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
 
+
+
 ---
 class: center, middle
 
@@ -34,11 +36,9 @@ class:center
 ## The `tidyverse`
 
 &lt;br&gt;
-The `tidyverse` provides exemplary support for data wrangling and is the
-main reason for the recent popularity of `R`, especially in data-driven environments.
+&lt;b style='font-size:17pt;'&gt;The `tidyverse` provides exemplary support for data wrangling and is the main&lt;br&gt;reason for the recent popularity of `R`, especially in data-driven environments.&lt;/b&gt;
 
-&lt;br&gt;&lt;br&gt;
-&lt;img src="img/data-science.png" style='width: 80%;'&gt;&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: Hadley Wickham's "R for Data Science" (R4DS)&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img src="img/data-science.png" style='width: 80%;'&gt;&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: rstudio-education.github.io/tidyverse-cookbook&lt;br&gt;Modified from Hadley Wickham's "R for Data Science" (R4DS)&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: center
@@ -92,8 +92,6 @@ class: center
 * See also `??babynames`
 
 ---
-
-
 
 ## Our Example Data: `babynames`
 
@@ -203,7 +201,7 @@ ggplot(
   )) +
 * geom_bar(
 *   stat = "count"
-* ) ## default: position = "dodge"
+* ) ## default: position = "stack"
 ```
 ]
 
@@ -328,7 +326,7 @@ ggplot(
     fill = sex
   )) +
   geom_density(
-*   alpha = .1
+*   alpha = .2
   )
 ```
 ]
@@ -352,7 +350,7 @@ ggplot(
 *   color = sex
   )) +
   geom_density(
-    alpha = .1,
+    alpha = .2,
 *   size = 1
   )
 ```
@@ -367,7 +365,7 @@ class: center
 
 ### The Rise of Unique Baby Names in the Post-WWII Era
 
-&lt;img src="4_Data_Transformation_dplyr_files/figure-html/babynames-post-wii-1.png" width="792" /&gt;
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/babynames-post-wii-1.png" width="936" /&gt;
 
 ---
 
@@ -425,7 +423,7 @@ class: inverse, center, middle
     &lt;td&gt;Pick &lt;b&gt;rows&lt;/b&gt; with matching criteria&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;code style=font-weight:700&gt;select()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;d()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Pick &lt;b&gt;columns&lt;/b&gt; with matching criteria&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
@@ -515,7 +513,7 @@ babynames[babynames$year == 2000 &amp; babynames$n &gt; 25000, ]
 
 ## Pick Rows with Matching Criteria
 
-`filter(data, condition)`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;join filtering conditions with `&amp;` and `|`:
+`filter(data, condition)` allows you to select a subset of **rows**&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;join filtering conditions with `&amp;` and `|`:
 
 
 ```r
@@ -577,7 +575,7 @@ class: inverse, center, middle
 
 ## Pick Columns with Matching Criteria
 
-`select(data, condition)` allows you to select a subset of **rows**:
+`select(data, condition)` allows you to select a subset of **columns**:
 
 
 ```r
@@ -18127,12 +18125,13 @@ ungroup(grouped)
 ```
 
 ---
-class: center, bottom, inverse
+class: center, middle, inverse
 background-image: url("img/superpower_mod.png")
 background-size: cover
 
-# &lt;b style='font-size:55pt;'&gt;THE SUPERPOWER OF &lt;/b&gt;&lt;code style='font-size:60pt;color:#ebc500;line-height:0.5;'&gt;group_by()&lt;br&gt;&lt;br&gt;&lt;/code&gt;
-# &lt;b style='font-size:28pt;color:lightgrey;line-height:0.5;'&gt;Verbs will be automatically applied "by group"!&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:55pt;'&gt;THE SUPERPOWER OF&lt;/b&gt;&lt;br&gt;&lt;code style='font-size:60pt;color:#ebc500;line-height:0.7;'&gt;group_by()&lt;br&gt;&lt;/code&gt;
+# &lt;b style='font-size:30pt;color:lightgrey;line-height:0.1;'&gt;&lt;br&gt;Verbs will be automatically applied "by group"!&lt;/b&gt;
 
 ---
 
@@ -18186,24 +18185,24 @@ summarize(names_group, sum = sum(n))
 
 
 ```r
-names_1900 &lt;- filter(babynames, year == 1900)
-names_1900 &lt;- group_by(names_1900, sex, year)
-names_1900
-## # A tibble: 3,730 x 5
-## # Groups:   sex, year [2]
+names_cent &lt;- filter(babynames, year %in% c(1890, 1900))
+names_cent &lt;- group_by(names_cent, sex, year)
+names_cent
+## # A tibble: 6,425 x 5
+## # Groups:   sex, year [4]
 ##     year sex   name          n   prop
 ##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt;
-##  1  1900 F     Mary      16706 0.0526
-##  2  1900 F     Helen      6343 0.0200
-##  3  1900 F     Anna       6114 0.0192
-##  4  1900 F     Margaret   5304 0.0167
-##  5  1900 F     Ruth       4765 0.0150
-##  6  1900 F     Elizabeth  4096 0.0129
-##  7  1900 F     Florence   3920 0.0123
-##  8  1900 F     Ethel      3896 0.0123
-##  9  1900 F     Marie      3856 0.0121
-## 10  1900 F     Lillian    3414 0.0107
-## # ... with 3,720 more rows
+##  1  1890 F     Mary      12078 0.0599
+##  2  1890 F     Anna       5233 0.0259
+##  3  1890 F     Elizabeth  3112 0.0154
+##  4  1890 F     Margaret   3100 0.0154
+##  5  1890 F     Emma       2980 0.0148
+##  6  1890 F     Florence   2744 0.0136
+##  7  1890 F     Ethel      2718 0.0135
+##  8  1890 F     Minnie     2650 0.0131
+##  9  1890 F     Clara      2496 0.0124
+## 10  1890 F     Bertha     2388 0.0118
+## # ... with 6,415 more rows
 ```
 
 ---
@@ -18214,26 +18213,26 @@ names_1900
 
 
 ```r
-names_1900 &lt;- filter(babynames, year == 1900)
-names_1900 &lt;- group_by(names_1900, sex, year)
-names_1900 &lt;- mutate(names_1900, sum = sum(n))
-names_1900 &lt;- group_by(names_1900, sex, year, name)
-names_1900
-## # A tibble: 3,730 x 6
-## # Groups:   sex, year, name [3,730]
+names_cent &lt;- filter(babynames, year %in% c(1890, 1900))
+names_cent &lt;- group_by(names_cent, sex, year)
+names_cent &lt;- mutate(names_cent, sum = sum(n))
+names_cent &lt;- group_by(names_cent, sex, year, name)
+names_cent
+## # A tibble: 6,425 x 6
+## # Groups:   sex, year, name [6,425]
 ##     year sex   name          n   prop    sum
 ##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt;  &lt;int&gt;
-##  1  1900 F     Mary      16706 0.0526 299800
-##  2  1900 F     Helen      6343 0.0200 299800
-##  3  1900 F     Anna       6114 0.0192 299800
-##  4  1900 F     Margaret   5304 0.0167 299800
-##  5  1900 F     Ruth       4765 0.0150 299800
-##  6  1900 F     Elizabeth  4096 0.0129 299800
-##  7  1900 F     Florence   3920 0.0123 299800
-##  8  1900 F     Ethel      3896 0.0123 299800
-##  9  1900 F     Marie      3856 0.0121 299800
-## 10  1900 F     Lillian    3414 0.0107 299800
-## # ... with 3,720 more rows
+##  1  1890 F     Mary      12078 0.0599 190376
+##  2  1890 F     Anna       5233 0.0259 190376
+##  3  1890 F     Elizabeth  3112 0.0154 190376
+##  4  1890 F     Margaret   3100 0.0154 190376
+##  5  1890 F     Emma       2980 0.0148 190376
+##  6  1890 F     Florence   2744 0.0136 190376
+##  7  1890 F     Ethel      2718 0.0135 190376
+##  8  1890 F     Minnie     2650 0.0131 190376
+##  9  1890 F     Clara      2496 0.0124 190376
+## 10  1890 F     Bertha     2388 0.0118 190376
+## # ... with 6,415 more rows
 ```
 
 ---
@@ -18244,27 +18243,27 @@ names_1900
 
 
 ```r
-names_1900 &lt;- filter(babynames, year == 1900)
-names_1900 &lt;- group_by(names_1900, sex, year)
-names_1900 &lt;- mutate(names_1900, sum = sum(n))
-names_1900 &lt;- group_by(names_1900, sex, year, name)
-names_1900_sum &lt;- summarize(names_1900, prop = prop, prop_check = sum(n) / unique(sum))
-arrange(names_1900_sum, desc(sex), -prop_check)
-## # A tibble: 3,730 x 5
-## # Groups:   sex, year [2]
+names_cent &lt;- filter(babynames, year %in% c(1890, 1900))
+names_cent &lt;- group_by(names_cent, sex, year)
+names_cent &lt;- mutate(names_cent, sum = sum(n))
+names_cent &lt;- group_by(names_cent, sex, year, name)
+names_sum &lt;- summarize(names_cent, prop = prop, prop_check = sum(n) / unique(sum))
+arrange(names_sum, desc(sex), -prop_check)
+## # A tibble: 6,425 x 5
+## # Groups:   sex, year [4]
 ##    sex    year name      prop prop_check
 ##    &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;      &lt;dbl&gt;
-##  1 M      1900 John    0.0606     0.0653
-##  2 M      1900 William 0.0529     0.0570
-##  3 M      1900 James   0.0447     0.0481
-##  4 M      1900 George  0.0333     0.0359
-##  5 M      1900 Charles 0.0253     0.0272
-##  6 M      1900 Robert  0.0236     0.0254
-##  7 M      1900 Joseph  0.0229     0.0247
-##  8 M      1900 Frank   0.0214     0.0231
-##  9 M      1900 Edward  0.0168     0.0181
-## 10 M      1900 Henry   0.0161     0.0173
-## # ... with 3,720 more rows
+##  1 M      1890 John    0.0710     0.0766
+##  2 M      1890 William 0.0626     0.0675
+##  3 M      1900 John    0.0606     0.0653
+##  4 M      1900 William 0.0529     0.0570
+##  5 M      1900 James   0.0447     0.0481
+##  6 M      1890 James   0.0426     0.0459
+##  7 M      1890 George  0.0372     0.0402
+##  8 M      1890 Charles 0.0339     0.0366
+##  9 M      1900 George  0.0333     0.0359
+## 10 M      1890 Frank   0.0257     0.0277
+## # ... with 6,415 more rows
 ```
 
 ---
@@ -18288,19 +18287,19 @@ Have a look again at this chunk of code:
 
 
 ```r
-names_1900 &lt;- filter(babynames, year == 1900)
-names_1900 &lt;- group_by(names_1900, sex, year)
-names_1900 &lt;- mutate(names_1900, sum = sum(n))
-names_1900 &lt;- group_by(names_1900, sex, year, name)
-names_1900_sum &lt;- summarize(names_1900, prop = prop, prop_check = sum(n) / unique(sum))
-names_1990_sum &lt;- ungroup(names_1900_sum)
-names_1900_sum &lt;- arrange(names_1900_sum, desc(sex), -prop_check)
+names_cent &lt;- filter(babynames, year %in% c(1890, 1900))
+names_cent &lt;- group_by(names_cent, sex, year)
+names_cent &lt;- mutate(names_cent, sum = sum(n))
+names_cent &lt;- group_by(names_cent, sex, year, name)
+names_sum &lt;- summarize(names_cent, prop = prop, prop_check = sum(n) / unique(sum))
+names_1990_sum &lt;- ungroup(names_sum)
+names_sum &lt;- arrange(names_sum, desc(sex), -prop_check)
 ```
 
 --
 
 &lt;br&gt;
-**There is a lot redundancy and also no need to save each step as an object.**
+&lt;b style='font-size=18pt;'&gt;There is a lot redundancy and also no need to save each step as an object.&lt;/b&gt;
 
 ---
 
@@ -18310,44 +18309,44 @@ One could rewrite the code like this:
 
 
 ```r
-names_1900 &lt;-
-  group_by(mutate(group_by(filter(babynames, year == 1900), sex, year), sum = sum(n)), sex, year, name)
+names_cent &lt;-
+  group_by(mutate(group_by(filter(babynames, year %in% c(1890, 1900)), sex, year), sum = sum(n)), sex, year, name)
 
-names_1900_sum &lt;-
-  ungroup(arrange(summarize(names_1900, prop = prop, prop_check = sum(n) / unique(sum)), desc(sex), -prop_check))
+names_sum &lt;-
+  ungroup(arrange(summarize(names_cent, prop = prop, prop_check = sum(n) / unique(sum)), desc(sex), -prop_check))
 
-names_1900_sum
-## # A tibble: 3,730 x 5
+names_sum
+## # A tibble: 6,425 x 5
 ##    sex    year name      prop prop_check
 ##    &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;      &lt;dbl&gt;
-##  1 M      1900 John    0.0606     0.0653
-##  2 M      1900 William 0.0529     0.0570
-##  3 M      1900 James   0.0447     0.0481
-##  4 M      1900 George  0.0333     0.0359
-##  5 M      1900 Charles 0.0253     0.0272
-##  6 M      1900 Robert  0.0236     0.0254
-##  7 M      1900 Joseph  0.0229     0.0247
-##  8 M      1900 Frank   0.0214     0.0231
-##  9 M      1900 Edward  0.0168     0.0181
-## 10 M      1900 Henry   0.0161     0.0173
-## # ... with 3,720 more rows
+##  1 M      1890 John    0.0710     0.0766
+##  2 M      1890 William 0.0626     0.0675
+##  3 M      1900 John    0.0606     0.0653
+##  4 M      1900 William 0.0529     0.0570
+##  5 M      1900 James   0.0447     0.0481
+##  6 M      1890 James   0.0426     0.0459
+##  7 M      1890 George  0.0372     0.0402
+##  8 M      1890 Charles 0.0339     0.0366
+##  9 M      1900 George  0.0333     0.0359
+## 10 M      1890 Frank   0.0257     0.0277
+## # ... with 6,415 more rows
 ```
 
 ---
 
 ## Readability of Code
 
-One could rewrite the code like this:
+One could rewrite the code like this (Part 1)
 
 
 ```r
-names_1900 &lt;-
+names_cent &lt;-
   group_by(
     mutate(
       group_by(
         filter(
           babynames,
-          year == 1900
+          year %in% c(1890, 1900)
         ),
         sex, year
         ),
@@ -18361,15 +18360,15 @@ names_1900 &lt;-
 
 ## Readability of Code
 
-One could rewrite the code like this:
+One could rewrite the code like this (Part 2)
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   ungroup(
     arrange(
       summarize(
-        names_1900,
+        names_cent,
         prop = prop,
         prop_check = sum(n) / unique(sum)
       ),
@@ -18377,6 +18376,7 @@ names_1900_sum &lt;-
     )
   )
 ```
+
 ---
 class: middle
 
@@ -18399,7 +18399,7 @@ physalia(&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;breakfast(&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;shower(&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;wake_up(&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Cedric, &lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Cédric, &lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;7.0&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;),&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;temp == 38&lt;br&gt;
@@ -18420,7 +18420,7 @@ class: middle
 
 &lt;p style='font-size:22pt;'&gt;
 &lt;code&gt;
-Cedric %&gt;%  &lt;br&gt;
+Cédric %&gt;%  &lt;br&gt;
 &amp;nbsp;&amp;nbsp;wake_up(7.0) %&gt;%  &lt;br&gt;
 &amp;nbsp;&amp;nbsp;shower(temp == 38) %&gt;%  &lt;br&gt;
 &amp;nbsp;&amp;nbsp;breakfast(c("cereals", "tea")) %&gt;%  &lt;br&gt;
@@ -18438,7 +18438,7 @@ class: middle
 
 &lt;p style='font-size:22pt;'&gt;
 &lt;code&gt;
-Cedric %&gt;%  &lt;br&gt;
+Cédric %&gt;%  &lt;br&gt;
 &amp;nbsp;&amp;nbsp;wake_up(., 7.0) %&gt;%  &lt;br&gt;
 &amp;nbsp;&amp;nbsp;shower(., temp == 38) %&gt;%  &lt;br&gt;
 &amp;nbsp;&amp;nbsp;breakfast(., c("cereals", "tea")) %&gt;%  &lt;br&gt;
@@ -18462,15 +18462,15 @@ With the pipe one can rewrite the code like this:
 
 
 ```r
-names_1900 &lt;-
+names_cent &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name)
 
-names_1900_sum &lt;-
-  names_1900 %&gt;%
+names_sum &lt;-
+  names_cent %&gt;%
   summarize(
     prop = prop,
     prop_check = sum(n) / unique(sum)
@@ -18483,13 +18483,13 @@ names_1900_sum &lt;-
 
 ## Readability of Code:&amp;nbsp;&amp;nbsp;`%&gt;%`&amp;nbsp;&amp;nbsp;(The Pipe)
 
-With the pipe one can rewrite the code like this:
+... or like this by omitting the intermediate assignment:
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name) %&gt;%
@@ -18505,43 +18505,43 @@ names_1900_sum &lt;-
 
 ## Readability of Code:&amp;nbsp;&amp;nbsp;`%&gt;%`&amp;nbsp;&amp;nbsp;(The Pipe)
 
-With the pipe one can rewrite the code like this:
+*(Just to show it worked.)*
 
 
 ```r
-names_1900_sum
-## # A tibble: 3,730 x 5
+names_sum
+## # A tibble: 6,425 x 5
 ##    sex    year name      prop prop_check
 ##    &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;      &lt;dbl&gt;
-##  1 M      1900 John    0.0606     0.0653
-##  2 M      1900 William 0.0529     0.0570
-##  3 M      1900 James   0.0447     0.0481
-##  4 M      1900 George  0.0333     0.0359
-##  5 M      1900 Charles 0.0253     0.0272
-##  6 M      1900 Robert  0.0236     0.0254
-##  7 M      1900 Joseph  0.0229     0.0247
-##  8 M      1900 Frank   0.0214     0.0231
-##  9 M      1900 Edward  0.0168     0.0181
-## 10 M      1900 Henry   0.0161     0.0173
-## # ... with 3,720 more rows
+##  1 M      1890 John    0.0710     0.0766
+##  2 M      1890 William 0.0626     0.0675
+##  3 M      1900 John    0.0606     0.0653
+##  4 M      1900 William 0.0529     0.0570
+##  5 M      1900 James   0.0447     0.0481
+##  6 M      1890 James   0.0426     0.0459
+##  7 M      1890 George  0.0372     0.0402
+##  8 M      1890 Charles 0.0339     0.0366
+##  9 M      1900 George  0.0333     0.0359
+## 10 M      1890 Frank   0.0257     0.0277
+## # ... with 6,415 more rows
 ```
 
 ---
 
 ## Readability of Code:&amp;nbsp;&amp;nbsp;`%&gt;%`&amp;nbsp;&amp;nbsp;(The Pipe)
 
-You can easily inactivate verbs or single conditions:
+This way, you can also easily inactivate verbs or single conditions:
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name) %&gt;%
   summarize(
-    #prop = prop,
+*   #prop = prop,
     prop_check = sum(n) / unique(sum)
   ) %&gt;%
   arrange(desc(sex), -prop_check) %&gt;%
@@ -18556,9 +18556,9 @@ You can easily inactivate verbs or single conditions:
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name) %&gt;%
@@ -18566,7 +18566,7 @@ names_1900_sum &lt;-
     #prop = prop,
     prop_check = sum(n) / unique(sum)
   ) %&gt;%
-  #arrange(desc(sex), -prop_check) %&gt;%
+* #arrange(desc(sex), -prop_check) %&gt;%
   ungroup()
 ```
 
@@ -18578,9 +18578,9 @@ You can easily inactivate verbs or single conditions:
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name) %&gt;%
@@ -18600,16 +18600,16 @@ You can easily inactivate verbs or single conditions:
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name) %&gt;%
   summarize(
     #prop = prop,
     prop_check = sum(n) / unique(sum)
-* ) #%&gt;%
+  ) #%&gt;% #&lt;&lt; ## comment as well
   #arrange(desc(sex), -prop_check) %&gt;%
   #ungroup()
 ```
@@ -18622,9 +18622,9 @@ You can easily inactivate verbs or single conditions:
 
 
 ```r
-names_1900_sum &lt;-
+names_sum &lt;-
   babynames %&gt;%
-  filter(year == 1900) %&gt;%
+  filter(year %in% c(1890, 1900)) %&gt;%
   group_by(sex, year) %&gt;%
   mutate(sum = sum(n)) %&gt;%
   group_by(sex, year, name) %&gt;%
@@ -18634,9 +18634,42 @@ names_1900_sum &lt;-
   ) %&gt;%
   #arrange(desc(sex), -prop_check) %&gt;%
   #ungroup() %&gt;%
-* {} #
+  {} ##&lt;&lt; ... or add this
 ```
 
+---
+
+## Readability of Code:&amp;nbsp;&amp;nbsp;`%&gt;%`&amp;nbsp;&amp;nbsp;(The Pipe)
+
+You can also pipe into a `ggplot()` call (but don't forget to use `+` afterwards, not `%&gt;%`): 
+
+.pull-left[
+
+```r
+babynames %&gt;%
+  filter(year == 1900) %&gt;%
+  group_by(sex) %&gt;%
+  mutate(sum = sum(n)) %&gt;%
+  group_by(sex, name) %&gt;%
+  summarize(
+    prop = sum(n) / unique(sum)
+  ) %&gt;%
+  filter(prop &gt;= .02) %&gt;% 
+  ggplot(aes(prop, name,
+         color = sex)) +
+    geom_segment(
+      aes(xend = 0, yend = name),
+      size = 2
+    ) +
+    geom_point(
+      size = 4
+    )
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-code-pipes-ggplot-1.png" width="504" /&gt;
+]
 
 ---
 
@@ -18768,22 +18801,22 @@ flights %&gt;%
 flights %&gt;% 
   select(month, origin, ends_with("delay")) %&gt;% 
   group_by(month, origin) %&gt;% 
-  summarize_all(funs(avg = round(mean(., na.rm = T), 1))) %&gt;% 
-  arrange(-arr_delay_avg)
+  summarize_all(list(~round(mean(., na.rm = T), 1))) %&gt;% 
+  arrange(-arr_delay)
 ## # A tibble: 36 x 4
 ## # Groups:   month [12]
-##    month origin dep_delay_avg arr_delay_avg
-##    &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;         &lt;dbl&gt;
-##  1     7 JFK             23.8          20.2
-##  2    12 EWR             21            19.6
-##  3     6 JFK             20.5          17.6
-##  4     6 EWR             22.5          16.9
-##  5     7 EWR             22            15.5
-##  6     6 LGA             19.3          14.8
-##  7     7 LGA             19            14.2
-##  8     4 EWR             17.4          14.1
-##  9     1 EWR             14.9          12.8
-## 10    12 JFK             14.8          12.7
+##    month origin dep_delay arr_delay
+##    &lt;int&gt; &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;
+##  1     7 JFK         23.8      20.2
+##  2    12 EWR         21        19.6
+##  3     6 JFK         20.5      17.6
+##  4     6 EWR         22.5      16.9
+##  5     7 EWR         22        15.5
+##  6     6 LGA         19.3      14.8
+##  7     7 LGA         19        14.2
+##  8     4 EWR         17.4      14.1
+##  9     1 EWR         14.9      12.8
+## 10    12 JFK         14.8      12.7
 ## # ... with 26 more rows
 ```
 
@@ -18802,12 +18835,20 @@ flights %&gt;%
   ) %&gt;% 
   group_by(season, dest) %&gt;% 
   summarize(
-    delay_avg = mean(arr_delay, na.rm = T),
-    dist_avg = mean(distance, na.rm = T),
+    del = mean(arr_delay, na.rm = T),
+    dist = mean(distance, na.rm = T),
     n = n()
   ) %&gt;% 
-  ggplot(aes(dist_avg, delay_avg, color = season)) +
-    geom_point(aes(size = n), alpha = .25) +
+  ggplot(
+    aes(
+      dist, 
+      del, 
+      color = season
+    )) +
+    geom_point(
+      aes(size = n), 
+      alpha = .25
+    ) +
     geom_smooth(se = F)
 ```
 ]
@@ -18821,7 +18862,7 @@ class: center, inverse
 
 ## Your Turn: Create this Line Plot!
 
-&lt;img src="4_Data_Transformation_dplyr_files/figure-html/exercise-babynames-wii-line-1.png" width="792" /&gt;
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/exercise-babynames-wii-line-1.png" width="936" /&gt;
 
 ---
 
@@ -18936,10 +18977,47 @@ babynames %&gt;%
 
 ---
 
-## Other Helpful Functions of `dplyr`
+## Your Turn: Post-WWII Line Plot
+
+.pull-left[
+
+```r
+babynames %&gt;%
+  filter(year &gt; 1945) %&gt;%
+  mutate(
+    sex = if_else(sex == "M", 
+                  "male", 
+                  "female")
+  ) %&gt;%
+  group_by(year, sex) %&gt;%
+  summarize(
+    unique_names = n_distinct(name)
+  ) %&gt;%
+  ggplot(
+    aes(
+      year, 
+      unique_names, 
+      color = sex
+    )) +
+    geom_line(size = 1.3) +
+    labs(
+      x = NULL, 
+      y = "Number of Unique Names in the US\n(includes all names with at least 5 uses)", 
+      caption = "\nData: US  Social Security Administration (SSA)"
+    )
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-babynames-wii-line-5-1.png" width="504" /&gt;
+]
+
+---
+
+### Other Helpful `dplyr` and `tidyverse` Functions 
 
 &lt;br&gt;
-&lt;table style='width:100%;font-size:18pt'&gt;
+&lt;table style='width:100%;font-size:13pt'&gt;
   &lt;tr&gt;
     &lt;th&gt;Function&lt;/th&gt;
     &lt;th&gt;Explanation&lt;/th&gt;
@@ -18968,7 +19046,27 @@ babynames %&gt;%
     &lt;td&gt;&lt;code style=font-weight:700&gt;complete()&lt;/code&gt;&lt;/td&gt;
     &lt;td&gt;Create all possible combinations of two variables&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;*_join()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Merge two tables&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;pivot_longer()&lt;/code&gt; and &lt;code style=font-weight:700&gt;pivot_wider()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Turn wide data into long and vice versa&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;fct_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Change factor levels dynamically&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;str_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Manipulate character strings&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;code style=font-weight:700&gt;glue()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Combine strings&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/table&gt;
 
 ---
 
@@ -19101,13 +19199,13 @@ n_distinct(mpg$model)
 ```r
 sample_n(mpg, 5)
 ## # A tibble: 5 x 11
-##   manufacturer model    displ  year   cyl trans   drv     cty   hwy fl    class 
-##   &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
-## 1 land rover   range r~   4.4  2008     8 auto(s~ 4        12    18 r     suv   
-## 2 dodge        caravan~   3.3  1999     6 auto(l~ f        16    22 r     miniv~
-## 3 toyota       corolla    1.8  2008     4 auto(l~ f        26    35 r     compa~
-## 4 mercury      mountai~   4    1999     6 auto(l~ 4        14    17 r     suv   
-## 5 honda        civic      1.6  1999     4 manual~ f        25    32 r     subco~
+##   manufacturer model     displ  year   cyl trans  drv     cty   hwy fl    class 
+##   &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+## 1 toyota       camry       3    1999     6 auto(~ f        18    26 r     midsi~
+## 2 honda        civic       1.8  2008     4 auto(~ f        24    36 c     subco~
+## 3 pontiac      grand pr~   3.8  1999     6 auto(~ f        16    26 p     midsi~
+## 4 volkswagen   jetta       2.8  1999     6 auto(~ f        16    23 r     compa~
+## 5 ford         f150 pic~   4.2  1999     6 auto(~ 4        14    17 r     pickup
 ```
 
 ---
@@ -19124,15 +19222,15 @@ mpg %&gt;% group_by(year, manufacturer) %&gt;% sample_n(1)
 ##    manufacturer model    displ  year   cyl trans  drv     cty   hwy fl    class 
 ##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
 ##  1 audi         a4         1.8  1999     4 manua~ f        21    29 p     compa~
-##  2 chevrolet    corvette   5.7  1999     8 auto(~ r        15    23 p     2seat~
-##  3 dodge        dakota ~   5.2  1999     8 auto(~ 4        11    15 r     pickup
-##  4 ford         expedit~   5.4  1999     8 auto(~ r        11    17 r     suv   
-##  5 honda        civic      1.6  1999     4 manua~ f        23    29 p     subco~
+##  2 chevrolet    malibu     3.1  1999     6 auto(~ f        18    26 r     midsi~
+##  3 dodge        caravan~   3.8  1999     6 auto(~ f        15    21 r     miniv~
+##  4 ford         expedit~   4.6  1999     8 auto(~ r        11    17 r     suv   
+##  5 honda        civic      1.6  1999     4 auto(~ f        24    32 r     subco~
 ##  6 hyundai      sonata     2.4  1999     4 auto(~ f        18    26 r     midsi~
-##  7 jeep         grand c~   4.7  1999     8 auto(~ 4        14    17 r     suv   
+##  7 jeep         grand c~   4    1999     6 auto(~ 4        15    20 r     suv   
 ##  8 land rover   range r~   4    1999     8 auto(~ 4        11    15 p     suv   
 ##  9 lincoln      navigat~   5.4  1999     8 auto(~ r        11    17 r     suv   
-## 10 mercury      mountai~   4    1999     6 auto(~ 4        14    17 r     suv   
+## 10 mercury      mountai~   5    1999     8 auto(~ 4        13    17 r     suv   
 ## # ... with 20 more rows
 ```
 
@@ -19148,18 +19246,18 @@ sample_frac(mpg, .05)
 ## # A tibble: 12 x 11
 ##    manufacturer model     displ  year   cyl trans  drv     cty   hwy fl    class
 ##    &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
-##  1 volkswagen   jetta       1.9  1999     4 manua~ f        33    44 d     comp~
-##  2 dodge        durango ~   5.7  2008     8 auto(~ 4        13    18 r     suv  
-##  3 hyundai      sonata      2.5  1999     6 auto(~ f        18    26 r     mids~
-##  4 audi         a4 quatt~   2    2008     4 manua~ 4        20    28 p     comp~
-##  5 nissan       altima      3.5  2008     6 auto(~ f        19    26 p     mids~
-##  6 nissan       altima      2.5  2008     4 auto(~ f        23    31 r     mids~
-##  7 volkswagen   passat      2    2008     4 manua~ f        21    29 p     mids~
-##  8 dodge        dakota p~   3.7  2008     6 auto(~ 4        14    18 r     pick~
-##  9 dodge        durango ~   5.2  1999     8 auto(~ 4        11    16 r     suv  
-## 10 jeep         grand ch~   5.7  2008     8 auto(~ 4        13    18 r     suv  
-## 11 toyota       corolla     1.8  1999     4 auto(~ f        24    33 r     comp~
-## 12 toyota       camry       2.2  1999     4 manua~ f        21    29 r     mids~
+##  1 toyota       corolla     1.8  2008     4 auto(~ f        26    35 r     comp~
+##  2 chevrolet    malibu      3.5  2008     6 auto(~ f        18    29 r     mids~
+##  3 toyota       toyota t~   4    2008     6 manua~ 4        15    18 r     pick~
+##  4 volkswagen   passat      2.8  1999     6 manua~ f        18    26 p     mids~
+##  5 dodge        dakota p~   4.7  2008     8 auto(~ 4        14    19 r     pick~
+##  6 dodge        ram 1500~   4.7  2008     8 manua~ 4        12    16 r     pick~
+##  7 dodge        dakota p~   3.9  1999     6 auto(~ 4        13    17 r     pick~
+##  8 mercury      mountain~   4    2008     6 auto(~ 4        13    19 r     suv  
+##  9 volkswagen   passat      2    2008     4 auto(~ f        19    28 p     mids~
+## 10 toyota       land cru~   4.7  1999     8 auto(~ 4        11    15 r     suv  
+## 11 dodge        dakota p~   4.7  2008     8 auto(~ 4         9    12 e     pick~
+## 12 honda        civic       1.6  1999     4 manua~ f        28    33 r     subc~
 ```
 
 ---
@@ -19264,15 +19362,27 @@ count(mpg)
 
 `count()` calculates the sample size of your data as summary statistics:
 
+.pull-left[
 
 ```r
-#count(mpg)
+count(mpg)
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   234
+```
+]
+
+.pull-right[
+
+```r
 summarize(mpg, n = n())
 ## # A tibble: 1 x 1
 ##       n
 ##   &lt;int&gt;
 ## 1   234
 ```
+]
 
 ---
 
@@ -19365,10 +19475,10 @@ add_count(mpg2)
 
 `add_count()` adds the sample size of your data as additional column:
 
+.pull-left[
 
 ```r
-#add_count(mpg2)
-mutate(mpg2, n = n())
+add_count(mpg2)
 ## # A tibble: 234 x 4
 ##    model        hwy   cty     n
 ##    &lt;chr&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt;
@@ -19384,6 +19494,18 @@ mutate(mpg2, n = n())
 ## 10 a4 quattro    28    20   234
 ## # ... with 224 more rows
 ```
+]
+
+.pull-right[
+
+```r
+summarize(mpg2, n = n())
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   234
+```
+]
 
 ---
 
@@ -19402,7 +19524,7 @@ tally(mpg)
 
 ---
 
-## Create all possible combinations of two variables
+## Create All Combinations of Two Columns
 
 `complete()` turns missing values into explicit missing values:
 
@@ -19428,7 +19550,7 @@ complete(mpg3, manufacturer, nesting(class))
 
 ---
 
-## Create all possible combinations of two variables
+## Create All Combinations of Two Columns
 
 `complete()` turns missing values into explicit missing values:
 
@@ -19450,6 +19572,621 @@ complete(mpg3, manufacturer, nesting(class), fill = list(n = 0))
 ##  9 chevrolet    compact        0
 ## 10 chevrolet    midsize        5
 ## # ... with 95 more rows
+```
+
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+.pull-left[
+
+```r
+band_members
+## # A tibble: 3 x 2
+##   name  band   
+##   &lt;chr&gt; &lt;chr&gt;  
+## 1 Mick  Stones 
+## 2 John  Beatles
+## 3 Paul  Beatles
+```
+]
+
+.pull-right[
+
+```r
+band_instruments
+## # A tibble: 3 x 2
+##   name  plays 
+##   &lt;chr&gt; &lt;chr&gt; 
+## 1 John  guitar
+## 2 Paul  bass  
+## 3 Keith guitar
+```
+]
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+
+```r
+left_join(band_members, band_instruments)
+## # A tibble: 3 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 Mick  Stones  &lt;NA&gt;  
+## 2 John  Beatles guitar
+## 3 Paul  Beatles bass
+```
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+
+```r
+right_join(band_members, band_instruments)
+## # A tibble: 3 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 John  Beatles guitar
+## 2 Paul  Beatles bass  
+## 3 Keith &lt;NA&gt;    guitar
+```
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+
+```r
+inner_join(band_members, band_instruments)
+## # A tibble: 2 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 John  Beatles guitar
+## 2 Paul  Beatles bass
+```
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+
+```r
+full_join(band_members, band_instruments)
+## # A tibble: 4 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 Mick  Stones  &lt;NA&gt;  
+## 2 John  Beatles guitar
+## 3 Paul  Beatles bass  
+## 4 Keith &lt;NA&gt;    guitar
+```
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+
+```r
+full_join(band_members, band_instruments, by = "name")
+## # A tibble: 4 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 Mick  Stones  &lt;NA&gt;  
+## 2 John  Beatles guitar
+## 3 Paul  Beatles bass  
+## 4 Keith &lt;NA&gt;    guitar
+```
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+.pull-left[
+
+```r
+band_members
+## # A tibble: 3 x 2
+##   name  band   
+##   &lt;chr&gt; &lt;chr&gt;  
+## 1 Mick  Stones 
+## 2 John  Beatles
+## 3 Paul  Beatles
+```
+]
+
+.pull-right[
+
+```r
+band_instruments2
+## # A tibble: 3 x 2
+##   artist plays 
+##   &lt;chr&gt;  &lt;chr&gt; 
+## 1 John   guitar
+## 2 Paul   bass  
+## 3 Keith  guitar
+```
+]
+
+---
+
+## The `join()` Family
+
+Several `*_join()` functions let you merge two data tables:
+
+
+```r
+full_join(band_members, band_instruments2, by = c("name" = "artist"))
+## # A tibble: 4 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 Mick  Stones  &lt;NA&gt;  
+## 2 John  Beatles guitar
+## 3 Paul  Beatles bass  
+## 4 Keith &lt;NA&gt;    guitar
+```
+
+---
+class: inverse, center, middle
+
+&lt;img src="img/tidyr.png" style='width: 26%;'&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:60pt'&gt; The &lt;code style='color:#ebc500'&gt;tidyr&lt;/code&gt; Package&lt;br&gt;&lt;br&gt;
+
+---
+
+## `pivot_wider` and `pivot_longer` (`tidyr`)
+
+&lt;br&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/tidy-wide-long.png" style='width:60%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Created by Garrick Aden-Buie (github.com/gadenbuie/tidyexplain)&lt;/i&gt;&lt;/p&gt;&lt;/p&gt;
+
+---
+
+## `pivot_wider` and `pivot_longer` (`tidyr`)
+
+`pivot_wider(names_from = , values_from = )` let's you turn a long data frame into a wide one:
+
+
+```r
+(mpg_wide &lt;-
+  mpg %&gt;% 
+  group_by(manufacturer, model, trans, cyl, year) %&gt;% 
+  summarize(cty = mean(cty, na.rm = T)) %&gt;% 
+  pivot_wider(
+    id_cols = c(manufacturer, model, trans, cyl),
+    names_from = year,
+    values_from = cty,
+    names_prefix = "cty_"
+  ))
+## # A tibble: 157 x 6
+## # Groups:   manufacturer, model, trans, cyl [157]
+##    manufacturer model      trans        cyl cty_2008 cty_1999
+##    &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;      &lt;int&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+##  1 audi         a4         auto(av)       4       21       NA
+##  2 audi         a4         auto(av)       6       18       NA
+##  3 audi         a4         auto(l5)       4       NA       18
+##  4 audi         a4         auto(l5)       6       NA       16
+##  5 audi         a4         manual(m5)     4       NA       21
+##  6 audi         a4         manual(m5)     6       NA       18
+##  7 audi         a4         manual(m6)     4       20       NA
+##  8 audi         a4 quattro auto(l5)       4       NA       16
+##  9 audi         a4 quattro auto(l5)       6       NA       15
+## 10 audi         a4 quattro auto(s6)       4       19       NA
+## # ... with 147 more rows
+```
+
+---
+
+## `pivot_wider` and `pivot_longer` (`tidyr`)
+
+`pivot_longer(names_to = , values_to = )` let's you turn a wide data frame into a long one:
+
+
+```r
+mpg_wide %&gt;% 
+  pivot_longer(
+    cols = starts_with("cty_"),
+    names_to = "year",
+    values_to = "cty",
+    names_prefix = "cty_"
+  )
+## # A tibble: 314 x 6
+## # Groups:   manufacturer, model, trans, cyl [157]
+##    manufacturer model trans        cyl year    cty
+##    &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;      &lt;int&gt; &lt;chr&gt; &lt;dbl&gt;
+##  1 audi         a4    auto(av)       4 2008     21
+##  2 audi         a4    auto(av)       4 1999     NA
+##  3 audi         a4    auto(av)       6 2008     18
+##  4 audi         a4    auto(av)       6 1999     NA
+##  5 audi         a4    auto(l5)       4 2008     NA
+##  6 audi         a4    auto(l5)       4 1999     18
+##  7 audi         a4    auto(l5)       6 2008     NA
+##  8 audi         a4    auto(l5)       6 1999     16
+##  9 audi         a4    manual(m5)     4 2008     NA
+## 10 audi         a4    manual(m5)     4 1999     21
+## # ... with 304 more rows
+```
+
+---
+class: inverse, center, middle
+
+&lt;img src="img/forcats.png" style='width: 26%;'&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:60pt'&gt; The &lt;code style='color:#ebc500'&gt;forcats&lt;/code&gt; Package&lt;br&gt;&lt;br&gt;
+
+---
+
+## Functions from the `forcats` Package
+
+The `forcats` package provides helpers for reordering factor levels:
+
+.pull-left[
+
+```r
+mpg_avg &lt;- 
+  mpg %&gt;% 
+  mutate(
+    m_fct = factor(manufacturer)
+  ) %&gt;% 
+  filter(!is.na(cty)) %&gt;% 
+  group_by(m_fct) %&gt;% 
+  summarize(avg = mean(cty)) %&gt;% 
+  ungroup()
+
+mpg_avg %&gt;% 
+  ggplot(aes(avg, m_fct)) +
+    geom_segment(
+      aes(xend = 0, yend = m_fct),
+      size = 1.5
+    ) +
+    geom_point(size = 4)
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-no-forcats-1.png" width="504" /&gt;
+]
+
+---
+
+## Functions from the `forcats` Package
+
+The `forcats` package provides helpers for reordering factor levels:
+
+.pull-left[
+
+```r
+mpg_avg %&gt;% 
+* mutate(
+*   m_fct = fct_reorder(m_fct, avg)
+* ) %&gt;%
+  ggplot(aes(avg, m_fct)) +
+    geom_segment(
+      aes(xend = 0, yend = m_fct),
+      size = 1.5
+    ) +
+    geom_point(size = 4)
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-forcats-1.png" width="504" /&gt;
+]
+
+---
+
+## Functions from the `forcats` Package
+
+The `forcats` package provides helpers for reordering factor levels:
+
+.pull-left[
+
+```r
+mpg_avg %&gt;% 
+* mutate(m_fct = fct_lump(
+*   m_fct,
+*   n = 8,
+*   w = avg
+* )) %&gt;%
+  group_by(m_fct) %&gt;% 
+  summarize(avg = mean(avg)) %&gt;% 
+  ungroup() %&gt;% 
+  mutate(m_fct = fct_reorder(m_fct, avg)) %&gt;% 
+  ggplot(aes(avg, m_fct)) +
+    geom_segment(
+      aes(xend = 0, yend = m_fct),
+      size = 1.5
+    ) +
+    geom_point(size = 4)
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-forcats-2-1.png" width="504" /&gt;
+]
+
+---
+
+## Functions from the `forcats` Package
+
+The `forcats` package provides helpers for reordering factor levels:
+
+.pull-left[
+
+```r
+mpg_avg %&gt;% 
+* mutate(m_fct = fct_lump(
+*   m_fct,
+*   n = 8,
+*   w = avg
+* )) %&gt;%
+* group_by(m_fct) %&gt;%
+* summarize(avg = mean(avg)) %&gt;%
+* ungroup() %&gt;%
+* mutate(m_fct = fct_reorder(m_fct, avg)) %&gt;%
+  ggplot(aes(avg, m_fct)) +
+    geom_segment(
+      aes(xend = 0, yend = m_fct),
+      size = 1.5
+    ) +
+    geom_point(size = 4)
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-forcats-2b-1.png" width="504" /&gt;
+]
+---
+
+## Functions from the `forcats` Package
+
+The `forcats` package provides helpers for reordering factor levels:
+
+.pull-left[
+
+```r
+mpg_avg %&gt;% 
+  mutate(m_fct = fct_lump(
+    m_fct,
+    n = 8,
+    w = avg
+  )) %&gt;% 
+  group_by(m_fct) %&gt;% 
+  summarize(avg = mean(avg)) %&gt;% 
+  ungroup() %&gt;% 
+  mutate(m_fct = fct_reorder(m_fct, avg)) %&gt;% 
+  ggplot(aes(avg, m_fct,
+*            color = m_fct != "Other")) +
+    geom_segment(
+      aes(xend = 0, yend = m_fct),
+      size = 1.5
+    ) +
+    geom_point(size = 4)
+```
+]
+
+.pull-right[
+&lt;img src="4_Data_Transformation_dplyr_files/figure-html/plot-forcats-3-1.png" width="504" /&gt;
+]
+
+---
+class: inverse, center, middle
+
+&lt;img src="img/stringr.png" style='width: 26%;'&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:60pt'&gt; The &lt;code style='color:#ebc500'&gt;stringr&lt;/code&gt; Package&lt;br&gt;&lt;br&gt;
+
+---
+
+## Functions from the `stringr` Package
+
+Functions from the `stringr` package operate on character strings:
+
+
+```r
+(manufacturers &lt;- mpg %&gt;% distinct(manufacturer) %&gt;% pull(manufacturer))
+##  [1] "audi"       "chevrolet"  "dodge"      "ford"       "honda"     
+##  [6] "hyundai"    "jeep"       "land rover" "lincoln"    "mercury"   
+## [11] "nissan"     "pontiac"    "subaru"     "toyota"     "volkswagen"
+```
+
+---
+
+## Functions from the `stringr` Package
+
+Functions from the `stringr` package operate on character strings:
+
+
+```r
+manufacturers &lt;- mpg %&gt;% distinct(manufacturer) %&gt;% pull(manufacturer)
+
+str_sub(manufacturers, 1, 3)
+##  [1] "aud" "che" "dod" "for" "hon" "hyu" "jee" "lan" "lin" "mer" "nis" "pon"
+## [13] "sub" "toy" "vol"
+```
+
+---
+
+## Functions from the `stringr` Package
+
+Functions from the `stringr` package operate on character strings, often using **REG**ular **EX**pressions:
+
+
+```r
+manufacturers &lt;- mpg %&gt;% distinct(manufacturer) %&gt;% pull(manufacturer)
+
+str_sub(manufacturers, 1, 3)
+##  [1] "aud" "che" "dod" "for" "hon" "hyu" "jee" "lan" "lin" "mer" "nis" "pon"
+## [13] "sub" "toy" "vol"
+
+str_subset(manufacturers, "y")
+## [1] "hyundai" "mercury" "toyota"
+str_subset(manufacturers, "[ab]")
+## [1] "audi"       "honda"      "hyundai"    "land rover" "nissan"    
+## [6] "pontiac"    "subaru"     "toyota"     "volkswagen"
+```
+
+---
+
+## Functions from the `stringr` Package
+
+Functions from the `stringr` package operate on character strings, often using **REG**ular **EX**pressions:
+
+
+```r
+manufacturers &lt;- mpg %&gt;% distinct(manufacturer) %&gt;% pull(manufacturer)
+
+str_sub(manufacturers, 1, 3)
+##  [1] "aud" "che" "dod" "for" "hon" "hyu" "jee" "lan" "lin" "mer" "nis" "pon"
+## [13] "sub" "toy" "vol"
+
+str_subset(manufacturers, "y")
+## [1] "hyundai" "mercury" "toyota"
+str_subset(manufacturers, "[ab]")
+## [1] "audi"       "honda"      "hyundai"    "land rover" "nissan"    
+## [6] "pontiac"    "subaru"     "toyota"     "volkswagen"
+
+str_detect(manufacturers, "[ab]")
+##  [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE FALSE  TRUE FALSE FALSE  TRUE  TRUE
+## [13]  TRUE  TRUE  TRUE
+```
+
+---
+
+## Functions from the `stringr` Package
+
+Functions from the `stringr` package operate on character strings, often using **REG**ular **EX**pressions:
+
+
+```r
+manufacturers &lt;- mpg %&gt;% distinct(manufacturer) %&gt;% pull(manufacturer)
+
+str_sub(manufacturers, 1, 3)
+##  [1] "aud" "che" "dod" "for" "hon" "hyu" "jee" "lan" "lin" "mer" "nis" "pon"
+## [13] "sub" "toy" "vol"
+
+str_subset(manufacturers, "y")
+## [1] "hyundai" "mercury" "toyota"
+str_subset(manufacturers, "[ab]")
+## [1] "audi"       "honda"      "hyundai"    "land rover" "nissan"    
+## [6] "pontiac"    "subaru"     "toyota"     "volkswagen"
+
+str_detect(manufacturers, "[ab]")
+##  [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE FALSE  TRUE FALSE FALSE  TRUE  TRUE
+## [13]  TRUE  TRUE  TRUE
+
+str_count(manufacturers, "[aeiou]")
+##  [1] 3 3 2 1 2 3 2 3 2 2 2 3 3 3 3
+```
+
+---
+
+## Functions from the `stringr` Package
+
+Functions from the `stringr` package operate on character strings, often using **REG**ular **EX**pressions:
+
+
+```r
+manufacturers &lt;- mpg %&gt;% distinct(manufacturer) %&gt;% pull(manufacturer)
+
+str_sub(manufacturers, 1, 3)
+##  [1] "aud" "che" "dod" "for" "hon" "hyu" "jee" "lan" "lin" "mer" "nis" "pon"
+## [13] "sub" "toy" "vol"
+
+str_subset(manufacturers, "y")
+## [1] "hyundai" "mercury" "toyota"
+str_subset(manufacturers, "[aeiou]$")
+## [1] "audi"    "dodge"   "honda"   "hyundai" "subaru"  "toyota"
+
+str_detect(manufacturers, "[ab]")
+##  [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE FALSE  TRUE FALSE FALSE  TRUE  TRUE
+## [13]  TRUE  TRUE  TRUE
+
+str_count(manufacturers, "[aeiou]")
+##  [1] 3 3 2 1 2 3 2 3 2 2 2 3 3 3 3
+
+str_replace(manufacturers, "[aeiou]", "X")
+##  [1] "Xudi"       "chXvrolet"  "dXdge"      "fXrd"       "hXnda"     
+##  [6] "hyXndai"    "jXep"       "lXnd rover" "lXncoln"    "mXrcury"   
+## [11] "nXssan"     "pXntiac"    "sXbaru"     "tXyota"     "vXlkswagen"
+```
+
+---
+class: inverse, center, middle
+
+&lt;img src="img/glue.png" style='width: 26%;'&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:60pt'&gt; The &lt;code style='color:#ebc500'&gt;glue&lt;/code&gt; Package&lt;br&gt;&lt;br&gt;
+
+---
+
+## `glue`
+
+`glue()` allows you to *glue strings together*.
+
+
+```r
+mpg %&gt;% 
+  select(manufacturer, model, year, trans) %&gt;% 
+  mutate(
+    text = glue::glue("The model {manufacturer} {model} with {trans} as transission was build in {year}.")
+  )
+## # A tibble: 234 x 5
+##    manufacturer model     year trans    text                                    
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;    &lt;glue&gt;                                  
+##  1 audi         a4        1999 auto(l5) The model audi a4 with auto(l5) as tran~
+##  2 audi         a4        1999 manual(~ The model audi a4 with manual(m5) as tr~
+##  3 audi         a4        2008 manual(~ The model audi a4 with manual(m6) as tr~
+##  4 audi         a4        2008 auto(av) The model audi a4 with auto(av) as tran~
+##  5 audi         a4        1999 auto(l5) The model audi a4 with auto(l5) as tran~
+##  6 audi         a4        1999 manual(~ The model audi a4 with manual(m5) as tr~
+##  7 audi         a4        2008 auto(av) The model audi a4 with auto(av) as tran~
+##  8 audi         a4 quat~  1999 manual(~ The model audi a4 quattro with manual(m~
+##  9 audi         a4 quat~  1999 auto(l5) The model audi a4 quattro with auto(l5)~
+## 10 audi         a4 quat~  2008 manual(~ The model audi a4 quattro with manual(m~
+## # ... with 224 more rows
+```
+
+---
+
+## `glue` in combination with `stringr`
+
+`glue()` allows you to *glue strings together*.
+
+
+```r
+mpg %&gt;% 
+  select(manufacturer, model, year, trans) %&gt;% 
+  mutate(text = 
+    glue::glue("The {str_to_title(manufacturer)} {str_to_title(model)} with {trans} as transission was build in {year}.")
+  ) 
+## # A tibble: 234 x 5
+##    manufacturer model     year trans    text                                    
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;    &lt;glue&gt;                                  
+##  1 audi         a4        1999 auto(l5) The Audi A4 with auto(l5) as transissio~
+##  2 audi         a4        1999 manual(~ The Audi A4 with manual(m5) as transiss~
+##  3 audi         a4        2008 manual(~ The Audi A4 with manual(m6) as transiss~
+##  4 audi         a4        2008 auto(av) The Audi A4 with auto(av) as transissio~
+##  5 audi         a4        1999 auto(l5) The Audi A4 with auto(l5) as transissio~
+##  6 audi         a4        1999 manual(~ The Audi A4 with manual(m5) as transiss~
+##  7 audi         a4        2008 auto(av) The Audi A4 with auto(av) as transissio~
+##  8 audi         a4 quat~  1999 manual(~ The Audi A4 Quattro with manual(m5) as ~
+##  9 audi         a4 quat~  1999 auto(l5) The Audi A4 Quattro with auto(l5) as tr~
+## 10 audi         a4 quat~  2008 manual(~ The Audi A4 Quattro with manual(m6) as ~
+## # ... with 224 more rows
 ```
 
 ---
