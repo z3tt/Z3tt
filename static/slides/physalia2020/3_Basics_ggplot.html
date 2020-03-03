@@ -4,7 +4,7 @@
     <title>3. The Structure of ggplot2 (Part 1: A Basic ggplot) - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-03-01" />
+    <meta name="date" content="2020-03-03" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
     <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
@@ -62,13 +62,28 @@ class: middle
 &lt;ul style='font-size:22pt;color:#28a87d;font-weight:700;'&gt;
 &lt;li&gt;consistent underlying grammar of graphics (Wilkinson, 2005)&lt;/li&gt;
 &lt;br&gt;
-&lt;li&gt;very flexible, 
-ed plot specification&lt;/li&gt; 
+&lt;li&gt;very flexible, layered plot specification&lt;/li&gt; 
 &lt;br&gt;
 &lt;li&gt;theme system for polishing plot appearance&lt;/li&gt;
 &lt;br&gt;  
 &lt;li&gt;active and helpful community&lt;/li&gt;
 &lt;/ul&gt;
+
+
+---
+class: center, middle
+
+&lt;img src="3_Basics_ggplot_files/figure-html/a-basic-ggplot-1-1.png" width="792" /&gt;
+
+---
+class: center, middle
+
+&lt;img src="3_Basics_ggplot_files/figure-html/a-basic-ggplot-2-1.png" width="792" /&gt;
+
+---
+class: center, middle
+
+&lt;img src="3_Basics_ggplot_files/figure-html/a-basic-ggplot-3-1.png" width="792" /&gt;
 
 ---
 class: center, middle
@@ -109,7 +124,7 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/swiss_map.png" style='width:68%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Bivariate Map by Timo Gossenbacher&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(timogrossenbacher.ch/2019/04/bivariate-maps-with-ggplot2-and-sf)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/swiss_map.png" style='width:66%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Bivariate Map by Timo Gossenbacher&lt;br&gt;&lt;span style='color:grey;font-size:8pt;'&gt;(timogrossenbacher.ch/2019/04/bivariate-maps-with-ggplot2-and-sf)&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
@@ -119,7 +134,7 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/BuiltEnv_BuildingsXberg.png" style='width:80%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Contribution to the #30DayMapChallenge&lt;br&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/showcase/BuiltEnv_BuildingsMoabit.png" style='width:58%;'&gt;&lt;br&gt;&lt;i style='color:lightgrey;font-size:10pt;'&gt;Contribution to the #30DayMapChallenge&lt;br&gt;&lt;/p&gt;
 
 ---
 class: inverse, center, middle
@@ -169,7 +184,7 @@ You can install the most recent version on GitHub using the package `devtools`:
 
 
 ```r
-install.packages("devtool")
+install.packages("devtools")
 devtools::install_github("tidyverse/ggplot2")
 ```
 
@@ -183,8 +198,10 @@ We use data from the *National Morbidity and Mortality Air Pollution Study*&amp;
 
 
 ```r
-chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv",
-                        col_types = cols(season = col_factor(), year = col_factor()))
+chic &lt;- read_csv(
+  "https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv",
+  col_types = cols(season = col_factor(), year = col_factor())
+)
 tibble::glimpse(chic)
 ## Observations: 1,461
 ## Variables: 10
@@ -352,7 +369,7 @@ ggplot
 ## {
 ##     UseMethod("ggplot")
 ## }
-## &lt;bytecode: 0x000000000cfe2520&gt;
+## &lt;bytecode: 0x0000000007fa6618&gt;
 ## &lt;environment: namespace:ggplot2&gt;
 ```
 
@@ -512,7 +529,7 @@ The default theme of `ggplot2` is well known for it's beauty.
 &lt;br&gt;&lt;br&gt;
 Even though Hadley ensures the design defaults were a 
 
-&gt; "deliberate choice because it puts the data forward while still making grid lines visible"
+&gt; deliberate choice because it puts the data forward while still making grid lines visible
 
 one of the first things I do is getting rid of it because I can't see it anymore.
 
@@ -520,7 +537,7 @@ one of the first things I do is getting rid of it because I can't see it anymore
 &lt;br&gt;&lt;br&gt;
 Also, I do not really agree with the reasoning:
 
-&gt; "The white **grid lines are visible** (which is important because they significantly aid position judgements), but they have **little visual impact** and we can easily tune them out.  
+&gt; The white **grid lines are visible** (which is important because they significantly aid position judgements), but they have **little visual impact** and we can easily tune them out.  
 &gt; The **grey background** gives the plot a **similar typographic colour to the text**, ensuring that the graphics fit in the with the flow of a document without jumping out wit a bright white background.
 &gt; Finally, the grey background **creates a continuous field of colour** which ensures that the plot is perceived as single visual entity.
 
@@ -864,7 +881,7 @@ ggplot(chic, aes(date, temp)) +
 *   y = "Temperature (°F)",
 *   title = "Seasonal Change of Temperatures in Chicago",
 *   subtitle = "Daily temperatures (°F) in the city of Chicago, IL,\nmeasured between 1997 and 2001",
-    caption = "Data: National Morbidity and Mortality Air Pollution Study (NMMAPS)",
+*   caption = "Data: National Morbidity and Mortality Air Pollution Study (NMMAPS)",
 *   tag = "Fig. 1"
 * )
 ```
@@ -950,26 +967,19 @@ You can export your plot via the `ggsave()` function:
 
 
 ```r
-ggsave(filename = "my_first_ggplot.pdf", fig.width = 10, fig.height = 7, device = cairo_pdf)
-ggsave(filename = "my_first_ggplot.png", fig.width = 10, fig.height = 7, dpi = 300)
+ggsave(filename = "my_ggplot.pdf", 
+       width = 10, height = 7, 
+       device = cairo_pdf)
+
+ggsave(filename = "my_ggplot.png", 
+       width = 10, height = 7, 
+       dpi = 700)
 ```
 
 ---
 class: center, middle
 
 &lt;img src="img/canva_vector.png" style='width:100%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: canva.com&lt;/i&gt;
-
----
-
-## Saving a `ggplot`
-
-You can export your plot via the `ggsave()` function:
-
-
-```r
-ggsave(filename = "my_first_ggplot.pdf", plot = g, fig.width = 10, fig.height = 7, device = cairo_pdf)
-ggsave(filename = "my_first_ggplot.png", plot = g, fig.width = 10, fig.height = 7, dpi = 300)
-```
 
 ---
 
@@ -987,6 +997,8 @@ ggsave(filename = "my_first_ggplot.png", plot = g, fig.width = 10, fig.height = 
   - Which password category is ranked the lowest and which the highest?
 
   - Is there a password category that is more common than others?
+
+* Export the plot with a nice aspect ratio.
 
 &lt;/b&gt; 
 
@@ -1602,7 +1614,9 @@ ggplot(
   mtcars, 
   aes(as.factor(cyl), mpg)
   ) + 
-* geom_boxplot(outlier.alpha = 0) +
+  geom_boxplot(
+*   outlier.alpha = 0
+  ) +
   geom_jitter(
     size = 3,
     alpha = .3,
@@ -1616,6 +1630,36 @@ ggplot(
 
 .pull-right[
 &lt;img src="3_Basics_ggplot_files/figure-html/plot-mtcars-box-8-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Box Plots with Raw Data
+
+.pull-left[
+
+```r
+ggplot(
+  mtcars, 
+  aes(as.factor(cyl), mpg
+  )) + 
+  geom_boxplot(
+    #outlier.alpha = 0,
+*   outlier.shape = NA
+  ) +
+  geom_jitter(
+    size = 3,
+    alpha = .3,
+    position = position_jitter(
+      width = .2,
+      seed = 2020
+    )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-mtcars-box-9-1.png" width="504" /&gt;
 ]
 
 ---
@@ -2274,7 +2318,6 @@ ggplot(
 *     color = season,
 *     shape = year)
   ) +
-* geom_line() +
   geom_point(
     size = 4,
     alpha = .2
@@ -2284,6 +2327,34 @@ ggplot(
 
 .pull-right[
 &lt;img src="3_Basics_ggplot_files/figure-html/plot-structure-aes-col-shape-global-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;Global &lt;code&gt;aes()&lt;/code&gt;&lt;/b&gt;
+
+Alternatively, all aesthetics can be grouped together (and are then applied to all `geom_*()` and `stats_*()`):
+
+.pull-left[
+
+```r
+ggplot(
+  chic, 
+  aes(date, 
+      temp,
+*     color = season,
+*     shape = year)
+  ) +
+* geom_line() +
+  geom_point(
+    size = 4,
+    alpha = .2
+  ) 
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-structure-aes-col-shape-global-2-1.png" width="504" /&gt;
 ]
 
 ---
@@ -2693,6 +2764,678 @@ ggplot(
 
 .pull-right[
 &lt;img src="3_Basics_ggplot_files/figure-html/plot-scatter-mpg-highlight-5-1.png" width="504" /&gt;
+]
+
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;More &lt;code style='color:#ebc500;'&gt;geom&lt;/code&gt;'s!&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot...
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) + 
+* geom_point()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-points-again-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) + 
+* geom_density2d()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-density2d-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) + 
+  geom_density2d(
+*   aes(color = season)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-density2d-group-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) + 
+* geom_hex()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-hex-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(
+*   aes(fill = ..density..)
+  ) 
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-hex-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(
+    aes(
+      fill = ..density..
+    ),
+*     color = "white"
+  ) 
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-hex-3-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(
+    aes(
+      fill = ..density..,
+*     color = ..density..
+    )
+  ) 
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-hex-4-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+You can displa your data via `geom_point()` as scatter plot but there are also other built-in options:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) + 
+* geom_bin2d()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-bin2d-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) + 
+* geom_histogram()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-histogram-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) + 
+  geom_histogram(
+*   bins = 60
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-histogram-bins-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) +
+  geom_histogram(
+*  binwidth = 1
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-histogram-binwidth-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) +
+* geom_density()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-density-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) +
+* geom_dotplot()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-dotplot-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) +
+  geom_dotplot( 
+*   binwidth = 1.5
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-dotplot-binwidth-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) +
+  geom_dotplot( 
+    binwidth = 1.5,
+*   color = "white",
+*   stackdir = "center"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-dotplot-stackdir-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Until now, we have mostly focussed on **geoms showing the relation between two variables** - but some only need **one**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp)) +
+  geom_dotplot( 
+    binwidth = 1.5,
+    color = "white",
+*   stackdir = "centerwhole"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-dotplot-stackdir-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(year, season)) +
+* geom_tile()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-tile-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(year, season)) +
+  geom_tile(
+*   aes(color = temp),
+    size = 2
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-tile-color-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(year, season)) +
+  geom_tile(
+*   aes(fill = temp)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-tile-fill-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(year, season)) +
+  geom_tile(
+    aes(fill = temp), 
+*   color = "white",
+*   size = 2
+  )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-tile-fill-color-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(
+  faithfuld, 
+  aes(
+    waiting, 
+    eruptions
+  )) +
+* geom_raster(
+*   aes(fill = density)
+* )
+```
+
+`geom_raster()` does more or less the same as `geom_tile()` but is is a "high performance special case for when\nall the tiles are the same size".
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-raster-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(
+  faithfuld, 
+  aes(
+    waiting, 
+    eruptions, 
+*   z = density
+  )) +
+* geom_contour()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-contour-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... and some which make only sense with **three variables**:
+
+.pull-left[
+
+```r
+ggplot(
+  faithfuld, 
+  aes(
+    waiting, 
+    eruptions, 
+*   z = density
+  )) +
+* geom_contour_filled()
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-contour-filled-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Some need even more inputs:
+
+.pull-left[
+
+```r
+points &lt;- tibble(
+  x1 = c(2, 25), 
+  x2 = c(23, 3.5), 
+  y1 = c(21, 2.5), 
+  y2 = c(15, 5),
+  id = c("A", "B")
+)
+
+ggplot(points, aes(x1, y1)) + 
+  geom_point() +
+* geom_segment(
+*   aes(
+*     xend = x2,
+*     yend = y2,
+*     color = id
+    )
+  ) 
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-segment-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Some need even more inputs:
+
+.pull-left[
+
+```r
+ggplot(points, aes(y2, id)) +
+  geom_point() +
+  geom_segment(
+    aes(
+*     xend = 0,
+*     yend = id,
+*     color = id
+*   )
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-segment-lolli-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Some need even more inputs:
+
+.pull-left[
+
+```r
+ggplot(
+  points, 
+  aes(
+    y2,
+    id, 
+*   color = id
+  )) +
+* geom_point(size = 6) +
+  geom_segment(
+    aes(
+      xend = 0, 
+      yend = id
+*   ),
+*   size = 2
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-segment-lolli-color-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+Some need even more inputs:
+
+.pull-left[
+
+```r
+ggplot(points, aes(x1, y1)) + 
+  geom_point() +
+* geom_curve(
+    aes( 
+      xend = x2,
+      yend = y2,
+      color = id
+    ),
+*   curvature = .4,
+*   arrow = arrow(
+*     length = unit(0.03, "pt")
+*   )
+  ) 
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-curve-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... or very different input compared to the other `geom`'s:
+
+.pull-left[
+
+```r
+ggplot(points, aes(x1, y1)) + 
+  geom_point() +
+* geom_abline(
+*   slope = .5,
+*   intercept = 2
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-abline-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... or very different input compared to the other `geom`'s:
+
+.pull-left[
+
+```r
+ggplot(points, aes(x1, y1)) + 
+  geom_point() +
+* geom_hline(
+*   yintercept = 15,
+    color = "blue"
+* ) +
+* geom_vline(
+*   xintercept = 10,
+    color = "red"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-hvline-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;geom\_\*()&lt;/code&gt;&amp;nbsp;&amp;nbsp;and&amp;nbsp;&amp;nbsp;&lt;code&gt;stat_*()&lt;/code&gt;&lt;/b&gt;
+
+... or very different input compared to the other `geom`'s:
+
+.pull-left[
+
+```r
+ggplot(points, aes(x1, y1)) + 
+  geom_point() +
+* geom_rect(
+*   aes(
+*     xmin = x1,
+*     xmax = x2,
+*     ymin = y1,
+*     ymax = y2,
+*     fill = id
+*   ),
+*   color = "black"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="3_Basics_ggplot_files/figure-html/plot-geom-rect-1.png" width="504" /&gt;
 ]
 
 ---

@@ -4,7 +4,7 @@
     <title>4. Data Transformation with dplyr - Cédric Scherer - Data Visualization in R with ggplot2</title>
     <meta charset="utf-8" />
     <meta name="author" content="Cédric Scherer" />
-    <meta name="date" content="2020-03-01" />
+    <meta name="date" content="2020-03-03" />
     <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
     <link rel="stylesheet" href="css\physalia.css" type="text/css" />
     <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
@@ -17545,6 +17545,31 @@ mutate(babynames, note = "Please check!")
 
 
 ```r
+mutate(babynames, note = if_else(year &lt; 1900, "Please check!", "Ok"))
+## # A tibble: 1,924,665 x 6
+##     year sex   name          n   prop note         
+##    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt; &lt;chr&gt;        
+##  1  1880 F     Mary       7065 0.0724 Please check!
+##  2  1880 F     Anna       2604 0.0267 Please check!
+##  3  1880 F     Emma       2003 0.0205 Please check!
+##  4  1880 F     Elizabeth  1939 0.0199 Please check!
+##  5  1880 F     Minnie     1746 0.0179 Please check!
+##  6  1880 F     Margaret   1578 0.0162 Please check!
+##  7  1880 F     Ida        1472 0.0151 Please check!
+##  8  1880 F     Alice      1414 0.0145 Please check!
+##  9  1880 F     Bertha     1320 0.0135 Please check!
+## 10  1880 F     Sarah      1288 0.0132 Please check!
+## # ... with 1,924,655 more rows
+```
+
+---
+
+## Create New Variables
+
+`mutate(data, condition)` allows you to create new variables (columns) based or not based on other variables:
+
+
+```r
 mutate(babynames, id = row_number())
 ## # A tibble: 1,924,665 x 6
 ##     year sex   name          n   prop    id
@@ -18038,13 +18063,27 @@ sum(babynames$n, na.rm = TRUE)
 ```
 
 ---
+
+## Sum Up Variables
+
+`summarize(data, condition)` allows you to calculate summary statistics for particular variables:
+
+
+```r
+summarize(babynames, n = n())
+## # A tibble: 1 x 1
+##         n
+##     &lt;int&gt;
+## 1 1924665
+```
+
+---
 class: inverse, center, middle
 
 # &lt;code style='font-size:70pt;color:#ebc500'&gt;group_by()&lt;/code&gt;&lt;br&gt;
 # &lt;b style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;Create Subsets&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 
 &lt;img src="img/dplyr.png" style='width: 18%;'&gt;&lt;br&gt;
-
 
 ---
 
@@ -18406,7 +18445,7 @@ physalia(&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;), &lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;c("cornflakes", "tea"), &lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;),&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;price = "EUR2.80", &lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;price = "EUR2.90", &lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;delay = 10&lt;br&gt;
 &amp;nbsp;&amp;nbsp;),&lt;br&gt;
 &amp;nbsp;&amp;nbsp;course = "Data Visualization in R with ggplot2"&lt;br&gt;
@@ -19199,20 +19238,20 @@ n_distinct(mpg$model)
 ```r
 sample_n(mpg, 5)
 ## # A tibble: 5 x 11
-##   manufacturer model     displ  year   cyl trans  drv     cty   hwy fl    class 
-##   &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
-## 1 toyota       camry       3    1999     6 auto(~ f        18    26 r     midsi~
-## 2 honda        civic       1.8  2008     4 auto(~ f        24    36 c     subco~
-## 3 pontiac      grand pr~   3.8  1999     6 auto(~ f        16    26 p     midsi~
-## 4 volkswagen   jetta       2.8  1999     6 auto(~ f        16    23 r     compa~
-## 5 ford         f150 pic~   4.2  1999     6 auto(~ 4        14    17 r     pickup
+##   manufacturer model   displ  year   cyl trans   drv     cty   hwy fl    class  
+##   &lt;chr&gt;        &lt;chr&gt;   &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;  
+## 1 nissan       altima    2.4  1999     4 auto(l~ f        19    27 r     compact
+## 2 audi         a4 qua~   2    2008     4 auto(s~ 4        19    27 p     compact
+## 3 volkswagen   gti       2    1999     4 auto(l~ f        19    26 r     compact
+## 4 chevrolet    malibu    3.6  2008     6 auto(s~ f        17    26 r     midsize
+## 5 ford         mustang   4    2008     6 manual~ r        17    26 r     subcom~
 ```
 
 ---
 
 ## Select Rows Randomly
 
-`sample_n()` allows you to create random subsets based on a number of rows - also works woith groups:
+`sample_n()` allows you to create random subsets based on a number of rows - also works with groups:
 
 
 ```r
@@ -19221,14 +19260,14 @@ mpg %&gt;% group_by(year, manufacturer) %&gt;% sample_n(1)
 ## # Groups:   year, manufacturer [30]
 ##    manufacturer model    displ  year   cyl trans  drv     cty   hwy fl    class 
 ##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
-##  1 audi         a4         1.8  1999     4 manua~ f        21    29 p     compa~
-##  2 chevrolet    malibu     3.1  1999     6 auto(~ f        18    26 r     midsi~
+##  1 audi         a4         2.8  1999     6 manua~ f        18    26 p     compa~
+##  2 chevrolet    c1500 s~   5.7  1999     8 auto(~ r        13    17 r     suv   
 ##  3 dodge        caravan~   3.8  1999     6 auto(~ f        15    21 r     miniv~
-##  4 ford         expedit~   4.6  1999     8 auto(~ r        11    17 r     suv   
+##  4 ford         explore~   4    1999     6 auto(~ 4        14    17 r     suv   
 ##  5 honda        civic      1.6  1999     4 auto(~ f        24    32 r     subco~
-##  6 hyundai      sonata     2.4  1999     4 auto(~ f        18    26 r     midsi~
+##  6 hyundai      tiburon    2    1999     4 auto(~ f        19    26 r     subco~
 ##  7 jeep         grand c~   4    1999     6 auto(~ 4        15    20 r     suv   
-##  8 land rover   range r~   4    1999     8 auto(~ 4        11    15 p     suv   
+##  8 land rover   range r~   4.6  1999     8 auto(~ 4        11    15 p     suv   
 ##  9 lincoln      navigat~   5.4  1999     8 auto(~ r        11    17 r     suv   
 ## 10 mercury      mountai~   5    1999     8 auto(~ 4        13    17 r     suv   
 ## # ... with 20 more rows
@@ -19244,27 +19283,27 @@ mpg %&gt;% group_by(year, manufacturer) %&gt;% sample_n(1)
 ```r
 sample_frac(mpg, .05)
 ## # A tibble: 12 x 11
-##    manufacturer model     displ  year   cyl trans  drv     cty   hwy fl    class
-##    &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;
-##  1 toyota       corolla     1.8  2008     4 auto(~ f        26    35 r     comp~
-##  2 chevrolet    malibu      3.5  2008     6 auto(~ f        18    29 r     mids~
-##  3 toyota       toyota t~   4    2008     6 manua~ 4        15    18 r     pick~
-##  4 volkswagen   passat      2.8  1999     6 manua~ f        18    26 p     mids~
-##  5 dodge        dakota p~   4.7  2008     8 auto(~ 4        14    19 r     pick~
-##  6 dodge        ram 1500~   4.7  2008     8 manua~ 4        12    16 r     pick~
-##  7 dodge        dakota p~   3.9  1999     6 auto(~ 4        13    17 r     pick~
-##  8 mercury      mountain~   4    2008     6 auto(~ 4        13    19 r     suv  
-##  9 volkswagen   passat      2    2008     4 auto(~ f        19    28 p     mids~
-## 10 toyota       land cru~   4.7  1999     8 auto(~ 4        11    15 r     suv  
-## 11 dodge        dakota p~   4.7  2008     8 auto(~ 4         9    12 e     pick~
-## 12 honda        civic       1.6  1999     4 manua~ f        28    33 r     subc~
+##    manufacturer model    displ  year   cyl trans  drv     cty   hwy fl    class 
+##    &lt;chr&gt;        &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+##  1 volkswagen   new bee~   1.9  1999     4 auto(~ f        29    41 d     subco~
+##  2 dodge        durango~   4.7  2008     8 auto(~ 4        13    17 r     suv   
+##  3 jeep         grand c~   6.1  2008     8 auto(~ 4        11    14 p     suv   
+##  4 subaru       foreste~   2.5  1999     4 manua~ 4        18    25 r     suv   
+##  5 dodge        durango~   5.2  1999     8 auto(~ 4        11    16 r     suv   
+##  6 toyota       corolla    1.8  1999     4 auto(~ f        24    33 r     compa~
+##  7 hyundai      tiburon    2    1999     4 auto(~ f        19    26 r     subco~
+##  8 hyundai      tiburon    2    1999     4 manua~ f        19    29 r     subco~
+##  9 toyota       camry      2.2  1999     4 auto(~ f        21    27 r     midsi~
+## 10 chevrolet    corvette   6.2  2008     8 manua~ r        16    26 p     2seat~
+## 11 volkswagen   gti        2.8  1999     6 manua~ f        17    24 r     compa~
+## 12 ford         mustang    4    2008     6 manua~ r        17    26 r     subco~
 ```
 
 ---
 
 ## Pick Top or Bottom Values
 
-`top_n()` allows you to filter the **top** or bottom values, ranked by a specified variable:
+`top_n()` allows you to filter the **top** or bottom values, ranked by a variable:
 
 
 ```r
@@ -19284,7 +19323,7 @@ top_n(mpg, 5, hwy)
 
 ## Pick Top or Bottom Values
 
-`top_n()` allows you to filter the top or **bottom** values, ranked by a specified variable:
+`top_n()` allows you to filter the top or **bottom** values, ranked by a variable:
 
 
 ```r
@@ -19303,7 +19342,7 @@ top_n(mpg, 5, -hwy)
 
 ## Pick Top or Bottom Values
 
-`top_n()` allows you to filter the top or bottom values, ranked by a specified variable:
+`top_n()` allows you to filter the top or bottom values, ranked by a variable:
 
 
 ```r
@@ -19329,7 +19368,7 @@ mpg %&gt;% group_by(manufacturer) %&gt;% top_n(1, hwy)
 
 ## Pick Top or Bottom Values
 
-`top_frac()` allows you to filter the top or bottom values, ranked by a specified variable:
+`top_frac()` allows you to filter the top or bottom values, ranked by a variable:
 
 
 ```r
@@ -19345,7 +19384,7 @@ top_frac(mpg, .01, displ)
 
 ## Count Observations
 
-`count()` calculates the sample size of your data as summary statistics:
+`count()` calculates the sample size of your data as summary statistic:
 
 
 ```r
@@ -19360,7 +19399,7 @@ count(mpg)
 
 ## Count Observations
 
-`count()` calculates the sample size of your data as summary statistics:
+`count()` calculates the sample size of your data as summary statistic:
 
 .pull-left[
 
@@ -19388,7 +19427,7 @@ summarize(mpg, n = n())
 
 ## Count Observations
 
-`count()` calculates the sample size of your data as summary statistics - also per group:
+`count()` calculates the sample size of your data as summary statistic - also per group:
 
 
 ```r
@@ -19418,7 +19457,7 @@ mpg %&gt;% group_by(manufacturer) %&gt;% count()
 
 ## Count Observations
 
-`count()` calculates the sample size of your data as summary statistics - also per group:
+`count()` calculates the sample size of your data as summary statistic - also per group:
 
 
 ```r
@@ -19442,6 +19481,21 @@ mpg %&gt;% group_by(manufacturer) %&gt;% count(sort = TRUE)
 ## 13 land rover       4
 ## 14 mercury          4
 ## 15 lincoln          3
+```
+
+---
+
+## Count Observations
+
+`tally()` does basically the same as `count()`:
+
+
+```r
+tally(mpg)
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   234
 ```
 
 ---
@@ -19506,21 +19560,6 @@ summarize(mpg2, n = n())
 ## 1   234
 ```
 ]
-
----
-
-## Count Observations
-
-`tally()` does basically the same as `count()`:
-
-
-```r
-tally(mpg)
-## # A tibble: 1 x 1
-##       n
-##   &lt;int&gt;
-## 1   234
-```
 
 ---
 
@@ -19751,14 +19790,14 @@ class: inverse, center, middle
 
 ---
 
-## `pivot_wider` and `pivot_longer` (`tidyr`)
+## `pivot_wider()` and `pivot_longer()` (`tidyr`)
 
 &lt;br&gt;
 &lt;p style='text-align:center;'&gt;&lt;img src="img/tidy-wide-long.png" style='width:60%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Created by Garrick Aden-Buie (github.com/gadenbuie/tidyexplain)&lt;/i&gt;&lt;/p&gt;&lt;/p&gt;
 
 ---
 
-## `pivot_wider` and `pivot_longer` (`tidyr`)
+## `pivot_wider()` and `pivot_longer()` (`tidyr`)
 
 `pivot_wider(names_from = , values_from = )` let's you turn a long data frame into a wide one:
 
@@ -19793,7 +19832,7 @@ class: inverse, center, middle
 
 ---
 
-## `pivot_wider` and `pivot_longer` (`tidyr`)
+## `pivot_wider()` and `pivot_longer()` (`tidyr`)
 
 `pivot_longer(names_to = , values_to = )` let's you turn a wide data frame into a long one:
 
