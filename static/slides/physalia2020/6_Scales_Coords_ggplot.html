@@ -1,0 +1,3116 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>6. The Structure of ggplot2 (Part 2: Scales &amp; Coordinate Systems) - Cédric Scherer - Data Visualization in R with ggplot2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Cédric Scherer" />
+    <meta name="date" content="2020-03-04" />
+    <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css\physalia.css" type="text/css" />
+    <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, center
+background-image: url("img/darklight_RichardStrozynski.jpg")
+background-size: contain
+
+
+
+&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Structure of &lt;code style='color:#a7a7a7;font-weight:400;'&gt;ggplot2&lt;/code&gt; (Part 2)&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
+
+---
+class: inverse, center
+
+&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:#9a9a9a;font-family:oswald;'&gt;Part 2&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Scales &amp;&lt;br&gt;Coordinate Systems&lt;/b&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/ah_ggplot2_masterpiece.png" style='width:71%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+
+---
+
+
+
+## A Masterpiece?
+
+.pull-left[
+
+```r
+chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv",
+                        col_types = cols(season = col_factor(), 
+                                         year = col_factor()))
+
+(g &lt;- 
+  ggplot(chic, 
+    aes(
+      year, 
+      temp, 
+      color = season
+    )) +
+    geom_jitter(
+      size = 3,
+      alpha = .3,
+      position = position_jitter(
+        width = .35, 
+        seed = 2020
+      )
+    )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-basic-ggplot-1.png" width="504" /&gt;
+]
+
+---
+
+## The Structure of `ggplot2`
+
+&lt;br&gt;
+&lt;table style='width:100%;font-size:16pt;'&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Layer&lt;/th&gt;
+    &lt;th&gt;Function&lt;/th&gt;
+    &lt;th&gt;Explanation&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Data&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;The raw data that you want to visualise.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;aes()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;Aesthetic mappings of the geometric and statistical objects.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Layers&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style='color:#b9b9b9;&gt;&lt;code style='color:#b9b9b9;'&gt;geom_*()&lt;/code;'&gt; and&amp;nbsp;&amp;nbsp;&lt;code style='color:#b9b9b9;'&gt;stat_*()&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;The geometric shapes and statistical summaries representing the data.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Scales&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;scale_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Maps between the data and the aesthetic dimensions.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Coordinate System&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;coord_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Maps data into the plane of the data rectangle.&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Facets&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;facet_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;The arrangement of the data into a grid of plots.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Visual Themes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;theme()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;theme_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;The overall visual defaults of a plot.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Annotations&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;annotate()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Add additional labels, geometries or images to a plot.&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Scales&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;scale\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_\*()&lt;/code&gt;&lt;/b&gt;
+
+One can use `scale_*()` to change properties of all the **aesthetic dimensions mapped to the data**.
+
+--
+
+&lt;br&gt;Consequently, there are `scale_*()` functions for all aesthetics such as:
+
+* **positions** via `scale_x_*()` and `scale_y_*()`
+
+* **colors** via `scale_color_*()` and `scale_fill_*()`
+
+* **sizes** via `scale_size_*()` and `scale_radius_*()`
+
+* **shapes** via `scale_shape_*()`  and `scale_linetype_*()`
+
+* **transparency** via `scale_alpha_*()`
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_\*()&lt;/code&gt;&lt;/b&gt;
+
+One can use `scale_*()` to change properties of all the **aesthetic dimensions mapped to the data**
+
+&lt;br&gt;The extensions (`*`) can be filled by e.g.:
+
+* `continuous()`, `discrete()`, `reverse()`, `log10()`, `sqrt()`, `date()` for positions
+
+* `continuous()`, `discrete()`, `manual()`, `gradient()`, `gradient2()`, `brewer()` for colors
+
+* `continuous()`, `discrete()`, `manual()`, `ordinal()`, `area()`, `date()` for sizes
+
+* `continuous()`, `discrete()`, `manual()`, `ordinal()` for shapes
+
+* `continuous()`, `discrete()`, `manual()`, `ordinal()`, `date()` for transparency
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Scales&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;scale\_x|y\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/ah_continuous_discrete.png" style='width:69%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-basic-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+*   limits = c(0, 50)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+*   limits = c(0, NA)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    limits = c(0, NA),
+*   expand = c(0, 0)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-3-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    limits = c(0, NA),
+*   expand = c(1, 1)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-4-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    limits = c(0, NA),
+*   expand = c(.02, .02)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-5-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+*   name = "Temperature in Chicago (°F)",
+    limits = c(0, NA),
+    expand = c(.02, .02)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-6-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    name = "Temperature in Chicago (°F)",
+    limits = c(0, NA),
+    expand = c(.02, .02),
+*   breaks = seq(0, 80, by = 10)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-7-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+*   name = "Temperature in Chicago",
+    limits = c(0, NA),
+    expand = c(.02, .02),
+    breaks = seq(0, 80, by = 10),
+    labels = glue::glue(
+*       "{seq(0, 80, by = 10)}°F"
+      )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-8-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    name = "Temperature in Chicago",
+    limits = c(0, NA),
+    expand = c(.02, .02),
+    breaks = seq(0, 80, by = 10),
+    labels = glue::glue(
+        "{seq(0, 80, by = 10)}°F" 
+    ),
+*   position = "right"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-9-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    name = "Temperature in Chicago",
+    limits = c(0, NA),
+    expand = c(.02, .02),
+    breaks = seq(0, 80, by = 10),
+    labels = glue::glue(
+        "{seq(0, 80, by = 10)}°F" 
+    ),
+*   sec.axis = dup_axis(name = "")
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-10-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_y_continuous(
+    name = "Temperature in Chicago",
+    limits = c(0, NA),
+    expand = c(.02, .02),
+    breaks = seq(0, 80, by = 10),
+    labels = glue::glue(
+        "{seq(0, 80, by = 10)}°F" 
+    ),
+*   sec.axis = sec_axis(~ . + 10)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-cont-11-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_x_discrete(
+*   name = "Year",
+*   expand = c(.1, .1)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-disc-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  scale_x_discrete(
+    name = "Year",
+    expand = c(.1, .1),
+*   breaks = c(1997, 2000),
+*   labels = c("MCMXCVII", "MMI")
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-disc-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_reverse()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  #scale_x_reverse() + 
+  ## doen't work with factors
+* scale_y_reverse()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-rev-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_log10()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  #scale_x_log10() +
+  ## doen't work with factors
+* scale_y_log10()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-log-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_sqrt()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g + 
+  #scale_x_sqrt() + 
+  ## doen't work with factors
+* scale_y_sqrt()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-sqrt-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_x|y_date()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+chic %&gt;% 
+  filter(year %in% 1997:1998) %&gt;% 
+  ggplot(aes(temp, date)) +
+    geom_point(aes(color = season)) +
+*   scale_y_date(
+*     date_breaks = "1 month",
+*     date_labels = "%Y-%m-%d",
+*     expand = c(.01, .01)
+*   )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scales-date-1.png" width="504" /&gt;
+]
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Scales&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;scale\_color|fill\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* scale_color_continuous(
+*   guide = FALSE
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-cont-guide-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_continuous(
+*   name = "Ozone\nLevel"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-cont-name-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_continuous(
+    name = "Ozone\nLevel",
+*   type = "viridis"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-cont-viridis-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_continuous(
+    name = "Ozone\nLevel",
+    type = "viridis",
+*   breaks = seq(0, 60, length.out = 5)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-cont-viridis-breaks-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_continuous(
+    name = "Ozone\nLevel",
+    type = "viridis",
+    breaks = seq(0, 60, length.out = 4),
+*   limits = c(0, 60)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-cont-viridis-limits-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_continuous(
+    name = "Ozone\nLevel",
+    type = "viridis",
+    breaks = seq(0, 60, length.out = 4),
+    limits = c(0, 60),
+*   labels = c("very low", "low",
+*              "high", "very high")
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-cont-viridis-labels-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+* scale_color_discrete(
+*   h = c(0, 260), ## hue: [0,360]
+*   c = 500, ## chroma: [0,x]
+*   l = 90 ## luminance: [0,100]
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-disc-hcl-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_discrete(
+    h = c(0, 260), ## hue: [0,360]
+    c = 500, ## chroma: [0,x] 
+    l = 90, ## luminance: [0,100]
+*   labels = c("Dec-Feb", "Mar-May",
+*              "June-Aug", "Sep-Nov")
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-disc-hcl-labels-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+chic %&gt;% 
+  group_by(date) %&gt;% 
+* mutate(
+*   season = if_else(
+*     runif(1, min = 0, max = 1) &gt; .9,
+*     NA_integer_,
+*     as.integer(season)
+*   )) %&gt;%
+  ggplot(
+    aes(
+      year, temp, 
+      color = as.factor(season)
+    )) +
+    geom_jitter(
+*     size = 1.3,
+      width = .35
+    ) +
+    scale_color_discrete(
+      h = c(0, 60),  ## hue: [0,360]
+*     na.value = "black"
+    )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-disc-hcl-na-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+* scale_color_manual(
+*   values = c("blue", "seagreen",
+*              "firebrick", "orange")
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-disc-manual-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_gradient()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* scale_color_gradient(
+*   low = "dodgerblue",
+*   high = "red"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-grad-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_gradient2()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* scale_color_gradient2(
+    low = "dodgerblue",
+*   mid = "grey80",
+    high = "red"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-grad2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_gradient2()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_gradient2(
+    low = "dodgerblue",
+    mid = "grey80",
+    high = "red",
+*   midpoint = mean(chic$o3)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-grad2-mid-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+* scale_color_brewer()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-seq-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_brewer( 
+*   palette = 8
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-seq-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_brewer( 
+*   palette = "YlGnBu"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-seq-3-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill\_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_brewer( 
+*   type = "seq", ## the default
+    palette = "YlGnBu"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-seq-4-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_brewer(
+*   type = "qual"
+ )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-qual-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_brewer(
+    type = "qual",
+*   palette = "Dark2"
+ )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-qual-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_brewer()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+g +
+  scale_color_brewer(
+*   type = "div"
+ )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-brewer-div-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_distiller()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* scale_color_distiller()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-distiller-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_distiller()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_distiller(
+*   palette = "PuRd"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-distiller-seq-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_distiller()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_distiller(
+    palette = "PuRd",
+*   direction = 1
+    ## note that -1 is the default
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-distiller-seq-rev-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_distiller()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_distiller(
+*   type = "div"
+ )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-distiller-div-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_distiller()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_distiller(
+    type = "div",
+*   palette = "Spectral"
+ )
+```
+
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-distiller-div-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_color|fill_distiller()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  scale_color_distiller(
+*   type = "qual"
+ )
+```
+
+&lt;br&gt;
+&lt;code style='font-size:12pt;'&gt;Warning message: Using a discrete colour palette&lt;br&gt;in a continuous scale. Consider using type = "seq"&lt;br&gt;or type = "div" instead.
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-distiller-qual-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_color|fill\_\*()&lt;/code&gt;&lt;/b&gt;
+
+&lt;span style='font-size:18pt;'&gt;Several packages offer predefined palettes, e.g.:&lt;/span&gt;
+
+* &lt;span style='font-size:18pt;'&gt;`{viridis}` for perceptually uniform palettes&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+* &lt;span style='font-size:18pt;'&gt;`{scico}` for more perceptually uniform palettes&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+* &lt;span style='font-size:18pt;'&gt;`{rcartocolor}` for map color palettes&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+* &lt;span style='font-size:18pt;'&gt;`{ggsci}` for scientific journal and sci-fi themed color&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+* &lt;span style='font-size:18pt;'&gt;`{ggthemes}` for colors of popular software &amp; publishers&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+* &lt;span style='font-size:18pt;'&gt;`{LaCroixColoR}` for vibrant summery colors&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;span style='font-size:18pt;'&gt;Check the [collection by Emil Hvitfeldt](https://github.com/EmilHvitfeldt/r-color-palettes/blob/master/type-sorted-palettes.md) for an extensive list of color palettes available in `R`!&lt;/span&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;viridis::scale_color|fill_viridis()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* viridis::scale_color_viridis(
+*   option = "magma"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-viridis-magma-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;viridis::scale_color|fill_viridis()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  viridis::scale_color_viridis(
+    option = "magma",
+*   end = .8
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-viridis-magma-cut-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;viridis::scale_color|fill_viridis()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+  viridis::scale_color_viridis(
+*   option = "cividis",
+*   direction = -1
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-viridis-cividis-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scico::scale_color|fill_scico()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* scico::scale_color_scico(
+*   palette = "berlin"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-scico-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;rcartocolor::scale_color|fill_carto_c()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) + 
+  geom_point(aes(color = o3)) +
+* rcartocolor::scale_color_carto_c(
+*   palette = "Temps"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-rcarto-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;ggsci::scale\_color|fill\_\*()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic, aes(season, temp)) + 
+  geom_boxplot(aes(fill = year)) +
+  ggsci::scale_fill_npg()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-color-ggsci-1.png" width="504" /&gt;
+]
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Scales&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;scale\_size|radius\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_size|radius\_\*()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+chic2k &lt;- filter(chic, year == 2000)
+
+  ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-basic-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_size()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  ) +
+* scale_size(
+*   range = c(.1, 5)
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_size()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  ) +
+  scale_size(
+    range = c(.1, 5),
+*   breaks = c(25, 75, 125)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-breaks-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_size()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  ) +
+  scale_size(
+    range = c(.1, 5),
+    breaks = c(25, 75, 125),
+*   trans = "reverse"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-rev-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_size()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  ) +
+  scale_size(
+    range = c(.1, 5),
+    breaks = c(25, 75, 125),
+*   trans = "exp"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-trans-exp-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_size()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  ) +
+* scale_size_binned(
+*   n.breaks = 3,
+*   range = c(.5, 5)
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-bins-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_radius()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(size = pm10),
+    alpha = .4
+  ) +
+  scale_radius()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-size-radius-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_size|radius\_\*()&lt;/code&gt;&lt;/b&gt;
+
+&lt;br&gt;
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/size-basic-comp-1.png" width="1440" /&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Scales&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;scale\_shape|linetype\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_shape_\*()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(shape = season),
+    size = 2.5
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_shape()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(shape = season),
+    size = 2.5
+  ) +
+* scale_shape(
+*   name = "Season of\nthe Year"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-name-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_shape_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(shape = season),
+    size = 2.5
+  ) +
+* scale_shape_manual(
+*   name = "Season of\nthe Year",
+*   values = 9:12
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-manual-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_shape\_\*()&lt;/code&gt;&lt;/b&gt;
+
+&lt;br&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/points-symbols.png" style="width: 71%"&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: ggplot2.tidyverse.org/articles/ggplot2-specs.html&lt;/i&gt;&lt;/p&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_shape_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(
+      shape = season,
+*     fill = season
+    ),
+    size = 2.5,
+    alpha = .75
+  ) +
+  scale_shape_manual(
+    name = "Season of\nthe Year",
+*   values = 21:24
+  ) +
+* scale_fill_brewer(
+*   palette = "Dark2"
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-manual-fill-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_shape_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic2k, aes(date, temp)) +
+  geom_point(
+    aes(
+      shape = season,
+      fill = season
+    ),
+    size = 2.5,
+    alpha = .75
+  ) +
+  scale_shape_manual(
+    name = "Season of\nthe Year",
+    values = 21:24
+  ) +
+  scale_fill_brewer(
+    palette = "Dark2",
+*   name = "Season of\nthe Year"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-manual-fill-combined-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_shape_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-manual-fill-2-1.png" width="504" /&gt;
+
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-shape-manual-fill-combined-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_linetype\_\*()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+chic_wy &lt;- 
+  chic %&gt;% 
+  mutate(
+    week = lubridate::week(date)
+  ) %&gt;% 
+  group_by(week, year) %&gt;% 
+  summarize(temp = mean(temp))
+
+ggplot(chic_wy, aes(week, temp)) +
+  geom_line(
+    aes(linetype = year),
+    size = .7
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-linetype-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_linetype_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_wy, aes(week, temp)) +
+  geom_line(
+    aes(linetype = year),
+    size = .7
+  ) +
+* scale_linetype_manual(
+*   name = "Year:",
+*   values = c("dotted",
+*              "twodash",
+*              "longdash",
+*              "dotdash")
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-linetype-manual-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_linetype\_\*()&lt;/code&gt;&lt;/b&gt;
+
+&lt;br&gt;
+&lt;p style="text-align:center;"&gt;&lt;img src="img/linetype.png" style="width: 65%"&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: rfriend.tistory.com&lt;/i&gt;&lt;/p&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_linetype_manual()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_wy, aes(week, temp)) +
+  geom_line(
+    aes(
+      linetype = year,
+*     color = year
+    ),
+    size = .7
+  ) +
+  scale_linetype_manual(
+    name = "Year:",
+    values = c("dotted",
+               "twodash",
+               "longdash",
+               "dotdash")
+  ) +
+* scale_color_brewer(
+*   name = "Year:",
+*   palette = "Set1",
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-linetype-color-combined-1.png" width="504" /&gt;
+]
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Scales&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;scale\_alpha\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_alpha\_\*()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+chic_month &lt;-
+  chic %&gt;% 
+  mutate(
+    month = lubridate::month(
+      date,
+      label = T
+    )
+  ) %&gt;% 
+  group_by(month) %&gt;% 
+  summarize(
+    temp = mean(temp),
+    n = n()
+  ) %&gt;% 
+  ungroup()
+
+chic_month
+```
+]
+
+.pull-right[
+
+```
+## # A tibble: 12 x 3
+##    month  temp     n
+##    &lt;ord&gt; &lt;dbl&gt; &lt;int&gt;
+##  1 Jan    24.4   124
+##  2 Feb    34.2   113
+##  3 Mar    39.4   124
+##  4 Apr    48.1   120
+##  5 May    60.7   124
+##  6 Jun    69.0   120
+##  7 Jul    74.5   124
+##  8 Aug    71.6   124
+##  9 Sep    65.3   120
+## 10 Oct    54.7   124
+## 11 Nov    41.0   120
+## 12 Dec    28.2   124
+```
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale\_alpha\_\*()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+    aes(alpha = n), 
+    size = 8,
+    color = "purple"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-basic-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_alpha()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+    aes(alpha = n), 
+    size = 8,
+    color = "purple"
+  ) +
+* scale_alpha(
+*   range = c(.3, 1)
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_alpha()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+    aes(alpha = n), 
+    size = 8,
+    color = "purple"
+  ) +
+  scale_alpha( 
+    range = c(.3, 1),
+*   breaks = c(
+*     min(chic_month$n),
+*     floor(mean(chic_month$n)),
+*     max(chic_month$n)
+*   )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-breaks-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_alpha()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+    aes(alpha = n), 
+    size = 8,
+    color = "purple"
+  ) +
+  scale_alpha( 
+*   name = "Observations:",
+    range = c(.3, 1),
+    breaks = c(
+      min(chic_month$n),
+      floor(mean(chic_month$n)),
+      max(chic_month$n) 
+    ),
+*   labels = c(
+*     "Minimum (113)",
+*     "Average (121)",
+*     "Maximum (124)"
+*   )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-labels-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_alpha_continuous()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+    aes(alpha = n), 
+    size = 8,
+    color = "purple"
+  ) +
+* scale_alpha_continuous(
+    name = "Observations:",
+    range = c(.3, 1),
+    breaks = c(
+      min(chic_month$n),
+      floor(mean(chic_month$n)),
+      max(chic_month$n) 
+    ),
+    labels = c(
+      "Minimum (113)",
+      "Average (121)",
+      "Maximum (124)" 
+    )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-cont-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_alpha_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+*   aes(alpha = as.factor(n)),
+    size = 8,
+    color = "purple"
+  ) +
+* scale_alpha_discrete(
+    name = "Observations:",
+    range = c(.3, 1)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-disc-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;scale_alpha_discrete()&lt;/code&gt;&lt;/b&gt;
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_point(
+*   aes(alpha = as.factor(n)),
+    size = 8,
+    color = "purple"
+  ) +
+* scale_alpha_manual(
+    name = "Observations:",
+*   values = c(.3, .8, 1)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-alpha-man-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn!
+
+&lt;b style='font-size:18pt;color:#00684a'&gt;
+* Visualize the relationship of temperature and Ozone in Chicago using a hexagonal binning and a (non-green) viridis color palette.
+
+* Afterwards, make the axis title more decriptive and change the legend title to "Count:".
+
+* Now change the x axis so it shows the temperature every 10°F in a range of -10°F to 90°F.
+
+* Turn the labels on the y axis into two string labels (e.g. "low" and "high).
+
+* Explore some other color palettes that are available in other packages, pick one you like and change the color palette of the plot.
+
+* Check if your final plot is color-blindness safe either online, e.g. color-blindness.com/coblis-color-blindness-simulator or using the package `colorblindr` (*Note: You need to install again some development versions of packages, follow the instructions on* https://github.com/clauswilke/colorblindr)
+
+&lt;/b&gt;
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+* geom_hex() +
+* viridis::scale_fill_viridis(
+*   option = "inferno"
+* )
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(
+*   aes(
+*     #fill = ..count..,  ## the default
+*     color = ..count..
+*   )
+  ) +
+  viridis::scale_fill_viridis(
+    option = "inferno"
+  ) +
+* viridis::scale_color_viridis(
+*   option = "inferno"
+* )
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-2-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-2-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(
+    aes(
+      #fill = ..count..,  ## the default
+      color = ..count.. 
+    ) 
+  ) +
+  viridis::scale_fill_viridis(
+*   option = "cividis"
+  ) +
+  viridis::scale_color_viridis(
+*   option = "cividis"
+  )
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-3-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-3-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(aes(color = ..count..)) +
+  viridis::scale_fill_viridis(
+    option = "cividis",
+*   name = "Count:"
+  ) +
+  viridis::scale_color_viridis(
+    option = "cividis",
+*   name = "Count:"
+  ) +
+* labs(
+*   x = "Temperature (°F)",
+*   y = "Ozone Level"
+* )
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-text-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-text-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(aes(color = ..count..)) +
+* scale_x_continuous(
+*   breaks = seq(-10, 90, by = 10)
+* ) +
+  viridis::scale_fill_viridis(
+    option = "cividis",
+    name = "Count:" 
+  ) +
+  viridis::scale_color_viridis(
+    option = "cividis",
+    name = "Count:" 
+  ) +
+  labs( 
+    x = "Temperature (°F)", 
+    y = "Ozone Level" 
+  ) 
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-xaxis-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-xaxis-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(aes(color = ..count..)) +
+  scale_x_continuous(
+    breaks = seq(-10, 90, by = 10),
+*   limits = c(-10, NA)
+  ) +
+  viridis::scale_fill_viridis(
+    option = "cividis",
+    name = "Count:" 
+  ) +
+  viridis::scale_color_viridis(
+    option = "cividis",
+    name = "Count:" 
+  ) +
+  labs( 
+    x = "Temperature (°F)", 
+    y = "Ozone Level" 
+  ) 
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-xaxis-2-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-xaxis-2-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_hex(aes(color = ..count..)) +
+  scale_x_continuous(
+    breaks = seq(-10, 90, by = 10),
+    limits = c(-10, NA)
+  ) +
+* scale_y_continuous(
+*   breaks = c(5, 50),
+*   labels = c("low", "high")
+* ) +
+  viridis::scale_fill_viridis(
+    option = "cividis",
+    name = "Count:" 
+  ) +
+  viridis::scale_color_viridis(
+    option = "cividis",
+    name = "Count:" 
+  ) +
+  labs( 
+    x = "Temperature (°F)", 
+    y = "Ozone Level" 
+  ) 
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-yaxis-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-yaxis-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+* geom_hex(color = "grey70") +
+  scale_x_continuous(
+    breaks = seq(-10, 90, by = 10),
+    limits = c(-10, NA)
+  ) +
+  scale_y_continuous(
+    breaks = c(5, 50),
+    labels = c("low", "high") 
+  ) +
+* scico::scale_fill_scico(
+*   palette = "roma",
+*   name = "Count:",
+*   direction = -1
+* ) +
+  labs( 
+    x = "Temperature (°F)", 
+    y = "Ozone Level" 
+  ) 
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-hex-viridis-scico-1.png" width="504" /&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-exercise-hex-viridis-scico-1.png" width="504" /&gt;
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+.pull-left[
+
+```r
+*g &lt;- ggplot(chic, aes(temp, o3)) +
+  geom_hex(color = "grey70") + 
+  scale_x_continuous(
+    breaks = seq(-10, 90, by = 10),
+    limits = c(-10, NA)
+  ) +
+  scale_y_continuous(
+    breaks = c(5, 50),
+    labels = c("low", "high") 
+  ) +
+  scico::scale_fill_scico(
+    palette = "roma", 
+    name = "Count:",
+    direction = -1 
+  ) +
+  labs( 
+    x = "Temperature (°F)", 
+    y = "Ozone Level" 
+  ) 
+```
+]
+
+---
+
+## Your Turn: Viridis-Hexagons
+
+
+```r
+colorblindr::cvd_grid(g)
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/colorblindr-1.png" width="864" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Coordinate System&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;coord\_\*()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;code&gt;coord\_\*()&lt;/code&gt;
+
+Coordinate systems produce a 2d position based on the relative geometric arrangement of the two position aesthetics (usually `x` and `y`).
+&lt;br&gt;&lt;br&gt;
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/cartesian-coord.png" style='width:51%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+
+---
+
+## &lt;code&gt;coord\_\*()&lt;/code&gt;
+
+Coordinate systems produce a 2d position based on the relative geometric arrangement of the two position aesthetics (usually `x` and `y`).
+&lt;br&gt;&lt;br&gt;
+
+The meaning of the position aesthetics depends on the coordinate system used: 
+
+.pull-left[
+* Linear coordinate systems that preserve the shape of geoms.
+]
+
+.pull-right[
+* Non-linear coordinate systems that likely change the shapes.
+]
+
+---
+
+## &lt;code&gt;coord\_\*()&lt;/code&gt;
+
+Coordinate systems produce a 2d position based on the relative geometric arrangement of the two position aesthetics (usually `x` and `y`).
+&lt;br&gt;&lt;br&gt;
+
+.pull-left[
+* Linear coordinate systems that preserve the shape of geoms:
+
+    + `coord_cartesian()` and `coord_fixed()`:&lt;br&gt;the default with two fixed perpendicular oriented axes
+    
+    + `coord_flip()`:&lt;br&gt;a Cartesian coordinate system with flipped axes
+    
+    + `coord_fixed()`:&lt;br&gt;a Cartesian coordinate system with a fixed aspect ratio
+]
+.pull-right[]
+
+---
+
+## &lt;code&gt;coord\_\*()&lt;/code&gt;
+
+Coordinate systems produce a 2d position based on the relative geometric arrangement of the two position aesthetics (usually `x` and `y`).
+&lt;br&gt;&lt;br&gt;
+
+.pull-left[
+* Linear coordinate systems that preserve the shape of geoms:
+
+    + `coord_cartesian()` and `coord_fixed()`:&lt;br&gt;the default with two fixed perpendicular oriented axes
+    
+    + `coord_flip()`:&lt;br&gt;a Cartesian coordinate system with flipped axes
+    
+    + `coord_fixed()`:&lt;br&gt;a Cartesian coordinate system with a fixed aspect ratio
+]
+
+.pull-right[
+* Non-linear coordinate systems that likely change the shapes:
+
+    + `coord_map()` and `coord_sf()`:&lt;br&gt;map projections
+
+    + `coord_polar()`:&lt;br&gt;a polar coordinate system
+
+    + `coord_trans()`:&lt;br&gt;arbitrary transformations to x and y positions
+]  
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Coordinate System&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;coord_cartesian()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;code&gt;coord_cartesian()&lt;/code&gt;
+
+`coord_*()` functions allow you to zoom in a plot:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_line() +
+* coord_cartesian(
+*   ylim = c(50, 70)
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-zoom-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_cartesian()&lt;/code&gt;
+
+`coord_*()` functions allow you to zoom in a plot:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_line() +
+* coord_cartesian(
+*   ylim = c(50, 70)
+* )
+```
+
+&lt;b&gt;Note that data points outside the plot area are not removed!&lt;/b&gt;
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-zoom-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_cartesian()&lt;/code&gt;
+
+In case you want to remove those data points, use `scale_y_continuous(limits = c(min, max))`.
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_line() +
+* coord_cartesian(ylim = c(50, 70))
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-zoom-again-1.png" width="504" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_line() +
+* scale_y_continuous(limits = c(50, 70))
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-lim-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_cartesian()&lt;/code&gt;
+
+In case you want to remove those data points, use `scale_y_continuous(limits = c(min, max))`.
+
+.pull-left[
+
+```r
+ggplot(chic, aes(season, temp)) +
+  geom_boxplot()  +
+* coord_cartesian(ylim = c(50, 70))
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-zoom-box-1.png" width="504" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(season, temp)) +
+  geom_boxplot()  +
+* scale_y_continuous(limits = c(50, 70))
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-lim-box-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_cartesian()&lt;/code&gt;
+
+`coord_*()` is also used to *prevent clipping* of points and the correct alignment of axis ticks:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  coord_cartesian(
+*   ylim = c(0, 75)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scale-axis-clip-1.png" width="504" /&gt;
+]
+
+---
+
+## Clipping
+
+&lt;br&gt;&lt;br&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/clipping.png" style='width:100%;'&gt;&lt;/p&gt;
+
+---
+
+## &lt;code&gt;coord_cartesian()&lt;/code&gt;
+
+`coord_*()` is also used to *prevent clipping* of points and correct alignment of axis ticks:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  coord_cartesian(
+    ylim = c(0, 75)
+  )
+
+
+
+
+
+
+ggplot(chic, aes(date, temp)) +
+  geom_point() +
+  coord_cartesian(
+    ylim = c(0, 75),
+*   clip = "off"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scale-axis-clip-2-1.png" width="504" /&gt;&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-scale-axis-clip-2-2.png" width="504" /&gt;
+]
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Coordinate System&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;coord_fixed()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;code&gt;coord_fixed()&lt;/code&gt;
+
+`coord_fixed()` forces a specified ratio as physical representation of units on the axes:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_point() +
+* coord_fixed()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-fixed-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_fixed()&lt;/code&gt;
+
+`coord_fixed()` forces a specified ratio as physical representation of units on the axes:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_point() +
+  coord_fixed() +
+* scale_x_continuous(
+*   breaks = seq(0, 100, by = 20)
+* )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-fixed-scale-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_fixed()&lt;/code&gt;
+
+`coord_fixed()` forces a specified ratio as physical representation of units on the axes:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_point() +
+  coord_fixed(
+*   ratio = 3
+  ) +
+  scale_x_continuous(
+    breaks = seq(0, 100, by = 20)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-fixed-ratio-1.png" width="504" /&gt;
+]
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Coordinate System&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;coord_flip()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;code&gt;coord_flip()&lt;/code&gt;
+
+**`coord_flip()`** allows you to flip a Cartesian coordinate system:
+
+.pull-left[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_col() +
+  coord_cartesian()
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-bar-1.png" width="504" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic_month, aes(month, temp)) +
+  geom_col() +
+* coord_flip()
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-bar-flip-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_flip()&lt;/code&gt;
+
+**`coord_flip()`** allows you to flip a Cartesian coordinate system:
+
+.pull-left[
+
+```r
+ggplot(
+  chic_month, 
+  aes(
+*   fct_rev(month),
+    temp
+  )) +
+  geom_col() +
+  coord_flip()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-bar-flip-rev-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_flip()&lt;/code&gt;
+
+**`coord_flip()`** allows you to flip a Cartesian coordinate system:
+
+.pull-left[
+
+```r
+ggplot(
+  chic_month, 
+  aes(
+*   fct_reorder(month, temp),
+    temp
+  )) +
+  geom_col() +
+  coord_flip()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-bar-flip-order-1.png" width="504" /&gt;
+]  
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Coordinate System&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;coord_polar()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;code&gt;coord_polar()&lt;/code&gt;
+
+You can easily transform a rectangular coordinate system into a polar one with `coord_polar()`:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(season, temp)) +
+  stat_summary(fun.y = mean,
+              geom = "col") +
+  coord_cartesian()
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-polar-before-1.png" width="504" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(season, temp)) +
+  stat_summary(fun.y = mean,
+               geom = "col") +
+* coord_polar()
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-polar-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_polar()&lt;/code&gt;
+
+This way, we can create pie charts:
+
+.pull-left[
+
+```r
+ggplot(
+  chic_month, 
+  aes(
+*   factor(1), n,
+    fill = month
+  )) +
+  geom_col() +
+* coord_polar() +
+  scale_x_discrete(
+    name = NULL, 
+    expand = c(0, 0)
+  ) +
+  scale_y_continuous(
+    name = NULL, 
+    expand = c(0, 0)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-pie-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_polar()&lt;/code&gt;
+
+This way, we can create pie charts:
+
+.pull-left[
+
+```r
+ggplot(
+  chic_month, 
+  aes(
+    factor(1), n, 
+    fill = month
+  )) +
+  geom_col() +
+* coord_polar(theta = "y") +
+  scale_x_discrete(
+    name = NULL, 
+    expand = c(0, 0)
+  ) +
+  scale_y_continuous(
+    name = NULL, 
+    expand = c(0, 0)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-pie-2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_polar()&lt;/code&gt;
+
+... and doughnut charts:
+
+.pull-left[
+
+```r
+chic_month %&gt;% 
+* mutate(
+*   perc = n / n(),
+*   ymax = cumsum(perc),
+*   ymin = c(0, head(ymax, n = -1))
+* ) %&gt;%
+  ggplot(
+    aes(
+*     xmin = 4, xmax = 6,
+*     ymin = ymin, ymax = ymax,
+      fill = month
+    )) +
+*   geom_rect() +
+*   coord_polar(theta = "y") +
+    scale_x_discrete(
+      name = NULL, 
+      limits = c(2, 4)
+    ) 
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-donut-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;code&gt;coord_polar()&lt;/code&gt;
+
+Our doughnut charts looks like this in a Cartesian coordinate system:
+
+.pull-left[
+
+```r
+chic_month %&gt;% 
+  mutate( 
+    perc = n / n(), 
+    ymax = cumsum(perc), 
+    ymin = c(0, head(ymax, n = -1)) 
+  ) %&gt;%  
+  ggplot(
+    aes(
+      xmin = 4, xmax = 6,
+      ymin = ymin, ymax = ymax, 
+      fill = month
+    )) +
+    geom_rect() + 
+*   #coord_polar(theta = "y") +
+    scale_x_discrete(
+      name = NULL, 
+      limits = c(2, 4)
+    ) 
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-donut-nopolar-1.png" width="504" /&gt;
+]  
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Coordinate System&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;coord_map()&lt;/code&gt; and &lt;code style='color:#ebc500;'&gt;coord_sf()&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+Maps often come as polygons:
+
+
+```r
+world &lt;- map_data("world")
+
+head(world, 15)
+##         long      lat group order      region subregion
+## 1  -69.89912 12.45200     1     1       Aruba      &lt;NA&gt;
+## 2  -69.89571 12.42300     1     2       Aruba      &lt;NA&gt;
+## 3  -69.94219 12.43853     1     3       Aruba      &lt;NA&gt;
+## 4  -70.00415 12.50049     1     4       Aruba      &lt;NA&gt;
+## 5  -70.06612 12.54697     1     5       Aruba      &lt;NA&gt;
+## 6  -70.05088 12.59707     1     6       Aruba      &lt;NA&gt;
+## 7  -70.03511 12.61411     1     7       Aruba      &lt;NA&gt;
+## 8  -69.97314 12.56763     1     8       Aruba      &lt;NA&gt;
+## 9  -69.91181 12.48047     1     9       Aruba      &lt;NA&gt;
+## 10 -69.89912 12.45200     1    10       Aruba      &lt;NA&gt;
+## 12  74.89131 37.23164     2    12 Afghanistan      &lt;NA&gt;
+## 13  74.84023 37.22505     2    13 Afghanistan      &lt;NA&gt;
+## 14  74.76738 37.24917     2    14 Afghanistan      &lt;NA&gt;
+## 15  74.73896 37.28564     2    15 Afghanistan      &lt;NA&gt;
+## 16  74.72666 37.29072     2    16 Afghanistan      &lt;NA&gt;
+```
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+Maps often come as polygons and can be plotted via `geom_polygon()`:
+
+.pull-left[
+
+```r
+(g_world &lt;- 
+  ggplot(
+    world,
+    aes(
+      long, lat, 
+      group = group
+    )) +
+*   geom_polygon(
+*     fill = "tan",
+*     color = "grey20"
+*   )
+)
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-map-noproj-1.png" width="360" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+We can fix that by using `coord_fixed()`:
+
+.pull-left[
+
+```r
+g_world +
+  coord_fixed()
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-map-noproj-fixed-1.png" width="360" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+We can fix that by using `coord_fixed()`:
+
+.pull-left[
+
+```r
+g_world +
+  coord_map(
+*   xlim = c(-20, 45),
+*   ylim = c(20, 58)
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-map-proj-europe-1.png" width="360" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+Since maps are displaying spherical data, it's better to project the data via `coord_map()`:
+
+.pull-left[
+
+```r
+g_world +
+* coord_map("mollweide")
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/coord-map-proj1-1.png" width="504" /&gt;
+]
+
+.pull-right[
+
+```r
+g_world +
+* coord_map("ortho")
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-map-proj2-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+The `sf` package (`simple features`) is the new standard in geospatial computation:
+
+
+```r
+library(sf)
+
+sf_world &lt;- st_as_sf(world, coords = c("long", "lat"), crs = 3786)
+
+head(sf_world)
+## Simple feature collection with 6 features and 4 fields
+## geometry type:  POINT
+## dimension:      XY
+## bbox:           xmin: -70.06612 ymin: 12.423 xmax: -69.89571 ymax: 12.59707
+## epsg (SRID):    3786
+## proj4string:    +proj=eqc +lat_ts=0 +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +a=6371007 +b=6371007 +units=m +no_defs
+##   group order region subregion                   geometry
+## 1     1     1  Aruba      &lt;NA&gt;   POINT (-69.89912 12.452)
+## 2     1     2  Aruba      &lt;NA&gt;   POINT (-69.89571 12.423)
+## 3     1     3  Aruba      &lt;NA&gt; POINT (-69.94219 12.43853)
+## 4     1     4  Aruba      &lt;NA&gt; POINT (-70.00415 12.50049)
+## 5     1     5  Aruba      &lt;NA&gt; POINT (-70.06612 12.54697)
+## 6     1     6  Aruba      &lt;NA&gt; POINT (-70.05088 12.59707)
+```
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+The `sf` package is included in `ggplot2` via `geom_sf()` and `coord_sf()`:
+
+.pull-left[
+
+```r
+ggplot(sf_world) +
+  geom_sf(
+    fill = "tan",
+    color = "grey20",
+    size = .3
+  )
+```
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-sf-1.png" width="360" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+The `sf` package is included in `ggplot2` via `geom_sf()` and `coord_sf()`:
+
+.pull-left[
+
+```r
+ggplot(sf_world) +
+  geom_sf(
+    fill = "tan",
+    color = "grey20",
+    size = .3
+  )
+```
+
+The `fill` argument doesn't work here, since it turned our polygons into points...
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-sf-2-1.png" width="360" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;coord_map()&lt;/code&gt; and &lt;code&gt;coord_sf()&lt;/code&gt;&lt;/b&gt;
+
+The `sf` package is included in `ggplot2` via `geom_sf()` and `coord_sf()`:
+
+.pull-left[
+
+```r
+ggplot(sf_world) +
+  geom_sf(
+    fill = "tan",
+    color = "grey20",
+    size = .3
+  ) +
+* coord_sf(
+*   xlim = c(-20, 45),
+*   ylim = c(20, 58)
+* )
+```
+
+]
+
+.pull-right[
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/plot-coord-sf-3-1.png" width="360" /&gt;
+]
+
+---
+
+## Your Turn!
+
+&lt;b style='font-size:18pt;color:#00684a'&gt;
+* For a data set of your choice
+
+ - create a scatter plot with a linear fitting and test how `coord_fixed()` changes the perception of the relationship
+ 
+ - create a pie or doughnut chart for one variable in that data set
+
+&lt;/b&gt;
+
+---
+
+## Your Turn: Fixed Aspect Ratio
+
+.pull-left[
+
+```r
+ggplot(mpg, aes(hwy, displ)) +
+  geom_smooth(method = "lm") +
+  geom_point()
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-coord-1.png" width="504" /&gt;
+
+]
+
+.pull-right[
+
+```r
+ggplot(mpg, aes(hwy, displ)) +
+  geom_smooth(method = "lm") +
+  geom_point() + 
+  coord_fixed()
+```
+
+&lt;img src="6_Scales_Coords_ggplot_files/figure-html/exercise-coord-fixed-1.png" width="504" /&gt;
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> ",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
