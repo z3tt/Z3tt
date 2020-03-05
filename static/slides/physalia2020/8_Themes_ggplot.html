@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>8. The Structure of ggplot2 (Part 4: Visual Themes) - Cédric Scherer - Data Visualization in R with ggplot2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Cédric Scherer" />
+    <meta name="date" content="2020-03-05" />
+    <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css\physalia.css" type="text/css" />
+    <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, center
+background-image: url("img/darklight_RichardStrozynski.jpg")
+background-size: contain
+
+
+
+&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;The Structure of &lt;code style='color:#a7a7a7;font-weight:400;'&gt;ggplot2&lt;/code&gt; (Part 4)&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
+
+
+
+---
+class: inverse, center 
+
+&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:#9a9a9a;font-family:oswald;'&gt;Part 4&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Visual Themes&lt;/b&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/ah_ggplot2_masterpiece.png" style='width:71%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+
+---
+
+## The Structure of `ggplot2`
+
+&lt;br&gt;
+&lt;table style='width:100%;font-size:16pt;'&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Layer&lt;/th&gt;
+    &lt;th&gt;Function&lt;/th&gt;
+    &lt;th&gt;Explanation&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Data&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;ggplot(data)&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;The raw data that you want to visualise.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Aesthetics&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;aes()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;Aesthetic mappings of the geometric and statistical objects.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Layers&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style='color:#b9b9b9;&gt;&lt;code style='color:#b9b9b9;'&gt;geom_*()&lt;/code;'&gt; and&amp;nbsp;&amp;nbsp;&lt;code style='color:#b9b9b9;'&gt;stat_*()&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;The geometric shapes and statistical summaries representing the data.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Scales&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;scale_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;Maps between the data and the aesthetic dimensions.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Coordinate System&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;coord_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style=';color:#b9b9b9;'&gt;Maps data into the plane of the data rectangle.&lt;/span&gt;&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#b9b9b9;'&gt;Facets&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code style='color:#b9b9b9;'&gt;facet_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;span style='color:#b9b9b9;'&gt;The arrangement of the data into a grid of plots.&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Visual Themes&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;theme()&lt;/code&gt; and&amp;nbsp;&amp;nbsp;&lt;code style=font-weight:700&gt;theme_*()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;The overall visual defaults of a plot.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;b style='color:#67676;'&gt;Annotations&lt;/b&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;annotate()&lt;/code&gt;&lt;/td&gt;
+    &lt;td&gt;Add additional labels, geometries or images to a plot.&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Visual Themes&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;theme()&lt;/code&gt; and &lt;code style='color:#ebc500;'&gt;theme\_\*&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme\_\*()&lt;/code&gt;&lt;/b&gt;
+
+* Themes control the display of all non-data elements of the plot&lt;br&gt;
+  
+  + titles
+  + labels
+  + fonts
+  + background + borders
+  + gridlines
+  + legends
+
+--
+
+* Themes can be modified for each plot by calling `theme()` and `element_` functions
+
+--
+
+* Themes can be used to give plots a consistent customized look by defining a custom theme using&lt;br&gt;`theme_update()` or `theme_set()`
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;'&gt;Visual Themes&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;color:grey;'&gt;&lt;code style='color:#ebc500;'&gt;theme_*()&lt;/code&gt; and &lt;code style='color:#ebc500;'&gt;theme()&lt;/code&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*()&lt;/code&gt;&lt;/b&gt;
+
+We have already seen several build-in theme examples in the first `ggplot2` lecture:
+
+&lt;img src="8_Themes_ggplot_files/figure-html/themes-1-1.png" width="1080" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*()&lt;/code&gt;&lt;/b&gt;
+
+We have already seen several build-in theme examples in the first `ggplot2` lecture:
+
+&lt;img src="8_Themes_ggplot_files/figure-html/themes-2-1.png" width="1080" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*()&lt;/code&gt;&lt;/b&gt;
+
+You can set themes **for each plot** or globally for the current session with `theme_set()`:
+
+.pull-left[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_point(aes(color = season)) +
+* theme_bw()
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-per-plot-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(temp, o3)) +
+  geom_point(aes(color = season)) +
+* theme_dark()
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-per-plot-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_set()&lt;/code&gt;&lt;/b&gt;
+
+You can set themes for each plot or **globally for the current session and thus all following plots** with `theme_set()`:
+
+.pull-left[
+
+```r
+*theme_set(theme_light())
+
+(g &lt;- ggplot(chic, aes(temp, o3)) +
+  geom_point(aes(color = season)))
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-globally-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_line(color = "grey60") +
+  geom_point(aes(color = o3)) +
+  scale_color_distiller(palette = 8)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-globally-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_set()&lt;/code&gt;&lt;/b&gt;
+
+You can set themes for each plot or **globally for the current session and thus all following plots** with `theme_set()`:
+
+.pull-left[
+
+```r
+*old_theme &lt;- theme_set(theme_dark())
+
+g +
+  scale_color_brewer(palette = 8)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-globally-again-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = o3)) +
+  geom_line(color = "grey60") +
+  scale_color_distiller(palette = 8)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-globally-again-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_set()&lt;/code&gt;&lt;/b&gt;
+
+`theme_set()` invisibly returns the previous theme so you can easily save it, then later restore it:
+
+.pull-left[
+
+```r
+*theme_set(old_theme)
+
+g +
+  scale_color_brewer(palette = 8)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/old-theme-1.png" width="576" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+```r
+ggplot(chic, aes(date, temp)) +
+  geom_point(aes(color = o3)) +
+  geom_line(color = "grey60") +
+  scale_color_distiller(palette = 8)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-old-theme-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*(base_size)&lt;/code&gt;&lt;/b&gt;
+
+Themes have a `base_size` argument which is a simple way to increase or decrease the font size:
+
+.pull-left[
+
+```r
+theme_set(theme_light(base_size = 32))
+
+g
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-size-1.png" width="576" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+```r
+theme_set(theme_light(base_size = 16))
+
+g
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-size-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*(base_size)&lt;/code&gt;&lt;/b&gt;
+
+Themes have a `base_size` argument which is a simple way to increase or decrease the font size:
+
+.pull-left[
+
+```r
+g +
+* theme_bw(base_size = 5)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-per-plot-base-size-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+```r
+g +
+* theme_dark(base_size = 50)
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-per-plot-base-size-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*(base_size)&lt;/code&gt;&lt;/b&gt;
+
+You can also set the font of the theme via `base_family`:
+
+.pull-left[
+
+```r
+theme_set(
+  theme_light(
+    base_family = "Roboto Mono"
+  )
+)
+
+g
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-family-1.png" width="576" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+```r
+theme_set(
+  theme_light(
+    base_family = "Montserrat ExtraBold"
+  )
+)
+
+g
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-family-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*(base_size)&lt;/code&gt;&lt;/b&gt;
+
+... and change the size of geometric elements via `base_line_size` and `base_rect_size`:
+
+
+```r
+g +
+  theme_bw(
+*   base_size = 20
+  )
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-size-text-1.png" width="540" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*(base_line_size)&lt;/code&gt;&lt;/b&gt;
+
+... and change the size of geometric elements via `base_line_size` and `base_rect_size`:
+
+
+```r
+g +
+  theme_bw(
+    base_size = 20,
+*   base_line_size = 2
+  )
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-size-line-1.png" width="540" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*(base_rect_size)&lt;/code&gt;&lt;/b&gt;
+
+... and change the size of geometric elements via `base_line_size` and `base_rect_size`:
+
+
+```r
+g +
+  theme_bw(
+    base_size = 20,
+    base_line_size = 2,
+*   base_rect_size = 5
+  )
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-size-rect-1.png" width="540" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_*()&lt;/code&gt;&lt;/b&gt;
+
+* `theme_set()` completely overrides the current theme.
+
+* `theme_update()` modifies a particular element of the current theme using the + operator.
+
+* `theme_replace()` modifies a particular element of the current theme using the `%+replace%` operator.
+
+--
+
+&lt;br&gt;
+For the last two, you first need to know what is available to *update* or *replace*...
+
+---
+
+
+```r
+theme_grey
+## function (base_size = 11, base_family = "", base_line_size = base_size/22, 
+##     base_rect_size = base_size/22) 
+## {
+##     half_line &lt;- base_size/2
+##     t &lt;- theme(line = element_line(colour = "black", size = base_line_size, 
+##         linetype = 1, lineend = "butt"), rect = element_rect(fill = "white", 
+##         colour = "black", size = base_rect_size, linetype = 1), 
+##         text = element_text(family = base_family, face = "plain", 
+##             colour = "black", size = base_size, lineheight = 0.9, 
+##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(), 
+##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL, 
+##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8), 
+##             colour = "grey30"), axis.text.x = element_text(margin = margin(t = 0.8 * 
+##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
+##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 * 
+##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 * 
+##             half_line/2), hjust = 0), axis.ticks = element_line(colour = "grey20"), 
+##         axis.ticks.length = unit(half_line/2, "pt"), axis.ticks.length.x = NULL, 
+##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
+##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
+##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2), 
+##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2), 
+##             vjust = 0), axis.title.y = element_text(angle = 90, 
+##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90, 
+##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA), 
+##         legend.spacing = unit(2 * half_line, "pt"), legend.spacing.x = NULL, 
+##         legend.spacing.y = NULL, legend.margin = margin(half_line, 
+##             half_line, half_line, half_line), legend.key = element_rect(fill = "grey95", 
+##             colour = NA), legend.key.size = unit(1.2, "lines"), 
+##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)), 
+##         legend.text.align = NULL, legend.title = element_text(hjust = 0), 
+##         legend.title.align = NULL, legend.position = "right", 
+##         legend.direction = NULL, legend.justification = "center", 
+##         legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
+##             0, "cm"), legend.box.background = element_blank(), 
+##         legend.box.spacing = unit(2 * half_line, "pt"), panel.background = element_rect(fill = "grey92", 
+##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = "white"), 
+##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line, 
+##             "pt"), panel.spacing.x = NULL, panel.spacing.y = NULL, 
+##         panel.ontop = FALSE, strip.background = element_rect(fill = "grey85", 
+##             colour = NA), strip.text = element_text(colour = "grey10", 
+##             size = rel(0.8), margin = margin(0.8 * half_line, 
+##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)), 
+##         strip.text.x = NULL, strip.text.y = element_text(angle = -90), 
+##         strip.text.y.left = element_text(angle = 90), strip.placement = "inside", 
+##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2, 
+##             "pt"), strip.switch.pad.wrap = unit(half_line/2, 
+##             "pt"), plot.background = element_rect(colour = "white"), 
+##         plot.title = element_text(size = rel(1.2), hjust = 0, 
+##             vjust = 1, margin = margin(b = half_line)), plot.title.position = "panel", 
+##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)), 
+##         plot.caption = element_text(size = rel(0.8), hjust = 1, 
+##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = "panel", 
+##         plot.tag = element_text(size = rel(1.2), hjust = 0.5, 
+##             vjust = 0.5), plot.tag.position = "topleft", plot.margin = margin(half_line, 
+##             half_line, half_line, half_line), complete = TRUE)
+##     ggplot_global$theme_all_null %+replace% t
+## }
+## &lt;bytecode: 0x000000000cce7110&gt;
+## &lt;environment: namespace:ggplot2&gt;
+```
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme()&lt;/code&gt; Arguments&lt;/b&gt;
+
+There are many elements you can customize. You can either group them by their type or by their category:
+
+* element types: 
+
+  - `text`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; all labels, axis text, legend title and text
+  - `line`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; axis lines, ticks, grid lines
+  - `rect`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; plot area, panel area, legend and legend keys, facets
+
+--
+
+* element category:
+
+  - `axis.*`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; titles, text, ticks, lines
+  - `legend.*`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; background, margin, spacing, keys, text, title, position, direction, box
+  - `panel.*`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; background, border, margin, spacing, grid (major and minor)
+  - `plot.*`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; background, title, subtitle, caption, tag, margin
+  - `strip.*`&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp; background, placement, text
+
+---
+
+## Text Elements via `element_text()`
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/theme-001.png" style='width:85%;'&gt;&lt;/p&gt;
+
+---
+
+## Text Elements via `element_text()`
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/theme-002.png" style='width:85%;'&gt;&lt;/p&gt;
+
+---
+
+## Text Elements via `element_text()`
+
+
+```r
+element_text(
+  family = "Roboto",
+  face = "bold", ## plain, italic, bolditalic
+  size = 18,
+  color = "red",
+  lineheight = .7,
+  angle = 180,
+  hjust = .5,
+  vjust = .0,
+  margin = margin(
+    30, ## t (top)
+    0,  ## r (right)
+    15, ## b (bottom)
+    10  ## l (left)
+  )
+)
+```
+
+---
+
+## Text Elements via `element_text()`
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  ggtitle("My New\nTitle") +
+  theme(
+    plot.title = element_text(
+      family = "Roboto",
+      face = "bold", ## plain, italic, bolditalic
+      size = 18,
+      color = "red",
+      lineheight = .7,
+      angle = 180,
+      hjust = .5,
+      vjust = .0,
+      margin = margin(30, 0, 15, 10)
+    )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-text-example-1.png" width="504" /&gt;
+]
+
+---
+
+## Line Elements via `element_line()`
+
+&lt;br&gt;&lt;br&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/theme-004.png" style='width:85%;'&gt;&lt;/p&gt;
+
+---
+
+## Line Elements via `element_line()`
+
+
+```r
+element_line(
+  color = "red",
+  size = 10,
+  linetype = "dashed",
+  lineend = "round", # square, butt
+  arrow = arrow(
+    angle = 30, 
+    length = unit(0.25, "inches")
+  )
+)
+```
+
+---
+
+## Line Elements via `element_line()`
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  theme(
+    panel.grid = element_line(
+      color = "red",
+      size = 10,
+      linetype = "dashed",
+      lineend = "square", # round, butt
+      arrow = arrow(
+        angle = 30, 
+        length = unit(0.25, "inches")
+      )
+    )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-line-example-1.png" width="504" /&gt;
+]
+
+---
+
+## Rectangular Elements via `element_rect()`
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/theme-003.png" style='width:85%;'&gt;&lt;/p&gt;
+
+---
+
+## Rectangular Elements via `element_rect()`
+
+
+```r
+element_rect(
+  color = "orange",
+  fill = "black",
+  size = 2,
+  linetype = "dotted"
+)
+```
+
+---
+
+## Rectangular Elements via `element_rect()`
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  theme(
+    plot.background = element_rect(
+      color = "orange",
+      fill = "black",
+      size = 2,
+      linetype = "dotted"
+    )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-rect-example-1.png" width="504" /&gt;
+]
+
+---
+
+## Other Elements: Positions
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/theme-005.png" style='width:85%;'&gt;&lt;/p&gt;
+
+---
+
+## Other Elements: Positions
+
+
+```r
+legend.position = "top" # bottom, right, left
+legend.position = "none"
+legend.position = c(.2, .8) # x, y
+
+plot.title.position = "plot" # panel
+plot.caption.position = "plot"
+```
+
+---
+
+## Other Elements: Positions
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  ggtitle("A very short title.") +
+  theme(
+    legend.position = "top",
+    plot.title.position = "plot"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-position-example-1.png" width="504" /&gt;
+]
+
+---
+
+## Other Elements: Positions
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  ggtitle("A very short title.") +
+  theme(
+    legend.position = "none",
+    plot.title.position = "panel"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-position-example-2-1.png" width="504" /&gt;
+]
+
+---
+
+## Other Elements: Positions
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  ggtitle("A very short title.") +
+  theme(
+    legend.position = c(.2, .8),
+    plot.title.position = "plot"
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-position-example-3-1.png" width="504" /&gt;
+]
+
+---
+
+## Other Elements: Spacing, Length, Size etc.
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/theme-006.png" style='width:85%;'&gt;&lt;/p&gt;
+
+---
+
+## Other Elements: Spacing, Length, Size etc.
+
+
+```r
+## ?grid::unit
+unit(50, "pt")
+unit(10, "mm")
+unit(2.5, "lines")
+unit(.15, "npc")  ## Normalised Parent Coordinates
+```
+
+---
+
+## Other Elements: Positions
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+.pull-left[
+
+```r
+g +
+  theme(
+    axis.ticks.length =
+      unit(2.5, "lines"),
+    legend.key.size =
+      unit(.15, "npc")
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-spacing-example-1.png" width="504" /&gt;
+]
+
+---
+
+## Draw Nothing: `element_blank()`
+
+You can remove elements via `element_blank()`:
+
+.pull-left[
+
+```r
+g +
+  theme(
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    legend.title = element_blank()
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-element-blank-example-1.png" width="504" /&gt;
+]
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_update()&lt;/code&gt;&lt;/b&gt;
+
+
+```r
+theme_set(theme_bw(base_size = 20))
+
+g
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-update-before-1.png" width="720" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme_update()&lt;/code&gt;&lt;/b&gt;
+
+
+```r
+theme_update(
+  panel.grid.major = element_line(color = "red")
+)
+
+g
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-update-1.png" width="720" style="display: block; margin: auto;" /&gt;
+
+---
+
+## &lt;b&gt;&lt;code&gt;theme()&lt;/code&gt;&lt;/b&gt;
+
+You can directly alter the appearance by adding `theme()` to a ggplot:
+
+
+```r
+g + theme(legend.position = "bottom")
+```
+
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-to-plot-1.png" width="720" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Fonts: The `extrafont` Package
+
+&gt; Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
+
+
+```r
+## install.packages("extrafont")
+## library(extrafont)
+## 
+## ## import your system fonts
+## ## (only 1 time)
+## font_import() ## press "y"
+## loadfonts()
+## 
+## ## which fonts are available?
+fonts()
+##   [1] "Algerian"                        "Arial Black"                    
+##   [3] "Arial"                           "Arial Narrow"                   
+##   [5] "Arial Unicode MS"                "Bahnschrift"                    
+##   [7] "Baskerville Old Face"            "Bauhaus 93"                     
+##   [9] "Bell MT"                         "Berlin Sans FB"                 
+##  [11] "Berlin Sans FB Demi"             "Bernard MT Condensed"           
+##  [13] "Bitter"                          "Bodoni MT Poster Compressed"    
+##  [15] "Book Antiqua"                    "Bookman Old Style"              
+##  [17] "Bookshelf Symbol 7"              "Bradley Hand ITC"               
+##  [19] "Brig Maven"                      "Britannic Bold"                 
+##  [21] "Broadway"                        "Brush Script MT"                
+##  [23] "Calibri"                         "Calibri Light"                  
+##  [25] "Californian FB"                  "Cambria"                        
+##  [27] "Candara"                         "Candara Light"                  
+##  [29] "Centaur"                         "Century"                        
+##  [31] "Century Gothic"                  "Changa One"                     
+##  [33] "Chiller"                         "Colonna MT"                     
+##  [35] "Comic Sans MS"                   "Consolas"                       
+##  [37] "Constantia"                      "Cooper Black"                   
+##  [39] "Copse"                           "Corbel"                         
+##  [41] "Corbel Light"                    "Courier New"                    
+##  [43] "Ebrima"                          "Fjalla One"                     
+##  [45] "Footlight MT Light"              "Franklin Gothic Medium"         
+##  [47] "Freestyle Script"                "French Script MT"               
+##  [49] "Gabriola"                        "Gadugi"                         
+##  [51] "Garamond"                        "Georgia"                        
+##  [53] "Graduate"                        "Haettenschweiler"               
+##  [55] "Harlow Solid Italic"             "Harrington"                     
+##  [57] "High Tower Text"                 "HoloLens MDL2 Assets"           
+##  [59] "Impact"                          "Inconsolata"                    
+##  [61] "Informal Roman"                  "Ink Free"                       
+##  [63] "Javanese Text"                   "Jokerman"                       
+##  [65] "Juice ITC"                       "Kameron"                        
+##  [67] "Kristen ITC"                     "Kunstler Script"                
+##  [69] "Wide Latin"                      "Lato Black"                     
+##  [71] "Lato"                            "Lato Hairline"                  
+##  [73] "Lato Light"                      "Leelawadee UI"                  
+##  [75] "Leelawadee UI Semilight"         "Lucida Bright"                  
+##  [77] "Lucida Calligraphy"              "Lucida Console"                 
+##  [79] "Lucida Fax"                      "Lucida Handwriting"             
+##  [81] "Lucida Sans Unicode"             "Magneto"                        
+##  [83] "Malgun Gothic"                   "Malgun Gothic Semilight"        
+##  [85] "Marlett"                         "Matura MT Script Capitals"      
+##  [87] "Merriweather Black"              "Merriweather"                   
+##  [89] "Merriweather Light"              "Merriweather Sans"              
+##  [91] "Merriweather Sans ExtraBold"     "Merriweather Sans Light"        
+##  [93] "Microsoft Himalaya"              "Microsoft Yi Baiti"             
+##  [95] "Microsoft New Tai Lue"           "Microsoft PhagsPa"              
+##  [97] "Microsoft Sans Serif"            "Microsoft Tai Le"               
+##  [99] "Mistral"                         "Modern No. 20"                  
+## [101] "Mongolian Baiti"                 "Monotype Corsiva"               
+## [103] "Montserrat Black"                "Montserrat"                     
+## [105] "Montserrat ExtraBold"            "Montserrat ExtraLight"          
+## [107] "Montserrat Light"                "Montserrat Medium"              
+## [109] "Montserrat SemiBold"             "Montserrat Thin"                
+## [111] "Montserrat Alternates Black"     "Montserrat Alternates"          
+## [113] "Montserrat Alternates ExtraBold" "Montserrat Alternates ExLight"  
+## [115] "Montserrat Alternates Light"     "Montserrat Alternates Medium"   
+## [117] "Montserrat Alternates SemiBold"  "Montserrat Alternates Thin"     
+## [119] "MS Outlook"                      "MS Reference Sans Serif"        
+## [121] "MS Reference Specialty"          "MV Boli"                        
+## [123] "Myanmar Text"                    "Niagara Engraved"               
+## [125] "Niagara Solid"                   "Nirmala UI"                     
+## [127] "Nirmala UI Semilight"            "Old English Text MT"            
+## [129] "Onyx"                            "Open Sans"                      
+## [131] "Open Sans ExtraBold"             "Open Sans Light"                
+## [133] "Open Sans SemiBold"              "Oxygen Mono"                    
+## [135] "Palatino Linotype"               "Papyrus"                        
+## [137] "Parchment"                       "Playbill"                       
+## [139] "Poor Richard"                    "Poppins Black"                  
+## [141] "Poppins"                         "Poppins ExtraBold"              
+## [143] "Poppins ExtraLight"              "Poppins Light"                  
+## [145] "Poppins Medium"                  "Poppins SemiBold"               
+## [147] "Poppins Thin"                    "Pristina"                       
+## [149] "PT Mono"                         "Ravie"                          
+## [151] "Roboto Black"                    "Roboto"                         
+## [153] "Roboto Light"                    "Roboto Medium"                  
+## [155] "Roboto Thin"                     "Roboto Condensed"               
+## [157] "Roboto Condensed Light"          "Roboto Mono"                    
+## [159] "Roboto Mono Light"               "Roboto Mono Medium"             
+## [161] "Roboto Mono Thin"                "Segoe MDL2 Assets"              
+## [163] "Segoe Print"                     "Segoe Script"                   
+## [165] "Segoe UI"                        "Segoe UI Light"                 
+## [167] "Segoe UI Semibold"               "Segoe UI Semilight"             
+## [169] "Segoe UI Black"                  "Segoe UI Emoji"                 
+## [171] "Segoe UI Historic"               "Segoe UI Symbol"                
+## [173] "Showcard Gothic"                 "SimSun-ExtB"                    
+## [175] "Snap ITC"                        "Space Mono"                     
+## [177] "Stencil"                         "Sylfaen"                        
+## [179] "Symbol"                          "Tahoma"                         
+## [181] "Tempus Sans ITC"                 "Times New Roman"                
+## [183] "Titillium Web Black"             "Titillium Web"                  
+## [185] "Titillium Web ExtraLight"        "Titillium Web Light"            
+## [187] "Titillium Web SemiBold"          "Trebuchet MS"                   
+## [189] "Ultra"                           "Varela Round"                   
+## [191] "Verdana"                         "Viner Hand ITC"                 
+## [193] "Vivaldi"                         "Vladimir Script"                
+## [195] "Webdings"                        "Wingdings"                      
+## [197] "Wingdings 2"                     "Wingdings 3"
+```
+
+---
+
+## Fonts: The `showtext` Package
+
+&gt;  The showtext package, is able to support more font formats and more graphics devices, and avoids using external software such as Ghostscript. showtext makes it even easier to use various types of fonts (TrueType, OpenType, Type 1, web fonts, etc.) in R graphs.
+
+
+```r
+install.packages("showtext")
+library(showtext)
+
+## Loading Google fonts 
+## (https://fonts.google.com/)
+## installed on your syste,
+font_add_google("Roboto", "Roboto")
+font_add_google("Roboto Mono", "Roboto Mono")
+```
+
+---
+
+## Adding Fonts to Your `ggplot2`
+
+.pull-left[
+
+```r
+g +
+  labs(
+    title = "A very short title"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title =
+      element_text(
+        family = "Montserrat ExtraBold"
+      ),
+    axis.text =
+      element_text(
+        family = "Roboto Mono"
+      )
+  )
+```
+]
+
+.pull-right[
+&lt;img src="8_Themes_ggplot_files/figure-html/plot-example-fonts-1.png" width="504" /&gt;
+]
+
+---
+class: inverse, middle, center
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Your Turn!&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> ",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
