@@ -315,56 +315,182 @@ g +
 
 ---
 
-## &lt;b&gt;&lt;code&gt;theme_*(base_size)&lt;/code&gt;&lt;/b&gt;
+## &lt;b&gt;&lt;code&gt;theme_*(base_family)&lt;/code&gt;&lt;/b&gt;
 
 You can also set the font of the theme via `base_family`:
 
 .pull-left[
 
 ```r
-theme_set(
-  theme_light(
+theme_set(theme_light(
+    base_size = 20,
     base_family = "Roboto Mono"
-  )
-)
-
+  ))
 g
 ```
 
-&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-family-1.png" width="576" style="display: block; margin: auto;" /&gt;
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-family-1.png" width="504" style="display: block; margin: auto;" /&gt;
 
 ]
 
 .pull-right[
 
 ```r
-theme_set(
-  theme_light(
+theme_set(theme_light(
+    base_size = 20,
     base_family = "Montserrat ExtraBold"
-  )
-)
-
+  ))
 g
 ```
 
-&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-family-2-1.png" width="576" style="display: block; margin: auto;" /&gt;
+&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-family-2-1.png" width="504" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
 
-## &lt;b&gt;&lt;code&gt;theme_*(base_size)&lt;/code&gt;&lt;/b&gt;
+## Fonts: The `extrafont` Package
 
-... and change the size of geometric elements via `base_line_size` and `base_rect_size`:
+&gt; Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
 
 
 ```r
-g +
-  theme_bw(
-*   base_size = 20
-  )
+install.packages("extrafont")
+library(extrafont)
+
+## import your system fonts
+## (only 1 time)
+font_import() ## press "y"
+loadfonts()
 ```
 
-&lt;img src="8_Themes_ggplot_files/figure-html/theme-base-size-text-1.png" width="540" style="display: block; margin: auto;" /&gt;
+---
+
+## Fonts: The `extrafont` Package
+
+&gt; Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
+
+
+```r
+## which fonts are available?
+fonts()
+##   [1] "Algerian"                        "Arial Black"                    
+##   [3] "Arial"                           "Arial Narrow"                   
+##   [5] "Arial Unicode MS"                "Bahnschrift"                    
+##   [7] "Baskerville Old Face"            "Bauhaus 93"                     
+##   [9] "Bell MT"                         "Berlin Sans FB"                 
+##  [11] "Berlin Sans FB Demi"             "Bernard MT Condensed"           
+##  [13] "Bitter"                          "Bodoni MT Poster Compressed"    
+##  [15] "Book Antiqua"                    "Bookman Old Style"              
+##  [17] "Bookshelf Symbol 7"              "Bradley Hand ITC"               
+##  [19] "Brig Maven"                      "Britannic Bold"                 
+##  [21] "Broadway"                        "Brush Script MT"                
+##  [23] "Calibri"                         "Calibri Light"                  
+##  [25] "Californian FB"                  "Cambria"                        
+##  [27] "Candara"                         "Candara Light"                  
+##  [29] "Centaur"                         "Century"                        
+##  [31] "Century Gothic"                  "Changa One"                     
+##  [33] "Chiller"                         "Colonna MT"                     
+##  [35] "Comic Sans MS"                   "Consolas"                       
+##  [37] "Constantia"                      "Cooper Black"                   
+##  [39] "Copse"                           "Corbel"                         
+##  [41] "Corbel Light"                    "Courier New"                    
+##  [43] "Ebrima"                          "Fjalla One"                     
+##  [45] "Footlight MT Light"              "Franklin Gothic Medium"         
+##  [47] "Freestyle Script"                "French Script MT"               
+##  [49] "Gabriola"                        "Gadugi"                         
+##  [51] "Garamond"                        "Georgia"                        
+##  [53] "Graduate"                        "Haettenschweiler"               
+##  [55] "Harlow Solid Italic"             "Harrington"                     
+##  [57] "High Tower Text"                 "HoloLens MDL2 Assets"           
+##  [59] "Impact"                          "Inconsolata"                    
+##  [61] "Informal Roman"                  "Ink Free"                       
+##  [63] "Javanese Text"                   "Jokerman"                       
+##  [65] "Juice ITC"                       "Kameron"                        
+##  [67] "Kristen ITC"                     "Kunstler Script"                
+##  [69] "Wide Latin"                      "Lato Black"                     
+##  [71] "Lato"                            "Lato Hairline"                  
+##  [73] "Lato Light"                      "Leelawadee UI"                  
+##  [75] "Leelawadee UI Semilight"         "Lucida Bright"                  
+##  [77] "Lucida Calligraphy"              "Lucida Console"                 
+##  [79] "Lucida Fax"                      "Lucida Handwriting"             
+##  [81] "Lucida Sans Unicode"             "Magneto"                        
+##  [83] "Malgun Gothic"                   "Malgun Gothic Semilight"        
+##  [85] "Marlett"                         "Matura MT Script Capitals"      
+##  [87] "Merriweather Black"              "Merriweather"                   
+##  [89] "Merriweather Light"              "Merriweather Sans"              
+##  [91] "Merriweather Sans ExtraBold"     "Merriweather Sans Light"        
+##  [93] "Microsoft Himalaya"              "Microsoft Yi Baiti"             
+##  [95] "Microsoft New Tai Lue"           "Microsoft PhagsPa"              
+##  [97] "Microsoft Sans Serif"            "Microsoft Tai Le"               
+##  [99] "Mistral"                         "Modern No. 20"                  
+## [101] "Mongolian Baiti"                 "Monotype Corsiva"               
+## [103] "Montserrat Black"                "Montserrat"                     
+## [105] "Montserrat ExtraBold"            "Montserrat ExtraLight"          
+## [107] "Montserrat Light"                "Montserrat Medium"              
+## [109] "Montserrat SemiBold"             "Montserrat Thin"                
+## [111] "Montserrat Alternates Black"     "Montserrat Alternates"          
+## [113] "Montserrat Alternates ExtraBold" "Montserrat Alternates ExLight"  
+## [115] "Montserrat Alternates Light"     "Montserrat Alternates Medium"   
+## [117] "Montserrat Alternates SemiBold"  "Montserrat Alternates Thin"     
+## [119] "MS Outlook"                      "MS Reference Sans Serif"        
+## [121] "MS Reference Specialty"          "MV Boli"                        
+## [123] "Myanmar Text"                    "Niagara Engraved"               
+## [125] "Niagara Solid"                   "Nirmala UI"                     
+## [127] "Nirmala UI Semilight"            "Old English Text MT"            
+## [129] "Onyx"                            "Open Sans"                      
+## [131] "Open Sans ExtraBold"             "Open Sans Light"                
+## [133] "Open Sans SemiBold"              "Oxygen Mono"                    
+## [135] "Palatino Linotype"               "Papyrus"                        
+## [137] "Parchment"                       "Playbill"                       
+## [139] "Poor Richard"                    "Poppins Black"                  
+## [141] "Poppins"                         "Poppins ExtraBold"              
+## [143] "Poppins ExtraLight"              "Poppins Light"                  
+## [145] "Poppins Medium"                  "Poppins SemiBold"               
+## [147] "Poppins Thin"                    "Pristina"                       
+## [149] "PT Mono"                         "Ravie"                          
+## [151] "Roboto Black"                    "Roboto"                         
+## [153] "Roboto Light"                    "Roboto Medium"                  
+## [155] "Roboto Thin"                     "Roboto Condensed"               
+## [157] "Roboto Condensed Light"          "Roboto Mono"                    
+## [159] "Roboto Mono Light"               "Roboto Mono Medium"             
+## [161] "Roboto Mono Thin"                "Segoe MDL2 Assets"              
+## [163] "Segoe Print"                     "Segoe Script"                   
+## [165] "Segoe UI"                        "Segoe UI Light"                 
+## [167] "Segoe UI Semibold"               "Segoe UI Semilight"             
+## [169] "Segoe UI Black"                  "Segoe UI Emoji"                 
+## [171] "Segoe UI Historic"               "Segoe UI Symbol"                
+## [173] "Showcard Gothic"                 "SimSun-ExtB"                    
+## [175] "Snap ITC"                        "Space Mono"                     
+## [177] "Stencil"                         "Sylfaen"                        
+## [179] "Symbol"                          "Tahoma"                         
+## [181] "Tempus Sans ITC"                 "Times New Roman"                
+## [183] "Titillium Web Black"             "Titillium Web"                  
+## [185] "Titillium Web ExtraLight"        "Titillium Web Light"            
+## [187] "Titillium Web SemiBold"          "Trebuchet MS"                   
+## [189] "Ultra"                           "Varela Round"                   
+## [191] "Verdana"                         "Viner Hand ITC"                 
+## [193] "Vivaldi"                         "Vladimir Script"                
+## [195] "Webdings"                        "Wingdings"                      
+## [197] "Wingdings 2"                     "Wingdings 3"
+```
+
+---
+
+## Fonts: The `showtext` Package
+
+&gt;  The showtext package, is able to support more font formats and more graphics devices, and avoids using external software such as Ghostscript. showtext makes it even easier to use various types of fonts (TrueType, OpenType, Type 1, web fonts, etc.) in R graphs.
+
+
+```r
+install.packages("showtext")
+library(showtext)
+
+## Loading Google fonts 
+## (https://fonts.google.com/)
+## installed on your syste,
+font_add_google("Roboto", "Roboto")
+font_add_google("Roboto Mono", "Roboto Mono")
+```
 
 ---
 
@@ -479,7 +605,7 @@ theme_grey
 ##             half_line, half_line, half_line), complete = TRUE)
 ##     ggplot_global$theme_all_null %+replace% t
 ## }
-## &lt;bytecode: 0x000000000cce7110&gt;
+## &lt;bytecode: 0x000000000c4e3df8&gt;
 ## &lt;environment: namespace:ggplot2&gt;
 ```
 
@@ -533,10 +659,10 @@ element_text(
   hjust = .5,
   vjust = .0,
   margin = margin(
-    30, ## t (top)
+    10, ## t (top)
     0,  ## r (right)
-    15, ## b (bottom)
-    10  ## l (left)
+    30, ## b (bottom)
+    0  ## l (left)
   )
 )
 ```
@@ -562,7 +688,7 @@ g +
       angle = 180,
       hjust = .5,
       vjust = .0,
-      margin = margin(30, 0, 15, 10)
+      margin = margin(10, 0, 30, 0)
     )
   )
 ```
@@ -862,143 +988,6 @@ g + theme(legend.position = "bottom")
 ```
 
 &lt;img src="8_Themes_ggplot_files/figure-html/theme-to-plot-1.png" width="720" style="display: block; margin: auto;" /&gt;
-
----
-
-## Fonts: The `extrafont` Package
-
-&gt; Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
-
-
-```r
-## install.packages("extrafont")
-## library(extrafont)
-## 
-## ## import your system fonts
-## ## (only 1 time)
-## font_import() ## press "y"
-## loadfonts()
-## 
-## ## which fonts are available?
-fonts()
-##   [1] "Algerian"                        "Arial Black"                    
-##   [3] "Arial"                           "Arial Narrow"                   
-##   [5] "Arial Unicode MS"                "Bahnschrift"                    
-##   [7] "Baskerville Old Face"            "Bauhaus 93"                     
-##   [9] "Bell MT"                         "Berlin Sans FB"                 
-##  [11] "Berlin Sans FB Demi"             "Bernard MT Condensed"           
-##  [13] "Bitter"                          "Bodoni MT Poster Compressed"    
-##  [15] "Book Antiqua"                    "Bookman Old Style"              
-##  [17] "Bookshelf Symbol 7"              "Bradley Hand ITC"               
-##  [19] "Brig Maven"                      "Britannic Bold"                 
-##  [21] "Broadway"                        "Brush Script MT"                
-##  [23] "Calibri"                         "Calibri Light"                  
-##  [25] "Californian FB"                  "Cambria"                        
-##  [27] "Candara"                         "Candara Light"                  
-##  [29] "Centaur"                         "Century"                        
-##  [31] "Century Gothic"                  "Changa One"                     
-##  [33] "Chiller"                         "Colonna MT"                     
-##  [35] "Comic Sans MS"                   "Consolas"                       
-##  [37] "Constantia"                      "Cooper Black"                   
-##  [39] "Copse"                           "Corbel"                         
-##  [41] "Corbel Light"                    "Courier New"                    
-##  [43] "Ebrima"                          "Fjalla One"                     
-##  [45] "Footlight MT Light"              "Franklin Gothic Medium"         
-##  [47] "Freestyle Script"                "French Script MT"               
-##  [49] "Gabriola"                        "Gadugi"                         
-##  [51] "Garamond"                        "Georgia"                        
-##  [53] "Graduate"                        "Haettenschweiler"               
-##  [55] "Harlow Solid Italic"             "Harrington"                     
-##  [57] "High Tower Text"                 "HoloLens MDL2 Assets"           
-##  [59] "Impact"                          "Inconsolata"                    
-##  [61] "Informal Roman"                  "Ink Free"                       
-##  [63] "Javanese Text"                   "Jokerman"                       
-##  [65] "Juice ITC"                       "Kameron"                        
-##  [67] "Kristen ITC"                     "Kunstler Script"                
-##  [69] "Wide Latin"                      "Lato Black"                     
-##  [71] "Lato"                            "Lato Hairline"                  
-##  [73] "Lato Light"                      "Leelawadee UI"                  
-##  [75] "Leelawadee UI Semilight"         "Lucida Bright"                  
-##  [77] "Lucida Calligraphy"              "Lucida Console"                 
-##  [79] "Lucida Fax"                      "Lucida Handwriting"             
-##  [81] "Lucida Sans Unicode"             "Magneto"                        
-##  [83] "Malgun Gothic"                   "Malgun Gothic Semilight"        
-##  [85] "Marlett"                         "Matura MT Script Capitals"      
-##  [87] "Merriweather Black"              "Merriweather"                   
-##  [89] "Merriweather Light"              "Merriweather Sans"              
-##  [91] "Merriweather Sans ExtraBold"     "Merriweather Sans Light"        
-##  [93] "Microsoft Himalaya"              "Microsoft Yi Baiti"             
-##  [95] "Microsoft New Tai Lue"           "Microsoft PhagsPa"              
-##  [97] "Microsoft Sans Serif"            "Microsoft Tai Le"               
-##  [99] "Mistral"                         "Modern No. 20"                  
-## [101] "Mongolian Baiti"                 "Monotype Corsiva"               
-## [103] "Montserrat Black"                "Montserrat"                     
-## [105] "Montserrat ExtraBold"            "Montserrat ExtraLight"          
-## [107] "Montserrat Light"                "Montserrat Medium"              
-## [109] "Montserrat SemiBold"             "Montserrat Thin"                
-## [111] "Montserrat Alternates Black"     "Montserrat Alternates"          
-## [113] "Montserrat Alternates ExtraBold" "Montserrat Alternates ExLight"  
-## [115] "Montserrat Alternates Light"     "Montserrat Alternates Medium"   
-## [117] "Montserrat Alternates SemiBold"  "Montserrat Alternates Thin"     
-## [119] "MS Outlook"                      "MS Reference Sans Serif"        
-## [121] "MS Reference Specialty"          "MV Boli"                        
-## [123] "Myanmar Text"                    "Niagara Engraved"               
-## [125] "Niagara Solid"                   "Nirmala UI"                     
-## [127] "Nirmala UI Semilight"            "Old English Text MT"            
-## [129] "Onyx"                            "Open Sans"                      
-## [131] "Open Sans ExtraBold"             "Open Sans Light"                
-## [133] "Open Sans SemiBold"              "Oxygen Mono"                    
-## [135] "Palatino Linotype"               "Papyrus"                        
-## [137] "Parchment"                       "Playbill"                       
-## [139] "Poor Richard"                    "Poppins Black"                  
-## [141] "Poppins"                         "Poppins ExtraBold"              
-## [143] "Poppins ExtraLight"              "Poppins Light"                  
-## [145] "Poppins Medium"                  "Poppins SemiBold"               
-## [147] "Poppins Thin"                    "Pristina"                       
-## [149] "PT Mono"                         "Ravie"                          
-## [151] "Roboto Black"                    "Roboto"                         
-## [153] "Roboto Light"                    "Roboto Medium"                  
-## [155] "Roboto Thin"                     "Roboto Condensed"               
-## [157] "Roboto Condensed Light"          "Roboto Mono"                    
-## [159] "Roboto Mono Light"               "Roboto Mono Medium"             
-## [161] "Roboto Mono Thin"                "Segoe MDL2 Assets"              
-## [163] "Segoe Print"                     "Segoe Script"                   
-## [165] "Segoe UI"                        "Segoe UI Light"                 
-## [167] "Segoe UI Semibold"               "Segoe UI Semilight"             
-## [169] "Segoe UI Black"                  "Segoe UI Emoji"                 
-## [171] "Segoe UI Historic"               "Segoe UI Symbol"                
-## [173] "Showcard Gothic"                 "SimSun-ExtB"                    
-## [175] "Snap ITC"                        "Space Mono"                     
-## [177] "Stencil"                         "Sylfaen"                        
-## [179] "Symbol"                          "Tahoma"                         
-## [181] "Tempus Sans ITC"                 "Times New Roman"                
-## [183] "Titillium Web Black"             "Titillium Web"                  
-## [185] "Titillium Web ExtraLight"        "Titillium Web Light"            
-## [187] "Titillium Web SemiBold"          "Trebuchet MS"                   
-## [189] "Ultra"                           "Varela Round"                   
-## [191] "Verdana"                         "Viner Hand ITC"                 
-## [193] "Vivaldi"                         "Vladimir Script"                
-## [195] "Webdings"                        "Wingdings"                      
-## [197] "Wingdings 2"                     "Wingdings 3"
-```
-
----
-
-## Fonts: The `showtext` Package
-
-&gt;  The showtext package, is able to support more font formats and more graphics devices, and avoids using external software such as Ghostscript. showtext makes it even easier to use various types of fonts (TrueType, OpenType, Type 1, web fonts, etc.) in R graphs.
-
-
-```r
-install.packages("showtext")
-library(showtext)
-
-## Loading Google fonts 
-## (https://fonts.google.com/)
-## installed on your syste,
-font_add_google("Roboto", "Roboto")
-font_add_google("Roboto Mono", "Roboto Mono")
-```
 
 ---
 
