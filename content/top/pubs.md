@@ -6,12 +6,14 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Peer-Reviewed Publications {#pubs}
 
-- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, H.-H. Thulke, M. Lange, V. Grimm & S. Kramer-Schadt</span> (accepted)</span> Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos*](https://doi.org/10.1111/oik.07002).
+- <span style="font-variant:small-caps;">B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, **C. Scherer**, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, valibrating and applying agent-based models: A review. *JASSS*.
+
+- <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, H.-H. Thulke, M. Lange, V. Grimm & S. Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos*](https://doi.org/10.1111/oik.07002).
 
 - <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, C. Staubach, S. Müller, N. Blaum, H.-H. Thulke & S. Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales.
 [*Journal of Animal Ecology* 88:1639–1824](https://doi.org/10.1111/1365-2656.13070).
 
-- <span style="font-variant:small-caps;">V. Radchuk, F. De Laender, J. Sarmento Cabral, I Boulangeat, M. Crawford, F. Bohn, J. De Raedt, **C. Scherer**, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
+- <span style="font-variant:small-caps;">V. Radchuk, F. De Laender, J. Sarmento Cabral, I. Boulangeat, M. Crawford, F. Bohn, J. De Raedt, **C. Scherer**, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
 [*Ecology Letters* 22:647–684](https://doi.org/10.1111/ele.13226).
 
 - <span style="font-variant:small-caps;">M. Sciaini, M. Fritsch, **C. Scherer** & C.E. Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R.

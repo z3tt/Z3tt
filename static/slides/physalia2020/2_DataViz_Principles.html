@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>2. Principles of Data Visualization - Data Visualization in R with ggplot2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Cédric Scherer" />
+    <meta name="date" content="2020-02-29" />
+    <link rel="stylesheet" href="css\physalia-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css\physalia.css" type="text/css" />
+    <link rel="stylesheet" href="css\kunoichi-blank.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, center
+background-image: url("img/darklight_RichardStrozynski.jpg")
+background-size: contain
+
+
+
+
+&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:40pt;'&gt;Data Visualization in &lt;code style='color:#ebc500;'&gt;R&lt;/code&gt; with &lt;code style='color:#ebc500;'&gt;ggplot2&lt;/code&gt;&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:25pt;color:#a7a7a7;font-weight:400;'&gt;Principles of Data Visualization&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+## &lt;span style='font-size:22pt;'&gt;Cédric Scherer&lt;/b&gt;&lt;b style='font-size:15pt;color:#ccba56;font-weight:400;'&gt;&lt;br&gt;Physalia Courses&amp;nbsp;&amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp;&amp;nbsp;March 2-6 2020&lt;/b&gt;&lt;br&gt;&lt;p align='right;'&gt;&lt;span style='font-size:9pt;color:#767676;font-weight:400;'&gt;&lt;/p&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;b style='font-size:40pt;'&gt;is any graphical representation&lt;br&gt;of information and data&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: inverse, center, middle
+background-image: url("img/computer-science-data-visualization_CS448B.jpg")
+background-size: contain
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;b style='font-size:40pt;'&gt;is any graphical representation&lt;br&gt;of information and data&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: inverse, center, middle
+background-image: url("img/1200px-Minard.png")
+background-size: cover
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;b style='font-size:40pt;'&gt;is any graphical representation&lt;br&gt;of information and data&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: inverse, center, middle
+background-image: url("img/a_view_on_despair_cut.jpg")
+background-size: contain
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;b style='font-size:40pt;'&gt;is any graphical representation&lt;br&gt;of information and data&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+.pull-left[
+&lt;p style='text-align:center;'&gt;&lt;img src="img/a_view_on_despair.jpg" style='width:64%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"A View on Despair" by Sonja Kuijpers/STUDIO TERP
+&lt;/i&gt;&lt;/p&gt; 
+]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;span style='color:#747474;font-size:20pt;'&gt;You might be wondering what you are viewing here.&lt;/span&gt;
+]
+
+---
+
+.pull-left[
+&lt;p style='text-align:center;'&gt;&lt;img src="img/a_view_on_despair.jpg" style='width:64%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"A View on Despair" by Sonja Kuijpers/STUDIO TERP
+&lt;/i&gt;&lt;/p&gt;
+]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;span style='color:#747474;font-size:20pt;'&gt;You might be wondering what you are viewing here.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b style='color:#000000;'&gt;Each element represents a person who&lt;br&gt;committed suicide in the Netherlands in 2017.&lt;b&gt;&lt;/span&gt;
+]
+
+---
+
+.pull-left[
+&lt;p style='text-align:center;'&gt;&lt;img src="img/a_view_on_despair.jpg" style='width:64%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"A View on Despair" by Sonja Kuijpers/STUDIO TERP
+&lt;/i&gt;&lt;/p&gt;
+]
+
+.pull-right[
+&lt;br&gt;&lt;p style='text-align:left;'&gt;&lt;img src="img/a_view_on_despair_legend.png" style='width:47%;'&gt;&lt;/p&gt;
+]
+
+---
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/1200px-Minard.png" style='width:67%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"Figurative Map of the Successive Losses in Men of the French Army in the Russian Campaign 1812–1813" by Charles Joseph Minard
+&lt;/i&gt;&lt;/p&gt;
+
+&lt;br&gt;&lt;span style='color:#747474;font-size:20pt;'&gt;You might be wondering what you are viewing here.&lt;/span&gt;
+
+---
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/1200px-Minard.png" style='width:67%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"Figurative Map of the Successive Losses in Men of the French Army in the Russian Campaign 1812–1813" by Charles Joseph Minard
+&lt;/i&gt;&lt;/p&gt;
+
+&lt;br&gt;&lt;span style='color:#747474;font-size:20pt;'&gt;You might be wondering what you are viewing here.&lt;/span&gt;
+
+* shows the path of Napoleon’s troops across the Russian Empire of Alexander I
+
+* displays the progress of the troops in the form of a stream whose width indicates the size of the “Great Army”
+
+---
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/1200px-Minard.png" style='width:67%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"Figurative Map of the Successive Losses in Men of the French Army in the Russian Campaign 1812–1813" by Charles Joseph Minard
+&lt;/i&gt;&lt;/p&gt;
+
+* encodes 6 variables in a simple (?) and modern way: 
+&lt;br&gt;&lt;br&gt;&lt;span style='font-size:12pt;color:grey;'&gt;
+  - &lt;b&gt;width&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;size of Napoleon’s army
+  - &lt;b&gt;x-axis&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;longitude of the army’s position
+  - &lt;b&gt;y-axis&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;latitude of the army’s position
+  - &lt;b&gt;color&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;direction of the army’s movement
+  - &lt;b&gt;line chart&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;temperature during the army’s retreat
+  - &lt;b&gt;annotations&lt;/b&gt;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;locations and army size (main chart) + date along retreat path (line chart)
+&lt;/span&gt;
+
+---
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/1200px-Minard.png" style='width:67%;'&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;"Figurative Map of the Successive Losses in Men of the French Army in the Russian Campaign 1812–1813" by Charles Joseph Minard&lt;/i&gt;
+&lt;/p&gt;
+
+* generally considered as **the first data visualization**&amp;nbsp;&amp;nbsp;(1869)
+
+* Edward Tufte calls Minard’s graphic of Napoleon in Russia one of the **“best statistical drawings ever created”**.
+
+---
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/1200px-Minard.png" style='width:51%;'&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/Minard3Historical2.png" style='width:51%;'&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;The map created by Charles Joseph Minard projected in the geographical reality with the most accurate information on the actual route of different corps by Martin Grandjean&lt;/i&gt;&lt;/p&gt;
+
+---
+
+&lt;p style='text-align:center;'&gt;&lt;img src="img/1200px-Minard.png" style='width:51%;'&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/minard-ggplot.png" style='width:51%;'&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;The map created by Charles Joseph Minard and a version coded in &lt;code&gt;ggplot2&lt;/code&gt; by Andrew Heiss&lt;/i&gt;&lt;/p&gt;
+
+---
+
+&lt;p style='text-align:center;'&gt;The map even made it into the article "A Layered Grammar of Graphics" by Hadley Wickham that introduced &lt;code style='font-weight:bold;'&gt;ggplot2&lt;/code&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p style='text-align:center;'&gt;&lt;img src="img/minard_hadley.png" style='width:60%;'&gt;&lt;/p&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;b style='font-size:40pt;'&gt;is part art and part science.&lt;/b&gt;&lt;br&gt;
+&lt;i style='font-size:15pt;color:grey;'&gt;&lt;br&gt;Claus O. Wilke, "Fundamentals of Data Visualization"&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## &lt;p style='text-align:center;'&gt;&lt;b&gt;&lt;span style='color:#28a87d;'&gt;Data visualization&lt;/span&gt;&lt;br&gt;is part art and part science.&lt;/b&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;i style='font-size:21pt;'&gt;
+&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;The challenge is to get the art right without getting the science wrong and vice versa.
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;A data visualization first and foremost has to accurately convey the data.
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;At the same time, a data visualization should be aesthetically pleasing.
+&lt;br&gt;&lt;br&gt;&lt;/i&gt;
+
+--
+
+&lt;b style='font-size:21pt;color:#28a87d;'&gt;
+&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;If a visualization is "good" or "bad" matters for both communication and impact!
+&lt;/b&gt;
+
+---
+background-image: url("img/good_vs_bad2.jpg")
+background-size: cover
+
+---
+
+## &lt;p style='text-align:center;'&gt;&lt;b&gt;How to Develop an Eye for Good&lt;br&gt;&lt;span style='color:#28a87d;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;span style='font-size:23pt;'&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Information&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Story&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Goal&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Visual Form
+&lt;/b&gt;
+&lt;/span&gt;
+
+---
+
+## &lt;p style='text-align:center;'&gt;&lt;b&gt;How to Develop an Eye for Good&lt;br&gt;&lt;span style='color:#28a87d;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;span style='font-size:23pt;'&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Information&lt;/b&gt;&amp;nbsp;&amp;nbsp;(Integrity)
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Story&lt;/b&gt;&amp;nbsp;&amp;nbsp;(Interestingness)
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Goal&lt;/b&gt;&amp;nbsp;&amp;nbsp;(Usefulness)
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Visual Form&lt;/b&gt;&amp;nbsp;&amp;nbsp;(Beauty)
+&lt;/span&gt;
+
+---
+
+## &lt;p style='text-align:center;'&gt;&lt;b&gt;How to Develop an Eye for Good&lt;br&gt;&lt;span style='color:#28a87d;'&gt;Data Visualization&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+
+
+&lt;span style='font-size:23pt;'&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Information&lt;/b&gt;&amp;nbsp;&amp;nbsp; Understand your data and be accurate
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Story&lt;/b&gt;&amp;nbsp;&amp;nbsp; Be clear about the story of your visualization
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Goal&lt;/b&gt;&amp;nbsp;&amp;nbsp; Select charts that successfully transport your story
+&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b style='color:#28a87d;'&gt;&amp;rarr;&amp;nbsp;&amp;nbsp;Visual Form&lt;/b&gt;&amp;nbsp;&amp;nbsp; Follow design rules and data visualization principles
+&lt;/span&gt;
+
+--
+
+&lt;p style='text-align:center;'&gt;&lt;i style='font-size:23pt;color:;'&gt;+ inspiration, training and (a bit of) talent&lt;/i&gt;&lt;/p&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/What-Makes-a-Good-Infoviz-frame01.png" style='width:81%;'&gt;&lt;br&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Visualization by David McCandless (Information is Beautiful)&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/What-Makes-a-Good-Infoviz-frame02.png" style='width:81%;'&gt;&lt;br&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Visualization by David McCandless (Information is Beautiful)&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/dataviz_gradient.png" style='width:100%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/dataviz_gradient2.png" style='width:100%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/dataviz_gradient3.png" style='width:100%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/dataviz_gradient4.png" style='width:100%;'&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:40pt;'&gt;Know Your&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Types of Data&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+
+## Types of Data
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"?
+
+&lt;/b&gt;
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;qualitative + discrete + unordered
+
+&lt;/b&gt;
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;qualitative + discrete + unordered
+  
+  - 2019/09/26 "17:01:35"?
+
+&lt;/b&gt;
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;qualitative + discrete + unordered
+  
+  - 2019/09/26 "17:01:35"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;quantitative + continiuous + ordered
+
+&lt;/b&gt;
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;qualitative + discrete + unordered
+  
+  - 2019/09/26 "17:01:35"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;quantitative + continiuous + ordered
+  
+  - 1?
+
+&lt;/b&gt;
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;qualitative + discrete + unordered
+  
+  - 2019/09/26 "17:01:35"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;quantitative + continiuous + ordered
+  
+  - 1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;quantitative + continuous + ordered
+
+&lt;/b&gt;
+
+---
+
+## Types of Data – Your Turn!
+
+&lt;br&gt;
+* &lt;b style='color:#28a87d;'&gt;Quantitative (numerical)&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;qualitative (categorical)&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Ordered&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;unordered&lt;/b&gt; data
+
+* &lt;b style='color:#28a87d;'&gt;Continuous&lt;/b&gt; versus &lt;b style='color:#28a87d;'&gt;discrete&lt;/b&gt; data
+
+&lt;b style='color:grey;'&gt;&lt;br&gt;
+* What are the data types of:
+
+  - "female"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;qualitative + discrete + unordered
+  
+  - 2019/09/26 "17:01:35"&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;quantitative + continiuous + ordered
+  
+  - 1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;quantitative + continuous + ordered&lt;br&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;or: quantitative + discrete + ordered  
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;or: qualitative + discrete + ordered  
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;or: qualitative + discrete + unordered
+
+&lt;/b&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/ah_nominal_ordinal_binary.png" style='width:87%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/ah_continuous_discrete.png" style='width:69%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:40pt;'&gt;Mapping Data to&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Aesthetics&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: center
+
+## &lt;b&gt;&lt;span style='color:#28a87d;'&gt;Data visualizations&lt;/span&gt; map values into quantifiable features &lt;span style='color:#b3b3b3;'&gt;(aesthetics)&lt;/span&gt;&lt;/b&gt;
+&lt;br&gt;
+&lt;img src="img/wilke-aesthetics.png" style='width:90%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## &lt;b&gt;&lt;span style='color:#28a87d;'&gt;Data visualizations&lt;/span&gt; map values into quantifiable features &lt;span style='color:#b3b3b3;'&gt;(aesthetics)&lt;/span&gt;&lt;/b&gt;
+
+&lt;img src="img/aesthetics-hierarchy.jpg" style='width:29%;'&gt;&lt;br&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: Peter Aldhous based on experiments by William Cleveland and Robert McGill&lt;/i&gt;
+
+---
+class: center
+
+## &lt;b&gt;Scales map data values onto &lt;span style='color:#b3b3b3;'&gt;aesthetics&lt;/span&gt;&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/wilke-aesthetics-example.png" style='width:100%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## &lt;b&gt;Scales map data values onto &lt;span style='color:#b3b3b3;'&gt;aesthetics&lt;/span&gt;&lt;/b&gt;
+&lt;br&gt;
+&lt;img src="img/wilke-aesthetics-example-mtcars.png" style='width:53%;'&gt;&lt;br&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: inverse, center, middle
+
+# &lt;b style='font-size:70pt;color:#ebc500;'&gt;Colors&lt;/span&gt;&lt;/b&gt;&lt;br&gt;
+# &lt;b style='font-size:40pt;'&gt;and Common Pitfalls&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: center
+
+## Color Terminology
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/color_terminology.png" style='width:100%;'&gt;
+
+---
+class: center
+
+## Color Palette Types
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/color_scales_1.png" style='width:86%;'&gt;
+
+---
+class: center
+
+## Color Palette Types
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/color_scales_2.png" style='width:86%;'&gt;
+
+---
+class: center
+
+## Color Palette Types
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/color_scales_3.png" style='width:86%;'&gt;
+
+---
+class: center
+
+## Color Palette Types
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/color_scales_4.png" style='width:86%;'&gt;
+
+---
+class: center
+
+## Color Palette Types
+&lt;br&gt;&lt;br&gt;
+&lt;img src="img/color_scales_5.png" style='width:86%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/rainbow_paper.png" style='width:100%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/rainbow_papers.png" style='width:100%;'&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/rainbow_map.png" style='width:100%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: eagereyes.org/basicss/rainbow-color-map&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/rainbow_map_bw.png" style='width:100%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from eagereyes.org/basicss/rainbow-color-map&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/Rainbow_Fabio_Crameri1.jpg" style='width:43%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: fabiocrameri.ch/batlow&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/Rainbow_Fabio_Crameri2.jpg" style='width:43%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: fabiocrameri.ch/batlow&lt;/i&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/Rainbow_Fabio_Crameri3.jpg" style='width:43%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: fabiocrameri.ch/batlow&lt;/i&gt;
+
+---
+class: center
+
+## Choice of Color Palettes
+
+&lt;img src="img/rainbow_alternatives.png" style='width:65%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&lt;/i&gt;
+
+---
+class: center
+
+### Choice of Colors Palettes &amp; Color-Vision Deficiency (CVD)
+
+&lt;img src="img/rainbow_alternatives_coblis.png" style='width:87%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&lt;/i&gt;
+
+---
+class: inverse, center
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+## &lt;b style='font-size:28pt;color:#ebc500;'&gt;To make sure your visualizations work for people with CVD don’t just rely on provided color palettes.&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+---
+class: inverse, center
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+## &lt;b style='font-size:28pt;color:#ebc500;'&gt;To make sure your visualizations work for people with CVD don’t just rely on provided color palettes.&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+## &lt;span style='font-size:32pt;color:lightgrey;'&gt;Instead, test your figures in a&lt;br&gt;color-blindness simulator!&lt;/span&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;br&gt;&lt;br&gt;
+&lt;b style='font-size:24pt;color:#7c7c7c;'&gt;
+Choose color-blind friendly palettes:&lt;br&gt;&lt;span style='color:#28a87d;'&gt;projects.susielu.com/viz-palette&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;
+Test your final visualization:&lt;br&gt;&lt;span style='color:#28a87d;'&gt;color-blindness.com/coblis-color-blindness-simulator&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;
+Create a CVD-version of your ggplot in R:&lt;br&gt;&lt;span style='color:#28a87d;'&gt;github.com/clauswilke/colorblindr&lt;/span&gt;
+&lt;/b&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/wilke-color-blind.png" style='width:55%;'&gt;&lt;br&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/wilke-red-green.png" style='width:63%;'&gt;&lt;br&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/wilke-red-green.png" style='width:63%;'&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="img/wilke-blue-green.png" style='width:63%;'&gt;&lt;br&gt;&lt;br&gt;
+&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/viz-palette.png" style='width:98%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;projects.susielu.com/viz-palette&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/cividis1.png" style='width:93%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from Nuñez, Anderton &amp; Renslow (2018) PLOSone&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/cividis3.png" style='width:93%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from Nuñez, Anderton &amp; Renslow (2018) PLOSone&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/cividis4.png" style='width:93%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from Nuñez, Anderton &amp; Renslow (2018) PLOSone&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/cividis5.png" style='width:93%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from Nuñez, Anderton &amp; Renslow (2018) PLOSone&lt;/i&gt;
+
+---
+class: center
+
+## Choice of the Color Palette &amp; Accessibility
+
+&lt;img src="img/cividis_bw.png" style='width:93%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Modified from Nuñez, Anderton &amp; Renslow (2018) PLOSone&lt;/i&gt;
+
+
+---
+class: right, bottom
+background-image: url("img/typography.png")
+background-size: cover
+
+# &lt;b style='font-size:52pt;color:#ebc500;'&gt;Typography&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;
+
+---
+background-image: url("img/fontsmatter.jpg")
+background-size: cover
+
+---
+class: center
+
+## The Choice of the &lt;span style='color:#28a87d;'&gt;Font(s)&lt;/span&gt;
+
+&lt;ul style='text-align:left;font-size:23pt;'&gt;
+&lt;li&gt; The font(s) should fit the topic and audience - &lt;b&gt;context matters&lt;/b&gt;.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; &lt;b&gt;Avoid fancy&lt;/b&gt; fonts and squiggeled letters.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; Use ways to &lt;b&gt;visualize hierarchy&lt;/b&gt;.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; Avoid using &lt;b&gt;ALL CAPS&lt;/b&gt;.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; Use a &lt;b&gt;monospaced&lt;/b&gt; font with lining for numbers.&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+
+---
+class: center
+
+## The Choice of the &lt;span style='color:#28a87d;'&gt;Font(s)&lt;/span&gt;
+
+&lt;ul style='text-align:left;font-size:23pt;'&gt;
+&lt;li&gt; The font(s) should fit the topic and audience - &lt;b&gt;context matters&lt;/b&gt;.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; &lt;b&gt;Avoid fancy&lt;/b&gt; fonts and squiggeled letters.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; Use ways to &lt;b&gt;visualize hierarchy&lt;/b&gt;.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; Avoid using &lt;b&gt;ALL CAPS&lt;/b&gt;.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; Use a &lt;b&gt;monospaced&lt;/b&gt; font with lining for numbers.&lt;/li&gt;&lt;br&gt;
+
+&lt;li&gt; &lt;b style='color:#28a87d;'&gt;Consistency is key!&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:90pt;'&gt;I am important!&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:40pt;'&gt;I am important, too!&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:20pt;'&gt;Oh, hi there. Thanks for reading me...&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:12pt;'&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;u style='color:#7c7c7c;font-size:35pt;font-weight:bolder;'&gt;I am important!&lt;/u&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:35pt;font-weight:bold;'&gt;I am important, too!&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;i style='color:#7c7c7c;font-size:35pt;'&gt;Oh, hi there. Thanks for reading me...&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:35pt;'&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#eb5d00;font-size:35pt;'&gt;I am important!&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#000000;font-size:35pt;'&gt;I am important, too!&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#adadad;font-size:35pt;'&gt;Oh, hi there. Thanks for reading me...&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#d4d4d4;font-size:35pt;'&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:35pt;'&gt;I am important!&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:35pt;'&gt;Oh, hi there. Thanks for reading me...&lt;/span&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-size:35pt;'&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-family:poppins;font-size:35pt;'&gt;I am important!&lt;/span&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-family:merriweather;font-size:27pt;'&gt;Oh, hi there. Thanks for reading me...&lt;br&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;&lt;br&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;b style='color:#00000;font-family:poppins;font-size:35pt;'&gt;I am important!&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-family:merriweather;font-size:17pt;'&gt;Oh, hi there. Thanks for reading me...&lt;br&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;&lt;br&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;b style='color:#000000;font-family:poppins;font-size:35pt;'&gt;I am important!&lt;/b&gt;&lt;br&gt;
+&lt;span style='color:#000000;font-family:poppins;font-size:22pt;'&gt;I am important, too!&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-family:merriweather;font-size:17pt;'&gt;Oh, hi there. Thanks for reading me...&lt;br&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;&lt;br&gt;
+
+---
+class: center
+
+## How to Visualize &lt;span style='color:#28a87d;'&gt;Hierarchy&lt;/span&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;b style='color:#000000;font-family:poppins;font-size:35pt;'&gt;I am important!&lt;/b&gt;&lt;br&gt;
+&lt;b style='color:#eb5d00;font-family:merriweather;font-size:22pt;'&gt;I am important, too.&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;span style='color:#7c7c7c;font-family:merriweather;font-7ze:18pt;'&gt;Oh, hi there. Thanks for reading me...&lt;br&gt;Yeah, I know I am kinda boring. Sorry.&lt;/span&gt;&lt;br&gt;
+
+---
+class: center
+
+## &lt;span style='color:#28a87d;'&gt;Display Fonts&lt;/span&gt;
+
+&lt;img src="img/fonts-display.png" style='width:88%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: wordpress.com&lt;/i&gt;
+
+---
+class: center
+
+## &lt;span style='color:#28a87d;'&gt;Text Fonts&lt;/span&gt;
+
+&lt;img src="img/fonts-text.png" style='width:88%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: wordpress.com&lt;/i&gt;
+
+---
+class: center
+
+## &lt;span style='color:#28a87d;'&gt;Sans-Serif&lt;/span&gt; or &lt;span style='color:#28a87d;font-family:merriweather;'&gt;Serif&lt;/span&gt; ?&lt;/span&gt;
+
+&lt;img src="img/fonts-serifs.png" style='width:88%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: wordpress.com&lt;/i&gt;
+
+---
+class: center
+
+## Keep it &lt;span style='color:#28a87d;'&gt;Simple&lt;/span&gt;&lt;/span&gt;
+
+&lt;br&gt;
+&lt;img src="img/canva_fonts.jpg" style='width:92%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: canva.com&lt;/i&gt;
+
+---
+class: center
+ 
+## &lt;span style='color:#28a87d;'&gt;Tabular (Monospaced) Numbers&lt;/span&gt;
+
+&lt;br&gt;
+&lt;img src="img/numbers-2.png" style='width:94%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: invisionapp.com/inside-design/best-free-fonts-for-numbers&lt;/i&gt;
+
+---
+class: center
+
+## &lt;span style='color:#28a87d;'&gt;Number Fonts with Lining&lt;/span&gt;
+
+&lt;br&gt;
+&lt;img src="img/numbers-1.png" style='width:95%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: invisionapp.com/inside-design/best-free-fonts-for-numbers&lt;/i&gt;
+
+---
+class: center
+
+## &lt;span style='color:#28a87d;'&gt;Quality of Number Symbols&lt;/span&gt;
+
+&lt;br&gt;
+&lt;img src="img/numbers-3.png" style='width:76%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: invisionapp.com/inside-design/best-free-fonts-for-numbers&lt;/i&gt;
+
+---
+class: middle, center
+
+&lt;style&gt;
+.pull-left { width:49.7%; }
+.pull-right { width:49.7%; }
+&lt;/style&gt;
+
+.pull-left[
+&lt;img src="img/numbers-serif-droid-serif.png"&gt;
+&lt;img src="img/numbers-serif-copse.png"&gt;
+]
+
+.pull-right[
+&lt;img src="img/numbers-serif-crimson-text.png"&gt;
+&lt;img src="img/numbers-serif-kameron.png"&gt;
+]
+&lt;i style='font-size:10pt;color:grey;'&gt;Source: invisionapp.com/inside-design/best-free-fonts-for-numbers&lt;/i&gt;
+
+---
+class: middle, center
+
+.pull-left[
+&lt;img src="img/numbers-sans-open-sans.png"&gt;
+&lt;img src="img/numbers-sans-lato.png"&gt;
+]
+
+.pull-right[
+&lt;img src="img/numbers-sans-roboto-condensed.png"&gt;
+&lt;img src="img/numbers-sans-varela-round.png"&gt;
+]
+&lt;i style='font-size:10pt;color:grey;'&gt;Source: invisionapp.com/inside-design/best-free-fonts-for-numbers&lt;/i&gt;
+
+---
+
+## &lt;span style='color:#28a87d;'&gt;Allign&lt;/span&gt; Your Text!
+
+&lt;style&gt;
+.left-column { width:36%; }
+.right-column { width:57%; }
+&lt;/style&gt;
+
+.left-column[
+&lt;br&gt;&lt;br&gt;
+&lt;ul style='font-weight:bold;font-size:18pt;'&gt;
+  &lt;li&gt;Left-align most text&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+  &lt;li&gt;Title should be left alligned&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+  &lt;li&gt;Labels and subtitles can be&lt;br&gt;center or right alligned&lt;/li&gt;
+&lt;/ul&gt;
+]
+
+.right-column[
+  &lt;img src="img/allignment.png" style='width:74%;'&gt;
+]
+
+---
+
+## &lt;span style='color:#28a87d;'&gt;(Don't) Rotate&lt;/span&gt; Your Text!
+
+&lt;br&gt;
+.pull-left[
+  &lt;p style='text-align:center;'&gt;&lt;img src='img/wilke-bar-ugly.png' style='width:74%;'&gt;&lt;/p&gt;
+]
+
+.pull-right[
+  &lt;p style='text-align:center;'&gt;&lt;img src='img/wilke-bar-good.png' style='width:100%;'&gt;&lt;/p&gt;
+]
+
+&lt;p style='text-align:center;'&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Source: "Fundamentals of Data Visualization" by Claus Wilke&lt;/i&gt;&lt;/p&gt;
+
+---
+class: center, middle
+
+&lt;img src="img/ah_ggplot2_exploratory.png" style='width:58%;'&gt;&lt;br&gt;&lt;i style='font-size:10pt;color:grey;'&gt;Illustration by Allison Horst (github.com/allisonhorst/stats-illustrations)&lt;/i&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> ",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
