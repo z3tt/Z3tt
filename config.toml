@@ -1,5 +1,5 @@
 baseurl = "https://cedricscherer.netlify.com/"
-title = "Cédric Scherer"
+title = "C�dric Scherer"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
@@ -19,7 +19,7 @@ home = ["HTML", "RSS", "Algolia"]
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
   title = "Cédric Scherer"
-  description = "Blog by Cédric Scherer"
+  description = "Blog by C�dric Scherer"
   keyword = "Computational Ecology, Data Visualization"
   slogan = "Computational Ecology & Data Visualization"
   google_fonts = "//fonts.googleapis.com/?css?family=Poppins|Crete+Round"
