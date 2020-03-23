@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Cédric Scherer</title>
+    <title>Tags on C�dric Scherer</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Cédric Scherer</description>
+    <description>Recent content in Tags on C�dric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
@@ -12,29 +12,20 @@
     
     
     <item>
-      <title>DataViz</title>
-      <link>/tags/dataviz/</link>
-      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/dataviz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TidyTuesday</title>
-      <link>/tags/tidytuesday/</link>
-      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tidytuesday/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>climate change</title>
       <link>/tags/climate-change/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/climate-change/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataViz</title>
+      <link>/tags/dataviz/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dataviz/</guid>
       <description></description>
     </item>
     
@@ -62,6 +53,15 @@
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/nature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TidyTuesday</title>
+      <link>/tags/tidytuesday/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidytuesday/</guid>
       <description></description>
     </item>
     

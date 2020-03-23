@@ -6,6 +6,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Peer-Reviewed Publications {#pubs}
 
+- <span style="font-variant:small-caps;">U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, **C. Scherer**, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (accepted) Movement-mediated community assembly and coexistence. *Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
+
 - <span style="font-variant:small-caps;">B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, **C. Scherer**, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, valibrating and applying agent-based models: A review. *JASSS*.
 
 - <span style="font-variant:small-caps;">**C. Scherer**, V. Radchuk, M. Franz, H.-H. Thulke, M. Lange, V. Grimm & S. Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos*](https://doi.org/10.1111/oik.07002).
@@ -24,9 +26,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Manuscripts Under Review
 - <span style="font-variant:small-caps;">V. Radchuk, S. Kramer-Schadt, U. Berger, **C. Scherer**, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (in revision)</span> Individual-based models. *Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
-
-- <span style="font-variant:small-caps;">U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, **C. Scherer**, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (in revision) Movement-mediated community assembly and coexistence. *Submitted to Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
-
 
 ### Conference Contributions {#conf}
 

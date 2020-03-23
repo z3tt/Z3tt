@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tags/climate-change/</loc>
+    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/2020/01/09/australian-bushfires-comparison-europe-world/</loc>
@@ -10,61 +15,46 @@
   <url>
     <loc>/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/dataviz/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/tidytuesday/</loc>
-    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/climate-change/</loc>
-    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ggplot2/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/maps/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/nature/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tidytuesday/</loc>
+    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/weather/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -75,25 +65,21 @@
   <url>
     <loc>/tags/r/</loc>
     <lastmod>2019-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/tidyverse/</loc>
     <lastmod>2019-12-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/berlin/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/christmas/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -102,31 +88,28 @@
   </url>
   
   <url>
-    <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
-    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/animations/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/gganimate/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
+    <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/workshop/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</loc>
+    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -137,18 +120,16 @@
   <url>
     <loc>/tags/tutorial/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</loc>
-    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/ggplot-evolution/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -164,7 +145,6 @@
   <url>
     <loc>/tags/misc/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -173,42 +153,34 @@
   
   <url>
     <loc>/top/about/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/top/dataviz/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/top/links/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/top/projects/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/top/pubs/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/search/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/top/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
