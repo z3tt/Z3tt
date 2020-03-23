@@ -75,6 +75,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 <font size="2">*8th International Conference on Behaviour, Physiology and Genetics of Wildlife – 09/2012 – Berlin, Germany.*</font>
 
 
-## R Packages {#rstats}
+## Contribution to R Packages {#rstats}
 
-- <span style='font-variant:small-caps;'>M. Sciaini, C. Simpkins, M. Fritsch & <u style='font-weight:700;color:#414141;'>C. Scherer</u></span> 2017: NLMR: Simulating neutral landscape models with R. R package version 0.4.2, available on [GitHub](https://ropensci.github.io/NLMR/) and [CRAN](https://cran.r-project.org/web/packages/NLMR/index.html).
+- <span style='font-variant:small-caps;'>M. Sciaini, C. Simpkins, M. Fritsch & <u style='font-weight:700;color:#414141;'>C. Scherer</u></span> 2017: `NLMR`: Simulating neutral landscape models with R. R package version 0.4.2, available on [GitHub](https://ropensci.github.io/NLMR/) and [CRAN](https://cran.r-project.org/web/packages/NLMR/index.html).
+
+- <span style='font-variant:small-caps;'>S. Garnier, N. Ross, B. Rudis, M. Sciaini & <u style='font-weight:700;color:#414141;'>C. Scherer</u></span> 2018: `viridis`: Default color maps from 'matplotlib'. R package version 0.5.1, available on [GitHub](https://github.com/sjmgarnier/viridis) and [CRAN](https://cran.r-project.org/web/packages/viridis/index.html).
