@@ -82,6 +82,10 @@ body {
   min-height: 100%;
 }
 
+u {
+  text-decoration: underline;
+}
+
 .main {
   background: #222;
   padding-bottom: 1.5em;
