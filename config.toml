@@ -27,7 +27,7 @@ home = ["HTML", "RSS", "Algolia"]
   image_404 = "img/404-gg.png"
   title_404 = ""
 
-  # leancloud storage for page view counter
+  # leancloud storage for page view counter 
   page_view_conter = true
   leancloud_app_id = ""
   leancloud_app_key = ""
