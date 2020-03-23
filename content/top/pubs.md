@@ -1,4 +1,4 @@
-[Peer-Reviewed Publications](#pubs)  |  [Conference Contributions](#conf)  |  [R packages](#rstats)
+[Peer-Reviewed Publications](#pubs)  |  [Conference Contributions](#conf)  |  [Contributions to R Packages](#rstats)
 
 You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra) and [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions).  
 My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
@@ -84,7 +84,7 @@ y and Evolution* 9:2240–2248](https://doi.org/10.1111/2041-210X.13076).
 <font size="2">*8th International Conference on Behaviour, Physiology and Genetics of Wildlife – 09/2012 – Berlin, Germany.*</font>
 
 
-## Contribution to R Packages {#rstats}
+## Contributions to R Packages {#rstats}
 
 - <span style='font-variant:small-caps;'>S. Garnier, N. Ross, B. Rudis, M. Sciaini & <u style='font-weight:700;color:#414141;'>C. Scherer</u></span> 2018: `viridis`: Default color maps from 'matplotlib'. R package version 0.5.1, available on [GitHub](https://github.com/sjmgarnier/viridis) and [CRAN](https://cran.r-project.org/web/packages/viridis/index.html).
 
