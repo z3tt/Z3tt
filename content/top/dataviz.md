@@ -1,8 +1,3 @@
-.header h4{
-  font-size: 6px;
-  color: red;
-}
-
 A collection of data visualizations I've produced for scientific publications and fun using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
 <br/>
 
@@ -63,7 +58,7 @@ A collection of data visualizations I've produced for scientific publications an
 <img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
 <details>
-  <summary><u style='color:#20886;font-weight:700;font-size:14pt;font-family:oswald'>Expand for More Contributions</summary></u>
+  <summary><u style='color:#20886;font-weight:700;font-size:14pt;font-family:Oswald'>Expand for More Contributions</summary></u>
 
   <h5>White Christmas in Berlin</h5>
 
@@ -71,7 +66,7 @@ A collection of data visualizations I've produced for scientific publications an
 
   <h5>Christmas Songs in the Billboard Top 100</h5>
 
-  <img src="/img/tidytuesday/2019_38_NationalParks.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_38_NationalParks.png', 'blank');"/>
+  <img src="/img/tidytuesday/2019_52_ChristmasSongs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_52_ChristmasSongs.png', 'blank');"/>
 
   <h5>US National Park Visits</h5>
 
@@ -216,7 +211,7 @@ A collection of data visualizations I've produced for scientific publications an
 <img src="/img/30daymapchallenge/Experimental_PopIntervals.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Experimental_PopIntervals.png', 'blank');"/>
 
 <details>
-  <summary><u style='color:#20886;font-weight:700;font-size:14pt;font-family:oswald'>Expand for More Contributions</summary></u>
+  <summary><u style='color:#20886;font-weight:700;font-size:14pt;font-family:Oswald'>Expand for More Contributions</summary></u>
 
   <h5>Lines</h5>
 
