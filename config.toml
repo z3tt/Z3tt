@@ -116,9 +116,9 @@ home = ["HTML", "RSS", "Algolia"]
   title =  "About Me"
   href =  "/top/about/"
 
-  #[[params.addtional_menus]]
-  #title =  "Projects"
-  #href =  "/top/projects/"
+  [[params.addtional_menus]]
+  title = "Services"
+  href =  "https://www.data-vizard.com/"
 
   [[params.addtional_menus]]
   title =  "Publications"
