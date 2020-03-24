@@ -96,7 +96,7 @@ A collection of data visualizations I've produced for scientific publications an
 
   <h5>Leading Causes of Death</h5>
 
-  <img src="/img/tidytuesday/2018_03_Alcohol_Drugs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_03_Alcohol_Drugs.png', 'blank');"/>
+  <img src="/img/tidytuesday/2018_03_AlcoholDrugs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_03_Alcohol_Drugs.png', 'blank');"/>
 
   <h5>NYC Squirrels</h5>
 
