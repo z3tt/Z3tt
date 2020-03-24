@@ -6,7 +6,7 @@
 }
 
 .highlight pre {
-  overflow-x: auto;       // this sets the scrolling in x
+  overflow-x: hidden;       // this sets the scrolling in x
 }
 
 .highlight pre code {

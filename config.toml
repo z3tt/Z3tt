@@ -56,7 +56,7 @@ home = ["HTML", "RSS", "Algolia"]
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles
   reward = false
 
-  friends = false
+  friends = true
   bookmarks = true
   about_me = true
 
@@ -78,17 +78,20 @@ home = ["HTML", "RSS", "Algolia"]
                 link = "https://orcid.org/0000-000X-XXXX-XXXX"
 
   [[params.friend_link]]
-  title = "Department Ecological Dynamics"
-  href =  "https://ecological-dynamics-izw.com/"
+  title = "DataVizard"
+  href =  "https://data-vizard.com/"
   [[params.friend_link]]
-  title = "RTG' 'BioMove'"
-  href =  "https://biomove.org/"
+  title = "R4DS Community"
+  href =  "https://www.rfordatasci.com/"
   [[params.friend_link]]
-  title = "SIG 'Young Modellers in Ecology'"
-  href = "https://www.yomos.org/"
+  title = "DataVizSociety"
+  href = "https://www.datavisualizationsociety.com/"
   [[params.friend_link]]
-  title = "SIG 'Computational Ecology'"
-  href = "https://akcomputationalecology.wordpress.com/"
+  title = "CorrelAid"
+  href =  "https://correlaid.org/en/"
+  [[params.friend_link]]
+  title = "Computational Ecology"
+  href =  "https://akcomputationalecology.wordpress.com/"
 
   [[params.bookmark_link]]
   title =  "Fundamentals of DataViz"

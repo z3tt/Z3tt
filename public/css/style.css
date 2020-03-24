@@ -331,7 +331,7 @@ textarea {
 
 textarea {
   max-width: 41.625em;
-  overflow: auto;
+  overflow: visible;
 }
 
 input[type="submit"] {

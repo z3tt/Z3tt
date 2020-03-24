@@ -32,7 +32,7 @@ Tracks is distributed under the terms of the GNU GPL
 }
 
 .entry-container, .comments {
-  padding: 0 5.55%;
+  padding: 0 2.55%;
 }
 
 .site-title, .menu-unset > ul a,
@@ -165,7 +165,7 @@ ol {
   padding: 0;
   margin: 1.5em;
 }
-ul ul, ul ol, 
+ul ul, ul ol,
 ol ul,
 ol ol {
   margin: 0 1.5em;
@@ -232,7 +232,7 @@ th {
 .alignleft,
 .aligncenter,
 .alignnone,
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
@@ -438,7 +438,7 @@ a img {
   }
 }
 .site-header {
-  padding: 0.75em 5.55%;
+  padding: 0.75em 2.55%;
 }
 .site-header .container {
   margin: 0 auto;
@@ -614,7 +614,7 @@ a img {
   .site-header {
     position: relative;
     z-index: 2;
-    padding: 1.5em 5.55% 2.25em;
+    padding: 1.5em 2.55% 2.25em;
     border-top: solid 0.75em #110800;
   }
 
@@ -651,7 +651,7 @@ a img {
   }
 
   .ie9 .site-description {
-    left: 5.55%;
+    left: 2.55%;
   }
 
   .menu-primary-tracks {
@@ -774,7 +774,7 @@ a img {
   }
 }
 .excerpt-container {
-  padding: 0 5.55%;
+  padding: 0 2.55%;
   position: relative;
   z-index: 9;
   -webkit-backface-visibility: hidden;
@@ -929,7 +929,7 @@ a img {
 
   .excerpt-container {
     background: white;
-    padding: 0 6.2%;
+    padding: 0 3.2%;
   }
 
   .pagination {
@@ -946,7 +946,7 @@ a img {
 @media all and (min-width: 56.25em) {
   .excerpt-container {
     width: 50%;
-    padding: 0 5.55%;
+    padding: 0 2.55%;
   }
 
   .excerpt {
@@ -1021,8 +1021,8 @@ a img {
 
 .entry-meta,
 .entry-header {
-  padding-left: 5.55%;
-  padding-right: 5.55%;
+  padding-left: 2.55%;
+  padding-right: 2.55%;
 }
 
 .entry-content {
@@ -1126,7 +1126,7 @@ a img {
   }
 
   .entry-container {
-    padding: 0 5.55%;
+    padding: 0 2.55%;
   }
 
   .further-reading p {
@@ -1183,8 +1183,8 @@ a img {
 
   .entry-meta,
   .entry-header {
-    padding-left: 5.55%;
-    padding-right: 5.55%;
+    padding-left: 2.55%;
+    padding-right: 2.55%;
   }
 
   .entry-content img.full-width {
@@ -1259,7 +1259,7 @@ a img {
     left: 0;
     top: 4.5em;
     text-align: right;
-    padding-left: 5.55%;
+    padding-left: 2.55%;
   }
   .entry-meta-bottom.float .entry-tags a,
   .entry-meta-bottom.float .entry-categories a {
@@ -1376,7 +1376,7 @@ li.pingback:first-child {
 /* 600px */
 @media all and (min-width: 37.5em) {
   .comments {
-    padding: 0 5.55% 3em;
+    padding: 0 2.55% 3em;
     width: 88.88%;
     margin: 0 auto;
   }
@@ -1497,7 +1497,7 @@ li.pingback:first-child {
 .sidebar-footer {
   background: #1A1A1A;
   margin-bottom: -48px;
-  padding: 1.5em 5.55%;
+  padding: 1.5em 2.55%;
 }
 .sidebar-footer .widget {
   margin: 3em 0;
@@ -1543,7 +1543,7 @@ li.pingback:first-child {
     position: fixed;
     bottom: -4em;
     right: 0;
-    width: 5.55%;
+    width: 2.55%;
     height: 4em;
     background: white;
     border: none;
@@ -1878,7 +1878,7 @@ li.pingback:first-child {
   width: 112%;
   min-height: 3em;
   background: #110800;
-  padding: 0.375em 5.55%;
+  padding: 0.375em 2.55%;
   margin: -0.75em 0 0;
   line-height: 0;
 }
@@ -2074,7 +2074,7 @@ li.pingback:first-child {
 /* search form styles */
 .site-header .search-form-container {
   position: absolute;
-  right: 5.55%;
+  right: 2.55%;
   left: 12.55%;
   top: 0;
   height: 100%;
@@ -2152,7 +2152,7 @@ li.pingback:first-child {
           transform: translateX(-100%);
 }
 .search-open .site-header .search-form-container {
-  left: 5.55%;
+  left: 2.55%;
 }
 .search-open .site-header .search-form-container button {
   width: 24%;
@@ -2600,7 +2600,7 @@ li.pingback:first-child {
 /* Styles for Disqus Comment System */
 #disqus_thread {
   background: white;
-  padding: 1.5em 5.55%;
+  padding: 1.5em 2.55%;
   max-width: 1280px;
 }
 
@@ -2709,4 +2709,3 @@ li.pingback:first-child {
     width: 500px !important;
   }
 }
-
