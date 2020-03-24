@@ -66,7 +66,7 @@ A collection of data visualizations I've produced for scientific publications an
 <img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
 <details>
-  <summary><h5 style='color:#20886;'>Click for More Contributions</summary></h5>
+  <summary><u style='color:#20886;font-weight:700;font-size:16pt;'>Expand for More Contributions</summary></u>
 
   <h5>White Christmas in Berlin</h5>
 
