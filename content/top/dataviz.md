@@ -12,47 +12,160 @@ A collection of data visualizations I've produced for scientific publications an
 
 [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/).
 
-<img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
+#### "The Office" Ratings on IMDb
 
-<img src="/img/tidytuesday/2019_44_Squirrels.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_44_Squirrels.png', 'blank');"/>
+<img src="/img/tidytuesday/2020_12_TheOffice.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_12_TheOffice.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_18_BirdCollisions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_18_BirdCollisions.png', 'blank');"/>
+#### Foot Carbon Footprint Index 2018
 
-<img src="/img/tidytuesday/2019_42_Big_Cars_Highway.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_42_Big_Cars_Highway.gif', 'blank');"/>
+<img src="/img/tidytuesday/2020_08_Carbon_Foodprint_alt.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_08_CarbonFoodprint_alt.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_39_SchoolDiversity.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity.png', 'blank');"/>
+#### Hotel Bookings [(Antonio, Almeida & Nunes 2019)](https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5)
 
-<img src="/img/tidytuesday/2019_36_MooresLaw.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw.png', 'blank');"/>
+<img src="/img/tidytuesday/2020_07_HotelBookings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_07_HotelBookings.png', 'blank');"/>
+
+#### Planted Trees in San Francisco
+
+<img src="/img/tidytuesday/2020_05_TreesSF.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_05_TreesSF.png', 'blank');"/>
+
+#### Golden Age of Hip Hop on Spotify
+
+<img src="/img/tidytuesday/2020_05_TreesSF.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_05_TreesSF.png', 'blank');"/>
+
+#### Most Common Passwords
+
+<img src="/img/tidytuesday/2020_05_TreesSF.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_05_TreesSF.png', 'blank');"/>
+
+#### Australian Bushfires 2019/2020
+
+<img src="/img/tidytuesday/2020_02_AustralianFires.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_02_AustralianFires.png', 'blank');"/>
+
+#### FIFA Women's World Cups
+
+<img src="/img/tidytuesday/2019_28_FIFA_WWCs_stellar_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs_stellar.png', 'blank');"/>
+
+#### Moore's Law
+
+<img src="/img/tidytuesday/2019_36_MooresLaw_double.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw_double.png', 'blank');"/>
+
+#### Leading Causes of Death
+
+<img src="/img/tidytuesday/2018_03_GlobalMortality.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_03_GlobalMortality.png', 'blank');"/>
+
+#### Meteorites
 
 <img src="/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_28_FIFA_WWCs_stellar_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs_stellar_sd.png', 'blank');"/>
-
-<img src="/img/tidytuesday/2019_28_FIFA_WWCs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs.png', 'blank');"/>
-
-<img src="/img/tidytuesday/2019_35_SimpsonsGuests_black_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_35_SimpsonsGuests_black_sd.png', 'blank');"/>
+#### Global Plastic Waste
 
 <img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_34_NuclearExplosions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_34_NuclearExplosions.png', 'blank');"/>
+<details>
+ <summary><h4>More Contributions</summary></h4>
 
-<img src="/img/tidytuesday/2019_17_Animes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_17_Animes.png', 'blank');"/>
+ <h4>White Christmas in Berlin</h4>
 
-<img src="/img/tidytuesday/2019_27_FranchiseRevenue.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_27_FranchiseRevenue.png', 'blank');"/>
+ <img src="/img/tidytuesday/2020_01_WhiteXmasBerlin.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_01_WhiteXmasBerlin.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_33_RomanEmperors_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_33_RomanEmperors_sd.png', 'blank');"/>
+ <h4>Christmas Songs in the Billboard Top 100</h4>
 
-<img src="/img/tidytuesday/2019_20_NobelPrizeWinners.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_20_NobelPrizeWinners.png', 'blank');"/>
+ <img src="/img/tidytuesday/2019_38_NationalParks.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_38_NationalParks.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_16_DataVizMistakes_light.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_16_DataVizMistakes_light.png', 'blank');"/>
+  <h4>US National Park Visits</h4>
 
-<img src="/img/tidytuesday/2019_14_SeattleBikes_month.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_14_SeattleBikes_month.png', 'blank');"/>
+  <img src="/img/tidytuesday/2019_38_NationalParks.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_38_NationalParks.png', 'blank');"/>
 
-<img src="/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png', 'blank');"/>
+  <h4>Adoptable Dogs on Petfinder.com</h4>
 
-<img src="/img/tidytuesday/2019_22_Wines.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_22_Wines.png', 'blank');"/>
-<br/>
+  <img src="/img/tidytuesday/2019_51_DogAdoptions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_51_DogAdoptions.png', 'blank');"/>
 
+  <h4>Replicating Plots [(Originals by Matt Daniels)](https://pudding.cool/projects/vocabulary/) in R</h4>
+
+  <img src="/img/tidytuesday/2019_50_Replicate_Rap_bee_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_bee_original.png', 'blank');"/>
+
+  <img src="/img/tidytuesday/2019_50_Replicate_Rap_text_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_text_original.png', 'blank');"/>
+
+  <h4>Malaria in Africa</h4>
+
+  <img src="/img/tidytuesday/2018_33_MalariaDeaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_33_MalariaDeaths.png', 'blank');"/>
+
+  <h4>Leading Causes of Death</h4>
+
+  <img src="/img/tidytuesday/2018_03_Alcohol_Drugs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_03_Alcohol_Drugs.png', 'blank');"/>
+
+  <h4>NYC Squirrels</h4>
+
+  <img src="/img/tidytuesday/2019_44_Squirrels_rev.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_44_Squirrels_rev.png', 'blank');"/>
+
+  <h4>Car Fuel Economy</h4>
+
+  <img src="/img/tidytuesday/2019_42_BigCars_Highway.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_42_BigCars_Highway.gif', 'blank');"/>
+
+  <h4>Pizza Ratings in NYC</h4>
+
+  <img src="/img/tidytuesday/2019_40_Pizza_jared_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_40_Pizza_jared.png', 'blank');"/>
+
+  <h4>School Diversity in the US</h4>
+
+  <img src="/img/tidytuesday/2019_39_SchoolDiversity_brpurp.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity_brpurp.png', 'blank');"/>
+
+  <img src="/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_39_SchoolDiversity_geofacet.png', 'blank');"/>
+
+  <h4>Simpsons Guest Stars 💛</h4>
+
+  <img src="/img/tidytuesday/2019_35_SimpsonsGuests_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_35_SimpsonsGuests.png', 'blank');"/>
+
+  <h4>Nuclear Explosions</h4>
+
+  <img src="/img/tidytuesday/2019_34_NuclearExplosions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_34_NuclearExplosions.png', 'blank');"/>
+
+  <img src="/img/tidytuesday/2019_34_NuclearStripes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_34_NuclearStripes.png', 'blank');"/>
+
+  <h4>Timeline of Roman Emperors</h4>
+
+  <img src="/img/tidytuesday/2019_33_RomanEmperors_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_33_RomanEmperors.png', 'blank');"/>
+
+  <h4>FIFA Women's World Cups</h4>
+
+  <img src="/img/tidytuesday/2019_28_FIFA_WWCs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_28_FIFA_WWCs.png', 'blank');"/>
+
+  <h4>Media Franchise Revenues</h4>
+
+  <img src="/img/tidytuesday/grossing_media_franchises.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/grossing_media_franchises.png', 'blank');"/>
+
+  <h4>Christmas Bird Counts	by [Bird Studies Canada](https://www.birdscanada.org/index.jsp)</h4>
+
+  <img src="/img/tidytuesday/2019_25_BirdsXmas.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_25_BirdsXmas.png', 'blank');"/>
+
+  <h4>Vivino Wine Ratings</h4>
+
+  <img src="/img/tidytuesday/2019_25_BirdsXmas.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_25_BirdsXmas.png', 'blank');"/>
+
+  <h4>Nobel Prize Winners</h4>
+
+  <img src="/img/tidytuesday/2019_20_NobelPrizeWinners.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_20_NobelPrizeWinners.png', 'blank');"/>
+
+  <h4>UNESCO's ["eAtlas of Teachers"](http://data.uis.unesco.org/index.aspx?queryid=180)</h4>
+
+  <img src="/img/tidytuesday/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_19_StudentTeacher.png', 'blank');"/>
+
+  <h4>Chicago Bird Collisions [(Winger et al. 2019)](https://doi.org/10.1098/rspb.2019.0364)</h4>
+
+  <img src="/img/tidytuesday/2019_18_BirdCollisions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_18_BirdCollisions.png', 'blank');"/>
+
+  <h4>Data Viz Mistakes by [The Economist](https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368)</h4>
+
+  <img src="/img/tidytuesday/2019_16_DataVizMistakes_light.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_16_DataVizMistakes_light.png', 'blank');"/>
+
+  <h4>Seattle Bike Traffic</h4>
+
+  <img src="/img/tidytuesday/2019_14_SeattleBikes_month.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_14_SeattleBikes_month.png', 'blank');"/>
+
+  <h4>Studio Ghibli on MyAnimeList.net<h4>
+
+  <img src="/img/tidytuesday/2019_17_Animes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_17_Animes.png', 'blank');"/>
+
+</details>
 
 ## Contributions to #MakeoverMonday {#makeovermonday}
 
