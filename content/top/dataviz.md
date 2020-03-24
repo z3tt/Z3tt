@@ -7,6 +7,7 @@ A collection of data visualizations I've produced for scientific publications an
 <br/>
 
 * [Contributions to #TidyTuesday](#tidytuesday)
+* [Contributions to #30DayMapChallenge](#mapchallenge)
 * [Contributions to #MakeoverMonday](#makeovermonday)
 * [Contributions to the #SWDchallenge](#swdchallenge)
 * ["Evolution of a ggplot" blog series](#evolggplot)
@@ -53,10 +54,6 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2019_36_MooresLaw_double.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_36_MooresLaw_double.png', 'blank');"/>
 
-##### Leading Causes of Death
-
-<img src="/img/tidytuesday/2018_03_GlobalMortality.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_03_GlobalMortality.png', 'blank');"/>
-
 ##### Meteorites
 
 <img src="/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
@@ -66,7 +63,7 @@ A collection of data visualizations I've produced for scientific publications an
 <img src="/img/tidytuesday/2019_21_PlasticWaste.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_21_PlasticWaste.png', 'blank');"/>
 
 <details>
-  <summary><u style='color:#20886;font-weight:700;font-size:16pt;'>Expand for More Contributions</summary></u>
+  <summary><u style='color:#20886;font-weight:700;font-size:14pt;font-family:oswald'>Expand for More Contributions</summary></u>
 
   <h5>White Christmas in Berlin</h5>
 
@@ -90,11 +87,7 @@ A collection of data visualizations I've produced for scientific publications an
 
   <img src="/img/tidytuesday/2019_50_Replicate_Rap_text_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_text_original.png', 'blank');"/>
 
-  <h5>Malaria in Africa</h5>
-
-  <img src="/img/tidytuesday/2018_33_MalariaDeaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_33_MalariaDeaths.png', 'blank');"/>
-
-  <h5>Leading Causes of Death</h5>
+  <h5>Alcohol- and Drug-Induced Mortality</h5>
 
   <img src="/img/tidytuesday/2018_03_AlcoholDrugs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2018_03_Alcohol_Drugs.png', 'blank');"/>
 
@@ -171,6 +164,119 @@ A collection of data visualizations I've produced for scientific publications an
   <img src="/img/tidytuesday/2019_17_Animes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_17_Animes.png', 'blank');"/>
 
 </details>
+<br>
+
+
+## Contributions to #30DayMapChallenge {#mapchallenge}
+
+[#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019.
+
+##### Polygons
+
+<img src="/img/30daymapchallenge/Polygons_GlobalMortality.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Polygons_GlobalMortality.png', 'blank');"/>
+
+##### Hexagons
+
+<img src="/img/30daymapchallenge/Hexagons_SchoolDiversity_hex.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Hexagons_SchoolDiversity_hex.png', 'blank');"/>
+
+##### Movement
+
+<img src="/img/30daymapchallenge/Movement_BerlinByBike.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Movement_BerlinByBike.png', 'blank');"/>
+
+##### Tracks
+
+<img src="/img/30daymapchallenge/Tracks_StorksGili.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Tracks_StorksGili.png', 'blank');"/>
+
+##### Boundaries
+
+<img src="/img/30daymapchallenge/Boundaries_GlobalNeighbors.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Boundaries_GlobalNeighbors.png', 'blank');"/>
+
+##### Names
+
+<img src="/img/30daymapchallenge/Names_BerlinRoads_HQ.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Names_BerlinRoads_HQ.png', 'blank');"/>
+
+##### Places
+
+<img src="/img/30daymapchallenge/Places_ExtremesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Places_ExtremesEarth.png', 'blank');"/>
+
+##### Zones
+
+<img src="/img/30daymapchallenge/Zones_TimezonesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Zones_TimezonesEarth_countries.png', 'blank');"/>
+
+##### Urban
+
+<img src="/img/30daymapchallenge/19_Urban_GlobalUrbanAreas_bg.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/19_Urban_GlobalUrbanAreas_bg.png', 'blank');"/>
+
+##### Built Environment
+
+<img src="/img/30daymapchallenge/BuiltEnv_BerlinBuildings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/BuiltEnv_BerlinBuildings.png', 'blank');"/>
+
+##### Experimental
+
+<img src="/img/30daymapchallenge/Experimental_PopIntervals.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Experimental_PopIntervals.png', 'blank');"/>
+
+<details>
+  <summary><u style='color:#20886;font-weight:700;font-size:14pt;font-family:oswald'>Expand for More Contributions</summary></u>
+
+  <h5>Lines</h5>
+
+  <img src="/img/30daymapchallenge/Lines_OSMnx_Kiez.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Lines_OSMnx_Kiez.png', 'blank');"/>
+
+  <h5>Blue, Red, Green, Yellow</h5>
+
+  <img src="/img/30daymapchallenge/BlueRedGreenYellow_BerlinPublicTransport.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/BlueRedGreenYellow_BerlinPublicTransport.png', 'blank');"/>
+
+  <h5>Black & White</h5>
+
+  <img src="/img/30daymapchallenge/BlackWhite_CapitalPop_bw.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/BlackWhite_CapitalPop_bw.png', 'blank');"/>
+
+  <h5>Elevation</h5>
+
+  <img src="/img/30daymapchallenge/Elevation_Rayshader_custom.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Elevation_Rayshader_custom.png', 'blank');"/>
+
+  <h5>Globe</h5>
+
+  <img src="/img/30daymapchallenge/Globe_Projections.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Globe_Projections.png', 'blank');"/>
+
+  <h5>Zones</h5>
+
+  <img src="/img/30daymapchallenge/Urban_GlobalUrbanLands.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Urban_GlobalUrbanLands.png', 'blank');"/>
+
+  <h5>Rural</h5>
+
+  <img src="/img/30daymapchallenge/20_Rural_BerlinRuralAreas_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/20_Rural_BerlinRuralAreas_v2.png', 'blank');"/>
+
+  <h5>Environment</h5>
+
+  <img src="/img/30daymapchallenge/Environment_NationalParksUS.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Environment_NationalParksUS.png', 'blank');"/>
+
+  <h5>Built Environment</h5>
+
+  <img src="/img/30daymapchallenge/22_BuiltEnv_BuildingsXberg.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/22_BuiltEnv_BuildingsXberg.png', 'blank');"/>
+
+  <h5>Population</h5>
+
+  <img src="/img/30daymapchallenge/23_Population_ChangeGlobal_diff.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/23_Population_ChangeGlobal_diff.png', 'blank');"/>
+
+  <h5>Statistics</h5>
+
+  <img src="/img/30daymapchallenge/Statistics_MalariaDeaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Statistics_MalariaDeaths.png', 'blank');"/>
+
+  <h5>Climate</h5>
+
+  <img src="/img/30daymapchallenge/Climate_KoppenGeiger.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Climate_KoppenGeiger.png', 'blank');"/>
+
+  <h5>Resources</h5>
+
+  <img src="/img/30daymapchallenge/Resources_eMobilityBerlin.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Resources_eMobilityBerlin.png', 'blank');"/>
+
+  <h5>Hydrology</h5>
+
+  <img src="/img/30daymapchallenge/Hydrology_WorldRivers.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Hydrology_WorldRivers.png', 'blank');"/>
+
+</details>
+<br
+
 
 ## Contributions to #MakeoverMonday {#makeovermonday}
 
@@ -210,6 +316,6 @@ A collection of data visualizations I've produced for scientific publications an
 <img src="/img/evol-ggplot/evol-ggplot-1.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.gif', 'blank');"/>
 
 <img src="/img/evol-ggplot/evol-ggplot-1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.png', 'blank');"/>
-<br/>
+<br>
 
-<font size="+2">**If you have some data and would like to get it visualized, don't hesitate to <a href="mailto:info@data-vizard.com">contact me!</a>**</font>
+<font size="+2">**You need a visualization? Don't hesitate to <a href="mailto:info@data-vizard.com">contact me!</a>**</font>
