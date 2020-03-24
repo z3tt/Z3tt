@@ -39,7 +39,7 @@ home = ["HTML", "RSS", "Algolia"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Computational Ecologist, DataViz Enthusiast and Proud Dad"
+  sidebar_about_description = "Computational Ecologist, DataViz Specialist and Proud Dad"
   sidebar_avatar = "img/cedric_round.png"
 
   featured_tags = true
