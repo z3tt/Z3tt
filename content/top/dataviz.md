@@ -41,7 +41,7 @@ A collection of data visualizations I've produced for scientific publications an
 
 <img src="/img/tidytuesday/2020_03_Passwords.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_03_Passwords.png', 'blank');"/>
 
-##### Australian Bushfires 2019/2020
+##### Australian Bushfires 2019&ndash;2020
 
 <img src="/img/tidytuesday/2020_02_AustralianFires.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2020_02_AustralianFires.png', 'blank');"/>
 
