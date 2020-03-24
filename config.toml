@@ -90,6 +90,9 @@ home = ["HTML", "RSS", "Algolia"]
   title = "CorrelAid"
   href =  "https://correlaid.org/en/"
   [[params.friend_link]]
+  title = "FrontPage Data"
+  href = "https://frontpagedata.com/"
+  [[params.friend_link]]
   title = "Computational Ecology"
   href =  "https://akcomputationalecology.wordpress.com/"
 
