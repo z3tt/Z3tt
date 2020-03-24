@@ -1,10 +1,10 @@
-A collection of data visualizations I've produced for scientific publications and fun using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
+A collection of data visualizations I've produced for scientific publications, client requests and fun using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing. Click on an image to enlarge it.
 <br/>
 
-* [Contributions to #TidyTuesday](#tidytuesday)
-* [Contributions to #30DayMapChallenge](#mapchallenge)
-* [Contributions to #MakeoverMonday](#makeovermonday)
-* [Contributions to the #SWDchallenge](#swdchallenge)
+* [#TidyTuesday Contributions](#tidytuesday)
+* [#30DayMapChallenge Contributions](#mapchallenge)
+* [#MakeoverMonday Contributions](#makeovermonday)
+* [#SWDchallenge Contributions](#swdchallenge)
 * ["Evolution of a ggplot" blog series](#evolggplot)
 <br/>
 
@@ -76,11 +76,11 @@ A collection of data visualizations I've produced for scientific publications an
 
   <img src="/img/tidytuesday/2019_51_DogAdoptions.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_51_DogAdoptions.png', 'blank');"/>
 
-  <h5>Replicating Plots [(Originals by Matt Daniels)](https://pudding.cool/projects/vocabulary/) in R</h5>
+  <h5>Replicating Plots  in R[(Originals by Matt Daniels)](https://pudding.cool/projects/vocabulary/)</h5>
 
-  <img src="/img/tidytuesday/2019_50_Replicate_Rap_bee_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_bee_original.png', 'blank');"/>
+  <img src="/img/tidytuesday/2019_50_Replicate_Rap_bee_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_bee.png', 'blank');"/>
 
-  <img src="/img/tidytuesday/2019_50_Replicate_Rap_text_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_text_original.png', 'blank');"/>
+  <img src="/img/tidytuesday/2019_50_Replicate_Rap_text_original.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/tidytuesday/2019_50_Replicate_Rap_text.png', 'blank');"/>
 
   <h5>Alcohol- and Drug-Induced Mortality</h5>
 
@@ -188,7 +188,7 @@ A collection of data visualizations I've produced for scientific publications an
 
 ##### Names
 
-<img src="/img/30daymapchallenge/Names_BerlinRoads_HQ.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Names_BerlinRoads_HQ.png', 'blank');"/>
+<img src="/img/30daymapchallenge/Names_BerlinRoads.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Names_BerlinRoads_HQ.png', 'blank');"/>
 
 ##### Places
 
@@ -204,7 +204,7 @@ A collection of data visualizations I've produced for scientific publications an
 
 ##### Built Environment
 
-<img src="/img/30daymapchallenge/BuiltEnv_BerlinBuildings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/BuiltEnv_BerlinBuildings.png', 'blank');"/>
+<img src="/img/30daymapchallenge/BuiltEnv_BerlinBuildings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/BuiltEnv_BerlinBuildings_HQ.png', 'blank');"/>
 
 ##### Experimental
 
@@ -227,7 +227,7 @@ A collection of data visualizations I've produced for scientific publications an
 
   <h5>Elevation</h5>
 
-  <img src="/img/30daymapchallenge/Elevation_Rayshader_custom.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Elevation_Rayshader_custom.png', 'blank');"/>
+  <img src="/img/30daymapchallenge/Elevation_Rayshader_custom.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Elevation_Rayshader_custom_HQ.png', 'blank');"/>
 
   <h5>Globe</h5>
 
