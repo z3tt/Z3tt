@@ -85,7 +85,7 @@ By calculating the proportion of deaths per country, I avoid some of the issues 
 
 1. The evolving patterns mimics the way we have experienced and are experiencing the pandemic. I found it very interesting to look at the **change in a dynamic way** since values that look very high today might be low in a few days depending on the trend. This way the animations mimics us humans and how we see the situation without making any claims about how the numbers will change in the next days. You can also *ride the wave* and wait for the new colors to be not pink anymore.
 
-1. To be transparent that the highest color does not show daily cases but a calculated measure, I have added both the daily deaths for each country's worst day and the latest day as well as the sum of deaths next to each country's name.
+1. To be transparent that the highest color does not show daily cases but a calculated measure, I have added both the number of daily deaths for each country's worst day and the latest day as well as the sum of deaths next to each country's name.
 
 But there might be also some drawbacks:
 
