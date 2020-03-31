@@ -6,24 +6,33 @@
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>climate change</title>
-      <link>/tags/climate-change/</link>
-      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      <title>animation</title>
+      <link>/tags/animation/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/climate-change/</guid>
+      <guid>/tags/animation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COVID-19</title>
+      <link>/tags/covid-19/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/covid-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataViz</title>
       <link>/tags/dataviz/</link>
-      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/dataviz/</guid>
       <description></description>
@@ -32,9 +41,36 @@
     <item>
       <title>ggplot2</title>
       <link>/tags/ggplot2/</link>
-      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>heatmap</title>
+      <link>/tags/heatmap/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/heatmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SWDchallenge</title>
+      <link>/tags/swdchallenge/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/swdchallenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>climate change</title>
+      <link>/tags/climate-change/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/climate-change/</guid>
       <description></description>
     </item>
     

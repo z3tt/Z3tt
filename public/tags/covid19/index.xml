@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COVID19 on Cédric Scherer</title>
+    <link>/tags/covid19/</link>
+    <description>Recent content in COVID19 on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/covid19/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Daily Death Tolls During the Corona Pandemic—The Worst Days So Far</title>
+      <link>/2020/03/31/corona-covid19-death-tolls-worst-day-so-far/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/31/corona-covid19-death-tolls-worst-day-so-far/</guid>
+      <description>Header image by Giacomo Carra via UnsplashCoronavirus SARS-CoV-2, COVID19 or simply Corona—what started as an epidemic in Wuhan, China has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, #stayhome and #flattenthecurve hashtags and obviously a global shortage of toilet paper.
+When the corona pandemic started, I felt scared, curious and tired at the same time. Scared as a husband and father by the impact this virus outbreak might have on our life, in 2020 and way beyond.</description>
+    </item>
+    
+  </channel>
+</rss>

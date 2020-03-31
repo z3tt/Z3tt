@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+
+    
+      <meta name="title" content="Daily Death Tolls During the Corona Pandemic—The Worst Days So Far" />
+      <meta property="og:title" content="Daily Death Tolls During the Corona Pandemic—The Worst Days So Far - Cédric Scherer" />
+      <meta property="twitter:title" content="Daily Death Tolls During the Corona Pandemic—The Worst Days So Far - Cédric Scherer" />
+      <meta property="twitter:text:title" content="Daily Death Tolls During the Corona Pandemic—The Worst Days So Far - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide.">
+      <meta property="og:description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide." />
+      <meta property="twitter:description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide." />
+    
+
+    
+      <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+      <meta property="twitter:image" content="/img/banner_RichardStrozynski_small.png" />
+      <meta property="twitter:card" content="summary_large_image" />
+    
+
+    
+
+    <meta name="keyword"  content="Computational Ecology, Data Visualization">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Daily Death Tolls During the Corona Pandemic—The Worst Days So Far - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="https://www.data-vizard.com/">Services</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/dataviz/">Visualizations</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/corona-giacomo-carra.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/covid-19" title="COVID-19">
+                            COVID-19
+                        </a>
+                        
+                        <a class="tag" href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        <a class="tag" href="/tags/swdchallenge" title="SWDchallenge">
+                            SWDchallenge
+                        </a>
+                        
+                        <a class="tag" href="/tags/animation" title="animation">
+                            animation
+                        </a>
+                        
+                        <a class="tag" href="/tags/heatmap" title="heatmap">
+                            heatmap
+                        </a>
+                        
+                    </div>
+                    <h1>Daily Death Tolls During the Corona Pandemic—The Worst Days So Far</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Tuesday, March 31, 2020
+                        
+                            <span id="/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p><!-- raw HTML omitted -->Header image by <a href="https://unsplash.com/photos/gf6UDwpl0ac">Giacomo Carra via Unsplash</a><!-- raw HTML omitted --></p>
+<p><strong>Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in Wuhan, China has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, <a href="https://twitter.com/hashtag/stayhome">#stayhome</a> and <a href="https://twitter.com/hashtag/flattenthecurve">#flattenthecurve</a> hashtags and obviously a global shortage of toilet paper.</strong></p>
+<p>When the corona pandemic started, I felt scared, curious and tired at the same time. <em>Scared as a husband and father</em> by the impact this virus outbreak might have on our life, in 2020 and way beyond. <em>Curious as a scientist</em> who focused his PhD thesis on the spread and persistence of directly transmitted diseases in the context of contact rates and movement. And <em>tired as a data visualization specialist</em> when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons (see below). However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or whataboutism is mainly over and we now have a lot of data to base our visualizations on.</p>
+<h5 id="latest-update-march-31-2020">Latest update: March 31, 2020</h5>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/img/corona-animation/0330_corona_begin_series.gif" alt="latest-animation"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Latest animation of daily deaths worldwide and per country, sorted by first case.</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/img/corona-animation/0330_corona_sum_latest.png" alt="latest-plot"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>Latest numbers of daily death tolls worldwide and per country, sorted by total deaths.</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-idea">The idea</h3>
+<p>Inspired by my colleague <a href="https://twitter.com/alexcourtiol">Alexandre Courtiol</a>, who looked at <a href="https://github.com/courtiol/excess_mortality_COVID19">the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size</a>, I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to show where along the curve each country falls—are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/img/corona-animation/corona_begin.gif" alt="animation-corona-original"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>The first version as of 30th of March, the day I submitted the animation to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/img/corona-animation/corona_begin_latest_hq.png" alt="static-plot-corona-original&rdquo;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><em>A static version of the situation as of 30th of March, sorted by first death due to COVID-19.</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-read-the-visualization">How to read the visualization</h3>
+<p>As explained above, I calculated for each day the number of death cases relative to the &ldquo;worst  day&rdquo;, namely the day with the most deaths so far. Imagine a naïve population that was not facing the virus before. At some point, there might be people dying but likely only a few (with regard to COVID-19—in general, this highly depends on the severity of infection caused by the pathogen, often referred to as <em>case fatality ratio</em> or simply <em>case fatality</em>). Consequently, the proportion of deaths on the first day compared to the worst day has to be 100% (since the first day has to be, by definition, the worst day so far). On the next day, there might be more deaths than on the day before, a known pattern we see in reality and in simulations of early epidemics. Exponential growth, an always increasing curve we aim to flatten by reducing contact between infected and susceptible (non-infected but able to catch the infection). So on day two, two times as many people might die which makes day 2 the worst day with a proportion of 100%. At the same time, the proportion of deaths on day 1 decreases from 100% to 50%. This way it enables to see if we are still facing (exponential) growth or if we, at least for now, over the peak if deaths.</p>
+<h3 id="things-to-keep-in-mind-when-visualizing-covid-19-data">Things to keep in mind when visualizing COVID-19 data</h3>
+<p>In the recent weeks, there is a lot of discussion on several things to account for when analyzing data and designing visualizations on the topic of the corona pandemic.</p>
+<p>First of all, the final visualization should be as precise and transparent as possible. (Of course, this should be the case for all visualizations!) This means that the final product should be designed with care by adding the source of data, how the data was aggregated and analyzed, and what the visualization shows. Further, this implies a careful choice of text, especially the title, and the colors which should both neither be hysteric nor play down the current situation. For example, the <a href="https://blog.datawrapper.de/coronaviruscharts/">use of bloodish colors</a> to make it crystal-clear that this virus is dangerous might spark panic in some people. If this is an intended choice, this is <a href="https://twitter.com/AlbertoCairo/status/1241374480351576064">professional malpractice and must be called out by us as data visualization specialists</a>.</p>
+<h5 id="make-design-choices-carefully">Make design choices carefully</h5>
+<p>In the early days of the global pandemic, the intention of a particular graphic was often not clear to the reader. Also, I hardly could tell if the designer has the knowledge to analyze and visualize the data in a meaningful way (no, <a href="https://twitter.com/CT_Bergstrom/status/1241522140559503360">you are not an expert in pathogen spread when you&rsquo;re investigating market sales!</a>) or contacted any experts while preparing the piece. To cite Alberto Cairo: <a href="https://twitter.com/AlbertoCairo/status/1241371617680293888">&ldquo;Numbers without domain knowledge are dangerous&rdquo;</a> and <a href="https://twitter.com/AlbertoCairo/status/1241386040570626048">&ldquo;the rule should be to ignore <strong>any</strong> &lsquo;analysis&rsquo; from people who haven&rsquo;t consulted with epidemiologists/biostatisticians&rdquo;</a>. For example, the use of epidemiological terms such as R_0</p>
+<h5 id="be-explicit-about-uncertainty">Be explicit about uncertainty</h5>
+<p>The data we hear and see in the news and our social media streams come with a lot of uncertainty. It is very important to understand that detected or confirmed cases do not necessarily reflect the reality but underestimate the real number of cases—and to communicate this fact explicitly in the visualization. The number of detected infections with the coronavirus are highly dependent on the number of tests that were performed—and that <a href="https://ourworldindata.org/covid-testing">differs a lot among countries</a>! A more robust measure might be deaths due to the coronavirus but keep in mind that the way to report these numbers differs between countries. Furthermore, <a href="https://edition.cnn.com/2020/03/26/health/number-of-cases-testing-data-intl/index.html">no two countries are alike when it comes to access to healthcare and medical resources and even the age structure of the population</a> which in turn influences the number of reported cases.</p>
+<p>Since we are still in the early days of the coronavirus pandemic, correlations with any variable such as temperature or cultural differences need to be treated with caution. Do not release any of such analyses or visualizations if you are not sure what you are doing and did your best to account for any biases. There are experts for this and they are already searching for correlations with the right tools and knowledge.</p>
+<h5 id="do-i-need-to-adjust-for-population">Do I need to adjust for population?</h5>
+<p>There is a ongoing discussion of <a href="https://twitter.com/jburnmurdoch/status/1242904596856614912">&ldquo;showing the raw numbers&rdquo; versus &ldquo;adjust data for population&rdquo;</a>. As John Burn-Murdoch—data visualization designer at the Financial Times and creator of <a href="https://www.ft.com/coronavirus-latest">these fantastic and very informative visualizations on the current situation of the corona spread</a>—states: <a href="https://twitter.com/jburnmurdoch/status/1242904703144464390">&ldquo;Generally, and especially early in outbreak (first few weeks), higher per-capita numbers just mean smaller country, not anything different about how that country’s dealing with covid&rdquo;</a>. Of course, <em>population density</em> matters since the coronavirus is transmitted by direct or close contact. However, <em>population size</em> does not necessarily reflect the density in a country. So if accounting for population, this should be optimally done on a regional level sufficient to capture the area of spread instead of borders drawn by influential humans. In the end, it also depends on the story you want to tell if and how you adjust the data. There are also other ways to adjust the data such as those which two ways <a href="https://github.com/courtiol/excess_mortality_COVID19">Alexandre</a> and I have chosen.</p>
+<h5 id="should-i-use-a-logarithmic-axis">Should I use a logarithmic axis?</h5>
+<p>Furthermore, the use of logarithmic axes is another ongoing discussion. Since the initial growth is likely exponential in case of directly transmitted diseases—and this is what we see with the coronavirus as well—a logarithmic scale <a href="https://twitter.com/jburnmurdoch/status/1237748598051409921">&ldquo;is the natural way to track the spread&rdquo;</a>. While I would not name it the <em>natural</em> way, it is true that such a transformation helps to understand the dynamics and makes (some) comparisons more easy. But again, the choice depends on the picture you want to draw: when turning the y axis into a logarithmic one as John did, <a href="https://twitter.com/jburnmurdoch/status/1237749654281912321">&ldquo;readers now only have to draw a straight line in their head to see if two countries are one the same path&rdquo;</a>. While with this transformation it might be easier to compare countries there might be disadvantages: the reader needs to realize and understand the logarithmic axis and small differences might be underestimated which are in reality much higher than some might think.</p>
+<h3 id="benefits-and-caveats-of-the-visualization">Benefits and caveats of the visualization</h3>
+<p>By calculating the proportion of deaths per country, I avoid some of the issues with current visualizations on the COVID-19 topic:</p>
+<ol>
+<li>
+<p>I use the <strong>number of deaths</strong> which is, compared to confirmed infections, a more reliable measure. Countries also have been reported to classify &ldquo;death due to COVID-19&rdquo; in different ways which again makes a comparison between countries difficult. However, by just looking at the numbers per country, every comparison is made with the same standards which do not differ within countries.</p>
+</li>
+<li>
+<p>There was <strong>no need to perform any logarithmic transformation</strong> to reveal the pattern since, again, we compare the absolute numbers per country not between countries.</p>
+</li>
+<li>
+<p>By <strong>scaling death tolls by country</strong>, the visualization accounts for different population sizes and states of the epidemic which enables us to compare them more easily.</p>
+</li>
+<li>
+<p>The evolving patterns mimics the way we have experienced and are experiencing the pandemic. I found it very interesting to look at the <strong>change in a dynamic way</strong> since values that look very high today might be low in a few days depending on the trend. This way the animations mimics us humans and how we see the situation without making any claims about how the numbers will change in the next days. You can also <em>ride the wave</em> and wait for the new colors to be not pink anymore.</p>
+</li>
+</ol>
+<h3 id="how-to-create-the-visualization">How to create the visualization?</h3>
+<p>The data is available via <a href="https://datahub.io/core/covid-19">datahub.io</a>.
+You can find the codes for my submission to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">SWDchallenge</a> showing the death tolls until the 29th of March in my corresponding <a href="https://github.com/Z3tt/SWDchallenge">GitHub repository</a>. The code for the latest visualization are uploaded to this <a href="https://github.com/Z3tt/Corona-Daily-Deaths-Animation">GitHub repository</a>.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2020/01/09/australian-bushfires-comparison-europe-world/" data-toggle="tooltip" data-placement="top" title="Comparing the Extent of the Australian Bushfires 2019/20">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://data-vizard.com/">DataVizard</a></li>
+                        
+                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://frontpagedata.com/">FrontPage Data</a></li>
+                        
+                        <li><a target="_blank" href="https://akcomputationalecology.wordpress.com/">Computational Ecology</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with R and ♥ • Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+                    <br><br>
+                    &copy; Cédric Scherer 2019. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

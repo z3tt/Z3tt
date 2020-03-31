@@ -35,3 +35,7 @@ As of 8th of January, the land burnt increased to [107,000 square kilometres (41
 ### How to Help Victims of Australia’s Fires
 
 The [NY Times lists several organizations](https://www.nytimes.com/2020/01/06/world/australia/help-australia-fires.html) that are currently helping to provide support, emergency grants, and housing. You can support them too by donating money or clothing and household goods.
+
+### How to create those?
+
+You can find the codes for both visualizations on my [GitHub profile](https://github.com/Z3tt/TidyTuesday/blob/master/R/2020_02_AustralianFires.Rmd).
