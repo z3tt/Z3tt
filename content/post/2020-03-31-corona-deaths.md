@@ -17,7 +17,7 @@ showtoc: false
 ---
 <font size="-1">Header image by [Giacomo Carra via Unsplash](https://unsplash.com/photos/gf6UDwpl0ac)</font>
 
-**Coronavirus SARS-CoV-2, COVID-19 or simply Corona&mdash;what started as an epidemic in Wuhan, China has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, [#stayhome](https://twitter.com/hashtag/stayhome) and [#flattenthecurve](https://twitter.com/hashtag/flattenthecurve) hashtags and obviously a global shortage of toilet paper.**
+**Coronavirus SARS-CoV-2, COVID-19 or simply Corona&mdash;what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, [#stayhome](https://twitter.com/hashtag/stayhome) and [#flattenthecurve](https://twitter.com/hashtag/flattenthecurve) hashtags and obviously a global shortage of toilet paper.**
 
 When the corona pandemic started, I felt scared, curious and tired at the same time. *Scared as a husband and father* by the impact this virus outbreak might have on our life, in 2020 and way beyond. *Curious as a scientist* who focused his PhD thesis on the spread and persistence of directly transmitted diseases in the context of contact rates and movement. And *tired as a data visualization specialist* when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons (see below). However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or whataboutism is mainly over and we now have a lot of data to base our visualizations on.
 
@@ -31,9 +31,13 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 
 Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol), who looked at [the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size](https://github.com/courtiol/excess_mortality_COVID19), I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to show where along the curve each country falls&mdash;are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.
 
-| ![animation-corona-original](/img/corona-animation/corona_sum.gif) | ![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png) |
+| ![animation-corona-original](/img/corona-animation/corona_sum.gif) |
 |:--:|:--:|
-| *The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).* | *A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.* |
+| *The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).* |
+
+| ![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png) |
+|:--:|:--:|
+| *A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.* |
 
 ### How to read the visualization
 
