@@ -347,61 +347,30 @@ $(function() {
                 post-container">
 
                 
-                <p><!-- raw HTML omitted -->Header image by <a href="https://unsplash.com/photos/gf6UDwpl0ac">Giacomo Carra via Unsplash</a><!-- raw HTML omitted --></p>
+                <p><font size="-1">Header image by <a href="https://unsplash.com/photos/gf6UDwpl0ac">Giacomo Carra via Unsplash</a></font></p>
 <p><strong>Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, <a href="https://twitter.com/hashtag/stayhome">#stayhome</a> and <a href="https://twitter.com/hashtag/flattenthecurve">#flattenthecurve</a> hashtags and obviously a global shortage of toilet paper.</strong></p>
-<p>When the corona pandemic started, I felt scared, curious and tired at the same time. <em>Scared as a husband and father</em> by the impact this virus outbreak might have on our life, in 2020 and way beyond. <em>Curious as a scientist</em> who focused his PhD thesis on the spread and persistence of directly transmitted diseases in the context of contact rates and movement. And <em>tired as a data visualization specialist</em> when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons (see below). However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or whataboutism is mainly over and we now have a lot of data to base our visualizations on.</p>
+<p>When the corona pandemic started, I felt scared, curious and tired at the same time. <em>Scared as a husband and father</em> by the impact this virus outbreak <strike>might</strike> is going to have on our life, in 2020 and way beyond. <em>Curious as a scientist</em> who studies the spread and persistence of directly transmitted diseases in the context of contact rates and animal movement. And <em>tired as a data visualization specialist</em> when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons, some related to my mood, some to the data and the sheer mass of unimportant visualizations popping up everywhere. However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or play down the risk is mainly over and we now have a lot of data and background knowledge to base our visualizations on.</p>
 <h5 id="latest-update-march-31-2020">Latest update: March 31, 2020</h5>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/img/corona-animation/0330_corona_begin_series.gif" alt="latest-animation"> <img src="/img/corona-animation/0330_corona_sum_latest.png" alt="latest-plot"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><em>Latest numbers of daily death tolls worldwide and per country, sorted by first case (animation) and total deaths (static visualization).</em></td>
-</tr>
-</tbody>
-</table>
+<p><img src="/img/corona-animation/0330_corona_begin_series.gif" alt="latest-animation"></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first confirmed death.</i></p>
+<p><img src="/img/corona-animation/0330_corona_sum_latest.png" alt="latest-plot"></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static visualization showing the latest data, sorted by total number of deaths per country.</i></p>
 <h3 id="the-idea">The idea</h3>
-<p>Inspired by my colleague <a href="https://twitter.com/alexcourtiol">Alexandre Courtiol</a>, who looked at <a href="https://github.com/courtiol/excess_mortality_COVID19">the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size</a>, I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to show where along the curve each country falls—are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.</p>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/img/corona-animation/corona_sum.gif" alt="animation-corona-original"></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><em>The first version as of 29th of March that I submitted as contibution to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/img/corona-animation/corona_begin_latest.png" alt="static-plot-corona-original"></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><em>A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Inspired by my colleague <a href="https://twitter.com/alexcourtiol">Alexandre Courtiol</a>, who looked at <a href="https://github.com/courtiol/excess_mortality_COVID19">the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size</a>, I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling &ldquo;today is the worst day&rdquo; and also the <em>current</em> trends, either today or a week ago—are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.</p>
+<p><img src="/img/corona-animation/corona_sum.gif" alt="animation-corona-original"></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).</i></p>
+<p><img src="/img/corona-animation/corona_begin_latest.png" alt="static-plot-corona-original"></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.</i></p>
 <h3 id="how-to-read-the-visualization">How to read the visualization</h3>
 <p>As explained above, I calculated for each day the number of death cases relative to the &ldquo;worst  day&rdquo;, namely the day with the most deaths so far. Imagine a naïve population that was not facing the virus before. At some point, there might be people dying but likely only a few (with regard to COVID-19—in general, this highly depends on the severity of infection caused by the pathogen, often referred to as <em>case fatality ratio</em> or simply <em>case fatality</em>). Consequently, the proportion of deaths on the first day compared to the worst day has to be 100% (since the first day has to be, by definition, the worst day so far). On the next day, there might be more deaths than on the day before, a known pattern we see in reality and in simulations of early epidemics. Exponential growth, an always increasing curve we aim to flatten by reducing contact between infected and susceptible (non-infected but able to catch the infection). So on day two, two times as many people might die which makes day 2 the worst day with a proportion of 100%. At the same time, the proportion of deaths on day 1 decreases from 100% to 50%. This way it enables to see if we are still facing (exponential) growth or if we, at least for now, over the peak if deaths.</p>
 <h3 id="things-to-keep-in-mind-when-visualizing-covid-19-data">Things to keep in mind when visualizing COVID-19 data</h3>
 <p>In the recent weeks, there is a lot of discussion on several things to account for when analyzing data and designing visualizations on the topic of the corona pandemic.</p>
-<p>First of all, the final visualization should be as precise and transparent as possible. (Of course, this should be the case for all visualizations!) This means that the final product should be designed with care by adding the source of data, how the data was aggregated and analyzed, and what the visualization shows. Further, this implies a careful choice of text, especially the title, and the colors which should both neither be hysteric nor play down the current situation. For example, the <a href="https://blog.datawrapper.de/coronaviruscharts/">use of bloodish colors</a> to make it crystal-clear that this virus is dangerous might spark panic in some people. If this is an intended choice, this is <a href="https://twitter.com/AlbertoCairo/status/1241374480351576064">professional malpractice and must be called out by us as data visualization specialists</a>.</p>
 <h5 id="make-design-choices-carefully">Make design choices carefully</h5>
-<p>In the early days of the global pandemic, the intention of a particular graphic was often not clear to the reader. Also, I hardly could tell if the designer has the knowledge to analyze and visualize the data in a meaningful way (no, <a href="https://twitter.com/CT_Bergstrom/status/1241522140559503360">you are not an expert in pathogen spread when you&rsquo;re investigating market sales!</a>) or contacted any experts while preparing the piece. To cite Alberto Cairo, knight chair in visual journalism at the University of Miami: <a href="https://twitter.com/AlbertoCairo/status/1241371617680293888">&ldquo;Numbers without domain knowledge are dangerous&rdquo;</a> and <a href="https://twitter.com/AlbertoCairo/status/1241386040570626048">&ldquo;the rule should be to ignore <strong>any</strong> &lsquo;analysis&rsquo; from people who haven&rsquo;t consulted with epidemiologists/biostatisticians&rdquo;</a>. For example, the use of epidemiological terms such as R_0</p>
+<p>First of all, the final visualization should be as precise and transparent as possible. (Of course, this should be the case for all visualizations!) This means that the final product should be designed with care by adding the source of data, how the data was aggregated and analyzed, and what the visualization shows. Further, this implies a careful choice of text, especially the title, and the colors which should both neither be hysteric nor play down the current situation. For example, the <a href="https://blog.datawrapper.de/coronaviruscharts/">use of bloodish colors</a> to make it crystal-clear that this virus is dangerous might spark panic in some people. If this is an intended choice, this is <a href="https://twitter.com/AlbertoCairo/status/1241374480351576064">professional malpractice and must be called out by us as data visualization specialists</a>.</p>
+<h5 id="gain-knowledge-contact-experts-check-your-facts">Gain knowledge, contact experts, check your facts</h5>
+<p>In the early days of the global pandemic, the intention of a particular graphic was often not clear to the reader. Also, I hardly could tell if the designer has the knowledge to analyze and visualize the data in a meaningful way (no, <a href="https://twitter.com/CT_Bergstrom/status/1241522140559503360">you are not an expert in pathogen spread when you&rsquo;re investigating market sales!</a>) or contacted any experts while preparing the piece. To cite Alberto Cairo, knight chair in visual journalism at the University of Miami: <a href="https://twitter.com/AlbertoCairo/status/1241371617680293888">&ldquo;Numbers without domain knowledge are dangerous&rdquo;</a> and <a href="https://twitter.com/AlbertoCairo/status/1241386040570626048">&ldquo;the rule should be to ignore <strong>any</strong> analysis from people who haven&rsquo;t consulted with epidemiologists/biostatisticians&rdquo;</a>.</p>
 <h5 id="be-explicit-about-uncertainty">Be explicit about uncertainty</h5>
-<p>The data we hear and see in the news and our social media streams come with a lot of uncertainty. It is very important to understand that detected or confirmed cases do not necessarily reflect the reality but underestimate the real number of cases—and to communicate this fact explicitly in the visualization. The number of detected infections with the coronavirus are highly dependent on the number of tests that were performed—and that <a href="https://ourworldindata.org/covid-testing">differs a lot among countries</a>! A more robust measure might be deaths due to the coronavirus but keep in mind that the way to report these numbers differs between countries. Furthermore, <a href="https://edition.cnn.com/2020/03/26/health/number-of-cases-testing-data-intl/index.html">no two countries are alike when it comes to access to healthcare and medical resources and even the age structure of the population</a> which in turn influences the number of reported cases.</p>
+<p>The data we read about and see in the news and our social media streams come with a lot of uncertainty. It is very important to understand that detected or confirmed cases do not necessarily reflect the reality but underestimate the real number of cases—and to communicate this fact explicitly in the visualization. The number of detected infections with the coronavirus are highly dependent on the number of tests that were performed—and that <a href="https://ourworldindata.org/covid-testing">differs a lot among countries</a>! A more robust measure might be deaths due to the coronavirus but keep in mind that the way to report these numbers differs between countries. Furthermore, <a href="https://edition.cnn.com/2020/03/26/health/number-of-cases-testing-data-intl/index.html">no two countries are alike when it comes to access to healthcare and medical resources and even the age structure of the population</a> which in turn influences the number of reported cases.</p>
 <p>Since we are still in the early days of the coronavirus pandemic, correlations with any variable such as temperature or cultural differences need to be treated with caution. Do not release any of such analyses or visualizations if you are not sure what you are doing and did your best to account for any biases. There are experts for this and they are already searching for correlations with the right tools and knowledge.</p>
 <h5 id="do-i-need-to-adjust-for-population">Do I need to adjust for population?</h5>
 <p>There is a ongoing discussion of <a href="https://twitter.com/jburnmurdoch/status/1242904596856614912">&ldquo;showing the raw numbers&rdquo; versus &ldquo;adjust data for population&rdquo;</a>. As John Burn-Murdoch—data visualization designer at the Financial Times and creator of <a href="https://www.ft.com/coronavirus-latest">these fantastic and very informative visualizations on the current situation of the corona spread</a>—states: <a href="https://twitter.com/jburnmurdoch/status/1242904703144464390">&ldquo;Generally, and especially early in outbreak (first few weeks), higher per-capita numbers just mean smaller country, not anything different about how that country’s dealing with covid&rdquo;</a>. Of course, <em>population density</em> matters since the coronavirus is transmitted by direct or close contact. However, <em>population size</em> does not necessarily reflect the density in a country. So if accounting for population, this should be optimally done on a regional level sufficient to capture the area of spread instead of borders drawn by influential humans. In the end, it also depends on the story you want to tell if and how you adjust the data. There are also other ways to adjust the data such as those which two ways <a href="https://github.com/courtiol/excess_mortality_COVID19">Alexandre</a> and I have chosen.</p>
@@ -430,7 +399,7 @@ $(function() {
 </li>
 </ol>
 <p>But there might be also some drawbacks:</p>
-<ol>
+<ul>
 <li>
 <p>The sheer number of cases is not the main focus but added as numbers for the worst days and the latest day.</p>
 </li>
@@ -440,7 +409,7 @@ $(function() {
 <li>
 <p>I might run out of space soon&hellip;</p>
 </li>
-</ol>
+</ul>
 <h3 id="how-to-create-the-visualization">How to create the visualization?</h3>
 <p>The data is available via <a href="https://datahub.io/core/covid-19">datahub.io</a>.
 You can find the codes for my submission to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">SWDchallenge</a> showing the death tolls until the 29th of March in my corresponding <a href="https://github.com/Z3tt/SWDchallenge">GitHub repository</a>. The code for the latest visualization are uploaded to this <a href="https://github.com/Z3tt/Corona-Daily-Deaths-Animation">GitHub repository</a>.</p>

@@ -13,6 +13,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
   header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
   twitter_image = "img/banner_RichardStrozynski_small.png"

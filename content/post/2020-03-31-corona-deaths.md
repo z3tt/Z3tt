@@ -19,25 +19,25 @@ showtoc: false
 
 **Coronavirus SARS-CoV-2, COVID-19 or simply Corona&mdash;what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, [#stayhome](https://twitter.com/hashtag/stayhome) and [#flattenthecurve](https://twitter.com/hashtag/flattenthecurve) hashtags and obviously a global shortage of toilet paper.**
 
-When the corona pandemic started, I felt scared, curious and tired at the same time. *Scared as a husband and father* by the impact this virus outbreak might have on our life, in 2020 and way beyond. *Curious as a scientist* who focused his PhD thesis on the spread and persistence of directly transmitted diseases in the context of contact rates and movement. And *tired as a data visualization specialist* when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons (see below). However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or whataboutism is mainly over and we now have a lot of data to base our visualizations on.
+When the corona pandemic started, I felt scared, curious and tired at the same time. *Scared as a husband and father* by the impact this virus outbreak <strike>might</strike> is going to have on our life, in 2020 and way beyond. *Curious as a scientist* who studies the spread and persistence of directly transmitted diseases in the context of contact rates and animal movement. And *tired as a data visualization specialist* when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons, some related to my mood, some to the data and the sheer mass of unimportant visualizations popping up everywhere. However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or play down the risk is mainly over and we now have a lot of data and background knowledge to base our visualizations on.
 
 ##### Latest update: March 31, 2020
 
-| ![latest-animation](/img/corona-animation/0330_corona_begin_series.gif) ![latest-plot](/img/corona-animation/0330_corona_sum_latest.png) |
-|:--:|
-| *Latest numbers of daily death tolls worldwide and per country, sorted by first case (animation) and total deaths (static visualization).* |
+![latest-animation](/img/corona-animation/0330_corona_begin_series.gif)
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first confirmed death.</i></p>
+
+![latest-plot](/img/corona-animation/0330_corona_sum_latest.png)
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static visualization showing the latest data, sorted by total number of deaths per country.</i></p>
 
 ### The idea
 
-Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol), who looked at [the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size](https://github.com/courtiol/excess_mortality_COVID19), I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to show where along the curve each country falls&mdash;are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.
+Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol), who looked at [the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size](https://github.com/courtiol/excess_mortality_COVID19), I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling "today is the worst day" and also the *current* trends, either today or a week ago&mdash;are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.
 
-| ![animation-corona-original](/img/corona-animation/corona_sum.gif) |
-|:--:|:--:|
-| *The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).* |
+![animation-corona-original](/img/corona-animation/corona_sum.gif)
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).</i></p>
 
-| ![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png) |
-|:--:|:--:|
-| *A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.* |
+![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png)
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.</i></p>
 
 ### How to read the visualization
 
@@ -48,15 +48,17 @@ As explained above, I calculated for each day the number of death cases relative
 
 In the recent weeks, there is a lot of discussion on several things to account for when analyzing data and designing visualizations on the topic of the corona pandemic.
 
-First of all, the final visualization should be as precise and transparent as possible. (Of course, this should be the case for all visualizations!) This means that the final product should be designed with care by adding the source of data, how the data was aggregated and analyzed, and what the visualization shows. Further, this implies a careful choice of text, especially the title, and the colors which should both neither be hysteric nor play down the current situation. For example, the [use of bloodish colors](https://blog.datawrapper.de/coronaviruscharts/) to make it crystal-clear that this virus is dangerous might spark panic in some people. If this is an intended choice, this is [professional malpractice and must be called out by us as data visualization specialists](https://twitter.com/AlbertoCairo/status/1241374480351576064).
-
 ##### Make design choices carefully
 
-In the early days of the global pandemic, the intention of a particular graphic was often not clear to the reader. Also, I hardly could tell if the designer has the knowledge to analyze and visualize the data in a meaningful way (no, [you are not an expert in pathogen spread when you're investigating market sales!](https://twitter.com/CT_Bergstrom/status/1241522140559503360)) or contacted any experts while preparing the piece. To cite Alberto Cairo, knight chair in visual journalism at the University of Miami: ["Numbers without domain knowledge are dangerous"](https://twitter.com/AlbertoCairo/status/1241371617680293888) and ["the rule should be to ignore **any** 'analysis' from people who haven't consulted with epidemiologists/biostatisticians"](https://twitter.com/AlbertoCairo/status/1241386040570626048). For example, the use of epidemiological terms such as R_0
+First of all, the final visualization should be as precise and transparent as possible. (Of course, this should be the case for all visualizations!) This means that the final product should be designed with care by adding the source of data, how the data was aggregated and analyzed, and what the visualization shows. Further, this implies a careful choice of text, especially the title, and the colors which should both neither be hysteric nor play down the current situation. For example, the [use of bloodish colors](https://blog.datawrapper.de/coronaviruscharts/) to make it crystal-clear that this virus is dangerous might spark panic in some people. If this is an intended choice, this is [professional malpractice and must be called out by us as data visualization specialists](https://twitter.com/AlbertoCairo/status/1241374480351576064).
+
+##### Gain knowledge, contact experts, check your facts
+
+In the early days of the global pandemic, the intention of a particular graphic was often not clear to the reader. Also, I hardly could tell if the designer has the knowledge to analyze and visualize the data in a meaningful way (no, [you are not an expert in pathogen spread when you're investigating market sales!](https://twitter.com/CT_Bergstrom/status/1241522140559503360)) or contacted any experts while preparing the piece. To cite Alberto Cairo, knight chair in visual journalism at the University of Miami: ["Numbers without domain knowledge are dangerous"](https://twitter.com/AlbertoCairo/status/1241371617680293888) and ["the rule should be to ignore **any** analysis from people who haven't consulted with epidemiologists/biostatisticians"](https://twitter.com/AlbertoCairo/status/1241386040570626048).
 
 ##### Be explicit about uncertainty
 
-The data we hear and see in the news and our social media streams come with a lot of uncertainty. It is very important to understand that detected or confirmed cases do not necessarily reflect the reality but underestimate the real number of cases&mdash;and to communicate this fact explicitly in the visualization. The number of detected infections with the coronavirus are highly dependent on the number of tests that were performed&mdash;and that [differs a lot among countries](https://ourworldindata.org/covid-testing)! A more robust measure might be deaths due to the coronavirus but keep in mind that the way to report these numbers differs between countries. Furthermore, [no two countries are alike when it comes to access to healthcare and medical resources and even the age structure of the population](https://edition.cnn.com/2020/03/26/health/number-of-cases-testing-data-intl/index.html) which in turn influences the number of reported cases.
+The data we read about and see in the news and our social media streams come with a lot of uncertainty. It is very important to understand that detected or confirmed cases do not necessarily reflect the reality but underestimate the real number of cases&mdash;and to communicate this fact explicitly in the visualization. The number of detected infections with the coronavirus are highly dependent on the number of tests that were performed&mdash;and that [differs a lot among countries](https://ourworldindata.org/covid-testing)! A more robust measure might be deaths due to the coronavirus but keep in mind that the way to report these numbers differs between countries. Furthermore, [no two countries are alike when it comes to access to healthcare and medical resources and even the age structure of the population](https://edition.cnn.com/2020/03/26/health/number-of-cases-testing-data-intl/index.html) which in turn influences the number of reported cases.
 
 Since we are still in the early days of the coronavirus pandemic, correlations with any variable such as temperature or cultural differences need to be treated with caution. Do not release any of such analyses or visualizations if you are not sure what you are doing and did your best to account for any biases. There are experts for this and they are already searching for correlations with the right tools and knowledge.
 
@@ -87,11 +89,11 @@ By calculating the proportion of deaths per country, I avoid some of the issues 
 
 But there might be also some drawbacks:
 
-1. The sheer number of cases is not the main focus but added as numbers for the worst days and the latest day.
+* The sheer number of cases is not the main focus but added as numbers for the worst days and the latest day.
 
-1. It is easier to see trends of particular countries. However, a comparison of many waves in detail might be difficult for countries that are not plotted next to each other.
+* It is easier to see trends of particular countries. However, a comparison of many waves in detail might be difficult for countries that are not plotted next to each other.
 
-1. I might run out of space soon...
+* I might run out of space soon...
 
 ### How to create the visualization?
 

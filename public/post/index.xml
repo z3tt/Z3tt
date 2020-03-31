@@ -17,7 +17,8 @@
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</guid>
-      <description>Header image by Giacomo Carra via UnsplashCoronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, #stayhome and #flattenthecurve hashtags and obviously a global shortage of toilet paper.
+      <description>Header image by Giacomo Carra via Unsplash
+Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, #stayhome and #flattenthecurve hashtags and obviously a global shortage of toilet paper.
 When the corona pandemic started, I felt scared, curious and tired at the same time.</description>
     </item>
     
@@ -27,7 +28,8 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/01/09/australian-bushfires-comparison-europe-world/</guid>
-      <description>Header image by Michael Barth via UnsplashDuring a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: 27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales.</description>
+      <description>Header image by Michael Barth via Unsplash
+During a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: 27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales.</description>
     </item>
     
     <item>
@@ -37,7 +39,8 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
       
       <guid>/2019/12/30/best-tidytuesday-2019/</guid>
       <description>At the end of an exiting second #TidyTuesday year, Jon Harmon, host of the TidyTuesday Podcast, asked on Twitter:
-I took this opportunity to recap the last year of contributions to the #TidyTuesday challenge. Immediately, several contributions came to my mind and I tried to pick the best from those I&amp;rsquo;ve seen and which I remember. Since there were to many, I decided to group them in two groups: design and storytelling.</description>
+What was your favorite #TidyTuesday dataset of 2019? What were some of your favorite visualizations? Why? Let me know with an @ or via #BestTidyTuesday2019!
+&amp;mdash; TidyTuesday Podcast (@tidypod) December 12, 2019 I took this opportunity to recap the last year of contributions to the #TidyTuesday challenge. Immediately, several contributions came to my mind and I tried to pick the best from those I&amp;rsquo;ve seen and which I remember.</description>
     </item>
     
     <item>
@@ -69,7 +72,10 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</d
       
       <guid>/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</guid>
       <description>I am proud to announce three workshops that I am going to lead/teach in autumn 2019 and spring 2020! 🎉 Thanks to all of you for that opportunity!
-→ Data Visualization Workshop in Berlin, Germany (Sep 26th 2019)→ Data Exploration in R with tidyverse in Modica, Italy (Nov 4th to 8th 2019)→ Data Visualization in R with ggplot2 in Berlin, Germany (Mar 2nd to 6th 2020)&amp;ldquo;Data Visualization&amp;rdquo; Workshop in Berlin (September 2019) I am delighted to be one of the invited workshop host during the 2-day PhD symposium (September 26th and 27th 2019) at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research).</description>
+→ Data Visualization Workshop in Berlin, Germany (Sep 26th 2019)
+→ Data Exploration in R with tidyverse in Modica, Italy (Nov 4th to 8th 2019)
+→ Data Visualization in R with ggplot2 in Berlin, Germany (Mar 2nd to 6th 2020)
+&amp;ldquo;Data Visualization&amp;rdquo; Workshop in Berlin (September 2019) I am delighted to be one of the invited workshop host during the 2-day PhD symposium (September 26th and 27th 2019) at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research).</description>
     </item>
     
     <item>
@@ -108,7 +114,8 @@ What is it about? The R4DS (&amp;ldquo;R for Data Science&amp;rdquo;) online lea
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/05/04/welcome/</guid>
-      <description>Header image © Negative SpaceHi, I am glad you found your way here! Come in, have a look.
+      <description>Header image © Negative Space
+Hi, I am glad you found your way here! Come in, have a look.
 I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package {blogdown} Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;CleanWhite&amp;rdquo; theme!</description>
     </item>
     
