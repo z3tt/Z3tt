@@ -73,10 +73,21 @@ By calculating the proportion of deaths per country, I avoid some of the issues 
 
 1. There was **no need to perform any logarithmic transformation** to reveal the pattern since, again, we compare the absolute numbers per country not between countries.
 
-1. By **scaling death tolls by country**, the visualization accounts for different population sizes and states of the epidemic which enables us to compare them more easily.  
+1. By **scaling death tolls by country**, the visualization accounts for different population sizes and states of the epidemic which enables us to compare them more easily.
+
+1. Each country has it's on row which helps to see a clear pattern for each country without dealing with too much overplotting.
 
 1. The evolving patterns mimics the way we have experienced and are experiencing the pandemic. I found it very interesting to look at the **change in a dynamic way** since values that look very high today might be low in a few days depending on the trend. This way the animations mimics us humans and how we see the situation without making any claims about how the numbers will change in the next days. You can also *ride the wave* and wait for the new colors to be not pink anymore.
 
+1. To be transparent that the highest color does not show daily cases but a calculated measure, I have added both the daily deaths for each country's worst day and the latest day as well as the sum of deaths next to each coutnry's name.
+
+But there might be also some drawbacks:
+
+1. The sheer number of cases is not the main focus but added as numbers for the worst days and the latest day.
+
+1. It is easier to see trends of particular countries. However, a comparison of many waves in detail might be difficult for countries that are not plotted next to each other.
+
+1. I might run out of space soon...
 
 ### How to create the visualization?
 
