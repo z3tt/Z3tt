@@ -84,11 +84,11 @@ unsafe= true
   title = "DataVizard"
   href =  "https://data-vizard.com/"
   [[params.friend_link]]
-  title = "R4DS Community"
-  href =  "https://www.rfordatasci.com/"
-  [[params.friend_link]]
   title = "DataVizSociety"
   href = "https://www.datavisualizationsociety.com/"
+  [[params.friend_link]]
+  title = "R4DS Community"
+  href =  "https://www.rfordatasci.com/"
   [[params.friend_link]]
   title = "CorrelAid"
   href =  "https://correlaid.org/en/"
@@ -96,7 +96,10 @@ unsafe= true
   title = "FrontPage Data"
   href = "https://frontpagedata.com/"
   [[params.friend_link]]
-  title = "Computational Ecology"
+  title = "Dep. Ecological Dynamics"
+  href = "https://t.co/aJeJQio5KX?amp=1"
+  [[params.friend_link]]
+  title = "SIG Computational Ecology"
   href =  "https://akcomputationalecology.wordpress.com/"
 
   [[params.bookmark_link]]
