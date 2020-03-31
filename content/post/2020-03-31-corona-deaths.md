@@ -34,7 +34,7 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol), who looked at [the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size](https://github.com/courtiol/excess_mortality_COVID19), I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling "today is the worst day" and also the *current* trends, either today or a week ago&mdash;are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.
 
 ![animation-corona-original](/img/corona-animation/corona_sum.gif)
-<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).</i></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">The first version with data until the 29th of March that I submitted as my contribution to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</i></p>
 
 ![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png)
 <p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.</i></p>
@@ -85,7 +85,7 @@ By calculating the proportion of deaths per country, I avoid some of the issues 
 
 1. The evolving patterns mimics the way we have experienced and are experiencing the pandemic. I found it very interesting to look at the **change in a dynamic way** since values that look very high today might be low in a few days depending on the trend. This way the animations mimics us humans and how we see the situation without making any claims about how the numbers will change in the next days. You can also *ride the wave* and wait for the new colors to be not pink anymore.
 
-1. To be transparent that the highest color does not show daily cases but a calculated measure, I have added both the daily deaths for each country's worst day and the latest day as well as the sum of deaths next to each coutnry's name.
+1. To be transparent that the highest color does not show daily cases but a calculated measure, I have added both the daily deaths for each country's worst day and the latest day as well as the sum of deaths next to each country's name.
 
 But there might be also some drawbacks:
 
