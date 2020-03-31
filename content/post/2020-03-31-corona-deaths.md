@@ -5,7 +5,7 @@ author: Cédric
 date: "2020-03-31"
 image: img/banner/corona-giacomo-carra.jpg
 layout: post
-description: "The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide."
+description: "Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’ has become a global pandemic. I created an animated timeseries of daily deaths relative to each country's worst day so far to visualize the first wave of COVID-19."
 tags:
     - DataViz
     - COVID-19
