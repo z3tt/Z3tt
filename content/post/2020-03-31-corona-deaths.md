@@ -23,25 +23,17 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 
 ##### Latest update: March 31, 2020
 
-| ![latest-animation](/img/corona-animation/0330_corona_begin_series.gif) |
+| ![latest-animation](/img/corona-animation/0330_corona_begin_series.gif) ![latest-plot](/img/corona-animation/0330_corona_sum_latest.png) |
 |:--:|
-| *Latest animation of daily deaths worldwide and per country, sorted by first case.* |
-
-| ![latest-plot](/img/corona-animation/0330_corona_sum_latest.png) |
-|:--:|
-| *Latest numbers of daily death tolls worldwide and per country, sorted by total deaths.* |
+| *Latest numbers of daily death tolls worldwide and per country, sorted by first case (animation) and total deaths (static visualization).* |
 
 ### The idea
 
 Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol), who looked at [the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size](https://github.com/courtiol/excess_mortality_COVID19), I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to show where along the curve each country falls&mdash;are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.
 
-| ![animation-corona-original](/img/corona-animation/corona_sum.gif) |
-|:--:|
-| *The first version as of 30th of March, the day I submitted the animation to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).* |
-
-| ![static-plot-corona-original"](/img/corona-animation/corona_begin_latest_hq.png) |
-|:--:|
-| *A static version of the situation as of 30th of March, sorted by first death due to COVID-19.* |
+| ![animation-corona-original](/img/corona-animation/corona_sum.gif) | ![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png) |
+|:--:|:--:|
+| *The first version as of 29th of March that I submitted as contibution to the [#SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b).* | *A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.* |
 
 ### How to read the visualization
 
