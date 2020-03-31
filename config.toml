@@ -119,9 +119,9 @@ unsafe= true
   title =  "About Me"
   href =  "/top/about/"
 
-  [[params.addtional_menus]]
-  title = "Services"
-  href =  "https://www.data-vizard.com/"
+  #[[params.addtional_menus]]
+  #title = "Services"
+  #href =  "https://www.data-vizard.com/"
 
   [[params.addtional_menus]]
   title =  "Publications"
