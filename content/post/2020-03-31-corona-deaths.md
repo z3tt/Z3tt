@@ -24,10 +24,10 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 ##### Latest update: March 31, 2020
 
 ![latest-animation](/img/corona-animation/0330_corona_begin_series.gif)
-<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first confirmed death.</i></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
 
 ![latest-plot](/img/corona-animation/0330_corona_sum_latest.png)
-<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static visualization showing the latest data, sorted by total number of deaths per country.</i></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static visualization showing the latest data, sorted by the total number of reported deaths</i></p>
 
 ### The idea
 
@@ -37,7 +37,7 @@ Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol),
 <p align="center"><i style="color:grey;text-allign:center;font-size:85%;">The first version with data until the 29th of March that I submitted as my contribution to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</i></p>
 
 ![static-plot-corona-original](/img/corona-animation/corona_begin_latest.png)
-<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static version of the situation as of 29th of March with countries sorted by first reported death due to COVID-19.</i></p>
+<p align="center"><i style="color:grey;text-allign:center;font-size:85%;">A static version of the situation as of 29th of March with countries sorted by first reported death.</i></p>
 
 ### How to read the visualization
 
