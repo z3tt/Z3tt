@@ -1,6 +1,6 @@
 ---
 URL: /2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/
-title: The Worst Days of the Corona Pandemic So Far
+title: The Worst Days of the Coronavirus Pandemic So Far
 author: Cédric
 date: "2020-03-31"
 image: img/banner/corona-giacomo-carra.jpg
