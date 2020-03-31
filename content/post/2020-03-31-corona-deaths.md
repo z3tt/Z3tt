@@ -97,5 +97,5 @@ But there might be also some drawbacks:
 
 ### How to create the visualization?
 
-The data is made available by the Johns Hopkins University Center for Systems Science and Engineering (CSSE) and can be downloaded via [datahub.io](https://datahub.io/core/covid-19).
+The data is made available by the Johns Hopkins University Center for Systems Science and Engineering (CSSE) and can be downloaded via [datahub.io](https://datahub.io/core/covid-19).  
 You can find the codes for my submission to the [SWDchallenge](https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b) showing the death tolls until the 29th of March in my corresponding [GitHub repository](https://github.com/Z3tt/SWDchallenge). The code for the latest visualization are uploaded to this [GitHub repository](https://github.com/Z3tt/Corona-Daily-Deaths-Animation).
