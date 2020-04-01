@@ -9,7 +9,7 @@ description: "Here are my favorite visualizations of the #TidyTuesday challenge 
 tags:
     - TidyTuesday
     - R
-    - tidyverse
+    - tidyverse<
     - ggplot2
     - DataViz
 showtoc: false
@@ -101,4 +101,4 @@ What I particularly like about this contribution is the consistent use of colors
 
 ### Final Thoughts
 
-This was a great second year of #TidyTuesday with so many interesting data sets and inspiring visualizations I am sure I missed a ton of good contributions here! The longer I think about, the more harder it gets to pick the favorite three visualizations... So please don't be mad at me for not mentioning you—I've seen a lot of great contributions this year!
+This was a great second year of #TidyTuesday with so many interesting data sets and inspiring visualizations&mdash;I am sure I missed a ton of good contributions here! The longer I think about, the more harder it gets to pick the favorite three visualizations... So please don't be mad at me for not mentioning you. Which were your highlights?
