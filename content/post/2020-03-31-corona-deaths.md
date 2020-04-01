@@ -21,6 +21,7 @@ showtoc: false
 
 When the corona pandemic started, I felt scared, curious and tired at the same time. *Scared as a husband and father* by the impact this virus outbreak <strike>might</strike> is going to have on our life, in 2020 and way beyond. *Curious as a scientist* who studies the spread and persistence of directly transmitted diseases in the context of contact rates and animal movement. And *tired as a data visualization specialist* when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons, some related to my mood, some to the uncertainty in data and the sheer mass of unimportant or misleading visualizations popping up everywhere. However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or play down the risk is mainly over and we now have a lot of data and background knowledge to base our visualizations on. And, more importantly, I had an idea how to visualize and compare the death tolls among countries. (Also I had a reason to create an animation thanks to the [latest #SWDchallenge](http://www.storytellingwithdata.com/blog/2020/3/2/swdchallenge-get-animated).)
 
+
 ##### Latest update: April 1, 2020
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_begin_latest.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_begin_latest.gif', 'blank');"/>
@@ -28,6 +29,7 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_sum_yday_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_sum_yday_latest_1.png', 'blank');"/>
 <p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data, sorted by the total number of reported deaths</i></p>
+
 
 ### The idea
 
@@ -38,6 +40,7 @@ Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol),
 
 <img src="/img/corona-animation/corona_sum_SWD.gif" alt="static-plot-corona-original" style="width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/corona-animation/corona_begin_SWD.png', 'blank');"/>
 <p align="center"><i style="color:grey;font-size:80%;">A static version of the situation as of 29th of March with countries sorted by first reported death.</i></p>
+
 
 ### How to read the visualization
 
@@ -94,6 +97,7 @@ But there might be also some drawbacks:
 * It is easier to see trends of particular countries. However, a comparison of many waves in detail might be difficult for countries that are not plotted next to each other.
 
 * I might run out of space soon...
+
 
 ### How to create the visualization?
 
