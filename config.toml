@@ -100,7 +100,7 @@ unsafe= true
   href = "https://t.co/aJeJQio5KX?amp=1"
   [[params.friend_link]]
   title = "SIG Computational Ecology"
-  href =  "https://akcomputationalecology.wordpress.com/"
+  href =  "https://akcomputationalecology.wordpress.com/" 
 
   [[params.bookmark_link]]
   title =  "Fundamentals of DataViz"

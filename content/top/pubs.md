@@ -12,7 +12,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style='font-variant:small-caps;'>U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (accepted) Movement-mediated community assembly and coexistence. *Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
 
-- <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, calibrating and applying agent-based models: A review. *JASSS*.
+- <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* 23:9](http://jasss.soc.surrey.ac.uk/23/2/9.html).
 
 ##### 2019
 
