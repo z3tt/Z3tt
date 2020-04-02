@@ -27,8 +27,8 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_begin_latest.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_begin_latest.gif', 'blank');"/>
 <p align="center"><i style="color:grey;font-size:80%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
 
-<img src="https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_sum_yday_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_sum_yday_latest_1.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data, sorted by the total number of reported deaths</i></p>
+<img src="https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_trend_yday_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Daily-Deaths-Animation/master/plots/corona_trend_yday_latest_1.png', 'blank');"/>
+<p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data, sorted by the last "worst day".</i></p>
 
 
 ### The idea
