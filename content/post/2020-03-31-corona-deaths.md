@@ -33,7 +33,7 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 ##### New chart: Trajectories for all countries with 50 or more deaths
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_line_facet_1.png" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_line_facet_1.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data as trajectories per country, indicating peaks and current trends.</i></p>
+<p align="center"><i style="color:grey;font-size:80%;">The same data as 7-day rolling average as trajectories, showing worst days, total death toll and current trends per country.</i></p>
 
 
 ### The idea
