@@ -12,7 +12,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style='font-variant:small-caps;'>U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (accepted) Movement-mediated community assembly and coexistence. *Biological Reviews. PrePrint available via [EcoEvoRxiv](https://doi.org/10.32942/osf.io/d8a4m).*
 
-- <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* 23:9](http://jasss.soc.surrey.ac.uk/23/2/9.html).
+- <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* **23**:9](http://jasss.soc.surrey.ac.uk/23/2/9.html).
 
 ##### 2019
 
@@ -20,21 +20,22 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 [*Journal of Animal Ecology* 88:1639–1824](https://doi.org/10.1111/1365-2656.13070).
 
 - <span style='font-variant:small-caps;'>V. Radchuk, F. De Laender, J. Sarmento Cabral, I. Boulangeat, M. Crawford, F. Bohn, J. De Raedt, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, J.-C. Svenning, K. Thonicke, F. Schurr, V. Grimm & S. Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type.
-[*Ecology Letters* 22:647–684](https://doi.org/10.1111/ele.13226).
+[*Ecology Letters* **22**:647–684](https://doi.org/10.1111/ele.13226).
 
 ##### 2018
 
 - <span style='font-variant:small-caps;'>M. Sciaini, M. Fritsch, <u style='font-weight:700;color:#414141;'>C. Scherer</u> & C.E. Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R.
-[*Methods in Ecolog
-y and Evolution* 9:2240–2248](https://doi.org/10.1111/2041-210X.13076).
+[*Methods in Ecology and Evolution* **9**:2240–2248](https://doi.org/10.1111/2041-210X.13076).
 
 ##### 2016
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. [*Ecological Modelling* 326:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. [*Ecological Modelling* **326**:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
 
 
 ##### Manuscripts Under Review
 - <span style='font-variant:small-caps;'>V. Radchuk, S. Kramer-Schadt, U. Berger, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (in revision)</span> Individual-based models. *Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
+
+- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (submitted)</span> When size matters: large yellowfin tuna (*Thunnus  albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central-eastern Atlantic Ocean.
 
 ### Conference Contributions {#conf}
 
