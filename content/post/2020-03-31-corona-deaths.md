@@ -22,7 +22,7 @@ showtoc: false
 When the corona pandemic started, I felt scared, curious and tired at the same time. *Scared as a husband and father* by the impact this virus outbreak <strike>might</strike> is going to have on our life, in 2020 and way beyond. *Curious as a scientist* who studies the spread and persistence of directly transmitted diseases in the context of contact rates and animal movement. And *tired as a data visualization specialist* when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons, some related to my mood, some to the uncertainty in data and the sheer mass of unimportant or misleading visualizations popping up everywhere. However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or play down the risk is mainly over and we now have a lot of data and background knowledge to base our visualizations on. And, more importantly, I had an idea how to visualize and compare the death tolls among countries. (Also I had a reason to create an animation thanks to the [latest #SWDchallenge](http://www.storytellingwithdata.com/blog/2020/3/2/swdchallenge-get-animated).)
 
 
-##### Latest update:&nbsp;&nbsp;April 24, 2020&nbsp;&nbsp;(Data from Jan 22 to Apr 22)
+##### Latest update:&nbsp;&nbsp;April 25, 2020&nbsp;&nbsp;(Data from Jan 22 to Apr 23)
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_begin_latest.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_begin_latest.gif', 'blank');"/>
 <p align="center"><i style="color:grey;font-size:80%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
@@ -34,6 +34,11 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_line_facet_1.png" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_line_facet_1.png', 'blank');"/>
 <p align="center"><i style="color:grey;font-size:80%;">The same data as 7-day rolling average as trajectories, showing worst days, total death toll and current trends per country.</i></p>
+
+##### New animation: Global hex tile map
+
+<img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_hex_latest.gif" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_hex_latest.gif', 'blank');"/>
+<p align="center"><i style="color:grey;font-size:80%;">The animated heatmap as hexagonal tile map showing the global pattern of worst days calculated as 7-day rolling average.</i></p>
 
 
 ### The idea
