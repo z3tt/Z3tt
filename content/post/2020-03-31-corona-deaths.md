@@ -24,21 +24,21 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 
 ##### Latest update:&nbsp;&nbsp;April 27, 2020&nbsp;&nbsp;(Data from Jan 22 to Apr 26)
 
-<img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_begin.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_begin.gif', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_begin.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_begin.gif', 'blank');"/>
 <p align="center"><i style="color:grey;font-size:80%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data, sorted by days since the latest "worst day".</i></p>
+<p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data, sorted by days since the latest "worst day".</i></p><br>
 
 ##### New chart: Trajectories for all countries with 100 or more deaths
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_trajectory_facet_1.png" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_trajectory_facet_1.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">The same data as 7-day rolling average as trajectories, showing worst days, total death toll and current trends per country.</i></p>
+<p align="center"><i style="color:grey;font-size:80%;">The same data as 7-day rolling average as trajectories, showing worst days, total death toll and current trends per country.</i></p><br>
 
 ##### New animation: Global tile map
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_map.gif" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_map.gif', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.</i></p>
+<p align="center"><i style="color:grey;font-size:80%;">The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.</i></p><br>
 
 
 ### The idea
