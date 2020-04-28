@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>animation</title>
-      <link>/tags/animation/</link>
+      <title>animations</title>
+      <link>/tags/animations/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/animation/</guid>
+      <guid>/tags/animations/</guid>
       <description></description>
     </item>
     
@@ -57,6 +57,24 @@
     </item>
     
     <item>
+      <title>maps</title>
+      <link>/tags/maps/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SWDchallenge</title>
       <link>/tags/swdchallenge/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
@@ -66,20 +84,20 @@
     </item>
     
     <item>
+      <title>tidyverse</title>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>climate change</title>
       <link>/tags/climate-change/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/climate-change/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maps</title>
-      <link>/tags/maps/</link>
-      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/maps/</guid>
       <description></description>
     </item>
     
@@ -111,24 +129,6 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tidyverse</title>
-      <link>/tags/tidyverse/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tidyverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Berlin</title>
       <link>/tags/berlin/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
@@ -143,15 +143,6 @@
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/christmas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>animations</title>
-      <link>/tags/animations/</link>
-      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/animations/</guid>
       <description></description>
     </item>
     

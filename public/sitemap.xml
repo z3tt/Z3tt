@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/animation/</loc>
+    <loc>/tags/animations/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,7 +33,17 @@
   </url>
   
   <url>
+    <loc>/tags/maps/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,17 +63,17 @@
   </url>
   
   <url>
+    <loc>/tags/tidyverse/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/climate-change/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2020/01/09/australian-bushfires-comparison-europe-world/</loc>
-    <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/maps/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -88,16 +98,6 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2019-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/tidyverse/</loc>
-    <lastmod>2019-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/berlin/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
   </url>
@@ -110,11 +110,6 @@
   <url>
     <loc>/2019/12/24/merry-white-christmas-berlin-snow-history/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/animations/</loc>
-    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>

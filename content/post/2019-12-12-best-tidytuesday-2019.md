@@ -7,11 +7,11 @@ image: img/banner/milkyway_RichardStrozynski.jpg
 layout: post
 description: "Here are my favorite visualizations of the #TidyTuesday challenge in 2019 (from those I've seen and which I remember). I present my personal top 3 in terms of design and storytelling."
 tags:
+    - DataViz
     - TidyTuesday
     - R
-    - tidyverse<
+    - tidyverse
     - ggplot2
-    - DataViz
 showtoc: false
 ---
 

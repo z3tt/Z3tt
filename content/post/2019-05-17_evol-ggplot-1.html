@@ -6,7 +6,7 @@ image: img/banner/dark_RichardStrozynski.jpg
 layout: post
 showtoc: false
 description: "In this series of blog posts, I provide step-by-step tutorials explaining how my visualizations have evolved from a typical basic ggplot. In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot stripplot and a lollipop plot."
-tags: ["R", "ggplot2", "tidyverse", "TidyTuesday", "DataViz", "tutorial", "ggplot Evolution", "animations"]
+tags: ["DataViz", "tutorial", "animations", "ggplot Evolution", "R", "ggplot2", "tidyverse", "TidyTuesday"]
 editor_options:
   chunk_output_type: console
 ---
@@ -39,20 +39,20 @@ editor_options:
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png" width="768" /></p>
 <p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned dataset looks like, showing 2 examples per continent:</p>
 <pre><code>## # A tibble: 12 x 5
-##    indicator     country                region   student_ratio student_ratio_re…
+##    indicator     country                region   student_ratio student_ratio_re~
 ##    &lt;chr&gt;         &lt;chr&gt;                  &lt;chr&gt;            &lt;dbl&gt;             &lt;dbl&gt;
-##  1 Primary Educ… Mauritius              Africa           17.9               37.3
-##  2 Primary Educ… Djibouti               Africa           29.4               37.3
-##  3 Primary Educ… Indonesia              Asia             16.1               20.7
-##  4 Primary Educ… Azerbaijan             Asia             15.5               20.7
-##  5 Primary Educ… The former Yugoslav R… Europe           14.4               13.6
-##  6 Primary Educ… Greece                 Europe            9.27              13.6
-##  7 Primary Educ… Canada                 North A…         NA                 17.7
-##  8 Primary Educ… Saint Vincent and the… North A…         14.4               17.7
-##  9 Primary Educ… Tonga                  Oceania          21.6               24.7
-## 10 Primary Educ… Samoa                  Oceania          NA                 24.7
-## 11 Primary Educ… Venezuela (Bolivarian… South A…         NA                 19.4
-## 12 Primary Educ… Peru                   South A…         17.4               19.4</code></pre>
+##  1 Primary Educ~ Mauritius              Africa           17.9               37.3
+##  2 Primary Educ~ Djibouti               Africa           29.4               37.3
+##  3 Primary Educ~ Indonesia              Asia             16.1               20.7
+##  4 Primary Educ~ Azerbaijan             Asia             15.5               20.7
+##  5 Primary Educ~ The former Yugoslav R~ Europe           14.4               13.6
+##  6 Primary Educ~ Greece                 Europe            9.27              13.6
+##  7 Primary Educ~ Canada                 North A~         NA                 17.7
+##  8 Primary Educ~ Saint Vincent and the~ North A~         14.4               17.7
+##  9 Primary Educ~ Tonga                  Oceania          21.6               24.7
+## 10 Primary Educ~ Samoa                  Oceania          NA                 24.7
+## 11 Primary Educ~ Venezuela (Bolivarian~ South A~         NA                 19.4
+## 12 Primary Educ~ Peru                   South A~         17.4               19.4</code></pre>
 </div>
 <div id="default" class="section level3">
 <h3>🌱 The Default Boxplot</h3>

@@ -9,10 +9,13 @@ description: "Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started a
 tags:
     - DataViz
     - COVID-19
+    - animations
+    - heatmap
+    - maps
+    - R
+    - tidyverse
     - ggplot2
     - SWDchallenge
-    - animation
-    - heatmap
 showtoc: false
 ---
 <font size="-1">Header image by [Giacomo Carra via Unsplash](https://unsplash.com/photos/gf6UDwpl0ac)</font>

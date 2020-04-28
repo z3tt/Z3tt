@@ -30,5 +30,18 @@ During a series of massive bushfires across Australia, large areas have been bur
       <description>During this time of the year, lunch conversations often focus around the question &amp;ldquo;Will there be snow on Christmas Eve here in Berlin/Germany?&amp;quot;. I remember white Christmas to be a thing when I was a child but in my memory this happened way more often back then than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?</description>
     </item>
     
+    <item>
+      <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
+      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
+ She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
+Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE1&amp;rdquo;.She: &amp;ldquo;Yeah, and we had some tough time to make that work and to customize it in Adobe Animate.&amp;rdquo;
+Me: &amp;ldquo;&amp;hellip;&amp;rdquo;
+She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</description>
+    </item>
+    
   </channel>
 </rss>

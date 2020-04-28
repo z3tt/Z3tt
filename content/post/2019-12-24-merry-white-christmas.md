@@ -11,6 +11,8 @@ tags:
     - Christmas
     - Berlin
     - weather
+    - R
+    - tidyverse
     - ggplot2
 showtoc: false
 ---
