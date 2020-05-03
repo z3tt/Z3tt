@@ -6,7 +6,7 @@ image: img/banner/sun_RichardStrozynski.jpg
 layout: post
 showtoc: false
 description: "This is a rework of the blog entry called 'Beautiful plotting in R: A ggplot2 cheatsheet' by Zev Ross, posted in 2014 and updated last in 2016. Most changes were made to have an updated version, to follow code style guides, to change style and aesthetics of plots to be (more) beautiful and meaningful and to include additional tipps."
-tags: ["R", "ggplot2", "tidyverse", "DataViz", "tutorial"]
+tags: ["DataViz", "tutorial", "R", "tidyverse", "ggplot2"]
 editor_options:
   chunk_output_type: console
 ---
@@ -758,7 +758,7 @@ ggplot(chic, aes(x = date, y = temp, color = factor(season))) +
 ##             half_line, half_line, half_line), complete = TRUE)
 ##     ggplot_global$theme_all_null %+replace% t
 ## }
-## &lt;bytecode: 0x0000000024c8fd58&gt;
+## &lt;bytecode: 0x0000000024d4c248&gt;
 ## &lt;environment: namespace:ggplot2&gt;</code></pre>
 <p>Now, let us modify the default theme function and have a look at the result:</p>
 <pre class="r"><code>theme_custom &lt;- function (base_size = 12, base_family = &quot;Roboto Condensed&quot;) {

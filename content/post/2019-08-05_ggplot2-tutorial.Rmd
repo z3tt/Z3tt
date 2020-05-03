@@ -6,7 +6,7 @@ image: img/banner/sun_RichardStrozynski.jpg
 layout: post
 showtoc: false
 description: "This is a rework of the blog entry called 'Beautiful plotting in R: A ggplot2 cheatsheet' by Zev Ross, posted in 2014 and updated last in 2016. Most changes were made to have an updated version, to follow code style guides, to change style and aesthetics of plots to be (more) beautiful and meaningful and to include additional tipps."
-tags: ["R", "ggplot2", "tidyverse", "DataViz", "tutorial"]
+tags: ["DataViz", "tutorial", "R", "tidyverse", "ggplot2"]
 editor_options:
   chunk_output_type: console
 ---
