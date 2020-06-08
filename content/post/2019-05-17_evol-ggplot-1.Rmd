@@ -251,7 +251,7 @@ library(patchwork)
   )
 ```
 
-All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line plot shows only the range (mimimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:
+All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line  (see below for an explanation [how to read a boxplot](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps))plot shows only the range (mimimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:
 
 ```{r dot-plot-alpha, fig.width = 8, fig.heigh = 4.5}
 g + geom_point(size = 3, alpha = 0.15)
