@@ -278,20 +278,20 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 💡 **Set a seed to keep the jittering of the points fixed every time you call `geom_jitter()` by calling `set.seed()`—this becomes especially important when we later label some of the points.**
 
-💡 **You can also set the seed within the `geom_jitter()` call**
+💡 **You can also set the seed within the `geom_jitter()` call by setting `position = position_jitter(seed)`. Note that in this case the `width` and/or `height` argument needs to be placed inside the position_jitter() as well:**
 
-```{r plot-jitter-seed, echo=F}
+```{r plot-jitter-seed, eval = F}
 g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)
 ```
 
-(In the next code chunks, I am going to use the redundant call of `set.seed(2019)` before creating the plot.)
+(In the next code chunks, I am going to use the redundant call of `set.seed(2019)` before creating the plot but do not show it each time.)
 
 
 ### 💯 More Geoms, More Fun, More Info! {#more}
 
 As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding a summary statistic via `stat_summary()`with a different point size as the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
 
-```{r plot-jitter-regions, echo=-1, fig.width = 8, fig.heigh = 4.5}
+```{r plot-jitter-regions, echo = -1, fig.width = 8, fig.heigh = 4.5}
 set.seed(2019)
 
 g +
