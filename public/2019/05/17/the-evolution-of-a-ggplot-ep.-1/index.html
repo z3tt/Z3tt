@@ -483,9 +483,8 @@ To achieve a higher readability, we use another geom, <code>geom_jitter()</code>
 g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-countries-1.png" width="768" /></p>
 <p>💡 <strong>Set a seed to keep the jittering of the points fixed every time you call <code>geom_jitter()</code> by calling <code>set.seed()</code>—this becomes especially important when we later label some of the points.</strong></p>
-<p>You can also set the seed within the <code>geom_jitter()</code> call:</p>
-<pre class="r"><code>g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)</code></pre>
-<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-seed-1.png" width="768" /></p>
+<p>💡 <strong>You can also set the seed within the <code>geom_jitter()</code> call</strong></p>
+<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-seed-1.png" width="672" /></p>
 <p>(Here, I am going to use the redundant call of <code>set.seed(2019)</code> in the next code chunks.)</p>
 </div>
 <div id="more" class="section level3">

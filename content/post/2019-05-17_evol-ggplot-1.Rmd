@@ -278,13 +278,13 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 💡 **Set a seed to keep the jittering of the points fixed every time you call `geom_jitter()` by calling `set.seed()`—this becomes especially important when we later label some of the points.**
 
-You can also set the seed within the `geom_jitter()` call:
+💡 **You can also set the seed within the `geom_jitter()` call**
 
-```{r plot-jitter-seed, fig.width = 8, fig.heigh = 4.5}
+```{r plot-jitter-seed, echo=F}
 g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)
 ```
 
-(Here, I am going to use the redundant call of `set.seed(2019)` in the next code chunks.)
+(In the next code chunks, I am going to use the redundant call of `set.seed(2019)` before creating the plot.)
 
 
 ### 💯 More Geoms, More Fun, More Info! {#more}
