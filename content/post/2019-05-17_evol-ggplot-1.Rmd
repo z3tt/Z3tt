@@ -296,7 +296,7 @@ set.seed(2019)
 
 g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  stat_summary(fun.y = mean, geom = "point", size = 5)
+  stat_summary(fun = mean, geom = "point", size = 5)
 ```
 
 Note that we could also use `geom_point(aes(x = region, y = student_ratio_region), size = 5)` to achieve the same since we already have a regional meanaverage in our data.
@@ -313,7 +313,7 @@ world_avg <-
 
 g +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  stat_summary(fun.y = mean, geom = "point", size = 5) +
+  stat_summary(fun = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 ```
 
@@ -332,7 +332,7 @@ g +
   ) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  stat_summary(fun.y = mean, geom = "point", size = 5)
+  stat_summary(fun = mean, geom = "point", size = 5)
 ```
 
 ⚡ **Check the order of the geoms to prevent any overlapping—here, for example, draw the line after calling `geom_segment()` to avoid overlapping!**
@@ -352,7 +352,7 @@ set.seed(2019)
     size = 0.8
   ) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  stat_summary(fun.y = mean, geom = "point", size = 5) +
+  stat_summary(fun = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate(
     "text", x = 6.3, y = 35, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
@@ -382,7 +382,7 @@ arrows <-
     x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
     x2 = c(5.6, 4, 1.9, 2.9, 1.1),
     y1 = c(35, 10, 11, 11, 73), 
-    y2 = c(world_avg, 19.4, 14.1, 12, 83.4)
+    y2 = c(world_avg, 19.4, 14.16, 12, 83.4)
   )
 
 g_text + 
@@ -399,9 +399,9 @@ g_text +
 arrows <- 
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-    x2 = c(5.6, 4, 2.17, 2.78, 0.9),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
     y1 = c(world_avg + 6, 10.5, 9, 9, 76),
-    y2 = c(world_avg + 0.1, 18.4, 14.48, 12, 83.41195)
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
 (g_arrows <- 
@@ -469,15 +469,13 @@ g_final +
 
 And here it is, our final plot—evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉
 
-```{r plot-before-after, echo=FALSE, message=FALSE, fig.width = 16, fig.height = 5}
+```{r plot-before-after, echo=FALSE, message=FALSE, fig.width = 16, fig.height = 6}
 before <- 
   ggplot(df_ratios, aes(x = region, y = student_ratio)) +
     geom_boxplot() +
     labs(title = "Before") +
     theme_gray() +
     theme(plot.title = element_text(family = "Poppins", size = 30, face = "bold", hjust = 0.5))
-
-library(ggsci)
 
 map_regions <- 
   df_ratios %>%
@@ -499,18 +497,18 @@ map_regions <-
     ) +
     labs(x = NULL, y = NULL)
 
-world_avg <- 
-  df_ratios %>%
-  summarize(avg = mean(student_ratio, na.rm = T)) %>%
-  pull(avg)
-
-arrows <- 
-  tibble(
-    x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-    x2 = c(5.6, 4, 2.17, 2.78, 0.9),
-    y1 = c(world_avg + 6, 10.5, 9, 9, 76),
-    y2 = c(world_avg + 0.1, 18.4, 14.48, 12, 83.41195)
-  )
+# world_avg <- 
+#   df_ratios %>%
+#   summarize(avg = mean(student_ratio, na.rm = T)) %>%
+#   pull(avg)
+# 
+# arrows <- 
+#   tibble(
+#     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
+#     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
+#     y1 = c(world_avg + 6, 10.5, 9, 9, 76),
+#     y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
+#   )
 
 set.seed(2019)
 
@@ -629,9 +627,9 @@ world_avg <-
 arrows <- 
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-    x2 = c(5.6, 4, 2.17, 2.78, 0.9),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
     y1 = c(world_avg + 6, 10.5, 9, 9, 76),
-    y2 = c(world_avg + 0.1, 18.4, 14.48, 12, 83.41195)
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
 ## final plot
@@ -648,7 +646,7 @@ df_ratios %>%
       size = 0.8
     ) +
     geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-    stat_summary(fun.y = mean, geom = "point", size = 5) +
+    stat_summary(fun = mean, geom = "point", size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
     annotate(
@@ -710,16 +708,18 @@ One thing I want to highlight is that the final plot does not contain the same i
 The 2nd quartile is known as the **median**, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean ("average") values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
 
 ```{r mean-vs-mean, echo=FALSE, message=FALSE, fig.width = 8, fig.height = 10}
-world_med <- df_ratios %>%
+world_med <- 
+  df_ratios %>%
   summarize(med = median(student_ratio, na.rm = T)) %>%
   pull(med)
 
-arrows <- tibble(
-  x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-  x2 = c(5.6, 4, 2.07, 2.78, 0.9),
-  y1 = c(world_med + 6, 10.5, 9, 9, 76),
-  y2 = c(world_med + 0.1, 18.4, 14.4, 12, 83.41195)
-)
+arrows <- 
+  tibble(
+    x1 = c(6, 3.65, 1.8, 1.8, 1.8),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
+    y1 = c(world_med + 6, 10.5, 9, 9, 76),
+    y2 = c(world_med + 0.1, 18.4, 14.16, 12, 83.42)
+  )
 
 set.seed(2019)
 
@@ -737,7 +737,7 @@ median <-
     ) +
     geom_hline(aes(yintercept = world_med), color = "gray70", size = 0.6) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-    stat_summary(fun.y = median, geom = "point", size = 5) +
+    stat_summary(fun = median, geom = "point", size = 5) +
     coord_flip() +
     annotate(
       "text", x = 6.3, y = 35, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
@@ -833,7 +833,7 @@ g12 <- g + geom_point(aes(x = region, y = student_ratio_region), size = 5) +
 
 set.seed(2019)
 g13 <- g + geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  stat_summary(fun.y = mean, geom = "point", size = 5) +
+  stat_summary(fun = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(2019)
@@ -842,7 +842,7 @@ g14 <- g + geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6)
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  stat_summary(fun.y = mean, geom = "point", size = 5) +
+  stat_summary(fun = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 
 set.seed(2019)
@@ -851,7 +851,7 @@ g15 <- g +
                    y = world_avg, yend = student_ratio_region),
                size = 0.8) +
   geom_hline(aes(yintercept = world_avg), color = "gray70", size = 0.6) +
-  stat_summary(fun.y = mean, geom = "point", size = 5) +
+  stat_summary(fun = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate("text", x = 6.3, y = 35, family = "Poppins", size = 1.8, color = "gray20",
            label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")) +
@@ -866,7 +866,7 @@ arrows <- tibble(
   x1 = c(6.3, 3.5, 1.7, 1.7, 1.9),
   x2 = c(5.6, 4, 1.9, 2.9, 1.1),
   y1 = c(35, 10, 11, 11, 73),
-  y2 = c(world_avg, 19.4, 14.1, 12, 83.4)
+  y2 = c(world_avg, 19.4, 14.16, 12, 83.4)
 )
 
 g16 <- g15 +
@@ -879,7 +879,7 @@ arrows <-
     x1 = c(6.2, 3.6, 1.77, 1.74, 1.78),
     x2 = c(5.6, 4, 2, 2.6, 1.13),
     y1 = c(32, 10.1, 11, 11, 74),
-    y2 = c(world_avg + 0.1, 18, 14.1, 12, 83.4)
+    y2 = c(world_avg + 0.1, 18, 14.16, 12, 83.4)
   )
 
 g17 <- g15 +
@@ -892,7 +892,7 @@ arrows <-
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.06, 2.75, 1.11),
     y1 = c(world_avg + 6, 10.5, 11, 11, 76),
-    y2 = c(world_avg + 0.2, 17.87, 14.1, 12, 83.4)
+    y2 = c(world_avg + 0.2, 17.87, 14.16, 12, 83.4)
   )
 
 g18 <- g15 +

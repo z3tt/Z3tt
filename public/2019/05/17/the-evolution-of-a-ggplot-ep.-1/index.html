@@ -493,7 +493,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 <p>As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding a summary statistic via <code>stat_summary()</code>with a different point size as the points of <code>geom_jitter()</code>. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:</p>
 <pre class="r"><code>g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5)</code></pre>
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png" width="768" /></p>
 <p>Note that we could also use <code>geom_point(aes(x = region, y = student_ratio_region), size = 5)</code> to achieve the same since we already have a regional meanaverage in our data.</p>
 <p>To relate all these points to a baseline, we add a line indicating the worldwide average:</p>
@@ -504,7 +504,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 
 g +
   geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
-  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/worldwide-avg-1.png" width="768" /></p>
 <p>💡 <strong>One could derive the worldwide average also within the <code>geom_hline()</code> call, but I prefer to keep both steps separated.</strong></p>
@@ -517,7 +517,7 @@ g +
   ) +
   geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
-  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5)</code></pre>
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-world-1.png" width="768" /></p>
 <p>⚡ <strong>Check the order of the geoms to prevent any overlapping—here, for example, draw the line after calling <code>geom_segment()</code> to avoid overlapping!</strong></p>
 </div>
@@ -532,7 +532,7 @@ g +
     size = 0.8
   ) +
   geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
-  stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate(
     &quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;, lineheight = .6,
@@ -558,7 +558,7 @@ g +
     x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
     x2 = c(5.6, 4, 1.9, 2.9, 1.1),
     y1 = c(35, 10, 11, 11, 73), 
-    y2 = c(world_avg, 19.4, 14.1, 12, 83.4)
+    y2 = c(world_avg, 19.4, 14.16, 12, 83.4)
   )
 
 g_text + 
@@ -572,9 +572,9 @@ g_text +
 <pre class="r"><code>arrows &lt;- 
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-    x2 = c(5.6, 4, 2.17, 2.78, 0.9),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
     y1 = c(world_avg + 6, 10.5, 9, 9, 76),
-    y2 = c(world_avg + 0.1, 18.4, 14.48, 12, 83.41195)
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
 (g_arrows &lt;- 
@@ -682,9 +682,9 @@ world_avg &lt;-
 arrows &lt;- 
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
-    x2 = c(5.6, 4, 2.17, 2.78, 0.9),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
     y1 = c(world_avg + 6, 10.5, 9, 9, 76),
-    y2 = c(world_avg + 0.1, 18.4, 14.48, 12, 83.41195)
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
 ## final plot
@@ -701,7 +701,7 @@ df_ratios %&gt;%
       size = 0.8
     ) +
     geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
-    stat_summary(fun.y = mean, geom = &quot;point&quot;, size = 5) +
+    stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
     geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
     coord_flip() +
     annotate(
