@@ -42,7 +42,7 @@ unsafe= true
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Computational Ecologist, DataViz Specialist and Proud Dad"
+  sidebar_about_description = "Computational Ecologist • Data Visualization Designer • Proud Dad"
   sidebar_avatar = "img/cedric_round.png"
 
   featured_tags = true
