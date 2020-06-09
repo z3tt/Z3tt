@@ -25,7 +25,7 @@ unsafe= true
   description = "Blog by Cédric Scherer"
   keyword = "Computational Ecology, Data Visualization"
   slogan = "Computational Ecology & Data Visualization"
-  google_fonts = "//fonts.googleapis.com/?css?family=Poppins|Crete+Round"
+  google_fonts = "//fonts.googleapis.com/?css?family=Oswald|Arapey|Crete+Round|Overpass+Mono"
 
   image_404 = "img/404-gg.png"
   title_404 = ""
