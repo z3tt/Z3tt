@@ -65,7 +65,7 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 </div>
 <div id="sort" class="section level3">
 <h3>🔀 ️Sort Your Data!</h3>
-<p>A good routine with such kind of data (qualitative and unsorted) to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to increase readability. Since the category “continent” does not have a natural ordering, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:</p>
+<p>A good routine with such kind of data (qualitative and unsorted) is to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category “continent” does not have an intrinsic order, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:</p>
 <pre class="r"><code>df_sorted &lt;- 
   df_ratios %&gt;%
   mutate(region = fct_reorder(region, -student_ratio_region))
@@ -118,7 +118,7 @@ g &lt;-
       axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 20),
       panel.grid = element_blank()
     )</code></pre>
-<p>(Note that to include these fonts we make use of the <strike><a href="https://github.com/wch/extrafont"><code>extrafont</code> package</a></strike> <a href="https://github.com/yixuan/showtext"><code>showtext</code> package</a>. This package allows for the use of system fonts and is especially simple to use in combination with <a href="https://fonts.google.com/">Google fonts</a>. You need to have (a) the fonts installed on your system, (b) the package <code>showtext</code> installed, (c) import the fonts by running <code>font_add_google()</code> and (d) preferably turn on the automatic use of showtextr functionality with <code>showtext_auto()</code>.)</p>
+<p>(Note that to include these fonts we make use of the <strike><a href="https://github.com/wch/extrafont"><code>extrafont</code> package</a></strike> <a href="https://github.com/yixuan/showtext"><code>showtext</code> package</a>. This package allows for the use of system fonts and is especially simple to use in combination with <a href="https://fonts.google.com/">Google fonts</a>. You need to have (a) the fonts installed on your system, (b) the package <code>showtext</code> installed, (c) import the fonts by running <code>font_add_google()</code> and (d) preferably turn on the automatic use of its functionality with <code>showtext_auto()</code>.)</p>
 </div>
 <div id="geoms" class="section level3">
 <h3>📊 The Choice of the Chart Type</h3>

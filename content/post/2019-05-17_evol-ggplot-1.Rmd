@@ -156,7 +156,7 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 
 ### 🔀 ️Sort Your Data! {#sort}
 
-A good routine with such kind of data (qualitative and unsorted) to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to increase readability. Since the category "continent" does not have a natural ordering, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:
+A good routine with such kind of data (qualitative and unsorted) is to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category "continent" does not have an intrinsic order, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:
 
 ```{r boxplot-sorted, fig.width = 8, fig.heigh = 4.5}
 df_sorted <- 
@@ -227,7 +227,7 @@ g <-
     )
 ```
 
-(Note that to include these fonts we make use of the <strike>[`extrafont` package](https://github.com/wch/extrafont)</strike> [`showtext` package](https://github.com/yixuan/showtext). This package allows for the use of system fonts and is especially simple to use in combination with [Google fonts](https://fonts.google.com/). You need to have (a) the fonts installed on your system, (b) the package `showtext` installed, (c) import the fonts by running `font_add_google()` and (d) preferably turn on the automatic use of showtextr functionality with `showtext_auto()`.)
+(Note that to include these fonts we make use of the <strike>[`extrafont` package](https://github.com/wch/extrafont)</strike> [`showtext` package](https://github.com/yixuan/showtext). This package allows for the use of system fonts and is especially simple to use in combination with [Google fonts](https://fonts.google.com/). You need to have (a) the fonts installed on your system, (b) the package `showtext` installed, (c) import the fonts by running `font_add_google()` and (d) preferably turn on the automatic use of its functionality with `showtext_auto()`.)
 
 
 ### 📊 The Choice of the Chart Type {#geoms}
