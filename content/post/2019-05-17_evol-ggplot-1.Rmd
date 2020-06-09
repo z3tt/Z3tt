@@ -562,7 +562,7 @@ after <-
     theme_light(base_size = 24, base_family = "Poppins") +
     theme(
       legend.position = "none",
-      plot.caption = element_text(size = 9, family = "Poppins", color = "gray50"),
+      plot.caption = element_text(size = 15, family = "Poppins", color = "gray50"),
       plot.title = element_text(size = 30, face = "bold", hjust = 0.5),
       axis.title = element_text(size = 24),
       axis.text.x = element_text(family = "Roboto Mono", size = 20),
@@ -776,7 +776,7 @@ median <-
       plot.caption = element_text(size = 9, family = "Poppins", color = "gray50"),
       plot.title = element_text(size = 30, face = "bold", hjust = 0.5),
       axis.title = element_text(size = 24),
-      axis.text.x = element_text(family = "Roboto Mono", size = 10),
+      axis.text.x = element_text(family = "Roboto Mono", size = 20),
       panel.grid = element_blank()
     )
 
