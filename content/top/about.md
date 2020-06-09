@@ -4,18 +4,18 @@ I am a computational ecologist by training and a data visualization designer by 
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
-My PhD and PostDoc project are part of the [BioMove RTG](https://www.biomove.org/) and I am working in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin. During my PhD, I spent 2 months in the research lab of [Prof. Wayne Getz](https://nature.berkeley.edu/getzlab/) at the UC Berkeley.
+My PhD and PostDoc project are part of the [BioMove RTG](https://www.biomove.org/) and I am working in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin. During my PhD, I spent two months in the research lab of [Prof. Wayne Getz](https://nature.berkeley.edu/getzlab/) at the UC Berkeley.
 I obtained a Bachelor of Science in *Life Sciences* and a Master of Science in *Ecology, Evolution & Nature Conservation* at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html). In my theses I used both, empirical and simulation data, to investigate the possibility to predict wild boar behavior via acceleration (ACC) data, [responses of birds to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005) using an animal functional type approach and [how disease dynamics are influenced by movement behavior and landscape structure](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) using Classical Swine Fever in its wildlife host, the wild boar (*Sus scrofa* L.).  
 
 My passion for data, design, and coding is a perfect combination not only for scientific but all types of data visualization. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge), and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge) as well as by drafting personal projects I am recently strengthen my skills in reproducible data visualization with R and `{ggplot2}`. My portfolio includes now a number of visualizations for various purposes and is covering a wide range of topics and chart types.
 
-&rarr; [Read more about my current and finished projects!](https://cedricscherer.netlify.com/top/projects/)<br>
-&rarr; [Have a look at my dataviz portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
-&rarr; [Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read more about my projects!](https://cedricscherer.netlify.com/top/projects/)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my dataviz portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
 
 ### Contact {#contact}
 
-**Dr. Cédric Scherer**  
+**Dr. rer. nat. Cédric Scherer**  
 Leibniz Institute for Zoo and Wildlife Research (IZW)  
 Department "Ecological Dynamics"  
 Alfred-Kowalke-Straße 17, Room 2.4.05, 10315 Berlin, Germany  
@@ -37,10 +37,14 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer[a
 #### Personal Details {#person}
 
 - *Day and Place of Birth:* 27<sup>th</sup> of September 1986 in Berlin, Germany
-- *Family Status:* married with 1 dependent daughter (5 months parental leave in 2017-2018).
+- *Family Status:* married with 1 dependent daughter (5 months parental leave in 2017-2018)
 
 
 #### Education & Professional Experience {#career}
+
+- <font color=#808080>**Data Visualization Designer** (since 2020)</font>  
+  + <font size="2">Self-employed, Berlin, Germany</font>
+  + <font size="2">*Services:* Data Analysis, Data Visualization, Workshops</font>
 
 - <font color=#808080>**Scientific Researcher** (since 2019)</font>  
   + <font size="2">[Department of Ecological Dynamics](https://ecological-dynamics-izw.com/), [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany</font>
@@ -119,7 +123,10 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer[a
 
 #### Conference Organisation {#orga}
 
-- <font color=#808080>**Data Visualization Workshop**</font>  
+- <font color=#808080>**Data Visualization in `R` with `ggplot2`** (5 days)</font>  
+  <font size="2">*March 2010* – Berlin, Germany – instructor for [Physalia Courses](https://www.physalia-courses.org/)</font>
+
+- <font color=#808080>**Data Visualization Workshop** (0.5 day)</font>  
   <font size="2">*September 2019* – Berlin, Germany – instructor</font>
 
 - <font color=#808080>**14th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
