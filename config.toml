@@ -25,8 +25,7 @@ unsafe= true
   description = "Blog by Cédric Scherer"
   keyword = "Computational Ecology, Data Visualization"
   slogan = "Computational Ecology & Data Visualization"
-  google_fonts = "//fonts.googleapis.com/css2?family=Oswald|Arapey|Crete+Round|Overpass+Mono"
-  
+  google_fonts = ""
   title_404 = ""
 
   # leancloud storage for page view counter
