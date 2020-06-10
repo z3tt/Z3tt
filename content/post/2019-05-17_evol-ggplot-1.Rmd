@@ -167,7 +167,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()
 ```
 
-💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical order such as age groups!**
+💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderinsic,  as age groupings!**
 
 To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot` call—but this does not work for boxplots so we use `coord_flip()`). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
 

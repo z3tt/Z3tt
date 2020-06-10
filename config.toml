@@ -78,9 +78,9 @@ unsafe= true
                 icon_pack = "ai"
                 link = "https://orcid.org/0000-000X-XXXX-XXXX"
 
-  [[params.friend_link]]
-  title = "DataVizard"
-  href =  "https://data-vizard.com/"
+  #[[params.friend_link]]
+  #title = "DataVizard"
+  #href =  "https://data-vizard.com/"
   [[params.friend_link]]
   title = "DataVizSociety"
   href = "https://www.datavisualizationsociety.com/"
