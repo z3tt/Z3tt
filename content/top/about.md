@@ -42,141 +42,146 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer[a
 
 #### Education & Professional Experience {#career}
 
-<ul>
-  <li style="color:#808080;"><b>Data Visualization Designer</b> (since 2020)</li>
+<ul style="font-size:17px;">
+
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Data Visualization Designer</b> (since 2020)</li>
   <ul>
-    <li style="font-size:15px;">Self-employed, Berlin, Germany</li>
-    <li style="font-size:15px;"><i>Services:</i> Data Analysis, Data Visualization, Workshops</li>
+    <li>Self-employed, Berlin, Germany</li>
+    <li><i>Services:</i> Data processing and analysis, data visualization, workshops (Tools: R, ggplot2, shiny, html+CSS)</li>
   </ul>
-  <li style="color:#808080;"><b>Scientific Researcher</b> (since 2019)</li>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>PostDoc in Computational Ecology</b> (since 2019)</li>
   <ul>
-    <li style="font-size:15px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany</li>
-    <li style="font-size:15px;"><i>Project:</i> <a href="https://www.biomove.org/biomove-team/postdoc-synthesis/">Start-Up PostDoc BioMove</a></li>
+    <li><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany</li>
+    <li><i>Tasks:</i> Statistical, simulation-based and geospatial modelling, data visualization, lab support and supervision (Tools: R, NetLogo)</li>
   </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Ph.D. in Ecology</b> (2015–2019)</li>
+  <ul>
+    <li><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany & <a href="https://cedricscherer.netlify.com/top/projects/">RTG "BioMove"</a>, University of Potsdam, Germany</li>
+    <li><i>Topics:</i> Movement ecology, disease ecology, population dynamics, coexistence theory</li>
+    <li><i>Tasks:</i> Mechanistic and analytical modelling, data visualization, package development (Tools: R, ggplot2, shiny, NetLogo)</li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Speaker SIG "Young Modellers in Ecology"</b> (2015–2019)</li>
+  <ul>
+    <li><a href="https://www.yomos.org/about">Young Modellers in Ecology (YoMos)</a>, <a href="https://www.gfoe.org/en">Special Interest Group of the Ecological Society of Germany, Austria & Switzerland (GfOe)</a></li>
+    <li><i>Tasks:</i> Lead of the organizational teams, conference chair, workshop instructor</li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Visiting Research Student</b> (2017)</li>
+  <ul>
+    <li><a href="https://nature.berkeley.edu/getzlab/">Getz Lab</a>, <a href="https://www.berkeley.edu/">University of California, Berkeley</a>, CA, USA</li>
+    <li><i>Topics:</i> Evolutionary biology, disease ecology, population dynamics, theoretical ecology</li>
+    <li><i>Tasks:</i> Developing genetic algorithms for agent-based models (Tool: <a href="https://www.numerusinc.com/">Numerus modelling platform</a>)</li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Research Assistant</b> (2015)</li>
+  <ul>
+    <li><a href="https://www.uni-potsdam.de/en/ibb-vegnat/index.html">Department of Plant Ecology and Nature Conservation</a>, University of Potsdam, Germany</li> within the <a href="http://www.biodiversity-exploratories.de/1/home/">DFG Priority Program "Infrastructure-Biodiversity-Exploratories”</a>
+    <li><i>Tasks:</i> Literature research and model development (Tools: R, C++)</li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Research Assistant</b> (2014)</li>
+  <ul>
+    <li><a href="https://www.uni-potsdam.de/en/ibb-vegnat/index.html">Department of Plant Ecology and Nature Conservation</a>, University of Potsdam, Germany</li>
+    <li><i>Tasks:</i> Assistance for a RTG proposal at <a href="http://www.dfg.de/en/">Deutsche Forschungsgemeinschaft (DFG)</a></li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>M.Sc. in Ecology, Evolution and Nature Conservation</b> (2011–2014)</li>
+  <ul>
+    <li><a href="http://www.uni-potsdam.de/en/)">University of Potsdam</a>, Potsdam, Germany</li>
+    <li><i>Topics:</i> Population dynamics, climate change biology, dryland ecology, theoretical ecology</li>
+    <li><i>Tasks:</i> Development a mechanistic model (Tools: R, NetLogo, C++)</li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>Internship</b> (2011)</li>
+  <ul>
+    <li><a href="https://www.bbib.org/scapelabs.html">"AgroScapeLabs"</a>, <a href="http://www.zalf.de/en/Pages/ZALF.aspx)">Leibniz Centre for Agricultural Landscape Research (ZALF)</a>, Muencheberg, Germany</li>
+    <li><i>Tasks:</i> Catching, collaring, and analysis of movement data of red foxes, raccoons, and brown hares (Tools: R, QGIS)</li>
+  </ul>
+  
+  <li style="color:#282828;font-size:19px;font-style:italic;"><b>B.Sc. in Life Sciences</b> (2008–2011)</li>
+  <ul>
+    <li><a href="http://www.uni-potsdam.de/en/)">University of Potsdam</a>, Potsdam, Germany</li>
+    <li><i>Topics:</i> Movement ecology, animal behavior</li>
+    <li><i>Tasks:</i> Collection and analysis of acceleration data of wild boar and wooly pigs (Tools: Excel)</li>
+  </ul>
+  
 </ul>
-
-
-- <font color=#808080>**Scientific Researcher** (since 2019)</font>  
-  + <font size="3">[Department of Ecological Dynamics](https://ecological-dynamics-izw.com/), [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany</font>
-  + <font size="3">*Project:* [Start-Up PostDoc](https://www.biomove.org/biomove-team/postdoc-synthesis/) in the Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)</font>
-
-- <font color=#808080>**Ph.D. Training** (2015–2019)</font>  
-  + <font size="3">[Department of Ecological Dynamics](https://ecological-dynamics-izw.com/), [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html), Berlin, Germany</font>
-  + <font size="3">*Project:* [PhD Project P02](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) in the Research Training Group [BioMove](https://cedricscherer.netlify.com/top/projects/) (DFG-GRK 2118-1)</font>
-  + <font size="3">*Thesis:* “Infection on the move: Individual host movement drives disease persistence in spatially structured landscapes.”, supervised by Prof. Stephanie Kramer-Schadt, PD Dr. Niels Blaum, and Prof. Volker Grimm</font>
-
-- <font color=#808080>**Speaker SIG "Young Modellers in Ecology"** (2015–2019)</font>  
-  + <font size="3">Lead of the organizational teams and chair during conferences and workshops</font>
-  + <font size="3">["Young Modellers in Ecology (YoMos)"](https://www.yomos.org/about) are a Special Interest Group of the [Ecological Society of Germany, Austria & Switzerland (GfOe)](https://www.gfoe.org/en)</font>
-
-- <font color=#808080>**Visiting Research Student** (2017)</font>  
-  + <font size="3">[Getz Lab](https://nature.berkeley.edu/getzlab/), [University of California, Berkeley](https://www.berkeley.edu/), CA, USA</font>
-  + <font size="3">*Project:* Genetic algorithms in agent-based models using the [Numerus modelling platform](https://www.numerusinc.com/)</font>
-
-- <font color=#808080>**Research Assistant** (2015)</font>  
-  + <font size="3">[Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html), University of Potsdam, Germany</font>
-  + <font size="3">*Project:* “RootHerb II” in the DFG Priority Program ["Infrastructure-Biodiversity-Exploratories”](http://www.biodiversity-exploratories.de/1/home/)</font>
-
-- <font color=#808080>**Research Assistant** (2014)</font>  
-  + <font size="3">[Department of Plant Ecology and Nature Conservation](https://www.uni-potsdam.de/en/ibb-vegnat/index.html), University of Potsdam, Germany</font>
-  + <font size="3">Assistant for a RTG proposal at [Deutsche Forschungsgemeinschaft (DFG)](http://www.dfg.de/en/)</font>
-
-- <font color=#808080>**Master of Science “Ecology, Evolution and Nature Conservation”** (2011–2014)</font>  
-  + <font size="3">[University of Potsdam](http://www.uni-potsdam.de/en/), Potsdam, Germany</font>
-  + <font size="3">*Project:* Part of [OPTIMASS](https://www.optimass.org/index.html) (Options for sustainable geo-biosphere feedback management in savanna systems under regional and global change)</font>
-  + <font size="3">*Thesis:* “Responses of bird functional types to climatic and land use changes in African savannas – an individual-based modelling approach”, supervised by Prof. Florian Jeltsch and Prof. Volker Grimmy</font>
-
-- <font color=#808080>**Internship** (2011)</font>  
-  + <font size="3">[Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx), Muencheberg, Germany</font>
-  + <font size="3">*Project:* Movement ecology of red foxes, brown hares and raccoons in the [AgroScapeLabs](https://www.bbib.org/scapelabs.html)</font>
-
-- <font color=#808080>**Bachelor of Science “Life Sciences”** (2008–2011)</font>  
-  + <font size="3">[University of Potsdam](http://www.uni-potsdam.de/en/), Potsdam, Germany</font>
-  + <font size="3">*Thesis:* “Analysis of three-dimensional acceleration data for behavioural studies on wild boars (*Sus scrofa* L.) and woolly pigs (*Sus scrofa domestica* L.)”, supervised by Prof. Florian Jeltsch and Dr. Anne Berger</font>
 
 
 #### Trainings & Further Education {#training}
 
-- <font color=#808080>**Workshop “Creative Visualization”** (2018)</font>  
-  <font size="3">organized by [stiftundseil](http://www.stiftundseil.de/?lang=de&page=125)</font>
+<ul style="color:#727272;font-size:17px;">
 
-- <font color=#808080>**Workshop “Patch Occupancy Modelling”** (2018)</font>  
-  <font size="3">held by Jean-Dominique Lebreton, French National Centre for Scientific Research (CNRS)</font>
+  <li><b>Workshop "Creative Visualization"</b> (Berlin, 2018)</li>
+  
+  <li><b>Workshop "Patch Occupancy Modelling"</b> (Berlin, 2018)</li>
+  
+  <li><b>Workshop “Scientific Writing”</b> (Potsdam, 2017)</li>
+  
+  <li><b>Workshop “Advanced Approaches in GIS and Remote Sensing”</b> (Berlin, 2016)</li>
+  
+  <li><b>Summer School “Animal Tracking Methods and Advanced Data Analyses”</b> (Gülpe, 2016)</li>
+  
+  <li><b>Workshop “Modelling Approach: Wildlife Populations & Diseases”</b> (Berlin, EWDA, 2016)</li>
+  
+  <li><b>Symposium <a href="http://move-ecol-minerva.huji.ac.il/page/5">“Emerging High-throughput Systems for Wildlife Tracking”</a></b> (Jerusalem, 2016)</li>
+  
+  <li><b>Workshop “Advanced Statistical Analysis and Experimental Design”</b> (Potsdam, 2016)</li>
+  
+  <li><b>Summer School "Animal Movement Analysis"</b> (Amsterdam, 2015)</li>
+  
+  <li><b>Summer School <a href="https://bgc.yale.edu/news/summer-school-spatio-temporal-analysis-and-big-data-processing-using-free-and-open-source">“Spatio-Temporal Data Analyses & Big Data Processing”</a></b> (Matera, 2015)</li>
+  
+  <li><b>Symposium “Movement Ecology”</b> (Goettingen, 2014)</li>
+  
+  <li><b>Workshop “Movement Ecology & Biodiversity”</b> (Potsdam, 2012)</li>
+  
+</ul>
 
-- <font color=#808080>**Workshop “Scientific Writing”** (2017)</font>  
-  <font size="3">held by Volker Grimm, Helmholtz Centre for Environmental Research (UFZ)</font>
-
-- <font color=#808080>**Workshop “Advanced Approaches in GIS and Remote Sensing”** (2016)</font>  
-  <font size="3">held by Alexander Brenning & Jannes Muenchow, University of Jena</font>
-
-- <font color=#808080>**Summer School “Animal Tracking Methods and Advanced Data Analyses”** (2016)</font>  
-  <font size="3">held by Jana Eccard & Melanie Dammhahn, University of Potsdam, Simon Ripperger, Museum für Naturkunde Berlin, Bram Van Moorter, NINA Norway, and Allert Bijleveld, NIOZ Netherlands</font>
-
-- <font color=#808080>**Workshop “Modelling Approach: Wildlife Populations & Diseases”** (2016)</font>  
-  <font size="3">held by Hans-Hermann Thulke, Helmholtz Centre for Environmental Research (UFZ)</font>
-
-- <font color=#808080>**Symposium “Emerging High-throughput Systems for Wildlife Tracking – The ATLAS System”** (2016)</font>  
-  <font size="3">organized by Ran Nathan and team at the Minerva Center for Movement Ecology, Jerusalem, Israel</font>
-
-- <font color=#808080>**Workshop “Advanced Statistical Analysis and Experimental Design”** (2016)</font>  
-  <font size="3">held by Katharina Merkel, University of Queensland, and Mareike Koppik, University of Muenster</font>
-
-- <font color=#808080>**Summer School “Spatio-Temporal Data Analyses & Big Data Processing”** (2015)</font>  
-  <font size="3">held by Giuseppe M. Amatulli, Yale University, and Stefano Casalegno, University of Exeter</font>
-
-- <font color=#808080>**Workshop “Movement Ecology”** (2014)</font>  
-  <font size="3">organized by Niko Balkenhol & Johannes Signer, University of Goettingen</font>
-
-- <font color=#808080>**Workshop “Movement Ecology & Biodiversity”** (2012)</font>  
-  <font size="3">organized by Carsten Buchholz & Florian Jeltsch, University of Potsdam</font>
-
-
-#### Conference Organisation {#orga}
-
-- <font color=#808080>**Data Visualization in `R` with `ggplot2`** (5 days)</font>  
-  <font size="3">*March 2010* – Berlin, Germany – instructor for [Physalia Courses](https://www.physalia-courses.org/)</font>
-
-- <font color=#808080>**Data Visualization Workshop** (0.5 day)</font>  
-  <font size="3">*September 2019* – Berlin, Germany – instructor</font>
-
-- <font color=#808080>**14th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
-  <font size="3">*May 2019* – Goettingen, Germany – organizer and chair</font>
-
-- <font color=#808080>**1st International BioMove Symposium**</font>  
-  <font size="3">*September 2018*, Potsdam, Germany – organizer and session chair</font>
-
-- <font color=#808080>**13th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
-  <font size="3">*May 2018* – Höllviken, Sweden – organizer and chair</font>
-
-- <font color=#808080>**Thematic Topic Session “Are we any good at simulating ecology? Success and future challenges in ecological simulation models”**</font>    
-  <font size="3">*December 2017* – Joint Annual Meeting of BES, GfOe, NecoV & EEF, Ghent, Belgium – chair together with Florian Hartig and Nick Golding</font>
-
-- <font color=#808080>**Leibniz PhD Symposium "What future do we have as scientists? Rethinking scientific publishing & careers"**</font>   
-  <font size="3">*September 2017* – Berlin, Germany – part of organizational committee</font>
-
-- <font color=#808080>**12th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
-  <font size="3">*May 2017* – Buchenbach, Germany – organizer and chair</font>
-
-- <font color=#808080>**11th Workshop of the Young Modellers in Ecology (YoMos)**</font>  
-  <font size="3">*May 2016* – Neunzehnhain, Germany – organizer and chair</font>
-
-- <font color=#808080>**Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (GfOe)**</font>  
-  <font size="3">*September 2013* – Potsdam, Germany – IT assistance and organizational tasks</font>  
 
 
 #### Teaching {#teach}
 
-- <font color=#808080>**Workshop “Introduction to ecological modelling” (2016)**</font>  
-  <font size="3">Department of Theoretical Ecology, University of Potsdam, Germany</font>
+<ul style="color:#727272;font-size:17px;">
+  
+  <li><b>Workshop “Data Visualization in R with {ggplot2}“</b> (<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, 2020)</li>
+  
+  <li><b>Workshop “Scientific Data Visualization: Principles & Good Practices“</b> (Berlin, 2019)</li>
+  
+  <li><b>Workshop “Introduction to ecological modelling”</b> (Department of Theoretical Ecology, University of Potsdam, 2016)</li>
+  
+  <li><b>Practical Workshop "Zoology"</b> (Department for Zoology, University of Potsdam, 2009–20014)</li>
+  
+  <li><b>Workshop “Research & Presentation“</b> (Department for Didactics of Biology, University of Potsdam, 2013–2014)</li>
+  
+  <li><b>Field workshop “Systematic Zoology II“</b> (Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, 2013–2014)</li>
+  
+</ul>
 
-- <font color=#808080>**Practical workshop "Zoology" (2009–20014)**</font>  
-  <font size="3">Department for Zoology, University of Potsdam, Germany</font>
 
-- <font color=#808080>**Workshop “Research & Presentation“ (2013–2014)**</font>  
-  <font size="3">Department for Didactics of Biology, University of Potsdam, Germany</font>
 
-- <font color=#808080>**Field workshop “Systematic Zoology II“ (2012)**</font>  
-  <font size="3">Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Germany</font>
+#### Conference Organisation {#orga}
+
+<ul style="color:#727272;font-size:17px;">
+  
+  <li><b>Organizer and chair "14th Workshop of the Young Modellers in Ecology"</b> (Goettingen, May 2019)</li>
+  
+  <li><b>Organizer and session chair "1st International BioMove Symposium"</b> (Potsdam, September 2018)</li>
+  
+  <li><b>Organizer and chair "13th Workshop of the Young Modellers in Ecology"</b> (Höllviken, May 2018)</li>
+  
+  <li><b>Organizational committee "What future do we have as scientists? Rethinking scientific publishing & careers</b> (Berlin, September 2017)</li>
+  
+  <li><b>Organizer and chair "12th Workshop of the Young Modellers in Ecology"</b> (Buchenbach, May 2017)</li>
+  
+  <li><b>Organizer and chair "11th Workshop of the Young Modellers in Ecology"</b> (Neunzehnhain, May 2016)</li>
+  
+  <li><b>IT assistance "Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (GfOe)"</b> (Potsdam, September 2013)</li>
+  
+</ul>
 
 
 #### Publications
@@ -186,22 +191,42 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
 #### Awards & Honours {#award}
 
-- <font color=#808080>**Postdoc Stipend**</font> funded by the University of Potsdam (9 month full position)
-- [**Best Poster**](https://doi.org/10.13140/RG.2.2.30777.47209), Gordon Research Conference on Movement Ecology of Animals, Ventura, CA, USA – *March 2017*
+<ul style="color:#727272;font-size:17px;">
+
+  <li><b>PostDoc Stipend</b>, funded by the University of Potsdam (9 month full position)</li>
+
+  <li><b>Best Poster</b>, GRC "Movement Ecology of Animals", Ventura, CA, USA (March 2017)</li>
+
+</ul>
 
 
 #### Skills {#skills}
 
-- <font color=#808080>**Languages:**</font> German *(native)*, English *(fluent)*
-- <font color=#808080>**Programming:**</font> R, NetLogo, SQL/SQLite, Python, CSS, html5
-- <font color=#808080>**Statistics:**</font> R (e.g. `{lme4}`, `{glmmTMB}`, `{CARBayesST}`, `{adehabitat}`), SPSS, Excel
-- <font color=#808080>**GIS:**</font> R (e.g. `{sf}`, `{sp}`, `{raster}`, `{rgdal}`, `{RQGIS}`), QGIS, GRASS, ArcGIS
-- <font color=#808080>**Visualization:**</font> R (e.g. `{ggplot2}`, `{shiny}`, `{plotly}`, `{leaflet}`, `{tmap}`, `{gganimate}`), CartoDB, RAWgraphs
-- <font color=#808080>**Markup:**</font> Markdown, LaTeX
+<ul style="color:#727272;font-size:17px;">
+
+  <li><b>Languages:</b> German <i>(native)</i>, English <i>(fluent)</i></li>
+  
+  <li><b>Programming:</b> R, NetLogo, SQL/SQLite, C++, Python, CSS, html5</li>
+  
+  <li><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), SPSS, Excel</li>
+  
+  <li><b>GIS:</b> R (e.g. sf, sp, raster, rgdal, RQGIS), QGIS, GRASS, ArcGIS</li>
+  
+  <li><b>Visualization:</b> R (e.g. ggplot2, shiny, plotly, leaflet, tmap, gganimate, highcharter), CartoDB, RAWgraphs</li>
+  
+  <li><b>Markup:</b> Markdown, R (e.g. Rmarkdown, blogdown, bookdown), LaTeX</li>
+
+</ul>
 
 
 #### Services {#services}
 
-- <font color=#808080>**Peer Review:**</font> *[Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/journal/13652664)*, *[BMC Ecology](https://bmcecol.biomedcentral.com/)*, *[Ecological Modelling](https://eeslive.elsevier.com/ecomod/default.asp)*
-- <font color=#808080>**Functional Roles:**</font> Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019), PhD spokesperson in the research training group “BioMove” (2015–2018), part of the [MCED award](http://www.mced-ecology.org/?page_id=941) committee (since 2015)
-- <font color=#808080>**Memberships**</font>: [Ecological Society of Germany, Austria and Switzerland (GfOe)](https://www.gfoe.org/en), SIG [Young Modellers in Ecology (YoMos)](https://www.yomos.org), SIG [Computational Ecology](https://akcomputationalecology.wordpress.com/)
+<ul style="color:#727272;font-size:17px;">
+
+  <li><b>Peer Review:</b> <i>Journal of Animal Ecology</i>, <i>Oikos</i>, <i>BMC Ecology</i>, <i>Ecological Modelling</i>, CRC Press</li>
+
+  <li><b>Functional Roles:</b> Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019), PhD spokesperson in the research training group “BioMove” (2015–2018), part of the MCED award committee (since 2015)</li>
+
+  <li><b>Memberships:</b> Ecological Society of Germany, Austria and Switzerland (GfOe), SIG Young Modellers in Ecology (YoMos), SIG Computaitonal Ecology</li>
+
+</ul>

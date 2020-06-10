@@ -18,7 +18,7 @@ tags:
     - TidyTuesday
 showtoc: false
 ---
-<font size="-1">Header image by [Michael Barth via Unsplash](https://unsplash.com/photos/OjA6F3pSccw)</font>
+<p style="font-size:14px">Header image by <a href="https://unsplash.com/photos/OjA6F3pSccw">Michael Barth via Unsplash</a></p>
 
 **During a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: [27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales](https://edition.cnn.com/2020/01/01/australia/australia-fires-explainer-intl-hnk-scli/index.html). 800 million animals have been affected since bushfires in NSW have started with an estimate of one billion animals impacted nationally say [ecologists from Sydney University](https://sydney.edu.au/news-opinion/news/2020/01/03/a-statement-about-the-480-million-animals-killed-in-nsw-bushfire.html). Thick smoke is drifting over the Pacific Ocean towards New Zealand and the South American continent. The massive fires have been fuelled by dry organic matter caused by extraordinary high temperatures and a prolonged period of drought which created excellent fire conditions.**
 

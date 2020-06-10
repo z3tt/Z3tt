@@ -9,7 +9,7 @@ description: "Hi, I am glad you found your way here! Come in, have a look. I fin
 tags: [misc]
 showtoc: false
 ---
-<font size="-1">Header image &copy; Negative Space</font>
+<p style="font-size:14px">Header image by Negative Space</a></p>
 
 Hi, I am glad you found your way here! Come in, have a look.
 

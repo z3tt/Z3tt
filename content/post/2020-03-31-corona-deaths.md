@@ -18,7 +18,14 @@ tags:
     - SWDchallenge
 showtoc: false
 ---
-<font size="-1">Header image by [Giacomo Carra via Unsplash](https://unsplash.com/photos/gf6UDwpl0ac)</font>
+<p style="font-size:14px">Header image by <a href="https://unsplash.com/photos/gf6UDwpl0ac">Giacomo Carra via Unsplash</a></p>
+
+<style>
+p.small {
+  line-height: 1.15;
+  font-size:80%
+}
+</style>
 
 **Coronavirus SARS-CoV-2, COVID-19 or simply Corona&mdash;what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, [#stayhome](https://twitter.com/hashtag/stayhome) and [#flattenthecurve](https://twitter.com/hashtag/flattenthecurve) hashtags&mdash;and obviously a global shortage of toilet paper.**
 
@@ -28,20 +35,20 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 ##### Latest update:&nbsp;&nbsp;June 3, 2020&nbsp;&nbsp;(Data from Jan 22 to June 2)
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_begin.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_begin.gif', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
+<p class="small" align="center"><i style="color:#8c8c8c">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">A static visualization showing the latest data, sorted by days since the latest "worst day".</i></p><br>
+<p class="small" align="center""><i style="color:#8c8c8c;">A static visualization showing the latest data, sorted by days since the latest "worst day".</i></p>
 
 ##### New chart: Trajectories for all countries with 100 or more deaths
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_trajectory_facet_1.png" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_trajectory_facet_1.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">The same data as 7-day rolling average as trajectories, showing worst days, death tolls and latest trends per country.</i></p><br>
+<p class="small" align="center"><i style="color:#8c8c8c;">The same data as 7-day rolling average as trajectories, showing worst days, death tolls and latest trends per country.</i></p>
 
 ##### New animation: Global tile map
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_map.gif" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_map.gif', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.</i></p><br>
+<p class="small" align="center"><i style="color:#8c8c8c;">The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.</i></p>
 
 
 ### The idea
@@ -49,10 +56,10 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 Inspired by my colleague [Alexandre Courtiol](https://twitter.com/alexcourtiol), who looked at [the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size](https://github.com/courtiol/excess_mortality_COVID19), I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling "today is the worst day" and also the *current* trends, either today or a week ago&mdash;are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.
 
 <img src="/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif" alt="animation-corona-original" style="width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif, 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">The first version with data until the 29th of March that I submitted as my contribution to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</i></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">The first version with data until the 29th of March that I submitted as my contribution to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</i></p>
 
 <img src="/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png" alt="static-plot-corona-original" style="width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png', 'blank');"/>
-<p align="center"><i style="color:grey;font-size:80%;">A static version of the situation as of 29th of March with countries sorted by first reported death.</i></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">A static version of the situation as of 29th of March with countries sorted by first reported death.</i></p>
 
 
 ### How to read the visualization
