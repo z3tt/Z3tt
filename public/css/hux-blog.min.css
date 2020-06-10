@@ -34,10 +34,11 @@
 
 .sidebar-container{
   color:#676767;
-  font-size:15px
+  font-size:16px
 }
 .sidebar-container h5{
   color:gray;
+  font-size:18px;
   padding-bottom:1em
 }
 .sidebar-container h5 a{
@@ -51,7 +52,8 @@
   color:#28a87d!important
 }
 .sidebar-container .tags a{
-  border-color:#9a9a9a
+  border-color:#9a9a9a;
+  font-size:12px
 }
 .sidebar-container .tags a:hover,.sidebar-container .tags a:active{
   border-color:#28a87d
@@ -72,7 +74,7 @@
 
 body{
   font-family:-apple-system,"Arapey","Times New Roman";
-  line-height:1.45;
+  line-height:1.6;
   font-size:19px;
   font-weight:500;
   color:#1b1b1b;
@@ -84,7 +86,10 @@ p{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family:-apple-system,"Oswald","Arial Black";line-height:1.7;line-height:1.1;font-weight:600
+  font-family:-apple-system,'Oswald','Arial Black';
+  line-height:1.7;
+  line-height:1.1;
+  font-weight:600
 }
 h4{
   font-size:21px
@@ -467,7 +472,7 @@ pre code{
 }
 .post-preview>a>.post-title{
   font-size:21px;
-  line-height:1.3;
+  line-height:1.4;
   margin-top:30px;
   margin-bottom:8px
 }
@@ -513,9 +518,9 @@ pre code{
 .post-content-preview{
   font-size:16px;
   font-style:plain;
-  line-height:1.2;
-  font-weight:300;
-  color:#727272
+  line-height:1.3;
+  font-weight:500;
+  color:#8c8c8c
 }
 .post-content-preview:hover{
   color:#208865
