@@ -12,6 +12,19 @@
     src: url("../fonts/CreteRound-RegularItalic.ttf") format("truetype");
 }
 @font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora-Regular.ttf") format("truetype");
+}@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora-Bold.ttf") format("truetype");
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url("../fonts/Lora-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
     font-family: 'Arapey';
     src: url("../fonts/Arapey-Regular.ttf") format("truetype");
 }
@@ -73,7 +86,7 @@
 }
 
 body{
-  font-family:-apple-system,"Arapey","Times New Roman";
+  font-family:-apple-system,'Arapey','Times New Roman';
   line-height:1.6;
   font-size:19px;
   font-weight:500;
@@ -110,7 +123,7 @@ article{
 }
 
 blockquote{
-  font-family:-apple-system,"Oswald","Arial";
+  font-family:-apple-system,'Oswald','Arial';
   color:#5c6c66;
   font-style:plain;
   font-size:.95em;
@@ -160,7 +173,7 @@ pre code{
   white-space:pre;
   word-wrap:normal;
   font-weight:500;
-  font-family:-apple-system,"Overpass Mono","Menlo","Monaco","Consolas","Courier New",monospace
+  font-family:-apple-system,'Overpass Mono','Menlo','Monaco','Consolas','Courier New',monospace
 }
 .post-container a{
   color:#208865
@@ -172,7 +185,7 @@ pre code{
   margin:30px 0 10px
 }
 .post-container h5{
-  font-size:19px;
+  font-size:21px;
   font-weight:500;
   color:gray
 }
@@ -180,7 +193,7 @@ pre code{
   margin-top:5px
 }
 .post-container h6{f
-  ont-size:16px;
+  font-size:19px;
   font-weight:500;
   color:gray
 }
@@ -271,7 +284,7 @@ pre code{
   left:0;
   width:100%;
   z-index:3;
-  font-family:-apple-system,"Oswald","Arial Black",sans-serif;
+  font-family:-apple-system,'Oswald','Arial Black',sans-serif;
   line-height:1.7;
   font-weight:600
 }
@@ -615,7 +628,7 @@ form .row:first-child .floating-label-form-group{
   border-top:1px solid #eee
 }
 .btn{
-  font-family:-apple-system,"Oswald","Arial", sans-serif;
+  font-family:-apple-system,'Oswald','Arial', sans-serif;
   line-height:1.7;
   text-transform:uppercase;
   font-size:14px;
