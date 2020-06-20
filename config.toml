@@ -6,7 +6,7 @@ languageCode = "en-us"
 #disqusShortname = "Cédric"
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 6 #frontpage pagination
+paginate = 8 #frontpage pagination
 hasCJKLanguage = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
