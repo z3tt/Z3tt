@@ -38,7 +38,7 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
 <p class="small" align="center"><i style="color:#8c8c8c">Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</i></p>
 
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png', 'blank');"/>
-<p class="small" align="center""><i style="color:#8c8c8c;">A static visualization showing the latest data, sorted by days since the latest "worst day".</i></p>
+<p class="small" align="center""><i style="color:#8c8c8c;">A static visualization showing the latest data, sorted by time since the "worst day".</i></p>
 
 ##### New chart: Trajectories
 
