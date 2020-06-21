@@ -219,7 +219,7 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 </ul>
 
 
-#### Services {#services}
+#### Memberships & Services {#services}
 
 <ul style="font-size:17px;">
 
