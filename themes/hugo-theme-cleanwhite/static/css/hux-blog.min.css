@@ -56,7 +56,8 @@
 .sidebar-container h5{
   color:gray;
   font-size:18px;
-  padding-bottom:1em
+  padding-top:.7em;
+  padding-bottom:.1em
 }
 .sidebar-container h5 a{
   color:gray!important;
@@ -124,10 +125,10 @@ article{
 }
 
 blockquote{
-  font-family:-apple-system,'Staatliches','Arial';
+  font-family:-apple-system,'Oswald','Arial';
   color:#5c6c66;
-  font-style:plain;
-  font-size:.95em;
+  font-style:italic;
+  font-size:.9em;
   margin:20px 0 20px
 }
 blockquote p{
@@ -187,7 +188,7 @@ pre code{
 }
 .post-container h5{
   font-size:19px;
-  font-weight:500;
+  font-weight:400;
   color:gray
 }
 .post-container h5+p{
@@ -711,21 +712,20 @@ body{
   webkit-tap-highlight-color:#28a87d
 }
 .tags{
-  margin-bottom:-5px
+  margin-bottom:1px
 }
 .tags a,.tags .tag{
   display:inline-block;
   border:1.2px solid rgba(255,255,255,.8);
   border-radius:999em;
-  padding:0 10px;
+  padding:3px 10px 0px;
   font-family:-apple-system,'Staatliches','Arial',sans-serif;
   color:#fff;
-  line-height:24px;
+  line-height:20px;
   font-size:12px;
   font-weight:300;
   text-decoration:none;
   margin:0 1px;
-  margin-bottom:6px
 }
 .tags a:hover,.tags .tag:hover,.tags a:active,.tags .tag:active{
   color:#fff;
@@ -736,7 +736,7 @@ body{
 
 @media only screen and (min-width:768px){
   .tags a,.tags .tag{
-    font-size:14px;
+    font-size:15px;
     margin-right:5px
   }
 }
@@ -755,9 +755,9 @@ body{
   margin:20px 0 15px 0
 }
 #tag_cloud a,#tag_cloud .tag{
-  font-size:14px;
+  font-size:15px;
   border:none;
-  line-height:28px;
+  line-height:22px;
   margin:0 2px;
   margin-bottom:8px;
   background:#D6D6D6
