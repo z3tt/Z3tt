@@ -14,8 +14,8 @@ As a computational scientist, I apply analytical and mechanistic modeling approa
 
 ##### Data Visualization
 
-My passion for data, design, and coding is a perfect combination not only for scientific but all types of data visualization. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge), and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge), I am constantly strengthening my skills in design and reproducible data visualization with `{ggplot2}`. Thanks to frequent contributions as well as several personal and client projects,
-my portfolio now includes visualizations for various purposes and is covering a wide range of topics and chart types. 
+My passion for data, design and coding is a perfect combination not only for scientific but all types of data visualization. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge) and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge), I am constantly strengthening my skills in design and reproducible data visualization with `{ggplot2}`. Thanks to frequent contributions as well as several personal and client projects,
+my portfolio now includes visualizations for various purposes and is covering a wide range of topics and chart types.
 
 &nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Have a look at my dataviz portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
 
@@ -106,7 +106,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
   <li style="color:#282828;font-size:19px;font-style:italic;"><b>Internship</b> (2011)</li>
   <ul>
     <li><a href="https://www.bbib.org/scapelabs.html">"AgroScapeLabs"</a>, <a href="http://www.zalf.de/en/Pages/ZALF.aspx)">Leibniz Centre for Agricultural Landscape Research (ZALF)</a>, Muencheberg, Germany</li>
-    <li><i>Tasks:</i> Catching, collaring, and analysis of movement data of red foxes, raccoons, and brown hares (Tools: R, QGIS)</li>
+    <li><i>Tasks:</i> Catching, collaring and analysis of movement data of red foxes, raccoons and brown hares (Tools: R, QGIS)</li>
   </ul>
   
   <li style="color:#282828;font-size:19px;font-style:italic;"><b>B.Sc. in Life Sciences</b> (2008–2011)</li>
