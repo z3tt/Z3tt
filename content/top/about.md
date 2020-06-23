@@ -123,29 +123,29 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:17px;">
 
-  <li><b>Workshop "Creative Visualization"</b> <span style="color:#989898;">(Berlin, 2018)</span></li>
+  <li>Workshop "Creative Visualization" <span style="color:#989898;">(Berlin, 2018)</span></li>
   
-  <li><b>Workshop "Patch Occupancy Modelling"</b> <span style="color:#989898;">(Berlin, 2018)</span></li>
+  <li>Workshop "Patch Occupancy Modelling" <span style="color:#989898;">(Berlin, 2018)</span></li>
   
-  <li><b>Workshop “Scientific Writing”</b> <span style="color:#989898;">(Potsdam, 2017)</span></li>
+  <li>Workshop “Scientific Writing” <span style="color:#989898;">(Potsdam, 2017)</span></li>
   
-  <li><b>Workshop “Advanced Approaches in GIS and Remote Sensing”</b> <span style="color:#989898;">(Berlin, 2016)</span></li>
+  <li>Workshop “Advanced Approaches in GIS and Remote Sensing” <span style="color:#989898;">(Berlin, 2016)</span></li>
   
-  <li><b>Summer School “Animal Tracking Methods and Advanced Data Analyses”</b> <span style="color:#989898;">(Gülpe, 2016)</span></li>
+  <li>Summer School “Animal Tracking Methods and Advanced Data Analyses” <span style="color:#989898;">(Gülpe, 2016)</span></li>
   
-  <li><b>Workshop “Modelling Approach: Wildlife Populations & Diseases”</b> <span style="color:#989898;">(Berlin, EWDA, 2016)</span></li>
+  <li>Workshop “Modelling Approach: Wildlife Populations & Diseases” <span style="color:#989898;">(Berlin, EWDA, 2016)</span></li>
   
-  <li><b>Symposium <a href="http://move-ecol-minerva.huji.ac.il/page/5">“Emerging High-throughput Systems for Wildlife Tracking”</a></b> <span style="color:#989898;">(Jerusalem, 2016)</span></li>
+  <li>Symposium <a href="http://move-ecol-minerva.huji.ac.il/page/5">“Emerging High-throughput Systems for Wildlife Tracking”</a> <span style="color:#989898;">(Jerusalem, 2016)</span></li>
   
-  <li><b>Workshop “Advanced Statistical Analysis and Experimental Design”</b> <span style="color:#989898;">(Potsdam, 2016)</span></li>
+  <li>Workshop “Advanced Statistical Analysis and Experimental Design” <span style="color:#989898;">(Potsdam, 2016)</span></li>
   
-  <li><b>Summer School "Animal Movement Analysis"</b> <span style="color:#989898;">(Amsterdam, 2015)</span></li>
+  <li>Summer School "Animal Movement Analysis" <span style="color:#989898;">(Amsterdam, 2015)</span></li>
   
-  <li><b>Summer School <a href="https://bgc.yale.edu/news/summer-school-spatio-temporal-analysis-and-big-data-processing-using-free-and-open-source">“Spatio-Temporal Data Analyses & Big Data Processing”</a></b> <span style="color:#989898;">(Matera, 2015)</span></li>
+  <li>Summer School <a href="https://bgc.yale.edu/news/summer-school-spatio-temporal-analysis-and-big-data-processing-using-free-and-open-source">“Spatio-Temporal Data Analyses & Big Data Processing”</a> <span style="color:#989898;">(Matera, 2015)</span></li>
   
-  <li><b>Symposium “Movement Ecology”</b> <span style="color:#989898;">(Goettingen, 2014)</span></li>
+  <li>Symposium “Movement Ecology” <span style="color:#989898;">(Goettingen, 2014)</span></li>
   
-  <li><b>Workshop “Movement Ecology & Biodiversity”</b> <span style="color:#989898;">(Potsdam, 2012)</span></li>
+  <li>Workshop “Movement Ecology & Biodiversity” <span style="color:#989898;">(Potsdam, 2012)</span></li>
   
 </ul>
 
@@ -155,17 +155,17 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:17px;">
   
-  <li><b>Workshop “Data Visualization in R with {ggplot2}“</b><br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, 2020)</span></li>
+  <li>Workshop “Data Visualization in R with {ggplot2}“<br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, 2020)</span></li>
   
-  <li><b>Workshop “Scientific Data Visualization: Principles & Good Practices“</b><br><span style="color:#989898;">(Leibniz Institute of Zoo and Wildlife Research, Berlin, 2019)</span></li>
+  <li>Workshop “Scientific Data Visualization: Principles & Good Practices“<br><span style="color:#989898;">(Leibniz Institute of Zoo and Wildlife Research, Berlin, 2019)</span></li>
   
-  <li><b>Workshop “Introduction to ecological modelling”</b><br><span style="color:#989898;">(Department of Theoretical Ecology, University of Potsdam, 2016)</span></li>
+  <li>Workshop “Introduction to ecological modelling”<br><span style="color:#989898;">(Department of Theoretical Ecology, University of Potsdam, 2016)</span></li>
   
-  <li><b>Practical Workshop "Zoology"</b><br><span style="color:#989898;">(Department for Zoology, University of Potsdam, 2009–20014)</span></li>
+  <li>Practical Workshop "Zoology"<br><span style="color:#989898;">(Department for Zoology, University of Potsdam, 2009–20014)</span></li>
   
-  <li><b>Workshop “Research & Presentation“</b><br><span style="color:#989898;">(Department for Didactics of Biology, University of Potsdam, 2013–2014)</span></li>
+  <li>Workshop “Research & Presentation“<br><span style="color:#989898;">(Department for Didactics of Biology, University of Potsdam, 2013–2014)</span></li>
   
-  <li><b>Field workshop “Systematic Zoology II“</b><br><span style="color:#989898;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, 2013–2014)</span></li>
+  <li>Field workshop “Systematic Zoology II“<br><span style="color:#989898;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, 2013–2014)</span></li>
   
 </ul>
 
@@ -175,19 +175,19 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:17px;">
   
-  <li><b>Organizer and chair "14th Workshop of the Young Modellers in Ecology"</b> <span style="color:#989898;">(Goettingen, May 2019)</span></li>
+  <li>Organizer and chair "14th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Goettingen, May 2019)</span></li>
   
-  <li><b>Organizer and session chair "1st International BioMove Symposium"</b> <span style="color:#989898;">(Potsdam, September 2018)</span></li>
+  <li>Organizer and session chair "1st International BioMove Symposium" <span style="color:#989898;">(Potsdam, September 2018)</span></li>
   
-  <li><b>Organizer and chair "13th Workshop of the Young Modellers in Ecology"</b> <span style="color:#989898;">(Höllviken, May 2018)</span></li>
+  <li>Organizer and chair "13th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Höllviken, May 2018)</span></li>
   
-  <li><b>Organizational committee "What future do we have as scientists? Rethinking scientific publishing & careers"</b> <span style="color:#989898;">(Berlin, September 2017)</span></li>
+  <li>Organizational committee "What future do we have as scientists? Rethinking scientific publishing & careers" <span style="color:#989898;">(Berlin, September 2017)</span></li>
   
-  <li><b>Organizer and chair "12th Workshop of the Young Modellers in Ecology"</b> <span style="color:#989898;">(Buchenbach, May 2017)</span></li>
+  <li>Organizer and chair "12th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Buchenbach, May 2017)</span></li>
   
-  <li><b>Organizer and chair "11th Workshop of the Young Modellers in Ecology"</b> <span style="color:#989898;">(Neunzehnhain, May 2016)</span></li>
+  <li>Organizer and chair "11th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Neunzehnhain, May 2016)</span></li>
   
-  <li><b>IT assistance "Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (GfOe)"</b> <span style="color:#989898;">(Potsdam, September 2013)</span></li>
+  <li>IT assistance "Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (GfOe)" <span style="color:#989898;">(Potsdam, September 2013)</span></li>
   
 </ul>
 
