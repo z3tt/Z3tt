@@ -178,10 +178,11 @@ pre code{
   font-family:-apple-system,'Overpass Mono','Menlo','Monaco','Consolas','Courier New',monospace
 }
 .post-container a{
-  color:#208865
+  color:#28a87d
 }
 .post-container a:hover,.post-container a:focus{
-  color:#28a87d
+  color:#28a87d;
+  font-weight:bold
 }
 .post-container h1,.post-container h2,.post-container h3,.post-container h4,.post-container h5,.post-container h6{
   margin:30px 0 10px
