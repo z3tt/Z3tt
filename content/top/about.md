@@ -1,17 +1,23 @@
 ### About Me {#about}  
 
-I am a computational ecologist by training and a data visualization designer by heart with more than 7 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis and data visualization in R. I use statistical and simulation models to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. To visualize data I use mostly [R](https://www.r-project.org/about.html) and the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}`](https://www.tidyverse.org/) which I also  use for all kinds of data preparation and analysis. In the spare time, I am a proud dad and husband spending as much time as possible with my family.
+**I am a computational ecologist by training and a data visualization designer by heart with more than 9 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development and data visualization.**
+
+I am working as a scientifc researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. Since the beginning of the year I have also been working successfully as a self-employed designer, consultant and instructor in the fields of data visualization and reproducible analysis. My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), a programming language for statistical computing and graphics. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}`](https://www.tidyverse.org/) that I use daily for all kinds of data preparation and analysis.
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
-My PhD and PostDoc project are part of the [BioMove RTG](https://www.biomove.org/) and I am working in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin. During my PhD, I spent two months in the research lab of [Prof. Wayne Getz](https://nature.berkeley.edu/getzlab/) at the UC Berkeley.
-I obtained a Bachelor of Science in *Life Sciences* and a Master of Science in *Ecology, Evolution & Nature Conservation* at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html). In my theses I used both, empirical and simulation data, to investigate the possibility to predict wild boar behavior via acceleration (ACC) data, [responses of birds to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005) using an animal functional type approach and [how disease dynamics are influenced by movement behavior and landscape structure](https://www.biomove.org/biomove-team/phd-projects-2015-2018/p02/) using Classical Swine Fever in its wildlife host, the wild boar (*Sus scrofa* L.).  
+##### Computational Ecology
 
-My passion for data, design, and coding is a perfect combination not only for scientific but all types of data visualization. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge), and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge) as well as by drafting personal projects I am recently strengthen my skills in reproducible data visualization with R and `{ggplot2}`. My portfolio includes now a number of visualizations for various purposes and is covering a wide range of topics and chart types.
+As a computational scientist, I apply analytical and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In my projects I utilize empirical and simulated data to investigate how [disease dynamics are influenced by movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability mwasures of ecological communities](https://doi.org/10.1111/ele.13226) and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). In 2019, I was awarded my PhD degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
+&nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Read more about my projects!](https://cedricscherer.netlify.com/top/projects/)<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read more about my projects!](https://cedricscherer.netlify.com/top/projects/)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my dataviz portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
+##### Data Visualization
+
+My passion for data, design, and coding is a perfect combination not only for scientific but all types of data visualization. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge), and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge), I am constantly strengthening my skills in design and reproducible data visualization with `{ggplot2}`. Thanks to frequent contributions as well as several personal and client projects,
+my portfolio now includes visualizations for various purposes and is covering a wide range of topics and chart types. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Have a look at my dataviz portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
+
 
 ### Contact {#contact}
 
@@ -21,6 +27,7 @@ Department "Ecological Dynamics"
 Alfred-Kowalke-Straße 17, Room 2.4.05, 10315 Berlin, Germany  
 Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer[at]izw-berlin.de</a>
 
+&nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
 
 ### Curriculum Vitae {#cv}
 
