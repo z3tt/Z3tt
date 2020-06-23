@@ -155,13 +155,13 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:17px;">
   
-  <li>Workshop “Data Visualization in R with {ggplot2}“<br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, 2020)</span></li>
+  <li>Workshop “Data Visualization in R with <code>{ggplot2}</code>“<br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, 2020)</span></li>
   
   <li>Workshop “Scientific Data Visualization: Principles & Good Practices“<br><span style="color:#989898;">(Leibniz Institute of Zoo and Wildlife Research, Berlin, 2019)</span></li>
   
   <li>Workshop “Introduction to ecological modelling”<br><span style="color:#989898;">(Department of Theoretical Ecology, University of Potsdam, 2016)</span></li>
   
-  <li>Practical Workshop "Zoology"<br><span style="color:#989898;">(Department for Zoology, University of Potsdam, 2009–20014)</span></li>
+  <li>Practical Workshop "Zoology"<br><span style="color:#989898;">(Department for Zoology, University of Potsdam, 2009–2014)</span></li>
   
   <li>Workshop “Research & Presentation“<br><span style="color:#989898;">(Department for Didactics of Biology, University of Potsdam, 2013–2014)</span></li>
   
@@ -175,17 +175,17 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:17px;">
   
-  <li>Organizer and chair "14th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Goettingen, May 2019)</span></li>
+  <li>Organizer, chair and instructor "14th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Goettingen, May 2019)</span></li>
   
   <li>Organizer and session chair "1st International BioMove Symposium" <span style="color:#989898;">(Potsdam, September 2018)</span></li>
   
-  <li>Organizer and chair "13th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Höllviken, May 2018)</span></li>
+  <li>Organizer, chair and instructor "13th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Höllviken, May 2018)</span></li>
   
   <li>Organizational committee "What future do we have as scientists? Rethinking scientific publishing & careers" <span style="color:#989898;">(Berlin, September 2017)</span></li>
   
-  <li>Organizer and chair "12th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Buchenbach, May 2017)</span></li>
+  <li>Organizer, chair and instructor "12th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Buchenbach, May 2017)</span></li>
   
-  <li>Organizer and chair "11th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Neunzehnhain, May 2016)</span></li>
+  <li>Organizer, chair and instructor "11th Workshop of the Young Modellers in Ecology" <span style="color:#989898;">(Neunzehnhain, May 2016)</span></li>
   
   <li>IT assistance "Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (GfOe)" <span style="color:#989898;">(Potsdam, September 2013)</span></li>
   
