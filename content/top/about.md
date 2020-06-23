@@ -44,13 +44,13 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
-#### Personal Details {#person}
+##### Personal Details {#person}
 
 - *Day and Place of Birth:* 27<sup>th</sup> of September 1986 in Berlin, Germany
 - *Family Status:* married with 1 dependent daughter (5 months parental leave in 2017-2018)
 
 
-#### Education & Professional Experience {#career}
+##### Education & Professional Experience {#career}
 
 <ul style="font-size:17px;">
 
@@ -121,7 +121,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 </ul>
 
 
-#### Trainings & Further Education {#training}
+##### Trainings & Further Education {#training}
 
 <ul style="font-size:17px;">
 
@@ -153,7 +153,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 
 
-#### Teaching {#teach}
+##### Teaching {#teach}
 
 <ul style="font-size:17px;">
   
@@ -173,7 +173,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 
 
-#### Conference Organisation {#orga}
+##### Conference Organisation {#orga}
 
 <ul style="font-size:17px;">
   
@@ -194,12 +194,12 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 </ul>
 
 
-#### Publications
+##### Publications
 
 see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
 
-#### Awards & Honours {#award}
+##### Awards & Honours {#award}
 
 <ul style="font-size:17px;">
 
@@ -210,7 +210,7 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 </ul>
 
 
-#### Skills {#skills}
+##### Skills {#skills}
 
 <ul style="font-size:17px;">
 
@@ -229,7 +229,7 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 </ul>
 
 
-#### Memberships & Services {#services}
+##### Memberships & Services {#services}
 
 <ul style="font-size:17px;">
 
