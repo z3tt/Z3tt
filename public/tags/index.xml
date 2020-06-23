@@ -156,11 +156,11 @@
     </item>
     
     <item>
-      <title>announcement</title>
-      <link>/tags/announcement/</link>
+      <title>wannouncement</title>
+      <link>/tags/wannouncement/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/announcement/</guid>
+      <guid>/tags/wannouncement/</guid>
       <description></description>
     </item>
     
@@ -188,6 +188,15 @@
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/ggplot-evolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>announcement</title>
+      <link>/tags/announcement/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/announcement/</guid>
       <description></description>
     </item>
     

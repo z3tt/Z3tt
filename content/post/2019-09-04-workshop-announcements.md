@@ -6,8 +6,8 @@ image: img/banner/camping_RichardStrozynski.jpg
 layout: post
 description: "I got the opportunity to teach some workshops in the next few months - one 1-day and two 1-week workshops on data exploration and visualization in Berlin and Sicily! 🎉"
 tags:
-    - wnnouncement
-s    - workshop
+    - wannouncement
+    - workshop
 howtoc: false
 ---
 
