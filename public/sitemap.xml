@@ -43,11 +43,6 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/swdchallenge/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url>
@@ -59,11 +54,6 @@
   
   <url>
     <loc>/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</loc>
-    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/tidyverse/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,8 +108,23 @@
   </url>
   
   <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tidyverse/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/announcement/</loc>
+    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -159,11 +164,6 @@
   
   <url>
     <loc>/2019/05/04/welcome/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/misc/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url>
   

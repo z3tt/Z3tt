@@ -12,8 +12,6 @@ tags:
     - weather
     - climate change
     - maps
-    - R
-    - tidyverse
     - ggplot2
     - TidyTuesday
 showtoc: false

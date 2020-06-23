@@ -12,8 +12,6 @@ tags:
     - animations
     - heatmap
     - maps
-    - R
-    - tidyverse
     - ggplot2
     - SWDchallenge
 showtoc: false

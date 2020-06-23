@@ -9,8 +9,6 @@ description: "During my after-thesis-vacation, I managed to tick off two long-te
 tags:
     - DataViz
     - TidyTuesday
-    - R
-    - tidyverse
     - ggplot2
 showtoc: false
 ---

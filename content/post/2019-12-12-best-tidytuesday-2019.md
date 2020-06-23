@@ -9,8 +9,6 @@ description: "Here are my favorite visualizations of the #TidyTuesday challenge 
 tags:
     - DataViz
     - TidyTuesday
-    - R
-    - tidyverse
     - ggplot2
 showtoc: false
 ---
