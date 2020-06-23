@@ -8,7 +8,7 @@ I am working as a scientifc researcher (*PostDoc*) in the [Department "Ecologica
 
 ##### Computational Ecology
 
-As a computational scientist, I apply analytical and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In my projects I utilize empirical and simulated data to investigate how [disease dynamics are influenced by movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability mwasures of ecological communities](https://doi.org/10.1111/ele.13226) and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). In 2019, I was awarded my PhD degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
+As a computational scientist, I apply analytical and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In my projects I utilize empirical and simulated data to investigate how [disease dynamics are influenced by movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability mwasures of ecological communities](https://doi.org/10.1111/ele.13226) and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). In 2019, I was awarded my Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 &nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Read more about my projects!](https://cedricscherer.netlify.com/top/projects/)<br>
 
 ##### Data Visualization
@@ -19,13 +19,13 @@ my portfolio now includes visualizations for various purposes and is covering a 
 &nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Have a look at my dataviz portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
 
 
-### Contact {#contact}
+##### Contact {#contact}
 
 **Dr. rer. nat. Cédric Scherer**  
 Leibniz Institute for Zoo and Wildlife Research (IZW)  
 Department "Ecological Dynamics"  
 Alfred-Kowalke-Straße 17, Room 2.4.05, 10315 Berlin, Germany  
-Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer[at]izw-berlin.de</a>
+Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@izw-berlin.de</a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;[&rarr;&nbsp;&nbsp;Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
 
@@ -232,7 +232,7 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
   <li><b>Peer Review:</b> <i>Journal of Animal Ecology</i>, <i>Oikos</i>, <i>BMC Ecology</i>, <i>Ecological Modelling</i>, CRC Press</li>
 
-  <li><b>Functional Roles:</b> Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019), PhD spokesperson in the research training group “BioMove” (2015–2018), part of the MCED award committee (since 2015)</li>
+  <li><b>Functional Roles:</b> Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019), spokesperson in the research training group “BioMove” (2015–2018), part of the MCED award committee (since 2015)</li>
 
   <li><b>Memberships:</b> Ecological Society of Germany, Austria and Switzerland (GfOe), SIG Young Modellers in Ecology (YoMos), SIG Computational Ecology</li>
 
