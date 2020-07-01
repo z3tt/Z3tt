@@ -66,7 +66,7 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 <div id="sort" class="section level3">
 <h3>🔀 ️Sort Your Data!</h3>
 <p>A good routine with such kind of data (qualitative and unsorted) is to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category “continent” does not have an intrinsic order, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:</p>
-<pre class="r"><code>df_sorted &lt;- 
+<pre class="r"><code>df_sorted &lt;-
   df_ratios %&gt;%
   mutate(region = fct_reorder(region, -student_ratio_region))
 
@@ -106,7 +106,7 @@ showtext_auto()
 
 theme_set(theme_light(base_size = 24, base_family = &quot;Poppins&quot;))
 
-g &lt;- 
+g &lt;-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
     scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
@@ -128,7 +128,7 @@ g &lt;-
 <pre class="r"><code>g + geom_point(size = 3, alpha = 0.15)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/dot-plot-alpha-1.png" width="768" /></p>
 <p>Of course, different geoms can also be combined to provide even more information in one plot:</p>
-<pre class="r"><code>g + 
+<pre class="r"><code>g +
   geom_boxplot(color = &quot;gray60&quot;, outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/box-dot-plot-1.png" width="768" /></p>
@@ -153,7 +153,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png" width="768" /></p>
 <p>Note that we could also use <code>geom_point(aes(x = region, y = student_ratio_region), size = 5)</code> to achieve the same since we already have a regional meanaverage in our data.</p>
 <p>To relate all these points to a baseline, we add a line indicating the worldwide average:</p>
-<pre class="r"><code>world_avg &lt;- 
+<pre class="r"><code>world_avg &lt;-
   df_ratios %&gt;%
   summarize(avg = mean(student_ratio, na.rm = T)) %&gt;%
   pull(avg)
@@ -180,7 +180,7 @@ g +
 <div id="text" class="section level3">
 <h3>💬 Add Text Boxes to Let The Plot Speak for Itself</h3>
 <p>Since I don’t want to include legends, I add some text boxes that explain the different point sizes and the baseline level via <code>annotate("text")</code>:</p>
-<pre class="r"><code>(g_text &lt;- 
+<pre class="r"><code>(g_text &lt;-
   g +
   geom_segment(
     aes(x = region, xend = region,
@@ -203,21 +203,21 @@ g +
     label = &quot;Countries per continent&quot;
   ) +
   annotate(
-    &quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;, lineheight = .6, 
+    &quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;, lineheight = .6,
     label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;)
   )</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/text-labels-1.png" width="768" /></p>
 <p>💡 <strong>Use <a href="https://glue.tidyverse.org/"><code>glue::glue()</code></a> to combine strings with variables—this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend <code>paste0()</code>.)</strong></p>
 <p>… and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling <code>geom_curve()</code>. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes…</p>
-<pre class="r"><code>arrows &lt;- 
+<pre class="r"><code>arrows &lt;-
   tibble(
     x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
     x2 = c(5.6, 4, 1.9, 2.9, 1.1),
-    y1 = c(35, 10, 11, 11, 73), 
+    y1 = c(35, 10, 11, 11, 73),
     y2 = c(world_avg, 19.4, 14.16, 12, 83.4)
   )
 
-g_text + 
+g_text +
   geom_curve(
     data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
     arrow = arrow(length = unit(0.07, &quot;inch&quot;)), size = 0.4,
@@ -225,7 +225,7 @@ g_text +
   )</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/arrows-annotations-1.png" width="672" /></p>
 <p>… and then adjust, adjust, adjust…</p>
-<pre class="r"><code>arrows &lt;- 
+<pre class="r"><code>arrows &lt;-
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
@@ -233,7 +233,7 @@ g_text +
     y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
-(g_arrows &lt;- 
+(g_arrows &lt;-
   g_text +
   geom_curve(
     data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
@@ -245,7 +245,7 @@ g_text +
 <p>💡 <strong>Since the curvature is the same for all arrows, one can use different x and y distances and directions between the start end and points to vary their shape!</strong></p>
 <p>One last thing that bothers me: A student-teacher ratio of 0 does not make much sense—I definitely prefer to start at a ratio of 1!<br />
 And—oh my!—we almost forgot to mention and acknowledge the data source 😨 Let’s quickly also add a plot caption:</p>
-<pre class="r"><code>(g_final &lt;- 
+<pre class="r"><code>(g_final &lt;-
   g_arrows +
   scale_y_continuous(
     limits = c(0, 90), expand = c(0.005, 0.005),
@@ -261,7 +261,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 <div id="legend" class="section level3">
 <h3>🗺️ Bonus: Add a Tile Map as Legend</h3>
 <p>To make it easier to match the countries of the second plot, the country-level tile map, to each continent we have visualized with our jitter plot, we can add a geographical “legend”. For this, I encode the region by color instead by the country-level ratios:</p>
-<pre class="r"><code>(map_regions &lt;- 
+<pre class="r"><code>(map_regions &lt;-
   df_sorted %&gt;%
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = &quot;white&quot;) +
@@ -288,7 +288,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 <p>And here it is, our final plot—evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉</p>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-before-after-1.png" width="1536" /></p>
 <p>Thanks for reading, I hope you’ve enjoyed it! Here you find <a href="https://www.cedricscherer.netlify.com/top/dataviz/">more visualizations I’ve contributed to the #TidyTuesday challenges</a> including my full contribution to week 19 of 2019 we have dissected here:</p>
-<p><img src="/img/tidytuesday/2019_19_StudentTeacher.png" /></p>
+<p><img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png" /></p>
 </div>
 <div id="code" class="section level3">
 <h3>💻 Complete Code for Final Plot</h3>
@@ -307,7 +307,7 @@ showtext_auto()
 devtools::source_gist(&quot;https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11&quot;)
 
 ## tile map as legend
-map_regions &lt;- 
+map_regions &lt;-
   df_ratios %&gt;%
   mutate(region = fct_reorder(region, -student_ratio_region)) %&gt;%
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
@@ -329,13 +329,13 @@ map_regions &lt;-
     labs(x = NULL, y = NULL)
 
 ## calculate worldwide average
-world_avg &lt;- 
+world_avg &lt;-
   df_ratios %&gt;%
   summarize(avg = mean(student_ratio, na.rm = T)) %&gt;%
   pull(avg)
 
 ## coordinates for arrows
-arrows &lt;- 
+arrows &lt;-
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
