@@ -41,11 +41,6 @@ A collection of data visualizations I've produced for scientific publications, c
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_05/2020_05_TreesSF.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_05/2020_05_TreesSF.png', 'blank');"/>
 
 
-##### Golden Age of Hip Hop on Spotify
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_04/2020_04_SpotifySongs.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_04/2020_04_SpotifySongs.png', 'blank');"/>
-
-
 ##### Australian Bushfires 2019&ndash;2020
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png', 'blank');"/>
@@ -89,11 +84,6 @@ A collection of data visualizations I've produced for scientific publications, c
 ##### Hotel Bookings [(Antonio, Almeida & Nunes 2019)](https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5)
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_07/2020_07_HotelBookings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_07/2020_07_HotelBookings.png', 'blank');"/>
-
-
-##### School Diversity in the US
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_39/2019_39_SchoolDiversity_brpurp.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_39/2019_39_SchoolDiversity_brpurp.png', 'blank');"/>
 
 
 ##### "The Office" Ratings on IMDb
