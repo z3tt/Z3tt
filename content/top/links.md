@@ -19,18 +19,18 @@
 * [R Graph Gallery](https://www.r-graph-gallery.com/)
 * [Five Simple Tipps to Improve Your R Code](https://drsimonj.svbtle.com/five-simple-tricks-to-improve-your-r-code)
 
-###### {tidyverse} {#tidy}
+##### {tidyverse} {#tidy}
 
 * ["R for Data Science"](https://r4ds.had.co.nz/) — free online book by Hadley Wickham & Garrett Grolemund
 
-###### {ggplot2} {#gg}
+##### {ggplot2} {#gg}
 
 * [Source code of the book "Fundamentals of Data Visualization"](https://github.com/clauswilke/dataviz)
 * [Top 50 ggplot visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
 * [Gallery of ggplot2 extensions](http://www.ggplot2-exts.org/gallery/)
 * [Extending ggplot2](https://cran.r-project.org/web/packages/ggplot2/vignettes/extending-ggplot2.html)
 
-###### Spatial Data {#spat}
+##### Spatial Data {#spat}
 
 * ["Geocomputation with R"](https://geocompr.robinlovelace.net/index.html) — free online book by Robin Lovelace, Jakub Nowosad & Jannes Muenchow
 
@@ -46,7 +46,7 @@
 * ["Multiple Views: Visualization Research Explained"](https://medium.com/multiple-views-visualization-research-explained) — DataViz blog on Medium
 * [Graphics Principles Cheatsheet](https://graphicsprinciples.github.io/)
 
-###### Colors {#cols}
+##### Colors {#cols}
 
 * [Viz Palette](https://projects.susielu.com/viz-palette?colors=["#ffd700","#ffb14e","#fa8775","#ea5f94","#cd34b5","#9d02d7","#0000ff"]&backgroundColor="white"&fontColor="black"&mode="normal") — colors in action (plus colorblind check)
 * [Color Space](https://mycolor.space/) — color palette generator
@@ -56,7 +56,7 @@
 * [Data Color Picker](https://learnui.design/tools/data-color-picker.html) — Generator of equidistant sequential, monochromatic and diverging palettes
 * DataWrapper's [Friendly Guide to Colors](https://blog.datawrapper.de/colorguide/) and [What to Consider when Choosing Colors](https://blog.datawrapper.de/colors/)
 
-###### Chart Types {#charts}
+##### Chart Types {#charts}
 
 * [From Data to Viz](https://www.data-to-viz.com/)
 * [Data Viz Project](https://datavizproject.com/)
@@ -65,7 +65,7 @@
 * [Data Visualization 101](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization)
 * [Chart of Chart Suggestions](https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf)
 
-###### Mapping {#maps}
+##### Mapping {#maps}
 
 * [Spatial.ly Blog](http://spatial.ly/) by James Cheshire
 * [Bivariate Chloropleth Maps](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)
