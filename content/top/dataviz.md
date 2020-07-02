@@ -1,14 +1,14 @@
 A selection of data visualizations  have produced for scientific publications, client requests and as personal projects using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
-<br>
 
-##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
-<br>
 
 * [#TidyTuesday Contributions](#tidytuesday)
 * [#30DayMapChallenge Contributions](#mapchallenge)
 * [#MakeoverMonday Contributions](#makeovermonday)
 * [#SWDchallenge Contributions](#swdchallenge)
 * ["Evolution of a ggplot" blog series](#evolggplot)
+<br>
+
+##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>
 
 
