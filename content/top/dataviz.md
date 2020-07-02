@@ -1,4 +1,7 @@
-A seelction of data visualizations I've produced for scientific publications, client requests and fun using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
+A selection of data visualizations  have produced for scientific publications, client requests and as personal projects using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
+<br>
+
+##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>
 
 * [#TidyTuesday Contributions](#tidytuesday)
@@ -188,4 +191,5 @@ A seelction of data visualizations I've produced for scientific publications, cl
 <img src="/img/evol-ggplot/evol-ggplot-1.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.gif', 'blank');"/>
 <br>
 
-<font size="+2">**You need a visualization? Don't hesitate to <a href="mailto:info@data-vizard.com">contact me!</a>**</font>
+##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
+<br>
