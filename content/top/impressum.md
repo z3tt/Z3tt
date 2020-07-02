@@ -1,4 +1,4 @@
-### Impressum
+## Impressum
 
 ##### Angaben gem&auml;&szlig; &sect; 5 TMG
 
@@ -8,16 +8,8 @@ Birkenstra&szlig;e 18<br />
 
 ##### Kontakt
 
-<p>Telefon: +4917670878984<br />
+<p>Telefon: +49 (0) 176 708 789 84<br />
 E-Mail: info@data-vizard.de</p>
-
-##### Berufsbezeichnung und berufsrechtliche Regelungen
-
-<p>Berufsbezeichnung: anderer Beruf<br />
-Zust&auml;ndige Kammer: <br />
-Verliehen durch: <br />
-Es gelten folgende berufsrechtliche Regelungen: <br />
- Regelungen einsehbar unter: <a href="http://" target="_blank" rel="noopener noreferrer">http://</a></p>
 
 ##### Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV
 
@@ -27,7 +19,7 @@ Birkenstra&szlig;e 18<br />
 
 ##### EU-Streitschlichtung
 
-<p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+<p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.  Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
 ##### Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
 
@@ -45,4 +37,4 @@ Birkenstra&szlig;e 18<br />
 
 <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet.</p> <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 
-<p style="font-size=12pt">Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+<p style="font-size=14px;">Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
