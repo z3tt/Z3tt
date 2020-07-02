@@ -139,44 +139,43 @@ A seelction of data visualizations I've produced for scientific publications, cl
 ##### [Zones](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day17_Zones)
 
 <img src="/img/30daymapchallenge/Zones_TimezonesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/Zones_TimezonesEarth_countries.png', 'blank');"/>
+<br>
 
 
 ## Contributions to #MakeoverMonday {#makeovermonday}
 
 [#MakeoverMonday](https://www.makeovermonday.co.uk/) is a weekly social data project aimed to help people learn how to create better, more effective visualizations.
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/MakeoverMonday)
 
+##### [Ironman History](https://github.com/Z3tt/MakeoverMonday/tree/master/plots/2019_42)
 
-##### Ironman History
+<img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_42/2019_42_ironman.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_42_ironman.png', 'blank');"/>
 
-<img src="/img/makeovermonday/2019_42_ironman.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_42_ironman.png', 'blank');"/>
+##### [Suicides in UK](https://github.com/Z3tt/MakeoverMonday/tree/master/plots/2019_43)
+
+<img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_43/2019_43_suicide_deaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_43_suicide_deaths.png', 'blank');"/>
+
+##### [Phone Use](https://github.com/Z3tt/MakeoverMonday/tree/master/plots/2019_34)
+
+<img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_34/2019_34_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_34_phone-use.png', 'blank');"/>
 <br>
 
-##### Suicides in UK
-
-<img src="/img/makeovermonday/2019_43_suicide_deaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_43_suicide_deaths.png', 'blank');"/>
-<br>
-
-##### Phone Use
-
-<img src="/img/makeovermonday/2019_34_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/makeovermonday/2019_34_phone-use.png', 'blank');"/>
-<br>
 
 
 ## Contributions to the #SWDchallenge {#swdchallenge}
 
 [#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge) is a monthly challenge where you can practice and apply data visualization and storytelling skills initiated by [Cole Nussbaumer Knaflic](https://twitter.com/storywithdata?lang=en)
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/SWDchallenge)
 
+##### [Topic: Small Multiples](https://github.com/Z3tt/SWDchallenge/tree/master/plots/2020_01)
 
-##### Topic: Small Multiples
+<img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_01/SWD_2020_01_SmallMultiples_grey.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_01/SWD_2020_01_SmallMultiples_grey.png', 'blank');"/>
 
-<img src="/img/swdchallenge/SWD_2020_01_SmallMultiples_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/swdchallenge/SWD_2020_01_SmallMultiples_color.png', 'blank');"/>
-<br>
+##### [Topic: Get Animated!](https://cedricscherer.netlify.app/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/)
 
-##### Topic: Visualizing Uncertainty
+<img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_03/corona_begin.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_03/corona_begin.gif', 'blank');"/>
+
+##### [Topic: Visualizing Uncertainty](https://github.com/Z3tt/SWDchallenge/tree/master/plots/2019_09)
 
 <img src="/img/swdchallenge/SWD_2019_09_Uncertainty.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty.png', 'blank');"/>
 <br>
@@ -187,8 +186,6 @@ A seelction of data visualizations I've produced for scientific publications, cl
 "Evolution of a ggplot" is a blog series aimed to show the steps needed to transform a basic ggplot into a visually appealing visualization.
 
 <img src="/img/evol-ggplot/evol-ggplot-1.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.gif', 'blank');"/>
-
-<img src="/img/evol-ggplot/evol-ggplot-1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/ggevolution/evol-ggplot-1.png', 'blank');"/>
 <br>
 
 <font size="+2">**You need a visualization? Don't hesitate to <a href="mailto:info@data-vizard.com">contact me!</a>**</font>
