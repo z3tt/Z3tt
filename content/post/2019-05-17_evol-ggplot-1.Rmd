@@ -90,7 +90,7 @@ df_ratios <- df_students %>%
 
 In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% `{ggplot2}` and 0% Inkscape.
 
-In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [#TidyTuesdayfor the  challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
+In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [for the #TidyTuesday challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
 
 ### 🗃️ Data Preparation {#data}
 
