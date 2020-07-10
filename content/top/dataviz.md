@@ -39,6 +39,10 @@ A selection of data visualizations  have produced for scientific publications, c
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_05/2020_05_TreesSF.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_05/2020_05_TreesSF.png', 'blank');"/>
 
+##### [Cofffee Ratings](https://github.com/Z3tt/TidyTuesday/tree/master/plots/2020_27)
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png', 'blank');"/>
+
 ##### [Australian Bushfires 2019&ndash;2020](https://github.com/Z3tt/TidyTuesday/tree/master/plots/2020_02)
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png', 'blank');"/>
