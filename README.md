@@ -23,7 +23,7 @@ Quick Link
 
 I am working as a scientifc researcher (PostDoc) in the [Department “Ecological Dynamics”](https://cedricscherer.netlify.app/top/about/) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. Since the beginning of the year I have also been working successfully as a self-employed designer, consultant and instructor in the fields of data visualization and reproducible analysis. My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source, highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis.
 
-![](./static/img/cedric_collage.png)
+![](https://d33wubrfki0l68.cloudfront.net/f8b86abf92e049684e60dbd7176ad77dd60d9fb8/9692e/img/cedric_collage.png)
 
 ### :paw_prints: Computational Ecology
 
@@ -31,7 +31,7 @@ As a computational scientist, I apply analytical and mechanistic modeling approa
 
 &nbsp;&nbsp;&nbsp;&rarr; Read my [publications](https://cedricscherer.netlify.app/top/pubs/) and more about my [projects](https://cedricscherer.netlify.app/top/projects/)
 
-![](./static/img/dataviz_collage.png)
+![](https://d33wubrfki0l68.cloudfront.net/3ce15503d73bc7a085b04ea84c5c95659a7b6fec/2197e/img/dataviz_collage2.png)
 
 ### :sparkles: Data Visualization
 
