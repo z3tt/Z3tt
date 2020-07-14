@@ -32,7 +32,7 @@ As a computational scientist, I apply analytical and mechanistic modeling approa
 
 &nbsp;&nbsp;&nbsp;&rarr; Read my [publications](https://cedricscherer.netlify.app/top/pubs/) and more about my [projects](https://cedricscherer.netlify.app/top/projects/)
 
-![](https://d33wubrfki0l68.cloudfront.net/3ce15503d73bc7a085b04ea84c5c95659a7b6fec/2197e/img/dataviz_collage2.png) 
+![](https://d33wubrfki0l68.cloudfront.net/6f095b7da4e4cdd76a8007234931ab5903e96765/49936/img/dataviz_collage2.png) 
 
 ### :sparkles: Data Visualization
 
