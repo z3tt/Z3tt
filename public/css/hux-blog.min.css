@@ -3,6 +3,10 @@
     src: url("../fonts/Staatliches-Regular.ttf") format("truetype");
 }
 @font-face {
+    font-family: 'Bebas Neue';
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+@font-face {
     font-family: 'Oswald';
     src: url("../fonts/Oswald-Regular.ttf") format("truetype");
 }
@@ -17,15 +21,15 @@
 }
 @font-face {
     font-family: 'Libre Baskerville';
-    src: url("../fonts/Librebaskerville-Regular.ttf") format("truetype");
+    src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
 }@font-face {
     font-family: 'Libre Baskerville';
-    src: url("../fonts/Librebaskerville-Bold.ttf") format("truetype");
+    src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype");
     font-weight:bold;
 }
 @font-face {
     font-family: 'Libre Baskerville';
-    src: url("../fonts/Librebaskerville-Italic.ttf") format("truetype");
+    src: url("../fonts/LibreBaskerville-Italic.ttf") format("truetype");
     font-style: italic;
 }
 @font-face {
