@@ -16,25 +16,16 @@
     src: url("../fonts/CreteRound-RegularItalic.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Lora';
-    src: url("../fonts/Lora-Regular.ttf") format("truetype");
+    font-family: 'Libre Baskerville';
+    src: url("../fonts/Librebaskerville-Regular.ttf") format("truetype");
 }@font-face {
-    font-family: 'Lora';
-    src: url("../fonts/Lora-Bold.ttf") format("truetype");
+    font-family: 'Libre Baskerville';
+    src: url("../fonts/Librebaskerville-Bold.ttf") format("truetype");
     font-weight:bold;
 }
 @font-face {
-    font-family: 'Lora';
-    src: url("../fonts/Lora-Italic.ttf") format("truetype");
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Arapey';
-    src: url("../fonts/Arapey-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'Arapey';
-    src: url("../fonts/Arapey-Italic.ttf") format("truetype");
+    font-family: 'Libre Baskerville';
+    src: url("../fonts/Librebaskerville-Italic.ttf") format("truetype");
     font-style: italic;
 }
 @font-face {
@@ -91,11 +82,11 @@
 }
 
 body{
-  font-family:-apple-system,'Arapey','Times New Roman';
-  line-height:1.6;
-  font-size:19px;
-  font-weight:500;
-  color:#1b1b1b;
+  font-family:-apple-system,'Libre Baskerville','Playfair Display','Arapey','Times New Roman';
+  line-height:1.9;
+  font-size:16px;
+  font-weight:400;
+  color:#000;
   overflow-x:hidden
 }
 
@@ -111,7 +102,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{
-  color:#272727
+  color:#000
 }
 a:hover,a:focus{
   color:#28a87d
@@ -540,11 +531,11 @@ pre code{
 }
 
 .post-content-preview{
-  font-size:16px;
+  font-size:14px;
   font-style:plain;
-  line-height:1.3;
-  font-weight:500;
-  color:#8c8c8c
+  line-height:1.6;
+  font-weight:400;
+  color:#787878
 }
 .post-content-preview:hover{
   color:#208865
@@ -552,7 +543,7 @@ pre code{
 
 @media only screen and (min-width:768px){
   .post-content-preview{
-    font-size:18px
+    font-size:15px
   }
 }
 
@@ -719,12 +710,12 @@ body{
   display:inline-block;
   border:1.2px solid rgba(255,255,255,.8);
   border-radius:999em;
-  padding:2px 8px 1px;
-  font-family:-apple-system,'Staatliches','Arial',sans-serif;
+  padding:3px 8px 1px;
+  font-family:-apple-system,'Bebas Neue','Arial',sans-serif;
   color:#fff;
   line-height:14px;
-  font-size:12px;
-  font-weight:300;
+  font-size:13px;
+  font-weight:400;
   text-decoration:none;
   margin:0 1px;
 }
