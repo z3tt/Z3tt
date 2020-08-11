@@ -213,7 +213,7 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
   <li><b>Languages:</b> German <i>(native)</i>, English <i>(fluent)</i></li>
   
-  <li><b>Programming:</b> R, NetLogo, SQL/SQLite, C++, Python, CSS, html5</li>
+  <li><b>Programming:</b> R, NetLogo, SQL/SQLite, C++, Python, CSS, html</li>
   
   <li><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), SPSS, Excel</li>
   

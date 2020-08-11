@@ -104,7 +104,7 @@ font_add_google(&quot;Poppins&quot;, &quot;Poppins&quot;)
 font_add_google(&quot;Roboto Mono&quot;, &quot;Roboto Mono&quot;)
 showtext_auto()
 
-theme_set(theme_light(base_size = 24, base_family = &quot;Poppins&quot;))
+theme_set(theme_light(base_size = 18, base_family = &quot;Poppins&quot;))
 
 g &lt;- 
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
@@ -114,8 +114,8 @@ g &lt;-
     labs(x = NULL, y = &quot;Student to teacher ratio&quot;) +
     theme(
       legend.position = &quot;none&quot;,
-      axis.title = element_text(size = 24),
-      axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 20),
+      axis.title = element_text(size = 16),
+      axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 12),
       panel.grid = element_blank()
     )</code></pre>
 <p>(Note that to include these fonts we make use of the <strike><a href="https://github.com/wch/extrafont"><code>extrafont</code> package</a></strike> <a href="https://github.com/yixuan/showtext"><code>showtext</code> package</a>. This package allows for the use of system fonts and is especially simple to use in combination with <a href="https://fonts.google.com/">Google fonts</a>. You need to have (a) the fonts installed on your system, (b) the package <code>showtext</code> installed, (c) import the fonts by running <code>font_add_google()</code> and (d) preferably turn on the automatic use of its functionality with <code>showtext_auto()</code>.)</p>
@@ -191,19 +191,19 @@ g +
   stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate(
-    &quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;, lineheight = .6,
+    &quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;, lineheight = .9,
     label = glue::glue(&quot;Worldwide average:\n{round(world_avg, 1)} students per teacher&quot;)
   ) +
   annotate(
-    &quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;,
+    &quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;,
     label = &quot;Continental average&quot;
   ) +
   annotate(
-    &quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;,
+    &quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;,
     label = &quot;Countries per continent&quot;
   ) +
   annotate(
-    &quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 5, color = &quot;gray20&quot;, lineheight = .6, 
+    &quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;, lineheight = .9, 
     label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;)
   )</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/text-labels-1.png" width="768" /></p>
@@ -223,7 +223,7 @@ g_text +
     arrow = arrow(length = unit(0.07, &quot;inch&quot;)), size = 0.4,
     color = &quot;gray20&quot;, curvature = -0.3
   )</code></pre>
-<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/arrows-annotations-1.png" width="672" /></p>
+<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/arrows-annotations-1.png" width="768" /></p>
 <p>… and then adjust, adjust, adjust…</p>
 <pre class="r"><code>arrows &lt;- 
   tibble(
@@ -399,7 +399,7 @@ df_ratios %&gt;%
       x = NULL, y = &quot;Student to teacher ratio&quot;,
       caption = &#39;Data: UNESCO Institute for Statistics&#39;
     ) +
-    theme_light(base_size = 15, base_family = &quot;Poppins&quot;) +
+    theme_light(base_size = 18, base_family = &quot;Poppins&quot;) +
     theme(
       legend.position = &quot;none&quot;,
       axis.title = element_text(size = 12),

@@ -27,7 +27,7 @@ font_add_google("Roboto Mono", "Roboto Mono")
 
 showtext_auto()
 
-theme_set(theme_gray(base_size = 24))
+theme_set(theme_gray(base_size = 16))
 ```
 
 ```{r data, include=FALSE}
@@ -106,7 +106,7 @@ df_ratios %>%
     geom_tile(data = filter(df_ratios, is.na(student_ratio),
                             indicator == "Primary Education"),
               fill = "gray40", color = "gray70") +
-    geom_text(aes(x = x, y = y, label = alpha.2), color = "white", size = 5.5,
+    geom_text(aes(x = x, y = y, label = alpha.2), color = "white", size = 3,
               fontface = "bold", family = "Roboto Mono") +
     scale_y_reverse() +
     scale_fill_carto_c(palette = "ag_Sunset", breaks = c(1, seq(10, 80, by = 10)),
@@ -119,10 +119,9 @@ df_ratios %>%
     coord_equal() +
     theme_void() +
     theme(legend.position = c(0.5, 0),
-          legend.text = element_text(family = "Roboto Mono", size = 15),
-          plot.caption = element_text(family = "Poppins", color = "gray50", size = 15),
-          legend.title = element_text(family = "Poppins", size =  18),
-          axis.title.x = element_text(size = 10.8, color = "white", face = "plain", hjust = 1)) +
+          legend.text = element_text(family = "Roboto Mono", size = 13),
+          plot.caption = element_text(family = "Poppins", color = "gray50", size = 11, margin = margin(t = 10)),
+          legend.title = element_text(family = "Poppins", size =  14)) +
     labs(x = NULL, y = NULL,
          caption = "\n\nData: UNESCO Institute for Statistics")
 ```
@@ -211,7 +210,7 @@ font_add_google("Poppins", "Poppins")
 font_add_google("Roboto Mono", "Roboto Mono")
 showtext_auto()
 
-theme_set(theme_light(base_size = 24, base_family = "Poppins"))
+theme_set(theme_light(base_size = 18, base_family = "Poppins"))
 
 g <- 
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
@@ -221,8 +220,8 @@ g <-
     labs(x = NULL, y = "Student to teacher ratio") +
     theme(
       legend.position = "none",
-      axis.title = element_text(size = 24),
-      axis.text.x = element_text(family = "Roboto Mono", size = 20),
+      axis.title = element_text(size = 16),
+      axis.text.x = element_text(family = "Roboto Mono", size = 12),
       panel.grid = element_blank()
     )
 ```
@@ -234,7 +233,7 @@ g <-
 
 We can add any `geom_` to our ggplot-preset `g` that fits the data (note that until now it is just an empty plot with pretty axes):
 
-```{r geoms, echo=FALSE, fig.width = 10, fig.height = 6.5}
+```{r geoms, echo=FALSE, fig.width = 10, fig.height = 7}
 library(patchwork)
 
 (g + geom_boxplot() + labs(title = "Boxplot", subtitle = "g + geom_boxplot()")) +
@@ -242,10 +241,10 @@ library(patchwork)
 (g + geom_line(size = 1) + labs(title = "Line plot", subtitle = "g + geom_line(size = 1)")) +
 (g + geom_point(size = 1) + labs(title = "Dot strip plot", subtitle = "g + geom_point(size = 1)")) &
   theme(
-    plot.title = element_text(face = "bold", size = 24, margin = margin(b = 0)),
-    plot.subtitle = element_text(size = 18, margin = margin(t = 5, b = 10)),
+    plot.title = element_text(face = "bold", size = 18, margin = margin(t = 5, b = 0)),
+    plot.subtitle = element_text(family = "Roboto Mono", size = 15, margin = margin(t = 5, b = 10)),
     axis.text.x = element_text(size = 12),
-    axis.text.y = element_text(size = 14),
+    axis.text.y = element_text(size = 13),
     axis.title.x = element_text(size = 14),
     axis.ticks.length = unit(.3, "lines")
   )
@@ -355,19 +354,19 @@ set.seed(2019)
   stat_summary(fun = mean, geom = "point", size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   annotate(
-    "text", x = 6.3, y = 35, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
+    "text", x = 6.3, y = 35, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9,
     label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")
   ) +
   annotate(
-    "text", x = 3.5, y = 10, family = "Poppins", size = 5, color = "gray20",
+    "text", x = 3.5, y = 10, family = "Poppins", size = 2.8, color = "gray20",
     label = "Continental average"
   ) +
   annotate(
-    "text", x = 1.7, y = 11, family = "Poppins", size = 5, color = "gray20",
+    "text", x = 1.7, y = 11, family = "Poppins", size = 2.8, color = "gray20",
     label = "Countries per continent"
   ) +
   annotate(
-    "text", x = 1.9, y = 64, family = "Poppins", size = 5, color = "gray20", lineheight = .6, 
+    "text", x = 1.9, y = 64, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9, 
     label = "The Central African Republic has by far\nthe most students per teacher")
   )
 ```
@@ -376,7 +375,7 @@ set.seed(2019)
 
 ... and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling `geom_curve()`. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes...
 
-```{r arrows-annotations}
+```{r arrows-annotations, fig.width = 8, fig.heigh = 4.5}
 arrows <- 
   tibble(
     x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
@@ -464,6 +463,11 @@ g_final +
   annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
 ```
 
+```{r, include = F}
+g_end <- g_final +
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
+
+```
 
 ### 🎄 The Final Evolved Visualization {#final}
 
@@ -474,8 +478,8 @@ before <-
   ggplot(df_ratios, aes(x = region, y = student_ratio)) +
     geom_boxplot() +
     labs(title = "Before") +
-    theme_gray() +
-    theme(plot.title = element_text(family = "Poppins", size = 30, face = "bold", hjust = 0.5))
+    theme_gray(base_size = 18) +
+    theme(plot.title = element_text(family = "Poppins", size = 2.80, face = "bold", hjust = 0.5))
 
 map_regions <- 
   df_ratios %>%
@@ -526,19 +530,19 @@ after <-
     geom_point(aes(x = region, y = student_ratio_region), size = 5) +
     coord_flip() +
     annotate(
-      "text", x = 6.3, y = 35, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
+      "text", x = 6.3, y = 35, family = "Poppins", size = 2, color = "gray20", lineheight = .9,
       label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")
     ) +
     annotate(
-      "text", x = 3.5, y = 10, family = "Poppins", size = 5, color = "gray20", 
+      "text", x = 3.5, y = 10, family = "Poppins", size = 2.8, color = "gray20", 
       label = "Continental average"
     ) +
     annotate(
-      "text", x = 1.7, y = 11, family = "Poppins", size = 5, color = "gray20",
+      "text", x = 1.7, y = 11, family = "Poppins", size = 2.8, color = "gray20",
       label = "Countries per continent"
     ) +
     annotate(
-      "text", x = 1.9, y = 64, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
+      "text", x = 1.9, y = 64, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9,
       label = "The Central African Republic has by far\nthe most students per teacher"
     ) +
     geom_curve(
@@ -559,13 +563,13 @@ after <-
       x = NULL, y = "Student to teacher ratio", title = "After",
       caption = "Data: UNESCO Institute for Statistics\nVisualization by Cédric Scherer"
     ) +
-    theme_light(base_size = 24, base_family = "Poppins") +
+    theme_light(base_size = 18, base_family = "Poppins") +
     theme(
       legend.position = "none",
-      plot.caption = element_text(size = 15, family = "Poppins", color = "gray50"),
+      plot.caption = element_text(size = 13, family = "Poppins", color = "gray50"),
       plot.title = element_text(size = 30, face = "bold", hjust = 0.5),
-      axis.title = element_text(size = 24),
-      axis.text.x = element_text(family = "Roboto Mono", size = 20),
+      axis.title = element_text(size = 18),
+      axis.text.x = element_text(family = "Roboto Mono", size = 15),
       panel.grid = element_blank()
     )
 
@@ -688,7 +692,7 @@ df_ratios %>%
       x = NULL, y = "Student to teacher ratio",
       caption = 'Data: UNESCO Institute for Statistics'
     ) +
-    theme_light(base_size = 15, base_family = "Poppins") +
+    theme_light(base_size = 18, base_family = "Poppins") +
     theme(
       legend.position = "none",
       axis.title = element_text(size = 12),
@@ -740,19 +744,19 @@ median <-
     stat_summary(fun = median, geom = "point", size = 5) +
     coord_flip() +
     annotate(
-      "text", x = 6.3, y = 35, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
+      "text", x = 6.3, y = 35, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9,
       label = glue::glue("Worldwide median:\n{round(world_med, 1)} students per teacher")
     ) +
     annotate(
-      "text", x = 3.5, y = 10, family = "Poppins", size = 5, color = "gray20",
+      "text", x = 3.5, y = 10, family = "Poppins", size = 2.8, color = "gray20",
       label = "Continental median"
     ) +
     annotate(
-      "text", x = 1.7, y = 9.5, family = "Poppins", size = 5, color = "gray20",
+      "text", x = 1.7, y = 9.5, family = "Poppins", size = 2.8, color = "gray20",
       label = "Countries per continent"
     ) +
     annotate(
-      "text", x = 1.9, y = 64, family = "Poppins", size = 5, color = "gray20", lineheight = .6,
+      "text", x = 1.9, y = 64, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9,
       label = "The Central African Republic has by far\nthe most students per teacher"
     ) +
     geom_curve(
@@ -770,17 +774,17 @@ median <-
       x = NULL, y = "Student to teacher ratio", title = "After",
       caption = "Data: UNESCO Institute for Statistics\nVisualization by Cédric Scherer"
     ) +
-    theme_light(base_size = 24, base_family = "Poppins") +
+    theme_light(base_size = 18, base_family = "Poppins") +
     theme(
       legend.position = "none",
-      plot.caption = element_text(size = 9, family = "Poppins", color = "gray50"),
+      plot.caption = element_text(size = 13, family = "Poppins", color = "gray50"),
       plot.title = element_text(size = 30, face = "bold", hjust = 0.5),
-      axis.title = element_text(size = 24),
-      axis.text.x = element_text(family = "Roboto Mono", size = 20),
+      axis.title = element_text(size = 16),
+      axis.text.x = element_text(family = "Roboto Mono", size = 12),
       panel.grid = element_blank()
     )
 
-(after + labs(title = "Mean ratios", caption = "")) +
+(g_end + labs(title = "Mean ratios", caption = "") + theme(plot.title = element_text(size = 30, face = "bold", hjust = 0.5))) +
   (median + ggtitle("Median ratios")) + plot_layout(ncol = 1)
 ```
 
@@ -964,7 +968,7 @@ saveGIF({
   print(ggdraw_title(g13))
   print(ggdraw_title(g14))
   print(ggdraw_title(g15))
-  #print(ggdraw_title(g16))
+  #print(ggdraw_title(g16))<
   print(ggdraw_title(g17))
   print(ggdraw_title(g18))
   print(ggdraw_title(g19))
