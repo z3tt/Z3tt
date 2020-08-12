@@ -37,7 +37,7 @@ editor_options:
 <h3>🗃️ Data Preparation</h3>
 <p>I have prepared the data in the first way to map each countrys most recently reported student-teacher ratio in primary education as a tile map. I used the <a href="%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22">tile-based world data provided by Maarten Lambrechts</a> to create this map as the first visualization for my weekly contribution:</p>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png" width="768" /></p>
-<p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned dataset looks like, showing 2 examples per continent:</p>
+<p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned dataset looks like, showing two examples per continent:</p>
 <pre><code>## # A tibble: 12 x 5
 ##    indicator     country              region    student_ratio student_ratio_reg~
 ##    &lt;chr&gt;         &lt;chr&gt;                &lt;chr&gt;             &lt;dbl&gt;              &lt;dbl&gt;
@@ -97,7 +97,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 <li>adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding <code>theme()</code>.</li>
 </ul>
 <p>💡 <strong>You can easily adjust all sizes of the theme by calling <code>theme_xyz(base_size = )</code>—this is very handy if you need the same viz for a different purpose!</strong></p>
-<p>💡 <strong>Do not use c(0, 0) since the zero tick is in most cases too close to the axis—use something close to zero instead!</strong></p>
+<p>💡 <strong>Do not use <code>c(0, 0)</code> since the zero tick is in most cases too close to the axis—use something close to zero instead!</strong></p>
 <p>I am going to save the ggplot call and all these visual adjustments in a <code>gg</code> object that I name <code>g</code> so we can use it for the next plots.</p>
 <pre class="r"><code>library(showtext)
 font_add_google(&quot;Poppins&quot;, &quot;Poppins&quot;)
@@ -227,10 +227,10 @@ g_text +
 <p>… and then adjust, adjust, adjust…</p>
 <pre class="r"><code>arrows &lt;- 
   tibble(
-    x1 = c(6, 3.65, 1.8, 1.8, 1.8),
+    x1 = c(6.1, 3.62, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
-    y1 = c(world_avg + 6, 10.5, 9, 9, 76),
-    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
+    y1 = c(world_avg + 6, 10.5, 9, 9, 77),
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.45)
   )
 
 (g_arrows &lt;- 
@@ -339,7 +339,7 @@ arrows &lt;-
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
-    y1 = c(world_avg + 6, 10.5, 9, 9, 76),
+    y1 = c(world_avg + 6, 10.5, 9, 9, 77),
     y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
@@ -416,6 +416,6 @@ df_ratios %&gt;%
 <p class="caption">In a Box-and-Whisker plot the box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.</p>
 </div>
 <p>The 2nd quartile is known as the <strong>median</strong>, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean (“average”) values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:</p>
-<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-mean-1.png" width="768" /></p>
+<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-mean-1.png" width="816" /></p>
 <p>As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some compared to the one visualzing average ratios.</p>
 </div>

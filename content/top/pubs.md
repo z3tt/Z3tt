@@ -10,9 +10,11 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, M. Franz, H.-H. Thulke, M. Lange, V. Grimm & S. Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos* **129** (5):651–667](https://doi.org/10.1111/oik.07002).
 
-- <span style='font-variant:small-caps;'>U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (accepted) Movement-mediated community assembly and coexistence. [*Biological Reviews* **95** (4):1073–1096]( https://doi.org/10.1111/brv.12600).
+- <span style='font-variant:small-caps;'>U. Schlägel, V. Grimm, N. Blaum, P. Colangeli, M. Dammhahn, J. Eccard, S. Hausmann, A. Herde, H. Hofer, J. Joshi, S. Kramer-Schadt, M. Litwin, S. Lozada-Gobilard, M. Müller, T. Müller, R. Nathan, J. Petermann, K. Pirhofer-Walzl, V. Radchuk, M. Rillig, M. Roeleke, M. Schäfer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, G. Schiro, C. Scholz, L. Teckentrup, R. Tiedemann, W. Ullmann, C. Voigt, G. Weithoff & F. Jeltsch</span> (2020) Movement-mediated community assembly and coexistence. [*Biological Reviews* **95** (4):1073–1096]( https://doi.org/10.1111/brv.12600).
 
-- <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (accepted) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* **23** (2):9](http://doi.org/10.18564/jasss.4274).
+- <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (2020) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* **23** (2):9](http://doi.org/10.18564/jasss.4274).
+
+- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (accepted)</span> When size matters: large yellowfin tuna (*Thunnus  albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central-eastern Atlantic Ocean. *Fisheries Research*
 
 ##### 2019
 
@@ -34,8 +36,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Manuscripts Under Review
 - <span style='font-variant:small-caps;'>V. Radchuk, S. Kramer-Schadt, U. Berger, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (in revision)</span> Individual-based models. *Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
-
-- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (submitted)</span> When size matters: large yellowfin tuna (*Thunnus  albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central-eastern Atlantic Ocean.
 
 ### Conference Contributions {#conf}
 
