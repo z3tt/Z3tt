@@ -2109,7 +2109,7 @@ g +
 lab_html <- "&#9733; This plot shows <b style='color:red;'>temperature</b> in <i>°F</i> versus <b style='color:blue;'>ozone level</b>in <i>ppm</i> &#9733;"
 
 g + 
-  geom_richtext(aes(x = 35, y = 3, label = lab_html),
+  geom_richtext(aes(x = 33, y = 3, label = lab_html),
                 stat = "unique")
 ```
 
@@ -2127,7 +2127,7 @@ g +
 The other goem from the `{ggtext}` package is `geom_textbox()`. This geom allows for dynamic wrapping of strings which is very useful for longer annotations such as info boxes and subtitles.
 
 ```{r ggtetxt-geom-textbox}
-lab_long <- "**Lorem ipsum dolor**<br><i style='font-size:8pt;color:grey;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>"
+lab_long <- "**Lorem ipsum dolor**<br><i style='font-size:8pt;color:red;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>"
 
 g + 
   geom_textbox(aes(x = 40, y = 10, label = lab_long), 
@@ -2244,7 +2244,7 @@ chic %>%
   dplyr::group_by(season) %>%
   dplyr::summarize(o3 = median(o3)) %>%
   ggplot(aes(x = season, y = o3)) +
-    geom_col(aes(fill = season)) +
+    geom_col(aes(fill = season), color = NA) +
     labs(x = "", y = "Median Ozone Level") +
     coord_polar() +
     guides(fill = FALSE)
@@ -2262,7 +2262,7 @@ chic_sum <-
   dplyr::summarize(rel = n() / unique(n_all))
   
 ggplot(chic_sum, aes(x = "", y = rel)) +
-  geom_col(aes(fill = season), width = 1) +
+  geom_col(aes(fill = season), width = 1, color = NA) +
   labs(x = "", y = "Proportion of Days Exceeding\nthe Median Ozone Level") +
   coord_polar(theta = "y") +
   scale_fill_brewer(palette = "Set1", name = "Season:") +
@@ -2274,7 +2274,7 @@ I suggest to always look also at the outcome of the same code in a Cartesian coo
 
 ```{r pie-chart-cartesian}
 ggplot(chic_sum, aes(x = "", y = rel)) +
-  geom_col(aes(fill = season), width = 1) +
+  geom_col(aes(fill = season), width = 1, color = NA) +
   labs(x = "", y = "Proportion of Days Exceeding\nthe Median Ozone Level") +
   #coord_polar(theta = "y") +
   scale_fill_brewer(palette = "Set1", name = "Season:") +
