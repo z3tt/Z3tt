@@ -24,7 +24,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, out.width = "100%",
 
 [I don't care, just show me the content!](#toc)
 
-Back in 2016, I had to prepare my PhD introductory talk and I started using `{ggplot2}` to visualize my data. I never liked the syntax and style of base plots in R. so I was quickly in love with ggplot. Especially useful was it's faceting utility. But because I was short on time, I plotted these figures by trial'n'error and with the help of lots of googling. The resource I came always back to was a blog entry called [**Beautiful plotting in R: A ggplot2 cheatsheet**](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/) by [Zev Ross](https://twitter.com/zevross), updated last in January 2016.
+Back in 2016, I had to prepare my PhD introductory talk and I started using `{ggplot2}` to visualize my data. I never liked the syntax and style of base plots in R, so I was quickly in love with ggplot. Especially useful was its faceting utility. But because I was short on time, I plotted these figures by trial and error and with the help of lots of googling. The resource I came always back to was a blog entry called [**Beautiful plotting in R: A ggplot2 cheatsheet**](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/) by [Zev Ross](https://twitter.com/zevross), updated last in January 2016.
 After giving the talk which contained some decent plots thanks to the blog post, I decided to go through this tutorial step-by-step. I learned so much from it and directly started modifying the codes and over the time I added additional code snippets, chart types and resources.
 
 Since the blog entry by Zev Ross was not updated for some years and step by step this became a unique version of a tutorial, I decided to host the updated version on my GitHub. Now it finds its proper place on this homepage! (Plus I added a ton of other updates—just to name a few: The fantastic `{patchwork}`, `{ggtext}` and `{ggforce}` packages. How to deal with custom fonts and colors. A collection of R packages tailored to create interactive charts. And several other chart types including pie charts because everyone looooves pie charts!)
@@ -140,7 +140,7 @@ The raw data that you want to plot.
 2.	**Geometries** `geom_`:  
 The geometric shapes that will represent the data.
 3.	**Aesthetics** `aes()`:  
-Aesthetics of the geometric and statistical objects, such as position., color, size, shape, and transparency
+Aesthetics of the geometric and statistical objects, such as position, color, size, shape, and transparency
 4.	**Scales** `scale_`:  
 Maps between the data and the aesthetic dimensions, such as data range to plot width or factor values to colors.
 5.	**Statistical transformations** `stat_`:  
@@ -561,7 +561,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 
 ##### Make Title Bold & Add a Space at the Baseline
 
-Again, since we ant to modify the properties of a theme element, we use the `theme()` function and as for the text elements `axis.title` and `axis.text` modify the font face and the margin. All the following modifications of theme elements wors not only for the title but for all other labels such as `plot.subtitle`, `plot.caption`, `plot.caption`, `legend.title`, `legend.text`, and `axis.title` and `axis.text`.
+Again, since we want to modify the properties of a theme element, we use the `theme()` function and as for the text elements `axis.title` and `axis.text` modify the font face and the margin. All the following modifications of theme elements work not only for the title but for all other labels such as `plot.subtitle`, `plot.caption`, `plot.caption`, `legend.title`, `legend.text`, and `axis.title` and `axis.text`.
 
 ```{r title-bold}
 ggplot(chic, aes(x = date, y = temp)) +
@@ -1322,7 +1322,7 @@ There are two main differences when it comes to colors in `{ggplot2}`. Both argu
 1. specified as single color or
 2. assigned to variables.
 
-As you have already seen in the beginning of this tutorial, variables that are *inside* the `aes`thetics are encoded by variables and those that are *outside* are properties that are unrelated to the variables. This complete non-sense plot showing the number of records per year and season illustrates that fact:
+As you have already seen in the beginning of this tutorial, variables that are *inside* the `aes`thetics are encoded by variables and those that are *outside* are properties that are unrelated to the variables. This complete nonsense plot showing the number of records per year and season illustrates that fact:
 
 ```{r inside-outside-aes}
 ggplot(chic, aes(year)) +
@@ -1860,7 +1860,7 @@ g +
                       " * x + ", round(coefficients(reg)[1], 2)))
 ```
 
-Later, we will learn how to add a linear fit with one command using `stat_smooth(method = "lm")`. However, there might be other reasons to add a line with a given slope and this is howyou one does it 🤷
+Later, we will learn how to add a linear fit with one command using `stat_smooth(method = "lm")`. However, there might be other reasons to add a line with a given slope and this is how one does it 🤷
 
 ##### Add a Line within a Plot
 
@@ -1924,7 +1924,7 @@ g +
 
 ##### Add Labels to Your Data
 
-Sometimes, we want to label our data points. To avoid overlaying and -crowding by text labels, we use a 1% sample of the original data, equally representing the four seasons.  
+Sometimes, we want to label our data points. To avoid overlaying and crowding by text labels, we use a 1% sample of the original data, equally representing the four seasons.  
 
 ```{r data-text}
 set.seed(2020)
@@ -2069,7 +2069,7 @@ g +
   facet_wrap(~season, scales = "free_x")
 ```
 
-However, there is a simpler approach (in terms of fixing the cordinates)–nut it also takes a while to know the code by heart. The `{grid}` package in combination with `{ggplot2}`'s `annotation_custom()` allows you to specify the location based on scaled coordinates where 0 is low and 1 is high. `grobTree()` creates a grid graphical object and `textGrob` creates the text graphical object. The value of this is particularly evident when you have multiple plots with different scales. 
+However, there is a simpler approach (in terms of fixing the cordinates) -- but it also takes a while to know the code by heart. The `{grid}` package in combination with `{ggplot2}`'s `annotation_custom()` allows you to specify the location based on scaled coordinates where 0 is low and 1 is high. `grobTree()` creates a grid graphical object and `textGrob` creates the text graphical object. The value of this is particularly evident when you have multiple plots with different scales. 
 
 ```{r grobTree}
 library(grid)
@@ -2088,7 +2088,7 @@ g +
 
 ##### Use Markdown and HTML Rendering for Annotations
 
-Again, we are using Claus Wilke's [`{ggtext}` package](https://wilkelab.org/ggtext/) that is designed for improved text rendering support for `{ggplot2}`. The `{ggtext}` package defines two new theme elements, `element_markdown()` and `element_textbox()`. The package also provides adiditonal geoms. `geom_richtext()` is a replacement for `geom_text()` and `geom_label()` and renders text as markdown...
+Again, we are using Claus Wilke's [`{ggtext}` package](https://wilkelab.org/ggtext/) that is designed for improved text rendering support for `{ggplot2}`. The `{ggtext}` package defines two new theme elements, `element_markdown()` and `element_textbox()`. The package also provides additional geoms. `geom_richtext()` is a replacement for `geom_text()` and `geom_label()` and renders text as markdown...
 
 ```{r ggtext-geom-richtext-md}
 library(ggtext)
@@ -2121,7 +2121,7 @@ g +
                 family = "Playfair Display")
 ```
 
-The other goem from the `{ggtext}` package is `geom_textbox()`. This geom allows for dynamic wrapping of strings which is very useful for longer annotations such as info boxes and subtitles.
+The other geom from the `{ggtext}` package is `geom_textbox()`. This geom allows for dynamic wrapping of strings which is very useful for longer annotations such as info boxes and subtitles.
 
 ```{r ggtetxt-geom-textbox}
 lab_long <- "**Lorem ipsum dolor**<br><i style='font-size:8pt;color:red;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>"
@@ -2141,7 +2141,7 @@ Note that it is not possible to either rotate the textbox (always horizontal) no
 
 ##### Flip a Plot
 
-It is incredibly easy to flip a plot on its side. Here I have added the `coord_flip()` which is all you need to flip the plot This makes most sense when using geom's to represent categorical data, for example bar charts or, as in the following example, box and whiskers plots:
+It is incredibly easy to flip a plot on its side. Here I have added the `coord_flip()` which is all you need to flip the plot. This makes most sense when using geom's to represent categorical data, for example bar charts or, as in the following example, box and whiskers plots:
 
 ```{r flip-coords}
 ggplot(chic, aes(x = season, y = o3)) +
@@ -2287,7 +2287,7 @@ ggplot(chic_sum, aes(x = "", y = rel)) +
 
 ##### Alternatives to a Box Plot
 
-Box plots are great, but they can be so incredibly boring. Also, even if you are used to look at box plots, remember there might be plenty people looking at your plot that have never seen a box and whisker plot before. 
+Box plots are great, but they can be so incredibly boring. Also, even if you are used to looking at box plots, remember there might be plenty people looking at your plot that have never seen a box and whisker plot before. 
 
 <details>
 <summary>&#128129; <i>Expand for a short recap on box and whiskers plots.</i></summary>
@@ -2324,7 +2324,7 @@ Not only boring but uninformative. To improve the plot, one could add transparen
 g + geom_point(alpha = .1)
 ```
 
-However, setting transparency is difficult here since either the overlap is still to high or the extreme values are not visible. Bad, so let's try something else.
+However, setting transparency is difficult here since either the overlap is still too high or the extreme values are not visible. Bad, so let's try something else.
 
 ###### 2. Alternative: Jitter the Points
 
@@ -2579,7 +2579,7 @@ ggplot(chic, aes(x = temp, y = factor(year))) +
    labs(x = "Temperature (°F)", y = "Year")
 ```
 
-You can easily specify the overlap and the trailing tails by using the arguments `rel_min_height` and `scale`, respectively. The package also comes with  it's own theme (but I would prefer to build my own, see chapter ["Create and Use Your Custom Theme"](#themes)). Additionally, we change the colors based on year to make it more appealing.
+You can easily specify the overlap and the trailing tails by using the arguments `rel_min_height` and `scale`, respectively. The package also comes with  its own theme (but I would prefer to build my own, see chapter ["Create and Use Your Custom Theme"](#themes)). Additionally, we change the colors based on year to make it more appealing.
 
 ```{r ridges-spec}
 ggplot(chic, aes(x = temp, y = factor(year), fill = year)) +
@@ -2689,12 +2689,12 @@ ggplot(chic, aes(x = date, y = o3run)) +
 
 ## Working with Smoothings {#smooths}
 
-It is amazingly easy to add a smoothing to your data using `{ggplot2}`.
+It is amazingly easy to add smoothing to your data using `{ggplot2}`.
 
 
 ##### Default: Adding a LOESS or GAM Smoothing
 
-You can simply use `stat_smooth()`—not even a formula is required. This adds a LOESS (locally weighted scatter plot smoothing, `method = "loess"`) if you have fewer than 1000 points or a GAM (generalized additive model, `method = "gam"`) otherwise. Since we have more than 1000 points, the smoothing is based on a GAM:
+You can simply use `stat_smooth()`— not even a formula is required. This adds a LOESS (locally weighted scatter plot smoothing, `method = "loess"`) if you have fewer than 1000 points or a GAM (generalized additive model, `method = "gam"`) otherwise. Since we have more than 1000 points, the smoothing is based on a GAM:
 
 ```{r stat-smooth, message=TRUE}
 ggplot(chic, aes(x = date, y = temp)) +
