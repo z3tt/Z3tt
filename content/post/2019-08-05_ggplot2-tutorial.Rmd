@@ -710,9 +710,6 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
   theme(legend.title = element_blank())
 ```
 
-
-💁 *You can achieve the same by setting the legend name to `NULL`, either via `scale_color_discrete(name = NULL)` or `labs(color = NULL)`.*
-
 <details>
   <summary>&#128129; <i>You can achieve the same by setting the legend name to `NULL`, either via `scale_color_discrete(name = NULL)` or `labs(color = NULL)`. Expand to see example.</i></summary>
 ```{r legend-title-null}
@@ -1899,7 +1896,7 @@ g +
              size = 2, color = "tan") +
   geom_curve(aes(x = 0, y = 60, xend = 75, yend = 0),
              curvature = -0.7, angle = 45,
-             color = "yellow", size = 1) +
+             color = "darkgoldenrod1", size = 1) +
   geom_curve(aes(x = 0, y = 60, xend = 75, yend = 0),
              curvature = 0, size = 1.5)
 ```
@@ -1913,7 +1910,7 @@ g +
              arrow = arrow(length = unit(0.07, "npc"))) +
   geom_curve(aes(x = 5, y = 55, xend = 70, yend = 5),
              curvature = -0.7, angle = 45,
-             color = "yellow", size = 1,
+             color = "darkgoldenrod1", size = 1,
              arrow = arrow(length = unit(0.03, "npc"),
                            type = "closed",
                            ends = "both"))
