@@ -69,9 +69,8 @@ Major changes I've made:
 
 ## Preparation {#prep}
 
-* You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv).
-* You can find the Rmarkdown script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
-* You need to install the following packages to execute this tutorial:
+* You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
+* You need to install the following packages to execute the full tutorial:
     + `{ggplot2}`, part of the `{tidyverse}` package collection
     + `{tidyverse}` package collection, namely
       - `{dplyr}` for data wrangling
@@ -95,11 +94,15 @@ Major changes I've made:
     + `{scico}` for perceptional uniform palettes
     + `{showtext}` for custom fonts
     + `{shiny}` for interactive apps
-    + `{charter}` for interactive visualizations
-    + `{echarts4r}` for interactive visualizations
-    + `{ggiraph}` for interactive visualizations
-    + `{highcharter}` for interactive visualizations
-    + `{plotly}` for interactive visualizations
+    + a number of packages for interactive visualizations
+      + `{charter}`
+      + `{echarts4r}`
+      + `{ggiraph}`
+      + `{highcharter}`
+      + `{plotly}`
+* You can find the Rmarkdown script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
+* You can also download files containing the R code only [here](https://cedricscherer.netlify.app/files/ggplot-tutorial-cedric-raw.R).
+
 
 ```{r install-packages, eval=FALSE}
 ## install CRAN packages
@@ -408,7 +411,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 
 Alternatively you can use `scale_y_continuous(limits = c(0, 50))` or `coord_cartesian(ylim = c(0, 50))`. The former removes all data points outside the range while the second adjusts the visible area and is similar to `ylim(c(0, 50))`. You may wonder: *So in the end both result in the same.* But not really, there is an important difference—compare the two following plots:
 
-```{r axis-limit-comp, echo=FALSE}
+```{r axis-limit-comp, echo=FALSE, purl=FALSE}
 p1 <- ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") +
@@ -427,7 +430,7 @@ p1 + p2
 
 You might have spotted that on the left there is some empty buffer around your y limits while on the right points are plotted right up to the border and even beyond. This perfectly illustrates the subsetting (left) versus the zooming (right). To show why this is important let's have a look at a different chart type, a box plot:
 
-```{r axis-limit-comp-box, echo=FALSE}
+```{r axis-limit-comp-box, echo=FALSE, purl=FALSE}
 p1 <- ggplot(chic, aes(x = factor(year), y = temp)) +
   geom_boxplot() +
   labs(x = "Year", y = "Temperature (°F)") +
@@ -492,7 +495,7 @@ ggplot(chic_high, aes(x = temp, y = o3)) +
 
 💡 **The argument `clip = "off"` in any coordinate system, always starting with `coord_*`, allows to draw outside of the panel area.**
 
-Here, I call it to make sure that the tick marks at `c(0, 0)` are not cut. See the [Twitter threat by Claus Wilke](https://twitter.com/clauswilke/status/991542952802619392?lang=en) for more details.
+Here, I call it to make sure that the tick marks at `c(0, 0)` are not cut. See the [Twitter thread by Claus Wilke](https://twitter.com/clauswilke/status/991542952802619392?lang=en) for more details.
 
 
 ##### Axes with Same Scaling
@@ -573,7 +576,7 @@ ggplot(chic, aes(x = date, y = temp)) +
                                   size = 14))
 ```
 
-💡 **A nice way to remember the order of the margin arguments is "*tr*ou*bl*e" that resembles the first letter of the four sides.**
+💡 **A nice way to remember the order of the margin arguments is "TRouBLe" that resembles the first letter of the four sides.**
 
 
 ##### Adjust Position of Titles
@@ -1572,7 +1575,7 @@ Note that you need to specify the `color` and/or `fill` in the `aes()` of the re
 
 You can change the entire look of the plots by using themes. `{ggplot2}` comes with eight built-in themes:
 
-```{r ggplot2-theme-gallery, echo=FALSE, fig.width=11, fig.height=7}
+```{r ggplot2-theme-gallery, echo=FALSE, purl=FALSE, fig.width=11, fig.height=7}
 p <- ggplot(chic, aes(x = date, y = temp)) +
        geom_point(color = "gray30", alpha = .3) +
        labs(x = "Year", y = "Temperature (°F)")
@@ -2465,7 +2468,7 @@ ggplot(corm, aes(rowname, fct_rev(colname),
 
 ##### Create a Contour Plot
 
-Contour plots are nice way to display thresholds of values. One can use them to bin data, showing the density of observations:
+Contour plots are nice way to display eatesholds of values. One can use them to bin data, showing the density of observations:
 
 ```{r contour-outline}
 ggplot(chic, aes(temp, o3)) +
@@ -2915,7 +2918,7 @@ by Winston Chang with recipes to produce R plots
 <details>
 <summary style='font-size:10pt;'>R Session Info</summary>
 
-```{r session-info, echo=FALSE}
+```{r session-info, echo=FALSE, purl=FALSE}
 sessionInfo()
 ```
 
