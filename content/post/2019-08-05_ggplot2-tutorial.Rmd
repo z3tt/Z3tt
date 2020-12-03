@@ -69,7 +69,6 @@ Major changes I've made:
 
 ## Preparation {#prep}
 
-* You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
 * You need to install the following packages to execute the full tutorial:
     + `{ggplot2}`, part of the `{tidyverse}` package collection
     + `{tidyverse}` package collection, namely
@@ -101,7 +100,8 @@ Major changes I've made:
       + `{highcharter}`
       + `{plotly}`
 * You can find the Rmarkdown script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
-* You can also download files containing the R code only [here](https://cedricscherer.netlify.app/files/ggplot-tutorial-cedric-raw.R).
+* You can also download the R script containing only the code [here](https://cedricscherer.netlify.app/files/ggplot-tutorial-cedric-raw.R).
+* You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
 
 
 ```{r install-packages, eval=FALSE}
@@ -162,8 +162,8 @@ The overall visual defaults of a plot, such as background, grids, axes, default 
 First, to be able to use the functionality of `{ggplot2}` we have to load the package (which we can also load via the [tidyverse package collection](https://www.tidyverse.org/)):
 
 ```{r library}
-library(ggplot2)
-#library(tidyverse)
+#library(ggplot2)
+library(tidyverse)
 ```
 
 The syntax of `{ggplot2}` is different from base R. In accordance with the basic elements, a default ggplot needs three things that you have to specify: the *data*, *aesthetics*, and a *geometry*. We always start to define a plotting object by calling `ggplot(data = df)` which just tells `{ggplot2}` that we are going to work with that data. In most cases, you might want to plot two variables—one on the x and one on the y axis. These are *positional aesthetics* and thus we add `aes(x = var1, y = var2)` to the `ggplot()` call (yes, the `aes()` stands for aesthetics). However, there are also cases where one has to specify one or even three or more variables.
@@ -296,7 +296,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 
 The labels `t` and `r` within the `margin()` object refer to *top* and *right*, respectively. You can also specify the four margins as `margin(t, r, b, l)`. Note that we now have to change the right margin to modify the space on the y axis, not the bottom margin.
 
-💡 **A good way to remember the order of the margin sides is *t*-*r*-oub-*l*-*e*.**
+💡 **A good way to remember the order of the margin sides is "*t*-*r*-oub-*l*-*e*".**
 
 
 ##### Change Aesthetics of Axis Titles
@@ -576,7 +576,7 @@ ggplot(chic, aes(x = date, y = temp)) +
                                   size = 14))
 ```
 
-💡 **A nice way to remember the order of the margin arguments is "TRouBLe" that resembles the first letter of the four sides.**
+💡 **A nice way to remember the order of the margin arguments is "*t*-*r*-oub-*l*-*e*" that resembles the first letter of the four sides.**
 
 
 ##### Adjust Position of Titles
