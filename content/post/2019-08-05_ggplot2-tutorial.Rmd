@@ -2072,7 +2072,7 @@ g +
   facet_wrap(~season, scales = "free_x")
 ```
 
-However, there is a simpler approach (in terms of fixing the cordinates) -- but it also takes a while to know the code by heart. The `{grid}` package in combination with `{ggplot2}`'s `annotation_custom()` allows you to specify the location based on scaled coordinates where 0 is low and 1 is high. `grobTree()` creates a grid graphical object and `textGrob` creates the text graphical object. The value of this is particularly evident when you have multiple plots with different scales. 
+However, there is a simpler approach (in terms of fixing the cordinates)—but it also takes a while to know the code by heart. The `{grid}` package in combination with `{ggplot2}`'s `annotation_custom()` allows you to specify the location based on scaled coordinates where 0 is low and 1 is high. `grobTree()` creates a grid graphical object and `textGrob` creates the text graphical object. The value of this is particularly evident when you have multiple plots with different scales. 
 
 ```{r grobTree}
 library(grid)
