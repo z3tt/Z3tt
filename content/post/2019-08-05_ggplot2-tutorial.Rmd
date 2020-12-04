@@ -155,7 +155,7 @@ The arrangement of the data into a grid of plots.
 8.	**Visual themes** `theme()`:  
 The overall visual defaults of a plot, such as background, grids, axes, default typeface, sizes and colors.
 
-(The number of elements may vary depending on how you group them and whom you ask.)
+💡 **The number of elements may vary depending on how you group them and whom you ask.**
 
 ## A Default ggplot {#default}
 
