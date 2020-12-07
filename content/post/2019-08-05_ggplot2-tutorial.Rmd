@@ -1631,14 +1631,15 @@ I reduced the number of data points here simply to fit it Tufte's minimalism sty
 
 Another neat packages with modern themes and a preset of non-default fonts is the [`{hrbrthemes}` package by Bob Rudis](https://github.com/hrbrmstr/hrbrthemes) with several light but also dark themes:
 
-```{r hrbrthemes}
+```{r hrbrthemes, echo=-5}
 library(hrbrthemes)
 
 ggplot(chic, aes(x = temp, y = o3)) +
   geom_point(aes(color = dewpoint), show.legend = FALSE) +
   labs(x = "Temperature (°F)", y = "Ozone") +
-  ggtitle("Temperature and Ozone Levels in Chicago") +
-  theme_modern_rc()
+  ggtitle("Temperature and Ozone Levels in Chicago")
+
+update_geom_defaults("point", list(colour = "black"))
 ```
 
 
@@ -1840,7 +1841,7 @@ ggplot(chic, aes(x = date, y = temp, color = o3)) +
 
 ```{r vline}
 g <- ggplot(chic, aes(x = temp, y = dewpoint)) +
-  geom_point(alpha = .5) +
+  geom_point(color = "dodgerblue", alpha = .5) +
   labs(x = "Temperature (°F)", y = "Dewpoint")
 
 g +
@@ -1850,7 +1851,7 @@ g +
              color = "firebrick", linetype = "dashed")
 ```
 
-If you want to add a line with a slope not being 0 or 1, respectively, you need to use `geom_abline()`. This is for example the case if you want to add a regresssion line using the arguments `intercept` and `slope`:
+If you want to add a line with a slope not being 0 or 1, respectively, you need to use `geom_abline()`. This is for example the case if you want to add a regression line using the arguments `intercept` and `slope`:
 
 ```{r abline}
 reg <- lm(dewpoint ~ temp, data = chic)
@@ -1927,7 +1928,7 @@ g +
 
 ##### Add Labels to Your Data
 
-Sometimes, we want to label our data points. To avoid overlaying and crowding by text labels, we use a 1% sample of the original data, equally representing the four seasons.  
+Sometimes, we want to label our data points. To avoid overlaying and crowding by text labels, we use a 1% sample of the original data, equally representing the four seasons. We are using `geom_label()` which comes with a new aesthetic called `label`:
 
 ```{r data-text}
 set.seed(2020)
@@ -1940,9 +1941,9 @@ sample <- chic %>%
 ## code without pipes:
 ## sample <- sample_frac(group_by(chic, season), .01)
 
-ggplot(sample, aes(x = date, y = temp, label = season)) +
+ggplot(sample, aes(x = date, y = temp, color = season)) +
   geom_point() +
-  geom_text(aes(color = factor(temp)), hjust = .5, vjust = -.5) +
+  geom_label(aes(label = season), hjust = .5, vjust = -.5) +
   labs(x = "Year", y = "Temperature (°F)") +
   xlim(as.Date(c('1997-01-01', '2000-12-31'))) +
   ylim(c(0, 90)) +
@@ -1952,12 +1953,12 @@ ggplot(sample, aes(x = date, y = temp, label = season)) +
 Okay, avoiding overlap of labels did not work out. But don't worry, we are going to fix it in a minute!
 
 <details>
-  <summary>&#128129; <i>You can also use `geom_label()` if you like boxes around your labels. Expand to see example.</i></summary>
+  <summary>&#128129; <i>You can also use `geom_text()` if you don't like boxes around your labels. Expand to see example.</i></summary>
 ```{r data-label}
-ggplot(sample, aes(x = date, y = temp, label = season)) +
+ggplot(sample, aes(x = date, y = temp, color = season)) +
   geom_point() +
-  geom_label(aes(fill = factor(temp)), color = "white",
-             fontface = "bold", hjust = .5, vjust = -.25) +
+  geom_text(aes(label = season), fontface = "bold", 
+            hjust = .5, vjust = -.25) +
   labs(x = "Year", y = "Temperature (°F)") +
   xlim(as.Date(c('1997-01-01', '2000-12-31'))) +
   ylim(c(0, 90)) +
@@ -1970,10 +1971,22 @@ A cool thing is the `{ggrepel}` package which provides geoms for `{ggplot2}` to 
 ```{r ggrepel}
 library(ggrepel)
 
-ggplot(sample, aes(x = date, y = temp, label = season)) +
+ggplot(sample, aes(x = date, y = temp, color = season)) +
   geom_point() +
-  geom_label_repel(aes(fill = factor(temp)),
-                   color = "white", fontface = "bold") +
+  geom_label_repel(aes(label = season), fontface = "bold") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.position = "none")
+```
+
+It may look nicer with filled boxes so we map `season` to `fill` instead to `color` and set a white color for the text:
+
+```{r ggrepel-filled}
+ggplot(sample, aes(x = date, y = temp)) +
+  geom_point(data = chic, size = .5) +
+  geom_point(aes(color = season), size = 1.5) +
+  geom_label_repel(aes(label = season, fill = season), 
+                   color = "white", fontface = "bold",
+                   segment.color = "grey30") +
   labs(x = "Year", y = "Temperature (°F)") +
   theme(legend.position = "none")
 ```
@@ -2806,9 +2819,7 @@ runExample("04_mpg")
 
 [Plot.ly](https://chart-studio.plotly.com/feed/#/) is a tool for creating online, interactive graphics and web apps. The [`{plotly}` package](https://plot.ly/r/getting-started/) enables you to create those directly from your `{ggplot2}` plots and the workflow is surprisingly easy and [can be done from within R](https://plotly-r.com/). However, some of your theme settings might be changed and need to be modified manually afterwards. Also, and unfortunately, it is not straightforward to create facets or true multi-panel plots that scale nicely.
 
-```{r plotly, echo=-5}
-library(plotly)
-
+```{r plotly, echo=-3}
 g <- ggplot(chic, aes(date, temp)) +
   geom_line(color = "grey") +
   geom_point(aes(color = season)) +
@@ -2817,6 +2828,8 @@ g <- ggplot(chic, aes(date, temp)) +
   theme_bw()
 
 g
+
+library(plotly)
 
 ggplotly(g)
 ```
