@@ -69,6 +69,8 @@ Major changes I've made:
 
 ## Preparation {#prep}
 
+* You can find the Rmarkdown script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
+* You can also download the R script containing only the code [here](https://cedricscherer.netlify.app/files/ggplot-tutorial-cedric-raw.R).
 * You need to install the following packages to execute the full tutorial:
     + `{ggplot2}`, part of the `{tidyverse}` package collection
     + `{tidyverse}` package collection, namely
@@ -99,10 +101,6 @@ Major changes I've made:
       + `{ggiraph}`
       + `{highcharter}`
       + `{plotly}`
-* You can find the Rmarkdown script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
-* You can also download the R script containing only the code [here](https://cedricscherer.netlify.app/files/ggplot-tutorial-cedric-raw.R).
-* You can download the data we are using in this post [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
-
 
 ```{r install-packages, eval=FALSE}
 ## install CRAN packages
@@ -116,7 +114,7 @@ install.packages(c("tidyverse", "colorspace", "corrr",  "cowplot",
 devtools::install_github("JohnCoene/charter")
 ```
 
-(For teaching reasons and if people jump to any plot, I load the package needed beside `{ggplot2}` in the respective chunk.)
+(For teaching reasons and if people jump to any plot, I load the package needed beside `{ggplot2}` in the respective section.)
 
 
 
@@ -130,6 +128,7 @@ tibble::glimpse(chic)
 head(chic, 10)
 ```
 
+You can download the data we are using during this tutorial [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
 
 
 ## The `{ggplot2}` Package {#ggplot}
@@ -446,7 +445,7 @@ p2 <- ggplot(chic, aes(x = factor(year), y = temp)) +
 p1 + p2
 ```
 
-Um. Because `scale_x|y_continious()` subsets the data first, we get completely different (and wrong, at least if in the case this was not your aim) estimates for the boxplots! I hope you don't have to go back to your old scripts now and check if you *maybe* have manipulated your data while plotting and did report wrong summary stats in your report, paper or thesis...
+Um. Because `scale_x|y_continuous()` subsets the data first, we get completely different (and wrong, at least if in the case this was not your aim) estimates for the box plots! I hope you don't have to go back to your old scripts now and check if you *maybe* have manipulated your data while plotting and did report wrong summary stats in your report, paper or thesis...
 
 
 ##### Force Plot to Start at Origin
@@ -746,8 +745,9 @@ You can also place the legend inside the panel by specifying a vector with relat
 ```{r legend-inside}
 ggplot(chic, aes(x = date, y = temp, color = season)) +
   geom_point() +
-  labs(x = "Year", y = "Temperature (°F)") +
-  theme(legend.position = c(.2, .1),
+  labs(x = "Year", y = "Temperature (°F)",
+       color = NULL) +
+  theme(legend.position = c(.15, .15),
         legend.background = element_rect(fill = "transparent"))
 ```
 
@@ -1548,7 +1548,7 @@ ggplot(chic, aes(date, temp, color = temp)) +
   labs(x = "Year", y = "Temperature (°F)")
 ```
 
-Changing the color scheme afterwards is especially fun with functions from the `{ggdark}` and `{colorspace}` packages, namely `invert_color()`, `lighten()`, `darken()` and `desature()`. You can even combine those functions. Here, we plot a boxplot that has both arguments, `color` and `fill`:
+Changing the color scheme afterwards is especially fun with functions from the `{ggdark}` and `{colorspace}` packages, namely `invert_color()`, `lighten()`, `darken()` and `desature()`. You can even combine those functions. Here, we plot a box plot that has both arguments, `color` and `fill`:
 
 ```{r aftercale-comb}
 library(colorspace)
@@ -2367,7 +2367,7 @@ g + geom_violin(fill = "gray80", size = 1, alpha = .5) +
 
 ###### 5. Alternative: Combining Violin Plots with Box Plots
 
-To allow for easy estimation of quantiles, we can also add the box of the boxplot inside the violins to indicate 25%-quartile, median and 75%-quartile:
+To allow for easy estimation of quantiles, we can also add the box of the box plot inside the violins to indicate 25%-quartile, median and 75%-quartile:
 
 ```{r violin-jitter-box, fig.height=6}
 g + geom_violin(aes(fill = season), size = 1, alpha = .5) +
