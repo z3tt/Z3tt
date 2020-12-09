@@ -4,11 +4,11 @@ title: Workshop Announcements 2019/20
 date: "2019-09-04"
 image: img/banner/camping_RichardStrozynski.jpg
 layout: post
-description: "I got the opportunity to teach some workshops in the next few months - one 1-day and two 1-week workshops on data exploration and visualization in Berlin and Sicily! 🎉"
+description: "I got the opportunity to teach some workshops in the next few months—one 1-day and two 1-week workshops on data exploration and visualization in Berlin and Sicily! 🎉"
 tags:
-    - wannouncement
+    - announcement
     - workshop
-howtoc: false
+toc: false
 ---
 
 **I am proud to announce three workshops that I am going to lead/teach in autumn 2019 and spring 2020! 🎉 Thanks to all of you for that opportunity!**

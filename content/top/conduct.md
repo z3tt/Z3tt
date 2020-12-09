@@ -4,7 +4,7 @@
 
 I am committed to the “Civility Enforced” standard: I will not post unacceptable content, and I will delete any references or comments that contain it.
 
-I define unacceptable content as anything included or linked to that:
+I define unacceptable content as anything included or linked to that:  
 * is being used to abuse, harass, stalk, or threaten others  
 * is libelous, knowingly false, ad-hominem, or misrepresents another person  
 * infringes upon a copyright or trademark  

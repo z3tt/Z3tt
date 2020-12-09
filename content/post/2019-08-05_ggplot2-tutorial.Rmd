@@ -5,7 +5,7 @@ date: 2019-08-05
 image: img/banner/sun_RichardStrozynski.jpg
 layout: post
 showtoc: false
-description: "This tutorial explains how to build a ggplot, step by step. It  covers several topics such as different chart types, themes, design changes, plot combinations, and modification of axes, labels, and legend. It is a rework of the blog entry called 'Beautiful plotting in R: A ggplot2 cheatsheet' by Zev Ross, posted in 2014 with several modifcations and updates. Last update: 2020-08-19."
+description: "An extensive tutorial containing a general introduction to ggplot2 as well as many examples how to modify a ggplot, step by step. It covers several topics such as different chart types, themes, design choices, plot combinations, and modification of axes, labels, and legends, custom fonts, interactive charts and many more."
 tags: ["DataViz", "tutorial", "R", "tidyverse", "ggplot2"]
 editor_options:
   chunk_output_type: console
