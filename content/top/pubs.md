@@ -39,50 +39,57 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Conference Contributions {#conf}
 
-##### Oral presentations
+##### Invited Talks
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets. ([Slides](https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf))  
+<i style="font-size:10pt;">CorrelCon: A Weekend of Data4Good – 11/2020 – Online Conference.*</i>
+
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Effective Data Visualization: How to Design Impactful and Aesthetically Pleasing Charts. ([Recording](https://www.youtube.com/watch?v=swzFdMc6WPk))  
+<i style="font-size:10pt;">bespokeDS by Heureka Labs – 10/2020 – Webinar.</i>
+
+##### Oral Presentation
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm & S. Kramer-Schadt (2019)</span> Infection on the move: Individual host movement drives disease persistence in structured landscapes.  
-<font size="2">*14th Workshop “Young Modellers in Ecology” – 05/2019 – Goettingen, Germany.*</font>
+<i style="font-size:10pt;">14th Workshop “Young Modellers in Ecology” – 05/2019 – Goettingen, Germany.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, M. Franz, C. Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: The case of classical swine fever in wild boar.  
-<font size="2">*1st International BioMove Symposium – 09/2018 – Potsdam, Germany.*</font>
+<i style="font-size:10pt;">1st International BioMove Symposium – 09/2018 – Potsdam, Germany.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm & S. Kramer-Schadt  (2017)</span>: Infections on the move.  
-<font size="2">*12th Workshop “Young Modellers in Ecology” – 05/2017 – Buchenbach, Germany.*</font>
+<i style="font-size:10pt;">12th Workshop “Young Modellers in Ecology” – 05/2017 – Buchenbach, Germany.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: Combining movement ecology and epidemiological models.  
-<font size="2">*Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2016 – Marburg, Germany.*</font>
+<i style="font-size:10pt;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2016 – Marburg, Germany.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, I. Sonnenmann, S. Wurst & F. Jeltsch (2015)</span>: How does vertical and horizontal migration of wireworms impact plant diversity? Modelling root herbivore pressure on grassland communities.   
-<font size="2">*10th Workshop “Young Modellers in Ecology” – 05/2015 – Lachen, Switzerland.*</font>
+<i style="font-size:10pt;">10th Workshop “Young Modellers in Ecology” – 05/2015 – Lachen, Switzerland.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2014)</span>: Can we use functional types to predict responses of birds to changes in African savannas? An individual-based modelling approach.  
-<font size="2">*Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2014 – Hildesheim, Germany.*</font>
+<i style="font-size:10pt;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2014 – Hildesheim, Germany.</i>
 
 
-##### Poster presentations
+##### Poster Presentations
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, M. Franz, C. Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence.  
-<font size="2">*Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy.*</font>
+<i style="font-size:10pt;">Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy.</i>
 
 - <span style='font-variant:small-caps;'>S. Kramer-Schadt, J. Signer, C. Scholz, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk & U. Schlägel (2019)</span>: The effect of temporal resolution on the predictive power of movement models.  
-<font size="2">*Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy.*</font>
+<i style="font-size:10pt;">Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy.</i>
 
 - <span style='font-variant:small-caps;'>C. Scholz, K. Börner, S. Kramer-Schadt, S. Ortmann, <u style='font-weight:700;color:#414141;'>C. Scherer</u> & W. Ullmann (2019)</span>: Energy-management of red foxes in human-dominated landscapes – a movement network approach.
-<font size="2">*Gordon Research Seminar on Movement Ecology of Animals – 03/2019 – Lucca, Italy.*</font>
+<i style="font-size:10pt;">Gordon Research Seminar on Movement Ecology of Animals – 03/2019 – Lucca, Italy.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, N. Blaum, V. Grimm, & S. Kramer-Schadt (2017)</span>: Infection on the move: Combining movement ecology and epidemiological models.  
-<font size="2">*Gordon Research Conference on Movement Ecology of Animals – 03/2017 – Ventura, CA, USA.*</font>
+<i style="font-size:10pt;">Gordon Research Conference on Movement Ecology of Animals – 03/2017 – Ventura, CA, USA.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: Combining movement ecology and epidemiological models.  
-<font size="2">*11th Workshop “Young Modellers in Ecology” – 05/2016 – Neunzehnhain, Germany.*</font>
+<i style="font-size:10pt;">11th Workshop “Young Modellers in Ecology” – 05/2016 – Neunzehnhain, Germany.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Combined effects of land-use and individual movement decisions shape disease dynamics.  
-<font size="2">*CAnMove Animal Movement International Symposium – 02/2016 – Lund, Sweden.*</font>
+<i style="font-size:10pt;">CAnMove Animal Movement International Symposium – 02/2016 – Lund, Sweden.</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, I. Sonnenmann, S. Wurst & F. Jeltsch (2015)</span>: Modelling the vertical and horizontal migration of wireworms: how does timing and intensity of root herbivore pressure impact grassland communities?  
-<font size="2">*Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2015 – Goettingen, Germany.*</font>
+<i style="font-size:10pt;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2015 – Goettingen, Germany.</i>
 
 - <span style='font-variant:small-caps;'>J.-P. Wevers, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, A. Berger, N. Blaum, C. Fischer, F. Jeltsch & B. Schröder (2012)</span>: Identifying movement behaviour from 3–dimensional acceleration data for European brown hares (*Lepus europaeus*) and wild boars (*Sus scrofa*).  
-<font size="2">*8th International Conference on Behaviour, Physiology and Genetics of Wildlife – 09/2012 – Berlin, Germany.*</font>
+<i style="font-size:10pt;">8th International Conference on Behaviour, Physiology and Genetics of Wildlife – 09/2012 – Berlin, Germany.</i>
 
 
 ## Contributions to R Packages {#rstats}

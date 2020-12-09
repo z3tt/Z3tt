@@ -40,7 +40,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 * [Trainings & Further Education](#training)
 * [Conference Organisation](#orga)
 * [Teaching](#teach)
-* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications</a>
+* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications & Presentations</a>
 * [Awards & Honours](#award)
 * [Skills](#skills)
 * [Memberships & Services](#services)
@@ -154,7 +154,9 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:15px;">
   
-  <li>Workshop “Data Visualization in R with <code>{ggplot2}</code>“<br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, 2020)</span></li>
+  <li>Workshop “Data Visualization with <code>{ggplot2}</code>: A 2–Day Course on DataViz Principles and Beautiful Plotting in R“<br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, Mar and Nov 2020)</span></li>
+  
+  <li>Workshop “Data Visualization in R with <code>{ggplot2}</code>: A 5-Day Workshop on R, ggplot2 and Data Visualization“<br><span style="color:#989898;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, Berlin, Mar and Nov 2020)</span></li>
   
   <li>Workshop “Scientific Data Visualization: Principles & Good Practices“<br><span style="color:#989898;">(Leibniz Institute of Zoo and Wildlife Research, Berlin, 2019)</span></li>
   
@@ -191,7 +193,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 </ul>
 
 
-##### Publications
+##### Publications & Presentations
 
 see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
