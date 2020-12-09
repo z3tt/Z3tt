@@ -18,7 +18,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (2020) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* **23** (2):9](http://doi.org/10.18564/jasss.4274).
 
-- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (accepted)</span> When size matters: large yellowfin tuna (*Thunnus  albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central-eastern Atlantic Ocean. *Fisheries Research*
+- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (accepted)</span> When size matters: large yellowfin tuna (*Thunnus albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central–eastern Atlantic Ocean. [*Fisheries Research* **232**:105726](https://doi.org/10.1016/j.fishres.2020.105726).
 
 ##### 2019
 
@@ -40,57 +40,57 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Invited Talks  {#talks}
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets. ([Slides](https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf) | [Recording](https://www.youtube.com/watch?v=zCG3xk-QLSI))  
-<i style="font-size:11pt;color:grey;">CorrelCon: A Weekend of Data4Good – 11/2020 – Online Conference.</i>
+<i style="font-size:11pt;color:grey;">CorrelCon: A Weekend of Data4Good – 11/2020 – Online Conference</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Effective Data Visualization: How to Design Impactful and Aesthetically Pleasing Charts. ([Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk))  
-<i style="font-size:11pt;color:grey;">bespokeDS by Heureka Labs – 10/2020 – Webinar.</i>
+<i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10/2020 – Duke University, Durham, USA (Webinar)</i>
 
 ### Conference Contributions {#conf}
 
 ##### Oral Presentation
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm & S. Kramer-Schadt (2019)</span> Infection on the move: Individual host movement drives disease persistence in structured landscapes.  
-<i style="font-size:11pt;color:grey;">14th Workshop “Young Modellers in Ecology” – 05/2019 – Goettingen, Germany.</i>
+<i style="font-size:11pt;color:grey;">14th Workshop “Young Modellers in Ecology” – 05/2019 – Goettingen, Germany</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, M. Franz, C. Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: The case of classical swine fever in wild boar.  
-<i style="font-size:11pt;color:grey;">1st International BioMove Symposium – 09/2018 – Potsdam, Germany.</i>
+<i style="font-size:11pt;color:grey;">1st International BioMove Symposium – 09/2018 – Potsdam, Germany</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm & S. Kramer-Schadt  (2017)</span>: Infections on the move.  
-<i style="font-size:11pt;color:grey;">12th Workshop “Young Modellers in Ecology” – 05/2017 – Buchenbach, Germany.</i>
+<i style="font-size:11pt;color:grey;">12th Workshop “Young Modellers in Ecology” – 05/2017 – Buchenbach, Germany</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: Combining movement ecology and epidemiological models.  
-<i style="font-size:11pt;color:grey;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2016 – Marburg, Germany.</i>
+<i style="font-size:11pt;color:grey;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2016 – Marburg, Germany</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, I. Sonnenmann, S. Wurst & F. Jeltsch (2015)</span>: How does vertical and horizontal migration of wireworms impact plant diversity? Modelling root herbivore pressure on grassland communities.   
-<i style="font-size:11pt;color:grey;">10th Workshop “Young Modellers in Ecology” – 05/2015 – Lachen, Switzerland.</i>
+<i style="font-size:11pt;color:grey;">10th Workshop “Young Modellers in Ecology” – 05/2015 – Lachen, Switzerland</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2014)</span>: Can we use functional types to predict responses of birds to changes in African savannas? An individual-based modelling approach.  
-<i style="font-size:11pt;color:grey;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2014 – Hildesheim, Germany.</i>
+<i style="font-size:11pt;color:grey;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2014 – Hildesheim, Germany</i>
 
 
 ##### Poster Presentations
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, M. Franz, C. Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence.  
-<i style="font-size:11pt;color:grey;">Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy.</i>
+<i style="font-size:11pt;color:grey;">Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy</i>
 
 - <span style='font-variant:small-caps;'>S. Kramer-Schadt, J. Signer, C. Scholz, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk & U. Schlägel (2019)</span>: The effect of temporal resolution on the predictive power of movement models.  
-<i style="font-size:11pt;color:grey;">Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy.</i>
+<i style="font-size:11pt;color:grey;">Gordon Research Conference on Movement Ecology of Animals – 03/2019 – Lucca, Italy</i>
 
 - <span style='font-variant:small-caps;'>C. Scholz, K. Börner, S. Kramer-Schadt, S. Ortmann, <u style='font-weight:700;color:#414141;'>C. Scherer</u> & W. Ullmann (2019)</span>: Energy-management of red foxes in human-dominated landscapes – a movement network approach.
-<i style="font-size:11pt;color:grey;">Gordon Research Seminar on Movement Ecology of Animals – 03/2019 – Lucca, Italy.</i>
+<i style="font-size:11pt;color:grey;">Gordon Research Seminar on Movement Ecology of Animals – 03/2019 – Lucca, Italy</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, N. Blaum, V. Grimm, & S. Kramer-Schadt (2017)</span>: Infection on the move: Combining movement ecology and epidemiological models.  
-<i style="font-size:11pt;color:grey;">Gordon Research Conference on Movement Ecology of Animals – 03/2017 – Ventura, CA, USA.</i>
+<i style="font-size:11pt;color:grey;">Gordon Research Conference on Movement Ecology of Animals – 03/2017 – Ventura, CA, USA</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: Combining movement ecology and epidemiological models.  
-<i style="font-size:11pt;color:grey;">11th Workshop “Young Modellers in Ecology” – 05/2016 – Neunzehnhain, Germany.</i>
+<i style="font-size:11pt;color:grey;">11th Workshop “Young Modellers in Ecology” – 05/2016 – Neunzehnhain, Germany</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum, V. Grimm, F. Jeltsch & S. Kramer-Schadt (2016)</span>: Combined effects of land-use and individual movement decisions shape disease dynamics.  
-<i style="font-size:11pt;color:grey;">CAnMove Animal Movement International Symposium – 02/2016 – Lund, Sweden.</i>
+<i style="font-size:11pt;color:grey;">CAnMove Animal Movement International Symposium – 02/2016 – Lund, Sweden</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, I. Sonnenmann, S. Wurst & F. Jeltsch (2015)</span>: Modelling the vertical and horizontal migration of wireworms: how does timing and intensity of root herbivore pressure impact grassland communities?  
-<i style="font-size:11pt;color:grey;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2015 – Goettingen, Germany.</i>
+<i style="font-size:11pt;color:grey;">Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09/2015 – Goettingen, Germany</i>
 
 - <span style='font-variant:small-caps;'>J.-P. Wevers, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, A. Berger, N. Blaum, C. Fischer, F. Jeltsch & B. Schröder (2012)</span>: Identifying movement behaviour from 3–dimensional acceleration data for European brown hares (*Lepus europaeus*) and wild boars (*Sus scrofa*).  
-<i style="font-size:11pt;color:grey;">8th International Conference on Behaviour, Physiology and Genetics of Wildlife – 09/2012 – Berlin, Germany.</i>
+<i style="font-size:11pt;color:grey;">8th International Conference on Behaviour, Physiology and Genetics of Wildlife – 09/2012 – Berlin, Germany</i>
 
 
 ## Contributions to R Packages {#rstats}
