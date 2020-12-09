@@ -40,7 +40,7 @@ unsafe= true
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Computational Ecologist • Data Visualization Designer • Proud Dad"
+  sidebar_about_description = "Data Visualization Designer • Computational Ecologist • Proud Dad"
   sidebar_avatar = "img/cedric_round.png"
 
   featured_tags = true
@@ -91,14 +91,14 @@ unsafe= true
   title = "CorrelAid"
   href =  "https://correlaid.org/en/"
   [[params.friend_link]]
-  title = "FrontPage Data"
-  href = "https://frontpagedata.com/"
+  title = "Will Chase"
+  href = "https://www.williamrchase.com/tags/dataviz/"
   [[params.friend_link]]
-  title = "Dep. Ecological Dynamics"
-  href = "https://t.co/aJeJQio5KX?amp=1"
+  title = "Georgios Karamanis"
+  href =  "https://karaman.is/" 
   [[params.friend_link]]
-  title = "SIG Computational Ecology"
-  href =  "https://akcomputationalecology.wordpress.com/" 
+  title = "Marco Sciaini"
+  href = "https://marcosci.github.io/"
 
   [[params.bookmark_link]]
   title =  "Fundamentals of DataViz"
@@ -110,10 +110,13 @@ unsafe= true
   title =  "Geocomputation with R"
   href =  "https://geocompr.robinlovelace.net/index.html"
   [[params.bookmark_link]]
-  title =  "Data Visualization"
+  title =  "Data Visualization Book"
   href =  "http://socviz.co/"
   [[params.bookmark_link]]
-  title =  "Chroma.js Color Palette Helper"
+  title =  "Viz Palette Test"
+  href =  "https://projects.susielu.com/viz-palette?colors=[%22#ffd700%22,%22#ffb14e%22,%22#fa8775%22,%22#ea5f94%22,%22#cd34b5%22,%22#9d02d7%22,%22#0000ff%22]&backgroundColor=%22white%22&fontColor=%22black%22&mode=%22normal%22"
+  [[params.bookmark_link]]
+  title =  "Chroma.js Color Helper"
   href =  "https://gka.github.io/palettes/#/9|s|383838,a19858,cfff44|ffffe0,ff005e,93003a|1|1"
 
   [[params.addtional_menus]]
