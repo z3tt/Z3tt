@@ -5,11 +5,14 @@
 I am committed to the “Civility Enforced” standard: I will not post unacceptable content, and I will delete any references or comments that contain it.
 
 I define unacceptable content as anything included or linked to that:  
-* is being used to abuse, harass, stalk, or threaten others  
-* is libelous, knowingly false, ad-hominem, or misrepresents another person  
-* infringes upon a copyright or trademark  
-* violates an obligation of confidentiality  
-* violates the privacy of others  
+
+<ul>
+<li>is being used to abuse, harass, stalk, or threaten others</li>
+<li>is libelous, knowingly false, ad-hominem, or misrepresents another person</li>
+<li>infringes upon a copyright or trademark</li>
+<li>violates an obligation of confidentiality</li>
+<li>violates the privacy of others</li>
+</ul>
 
 I define and determine what is “unacceptable content” on a case-by-case basis, and my definitions are not limited to this list. If I delete a comment or link, I will say so and explain why. [I reserve the right to change these standards at any time with no notice.]
 
