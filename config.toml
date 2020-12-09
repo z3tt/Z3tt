@@ -83,7 +83,7 @@ unsafe= true
   #href =  "https://data-vizard.com/"
   [[params.friend_link]]
   title = "DataVizSociety"
-  href = "https://www.datavisualizationsociety.com/"
+  href =  "https://www.datavisualizationsociety.com/"
   [[params.friend_link]]
   title = "R4DS Community"
   href =  "https://www.rfordatasci.com/"
@@ -92,34 +92,34 @@ unsafe= true
   href =  "https://correlaid.org/en/"
   [[params.friend_link]]
   title = "Will Chase"
-  href = "https://www.williamrchase.com/tags/dataviz/"
+  href =  "https://www.williamrchase.com/tags/dataviz/"
   [[params.friend_link]]
   title = "Georgios Karamanis"
   href =  "https://karaman.is/" 
   [[params.friend_link]]
   title = "Marco Sciaini"
-  href = "https://marcosci.github.io/"
+  href =  "https://marcosci.github.io/"
 
   [[params.bookmark_link]]
-  title =  "Fundamentals of DataViz"
+  title = "Fundamentals of DataViz"
   href =  "https://serialmentor.com/dataviz/"
   [[params.bookmark_link]]
-  title =  "R for Data Science"
+  title = "R for Data Science"
   href =  "https://r4ds.had.co.nz/"
   [[params.bookmark_link]]
-  title =  "Geocomputation with R"
+  title = "Geocomputation with R"
   href =  "https://geocompr.robinlovelace.net/index.html"
   [[params.bookmark_link]]
-  title =  "Data Visualization Book"
+  title = "Data Visualization Book"
   href =  "http://socviz.co/"
   [[params.bookmark_link]]
-  title =  "JavaScript for R"
-  href =  "  https://javascript-for-r.com/"
+  title = "JavaScript for R"
+  href =  "https://javascript-for-r.com/"
   [[params.bookmark_link]]
-  title =  "Viz Palette Test"
+  title = "Viz Palette Test"
   href =  "https://projects.susielu.com/viz-palette?colors=[%22#ffd700%22,%22#ffb14e%22,%22#fa8775%22,%22#ea5f94%22,%22#cd34b5%22,%22#9d02d7%22,%22#0000ff%22]&backgroundColor=%22white%22&fontColor=%22black%22&mode=%22normal%22"
   [[params.bookmark_link]]
-  title =  "Chroma.js Color Helper"
+  title = "Chroma.js Color Helper"
   href =  "https://gka.github.io/palettes/#/9|s|383838,a19858,cfff44|ffffe0,ff005e,93003a|1|1"
 
   [[params.addtional_menus]]
