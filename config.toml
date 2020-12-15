@@ -154,3 +154,34 @@ notAlternative = true
 [params.algolia]
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
 params = ["categories", "tags"]
+
+[[plugins]]
+package = "netlify-plugin-rss"
+  [plugins.inputs]
+  # required configs, customize as needed
+  dirToScan = "/posts" # a subfolder to scan. "/" to scan all
+  authorName = "Cédric"
+  site_url = "https://cedricscherer.netlify.app"
+  title = "Cédric Scherer RSS Feed"
+  rssDescription = "RSS Feed of the blog by Cédric Scherer focussing on Data Visualization and Computational Ecology"
+  categories = ['Data Visualization', 'Infographics', 'Data Science', 'R Programming', 'Computaitonal Ecology']
+
+  # # optional configs, defaults shown
+  # rssFaviconUrl = "https://swyx.io/favicon.png"
+  # docs = "http://example.com/rss/docs.html"
+  # managingEditor = "authorName"
+  # webMaster = "authorName"
+  # copyright = "2020 ${authorName}"
+  # language = "en"
+  # pubDate = "new Date().toUTCString(),"
+  # ttl = "60" # aka refresh every hour
+
+  # # cheerio selectors for extractMetadataFromFile
+  # # defaults shown
+  # contentSelector = "main"
+  # publishDateSelector = # if not specified, we use the date of file creation
+  # descriptionSelector = "meta[name=description]" # probably no need to change
+  # titleSelector = "title" # probably no need to change
+
+  # # developer configs
+  # debugMode = false # (for development) turn true for extra diagnostic logging
