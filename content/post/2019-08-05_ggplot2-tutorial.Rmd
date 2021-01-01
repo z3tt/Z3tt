@@ -103,14 +103,15 @@ Major changes I've made:
       + `{plotly}`
 
 ```{r install-packages, eval=FALSE}
-## install CRAN packages
+# install CRAN packages
 install.packages(c("tidyverse", "colorspace", "corrr",  "cowplot", 
                    "ggdark", "ggforce", "ggrepel", "ggridges", "ggsci", 
                    "ggtext", "ggthemes", "grid", "gridExtra", "patchwork", 
                    "rcartocolor", "scico", "showtext", "shiny", 
                    "plotly", "highcharter", "echarts4r"))
 
-## install from GitHub since not on CRAN
+# install from GitHub since not on CRAN
+install.packages(devtools)
 devtools::install_github("JohnCoene/charter")
 ```
 
@@ -120,11 +121,18 @@ devtools::install_github("JohnCoene/charter")
 
 ## The Dataset {#data}
 
-We are using data from the *National Morbidity and Mortality Air Pollution Study* (NMMAPS). To make the plots manageable we are limiting the data to Chicago and 1997-2000. For more detail on this data set, consult Roger Peng's book [Statistical Methods in Environmental Epidemiology with R](http://www.springer.com/de/book/9780387781662). 
+We are using data from the *National Morbidity and Mortality Air Pollution Study* (NMMAPS). To make the plots manageable we are limiting the data to Chicago and 1997–2000. For more detail on this data set, consult Roger Peng's book [Statistical Methods in Environmental Epidemiology with R](http://www.springer.com/de/book/9780387781662). 
 You can download the data we are using during this tutorial [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
+
+We can import the data into our R session for example with `read_csv()` from the `{readr}` package. To access the data later, we are storing it in a variable called `chic` by using the *assignment arrow* `<-`. 
 
 ```{r data-import}
 chic <- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
+```
+
+💡 **The `::` is called *namespace* and can be used to access a function without loading the package. Here, you could also run `library(readr)` first and `chic <- read_csv(...)` afterwards.**
+
+```{r data-inspection}
 tibble::glimpse(chic)
 head(chic, 10)
 ```
@@ -168,7 +176,7 @@ The syntax of `{ggplot2}` is different from base R. In accordance with the basic
 
 💡 **We specify the data *outside* `aes()` and add the variables that ggplot maps the aesthetics to *inside* `aes()`.**
 
-Here, we map the variable `date` to the x position and `temp` to the y position. Later, we will also map variables to all kind of other aesthetics such as colors, sizes, and shapes.
+Here, we map the variable `date` to the x position and the variable `temp` to the y position. Later, we will also map variables to all kind of other aesthetics such as color, size, and shape.
 
 ```{r ggplot}
 (g <- ggplot(chic, aes(x = date, y = temp)))
@@ -203,13 +211,30 @@ That's it for now about geometries. No worries, we are going to learn several pl
 
 ##### Change Properties of Geometries
 
-Within the `geom_*` command, you already can manipulate visual aesthetics such as the color, shape, and size of your points:
+Within the `geom_*` command, you already can manipulate visual aesthetics such as the color, shape, and size of your points. Let's turn all points to large fire-red diamonds!
 
 ```{r ggplot-default-col-size-shape}
 g + geom_point(color = "firebrick", shape = "diamond", size = 2)
 ```
 
 💡 **`{ggplot2}` understands both `color` and `colour` as well as the short version `col`.**
+
+<details>
+  <summary>&#128129; <i>You can use preset colors (here is a [full list](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)) or [hex color codes](https://www.techopedia.com/definition/29788/color-hex-code), both in quotes, and even RGB/RGBA colors by using the `rgb()` function. Expand to see example.</i></summary>
+
+```{r ggplot-default-col-size-hex-rgb, eval=FALSE}
+g + geom_point(color = "#b22222", shape = "diamond", size = 2)
+g + geom_point(color = rgb(178, 34, 34, maxColorValue = 255), shape = "diamond", size = 2)
+```
+
+```{r ggplot-default-col-size-hex-rgb-plot, echo=FALSE, purl=FALSE}
+library(patchwork)
+a <- g + geom_point(color = "#b22222", shape = "diamond", size = 2)
+b <- g + geom_point(color = rgb(178, 34, 34, maxColorValue = 255), shape = "diamond", size = 2)
+a + b
+```
+
+</details>
 
 Each geom comes with its own properties (called *arguments*) and the same argument may result in a different change depending on the geom you are using.
 
@@ -233,7 +258,7 @@ You can find more on how to use built-in themes and how to customize themes in t
 
 💡 **`theme()` is an essential command to manually modify all kinds of theme elements (texts, rectangles, and lines).**
 
-To see which details of a ggplot theme can be modified have a look [here](http://docs.ggplot2.org/current/theme.html)—and take some time, this is a looong list.
+To see which details of a ggplot theme can be modified have a look [here](https://ggplot2.tidyverse.org/reference/theme.html)—and take some time, this is a looong list.
 
 [↑ Jump back to Table of Content.](#toc)<br><br>
 
