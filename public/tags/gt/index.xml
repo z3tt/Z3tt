@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gt on Cédric Scherer</title>
+    <link>/tags/gt/</link>
+    <description>Recent content in gt on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What do I binge next? A detailed overview of the top 250 TV shows</title>
+      <link>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
+      <description>With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote &amp;ldquo;Stammtisch&amp;rdquo; with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.</description>
+    </item>
+    
+  </channel>
+</rss>

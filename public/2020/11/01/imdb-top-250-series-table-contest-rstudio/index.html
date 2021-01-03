@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+
+    
+      <meta name="title" content="What do I binge next? A detailed overview of the top 250 TV shows" />
+      <meta property="og:title" content="What do I binge next? A detailed overview of the top 250 TV shows - Cédric Scherer" />
+      <meta property="twitter:title" content="What do I binge next? A detailed overview of the top 250 TV shows - Cédric Scherer" />
+      <meta property="twitter:text:title" content="What do I binge next? A detailed overview of the top 250 TV shows - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="My contribution to the RStudio table contests visualizing relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying all the details I and my friends care about including in-line visualizations of rating trends and average runtime.">
+      <meta property="og:description" content="My contribution to the RStudio table contests visualizing relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying all the details I and my friends care about including in-line visualizations of rating trends and average runtime." />
+      <meta property="twitter:description" content="My contribution to the RStudio table contests visualizing relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying all the details I and my friends care about including in-line visualizations of rating trends and average runtime." />
+    
+
+    
+      <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+      <meta property="twitter:image" content="/img/banner_RichardStrozynski_small.png" />
+      <meta property="twitter:card" content="summary_large_image" />
+    
+
+    
+
+    <meta name="keyword"  content="Computational Ecology, Data Visualization">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>What do I binge next? A detailed overview of the top 250 TV shows - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2020/11/01/imdb-top-250-series-table-contest-rstudio/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/dataviz/">Visualizations</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/fly_RichardStrozynski.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/table" title="table">
+                            table
+                        </a>
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/gt" title="gt">
+                            gt
+                        </a>
+                        
+                        <a class="tag" href="/tags/tv-shows" title="TV shows">
+                            TV shows
+                        </a>
+                        
+                        <a class="tag" href="/tags/imdb" title="IMDb">
+                            IMDb
+                        </a>
+                        
+                        <a class="tag" href="/tags/rstudio-table-contest" title="RStudio Table Contest">
+                            RStudio Table Contest
+                        </a>
+                        
+                    </div>
+                    <h1>What do I binge next? A detailed overview of the top 250 TV shows</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Sunday, November 1, 2020
+                        
+                            <span id="/2020/11/01/imdb-top-250-series-table-contest-rstudio/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly <a href="https://debeste.de/129626/Stammtisch">remote &ldquo;Stammtisch&rdquo;</a> with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.</p>
+<p>In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the <a href="https://www.imdb.com/chart/toptv/">original one on IMDb</a> as contribution for the ongoing <a href="https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/">RStudio table contest</a>:</p>
+<blockquote>
+<p>Tables are a fantastic way to communicate lists of quantitative and qualitative information. Sometimes, tables can fall very short of their potential for greatness. But that was the past: we now have some excellent R packages at our disposal to generate well-designed and functional presentation tables. And because of this renaissance of table-making in R, we’re announcing a contest: The 2020 RStudio Table Contest!</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top250_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app//img/table-contest/IMDb_Top250.png', 'blank');"/>
+<p class="small" align="center"><i style="color:#8c8c8c;">Click on the preview to see the full table of all 250 TV shows.</i></p>
+<p><i style='color:#28a87d;'><b>Update December 24<sup>th</sup> 2020:</b> My table made it into the <b><a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/">&quot;Honourable Mentions&quot;</a></b> section. Congrats to the winner Niels van der Velden and all the others that are mentioned!</i></p>
+<h5 id="whats-shown">What&rsquo;s shown?</h5>
+<p>The table shows relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying the details I and my friends care about: of course the ranking and overall rating but additionally the runtime per episode, genres, number of seasons and episodes, ID of the best episodes. But most importantly—the trend of ratings as the TV show progresses.</p>
+<p>To visualize the runtime I decided to use a restrained, grey-toned, area-scaled circle. The normalized trends in episode ratings are visualized as stripes similar to the famous <a href="https://en.wikipedia.org/wiki/Warming_stripes">&ldquo;warming stripes&rdquo; by Ed Hawkins</a>:</p>
+<p><img src="/img/table-contest/" alt=""></p>
+<p><img src="/img/table-contest/southpark.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">The “trending stripes” for 309 epsiodes of “Southpark”, covering 24 seasons in total.</i></p>
+<p>In addition, a line indicates the average rating per season on a range from 1 to 10:</p>
+<p><img src="/img/table-contest/southpark_full.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">The “trending stripes” of “Southpark”, including trends in average rating per season a step chart.</i></p>
+<p>How does this help? Here are two more examples showing the dramatic (and completely deserved) fall of ratings for the last season of “Game of Thrones” as well as the brilliant  “Bojack Horseman” that got better and better over time:</p>
+<p><img src="/img/table-contest/got-bojack.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">Two trending stripes illustrating  completely different courses of ratings as the series progresses.</i></p>
+<p>While the line shows the absolute decrease or increase in rating across seasons, the colored stripes gives an idea how each episode performed relative to the series&rsquo; average. Also, from the color intensity one can see that the worst episodes were far more off from the average rating than the best episodes in “Game of Thrones”, while there was not that much variation across episodes in “Bojack Horseman”.</p>
+<p>The idea is built upon a personal project that I started in March 2020 after visualizing <a href="https://twitter.com/cedscherer/status/1242229041488433152">IMDb ratings of &ldquo;The Office&rdquo; as contribution to #TidyTuesday</a> but I never had the drive to finish. Here is a visualization from back then that served as inspiration:</p>
+<p><img src="/img/table-contest/2019_02_TVsGoldenAge_rel100_rank.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">Trends in season ratings for the top 100 of series comprising 3 to 12 seasons.</i></p>
+<h5 id="data-source-and-preparation">Data Source and Preparation</h5>
+<p>The data is a mixture of scraped data using a modified<a href="ttps://github.com/WittmannF/imdb-tv-ratings/blob/master/IMDB_get_ratings.ipynb"> Python script</a> (ranks, ratings, votes, year of release) and data downloaded from the <a href="https://datasets.imdbws.com/">IMDb dataset interface</a> (title basics: original title, genre, runtime). The data was cleaned (e.g. correct wrong runtimes, title spellings etc.) and missing entries filled. (However, some series are returned as having 1 season only but have several actually and I didn&rsquo;t find a good workaround yet.)</p>
+<h5 id="r-packages-used">R Packages Used</h5>
+<p>I used the <a href="https://gt.rstudio.com/"><code>{gt}</code> package</a> which allows to generate static tables in R. It also allows adding <a href="https://ggplot2.tidyverse.org/">visualizations created with <code>{ggplot2}</code></a> as in-line plots such as simple sparkline or bar charts as demonstrated in <a href="https://twitter.com/thomas_mock">Thomas Mock</a>&lsquo;s great <a href="https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/"><code>{gt}</code> tutorial</a> that helped me along the way:</p>
+<p><img src="/img/table-contest/tables_thomas.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">Two example tables with in-line ggplots from Thomas Mock's great tutorial series.</i></p>
+<p>In addition, I used several <code>{tidyverse}</code> packages (<code>{dplyr}</code>, <code>{tidyr}</code>, <code>{readr}</code>, <code>{magrittr}</code>) for data preparation as well as <code>{reticulate}</code> o run the Python scrapping script, <code>{here}</code> for easy handling of paths, <code>{glue}</code> for string pasting and <code>{pkgconfig}</code> to deal with header names.</p>
+<h5 id="varieties">Varieties</h5>
+<p>Since the Top 250 TV Shows table is quite long (by definition), I also created versions for the <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top100.png">Top 100</a> and <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top50.png">Top 50</a>, respectively. I also found it interesting to look at particular genres in isolation and provide exemplary versions for the genres <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png">Documentary</a>, <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopAnimation.png">Animation</a>, <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopComedy.png">Comedy</a>, <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDrama.png">Drama</a>, and <a href="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopAction.png">Action</a>.</p>
+<p>Here are is the full top 100 as well as all comedy series contained in the top 250:</p>
+<p><img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top100.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">A variety showing the top 100 TV shows on IMDb users as of Nov 1<sup>st</sup> 2020.</i></p>
+<p><img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopComedy.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">A variety showing the top comedy TV shows contained in the top 250 TV shows as of Nov 1<sup>st</sup> 2020.</i></p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/" data-toggle="tooltip" data-placement="top" title="The Worst Days of the Coronavirus Pandemic So Far">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2021/01/01/review-2020-personal-dataviz-highlights/" data-toggle="tooltip" data-placement="top" title="My Personal Data Visualization Year 2020">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/announcement" title="announcement">
+                            announcement
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/rstudio-table-contest" title="rstudio-table-contest">
+                            rstudio-table-contest
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
+                        
+                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                        
+                        <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2020. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

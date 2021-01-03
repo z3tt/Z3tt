@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rstats on Cédric Scherer</title>
@@ -6,18 +6,18 @@
     <description>Recent content in Rstats on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/rstats/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>#TidyTuesday Challenges 2019/17: Anime Data</title>
-      <link>/post/2019-05-05-tidytuesday_201917_animes/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <title>What do I binge next? A detailed overview of the top 250 TV shows</title>
+      <link>/2020/10/30/imdb-top-250-series-table-contest-rstudio/</link>
+      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2019-05-05-tidytuesday_201917_animes/</guid>
-      <description>PreparationDataPlotsSession InfoPreparation## packageslibrary(tidyverse)library(ggrepel)library(patchwork)library(ghibli)## ggplot theme updatessource(&amp;quot;./tidytuesday/tidy_grey.R&amp;quot;)Datadf_ghibli &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-04-23/tidy_anime.csv&amp;quot;) %&amp;gt;% filter(studio == &amp;quot;Studio Ghibli&amp;quot;, type == &amp;quot;Movie&amp;quot;) %&amp;gt;% dplyr::select(animeID, title_english, title_japanese, genre, score, scored_by, members)## Parsed with column specification:## cols(## .default = col_character(),## animeID = col_integer(),## episodes = col_integer(),## airing = col_logical(),## start_date = col_date(format = &amp;quot;&amp;quot;),## end_date = col_date(format = &amp;quot;&amp;quot;),## score = col_double(),## scored_by = col_integer(),## rank = col_integer(),## popularity = col_integer(),## members = col_integer(),## favorites = col_integer()## )## See spec(.</description>
+      <guid>/2020/10/30/imdb-top-250-series-table-contest-rstudio/</guid>
+      <description>Uff, what a year! 366 days ago, most people did not expect 2020 to be that exhausting, emotionally and physically (and let&amp;rsquo;s hope for a better 2021—happy new year to you!). COVID19 was literally everywhere, whether in the media or affecting your personal life, and made it hard to focus and keep social contacts. Plus all the other things that were happening: starting off with the bushfires in Australia, the massive series of police brutality protests after the shocking death of George Floyd, tiring and everlasting Brexit negotiations, Trump&amp;rsquo;s madness reaching new levels, and all the news and uncertainty around COVID19 mutations circulating at the end of 2020.</description>
     </item>
     
   </channel>
