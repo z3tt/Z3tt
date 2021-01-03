@@ -11,6 +11,7 @@ tags:
     - DataViz
     - R
     - gt
+    - ggplot2
     - TV shows
     - IMDb
     - RStudio Table Contest
