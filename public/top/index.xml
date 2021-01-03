@@ -37,8 +37,8 @@ I define unacceptable content as anything included or linked to that:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/dataviz/</guid>
-      <description>A selection of data visualizations have produced for scientific publications, client requests and as personal projects using the {ggplot2} package in the programming language R. All visualizations are the result of the code without any post-processing.
- #TidyTuesday Contributions #30DayMapChallenge Contributions #MakeoverMonday Contributions #SWDchallenge Contributions &amp;ldquo;Evolution of a ggplot&amp;rdquo; blog series   You need a visualization? Let&amp;rsquo;s get in touch! Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
+      <description>A selection of data visualizations have produced for personal projects and as challenge contributions using the {ggplot2} package in the programming language R. All visualizations are the result of the code without any post-processing.
+ #TidyTuesday Contributions #30DayMapChallenge Contributions #MakeoverMonday Contributions #SWDchallenge Contributions RStudio Table Contest 2020   You need a visualization? Let&amp;rsquo;s get in touch! Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
     </item>
     
     <item>

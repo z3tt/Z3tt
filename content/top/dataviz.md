@@ -1,11 +1,11 @@
-A selection of data visualizations  have produced for scientific publications, client requests and as personal projects using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
+A selection of data visualizations  have produced for personal projects and as challenge contributions using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
 
 
 * [#TidyTuesday Contributions](#tidytuesday)
 * [#30DayMapChallenge Contributions](#mapchallenge)
 * [#MakeoverMonday Contributions](#makeovermonday)
 * [#SWDchallenge Contributions](#swdchallenge)
-* ["Evolution of a ggplot" blog series](#evolggplot)
+* [RStudio Table Contest 2020](#tablecontest)
 <br>
 
 ##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
@@ -18,14 +18,14 @@ A selection of data visualizations  have produced for scientific publications, c
 
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/TidyTuesday)
 
+##### Coffee Ratings
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
+
 
 ##### Travelling to Outer Space
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
-
-##### Coffee Ratings
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
 
 ##### Appearance of Popular X-Men Characters
 
@@ -55,13 +55,17 @@ A selection of data visualizations  have produced for scientific publications, c
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png', 'blank');"/>
 
-##### Tour de France
+##### Renewable Energy Production in Europe
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_15/2020_15_TourDeFrance.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100656153/Tour-de-France-19032019', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_32/2020_32_EuropeanEnergy.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/101922257/Renewable-Energy-Production-in-Europe', 'blank');"/>
 
-##### Most Popular Cocktails 2020
+##### US Spendings on Children Public Health
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_22/2020_22_Cocktails.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_22/2020_22_Cocktails.png', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_38/2020_38_KidSpendings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/104624779/US-Children-Public-Health-Efforts-19972016', 'blank');"/>
+
+##### Canadian Wind Turbines
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_44/2020_44_CanadianWindTurbines_h.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_44/2020_44_CanadianWindTurbines_h.png', 'blank');"/>
 
 ##### Most Common Passwords
 
@@ -71,13 +75,29 @@ A selection of data visualizations  have produced for scientific publications, c
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_16/2020_16_BestRapArtists.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100649609/Greatest-Hip-Hop-Artists', 'blank');"/>
 
-##### Volcano Eruptions
+##### Mobile Subscriptions
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_20/2020_20_Volcanoes_center2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100654239/Volcanic-Eruptions', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_46/2020_46_HistoricalPhones.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_46/2020_46_HistoricalPhones.png', 'blank');"/>
 
 ##### FIFA Women's World Cups
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_28/2019_28_FIFA_WWCs_stellar_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_28/2019_28_FIFA_WWCs_stellar.png', 'blank');"/>
+
+##### NCAA Women's Basketball Championship
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_41/2020_41_NCAAWomensBasketball.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/105788485/The-Rise-Fall-of-Womens-Basketball-Dynasties', 'blank');"/>
+
+##### Avatar, The Last Airbender
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_33/2020_33_AvatarLastAirbender.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/102443565/The-Elements-of-Avatar-The-Last-Airbender', 'blank');"/>
+
+##### Friends Chatting about Friends
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_37/2020_37_Friends.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_37/2020_37_Friends.png', 'blank');"/>
+
+##### Tour de France
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_15/2020_15_TourDeFrance.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100656153/Tour-de-France-19032019', 'blank');"/>
 
 ##### FIVB World Tour
 
@@ -87,13 +107,26 @@ A selection of data visualizations  have produced for scientific publications, c
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_07/2020_07_HotelBookings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_07/2020_07_HotelBookings.png', 'blank');"/>
 
-#### UNESCO's "e-Atlas of Teachers"
+##### Plants in Danger
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_34/2020_34_ExtinctPlants_2_poster_legend_Oceania_1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_34/2020_34_ExtinctPlants_2_poster_legend_Oceania_1.png', 'blank');"/>
+
+##### Most Popular Cocktails 2020
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_22/2020_22_Cocktails.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_22/2020_22_Cocktails.png', 'blank');"/>
+
+##### Volcano Eruptions
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_20/2020_20_Volcanoes_center2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100654239/Volcanic-Eruptions', 'blank');"/>
 
 ##### "The Office" IMDb Ratings
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png', 'blank');"/>
+
+
+#### UNESCO's "e-Atlas of Teachers"
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png', 'blank');"/>
 
 ##### NYC Squirrels
 
@@ -181,7 +214,6 @@ A selection of data visualizations  have produced for scientific publications, c
 
 [#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge) is a monthly challenge where you can practice and apply data visualization and storytelling skills initiated by [Cole Nussbaumer Knaflic](https://twitter.com/storywithdata?lang=en)
 
-
 ##### Topic: Small Multiples
 
 <img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_01/SWD_2020_01_SmallMultiples_grey.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://community.storytellingwithdata.com/members/me/gallery/2ab74315-c687-42a3-9d94-192a7799058c', 'blank');"/>
@@ -192,16 +224,18 @@ A selection of data visualizations  have produced for scientific publications, c
 
 ##### Topic: Visualizing Uncertainty
 
-<img src="https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty.pn" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('ghttps://community.storytellingwithdata.com/members/me/gallery/2c51616f-eff5-46d9-9df7-981881e6cc09', 'blank');"/>
+<img src="https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://community.storytellingwithdata.com/members/me/gallery/2c51616f-eff5-46d9-9df7-981881e6cc09', 'blank');"/>
 <br>
 
 
-## "Evolution of a ggplot" blog series {#evolggplot}
+## RStudio Table Contest 2020 {#tablecontest}
 
-"Evolution of a ggplot" is a blog series aimed to show the steps needed to transform a basic ggplot into a visually appealing visualization.
+##### Top 250 TV Shows on IMDb
 
-<img src="https://cedricscherer.netlify.app/img/evol-ggplot/evol-ggplot-1.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/evol-ggplot/evol-ggplot-1.gif', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
 <br>
+
+<hr>
 
 ##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>
