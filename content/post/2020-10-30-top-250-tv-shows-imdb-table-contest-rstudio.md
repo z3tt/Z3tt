@@ -19,7 +19,7 @@ showtoc: false
 
 With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly [remote "Stammtisch"](https://debeste.de/129626/Stammtisch) with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.
 
-In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the [original one on IMDb](https://www.imdb.com/chart/toptv/) as contribution for the ongoing [RStudio table contest](https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/):
+In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the [original one on IMDb](https://www.imdb.com/chart/toptv/) as [my contribution](https://community.rstudio.com/t/what-do-i-binge-next-an-overview-of-the-top-imdb-tv-shows-table-contest-submission/86409) to the ongoing [RStudio table contest](https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/):
 
 > Tables are a fantastic way to communicate lists of quantitative and qualitative information. Sometimes, tables can fall very short of their potential for greatness. But that was the past: we now have some excellent R packages at our disposal to generate well-designed and functional presentation tables. And because of this renaissance of table-making in R, we’re announcing a contest: The 2020 RStudio Table Contest!
 
@@ -69,6 +69,8 @@ I used the [`{gt}` package](https://gt.rstudio.com/) which allows to generate st
 
 In addition, I used several `{tidyverse}` packages (`{dplyr}`, `{tidyr}`, `{readr}`, `{magrittr}`) for data preparation as well as `{reticulate}` o run the Python scrapping script, `{here}` for easy handling of paths, `{glue}` for string pasting and `{pkgconfig}` to deal with header names.
 
+[The code is available on GitHub.](https://github.com/Z3tt/Rstudio_TableContest_2020/blob/main/imdb_top_tvshows.Rmd)
+
 ##### Varieties
 
 Since the Top 250 TV Shows table is quite long (by definition), I also created versions for the [Top 100](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top100.png) and [Top 50](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top50.png), respectively. I also found it interesting to look at particular genres in isolation and provide exemplary versions for the genres [Documentary](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png), [Animation](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopAnimation.png), [Comedy](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopComedy.png), [Drama](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDrama.png), and [Action](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopAction.png).
@@ -80,3 +82,7 @@ Here are is the full top 100 as well as all comedy series contained in the top 2
 
 ![](https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopComedy.png)
 <p class="small" align="center"><i style="color:#8c8c8c;">A variety showing the top comedy TV shows contained in the top 250 TV shows as of Nov 1<sup>st</sup> 2020.</i></p>
+
+<hr>
+
+All tables and the source codes are available on [GitHub](https://github.com/Z3tt/Rstudio_TableContest_2020/).
