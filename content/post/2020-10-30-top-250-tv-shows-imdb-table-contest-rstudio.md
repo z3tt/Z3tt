@@ -56,6 +56,11 @@ The idea is built upon a personal project that I started in March 2020 after vis
 ![](/img/table-contest/2019_02_TVsGoldenAge_rel100_rank.png)
 <p class="small" align="center"><i style="color:#8c8c8c;">Trends in season ratings for the top 100 of series comprising 3 to 12 seasons.</i></p>
 
+During the development of the table, I tried different versions showing either rating trends scaled across  or per show, absolute versus relative changes and  a version where each season and its average rating is indicated below the episode ratings:
+
+![](/img/table-contest/snapshot_dev.png)
+<p class="small" align="center"><i style="color:#8c8c8c;">Screenshot of the development process of the trending stripes to show episode and season ratings across series.</i></p>
+
 ##### Data Source and Preparation
 
 The data is a mixture of scraped data using a modified[ Python script](ttps://github.com/WittmannF/imdb-tv-ratings/blob/master/IMDB_get_ratings.ipynb) (ranks, ratings, votes, year of release) and data downloaded from the [IMDb dataset interface](https://datasets.imdbws.com/) (title basics: original title, genre, runtime). The data was cleaned (e.g. correct wrong runtimes, title spellings etc.) and missing entries filled. (However, some series are returned as having 1 season only but have several actually and I didn't find a good workaround yet.)

@@ -373,6 +373,9 @@ $(function() {
 <p>The idea is built upon a personal project that I started in March 2020 after visualizing <a href="https://twitter.com/cedscherer/status/1242229041488433152">IMDb ratings of &ldquo;The Office&rdquo; as contribution to #TidyTuesday</a> but I never had the drive to finish. Here is a visualization from back then that served as inspiration:</p>
 <p><img src="/img/table-contest/2019_02_TVsGoldenAge_rel100_rank.png" alt=""></p>
 <p class="small" align="center"><i style="color:#8c8c8c;">Trends in season ratings for the top 100 of series comprising 3 to 12 seasons.</i></p>
+<p>During the development of the table, I tried different versions showing either rating trends scaled across  or per show, absolute versus relative changes and  a version where each season and its average rating is indicated below the episode ratings:</p>
+<p><img src="/img/table-contest/snapshot_dev.png" alt=""></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">Screenshot of the development process of the trending stripes to show episode and season ratings across series.</i></p>
 <h5 id="data-source-and-preparation">Data Source and Preparation</h5>
 <p>The data is a mixture of scraped data using a modified<a href="ttps://github.com/WittmannF/imdb-tv-ratings/blob/master/IMDB_get_ratings.ipynb"> Python script</a> (ranks, ratings, votes, year of release) and data downloaded from the <a href="https://datasets.imdbws.com/">IMDb dataset interface</a> (title basics: original title, genre, runtime). The data was cleaned (e.g. correct wrong runtimes, title spellings etc.) and missing entries filled. (However, some series are returned as having 1 season only but have several actually and I didn&rsquo;t find a good workaround yet.)</p>
 <h5 id="r-packages-used">R Packages Used</h5>
