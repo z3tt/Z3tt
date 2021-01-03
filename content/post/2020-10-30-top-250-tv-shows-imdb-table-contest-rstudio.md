@@ -17,7 +17,7 @@ tags:
 showtoc: false
 ---
 
-With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly [remote "Stammtisch"](https://debeste.de/129626/Stammtisch) with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.
+With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote ["Stammtisch"](https://debeste.de/129626/Stammtisch) with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.
 
 In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the [original one on IMDb](https://www.imdb.com/chart/toptv/) as [my contribution](https://community.rstudio.com/t/what-do-i-binge-next-an-overview-of-the-top-imdb-tv-shows-table-contest-submission/86409) to the ongoing [RStudio table contest](https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/):
 
@@ -67,9 +67,7 @@ I used the [`{gt}` package](https://gt.rstudio.com/) which allows to generate st
 ![](/img/table-contest/tables_thomas.png)
 <p class="small" align="center"><i style="color:#8c8c8c;">Two example tables with in-line ggplots from Thomas Mock's great tutorial series.</i></p>
 
-In addition, I used several `{tidyverse}` packages (`{dplyr}`, `{tidyr}`, `{readr}`, `{magrittr}`) for data preparation as well as `{reticulate}` o run the Python scrapping script, `{here}` for easy handling of paths, `{glue}` for string pasting and `{pkgconfig}` to deal with header names.
-
-[The code is available on GitHub.](https://github.com/Z3tt/Rstudio_TableContest_2020/blob/main/imdb_top_tvshows.Rmd)
+In addition, I used several `{tidyverse}` packages (`{dplyr}`, `{tidyr}`, `{readr}`, `{magrittr}`) for data preparation as well as `{reticulate}` o run the Python scrapping script, `{here}` for easy handling of paths, `{glue}` for string pasting and `{pkgconfig}` to deal with header names. The code to generate the table is [available on GitHub](https://github.com/Z3tt/Rstudio_TableContest_2020/blob/main/imdb_top_tvshows.Rmd).
 
 ##### Varieties
 
