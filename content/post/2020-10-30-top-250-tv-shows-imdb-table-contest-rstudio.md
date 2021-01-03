@@ -42,7 +42,7 @@ To visualize the runtime I decided to use a restrained, grey-toned, area-scaled 
 In addition, a line indicates the average rating per season on a range from 1 to 10:
 
 ![](/img/table-contest/southpark_full.png)
-<p class="small" align="center"><i style="color:#8c8c8c;">The “trending stripes” of “Southpark”, including trends in average rating per season a step chart.</i></p>
+<p class="small" align="center"><i style="color:#8c8c8c;">The “trending stripes” of “Southpark”, including trends in average rating per season visualized as a step chart.</i></p>
 
 How does this help? Here are two more examples showing the dramatic (and completely deserved) fall of ratings for the last season of “Game of Thrones” as well as the brilliant  “Bojack Horseman” that got better and better over time:
 
