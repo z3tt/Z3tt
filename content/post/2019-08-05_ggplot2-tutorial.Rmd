@@ -3,6 +3,7 @@ title: "A ggplot2 Tutorial for Beautiful Plotting in R"
 author: "Cédric"
 date: 2019-08-05
 image: img/banner/sun_RichardStrozynski.jpg
+twitterImg: img/banner/sun_RichardStrozynski.png
 layout: post
 showtoc: false
 description: "An extensive tutorial containing a general introduction to ggplot2 as well as many examples how to modify a ggplot, step by step. It covers several topics such as different chart types, themes, design choices, plot combinations, and modification of axes, labels, and legends, custom fonts, interactive charts and many more."
@@ -104,10 +105,10 @@ Major changes I've made:
 
 ```{r install-packages, eval=FALSE}
 # install CRAN packages
-install.packages(c("tidyverse", "colorspace", "corrr",  "cowplot", 
-                   "ggdark", "ggforce", "ggrepel", "ggridges", "ggsci", 
-                   "ggtext", "ggthemes", "grid", "gridExtra", "patchwork", 
-                   "rcartocolor", "scico", "showtext", "shiny", 
+install.packages(c("tidyverse", "colorspace", "corrr",  "cowplot",
+                   "ggdark", "ggforce", "ggrepel", "ggridges", "ggsci",
+                   "ggtext", "ggthemes", "grid", "gridExtra", "patchwork",
+                   "rcartocolor", "scico", "showtext", "shiny",
                    "plotly", "highcharter", "echarts4r"))
 
 # install from GitHub since not on CRAN
@@ -121,10 +122,10 @@ devtools::install_github("JohnCoene/charter")
 
 ## The Dataset {#data}
 
-We are using data from the *National Morbidity and Mortality Air Pollution Study* (NMMAPS). To make the plots manageable we are limiting the data to Chicago and 1997–2000. For more detail on this data set, consult Roger Peng's book [Statistical Methods in Environmental Epidemiology with R](http://www.springer.com/de/book/9780387781662). 
+We are using data from the *National Morbidity and Mortality Air Pollution Study* (NMMAPS). To make the plots manageable we are limiting the data to Chicago and 1997–2000. For more detail on this data set, consult Roger Peng's book [Statistical Methods in Environmental Epidemiology with R](http://www.springer.com/de/book/9780387781662).
 You can download the data we are using during this tutorial [here](https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv) (but you don't have to).
 
-We can import the data into our R session for example with `read_csv()` from the `{readr}` package. To access the data later, we are storing it in a variable called `chic` by using the *assignment arrow* `<-`. 
+We can import the data into our R session for example with `read_csv()` from the `{readr}` package. To access the data later, we are storing it in a variable called `chic` by using the *assignment arrow* `<-`.
 
 ```{r data-import}
 chic <- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
@@ -330,7 +331,7 @@ Again, we use the `theme()` function and modify the element `axis.title` and/or 
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") +
-  theme(axis.title = element_text(size = 15, color = "firebrick", 
+  theme(axis.title = element_text(size = 15, color = "firebrick",
                                   face = "italic"))
 ```
 
@@ -502,7 +503,7 @@ ggplot(chic_high, aes(x = temp, y = o3)) +
   coord_cartesian(xlim = c(0, NA), ylim = c(0, NA))
 ```
 </details>
-  
+
 But we can also force it to *literally* start at the origin!
 
 ```{r origin-force}
@@ -838,8 +839,8 @@ ggplot(chic, aes(x = date, y = temp, color = season))) +
 We can achieve this by changing the levels of `season`:
 
 ```{r legend-order}
-chic$season <- 
-  factor(chic$season, 
+chic$season <-
+  factor(chic$season,
          levels = c("Winter", "Spring", "Summer", "Autumn"))
 
 ggplot(chic, aes(x = date, y = temp, color = season)) +
@@ -1981,7 +1982,7 @@ Okay, avoiding overlap of labels did not work out. But don't worry, we are going
 ```{r data-label}
 ggplot(sample, aes(x = date, y = temp, color = season)) +
   geom_point() +
-  geom_text(aes(label = season), fontface = "bold", 
+  geom_text(aes(label = season), fontface = "bold",
             hjust = .5, vjust = -.25) +
   labs(x = "Year", y = "Temperature (°F)") +
   xlim(as.Date(c('1997-01-01', '2000-12-31'))) +
@@ -2008,7 +2009,7 @@ It may look nicer with filled boxes so we map `season` to `fill` instead to `col
 ggplot(sample, aes(x = date, y = temp)) +
   geom_point(data = chic, size = .5) +
   geom_point(aes(color = season), size = 1.5) +
-  geom_label_repel(aes(label = season, fill = season), 
+  geom_label_repel(aes(label = season, fill = season),
                    color = "white", fontface = "bold",
                    segment.color = "grey30") +
   labs(x = "Year", y = "Temperature (°F)") +
@@ -2022,7 +2023,7 @@ This also works for the pure text labels by using `geom_text_repel()`. Have a lo
 There are several ways how one can add annotations to a ggplot. We can again use `geom_text()` or `geom_label()`:
 
 ```{r textbox-label}
-g <- 
+g <-
   ggplot(chic, aes(x = temp, y = dewpoint)) +
   geom_point(alpha = .5) +
   labs(x = "Temperature (°F)", y = "Dewpoint")
@@ -2044,7 +2045,7 @@ g +
 By the way, of course one can change the properties of the displayed text:
 
 ```{r textbox-label-custom}
-g + 
+g +
   geom_text(aes(x = 25, y = 60,
                 label = "This is an useful annotation"),
             stat = "unique", family = "Bangers",
@@ -2061,7 +2062,7 @@ ann <- data.frame(
   label = "Here is enough space\nfor some annotations."
 )
 
-g <- 
+g <-
   ggplot(chic, aes(x = o3, y = temp)) +
   geom_point() +
   labs(x = "Ozone", y = "Temperature (°F)")
@@ -2076,8 +2077,8 @@ g +
 Another challenge are facets in combination with free scales that might cut your text:
 
 ```{r label-facet-scales-problem}
-g + 
-  geom_text(aes(x = 23, y = 97, 
+g +
+  geom_text(aes(x = 23, y = 97,
                 label = "This is not an useful annotation"),
             size = 5, fontface = "bold") +
   scale_y_continuous(limits = c(NA, 100)) +
@@ -2089,9 +2090,9 @@ One solution is to calculate the midpoint of the axis, here `x`, beforehand:
 ```{r label-facet-scales-problem-solved-prep}
 library(tidyverse)
 (ann <-
-  chic %>% 
-  group_by(season) %>% 
-  summarize(o3 = min(o3, na.rm = TRUE) + 
+  chic %>%
+  group_by(season) %>%
+  summarize(o3 = min(o3, na.rm = TRUE) +
               (max(o3, na.rm = TRUE) - min(o3, na.rm = TRUE)) / 2))
 
 ann
@@ -2100,16 +2101,16 @@ ann
 ... and use the aggreated data to specify the placement of the annotation:
 
 ```{r label-facet-scales-problem-solved-plot}
-g + 
+g +
   geom_text(data = ann,
-            aes(x = o3, y = 97, 
-                label = "This is an useful annotation"), 
+            aes(x = o3, y = 97,
+                label = "This is an useful annotation"),
             size = 5, fontface = "bold") +
   scale_y_continuous(limits = c(NA, 100)) +
   facet_wrap(~season, scales = "free_x")
 ```
 
-However, there is a simpler approach (in terms of fixing the cordinates)—but it also takes a while to know the code by heart. The `{grid}` package in combination with `{ggplot2}`'s `annotation_custom()` allows you to specify the location based on scaled coordinates where 0 is low and 1 is high. `grobTree()` creates a grid graphical object and `textGrob` creates the text graphical object. The value of this is particularly evident when you have multiple plots with different scales. 
+However, there is a simpler approach (in terms of fixing the cordinates)—but it also takes a while to know the code by heart. The `{grid}` package in combination with `{ggplot2}`'s `annotation_custom()` allows you to specify the location based on scaled coordinates where 0 is low and 1 is high. `grobTree()` creates a grid graphical object and `textGrob` creates the text graphical object. The value of this is particularly evident when you have multiple plots with different scales.
 
 ```{r grobTree}
 library(grid)
@@ -2135,7 +2136,7 @@ library(ggtext)
 
 lab_md <- "This plot shows **temperature** in *°F* versus **ozone level** in *ppm*"
 
-g + 
+g +
   geom_richtext(aes(x = 35, y = 3, label = lab_md),
                 stat = "unique")
 ```
@@ -2145,7 +2146,7 @@ g +
 ```{r ggtext-geom-richtext-html}
 lab_html <- "&#9733; This plot shows <b style='color:red;'>temperature</b> in <i>°F</i> versus <b style='color:blue;'>ozone level</b>in <i>ppm</i> &#9733;"
 
-g + 
+g +
   geom_richtext(aes(x = 33, y = 3, label = lab_html),
                 stat = "unique")
 ```
@@ -2153,10 +2154,10 @@ g +
 The geom comes with a lot of details one can modify, such as angle (which is not possible in the default `geom_text()` and `geom_label()`), properties of the box and properties of the text.
 
 ```{r ggtext-geom-richtext-modify}
-g + 
+g +
   geom_richtext(aes(x = 10, y = 25, label = lab_md),
-                stat = "unique", angle = 30, 
-                color = "white", fill = "steelblue", 
+                stat = "unique", angle = 30,
+                color = "white", fill = "steelblue",
                 label.color = NA, hjust = 0, vjust = 0,
                 family = "Playfair Display")
 ```
@@ -2166,9 +2167,9 @@ The other geom from the `{ggtext}` package is `geom_textbox()`. This geom allows
 ```{r ggtetxt-geom-textbox}
 lab_long <- "**Lorem ipsum dolor**<br><i style='font-size:8pt;color:red;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i>"
 
-g + 
-  geom_textbox(aes(x = 40, y = 10, label = lab_long), 
-               width = unit(15, "lines"), stat = "unique") 
+g +
+  geom_textbox(aes(x = 40, y = 10, label = lab_long),
+               width = unit(15, "lines"), stat = "unique")
 ```
 
 Note that it is not possible to either rotate the textbox (always horizontal) nor to change the justification of the text (always left-aligned).
@@ -2297,7 +2298,7 @@ chic_sum <-
   dplyr::mutate(n_all = n()) %>%
   dplyr::group_by(season) %>%
   dplyr::summarize(rel = n() / unique(n_all))
-  
+
 ggplot(chic_sum, aes(x = "", y = rel)) +
   geom_col(aes(fill = season), width = 1, color = NA) +
   labs(x = "", y = "Proportion of Days Exceeding\nthe Median Ozone Level") +
@@ -2327,7 +2328,7 @@ ggplot(chic_sum, aes(x = "", y = rel)) +
 
 ##### Alternatives to a Box Plot
 
-Box plots are great, but they can be so incredibly boring. Also, even if you are used to looking at box plots, remember there might be plenty people looking at your plot that have never seen a box and whisker plot before. 
+Box plots are great, but they can be so incredibly boring. Also, even if you are used to looking at box plots, remember there might be plenty people looking at your plot that have never seen a box and whisker plot before.
 
 <details>
 <summary>&#128129; <i>Expand for a short recap on box and whiskers plots.</i></summary>
@@ -2340,7 +2341,7 @@ A box-and-whisker plot (sometimes called simply a box plot) is a histogram-like 
 There are alternatives, but first we are plotting a common box plot:
 
 ```{r boxplot}
-g <- 
+g <-
   ggplot(chic, aes(x = season, y = o3,
                    color = season)) +
     labs(x = "Season", y = "Ozone") +
@@ -2420,7 +2421,7 @@ g + geom_violin(aes(fill = season), size = 1, alpha = .5) +
 A rug represents the data of a single quantitative variable, displayed as marks along an axis. In most cases, it is used in addition to scatter plots or heatmaps to visualize the overall distribution of one or both of the variables:
 
 ```{r rug}
-ggplot(chic, aes(x = date, y = temp, 
+ggplot(chic, aes(x = date, y = temp,
                  color = season)) +
   geom_point(show.legend = FALSE) +
   geom_rug(show.legend = FALSE) +
@@ -2444,11 +2445,11 @@ First step is to create the correlation matrix. Here, we use the `{corrr}` packa
 ```{r corr-matrix, echo=-5}
 library(tidyverse)
 
-corm <- 
+corm <-
   chic %>%
-  select(death, temp, dewpoint, pm10, o3) %>% 
+  select(death, temp, dewpoint, pm10, o3) %>%
   corrr::correlate(diagonal = 1) %>%
-  corrr::shave(upper = FALSE) 
+  corrr::shave(upper = FALSE)
 
 corm
 ```
@@ -2458,10 +2459,10 @@ Now we put the resulting matrix in **long** format using the `pivot_longer()` fu
 ```{r melt-corr-matrix, echo=-3}
 corm <- corm %>%
   pivot_longer(
-    cols = -rowname, 
-    names_to = "colname", 
+    cols = -rowname,
+    names_to = "colname",
     values_to = "corr"
-  ) %>% 
+  ) %>%
   mutate(rowname = fct_inorder(rowname),
          colname = fct_inorder(colname))
 
@@ -2471,9 +2472,9 @@ corm
 For the plot we will use `geom_tile()` for the heatmap and `geom_text()` for the labels:
 
 ```{r tile-corr-plot}
-ggplot(corm, aes(rowname, fct_rev(colname), 
-                 fill = corr)) + 
-  geom_tile() + 
+ggplot(corm, aes(rowname, fct_rev(colname),
+                 fill = corr)) +
+  geom_tile() +
   geom_text(aes(label = round(corr, 2))) +
   coord_fixed() +
   labs(x = NULL, y = NULL)
@@ -2482,20 +2483,20 @@ ggplot(corm, aes(rowname, fct_rev(colname),
 I like to have a diverging color palette, centered at zero correlation, with white indicating missing data. Also I like to have no grid lines and padding around the heatmap as well as nicely formatted labels that are colored depending on the underlying fill:
 
 ```{r tile-corr-plot-polished}
-ggplot(corm, aes(rowname, fct_rev(colname), 
-                 fill = corr)) + 
-  geom_tile() + 
+ggplot(corm, aes(rowname, fct_rev(colname),
+                 fill = corr)) +
+  geom_tile() +
   geom_text(aes(
     label = format(round(corr, 2), nsmall = 2),
     color = abs(corr) < .75
   )) +
   coord_fixed(expand = FALSE) +
-  scale_color_manual(values = c("white", "black"), 
+  scale_color_manual(values = c("white", "black"),
                      guide = "none") +
   scale_fill_distiller(
     palette = "PuOr", na.value = "white",
     direction = 1, limits = c(-1, 1)
-  ) + 
+  ) +
   labs(x = NULL, y = NULL) +
   theme(panel.border = element_rect(color = NA, fill = NA),
         legend.position = c(.85, .8))
@@ -2533,7 +2534,7 @@ df <- melt(fld$z, na.rm = TRUE)
 names(df) <- c("x", "y", "Dewpoint")
 
 g <- ggplot(data = df, aes(x = x, y = y, z = Dewpoint))  +
-  labs(x = "Temperature (°F)", y = "Ozone Level", 
+  labs(x = "Temperature (°F)", y = "Ozone Level",
        color = "Dewpoint")
 
 g + stat_contour(aes(color = ..level.., fill = Dewpoint))
@@ -2690,13 +2691,13 @@ How does it look if we fill in the area below the curve using the `geom_ribbon()
 
 ```{r geom-ribbon-AUC}
 ggplot(chic, aes(x = date, y = o3run)) +
-   geom_ribbon(aes(ymin = 0, ymax = o3run), 
+   geom_ribbon(aes(ymin = 0, ymax = o3run),
                fill = "orange", alpha = .4) +
    geom_line(color = "chocolate", lwd = .8) +
    labs(x = "Year", y = "Ozone")
 ```
 
-Nice to indicate the [area under the curve (AUC)](https://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)) but this is not the conventional way to use `geom_ribbon()`. 
+Nice to indicate the [area under the curve (AUC)](https://en.wikipedia.org/wiki/Area_under_the_curve_(pharmacokinetics)) but this is not the conventional way to use `geom_ribbon()`.
 
 💁 *And actually a nicer way to achieve the same is `geom_area()`.*
 
@@ -2704,7 +2705,7 @@ Nice to indicate the [area under the curve (AUC)](https://en.wikipedia.org/wiki/
   <summary>Expand to see example.</summary>
 ```{r geom-area-AUC}
 ggplot(chic, aes(x = date, y = o3run)) +
-   geom_area(color = "chocolate", lwd = .8, 
+   geom_area(color = "chocolate", lwd = .8,
              fill = "orange", alpha = .4) +
    labs(x = "Year", y = "Ozone")
 ```
@@ -2751,7 +2752,7 @@ Though the default is a LOESS or GAM smoothing, it is also easy to add a standar
 ```{r LM}
 ggplot(chic, aes(x = temp, y = death)) +
    labs(x = "Temperature (°F)", y = "Deaths") +
-   stat_smooth(method = "lm", se = FALSE, 
+   stat_smooth(method = "lm", se = FALSE,
                color = "firebrick", size = 1.3) +
    geom_point(color = "gray40", alpha = .5)
 ```
@@ -2759,7 +2760,7 @@ ggplot(chic, aes(x = temp, y = death)) +
 
 ##### Specifying the Formula for Smoothing
 
-`{ggplot2}` allows you to specify the model you want it to use. Maybe you want to use a [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression)? 
+`{ggplot2}` allows you to specify the model you want it to use. Maybe you want to use a [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression)?
 
 ```{r GAM-spec1}
 ggplot(chic, aes(x = o3, y = temp))+
@@ -2770,7 +2771,7 @@ ggplot(chic, aes(x = o3, y = temp))+
     color = "black",
     fill = "firebrick"
   ) +
-  geom_point(color = "gray40", alpha = .3) 
+  geom_point(color = "gray40", alpha = .3)
 ```
 
 <details>
@@ -2779,14 +2780,14 @@ ggplot(chic, aes(x = o3, y = temp))+
 ggplot(chic, aes(x = o3, y = temp))+
   labs(x = "Ozone Level", y = "Temperature (°F)") +
   geom_smooth(stat = "smooth") + ## the default
-  geom_point(color = "gray40", alpha = .3) 
+  geom_point(color = "gray40", alpha = .3)
 ```
 
 ```{r geom-stat-smooth-b}
 ggplot(chic, aes(x = o3, y = temp))+
   labs(x = "Ozone Level", y = "Temperature (°F)") +
   stat_smooth(geom = "smooth") + ## the default
-  geom_point(color = "gray40", alpha = .3) 
+  geom_point(color = "gray40", alpha = .3)
 ```
 </details>
 
@@ -2798,16 +2799,16 @@ cols <- c("darkorange2", "firebrick", "dodgerblue3")
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "gray40", alpha = .3) +
   labs(x = "Year", y = "Temperature (°F)") +
-  stat_smooth(aes(col = "1000"), 
-              method = "gam", 
+  stat_smooth(aes(col = "1000"),
+              method = "gam",
               formula = y ~ s(x, k = 1000),
               se = FALSE, size = 1.3) +
-  stat_smooth(aes(col = "100"), 
-              method = "gam", 
+  stat_smooth(aes(col = "100"),
+              method = "gam",
               formula = y ~ s(x, k = 100),
               se = FALSE, size = 1) +
   stat_smooth(aes(col = "10"),
-              method = "gam", 
+              method = "gam",
               formula = y ~ s(x, k = 10),
               se = FALSE, size = .8) +
   scale_color_manual(name = "k", values = cols)
@@ -2898,11 +2899,11 @@ hchart(chic, "scatter", hcaes(x = date, y = temp, group = season))
 ```{r echarts4r}
 library(echarts4r)
 
-chic %>% 
-  e_charts(date) %>% 
-  e_scatter(temp, symbol_size = 7) %>% 
-  e_visual_map(temp) %>% 
-  e_y_axis(name = "Temperature (°F)") %>% 
+chic %>%
+  e_charts(date) %>%
+  e_scatter(temp, symbol_size = 7) %>%
+  e_visual_map(temp) %>%
+  e_y_axis(name = "Temperature (°F)") %>%
   e_legend(FALSE)
 ```
 
@@ -2917,8 +2918,8 @@ library(charter)
 chic$date_num <- as.numeric(chic$date)
 ## doesn't work with class date
 
-chart(data = chic, caes(date_num, temp)) %>% 
-  c_scatter(caes(color = season, group = season)) %>% 
+chart(data = chic, caes(date_num, temp)) %>%
+  c_scatter(caes(color = season, group = season)) %>%
   c_colors(RColorBrewer::brewer.pal(4, name = "Dark2"))
 ```
 (The example doesn't work in Rmarkdown.)

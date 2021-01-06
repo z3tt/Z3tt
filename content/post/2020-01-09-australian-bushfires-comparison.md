@@ -4,6 +4,7 @@ title: Comparing the Extent of the Australian Bushfires 2019/20
 author: Cédric
 date: "2020-01-09"
 image: img/banner/fire_MichaelBarth.jpg
+twitterImg: img/banner/fire_MichaelBarth.png
 layout: post
 description: "The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide."
 tags:

@@ -8,35 +8,35 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
 
-    {{ if .Title }}
-      <meta name="title" content="{{ .Title }}" />
-      <meta property="og:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
-      <meta property="twitter:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
-      <meta property="twitter:text:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
-    {{ else }}
-      <meta name="title" content="{{ .Site.Params.title }}" />
-      <meta property="og:title" content="{{ .Site.Params.title }}" />
-      <meta property="twitter:title" content="{{ .Site.Params.title }}" />
-      <meta property="twitter:text:title" content="{{ .Site.Params.title }}" />
-    {{ end }}
+      {{ if .Title }}
+        <meta name="title" content="{{ .Title }}" />
+        <meta property="og:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
+        <meta property="twitter:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
+        <meta property="twitter:text:title" content="{{ .Title }} - {{ .Site.Params.title }}" />
+      {{ else }}
+        <meta name="title" content="{{ .Site.Params.title }}" />
+        <meta property="og:title" content="{{ .Site.Params.title }}" />
+        <meta property="twitter:title" content="{{ .Site.Params.title }}" />
+        <meta property="twitter:text:title" content="{{ .Site.Params.title }}" />
+      {{ end }}
 
-    {{ if .Params.description }}
-      <meta name="description" content="{{ .Params.description }}">
-      <meta property="og:description" content="{{ .Params.description }}" />
-      <meta property="twitter:description" content="{{ .Params.description }}" />
-    {{ else }}
-      <meta name="description" content="{{ .Site.Params.description }}">
-      <meta property="og:description" content="{{ .Site.Params.description }}" />
-      <meta property="twitter:description" content="{{ .Site.Params.description }}" />
-    {{ end }}
+      {{ if .Params.description }}
+        <meta name="description" content="{{ .Params.description }}">
+        <meta property="og:description" content="{{ .Params.description }}" />
+        <meta property="twitter:description" content="{{ .Params.description }}" />
+      {{ else }}
+        <meta name="description" content="{{ .Site.Params.description }}">
+        <meta property="og:description" content="{{ .Site.Params.description }}" />
+        <meta property="twitter:description" content="{{ .Site.Params.description }}" />
+      {{ end }}
 
-    {{ if .Params.twitterImg }}
-      <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" />
-      <meta property="twitter:card" content="summary" />
-    {{ else }}
-      <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" />
-      <meta property="twitter:card" content="summary_large_image" />
-    {{ end }}
+      {{ if .Params.twitterImg }}
+        <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" />
+        <meta property="twitter:card" content="summary" />
+      {{ else }}
+        <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" />
+        <meta property="twitter:card" content="summary_large_image" />
+      {{ end }}
 
     <!-- end ogp -->
 

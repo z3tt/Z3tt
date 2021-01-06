@@ -4,6 +4,7 @@ title: Best TidyTuesday 2019
 author: Cédric
 date: "2019-12-30"
 image: img/banner/milkyway_RichardStrozynski.jpg
+twitterImg: img/banner/milkyway_RichardStrozynski.png
 layout: post
 description: "Here are my favorite visualizations of the #TidyTuesday challenge in 2019 (from those I've seen and which I remember). I present my personal top 3 in terms of design and storytelling."
 tags:

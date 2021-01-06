@@ -3,6 +3,7 @@ title: "A ggplot2 Tutorial for Beautiful Plotting in R"
 author: "Cédric"
 date: 2019-08-05
 image: img/banner/sun_RichardStrozynski.jpg
+twitterImg: img/banner/sun_RichardStrozynski.png
 layout: post
 showtoc: false
 description: "An extensive tutorial containing a general introduction to ggplot2 as well as many examples how to modify a ggplot, step by step. It covers several topics such as different chart types, themes, design choices, plot combinations, and modification of axes, labels, and legends, custom fonts, interactive charts and many more."
@@ -161,10 +162,10 @@ Some exemplary plots included in this tutorial.
 </ul></li>
 </ul>
 <pre class="r"><code># install CRAN packages
-install.packages(c(&quot;tidyverse&quot;, &quot;colorspace&quot;, &quot;corrr&quot;,  &quot;cowplot&quot;, 
-                   &quot;ggdark&quot;, &quot;ggforce&quot;, &quot;ggrepel&quot;, &quot;ggridges&quot;, &quot;ggsci&quot;, 
-                   &quot;ggtext&quot;, &quot;ggthemes&quot;, &quot;grid&quot;, &quot;gridExtra&quot;, &quot;patchwork&quot;, 
-                   &quot;rcartocolor&quot;, &quot;scico&quot;, &quot;showtext&quot;, &quot;shiny&quot;, 
+install.packages(c(&quot;tidyverse&quot;, &quot;colorspace&quot;, &quot;corrr&quot;,  &quot;cowplot&quot;,
+                   &quot;ggdark&quot;, &quot;ggforce&quot;, &quot;ggrepel&quot;, &quot;ggridges&quot;, &quot;ggsci&quot;,
+                   &quot;ggtext&quot;, &quot;ggthemes&quot;, &quot;grid&quot;, &quot;gridExtra&quot;, &quot;patchwork&quot;,
+                   &quot;rcartocolor&quot;, &quot;scico&quot;, &quot;showtext&quot;, &quot;shiny&quot;,
                    &quot;plotly&quot;, &quot;highcharter&quot;, &quot;echarts4r&quot;))
 
 # install from GitHub since not on CRAN
@@ -334,7 +335,7 @@ g + geom_point(color = &quot;firebrick&quot;)</code></pre>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
-  theme(axis.title = element_text(size = 15, color = &quot;firebrick&quot;, 
+  theme(axis.title = element_text(size = 15, color = &quot;firebrick&quot;,
                                   face = &quot;italic&quot;))</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/labs-color-axes-1-1.png" width="100%" /></p>
 <p>The <code>face</code> argument can be used to make the font <code>bold</code> or <code>italic</code> or even <code>bold.italic</code>.</p>
@@ -519,7 +520,7 @@ ggplot(chic_high, aes(x = temp, y = o3)) +
 <h5>Adjust Position of Titles</h5>
 <p>The general alignment (left, center, right) is controlled by <code>hjust</code> (which stands for horizontal adjustment):</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
-  geom_point(color = &quot;firebrick&quot;) +  
+  geom_point(color = &quot;firebrick&quot;) +
   labs(x = &quot;Year&quot;, y = NULL,
        title = &quot;Temperatures in Chicago&quot;,
        caption = &quot;Data: NMMAPS&quot;) +
@@ -528,7 +529,7 @@ ggplot(chic_high, aes(x = temp, y = o3)) +
 <p>Of course, there it is also possible to adjust the vertical alignment, controlled by <code>vjust</code>.</p>
 <p>Since 2019, the user is able to specify the alignment of the title, subtitle, and caption either based on the panel area (the default) or the plot margin via <code>plot.title.position</code> and <code>plot.caption.position</code>. The later is actually the better choice designwise in most cases and many people were very happy about that new feature since especially with very long y axis labels the alignment looks awful:</p>
 <pre class="r"><code>(g &lt;- ggplot(chic, aes(x = date, y = temp)) +
-  geom_point(color = &quot;firebrick&quot;) +  
+  geom_point(color = &quot;firebrick&quot;) +
   scale_y_continuous(label = function(x) {return(paste(x, &quot;Degrees Fahrenheit&quot;))}) +
   labs(x = &quot;Year&quot;, y = NULL,
        title = &quot;Temperatures in Chicago between 1997 and 2001 in Degrees Fahrenheit&quot;,
@@ -688,8 +689,8 @@ theme_set(theme_bw(base_size = 12, base_family = &quot;Roboto Condensed&quot;))<
 <div id="change-order-of-legend-keys" class="section level5">
 <h5>Change Order of Legend Keys</h5>
 <p>We can achieve this by changing the levels of <code>season</code>:</p>
-<pre class="r"><code>chic$season &lt;- 
-  factor(chic$season, 
+<pre class="r"><code>chic$season &lt;-
+  factor(chic$season,
          levels = c(&quot;Winter&quot;, &quot;Spring&quot;, &quot;Summer&quot;, &quot;Autumn&quot;))
 
 ggplot(chic, aes(x = date, y = temp, color = season)) +
@@ -771,7 +772,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
 <p>We are getting close but this is not what we want. We want gray and red! To change the color, we use <code>scale_color_manual()</code>. Additionally, we override the legend aesthetics using the <code>guide()</code> function.</p>
 <p><strong>Voila!</strong> Now, we have a plot with gray lines and red pints as well as a single gray line and a single red point as legend symbols:</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = o3)) +
-  geom_line(aes(color = &quot;line&quot;)) +  
+  geom_line(aes(color = &quot;line&quot;)) +
   geom_point(aes(color = &quot;points&quot;)) +
   labs(x = &quot;Year&quot;, y = &quot;Ozone&quot;) +
   scale_color_manual(name = NULL,
@@ -1311,61 +1312,61 @@ g + theme_bw(base_family = &quot;Playfair&quot;)</code></pre>
 <h5>Create Your Own Theme</h5>
 <p>If you want to change the theme for an entire session you can use <code>theme_set</code> as in <code>theme_set(theme_bw())</code>. The default is called <code>theme_gray</code> (or <code>theme_gray</code>). If you wanted to create your own custom theme, you could extract the code directly from the gray theme and modify. Note that the <code>rel()</code> function change the sizes relative to the <code>base_size</code>.</p>
 <pre class="r"><code>theme_gray</code></pre>
-<pre><code>## function (base_size = 11, base_family = &quot;&quot;, base_line_size = base_size/22, 
-##     base_rect_size = base_size/22) 
+<pre><code>## function (base_size = 11, base_family = &quot;&quot;, base_line_size = base_size/22,
+##     base_rect_size = base_size/22)
 ## {
 ##     half_line &lt;- base_size/2
-##     t &lt;- theme(line = element_line(colour = &quot;black&quot;, size = base_line_size, 
-##         linetype = 1, lineend = &quot;butt&quot;), rect = element_rect(fill = &quot;white&quot;, 
-##         colour = &quot;black&quot;, size = base_rect_size, linetype = 1), 
-##         text = element_text(family = base_family, face = &quot;plain&quot;, 
-##             colour = &quot;black&quot;, size = base_size, lineheight = 0.9, 
-##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(), 
-##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL, 
-##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8), 
-##             colour = &quot;grey30&quot;), axis.text.x = element_text(margin = margin(t = 0.8 * 
-##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
-##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 * 
-##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 * 
-##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &quot;grey20&quot;), 
-##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.ticks.length.x = NULL, 
-##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
-##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
-##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2), 
-##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2), 
-##             vjust = 0), axis.title.y = element_text(angle = 90, 
-##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90, 
-##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA), 
-##         legend.spacing = unit(2 * half_line, &quot;pt&quot;), legend.spacing.x = NULL, 
-##         legend.spacing.y = NULL, legend.margin = margin(half_line, 
-##             half_line, half_line, half_line), legend.key = element_rect(fill = &quot;grey95&quot;, 
-##             colour = NA), legend.key.size = unit(1.2, &quot;lines&quot;), 
-##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)), 
-##         legend.text.align = NULL, legend.title = element_text(hjust = 0), 
-##         legend.title.align = NULL, legend.position = &quot;right&quot;, 
-##         legend.direction = NULL, legend.justification = &quot;center&quot;, 
-##         legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
-##             0, &quot;cm&quot;), legend.box.background = element_blank(), 
-##         legend.box.spacing = unit(2 * half_line, &quot;pt&quot;), panel.background = element_rect(fill = &quot;grey92&quot;, 
-##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = &quot;white&quot;), 
-##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line, 
-##             &quot;pt&quot;), panel.spacing.x = NULL, panel.spacing.y = NULL, 
-##         panel.ontop = FALSE, strip.background = element_rect(fill = &quot;grey85&quot;, 
-##             colour = NA), strip.text = element_text(colour = &quot;grey10&quot;, 
-##             size = rel(0.8), margin = margin(0.8 * half_line, 
-##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)), 
-##         strip.text.x = NULL, strip.text.y = element_text(angle = -90), 
-##         strip.text.y.left = element_text(angle = 90), strip.placement = &quot;inside&quot;, 
-##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2, 
-##             &quot;pt&quot;), strip.switch.pad.wrap = unit(half_line/2, 
-##             &quot;pt&quot;), plot.background = element_rect(colour = &quot;white&quot;), 
-##         plot.title = element_text(size = rel(1.2), hjust = 0, 
-##             vjust = 1, margin = margin(b = half_line)), plot.title.position = &quot;panel&quot;, 
-##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)), 
-##         plot.caption = element_text(size = rel(0.8), hjust = 1, 
-##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = &quot;panel&quot;, 
-##         plot.tag = element_text(size = rel(1.2), hjust = 0.5, 
-##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
+##     t &lt;- theme(line = element_line(colour = &quot;black&quot;, size = base_line_size,
+##         linetype = 1, lineend = &quot;butt&quot;), rect = element_rect(fill = &quot;white&quot;,
+##         colour = &quot;black&quot;, size = base_rect_size, linetype = 1),
+##         text = element_text(family = base_family, face = &quot;plain&quot;,
+##             colour = &quot;black&quot;, size = base_size, lineheight = 0.9,
+##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(),
+##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL,
+##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8),
+##             colour = &quot;grey30&quot;), axis.text.x = element_text(margin = margin(t = 0.8 *
+##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 *
+##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 *
+##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 *
+##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &quot;grey20&quot;),
+##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.ticks.length.x = NULL,
+##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL,
+##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL,
+##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2),
+##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2),
+##             vjust = 0), axis.title.y = element_text(angle = 90,
+##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90,
+##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA),
+##         legend.spacing = unit(2 * half_line, &quot;pt&quot;), legend.spacing.x = NULL,
+##         legend.spacing.y = NULL, legend.margin = margin(half_line,
+##             half_line, half_line, half_line), legend.key = element_rect(fill = &quot;grey95&quot;,
+##             colour = NA), legend.key.size = unit(1.2, &quot;lines&quot;),
+##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)),
+##         legend.text.align = NULL, legend.title = element_text(hjust = 0),
+##         legend.title.align = NULL, legend.position = &quot;right&quot;,
+##         legend.direction = NULL, legend.justification = &quot;center&quot;,
+##         legend.box = NULL, legend.box.margin = margin(0, 0, 0,
+##             0, &quot;cm&quot;), legend.box.background = element_blank(),
+##         legend.box.spacing = unit(2 * half_line, &quot;pt&quot;), panel.background = element_rect(fill = &quot;grey92&quot;,
+##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = &quot;white&quot;),
+##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line,
+##             &quot;pt&quot;), panel.spacing.x = NULL, panel.spacing.y = NULL,
+##         panel.ontop = FALSE, strip.background = element_rect(fill = &quot;grey85&quot;,
+##             colour = NA), strip.text = element_text(colour = &quot;grey10&quot;,
+##             size = rel(0.8), margin = margin(0.8 * half_line,
+##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)),
+##         strip.text.x = NULL, strip.text.y = element_text(angle = -90),
+##         strip.text.y.left = element_text(angle = 90), strip.placement = &quot;inside&quot;,
+##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2,
+##             &quot;pt&quot;), strip.switch.pad.wrap = unit(half_line/2,
+##             &quot;pt&quot;), plot.background = element_rect(colour = &quot;white&quot;),
+##         plot.title = element_text(size = rel(1.2), hjust = 0,
+##             vjust = 1, margin = margin(b = half_line)), plot.title.position = &quot;panel&quot;,
+##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)),
+##         plot.caption = element_text(size = rel(0.8), hjust = 1,
+##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = &quot;panel&quot;,
+##         plot.tag = element_text(size = rel(1.2), hjust = 0.5,
+##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line,
 ##             half_line, half_line, half_line), complete = TRUE)
 ##     ggplot_global$theme_all_null %+replace% t
 ## }
@@ -1602,7 +1603,7 @@ ggplot(sample, aes(x = date, y = temp, color = season)) +
 <p><summary>💁 <i>You can also use <code>geom_text()</code> if you don’t like boxes around your labels. Expand to see example.</i></summary></p>
 <pre class="r"><code>ggplot(sample, aes(x = date, y = temp, color = season)) +
   geom_point() +
-  geom_text(aes(label = season), fontface = &quot;bold&quot;, 
+  geom_text(aes(label = season), fontface = &quot;bold&quot;,
             hjust = .5, vjust = -.25) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
   xlim(as.Date(c(&#39;1997-01-01&#39;, &#39;2000-12-31&#39;))) +
@@ -1623,7 +1624,7 @@ ggplot(sample, aes(x = date, y = temp, color = season)) +
 <pre class="r"><code>ggplot(sample, aes(x = date, y = temp)) +
   geom_point(data = chic, size = .5) +
   geom_point(aes(color = season), size = 1.5) +
-  geom_label_repel(aes(label = season, fill = season), 
+  geom_label_repel(aes(label = season, fill = season),
                    color = &quot;white&quot;, fontface = &quot;bold&quot;,
                    segment.color = &quot;grey30&quot;) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
@@ -1634,7 +1635,7 @@ ggplot(sample, aes(x = date, y = temp, color = season)) +
 <div id="add-text-annotations" class="section level5">
 <h5>Add Text Annotations</h5>
 <p>There are several ways how one can add annotations to a ggplot. We can again use <code>geom_text()</code> or <code>geom_label()</code>:</p>
-<pre class="r"><code>g &lt;- 
+<pre class="r"><code>g &lt;-
   ggplot(chic, aes(x = temp, y = dewpoint)) +
   geom_point(alpha = .5) +
   labs(x = &quot;Temperature (°F)&quot;, y = &quot;Dewpoint&quot;)
@@ -1650,7 +1651,7 @@ g +
             stat = &quot;unique&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/textbox-label-unique-1.png" width="100%" /></p>
 <p>By the way, of course one can change the properties of the displayed text:</p>
-<pre class="r"><code>g + 
+<pre class="r"><code>g +
   geom_text(aes(x = 25, y = 60,
                 label = &quot;This is an useful annotation&quot;),
             stat = &quot;unique&quot;, family = &quot;Bangers&quot;,
@@ -1664,7 +1665,7 @@ g +
   label = &quot;Here is enough space\nfor some annotations.&quot;
 )
 
-g &lt;- 
+g &lt;-
   ggplot(chic, aes(x = o3, y = temp)) +
   geom_point() +
   labs(x = &quot;Ozone&quot;, y = &quot;Temperature (°F)&quot;)
@@ -1676,8 +1677,8 @@ g +
   facet_wrap(~season)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/label-facet-single-1.png" width="100%" /></p>
 <p>Another challenge are facets in combination with free scales that might cut your text:</p>
-<pre class="r"><code>g + 
-  geom_text(aes(x = 23, y = 97, 
+<pre class="r"><code>g +
+  geom_text(aes(x = 23, y = 97,
                 label = &quot;This is not an useful annotation&quot;),
             size = 5, fontface = &quot;bold&quot;) +
   scale_y_continuous(limits = c(NA, 100)) +
@@ -1686,9 +1687,9 @@ g +
 <p>One solution is to calculate the midpoint of the axis, here <code>x</code>, beforehand:</p>
 <pre class="r"><code>library(tidyverse)
 (ann &lt;-
-  chic %&gt;% 
-  group_by(season) %&gt;% 
-  summarize(o3 = min(o3, na.rm = TRUE) + 
+  chic %&gt;%
+  group_by(season) %&gt;%
+  summarize(o3 = min(o3, na.rm = TRUE) +
               (max(o3, na.rm = TRUE) - min(o3, na.rm = TRUE)) / 2))</code></pre>
 <pre><code>## # A tibble: 4 x 2
 ##   season    o3
@@ -1706,10 +1707,10 @@ g +
 ## 3 Summer  29.2
 ## 4 Autumn  23.3</code></pre>
 <p>… and use the aggreated data to specify the placement of the annotation:</p>
-<pre class="r"><code>g + 
+<pre class="r"><code>g +
   geom_text(data = ann,
-            aes(x = o3, y = 97, 
-                label = &quot;This is an useful annotation&quot;), 
+            aes(x = o3, y = 97,
+                label = &quot;This is an useful annotation&quot;),
             size = 5, fontface = &quot;bold&quot;) +
   scale_y_continuous(limits = c(NA, 100)) +
   facet_wrap(~season, scales = &quot;free_x&quot;)</code></pre>
@@ -1735,30 +1736,30 @@ g +
 
 lab_md &lt;- &quot;This plot shows **temperature** in *°F* versus **ozone level** in *ppm*&quot;
 
-g + 
+g +
   geom_richtext(aes(x = 35, y = 3, label = lab_md),
                 stat = &quot;unique&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggtext-geom-richtext-md-1.png" width="100%" /></p>
 <p>… or html:</p>
 <pre class="r"><code>lab_html &lt;- &quot;&amp;#9733; This plot shows &lt;b style=&#39;color:red;&#39;&gt;temperature&lt;/b&gt; in &lt;i&gt;°F&lt;/i&gt; versus &lt;b style=&#39;color:blue;&#39;&gt;ozone level&lt;/b&gt;in &lt;i&gt;ppm&lt;/i&gt; &amp;#9733;&quot;
 
-g + 
+g +
   geom_richtext(aes(x = 33, y = 3, label = lab_html),
                 stat = &quot;unique&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggtext-geom-richtext-html-1.png" width="100%" /></p>
 <p>The geom comes with a lot of details one can modify, such as angle (which is not possible in the default <code>geom_text()</code> and <code>geom_label()</code>), properties of the box and properties of the text.</p>
-<pre class="r"><code>g + 
+<pre class="r"><code>g +
   geom_richtext(aes(x = 10, y = 25, label = lab_md),
-                stat = &quot;unique&quot;, angle = 30, 
-                color = &quot;white&quot;, fill = &quot;steelblue&quot;, 
+                stat = &quot;unique&quot;, angle = 30,
+                color = &quot;white&quot;, fill = &quot;steelblue&quot;,
                 label.color = NA, hjust = 0, vjust = 0,
                 family = &quot;Playfair Display&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggtext-geom-richtext-modify-1.png" width="100%" /></p>
 <p>The other geom from the <code>{ggtext}</code> package is <code>geom_textbox()</code>. This geom allows for dynamic wrapping of strings which is very useful for longer annotations such as info boxes and subtitles.</p>
 <pre class="r"><code>lab_long &lt;- &quot;**Lorem ipsum dolor**&lt;br&gt;&lt;i style=&#39;font-size:8pt;color:red;&#39;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;br&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/i&gt;&quot;
 
-g + 
-  geom_textbox(aes(x = 40, y = 10, label = lab_long), 
+g +
+  geom_textbox(aes(x = 40, y = 10, label = lab_long),
                width = unit(15, &quot;lines&quot;), stat = &quot;unique&quot;) </code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ggtetxt-geom-textbox-1.png" width="100%" /></p>
 <p>Note that it is not possible to either rotate the textbox (always horizontal) nor to change the justification of the text (always left-aligned).</p>
@@ -1857,7 +1858,7 @@ chic %&gt;%
   dplyr::mutate(n_all = n()) %&gt;%
   dplyr::group_by(season) %&gt;%
   dplyr::summarize(rel = n() / unique(n_all))
-  
+
 ggplot(chic_sum, aes(x = &quot;&quot;, y = rel)) +
   geom_col(aes(fill = season), width = 1, color = NA) +
   labs(x = &quot;&quot;, y = &quot;Proportion of Days Exceeding\nthe Median Ozone Level&quot;) +
@@ -1890,7 +1891,7 @@ A box-and-whisker plot (sometimes called simply a box plot) is a histogram-like 
 <br>
 </details>
 <p>There are alternatives, but first we are plotting a common box plot:</p>
-<pre class="r"><code>g &lt;- 
+<pre class="r"><code>g &lt;-
   ggplot(chic, aes(x = season, y = o3,
                    color = season)) +
     labs(x = &quot;Season&quot;, y = &quot;Ozone&quot;) +
@@ -1949,7 +1950,7 @@ g + geom_violin(fill = &quot;gray80&quot;, size = 1, alpha = .5) +
 <div id="create-a-rug-representation-to-a-plot" class="section level5">
 <h5>Create a Rug Representation to a Plot</h5>
 <p>A rug represents the data of a single quantitative variable, displayed as marks along an axis. In most cases, it is used in addition to scatter plots or heatmaps to visualize the overall distribution of one or both of the variables:</p>
-<pre class="r"><code>ggplot(chic, aes(x = date, y = temp, 
+<pre class="r"><code>ggplot(chic, aes(x = date, y = temp,
                  color = season)) +
   geom_point(show.legend = FALSE) +
   geom_rug(show.legend = FALSE) +
@@ -1967,9 +1968,9 @@ g + geom_violin(fill = &quot;gray80&quot;, size = 1, alpha = .5) +
 <p>First step is to create the correlation matrix. Here, we use the <code>{corrr}</code> package that works nicely with pipes but there are also many others out there. We are using Pearson because all the variables are fairly normally distributed (but you may consider Spearman if your variables follow a different pattern). Note that since a correlation matrix has redundant information we are setting half of it to <code>NA</code>.</p>
 <pre class="r"><code>library(tidyverse)
 
-corm &lt;- 
+corm &lt;-
   chic %&gt;%
-  select(death, temp, dewpoint, pm10, o3) %&gt;% 
+  select(death, temp, dewpoint, pm10, o3) %&gt;%
   corrr::correlate(diagonal = 1) %&gt;%
   corrr::shave(upper = FALSE) </code></pre>
 <pre><code>## # A tibble: 5 x 6
@@ -1983,49 +1984,49 @@ corm &lt;-
 <p>Now we put the resulting matrix in <strong>long</strong> format using the <code>pivot_longer()</code> function from the <code>{tidyr}</code> package:</p>
 <pre class="r"><code>corm &lt;- corm %&gt;%
   pivot_longer(
-    cols = -rowname, 
-    names_to = &quot;colname&quot;, 
+    cols = -rowname,
+    names_to = &quot;colname&quot;,
     values_to = &quot;corr&quot;
-  ) %&gt;% 
+  ) %&gt;%
   mutate(rowname = fct_inorder(rowname),
          colname = fct_inorder(colname))</code></pre>
 <pre><code>## # A tibble: 25 x 3
 ##    rowname colname      corr
 ##    &lt;fct&gt;   &lt;fct&gt;       &lt;dbl&gt;
-##  1 death   death     1      
-##  2 death   temp     -0.486  
-##  3 death   dewpoint -0.465  
+##  1 death   death     1
+##  2 death   temp     -0.486
+##  3 death   dewpoint -0.465
 ##  4 death   pm10     -0.00294
-##  5 death   o3       -0.238  
-##  6 temp    death    NA      
-##  7 temp    temp      1      
-##  8 temp    dewpoint  0.958  
-##  9 temp    pm10      0.368  
-## 10 temp    o3        0.535  
+##  5 death   o3       -0.238
+##  6 temp    death    NA
+##  7 temp    temp      1
+##  8 temp    dewpoint  0.958
+##  9 temp    pm10      0.368
+## 10 temp    o3        0.535
 ## # ... with 15 more rows</code></pre>
 <p>For the plot we will use <code>geom_tile()</code> for the heatmap and <code>geom_text()</code> for the labels:</p>
-<pre class="r"><code>ggplot(corm, aes(rowname, fct_rev(colname), 
-                 fill = corr)) + 
-  geom_tile() + 
+<pre class="r"><code>ggplot(corm, aes(rowname, fct_rev(colname),
+                 fill = corr)) +
+  geom_tile() +
   geom_text(aes(label = round(corr, 2))) +
   coord_fixed() +
   labs(x = NULL, y = NULL)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/tile-corr-plot-1.png" width="100%" /></p>
 <p>I like to have a diverging color palette, centered at zero correlation, with white indicating missing data. Also I like to have no grid lines and padding around the heatmap as well as nicely formatted labels that are colored depending on the underlying fill:</p>
-<pre class="r"><code>ggplot(corm, aes(rowname, fct_rev(colname), 
-                 fill = corr)) + 
-  geom_tile() + 
+<pre class="r"><code>ggplot(corm, aes(rowname, fct_rev(colname),
+                 fill = corr)) +
+  geom_tile() +
   geom_text(aes(
     label = format(round(corr, 2), nsmall = 2),
     color = abs(corr) &lt; .75
   )) +
   coord_fixed(expand = FALSE) +
-  scale_color_manual(values = c(&quot;white&quot;, &quot;black&quot;), 
+  scale_color_manual(values = c(&quot;white&quot;, &quot;black&quot;),
                      guide = &quot;none&quot;) +
   scale_fill_distiller(
     palette = &quot;PuOr&quot;, na.value = &quot;white&quot;,
     direction = 1, limits = c(-1, 1)
-  ) + 
+  ) +
   labs(x = NULL, y = NULL) +
   theme(panel.border = element_rect(color = NA, fill = NA),
         legend.position = c(.85, .8))</code></pre>
@@ -2055,7 +2056,7 @@ df &lt;- melt(fld$z, na.rm = TRUE)
 names(df) &lt;- c(&quot;x&quot;, &quot;y&quot;, &quot;Dewpoint&quot;)
 
 g &lt;- ggplot(data = df, aes(x = x, y = y, z = Dewpoint))  +
-  labs(x = &quot;Temperature (°F)&quot;, y = &quot;Ozone Level&quot;, 
+  labs(x = &quot;Temperature (°F)&quot;, y = &quot;Ozone Level&quot;,
        color = &quot;Dewpoint&quot;)
 
 g + stat_contour(aes(color = ..level.., fill = Dewpoint))</code></pre>
@@ -2167,7 +2168,7 @@ ggplot(chic, aes(x = date, y = o3run)) +
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/ribbon-default-1.png" width="100%" /></p>
 <p>How does it look if we fill in the area below the curve using the <code>geom_ribbon()</code> function?</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = o3run)) +
-   geom_ribbon(aes(ymin = 0, ymax = o3run), 
+   geom_ribbon(aes(ymin = 0, ymax = o3run),
                fill = &quot;orange&quot;, alpha = .4) +
    geom_line(color = &quot;chocolate&quot;, lwd = .8) +
    labs(x = &quot;Year&quot;, y = &quot;Ozone&quot;)</code></pre>
@@ -2177,7 +2178,7 @@ ggplot(chic, aes(x = date, y = o3run)) +
 <details>
 <p><summary>Expand to see example.</summary></p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = o3run)) +
-   geom_area(color = &quot;chocolate&quot;, lwd = .8, 
+   geom_area(color = &quot;chocolate&quot;, lwd = .8,
              fill = &quot;orange&quot;, alpha = .4) +
    labs(x = &quot;Year&quot;, y = &quot;Ozone&quot;)</code></pre>
 <img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/geom-area-AUC-1.png" width="100%" />
@@ -2213,7 +2214,7 @@ ggplot(chic, aes(x = date, y = o3run)) +
 <p>Though the default is a LOESS or GAM smoothing, it is also easy to add a standard linear fit:</p>
 <pre class="r"><code>ggplot(chic, aes(x = temp, y = death)) +
    labs(x = &quot;Temperature (°F)&quot;, y = &quot;Deaths&quot;) +
-   stat_smooth(method = &quot;lm&quot;, se = FALSE, 
+   stat_smooth(method = &quot;lm&quot;, se = FALSE,
                color = &quot;firebrick&quot;, size = 1.3) +
    geom_point(color = &quot;gray40&quot;, alpha = .5)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/LM-1.png" width="100%" /></p>
@@ -2250,16 +2251,16 @@ ggplot(chic, aes(x = date, y = o3run)) +
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;gray40&quot;, alpha = .3) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
-  stat_smooth(aes(col = &quot;1000&quot;), 
-              method = &quot;gam&quot;, 
+  stat_smooth(aes(col = &quot;1000&quot;),
+              method = &quot;gam&quot;,
               formula = y ~ s(x, k = 1000),
               se = FALSE, size = 1.3) +
-  stat_smooth(aes(col = &quot;100&quot;), 
-              method = &quot;gam&quot;, 
+  stat_smooth(aes(col = &quot;100&quot;),
+              method = &quot;gam&quot;,
               formula = y ~ s(x, k = 100),
               se = FALSE, size = 1) +
   stat_smooth(aes(col = &quot;10&quot;),
-              method = &quot;gam&quot;, 
+              method = &quot;gam&quot;,
               formula = y ~ s(x, k = 10),
               se = FALSE, size = .8) +
   scale_color_manual(name = &quot;k&quot;, values = cols)</code></pre>
@@ -2328,11 +2329,11 @@ hchart(chic, &quot;scatter&quot;, hcaes(x = date, y = temp, group = season))</co
 <p><a href="https://echarts.apache.org/en/index.html">Apache ECharts</a> is a free, powerful charting and visualization library offering an easy way of building intuitive, interactive, and highly customizable charts. Even though it is written in pure JavaScript, one can use it in R via the <a href="https://echarts4r.john-coene.com/"><code>{echarts4r}</code> library</a> thanks to <a href="https://john-coene.com/">John Coene</a>. Check out the impressive <a href="https://echarts4r.john-coene.com/articles/chart_types.html">example gallery</a> or these two apps (<a href="https://johncoene.shinyapps.io/fopi-contest/">App 1</a> and <a href="https://berlinbikes.correlaid.org/">App 2</a>) making use of the <code>{echarts4r}</code> functionality.</p>
 <pre class="r"><code>library(echarts4r)
 
-chic %&gt;% 
-  e_charts(date) %&gt;% 
-  e_scatter(temp, symbol_size = 7) %&gt;% 
-  e_visual_map(temp) %&gt;% 
-  e_y_axis(name = &quot;Temperature (°F)&quot;) %&gt;% 
+chic %&gt;%
+  e_charts(date) %&gt;%
+  e_scatter(temp, symbol_size = 7) %&gt;%
+  e_visual_map(temp) %&gt;%
+  e_y_axis(name = &quot;Temperature (°F)&quot;) %&gt;%
   e_legend(FALSE)</code></pre>
 <div id="htmlwidget-4" style="width:100%;height:500px;" class="echarts4r html-widget"></div>
 <script type="application/json" data-for="htmlwidget-4">{"x":{"theme":"default","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"name":"Temperature (°F)"}],"xAxis":[{"data":["1997-01-01","1997-01-02","1997-01-03","1997-01-04","1997-01-05","1997-01-06","1997-01-07","1997-01-08","1997-01-09","1997-01-10","1997-01-11","1997-01-12","1997-01-13","1997-01-14","1997-01-15","1997-01-16","1997-01-17","1997-01-18","1997-01-19","1997-01-20","1997-01-21","1997-01-22","1997-01-23","1997-01-24","1997-01-25","1997-01-26","1997-01-27","1997-01-28","1997-01-29","1997-01-30","1997-01-31","1997-02-01","1997-02-02","1997-02-03","1997-02-04","1997-02-05","1997-02-06","1997-02-07","1997-02-08","1997-02-09","1997-02-10","1997-02-11","1997-02-12","1997-02-13","1997-02-14","1997-02-15","1997-02-16","1997-02-17","1997-02-18","1997-02-19","1997-02-20","1997-02-21","1997-02-22","1997-02-23","1997-02-24","1997-02-25","1997-02-26","1997-02-27","1997-02-28","1997-03-01","1997-03-02","1997-03-03","1997-03-04","1997-03-05","1997-03-06","1997-03-07","1997-03-08","1997-03-09","1997-03-10","1997-03-11","1997-03-12","1997-03-13","1997-03-14","1997-03-15","1997-03-16","1997-03-17","1997-03-18","1997-03-19","1997-03-20","1997-03-21","1997-03-22","1997-03-23","1997-03-24","1997-03-25","1997-03-26","1997-03-27","1997-03-28","1997-03-29","1997-03-30","1997-03-31","1997-04-01","1997-04-02","1997-04-03","1997-04-04","1997-04-05","1997-04-06","1997-04-07","1997-04-08","1997-04-09","1997-04-10","1997-04-11","1997-04-12","1997-04-13","1997-04-14","1997-04-15","1997-04-16","1997-04-17","1997-04-18","1997-04-19","1997-04-20","1997-04-21","1997-04-22","1997-04-23","1997-04-24","1997-04-25","1997-04-26","1997-04-27","1997-04-28","1997-04-29","1997-04-30","1997-05-01","1997-05-02","1997-05-03","1997-05-04","1997-05-05","1997-05-06","1997-05-07","1997-05-08","1997-05-09","1997-05-10","1997-05-11","1997-05-12","1997-05-13","1997-05-14","1997-05-15","1997-05-16","1997-05-17","1997-05-18","1997-05-19","1997-05-20","1997-05-21","1997-05-22","1997-05-23","1997-05-24","1997-05-25","1997-05-26","1997-05-27","1997-05-28","1997-05-29","1997-05-30","1997-05-31","1997-06-01","1997-06-02","1997-06-03","1997-06-04","1997-06-05","1997-06-06","1997-06-07","1997-06-08","1997-06-09","1997-06-10","1997-06-11","1997-06-12","1997-06-13","1997-06-14","1997-06-15","1997-06-16","1997-06-17","1997-06-18","1997-06-19","1997-06-20","1997-06-21","1997-06-22","1997-06-23","1997-06-24","1997-06-25","1997-06-26","1997-06-27","1997-06-28","1997-06-29","1997-06-30","1997-07-01","1997-07-02","1997-07-03","1997-07-04","1997-07-05","1997-07-06","1997-07-07","1997-07-08","1997-07-09","1997-07-10","1997-07-11","1997-07-12","1997-07-13","1997-07-14","1997-07-15","1997-07-16","1997-07-17","1997-07-18","1997-07-19","1997-07-20","1997-07-21","1997-07-22","1997-07-23","1997-07-24","1997-07-25","1997-07-26","1997-07-27","1997-07-28","1997-07-29","1997-07-30","1997-07-31","1997-08-01","1997-08-02","1997-08-03","1997-08-04","1997-08-05","1997-08-06","1997-08-07","1997-08-08","1997-08-09","1997-08-10","1997-08-11","1997-08-12","1997-08-13","1997-08-14","1997-08-15","1997-08-16","1997-08-17","1997-08-18","1997-08-19","1997-08-20","1997-08-21","1997-08-22","1997-08-23","1997-08-24","1997-08-25","1997-08-26","1997-08-27","1997-08-28","1997-08-29","1997-08-30","1997-08-31","1997-09-01","1997-09-02","1997-09-03","1997-09-04","1997-09-05","1997-09-06","1997-09-07","1997-09-08","1997-09-09","1997-09-10","1997-09-11","1997-09-12","1997-09-13","1997-09-14","1997-09-15","1997-09-16","1997-09-17","1997-09-18","1997-09-19","1997-09-20","1997-09-21","1997-09-22","1997-09-23","1997-09-24","1997-09-25","1997-09-26","1997-09-27","1997-09-28","1997-09-29","1997-09-30","1997-10-01","1997-10-02","1997-10-03","1997-10-04","1997-10-05","1997-10-06","1997-10-07","1997-10-08","1997-10-09","1997-10-10","1997-10-11","1997-10-12","1997-10-13","1997-10-14","1997-10-15","1997-10-16","1997-10-17","1997-10-18","1997-10-19","1997-10-20","1997-10-21","1997-10-22","1997-10-23","1997-10-24","1997-10-25","1997-10-26","1997-10-27","1997-10-28","1997-10-29","1997-10-30","1997-10-31","1997-11-01","1997-11-02","1997-11-03","1997-11-04","1997-11-05","1997-11-06","1997-11-07","1997-11-08","1997-11-09","1997-11-10","1997-11-11","1997-11-12","1997-11-13","1997-11-14","1997-11-15","1997-11-16","1997-11-17","1997-11-18","1997-11-19","1997-11-20","1997-11-21","1997-11-22","1997-11-23","1997-11-24","1997-11-25","1997-11-26","1997-11-27","1997-11-28","1997-11-29","1997-11-30","1997-12-01","1997-12-02","1997-12-03","1997-12-04","1997-12-05","1997-12-06","1997-12-07","1997-12-08","1997-12-09","1997-12-10","1997-12-11","1997-12-12","1997-12-13","1997-12-14","1997-12-15","1997-12-16","1997-12-17","1997-12-18","1997-12-19","1997-12-20","1997-12-21","1997-12-22","1997-12-23","1997-12-24","1997-12-25","1997-12-26","1997-12-27","1997-12-28","1997-12-29","1997-12-30","1997-12-31","1998-01-01","1998-01-02","1998-01-03","1998-01-04","1998-01-05","1998-01-06","1998-01-07","1998-01-08","1998-01-09","1998-01-10","1998-01-11","1998-01-12","1998-01-13","1998-01-14","1998-01-15","1998-01-16","1998-01-17","1998-01-18","1998-01-19","1998-01-20","1998-01-21","1998-01-22","1998-01-23","1998-01-24","1998-01-25","1998-01-26","1998-01-27","1998-01-28","1998-01-29","1998-01-30","1998-01-31","1998-02-01","1998-02-02","1998-02-03","1998-02-04","1998-02-05","1998-02-06","1998-02-07","1998-02-08","1998-02-09","1998-02-10","1998-02-11","1998-02-12","1998-02-13","1998-02-14","1998-02-15","1998-02-16","1998-02-17","1998-02-18","1998-02-19","1998-02-20","1998-02-21","1998-02-22","1998-02-23","1998-02-24","1998-02-25","1998-02-26","1998-02-27","1998-02-28","1998-03-01","1998-03-02","1998-03-03","1998-03-04","1998-03-05","1998-03-06","1998-03-07","1998-03-08","1998-03-09","1998-03-10","1998-03-11","1998-03-12","1998-03-13","1998-03-14","1998-03-15","1998-03-16","1998-03-17","1998-03-18","1998-03-19","1998-03-20","1998-03-21","1998-03-22","1998-03-23","1998-03-24","1998-03-25","1998-03-26","1998-03-27","1998-03-28","1998-03-29","1998-03-30","1998-03-31","1998-04-01","1998-04-02","1998-04-03","1998-04-04","1998-04-05","1998-04-06","1998-04-07","1998-04-08","1998-04-09","1998-04-10","1998-04-11","1998-04-12","1998-04-13","1998-04-14","1998-04-15","1998-04-16","1998-04-17","1998-04-18","1998-04-19","1998-04-20","1998-04-21","1998-04-22","1998-04-23","1998-04-24","1998-04-25","1998-04-26","1998-04-27","1998-04-28","1998-04-29","1998-04-30","1998-05-01","1998-05-02","1998-05-03","1998-05-04","1998-05-05","1998-05-06","1998-05-07","1998-05-08","1998-05-09","1998-05-10","1998-05-11","1998-05-12","1998-05-13","1998-05-14","1998-05-15","1998-05-16","1998-05-17","1998-05-18","1998-05-19","1998-05-20","1998-05-21","1998-05-22","1998-05-23","1998-05-24","1998-05-25","1998-05-26","1998-05-27","1998-05-28","1998-05-29","1998-05-30","1998-05-31","1998-06-01","1998-06-02","1998-06-03","1998-06-04","1998-06-05","1998-06-06","1998-06-07","1998-06-08","1998-06-09","1998-06-10","1998-06-11","1998-06-12","1998-06-13","1998-06-14","1998-06-15","1998-06-16","1998-06-17","1998-06-18","1998-06-19","1998-06-20","1998-06-21","1998-06-22","1998-06-23","1998-06-24","1998-06-25","1998-06-26","1998-06-27","1998-06-28","1998-06-29","1998-06-30","1998-07-01","1998-07-02","1998-07-03","1998-07-04","1998-07-05","1998-07-06","1998-07-07","1998-07-08","1998-07-09","1998-07-10","1998-07-11","1998-07-12","1998-07-13","1998-07-14","1998-07-15","1998-07-16","1998-07-17","1998-07-18","1998-07-19","1998-07-20","1998-07-21","1998-07-22","1998-07-23","1998-07-24","1998-07-25","1998-07-26","1998-07-27","1998-07-28","1998-07-29","1998-07-30","1998-07-31","1998-08-01","1998-08-02","1998-08-03","1998-08-04","1998-08-05","1998-08-06","1998-08-07","1998-08-08","1998-08-09","1998-08-10","1998-08-11","1998-08-12","1998-08-13","1998-08-14","1998-08-15","1998-08-16","1998-08-17","1998-08-18","1998-08-19","1998-08-20","1998-08-21","1998-08-22","1998-08-23","1998-08-24","1998-08-25","1998-08-26","1998-08-27","1998-08-28","1998-08-29","1998-08-30","1998-08-31","1998-09-01","1998-09-02","1998-09-03","1998-09-04","1998-09-05","1998-09-06","1998-09-07","1998-09-08","1998-09-09","1998-09-10","1998-09-11","1998-09-12","1998-09-13","1998-09-14","1998-09-15","1998-09-16","1998-09-17","1998-09-18","1998-09-19","1998-09-20","1998-09-21","1998-09-22","1998-09-23","1998-09-24","1998-09-25","1998-09-26","1998-09-27","1998-09-28","1998-09-29","1998-09-30","1998-10-01","1998-10-02","1998-10-03","1998-10-04","1998-10-05","1998-10-06","1998-10-07","1998-10-08","1998-10-09","1998-10-10","1998-10-11","1998-10-12","1998-10-13","1998-10-14","1998-10-15","1998-10-16","1998-10-17","1998-10-18","1998-10-19","1998-10-20","1998-10-21","1998-10-22","1998-10-23","1998-10-24","1998-10-25","1998-10-26","1998-10-27","1998-10-28","1998-10-29","1998-10-30","1998-10-31","1998-11-01","1998-11-02","1998-11-03","1998-11-04","1998-11-05","1998-11-06","1998-11-07","1998-11-08","1998-11-09","1998-11-10","1998-11-11","1998-11-12","1998-11-13","1998-11-14","1998-11-15","1998-11-16","1998-11-17","1998-11-18","1998-11-19","1998-11-20","1998-11-21","1998-11-22","1998-11-23","1998-11-24","1998-11-25","1998-11-26","1998-11-27","1998-11-28","1998-11-29","1998-11-30","1998-12-01","1998-12-02","1998-12-03","1998-12-04","1998-12-05","1998-12-06","1998-12-07","1998-12-08","1998-12-09","1998-12-10","1998-12-11","1998-12-12","1998-12-13","1998-12-14","1998-12-15","1998-12-16","1998-12-17","1998-12-18","1998-12-19","1998-12-20","1998-12-21","1998-12-22","1998-12-23","1998-12-24","1998-12-25","1998-12-26","1998-12-27","1998-12-28","1998-12-29","1998-12-30","1998-12-31","1999-01-01","1999-01-02","1999-01-03","1999-01-04","1999-01-05","1999-01-06","1999-01-07","1999-01-08","1999-01-09","1999-01-10","1999-01-11","1999-01-12","1999-01-13","1999-01-14","1999-01-15","1999-01-16","1999-01-17","1999-01-18","1999-01-19","1999-01-20","1999-01-21","1999-01-22","1999-01-23","1999-01-24","1999-01-25","1999-01-26","1999-01-27","1999-01-28","1999-01-29","1999-01-30","1999-01-31","1999-02-01","1999-02-02","1999-02-03","1999-02-04","1999-02-05","1999-02-06","1999-02-07","1999-02-08","1999-02-09","1999-02-10","1999-02-11","1999-02-12","1999-02-13","1999-02-14","1999-02-15","1999-02-16","1999-02-17","1999-02-18","1999-02-19","1999-02-20","1999-02-21","1999-02-22","1999-02-23","1999-02-24","1999-02-25","1999-02-26","1999-02-27","1999-02-28","1999-03-01","1999-03-02","1999-03-03","1999-03-04","1999-03-05","1999-03-06","1999-03-07","1999-03-08","1999-03-09","1999-03-10","1999-03-11","1999-03-12","1999-03-13","1999-03-14","1999-03-15","1999-03-16","1999-03-17","1999-03-18","1999-03-19","1999-03-20","1999-03-21","1999-03-22","1999-03-23","1999-03-24","1999-03-25","1999-03-26","1999-03-27","1999-03-28","1999-03-29","1999-03-30","1999-03-31","1999-04-01","1999-04-02","1999-04-03","1999-04-04","1999-04-05","1999-04-06","1999-04-07","1999-04-08","1999-04-09","1999-04-10","1999-04-11","1999-04-12","1999-04-13","1999-04-14","1999-04-15","1999-04-16","1999-04-17","1999-04-18","1999-04-19","1999-04-20","1999-04-21","1999-04-22","1999-04-23","1999-04-24","1999-04-25","1999-04-26","1999-04-27","1999-04-28","1999-04-29","1999-04-30","1999-05-01","1999-05-02","1999-05-03","1999-05-04","1999-05-05","1999-05-06","1999-05-07","1999-05-08","1999-05-09","1999-05-10","1999-05-11","1999-05-12","1999-05-13","1999-05-14","1999-05-15","1999-05-16","1999-05-17","1999-05-18","1999-05-19","1999-05-20","1999-05-21","1999-05-22","1999-05-23","1999-05-24","1999-05-25","1999-05-26","1999-05-27","1999-05-28","1999-05-29","1999-05-30","1999-05-31","1999-06-01","1999-06-02","1999-06-03","1999-06-04","1999-06-05","1999-06-06","1999-06-07","1999-06-08","1999-06-09","1999-06-10","1999-06-11","1999-06-12","1999-06-13","1999-06-14","1999-06-15","1999-06-16","1999-06-17","1999-06-18","1999-06-19","1999-06-20","1999-06-21","1999-06-22","1999-06-23","1999-06-24","1999-06-25","1999-06-26","1999-06-27","1999-06-28","1999-06-29","1999-06-30","1999-07-01","1999-07-02","1999-07-03","1999-07-04","1999-07-05","1999-07-06","1999-07-07","1999-07-08","1999-07-09","1999-07-10","1999-07-11","1999-07-12","1999-07-13","1999-07-14","1999-07-15","1999-07-16","1999-07-17","1999-07-18","1999-07-19","1999-07-20","1999-07-21","1999-07-22","1999-07-23","1999-07-24","1999-07-25","1999-07-26","1999-07-27","1999-07-28","1999-07-29","1999-07-30","1999-07-31","1999-08-01","1999-08-02","1999-08-03","1999-08-04","1999-08-05","1999-08-06","1999-08-07","1999-08-08","1999-08-09","1999-08-10","1999-08-11","1999-08-12","1999-08-13","1999-08-14","1999-08-15","1999-08-16","1999-08-17","1999-08-18","1999-08-19","1999-08-20","1999-08-21","1999-08-22","1999-08-23","1999-08-24","1999-08-25","1999-08-26","1999-08-27","1999-08-28","1999-08-29","1999-08-30","1999-08-31","1999-09-01","1999-09-02","1999-09-03","1999-09-04","1999-09-05","1999-09-06","1999-09-07","1999-09-08","1999-09-09","1999-09-10","1999-09-11","1999-09-12","1999-09-13","1999-09-14","1999-09-15","1999-09-16","1999-09-17","1999-09-18","1999-09-19","1999-09-20","1999-09-21","1999-09-22","1999-09-23","1999-09-24","1999-09-25","1999-09-26","1999-09-27","1999-09-28","1999-09-29","1999-09-30","1999-10-01","1999-10-02","1999-10-03","1999-10-04","1999-10-05","1999-10-06","1999-10-07","1999-10-08","1999-10-09","1999-10-10","1999-10-11","1999-10-12","1999-10-13","1999-10-14","1999-10-15","1999-10-16","1999-10-17","1999-10-18","1999-10-19","1999-10-20","1999-10-21","1999-10-22","1999-10-23","1999-10-24","1999-10-25","1999-10-26","1999-10-27","1999-10-28","1999-10-29","1999-10-30","1999-10-31","1999-11-01","1999-11-02","1999-11-03","1999-11-04","1999-11-05","1999-11-06","1999-11-07","1999-11-08","1999-11-09","1999-11-10","1999-11-11","1999-11-12","1999-11-13","1999-11-14","1999-11-15","1999-11-16","1999-11-17","1999-11-18","1999-11-19","1999-11-20","1999-11-21","1999-11-22","1999-11-23","1999-11-24","1999-11-25","1999-11-26","1999-11-27","1999-11-28","1999-11-29","1999-11-30","1999-12-01","1999-12-02","1999-12-03","1999-12-04","1999-12-05","1999-12-06","1999-12-07","1999-12-08","1999-12-09","1999-12-10","1999-12-11","1999-12-12","1999-12-13","1999-12-14","1999-12-15","1999-12-16","1999-12-17","1999-12-18","1999-12-19","1999-12-20","1999-12-21","1999-12-22","1999-12-23","1999-12-24","1999-12-25","1999-12-26","1999-12-27","1999-12-28","1999-12-29","1999-12-30","1999-12-31","2000-01-01","2000-01-02","2000-01-03","2000-01-04","2000-01-05","2000-01-06","2000-01-07","2000-01-08","2000-01-09","2000-01-10","2000-01-11","2000-01-12","2000-01-13","2000-01-14","2000-01-15","2000-01-16","2000-01-17","2000-01-18","2000-01-19","2000-01-20","2000-01-21","2000-01-22","2000-01-23","2000-01-24","2000-01-25","2000-01-26","2000-01-27","2000-01-28","2000-01-29","2000-01-30","2000-01-31","2000-02-01","2000-02-02","2000-02-03","2000-02-04","2000-02-05","2000-02-06","2000-02-07","2000-02-08","2000-02-09","2000-02-10","2000-02-11","2000-02-12","2000-02-13","2000-02-14","2000-02-15","2000-02-16","2000-02-17","2000-02-18","2000-02-19","2000-02-20","2000-02-21","2000-02-22","2000-02-23","2000-02-24","2000-02-25","2000-02-26","2000-02-27","2000-02-28","2000-02-29","2000-03-01","2000-03-02","2000-03-03","2000-03-04","2000-03-05","2000-03-06","2000-03-07","2000-03-08","2000-03-09","2000-03-10","2000-03-11","2000-03-12","2000-03-13","2000-03-14","2000-03-15","2000-03-16","2000-03-17","2000-03-18","2000-03-19","2000-03-20","2000-03-21","2000-03-22","2000-03-23","2000-03-24","2000-03-25","2000-03-26","2000-03-27","2000-03-28","2000-03-29","2000-03-30","2000-03-31","2000-04-01","2000-04-02","2000-04-03","2000-04-04","2000-04-05","2000-04-06","2000-04-07","2000-04-08","2000-04-09","2000-04-10","2000-04-11","2000-04-12","2000-04-13","2000-04-14","2000-04-15","2000-04-16","2000-04-17","2000-04-18","2000-04-19","2000-04-20","2000-04-21","2000-04-22","2000-04-23","2000-04-24","2000-04-25","2000-04-26","2000-04-27","2000-04-28","2000-04-29","2000-04-30","2000-05-01","2000-05-02","2000-05-03","2000-05-04","2000-05-05","2000-05-06","2000-05-07","2000-05-08","2000-05-09","2000-05-10","2000-05-11","2000-05-12","2000-05-13","2000-05-14","2000-05-15","2000-05-16","2000-05-17","2000-05-18","2000-05-19","2000-05-20","2000-05-21","2000-05-22","2000-05-23","2000-05-24","2000-05-25","2000-05-26","2000-05-27","2000-05-28","2000-05-29","2000-05-30","2000-05-31","2000-06-01","2000-06-02","2000-06-03","2000-06-04","2000-06-05","2000-06-06","2000-06-07","2000-06-08","2000-06-09","2000-06-10","2000-06-11","2000-06-12","2000-06-13","2000-06-14","2000-06-15","2000-06-16","2000-06-17","2000-06-18","2000-06-19","2000-06-20","2000-06-21","2000-06-22","2000-06-23","2000-06-24","2000-06-25","2000-06-26","2000-06-27","2000-06-28","2000-06-29","2000-06-30","2000-07-01","2000-07-02","2000-07-03","2000-07-04","2000-07-05","2000-07-06","2000-07-07","2000-07-08","2000-07-09","2000-07-10","2000-07-11","2000-07-12","2000-07-13","2000-07-14","2000-07-15","2000-07-16","2000-07-17","2000-07-18","2000-07-19","2000-07-20","2000-07-21","2000-07-22","2000-07-23","2000-07-24","2000-07-25","2000-07-26","2000-07-27","2000-07-28","2000-07-29","2000-07-30","2000-07-31","2000-08-01","2000-08-02","2000-08-03","2000-08-04","2000-08-05","2000-08-06","2000-08-07","2000-08-08","2000-08-09","2000-08-10","2000-08-11","2000-08-12","2000-08-13","2000-08-14","2000-08-15","2000-08-16","2000-08-17","2000-08-18","2000-08-19","2000-08-20","2000-08-21","2000-08-22","2000-08-23","2000-08-24","2000-08-25","2000-08-26","2000-08-27","2000-08-28","2000-08-29","2000-08-30","2000-08-31","2000-09-01","2000-09-02","2000-09-03","2000-09-04","2000-09-05","2000-09-06","2000-09-07","2000-09-08","2000-09-09","2000-09-10","2000-09-11","2000-09-12","2000-09-13","2000-09-14","2000-09-15","2000-09-16","2000-09-17","2000-09-18","2000-09-19","2000-09-20","2000-09-21","2000-09-22","2000-09-23","2000-09-24","2000-09-25","2000-09-26","2000-09-27","2000-09-28","2000-09-29","2000-09-30","2000-10-01","2000-10-02","2000-10-03","2000-10-04","2000-10-05","2000-10-06","2000-10-07","2000-10-08","2000-10-09","2000-10-10","2000-10-11","2000-10-12","2000-10-13","2000-10-14","2000-10-15","2000-10-16","2000-10-17","2000-10-18","2000-10-19","2000-10-20","2000-10-21","2000-10-22","2000-10-23","2000-10-24","2000-10-25","2000-10-26","2000-10-27","2000-10-28","2000-10-29","2000-10-30","2000-10-31","2000-11-01","2000-11-02","2000-11-03","2000-11-04","2000-11-05","2000-11-06","2000-11-07","2000-11-08","2000-11-09","2000-11-10","2000-11-11","2000-11-12","2000-11-13","2000-11-14","2000-11-15","2000-11-16","2000-11-17","2000-11-18","2000-11-19","2000-11-20","2000-11-21","2000-11-22","2000-11-23","2000-11-24","2000-11-25","2000-11-26","2000-11-27","2000-11-28","2000-11-29","2000-11-30","2000-12-01","2000-12-02","2000-12-03","2000-12-04","2000-12-05","2000-12-06","2000-12-07","2000-12-08","2000-12-09","2000-12-10","2000-12-11","2000-12-12","2000-12-13","2000-12-14","2000-12-15","2000-12-16","2000-12-17","2000-12-18","2000-12-19","2000-12-20","2000-12-21","2000-12-22","2000-12-23","2000-12-24","2000-12-25","2000-12-26","2000-12-27","2000-12-28","2000-12-29","2000-12-30","2000-12-31"],"type":"time","boundaryGap":true}],"legend":{"data":["temp"],"show":false,"type":"plain"},"series":[{"data":[{"value":["1997-01-01","36.0"]},{"value":["1997-01-02","45.0"]},{"value":["1997-01-03","40.0"]},{"value":["1997-01-04","51.5"]},{"value":["1997-01-05","27.0"]},{"value":["1997-01-06","17.0"]},{"value":["1997-01-07","16.0"]},{"value":["1997-01-08","19.0"]},{"value":["1997-01-09","26.0"]},{"value":["1997-01-10","16.0"]},{"value":["1997-01-11"," 1.5"]},{"value":["1997-01-12"," 1.0"]},{"value":["1997-01-13"," 3.0"]},{"value":["1997-01-14","10.0"]},{"value":["1997-01-15","19.0"]},{"value":["1997-01-16"," 9.5"]},{"value":["1997-01-17","-3.0"]},{"value":["1997-01-18"," 0.0"]},{"value":["1997-01-19","14.0"]},{"value":["1997-01-20","31.0"]},{"value":["1997-01-21","35.0"]},{"value":["1997-01-22","36.5"]},{"value":["1997-01-23","26.0"]},{"value":["1997-01-24","32.0"]},{"value":["1997-01-25","14.5"]},{"value":["1997-01-26","11.0"]},{"value":["1997-01-27","17.0"]},{"value":["1997-01-28"," 2.0"]},{"value":["1997-01-29"," 8.0"]},{"value":["1997-01-30","16.5"]},{"value":["1997-01-31","31.5"]},{"value":["1997-02-01","35.0"]},{"value":["1997-02-02","36.5"]},{"value":["1997-02-03","30.0"]},{"value":["1997-02-04","34.5"]},{"value":["1997-02-05","30.0"]},{"value":["1997-02-06","26.0"]},{"value":["1997-02-07","25.5"]},{"value":["1997-02-08","25.5"]},{"value":["1997-02-09","26.0"]},{"value":["1997-02-10","27.0"]},{"value":["1997-02-11","23.5"]},{"value":["1997-02-12","21.0"]},{"value":["1997-02-13","20.5"]},{"value":["1997-02-14","25.5"]},{"value":["1997-02-15","20.0"]},{"value":["1997-02-16","18.5"]},{"value":["1997-02-17","30.0"]},{"value":["1997-02-18","48.5"]},{"value":["1997-02-19","37.5"]},{"value":["1997-02-20","35.5"]},{"value":["1997-02-21","36.0"]},{"value":["1997-02-22","26.0"]},{"value":["1997-02-23","28.0"]},{"value":["1997-02-24","21.5"]},{"value":["1997-02-25","25.5"]},{"value":["1997-02-26","36.5"]},{"value":["1997-02-27","34.5"]},{"value":["1997-02-28","37.5"]},{"value":["1997-03-01","45.5"]},{"value":["1997-03-02","35.0"]},{"value":["1997-03-03","33.5"]},{"value":["1997-03-04","38.0"]},{"value":["1997-03-05","33.0"]},{"value":["1997-03-06","26.5"]},{"value":["1997-03-07","35.5"]},{"value":["1997-03-08","39.0"]},{"value":["1997-03-09","37.0"]},{"value":["1997-03-10","44.0"]},{"value":["1997-03-11","37.0"]},{"value":["1997-03-12","33.5"]},{"value":["1997-03-13","37.5"]},{"value":["1997-03-14","26.5"]},{"value":["1997-03-15","19.0"]},{"value":["1997-03-16","24.5"]},{"value":["1997-03-17","45.0"]},{"value":["1997-03-18","33.5"]},{"value":["1997-03-19","35.5"]},{"value":["1997-03-20","46.0"]},{"value":["1997-03-21","53.5"]},{"value":["1997-03-22","37.5"]},{"value":["1997-03-23","32.5"]},{"value":["1997-03-24","33.0"]},{"value":["1997-03-25","40.5"]},{"value":["1997-03-26","44.0"]},{"value":["1997-03-27","60.5"]},{"value":["1997-03-28","55.5"]},{"value":["1997-03-29","43.5"]},{"value":["1997-03-30","37.5"]},{"value":["1997-03-31","38.5"]},{"value":["1997-04-01","44.5"]},{"value":["1997-04-02","53.0"]},{"value":["1997-04-03","59.5"]},{"value":["1997-04-04","62.5"]},{"value":["1997-04-05","60.5"]},{"value":["1997-04-06","45.0"]},{"value":["1997-04-07","34.0"]},{"value":["1997-04-08","28.5"]},{"value":["1997-04-09","30.0"]},{"value":["1997-04-10","30.5"]},{"value":["1997-04-11","33.5"]},{"value":["1997-04-12","33.5"]},{"value":["1997-04-13","38.5"]},{"value":["1997-04-14","41.5"]},{"value":["1997-04-15","49.0"]},{"value":["1997-04-16","43.0"]},{"value":["1997-04-17","40.5"]},{"value":["1997-04-18","40.0"]},{"value":["1997-04-19","45.5"]},{"value":["1997-04-20","49.0"]},{"value":["1997-04-21","45.0"]},{"value":["1997-04-22","43.0"]},{"value":["1997-04-23","48.5"]},{"value":["1997-04-24","47.5"]},{"value":["1997-04-25","48.0"]},{"value":["1997-04-26","49.5"]},{"value":["1997-04-27","47.5"]},{"value":["1997-04-28","50.5"]},{"value":["1997-04-29","60.0"]},{"value":["1997-04-30","55.0"]},{"value":["1997-05-01","48.5"]},{"value":["1997-05-02","48.5"]},{"value":["1997-05-03","49.0"]},{"value":["1997-05-04","51.5"]},{"value":["1997-05-05","62.0"]},{"value":["1997-05-06","55.5"]},{"value":["1997-05-07","52.5"]},{"value":["1997-05-08","61.0"]},{"value":["1997-05-09","50.5"]},{"value":["1997-05-10","52.5"]},{"value":["1997-05-11","59.5"]},{"value":["1997-05-12","52.5"]},{"value":["1997-05-13","45.5"]},{"value":["1997-05-14","49.5"]},{"value":["1997-05-15","45.0"]},{"value":["1997-05-16","51.0"]},{"value":["1997-05-17","50.5"]},{"value":["1997-05-18","59.5"]},{"value":["1997-05-19","54.0"]},{"value":["1997-05-20","51.5"]},{"value":["1997-05-21","48.0"]},{"value":["1997-05-22","50.5"]},{"value":["1997-05-23","58.0"]},{"value":["1997-05-24","68.5"]},{"value":["1997-05-25","50.0"]},{"value":["1997-05-26","50.0"]},{"value":["1997-05-27","56.0"]},{"value":["1997-05-28","58.5"]},{"value":["1997-05-29","58.0"]},{"value":["1997-05-30","61.0"]},{"value":["1997-05-31","59.0"]},{"value":["1997-06-01","60.5"]},{"value":["1997-06-02","58.0"]},{"value":["1997-06-03","61.5"]},{"value":["1997-06-04","59.0"]},{"value":["1997-06-05","62.0"]},{"value":["1997-06-06","63.5"]},{"value":["1997-06-07","58.5"]},{"value":["1997-06-08","61.0"]},{"value":["1997-06-09","62.5"]},{"value":["1997-06-10","66.5"]},{"value":["1997-06-11","67.5"]},{"value":["1997-06-12","70.0"]},{"value":["1997-06-13","71.0"]},{"value":["1997-06-14","56.5"]},{"value":["1997-06-15","63.0"]},{"value":["1997-06-16","67.0"]},{"value":["1997-06-17","60.5"]},{"value":["1997-06-18","67.0"]},{"value":["1997-06-19","70.0"]},{"value":["1997-06-20","81.5"]},{"value":["1997-06-21","75.5"]},{"value":["1997-06-22","77.0"]},{"value":["1997-06-23","82.5"]},{"value":["1997-06-24","84.0"]},{"value":["1997-06-25","78.0"]},{"value":["1997-06-26","73.5"]},{"value":["1997-06-27","72.5"]},{"value":["1997-06-28","74.0"]},{"value":["1997-06-29","75.0"]},{"value":["1997-06-30","76.0"]},{"value":["1997-07-01","77.5"]},{"value":["1997-07-02","79.5"]},{"value":["1997-07-03","68.5"]},{"value":["1997-07-04","61.5"]},{"value":["1997-07-05","65.5"]},{"value":["1997-07-06","70.0"]},{"value":["1997-07-07","65.5"]},{"value":["1997-07-08","71.0"]},{"value":["1997-07-09","62.0"]},{"value":["1997-07-10","64.5"]},{"value":["1997-07-11","68.5"]},{"value":["1997-07-12","74.5"]},{"value":["1997-07-13","82.5"]},{"value":["1997-07-14","83.0"]},{"value":["1997-07-15","79.0"]},{"value":["1997-07-16","82.5"]},{"value":["1997-07-17","84.0"]},{"value":["1997-07-18","79.0"]},{"value":["1997-07-19","74.5"]},{"value":["1997-07-20","76.5"]},{"value":["1997-07-21","72.0"]},{"value":["1997-07-22","69.0"]},{"value":["1997-07-23","69.0"]},{"value":["1997-07-24","72.5"]},{"value":["1997-07-25","76.0"]},{"value":["1997-07-26","85.5"]},{"value":["1997-07-27","81.5"]},{"value":["1997-07-28","74.5"]},{"value":["1997-07-29","66.5"]},{"value":["1997-07-30","68.5"]},{"value":["1997-07-31","69.0"]},{"value":["1997-08-01","74.5"]},{"value":["1997-08-02","81.5"]},{"value":["1997-08-03","78.0"]},{"value":["1997-08-04","71.0"]},{"value":["1997-08-05","62.5"]},{"value":["1997-08-06","64.5"]},{"value":["1997-08-07","67.0"]},{"value":["1997-08-08","69.5"]},{"value":["1997-08-09","70.5"]},{"value":["1997-08-10","75.5"]},{"value":["1997-08-11","67.5"]},{"value":["1997-08-12","69.5"]},{"value":["1997-08-13","68.5"]},{"value":["1997-08-14","65.5"]},{"value":["1997-08-15","77.0"]},{"value":["1997-08-16","80.0"]},{"value":["1997-08-17","68.5"]},{"value":["1997-08-18","63.5"]},{"value":["1997-08-19","64.0"]},{"value":["1997-08-20","67.0"]},{"value":["1997-08-21","63.5"]},{"value":["1997-08-22","64.0"]},{"value":["1997-08-23","65.5"]},{"value":["1997-08-24","70.5"]},{"value":["1997-08-25","65.5"]},{"value":["1997-08-26","69.0"]},{"value":["1997-08-27","77.0"]},{"value":["1997-08-28","68.5"]},{"value":["1997-08-29","67.0"]},{"value":["1997-08-30","65.0"]},{"value":["1997-08-31","72.0"]},{"value":["1997-09-01","70.5"]},{"value":["1997-09-02","68.0"]},{"value":["1997-09-03","58.5"]},{"value":["1997-09-04","59.0"]},{"value":["1997-09-05","60.5"]},{"value":["1997-09-06","74.5"]},{"value":["1997-09-07","66.0"]},{"value":["1997-09-08","67.5"]},{"value":["1997-09-09","68.5"]},{"value":["1997-09-10","64.5"]},{"value":["1997-09-11","61.5"]},{"value":["1997-09-12","61.5"]},{"value":["1997-09-13","63.5"]},{"value":["1997-09-14","69.0"]},{"value":["1997-09-15","69.5"]},{"value":["1997-09-16","74.5"]},{"value":["1997-09-17","70.0"]},{"value":["1997-09-18","69.0"]},{"value":["1997-09-19","73.0"]},{"value":["1997-09-20","58.5"]},{"value":["1997-09-21","57.0"]},{"value":["1997-09-22","57.5"]},{"value":["1997-09-23","59.0"]},{"value":["1997-09-24","56.5"]},{"value":["1997-09-25","66.0"]},{"value":["1997-09-26","60.0"]},{"value":["1997-09-27","62.5"]},{"value":["1997-09-28","64.0"]},{"value":["1997-09-29","65.0"]},{"value":["1997-09-30","59.5"]},{"value":["1997-10-01","52.0"]},{"value":["1997-10-02","61.0"]},{"value":["1997-10-03","73.0"]},{"value":["1997-10-04","68.0"]},{"value":["1997-10-05","70.0"]},{"value":["1997-10-06","70.5"]},{"value":["1997-10-07","73.5"]},{"value":["1997-10-08","72.5"]},{"value":["1997-10-09","64.0"]},{"value":["1997-10-10","59.0"]},{"value":["1997-10-11","61.5"]},{"value":["1997-10-12","70.0"]},{"value":["1997-10-13","59.5"]},{"value":["1997-10-14","42.5"]},{"value":["1997-10-15","42.5"]},{"value":["1997-10-16","47.5"]},{"value":["1997-10-17","45.5"]},{"value":["1997-10-18","44.5"]},{"value":["1997-10-19","50.0"]},{"value":["1997-10-20","45.5"]},{"value":["1997-10-21","42.5"]},{"value":["1997-10-22","36.0"]},{"value":["1997-10-23","44.5"]},{"value":["1997-10-24","46.0"]},{"value":["1997-10-25","47.0"]},{"value":["1997-10-26","40.0"]},{"value":["1997-10-27","32.5"]},{"value":["1997-10-28","39.0"]},{"value":["1997-10-29","44.0"]},{"value":["1997-10-30","51.0"]},{"value":["1997-10-31","59.5"]},{"value":["1997-11-01","50.0"]},{"value":["1997-11-02","38.5"]},{"value":["1997-11-03","36.5"]},{"value":["1997-11-04","39.0"]},{"value":["1997-11-05","40.0"]},{"value":["1997-11-06","45.0"]},{"value":["1997-11-07","43.0"]},{"value":["1997-11-08","44.0"]},{"value":["1997-11-09","42.5"]},{"value":["1997-11-10","36.5"]},{"value":["1997-11-11","28.5"]},{"value":["1997-11-12","26.5"]},{"value":["1997-11-13","31.5"]},{"value":["1997-11-14","36.0"]},{"value":["1997-11-15","29.0"]},{"value":["1997-11-16","22.0"]},{"value":["1997-11-17","25.5"]},{"value":["1997-11-18","32.0"]},{"value":["1997-11-19","27.5"]},{"value":["1997-11-20","33.5"]},{"value":["1997-11-21","35.5"]},{"value":["1997-11-22","34.5"]},{"value":["1997-11-23","26.0"]},{"value":["1997-11-24","26.5"]},{"value":["1997-11-25","47.0"]},{"value":["1997-11-26","43.0"]},{"value":["1997-11-27","37.5"]},{"value":["1997-11-28","49.0"]},{"value":["1997-11-29","45.5"]},{"value":["1997-11-30","42.0"]},{"value":["1997-12-01","37.0"]},{"value":["1997-12-02","36.5"]},{"value":["1997-12-03","36.5"]},{"value":["1997-12-04","32.0"]},{"value":["1997-12-05","26.0"]},{"value":["1997-12-06","28.5"]},{"value":["1997-12-07","30.0"]},{"value":["1997-12-08","28.5"]},{"value":["1997-12-09","33.0"]},{"value":["1997-12-10","34.5"]},{"value":["1997-12-11","33.5"]},{"value":["1997-12-12","27.5"]},{"value":["1997-12-13","26.5"]},{"value":["1997-12-14","31.0"]},{"value":["1997-12-15","37.5"]},{"value":["1997-12-16","39.0"]},{"value":["1997-12-17","37.0"]},{"value":["1997-12-18","38.5"]},{"value":["1997-12-19","40.5"]},{"value":["1997-12-20","33.0"]},{"value":["1997-12-21","32.5"]},{"value":["1997-12-22","34.5"]},{"value":["1997-12-23","34.0"]},{"value":["1997-12-24","34.0"]},{"value":["1997-12-25","30.5"]},{"value":["1997-12-26","28.5"]},{"value":["1997-12-27","23.0"]},{"value":["1997-12-28","25.5"]},{"value":["1997-12-29","29.5"]},{"value":["1997-12-30","21.5"]},{"value":["1997-12-31","18.0"]},{"value":["1998-01-01","28.0"]},{"value":["1998-01-02","44.0"]},{"value":["1998-01-03","47.0"]},{"value":["1998-01-04","45.0"]},{"value":["1998-01-05","48.0"]},{"value":["1998-01-06","43.0"]},{"value":["1998-01-07","38.0"]},{"value":["1998-01-08","34.0"]},{"value":["1998-01-09","25.0"]},{"value":["1998-01-10","12.0"]},{"value":["1998-01-11","18.0"]},{"value":["1998-01-12","23.0"]},{"value":["1998-01-13"," 7.0"]},{"value":["1998-01-14","17.0"]},{"value":["1998-01-15","28.0"]},{"value":["1998-01-16","28.0"]},{"value":["1998-01-17","23.0"]},{"value":["1998-01-18","16.0"]},{"value":["1998-01-19","24.0"]},{"value":["1998-01-20","26.0"]},{"value":["1998-01-21","31.0"]},{"value":["1998-01-22","32.0"]},{"value":["1998-01-23","28.0"]},{"value":["1998-01-24","28.0"]},{"value":["1998-01-25","28.0"]},{"value":["1998-01-26","31.0"]},{"value":["1998-01-27","33.0"]},{"value":["1998-01-28","36.0"]},{"value":["1998-01-29","37.0"]},{"value":["1998-01-30","31.0"]},{"value":["1998-01-31","35.0"]},{"value":["1998-02-01","39.0"]},{"value":["1998-02-02","33.0"]},{"value":["1998-02-03","34.0"]},{"value":["1998-02-04","32.0"]},{"value":["1998-02-05","32.0"]},{"value":["1998-02-06","36.0"]},{"value":["1998-02-07","34.0"]},{"value":["1998-02-08","33.0"]},{"value":["1998-02-09","35.0"]},{"value":["1998-02-10","39.0"]},{"value":["1998-02-11","41.0"]},{"value":["1998-02-12","35.0"]},{"value":["1998-02-13","36.0"]},{"value":["1998-02-14","38.0"]},{"value":["1998-02-15","43.0"]},{"value":["1998-02-16","42.0"]},{"value":["1998-02-17","41.0"]},{"value":["1998-02-18","39.0"]},{"value":["1998-02-19","40.0"]},{"value":["1998-02-20","39.0"]},{"value":["1998-02-21","38.0"]},{"value":["1998-02-22","44.0"]},{"value":["1998-02-23","41.0"]},{"value":["1998-02-24","45.0"]},{"value":["1998-02-25","42.0"]},{"value":["1998-02-26","54.0"]},{"value":["1998-02-27","42.0"]},{"value":["1998-02-28","41.0"]},{"value":["1998-03-01","35.0"]},{"value":["1998-03-02","33.0"]},{"value":["1998-03-03","34.0"]},{"value":["1998-03-04","34.0"]},{"value":["1998-03-05","36.0"]},{"value":["1998-03-06","34.0"]},{"value":["1998-03-07","36.0"]},{"value":["1998-03-08","38.0"]},{"value":["1998-03-09","26.0"]},{"value":["1998-03-10","18.0"]},{"value":["1998-03-11","18.0"]},{"value":["1998-03-12","18.0"]},{"value":["1998-03-13","29.0"]},{"value":["1998-03-14","28.0"]},{"value":["1998-03-15","27.0"]},{"value":["1998-03-16","30.0"]},{"value":["1998-03-17","36.0"]},{"value":["1998-03-18","45.0"]},{"value":["1998-03-19","37.0"]},{"value":["1998-03-20","35.0"]},{"value":["1998-03-21","37.0"]},{"value":["1998-03-22","36.0"]},{"value":["1998-03-23","38.0"]},{"value":["1998-03-24","40.0"]},{"value":["1998-03-25","51.0"]},{"value":["1998-03-26","68.0"]},{"value":["1998-03-27","67.0"]},{"value":["1998-03-28","57.0"]},{"value":["1998-03-29","62.0"]},{"value":["1998-03-30","73.0"]},{"value":["1998-03-31","59.0"]},{"value":["1998-04-01","44.0"]},{"value":["1998-04-02","44.0"]},{"value":["1998-04-03","41.0"]},{"value":["1998-04-04","41.0"]},{"value":["1998-04-05","41.0"]},{"value":["1998-04-06","48.0"]},{"value":["1998-04-07","52.0"]},{"value":["1998-04-08","48.0"]},{"value":["1998-04-09","43.0"]},{"value":["1998-04-10","46.0"]},{"value":["1998-04-11","50.0"]},{"value":["1998-04-12","64.0"]},{"value":["1998-04-13","62.0"]},{"value":["1998-04-14","58.0"]},{"value":["1998-04-15","53.0"]},{"value":["1998-04-16","42.0"]},{"value":["1998-04-17","45.0"]},{"value":["1998-04-18","50.0"]},{"value":["1998-04-19","52.0"]},{"value":["1998-04-20","52.0"]},{"value":["1998-04-21","50.0"]},{"value":["1998-04-22","53.0"]},{"value":["1998-04-23","56.0"]},{"value":["1998-04-24","62.0"]},{"value":["1998-04-25","56.0"]},{"value":["1998-04-26","48.0"]},{"value":["1998-04-27","45.0"]},{"value":["1998-04-28","46.0"]},{"value":["1998-04-29","54.0"]},{"value":["1998-04-30","55.0"]},{"value":["1998-05-01","59.0"]},{"value":["1998-05-02","57.0"]},{"value":["1998-05-03","53.0"]},{"value":["1998-05-04","60.0"]},{"value":["1998-05-05","62.0"]},{"value":["1998-05-06","68.0"]},{"value":["1998-05-07","57.0"]},{"value":["1998-05-08","62.0"]},{"value":["1998-05-09","58.0"]},{"value":["1998-05-10","58.0"]},{"value":["1998-05-11","61.0"]},{"value":["1998-05-12","63.0"]},{"value":["1998-05-13","68.0"]},{"value":["1998-05-14","68.0"]},{"value":["1998-05-15","75.0"]},{"value":["1998-05-16","72.0"]},{"value":["1998-05-17","68.0"]},{"value":["1998-05-18","76.0"]},{"value":["1998-05-19","79.0"]},{"value":["1998-05-20","65.0"]},{"value":["1998-05-21","64.0"]},{"value":["1998-05-22","57.0"]},{"value":["1998-05-23","61.0"]},{"value":["1998-05-24","61.0"]},{"value":["1998-05-25","62.0"]},{"value":["1998-05-26","63.0"]},{"value":["1998-05-27","67.0"]},{"value":["1998-05-28","75.0"]},{"value":["1998-05-29","74.0"]},{"value":["1998-05-30","73.0"]},{"value":["1998-05-31","70.0"]},{"value":["1998-06-01","63.0"]},{"value":["1998-06-02","63.0"]},{"value":["1998-06-03","55.0"]},{"value":["1998-06-04","56.0"]},{"value":["1998-06-05","50.0"]},{"value":["1998-06-06","54.0"]},{"value":["1998-06-07","58.0"]},{"value":["1998-06-08","56.0"]},{"value":["1998-06-09","61.0"]},{"value":["1998-06-10","68.0"]},{"value":["1998-06-11","68.0"]},{"value":["1998-06-12","74.0"]},{"value":["1998-06-13","69.0"]},{"value":["1998-06-14","67.0"]},{"value":["1998-06-15","70.0"]},{"value":["1998-06-16","70.0"]},{"value":["1998-06-17","73.0"]},{"value":["1998-06-18","77.0"]},{"value":["1998-06-19","73.0"]},{"value":["1998-06-20","78.0"]},{"value":["1998-06-21","79.0"]},{"value":["1998-06-22","74.0"]},{"value":["1998-06-23","74.0"]},{"value":["1998-06-24","83.0"]},{"value":["1998-06-25","83.0"]},{"value":["1998-06-26","79.0"]},{"value":["1998-06-27","82.0"]},{"value":["1998-06-28","78.0"]},{"value":["1998-06-29","77.0"]},{"value":["1998-06-30","74.0"]},{"value":["1998-07-01","70.0"]},{"value":["1998-07-02","73.0"]},{"value":["1998-07-03","79.0"]},{"value":["1998-07-04","69.0"]},{"value":["1998-07-05","70.0"]},{"value":["1998-07-06","78.0"]},{"value":["1998-07-07","72.0"]},{"value":["1998-07-08","74.0"]},{"value":["1998-07-09","75.0"]},{"value":["1998-07-10","73.0"]},{"value":["1998-07-11","71.0"]},{"value":["1998-07-12","71.0"]},{"value":["1998-07-13","73.0"]},{"value":["1998-07-14","78.0"]},{"value":["1998-07-15","79.0"]},{"value":["1998-07-16","80.0"]},{"value":["1998-07-17","75.0"]},{"value":["1998-07-18","77.0"]},{"value":["1998-07-19","81.0"]},{"value":["1998-07-20","79.0"]},{"value":["1998-07-21","85.0"]},{"value":["1998-07-22","76.0"]},{"value":["1998-07-23","73.0"]},{"value":["1998-07-24","72.0"]},{"value":["1998-07-25","70.0"]},{"value":["1998-07-26","70.0"]},{"value":["1998-07-27","74.0"]},{"value":["1998-07-28","79.0"]},{"value":["1998-07-29","77.0"]},{"value":["1998-07-30","72.0"]},{"value":["1998-07-31","71.0"]},{"value":["1998-08-01","72.0"]},{"value":["1998-08-02","72.0"]},{"value":["1998-08-03","78.0"]},{"value":["1998-08-04","70.0"]},{"value":["1998-08-05","76.0"]},{"value":["1998-08-06","78.0"]},{"value":["1998-08-07","75.0"]},{"value":["1998-08-08","77.0"]},{"value":["1998-08-09","77.0"]},{"value":["1998-08-10","76.0"]},{"value":["1998-08-11","71.0"]},{"value":["1998-08-12","70.0"]},{"value":["1998-08-13","71.0"]},{"value":["1998-08-14","71.0"]},{"value":["1998-08-15","71.0"]},{"value":["1998-08-16","72.0"]},{"value":["1998-08-17","75.0"]},{"value":["1998-08-18","68.0"]},{"value":["1998-08-19","69.0"]},{"value":["1998-08-20","73.0"]},{"value":["1998-08-21","80.0"]},{"value":["1998-08-22","78.0"]},{"value":["1998-08-23","81.0"]},{"value":["1998-08-24","76.0"]},{"value":["1998-08-25","76.0"]},{"value":["1998-08-26","73.0"]},{"value":["1998-08-27","72.0"]},{"value":["1998-08-28","69.0"]},{"value":["1998-08-29","76.0"]},{"value":["1998-08-30","70.0"]},{"value":["1998-08-31","69.0"]},{"value":["1998-09-01","69.0"]},{"value":["1998-09-02","65.0"]},{"value":["1998-09-03","68.0"]},{"value":["1998-09-04","69.0"]},{"value":["1998-09-05","70.0"]},{"value":["1998-09-06","81.0"]},{"value":["1998-09-07","66.0"]},{"value":["1998-09-08","63.0"]},{"value":["1998-09-09","63.0"]},{"value":["1998-09-10","63.0"]},{"value":["1998-09-11","71.0"]},{"value":["1998-09-12","74.0"]},{"value":["1998-09-13","74.0"]},{"value":["1998-09-14","72.0"]},{"value":["1998-09-15","70.0"]},{"value":["1998-09-16","72.0"]},{"value":["1998-09-17","68.0"]},{"value":["1998-09-18","68.0"]},{"value":["1998-09-19","72.0"]},{"value":["1998-09-20","76.0"]},{"value":["1998-09-21","63.0"]},{"value":["1998-09-22","58.0"]},{"value":["1998-09-23","56.0"]},{"value":["1998-09-24","59.0"]},{"value":["1998-09-25","66.0"]},{"value":["1998-09-26","79.0"]},{"value":["1998-09-27","73.0"]},{"value":["1998-09-28","63.0"]},{"value":["1998-09-29","63.0"]},{"value":["1998-09-30","64.0"]},{"value":["1998-10-01","53.0"]},{"value":["1998-10-02","49.0"]},{"value":["1998-10-03","55.0"]},{"value":["1998-10-04","60.0"]},{"value":["1998-10-05","65.0"]},{"value":["1998-10-06","65.0"]},{"value":["1998-10-07","56.0"]},{"value":["1998-10-08","54.0"]},{"value":["1998-10-09","53.0"]},{"value":["1998-10-10","53.0"]},{"value":["1998-10-11","56.0"]},{"value":["1998-10-12","60.0"]},{"value":["1998-10-13","49.0"]},{"value":["1998-10-14","48.0"]},{"value":["1998-10-15","58.0"]},{"value":["1998-10-16","68.0"]},{"value":["1998-10-17","67.0"]},{"value":["1998-10-18","57.0"]},{"value":["1998-10-19","52.0"]},{"value":["1998-10-20","50.0"]},{"value":["1998-10-21","48.0"]},{"value":["1998-10-22","45.0"]},{"value":["1998-10-23","52.0"]},{"value":["1998-10-24","54.0"]},{"value":["1998-10-25","55.0"]},{"value":["1998-10-26","62.0"]},{"value":["1998-10-27","63.0"]},{"value":["1998-10-28","54.0"]},{"value":["1998-10-29","52.0"]},{"value":["1998-10-30","61.0"]},{"value":["1998-10-31","57.0"]},{"value":["1998-11-01","54.0"]},{"value":["1998-11-02","49.0"]},{"value":["1998-11-03","41.0"]},{"value":["1998-11-04","37.0"]},{"value":["1998-11-05","39.0"]},{"value":["1998-11-06","38.0"]},{"value":["1998-11-07","35.0"]},{"value":["1998-11-08","37.0"]},{"value":["1998-11-09","43.0"]},{"value":["1998-11-10","52.0"]},{"value":["1998-11-11","41.0"]},{"value":["1998-11-12","40.0"]},{"value":["1998-11-13","43.0"]},{"value":["1998-11-14","50.0"]},{"value":["1998-11-15","43.0"]},{"value":["1998-11-16","48.0"]},{"value":["1998-11-17","42.0"]},{"value":["1998-11-18","48.0"]},{"value":["1998-11-19","45.0"]},{"value":["1998-11-20","31.0"]},{"value":["1998-11-21","34.0"]},{"value":["1998-11-22","49.0"]},{"value":["1998-11-23","50.0"]},{"value":["1998-11-24","46.0"]},{"value":["1998-11-25","50.0"]},{"value":["1998-11-26","50.0"]},{"value":["1998-11-27","48.0"]},{"value":["1998-11-28","54.0"]},{"value":["1998-11-29","63.0"]},{"value":["1998-11-30","52.0"]},{"value":["1998-12-01","45.0"]},{"value":["1998-12-02","55.0"]},{"value":["1998-12-03","61.0"]},{"value":["1998-12-04","61.0"]},{"value":["1998-12-05","59.0"]},{"value":["1998-12-06","50.0"]},{"value":["1998-12-07","39.0"]},{"value":["1998-12-08","38.0"]},{"value":["1998-12-09","39.0"]},{"value":["1998-12-10","35.0"]},{"value":["1998-12-11","39.0"]},{"value":["1998-12-12","38.0"]},{"value":["1998-12-13","38.0"]},{"value":["1998-12-14","36.0"]},{"value":["1998-12-15","44.0"]},{"value":["1998-12-16","37.0"]},{"value":["1998-12-17","32.0"]},{"value":["1998-12-18","43.0"]},{"value":["1998-12-19","35.0"]},{"value":["1998-12-20","31.0"]},{"value":["1998-12-21","23.0"]},{"value":["1998-12-22","10.0"]},{"value":["1998-12-23","17.0"]},{"value":["1998-12-24","19.0"]},{"value":["1998-12-25","25.0"]},{"value":["1998-12-26","26.0"]},{"value":["1998-12-27","36.0"]},{"value":["1998-12-28","29.0"]},{"value":["1998-12-29","22.0"]},{"value":["1998-12-30"," 7.0"]},{"value":["1998-12-31","13.0"]},{"value":["1999-01-01","14.0"]},{"value":["1999-01-02","22.0"]},{"value":["1999-01-03","16.0"]},{"value":["1999-01-04","-2.0"]},{"value":["1999-01-05"," 1.0"]},{"value":["1999-01-06","12.0"]},{"value":["1999-01-07"," 1.0"]},{"value":["1999-01-08","16.0"]},{"value":["1999-01-09"," 4.0"]},{"value":["1999-01-10"," 6.0"]},{"value":["1999-01-11"," 5.0"]},{"value":["1999-01-12","20.0"]},{"value":["1999-01-13","20.0"]},{"value":["1999-01-14","18.0"]},{"value":["1999-01-15","23.0"]},{"value":["1999-01-16","30.0"]},{"value":["1999-01-17","28.0"]},{"value":["1999-01-18","29.0"]},{"value":["1999-01-19","27.0"]},{"value":["1999-01-20","30.0"]},{"value":["1999-01-21","37.0"]},{"value":["1999-01-22","42.0"]},{"value":["1999-01-23","39.0"]},{"value":["1999-01-24","33.0"]},{"value":["1999-01-25","28.0"]},{"value":["1999-01-26","29.0"]},{"value":["1999-01-27","42.0"]},{"value":["1999-01-28","33.0"]},{"value":["1999-01-29","33.0"]},{"value":["1999-01-30","34.0"]},{"value":["1999-01-31","36.0"]},{"value":["1999-02-01","40.0"]},{"value":["1999-02-02","38.0"]},{"value":["1999-02-03","41.0"]},{"value":["1999-02-04","31.0"]},{"value":["1999-02-05","31.0"]},{"value":["1999-02-06","40.0"]},{"value":["1999-02-07","33.0"]},{"value":["1999-02-08","37.0"]},{"value":["1999-02-09","44.0"]},{"value":["1999-02-10","44.0"]},{"value":["1999-02-11","49.0"]},{"value":["1999-02-12","23.0"]},{"value":["1999-02-13","23.0"]},{"value":["1999-02-14","34.0"]},{"value":["1999-02-15","45.0"]},{"value":["1999-02-16","39.0"]},{"value":["1999-02-17","27.0"]},{"value":["1999-02-18","29.0"]},{"value":["1999-02-19","28.0"]},{"value":["1999-02-20","25.0"]},{"value":["1999-02-21","28.0"]},{"value":["1999-02-22","26.0"]},{"value":["1999-02-23","29.0"]},{"value":["1999-02-24","27.0"]},{"value":["1999-02-25","33.0"]},{"value":["1999-02-26","36.0"]},{"value":["1999-02-27","43.0"]},{"value":["1999-02-28","37.0"]},{"value":["1999-03-01","38.0"]},{"value":["1999-03-02","37.0"]},{"value":["1999-03-03","31.0"]},{"value":["1999-03-04","30.0"]},{"value":["1999-03-05","35.0"]},{"value":["1999-03-06","25.0"]},{"value":["1999-03-07","21.0"]},{"value":["1999-03-08","24.0"]},{"value":["1999-03-09","29.0"]},{"value":["1999-03-10","29.0"]},{"value":["1999-03-11","28.0"]},{"value":["1999-03-12","27.0"]},{"value":["1999-03-13","28.0"]},{"value":["1999-03-14","32.0"]},{"value":["1999-03-15","31.0"]},{"value":["1999-03-16","43.0"]},{"value":["1999-03-17","50.0"]},{"value":["1999-03-18","38.0"]},{"value":["1999-03-19","36.0"]},{"value":["1999-03-20","39.0"]},{"value":["1999-03-21","38.0"]},{"value":["1999-03-22","36.0"]},{"value":["1999-03-23","38.0"]},{"value":["1999-03-24","35.0"]},{"value":["1999-03-25","32.0"]},{"value":["1999-03-26","35.0"]},{"value":["1999-03-27","41.0"]},{"value":["1999-03-28","43.0"]},{"value":["1999-03-29","48.0"]},{"value":["1999-03-30","55.0"]},{"value":["1999-03-31","60.0"]},{"value":["1999-04-01","58.0"]},{"value":["1999-04-02","64.0"]},{"value":["1999-04-03","63.0"]},{"value":["1999-04-04","56.0"]},{"value":["1999-04-05","50.0"]},{"value":["1999-04-06","53.0"]},{"value":["1999-04-07","55.0"]},{"value":["1999-04-08","55.0"]},{"value":["1999-04-09","45.0"]},{"value":["1999-04-10","47.0"]},{"value":["1999-04-11","46.0"]},{"value":["1999-04-12","45.0"]},{"value":["1999-04-13","50.0"]},{"value":["1999-04-14","49.0"]},{"value":["1999-04-15","49.0"]},{"value":["1999-04-16","44.0"]},{"value":["1999-04-17","44.0"]},{"value":["1999-04-18","42.0"]},{"value":["1999-04-19","42.0"]},{"value":["1999-04-20","45.0"]},{"value":["1999-04-21","54.0"]},{"value":["1999-04-22","48.0"]},{"value":["1999-04-23","43.0"]},{"value":["1999-04-24","44.0"]},{"value":["1999-04-25","48.0"]},{"value":["1999-04-26","51.0"]},{"value":["1999-04-27","50.0"]},{"value":["1999-04-28","51.0"]},{"value":["1999-04-29","52.0"]},{"value":["1999-04-30","51.0"]},{"value":["1999-05-01","56.0"]},{"value":["1999-05-02","58.0"]},{"value":["1999-05-03","64.0"]},{"value":["1999-05-04","67.0"]},{"value":["1999-05-05","70.0"]},{"value":["1999-05-06","58.0"]},{"value":["1999-05-07","56.0"]},{"value":["1999-05-08","53.0"]},{"value":["1999-05-09","51.0"]},{"value":["1999-05-10","58.0"]},{"value":["1999-05-11","67.0"]},{"value":["1999-05-12","62.0"]},{"value":["1999-05-13","51.0"]},{"value":["1999-05-14","53.0"]},{"value":["1999-05-15","60.0"]},{"value":["1999-05-16","69.0"]},{"value":["1999-05-17","69.0"]},{"value":["1999-05-18","61.0"]},{"value":["1999-05-19","61.0"]},{"value":["1999-05-20","64.0"]},{"value":["1999-05-21","66.0"]},{"value":["1999-05-22","59.0"]},{"value":["1999-05-23","60.0"]},{"value":["1999-05-24","51.0"]},{"value":["1999-05-25","56.0"]},{"value":["1999-05-26","60.0"]},{"value":["1999-05-27","64.0"]},{"value":["1999-05-28","75.0"]},{"value":["1999-05-29","76.0"]},{"value":["1999-05-30","70.0"]},{"value":["1999-05-31","73.0"]},{"value":["1999-06-01","65.0"]},{"value":["1999-06-02","64.0"]},{"value":["1999-06-03","58.0"]},{"value":["1999-06-04","64.0"]},{"value":["1999-06-05","75.0"]},{"value":["1999-06-06","80.0"]},{"value":["1999-06-07","81.0"]},{"value":["1999-06-08","80.0"]},{"value":["1999-06-09","79.0"]},{"value":["1999-06-10","79.0"]},{"value":["1999-06-11","78.0"]},{"value":["1999-06-12","75.0"]},{"value":["1999-06-13","65.0"]},{"value":["1999-06-14","66.0"]},{"value":["1999-06-15","58.0"]},{"value":["1999-06-16","61.0"]},{"value":["1999-06-17","57.0"]},{"value":["1999-06-18","59.0"]},{"value":["1999-06-19","68.0"]},{"value":["1999-06-20","67.0"]},{"value":["1999-06-21","72.0"]},{"value":["1999-06-22","74.0"]},{"value":["1999-06-23","76.0"]},{"value":["1999-06-24","76.0"]},{"value":["1999-06-25","75.0"]},{"value":["1999-06-26","76.0"]},{"value":["1999-06-27","78.0"]},{"value":["1999-06-28","77.0"]},{"value":["1999-06-29","66.0"]},{"value":["1999-06-30","68.0"]},{"value":["1999-07-01","74.0"]},{"value":["1999-07-02","77.0"]},{"value":["1999-07-03","84.0"]},{"value":["1999-07-04","86.0"]},{"value":["1999-07-05","87.0"]},{"value":["1999-07-06","79.0"]},{"value":["1999-07-07","75.0"]},{"value":["1999-07-08","76.0"]},{"value":["1999-07-09","76.0"]},{"value":["1999-07-10","64.0"]},{"value":["1999-07-11","67.0"]},{"value":["1999-07-12","68.0"]},{"value":["1999-07-13","70.0"]},{"value":["1999-07-14","74.0"]},{"value":["1999-07-15","78.0"]},{"value":["1999-07-16","82.0"]},{"value":["1999-07-17","75.0"]},{"value":["1999-07-18","77.0"]},{"value":["1999-07-19","79.0"]},{"value":["1999-07-20","76.0"]},{"value":["1999-07-21","83.0"]},{"value":["1999-07-22","82.0"]},{"value":["1999-07-23","83.0"]},{"value":["1999-07-24","82.0"]},{"value":["1999-07-25","85.0"]},{"value":["1999-07-26","80.0"]},{"value":["1999-07-27","79.0"]},{"value":["1999-07-28","82.0"]},{"value":["1999-07-29","83.0"]},{"value":["1999-07-30","90.0"]},{"value":["1999-07-31","83.0"]},{"value":["1999-08-01","74.0"]},{"value":["1999-08-02","71.0"]},{"value":["1999-08-03","71.0"]},{"value":["1999-08-04","76.0"]},{"value":["1999-08-05","73.0"]},{"value":["1999-08-06","76.0"]},{"value":["1999-08-07","72.0"]},{"value":["1999-08-08","66.0"]},{"value":["1999-08-09","66.0"]},{"value":["1999-08-10","78.0"]},{"value":["1999-08-11","75.0"]},{"value":["1999-08-12","70.0"]},{"value":["1999-08-13","72.0"]},{"value":["1999-08-14","64.0"]},{"value":["1999-08-15","66.0"]},{"value":["1999-08-16","73.0"]},{"value":["1999-08-17","75.0"]},{"value":["1999-08-18","67.0"]},{"value":["1999-08-19","68.0"]},{"value":["1999-08-20","67.0"]},{"value":["1999-08-21","65.0"]},{"value":["1999-08-22","67.0"]},{"value":["1999-08-23","72.0"]},{"value":["1999-08-24","71.0"]},{"value":["1999-08-25","70.0"]},{"value":["1999-08-26","72.0"]},{"value":["1999-08-27","74.0"]},{"value":["1999-08-28","80.0"]},{"value":["1999-08-29","69.0"]},{"value":["1999-08-30","62.0"]},{"value":["1999-08-31","65.0"]},{"value":["1999-09-01","70.0"]},{"value":["1999-09-02","74.0"]},{"value":["1999-09-03","76.0"]},{"value":["1999-09-04","79.0"]},{"value":["1999-09-05","77.0"]},{"value":["1999-09-06","66.0"]},{"value":["1999-09-07","65.0"]},{"value":["1999-09-08","71.0"]},{"value":["1999-09-09","62.0"]},{"value":["1999-09-10","62.0"]},{"value":["1999-09-11","64.0"]},{"value":["1999-09-12","68.0"]},{"value":["1999-09-13","59.0"]},{"value":["1999-09-14","59.0"]},{"value":["1999-09-15","55.0"]},{"value":["1999-09-16","59.0"]},{"value":["1999-09-17","59.0"]},{"value":["1999-09-18","62.0"]},{"value":["1999-09-19","64.0"]},{"value":["1999-09-20","58.0"]},{"value":["1999-09-21","51.0"]},{"value":["1999-09-22","57.0"]},{"value":["1999-09-23","66.0"]},{"value":["1999-09-24","57.0"]},{"value":["1999-09-25","62.0"]},{"value":["1999-09-26","72.0"]},{"value":["1999-09-27","66.0"]},{"value":["1999-09-28","58.0"]},{"value":["1999-09-29","56.0"]},{"value":["1999-09-30","56.0"]},{"value":["1999-10-01","51.0"]},{"value":["1999-10-02","46.0"]},{"value":["1999-10-03","44.0"]},{"value":["1999-10-04","47.0"]},{"value":["1999-10-05","51.0"]},{"value":["1999-10-06","52.0"]},{"value":["1999-10-07","59.0"]},{"value":["1999-10-08","61.0"]},{"value":["1999-10-09","59.0"]},{"value":["1999-10-10","66.0"]},{"value":["1999-10-11","55.0"]},{"value":["1999-10-12","62.0"]},{"value":["1999-10-13","56.0"]},{"value":["1999-10-14","48.0"]},{"value":["1999-10-15","64.0"]},{"value":["1999-10-16","58.0"]},{"value":["1999-10-17","45.0"]},{"value":["1999-10-18","44.0"]},{"value":["1999-10-19","50.0"]},{"value":["1999-10-20","44.0"]},{"value":["1999-10-21","52.0"]},{"value":["1999-10-22","51.0"]},{"value":["1999-10-23","43.0"]},{"value":["1999-10-24","40.0"]},{"value":["1999-10-25","50.0"]},{"value":["1999-10-26","53.0"]},{"value":["1999-10-27","48.0"]},{"value":["1999-10-28","64.0"]},{"value":["1999-10-29","62.0"]},{"value":["1999-10-30","66.0"]},{"value":["1999-10-31","58.0"]},{"value":["1999-11-01","59.0"]},{"value":["1999-11-02","42.0"]},{"value":["1999-11-03","37.0"]},{"value":["1999-11-04","46.0"]},{"value":["1999-11-05","55.0"]},{"value":["1999-11-06","45.0"]},{"value":["1999-11-07","44.0"]},{"value":["1999-11-08","55.0"]},{"value":["1999-11-09","67.0"]},{"value":["1999-11-10","58.0"]},{"value":["1999-11-11","44.0"]},{"value":["1999-11-12","47.0"]},{"value":["1999-11-13","54.0"]},{"value":["1999-11-14","45.0"]},{"value":["1999-11-15","41.0"]},{"value":["1999-11-16","38.0"]},{"value":["1999-11-17","40.0"]},{"value":["1999-11-18","58.0"]},{"value":["1999-11-19","49.0"]},{"value":["1999-11-20","39.0"]},{"value":["1999-11-21","42.0"]},{"value":["1999-11-22","54.0"]},{"value":["1999-11-23","52.0"]},{"value":["1999-11-24","40.0"]},{"value":["1999-11-25","36.0"]},{"value":["1999-11-26","37.0"]},{"value":["1999-11-27","41.0"]},{"value":["1999-11-28","34.0"]},{"value":["1999-11-29","32.0"]},{"value":["1999-11-30","30.0"]},{"value":["1999-12-01","36.0"]},{"value":["1999-12-02","50.0"]},{"value":["1999-12-03","53.0"]},{"value":["1999-12-04","49.0"]},{"value":["1999-12-05","39.0"]},{"value":["1999-12-06","29.0"]},{"value":["1999-12-07","33.0"]},{"value":["1999-12-08","38.0"]},{"value":["1999-12-09","43.0"]},{"value":["1999-12-10","31.0"]},{"value":["1999-12-11","31.0"]},{"value":["1999-12-12","35.0"]},{"value":["1999-12-13","35.0"]},{"value":["1999-12-14","38.0"]},{"value":["1999-12-15","36.0"]},{"value":["1999-12-16","27.0"]},{"value":["1999-12-17","23.0"]},{"value":["1999-12-18","19.0"]},{"value":["1999-12-19","32.0"]},{"value":["1999-12-20","21.0"]},{"value":["1999-12-21"," 8.0"]},{"value":["1999-12-22","13.0"]},{"value":["1999-12-23","10.0"]},{"value":["1999-12-24","14.0"]},{"value":["1999-12-25","19.0"]},{"value":["1999-12-26","28.0"]},{"value":["1999-12-27","19.0"]},{"value":["1999-12-28","21.0"]},{"value":["1999-12-29","36.0"]},{"value":["1999-12-30","34.0"]},{"value":["1999-12-31","34.0"]},{"value":["2000-01-01","42.0"]},{"value":["2000-01-02","48.0"]},{"value":["2000-01-03","35.0"]},{"value":["2000-01-04","28.0"]},{"value":["2000-01-05","20.0"]},{"value":["2000-01-06","34.0"]},{"value":["2000-01-07","25.0"]},{"value":["2000-01-08","37.0"]},{"value":["2000-01-09","39.0"]},{"value":["2000-01-10","42.0"]},{"value":["2000-01-11","33.0"]},{"value":["2000-01-12","31.0"]},{"value":["2000-01-13","25.0"]},{"value":["2000-01-14","20.0"]},{"value":["2000-01-15","34.0"]},{"value":["2000-01-16","31.0"]},{"value":["2000-01-17","22.0"]},{"value":["2000-01-18","25.0"]},{"value":["2000-01-19","21.0"]},{"value":["2000-01-20","10.0"]},{"value":["2000-01-21"," 5.0"]},{"value":["2000-01-22","17.0"]},{"value":["2000-01-23","16.0"]},{"value":["2000-01-24"," 6.0"]},{"value":["2000-01-25","17.0"]},{"value":["2000-01-26","15.0"]},{"value":["2000-01-27","20.0"]},{"value":["2000-01-28","21.0"]},{"value":["2000-01-29","24.0"]},{"value":["2000-01-30","28.0"]},{"value":["2000-01-31","20.0"]},{"value":["2000-02-01","25.0"]},{"value":["2000-02-02","21.0"]},{"value":["2000-02-03","33.0"]},{"value":["2000-02-04","25.0"]},{"value":["2000-02-05","21.0"]},{"value":["2000-02-06","23.0"]},{"value":["2000-02-07","26.0"]},{"value":["2000-02-08","22.0"]},{"value":["2000-02-09","41.0"]},{"value":["2000-02-10","35.0"]},{"value":["2000-02-11","24.0"]},{"value":["2000-02-12","24.0"]},{"value":["2000-02-13","30.0"]},{"value":["2000-02-14","26.0"]},{"value":["2000-02-15","31.0"]},{"value":["2000-02-16","28.0"]},{"value":["2000-02-17","27.0"]},{"value":["2000-02-18","30.0"]},{"value":["2000-02-19","29.0"]},{"value":["2000-02-20","27.0"]},{"value":["2000-02-21","35.0"]},{"value":["2000-02-22","49.0"]},{"value":["2000-02-23","59.0"]},{"value":["2000-02-24","49.0"]},{"value":["2000-02-25","55.0"]},{"value":["2000-02-26","56.0"]},{"value":["2000-02-27","45.0"]},{"value":["2000-02-28","43.0"]},{"value":["2000-02-29","54.0"]},{"value":["2000-03-01","46.0"]},{"value":["2000-03-02","33.0"]},{"value":["2000-03-03","35.0"]},{"value":["2000-03-04","46.0"]},{"value":["2000-03-05","52.0"]},{"value":["2000-03-06","51.0"]},{"value":["2000-03-07","66.0"]},{"value":["2000-03-08","67.0"]},{"value":["2000-03-09","46.0"]},{"value":["2000-03-10","30.0"]},{"value":["2000-03-11","30.0"]},{"value":["2000-03-12","34.0"]},{"value":["2000-03-13","39.0"]},{"value":["2000-03-14","45.0"]},{"value":["2000-03-15","50.0"]},{"value":["2000-03-16","33.0"]},{"value":["2000-03-17","32.0"]},{"value":["2000-03-18","34.0"]},{"value":["2000-03-19","39.0"]},{"value":["2000-03-20","49.0"]},{"value":["2000-03-21","47.0"]},{"value":["2000-03-22","51.0"]},{"value":["2000-03-23","50.0"]},{"value":["2000-03-24","57.0"]},{"value":["2000-03-25","53.0"]},{"value":["2000-03-26","52.0"]},{"value":["2000-03-27","47.0"]},{"value":["2000-03-28","39.0"]},{"value":["2000-03-29","40.0"]},{"value":["2000-03-30","40.0"]},{"value":["2000-03-31","45.0"]},{"value":["2000-04-01","52.0"]},{"value":["2000-04-02","51.0"]},{"value":["2000-04-03","52.0"]},{"value":["2000-04-04","38.0"]},{"value":["2000-04-05","44.0"]},{"value":["2000-04-06","53.0"]},{"value":["2000-04-07","41.0"]},{"value":["2000-04-08","34.0"]},{"value":["2000-04-09","45.0"]},{"value":["2000-04-10","37.0"]},{"value":["2000-04-11","34.0"]},{"value":["2000-04-12","39.0"]},{"value":["2000-04-13","49.0"]},{"value":["2000-04-14","58.0"]},{"value":["2000-04-15","56.0"]},{"value":["2000-04-16","44.0"]},{"value":["2000-04-17","41.0"]},{"value":["2000-04-18","48.0"]},{"value":["2000-04-19","52.0"]},{"value":["2000-04-20","53.0"]},{"value":["2000-04-21","44.0"]},{"value":["2000-04-22","48.0"]},{"value":["2000-04-23","47.0"]},{"value":["2000-04-24","52.0"]},{"value":["2000-04-25","49.0"]},{"value":["2000-04-26","52.0"]},{"value":["2000-04-27","53.0"]},{"value":["2000-04-28","54.0"]},{"value":["2000-04-29","48.0"]},{"value":["2000-04-30","54.0"]},{"value":["2000-05-01","57.0"]},{"value":["2000-05-02","57.0"]},{"value":["2000-05-03","63.0"]},{"value":["2000-05-04","72.0"]},{"value":["2000-05-05","74.0"]},{"value":["2000-05-06","74.0"]},{"value":["2000-05-07","71.0"]},{"value":["2000-05-08","76.0"]},{"value":["2000-05-09","59.0"]},{"value":["2000-05-10","55.0"]},{"value":["2000-05-11","67.0"]},{"value":["2000-05-12","73.0"]},{"value":["2000-05-13","53.0"]},{"value":["2000-05-14","52.0"]},{"value":["2000-05-15","57.0"]},{"value":["2000-05-16","61.0"]},{"value":["2000-05-17","61.0"]},{"value":["2000-05-18","58.0"]},{"value":["2000-05-19","46.0"]},{"value":["2000-05-20","55.0"]},{"value":["2000-05-21","57.0"]},{"value":["2000-05-22","67.0"]},{"value":["2000-05-23","69.0"]},{"value":["2000-05-24","68.0"]},{"value":["2000-05-25","64.0"]},{"value":["2000-05-26","61.0"]},{"value":["2000-05-27","60.0"]},{"value":["2000-05-28","55.0"]},{"value":["2000-05-29","56.0"]},{"value":["2000-05-30","65.0"]},{"value":["2000-05-31","67.0"]},{"value":["2000-06-01","73.0"]},{"value":["2000-06-02","60.0"]},{"value":["2000-06-03","55.0"]},{"value":["2000-06-04","56.0"]},{"value":["2000-06-05","54.0"]},{"value":["2000-06-06","60.0"]},{"value":["2000-06-07","64.0"]},{"value":["2000-06-08","78.0"]},{"value":["2000-06-09","77.0"]},{"value":["2000-06-10","80.0"]},{"value":["2000-06-11","70.0"]},{"value":["2000-06-12","57.0"]},{"value":["2000-06-13","69.0"]},{"value":["2000-06-14","72.0"]},{"value":["2000-06-15","70.0"]},{"value":["2000-06-16","67.0"]},{"value":["2000-06-17","60.0"]},{"value":["2000-06-18","65.0"]},{"value":["2000-06-19","66.0"]},{"value":["2000-06-20","74.0"]},{"value":["2000-06-21","74.0"]},{"value":["2000-06-22","72.0"]},{"value":["2000-06-23","71.0"]},{"value":["2000-06-24","71.0"]},{"value":["2000-06-25","75.0"]},{"value":["2000-06-26","72.0"]},{"value":["2000-06-27","68.0"]},{"value":["2000-06-28","62.0"]},{"value":["2000-06-29","66.0"]},{"value":["2000-06-30","66.0"]},{"value":["2000-07-01","71.0"]},{"value":["2000-07-02","74.0"]},{"value":["2000-07-03","68.0"]},{"value":["2000-07-04","70.0"]},{"value":["2000-07-05","76.0"]},{"value":["2000-07-06","74.0"]},{"value":["2000-07-07","70.0"]},{"value":["2000-07-08","73.0"]},{"value":["2000-07-09","81.0"]},{"value":["2000-07-10","73.0"]},{"value":["2000-07-11","69.0"]},{"value":["2000-07-12","72.0"]},{"value":["2000-07-13","75.0"]},{"value":["2000-07-14","77.0"]},{"value":["2000-07-15","73.0"]},{"value":["2000-07-16","73.0"]},{"value":["2000-07-17","77.0"]},{"value":["2000-07-18","66.0"]},{"value":["2000-07-19","63.0"]},{"value":["2000-07-20","67.0"]},{"value":["2000-07-21","67.0"]},{"value":["2000-07-22","63.0"]},{"value":["2000-07-23","63.0"]},{"value":["2000-07-24","66.0"]},{"value":["2000-07-25","69.0"]},{"value":["2000-07-26","73.0"]},{"value":["2000-07-27","77.0"]},{"value":["2000-07-28","74.0"]},{"value":["2000-07-29","73.0"]},{"value":["2000-07-30","71.0"]},{"value":["2000-07-31","70.0"]},{"value":["2000-08-01","73.0"]},{"value":["2000-08-02","76.0"]},{"value":["2000-08-03","63.0"]},{"value":["2000-08-04","67.0"]},{"value":["2000-08-05","67.0"]},{"value":["2000-08-06","78.0"]},{"value":["2000-08-07","76.0"]},{"value":["2000-08-08","77.0"]},{"value":["2000-08-09","79.0"]},{"value":["2000-08-10","74.0"]},{"value":["2000-08-11","71.0"]},{"value":["2000-08-12","71.0"]},{"value":["2000-08-13","74.0"]},{"value":["2000-08-14","76.0"]},{"value":["2000-08-15","82.0"]},{"value":["2000-08-16","70.0"]},{"value":["2000-08-17","68.0"]},{"value":["2000-08-18","67.0"]},{"value":["2000-08-19","64.0"]},{"value":["2000-08-20","65.0"]},{"value":["2000-08-21","67.0"]},{"value":["2000-08-22","76.0"]},{"value":["2000-08-23","76.0"]},{"value":["2000-08-24","71.0"]},{"value":["2000-08-25","70.0"]},{"value":["2000-08-26","73.0"]},{"value":["2000-08-27","72.0"]},{"value":["2000-08-28","75.0"]},{"value":["2000-08-29","77.0"]},{"value":["2000-08-30","77.0"]},{"value":["2000-08-31","80.0"]},{"value":["2000-09-01","80.0"]},{"value":["2000-09-02","79.0"]},{"value":["2000-09-03","77.0"]},{"value":["2000-09-04","66.0"]},{"value":["2000-09-05","63.0"]},{"value":["2000-09-06","61.0"]},{"value":["2000-09-07","74.0"]},{"value":["2000-09-08","75.0"]},{"value":["2000-09-09","76.0"]},{"value":["2000-09-10","78.0"]},{"value":["2000-09-11","75.0"]},{"value":["2000-09-12","63.0"]},{"value":["2000-09-13","63.0"]},{"value":["2000-09-14","65.0"]},{"value":["2000-09-15","56.0"]},{"value":["2000-09-16","56.0"]},{"value":["2000-09-17","68.0"]},{"value":["2000-09-18","69.0"]},{"value":["2000-09-19","75.0"]},{"value":["2000-09-20","58.0"]},{"value":["2000-09-21","54.0"]},{"value":["2000-09-22","58.0"]},{"value":["2000-09-23","63.0"]},{"value":["2000-09-24","53.0"]},{"value":["2000-09-25","49.0"]},{"value":["2000-09-26","56.0"]},{"value":["2000-09-27","59.0"]},{"value":["2000-09-28","55.0"]},{"value":["2000-09-29","61.0"]},{"value":["2000-09-30","65.0"]},{"value":["2000-10-01","72.0"]},{"value":["2000-10-02","69.0"]},{"value":["2000-10-03","59.0"]},{"value":["2000-10-04","57.0"]},{"value":["2000-10-05","52.0"]},{"value":["2000-10-06","41.0"]},{"value":["2000-10-07","40.0"]},{"value":["2000-10-08","39.0"]},{"value":["2000-10-09","44.0"]},{"value":["2000-10-10","49.0"]},{"value":["2000-10-11","53.0"]},{"value":["2000-10-12","58.0"]},{"value":["2000-10-13","66.0"]},{"value":["2000-10-14","67.0"]},{"value":["2000-10-15","55.0"]},{"value":["2000-10-16","51.0"]},{"value":["2000-10-17","52.0"]},{"value":["2000-10-18","54.0"]},{"value":["2000-10-19","62.0"]},{"value":["2000-10-20","66.0"]},{"value":["2000-10-21","58.0"]},{"value":["2000-10-22","59.0"]},{"value":["2000-10-23","65.0"]},{"value":["2000-10-24","63.0"]},{"value":["2000-10-25","62.0"]},{"value":["2000-10-26","68.0"]},{"value":["2000-10-27","61.0"]},{"value":["2000-10-28","50.0"]},{"value":["2000-10-29","46.0"]},{"value":["2000-10-30","50.0"]},{"value":["2000-10-31","59.0"]},{"value":["2000-11-01","63.0"]},{"value":["2000-11-02","55.0"]},{"value":["2000-11-03","48.0"]},{"value":["2000-11-04","46.0"]},{"value":["2000-11-05","46.0"]},{"value":["2000-11-06","49.0"]},{"value":["2000-11-07","49.0"]},{"value":["2000-11-08","40.0"]},{"value":["2000-11-09","39.0"]},{"value":["2000-11-10","37.0"]},{"value":["2000-11-11","38.0"]},{"value":["2000-11-12","45.0"]},{"value":["2000-11-13","36.0"]},{"value":["2000-11-14","32.0"]},{"value":["2000-11-15","31.0"]},{"value":["2000-11-16","36.0"]},{"value":["2000-11-17","30.0"]},{"value":["2000-11-18","27.0"]},{"value":["2000-11-19","30.0"]},{"value":["2000-11-20","24.0"]},{"value":["2000-11-21","19.0"]},{"value":["2000-11-22","22.0"]},{"value":["2000-11-23","29.0"]},{"value":["2000-11-24","32.0"]},{"value":["2000-11-25","38.0"]},{"value":["2000-11-26","39.0"]},{"value":["2000-11-27","34.0"]},{"value":["2000-11-28","34.0"]},{"value":["2000-11-29","35.0"]},{"value":["2000-11-30","34.0"]},{"value":["2000-12-01","34.0"]},{"value":["2000-12-02","31.0"]},{"value":["2000-12-03","28.0"]},{"value":["2000-12-04","32.0"]},{"value":["2000-12-05","21.0"]},{"value":["2000-12-06","15.0"]},{"value":["2000-12-07","25.0"]},{"value":["2000-12-08","18.0"]},{"value":["2000-12-09","16.0"]},{"value":["2000-12-10","30.0"]},{"value":["2000-12-11","23.0"]},{"value":["2000-12-12"," 4.0"]},{"value":["2000-12-13"," 8.0"]},{"value":["2000-12-14","17.0"]},{"value":["2000-12-15","17.0"]},{"value":["2000-12-16","25.0"]},{"value":["2000-12-17"," 8.0"]},{"value":["2000-12-18"," 8.0"]},{"value":["2000-12-19","14.0"]},{"value":["2000-12-20"," 6.0"]},{"value":["2000-12-21"," 6.0"]},{"value":["2000-12-22","-1.0"]},{"value":["2000-12-23"," 8.0"]},{"value":["2000-12-24"," 5.0"]},{"value":["2000-12-25"," 5.0"]},{"value":["2000-12-26","11.0"]},{"value":["2000-12-27","12.0"]},{"value":["2000-12-28","13.0"]},{"value":["2000-12-29","21.0"]},{"value":["2000-12-30","27.0"]},{"value":["2000-12-31","16.0"]}],"name":"temp","type":"scatter","symbol":null,"coordinateSystem":"cartesian2d","yAxisIndex":0,"xAxisIndex":0,"symbolSize":7}],"visualMap":[{"calculable":true,"type":"continuous","min":-3,"max":90}]},"dispose":true},"evals":[],"jsHooks":[]}</script>
@@ -2345,8 +2346,8 @@ chic %&gt;%
 chic$date_num &lt;- as.numeric(chic$date)
 ## doesn&#39;t work with class date
 
-chart(data = chic, caes(date_num, temp)) %&gt;% 
-  c_scatter(caes(color = season, group = season)) %&gt;% 
+chart(data = chic, caes(date_num, temp)) %&gt;%
+  c_scatter(caes(color = season, group = season)) %&gt;%
   c_colors(RColorBrewer::brewer.pal(4, name = &quot;Dark2&quot;))</code></pre>
 <p>(The example doesn’t work in Rmarkdown.)</p>
 <p><a href="#toc">↑ Jump back to Table of Content.</a><br><br></p>
@@ -2379,22 +2380,22 @@ by Winston Chang with recipes to produce R plots</li>
 <pre><code>## R version 4.0.2 (2020-06-22)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 19041)
-## 
+##
 ## Matrix products: default
-## 
+##
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252    
+## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252
 ## system code page: 65001
-## 
+##
 ## attached base packages:
-## [1] grid      stats     graphics  grDevices utils     datasets  methods   base     
-## 
+## [1] grid      stats     graphics  grDevices utils     datasets  methods   base
+##
 ## other attached packages:
-##  [1] echarts4r_0.3.2    highcharter_0.8.2  gdtools_0.2.2      ggiraph_0.7.8      plotly_4.9.2.1     ggridges_0.5.2     reshape2_1.4.4     akima_0.6-2.1      ggforce_0.3.2      ggrepel_0.8.2      hrbrthemes_0.8.6   colorspace_1.4-1   ggdark_0.2.1       scico_1.2.0.9000   rcartocolor_2.0.0  ggsci_2.9          ggthemes_4.2.0     gridExtra_2.3      cowplot_1.0.0.9000 rlang_0.4.7        ggtext_0.1.0       showtext_0.8-1     showtextdb_3.0     sysfonts_0.8.1     patchwork_1.1.0    forcats_0.5.0      stringr_1.4.0      dplyr_1.0.1        purrr_0.3.4        readr_1.3.1        tidyr_1.1.1        tibble_3.0.3       ggplot2_3.3.2.9000 tidyverse_1.3.0   
-## 
+##  [1] echarts4r_0.3.2    highcharter_0.8.2  gdtools_0.2.2      ggiraph_0.7.8      plotly_4.9.2.1     ggridges_0.5.2     reshape2_1.4.4     akima_0.6-2.1      ggforce_0.3.2      ggrepel_0.8.2      hrbrthemes_0.8.6   colorspace_1.4-1   ggdark_0.2.1       scico_1.2.0.9000   rcartocolor_2.0.0  ggsci_2.9          ggthemes_4.2.0     gridExtra_2.3      cowplot_1.0.0.9000 rlang_0.4.7        ggtext_0.1.0       showtext_0.8-1     showtextdb_3.0     sysfonts_0.8.1     patchwork_1.1.0    forcats_0.5.0      stringr_1.4.0      dplyr_1.0.1        purrr_0.3.4        readr_1.3.1        tidyr_1.1.1        tibble_3.0.3       ggplot2_3.3.2.9000 tidyverse_1.3.0
+##
 ## loaded via a namespace (and not attached):
-##  [1] ellipsis_0.3.1     markdown_1.1       fs_1.5.0           gridtext_0.1.1     rstudioapi_0.11    farver_2.0.3       hexbin_1.28.1      fansi_0.4.1        lubridate_1.7.9    xml2_1.3.2         splines_4.0.2      extrafont_0.17     knitr_1.29         rlist_0.4.6.1      polyclip_1.10-0    jsonlite_1.7.0     Cairo_1.5-12.2     broom_0.7.0        Rttf2pt1_1.3.8     dbplyr_1.4.4       shiny_1.5.0        compiler_4.0.2     httr_1.4.2         backports_1.1.7    fastmap_1.0.1      assertthat_0.2.1   Matrix_1.2-18      lazyeval_0.2.2     cli_2.0.2          later_1.1.0.1      tweenr_1.0.1       htmltools_0.5.0    tools_4.0.2        igraph_1.2.5       gtable_0.3.0       glue_1.4.1        
-## [37] corrr_0.4.2        Rcpp_1.0.5         cellranger_1.1.0   vctrs_0.3.2        nlme_3.1-148       blogdown_0.20      extrafontdb_1.0    crosstalk_1.1.0.1  xfun_0.16          rvest_0.3.6        mime_0.9           lifecycle_0.2.0    zoo_1.8-8          MASS_7.3-51.6      scales_1.1.1       promises_1.1.1     hms_0.5.3          RColorBrewer_1.1-2 quantmod_0.4.17    yaml_2.2.1         curl_4.3           stringi_1.4.6      TTR_0.24.2         pkgconfig_2.0.3    systemfonts_0.2.3  evaluate_0.14      lattice_0.20-41    htmlwidgets_1.5.1  labeling_0.3       tidyselect_1.1.0   plyr_1.8.6         magrittr_1.5       bookdown_0.20      R6_2.4.1           generics_0.0.2     DBI_1.1.0         
+##  [1] ellipsis_0.3.1     markdown_1.1       fs_1.5.0           gridtext_0.1.1     rstudioapi_0.11    farver_2.0.3       hexbin_1.28.1      fansi_0.4.1        lubridate_1.7.9    xml2_1.3.2         splines_4.0.2      extrafont_0.17     knitr_1.29         rlist_0.4.6.1      polyclip_1.10-0    jsonlite_1.7.0     Cairo_1.5-12.2     broom_0.7.0        Rttf2pt1_1.3.8     dbplyr_1.4.4       shiny_1.5.0        compiler_4.0.2     httr_1.4.2         backports_1.1.7    fastmap_1.0.1      assertthat_0.2.1   Matrix_1.2-18      lazyeval_0.2.2     cli_2.0.2          later_1.1.0.1      tweenr_1.0.1       htmltools_0.5.0    tools_4.0.2        igraph_1.2.5       gtable_0.3.0       glue_1.4.1
+## [37] corrr_0.4.2        Rcpp_1.0.5         cellranger_1.1.0   vctrs_0.3.2        nlme_3.1-148       blogdown_0.20      extrafontdb_1.0    crosstalk_1.1.0.1  xfun_0.16          rvest_0.3.6        mime_0.9           lifecycle_0.2.0    zoo_1.8-8          MASS_7.3-51.6      scales_1.1.1       promises_1.1.1     hms_0.5.3          RColorBrewer_1.1-2 quantmod_0.4.17    yaml_2.2.1         curl_4.3           stringi_1.4.6      TTR_0.24.2         pkgconfig_2.0.3    systemfonts_0.2.3  evaluate_0.14      lattice_0.20-41    htmlwidgets_1.5.1  labeling_0.3       tidyselect_1.1.0   plyr_1.8.6         magrittr_1.5       bookdown_0.20      R6_2.4.1           generics_0.0.2     DBI_1.1.0
 ## [73] pillar_1.4.6       haven_2.3.1        withr_2.2.0        mgcv_1.8-31        xts_0.12-0         sp_1.4-2           modelr_0.1.8       crayon_1.3.4       uuid_0.1-4         utf8_1.1.4         rmarkdown_2.3      readxl_1.3.1       isoband_0.2.2      data.table_1.13.0  blob_1.2.1         reprex_0.3.0       digest_0.6.25      xtable_1.8-4       httpuv_1.5.4       munsell_0.5.0      viridisLite_0.3.0</code></pre>
 </details>
 </div>

@@ -4,6 +4,7 @@ title: Merry (White?) Christmas!
 author: Cédric
 date: "2019-12-24"
 image: img/banner/snowmountains_RichardStrozynski.jpg
+twitterImg: img/banner/snowmountains_RichardStrozynski.png
 layout: post
 description: "At the end of the year, I explore the history of snow cover and white Christmas in Berlin. I wish you a merry Christmas and wonderful holidays 2019!"
 tags:

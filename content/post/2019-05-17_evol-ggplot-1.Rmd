@@ -3,6 +3,7 @@ title: "The Evolution of a ggplot (Ep. 1)"
 author: "Cédric"
 date: 2019-05-17
 image: img/banner/dark_RichardStrozynski.jpg
+twitterImg: img/banner/dark_RichardStrozynski.png
 layout: post
 showtoc: false
 description: "In this series of blog posts, I provide step-by-step tutorials explaining how my visualizations have evolved from a typical basic ggplot. In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot stripplot and a lollipop plot."
@@ -158,7 +159,7 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 A good routine with such kind of data (qualitative and unsorted) is to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category "continent" does not have an intrinsic order, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:
 
 ```{r boxplot-sorted, fig.width = 8, fig.heigh = 4.5}
-df_sorted <- 
+df_sorted <-
   df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region))
 
@@ -212,7 +213,7 @@ showtext_auto()
 
 theme_set(theme_light(base_size = 18, base_family = "Poppins"))
 
-g <- 
+g <-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
     scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
@@ -259,7 +260,7 @@ g + geom_point(size = 3, alpha = 0.15)
 Of course, different geoms can also be combined to provide even more information in one plot:
 
 ```{r box-dot-plot, fig.width = 8, fig.heigh = 4.5}
-g + 
+g +
   geom_boxplot(color = "gray60", outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)
 ```
@@ -305,7 +306,7 @@ To relate all these points to a baseline, we add a line indicating the worldwide
 ```{r worldwide-avg, echo=-1, fig.width = 8, fig.heigh = 4.5}
 set.seed(2019)
 
-world_avg <- 
+world_avg <-
   df_ratios %>%
   summarize(avg = mean(student_ratio, na.rm = T)) %>%
   pull(avg)
@@ -343,7 +344,7 @@ Since I don't want to include legends, I add some text boxes that explain the di
 ```{r text-labels, echo=-1, fig.width = 8, fig.heigh = 4.5}
 set.seed(2019)
 
-(g_text <- 
+(g_text <-
   g +
   geom_segment(
     aes(x = region, xend = region,
@@ -366,7 +367,7 @@ set.seed(2019)
     label = "Countries per continent"
   ) +
   annotate(
-    "text", x = 1.9, y = 64, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9, 
+    "text", x = 1.9, y = 64, family = "Poppins", size = 2.8, color = "gray20", lineheight = .9,
     label = "The Central African Republic has by far\nthe most students per teacher")
   )
 ```
@@ -376,15 +377,15 @@ set.seed(2019)
 ... and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling `geom_curve()`. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes...
 
 ```{r arrows-annotations, fig.width = 8, fig.heigh = 4.5}
-arrows <- 
+arrows <-
   tibble(
     x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
     x2 = c(5.6, 4, 1.9, 2.9, 1.1),
-    y1 = c(35, 10, 11, 11, 73), 
+    y1 = c(35, 10, 11, 11, 73),
     y2 = c(world_avg, 19.4, 14.16, 12, 83.4)
   )
 
-g_text + 
+g_text +
   geom_curve(
     data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
     arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
@@ -395,7 +396,7 @@ g_text +
 ... and then adjust, adjust, adjust...
 
 ```{r text-arrows, fig.width = 8, fig.heigh = 4.5}
-arrows <- 
+arrows <-
   tibble(
     x1 = c(6.1, 3.62, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
@@ -403,7 +404,7 @@ arrows <-
     y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.45)
   )
 
-(g_arrows <- 
+(g_arrows <-
   g_text +
   geom_curve(
     data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
@@ -419,7 +420,7 @@ One last thing that bothers me: A student-teacher ratio of 0 does not make much 
 And—oh my!—we almost forgot to mention and acknowledge the data source 😨 Let's quickly also add a plot caption:
 
 ```{r final-caption, fig.width = 8, fig.heigh = 5.2}
-(g_final <- 
+(g_final <-
   g_arrows +
   scale_y_continuous(
     limits = c(0, 90), expand = c(0.005, 0.005),
@@ -438,7 +439,7 @@ To make it easier to match the countries of the second plot, the country-level t
 ```{r map-regions, echo=-1, fig.width = 6.5, fig.height = 5}
 library(ggsci)
 
-(map_regions <- 
+(map_regions <-
   df_sorted %>%
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
@@ -474,14 +475,14 @@ g_end <- g_final +
 And here it is, our final plot—evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉
 
 ```{r plot-before-after, echo=FALSE, message=FALSE, fig.width = 16, fig.height = 6}
-before <- 
+before <-
   ggplot(df_ratios, aes(x = region, y = student_ratio)) +
     geom_boxplot() +
     labs(title = "Before") +
     theme_gray(base_size = 18) +
     theme(plot.title = element_text(family = "Poppins", size = 2.80, face = "bold", hjust = 0.5))
 
-map_regions <- 
+map_regions <-
   df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
@@ -501,12 +502,12 @@ map_regions <-
     ) +
     labs(x = NULL, y = NULL)
 
-# world_avg <- 
+# world_avg <-
 #   df_ratios %>%
 #   summarize(avg = mean(student_ratio, na.rm = T)) %>%
 #   pull(avg)
-# 
-# arrows <- 
+#
+# arrows <-
 #   tibble(
 #     x1 = c(6.1, 3.62, 1.8, 1.8, 1.8),
 #     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
@@ -516,7 +517,7 @@ map_regions <-
 
 set.seed(2019)
 
-after <- 
+after <-
   df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
   ggplot(aes(x = region, y = student_ratio, color = region)) +
@@ -534,7 +535,7 @@ after <-
       label = glue::glue("Worldwide average:\n{round(world_avg, 1)} students per teacher")
     ) +
     annotate(
-      "text", x = 3.5, y = 10, family = "Poppins", size = 2.8, color = "gray20", 
+      "text", x = 3.5, y = 10, family = "Poppins", size = 2.8, color = "gray20",
       label = "Continental average"
     ) +
     annotate(
@@ -551,7 +552,7 @@ after <-
       color = "gray20", curvature = -0.3
     ) +
     annotation_custom(
-      ggplotGrob(map_regions), 
+      ggplotGrob(map_regions),
       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
     ) +
     scale_y_continuous(
@@ -600,7 +601,7 @@ showtext_auto()
 devtools::source_gist("https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11")
 
 ## tile map as legend
-map_regions <- 
+map_regions <-
   df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
@@ -622,13 +623,13 @@ map_regions <-
     labs(x = NULL, y = NULL)
 
 ## calculate worldwide average
-world_avg <- 
+world_avg <-
   df_ratios %>%
   summarize(avg = mean(student_ratio, na.rm = T)) %>%
   pull(avg)
 
 ## coordinates for arrows
-arrows <- 
+arrows <-
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
@@ -712,12 +713,12 @@ One thing I want to highlight is that the final plot does not contain the same i
 The 2nd quartile is known as the **median**, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean ("average") values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
 
 ```{r mean-vs-mean, echo=FALSE, message=FALSE, fig.width = 8.5, fig.height = 11}
-world_med <- 
+world_med <-
   df_ratios %>%
   summarize(med = median(student_ratio, na.rm = T)) %>%
   pull(med)
 
-arrows <- 
+arrows <-
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.18, 2.76, 0.9),
@@ -727,7 +728,7 @@ arrows <-
 
 set.seed(2019)
 
-median <- 
+median <-
   df_ratios %>%
   group_by(region) %>%
   mutate(student_ratio_region = median(student_ratio, na.rm = T)) %>%
@@ -777,7 +778,7 @@ median <-
     theme_light(base_size = 18, base_family = "Poppins") +
     theme(
       legend.position = "none",
-      plot.caption = element_text(size = 11, family = "Poppins", color = "gray50", 
+      plot.caption = element_text(size = 11, family = "Poppins", color = "gray50",
                                   margin = margin(t = 10)),
       plot.title = element_text(size = 25, face = "bold", hjust = 0.5),
       axis.title = element_text(size = 16),
@@ -785,7 +786,7 @@ median <-
       panel.grid = element_blank()
     )
 
-(g_end + labs(title = "Mean ratios", caption = "") + 
+(g_end + labs(title = "Mean ratios", caption = "") +
     theme(plot.title = element_text(size = 25, face = "bold", hjust = 0.5),
           plot.caption = element_text(size = 11, family = "Poppins", margin = margin(t = 10)))) +
   (median + ggtitle("Median ratios")) + plot_layout(ncol = 1)
@@ -881,7 +882,7 @@ g16 <- g15 +
              arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
              color = "gray20", curvature = -0.3)
 
-arrows <- 
+arrows <-
   tibble(
     x1 = c(6.2, 3.6, 1.77, 1.74, 1.78),
     x2 = c(5.6, 4, 2, 2.6, 1.13),
@@ -894,7 +895,7 @@ g17 <- g15 +
              arrow = arrow(length = unit(0.07, "inch")), size = 0.4,
              color = "gray20", curvature = -0.3)
 
-arrows <- 
+arrows <-
   tibble(
     x1 = c(6, 3.65, 1.8, 1.8, 1.8),
     x2 = c(5.6, 4, 2.06, 2.75, 1.11),
@@ -980,4 +981,3 @@ saveGIF({
   print(ggdraw_title(g20))
 }, interval = 1.1, movie.name = "evol-ggplot-1.gif", ani.width = 1800, ani.height = 1250, ani.res = 300)
 ```
-

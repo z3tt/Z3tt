@@ -4,6 +4,7 @@ title: Hello, TidyTuesday!
 author: Cédric
 date: "2019-05-06"
 image: img/banner/milkyway_RichardStrozynski.jpg
+twitterImg: img/banner/milkyway_RichardStrozynski.png
 layout: post
 description: "During my after-thesis-vacation, I managed to tick off two long-term todo's on my list - set up a homepage and to participate in the #TidyTuesday challenge!"
 tags:

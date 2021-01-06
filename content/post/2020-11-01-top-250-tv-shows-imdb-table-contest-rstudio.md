@@ -4,6 +4,7 @@ title: What do I binge next? A detailed overview of the top 250 TV shows
 author: Cédric
 date: "2020-11-01"
 image: img/banner/fly_RichardStrozynski.jpg
+twitterImg: img/banner/fly_RichardStrozynski.png
 layout: post
 description: "My contribution to the RStudio table contests visualizing relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying all the details I and my friends care about including in-line visualizations of rating trends and average runtime."
 tags:
