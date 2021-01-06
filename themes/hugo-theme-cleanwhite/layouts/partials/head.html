@@ -31,10 +31,10 @@
     {{ end }}
 
     {{ if .Params.twitterImg }}
-      <meta property="twitter:image" content="https://www.cedricscherer.com/img/{{ .Params.twitterImg }}" />
+      <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" />
       <meta property="twitter:card" content="summary" />
     {{ else }}
-      <meta property="twitter:image" content="https://www.cedricscherer.com/img/{{ .Site.Params.twitter_image }}" />
+      <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" />
       <meta property="twitter:card" content="summary_large_image" />
     {{ end }}
 
