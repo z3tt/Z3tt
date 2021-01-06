@@ -6,7 +6,16 @@
     <!-- start ogp -->
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+
+      {{ if .Params.twitterImg }}
+        <meta property="twitter:card" content="summary" />
+        <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+        <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" />
+      {{ else }}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+        <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" />
+      {{ end }}
 
       {{ if .Title }}
         <meta name="title" content="{{ .Title }}" />
@@ -28,14 +37,6 @@
         <meta name="description" content="{{ .Site.Params.description }}">
         <meta property="og:description" content="{{ .Site.Params.description }}" />
         <meta property="twitter:description" content="{{ .Site.Params.description }}" />
-      {{ end }}
-
-      {{ if .Params.twitterImg }}
-        <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" />
-        <meta property="twitter:card" content="summary" />
-      {{ else }}
-        <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" />
-        <meta property="twitter:card" content="summary_large_image" />
       {{ end }}
 
     <!-- end ogp -->

@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    
     <meta property="og:site_name" content="Cédric Scherer">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
 
-
+      
         <meta name="title" content="Comparing the Extent of the Australian Bushfires 2019/20" />
         <meta property="og:title" content="Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer" />
         <meta property="twitter:title" content="Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer" />
         <meta property="twitter:text:title" content="Comparing the Extent of the Australian Bushfires 2019/20 - Cédric Scherer" />
+      
 
-
-
+      
         <meta name="description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide.">
         <meta property="og:description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide." />
         <meta property="twitter:description" content="The massive bushfires in Australia are in the news worldwide. The incredible extent of burnt land and plume of smoke is hard to imagine so I have compared the areas to countries in Europe and worldwide." />
+      
 
-
-
+      
+        <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
         <meta property="twitter:image" content="https://www.cedricscherer.com/img/banner/fire_MichaelBarth.png" />
         <meta property="twitter:card" content="summary" />
+      
 
-
-
+    
 
     <meta name="keyword"  content="Computational Ecology, Data Visualization">
     <link rel="shortcut icon" href="/img/favicon.ico">
@@ -39,31 +39,31 @@
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
-
+    
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/hux-blog.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/syntax.css">
 
-
+    
     <link rel="stylesheet" href="/css/zanshang.css">
 
-
+    
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
+    
+    
     <script src="/js/jquery.min.js"></script>
 
-
+    
     <script src="/js/bootstrap.min.js"></script>
 
-
+    
     <script src="/js/hux-blog.min.js"></script>
 
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -72,7 +72,7 @@
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
-
+        
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -83,38 +83,38 @@
             <a class="navbar-brand" href="/">Cédric Scherer</a>
         </div>
 
-
-
+        
+        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Blog</a>
                     </li>
+                    
 
-
-
+		    
                         <li><a href="/top/about/">About Me</a></li>
-
+                    
                         <li><a href="/top/pubs/">Publications</a></li>
-
+                    
                         <li><a href="/top/dataviz/">Visualizations</a></li>
-
+                    
                         <li><a href="/top/links/">Links</a></li>
+                    
 
-
-
+                    
                 </ul>
             </div>
         </div>
-
+        
     </div>
-
+    
 </nav>
 <script>
-
-
-
+    
+    
+    
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
@@ -123,17 +123,17 @@
     $toggle.addEventListener('click', handleMagic)
     function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
-
+        
             $navbar.className = " ";
-
+            
             setTimeout(function(){
-
+                
                 if($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
             },400)
         }else{
-
+        
             $collapse.style.height = "auto"
             $navbar.className += " in";
         }
@@ -154,49 +154,49 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-
+                        
                         <a class="tag" href="/tags/dataviz" title="DataViz">
                             DataViz
                         </a>
-
+                        
                         <a class="tag" href="/tags/nature" title="nature">
                             nature
                         </a>
-
+                        
                         <a class="tag" href="/tags/weather" title="weather">
                             weather
                         </a>
-
+                        
                         <a class="tag" href="/tags/climate-change" title="climate change">
                             climate change
                         </a>
-
+                        
                         <a class="tag" href="/tags/maps" title="maps">
                             maps
                         </a>
-
+                        
                         <a class="tag" href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
-
+                        
                         <a class="tag" href="/tags/tidytuesday" title="TidyTuesday">
                             TidyTuesday
                         </a>
-
+                        
                     </div>
                     <h1>Comparing the Extent of the Australian Bushfires 2019/20</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
 			Posted by
-
+			
 			    Cédric
-
+			
 			on
 			Thursday, January 9, 2020
-
+                        
                             <span id="/2020/01/09/australian-bushfires-comparison-europe-world/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
-      <span class="octicon octicon-eye"></span>
+      <span class="octicon octicon-eye"></span> 
     </span>
     <i class="fa fa-eye"></i>
     <span class="old-visitors-count" style="display: none;"></span>
@@ -227,10 +227,10 @@ function showTime(Counter) {
             var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
             var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
 
-
-
-
-
+            
+            
+            
+            
 
             for (var i = 0; i < results.length; i++) {
                 var item = results[i];
@@ -249,7 +249,7 @@ function showTime(Counter) {
                     if(oldCountSpan!=''){
                         countSpan.text(0+parseInt(oldCountSpan));
                     }else{
-                        countSpan.text(0);
+                        countSpan.text(0);          
                     }
                 }
             }
@@ -283,12 +283,12 @@ function addCount(Counter) {
                 });
             } else {
                 var newcounter = new Counter();
-
+                 
                 var acl = new AV.ACL();
                 acl.setPublicReadAccess(true);
                 acl.setPublicWriteAccess(true);
                 newcounter.setACL(acl);
-
+                 
                 newcounter.set("title", title);
                 newcounter.set("url", url);
                 var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
@@ -317,8 +317,8 @@ function addCount(Counter) {
 }
 $(function() {
     var Counter = AV.Object.extend("Counter");
-
-
+    
+    
     if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
     } else {
@@ -327,7 +327,7 @@ $(function() {
 });
 </script>
 
-
+                        
                     </span>
                 </div>
             </div>
@@ -342,13 +342,13 @@ $(function() {
     <div class="container">
         <div class="row">
 
-
+            
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
 
-
+                
                 <p style="font-size:14px">Header image by <a href="https://unsplash.com/photos/OjA6F3pSccw">Michael Barth via Unsplash</a></p>
 <p><strong>During a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: <a href="https://edition.cnn.com/2020/01/01/australia/australia-fires-explainer-intl-hnk-scli/index.html">27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales</a>. 800 million animals have been affected since bushfires in NSW have started with an estimate of one billion animals impacted nationally say <a href="https://sydney.edu.au/news-opinion/news/2020/01/03/a-statement-about-the-480-million-animals-killed-in-nsw-bushfire.html">ecologists from Sydney University</a>. Thick smoke is drifting over the Pacific Ocean towards New Zealand and the South American continent. The massive fires have been fuelled by dry organic matter caused by extraordinary high temperatures and a prolonged period of drought which created excellent fire conditions.</strong></p>
 <h3 id="extents-of-burnt-land-and-plume-of-smoke-in-comparison-to-european-countries">Extents of burnt land and plume of smoke in comparison to European countries</h3>
@@ -365,174 +365,174 @@ $(function() {
 <p>You can find the codes for both maps on my <a href="https://github.com/Z3tt/TidyTuesday/blob/master/R/2020_02_AustralianFires.Rmd">GitHub profile</a>.</p>
 
 
-
+                
 
                 <hr>
                 <ul class="pager">
-
+                    
                     <li class="previous">
                         <a href="/2019/12/30/best-tidytuesday-2019/" data-toggle="tooltip" data-placement="top" title="Best TidyTuesday 2019">&larr;
                             Previous Post</a>
                     </li>
-
-
+                    
+                    
                     <li class="next">
                         <a href="/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/" data-toggle="tooltip" data-placement="top" title="The Worst Days of the Coronavirus Pandemic So Far">Next
                             Post &rarr;</a>
                     </li>
-
+                    
                 </ul>
 
-
+                
 <div id="disqus-comment"></div>
 
 
 
             </div>
-
+            
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-
-
+                
+                
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-
-
-
+                        
+                        
+                        
                         <a href="/tags/animations" title="animations">
                             animations
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/announcement" title="announcement">
                             announcement
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/berlin" title="berlin">
                             berlin
                         </a>
-
-
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/dataviz" title="dataviz">
                             dataviz
                         </a>
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/maps" title="maps">
                             maps
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/r" title="r">
                             r
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/rstudio-table-contest" title="rstudio-table-contest">
                             rstudio-table-contest
                         </a>
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/tidytuesday" title="tidytuesday">
                             tidytuesday
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/tidyverse" title="tidyverse">
                             tidyverse
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/tutorial" title="tutorial">
                             tutorial
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/weather" title="weather">
                             weather
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/workshop" title="workshop">
                             workshop
                         </a>
-
-
+                        
+                        
                     </div>
                 </section>
+                
 
-
-
-
+                
+                
                 <section>
                     <hr>
                     <h5>FRIENDS</h5>
                     <ul class="list-inline">
-
+                        
                         <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
-
+                        
                         <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
-
+                        
                         <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
-
+                        
                         <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
-
+                        
                         <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
-
+                        
                         <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
-
+                        
                     </ul>
                 </section>
-
+                
             </div>
         </div>
     </div>
@@ -546,8 +546,8 @@ $(function() {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-
-
+                   
+                    
                     <li>
                         <a href="mailto:cedricphilippscherer@gmail.com">
                             <span class="fa-stack fa-lg">
@@ -556,9 +556,9 @@ $(function() {
                             </span>
                         </a>
                     </li>
+		    
 
-
-
+                    
                     <li>
                         <a href="https://twitter.com/CedScherer">
                             <span class="fa-stack fa-lg">
@@ -567,15 +567,15 @@ $(function() {
                             </span>
                         </a>
                     </li>
+                    
+                    
+                    
 
+                    
 
-
-
-
-
-
-
-
+		    
+                    
+                    
                     <li>
                         <a target="_blank" href="https://github.com/Z3tt">
                             <span class="fa-stack fa-lg">
@@ -584,8 +584,8 @@ $(function() {
                             </span>
                         </a>
                     </li>
-
-
+		    
+                    
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
                             <span class="fa-stack fa-lg">
@@ -594,8 +594,8 @@ $(function() {
                             </span>
                         </a>
                     </li>
-
-
+		    
+                    
                 </ul>
 		<p class="copyright text-muted">
                     A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
@@ -632,11 +632,11 @@ $(function() {
 
 
 <script>
-
+    
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-
+                
                 color: {start: '#bbbbee', end: '#28a87d'},
             };
             $('#tag_cloud a').tagcloud();
