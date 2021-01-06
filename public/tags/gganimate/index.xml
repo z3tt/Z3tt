@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gganimate on Cédric Scherer</title>
-    <link>/tags/gganimate/</link>
+    <link>https://cedricscherer.com/tags/gganimate/</link>
     <description>Recent content in gganimate on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/gganimate/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cedricscherer.com/tags/gganimate/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
-      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <link>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <guid>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
 Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1&amp;rdquo;.She: &amp;ldquo;Yeah, and we had some tough time to make that work and to customize it in Adobe Animate.&amp;rdquo;

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tops on Cédric Scherer</title>
-    <link>/top/</link>
+    <link>https://cedricscherer.com/top/</link>
     <description>Recent content in Tops on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/top/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cedricscherer.com/top/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/top/about/</link>
+      <link>https://cedricscherer.com/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/about/</guid>
+      <guid>https://cedricscherer.com/top/about/</guid>
       <description>About Me I am a computational ecologist by training and a data visualization designer by heart with more than 9 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development and data visualization.
 I am working as a scientifc researcher (PostDoc) in the Department &amp;ldquo;Ecological Dynamics&amp;rdquo; at the Leibniz Institute for Zoo and Wildlife Research (IZW) in Berlin, Germany. Since the beginning of the year I have also been working successfully as a self-employed designer, consultant and instructor in the fields of data visualization and reproducible analysis.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/conduct/</link>
+      <link>https://cedricscherer.com/top/conduct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/conduct/</guid>
+      <guid>https://cedricscherer.com/top/conduct/</guid>
       <description>Code of Conduct I take responsibility for my own words and all the content created by myself. I am committed to the “Civility Enforced” standard: I will not post unacceptable content, and I will delete any references or comments that contain it.
 I define unacceptable content as anything included or linked to that:
 is being used to abuse, harass, stalk, or threaten othersis libelous, knowingly false, ad-hominem, or misrepresents another personinfringes upon a copyright or trademarkviolates an obligation of confidentialityviolates the privacy of othersI define and determine what is “unacceptable content” on a case-by-case basis, and my definitions are not limited to this list.</description>
@@ -33,20 +33,20 @@ I define unacceptable content as anything included or linked to that:
     
     <item>
       <title></title>
-      <link>/top/dataviz/</link>
+      <link>https://cedricscherer.com/top/dataviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/dataviz/</guid>
+      <guid>https://cedricscherer.com/top/dataviz/</guid>
       <description>A selection of data visualizations have produced for personal projects and as challenge contributions using the {ggplot2} package in the programming language R. All visualizations are the result of the code without any post-processing.
  #TidyTuesday Contributions #30DayMapChallenge Contributions #MakeoverMonday Contributions #SWDchallenge Contributions RStudio Table Contest 2020   You need a visualization? Let&amp;rsquo;s get in touch! Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/impressum/</link>
+      <link>https://cedricscherer.com/top/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/impressum/</guid>
+      <guid>https://cedricscherer.com/top/impressum/</guid>
       <description>Impressum Angaben gemäß § 5 TMG C&amp;eacute;dric Scherer
 Birkenstra&amp;szlig;e 18
 10559 Berlin
@@ -61,19 +61,19 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
     
     <item>
       <title></title>
-      <link>/top/links/</link>
+      <link>https://cedricscherer.com/top/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/links/</guid>
+      <guid>https://cedricscherer.com/top/links/</guid>
       <description>Content  Rstats  {tidyverse} {ggplot2} Spatial Data   DataViz  Colors Chart Types Mapping   Interesting Personal Blogs  Rstats  &amp;ldquo;Cookbook for R&amp;rdquo; — free online book by Winston Chang &amp;ldquo;Technical Foundations of Informatics&amp;rdquo; — free online book by Michael Freeman &amp;amp; Joel Ross &amp;ldquo;Efficient R Programming&amp;rdquo; — free online book by Colin Gillespie &amp;amp; Robin Lovelace &amp;ldquo;YaRrr! The Pirate&amp;rsquo;s Guide to R&amp;rdquo; — free online book by Nathaniel Phillips R Graph Gallery Five Simple Tipps to Improve Your R Code  {tidyverse}  &amp;ldquo;R for Data Science&amp;rdquo; — free online book by Hadley Wickham &amp;amp; Garrett Grolemund  {ggplot2}  Source code of the book &amp;ldquo;Fundamentals of Data Visualization&amp;rdquo; Top 50 ggplot visualizations Gallery of ggplot2 extensions Extending ggplot2  Spatial Data  &amp;ldquo;Geocomputation with R&amp;rdquo; — free online book by Robin Lovelace, Jakub Nowosad &amp;amp; Jannes Muenchow  DataViz  &amp;ldquo;Data Visualization&amp;rdquo; — free online book by Kieran Healy &amp;ldquo;Fundamentals of Data Visualization&amp;rdquo; — free online book by Claus Wilke &amp;ldquo;Visualizing Data&amp;rdquo; — homepage by Andy Kirk &amp;ldquo;Visual Cinnamon&amp;rdquo; — homepage by Nadieh Bremer Explorable Explanations &amp;ldquo;Nightingale&amp;rdquo; — blog by the Data Visualization Society on Medium &amp;ldquo;Multiple Views: Visualization Research Explained&amp;rdquo; — DataViz blog on Medium Graphics Principles Cheatsheet  Colors  Viz Palette — colors in action (plus colorblind check) Color Space — color palette generator Chroma.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/projects/</link>
+      <link>https://cedricscherer.com/top/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/projects/</guid>
+      <guid>https://cedricscherer.com/top/projects/</guid>
       <description>Project Overview  BioMove NLMR (Neutral Landscape Models in R) Multidimensionality of Stability AFT (Animal Functional Type Approach) #TidyTuesday  BioMove The DFG funded Research Training Group &amp;lsquo;Integrating Biodiversity Research with Movement Ecology in dynamic agricultural landscapes (BioMove)&#39; aims to:
   link innovative individual research projects that overcome the apparent gap between movement ecology and biodiversity research, employing a joint conceptual framework;
   strategically combine empirical, experimental and modelling approaches based in one common study area (AgroScapeLab-Quillow, Brandenburg, Germany) of sufficient size to address questions of varying spatial scales;</description>
@@ -81,10 +81,10 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
     
     <item>
       <title></title>
-      <link>/top/pubs/</link>
+      <link>https://cedricscherer.com/top/pubs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/pubs/</guid>
+      <guid>https://cedricscherer.com/top/pubs/</guid>
       <description>Publications | Invited Talks | Conference Contributions | R Packages
 You can also find me on Google Scholar and ResearchGate.
 My ORCID ID is 0000-0003-0465-2543.
