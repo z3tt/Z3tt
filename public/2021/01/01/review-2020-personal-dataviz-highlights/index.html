@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    
     <meta property="og:site_name" content="Cédric Scherer">
     <meta property="og:type" content="article">
 
-
+    
       <meta name="title" content="My Personal Data Visualization Year 2020" />
       <meta property="og:title" content="My Personal Data Visualization Year 2020 - Cédric Scherer" />
       <meta property="twitter:title" content="My Personal Data Visualization Year 2020 - Cédric Scherer" />
       <meta property="twitter:text:title" content="My Personal Data Visualization Year 2020 - Cédric Scherer" />
+    
 
-
-
+    
       <meta name="description" content="Even though it was a crazy and exhausting year, there was also some good and exiting things happening. So I take a short break on New Year&#39;s Day and did look back at some of the positive moments of my personal data visualization journey during 2020.">
       <meta property="og:description" content="Even though it was a crazy and exhausting year, there was also some good and exiting things happening. So I take a short break on New Year&#39;s Day and did look back at some of the positive moments of my personal data visualization journey during 2020." />
       <meta property="twitter:description" content="Even though it was a crazy and exhausting year, there was also some good and exiting things happening. So I take a short break on New Year&#39;s Day and did look back at some of the positive moments of my personal data visualization journey during 2020." />
+    
 
+    
+      <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+      <meta property="twitter:image" content="/img/banner/milkyway_RichardStrozynski.png" />
+      <meta property="twitter:card" content="summary_large_image" />
+    
 
-
-      <meta property="og:image" content="https://www.cedricscherer.com//img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
-      <meta property="twitter:image" content="https://www.cedricscherer.com//img/banner/milkyway_RichardStrozynski.png" />
-      <meta property="twitter:card" content="summary" />
-
-
-
+    
 
     <meta name="keyword"  content="Computational Ecology, Data Visualization">
     <link rel="shortcut icon" href="/img/favicon.ico">
@@ -39,31 +39,31 @@
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
-
+    
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/hux-blog.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/syntax.css">
 
-
+    
     <link rel="stylesheet" href="/css/zanshang.css">
 
-
+    
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
+    
+    
     <script src="/js/jquery.min.js"></script>
 
-
+    
     <script src="/js/bootstrap.min.js"></script>
 
-
+    
     <script src="/js/hux-blog.min.js"></script>
 
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -72,7 +72,7 @@
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
-
+        
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -83,38 +83,38 @@
             <a class="navbar-brand" href="/">Cédric Scherer</a>
         </div>
 
-
-
+        
+        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Blog</a>
                     </li>
+                    
 
-
-
+		    
                         <li><a href="/top/about/">About Me</a></li>
-
+                    
                         <li><a href="/top/pubs/">Publications</a></li>
-
+                    
                         <li><a href="/top/dataviz/">Visualizations</a></li>
-
+                    
                         <li><a href="/top/links/">Links</a></li>
+                    
 
-
-
+                    
                 </ul>
             </div>
         </div>
-
+        
     </div>
-
+    
 </nav>
 <script>
-
-
-
+    
+    
+    
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
@@ -123,17 +123,17 @@
     $toggle.addEventListener('click', handleMagic)
     function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
-
+        
             $navbar.className = " ";
-
+            
             setTimeout(function(){
-
+                
                 if($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
             },400)
         }else{
-
+        
             $collapse.style.height = "auto"
             $navbar.className += " in";
         }
@@ -154,49 +154,49 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-
+                        
                         <a class="tag" href="/tags/dataviz" title="DataViz">
                             DataViz
                         </a>
-
+                        
                         <a class="tag" href="/tags/tidytuesday" title="TidyTuesday">
                             TidyTuesday
                         </a>
-
+                        
                         <a class="tag" href="/tags/r" title="R">
                             R
                         </a>
-
+                        
                         <a class="tag" href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
-
+                        
                         <a class="tag" href="/tags/correlaid" title="CorrelAid">
                             CorrelAid
                         </a>
-
+                        
                         <a class="tag" href="/tags/rstudio-table-contest" title="RStudio Table Contest">
                             RStudio Table Contest
                         </a>
-
+                        
                         <a class="tag" href="/tags/workshop" title="Workshop">
                             Workshop
                         </a>
-
+                        
                     </div>
                     <h1>My Personal Data Visualization Year 2020</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
 			Posted by
-
+			
 			    Cédric
-
+			
 			on
 			Friday, January 1, 2021
-
+                        
                             <span id="/2021/01/01/review-2020-personal-dataviz-highlights/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
-      <span class="octicon octicon-eye"></span>
+      <span class="octicon octicon-eye"></span> 
     </span>
     <i class="fa fa-eye"></i>
     <span class="old-visitors-count" style="display: none;"></span>
@@ -227,10 +227,10 @@ function showTime(Counter) {
             var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
             var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
 
-
-
-
-
+            
+            
+            
+            
 
             for (var i = 0; i < results.length; i++) {
                 var item = results[i];
@@ -249,7 +249,7 @@ function showTime(Counter) {
                     if(oldCountSpan!=''){
                         countSpan.text(0+parseInt(oldCountSpan));
                     }else{
-                        countSpan.text(0);
+                        countSpan.text(0);          
                     }
                 }
             }
@@ -283,12 +283,12 @@ function addCount(Counter) {
                 });
             } else {
                 var newcounter = new Counter();
-
+                 
                 var acl = new AV.ACL();
                 acl.setPublicReadAccess(true);
                 acl.setPublicWriteAccess(true);
                 newcounter.setACL(acl);
-
+                 
                 newcounter.set("title", title);
                 newcounter.set("url", url);
                 var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
@@ -317,8 +317,8 @@ function addCount(Counter) {
 }
 $(function() {
     var Counter = AV.Object.extend("Counter");
-
-
+    
+    
     if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
     } else {
@@ -327,7 +327,7 @@ $(function() {
 });
 </script>
 
-
+                        
                     </span>
                 </div>
             </div>
@@ -342,13 +342,13 @@ $(function() {
     <div class="container">
         <div class="row">
 
-
+            
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
 
-
+                
                 <p>Uff, what a year! 366 days ago, most people did not expect 2020 to be that exhausting, emotionally and physically (and let&rsquo;s hope for a better 2021—happy new year to you!). COVID19 was literally everywhere, whether in the media or affecting your personal life, and made it hard to focus and keep social contacts. Plus all the other things that were happening: starting off with the bushfires in Australia, the massive series of police brutality protests after the shocking death of George Floyd, tiring and everlasting Brexit negotiations, Trump&rsquo;s madness reaching new levels, and all the news and uncertainty around COVID19 mutations circulating at the end of 2020.</p>
 <p>Consequently, many people let the year end with a more or less cheerful</p>
 <blockquote>
@@ -441,169 +441,169 @@ $(function() {
 <p>Puh, that was a lot but nice if you made it to the end—thank you! I did not intend to make it that long but the more I was looking back, the more positive highlights I found. I still some on-going and planned client work, personal projects, workshops, conference talks, and a ton of unfinished blog posts so stay tuned for an exciting 2021 that hopefully allows us to focus more on the joy of life and to meet our dear family and friends. Stay safe and stay healthy!</p>
 
 
-
+                
 
                 <hr>
                 <ul class="pager">
-
+                    
                     <li class="previous">
                         <a href="/2020/11/01/imdb-top-250-series-table-contest-rstudio/" data-toggle="tooltip" data-placement="top" title="What do I binge next? A detailed overview of the top 250 TV shows">&larr;
                             Previous Post</a>
                     </li>
-
-
+                    
+                    
                 </ul>
 
-
+                
 <div id="disqus-comment"></div>
 
 
 
             </div>
-
+            
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-
-
+                
+                
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-
-
-
+                        
+                        
+                        
                         <a href="/tags/animations" title="animations">
                             animations
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/announcement" title="announcement">
                             announcement
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/berlin" title="berlin">
                             berlin
                         </a>
-
-
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/dataviz" title="dataviz">
                             dataviz
                         </a>
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/maps" title="maps">
                             maps
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/r" title="r">
                             r
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/rstudio-table-contest" title="rstudio-table-contest">
                             rstudio-table-contest
                         </a>
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/tidytuesday" title="tidytuesday">
                             tidytuesday
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/tidyverse" title="tidyverse">
                             tidyverse
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/tutorial" title="tutorial">
                             tutorial
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/weather" title="weather">
                             weather
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/workshop" title="workshop">
                             workshop
                         </a>
-
-
+                        
+                        
                     </div>
                 </section>
+                
 
-
-
-
+                
+                
                 <section>
                     <hr>
                     <h5>FRIENDS</h5>
                     <ul class="list-inline">
-
+                        
                         <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
-
+                        
                         <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
-
+                        
                         <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
-
+                        
                         <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
-
+                        
                         <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
-
+                        
                         <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
-
+                        
                     </ul>
                 </section>
-
+                
             </div>
         </div>
     </div>
@@ -617,8 +617,8 @@ $(function() {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-
-
+                   
+                    
                     <li>
                         <a href="mailto:cedricphilippscherer@gmail.com">
                             <span class="fa-stack fa-lg">
@@ -627,9 +627,9 @@ $(function() {
                             </span>
                         </a>
                     </li>
+		    
 
-
-
+                    
                     <li>
                         <a href="https://twitter.com/CedScherer">
                             <span class="fa-stack fa-lg">
@@ -638,15 +638,15 @@ $(function() {
                             </span>
                         </a>
                     </li>
+                    
+                    
+                    
 
+                    
 
-
-
-
-
-
-
-
+		    
+                    
+                    
                     <li>
                         <a target="_blank" href="https://github.com/Z3tt">
                             <span class="fa-stack fa-lg">
@@ -655,8 +655,8 @@ $(function() {
                             </span>
                         </a>
                     </li>
-
-
+		    
+                    
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
                             <span class="fa-stack fa-lg">
@@ -665,8 +665,8 @@ $(function() {
                             </span>
                         </a>
                     </li>
-
-
+		    
+                    
                 </ul>
 		<p class="copyright text-muted">
                     A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
@@ -703,11 +703,11 @@ $(function() {
 
 
 <script>
-
+    
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-
+                
                 color: {start: '#bbbbee', end: '#28a87d'},
             };
             $('#tag_cloud a').tagcloud();
