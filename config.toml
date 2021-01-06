@@ -18,7 +18,7 @@ unsafe= true
 
 [params]
   header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg"
-  twitter_image = "img/banner.png"
+  twitter_image = "img/banner/banner.png"
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
   title = "Cédric Scherer"
