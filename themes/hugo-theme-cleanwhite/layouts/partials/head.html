@@ -30,13 +30,13 @@
     {{ end }}
 
     {{ if .Params.twitterImg }}
-      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
-      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.twitterImg }}" />
-      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="https://www.cedricscherer.com/{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+      <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.BaseURL }}{{ .Params.twitterImg }}" />
+      <meta property="twitter:card" content="summary" />
     {{ else }}
-      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
-      <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.twitter_image }}" />
-      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="https://www.cedricscherer.com/{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+      <meta property="twitter:image" content="https://www.cedricscherer.com/{{ .Site.BaseURL }}{{ .Site.Params.twitter_image }}" />
+      <meta property="twitter:card" content="summary" />
     {{ end }}
 
     <!-- end ogp -->
