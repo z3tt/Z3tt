@@ -36,8 +36,6 @@ The table shows relevant details of the top 250 TV shows as rated by IMDb users.
 
 To visualize the runtime I decided to use a restrained, grey-toned, area-scaled circle. The normalized trends in episode ratings are visualized as stripes similar to the famous ["warming stripes" by Ed Hawkins](https://en.wikipedia.org/wiki/Warming_stripes):
 
-![](/img/table-contest/)
-
 ![](/img/table-contest/southpark.png)
 <p class="small" align="center"><i style="color:#8c8c8c;">The “trending stripes” for 309 epsiodes of “Southpark”, covering 24 seasons in total.</i></p>
 
