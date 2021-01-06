@@ -38,7 +38,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. [*Ecological Modelling* **326**:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
 
 
-## Invited Talks  {#talks}
+### Invited Talks {#talks}
+
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets. ([Slides](https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf) | [Recording](https://www.youtube.com/watch?v=zCG3xk-QLSI))  
 <i style="font-size:11pt;color:grey;">CorrelCon: A Weekend of Data4Good – 11/2020 – Online Conference</i>
 
