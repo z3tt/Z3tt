@@ -2,246 +2,246 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CorrelAid</title>
-      <link>https://cedricscherer.com/tags/correlaid/</link>
+      <link>/tags/correlaid/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/correlaid/</guid>
+      <guid>/tags/correlaid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataViz</title>
-      <link>https://cedricscherer.com/tags/dataviz/</link>
+      <link>/tags/dataviz/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/dataviz/</guid>
+      <guid>/tags/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ggplot2</title>
-      <link>https://cedricscherer.com/tags/ggplot2/</link>
+      <link>/tags/ggplot2/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <guid>/tags/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://cedricscherer.com/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RStudio Table Contest</title>
-      <link>https://cedricscherer.com/tags/rstudio-table-contest/</link>
+      <link>/tags/rstudio-table-contest/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/rstudio-table-contest/</guid>
+      <guid>/tags/rstudio-table-contest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TidyTuesday</title>
-      <link>https://cedricscherer.com/tags/tidytuesday/</link>
+      <link>/tags/tidytuesday/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/tidytuesday/</guid>
+      <guid>/tags/tidytuesday/</guid>
       <description></description>
     </item>
     
     <item>
       <title>workshop</title>
-      <link>https://cedricscherer.com/tags/workshop/</link>
+      <link>/tags/workshop/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/workshop/</guid>
+      <guid>/tags/workshop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gt</title>
-      <link>https://cedricscherer.com/tags/gt/</link>
+      <link>/tags/gt/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/gt/</guid>
+      <guid>/tags/gt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IMDb</title>
-      <link>https://cedricscherer.com/tags/imdb/</link>
+      <link>/tags/imdb/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/imdb/</guid>
+      <guid>/tags/imdb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>table</title>
-      <link>https://cedricscherer.com/tags/table/</link>
+      <link>/tags/table/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/table/</guid>
+      <guid>/tags/table/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TV shows</title>
-      <link>https://cedricscherer.com/tags/tv-shows/</link>
+      <link>/tags/tv-shows/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/tv-shows/</guid>
+      <guid>/tags/tv-shows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>animations</title>
-      <link>https://cedricscherer.com/tags/animations/</link>
+      <link>/tags/animations/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/animations/</guid>
+      <guid>/tags/animations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>COVID-19</title>
-      <link>https://cedricscherer.com/tags/covid-19/</link>
+      <link>/tags/covid-19/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/covid-19/</guid>
+      <guid>/tags/covid-19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>heatmap</title>
-      <link>https://cedricscherer.com/tags/heatmap/</link>
+      <link>/tags/heatmap/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/heatmap/</guid>
+      <guid>/tags/heatmap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maps</title>
-      <link>https://cedricscherer.com/tags/maps/</link>
+      <link>/tags/maps/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/maps/</guid>
+      <guid>/tags/maps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SWDchallenge</title>
-      <link>https://cedricscherer.com/tags/swdchallenge/</link>
+      <link>/tags/swdchallenge/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/swdchallenge/</guid>
+      <guid>/tags/swdchallenge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>climate change</title>
-      <link>https://cedricscherer.com/tags/climate-change/</link>
+      <link>/tags/climate-change/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/climate-change/</guid>
+      <guid>/tags/climate-change/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nature</title>
-      <link>https://cedricscherer.com/tags/nature/</link>
+      <link>/tags/nature/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/nature/</guid>
+      <guid>/tags/nature/</guid>
       <description></description>
     </item>
     
     <item>
       <title>weather</title>
-      <link>https://cedricscherer.com/tags/weather/</link>
+      <link>/tags/weather/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/weather/</guid>
+      <guid>/tags/weather/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Berlin</title>
-      <link>https://cedricscherer.com/tags/berlin/</link>
+      <link>/tags/berlin/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/berlin/</guid>
+      <guid>/tags/berlin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Christmas</title>
-      <link>https://cedricscherer.com/tags/christmas/</link>
+      <link>/tags/christmas/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/christmas/</guid>
+      <guid>/tags/christmas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gganimate</title>
-      <link>https://cedricscherer.com/tags/gganimate/</link>
+      <link>/tags/gganimate/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/gganimate/</guid>
+      <guid>/tags/gganimate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>https://cedricscherer.com/tags/tidyverse/</link>
+      <link>/tags/tidyverse/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>announcement</title>
-      <link>https://cedricscherer.com/tags/announcement/</link>
+      <link>/tags/announcement/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/announcement/</guid>
+      <guid>/tags/announcement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://cedricscherer.com/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ggplot Evolution</title>
-      <link>https://cedricscherer.com/tags/ggplot-evolution/</link>
+      <link>/tags/ggplot-evolution/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/ggplot-evolution/</guid>
+      <guid>/tags/ggplot-evolution/</guid>
       <description></description>
     </item>
     

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cédric Scherer</title>
-    <link>https://cedricscherer.com/</link>
+    <link>/</link>
     <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Personal Data Visualization Year 2020</title>
-      <link>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</link>
+      <link>/2021/01/01/review-2020-personal-dataviz-highlights/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</guid>
+      <guid>/2021/01/01/review-2020-personal-dataviz-highlights/</guid>
       <description>Uff, what a year! 366 days ago, most people did not expect 2020 to be that exhausting, emotionally and physically (and let&amp;rsquo;s hope for a better 2021—happy new year to you!). COVID19 was literally everywhere, whether in the media or affecting your personal life, and made it hard to focus and keep social contacts. Plus all the other things that were happening: starting off with the bushfires in Australia, the massive series of police brutality protests after the shocking death of George Floyd, tiring and everlasting Brexit negotiations, Trump&amp;rsquo;s madness reaching new levels, and all the news and uncertainty around COVID19 mutations circulating at the end of 2020.</description>
     </item>
     
     <item>
       <title>What do I binge next? A detailed overview of the top 250 TV shows</title>
-      <link>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
+      <link>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
+      <guid>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
       <description>With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote &amp;ldquo;Stammtisch&amp;rdquo; with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.</description>
     </item>
     
     <item>
       <title>The Worst Days of the Coronavirus Pandemic So Far</title>
-      <link>https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</link>
+      <link>/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</guid>
+      <guid>/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</guid>
       <description>Header image by Giacomo Carra via Unsplash
 p.small {line-height: 1.15;font-size:80%}Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, #stayhome and #flattenthecurve hashtags—and obviously a global shortage of toilet paper.
 When the corona pandemic started, I felt scared, curious and tired at the same time.</description>
@@ -42,20 +42,20 @@ When the corona pandemic started, I felt scared, curious and tired at the same t
     
     <item>
       <title>Comparing the Extent of the Australian Bushfires 2019/20</title>
-      <link>https://cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/</link>
+      <link>/2020/01/09/australian-bushfires-comparison-europe-world/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/</guid>
+      <guid>/2020/01/09/australian-bushfires-comparison-europe-world/</guid>
       <description>Header image by Michael Barth via Unsplash
 During a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: 27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales.</description>
     </item>
     
     <item>
       <title>Best TidyTuesday 2019</title>
-      <link>https://cedricscherer.com/2019/12/30/best-tidytuesday-2019/</link>
+      <link>/2019/12/30/best-tidytuesday-2019/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/12/30/best-tidytuesday-2019/</guid>
+      <guid>/2019/12/30/best-tidytuesday-2019/</guid>
       <description>At the end of an exiting second #TidyTuesday year, Jon Harmon, host of the TidyTuesday Podcast, asked on Twitter:
 What was your favorite #TidyTuesday dataset of 2019? What were some of your favorite visualizations? Why? Let me know with an @ or via #BestTidyTuesday2019!
 &amp;mdash; TidyTuesday Podcast (@tidypod) December 12, 2019 I took this opportunity to recap the last year of contributions to the #TidyTuesday challenge. Immediately, several contributions came to my mind and I tried to pick the best from those I&amp;rsquo;ve seen and which I remember.</description>
@@ -63,19 +63,19 @@ What was your favorite #TidyTuesday dataset of 2019? What were some of your favo
     
     <item>
       <title>Merry (White?) Christmas!</title>
-      <link>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
+      <link>/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
+      <guid>/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
       <description>During this time of the year, lunch conversations often focus around the question &amp;ldquo;Will there be snow on Christmas Eve here in Berlin/Germany?&amp;quot;. I remember white Christmas to be a thing when I was a child but in my memory this happened way more often back then than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?</description>
     </item>
     
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
-      <link>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
 Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1&amp;rdquo;.She: &amp;ldquo;Yeah, and we had some tough time to make that work and to customize it in Adobe Animate.&amp;rdquo;
@@ -85,10 +85,10 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</d
     
     <item>
       <title>Workshop Announcements 2019/20</title>
-      <link>https://cedricscherer.com/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</link>
+      <link>/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</guid>
+      <guid>/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</guid>
       <description>I am proud to announce three workshops that I am going to lead/teach in autumn 2019 and spring 2020! 🎉 Thanks to all of you for that opportunity!
 → Data Visualization Workshop in Berlin, Germany (Sep 26th 2019)
 → Data Exploration in R with tidyverse in Modica, Italy (Nov 4th to 8th 2019)
@@ -98,10 +98,10 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</d
     
     <item>
       <title>A ggplot2 Tutorial for Beautiful Plotting in R</title>
-      <link>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</link>
+      <link>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
+      <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
       <description>Last update: 2020-12-07
 Introductory WordsI don’t care, just show me the content!
 Back in 2016, I had to prepare my PhD introductory talk and I started using {ggplot2} to visualize my data.</description>
@@ -109,29 +109,29 @@ Back in 2016, I had to prepare my PhD introductory talk and I started using {ggp
     
     <item>
       <title>The Evolution of a ggplot (Ep. 1)</title>
-      <link>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
+      <link>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
+      <guid>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
       <description>🏁 Aim of this Tutorial🗃️ Data Preparation🌱 The Default Boxplot🔀 ️Sort Your Data!💎 Let Your Plot Shine—Get Rid of the Default Settings📊 The Choice of the Chart Type💯 More Geoms, More Fun, More Info!💬 Add Text Boxes to Let The Plot Speak for Itself🗺️ Bonus: Add a Tile Map as Legend🎄 The Final Evolved Visualization💻 Complete Code for Final Plot📝 Post Scriptum: Mean versus Median🏁 Aim of this TutorialIn this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way.</description>
     </item>
     
     <item>
       <title>Hello, TidyTuesday!</title>
-      <link>https://cedricscherer.com/2019/05/06/tidytuesday_intro/</link>
+      <link>/2019/05/06/tidytuesday_intro/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/05/06/tidytuesday_intro/</guid>
+      <guid>/2019/05/06/tidytuesday_intro/</guid>
       <description>During my after-thesis-vacation, I managed to tick off two long-term todo&amp;rsquo;s on my list - set up a homepage and to participate in the #TidyTuesday challenge to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opportunity to do so!
 What is it about? The R4DS (&amp;ldquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners.</description>
     </item>
     
     <item>
       <title>Hello, World!</title>
-      <link>https://cedricscherer.com/2019/05/04/welcome/</link>
+      <link>/2019/05/04/welcome/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/05/04/welcome/</guid>
+      <guid>/2019/05/04/welcome/</guid>
       <description>Header image by Negative Space
 Hi, I am glad you found your way here! Come in, have a look.
 I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package {blogdown} Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;CleanWhite&amp;rdquo; theme!</description>
@@ -139,29 +139,29 @@ I finally managed to set up a personal homepage - and how easy it was! Huge than
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/search/placeholder/</link>
+      <link>/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/search/placeholder/</guid>
+      <guid>/search/placeholder/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/about/</link>
+      <link>/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/about/</guid>
+      <guid>/top/about/</guid>
       <description>About Me I am a computational ecologist by training and a data visualization designer by heart with more than 9 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development and data visualization.
 I am working as a scientifc researcher (PostDoc) in the Department &amp;ldquo;Ecological Dynamics&amp;rdquo; at the Leibniz Institute for Zoo and Wildlife Research (IZW) in Berlin, Germany. Since the beginning of the year I have also been working successfully as a self-employed designer, consultant and instructor in the fields of data visualization and reproducible analysis.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/conduct/</link>
+      <link>/top/conduct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/conduct/</guid>
+      <guid>/top/conduct/</guid>
       <description>Code of Conduct I take responsibility for my own words and all the content created by myself. I am committed to the “Civility Enforced” standard: I will not post unacceptable content, and I will delete any references or comments that contain it.
 I define unacceptable content as anything included or linked to that:
 is being used to abuse, harass, stalk, or threaten othersis libelous, knowingly false, ad-hominem, or misrepresents another personinfringes upon a copyright or trademarkviolates an obligation of confidentialityviolates the privacy of othersI define and determine what is “unacceptable content” on a case-by-case basis, and my definitions are not limited to this list.</description>
@@ -169,20 +169,20 @@ I define unacceptable content as anything included or linked to that:
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/dataviz/</link>
+      <link>/top/dataviz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/dataviz/</guid>
+      <guid>/top/dataviz/</guid>
       <description>A selection of data visualizations have produced for personal projects and as challenge contributions using the {ggplot2} package in the programming language R. All visualizations are the result of the code without any post-processing.
  #TidyTuesday Contributions #30DayMapChallenge Contributions #MakeoverMonday Contributions #SWDchallenge Contributions RStudio Table Contest 2020   You need a visualization? Let&amp;rsquo;s get in touch! Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/impressum/</link>
+      <link>/top/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/impressum/</guid>
+      <guid>/top/impressum/</guid>
       <description>Impressum Angaben gemäß § 5 TMG C&amp;eacute;dric Scherer
 Birkenstra&amp;szlig;e 18
 10559 Berlin
@@ -197,19 +197,19 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/links/</link>
+      <link>/top/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/links/</guid>
+      <guid>/top/links/</guid>
       <description>Content  Rstats  {tidyverse} {ggplot2} Spatial Data   DataViz  Colors Chart Types Mapping   Interesting Personal Blogs  Rstats  &amp;ldquo;Cookbook for R&amp;rdquo; — free online book by Winston Chang &amp;ldquo;Technical Foundations of Informatics&amp;rdquo; — free online book by Michael Freeman &amp;amp; Joel Ross &amp;ldquo;Efficient R Programming&amp;rdquo; — free online book by Colin Gillespie &amp;amp; Robin Lovelace &amp;ldquo;YaRrr! The Pirate&amp;rsquo;s Guide to R&amp;rdquo; — free online book by Nathaniel Phillips R Graph Gallery Five Simple Tipps to Improve Your R Code  {tidyverse}  &amp;ldquo;R for Data Science&amp;rdquo; — free online book by Hadley Wickham &amp;amp; Garrett Grolemund  {ggplot2}  Source code of the book &amp;ldquo;Fundamentals of Data Visualization&amp;rdquo; Top 50 ggplot visualizations Gallery of ggplot2 extensions Extending ggplot2  Spatial Data  &amp;ldquo;Geocomputation with R&amp;rdquo; — free online book by Robin Lovelace, Jakub Nowosad &amp;amp; Jannes Muenchow  DataViz  &amp;ldquo;Data Visualization&amp;rdquo; — free online book by Kieran Healy &amp;ldquo;Fundamentals of Data Visualization&amp;rdquo; — free online book by Claus Wilke &amp;ldquo;Visualizing Data&amp;rdquo; — homepage by Andy Kirk &amp;ldquo;Visual Cinnamon&amp;rdquo; — homepage by Nadieh Bremer Explorable Explanations &amp;ldquo;Nightingale&amp;rdquo; — blog by the Data Visualization Society on Medium &amp;ldquo;Multiple Views: Visualization Research Explained&amp;rdquo; — DataViz blog on Medium Graphics Principles Cheatsheet  Colors  Viz Palette — colors in action (plus colorblind check) Color Space — color palette generator Chroma.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/projects/</link>
+      <link>/top/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/projects/</guid>
+      <guid>/top/projects/</guid>
       <description>Project Overview  BioMove NLMR (Neutral Landscape Models in R) Multidimensionality of Stability AFT (Animal Functional Type Approach) #TidyTuesday  BioMove The DFG funded Research Training Group &amp;lsquo;Integrating Biodiversity Research with Movement Ecology in dynamic agricultural landscapes (BioMove)&#39; aims to:
   link innovative individual research projects that overcome the apparent gap between movement ecology and biodiversity research, employing a joint conceptual framework;
   strategically combine empirical, experimental and modelling approaches based in one common study area (AgroScapeLab-Quillow, Brandenburg, Germany) of sufficient size to address questions of varying spatial scales;</description>
@@ -217,10 +217,10 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
     
     <item>
       <title></title>
-      <link>https://cedricscherer.com/top/pubs/</link>
+      <link>/top/pubs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/top/pubs/</guid>
+      <guid>/top/pubs/</guid>
       <description>Publications | Invited Talks | Conference Contributions | R Packages
 You can also find me on Google Scholar and ResearchGate.
 My ORCID ID is 0000-0003-0465-2543.
