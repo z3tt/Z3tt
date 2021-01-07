@@ -23,8 +23,8 @@ unsafe= true
   SEOTitle = "Cédric Scherer"
   title = "Cédric Scherer"
   description = "Blog by Cédric Scherer"
-  keyword = "Computational Ecology, Data Visualization"
-  slogan = "Computational Ecology & Data Visualization"
+  keyword = "Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2"
+  slogan = "Data Visualization & Computational Ecology"
   google_fonts = ""
   title_404 = ""
 

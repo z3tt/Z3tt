@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Christmas on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/christmas/</link>
+    <link>/tags/christmas/</link>
     <description>Recent content in Christmas on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cedricscherer.com/tags/christmas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/christmas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Merry (White?) Christmas!</title>
-      <link>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
+      <link>/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
+      <guid>/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
       <description>During this time of the year, lunch conversations often focus around the question &amp;ldquo;Will there be snow on Christmas Eve here in Berlin/Germany?&amp;quot;. I remember white Christmas to be a thing when I was a child but in my memory this happened way more often back then than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?</description>
     </item>
     
