@@ -1,3 +1,5 @@
 https://cedricscherer.netlify.com/*  https://cedricscherer.com/:splat  301!
 http://cedricscherer.netlify.com/*   https://cedricscherer.com/:splat  301!
+https://cedricscherer.netlify.app/*  https://cedricscherer.com/:splat  301!
+http://cedricscherer.netlify.app/*   https://cedricscherer.com/:splat  301!
 http://cedricscherer.com/*  https://cedricscherer.com/:splat  301!
