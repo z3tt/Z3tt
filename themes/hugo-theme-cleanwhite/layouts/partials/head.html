@@ -7,17 +7,17 @@
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
 
-    {{if .IsPage}}
-      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.twitterImg}}">
-      <meta name="twitter:card" content="summary_large_image">
-    {{else}}
+    {{if eq .URL "/" }}
       <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
       <meta name="twitter:card" content="summary_large_image">
+    {{else}}
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.twitterImg}}">
+      <meta name="twitter:card" content="summary">
     {{end}}
 
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
+  <!-- <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
 
-  <!--  {{ if .Params.twitterImg }}
+    {{ if .Params.twitterImg }}
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" >
     {{ else }}
