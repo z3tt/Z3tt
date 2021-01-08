@@ -6,17 +6,9 @@
     <!-- start ogp -->
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="article">
-
-    <!--{{if eq .URL "/" }}
-      <meta name="twitter:card" content="summary_large_image">
-    {{else}}
-      <meta name="twitter:card" content="summary">
-    {{end}}-->
-
-    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.header_image }}">
 
-    <!-- {{ if .Params.twitterImg }}
+    {{ if .Params.twitterImg }}
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.cedricscherer.com/{{ .Params.twitterImg }}" >
     {{ else }}
@@ -24,7 +16,7 @@
       <meta name="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" >
     {{ end }}
 
-    {{ if eq .URL "/" }}
+    <!-- {{ if eq .URL "/" }}
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" >
     {{ else }}
