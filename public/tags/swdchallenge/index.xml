@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SWDchallenge on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/swdchallenge/</link>
+    <link>/tags/swdchallenge/</link>
     <description>Recent content in SWDchallenge on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cedricscherer.com/tags/swdchallenge/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/swdchallenge/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Worst Days of the Coronavirus Pandemic So Far</title>
-      <link>https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</link>
+      <link>/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</guid>
+      <guid>/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</guid>
       <description>Header image by Giacomo Carra via Unsplash
 p.small {line-height: 1.15;font-size:80%}Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, #stayhome and #flattenthecurve hashtags—and obviously a global shortage of toilet paper.
 When the corona pandemic started, I felt scared, curious and tired at the same time.</description>

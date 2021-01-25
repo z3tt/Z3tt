@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Berlin on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/berlin/</link>
+    <link>/tags/berlin/</link>
     <description>Recent content in Berlin on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://cedricscherer.com/tags/berlin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/berlin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Merry (White?) Christmas!</title>
-      <link>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
+      <link>/2019/12/24/merry-white-christmas-berlin-snow-history/</link>
       <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
+      <guid>/2019/12/24/merry-white-christmas-berlin-snow-history/</guid>
       <description>During this time of the year, lunch conversations often focus around the question &amp;ldquo;Will there be snow on Christmas Eve here in Berlin/Germany?&amp;quot;. I remember white Christmas to be a thing when I was a child but in my memory this happened way more often back then than nowadays. And this seems to be in line with the stories of my Berlin-based colleagues about lots of snow during their childhood. But is it true?</description>
     </item>
     
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
-      <link>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
 Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1&amp;rdquo;.She: &amp;ldquo;Yeah, and we had some tough time to make that work and to customize it in Adobe Animate.&amp;rdquo;
