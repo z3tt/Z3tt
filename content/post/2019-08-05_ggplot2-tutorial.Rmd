@@ -18,7 +18,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, out.width = "100%",
                       fig.showtext = TRUE, retina = 2)
 ```
 
-*Last update: 2020-12-07*
+*Last update: 2021-02-09*
 
 
 ## Introductory Words
@@ -667,7 +667,7 @@ font_add_google("Roboto Condensed", "Roboto Condensed")
 theme_set(theme_bw(base_size = 12, base_family = "Roboto Condensed"))
 ```
 
-<p style='color:gray;'>(Previously, this tutorial used the [{extrafont} package](https://cran.r-project.org/web/packages/extrafont/README.html), which did a great job until last year. All of the sudden I couldn't add any new fonts anymore and after getting a new laptop, the package did not find any fonts at all... I usually suggest the [{ragg} package](https://ragg.r-lib.org/) now. However, I did not succeed to make it work for my homepage so I use the `{showtext}` package which is great as well with the only main difference that you need to import the font you want to use explicitly with {`showtext}`.)</p>
+<p style='color:gray;'>(Previously, this tutorial used the [{extrafont} package](https://cran.r-project.org/web/packages/extrafont/README.html), which did a great job until last year. All of the sudden I couldn't add any new fonts anymore and after getting a new laptop, the package did not find any fonts at all... I usually suggest the [{ragg} package](https://ragg.r-lib.org/) now. However, I did not succeed to make it work for my homepage so I use the `{showtext}` package which is great as well with the only main difference that you need to import the font you want to use explicitly with `{showtext}`. (However, it seems [there are some technical details that are not solved optimally by `{showtext}`](https://twitter.com/thomasp85/status/1355083725156077571) so you may want to use the package as a very last resort.)</p>
 
 
 ##### Change Spacing in Multi-Line Text
@@ -738,7 +738,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
 ```
 
 <details>
-  <summary>&#128129; <i>You can achieve the same by setting the legend name to `NULL`, either via `scale_color_discrete(name = NULL)` or `labs(color = NULL)`. Expand to see example.</i></summary>
+  <summary>&#128129; <i>You can achieve the same by setting the legend name to `NULL`, either via `scale_color_discrete(name = NULL)` or `labs(color = NULL)`. Expand to see examples.</i></summary>
 ```{r legend-title-null}
 ggplot(chic, aes(x = date, y = temp, color = season)) +
   geom_point() +
@@ -857,11 +857,13 @@ We are going to replace the seasons by the months which they are covering by pro
 ggplot(chic, aes(x = date, y = temp, color = season)) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") +
-  scale_color_discrete("Seasons:", labels = c("Mar—May", "Jun—Aug",
-                                              "Sep—Nov", "Dec—Feb")) +
-  theme(legend.title = element_text(family = "Playfair",
-                                    color = "chocolate",
-                                    size = 14, face = 2))
+  scale_color_discrete(
+    name = "Seasons:", 
+    labels = c("Mar—May", "Jun—Aug", "Sep—Nov", "Dec—Feb")
+  ) +
+  theme(legend.title = element_text(
+    family = "Playfair", color = "chocolate", size = 14, face = 2
+  ))
 ```
 
 
@@ -982,7 +984,7 @@ ggplot(chic,
   guides(color = guide_legend())
 ```
 
-You can also use binned scales:
+You can also use *binned scales*:
 
 ```{r legend-guide-cont-bins}
 ggplot(chic,
@@ -992,7 +994,7 @@ ggplot(chic,
   guides(color = guide_bins())
 ```
 
-... or binned scales as *discrete colorbars`:
+... or binned scales as *discrete colorbars*:
 
 ```{r legend-guide-cont-steps}
 ggplot(chic,
@@ -1008,19 +1010,43 @@ ggplot(chic,
 
 ## Working with Backgrounds & Grid Lines {#style}
 
-There are ways to change the entire look of your plot with one function (see ["Working with Themes"](#themes)) section below) but if you want to simply change the colors of some elements, you can also do that.
+There are ways to change the entire look of your plot with one function (see ["Working with Themes"](#themes) section below) but if you want to simply change the colors of some elements, you can also do that.
+
+
+##### Change the Panel Background Color
+
+To change the background color (fill) of the panel area (i.e. the area where the data is plotted), one needs to adjust the theme element `panel.background`:
+
+```{r panel-color}
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "#1D8565", size = 2) +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(panel.background = element_rect(
+    fill = "#64D2AA", color = "#64D2AA", size = 2)
+  )
+```
+
+Note that the true color—the outline of the panel background—did not change even though we specified it. This is because there is a layer on top of the `panel.background`, namely `panel.border`. However, when make sure to use a transparent fill here, otherwise your data is hidden behind this layer. In the following example, I illustrate that by using a semitransparent hex color for the `fill` argument in `element_rect`:
+
+```{r panel-color-2}
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "#1D8565", size = 2) +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(panel.border = element_rect(
+    fill = "#64D2AA99", color = "#64D2AA", size = 2)
+  )
+```
 
 
 ##### Change Grid Lines
 
-There are two types of grid lines: major grid lines indicating the ticks and minor grid lines between the major ones. You can change all of these by overwriting the defaults for `panel.grid` or for each set of gridlines separately `panel.grid.major` and `panel.grid.minor`.
+There are two types of grid lines: major grid lines indicating the ticks and minor grid lines between the major ones. You can change all of these by overwriting the defaults for `panel.grid` or for each set of gridlines separately, `panel.grid.major` and `panel.grid.minor`.
 
 ```{r grid-lines}
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") +
-  theme(panel.background = element_rect(fill = "gray90"),
-        panel.grid.major = element_line(color = "gray10", size = .5),
+  theme(panel.grid.major = element_line(color = "gray10", size = .5),
         panel.grid.minor = element_line(color = "gray70", size = .25))
 ```
 
@@ -1030,8 +1056,7 @@ You can even specify settings for all four different levels:
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") +
-  theme(panel.background = element_rect(fill = "gray90"),
-        panel.grid.major = element_line(size = .5, linetype = "dashed"),
+  theme(panel.grid.major = element_line(size = .5, linetype = "dashed"),
         panel.grid.minor = element_line(size = .25, linetype = "dotted"),
         panel.grid.major.x = element_line(color = "red1"),
         panel.grid.major.y = element_line(color = "blue1"),
@@ -1055,6 +1080,9 @@ ggplot(chic, aes(x = date, y = temp)) +
   theme(panel.grid = element_blank())
 ```
 
+
+##### Change Spacing of Gridlines
+
 Furthermore, you can also define the breaks between both, major and minor grid lines:
 
 ```{r grid-breaks}
@@ -1063,29 +1091,6 @@ ggplot(chic, aes(x = date, y = temp)) +
   labs(x = "Year", y = "Temperature (°F)") +
   scale_y_continuous(breaks = seq(0, 100, 10),
                      minor_breaks = seq(0, 100, 2.5))
-```
-
-
-##### Change the Panel Background Color
-
-To change the background color (fill) of the panel area (i.e. the area where the data is plotted), one needs to adjust the theme element `panel.background`:
-
-```{r panel-color}
-ggplot(chic, aes(x = date, y = temp)) +
-  geom_point(color = "#1D8565", size = 2) +
-  labs(x = "Year", y = "Temperature (°F)") +
-  theme(panel.background = element_rect(fill = "#64D2AA",
-                                        color = "#64D2AA", size = 2))
-```
-
-Note that the true color—the outline of the panel background—did not change even though we specified it. This is because there is a layer on top of the `panel.background`, namely `panel.border`. However, when make sure to use a transparent fill here, otherwise your data is hidden behind this layer. In the following example, I illustrate that by using a semitransparent hex color for the `fill` argument in `element_rect`:
-
-```{r panel-color-2}
-ggplot(chic, aes(x = date, y = temp)) +
-  geom_point(color = "#1D8565", size = 2) +
-  labs(x = "Year", y = "Temperature (°F)") +
-  theme(panel.border = element_rect(fill = "#64D2AA99",
-                                    color = "#64D2AA", size = 2))
 ```
 
 
@@ -1120,17 +1125,30 @@ ggplot(chic, aes(x = date, y = temp)) +
 
 Sometimes it is useful to add a little space to the plot margin. Similar to the previous examples we can use an argument to the `theme()` function. In this case the argument is `plot.margin`. As In the previous example we already illustrated the default margin by changing the background color using `plot.background`.
 
-Now let us add extra space to both the left and right. The argument, `plot.margin`, can handle a variety of different units (cm, inches, etc.) but it requires the use of the function unit from the package `grid` to specify the units. Here I am using a 5 cm margin on the right and left.
+Now let us add extra space to both the left and right. The argument, `plot.margin`, can handle a variety of different units (cm, inches, etc.) but it requires the use of the function unit from the package `grid` to specify the units. You can either provide the same value for all sides (easiest via `rep(x, 4)`) or particular distances for each. Here I am using a 1cm margin on the top and bottom, 3 cm margin on the right, and a 8 cm margin on the left.
 
 ```{r margin}
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "firebrick") +
   labs(x = "Year", y = "Temperature (°F)") +
   theme(plot.background = element_rect(fill = "gray60"),
-        plot.margin = unit(c(1, 3, 1, 8), "cm"))
+        plot.margin = margin(t = 1, r = 3, b = 1, l = 8, unit = "cm"))
 ```
 
 The order of the margin sides is top, right, bottom, left—a nice way to remember this order is "**tr**ou**bl**e that sorts the first letter of the four sides.
+
+<details>
+  <summary>&#128129; <i>You can also use `unit()` instead of `margin()`. Expand to see example.</i></summary>
+```{r margin-2}
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(plot.background = element_rect(fill = "gray60"),
+        plot.margin = unit(c(1, 3, 1, 8), "cm"))
+```
+</details>
+
+
 
 [↑ Jump back to Table of Content.](#toc)<br><br>
 
@@ -1140,44 +1158,8 @@ The order of the margin sides is top, right, bottom, left—a nice way to rememb
 
 The `{ggplot2}` package has two nice functions for creating multi-panel plots, called *facets*. They are related but a little different: `facet_wrap` creates essentially a ribbon of plots based on a single variable while `facet_grid` spans a grid of two variables.
 
-##### Create a Multi-Panel Plots Based on One Variable
 
-`facet_wrap` creates a facet of a single variable, written with a tilde in front: `facet_wrap(~ variable)`. The appearance of these subplots is controlled by the arguments `ncol` and `nrow`:
-
-```{r wrap-plots-1-row}
-g <- ggplot(chic, aes(x = date, y = temp)) +
-       geom_point(color = "chartreuse4", alpha = .3) +
-       labs(x = "Year", y = "Temperature (°F)") +
-       theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
-
-g + facet_wrap(~ year, nrow = 1)
-```
-
-Accordingly, you can arrange the plots as you like as a matrix...
-
-```{r wrap-plots-2-rows}
-g + facet_wrap(~ year, nrow = 2)
-```
-
-... or even as a asymmetric grid of plots:
-
-```{r wrap-plots-2-rows-3-col}
-g + facet_wrap(~ year, ncol = 3) + theme(axis.title.x = element_text(hjust = .15))
-```
-
-
-##### Allow Scales to Roam Free
-
-The default for multi-panel plots in `{ggplot2}` is to use equivalent scales in each panel. But sometimes you want to allow a panels own data to determine the scale. This is often not a good idea since it may give your user the wrong impression about the data. But sometimes it is indeed useful and to do this you can set `scales = "free"`:
-
-```{r wrap-plots-scales-free}
-g + facet_wrap(~ year, nrow = 2, scales = "free")
-```
-
-Note that both, x and y axes differ in their range!
-
-
-##### Create a Grid of Plots Based on Two Variables
+##### Create a Grid of Small Multiples Based on Two Variables
 
 In case of two variables, `facet_grid` does the job. Here, the order of the variables determines the number of rows and columns:
 
@@ -1191,16 +1173,64 @@ ggplot(chic, aes(x = date, y = temp)) +
 
 To change from row to column arrangement you can change `facet_grid(year ~ season)` to `facet_grid(season ~ year)`.
 
-The function `facet_wrap` can also take two variables and you are still able to control the grid design:
+
+##### Create Small Multiples Based on One Variable
+
+`facet_wrap` creates a facet of a single variable, written with a tilde in front: `facet_wrap(~ variable)`. The appearance of these subplots is controlled by the arguments `ncol` and `nrow`:
+
+```{r wrap-plots-1-row}
+g <- 
+  ggplot(chic, aes(x = date, y = temp)) +
+    geom_point(color = "chartreuse4", alpha = .3) +
+    labs(x = "Year", y = "Temperature (°F)") +
+    theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1))
+
+g + facet_wrap(~ year)
+```
+
+Accordingly, you can arrange the plots as you like, instead as a matrix in one row...
+
+```{r wrap-plots-2-rows}
+g + facet_wrap(~ year, nrow = 1)
+```
+
+... or even as a asymmetric grid of plots:
+
+```{r wrap-plots-2-rows-3-col}
+g + facet_wrap(~ year, ncol = 3) + theme(axis.title.x = element_text(hjust = .15))
+```
+
+
+##### Allow Axes to Roam Free
+
+The default for multi-panel plots in `{ggplot2}` is to use equivalent scales in each panel. But sometimes you want to allow a panels own data to determine the scale. This is often not a good idea since it may give your user the wrong impression about the data. But sometimes it is indeed useful and to do this you can set `scales = "free"`:
+
+```{r wrap-plots-scales-free}
+g + facet_wrap(~ year, nrow = 2, scales = "free")
+```
+
+Note that both, x and y axes differ in their range!
+
+
+#### Use `facet_wrap` with Two Variables
+
+The function `facet_wrap` can also take two variables:
 
 ```{r wrap-plots-two-vars, fig.height=7}
 g + facet_wrap(year ~ season, nrow = 4, scales = "free_x")
 ```
 
+When using `facet_wrap` you are still able to control the grid design: you can rearrange the number of plots per row and column and you can also let all axes roam free. In contrast, `facet_grid` will also take a `free` argument but will only let it roam free per column or row:
+
+```{r grid-plots-two-vars, fig.height=7}
+g + facet_grid(year ~ season, scales = "free_x")
+```
+
+
 
 ##### Modify Style of Strip Texts
 
-By using `theme`, you can modify the appearance of the strip text(i.e. the title for each facet) and the strip text boxes:
+By using `theme`, you can modify the appearance of the strip text (i.e. the title for each facet) and the strip text boxes:
 
 ```{r facet-modify-striptext, fig.height=3.5}
 g + facet_wrap(~ year, nrow = 1, scales = "free_x") +
@@ -1236,7 +1266,7 @@ element_grob.element_textbox_highlight <- function(element, label = "", ...) {
 }
 ```
 
-Now you can use it and specify for example all striptexts showing year:
+Now you can use it and specify for example all striptexts:
 
 ```{r facet-color-striptext-A, fig.height=8}
 g + facet_wrap(year ~ season, nrow = 4, scales = "free_x") +
@@ -1274,7 +1304,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 ```
 
 
-##### Create a Multi-Panel Plot Based on (Different) Plots
+##### Create a Panel of Different Plots
 
 There are several ways how plots can be combined. The easiest approach in my opinion is the [`{patchwork}` package](https://github.com/thomasp85/patchwork) by Thomas Lin Pedersen:
 
@@ -1306,7 +1336,7 @@ And also nested plots are possible!
 (g + p2) / p1
 ```
 
-(Note the alignment of the plots even though only one row contains a legend.)
+(Note the alignment of the plots even though only one plot includes a legend.)
 
 Alternatively, the [`{cowplot}` package](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html) by Claus Wilke provides the functionality to combine multiple plots (and lots of other good utilities):
 
@@ -1323,7 +1353,7 @@ grid.arrange(g, p1, p2,
              layout_matrix = rbind(c(1, 2), c(3, 3)))
 ```
 
-The same idea of defining a layout can be used with `{patchwork}` as well which allows to create complex compositions:
+The same idea of defining a layout can be used with `{patchwork}` which allows creating complex compositions:
 
 ```{r combine-plots-patchwork-layout, fig.width=12, fig.height=8}
 layout <- "
@@ -2459,18 +2489,18 @@ Now we put the resulting matrix in **long** format using the `pivot_longer()` fu
 ```{r melt-corr-matrix, echo=-3}
 corm <- corm %>%
   pivot_longer(
-    cols = -rowname,
+    cols = -term,
     names_to = "colname",
     values_to = "corr"
   ) %>%
-  mutate(rowname = fct_inorder(rowname),
+  mutate(rowname = fct_inorder(term),
          colname = fct_inorder(colname))
 
 corm
 ```
 
 For the plot we will use `geom_tile()` for the heatmap and `geom_text()` for the labels:
-
+ 
 ```{r tile-corr-plot}
 ggplot(corm, aes(rowname, fct_rev(colname),
                  fill = corr)) +
