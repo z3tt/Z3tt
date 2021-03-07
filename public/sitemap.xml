@@ -1,254 +1,150 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://cedricscherer.com/tags/correlaid/</loc>
+    <loc>/tags/correlaid/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/</loc>
+  </url><url>
+    <loc>/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/dataviz/</loc>
+  </url><url>
+    <loc>/tags/dataviz/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/ggplot2/</loc>
+  </url><url>
+    <loc>/tags/ggplot2/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</loc>
+  </url><url>
+    <loc>/2021/01/01/review-2020-personal-dataviz-highlights/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/post/</loc>
+  </url><url>
+    <loc>/post/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/r/</loc>
+  </url><url>
+    <loc>/tags/r/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/rstudio-table-contest/</loc>
+  </url><url>
+    <loc>/tags/rstudio-table-contest/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/</loc>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/tidytuesday/</loc>
+  </url><url>
+    <loc>/tags/tidytuesday/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/workshop/</loc>
+  </url><url>
+    <loc>/tags/workshop/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/gt/</loc>
+  </url><url>
+    <loc>/tags/gt/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/imdb/</loc>
+  </url><url>
+    <loc>/tags/imdb/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/table/</loc>
+  </url><url>
+    <loc>/tags/table/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/tv-shows/</loc>
+  </url><url>
+    <loc>/tags/tv-shows/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</loc>
+  </url><url>
+    <loc>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/animations/</loc>
+  </url><url>
+    <loc>/tags/animations/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/covid-19/</loc>
+  </url><url>
+    <loc>/tags/covid-19/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/heatmap/</loc>
+  </url><url>
+    <loc>/tags/heatmap/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/maps/</loc>
+  </url><url>
+    <loc>/tags/maps/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/swdchallenge/</loc>
+  </url><url>
+    <loc>/tags/swdchallenge/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/</loc>
+  </url><url>
+    <loc>/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/climate-change/</loc>
+  </url><url>
+    <loc>/tags/climate-change/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/</loc>
+  </url><url>
+    <loc>/2020/01/09/australian-bushfires-comparison-europe-world/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/nature/</loc>
+  </url><url>
+    <loc>/tags/nature/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/weather/</loc>
+  </url><url>
+    <loc>/tags/weather/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/12/30/best-tidytuesday-2019/</loc>
+  </url><url>
+    <loc>/2019/12/30/best-tidytuesday-2019/</loc>
     <lastmod>2019-12-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/berlin/</loc>
+  </url><url>
+    <loc>/tags/berlin/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/christmas/</loc>
+  </url><url>
+    <loc>/tags/christmas/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/12/24/merry-white-christmas-berlin-snow-history/</loc>
+  </url><url>
+    <loc>/2019/12/24/merry-white-christmas-Berlin-snow-history/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/gganimate/</loc>
+  </url><url>
+    <loc>/tags/gganimate/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/tidyverse/</loc>
+  </url><url>
+    <loc>/tags/tidyverse/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
+  </url><url>
+    <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/announcement/</loc>
+  </url><url>
+    <loc>/tags/announcement/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</loc>
+  </url><url>
+    <loc>/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</loc>
+  </url><url>
+    <loc>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/tutorial/</loc>
+  </url><url>
+    <loc>/tags/tutorial/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/tags/ggplot-evolution/</loc>
+  </url><url>
+    <loc>/tags/ggplot-evolution/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</loc>
+  </url><url>
+    <loc>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/05/06/tidytuesday_intro/</loc>
+  </url><url>
+    <loc>/2019/05/06/tidytuesday_intro/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/2019/05/04/welcome/</loc>
+  </url><url>
+    <loc>/2019/05/04/welcome/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/search/placeholder/</loc>
+  </url><url>
+    <loc>/top/about/</loc>
+  </url><url>
+    <loc>/top/conduct/</loc>
+  </url><url>
+    <loc>/top/dataviz/</loc>
+  </url><url>
+    <loc>/top/impressum/</loc>
+  </url><url>
+    <loc>/top/links/</loc>
+  </url><url>
+    <loc>/top/projects/</loc>
+  </url><url>
+    <loc>/top/pubs/</loc>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/search/</loc>
+  </url><url>
+    <loc>/top/</loc>
   </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/search/placeholder/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/conduct/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/dataviz/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/impressum/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/links/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/pubs/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/search/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cedricscherer.com/top/</loc>
-  </url>
-  
 </urlset>

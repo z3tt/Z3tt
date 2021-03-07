@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CorrelAid on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/correlaid/</link>
+    <link>/tags/correlaid/</link>
     <description>Recent content in CorrelAid on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://cedricscherer.com/tags/correlaid/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/correlaid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Personal Data Visualization Year 2020</title>
-      <link>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</link>
+      <link>/2021/01/01/review-2020-personal-dataviz-highlights/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</guid>
+      <guid>/2021/01/01/review-2020-personal-dataviz-highlights/</guid>
       <description>Uff, what a year! 366 days ago, most people did not expect 2020 to be that exhausting, emotionally and physically (and let&amp;rsquo;s hope for a better 2021—happy new year to you!). COVID19 was literally everywhere, whether in the media or affecting your personal life, and made it hard to focus and keep social contacts. Plus all the other things that were happening: starting off with the bushfires in Australia, the massive series of police brutality protests after the shocking death of George Floyd, tiring and everlasting Brexit negotiations, Trump&amp;rsquo;s madness reaching new levels, and all the news and uncertainty around COVID19 mutations circulating at the end of 2020.</description>
     </item>
     
