@@ -313,7 +313,7 @@
         window.disqus_config = function () {
             this.page.identifier = _.opts.identifier;
             this.page.title = _.opts.title;
-            this.page.url = _.opts.link;
+            this..Permalink = _.opts.link;
             this.callbacks.onReady.push(function() {
                 _.stat.current = 'disqus';
                 _.stat.disqusLoaded = true;

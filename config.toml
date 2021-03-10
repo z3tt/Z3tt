@@ -40,11 +40,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Data Visualization Designer • Computational Ecologist • Proud Dad"
+  sidebar_about_description = "Always coding. Passionate about design. Worried about nature. Proud dad."
   sidebar_avatar = "img/cedric_round.png"
 
   featured_tags = true
   featured_condition_size = 1
+
+  support_button = true
 
   # Baidu Analytics
   ba_track_id = ""
@@ -161,7 +163,7 @@ package = "netlify-plugin-rss"
   # required configs, customize as needed
   dirToScan = "/posts" # a subfolder to scan. "/" to scan all
   authorName = "Cédric"
-  site_url = "https://cedricscherer.netlify.app"
+  site_url = "https://cedricscherer.com"
   title = "Cédric Scherer RSS Feed"
   rssDescription = "RSS Feed of the blog by Cédric Scherer focussing on Data Visualization and Computational Ecology"
   categories = ['Data Visualization', 'Infographics', 'Data Science', 'R Programming', 'Computaitonal Ecology']
