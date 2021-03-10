@@ -104,6 +104,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [[params.friend_link]]
   title = "Matthias Stahl"
   href =  "https://www.higsch.com/"
+  [[params.friend_link]]
+  title = "Heureka Labs"
+  href =  "https://www.heurekalabs.org/"
 
   [[params.bookmark_link]]
   title = "Fundamentals of DataViz"
