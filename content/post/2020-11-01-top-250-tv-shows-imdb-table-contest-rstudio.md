@@ -15,7 +15,7 @@ tags:
     - ggplot2
     - TV shows
     - IMDb
-    - RStudio Table Contest
+    - contest
 showtoc: false
 ---
 

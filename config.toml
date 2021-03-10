@@ -60,7 +60,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   reward = false
 
   friends = true
-  bookmarks = true
+  bookmarks = false
   about_me = true
 
   [params.social]
@@ -101,6 +101,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [[params.friend_link]]
   title = "Marco Sciaini"
   href =  "https://marcosci.github.io/"
+  [[params.friend_link]]
+  title = "Matthias Stahl"
+  href =  "https://www.higsch.com/"
 
   [[params.bookmark_link]]
   title = "Fundamentals of DataViz"
