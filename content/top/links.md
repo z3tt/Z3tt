@@ -1,13 +1,7 @@
 ### Content
 
-* [Rstats](#rstats)
-  + [{tidyverse}](#tidy)
-  + [{ggplot2}](#gg)
-  + [Spatial Data](#spat)
 * [DataViz](#dataviz)
-  + [Colors](#cols)
-  + [Chart Types](#charts)
-  + [Mapping](#maps)
+* [Rstats](#rstats)
 * [Interesting Personal Blogs](#blogs)
 
 ### Rstats {#rstats}
@@ -37,16 +31,20 @@
 
 ### DataViz {#dataviz}
 
-* ["Data Visualization"](http://socviz.co/) — free online book by Kieran Healy  
-* ["Fundamentals of Data Visualization"](https://serialmentor.com/dataviz/) — free online book by Claus Wilke
-* ["Visualizing Data"](http://www.visualisingdata.com/) — homepage by Andy Kirk
-* ["Visual Cinnamon"](https://www.visualcinnamon.com/) — homepage by Nadieh Bremer
 * [Explorable Explanations](https://explorabl.es/)
-* ["Nightingale"](https://medium.com/nightingale) — blog by the Data Visualization Society on Medium
+* ["Nightingale"](https://medium.com/nightingale) — journal by the Data Visualization Society
+* [Our World in Data](https://ourworldindata.org/blog) — "data on the world’s largest problems"
 * ["Multiple Views: Visualization Research Explained"](https://medium.com/multiple-views-visualization-research-explained) — DataViz blog on Medium
 * [Graphics Principles Cheatsheet](https://graphicsprinciples.github.io/)
 
-##### Colors {#cols}
+##### Open-Access Books {#books}
+
+* ["Data Visualization"](http://socviz.co/) by Kieran Healy  
+* ["Fundamentals of Data Visualization"](https://serialmentor.com/dataviz/) by Claus Wilke
+* ["Hands-On Data Visualization"](https://handsondataviz.org/) by Jack Dougherty & Ilya Ilyankou
+
+
+##### Color Choice {#cols}
 
 * [Viz Palette](https://projects.susielu.com/viz-palette?colors=["#ffd700","#ffb14e","#fa8775","#ea5f94","#cd34b5","#9d02d7","#0000ff"]&backgroundColor="white"&fontColor="black"&mode="normal") — colors in action (plus colorblind check)
 * [Color Space](https://mycolor.space/) — color palette generator
@@ -68,24 +66,22 @@
 ##### Mapping {#maps}
 
 * [Spatial.ly Blog](http://spatial.ly/) by James Cheshire
-* [Bivariate Chloropleth Maps](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)
+* [Bivariate Choropleth Maps](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)
 * [Value-by-Alpha Maps](http://andywoodruff.com/blog/value-by-alpha-maps/)
 
 
-### Interesting Personal Blogs<br>(Random Topics, Random Order 🤷) {#blogs}
+### Interesting Personal Blogs<br>(Random Topics, Alphabetic Order 🤷) {#blogs}
 
-* [Chisato](https://chichacha.netlify.com/) — colors & art with `{ggplot2}`
-* [Dominic Roye](https://dominicroye.github.io/en/) — mapping with `{ggplot2}`
-* [David Smale](https://davidsmale.netlify.com/) — `{shiny}`, `{ggplot2}` and more
 * [Andy Kirk](https://www.visualisingdata.com/blog/) — all about DataViz!
-* [Maëlle Salmon](https://masalmon.eu/) — "goofing around with R"
-* [David Robinson](http://varianceexplained.org/) — data science using the `{tidyverse}`
-* [Charlotte Robinson](https://robinsones.github.io/)
 * [Bruno Rodrigues](https://www.brodrigues.co/) — data science in R and Python
-* [James Cheshire](https://spatial.ly/) — beautiful mapping
-* [Ilya Kashnitsky](https://ikashnitsky.github.io/) — maps & demography in R
-* [Hugo Toscano](https://toscano84.github.io/) — data science in R
+* [Charlotte Robinson](https://robinsones.github.io/)
+* [Chisato](https://chichacha.netlify.com/) — colors & art with `{ggplot2}`
+* [David Robinson](http://varianceexplained.org/) — data science using the `{tidyverse}`
+* [David Smale](https://davidsmale.netlify.com/) — `{shiny}`, `{ggplot2}` and more
+* [Dominic Roye](https://dominicroye.github.io/en/) — mapping with `{ggplot2}`
 * [Geoff Boeing](https://geoffboeing.com) — Python & GIS
-* [Our World in Data](https://ourworldindata.org/blog) — "data on the world’s largest problems"
-* [Dynamic Ecology](https://dynamicecology.wordpress.com/) — population, community & evolutionary ecology
-* [Florian Hartig](https://theoreticalecology.wordpress.com/) — ecology, evolution & statistics
+* [Hugo Toscano](https://toscano84.github.io/) — data science in R
+* [Ilya Kashnitsky](https://ikashnitsky.github.io/) — maps & demography in R
+* [James Cheshire](https://spatial.ly/) — beautiful mapping
+* [Maëlle Salmon](https://masalmon.eu/) — "goofing around with R"
+* [Nadieh Bremer](https://www.visualcinnamon.com) — wonderful visualizations and art, definitely my personal DataViz hero
