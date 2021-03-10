@@ -53,26 +53,6 @@
                    </a>
                </li>
                {{ end }}
-               {{ with .Site.Params.social.zhihu }}
-               <li>
-                   <a target="_blank" href="{{ . }}">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa  fa-stack-1x fa-inverse">知</i>
-                       </span>
-                   </a>
-               </li>
-               {{ end }}
-               {{ with .Site.Params.social.weibo }}
-               <li>
-                   <a target="_blank" href="{{ . }}">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               {{ end }}
                {{ with .Site.Params.social.facebook }}
                <li>
                    <a target="_blank" href="{{ . }}">
@@ -83,13 +63,13 @@
                    </a>
                </li>
                {{ end }}
-               {{ with .Site.Params.social.wechat }}
+               {{ with .Site.Params.social.behance }}
                <li>
-                   <a target="_blank" href="{{ . | relURL}}">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                       </span>
+                   <a target="_blank" href="{{ . }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
                    </a>
                </li>
                {{ end }}
@@ -119,16 +99,6 @@
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                            </span>
-                   </a>
-               </li>
-               {{ end }}
-               {{ with .Site.Params.social.behance }}
-               <li>
-                   <a target="_blank" href="{{ . }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
                             </span>
                    </a>
                </li>

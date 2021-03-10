@@ -4,16 +4,16 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                   {{ if .Site.Params.social.rss }}
-                   <li>
+                    {{ if .Site.Params.social.rss }}
+                    <li>
                        <a href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
                            </span>
                        </a>
-                   </li>
-                   {{ end }}
+                    </li>
+                    {{ end }}
                     {{ with .Site.Params.social.email }}
                     <li>
                         <a href="mailto:{{ . }}">
@@ -23,8 +23,7 @@
                             </span>
                         </a>
                     </li>
-		    {{ end }}
-
+		                {{ end }}
                     {{ with .Site.Params.social.twitter }}
                     <li>
                         <a href="{{ . }}">
@@ -35,27 +34,6 @@
                         </a>
                     </li>
                     {{ end }}
-                    {{ with .Site.Params.social.zhihu }}
-                    <li>
-                        <a target="_blank" href="{{ . }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-		    {{ end }}
-                    {{ with .Site.Params.social.weibo }}
-                    <li>
-                        <a target="_blank" href="{{ . }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		    {{ end }}
-
                     {{ with .Site.Params.social.facebook }}
                     <li>
                         <a target="_blank" href="{{ . }}">
@@ -65,19 +43,7 @@
                             </span>
                         </a>
                     </li>
-		    {{ end }}
-
-		    <!-- Huabing: add wechat QR code link -->
-                    {{ with .Site.Params.social.wechat }}
-                    <li>
-                        <a target="_blank" href="{{ . | relURL }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		    {{ end }}
+		                {{ end }}
                     {{ with .Site.Params.social.github }}
                     <li>
                         <a target="_blank" href="{{ . }}">
@@ -87,7 +53,17 @@
                             </span>
                         </a>
                     </li>
-		    {{ end }}
+		                {{ end }}
+                    {{ with .Site.Params.social.behance }}
+                    <li>
+                        <a target="_blank" href="{{ . }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {{ end }}
                     {{ with .Site.Params.social.linkedin }}
                     <li>
                         <a target="_blank" href="{{ . }}">
@@ -97,7 +73,7 @@
                             </span>
                         </a>
                     </li>
-		    {{ end }}
+		                {{ end }}
                     {{ with .Site.Params.social.medium }}
                     <li>
                         <a target="_blank" href="{{ . }}">
@@ -107,18 +83,7 @@
                             </span>
                         </a>
                     </li>
-            {{ end }}
-
-                        {{ with .Site.Params.social.behance }}
-                        <li>
-                            <a target="_blank" href="{{ . }}">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-    		    {{ end }}
+                    {{ end }}
                 </ul>
                 <div align="center">
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji="🌯"  data-font="Cookie" data-text="Buy me a kebab" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
