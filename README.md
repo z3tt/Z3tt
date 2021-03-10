@@ -14,6 +14,7 @@
 <h3 align="center">
   :sparkles: Data Visualization and Computational Ecology :paw_prints:
 </h3>
+<br><br>
 
 ![](https://d33wubrfki0l68.cloudfront.net/6f095b7da4e4cdd76a8007234931ab5903e96765/49936/img/dataviz_collage2.png) 
 
