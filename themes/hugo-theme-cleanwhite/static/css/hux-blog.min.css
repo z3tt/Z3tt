@@ -47,7 +47,7 @@
 
 .sidebar-container{
   color:#676767;
-  font-size:15px
+  font-size:14px
 }
 .sidebar-container h5{
   color:gray;
@@ -73,7 +73,7 @@
   border-color:#28a87d
 }
 .sidebar-container .short-about img{
-  width:80%;
+  width:90%;
   display:block;
   border-radius:5px;
   margin-bottom:20px
