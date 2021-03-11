@@ -77,9 +77,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   #medium        = "full profile url in medium"
   #pinterest     = "full profile url in pinterest"
   behance        = "https://www.behance.net/cedscherer"
-                icon = "orcid"
-                icon_pack = "ai"
-                link = "https://orcid.org/0000-000X-XXXX-XXXX"
 
   #[[params.friend_link]]
   #title = "DataVizard"
