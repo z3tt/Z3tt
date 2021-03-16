@@ -3,7 +3,7 @@ URL: /2020/11/01/imdb-top-250-series-table-contest-rstudio/
 title: What do I binge next? A detailed overview of the top 250 TV shows
 author: Cédric
 date: "2020-11-01"
-image: img/banner/fly_RichardStrozynski.jpg
+image: img/banner/imdb-southpark-artsy.png
 twitterImg: img/banner/fly_RichardStrozynski.png
 layout: post
 description: "My contribution to the RStudio table contests visualizing relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying all the details I and my friends care about including in-line visualizations of rating trends and average runtime."
@@ -19,7 +19,7 @@ tags:
 showtoc: false
 ---
 
-With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote ["Stammtisch"](https://debeste.de/129626/Stammtisch) with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.
+**With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote ["Stammtisch"](https://debeste.de/129626/Stammtisch) with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.**
 
 In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the [original one on IMDb](https://www.imdb.com/chart/toptv/) as [my contribution](https://community.rstudio.com/t/what-do-i-binge-next-an-overview-of-the-top-imdb-tv-shows-table-contest-submission/86409) to the ongoing [RStudio table contest](https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/):
 

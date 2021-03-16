@@ -3,7 +3,7 @@ URL: /2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/
 title: The Worst Days of the Coronavirus Pandemic So Far
 author: Cédric
 date: "2020-03-31"
-image: img/banner/corona-giacomo-carra.jpg
+image: img/banner/corona-artsy.png
 twitterImg: img/banner/corona-giacomo-carra.png
 layout: post
 description: "Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’ has become a global pandemic. I created an animated timeseries of daily deaths relative to each country's worst day so far to visualize the first wave of COVID-19."
@@ -17,7 +17,6 @@ tags:
     - SWDchallenge
 showtoc: false
 ---
-<p style="font-size:14px">Header image by <a href="https://unsplash.com/photos/gf6UDwpl0ac">Giacomo Carra via Unsplash</a></p>
 
 <style>
 p.small {
