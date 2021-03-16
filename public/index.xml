@@ -22,7 +22,9 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
-      <description>With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote &amp;ldquo;Stammtisch&amp;rdquo; with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.</description>
+      <description>Update December 24th 2020: My table made it into the &amp;ldquo;Honourable Mentions&amp;rdquo; section. Congrats to the winner Niels van der Velden and all the others that are mentioned!
+In consequence, I decided to visualize the top 250 TV shows according to IMDb users as a more helpful table then the original one on IMDb as my contribution to the ongoing RStudio table contest:
+ Tables are a fantastic way to communicate lists of quantitative and qualitative information.</description>
     </item>
     
     <item>

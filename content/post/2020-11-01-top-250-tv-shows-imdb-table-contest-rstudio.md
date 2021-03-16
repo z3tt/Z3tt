@@ -19,7 +19,7 @@ tags:
 showtoc: false
 ---
 
-**With the increasing number of series available thanks to VoD services in combination with limited social events during 2020 thanks to COVID19, finding binge-worthy TV shows becomes an important task and a regular topic at our weekly remote ["Stammtisch"](https://debeste.de/129626/Stammtisch) with my friends. During these discussions, I realized that most important for deciding which show to watch is not only the genre, but especially the overall performance when the show progresses.**
+<a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/"><i style='color:#28a87d;'><b>Update December 24<sup>th</sup> 2020:</b> My table made it into the <b>"Honourable Mentions"</b> section. Congrats to the winner Niels van der Velden and all the others that are mentioned!</i></a>
 
 In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the [original one on IMDb](https://www.imdb.com/chart/toptv/) as [my contribution](https://community.rstudio.com/t/what-do-i-binge-next-an-overview-of-the-top-imdb-tv-shows-table-contest-submission/86409) to the ongoing [RStudio table contest](https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/):
 
@@ -27,8 +27,6 @@ In consequence, I decided to visualize the top  250 TV shows according to IMDb u
 
 <img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top250_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app/img/table-contest/IMDb_Top250.png', 'blank');"/>
 <p class="small" align="center"><i style="color:#8c8c8c;">Click on the preview to see the full table of all 250 TV shows.</i></p>
-
-<i style='color:#28a87d;'><b>Update December 24<sup>th</sup> 2020:</b> My table made it into the <b><a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/">"Honourable Mentions"</a></b> section. Congrats to the winner Niels van der Velden and all the others that are mentioned!</i>
 
 ##### What's shown?
 
