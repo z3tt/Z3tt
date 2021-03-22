@@ -44,7 +44,7 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 * [Education & Professional Expericence](#career)
 * [Teaching](#teach)
 * <a href="https://cedricscherer.netlify.com/top/pubs/">Publications & Presentations</a>
-* [Awards & Honours](#award)
+* [Awards & Honors](#award)
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
@@ -186,11 +186,11 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
 <ul style="font-size:15px;">
 
-  <li><b><a href="https://besmovesig.wordpress.com/blog-2/">Winner “Mapping Movements” Contest 2021</a></b> in the category "Pretty Map" plus Runner-Up in the category "R Maps"</li>
+  <li><b><a href="https://besmovesig.wordpress.com/blog-2/">Winner “Mapping Movements” Contest 2021</a></b> in the category "Pretty Map" plus Runner-Up in the category “R Maps” for the <a href="https://raw.githubusercontent.com/Z3tt/Cheetah-Map/main/plots/CheetahMap_rcarto_sd.png">Cheetah map</a></li>
 
-  <li><b><a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/">Honorable Mention RStudio Contest 2020</a></b>, designing a static table</li>
+  <li><b><a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/">Honorable Mention RStudio Contest 2020</a></b>, designing a <a href="https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/">static table</a></li>
 
-  <li><b><a href="https://correlaid.org/blog/correlaidx-challenge/">Winner “CorrelAidX Challenge 2020”</a></b>, designing an interactive <a href="">Shiny app</a></li>
+  <li><b><a href="https://correlaid.org/blog/correlaidx-challenge/">Winner “CorrelAidX Challenge 2020”</a></b>, designing an interactive <a href="https://cedric-scherer.shinyapps.io/xberlin/">Shiny app</a></li>
 
   <li><b>PostDoc Stipend</b>, funded by the University of Potsdam (9 month full position)</li>
 
