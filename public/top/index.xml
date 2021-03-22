@@ -33,8 +33,8 @@ I define unacceptable content as anything included or linked to that:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/dataviz/</guid>
-      <description>A selection of data visualizations have produced for personal projects and as challenge contributions using the {ggplot2} package in the programming language R. All visualizations are the result of the code without any post-processing.
- #TidyTuesday Contributions #30DayMapChallenge Contributions #MakeoverMonday Contributions #SWDchallenge Contributions RStudio Table Contest 2020   You need a visualization? Let&amp;rsquo;s get in touch! Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
+      <description>A selection of data visualizations I have produced for personal projects and as challenge contributions using the {ggplot2} package in the programming language R. All visualizations are the result of the code without any post-processing.
+ #TidyTuesday Contributions #30DayMapChallenge Contributions #MakeoverMonday Contributions #SWDchallenge Contributions RStudio Table Contest   You need a visualization? Let&amp;rsquo;s get in touch! Contributions to #TidyTuesday #TidyTuesday is a weekly data project aimed at the R ecosystem and the {tidyverse} package bundle to wrangle, explore and visualize the data set that is provided by the R4DS Online Learning Community.</description>
     </item>
     
     <item>
@@ -81,10 +81,11 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/pubs/</guid>
-      <description>Publications | Invited Talks | Conference Contributions | R Packages
+      <description>Publications | Invited Talks | Conference Presentations | R Packages
 You can also find me on Google Scholar and ResearchGate.
 My ORCID ID is 0000-0003-0465-2543.
-Peer-Reviewed Publications Accepted  V. Radchuk, S. Kramer-Schadt, U. Berger, C. Scherer, P. Backmann, V. Grimm &amp;amp; S. Kramer-Schadt (accepted) Individual-based models. Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez &amp;amp; M. Gamelon.  2020   C. Scherer, V.</description>
+Peer-Reviewed Publications Accepted   T. Kürschner, C. Scherer, V. Radchuk, N. Blaum &amp;amp; S. Kramer-Schadt (accepted) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. Ecology and Evolution.
+  V. Radchuk, S. Kramer-Schadt, U. Berger, C. Scherer, P. Backmann, V.</description>
     </item>
     
   </channel>

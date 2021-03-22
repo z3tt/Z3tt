@@ -1,11 +1,11 @@
-A selection of data visualizations  have produced for personal projects and as challenge contributions using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
+A selection of data visualizations I have produced for personal projects and as challenge contributions using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
 
 
 * [#TidyTuesday Contributions](#tidytuesday)
 * [#30DayMapChallenge Contributions](#mapchallenge)
 * [#MakeoverMonday Contributions](#makeovermonday)
 * [#SWDchallenge Contributions](#swdchallenge)
-* [RStudio Table Contest 2020](#tablecontest)
+* [RStudio Table Contest](#tablecontest)
 <br>
 
 ##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
@@ -103,30 +103,22 @@ A selection of data visualizations  have produced for personal projects and as c
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_21/2020_21_BeachVolleyball.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_21/2020_21_BeachVolleyball.png', 'blank');"/>
 
-##### Hotel Bookings (Antonio, Almeida & Nunes 2019)
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_07/2020_07_HotelBookings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_07/2020_07_HotelBookings.png', 'blank');"/>
-
 ##### Plants in Danger
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_34/2020_34_ExtinctPlants_2_poster_legend_Oceania_1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_34/2020_34_ExtinctPlants_2_poster_legend_Oceania_1.png', 'blank');"/>
-
-##### Most Popular Cocktails 2020
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_22/2020_22_Cocktails.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_22/2020_22_Cocktails.png', 'blank');"/>
 
 ##### Volcano Eruptions
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_20/2020_20_Volcanoes_center2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100654239/Volcanic-Eruptions', 'blank');"/>
 
-##### "The Office" IMDb Ratings
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png', 'blank');"/>
-
 
 #### UNESCO's "e-Atlas of Teachers"
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png', 'blank');"/>
+
+##### "The Office" IMDb Ratings
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png', 'blank');"/>
 
 ##### NYC Squirrels
 
@@ -134,7 +126,7 @@ A selection of data visualizations  have produced for personal projects and as c
 
 ##### Meteorites
 
-<img src="https://cedricscherer.netlify.app/img/tidytuesday/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app/img/tidytuesday/2019_24_Meteorites.png', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_24/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_24/2019_24_Meteorites.png', 'blank');"/>
 <br>
 
 
@@ -176,17 +168,17 @@ A selection of data visualizations  have produced for personal projects and as c
 
 <img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day12_Movement/Movement_BerlinByBike.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day12_Movement', 'blank');"/>
 
-##### Experimental
+##### Zones
 
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day29_Experimental/Experimental_PopIntervals.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day29_Experimental/Experimental_PopIntervals.png', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day17_Zones/Zones_TimezonesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day17_Zones', 'blank');"/>
 
 ##### Places
 
 <img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day16_Places/Places_ExtremesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day16_Places/Places_ExtremesEarth.png', 'blank');"/>
 
-##### Zones
+##### Experimental
 
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day17_Zones/Zones_TimezonesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day17_Zones', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day29_Experimental/Experimental_PopIntervals.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day29_Experimental/Experimental_PopIntervals.png', 'blank');"/>
 <br>
 
 
@@ -202,10 +194,6 @@ A selection of data visualizations  have produced for personal projects and as c
 ##### Suicides in UK
 
 <img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_43/2019_43_suicide_deaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_43/2019_43_suicide_deaths.png', 'blank');"/>
-
-##### Phone Use
-
-<img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_34/2019_34_phone-use.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_34_phone-use.png', 'blank');"/>
 <br>
 
 
@@ -220,7 +208,7 @@ A selection of data visualizations  have produced for personal projects and as c
 
 ##### Topic: Get Animated!
 
-<img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_03/corona_begin.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_03/corona_begin.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/', 'blank');"/>
 
 ##### Topic: Visualizing Uncertainty
 
@@ -228,11 +216,11 @@ A selection of data visualizations  have produced for personal projects and as c
 <br>
 
 
-## RStudio Table Contest 2020 {#tablecontest}
+## RStudio Table Contest {#tablecontest}
 
-##### Top 250 TV Shows on IMDb
+##### Top 250 TV Shows on IMDb (Contribution 2020)
 
-<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
 <br>
 
 <hr>

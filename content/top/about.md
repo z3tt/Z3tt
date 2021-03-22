@@ -62,10 +62,11 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
     <li style="font-size:13px;"><i>Services:</i> Reproducible data analysis and graphic design, cartography, statistical modeling, consulting, workshops (Tools: R, SQL, html, CSS)</li>
   </ul>
 
-  <li style="color:#282828;font-style:italic;"><b>PostDoc in Computational Ecology</b> (since 2019)</li>
+  <li style="color:#282828;font-style:italic;"><b>Scientific Researcher (PostDoc)</b> (since 2019)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, lab support and supervision (Tools: R, QGIS, NetLogo)</li>
+    <li style="font-size:13px;"><i>Topics:</i>Movement ecology, population dynamics, disease ecology, coexistence theory</li>
+    <li style="font-size:13px;"><i>Tasks:</i> Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision (Tools: R, QGIS, NetLogo)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Ph.D. in Ecology</b> (2015–2019)</li>
@@ -235,6 +236,6 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
   <li><b>Functional Roles:</b> Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019), spokesperson in the research training group “BioMove” (2015–2018), part of the MCED award committee (since 2015)</li>
 
-  <li><b>Memberships:</b> Ecological Society of Germany, Austria and Switzerland (GfOe), SIG Young Modellers in Ecology (YoMos), SIG Computational Ecology</li>
+  <li><b>Memberships:</b> <a href="https://www.datavisualizationsociety.com/">Data Visualization Society</a>, <a href="https://correlaid.org/">CorrelAid</a>, <a href="https://www.rfordatasci.com/"><i>R for Data Science</i> Online Learning Community</a></li>
 
 </ul>
