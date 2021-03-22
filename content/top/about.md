@@ -158,21 +158,21 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 
 <ul style="font-size:15px;">
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Training “Data Visualisation Techniques for Data Scientists</code>“<br><span style="color:#989898;font-size:13px;">(<a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Training “Data Visualisation Techniques for Data Scientists</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: Data Visualization Principles and Beautiful Plotting in R“<br><span style="color:#989898;font-size:13px;">(<a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: Data Visualization Principles and Beautiful Plotting in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Data Visualization in R with <code>{ggplot2}</code>“<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, 5 days, Berlin/remote, Mar and Nov 2020)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Data Visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, 5 days, Berlin/remote, Mar and Nov 2020)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Scientific Data Visualization: Principles & Good Practices“<br><span style="color:#989898;font-size:13px;">(Leibniz Institute of Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Scientific Data Visualization: Principles & Good Practices”<br><span style="color:#989898;font-size:13px;">(Leibniz Institute of Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Introduction to Ecological Modelling”<br><span style="color:#989898;font-size:13px;">(Department of Theoretical Ecology, 5 days, University of Potsdam, 2016)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Practical Workshop "Zoology"<br><span style="color:#989898;font-size:13px;">(Department for Zoology, University of Potsdam, 2009–2014)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Practical Workshop “Zoology”<br><span style="color:#989898;font-size:13px;">(Department for Zoology, University of Potsdam, 2009–2014)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Research & Presentation“<br><span style="color:#989898;font-size:13px;">(Department for Didactics of Biology, University of Potsdam, 2013–2014)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Research & Presentation”<br><span style="color:#989898;font-size:13px;">(Department for Didactics of Biology, University of Potsdam, 2013–2014)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Field workshop “Systematic Zoology II“<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, 2013–2014)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Field workshop “Systematic Zoology II”<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, 2013–2014)</span></li>
 
 </ul>
 
@@ -182,19 +182,19 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
 
-##### Awards & Honours {#award}
+##### Awards & Honors {#award}
 
 <ul style="font-size:15px;">
 
-  <li><b><a href="https://besmovesig.wordpress.com/blog-2/">Winner "Mapping Movements" Contest 2021</a></b> in the category "Pretty Map" plus Runner-Up in the category "R Maps"</li>
+  <li><b><a href="https://besmovesig.wordpress.com/blog-2/">Winner “Mapping Movements” Contest 2021</a></b> in the category "Pretty Map" plus Runner-Up in the category "R Maps"</li>
 
   <li><b><a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/">Honorable Mention RStudio Contest 2020</a></b>, designing a static table</li>
 
-  <li><b><a href="https://correlaid.org/blog/correlaidx-challenge/">Winner CorrelAidX Challenge 2020</a></b>, designing an interactive Shiny app</li>
+  <li><b><a href="https://correlaid.org/blog/correlaidx-challenge/">Winner “CorrelAidX Challenge 2020”</a></b>, designing an interactive <a href="">Shiny app</a></li>
 
   <li><b>PostDoc Stipend</b>, funded by the University of Potsdam (9 month full position)</li>
 
-  <li><b>Best Poster</b>, GRC "Movement Ecology of Animals", Ventura, CA, USA (March 2017)</li>
+  <li><b>Best Poster</b>, GRC “Movement Ecology of Animals”, Ventura, CA, USA (March 2017)</li>
 
 </ul>
 
@@ -205,11 +205,11 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
   <li><b>Languages:</b> German <i>(native)</i>, English <i>(fluent)</i></li>
 
-  <li><b>Programming:</b> R, NetLogo, SQL/SQLite, C++, Python, CSS, html</li>
+  <li><b>Programming:</b> R, NetLogo, CSS, html, SQL/SQLite, Python, C++</li>
 
   <li><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), SPSS, Excel</li>
 
-  <li><b>GIS:</b> R (e.g. sf, stars, sp, raster, terra, rgdal, RQGIS), QGIS, GRASS, ArcGIS</li>
+  <li><b>GIS:</b> R (e.g. sf, stars, terra, raster, rgdal, rgeos, sp), QGIS, GRASS, ArcGIS</li>
 
   <li><b>Visualization:</b> R (e.g. ggplot2, shiny, plotly, echarts4r, leaflet, tmap, gganimate, highcharter), DataWrapper, RAWgraphs, CartoDB</li>
 
@@ -226,8 +226,8 @@ see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</
 
   <li><b>Functional Roles:</b> Speaker of the SIG “Young Modellers in Ecology (YoMos)” (2015–2019); spokesperson in the research training group “BioMove” (2015–2018); part of the MCED award committee (2015–2019)</li>
 
-  <li><b>Memberships:</b> <a href="https://www.datavisualizationsociety.com/">Data Visualization Society</a>; <a href="https://correlaid.org/">CorrelAid</a>; <a href="https://www.rfordatasci.com/">R for Data Science Online Learning Community</a></li>
+  <li><b>Memberships:</b> <a href="https://correlaid.org/">CorrelAid</a> volunteer (since 2019); <a href="https://www.datavisualizationsociety.com/">Data Visualization Society</a> (since 2019); <a href="https://www.rfordatasci.com/">“R for Data Science” Online Learning Community</a> (since 2018)</li>
 
-  <li><b>Conference Organisation:</b> 1<sup>st</sup> International BioMove Symposium" (2018); 11th–14th Workshop of the Young Modellers in Ecology (2016–2019); Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (2013)</li>
+  <li><b>Conference Organisation:</b> 11th–14th Workshop of the Young Modellers in Ecology (2016–2019); 1<sup>st</sup> International BioMove Symposium (2018); Annual Symposium of the Ecological Society of Germany, Austria & Switzerland (2013)</li>
 
 </ul>

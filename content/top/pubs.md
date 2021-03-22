@@ -20,7 +20,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style='font-variant:small-caps;'>B. Pietzsch, S. Fiedler, K.G.  Mertens, M. Richter, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, K. Widyastuti, M.-C. Wimmler, L. Zakharova & U. Berger</span> (2020) Metamodels for evaluating, calibrating and applying agent-based models: A review. [*Journal of Artificial Societies and Social Simulation* **23** (2):9](http://doi.org/10.18564/jasss.4274).
 
-- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (accepted)</span> When size matters: large yellowfin tuna (*Thunnus albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central–eastern Atlantic Ocean. [*Fisheries Research* **232**:105726](https://doi.org/10.1016/j.fishres.2020.105726).
+- <span style='font-variant:small-caps;'>C. Pecoraro, I. Zudaire, G. Galiberti, M. Romeo, H. Murua, C. Fruciano, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Tinti, N.C. Diaha, N. Bodin & E. Chassot</span> (2020)</span> When size matters: large yellowfin tuna (*Thunnus albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central–eastern Atlantic Ocean. [*Fisheries Research* **232**:105726](https://doi.org/10.1016/j.fishres.2020.105726).
 
 ##### 2019
 
