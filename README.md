@@ -14,7 +14,7 @@
 <h3 align="center">
   :sparkles: Data Visualization and Computational Ecology :man_technologist:
 </h3>
-<br><br>
+<br>
 
 ![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/01_part_to_whole/01_part_to_whole_banner.png)
 
