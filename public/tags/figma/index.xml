@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Figma on Cédric Scherer</title>
+    <link>/tags/figma/</link>
+    <description>Recent content in Figma on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/figma/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Contributions to the First 30DayChartChallenge</title>
+      <link>/2021/05/09/contributions-30daychartchallenge-2021/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/09/contributions-30daychartchallenge-2021/</guid>
+      <description>What&amp;rsquo;s the #30DayChartChallenge? The #30DayChartChallenge is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations. The challenge is inspired by the #30DayMapChallenge which was initiated by Topi Tjukanov in 2019. I did participate back then and while it was exhausting</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/milkyway_RichardStrozynski.png" >
+    
+
+    
+
+    
+      <meta name="title" content="My Contributions to the First 30DayChartChallenge" />
+      <meta property="og:title" content="My Contributions to the First 30DayChartChallenge - Cédric Scherer" />
+      <meta property="twitter:title" content="My Contributions to the First 30DayChartChallenge - Cédric Scherer" />
+      <meta property="twitter:text:title" content="My Contributions to the First 30DayChartChallenge - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1960 contributions from around the world!">
+      <meta property="og:description" content="This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1960 contributions from around the world!" />
+      <meta property="twitter:description" content="This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1960 contributions from around the world!" />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>My Contributions to the First 30DayChartChallenge - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2021/05/09/contributions-30daychartchallenge-2021/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/pubs/">Publications</a></li>
+                    
+                        <li><a href="/top/dataviz/">Visualizations</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/milkyway_RichardStrozynski.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/30daychartchallenge" title="30DayChartChallenge">
+                            30DayChartChallenge
+                        </a>
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        <a class="tag" href="/tags/figma" title="Figma">
+                            Figma
+                        </a>
+                        
+                        <a class="tag" href="/tags/flourish" title="Flourish">
+                            Flourish
+                        </a>
+                        
+                        <a class="tag" href="/tags/datawrapper" title="DataWrapper">
+                            DataWrapper
+                        </a>
+                        
+                    </div>
+                    <h1>My Contributions to the First 30DayChartChallenge</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Sunday, May 9, 2021
+                        
+                            <span id="/2021/05/09/contributions-30daychartchallenge-2021/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h2 id="whats-the-30daychartchallenge">What&rsquo;s the #30DayChartChallenge?</h2>
+<p>The <strong>#30DayChartChallenge</strong> is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations.</p>
+<p><img src="https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/banner.png" alt=""></p>
+<p>The challenge is inspired by the <strong>#30DayMapChallenge</strong> which was <a href="https://twitter.com/tjukanov/status/1187713840550744066">initiated by Topi Tjukanov in 2019</a>. I did participate back then and while it was exhausting to come up with a map every da, I learned so much in no time: where to find data, how to work with different spatial data sets, who&rsquo;s out there doing awesome stuff, and what other tools besides QGIS and R use to create maps of all sorts. <a href="https://github.com/z3tt/30DayMapChallenge">I actually finished 28 out of 30 maps</a> and some are still among my favorite personal visualizations.</p>
+<p>During the second edition in 2020, <a href="https://twitter.com/dr_xeo/status/1333479448746860544">Dominic Royé proposed to organize something similar but with the focus on all kinds of chart types</a> not maps in particular. And when <a href="https://twitter.com/dr_xeo/status/1333484208292044801">Dominic tagged me in this discussion</a>, I was all-in!</p>
+<p>Begin of 2021, Dominic and I sat down (remotely) to organize the event and brainstorm ideas for topics. We went for and back how open to phrase the topics. We also had the idea to use only chart types as prompts and/or restrict the challenge to a single data set. In the end, we decided to allow for a lot of freedom, also with the goal to see the variety of interpretations by participants of a particular keyword:</p>
+<p><img src="https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/topics_ol_blank.png" alt=""></p>
+<hr>
+<h2 id="my-goal-for-the-30daychartchallenge">My Goal for the #30DayChartChallenge</h2>
+<p>Given that Dominic and I also had to take care some organizational tasks and I also have some other job(s) that need to be done as well, the realistic me never anticipated to contribute to all 30 days. Well, I felt very challenged to give it a try but after contributing to the first eight days in a row I had to tackle the other topics a bit more slowly.</p>
+<p>No matter how many I may manage to finish, one of my main goals was to use a variety of tools. In the <a href="https://github.com/z3tt/TidyTuesday">#TidyTuesday</a> challenge, I am always bound to <a href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a>—and don&rsquo;t get me wrong, I still love it!—but I was really looking forward to having the freedom to try something else. To get out of my comfort zone and finally try some other tools such as <a href="https://www.figma.com/">Figma</a>, <a href="https://www.datawrapper.de/">DataWrapper</a>, <a href="https://flourish.studio/">Flourish</a>, <a href="https://rawgraphs.io/">RAWGraphs</a>, <a href="https://www.microsoft.com/en-us/microsoft-365/excel">Excel</a>. (Well, I am aware for many going from chart builder tools to R would be the challenge but for me it&rsquo;s vice versa&hellip;)</p>
+<hr>
+<h2 id="my-contributions-to-the-30daychartchallenge">My Contributions to the #30DayChartChallenge</h2>
+<h3 id="comparisons">Comparisons</h3>
+<h5 id="day-1-part-to-wholehttpsgithubcomz3tt30daychartchallengetreemain01_part_to_whole">Day 1: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/01_part_to_whole">Part-to-Whole</a></h5>
+<p><em><strong>Tool:</strong></em> <em>Microsoft PowerPoint</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/01_part_to_whole/01_part_to_whole_v1.png" alt=""><br></p>
+<h5 id="day-2-pictogramhttpsgithubcomz3tt30daychartchallengetreemain02_pictogram">Day 2: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/02_pictogram">Pictogram</a></h5>
+<p><em><strong>Tool:</strong></em> <em>Microsoft Word</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/02_pictogram/02_pictogram_en.png" alt=""><br></p>
+<h5 id="day-3-historicalhttpsgithubcomz3tt30daychartchallengetreemain03_historical">Day 3: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/03_historical">Historical</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/03_historical/03_historical.png" alt=""><br></p>
+<h5 id="day-4-magicalhttpsgithubcomz3tt30daychartchallengetreemain04_magical">Day 4: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/04_magical">Magical</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/04_magical/04_magical.png" alt=""><br></p>
+<h5 id="day-5-slopehttpsgithubcomz3tt30daychartchallengetreemain05_slope">Day 5: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/05_slope">Slope</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/05_slope/05_slope.png" alt=""><br></p>
+<h5 id="day-6-experimentalhttpsgithubcomz3tt30daychartchallengetreemain06_experimental">Day 6: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/06_experimental">Experimental</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/06_experimental/06_experimental.png" alt=""><br></p>
+<hr>
+<h3 id="distributions">Distributions</h3>
+<h5 id="day-7-physicalhttpsgithubcomz3tt30daychartchallengetreemain07_physical">Day 7: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/07_physical">Physical</a></h5>
+<p><em><strong>Tools:</strong></em> <em>amcharts and Figma</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/07_physical/07_physical.png" alt=""><br></p>
+<h5 id="day-8-animalshttpsgithubcomz3tt30daychartchallengetreemain08_animals">Day 8: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/08_animals">Animals</a></h5>
+<p><em><strong>Tool:</strong></em> <em>DataWrapper</em><br></p>
+<iframe title="Since 1970 animal population sizes have declined by 60% on average — and freshwater populations are the worst hit with a decline by more than 80%" aria-label="Interactive line chart" id="datawrapper-chart-E883b" src="https://datawrapper.dwcdn.net/E883b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="838"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script><br>
+<h5 id="day-10-abstracthttpsgithubcomz3tt30daychartchallengetreemain10_abstract">Day 10: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/10_abstract">Abstract</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/10_abstract/10_abstract_turbo.png" alt=""><br></p>
+<hr>
+<h3 id="relationships">Relationships</h3>
+<h5 id="day-13-correlationhttpsgithubcomz3tt30daychartchallengetreemain13_correlation">Day 13: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/13_correlation">Correlation</a></h5>
+<p><em><strong>Tool:</strong></em> <em>Flourish</em><br></p>
+<div class="flourish-embed flourish-chart" data-src="visualisation/5846249"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
+<h5 id="day-14-spacehttpsgithubcomz3tt30daychartchallengetreemain14_space">Day 14: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/14_space">Space</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/14_space/14_space_turbo_mixed.png" alt=""><br></p>
+<h5 id="day-16-treeshttpsgithubcomz3tt30daychartchallengetreemain16_trees">Day 16: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/16_trees">Trees</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/16_trees/16_trees.png" alt=""><br></p>
+<h5 id="day-17-pop-culturehttpsgithubcomz3tt30daychartchallengetreemain17_pop_culture">Day 17: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/17_pop_culture">Pop Culture</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br></p>
+<p><img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/17_pop_culture/17_pop_culture.png" alt=""><br></p>
+<hr>
+<h3 id="timeseries">Timeseries</h3>
+<h5 id="day-19-global-changehttpsgithubcomz3tt30daychartchallengetreemain19_global_change">Day 19: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/19_global_change">Global Change</a></h5>
+<p><em><strong>Tools:</strong></em> <em>ggplot2 and Figma</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/19_global_change/19_global_change.png" alt=""><br></p>
+<h5 id="day-20-upwardshttpsgithubcomz3tt30daychartchallengetreemain20_upwards">Day 20: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/20_upwards">Upwards</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/20_upwards/20_upwards.png" alt=""><br></p>
+<h5 id="day-22-animationhttpsgithubcomz3tt30daychartchallengetreemain22_animation">Day 22: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/22_animation">Animation</a></h5>
+<p><em><strong>Tool:</strong></em> <em>Flourish</em><br></p>
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/5939637"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<h5 id="day-23-tileshttpsgithubcomz3tt30daychartchallengetreemain23_tiles">Day 23: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/23_tiles">Tiles</a></h5>
+<p><em><strong>Tool:</strong></em> <em>ggplot2</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/23_tiles/23_tiles.png" alt=""><br></p>
+<hr>
+<h3 id="uncertainties">Uncertainties</h3>
+<h5 id="day-27-educationalhttpsgithubcomz3tt30daychartchallengetreemain27_educational">Day 27: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/27_educational">Educational</a></h5>
+<p><em><strong>Tools:</strong></em> <em>ggplot2 and Figma</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/27_educational/27_educational.png" alt=""><br></p>
+<h5 id="day-30-3dhttpsgithubcomz3tt30daychartchallengetreemain30_3d">Day 30: <a href="https://github.com/Z3tt/30DayChartChallenge/tree/main/30_3D">3D</a></h5>
+<p><em><strong>Tool:</strong></em> <em>Lego</em><br>
+<img src="https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/30_3D/30_3D.png" alt=""></p>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of <strong>1960 contributions</strong> (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!</p>
+<p><img src="/img/chart-challenge/timeseries.png" alt=""></p>
+<p>By the way, for more charts about the #30DayChartChallenge, have a look at <a href="https://github.com/gkaramanis/30DayChartChallenge">Georgios Karamanis' collection of meta-contributions</a>.</p>
+<p>We have seen contributions from all around the world, using a wide variety of tools. It was also great to see the different approaches and interpretations of the topics. Many participants connected with each other and exchanged tips and tricks on finding data, chart types, and tools.</p>
+<p>In personal notes, I am happy that I got to use different tools. Overall, I made 19 out of 30 charts with some drafts and ideas still laying arund. However, I often moved back to R when I realized that some things are not possible in one of the other tools (e.g. I started building the slope chart for day 5 in RAWGraphs but had no clue how to add a few labels, how to scale the colors etc.). I also sometimes had a hard time to move out of R after preparing the data for the other tools—for data preparation tasks R and the tidyverse will be my preferred tool, no interest and/or need to use Excel. So I ended up using <code>{ggplot}</code> way more often than initially planned which was also due to time constraints.</p>
+<p>The most difficult part was often to find data for the charts. But also I was more ambitious about both the data and the design than originally planned. While I aimed to make up data, at least from time to time, and focus on tools not the design bits, I had a grad time to remind myself to do so. The every day&rsquo;s life of a perfectionist I guess ¯_(ツ)_/¯</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/01/01/review-2020-personal-dataviz-highlights/" data-toggle="tooltip" data-placement="top" title="My Personal Data Visualization Year 2020">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/announcement" title="announcement">
+                            announcement
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
+                        
+                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                        
+                        <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
+                        
+                        <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
+                        
+                        <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                        <a href="mailto:cedricphilippscherer@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji="🌯"  data-font="Cookie" data-text="Buy me a kebab" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2021. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
