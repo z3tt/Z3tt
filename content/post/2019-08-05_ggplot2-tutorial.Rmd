@@ -660,14 +660,14 @@ ggplot(chic, aes(x = date, y = temp)) +
         plot.subtitle = element_text(family = "Playfair", hjust = .5, size = 15))
 ```
 
-You can also set a non-default font for all text elements of your plots, for more details see section ["Working with Themes"](#themes). I am going to use *Roboto Condensed* as new default font for all the plots that follow.
+You can also set a non-default font for all text elements of your plots, for more details see section ["Working with Themes"](#themes). I am going to use *Roboto Condensed* as the new font for all following plots.
 
 ```{r default-font}
 font_add_google("Roboto Condensed", "Roboto Condensed")
 theme_set(theme_bw(base_size = 12, base_family = "Roboto Condensed"))
 ```
 
-<p style='color:gray;'>(Previously, this tutorial used the [{extrafont} package](https://cran.r-project.org/web/packages/extrafont/README.html), which did a great job until last year. All of the sudden I couldn't add any new fonts anymore and after getting a new laptop, the package did not find any fonts at all... I usually suggest the [{ragg} package](https://ragg.r-lib.org/) now. However, I did not succeed to make it work for my homepage so I use the `{showtext}` package which is great as well with the only main difference that you need to import the font you want to use explicitly with `{showtext}`. (However, it seems [there are some technical details that are not solved optimally by `{showtext}`](https://twitter.com/thomasp85/status/1355083725156077571) so you may want to use the package as a very last resort.)</p>
+<p style='color:gray;'>(Previously, this tutorial used the [{extrafont} package](https://cran.r-project.org/web/packages/extrafont/README.html), which did a great job until last year. All of the sudden I couldn't add any new fonts anymore and after getting a new laptop, the package did not find any fonts at all... I usually suggest the [{ragg} package](https://ragg.r-lib.org/) now. However, I did not succeed to make it work for my homepage so I use the `{showtext}` package which is great as well with the only main difference that you need to import the font you want to use explicitly with `{showtext}`. However, it seems [there are some technical details that are not solved optimally by `{showtext}`](https://twitter.com/thomasp85/status/1355083725156077571) so you may want to use the package as a very last resort.)</p>
 
 
 ##### Change Spacing in Multi-Line Text
@@ -1026,7 +1026,7 @@ ggplot(chic, aes(x = date, y = temp)) +
   )
 ```
 
-Note that the true color—the outline of the panel background—did not change even though we specified it. This is because there is a layer on top of the `panel.background`, namely `panel.border`. However, when make sure to use a transparent fill here, otherwise your data is hidden behind this layer. In the following example, I illustrate that by using a semitransparent hex color for the `fill` argument in `element_rect`:
+Note that the true color—the outline of the panel background—did not change even though we specified it. This is because there is a layer on top of the `panel.background`, namely `panel.border`. However, make sure to use a transparent fill here, otherwise your data is hidden behind this layer. In the following example, I illustrate that by using a semitransparent hex color for the `fill` argument in `element_rect`:
 
 ```{r panel-color-2}
 ggplot(chic, aes(x = date, y = temp)) +

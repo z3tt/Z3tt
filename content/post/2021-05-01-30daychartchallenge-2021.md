@@ -180,7 +180,8 @@ A tribute to the first known statistical graph:<br>
 
 The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of **1960 contributions** (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!
 
-![](/img/chart-challenge/timeseries.png)
+![](/img/chart-challenge/timeseries_category.png)<br>
+![](/img/chart-challenge/timeseries_weekday.png)
 
 By the way, for more charts about the #30DayChartChallenge, have a look at [Georgios Karamanis' collection of meta-contributions](https://github.com/gkaramanis/30DayChartChallenge).
 
