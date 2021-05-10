@@ -3,8 +3,8 @@ URL: /2021/05/09/contributions-30daychartchallenge-2021/
 title: My Contributions to the First 30DayChartChallenge
 author: Cédric
 date: "2021-05-09"
-image: img/banner/milkyway_RichardStrozynski.jpg
-twitterImg: img/banner/milkyway_RichardStrozynski.png
+image: img/banner/chartchallenge-artsy.png
+twitterImg: img/banner/chartchallenge-artsy.png
 layout: post
 description: "This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1960 contributions from around the world!"
 tags:
@@ -49,17 +49,20 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 ##### Day 1: [Part-to-Whole](https://github.com/Z3tt/30DayChartChallenge/tree/main/01_part_to_whole)
 
 ***Tool:*** *Microsoft PowerPoint*<br>
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/01_part_to_whole/01_part_to_whole_v1.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/01_part_to_whole/01_part_to_whole_v1.png)[Alternative version 1](https://raw.githubusercontent.com/z3tt/30DayChartChallenge/main/01_part_to_whole/01_part_to_whole_v2.png) | [Alternative version 2](https://raw.githubusercontent.com/z3tt/30DayChartChallenge/main/01_part_to_whole/01_part_to_whole_v3.png)<br>
 
 ##### Day 2: [Pictogram](https://github.com/Z3tt/30DayChartChallenge/tree/main/02_pictogram)
 
 ***Tool:*** *Microsoft Word*<br>
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/02_pictogram/02_pictogram_en.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/02_pictogram/02_pictogram_en.png)
+[German version](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/02_pictogram/02_pictogram_de.png)<br>
 
 ##### Day 3: [Historical](https://github.com/Z3tt/30DayChartChallenge/tree/main/03_historical)
 
 ***Tool:*** *ggplot2*<br>
 ![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/03_historical/03_historical.png)<br>
+A tribute to the first known statistical graph:<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/03_historical/MichaelFlorentVanLangren.jpg)<br>
 
 ##### Day 4: [Magical](https://github.com/Z3tt/30DayChartChallenge/tree/main/04_magical)
 
@@ -74,7 +77,7 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 ##### Day 6: [Experimental](https://github.com/Z3tt/30DayChartChallenge/tree/main/06_experimental)
 
 ***Tool:*** *ggplot2*<br>
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/06_experimental/06_experimental.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/06_experimental/06_experimental.png)
 
 ***
 
@@ -90,12 +93,15 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 ***Tool:*** *DataWrapper*<br>
 
 <iframe title="Since 1970 animal population sizes have declined by 60% on average — and freshwater populations are the worst hit with a decline by more than 80%" aria-label="Interactive line chart" id="datawrapper-chart-E883b" src="https://datawrapper.dwcdn.net/E883b/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="838"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script><br>
+</script>
+
+[Static version](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/08_animals/08_animals_log.png) | [Alternative version with linear scale](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/08_animals/08_animals_lin.png)<br>
 
 ##### Day 10: [Abstract](https://github.com/Z3tt/30DayChartChallenge/tree/main/10_abstract)
 
 ***Tool:*** *ggplot2*<br>
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/10_abstract/10_abstract_turbo.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/10_abstract/10_abstract_turbo.png)
+[Alternative version 1](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/10_abstract/10_abstract_mako.png) | [Alternative version 2](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/10_abstract/10_abstract_rocket.png)
 
 ***
 
@@ -105,12 +111,16 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 
 ***Tool:*** *Flourish*<br>
 
-<div class="flourish-embed flourish-chart" data-src="visualisation/5846249"><script src="https://public.flourish.studio/resources/embed.js"></script></div><br>
+<div class="flourish-embed flourish-chart" data-src="visualisation/5846249"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<br>
+[Static version](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/13_correlation/13_correlation.png)<br>
 
 ##### Day 14: [Space](https://github.com/Z3tt/30DayChartChallenge/tree/main/14_space)
 
 ***Tool:*** *ggplot2*<br>
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/14_space/14_space_turbo_mixed.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/14_space/14_space_turbo_mixed.png)
+[Alternative version 1](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/14_space/14_space_turbo_mono.png) | [Alternative version 2](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/14_space/14_space_turbo_mixed.png) | [Alternative version 3](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/14_space/14_space_mako_mixed.png)<br>
 
 ##### Day 16: [Trees](https://github.com/Z3tt/30DayChartChallenge/tree/main/16_trees)
 
@@ -120,7 +130,8 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 ##### Day 17: [Pop Culture](https://github.com/Z3tt/30DayChartChallenge/tree/main/17_pop_culture)
 ***Tool:*** *ggplot2*<br>
 
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/17_pop_culture/17_pop_culture.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/17_pop_culture/17_pop_culture.png)
+[Alternative version showing median values](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/17_pop_culture/17_pop_culture_median.png)
 
 ***
 
@@ -134,13 +145,14 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 ##### Day 20: [Upwards](https://github.com/Z3tt/30DayChartChallenge/tree/main/20_upwards)
 
 ***Tool:*** *ggplot2*<br>
-![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/20_upwards/20_upwards.png)<br>
+![](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/20_upwards/20_upwards.png)
+[Alternative version swith larger labels](https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/20_upwards/20_upwards_alt.png)
 
 ##### Day 22: [Animation](https://github.com/Z3tt/30DayChartChallenge/tree/main/22_animation)
 
 ***Tool:*** *Flourish*<br>
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/5939637"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
+<br>
 
 ##### Day 23: [Tiles](https://github.com/Z3tt/30DayChartChallenge/tree/main/23_tiles)
 
