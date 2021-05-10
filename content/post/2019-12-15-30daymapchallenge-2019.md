@@ -1,12 +1,12 @@
 ---
-URL: /2019/11/15/contributions-first-30daymapchallenge-2019/
+URL: /2019/12/15/contributions-first-30daymapchallenge-2019/
 title: My Contributions to the First 30DayMapChallenge
 author: Cédric
-date: "2019-11-15"
+date: "2019-12-15"
 image: img/banner/mapchallenge-artsy.png
 twitterImg: img/banner/mapchallenge-artsy.png
 layout: post
-description: "I spontaneously participated in the first edition of the #30DayMapChallenge with the goal to create one map each day of November. I managed to contribute 28 days, resulting in many more maps and a steep  learning curve in using R and ggplot2 for geodata."
+description: "I spontaneously participated in the first edition of the #30DayMapChallenge with the goal to create one map each day of November. I managed to contribute 28 days, resulting in many more maps and a steep learning curve in using R and ggplot2 for geodata."
 tags:
     - DataViz
     - 30DayMapChallenge

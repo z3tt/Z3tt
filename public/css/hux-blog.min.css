@@ -134,7 +134,8 @@ blockquote p{
 small.img-hint{
   display:block;
   margin-top:-20px;
-  text-align:center
+  text-align:center;
+  color:grey;
 }
 br+small.img-hint{
   margin-top:-40px

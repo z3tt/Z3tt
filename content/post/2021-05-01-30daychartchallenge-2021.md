@@ -6,7 +6,7 @@ date: "2021-05-09"
 image: img/banner/chartchallenge-artsy.png
 twitterImg: img/banner/chartchallenge-artsy.png
 layout: post
-description: "This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1960 contributions from around the world!"
+description: "This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1,960 contributions from around the world!"
 tags:
     - DataViz
     - 30DayChartChallenge
@@ -178,10 +178,13 @@ A tribute to the first known statistical graph:<br>
 
 ## Final Thoughts
 
-The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of **1960 contributions** (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!
+The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of **1,960 contributions** (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!
 
-![](/img/chart-challenge/timeseries_category.png)<br>
-![](/img/chart-challenge/timeseries_weekday.png)
+<img src="/img/chart-challenge/timeseries_category.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">All 1,960 contributions (as of May 9) as stacked bar chart, per category.</figcaption></p>
+
+<img src="/img/chart-challenge/timeseries_weekday.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.</figcaption></p>
 
 By the way, for more charts about the #30DayChartChallenge, have a look at [Georgios Karamanis' collection of meta-contributions](https://github.com/gkaramanis/30DayChartChallenge).
 
