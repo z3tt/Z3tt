@@ -47,12 +47,12 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 ### Day 3: [Polygons](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons)
 
 ![./Day03_Polygons/Polygons_GlobalMortality.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day03_Polygons/Polygons_GlobalMortality.png)
-... and [a version showing deaths due to alcohol and drug disorder](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day03_Polygons/Polygons_Alcohol_Drugs.png)<br>
+[Alternatvie version of alcohol and drug disorder](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day03_Polygons/Polygons_Alcohol_Drugs.png)<br><br>
 
 ### Day 4: [Hexagons](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day04_Hexagons)
 
 ![./Day04_Hexagons/Hexagons_SchoolDiversity_hex.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day04_Hexagons/Hexagons_SchoolDiversity_hex.png)
-... and [a version showing diversity indices for the school year 1994/95 with the same color scale for comparison](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day04_Hexagons/Hexagons_SchoolDiversity_hex_1994.png)<br>
+[Version showing diversity indices for the school year 1994/95](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day04_Hexagons/Hexagons_SchoolDiversity_hex_1994.png)<br><br>
 
 ### Day 5: [Raster](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day05_Raster)
 
@@ -61,17 +61,17 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 ### Days 6 to 9: [Blue](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day06_Blue), [Green](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day08_Green), [Red](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day07_Red) & [Yellow](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day09_Yellow)
 
 ![./Day09_Yellow/BlueRedGreenYellow_BerlinPublicTransport.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day09_Yellow/BlueRedGreenYellow_BerlinPublicTransport.png)
-[Day 6: Blue](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day06_Blue/Blue_BerlinMetro.png) | [Day 7: Red](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day07_Red/Red_BerlinTram.png) | [Day 8: Green](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day08_Green/Green_BerlinRailway.png) | [Day 9: Yellow](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day09_Yellow/Yellow_BerlinBus.png)<br>
+[Day 6: Blue](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day06_Blue/Blue_BerlinMetro.png) | [Day 7: Red](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day07_Red/Red_BerlinTram.png) | [Day 8: Green](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day08_Green/Green_BerlinRailway.png) | [Day 9: Yellow](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day09_Yellow/Yellow_BerlinBus.png)<br><br>
 
 ### Day 10: [Black & White](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day10_BlackWhite)
 
 ![./Day10_BlackWhite/BlackWhite_CapitalPop_bw.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day10_BlackWhite/BlackWhite_CapitalPop_bw.png)
-... and [a version with some grey](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day10_BlackWhite/BlackWhite_CapitalPop_grey.png)<br>
+[Alternatvie version with some grey](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day10_BlackWhite/BlackWhite_CapitalPop_grey.png)<br><br>
 
 ### Day 11: [Elevation](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day11_Elevation)
 
 ![./Day11_Elevation/Elevation_Rayshader_custom.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day11_Elevation/Elevation_Rayshader_custom.png)
-[Here is the high resolution version](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day11_Elevation/Elevation_Rayshader_custom_HQ.png) and [another version using a different custom texture palette](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day11_Elevation/Elevation_Rayshader_custom_v2_SD.png)<br>
+[High resolution version](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day11_Elevation/Elevation_Rayshader_custom_HQ.png) | [Alternatvie version with annother custom texture](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day11_Elevation/Elevation_Rayshader_custom_v2_SD.png)<br><br>
 
 ### Day 12: [Movement](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day12_Movement)
 
@@ -80,7 +80,7 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 ### Day 13: [Tracks](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day13_Tracks)
 
 ![./Day13_Tracks/Tracks_StorksGili.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day13_Tracks/Tracks_StorksGili.png)
-[Read the paper!](https://doi.org/10.1111/1365-2656.12898)<br>
+[Read the paper!](https://doi.org/10.1111/1365-2656.12898)<br><br>
 
 ### Day 14: [Boundaries](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day14_Boundaries)
 
@@ -88,7 +88,8 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 
 ### Day 15: [Names](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day15_Names)
 
-![./Day15_Names/Names_BerlinRoads.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads.png) [Here is the high resolution version](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png)<br>
+![./Day15_Names/Names_BerlinRoads.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads.png) 
+[High resolution version](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png)<br><br>
 
 ### Day 16: [Places](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day16_Places)
 
@@ -97,7 +98,7 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 ### Day 17: [Zones](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day17_Zones)
 
 ![./Day17_Zones/Zones_TimezonesEarth.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day17_Zones/Zones_TimezonesEarth.png)
-... and [another version with filled countries only](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day17_Zones/Zones_TimezonesEarth_countries.png)<br>
+[Alternative version with filled countries only](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day17_Zones/Zones_TimezonesEarth_countries.png)<br><br>
 
 ### Day 18: [Globe](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day18_Globe)
 
@@ -107,12 +108,12 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 
 ![./Day19_Urban/Urban_GlobalUrbanAreas_bg.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day19_Urban/Urban_GlobalUrbanAreas_bg.png)
 ![./Day19_Urban/Urban_GlobalUrbanLands.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day19_Urban/Urban_GlobalUrbanLands.png)
-... and [another version of the "light map" without land masses](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day19_Urban/Urban_GlobalUrbanAreas.png)<br>
+[Alternative version without land masses](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day19_Urban/Urban_GlobalUrbanAreas.png)<br><br>
 
 ### Day 20: [Rural](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day20_Rural)
 
 ![./Day20_Rural/Rural_BerlinRuralAreas.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day20_Rural/Rural_BerlinRuralAreas.png)
-... and [a green version without roads](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day20_Rural/Rural_BerlinRuralAreas_v2.png)<br>
+[Alternative green version without roads](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day20_Rural/Rural_BerlinRuralAreas_v2.png)<br><br><br>
 
 ### Day 21: [Environment](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day21_Environment)
 ![./Day21_Environment/Environment_NationalParksUS.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day21_Environment/Environment_NationalParksUS.png)<br>
@@ -121,12 +122,12 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 
 ![./Day22_BuiltEnvironment/BuiltEnv_BerlinBuildings.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BerlinBuildings.png)
 ![./Day22_BuiltEnvironment/BuiltEnv_BuildingsMoabit.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BuildingsMoabit.png)
-... and [here is a blank version of Moabit showing the buildings only](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BuildingsMoabit_blank.png)<br>
+[Blank version of Moabit](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BuildingsMoabit_blank.png)<br><br>
 
 ### Day 23: [Population](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day23_Population)
 
 ![./Day23_Population/Population_ChangeGlobal_diff.png](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day23_Population/Population_ChangeGlobal_diff.png)
-... and [a version showing the projections for the coming 5 years](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day23_Population/Population_ChangeGlobal.png) and [for 20-year periods from 1950 to 2050](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day23_Population/Population_ChangeGlobal_facet.png)<br>
+ [Version showing the projections for the coming 5 years](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day23_Population/Population_ChangeGlobal.png) and [for 20-year periods from 1950 to 2050](https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day23_Population/Population_ChangeGlobal_facet.png)<br><br>
 
 ### Day 24: [Statistics](https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day24_Statistics)
 
