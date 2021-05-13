@@ -191,3 +191,8 @@ We have seen contributions from all around the world, using a wide variety of to
 In personal notes, I am happy that I got to use different tools. Overall, I made 19 out of 30 charts with some drafts and ideas still laying arund. However, I often moved back to R when I realized that some things are not possible in one of the other tools (e.g. I started building the slope chart for day 5 in RAWGraphs but had no clue how to add a few labels, how to scale the colors etc.). I also sometimes had a hard time to move out of R after preparing the data for the other tools—for data preparation tasks R and the tidyverse will be my preferred tool, no interest and/or need to use Excel. So I ended up using `{ggplot}` way more often than initially planned which was also due to time constraints.
 
 The most difficult part was often to find data for the charts. But also I was more ambitious about both the data and the design than originally planned. While I aimed to make up data, at least from time to time, and focus on tools not the design bits, I had a grad time to remind myself to do so. The every day's life of a perfectionist I guess ¯\\\_(ツ)\_/¯
+
+<hr>
+
+You can find all contributions that have been shared on our [GitHub repository](https://github.com/z3tt/30DayChartChallenge_Collection2021).  
+My contributions and codes (in case they were created with/in combination with R) are stored in this [GitHub repository](https://github.com/z3tt/30DayChartChallenge).
