@@ -12,7 +12,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### 2021
 
-- <span style='font-variant:small-caps;'>T. Kürschner, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum & S. Kramer-Schadt</span> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. [*Ecology and Evolution* (Early View)](https://doi.org/10.1002/ece3.7478).
+- <span style='font-variant:small-caps;'>T. Kürschner, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, N. Blaum & S. Kramer-Schadt</span> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. [*Ecology and Evolution* **11** (10):5728–5741](https://doi.org/10.1002/ece3.7478).
 
 ##### 2020
 
