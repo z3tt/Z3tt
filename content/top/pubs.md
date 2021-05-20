@@ -36,7 +36,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Invited Talks {#talks}
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general. ([Slides](https://www.cedricscherer.com/slides/DataVisLisboa-2021_30daychartchallenge_inspirations_learnings_value.pdf) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM))  
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general. ([Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM))  
 <i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R (Extended Version). ([Slides](https://www.cedricscherer.com/slides/https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf) | [Recording](https://www.youtube.com/watch?v=5KHvEXYtnOo))  
