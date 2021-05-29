@@ -65,7 +65,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   [params.social]
   rss            = false
-  email          = "cedricphilippscherer@gmail.com"
+  email          = "info@data-vizard.de"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   twitter        = "https://twitter.com/CedScherer"

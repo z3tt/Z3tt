@@ -6,45 +6,61 @@
   }
 </style>
 
-**I am a computational ecologist by training and a data visualization designer by heart with more than 10 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development and data visualization.**
+**I am a computational ecologist by training and a data visualization designer by heart with more than 11 years of hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.**
 
-I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. Since the beginning of 2020 I have also been working successfully as a self-employed designer, consultant and workshop instructor in the fields of data visualization and reproducible analysis. My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis.
 
-<img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
+##### Data Visualization {#dataviz}
 
-##### Computational Ecology
+I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, and workshop instructor in the fields of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [#30DayMapChallenge](https://github.com/Z3tt/30DayMapChallenge), and [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge). 
 
-As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by [movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability measures of ecological communities](https://doi.org/10.1111/ele.13226), and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://cedricscherer.netlify.com/top/pubs/) and [more about my projects!](https://cedricscherer.netlify.com/top/projects/)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://cedricscherer.netlify.com/top/dataviz/) or [watch my most-recent talks](https://cedricscherer.netlify.com/top/about/#presentations)<br>
 
 <img src="/img/dataviz_collage2.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
-##### Data Visualization
+##### Computational Ecology {#ecology}
 
-My passion for data, design and coding is a perfect combination not only for scientific but all types of data visualization. By contributing to challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [MakeoverMonday](https://github.com/Z3tt/MakeoverMonday), [Storytelling with Data](https://github.com/Z3tt/SWDchallenge) and the [30 Day Map Challenge](https://github.com/Z3tt/30DayMapChallenge), I am constantly strengthening my skills in design and reproducible data visualization with `{ggplot2}`. Thanks to frequent contributions as well as several personal and client projects,
-my portfolio now includes visualizations for various purposes and is covering a wide range of topics and chart types.
+I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio!](https://cedricscherer.netlify.com/top/dataviz/)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://cedricscherer.netlify.com/top/pubs/) and [more about my research projects](https://cedricscherer.netlify.com/top/projects/)<br>
 
+<img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
-##### Contact {#contact}
+My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/).
 
-**Dr. rer. nat. Cédric Scherer**  
-Leibniz Institute for Zoo and Wildlife Research (IZW)  
-Department "Ecological Dynamics"  
-Alfred-Kowalke-Straße 17, Room 2.4.05, 10315 Berlin, Germany  
-Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@izw-berlin.de</a>
+<hr/>
 
+### Contact {#contact}
+
+<b>Dr. rer. nat. Cédric Scherer</b>
+<div style="line-height:0%;">
+    <br>
+</div>
+Self-Employed Data Visualization Specialist<br>
+<i>Information Design • Cartography • Data Analysis • Workshops</i><br>
+<a href="mailto:info@data-vizard.de">info@data-vizard.de</a>
+<div style="line-height:75%;">
+    <br>
+</div>
+Researcher at Leibniz Institute for Zoo and Wildlife Research (IZW)<br>
+<i>Movement Ecology • Eco-Epidemiology • Population & Community Dynamics</i><br>
+Department "Ecological Dynamics"<br>
+Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
+<a href="mailto:scherer@izw-berlin.de">scherer@izw-berlin.de</a>
+
+<!--
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
+//-->
+
+<hr/>
 
 ### Curriculum Vitae {#cv}
 
 * [Personal Details](#person)
 * [Education & Professional Expericence](#career)
-* [Teaching](#teach)
-* <a href="https://cedricscherer.netlify.com/top/pubs/">Publications & Presentations</a>
-* [Awards & Honors](#award)
+* [Teaching](#teaching)
+* [Publications](#publications)
+* [Presentations](#presentations)
+* [Awards & Honors](#awards)
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
@@ -154,9 +170,11 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 //-->
 
 
-##### Teaching {#teach}
+##### Teaching {#teaching}
 
 <ul style="font-size:15px;">
+
+  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: 2–Day Course on DataVisz Principles and Beautiful Plotting in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.bio-move.org/">BioMove Research Training Group></a>, 2 days, remote, Apr 2021)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>Training “Data Visualisation Techniques for Data Scientists</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
 
@@ -177,12 +195,29 @@ Phone: +49 30 5168 342 | Email: <a href="mailto:scherer@izw-berlin.de">scherer@i
 </ul>
 
 
-##### Publications & Presentations
+##### Publications {#publications}
 
-see <a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
+<a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
 
 
-##### Awards & Honors {#award}
+
+##### Presentations {#presentations}
+
+Selection of talks:
+
+- “The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.” ([Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM))  
+<i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
+
+- “ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.” ([Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/))  
+<i style="font-size:11pt;color:grey;">Talk – Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society</i>
+
+- “Effective Data Visualization: How to design impactful and aesthetically pleasing charts.” ([Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk))  
+<i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
+
+<a href="https://cedricscherer.netlify.com/top/pubs/">Full List of Presentations</a>
+
+
+##### Awards & Honors {#awards}
 
 <ul style="font-size:15px;">
 

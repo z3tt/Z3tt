@@ -1,11 +1,11 @@
-### Project Overview
+### Overview of Research Project
 
 * [BioMove](#biomove)
 * [NLMR (Neutral Landscape Models in R)](#nlmr)
 * [Multidimensionality of Stability](#stability)
 * [AFT (Animal Functional Type Approach)](#aft)
-* [#TidyTuesday](#tidytuesday)
 
+As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by [movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability measures of ecological communities](https://doi.org/10.1111/ele.13226), and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). 
 
 #### BioMove {#biomove}
 
@@ -48,11 +48,3 @@ The need to transfer knowledge gained from single species to a more generalized 
 groups like functional groups/types or guilds. While approaches in plant ecology undergo a steady improvement and refinement of methodologies, progression in animal ecology is lagging behind. Motivated by a [review led by Niels Blaum](https://link.springer.com/article/10.1007/s10531-011-9995-1), the aim of the AFT project is to initiate a further development of functional classification systems in animal ecology, comparable to recent developments in plant ecology.
 
 In my Master's thesis I have used an animal functional type classification to investigate responses of birds to climatic and land use changes in semi-arid African savannas [using a trait-based and individual-based model](https://doi.org/10.1016/j.ecolmodel.2015.07.005). The functional types are characterized by different traits, in particular body mass, which is related to life-history traits (reproduction and mortality) and spatial scales (home range area and dispersal ability), as well as the use of vegetation structures for foraging and nesting, which is related to habitat quality and suitability. We tested the performance of the functional types in artificial landscapes varying in shrub:grass ratio and patchiness. We found that an increase in shrub encroachment and a decrease in habitat quality caused by land use mismanagement and climate change endangered all simulated bird functional types.
-
-
-#### #TidyTuesday {#tidytuesday}
-
-The [R4DS ("R for Data Science") online learning community](https://twitter.com/r4dscommunity) founded by [Jesse Maegan](https://www.jessemaegan.com/) is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners. One of the first projects born out of this collaboration is [#TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/README.md), a weekly social data project founded by [Thomas Mock](https://thomasmock.netlify.com/) that focusses on understanding how to summarize and arrange data to make meaningful charts with `{ggplot2}`, `{tidyr}`, `{dplyr}` and other tools in the [`tidyverse`](https://www.tidyverse.org/) ecosystem.
-Every Tuesday, R enthusiasts from all over the world clean, wrangle, tidy and visualize a new data set and [share it on Twitter using the hashtag #TidyTuesday](https://twitter.com/search?q=%23tidytuesday&src=typd). The intent is to provide a safe and supportive forum to practice their wrangling and data visualization skills.
-
-Since 2019, I contribute to the #TidyTuesday to train my data science skills. It is so much fun to follow this project and to share ideas and codes - and of course to get inspired by the other contributions!
