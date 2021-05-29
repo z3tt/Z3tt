@@ -424,7 +424,7 @@ pre code{
 .intro-header .site-heading .subheading{
   font-family:'Libre Baskerville','Playfair Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-style:italic;
-  font-size:19px;
+  font-size:13.5px;
   line-height:1.1;
   display:block;
   font-weight:400;
@@ -435,8 +435,8 @@ pre code{
   .intro-header .site-heading h1,.intro-header .page-heading h1{
     font-size:80px
   }
-  .intro-header .site-heading .subheading,.intro-header .page-heading .subheading{
-    font-size:30px;
+  .intro-header .site-heading .subheading{
+    font-size:27px;
   }
 }
 
@@ -444,7 +444,7 @@ pre code{
   font-size:30px;
   margin-bottom:24px
 }
-.intro-header .post-heading .subheading,.intro-header .post-heading .meta{
+.intro-header .post-heading .subheading{
   line-height:1.1;
   display:block
 }
@@ -463,10 +463,10 @@ pre code{
     font-size:55px
   }
   .intro-header .post-heading .subheading{
-    font-size:30px
+    font-size:27px
   }
   .intro-header .post-heading .meta{
-    font-size:30px
+    font-size:27px
   }
 }
 
