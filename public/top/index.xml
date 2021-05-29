@@ -22,7 +22,7 @@ Data Visualization I have been working as an independent data visualization spec
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/challenges/</guid>
-      <description>Overview of Data Visualization Challenges  #TidyTuesday #30DayMapChallenge #30DayChartChallenge SWDchallenge #MakeoverMonday RStudio Table Contest BES MoveMap Competition CorrelAid X Challenge  #TidyTuesday The R4DS (&amp;ldquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners. One of the first projects born out of this collaboration is #TidyTuesday, a weekly social data project founded by Thomas Mock that focusses on understanding how to summarize and arrange data to make meaningful charts with {ggplot2}, {tidyr}, {dplyr} and other tools in the tidyverse ecosystem.</description>
+      <description>Overview of Data Visualization Challenges Content  #TidyTuesday #30DayMapChallenge #30DayChartChallenge SWDchallenge #MakeoverMonday RStudio Table Contest BES MoveMap Competition CorrelAid X Challenge  #TidyTuesday The R4DS (&amp;ldquo;R for Data Science&amp;rdquo;) online learning community founded by Jesse Maegan is a great opportunity to train skills related to data wrangling and visualization and forms a network of mentors and learners. One of the first projects born out of this collaboration is #TidyTuesday, a weekly social data project founded by Thomas Mock that focusses on understanding how to summarize and arrange data to make meaningful charts with {ggplot2}, {tidyr}, {dplyr} and other tools in the tidyverse ecosystem.</description>
     </item>
     
     <item>
@@ -79,19 +79,18 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/projects/</guid>
-      <description>Overview of Research Project  BioMove NLMR (Neutral Landscape Models in R) Multidimensionality of Stability AFT (Animal Functional Type Approach)  As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by movement behavior, landscape structure and seasonality, how disturbances affect stability measures of ecological communities, and how birds respond to global change.</description>
+      <description>Overview of Research Project As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by movement behavior, landscape structure and seasonality, how disturbances affect stability measures of ecological communities, and how birds respond to global change.</description>
     </item>
     
     <item>
       <title></title>
-      <link>/top/pubs/</link>
+      <link>/top/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/top/pubs/</guid>
-      <description>Publications | Invited Talks | Conference Presentations | R Packages
-Peer-Reviewed Publications You can also find me on Google Scholar and ResearchGate.
+      <guid>/top/work/</guid>
+      <description>Content  Peer-Reviewed Publications Invited Talks Conference Presentations R Packages Media Appearances  Peer-Reviewed Publications You can also find me on Google Scholar and ResearchGate.
 My ORCID ID is 0000-0003-0465-2543.
-Accepted  V. Radchuk, S. Kramer-Schadt, U. Berger, C. Scherer, P. Backmann, V. Grimm &amp;amp; S. Kramer-Schadt (accepted) Individual-based models. Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez &amp;amp; M. Gamelon.  Published   T. Kürschner, C.</description>
+Accepted  V. Radchuk, S. Kramer-Schadt, U. Berger, C. Scherer, P. Backmann, V. Grimm &amp;amp; S. Kramer-Schadt (accepted) Individual-based models. Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez &amp;amp; M. Gamelon.  Published   T.</description>
     </item>
     
   </channel>

@@ -96,11 +96,11 @@
                     
 
 		    
+                        <li><a href="/top/work/">Portfolio</a></li>
+                    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
                         <li><a href="/top/about/">About Me</a></li>
-                    
-                        <li><a href="/top/pubs/">Publications</a></li>
-                    
-                        <li><a href="/top/dataviz/">Visualizations</a></li>
                     
                         <li><a href="/top/links/">Links</a></li>
                     
@@ -355,7 +355,7 @@ $(function() {
                 post-container">
 
                 
-                <h4 id="sunday"><em>Sunday</em></h4>
+                <h4 id="sunday">Sunday</h4>
 <p>Two days ago, I was sitting in the sun with a friend working in <em>UX and Graphic Design</em>, chatting about DataViz:</p>
 <blockquote>
 <p>She: &ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&rdquo;<br>
@@ -371,13 +371,13 @@ She: &ldquo;&hellip; and I wondered if you could have done this in R?&rdquo;</p>
 <p>Of course, one can! And especially, looping through design choices with a customer regarding colors, fonts, size and also simply to map the relevant data to a bar plot is so much easier.</p>
 <p>I mean, they have <em>drawn each bar separately</em> during their progress which took them hours to do!</p>
 <p>To demonstrate the capability of R, I immediately sat down after the family went to bed and copied the <a href="https://github.com/amrrs/animated_bar_charts_in_R">example provided by Abdul Majed Raja</a> using the great <a href="https://gganimate.com/"><code>{gganimate}</code> 📦</a> (what else?!) by <a href="https://www.data-imaginist.com/about/">Thomas Lin Pedersen</a> (who else?!) to create a smooth and colorful bar chart race with some <em>own</em> data.</p>
-<p>I am playing around with Berlin weather data from the <a href="https://www.dwd.de/DE/leistungen/klimadatendeutschland/klarchivtagmonat.html">DWD (Deutscher Wetterdienst)</a> for a few days now<code>—for example [my contribution to the #SWDchallenge on &quot;Visualizing Uncertainty&quot;](https://twitter.com/CedScherer/status/1170674809983905792)</code>—so this was an easy choice. I created the <a href="https://twitter.com/jburnmurdoch/status/1107552367795412992?lang=en">usual bar chart race as introduced by John Burn-Murdoch</a> visualizing the daily maximum temperature in Berlin-Dahlem (one of many stations in Berlin), averaged for each month. 15 to 30 minutes later (okay, add one more hour for playing around with different time periods and frame rates) I was very happy  about this gif:
+<p>I am playing around with Berlin weather data from the <a href="https://www.dwd.de/DE/leistungen/klimadatendeutschland/klarchivtagmonat.html">DWD (Deutscher Wetterdienst)</a> for a few days now—for example <a href="https://twitter.com/CedScherer/status/1170674809983905792">my contribution to the #SWDchallenge on &ldquo;Visualizing Uncertainty&rdquo;</a>—so this was an easy choice. I created the <a href="https://twitter.com/jburnmurdoch/status/1107552367795412992?lang=en">usual bar chart race as introduced by John Burn-Murdoch</a> visualizing the daily maximum temperature in Berlin-Dahlem (one of many stations in Berlin), averaged for each month. 15 to 30 minutes later (okay, add one more hour for playing around with different time periods and frame rates) I was very happy  about this gif:
 <img src="/img/bar-races/dwd_anim_max_viridis_short.gif" alt="GIF Chart Race Maximum Temperatures (viridis)"></p>
 <p>Even though I love the <a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">viridis color palettes</a> and they are my default color choice (here: option <code>inferno</code> because it fits the topic), I gave it another try. The <a href="https://github.com/thomasp85/scico"><code>{scico}</code> 📦</a> is another great color palette package, again maintained by Thomas Lin Pedersen, and there is one particular palette that couldn&rsquo;t match my animation better - it&rsquo;s blue-redish and called <strong>berlin</strong>!
 <img src="/img/bar-races/dwd_anim_max_scico_short.gif" alt="GIF Chart Race Maximum Temperatures (scico)"></p>
 <p>It was already late and I had to stop. I&rsquo;ve mailed her the animations and while going to bed, I was already thinking about other cool stuff one could use a bar chart race for in this context.</p>
 <hr>
-<h4 id="monday"><em>Monday</em></h4>
+<h4 id="monday">Monday</h4>
 <p>In the morning, on my way to work, I coded an unusual bar chart race (or maybe it doesn&rsquo;t even fit this definition any more?) showing the difference of monthly average temperatures to the 1951–1980 period, and thus both positive and negative values. While showing the general seasonal pattern in the northern hemisphere with summer months being warmer and winter months being colder than average, this illustrates nicely increasing temperatures in more recent years during the summer months and also in spring and autumn:
 <img src="/img/bar-races/dwd_anim_diff_yrs_short.gif" alt="GIF Chart Race Difference Temperatures (years)"></p>
 <p>I again depicted only the period from 1980 until now since the animation became too long<a href="#section2"><sup>2</sup></a>.<p id="back2"></p>
@@ -386,7 +386,7 @@ To visualize the trend over the whole period (1876–2018), I decided to group t
 <p>Finally, so that the locals can understand it too, I&rsquo;ve created a version in German:
 <img src="/img/bar-races/dwd_anim_diff_dec_ger.gif" alt="GIF Chart Race Temperaturunterschiede (Dekaden)"></p>
 <hr>
-<h4 id="tuesday"><em>Tuesday</em></h4>
+<h4 id="tuesday">Tuesday</h4>
 <p>So, now I am sitting here watching bar chart races on my laptop in various forms, colors, languages, and time periods.</p>
 <blockquote>
 <p>Me: Wow, it&rsquo;s amazing what you can do with R! And how easy it is.<br>

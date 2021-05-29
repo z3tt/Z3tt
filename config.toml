@@ -128,21 +128,21 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   title = "Chroma.js Color Helper"
   href =  "https://gka.github.io/palettes/#/9|s|383838,a19858,cfff44|ffffe0,ff005e,93003a|1|1"
 
-  [[params.addtional_menus]]
-  title =  "About Me"
-  href =  "/top/about/"
-
   #[[params.addtional_menus]]
   #title = "Services"
   #href =  "https://www.data-vizard.com/"
 
   [[params.addtional_menus]]
-  title =  "Publications"
-  href =  "/top/pubs/"
+  title =  "Portfolio"
+  href =  "/top/work/"
 
   [[params.addtional_menus]]
-  title =  "Visualizations"
+  title =  "Gallery"
   href =  "/top/dataviz/"
+  
+  [[params.addtional_menus]]
+  title =  "About Me"
+  href =  "/top/about/"
 
   [[params.addtional_menus]]
   title = "Links"

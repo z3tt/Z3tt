@@ -1,5 +1,7 @@
 ### Overview of Data Visualization Challenges
 
+##### Content
+
 * [#TidyTuesday](#tidytuesday)
 * [#30DayMapChallenge](#30daymapchallenge)
 * [#30DayChartChallenge](#30daychartchallenge)

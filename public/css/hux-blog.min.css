@@ -16,10 +16,6 @@
     font-weight: bold;
 }
 @font-face {
-    font-family: 'Crete Round Italic';
-    src: url("../fonts/CreteRound-RegularItalic.ttf") format("truetype");
-}
-@font-face {
     font-family: 'Libre Baskerville';
     src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
 }
@@ -87,7 +83,7 @@
 }
 
 body{
-  font-family:-apple-system,'Libre Baskerville','Playfair Display','Arapey','Times New Roman';
+  font-family:'Libre Baskerville','Playfair Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height:1.9;
   font-size:16px;
   font-weight:400;
@@ -100,8 +96,7 @@ p{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family:-apple-system,'Staatliches','Arial Black';
-  line-height:1.7;
+  font-family:'Staatliches','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   line-height:1.1;
   font-weight:400
 }
@@ -121,7 +116,7 @@ article{
 }
 
 blockquote{
-  font-family:-apple-system,'Oswald','Arial';
+  font-family:'Oswald','Arial','Helvetica',sans-serif,-apple-system;
   color:#5c6c66;
   font-style:italic;
   font-size:.9em;
@@ -172,7 +167,7 @@ pre code{
   white-space:pre;
   word-wrap:normal;
   font-weight:500;
-  font-family:-apple-system,'Overpass Mono','Menlo','Monaco','Consolas','Courier New',monospace
+  font-family:'Overpass Mono','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
 }
 .post-container a{
   color:#28a87d
@@ -426,14 +421,14 @@ pre code{
   font-size:45px;
   line-height:.9
 }
-.intro-header .site-heading .subheading,.intro-header .page-heading .subheading{
-  font-family:-apple-system,'Crete Round Italic','Helvetica';
+.intro-header .site-heading .subheading{
+  font-family:'Libre Baskerville','Playfair Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-style:italic;
-  font-size:15px;
+  font-size:19px;
   line-height:1.1;
   display:block;
-  font-weight:300;
-  margin:10px 0 0
+  font-weight:400;
+  margin:10px 0 30px;
 }
 
 @media only screen and (min-width:768px){
@@ -441,7 +436,7 @@ pre code{
     font-size:80px
   }
   .intro-header .site-heading .subheading,.intro-header .page-heading .subheading{
-    font-size:25px;
+    font-size:30px;
   }
 }
 
@@ -453,17 +448,8 @@ pre code{
   line-height:1.1;
   display:block
 }
-.intro-header .post-heading .subheading{
-  font-family:-apple-system,'Crete Round Italic','Helvetica';
-  line-height:1.7;
-  font-size:25px;
-  line-height:1.4;
-  font-weight:300;
-  margin:10px 0 30px;
-  margin-top:-5px
-}
 .intro-header .post-heading .meta{
-  font-family:'Staatliches','Arial Black',sans-serif;
+  font-family:'Staatliches','Arial Black','Arial','Helvetica',sans-serif;
   font-style:plain;
   font-weight:400;
   font-size:16px
@@ -477,10 +463,10 @@ pre code{
     font-size:55px
   }
   .intro-header .post-heading .subheading{
-    font-size:25px
+    font-size:30px
   }
   .intro-header .post-heading .meta{
-    font-size:20px
+    font-size:30px
   }
 }
 

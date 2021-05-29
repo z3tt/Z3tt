@@ -212,7 +212,7 @@ Selection of talks:
 
 - <i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
 [Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/)  
-<i style="font-size:11pt;color:grey;">Talk – Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society</i>
+<i style="font-size:11pt;color:grey;">Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>
 
 - <i>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”</i>   [Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk)  
 <i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
