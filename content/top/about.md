@@ -210,7 +210,7 @@ Selection of talks:
 [Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
 <i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
 
-- </i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
+- <i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
 [Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/)  
 <i style="font-size:11pt;color:grey;">Talk – Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society</i>
 
