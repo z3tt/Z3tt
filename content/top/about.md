@@ -11,7 +11,7 @@
 
 ##### Data Visualization {#dataviz}
 
-I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, and workshop instructor in the fields of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [#30DayMapChallenge](https://github.com/Z3tt/30DayMapChallenge), and [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge). 
+I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [#30DayMapChallenge](https://github.com/Z3tt/30DayMapChallenge), and [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge). 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://cedricscherer.netlify.com/top/dataviz/) or [watch my most-recent talks](https://cedricscherer.netlify.com/top/about/#presentations)<br>
 
@@ -174,7 +174,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 <ul style="font-size:15px;">
 
-  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: 2–Day Course on DataVisz Principles and Beautiful Plotting in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.bio-move.org/">BioMove Research Training Group></a>, 2 days, remote, Apr 2021)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: 2–Day Course on DataVisz Principles and Beautiful Plotting in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.bio-move.org/">BioMove Research Training Group</a>, 2 days, remote, Apr 2021)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>Training “Data Visualisation Techniques for Data Scientists</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
 
@@ -205,13 +205,15 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 Selection of talks:
 
-- “The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.” ([Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM))  
+- <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>  
+[Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
 <i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
 
-- “ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.” ([Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/))  
+- </i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
+[Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/)  
 <i style="font-size:11pt;color:grey;">Talk – Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society</i>
 
-- “Effective Data Visualization: How to design impactful and aesthetically pleasing charts.” ([Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk))  
+- <i>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”</i>   [Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk)  
 <i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
 
 <a href="https://cedricscherer.netlify.com/top/pubs/">Full List of Presentations</a>
