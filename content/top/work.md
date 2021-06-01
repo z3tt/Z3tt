@@ -97,26 +97,26 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ### Interviews
 
-- [“Data visualization shows countries with highest-rated coffees”](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen) (August 2020)
+- [*“Data visualization shows countries with highest-rated coffees”*](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen) (August 2020)
 
-- [Vignette: Interviews of the Beautiful People that Use R](https://vignette.md/interviews/2020-02-03-cedric-scherer/) (February 2020)
+- [*“Vignette: Interviews of the Beautiful People that Use R”*](https://vignette.md/interviews/2020-02-03-cedric-scherer/) (February 2020)
 
 ### Blog Mentions
 
-- [“Are beeswarm charts possible in two dimensions?”](https://questionsindataviz.com/2021/04/13/are-beeswarm-charts-possible-in-two-dimensions/)  by Neil Richards mentioning my [“One Chart at A Time”](https://www.youtube.com/watch?v=kTtV2GRCkj0&list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-&index=32) video on beeswarm plots
+- [*“Best of The Visualization Web September 2020”*](https://www.visualisingdata.com/2020/12/best-of-the-visualisation-web-september-2020/) by Andy Kirk highlighting the [“Not My Cup of Coffee”](https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee) visualization
 
-- [“Best of the Tableau Web”](https://www.tableau.com/about/blog/2020/8/best-tableau-web-its-iron-viz-season) by Tableau/Andy Cotgreave mentioning [“Evolution of a ggplot (Ep. 1)”](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/)
+- [*“Best of the Tableau Web”*](https://www.tableau.com/about/blog/2020/8/best-tableau-web-its-iron-viz-season) by Tableau/Andy Cotgreave mentioning [“Evolution of a ggplot (Ep. 1)”](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/)
 
-- [“Mapping Movements – The Art and the Science: we have the winners!”](https://besmovesig.wordpress.com/blog-2/) by BES Movement Ecology SIG awarding my [cheetah map](https://www.behance.net/gallery/112831957/Solving-the-Cheetah-Farmer-Conflict-in-Namibia)
+- [*“Mapping Movements – The Art and the Science: we have the winners!”*](https://besmovesig.wordpress.com/blog-2/) by BES Movement Ecology SIG awarding my [cheetah map](https://www.behance.net/gallery/112831957/Solving-the-Cheetah-Farmer-Conflict-in-Namibia)
 
-- [“Creating Lollipop-Jitter Plots in Tableau”](https://co-data.de/2020/07/14/lollipop-jitter-plot-in-tableau) by Klaus Schulte replicating my [“Evolution of a ggplot (Ep. 1)”](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) with Tableau
+- [*“Winners of the 2020 RStudio Table Contest”*](https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/) awarding my [IMDb Top 250 Table](https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/)
 
-- [“Our first CorrelAidX challenge”](https://correlaid.org/de/blog/correlaidx-challenge/) by CorrelAid awarding [our Shiny app about Berlin bike accidents](https://github.com/CorrelAid/xberlin)
+- [*“Our first CorrelAidX challenge”*](https://correlaid.org/de/blog/correlaidx-challenge/) by CorrelAid awarding [our Shiny app about Berlin bike accidents](https://github.com/CorrelAid/xberlin)
 
-- [“Best of The Visualization Web September 2020”](https://www.visualisingdata.com/2020/12/best-of-the-visualisation-web-september-2020/) by Andy Kirk highlighting the [“Not My Cup of Coffee”](https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee) visualization
+- [*“Are beeswarm charts possible in two dimensions?”*](https://questionsindataviz.com/2021/04/13/are-beeswarm-charts-possible-in-two-dimensions/)  by Neil Richards mentioning my [“One Chart at A Time”](https://www.youtube.com/watch?v=kTtV2GRCkj0&list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-&index=32) video on beeswarm plots
 
-- [“Winners of the 2020 RStudio Table Contest”](https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/) awarding my [IMDb Top 250 Table](https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/)
+- [*“Creating Lollipop-Jitter Plots in Tableau”*](https://co-data.de/2020/07/14/lollipop-jitter-plot-in-tableau) by Klaus Schulte replicating my [“Evolution of a ggplot (Ep. 1)”](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) with Tableau
 
 ### Miscellaneous 
 
-- [Jon Schwabisch's “R Sprint”](https://policyviz.com/2020/12/07/r-learning-sprint/) following my [step-by-step ggplot2 tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
+- [*Jon Schwabisch's “R Sprint”*](https://policyviz.com/2020/12/07/r-learning-sprint/) following my [step-by-step ggplot2 tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
