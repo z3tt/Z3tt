@@ -21,7 +21,7 @@
 
 * [Source code of the book "Fundamentals of Data Visualization"](https://github.com/clauswilke/dataviz)
 * [Top 50 ggplot visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
-* [Gallery of ggplot2 extensions](http://www.ggplot2-exts.org/gallery/)
+* [Gallery of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
 * [Extending ggplot2](https://exts.ggplot2.tidyverse.org/gallery/)
 
 ##### Spatial Data {#spat}
