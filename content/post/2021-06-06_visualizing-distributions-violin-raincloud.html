@@ -77,7 +77,7 @@ Some examples for which I used raincloud or violin plots to explicitly highlight
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png" width="672" /></p>
 <details>
 <summary>
-Show code
+<i>Expand to show code</i>
 </summary>
 <pre class="r"><code>n_fun &lt;- function(x){
   return(data.frame(y = median(x) - 1.25, label = paste0(&quot;n = &quot;,length(x))))
@@ -108,7 +108,7 @@ ggplot(data, aes(x = group, y = value)) +
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-distribution-1.png" width="672" /></p>
 <details>
 <summary>
-Show code
+<i>Expand to show code</i>
 </summary>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &quot;grey92&quot;) +
@@ -139,7 +139,7 @@ ggplot(data, aes(x = group, y = value)) +
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/violin-custom-1.png" width="672" /></p>
 <details>
 <summary>
-Show code
+<i>Expand to show code</i>
 </summary>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
   geom_violin(
@@ -153,7 +153,7 @@ Show code
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/violin-box-plot-1.png" width="672" /></p>
 <details>
 <summary>
-Show codes
+<i>Expand to show codes.</i>
 </summary>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
   geom_violin(
@@ -209,7 +209,7 @@ ggplot(data, aes(x = group, y = value)) +
 <p>Here, I combine two layers from the <code>{ggdist}</code> package, namely <code>stat_dots()</code> to draw the rain and <code>stat_halfeye()</code> to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting <code>.width</code> to zero and <code>point_colour</code> to <code>NA</code>. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.</p>
 <details>
 <summary>
-Show plot without limit adjustment
+<i>Expand to show plot without limit adjustment.</i>
 </summary>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-no-lim-1.png" width="672" /></p>
 </details>
@@ -300,7 +300,7 @@ Show plot without limit adjustment
 <p>As you can see, it’s not optimal here since the actual values of Group 3 are hard to spot because the fall exactly along the summary stats provided by the box plot. One could use <code>geom_half_point()</code>, however, I want to avoid the added jittering along the y axis.</p>
 <details>
 <summary>
-Barcode version with <code>{gghalves}</code>
+<i>Expand to show barcode version with</i> <code>{gghalves}</code>.
 </summary>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) + 
   ggdist::stat_halfeye(
