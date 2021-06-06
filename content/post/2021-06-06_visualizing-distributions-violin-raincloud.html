@@ -186,7 +186,7 @@ ggplot(data, aes(x = group, y = value)) +
 </div>
 <div id="rain" class="section level2">
 <h2>Raincloud Plots: A Great Alternative</h2>
-<p>Raincloud plots can be used to visualize raw data, probability density, and key summary statistics at the same time. Actually, it is a hybrid plot consisting of a density curve, a boxplot, and the raw data as some kind of scatter.</p>
+<p>Raincloud plots can be used to visualize raw data, the distribution of the data, and key summary statistics at the same time. Actually, it is a hybrid plot consisting of a halved violin plot, a boxplot, and the raw data as some kind of scatter.</p>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) + 
   ggdist::stat_halfeye(
     adjust = .5, 

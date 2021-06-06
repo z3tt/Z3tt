@@ -257,7 +257,7 @@ v1 <- ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = NA, width = .1) +
   labs(title = 'Full boxplot') +
   theme(plot.margin = margin(8, 4, 8, 0), 
-        plot.title = element_text(family = "Oswald", face = "bold"))
+        plot.title = element_text(family = "Oswald", face = "bold", size = 20))
 
 v2 <- ggplot(data, aes(x = group, y = value)) +
   geom_violin(fill = "grey72", color = NA, 
@@ -266,7 +266,7 @@ v2 <- ggplot(data, aes(x = group, y = value)) +
                coef = 0, outlier.color = NA) +
   labs(title = 'IQR box only') +
   theme(plot.margin = margin(8, 0, 8, 4), 
-        plot.title = element_text(family = "Oswald", face = "bold"))
+        plot.title = element_text(family = "Oswald", face = "bold", size = 20))
 
 v1 + v2
 ```
@@ -309,7 +309,7 @@ You might wonder: why should you use violins instead of boxplots with superimpos
 
 ## Raincloud Plots: A Great Alternative {#rain}
 
-Raincloud plots can be used to visualize raw data, probability density, and key summary statistics at the same time. Actually, it is a hybrid plot consisting of a density curve, a boxplot, and the raw data as some kind of scatter.
+Raincloud plots can be used to visualize raw data, the distribution of the data, and key summary statistics at the same time. Actually, it is a hybrid plot consisting of a halved violin plot, a boxplot, and the raw data as some kind of scatter.
 
 ```{r raincloud}
 ggplot(data, aes(x = group, y = value)) + 
