@@ -6,7 +6,17 @@
     <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualize Distributions with Violin and Raincloud Plots with ggplot2</title>
+      <link>/2021/06/06/visualize-distributions-with-violin-and-raincloud-plots-with-ggplot2/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/06/visualize-distributions-with-violin-and-raincloud-plots-with-ggplot2/</guid>
+      <description>Table of ContentIntroductionAim of this Tutorial 🏁Boxplots: The Reviewer’s DreamWe Can Do Better: Add Raw DataViolin Plots: The Reviewer’s Nighmare?Raincloud Plots: A Great AlternativeLet Your Plot ShineIntroductionA few weeks ago, I came across this tweet:
+Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. Are there better alternatives, or ways to clarify/address this?</description>
+    </item>
+    
     <item>
       <title>My Contributions to the First 30DayChartChallenge</title>
       <link>/2021/05/09/contributions-30daychartchallenge-2021/</link>
@@ -231,22 +241,22 @@ Verbraucher­streit­beilegung/Universal­schlichtungs­stelle Wir sind nicht be
     
     <item>
       <title></title>
+      <link>/top/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/top/portfolio/</guid>
+      <description>Content  Peer-Reviewed Publications Invited Talks Conference Presentations R Packages Media Appearances  Peer-Reviewed Publications You can also find me on Google Scholar and ResearchGate.
+My ORCID ID is 0000-0003-0465-2543.
+Accepted  V. Radchuk, S. Kramer-Schadt, U. Berger, C. Scherer, P. Backmann, V. Grimm &amp;amp; S. Kramer-Schadt (accepted) Individual-based models. Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez &amp;amp; M. Gamelon.  Published   T.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/top/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/top/projects/</guid>
       <description>Overview of Research Project As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by movement behavior, landscape structure and seasonality, how disturbances affect stability measures of ecological communities, and how birds respond to global change.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/top/work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/top/work/</guid>
-      <description>Content  Peer-Reviewed Publications Invited Talks Conference Presentations R Packages Media Appearances  Peer-Reviewed Publications You can also find me on Google Scholar and ResearchGate.
-My ORCID ID is 0000-0003-0465-2543.
-Accepted  V. Radchuk, S. Kramer-Schadt, U. Berger, C. Scherer, P. Backmann, V. Grimm &amp;amp; S. Kramer-Schadt (accepted) Individual-based models. Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez &amp;amp; M. Gamelon.  Published   T.</description>
     </item>
     
   </channel>

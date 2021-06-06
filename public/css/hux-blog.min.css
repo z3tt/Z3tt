@@ -7,13 +7,17 @@
     src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Oswald';
-    src: url("../fonts/Oswald-Regular.ttf") format("truetype");
+    font-family: 'Chivo';
+    src: url("../fonts/Chivo-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Oswald';
-    src: url("../fonts/Oswald-Bold.ttf") format("truetype");
+    font-family: 'Chivo';
+    src: url("../fonts/Chivo-Bold.ttf") format("truetype");
     font-weight: bold;
+}
+@font-face {
+    font-family: 'Chivo';
+    src: url("../fonts/Chivo-Italic.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Libre Baskerville';
@@ -116,10 +120,11 @@ article{
 }
 
 blockquote{
-  font-family:'Oswald','Arial','Helvetica',sans-serif,-apple-system;
+  font-family:'Chivo','Arial','Helvetica',sans-serif,-apple-system;
   color:#5c6c66;
   font-style:italic;
-  font-size:.9em;
+  font-size:1.2em;
+  line-height: 1.6em;
   margin:20px 0 20px
 }
 blockquote p{
@@ -242,7 +247,7 @@ pre code{
   #huxblog_navbar a{
     font-size:18px;
     line-height:22px
-    font-weight:400
+    font-weight:400;
   }
   #huxblog_navbar .navbar-collapse{
     height:0;

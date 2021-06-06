@@ -134,7 +134,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   [[params.addtional_menus]]
   title =  "Portfolio"
-  href =  "/top/work/"
+  href =  "/top/portfolio/"
 
   [[params.addtional_menus]]
   title =  "Gallery"

@@ -6,7 +6,17 @@
     <description>Recent content in tidyverse on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualize Distributions with Violin and Raincloud Plots with ggplot2</title>
+      <link>/2021/06/06/visualize-distributions-with-violin-and-raincloud-plots-with-ggplot2/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/06/visualize-distributions-with-violin-and-raincloud-plots-with-ggplot2/</guid>
+      <description>Table of ContentIntroductionAim of this Tutorial 🏁Boxplots: The Reviewer’s DreamWe Can Do Better: Add Raw DataViolin Plots: The Reviewer’s Nighmare?Raincloud Plots: A Great AlternativeLet Your Plot ShineIntroductionA few weeks ago, I came across this tweet:
+Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. Are there better alternatives, or ways to clarify/address this?</description>
+    </item>
+    
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
       <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>

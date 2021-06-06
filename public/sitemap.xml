@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/30daychartchallenge/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+    <loc>/tags/chart-selection/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/dataviz/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/distributions/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/ggplot2/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/r/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tidyverse/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/2021/06/06/visualize-distributions-with-violin-and-raincloud-plots-with-ggplot2/</loc>
+    <lastmod>2021-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/30daychartchallenge/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/datawrapper/</loc>
@@ -20,19 +47,7 @@
     <loc>/tags/flourish/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/ggplot2/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/2021/05/09/contributions-30daychartchallenge-2021/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/r/</loc>
-    <lastmod>2021-05-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/correlaid/</loc>
@@ -119,9 +134,6 @@
     <loc>/tags/gganimate/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/tidyverse/</loc>
-    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -132,9 +144,6 @@
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</loc>
-    <lastmod>2019-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tutorial/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/ggplot-evolution/</loc>
@@ -163,9 +172,9 @@
   </url><url>
     <loc>/top/links/</loc>
   </url><url>
-    <loc>/top/projects/</loc>
+    <loc>/top/portfolio/</loc>
   </url><url>
-    <loc>/top/work/</loc>
+    <loc>/top/projects/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
