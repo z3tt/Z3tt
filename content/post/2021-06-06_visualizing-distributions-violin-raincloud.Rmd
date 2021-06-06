@@ -1,5 +1,5 @@
 ---
-title: "Visualize Distributions with Violin and Raincloud Plots with ggplot2"
+title: "Visualizing Distributions with Raincloud Plots with ggplot2"
 author: "Cédric"
 date: 2021-06-06
 image: img/banner/firemountains_RichardStrozynski.jpg
