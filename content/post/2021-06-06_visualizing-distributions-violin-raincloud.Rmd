@@ -1,5 +1,5 @@
 ---
-title: "Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)"
+title: "Visualizing Distributions with Raincloud Plots with ggplot2"
 author: "Cédric"
 date: 2021-06-06
 image: img/banner/raincloud-artsy.png

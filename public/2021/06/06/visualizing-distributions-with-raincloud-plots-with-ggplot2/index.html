@@ -379,7 +379,7 @@ Twitter friends - I love violin plots but a reviewer is concerned that “their 
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p>Quickly, people settled that <strong>(a) violin plots are <a href="https://twitter.com/lakens/status/1374028350549803010">not novel at all</a></strong> but were introduced 23 years ago and <strong>(b) providing an overview of the data distribution and even the raw data itself might be a good addition</strong>. A suitable chart hybrid, consisting of a combination of boxplots, violin plots, and jittered points, is called a <a href="https://wellcomeopenresearch.org/articles/4-63"><strong><em>raincloud plot</em></strong></a>.</p>
-<p>Raincloud plots were <a href="https://twitter.com/micahgallen/status/1112780615198429185?lang=en">presented in 2019</a> as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars (also known as <a href="https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/"><em>dynamite plots</em></a>) or boxplots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.</p>
+<p>Raincloud plots were <a href="https://twitter.com/micahgallen/status/1112780615198429185?lang=en">presented in 2019</a> as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars—also known as <a href="https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/"><em>dynamite plots</em></a>)—or boxplots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.</p>
 <p>Since I am still working (part–time) as a researcher, I also regularly review scientific articles myself. And in contrast to the reviewer above, I argue completely opposite to the expert and always share my concerns in case bar charts or boxplots are not suited to convey the study results. Here is a fun meme I made a few months ago when I encountered so–called “dynamite plots” in a paper I was reviewing (plus <a href="https://github.com/z3tt/30DayChartChallenge/tree/main/27_educational">here is a reworked version with Shrek instead</a>):</p>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -406,23 +406,45 @@ Some examples for which I used raincloud or violin plots to explicitly highlight
 <p>I show you how to plot different version of violin–boxplot combinations and raincloud plots with the <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code> package</a>. Some use functionality from extension packages (that are hosted on CRAN): two of my favorite packages (<a href="https://www.youtube.com/watch?v=7UjA_5gNvdw&amp;list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&amp;index=34">1</a>, <a href="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2021_01/2021_01_geomUsage.png">2</a>) namely <a href="https://ggforce.data-imaginist.com/"><code>{ggforce}</code></a> and <a href="https://mjskay.github.io/ggdist/"><code>{ggdist}</code></a>, plus the packages <a href="https://erocoar.github.io/gghalves/"><code>{gghalves}</code></a> and <a href="https://github.com/eclarke/ggbeeswarm"><code>{ggbeeswarm}</code></a>.</p>
 <details>
 <summary>
-Expand to see the preparation steps.
+<i>Expand to see the preparation steps.</i>
 </summary>
-<pre class="r"><code>## load ggplot2 package
-library(ggplot2)
+<pre class="r"><code>## INSTALL PACKAGES ----------------------------------------------
+## install CRAN packages if needed
+pckgs &lt;- c(&quot;ggplot2&quot;, &quot;systemfonts&quot;, &quot;ggforce&quot;, 
+           &quot;ggdist&quot;, &quot;ggbeeswarm&quot;, &quot;devtools&quot;)
+new_pckgs &lt;- pckgs[!(pckgs %in% installed.packages()[,&quot;Package&quot;])]
+if(length(new_pckgs)) install.packages(new_pckgs)
 
+## install gghalves from GitHub if needed
+if(!require(gghalves)) {  
+  devtools::install_github(&#39;erocoar/gghalves&#39;)
+}
+
+## INSTALL PACKAGES ----------------------------------------------
+library(ggplot2) ## plotting
+library(systemfonts) ## custom fonts
+
+## CUSTOM THEME --------------------------------------------------
 ## overwrite default ggplot2 theme
 theme_set(
-  theme_minimal(base_size = 18, 
-                base_family = &quot;Oswald&quot;)
+  theme_minimal(
+    ## increase size of all text elements
+    base_size = 18, 
+    ## set custom font family for all text elements
+    base_family = &quot;Oswald&quot;)
 )
 
 ## overwrite other defaults of theme_minimal()
 theme_update(
+  ## remove major horizontal grid lines
   panel.grid.major.x = element_blank(),
+  ## remove all minor grid lines
   panel.grid.minor = element_blank(),
+  ## remove axis titles
   axis.title = element_blank(),
+  ## larger axis text for x
   axis.text.x = element_text(size = 16),
+  ## add soem white space around the plot
   plot.margin = margin(rep(8, 4))
 )</code></pre>
 </details>
@@ -581,7 +603,7 @@ ggplot(data, aes(x = group, y = value)) +
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) + 
   ## add half-violin from {ggdist} package
   ggdist::stat_halfeye(
-    ## adjust bandwidth
+    ## custom bandwidth
     adjust = .5, 
     ## adjust height
     width = .6, 
@@ -594,7 +616,6 @@ ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(
     width = .12, 
     ## remove outliers
-    outlier.shape = NA
   ) +
   ## add dot plots from {ggdist} package
   ggdist::stat_dots(
@@ -608,7 +629,7 @@ ggplot(data, aes(x = group, y = value)) +
   ## remove white space on the left
   coord_cartesian(xlim = c(1.2, NA))</code></pre>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png" width="672" /></p>
-<p>Here, I combine two layers from the <code>{ggdist}</code> package, namely <code>stat_dots()</code> to draw the rain and <code>stat_halfeye()</code> to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting <code>.width</code> to zero and <code>point_colour</code> to <code>NA</code>. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.</p>
+<p>Here, I combine two layers from the <a href="https://mjskay.github.io/ggdist/"><code>{ggdist}</code> package</a>, namely <code>stat_dots()</code> to draw the rain and <code>stat_halfeye()</code> to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting <code>.width</code> to zero and <code>point_colour</code> to <code>NA</code>. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.</p>
 <details>
 <summary>
 <i>Expand to show plot without limit adjustment.</i>
@@ -645,6 +666,7 @@ ggplot(data, aes(x = group, y = value)) +
     width = .15, 
     outlier.shape = NA
   ) +
+  ## add justified jitter from the {gghalves} package
   gghalves::geom_half_point(
     ## draw jitter on the left
     side = &quot;l&quot;, 
@@ -655,7 +677,7 @@ ggplot(data, aes(x = group, y = value)) +
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &quot;off&quot;)</code></pre>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-1.png" width="672" /></p>
-<p>Note that the <code>{gghalves}</code> packages adds also some jitter along the y axis which is far from optimal. The packages provides a <a href="https://camo.githubusercontent.com/763daaddffeefed1fbad498721526bc739326da7822df84f09b153bd6c48d3c4/68747470733a2f2f692e696d6775722e636f6d2f374150787831742e706e67">half–boxplot alternative</a> as well but I personally will never consider or recommend these as an option<a href="#section2"><sup>2</sup></a>.</p>
+<p>Note that the <code>{gghalves}</code> packages adds also some jitter along the y axis which is far from optimal. The packages provides a <a href="https://camo.githubusercontent.com/763daaddffeefed1fbad498721526bc739326da7822df84f09b153bd6c48d3c4/68747470733a2f2f692e696d6775722e636f6d2f374150787831742e706e67">half–boxplot alternative</a> as well but I personally will never consider or recommend these as an option<a href="#section2"><sup>2</sup></a>. Also, note that the <code>{gghalves}</code> package is not available on CRAN (yet) as well.</p>
 <p id="back2">
 <p>A good alternative may to place the jittered points on top of the boxplot by using <code>geom_jitter()</code> (or <code>geom_point()</code>):</p>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) + 
@@ -716,6 +738,7 @@ ggplot(data, aes(x = group, y = value)) +
     width = .15, 
     outlier.shape = NA
   ) +
+  ## add justified jitter from the {gghalves} package
   gghalves::geom_half_point(
     ## draw bar codes on the left
     side = &quot;l&quot;, 
