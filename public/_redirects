@@ -3,3 +3,5 @@ http://cedricscherer.netlify.com/*   https://cedricscherer.com/:splat  301!
 https://cedricscherer.netlify.app/*  https://cedricscherer.com/:splat  301!
 http://cedricscherer.netlify.app/*   https://cedricscherer.com/:splat  301!
 http://cedricscherer.com/*  https://cedricscherer.com/:splat  301!
+http://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-with-ggplot2/  https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/:splat  301!
+https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-with-ggplot2/  https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/:splat  301!
