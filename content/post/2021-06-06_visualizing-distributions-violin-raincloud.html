@@ -276,6 +276,7 @@ ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(
     width = .12, 
     ## remove outliers
+    outlier.color = NA ## `outlier.shape = NA` works as well
   ) +
   ## add dot plots from {ggdist} package
   ggdist::stat_dots(
