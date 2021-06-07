@@ -379,7 +379,7 @@ Twitter friends - I love violin plots but a reviewer is concerned that “their 
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p>Quickly, people settled that <strong>(a) violin plots are <a href="https://twitter.com/lakens/status/1374028350549803010">not novel at all</a></strong> but were introduced 23 years ago and <strong>(b) providing an overview of the data distribution and even the raw data itself might be a good addition</strong>. A suitable chart hybrid, consisting of a combination of boxplots, violin plots, and jittered points, is called a <a href="https://wellcomeopenresearch.org/articles/4-63"><strong><em>raincloud plot</em></strong></a>.</p>
-<p>Raincloud plots were <a href="https://twitter.com/micahgallen/status/1112780615198429185?lang=en">presented in 2019</a> as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars (also known as <a href="https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/"><em>dynamite plots</em></a>) or boxplots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.</p>
+<p>Raincloud plots were <a href="https://twitter.com/micahgallen/status/1112780615198429185?lang=en">presented in 2019</a> as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars—also known as <a href="https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/"><em>dynamite plots</em></a>)—or boxplots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.</p>
 <p>Since I am still working (part–time) as a researcher, I also regularly review scientific articles myself. And in contrast to the reviewer above, I argue completely opposite to the expert and always share my concerns in case bar charts or boxplots are not suited to convey the study results. Here is a fun meme I made a few months ago when I encountered so–called “dynamite plots” in a paper I was reviewing (plus <a href="https://github.com/z3tt/30DayChartChallenge/tree/main/27_educational">here is a reworked version with Shrek instead</a>):</p>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -629,7 +629,7 @@ ggplot(data, aes(x = group, y = value)) +
   ## remove white space on the left
   coord_cartesian(xlim = c(1.2, NA))</code></pre>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png" width="672" /></p>
-<p>Here, I combine two layers from the <code>{ggdist}</code> package, namely <code>stat_dots()</code> to draw the rain and <code>stat_halfeye()</code> to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting <code>.width</code> to zero and <code>point_colour</code> to <code>NA</code>. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.</p>
+<p>Here, I combine two layers from the <a href="https://mjskay.github.io/ggdist/"><code>{ggdist}</code> package</a>, namely <code>stat_dots()</code> to draw the rain and <code>stat_halfeye()</code> to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting <code>.width</code> to zero and <code>point_colour</code> to <code>NA</code>. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.</p>
 <details>
 <summary>
 <i>Expand to show plot without limit adjustment.</i>
@@ -666,6 +666,7 @@ ggplot(data, aes(x = group, y = value)) +
     width = .15, 
     outlier.shape = NA
   ) +
+  ## add justified jitter from the {gghalves} package
   gghalves::geom_half_point(
     ## draw jitter on the left
     side = &quot;l&quot;, 
@@ -737,6 +738,7 @@ ggplot(data, aes(x = group, y = value)) +
     width = .15, 
     outlier.shape = NA
   ) +
+  ## add justified jitter from the {gghalves} package
   gghalves::geom_half_point(
     ## draw bar codes on the left
     side = &quot;l&quot;, 

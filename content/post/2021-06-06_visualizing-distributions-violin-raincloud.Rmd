@@ -424,7 +424,7 @@ ggplot(data, aes(x = group, y = value)) +
   coord_cartesian(xlim = c(1.2, NA))
 ```
 
-Here, I combine two layers from the `{ggdist}` package, namely `stat_dots()` to draw the rain and `stat_halfeye()` to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting `.width` to zero and `point_colour` to `NA`. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.
+Here, I combine two layers from the [`{ggdist}` package](https://mjskay.github.io/ggdist/), namely `stat_dots()` to draw the rain and `stat_halfeye()` to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the boxplot. I also remove the slab interval from the halfeye by setting `.width` to zero and `point_colour` to `NA`. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.
 
 <details><summary><i>Expand to show plot without limit adjustment.</i></summary>
 
@@ -486,6 +486,7 @@ ggplot(data, aes(x = group, y = value)) +
     width = .15, 
     outlier.shape = NA
   ) +
+  ## add justified jitter from the {gghalves} package
   gghalves::geom_half_point(
     ## draw jitter on the left
     side = "l", 
@@ -566,6 +567,7 @@ ggplot(data, aes(x = group, y = value)) +
     width = .15, 
     outlier.shape = NA
   ) +
+  ## add justified jitter from the {gghalves} package
   gghalves::geom_half_point(
     ## draw bar codes on the left
     side = "l", 
