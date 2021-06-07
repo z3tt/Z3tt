@@ -76,7 +76,7 @@ pckgs <- c("ggplot2", "systemfonts", "ggforce",
 new_pckgs <- pckgs[!(pckgs %in% installed.packages()[,"Package"])]
 if(length(new_pckgs)) install.packages(new_pckgs)
 
-## install GitHub packages if needed
+## install gghalves from GitHub if needed
 if(!require(gghalves)) {  
   devtools::install_github('erocoar/gghalves')
 }
