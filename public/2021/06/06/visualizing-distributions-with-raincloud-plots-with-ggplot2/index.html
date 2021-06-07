@@ -395,7 +395,9 @@ That moment when you review a journal submission and you see dynamite plots: rag
 Some examples for which I used raincloud or violin plots to explicitly highlight the distributions of the values.
 </figcaption>
 </p>
-<p>The paper itself that introduces raincloud plots comes with a “multi-platform tool for robust data visualization” which consists of a collection of codes and tutorials to draw raincloud plots in R, Python, or Matlab. In January 2021, a <a href="https://doi.org/10.12688/wellcomeopenres.15191.2">revised version</a> was submitted together with a <a href="https://github.com/jorvlan/raincloudplots">“fully functional R-package” called <code>{raincloudplots}</code></a>. However, there may be two drawbacks: First, the package wraps ggplot functionality into an one function instead of adding a <code>geom_</code> and/or <code>stat_</code> layers (and I definitely prefer to be able to adjust every detail of my plot in traditional ggplot habit). Secondly, the package is (not yet?) on CRAN and needs to be installed from GitHub (which can be problematic in a work context); it is also not available for R version 4 yet. Because of that I also don’t provide examples here, but you might want to check the <a href="https://github.com/RainCloudPlots/RainCloudPlots/blob/master/README.md">tutorial of that package</a>. Here, I show you numerous ways to create violin and raincloud plots in <code>{ggplot2}</code>. The tutorial is based on a <a href="https://z3tt.github.io/Rainclouds/">collection of code snippets I shared with the author</a> of the above mentioned tweet.</p>
+<p>The paper itself that introduces raincloud plots comes with a “multi-platform tool for robust data visualization” which consists of a collection of codes and tutorials to draw raincloud plots in R, Python, or Matlab. In January 2021, a <a href="https://doi.org/10.12688/wellcomeopenres.15191.2">revised version</a> was submitted together with a <a href="https://github.com/jorvlan/raincloudplots">“fully functional R-package” called <code>{raincloudplots}</code></a>.</p>
+<p>However, there may be two drawbacks: First, the package wraps ggplot functionality into an one function instead of adding a <code>geom_</code> and/or <code>stat_</code> layers (and I definitely prefer to be able to adjust every detail of my plot in traditional ggplot habit). Secondly, the package is (not yet?) on CRAN and needs to be installed from GitHub (which can be problematic in a work context); it is also not available for R version 4 yet. Because of that I also don’t provide examples here, but you might want to check the <a href="https://github.com/RainCloudPlots/RainCloudPlots/blob/master/README.md">tutorial of that package</a>.</p>
+<p>Here, I show you numerous other ways to create violin and raincloud plots in <code>{ggplot2}</code>. The tutorial is based on a <a href="https://z3tt.github.io/Rainclouds/">collection of code snippets I shared with the author</a> of the above mentioned tweet.</p>
 <hr />
 </div>
 <div id="aim" class="section level2">
@@ -569,7 +571,7 @@ ggplot(data, aes(x = group, y = value)) +
   coord_cartesian(xlim = c(1.2, NA))</code></pre>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-slab-1.png" width="672" /></p>
 <p>While I love the reduced design and the possibility to indicate two different ranges (here the interquartile range and the 95% quantile) I admit that this alternative is less intuitive and potentially even misleading since they look more like credible intervals than boxplots. Maybe a bit like the <a href="http://motioninsocial.com/tufte/#minimal-boxplot">minimal boxplots proposed by Edward Tufte</a> but still I definitely would add a note to be sure the reader understands what the slabs show.</p>
-<p>Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use <code>geom_half_dotplot()</code> from the <a href="https://erocoar.github.io/gghalves/"><code>{gghalves}</code> package</a>. Why? Because it comes with the possibility to add some justification which is not possible for the default layer <code>geom_point()</code> and <code>geom_jitter()</code>:</p>
+<p>Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use <code>geom_half_dotplot()</code> from the <a href="https://erocoar.github.io/gghalves/"><code>{gghalves}</code> package</a>. Why? Because it comes with the possibility to add some justification which is not possible for the default layers <code>geom_point()</code> and <code>geom_jitter()</code>:</p>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) + 
   ggdist::stat_halfeye(
     adjust = .5, 
@@ -637,7 +639,7 @@ ggplot(data, aes(x = group, y = value)) +
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &quot;off&quot;)</code></pre>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-barcode-1.png" width="672" /></p>
-<p>As you can see, it’s not optimal here since the actual values of Group 3 are hard to spot because the fall exactly along the summary stats provided by the box plot. One could use <code>geom_half_point()</code>, however, I want to avoid the added jittering along the y axis.</p>
+<p>As you can see, it’s not optimal here since the actual values of Group 3 are hard to spot because they fall exactly along the summary stats provided by the box plot. One could use <code>geom_half_point()</code>, however, I want to avoid the added jittering along the y axis.</p>
 <details>
 <summary>
 <i>Expand to show barcode version with</i> <code>{gghalves}</code>.
@@ -678,7 +680,7 @@ ggplot(data, aes(x = group, y = value)) +
 I personally doubt that the general audience is well aware of how to interpret boxplots or how they can be misleading. And even within your institute or university: give it a try, go around (once the lockdown is over or remotly) and ask your colleagues what the thick line in the middle of a boxplot represents. <a href="#back1"><i>Go back</i> ↑</a>
 </p>
 <p id="section1">
-<sup>2</sup> Why? Because the boxplot itself can be reduced easily in width without getting into trouble. At the same time, I believe that these “half–boxplots” have an uncommon look and thus the potential to confuse readers. <a href="#back2"><i>Go back</i> ↑</a>
+<sup>2</sup> Why? Because the boxplot itself can be reduced easily in width without you getting into trouble. At the same time, I believe that these “half–boxplots” have an uncommon look and thus the potential to confuse readers. <a href="#back2"><i>Go back</i> ↑</a>
 </p>
 </div>
 </div>

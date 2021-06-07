@@ -52,7 +52,11 @@ The use of other chart types such as violin and raincloud plots to show the dist
 <img src="/img/distributions/distributions_examples.png" style="height: 100%; width: 100%; object-fit: contain;">
 <p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">Some examples for which I used raincloud or violin plots to explicitly highlight the distributions of the values.</figcaption></p>
 
-The paper itself that introduces raincloud plots comes with a "multi-platform tool for robust data visualization" which consists of a collection of codes and tutorials to draw raincloud plots in R, Python, or Matlab. In January 2021, a [revised version](https://doi.org/10.12688/wellcomeopenres.15191.2) was submitted together with a ["fully functional R-package" called `{raincloudplots}`](https://github.com/jorvlan/raincloudplots). However, there may be two drawbacks: First, the package wraps ggplot functionality into an one function instead of adding a `geom_` and/or `stat_` layers (and I definitely prefer to be able to adjust every detail of my plot in traditional ggplot habit). Secondly, the package is (not yet?) on CRAN and needs to be installed from GitHub (which can be problematic in a work context); it is also not available for R version 4 yet. Because of that I also don't provide examples here, but you might want to check the [tutorial of that package](https://github.com/RainCloudPlots/RainCloudPlots/blob/master/README.md). Here, I show you numerous ways to create violin and raincloud plots in `{ggplot2}`. The tutorial is based on a [collection of code snippets I shared with the author](https://z3tt.github.io/Rainclouds/) of the above mentioned tweet.
+The paper itself that introduces raincloud plots comes with a "multi-platform tool for robust data visualization" which consists of a collection of codes and tutorials to draw raincloud plots in R, Python, or Matlab. In January 2021, a [revised version](https://doi.org/10.12688/wellcomeopenres.15191.2) was submitted together with a ["fully functional R-package" called `{raincloudplots}`](https://github.com/jorvlan/raincloudplots). 
+
+However, there may be two drawbacks: First, the package wraps ggplot functionality into an one function instead of adding a `geom_` and/or `stat_` layers (and I definitely prefer to be able to adjust every detail of my plot in traditional ggplot habit). Secondly, the package is (not yet?) on CRAN and needs to be installed from GitHub (which can be problematic in a work context); it is also not available for R version 4 yet. Because of that I also don't provide examples here, but you might want to check the [tutorial of that package](https://github.com/RainCloudPlots/RainCloudPlots/blob/master/README.md). 
+
+Here, I show you numerous other ways to create violin and raincloud plots in `{ggplot2}`. The tutorial is based on a [collection of code snippets I shared with the author](https://z3tt.github.io/Rainclouds/) of the above mentioned tweet.
 
 ---
 
@@ -248,14 +252,14 @@ ggplot(data, aes(x = group, y = value)) +
 ```
 </details>
 
-The violin plot allows an explicit representation of the distribution but doesn't provide summary statistics. To get the best of both worlds, it is often mixed with a boxplot---either a complete boxplot with whiskers and outliers or only the box indicating the median and interquartile range (IQR):
+The violin plot allows an explicit representation of the distribution but doesn't provide summary statistics. To get the best of both worlds, it is often mixed with a boxplot—either a complete boxplot with whiskers and outliers or only the box indicating the median and interquartile range (IQR):
 
 ```{r violin-box-plot, echo=FALSE}
 v1 <- ggplot(data, aes(x = group, y = value)) +
   geom_violin(fill = "grey72", color = NA, 
               scale = "count", bw = .5) +
   geom_boxplot(fill = NA, width = .1) +
-  labs(title = 'Full boxplot') +
+  labs(title = 'Full box-and-whiskers plot') +
   theme(plot.margin = margin(8, 4, 8, 0), 
         plot.title = element_text(family = "Oswald", face = "bold", size = 20))
 
@@ -264,7 +268,7 @@ v2 <- ggplot(data, aes(x = group, y = value)) +
               scale = "count", bw = .5) +
   geom_boxplot(fill = NA, width = .1,
                coef = 0, outlier.color = NA) +
-  labs(title = 'IQR box only') +
+  labs(title = 'IQR box and median only') +
   theme(plot.margin = margin(8, 0, 8, 4), 
         plot.title = element_text(family = "Oswald", face = "bold", size = 20))
 
@@ -378,7 +382,7 @@ ggplot(data, aes(x = group, y = value)) +
 
 While I love the reduced design and the possibility to indicate two different ranges (here the interquartile range and the 95% quantile) I admit that this alternative is less intuitive and potentially even misleading since they look more like credible intervals than boxplots. Maybe a bit like the [minimal boxplots proposed by Edward Tufte](http://motioninsocial.com/tufte/#minimal-boxplot) but still I definitely would add a note to be sure the reader understands what the slabs show.
 
-Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use `geom_half_dotplot()` from the [`{gghalves}` package](https://erocoar.github.io/gghalves/). Why? Because it comes with the possibility to add some justification which is not possible for the default layer `geom_point()` and `geom_jitter()`:
+Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use `geom_half_dotplot()` from the [`{gghalves}` package](https://erocoar.github.io/gghalves/). Why? Because it comes with the possibility to add some justification which is not possible for the default layers `geom_point()` and `geom_jitter()`:
 
 ```{r raincloud-halves}
 ggplot(data, aes(x = group, y = value)) + 
@@ -457,7 +461,7 @@ ggplot(data, aes(x = group, y = value)) +
   coord_cartesian(xlim = c(1.2, NA), clip = "off")
 ```
 
-As you can see, it's not optimal here since the actual values of Group 3 are hard to spot because the fall exactly along the summary stats provided by the box plot. One could use `geom_half_point()`, however, I want to avoid the added jittering along the y axis.
+As you can see, it's not optimal here since the actual values of Group 3 are hard to spot because they fall exactly along the summary stats provided by the box plot. One could use `geom_half_point()`, however, I want to avoid the added jittering along the y axis.
 
 <details><summary><i>Expand to show barcode version with</i> <code>{gghalves}</code>.</summary>
 
@@ -619,6 +623,6 @@ I personally doubt that the general audience is well aware of how to interpret b
 </p>
 
 <p id="section1">
-<sup>2</sup> Why? Because the boxplot itself can be reduced easily in width without getting into trouble. At the same time, I believe that these "half–boxplots" have an uncommon look and thus the potential to confuse readers. <a href="#back2"><i>Go back</i> ↑</a>
+<sup>2</sup> Why? Because the boxplot itself can be reduced easily in width without you getting into trouble. At the same time, I believe that these "half–boxplots" have an uncommon look and thus the potential to confuse readers. <a href="#back2"><i>Go back</i> ↑</a>
 </p>
 
