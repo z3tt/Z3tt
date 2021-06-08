@@ -183,7 +183,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
   <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Data Visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, 5 days, Berlin/remote, Mar and Nov 2020)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Scientific Data Visualization: Principles & Good Practices”<br><span style="color:#989898;font-size:13px;">(Leibniz Institute of Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Scientific Data Visualization: Principles & Good Practices”<br><span style="color:#989898;font-size:13px;">(Leibniz Institute for Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Introduction to Ecological Modelling”<br><span style="color:#989898;font-size:13px;">(Department of Theoretical Ecology, 5 days, University of Potsdam, 2016)</span></li>
 
