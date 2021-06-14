@@ -14,7 +14,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Accepted
 
-- <span style='font-variant:small-caps;'>L. Marescot, M. Franz, S. Benhaiem, H. Hofer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, M. East & S. Kramer-Schadt</span> (accepted)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. *Journal of Animal Ecology*.
+- <span style='font-variant:small-caps;'>L. Marescot, M. Franz, S. Benhaiem, H. Hofer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, M. East & S. Kramer-Schadt</span> (accepted)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. [*Journal of Animal Ecology*](https://doi.org/10.1111/1365-2656.13555).
 
 - <span style='font-variant:small-caps;'>V. Radchuk, U. Berger, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (accepted)</span> Individual-based models. *Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
 
