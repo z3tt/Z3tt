@@ -122,7 +122,7 @@ Thanks to my ["Evolution of a ggplot" blogpost](https://www.cedricscherer.com/20
 
 </p>
 
-```{r data, include=FALSE}
+```{r data-prep, include=FALSE}
 set.seed(2021)
 
 data <- tibble(
@@ -153,6 +153,21 @@ theme_update(
 ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = "grey92")
 ```
+
+<details><summary><i>Expand to generate same sample data.</i></summary>
+```{r data, eval=FALSE}
+set.seed(2021)
+
+data <- tibble(
+  group = factor(c(rep("Group 1", 100), rep("Group 2", 250), rep("Group 3", 25))),
+  value = c(seq(0, 20, length.out = 100),
+            c(rep(0, 5), rnorm(30, 2, .1), rnorm(90, 5.4, .1), rnorm(90, 14.6, .1), rnorm(30, 18, .1), rep(20, 5)),
+            rep(seq(0, 20, length.out = 5), 5))
+  ) %>% 
+  rowwise() %>%
+  mutate(value = if_else(group == "Group 2", value + rnorm(1, 0, .4), value))
+```
+</details>
 
 So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?
 

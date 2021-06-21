@@ -458,6 +458,21 @@ theme_update(
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &quot;grey92&quot;)</code></pre>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-1.png" width="672" /></p>
+<details>
+<summary>
+<i>Expand to generate same sample data.</i>
+</summary>
+<pre class="r"><code>set.seed(2021)
+
+data &lt;- tibble(
+  group = factor(c(rep(&quot;Group 1&quot;, 100), rep(&quot;Group 2&quot;, 250), rep(&quot;Group 3&quot;, 25))),
+  value = c(seq(0, 20, length.out = 100),
+            c(rep(0, 5), rnorm(30, 2, .1), rnorm(90, 5.4, .1), rnorm(90, 14.6, .1), rnorm(30, 18, .1), rep(20, 5)),
+            rep(seq(0, 20, length.out = 5), 5))
+  ) %&gt;% 
+  rowwise() %&gt;%
+  mutate(value = if_else(group == &quot;Group 2&quot;, value + rnorm(1, 0, .4), value))</code></pre>
+</details>
 <p>So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?</p>
 <p>Sure, adding a note on the sample size might be considered good practice but it still doesn’t tell you much about the actual pattern.</p>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png" width="672" /></p>
