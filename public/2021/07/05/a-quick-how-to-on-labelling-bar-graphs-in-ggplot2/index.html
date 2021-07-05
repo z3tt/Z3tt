@@ -640,8 +640,8 @@ ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
 <img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 </details>
 </div>
-<div id="polish" class="section level4">
-<h4>Polish Your Plot</h4>
+<div id="polish" class="section level5">
+<h5>Polish Your Plot</h5>
 <p>Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use <code>theme_void()</code> and add the axis text afterwards again. Here, I use a custom font for both the axis text and the percentage labels and adjust the font size. (I am not going to cover it here but in case you want to include custom fonts, check the <a href="https://github.com/r-lib/systemfonts"><code>{systemfonts}</code> package</a>.)</p>
 <p>By default, <code>{ggplot2}</code> adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument <code>expand</code> in the according scale, here <code>scale_x_continuous()</code>. I also add some white space around the plot by setting a <code>plot.margin</code> which is of type <code>element_rect()</code>.</p>
 <pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +

@@ -299,7 +299,7 @@ mpg %>%
 ```
 </details>
 
-#### Polish Your Plot {#polish}
+##### Polish Your Plot {#polish}
 
 Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use `theme_void()` and add the axis text afterwards again. Here, I use a custom font for both the axis text and the percentage labels and adjust the font size. (I am not going to cover it here but in case you want to include custom fonts, check the [`{systemfonts}` package](https://github.com/r-lib/systemfonts).)
 
