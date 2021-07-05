@@ -735,3 +735,11 @@ I personally doubt that the general audience is well aware of how to interpret b
 <sup>2</sup> Why? Because the boxplot itself can be reduced easily in width without you getting into trouble. At the same time, I believe that these "half–boxplots" have an uncommon look and thus the potential to confuse readers. <a href="#back2"><i>Go back</i> ↑</a>
 </p>
 
+<details>
+<summary style='font-size:10pt;'>R Session Info</summary>
+
+```{r session-info, echo=FALSE, purl=FALSE}
+sessionInfo()
+```
+
+</details>
