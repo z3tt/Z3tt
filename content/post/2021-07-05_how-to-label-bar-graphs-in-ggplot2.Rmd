@@ -14,6 +14,7 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg_png", res = 300)
+library(systemfonts)
 ```
 
 ##### Table of Content
@@ -323,18 +324,18 @@ ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
   geom_text(
     aes(label = perc), 
     hjust = 1, nudge_x = -.5,
-    size = 4, fontface = "bold", family = "Chivo"
+    size = 4, fontface = "bold", family = "Fira Sans"
   ) +
   ## reduce spacing between labels and bars
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = "none") +
   ## get rid of all elements except y axis labels + adjust plot margin
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = "Chivo"),
+  theme(axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
         plot.margin = margin(rep(15, 4)))
 ```
 
-The full code is uploaded in this [gist](https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5) as well.
+You can find the full code to create the final plot in this [gist](https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5).
 
 
 <details>
