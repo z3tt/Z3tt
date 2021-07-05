@@ -137,6 +137,23 @@ mpg_scales</code></pre>
   ## change plot appearance
   theme_minimal()</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png" width="672" /></p>
+<p>And in case you want to add some more description to one of the bars, you can use an <code>if_else()</code> (or an <code>ifelse()</code>) statement like this:</p>
+<pre class="r"><code>mpg_sum &lt;- mpg_sum %&gt;% 
+  dplyr::mutate(
+    ## add percentage label with `sprintf()`
+    perc = paste0(sprintf(&quot;% 2.1f&quot;, n / sum(n) * 100), &quot;%&quot;),
+    ## customize label for the first category
+    perc = if_else(row_number() == 1, paste(perc, &quot;of all car models&quot;), perc)
+  )
+
+ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = &quot;gray65&quot;) +
+  ## add percentage labels
+  geom_text(aes(label = perc)) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png" width="672" /></p>
 <p>To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use <code>geom_bar()</code> instead of <code>geom_col()</code> which takes not two but only one variable and calculates counts by default. To add the labels, we again use <code>geom_text()</code> but this time we overwrite the default statistical transformation <code>stat = "identity"</code> with <code>stat = "count"</code> (the same as the default for <code>geom_bar()</code>).</p>
 <pre class="r"><code>## prepare non-aggregated data set with lumped and ordered factors
 mpg_fct &lt;- mpg %&gt;% 

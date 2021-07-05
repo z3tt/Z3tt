@@ -93,10 +93,53 @@ mpg_scales <- mpg_sum %>%
 
 mpg_scales
 ```
+
+
 So let's draw a bar graph and add the prepared percentage label to each bar with `geom_text()`:
 
 ```{r plot-bars-with-labels}
 ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = "gray65") +
+  ## add percentage labels
+  geom_text(aes(label = perc)) +
+  ## change plot appearance
+  theme_minimal()
+```
+
+And in case you want to add some more description to one of the bars, you can use an `if_else()` (or an `ifelse()`) statement like this:
+
+```{r perc-label-custom}
+mpg_sum <- mpg_sum %>% 
+  dplyr::mutate(
+    ## add percentage label with `sprintf()`
+    perc = paste0(sprintf("% 2.1f", n / sum(n) * 100), "%"),
+    ## customize label for the first category
+    perc = if_else(row_number() == 1, paste(perc, "of all car models"), perc)
+  )
+
+ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = "gray65") +
+  ## add percentage labels
+  geom_text(aes(label = perc)) +
+  ## change plot appearance
+  theme_minimal()
+```
+
+With the help of the `{glue}` package, you can also go crazy and add the manufacturer itself to the label!
+
+```{r perc-label-custom-manufacturer}
+mpg_sum %>% 
+  dplyr::mutate(
+    ## add percentage label with `sprintf()`
+    perc = paste0(sprintf("% 2.1f", n / sum(n) * 100), "%"),
+    ## customize label for the top 3
+    perc = if_else(
+      row_number() %in% 1:3, 
+      glue::glue(perc, "of all car models are {manufacturer}"), perc)
+  ) %>%
+  ggplot(aes(n, manufacturer)) +
   ## draw bars
   geom_col(fill = "gray65") +
   ## add percentage labels
