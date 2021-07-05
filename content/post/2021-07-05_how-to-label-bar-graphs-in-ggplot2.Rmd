@@ -6,7 +6,7 @@ image: img/banner/sun_RichardStrozynski.jpg
 twitterImg: img/banner/sun_RichardStrozynski.png
 layout: post
 showtoc: false
-description: "Bar charts are likely the most common chart type out there with mulitple optiuons how to simplify and prettify a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. The short tutroial shows you mulitple ways how to do so."
+description: "Bar charts are likely the most common chart type out there and come in several varieties. Most notably, Direct labels can increase accessibility of a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. This short tutorial shows you multiple ways how to do so."
 tags: ["DataViz", "tutorial", "R", "ggplot2", "tidyverse", "Annotations"]
 editor_options:
   chunk_output_type: inline
@@ -16,30 +16,30 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg_png", res = 300)
 ```
 
-## Introduction
+## Introduction {#intro}
 
-A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels in `{ggplot2}`.
+A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the [`{ggplot2}` package](https://ggplot2.tidyverse.org/).
 
 > Watching your [webinar about ggplot2 on UseR Oslo YouTube Channel](https://www.youtube.com/watch?v=5KHvEXYtnOo), I noticed some charts you made for a project called ['Survey on contract termination during the COVID-19 pandemic for kuendigung.org'](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/).<br>Because they have many interesting aesthetic features, I started looking for source code on your [GitHub repo](https://github.com/z3tt), but I didn't find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.
 
 <img src="https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png" style="height: 100%; width: 100%; object-fit: contain;">
-<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The simple bar chart I made for [kuendigung.org](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/). Note that this was a multiple choice question and thus percentages do not sum up to 100%.</figcaption></p>
+<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The simple bar chart I made for [kuendigung.org](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/). Note that this was a multiple choice question and thus the sum is larger than 100%.</figcaption></p>
 
 Specifically, the main things of interest where:
 
-1. How to calculate the percentage values? (Did you use a function or calculate them separately?)
-1. How to position the percentage labels inside the bars?
-1. How to color the bars using different colors?
+1. How to **calculate the percentage values**?<br>(Did you use a `{ggplot2}` function or calculate them manually?)
+1. How to **position the percentage labels inside** the bars?
+1. How to **color the bars** using different colors?
 
 Unfortunately, the code is under lock but it's a simple bar chart with some labels, I will walk you through a short toy example using the manufacturers data set `mpg` that comes with  `{ggplot2}`. 
 
-## Data Preparation
+## Data Preparation {#data}
 
 First, let's create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:
 
-* `count()` from the `{dplyr}` package is a wrapper of `group_by(var) %>% summarize(n = n))`. It allows you to sort the values which is useful here because we want to sort the bars based on their value.
-* `str_to_title()` from the `{stringr}` package is a quick way to capitalize labels.
-* `fct_lump()`, `fct_inorder()`, `fct_rev()`, and `fct_relevel()` are all from the `{forcats}` package that provides helpers for reordering factor levels.
+* `count()` from the [`{dplyr}` package](https://dplyr.tidyverse.org/) is a wrapper of `group_by(var) %>% summarize(n = n))`. It allows you to sort the values which is useful here because we want to sort the bars based on their value.
+* `str_to_title()` from the [`{stringr}` package](https://stringr.tidyverse.org/) is a quick way to capitalize labels.
+* `fct_lump()`, `fct_inorder()`, `fct_rev()`, and `fct_relevel()` are all from the [`{forcats}` package](https://forcats.tidyverse.org/) that provides helpers for reordering factor levels.
   - First, we group all manufacturers together that do not belong to the top 10 with `fct_lump()`.
   - Since our data set is sorted in descending order thanks to `count()`, we first order them by appearance with `fct_inorder()`.
   - Afterwards, we reverse them with `fct_rev()`(so that the bar with the highest value is on top).
@@ -68,9 +68,9 @@ mpg_sum
 ```
 
 
-## Visualize the Data
+## Visualize the Data {#dataviz}
 
-##### How to calculate the percentage values?
+##### How to calculate the percentage values?  {#how-to-1}
 
 We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of `geom_bar()` and `stat_summary(geom = "text")` is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.
 
@@ -140,7 +140,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 You can see that we already need to adjust the positioning of the labels. So let's move on to the next question.
 
 
-##### How to position the percentage labels inside the bars?
+##### How to position the percentage labels inside the bars?  {#how-to-2}
 
 The `geom_text()` function comes with arguments that help you to align and position text labels:
 
@@ -202,7 +202,7 @@ ggplot(mpg_sum, aes(n, manufacturer)) +
 ```
 </details>
 
-##### How to color the bars using different colors?
+##### How to color the bars using different colors?  {#how-to-3}
 
 Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let's pick some colors that are similar to the original plot we started with:
 
@@ -316,9 +316,11 @@ mpg %>%
 ```
 </details>
 
-##### Polish Your Plot
+#### Polish Your Plot {#polish}
 
-Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use `theme_void()` and add the axis text afterwards again. I also use a custom font for both the axis text and the percentage labels and adjust the fontsize. By default, `{ggplot2}` adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument `expand`. I also add some white space around the plot.
+Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use `theme_void()` and add the axis text afterwards again. Here, I use a custom font for both the axis text and the percentage labels and adjust the font size. (I am not going to cover it here but in case you want to include custom fonts, check the [`{systemfonts}` package](https://github.com/r-lib/systemfonts).)
+
+By default, `{ggplot2}` adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument `expand` in the according scale, here `scale_x_continuous()`. I also add some white space around the plot by setting a `plot.margin` which is of type `element_rect()`.
 
 ```{r}
 ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +

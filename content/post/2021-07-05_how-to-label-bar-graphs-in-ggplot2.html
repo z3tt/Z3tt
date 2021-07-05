@@ -6,7 +6,7 @@ image: img/banner/sun_RichardStrozynski.jpg
 twitterImg: img/banner/sun_RichardStrozynski.png
 layout: post
 showtoc: false
-description: "Bar charts are likely the most common chart type out there with mulitple optiuons how to simplify and prettify a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. The short tutroial shows you mulitple ways how to do so."
+description: "Bar charts are likely the most common chart type out there and come in several varieties. Most notably, Direct labels can increase accessibility of a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. This short tutorial shows you multiple ways how to do so."
 tags: ["DataViz", "tutorial", "R", "ggplot2", "tidyverse", "Annotations"]
 editor_options:
   chunk_output_type: inline
@@ -15,33 +15,33 @@ editor_options:
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<div id="introduction" class="section level2">
+<div id="intro" class="section level2">
 <h2>Introduction</h2>
-<p>A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels in <code>{ggplot2}</code>.</p>
+<p>A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code> package</a>.</p>
 <blockquote>
 <p>Watching your <a href="https://www.youtube.com/watch?v=5KHvEXYtnOo">webinar about ggplot2 on UseR Oslo YouTube Channel</a>, I noticed some charts you made for a project called <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">‘Survey on contract termination during the COVID-19 pandemic for kuendigung.org’</a>.<br>Because they have many interesting aesthetic features, I started looking for source code on your <a href="https://github.com/z3tt">GitHub repo</a>, but I didn’t find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.</p>
 </blockquote>
 <img src="https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png" style="height: 100%; width: 100%; object-fit: contain;">
 <p>
 <figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
-The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">kuendigung.org</a>. Note that this was a multiple choice question and thus percentages do not sum up to 100%.
+The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">kuendigung.org</a>. Note that this was a multiple choice question and thus the sum is larger than 100%.
 </figcaption>
 </p>
 <p>Specifically, the main things of interest where:</p>
 <ol style="list-style-type: decimal">
-<li>How to calculate the percentage values? (Did you use a function or calculate them separately?)</li>
-<li>How to position the percentage labels inside the bars?</li>
-<li>How to color the bars using different colors?</li>
+<li>How to <strong>calculate the percentage values</strong>?<br>(Did you use a <code>{ggplot2}</code> function or calculate them manually?)</li>
+<li>How to <strong>position the percentage labels inside</strong> the bars?</li>
+<li>How to <strong>color the bars</strong> using different colors?</li>
 </ol>
 <p>Unfortunately, the code is under lock but it’s a simple bar chart with some labels, I will walk you through a short toy example using the manufacturers data set <code>mpg</code> that comes with <code>{ggplot2}</code>.</p>
 </div>
-<div id="data-preparation" class="section level2">
+<div id="data" class="section level2">
 <h2>Data Preparation</h2>
 <p>First, let’s create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:</p>
 <ul>
-<li><code>count()</code> from the <code>{dplyr}</code> package is a wrapper of <code>group_by(var) %&gt;% summarize(n = n))</code>. It allows you to sort the values which is useful here because we want to sort the bars based on their value.</li>
-<li><code>str_to_title()</code> from the <code>{stringr}</code> package is a quick way to capitalize labels.</li>
-<li><code>fct_lump()</code>, <code>fct_inorder()</code>, <code>fct_rev()</code>, and <code>fct_relevel()</code> are all from the <code>{forcats}</code> package that provides helpers for reordering factor levels.
+<li><code>count()</code> from the <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code> package</a> is a wrapper of <code>group_by(var) %&gt;% summarize(n = n))</code>. It allows you to sort the values which is useful here because we want to sort the bars based on their value.</li>
+<li><code>str_to_title()</code> from the <a href="https://stringr.tidyverse.org/"><code>{stringr}</code> package</a> is a quick way to capitalize labels.</li>
+<li><code>fct_lump()</code>, <code>fct_inorder()</code>, <code>fct_rev()</code>, and <code>fct_relevel()</code> are all from the <a href="https://forcats.tidyverse.org/"><code>{forcats}</code> package</a> that provides helpers for reordering factor levels.
 <ul>
 <li>First, we group all manufacturers together that do not belong to the top 10 with <code>fct_lump()</code>.</li>
 <li>Since our data set is sorted in descending order thanks to <code>count()</code>, we first order them by appearance with <code>fct_inorder()</code>.</li>
@@ -83,9 +83,9 @@ mpg_sum</code></pre>
 ## 10 Nissan           7
 ## 11 Jeep             6</code></pre>
 </div>
-<div id="visualize-the-data" class="section level2">
+<div id="dataviz" class="section level2">
 <h2>Visualize the Data</h2>
-<div id="how-to-calculate-the-percentage-values" class="section level5">
+<div id="how-to-1" class="section level5">
 <h5>How to calculate the percentage values?</h5>
 <p>We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of <code>geom_bar()</code> and <code>stat_summary(geom = "text")</code> is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.</p>
 <p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>).</p>
@@ -167,7 +167,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png" width="672" /></p>
 <p>You can see that we already need to adjust the positioning of the labels. So let’s move on to the next question.</p>
 </div>
-<div id="how-to-position-the-percentage-labels-inside-the-bars" class="section level5">
+<div id="how-to-2" class="section level5">
 <h5>How to position the percentage labels inside the bars?</h5>
 <p>The <code>geom_text()</code> function comes with arguments that help you to align and position text labels:</p>
 <ul>
@@ -224,7 +224,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 <img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png" width="672" />
 </details>
 </div>
-<div id="how-to-color-the-bars-using-different-colors" class="section level5">
+<div id="how-to-3" class="section level5">
 <h5>How to color the bars using different colors?</h5>
 <p>Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let’s pick some colors that are similar to the original plot we started with:</p>
 <pre class="r"><code>## create color palette based on input data
@@ -326,9 +326,10 @@ ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
 <img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 </details>
 </div>
-<div id="polish-your-plot" class="section level5">
-<h5>Polish Your Plot</h5>
-<p>Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use <code>theme_void()</code> and add the axis text afterwards again. I also use a custom font for both the axis text and the percentage labels and adjust the fontsize. By default, <code>{ggplot2}</code> adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument <code>expand</code>. I also add some white space around the plot.</p>
+<div id="polish" class="section level4">
+<h4>Polish Your Plot</h4>
+<p>Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use <code>theme_void()</code> and add the axis text afterwards again. Here, I use a custom font for both the axis text and the percentage labels and adjust the font size. (I am not going to cover it here but in case you want to include custom fonts, check the <a href="https://github.com/r-lib/systemfonts"><code>{systemfonts}</code> package</a>.)</p>
+<p>By default, <code>{ggplot2}</code> adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument <code>expand</code> in the according scale, here <code>scale_x_continuous()</code>. I also add some white space around the plot by setting a <code>plot.margin</code> which is of type <code>element_rect()</code>.</p>
 <pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
   geom_col() +
   ## add text (another option would be stat_summary())
