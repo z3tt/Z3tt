@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/sun_RichardStrozynski.png" >
+    
+
+    
+
+    
+      <meta name="title" content="A Quick How-to on Labelling Bar Graphs in ggplot2" />
+      <meta property="og:title" content="A Quick How-to on Labelling Bar Graphs in ggplot2 - Cédric Scherer" />
+      <meta property="twitter:title" content="A Quick How-to on Labelling Bar Graphs in ggplot2 - Cédric Scherer" />
+      <meta property="twitter:text:title" content="A Quick How-to on Labelling Bar Graphs in ggplot2 - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="Bar charts are likely the most common chart type out there with mulitple optiuons how to simplify and prettify a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. The short tutroial shows you mulitple ways how to do so.">
+      <meta property="og:description" content="Bar charts are likely the most common chart type out there with mulitple optiuons how to simplify and prettify a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. The short tutroial shows you mulitple ways how to do so." />
+      <meta property="twitter:description" content="Bar charts are likely the most common chart type out there with mulitple optiuons how to simplify and prettify a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. The short tutroial shows you mulitple ways how to do so." />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>A Quick How-to on Labelling Bar Graphs in ggplot2 - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/portfolio/">Portfolio</a></li>
+                    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/sun_RichardStrozynski.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        <a class="tag" href="/tags/r" title="R">
+                            R
+                        </a>
+                        
+                        <a class="tag" href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        <a class="tag" href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        <a class="tag" href="/tags/annotations" title="Annotations">
+                            Annotations
+                        </a>
+                        
+                    </div>
+                    <h1>A Quick How-to on Labelling Bar Graphs in ggplot2</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Monday, July 5, 2021
+                        
+                            <span id="/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels in <code>{ggplot2}</code>.</p>
+<blockquote>
+<p>Watching your <a href="https://www.youtube.com/watch?v=5KHvEXYtnOo">webinar about ggplot2 on UseR Oslo YouTube Channel</a>, I noticed some charts you made for a project called <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">‘Survey on contract termination during the COVID-19 pandemic for kuendigung.org’</a>.<br>Because they have many interesting aesthetic features, I started looking for source code on your <a href="https://github.com/z3tt">GitHub repo</a>, but I didn’t find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.</p>
+</blockquote>
+<img src="https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p>
+<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">kuendigung.org</a>. Note that this was a multiple choice question and thus percentages do not sum up to 100%.
+</figcaption>
+</p>
+<p>Specifically, the main things of interest where:</p>
+<ol style="list-style-type: decimal">
+<li>How to calculate the percentage values? (Did you use a function or calculate them separately?)</li>
+<li>How to position the percentage labels inside the bars?</li>
+<li>How to color the bars using different colors?</li>
+</ol>
+<p>Unfortunately, the code is under lock but it’s a simple bar chart with some labels, I will walk you through a short toy example using the manufacturers data set <code>mpg</code> that comes with <code>{ggplot2}</code>.</p>
+</div>
+<div id="data-preparation" class="section level2">
+<h2>Data Preparation</h2>
+<p>First, let’s create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:</p>
+<ul>
+<li><code>count()</code> from the <code>{dplyr}</code> package is a wrapper of <code>group_by(var) %&gt;% summarize(n = n))</code>. It allows you to sort the values which is useful here because we want to sort the bars based on their value.</li>
+<li><code>str_to_title()</code> from the <code>{stringr}</code> package is a quick way to capitalize labels.</li>
+<li><code>fct_lump()</code>, <code>fct_inorder()</code>, <code>fct_rev()</code>, and <code>fct_relevel()</code> are all from the <code>{forcats}</code> package that provides helpers for reordering factor levels.
+<ul>
+<li>First, we group all manufacturers together that do not belong to the top 10 with <code>fct_lump()</code>.</li>
+<li>Since our data set is sorted in descending order thanks to <code>count()</code>, we first order them by appearance with <code>fct_inorder()</code>.</li>
+<li>Afterwards, we reverse them with <code>fct_rev()</code>(so that the bar with the highest value is on top).</li>
+<li>Finally, we move the category “Other” to the end (as the first level) with <code>fct_relevel()</code>.</li>
+</ul></li>
+</ul>
+<pre class="r"><code>library(tidyverse)
+
+mpg_sum &lt;- mpg %&gt;% 
+  ## just use 2008 data
+  dplyr::filter(year == 2008) %&gt;%
+  ## turn into lumped factors with capitalized names
+  dplyr::mutate(
+    manufacturer = stringr::str_to_title(manufacturer),
+    manufacturer = forcats::fct_lump(manufacturer, n = 10)
+  ) %&gt;% 
+  ## add counts
+  dplyr::count(manufacturer, sort = TRUE) %&gt;% 
+  ## order factor levels by number, put &quot;Other&quot; to end
+  dplyr::mutate(
+    manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
+    manufacturer = forcats::fct_relevel(manufacturer, &quot;Other&quot;, after = 0)
+  )
+
+mpg_sum</code></pre>
+<pre><code>## # A tibble: 11 x 2
+##    manufacturer     n
+##    &lt;fct&gt;        &lt;int&gt;
+##  1 Dodge           21
+##  2 Toyota          14
+##  3 Chevrolet       12
+##  4 Volkswagen      11
+##  5 Other           11
+##  6 Ford            10
+##  7 Audi             9
+##  8 Hyundai          8
+##  9 Subaru           8
+## 10 Nissan           7
+## 11 Jeep             6</code></pre>
+</div>
+<div id="visualize-the-data" class="section level2">
+<h2>Visualize the Data</h2>
+<div id="how-to-calculate-the-percentage-values" class="section level5">
+<h5>How to calculate the percentage values?</h5>
+<p>We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of <code>geom_bar()</code> and <code>stat_summary(geom = "text")</code> is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.</p>
+<p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>).</p>
+<pre class="r"><code>mpg_sum &lt;- mpg_sum %&gt;% 
+  ## add percentage label with `sprintf()`
+  dplyr::mutate(perc = paste0(sprintf(&quot;% 2.1f&quot;, n / sum(n) * 100), &quot;%&quot;))
+
+mpg_sum</code></pre>
+<pre><code>## # A tibble: 11 x 3
+##    manufacturer     n perc    
+##    &lt;fct&gt;        &lt;int&gt; &lt;chr&gt;   
+##  1 Dodge           21 &quot; 17.9%&quot;
+##  2 Toyota          14 &quot; 12.0%&quot;
+##  3 Chevrolet       12 &quot; 10.3%&quot;
+##  4 Volkswagen      11 &quot; 9.4%&quot; 
+##  5 Other           11 &quot; 9.4%&quot; 
+##  6 Ford            10 &quot; 8.5%&quot; 
+##  7 Audi             9 &quot; 7.7%&quot; 
+##  8 Hyundai          8 &quot; 6.8%&quot; 
+##  9 Subaru           8 &quot; 6.8%&quot; 
+## 10 Nissan           7 &quot; 6.0%&quot; 
+## 11 Jeep             6 &quot; 5.1%&quot;</code></pre>
+<p>One could also use the <code>percent()</code> function from the <code>{scales}</code> package:</p>
+<pre class="r"><code>mpg_scales &lt;- mpg_sum %&gt;% 
+  ## add percentage label with `scales::percent()`
+  dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))
+
+mpg_scales</code></pre>
+<pre><code>## # A tibble: 11 x 3
+##    manufacturer     n perc   
+##    &lt;fct&gt;        &lt;int&gt; &lt;chr&gt;  
+##  1 Dodge           21 &quot;17.9%&quot;
+##  2 Toyota          14 &quot;12.0%&quot;
+##  3 Chevrolet       12 &quot;10.3%&quot;
+##  4 Volkswagen      11 &quot; 9.4%&quot;
+##  5 Other           11 &quot; 9.4%&quot;
+##  6 Ford            10 &quot; 8.5%&quot;
+##  7 Audi             9 &quot; 7.7%&quot;
+##  8 Hyundai          8 &quot; 6.8%&quot;
+##  9 Subaru           8 &quot; 6.8%&quot;
+## 10 Nissan           7 &quot; 6.0%&quot;
+## 11 Jeep             6 &quot; 5.1%&quot;</code></pre>
+<p>So let’s draw a bar graph and add the prepared percentage label to each bar with <code>geom_text()</code>:</p>
+<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = &quot;gray65&quot;) +
+  ## add percentage labels
+  geom_text(aes(label = perc)) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png" width="672" /></p>
+<p>To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use <code>geom_bar()</code> instead of <code>geom_col()</code> which takes not two but only one variable and calculates counts by default. To add the labels, we again use <code>geom_text()</code> but this time we overwrite the default statistical transformation <code>stat = "identity"</code> with <code>stat = "count"</code> (the same as the default for <code>geom_bar()</code>).</p>
+<pre class="r"><code>## prepare non-aggregated data set with lumped and ordered factors
+mpg_fct &lt;- mpg %&gt;% 
+  ## just use 2008 data
+  dplyr::filter(year == 2008) %&gt;%
+  dplyr::mutate(
+    ## add count to calculate percentages later
+    total = dplyr::n(),
+    ## turn into lumped factors with capitalized names,
+    manufacturer = stringr::str_to_title(manufacturer),
+    manufacturer = forcats::fct_lump(manufacturer, n = 10),
+    ## order factor levels by number, put &quot;Other&quot; to end
+    manufacturer = forcats::fct_rev(forcats::fct_infreq(manufacturer)),
+    manufacturer = forcats::fct_relevel(manufacturer, &quot;Other&quot;, after = 0)
+  )
+  
+ggplot(mpg_fct, aes(manufacturer)) +
+  ## draw bars
+  geom_bar(fill = &quot;gray65&quot;) +
+  coord_flip()  +
+  ## add count labels
+  geom_text(
+    stat = &quot;count&quot;,
+    aes(label = ..count..)
+  ) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png" width="672" /></p>
+<p>You can see that we already need to adjust the positioning of the labels. So let’s move on to the next question.</p>
+</div>
+<div id="how-to-position-the-percentage-labels-inside-the-bars" class="section level5">
+<h5>How to position the percentage labels inside the bars?</h5>
+<p>The <code>geom_text()</code> function comes with arguments that help you to align and position text labels:</p>
+<ul>
+<li><code>hjust</code> and <code>vjust</code>: the horizontal and vertical justification to align text</li>
+<li><code>nudge_x</code> and <code>nudge_y</code>: the horizontal and vertical adjustment to offset text from points</li>
+</ul>
+<p>To put the labels inside, we first need to right-align the labels with <code>hjust = 1</code>. We also add some negative horizontal adjustment via <code>nudge_x = -.5</code> to add some spacing between the end of the bar and the label.</p>
+<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = &quot;gray65&quot;) +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png" width="672" /></p>
+<p>In case you want to put the next to the bars, you often need to adjust the plot margin and/or the limits to avoid that the labels are cut off. The drawback of using limits is that you have to define them manually. Thus, I prefer to use the first approach. You can make sure that labels are not truncated by the panel by adding <code>clip = "off"</code> to any coordinate system.</p>
+<details>
+<summary>
+💁 <i>Expand to see examples with labels next to the bars.</i>
+</summary>
+<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = &quot;gray65&quot;) +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 0
+  ) +
+  ## make sure labels doesn&#39;t get cut, part 1
+  coord_cartesian(clip = &quot;off&quot;) +
+  ## change plot appearance
+  theme_minimal() +
+  ## make sure labels doesn&#39;t get cut, part 2
+  theme(plot.margin = margin(r = 20))</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = &quot;gray65&quot;) +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 0
+  ) +
+  ## make sure labels doesn&#39;t get cut
+  scale_x_continuous(limits = c(NA, 23)) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png" width="672" />
+</details>
+</div>
+<div id="how-to-color-the-bars-using-different-colors" class="section level5">
+<h5>How to color the bars using different colors?</h5>
+<p>Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let’s pick some colors that are similar to the original plot we started with:</p>
+<pre class="r"><code>## create color palette based on input data
+pal &lt;- c(
+  &quot;gray80&quot;,
+  rep(&quot;gray55&quot;, length(mpg_sum$manufacturer) - 4), 
+  &quot;coral2&quot;, &quot;mediumpurple1&quot;, &quot;goldenrod1&quot;
+)</code></pre>
+<p>In this approach, we create a vector that holds the colors for each of the levels—from the lowest bar to the bar with the most values.
+We can use the <code>length</code> of the manufacturer column for all non-highlighted bars and subtract the number of bars we want to highlight. Here, we have a colorful top 3 and a lighter “Other” category. The vector can then be used in combination with <code>scale_color|fill_manual()</code>.</p>
+<p>Now, we can use the custom palette to color each bar by mapping <code>manufacturer</code> to the bar’s <code>fill</code> property and by passing the <code>pals</code> vector to <code>scale_fill_manual()</code>:</p>
+<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer, 
+                      fill = manufacturer)) +
+  ## draw bars
+  geom_col() +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## add custom colors
+  scale_fill_manual(values = pal, guide = &quot;none&quot;) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png" width="672" /></p>
+<p>One could also add the color to the data set and map the fill to that column and use <code>scale_fill_identity()</code>.</p>
+<pre class="r"><code>mpg_sum &lt;-
+  mpg_sum %&gt;% 
+  mutate(
+    color = case_when(
+      row_number() == 1 ~ &quot;goldenrod1&quot;,
+      row_number() == 2 ~ &quot;mediumpurple1&quot;,
+      row_number() == 3 ~ &quot;coral2&quot;,
+      manufacturer == &quot;Other&quot; ~ &quot;gray80&quot;,
+      ## all others should be gray
+      TRUE ~ &quot;gray55&quot;
+    )
+  )
+
+ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
+  ## draw bars
+  geom_col() +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## add custom colors
+  scale_fill_identity(guide = &quot;none&quot;) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png" width="672" /></p>
+<p>This approach is less error-prone since the color is tied to the properties of the data. Thus, in case we update the data, the colors are still applied correctly.</p>
+<details>
+<summary>
+💁 <i>Expand to see example with “updated” data.</code></i>
+</summary>
+<pre class="r"><code>mpg %&gt;% 
+  ## use 1999 data now
+  dplyr::filter(year == 1999) %&gt;%
+  ## turn into capitalized factors
+  dplyr::mutate(
+    manufacturer = stringr::str_to_title(manufacturer),
+    manufacturer = forcats::fct_lump(manufacturer, n = 10)
+  ) %&gt;% 
+  ## add counts
+  dplyr::count(manufacturer, sort = TRUE) %&gt;% 
+  dplyr::mutate(
+    ## order factor levels by number, put &quot;Other&quot; to end
+    manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
+    manufacturer = forcats::fct_relevel(manufacturer, &quot;Other&quot;, after = 0),
+    ## create percentage labels with .0s
+    perc = paste0(sprintf(&quot;% 2.1f&quot;, n / sum(n) * 100), &quot;%&quot;),
+    ## add custom colors for top 3 and &quot;Other&quot;
+    color = case_when(
+      row_number() == 1 ~ &quot;goldenrod1&quot;,
+      row_number() == 2 ~ &quot;mediumpurple1&quot;,
+      row_number() == 3 ~ &quot;coral2&quot;,
+      manufacturer == &quot;Other&quot; ~ &quot;gray80&quot;,
+      ## all others should be gray
+      TRUE ~ &quot;gray55&quot;
+    )
+  ) %&gt;% 
+  ggplot(aes(n, manufacturer, fill = color)) +
+  ## draw bars
+  geom_col() +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## add custom colors
+  scale_fill_identity(guide = &quot;none&quot;) +
+  ## change plot appearance
+  theme_minimal()</code></pre>
+<img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+</details>
+</div>
+<div id="polish-your-plot" class="section level5">
+<h5>Polish Your Plot</h5>
+<p>Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use <code>theme_void()</code> and add the axis text afterwards again. I also use a custom font for both the axis text and the percentage labels and adjust the fontsize. By default, <code>{ggplot2}</code> adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument <code>expand</code>. I also add some white space around the plot.</p>
+<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
+  geom_col() +
+  ## add text (another option would be stat_summary())
+  geom_text(
+    aes(label = perc), 
+    ## adjust position inside
+    hjust = 1, nudge_x = -.5,
+    ## label formatting
+    size = 4, fontface = &quot;bold&quot;, family = &quot;Chivo&quot;
+  ) +
+  ## reduce spacing between labels and bars
+  scale_x_continuous(expand = c(.01, .01)) +
+  ## add custom colors
+  scale_fill_identity(guide = &quot;none&quot;) +
+  ## get rid of all elements except y axis labels
+  theme_void() +
+  theme(axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Chivo&quot;),
+        plot.margin = margin(rep(15, 4)))</code></pre>
+<p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>The full code is uploaded in this <a href="https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5">gist</a> as well.</p>
+</div>
+</div>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/" data-toggle="tooltip" data-placement="top" title="Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/announcement" title="announcement">
+                            announcement
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
+                        
+                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                        
+                        <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
+                        
+                        <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
+                        
+                        <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                        <a href="mailto:info@data-vizard.de">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji="🌯"  data-font="Cookie" data-text="Buy me a kebab" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2021. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

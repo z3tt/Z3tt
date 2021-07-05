@@ -1,0 +1,345 @@
+---
+title: "A Quick How-to on Labelling Bar Graphs in ggplot2"
+author: "Cédric"
+date: 2021-07-05
+image: img/banner/sun_RichardStrozynski.jpg
+twitterImg: img/banner/sun_RichardStrozynski.png
+layout: post
+showtoc: false
+description: "Bar charts are likely the most common chart type out there with mulitple optiuons how to simplify and prettify a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. The short tutroial shows you mulitple ways how to do so."
+tags: ["DataViz", "tutorial", "R", "ggplot2", "tidyverse", "Annotations"]
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg_png", res = 300)
+```
+
+## Introduction
+
+A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels in `{ggplot2}`.
+
+> Watching your [webinar about ggplot2 on UseR Oslo YouTube Channel](https://www.youtube.com/watch?v=5KHvEXYtnOo), I noticed some charts you made for a project called ['Survey on contract termination during the COVID-19 pandemic for kuendigung.org'](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/).<br>Because they have many interesting aesthetic features, I started looking for source code on your [GitHub repo](https://github.com/z3tt), but I didn't find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.
+
+<img src="https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The simple bar chart I made for [kuendigung.org](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/). Note that this was a multiple choice question and thus percentages do not sum up to 100%.</figcaption></p>
+
+Specifically, the main things of interest where:
+
+1. How to calculate the percentage values? (Did you use a function or calculate them separately?)
+1. How to position the percentage labels inside the bars?
+1. How to color the bars using different colors?
+
+Unfortunately, the code is under lock but it's a simple bar chart with some labels, I will walk you through a short toy example using the manufacturers data set `mpg` that comes with  `{ggplot2}`. 
+
+## Data Preparation
+
+First, let's create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:
+
+* `count()` from the `{dplyr}` package is a wrapper of `group_by(var) %>% summarize(n = n))`. It allows you to sort the values which is useful here because we want to sort the bars based on their value.
+* `str_to_title()` from the `{stringr}` package is a quick way to capitalize labels.
+* `fct_lump()`, `fct_inorder()`, `fct_rev()`, and `fct_relevel()` are all from the `{forcats}` package that provides helpers for reordering factor levels.
+  - First, we group all manufacturers together that do not belong to the top 10 with `fct_lump()`.
+  - Since our data set is sorted in descending order thanks to `count()`, we first order them by appearance with `fct_inorder()`.
+  - Afterwards, we reverse them with `fct_rev()`(so that the bar with the highest value is on top).
+  - Finally, we move the category "Other" to the end (as the first level) with `fct_relevel()`.
+
+```{r data-prep}
+library(tidyverse)
+
+mpg_sum <- mpg %>% 
+  ## just use 2008 data
+  dplyr::filter(year == 2008) %>%
+  ## turn into lumped factors with capitalized names
+  dplyr::mutate(
+    manufacturer = stringr::str_to_title(manufacturer),
+    manufacturer = forcats::fct_lump(manufacturer, n = 10)
+  ) %>% 
+  ## add counts
+  dplyr::count(manufacturer, sort = TRUE) %>% 
+  ## order factor levels by number, put "Other" to end
+  dplyr::mutate(
+    manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
+    manufacturer = forcats::fct_relevel(manufacturer, "Other", after = 0)
+  )
+
+mpg_sum
+```
+
+
+## Visualize the Data
+
+##### How to calculate the percentage values?
+
+We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of `geom_bar()` and `stat_summary(geom = "text")` is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.
+
+Here are two ways how to quickly add the percentage labels to your data set. `sprintf()` is a handy function to format text and variables. `sprintf()` allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. `21.0%` instead of `21%`).
+
+```{r perc-label-sprintf}
+mpg_sum <- mpg_sum %>% 
+  ## add percentage label with `sprintf()`
+  dplyr::mutate(perc = paste0(sprintf("% 2.1f", n / sum(n) * 100), "%"))
+
+mpg_sum
+```
+
+One could also use the `percent()` function from the `{scales}` package:
+
+```{r perc-label-scales}
+mpg_scales <- mpg_sum %>% 
+  ## add percentage label with `scales::percent()`
+  dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))
+
+mpg_scales
+```
+So let's draw a bar graph and add the prepared percentage label to each bar with `geom_text()`:
+
+```{r plot-bars-with-labels}
+ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = "gray65") +
+  ## add percentage labels
+  geom_text(aes(label = perc)) +
+  ## change plot appearance
+  theme_minimal()
+```
+
+To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use `geom_bar()` instead of `geom_col()` which takes not two but only one variable and calculates counts by default. To add the labels, we again use `geom_text()` but this time we overwrite the default statistical transformation `stat = "identity"` with `stat = "count"` (the same as the default for `geom_bar()`).
+
+
+```{r plot-bars-summary}
+## prepare non-aggregated data set with lumped and ordered factors
+mpg_fct <- mpg %>% 
+  ## just use 2008 data
+  dplyr::filter(year == 2008) %>%
+  dplyr::mutate(
+    ## add count to calculate percentages later
+    total = dplyr::n(),
+    ## turn into lumped factors with capitalized names,
+    manufacturer = stringr::str_to_title(manufacturer),
+    manufacturer = forcats::fct_lump(manufacturer, n = 10),
+    ## order factor levels by number, put "Other" to end
+    manufacturer = forcats::fct_rev(forcats::fct_infreq(manufacturer)),
+    manufacturer = forcats::fct_relevel(manufacturer, "Other", after = 0)
+  )
+  
+ggplot(mpg_fct, aes(manufacturer)) +
+  ## draw bars
+  geom_bar(fill = "gray65") +
+  coord_flip()  +
+  ## add count labels
+  geom_text(
+    stat = "count",
+    aes(label = ..count..)
+  ) +
+  ## change plot appearance
+  theme_minimal()
+```
+
+You can see that we already need to adjust the positioning of the labels. So let's move on to the next question.
+
+
+##### How to position the percentage labels inside the bars?
+
+The `geom_text()` function comes with arguments that help you to align and position text labels:
+
+* `hjust` and `vjust`: the horizontal and vertical justification to align text
+* `nudge_x` and `nudge_y`: the horizontal and vertical adjustment to offset text from points
+
+To put the labels inside, we first need to right-align the labels with `hjust = 1`. We also add some negative horizontal adjustment via `nudge_x = -.5` to add some spacing between the end of the bar and the label.
+
+```{r plot-bars-labels-inside}
+ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = "gray65") +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## change plot appearance
+  theme_minimal()
+```
+
+In case you want to put the next to the bars, you often need to adjust the plot margin and/or the limits to avoid that the labels are cut off. The drawback of using limits is that you have to define them manually. Thus, I prefer to use the first approach. You can make sure that labels are not truncated by the panel by adding `clip = "off"` to any coordinate system.
+
+<details>
+  <summary>&#128129; <i>Expand to see examples with labels next to the bars.</i></summary>
+```{r plot-bars-labels-outside-1}
+ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = "gray65") +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 0
+  ) +
+  ## make sure labels doesn't get cut, part 1
+  coord_cartesian(clip = "off") +
+  ## change plot appearance
+  theme_minimal() +
+  ## make sure labels doesn't get cut, part 2
+  theme(plot.margin = margin(r = 20))
+```
+
+```{r plot-bars-labels-outside-2}
+ggplot(mpg_sum, aes(n, manufacturer)) +
+  ## draw bars
+  geom_col(fill = "gray65") +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 0
+  ) +
+  ## make sure labels doesn't get cut
+  scale_x_continuous(limits = c(NA, 23)) +
+  ## change plot appearance
+  theme_minimal()
+```
+</details>
+
+##### How to color the bars using different colors?
+
+Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let's pick some colors that are similar to the original plot we started with:
+
+```{r palette}
+## create color palette based on input data
+pal <- c(
+  "gray80",
+  rep("gray55", length(mpg_sum$manufacturer) - 4), 
+  "coral2", "mediumpurple1", "goldenrod1"
+)
+```
+
+In this approach, we create a vector that holds the colors for each of the levels—from the lowest bar to the bar with the most values.
+We can use the `length` of the manufacturer column for all non-highlighted bars and subtract the number of bars we want to highlight. Here, we have a colorful top 3 and a lighter "Other" category. The vector can then be used in combination with `scale_color|fill_manual()`.
+
+
+Now, we can use the custom palette to color each bar by mapping `manufacturer` to the bar's `fill` property and by passing the `pals` vector to `scale_fill_manual()`:
+
+```{r plot-color-manual}
+ggplot(mpg_sum, aes(n, manufacturer, 
+                      fill = manufacturer)) +
+  ## draw bars
+  geom_col() +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## add custom colors
+  scale_fill_manual(values = pal, guide = "none") +
+  ## change plot appearance
+  theme_minimal()
+```
+
+One could also add the color to the data set and map the fill to that column and use `scale_fill_identity()`.
+
+```{r palette-as-col}
+mpg_sum <-
+  mpg_sum %>% 
+  mutate(
+    color = case_when(
+      row_number() == 1 ~ "goldenrod1",
+      row_number() == 2 ~ "mediumpurple1",
+      row_number() == 3 ~ "coral2",
+      manufacturer == "Other" ~ "gray80",
+      ## all others should be gray
+      TRUE ~ "gray55"
+    )
+  )
+
+ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
+  ## draw bars
+  geom_col() +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## add custom colors
+  scale_fill_identity(guide = "none") +
+  ## change plot appearance
+  theme_minimal()
+```
+
+This approach is less error-prone since the color is tied to the properties of the data. Thus, in case we update the data, the colors are still applied correctly.
+
+<details>
+  <summary>&#128129; <i>Expand to see example with "updated" data.</code></i></summary>
+```{r}
+mpg %>% 
+  ## use 1999 data now
+  dplyr::filter(year == 1999) %>%
+  ## turn into capitalized factors
+  dplyr::mutate(
+    manufacturer = stringr::str_to_title(manufacturer),
+    manufacturer = forcats::fct_lump(manufacturer, n = 10)
+  ) %>% 
+  ## add counts
+  dplyr::count(manufacturer, sort = TRUE) %>% 
+  dplyr::mutate(
+    ## order factor levels by number, put "Other" to end
+    manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
+    manufacturer = forcats::fct_relevel(manufacturer, "Other", after = 0),
+    ## create percentage labels with .0s
+    perc = paste0(sprintf("% 2.1f", n / sum(n) * 100), "%"),
+    ## add custom colors for top 3 and "Other"
+    color = case_when(
+      row_number() == 1 ~ "goldenrod1",
+      row_number() == 2 ~ "mediumpurple1",
+      row_number() == 3 ~ "coral2",
+      manufacturer == "Other" ~ "gray80",
+      ## all others should be gray
+      TRUE ~ "gray55"
+    )
+  ) %>% 
+  ggplot(aes(n, manufacturer, fill = color)) +
+  ## draw bars
+  geom_col() +
+  ## add percentage labels
+  geom_text(
+    aes(label = perc), 
+    ## make labels left-aligned
+    hjust = 1, nudge_x = -.5
+  ) +
+  ## add custom colors
+  scale_fill_identity(guide = "none") +
+  ## change plot appearance
+  theme_minimal()
+```
+</details>
+
+##### Polish Your Plot
+
+Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use `theme_void()` and add the axis text afterwards again. I also use a custom font for both the axis text and the percentage labels and adjust the fontsize. By default, `{ggplot2}` adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument `expand`. I also add some white space around the plot.
+
+```{r}
+ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
+  geom_col() +
+  ## add text (another option would be stat_summary())
+  geom_text(
+    aes(label = perc), 
+    ## adjust position inside
+    hjust = 1, nudge_x = -.5,
+    ## label formatting
+    size = 4, fontface = "bold", family = "Chivo"
+  ) +
+  ## reduce spacing between labels and bars
+  scale_x_continuous(expand = c(.01, .01)) +
+  ## add custom colors
+  scale_fill_identity(guide = "none") +
+  ## get rid of all elements except y axis labels
+  theme_void() +
+  theme(axis.text.y = element_text(size = 14, hjust = 1, family = "Chivo"),
+        plot.margin = margin(rep(15, 4)))
+```
+
+The full code is uploaded in this [gist](https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5) as well.
+
