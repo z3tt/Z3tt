@@ -137,7 +137,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
   theme_minimal()
 ```
 
-You can see that we already need to adjust the positioning of the labels. So let's move on to the next question.
+As you can see, the default settings of `geom_text()` place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let's move on to the next question!
 
 
 ##### How to position the percentage labels inside the bars?  {#how-to-2}
