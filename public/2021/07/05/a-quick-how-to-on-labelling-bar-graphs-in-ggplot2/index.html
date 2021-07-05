@@ -351,6 +351,21 @@ $(function() {
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
+<div id="table-of-content" class="section level5">
+<h5>Table of Content</h5>
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#data">Data Preparation with the {tidyverse}</a></li>
+<li><a href="#dataviz">Data Visualization with {ggplot2}</a>
+<ul>
+<li><a href="#how-to-1">How to Calculate the Percentage Values</a></li>
+<li><a href="#how-to-2">How to Position the Percentage Labels Inside the Bars</a></li>
+<li><a href="#how-to-3">How to Color the Bars Using Different Colors</a></li>
+<li><a href="#polish">Polish Your Plot</a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
 <div id="intro" class="section level2">
 <h2>Introduction</h2>
 <p>A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code> package</a>.</p>
@@ -372,7 +387,7 @@ The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verb
 <p>Unfortunately, the code is under lock but it’s a simple bar chart with some labels, I will walk you through a short toy example using the manufacturers data set <code>mpg</code> that comes with <code>{ggplot2}</code>.</p>
 </div>
 <div id="data" class="section level2">
-<h2>Data Preparation</h2>
+<h2>Data Preparation with the {tidyverse}</h2>
 <p>First, let’s create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:</p>
 <ul>
 <li><code>count()</code> from the <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code> package</a> is a wrapper of <code>group_by(var) %&gt;% summarize(n = n))</code>. It allows you to sort the values which is useful here because we want to sort the bars based on their value.</li>
@@ -420,9 +435,9 @@ mpg_sum</code></pre>
 ## 11 Jeep             6</code></pre>
 </div>
 <div id="dataviz" class="section level2">
-<h2>Visualize the Data</h2>
+<h2>Data Visualization with {ggplot2}</h2>
 <div id="how-to-1" class="section level5">
-<h5>How to calculate the percentage values?</h5>
+<h5>How to Calculate the Percentage Values</h5>
 <p>We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of <code>geom_bar()</code> and <code>stat_summary(geom = "text")</code> is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.</p>
 <p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>).</p>
 <pre class="r"><code>mpg_sum &lt;- mpg_sum %&gt;% 
@@ -512,7 +527,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 <p>As you can see, the default settings of <code>geom_text()</code> place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!</p>
 </div>
 <div id="how-to-2" class="section level5">
-<h5>How to position the percentage labels inside the bars?</h5>
+<h5>How to Position the Percentage Labels Inside the Bars</h5>
 <p>The <code>geom_text()</code> function comes with arguments that help you to align and position text labels:</p>
 <ul>
 <li><code>hjust</code> and <code>vjust</code>: the horizontal and vertical justification to align text.</li>
@@ -558,7 +573,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 </details>
 </div>
 <div id="how-to-3" class="section level5">
-<h5>How to color the bars using different colors?</h5>
+<h5>How to Color the Bars Using Different Colors</h5>
 <p>Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let’s pick some colors that are similar to the original plot we started with:</p>
 <pre class="r"><code>## create color palette based on input data
 pal &lt;- c(

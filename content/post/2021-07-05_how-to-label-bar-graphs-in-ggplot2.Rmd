@@ -16,6 +16,18 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg_png", res = 300)
 ```
 
+##### Table of Content
+
+* [Introduction](#intro)
+* [Data Preparation with the {tidyverse}](#data)
+* [Data Visualization with {ggplot2}](#dataviz)
+  - [How to Calculate the Percentage Values](#how-to-1)
+  - [How to Position the Percentage Labels Inside the Bars](#how-to-2)
+  - [How to Color the Bars Using Different Colors](#how-to-3)
+  - [Polish Your Plot](#polish)
+
+---
+
 ## Introduction {#intro}
 
 A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the [`{ggplot2}` package](https://ggplot2.tidyverse.org/).
@@ -33,7 +45,7 @@ Specifically, the main things of interest where:
 
 Unfortunately, the code is under lock but it's a simple bar chart with some labels, I will walk you through a short toy example using the manufacturers data set `mpg` that comes with  `{ggplot2}`. 
 
-## Data Preparation {#data}
+## Data Preparation with the {tidyverse} {#data}
 
 First, let's create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:
 
@@ -68,9 +80,9 @@ mpg_sum
 ```
 
 
-## Visualize the Data {#dataviz}
+## Data Visualization with {ggplot2} {#dataviz}
 
-##### How to calculate the percentage values?  {#how-to-1}
+##### How to Calculate the Percentage Values  {#how-to-1}
 
 We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of `geom_bar()` and `stat_summary(geom = "text")` is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.
 
@@ -153,7 +165,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 As you can see, the default settings of `geom_text()` place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let's move on to the next question!
 
 
-##### How to position the percentage labels inside the bars?  {#how-to-2}
+##### How to Position the Percentage Labels Inside the Bars  {#how-to-2}
 
 The `geom_text()` function comes with arguments that help you to align and position text labels:
 
@@ -204,7 +216,7 @@ ggplot(mpg_sum, aes(n, manufacturer)) +
 ```
 </details>
 
-##### How to color the bars using different colors?  {#how-to-3}
+##### How to Color the Bars Using Different Colors  {#how-to-3}
 
 Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let's pick some colors that are similar to the original plot we started with:
 

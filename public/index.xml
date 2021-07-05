@@ -13,9 +13,7 @@
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
-      <description>IntroductionA few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the {ggplot2} package.
-Watching your webinar about ggplot2 on UseR Oslo YouTube Channel, I noticed some charts you made for a project called ‘Survey on contract termination during the COVID-19 pandemic for kuendigung.org’.
-Because they have many interesting aesthetic features, I started looking for source code on your GitHub repo, but I didn’t find anything.</description>
+      <description>Table of ContentIntroductionData Preparation with the {tidyverse}Data Visualization with {ggplot2}How to Calculate the Percentage ValuesHow to Position the Percentage Labels Inside the BarsHow to Color the Bars Using Different ColorsPolish Your PlotIntroductionA few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the {ggplot2} package.</description>
     </item>
     
     <item>
