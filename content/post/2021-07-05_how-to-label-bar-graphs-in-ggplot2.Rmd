@@ -49,6 +49,8 @@ Specifically, the main things of interest where:
 
 Unfortunately, the code is under lock but it's a simple bar chart with some labels, so I will walk you through a short toy example using the manufacturers data set `mpg` that comes with `{ggplot2}`. 
 
+---
+
 ## Data Preparation with the {tidyverse} {#data}
 
 First, let's prepare the data for the bar chart. We are going to use the data from 2008 only and summarize the number of car model variants in the data per manufacturer. We also adjust the manufacturer labels and order them as they should appear in the final plot. Here are some notes on some of the functions used:
@@ -91,6 +93,8 @@ levels(mpg_sum$manufacturer)
 ```
 
 Keep in mind that we have reversed the ordering since  `{ggplot2}` plots factors from bottom to top when being mapped to `y`.
+
+---
 
 ## Data Visualization with {ggplot2} {#dataviz}
 
