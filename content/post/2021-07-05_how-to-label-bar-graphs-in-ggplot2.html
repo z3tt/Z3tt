@@ -54,7 +54,7 @@ The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verb
 <h2>Data Preparation with the {tidyverse}</h2>
 <p>First, let’s create a bar plot with manual percentage labels. We are going to prepare the data, here are some notes on some of the functions used:</p>
 <ul>
-<li><code>count()</code> from the <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code> package</a> is a wrapper of <code>group_by(var) %&gt;% summarize(n = n))</code>. It allows you to sort the values which is useful here because we want to sort the bars based on their value.</li>
+<li><code>count()</code> from the <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code> package</a> is a wrapper of <code>group_by(var) %&gt;% summarize(n = n()))</code>. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.</li>
 <li><code>str_to_title()</code> from the <a href="https://stringr.tidyverse.org/"><code>{stringr}</code> package</a> is a quick way to capitalize labels.</li>
 <li><code>fct_lump()</code>, <code>fct_inorder()</code>, <code>fct_rev()</code>, and <code>fct_relevel()</code> are all from the <a href="https://forcats.tidyverse.org/"><code>{forcats}</code> package</a> that provides helpers for reordering factor levels.
 <ul>
@@ -103,25 +103,25 @@ mpg_sum</code></pre>
 <div id="how-to-1" class="section level5">
 <h5>How to Calculate the Percentage Values</h5>
 <p>We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of <code>geom_bar()</code> and <code>stat_summary(geom = "text")</code> is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.</p>
-<p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>).</p>
+<p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See <a href="https://www.php.net/manual/en/function.sprintf.php">here</a> for more about the parameters one can use</p>
 <pre class="r"><code>mpg_sum &lt;- mpg_sum %&gt;% 
   ## add percentage label with `sprintf()`
-  dplyr::mutate(perc = paste0(sprintf(&quot;% 2.1f&quot;, n / sum(n) * 100), &quot;%&quot;))
+  dplyr::mutate(perc = paste0(sprintf(&quot;%4.1f&quot;, n / sum(n) * 100), &quot;%&quot;))
 
 mpg_sum</code></pre>
 <pre><code>## # A tibble: 11 x 3
-##    manufacturer     n perc    
-##    &lt;fct&gt;        &lt;int&gt; &lt;chr&gt;   
-##  1 Dodge           21 &quot; 17.9%&quot;
-##  2 Toyota          14 &quot; 12.0%&quot;
-##  3 Chevrolet       12 &quot; 10.3%&quot;
-##  4 Volkswagen      11 &quot; 9.4%&quot; 
-##  5 Other           11 &quot; 9.4%&quot; 
-##  6 Ford            10 &quot; 8.5%&quot; 
-##  7 Audi             9 &quot; 7.7%&quot; 
-##  8 Hyundai          8 &quot; 6.8%&quot; 
-##  9 Subaru           8 &quot; 6.8%&quot; 
-## 10 Nissan           7 &quot; 6.0%&quot; 
+##    manufacturer     n perc   
+##    &lt;fct&gt;        &lt;int&gt; &lt;chr&gt;  
+##  1 Dodge           21 &quot;17.9%&quot;
+##  2 Toyota          14 &quot;12.0%&quot;
+##  3 Chevrolet       12 &quot;10.3%&quot;
+##  4 Volkswagen      11 &quot; 9.4%&quot;
+##  5 Other           11 &quot; 9.4%&quot;
+##  6 Ford            10 &quot; 8.5%&quot;
+##  7 Audi             9 &quot; 7.7%&quot;
+##  8 Hyundai          8 &quot; 6.8%&quot;
+##  9 Subaru           8 &quot; 6.8%&quot;
+## 10 Nissan           7 &quot; 6.0%&quot;
 ## 11 Jeep             6 &quot; 5.1%&quot;</code></pre>
 <p>One could also use the <code>percent()</code> function from the <code>{scales}</code> package:</p>
 <pre class="r"><code>mpg_sum %&gt;% 
@@ -153,7 +153,7 @@ mpg_sum</code></pre>
 <p>And in case you want to add some more description to one of the bars, you can use an <code>if_else()</code> (or an <code>ifelse()</code>) statement like this:</p>
 <pre class="r"><code>mpg_sum &lt;- mpg_sum %&gt;% 
   dplyr::mutate(
-    perc = paste0(sprintf(&quot;% 2.1f&quot;, n / sum(n) * 100), &quot;%&quot;),
+    perc = paste0(sprintf(&quot;%4.1f&quot;, n / sum(n) * 100), &quot;%&quot;),
     ## customize label for the first category
     perc = if_else(row_number() == 1, paste(perc, &quot;of all car models&quot;), perc)
   )
@@ -299,7 +299,8 @@ ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
     manufacturer = forcats::fct_relevel(manufacturer, &quot;Other&quot;, after = 0),
-    perc = paste0(sprintf(&quot;% 2.1f&quot;, n / sum(n) * 100), &quot;%&quot;),
+    perc = paste0(sprintf(&quot;%4.1f&quot;, n / sum(n) * 100), &quot;%&quot;),
+    perc = if_else(row_number() == 1, paste(perc, &quot;of all car models&quot;), perc),
     color = case_when(
       row_number() == 1 ~ &quot;goldenrod1&quot;,
       row_number() == 2 ~ &quot;mediumpurple1&quot;,
