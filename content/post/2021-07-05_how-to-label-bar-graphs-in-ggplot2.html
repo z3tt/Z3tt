@@ -144,7 +144,7 @@ mpg_sum</code></pre>
 <p>So let’s draw a bar graph and add the prepared percentage label to each bar with <code>geom_text()</code>:</p>
 <pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
   ## draw bars
-  geom_col(fill = &quot;gray65&quot;) +
+  geom_col(fill = &quot;gray75&quot;) +
   ## add percentage labels
   geom_text(aes(label = perc)) +
   ## change plot appearance
@@ -159,7 +159,7 @@ mpg_sum</code></pre>
   )
 
 ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = &quot;gray65&quot;) +
+  geom_col(fill = &quot;gray75&quot;) +
   geom_text(aes(label = perc)) +
   theme_minimal()</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png" width="672" /></p>
@@ -179,7 +179,7 @@ mpg_fct &lt;- mpg %&gt;%
   )
   
 ggplot(mpg_fct, aes(manufacturer)) +
-  geom_bar(fill = &quot;gray65&quot;) +
+  geom_bar(fill = &quot;gray75&quot;) +
   coord_flip()  +
   ## add count labels
   geom_text(
@@ -199,7 +199,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 </ul>
 <p>To put the labels inside, we first need to right-align the labels with <code>hjust = 1</code>. We also add some negative horizontal adjustment via <code>nudge_x = -.5</code> to add some spacing between the end of the bar and the label.</p>
 <pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = &quot;gray65&quot;) +
+  geom_col(fill = &quot;gray75&quot;) +
   geom_text(
     aes(label = perc), 
     ## make labels left-aligned
@@ -213,7 +213,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 💁 <i>Expand to see examples with labels next to the bars.</i>
 </summary>
 <pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = &quot;gray65&quot;) +
+  geom_col(fill = &quot;gray75&quot;) +
   geom_text(
     aes(label = perc), 
     hjust = 0
@@ -225,7 +225,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
   theme(plot.margin = margin(r = 20))</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = &quot;gray65&quot;) +
+  geom_col(fill = &quot;gray75&quot;) +
   geom_text(
     aes(label = perc), 
     hjust = 0

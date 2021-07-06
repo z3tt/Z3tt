@@ -111,7 +111,7 @@ So let's draw a bar graph and add the prepared percentage label to each bar with
 ```{r plot-bars-with-labels}
 ggplot(mpg_sum, aes(n, manufacturer)) +
   ## draw bars
-  geom_col(fill = "gray65") +
+  geom_col(fill = "gray75") +
   ## add percentage labels
   geom_text(aes(label = perc)) +
   ## change plot appearance
@@ -129,7 +129,7 @@ mpg_sum <- mpg_sum %>%
   )
 
 ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = "gray65") +
+  geom_col(fill = "gray75") +
   geom_text(aes(label = perc)) +
   theme_minimal()
 ```
@@ -153,7 +153,7 @@ mpg_fct <- mpg %>%
   )
   
 ggplot(mpg_fct, aes(manufacturer)) +
-  geom_bar(fill = "gray65") +
+  geom_bar(fill = "gray75") +
   coord_flip()  +
   ## add count labels
   geom_text(
@@ -177,7 +177,7 @@ To put the labels inside, we first need to right-align the labels with `hjust = 
 
 ```{r plot-bars-labels-inside}
 ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = "gray65") +
+  geom_col(fill = "gray75") +
   geom_text(
     aes(label = perc), 
     ## make labels left-aligned
@@ -192,7 +192,7 @@ In case you want to put the next to the bars, you often need to adjust the plot 
   <summary>&#128129; <i>Expand to see examples with labels next to the bars.</i></summary>
 ```{r plot-bars-labels-outside-1}
 ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = "gray65") +
+  geom_col(fill = "gray75") +
   geom_text(
     aes(label = perc), 
     hjust = 0
@@ -206,7 +206,7 @@ ggplot(mpg_sum, aes(n, manufacturer)) +
 
 ```{r plot-bars-labels-outside-2}
 ggplot(mpg_sum, aes(n, manufacturer)) +
-  geom_col(fill = "gray65") +
+  geom_col(fill = "gray75") +
   geom_text(
     aes(label = perc), 
     hjust = 0
