@@ -104,6 +104,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   theme_minimal()
 ```
 
+---
 
 ##### How to Calculate the Percentage Values  {#how-to-1}
 
@@ -184,6 +185,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
 
 As you can see, the default settings of `geom_text()` place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let's move on to the next question!
 
+---
 
 ##### How to Position the Percentage Labels Inside the Bars  {#how-to-2}
 
@@ -240,6 +242,8 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   theme_minimal()
 ```
 </details>
+
+---
 
 ##### How to Color the Bars Using Different Colors  {#how-to-3}
 
@@ -336,6 +340,8 @@ mpg %>%
   theme_minimal()
 ```
 </details>
+
+---
 
 ##### Polish Your Plot {#polish}
 

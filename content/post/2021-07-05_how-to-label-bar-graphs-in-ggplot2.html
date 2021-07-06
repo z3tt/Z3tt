@@ -115,6 +115,7 @@ mpg_sum</code></pre>
   ## change plot appearance
   theme_minimal()</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png" width="672" /></p>
+<hr />
 <div id="how-to-1" class="section level5">
 <h5>How to Calculate the Percentage Values</h5>
 <p>We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of <code>geom_bar()</code> and <code>stat_summary(geom = "text")</code> is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.</p>
@@ -203,6 +204,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   theme_minimal()</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png" width="672" /></p>
 <p>As you can see, the default settings of <code>geom_text()</code> place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!</p>
+<hr />
 </div>
 <div id="how-to-2" class="section level5">
 <h5>How to Position the Percentage Labels Inside the Bars</h5>
@@ -251,6 +253,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   theme_minimal()</code></pre>
 <img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png" width="672" />
 </details>
+<hr />
 </div>
 <div id="how-to-3" class="section level5">
 <h5>How to Color the Bars Using Different Colors</h5>
@@ -335,6 +338,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   theme_minimal()</code></pre>
 <img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 </details>
+<hr />
 </div>
 <div id="polish" class="section level5">
 <h5>Polish Your Plot</h5>
