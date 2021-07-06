@@ -433,13 +433,19 @@ mpg_sum</code></pre>
 ##  9 Subaru           8
 ## 10 Nissan           7
 ## 11 Jeep             6</code></pre>
+<p>Let’s check if our factor reordering worked:</p>
+<pre class="r"><code>levels(mpg_sum$manufacturer)</code></pre>
+<pre><code>##  [1] &quot;Other&quot;      &quot;Jeep&quot;       &quot;Nissan&quot;     &quot;Subaru&quot;     &quot;Hyundai&quot;   
+##  [6] &quot;Audi&quot;       &quot;Ford&quot;       &quot;Volkswagen&quot; &quot;Chevrolet&quot;  &quot;Toyota&quot;    
+## [11] &quot;Dodge&quot;</code></pre>
+<p>Keep in mind that we have reversed the ordering since <code>{ggplot2}</code> plots factors from bottom to top when being mapped to <code>y</code>.</p>
 </div>
 <div id="dataviz" class="section level2">
 <h2>Data Visualization with {ggplot2}</h2>
 <div id="how-to-1" class="section level5">
 <h5>How to Calculate the Percentage Values</h5>
 <p>We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of <code>geom_bar()</code> and <code>stat_summary(geom = "text")</code> is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.</p>
-<p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See <a href="https://www.php.net/manual/en/function.sprintf.php">here</a> for more about the parameters one can use</p>
+<p>Here are two ways how to quickly add the percentage labels to your data set. <code>sprintf()</code> is a handy function to format text and variables. <code>sprintf()</code> allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. <code>21.0%</code> instead of <code>21%</code>). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See <a href="https://www.php.net/manual/en/function.sprintf.php">here</a> for more about the parameters one can use.</p>
 <pre class="r"><code>mpg_sum &lt;- mpg_sum %&gt;% 
   ## add percentage label with `sprintf()`
   dplyr::mutate(perc = paste0(sprintf(&quot;%4.1f&quot;, n / sum(n) * 100), &quot;%&quot;))
@@ -478,7 +484,7 @@ mpg_sum</code></pre>
 ## 10 Nissan           7 &quot; 6.0%&quot;
 ## 11 Jeep             6 &quot; 5.1%&quot;</code></pre>
 <p>So let’s draw a bar graph and add the prepared percentage label to each bar with <code>geom_text()</code>:</p>
-<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+<pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   ## draw bars
   geom_col(fill = &quot;gray75&quot;) +
   ## add percentage labels
@@ -494,7 +500,7 @@ mpg_sum</code></pre>
     perc = if_else(row_number() == 1, paste(perc, &quot;of all car models&quot;), perc)
   )
 
-ggplot(mpg_sum, aes(n, manufacturer)) +
+ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &quot;gray75&quot;) +
   geom_text(aes(label = perc)) +
   theme_minimal()</code></pre>
@@ -514,14 +520,15 @@ mpg_fct &lt;- mpg %&gt;%
     manufacturer = forcats::fct_relevel(manufacturer, &quot;Other&quot;, after = 0)
   )
   
-ggplot(mpg_fct, aes(manufacturer)) +
+ggplot(mpg_fct, aes(x = manufacturer)) +
   geom_bar(fill = &quot;gray75&quot;) +
-  coord_flip()  +
   ## add count labels
   geom_text(
     stat = &quot;count&quot;,
     aes(label = ..count..)
   ) +
+  ## rotate plot
+  coord_flip()  +
   theme_minimal()</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png" width="672" /></p>
 <p>As you can see, the default settings of <code>geom_text()</code> place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!</p>
@@ -534,7 +541,7 @@ ggplot(mpg_fct, aes(manufacturer)) +
 <li><code>nudge_x</code> and <code>nudge_y</code>: the horizontal and vertical adjustment to offset text from points.</li>
 </ul>
 <p>To put the labels inside, we first need to right-align the labels with <code>hjust = 1</code>. We also add some negative horizontal adjustment via <code>nudge_x = -.5</code> to add some spacing between the end of the bar and the label.</p>
-<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+<pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &quot;gray75&quot;) +
   geom_text(
     aes(label = perc), 
@@ -548,26 +555,28 @@ ggplot(mpg_fct, aes(manufacturer)) +
 <summary>
 💁 <i>Expand to see examples with labels next to the bars.</i>
 </summary>
-<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+<p>Increase space on the right via <code>theme(plot.margin)</code>:</p>
+<pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &quot;gray75&quot;) +
   geom_text(
     aes(label = perc), 
-    hjust = 0
+    hjust = 0, nudge_x = .5
   ) +
   ## make sure labels doesn&#39;t get cut, part 1
   coord_cartesian(clip = &quot;off&quot;) +
   theme_minimal() +
   ## make sure labels doesn&#39;t get cut, part 2
-  theme(plot.margin = margin(r = 20))</code></pre>
+  theme(plot.margin = margin(r = 120))</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png" width="672" /></p>
-<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer)) +
+<p>Increase space on the right via <code>scale_x_continuous(limits)</code>:</p>
+<pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &quot;gray75&quot;) +
   geom_text(
     aes(label = perc), 
-    hjust = 0
+    hjust = 0, nudge_x = .5
   ) +
   ## make sure labels doesn&#39;t get cut
-  scale_x_continuous(limits = c(NA, 23)) +
+  scale_x_continuous(limits = c(NA, 30)) +
   theme_minimal()</code></pre>
 <img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png" width="672" />
 </details>
@@ -584,7 +593,7 @@ pal &lt;- c(
 <p>In this approach, we create a vector that holds the colors for each of the levels—from the lowest bar to the bar with the most values.
 We can use the <code>length</code> of the manufacturer column for all non-highlighted bars and subtract the number of bars we want to highlight. Here, we have a colorful top 3 and a lighter “Other” category. The vector can then be used in combination with <code>scale_color|fill_manual()</code>.</p>
 <p>Now, we can use the custom palette to color each bar by mapping <code>manufacturer</code> to the bar’s <code>fill</code> property and by passing the <code>pals</code> vector to <code>scale_fill_manual()</code>:</p>
-<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer, 
+<pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer, 
                     fill = manufacturer)) +
   geom_col() +
   geom_text(
@@ -609,7 +618,7 @@ We can use the <code>length</code> of the manufacturer column for all non-highli
     )
   )
 
-ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
+ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
     aes(label = perc), 
@@ -645,7 +654,7 @@ ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
       TRUE ~ &quot;gray55&quot;
     )
   ) %&gt;% 
-  ggplot(aes(n, manufacturer, fill = color)) +
+  ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
     aes(label = perc), 
@@ -660,7 +669,7 @@ ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
 <h5>Polish Your Plot</h5>
 <p>Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use <code>theme_void()</code> and add the axis text afterwards again. Here, I use a custom font for both the axis text and the percentage labels and adjust the font size. (I am not going to cover it here but in case you want to include custom fonts, check the <a href="https://github.com/r-lib/systemfonts"><code>{systemfonts}</code> package</a>.)</p>
 <p>By default, <code>{ggplot2}</code> adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument <code>expand</code> in the according scale, here <code>scale_x_continuous()</code>. I also add some white space around the plot by setting a <code>plot.margin</code> which is of type <code>element_rect()</code>.</p>
-<pre class="r"><code>ggplot(mpg_sum, aes(n, manufacturer, fill = color)) +
+<pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
     aes(label = perc), 
