@@ -702,7 +702,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
 </div>
 <div id="accessibility" class="section level5">
 <h5>Alternatives Improving the Accessibility</h5>
-<p><strong><em>Update:</em></strong> Some feedback suggested that placing labels inside the bars can hinder accessibility due to contrast issues. I fully agree, so I want to present some approaches to decrease that barrier without the need to increase the white space towards the right when placing labels next to the bars.</p>
+<p><em>Update:</em> Some feedback suggested that placing labels inside the bars can hinder accessibility due to contrast issues. I fully agree, so I want to present some approaches to decrease that barrier without the need to increase the white space towards the right when placing labels next to the bars.</p>
 <p><strong>Version with label boxes instead of pure text:</strong><br />
 We can replace <code>geom_text()</code> with <code>geom_label()</code> which adds a box around each label. While it doesn’t look as good, the high contrast of black labels on white ground maximizes readability.</p>
 <pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
@@ -743,7 +743,7 @@ I like the idea of placing only those labels inside that mess up the aspect rati
         plot.margin = margin(rep(15, 4)))</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png" width="672" /></p>
 <p><strong>Version placing the long label not at the top:</strong>
-We could also add the “of all car models” bit to a bar that is short enough to ensure that the label fits within our chart. The second bar in our case fulfills this condition:</p>
+We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:</p>
 <pre class="r"><code>mpg_sum %&gt;% 
   ## overwrite old percentage labels
   mutate(

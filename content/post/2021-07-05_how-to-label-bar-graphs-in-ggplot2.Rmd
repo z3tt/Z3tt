@@ -376,7 +376,7 @@ You can find the full code to create the final plot in this [gist](https://gist.
 
 ##### Alternatives Improving the Accessibility {#accessibility}
 
-***Update:*** Some feedback suggested that placing labels inside the bars can hinder accessibility due to contrast issues. I fully agree, so I want to present some approaches to decrease that barrier without the need to increase the white space towards the right when placing labels next to the bars. 
+*Update:* Some feedback suggested that placing labels inside the bars can hinder accessibility due to contrast issues. I fully agree, so I want to present some approaches to decrease that barrier without the need to increase the white space towards the right when placing labels next to the bars. 
 
 **Version with label boxes instead of pure text:**  
 We can replace `geom_text()` with `geom_label()` which adds a box around each label. While it doesn't look as good, the high contrast of black labels on white ground maximizes readability.
@@ -424,7 +424,7 @@ mpg_sum %>%
 ```
 
 **Version placing the long label not at the top:**
-We could also add the "of all car models" bit to a bar that is short enough to ensure that the label fits within our chart. The second bar in our case fulfills this condition:
+We could also add the "of all car models" bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:
 
 ```{r plot-bars-lab-2nd}
 mpg_sum %>% 
