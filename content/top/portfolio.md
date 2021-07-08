@@ -92,18 +92,18 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Media Appearances {#media}
 
-### YouTube Videos
+##### Video Recordings
 
 -  [*“One Chart At A Time – Episode 32: Beeswarm Charts”*](https://www.youtube.com/watch?v=kTtV2GRCkj0&list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-&index=32) as part of the [“One Chart At A Time” Series](https://www.youtube.com/playlist?list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-) by Jon Schwabisch
 
 
-### Interviews
+##### Interviews
 
 - [*“Data visualization shows countries with highest-rated coffees”*](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen) (August 2020)
 
 - [*“Vignette: Interviews of the Beautiful People that Use R”*](https://vignette.md/interviews/2020-02-03-cedric-scherer/) (February 2020)
 
-### Blog Mentions
+##### Blog Mentions
 
 - [*“Best of The Visualization Web September 2020”*](https://www.visualisingdata.com/2020/12/best-of-the-visualisation-web-september-2020/) by Andy Kirk highlighting the [“Not My Cup of Coffee”](https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee) visualization
 
@@ -119,6 +119,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - [*“Creating Lollipop-Jitter Plots in Tableau”*](https://co-data.de/2020/07/14/lollipop-jitter-plot-in-tableau) by Klaus Schulte replicating my [“Evolution of a ggplot (Ep. 1)”](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) with Tableau
 
-### Miscellaneous 
+##### Miscellaneous 
 
 - [*Jon Schwabisch's “R Sprint”*](https://policyviz.com/2020/12/07/r-learning-sprint/) following my [step-by-step ggplot2 tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
