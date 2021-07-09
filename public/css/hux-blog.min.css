@@ -62,7 +62,7 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'Input Mono Sans';
+    font-family: 'Input Sans';
     src: url("../fonts/InputSansCondensed-Light.ttf") format("truetype");
 }
 @font-face {
