@@ -177,6 +177,8 @@ mpg_sum</code></pre>
 ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &quot;gray70&quot;) +
   geom_text(aes(label = perc)) +
+  ## make sure labels doesn&#39;t get cut
+  scale_x_continuous(limits = c(NA, 24)) +
   theme_minimal()</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png" width="672" /></p>
 <p>To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use <code>geom_bar()</code> instead of <code>geom_col()</code> which takes not two but only one variable and calculates counts by default. To add the labels, we again use <code>geom_text()</code> but this time we overwrite the default statistical transformation <code>stat = "identity"</code> with <code>stat = "count"</code> (the same as the default for <code>geom_bar()</code>).</p>
@@ -431,7 +433,7 @@ We could also add the “of all car models” bit to a bar that is short enough 
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),#abcd
+    axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
     ## make sure labels doesn&#39;t get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )</code></pre>

@@ -155,6 +155,8 @@ mpg_sum <- mpg_sum %>%
 ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = "gray70") +
   geom_text(aes(label = perc)) +
+  ## make sure labels doesn't get cut
+  scale_x_continuous(limits = c(NA, 24)) +
   theme_minimal()
 ```
 
@@ -450,7 +452,7 @@ mpg_sum %>%
   scale_fill_identity(guide = "none") +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),#abcd
+    axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
     ## make sure labels doesn't get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )
