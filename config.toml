@@ -24,7 +24,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   title = "Cédric Scherer"
   description = "Blog by Cédric Scherer"
   keyword = "Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2"
-  slogan = "Data Visualization & Computational Ecology"
+  slogan = "Data Visualization & Computational Ecology" #"Charts & False Promises"
   google_fonts = ""
   title_404 = ""
 
@@ -41,7 +41,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   # Sidebar settings
   sidebar_about_description = "Always coding. Passionate about design. Worried about nature. Proud dad."
-  sidebar_avatar = "img/cedric_round.png"
+  sidebar_avatar = "img/cedric_headshot_round.png"
 
   featured_tags = true
   featured_condition_size = 1

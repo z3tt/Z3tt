@@ -34,8 +34,18 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'Overpass Mono';
-    src: url("../fonts/OverpassMono-Regular.ttf") format("truetype");
+    font-family: 'Input Mono';
+    src: url("../fonts/InputMonoCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Input Mono';
+    src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype");
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'Input Mono';
+    src: url("../fonts/InputMonoCondensed-Italic.ttf") format("truetype");
+    font-style: italic;
 }
 
 @media (min-width:1200px){
@@ -171,8 +181,9 @@ pre code{
   width:auto;
   white-space:pre;
   word-wrap:normal;
-  font-weight:500;
-  font-family:'Overpass Mono','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
+  font-weight:400;
+  font-size:16px;
+  font-family:'Input Mono','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
 }
 .post-container a{
   color:#28a87d
