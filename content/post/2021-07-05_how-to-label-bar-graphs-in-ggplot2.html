@@ -382,8 +382,7 @@ We can replace <code>geom_text()</code> with <code>geom_label()</code> which add
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, 
-                               family = &quot;Fira Sans&quot;),
+    axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
     plot.margin = margin(rep(15, 4))
   )</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png" width="672" /></p>
@@ -407,8 +406,7 @@ I like the idea of placing only those labels inside that mess up the aspect rati
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, 
-                               family = &quot;Fira Sans&quot;),
+    axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
     plot.margin = margin(rep(15, 4))
   )</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png" width="672" /></p>
@@ -433,7 +431,7 @@ We could also add the “of all car models” bit to a bar that is short enough 
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
+    axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),#abcd
     ## make sure labels doesn&#39;t get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )</code></pre>

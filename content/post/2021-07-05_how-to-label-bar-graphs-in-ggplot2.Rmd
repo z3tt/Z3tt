@@ -395,8 +395,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   scale_fill_identity(guide = "none") +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, 
-                               family = "Fira Sans"),
+    axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
     plot.margin = margin(rep(15, 4))
   )
 ``` 
@@ -423,8 +422,7 @@ mpg_sum %>%
   scale_fill_identity(guide = "none") +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, 
-                               family = "Fira Sans"),
+    axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
     plot.margin = margin(rep(15, 4))
   )
 ```
@@ -452,7 +450,7 @@ mpg_sum %>%
   scale_fill_identity(guide = "none") +
   theme_void() +
   theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
+    axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),#abcd
     ## make sure labels doesn't get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )
