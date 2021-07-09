@@ -61,6 +61,20 @@
     src: url("../fonts/InputMonoCondensed-Italic.ttf") format("truetype");
     font-style: italic;
 }
+@font-face {
+    font-family: 'Input Mono Sans';
+    src: url("../fonts/InputSansCondensed-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Input Sans';
+    src: url("../fonts/InputSans-Medium.ttf") format("truetype");
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'Input Sans';
+    src: url("../fonts/InputSansCondensed-LightItalic.ttf") format("truetype");
+    font-style: italic;
+}
 
 @media (min-width:1200px){
   .post-container,.sidebar-container{padding-right:5%}
@@ -144,10 +158,11 @@ article{
 }
 
 blockquote{
-  font-family:'Chivo','Arial','Helvetica',sans-serif,-apple-system;
+  font-family:'Input Sans','Arial','Helvetica',sans-serif,-apple-system;
   color:#5c6c66;
-  font-style:italic;
   font-size:1.1em;
+  font-weight: 400;
+  font-style: italic;
   line-height: 1.6em;
   margin:20px 0 20px
 }
