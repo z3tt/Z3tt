@@ -20,8 +20,8 @@ library(systemfonts)
 ##### Table of Content
 
 * [Introduction](#intro)
-* [Data Preparation with the {tidyverse}](#data)
-* [Data Visualization with {ggplot2}](#dataviz)
+* [Data Preparation with the `tidyverse`](#data)
+* [Data Visualization with `ggplot2`](#dataviz)
   - [How to Calculate the Percentage Values](#how-to-1)
   - [How to Position the Percentage Labels Inside the Bars](#how-to-2)
   - [How to Color the Bars Using Different Colors](#how-to-3)
@@ -51,7 +51,7 @@ Unfortunately, the code is under lock but it's a simple bar chart with some labe
 
 ---
 
-## Data Preparation with the {tidyverse} {#data}
+## Data Preparation with the tidyverse {#data}
 
 First, let's prepare the data for the bar chart. We are going to use the data from 2008 only and summarize the number of car model variants in the data per manufacturer. We also adjust the manufacturer labels and order them as they should appear in the final plot. Here are some notes on some of the functions used:
 
@@ -96,7 +96,7 @@ Keep in mind that we have reversed the ordering since  `{ggplot2}` plots factors
 
 ---
 
-## Data Visualization with {ggplot2} {#dataviz}
+## Data Visualization with ggplot2 {#dataviz}
 
 First, let's draw the basic bar chart using our aggregated and ordered data set called `mpg_sum`:
 
@@ -394,8 +394,11 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = "none") +
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
-        plot.margin = margin(rep(15, 4)))
+  theme(
+    axis.text.y = element_text(size = 14, hjust = 1, 
+                               family = "Fira Sans"),
+    plot.margin = margin(rep(15, 4))
+  )
 ``` 
 
 **Version with different label placement:**
@@ -419,8 +422,11 @@ mpg_sum %>%
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = "none") +
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
-        plot.margin = margin(rep(15, 4)))
+  theme(
+    axis.text.y = element_text(size = 14, hjust = 1, 
+                               family = "Fira Sans"),
+    plot.margin = margin(rep(15, 4))
+  )
 ```
 
 **Version placing the long label not at the top:**
@@ -445,9 +451,12 @@ mpg_sum %>%
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = "none") +
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = "Fira Sans"),
-        ## make sure labels doesn't get cut, part 2
-        plot.margin = margin(15, 30, 15, 15))
+  theme(
+    axis.text.y = element_text(size = 14, hjust = 1, 
+                               family = "Fira Sans"),
+    ## make sure labels doesn't get cut, part 2
+    plot.margin = margin(15, 30, 15, 15)
+  )
 ```
 
 Of course, you could add that information also to the title, figure caption or simply leave it out. But that's not what the request was about 🤷

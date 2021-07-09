@@ -19,8 +19,8 @@ editor_options:
 <h5>Table of Content</h5>
 <ul>
 <li><a href="#intro">Introduction</a></li>
-<li><a href="#data">Data Preparation with the {tidyverse}</a></li>
-<li><a href="#dataviz">Data Visualization with {ggplot2}</a>
+<li><a href="#data">Data Preparation with the <code>tidyverse</code></a></li>
+<li><a href="#dataviz">Data Visualization with <code>ggplot2</code></a>
 <ul>
 <li><a href="#how-to-1">How to Calculate the Percentage Values</a></li>
 <li><a href="#how-to-2">How to Position the Percentage Labels Inside the Bars</a></li>
@@ -54,7 +54,7 @@ The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verb
 <hr />
 </div>
 <div id="data" class="section level2">
-<h2>Data Preparation with the {tidyverse}</h2>
+<h2>Data Preparation with the tidyverse</h2>
 <p>First, let’s prepare the data for the bar chart. We are going to use the data from 2008 only and summarize the number of car model variants in the data per manufacturer. We also adjust the manufacturer labels and order them as they should appear in the final plot. Here are some notes on some of the functions used:</p>
 <ul>
 <li><code>count()</code> from the <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code> package</a> is a wrapper of <code>group_by(var) %&gt;% summarize(n = n()))</code>. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.</li>
@@ -109,7 +109,7 @@ mpg_sum</code></pre>
 <hr />
 </div>
 <div id="dataviz" class="section level2">
-<h2>Data Visualization with {ggplot2}</h2>
+<h2>Data Visualization with ggplot2</h2>
 <p>First, let’s draw the basic bar chart using our aggregated and ordered data set called <code>mpg_sum</code>:</p>
 <pre class="r"><code>ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   ## draw bars
@@ -381,8 +381,11 @@ We can replace <code>geom_text()</code> with <code>geom_label()</code> which add
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
-        plot.margin = margin(rep(15, 4)))</code></pre>
+  theme(
+    axis.text.y = element_text(size = 14, hjust = 1, 
+                               family = &quot;Fira Sans&quot;),
+    plot.margin = margin(rep(15, 4))
+  )</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png" width="672" /></p>
 <p><strong>Version with different label placement:</strong>
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column <code>place</code> to the <code>hjust</code> argument. Since we cannot map a variable to <code>nudge_x</code>, we cannot use it to offset the labels. To add some pacing, I simply add some white space to the begin and end of each percentage label.</p>
@@ -403,8 +406,11 @@ I like the idea of placing only those labels inside that mess up the aspect rati
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
-        plot.margin = margin(rep(15, 4)))</code></pre>
+  theme(
+    axis.text.y = element_text(size = 14, hjust = 1, 
+                               family = &quot;Fira Sans&quot;),
+    plot.margin = margin(rep(15, 4))
+  )</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png" width="672" /></p>
 <p><strong>Version placing the long label not at the top:</strong>
 We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:</p>
@@ -426,9 +432,12 @@ We could also add the “of all car models” bit to a bar that is short enough 
   scale_x_continuous(expand = c(.01, .01)) +
   scale_fill_identity(guide = &quot;none&quot;) +
   theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = &quot;Fira Sans&quot;),
-        ## make sure labels doesn&#39;t get cut, part 2
-        plot.margin = margin(15, 30, 15, 15))</code></pre>
+  theme(
+    axis.text.y = element_text(size = 14, hjust = 1, 
+                               family = &quot;Fira Sans&quot;),
+    ## make sure labels doesn&#39;t get cut, part 2
+    plot.margin = margin(15, 30, 15, 15)
+  )</code></pre>
 <p><img src="/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png" width="672" /></p>
 <p>Of course, you could add that information also to the title, figure caption or simply leave it out. But that’s not what the request was about 🤷</p>
 <details>

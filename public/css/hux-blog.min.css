@@ -35,15 +35,29 @@
 }
 @font-face {
     font-family: 'Input Mono';
-    src: url("../fonts/InputMonoCondensed-Regular.ttf") format("truetype");
+    src: url("../fonts/InputMono-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Input Mono';
-    src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype");
+    src: url("../fonts/InputMono-Bold.ttf") format("truetype");
     font-weight:bold;
 }
 @font-face {
     font-family: 'Input Mono';
+    src: url("../fonts/InputMono-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Input Mono Condensed';
+    src: url("../fonts/InputMonoCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Input Mono Condensed';
+    src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype");
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'Input Mono Condensed';
     src: url("../fonts/InputMonoCondensed-Italic.ttf") format("truetype");
     font-style: italic;
 }
@@ -182,8 +196,8 @@ pre code{
   white-space:pre;
   word-wrap:normal;
   font-weight:400;
-  font-size:16px;
-  font-family:'Input Mono','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
+  font-size:15.5px;
+  font-family:'Input Mono Condensed','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
 }
 .post-container a{
   color:#28a87d
