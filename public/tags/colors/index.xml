@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>colors on Cédric Scherer</title>
+    <link>/tags/colors/</link>
+    <description>Recent content in colors on Cédric Scherer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/colors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colors and Emotions in Data Visualization</title>
+      <link>/2021/06/08/colors-and-emotions-in-data-visualization/</link>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
+      <description>This blog post originally appeared as a guest post on the “Storytelling with Data” blog as part of the color series. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.
+As we continue our exploration of color in data visualization this month, we are happy to share this guest post from notable #SWDchallenge contributor and community member Cédric Scherer.</description>
+    </item>
+    
+  </channel>
+</rss>

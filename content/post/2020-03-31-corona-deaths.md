@@ -9,7 +9,7 @@ layout: post
 description: "Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’ has become a global pandemic. I created an animated timeseries of daily deaths relative to each country's worst day so far to visualize the first wave of COVID-19."
 tags:
     - DataViz
-    - COVID-19
+    - COVID–19
     - animations
     - heatmap
     - maps

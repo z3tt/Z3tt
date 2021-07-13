@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/sun_RichardStrozynski.png" >
+    
+
+    
+
+    
+      <meta name="title" content="Colors and Emotions in Data Visualization" />
+      <meta property="og:title" content="Colors and Emotions in Data Visualization - Cédric Scherer" />
+      <meta property="twitter:title" content="Colors and Emotions in Data Visualization - Cédric Scherer" />
+      <meta property="twitter:text:title" content="Colors and Emotions in Data Visualization - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers.">
+      <meta property="og:description" content="As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers." />
+      <meta property="twitter:description" content="As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers." />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Colors and Emotions in Data Visualization - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2021/07/05/colors-and-emotions-in-data-visualization/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/portfolio/">Portfolio</a></li>
+                    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/sun_RichardStrozynski.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/colors" title="colors">
+                            colors
+                        </a>
+                        
+                        <a class="tag" href="/tags/design" title="design">
+                            design
+                        </a>
+                        
+                        <a class="tag" href="/tags/emotions" title="emotions">
+                            emotions
+                        </a>
+                        
+                        <a class="tag" href="/tags/cultures" title="cultures">
+                            cultures
+                        </a>
+                        
+                        <a class="tag" href="/tags/covid19" title="COVID–19">
+                            COVID–19
+                        </a>
+                        
+                    </div>
+                    <h1>Colors and Emotions in Data Visualization</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Monday, July 5, 2021
+                        
+                            <span id="/2021/07/05/colors-and-emotions-in-data-visualization/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("", "");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p><strong>This <a href="https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization">blog post</a> originally appeared as a guest post on the <a href="https://www.storytellingwithdata.com/blog/">“Storytelling with Data” blog</a>. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.</strong></p>
+<blockquote>
+<p>As we continue our exploration of color in data visualization this month, we are happy to share this guest post from notable #SWDchallenge contributor and community member Cédric Scherer. Before becoming a freelance data visualization specialist, Cédric was a trained ecologist, which required a unique combination of responsibilities: in addition to analysing and visualizing tons of animal data, he was also capturing foxes, raccoons, and hares in the wild! Now, he is combining his expertise in analysing and visualizing large data sets with his passion for design to create visualizations across all disciplines, purposes, and styles. We thank Cédric for sharing this post with us, and we hope you enjoy it!</p>
+</blockquote>
+<hr />
+<p><strong><em>If you are only moved by color relationships, you are missing the point. I am interested in expressing the big emotions.</em></strong> <em>— Mark Rothko</em></p>
+<p>As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers.</p>
+<div id="warm-city-cold-city" class="section level2">
+<h2>Warm city, cold city</h2>
+<p>When designing my contribution to the <a href="https://www.storytellingwithdata.com/blog/2019/9/3/swdchallenge-visualize-uncertainty">#SWDchallenge of September 2019 on the topic “Visualizing Uncertainty”</a>, I depicted the variation in monthly temperatures in my hometown of Berlin.</p>
+<p>For me, it was straightforward to use a warm, reddish color palette and to display the temperature range in degrees of Celsius. To make it easily accessible for local people, I also created a version in German—and just for the sake of variety and to make them easily distinguishable at a glance, I created this version in a blue color scale.</p>
+<img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092163899-E6CYKSAW3GJTJ9KEGFU0/daily-temps-in-berlin.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p>
+<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+Variation in daily temperatures in Berlin, in English and German with two different color palettes.
+</figcaption>
+</p>
+<p>Without any intention, the two variations of my visualization triggered different emotional reactions. While the red chart likely leads you to think “Wow, Berlin summers are quite hot,” the blue version may push you to think of summers as rainy and rather cold.</p>
+<p>In general, we should have in mind that different details might spark different emotions and expectations in our viewers. Some of these details will make it easier for them to understand the chart in the manner the designer intended.</p>
+<p>In the above example, how people perceive the temperatures in Berlin depends on (at least) two different factors:</p>
+<ul>
+<li>What does the color used in the chart commonly represent in the experience and culture of the reader?<br />
+</li>
+<li>Which range of temperatures (or temperature scale) is the reader regularly exposed to?</li>
+</ul>
+<p>While we cannot account for the last factor, the choice of colors is up to the designer. It is important though, that colors may be perceived differently depending on the audience.</p>
+</div>
+<div id="colors-and-their-associations" class="section level2">
+<h2>Colors and their associations</h2>
+<p><em>Which colors do you associate with temperatures and precipitation?</em><br />
+<em>Which colors do you associate with trees and urban areas?</em></p>
+<p>We are used to attributing certain colors to specific objects and emotions. Most people expect the sea to be colored in blue on a map; a green ocean looks plain wrong to us. Similarly, humans perceive bright colors on elevation maps to represent a high altitude, with darker colors representing naturally low-lying and shady areas like valleys.</p>
+<p>Temperatures are regularly displayed as a gradient from blue (cold) to red (hot). A famous example is this “warming stripes” design by Ed Hawkins:</p>
+<img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092203312-8BKCNNOD9QA0GJUIULPP/hawkins-warming-stripes.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p>
+<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+Warming stripes for 1850-2018 by Ed Hawkins, Climate Lab Book (4 December 2018).
+</figcaption>
+</p>
+<p>Most people around the globe likely agree on the blue-red gradient when it comes to temperatures, and in first looking at this visual, we naturally translate each stripe into a relative temperature (difference) along this gradient. A legend or annotations explaining the color gradient, while adding specificity and detail, would weaken the minimalist style of the visualization, which is communicating not through the precision of numbers but through the inherent emotional reaction to the rapid change from decades of cool blues to warm, intense reds. (Nevertheless, there is also <a href="https://showyourstripes.info/">a version with minimal labeling</a>.)</p>
+</div>
+<div id="colors-spark-emotions" class="section level2">
+<h2>Colors spark emotions</h2>
+<p><em>Which color set comes to your mind when you think about happiness and sadness?</em><br />
+<em>What color would you pick to visualize honesty?</em></p>
+<p>When it comes to emotions, things might get a bit more difficult. In 2007’s <a href="https://books.google.de/books/about/Introduction_to_Multimodal_Analysis.html?id=xSyDAAAACAAJ&amp;redir_esc=y">“Introduction to Multimodal Analysis”</a>, author David Machin proposed that lightness, brightness, and saturation can communicate the level of seriousness, intensity, and emotional weight in a visual work. Dark and saturated colors are thus perceived as more dramatic and can evoke emotions such as sadness and anger, while bright and flat colors achieve the opposite effect.</p>
+<p>Moreover, colors might be perceived differently in different cultures. A fantastic resource in this context is the <a href="https://informationisbeautiful.net/visualizations/colours-in-cultures/">“Colours in Culture” visualization</a> by <a href="http://davidmccandless.com/">David McCandless</a> and <a href="https://alwayswithhonor.com/">AlwaysWithHonor.com</a>:</p>
+<img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092245319-DMGBMO4S9R14G0A1LYTP/colours-in-culture-iib.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p>
+<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+The visualization “Colours in Culture” by David McCandless and AlwaysWithHonor.com summarizes the meaning of colors across the world in a visually appealing way.
+</figcaption>
+</p>
+<p>We make use of these emotional values all the time, either with or without attention. Thus, I often come back to the “culture–color wheel” when designing visualizations since Cole showed it to me. We can see that Ed Hawkins’ use of red and blue is an emotionally good choice since the colors are interpreted as <em>heat</em> [41] and <em>cold</em> [10], respectively, in all cultures.</p>
+</div>
+<div id="bloody-red-covid-maps" class="section level2">
+<h2>Bloody-red COVID maps</h2>
+<p>Take, as another example, the famous COVID-19 tracker hosted by Johns Hopkins University that became popular in early 2020. The dark map used bloody red bubbles to display reported infections or deaths due to the novel coronavirus. It’s likely that these color choices elicited anxiety and fear in many of its viewers, thanks to the <a href="https://twitter.com/visualisingdata/status/1237276833286103045">“alien-death-blood visual identity,”</a> as data visualization consultant Andy Kirk termed it at the time.</p>
+<p>While a black map might be attention-grabbing, it likely also sparks panic in some people. In many cultures, black is associated with <em>death</em> and <em>evil</em>, and red is not only associated with <em>love</em> and <em>passion</em> but also <em>blood</em> or <em>anger</em>. As a resource meant to inform the public during the early days of a serious and deadly pandemic, this tracker used colors that, unfortunately, likely inspired additional panic and fear in some of its audience.</p>
+<p><a href="https://blog.datawrapper.de/coronaviruscharts/">Lisa Charlotte Rost and her team of Datawrapper</a> were among several other designers who took different approaches, using less intimidating colors on a light background. (Johns Hopkins University themselves did the same in <a href="https://coronavirus.jhu.edu/data/new-cases-50-states">other COVID graphics</a> they eventually developed.)</p>
+<p>Rost explained the reasoning from a very emotional and personal standpoint:</p>
+<blockquote>
+<p>If you’re infected, you want to find yourself on a map as a blue (or orange, or beige, or purple…) dot, not as a “attention, danger, run!”-screaming red dot. Related, we show deaths in black, not red – it feels more respectful.</p>
+</blockquote>
+<img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092295406-ER9FYEYQDE2U7LC6IYD8/covid-maps.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p>
+<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+The famous COVID-19 tracker by the John Hopkins University using an “alien-death-blood visual identity” (<a href='https://coronavirus.jhu.edu/map.html'>coronavirus.jhu.edu/map.html</a>; Screenshot 2020-07-27) next to a map of confirmed COVID-19 cases by Datawrapper using more decent colors to avoid an emotion of fear (<a href='blog.datawrapper.de/coronaviruscharts'>https://blog.datawrapper.de/coronaviruscharts/</a>; Screenshot 2020-07-27).
+</figcaption>
+</p>
+<p>In general, I try to avoid black backgrounds as often as possible, although I will use dark gray colors in those cases where dark scenery simply looks better. Light colors may in most cases be a better choice since the color represents truce [79], purity [67] and trust [80] — characteristics that we all certainly like to get as feedback on our data visualizations.</p>
+</div>
+<div id="colors-of-healing-visualizing-vaccinations" class="section level2">
+<h2>Colors of healing: visualizing vaccinations</h2>
+<p>As of this writing in June 2021, we are in a very different phase of COVID-19 pandemic than we were when those trackers were first launched in early 2020. While we are still collecting data on negative events like infections, hospitalizations, and deaths, our visualizations are now focusing more and more on the positive events: vaccinations and vaccination rates. Many of the charts and maps showing how countries perform on this metric are designed on light backgrounds.</p>
+<img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092352309-DJIK4US9EJ0NJYTHS7MX/immunization-bars-and-waffles.png" style="height: 100%; width: 100%; object-fit: contain;">
+<p>
+<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+Some exemplary graphs from the “COVID-19 Impfdashboard” using moderate blue on light gray and white backgrounds. The chart is maintained by the German Federal Ministry of Health in collaboration with the Robert Koch-Institute (RKI) and was designed by Studio NAND and Moritz Stefaner.
+</figcaption>
+</p>
+<p>Let’s take a look at the wonderful <a href="https://impfdashboard.de/">COVID-19 vaccination dashboard</a> by the German Federal Ministry of Health in collaboration with the Robert Koch-Institute (RKI). This dashboard shows vaccination rates in Germany with moderate blue graphs on a light background. Blue is a versatile color, representing many different values around the world. However, by intention or by chance, the designers’ choice of blue is a very good one: in Western cultures the color is not only attributed to cold but also to values such as healing, freedom and rationality.</p>
+</div>
+<div id="final-thoughts" class="section level2">
+<h2>Final thoughts</h2>
+<p>I love colors. Ever since my contribution to the #SWDchallenge, I have learned to take even more care when I choose colors and try to avoid stereotypic colors, especially those that spark certain emotions or are associated with features I actually don’t want to communicate with my visualization.</p>
+<p>If you like, creating a suitable emotional setting can be subsumed under the term accessibility: more familiar colors will help the reader to access the visualization and may reduce the guidance needed to explain certain features.</p>
+<p>On the contrary, badly chosen colors may in the worst case mislead the reader or put them in the wrong mindset to accept the intended message, which is definitely something I want to avoid as a truthful designer.</p>
+<p>Picking suitable colors—not only in terms of accessibility but also based on their emotional values—is an important skill for every designer to practice.</p>
+</div>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/" data-toggle="tooltip" data-placement="top" title="Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/" data-toggle="tooltip" data-placement="top" title="A Quick How-to on Labelling Bar Graphs in ggplot2">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/announcement" title="announcement">
+                            announcement
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/covid19" title="covid19">
+                            covid19
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
+                        
+                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                        
+                        <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
+                        
+                        <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
+                        
+                        <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+                    <li>
+                        <a href="mailto:info@data-vizard.de">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji="🌯"  data-font="Cookie" data-text="Buy me a kebab" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2021. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.netlify.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
