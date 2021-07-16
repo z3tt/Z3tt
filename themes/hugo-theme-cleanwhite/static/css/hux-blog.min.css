@@ -7,19 +7,6 @@
     src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Chivo';
-    src: url("../fonts/Chivo-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'Chivo';
-    src: url("../fonts/Chivo-Bold.ttf") format("truetype");
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'Chivo';
-    src: url("../fonts/Chivo-Italic.ttf") format("truetype");
-}
-@font-face {
     font-family: 'Libre Baskerville';
     src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
 }
