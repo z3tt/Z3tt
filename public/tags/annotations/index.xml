@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Annotations on Cédric Scherer</title>
-    <link>/tags/annotations/</link>
+    <link>https://cedricscherer.com/tags/annotations/</link>
     <description>Recent content in Annotations on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/annotations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/annotations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Quick How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
+      <link>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>Table of ContentIntroductionData Preparation with the tidyverseData Visualization with ggplot2How to Calculate the Percentage ValuesHow to Position the Percentage Labels Inside the BarsHow to Color the Bars Using Different ColorsPolish Your PlotAlternatives Improving the AccessibilityIntroductionBar charts are likely the most common chart type out there and come in several varieties. Most notably, direct labels can increase accessibility of a bar graph and reduce the “chart junk” since grid lines, axis labels, and even axis titles become obsolete.</description>
     </item>
     

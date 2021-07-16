@@ -15,7 +15,7 @@ editor_options:
 ```{r set options, include=FALSE}
 options(width = 700)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, out.width = "100%",
-                      fig.showtext = TRUE, retina = 2)
+                      fig.showtext = TRUE, retina = 1)
 ```
 
 *Last update: 2021-02-09*
@@ -141,7 +141,7 @@ head(chic, 10)
 
 ## The `{ggplot2}` Package {#ggplot}
 
-> `ggplot2` is a system for declaratively creating graphics, based on [The Grammar of Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl?ie=UTF8&qid=1477928463&sr=8-1&keywords=the+grammar+of+graphics&linkCode=sl1&tag=ggplot2-20&linkId=f0130e557161b83fbe97ba0e9175c431). You provide the data, tell `ggplot2` how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.
+> `ggplot2` is a system for declaratively creating graphics, based on [The Grammar of Graphics](https://link.springer.com/chapter/10.1007/978-3-642-21551-3_13). You provide the data, tell `ggplot2` how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.
 
 A ggplot is built up from a few basic elements:
 
@@ -2754,7 +2754,7 @@ ggplot(chic, aes(x = date, y = o3run)) +
    labs(x = "Year", y = "Ozone")
 ```
 
-[↑ Jump back to Table of Content.](#toc)<br><br>
+[↑ Jump back to Table of Content.](#toc)<br><br> 
 
 
 

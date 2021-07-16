@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TV shows on Cédric Scherer</title>
-    <link>/tags/tv-shows/</link>
+    <link>https://cedricscherer.com/tags/tv-shows/</link>
     <description>Recent content in TV shows on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tv-shows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/tv-shows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What do I binge next? A detailed overview of the top 250 TV shows</title>
-      <link>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
+      <link>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
+      <guid>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
       <description>Update December 24th 2020: My table made it into the &amp;ldquo;Honourable Mentions&amp;rdquo; section. Congrats to the winner Niels van der Velden and all the others that are mentioned!
 In consequence, I decided to visualize the top 250 TV shows according to IMDb users as a more helpful table then the original one on IMDb as my contribution to the ongoing RStudio table contest:
  Tables are a fantastic way to communicate lists of quantitative and qualitative information.</description>

@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Cédric Scherer</title>
-    <link>/tags/r/</link>
+    <link>https://cedricscherer.com/tags/r/</link>
     <description>Recent content in R on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Quick How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
+      <link>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>Table of ContentIntroductionData Preparation with the tidyverseData Visualization with ggplot2How to Calculate the Percentage ValuesHow to Position the Percentage Labels Inside the BarsHow to Color the Bars Using Different ColorsPolish Your PlotAlternatives Improving the AccessibilityIntroductionBar charts are likely the most common chart type out there and come in several varieties. Most notably, direct labels can increase accessibility of a bar graph and reduce the “chart junk” since grid lines, axis labels, and even axis titles become obsolete.</description>
     </item>
     
     <item>
       <title>Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)</title>
-      <link>/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</link>
+      <link>https://cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</guid>
       <description>Table of ContentIntroductionAim of this Tutorial 🏁Boxplots: The Reviewer’s DreamWe Can Do Better: Add Raw DataViolin Plots: The Reviewer’s Nighmare?Raincloud Plots: A Great AlternativeLet Your Plot ShineIntroductionA few weeks ago, I came across this tweet:
 Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. Are there better alternatives, or ways to clarify/address this?</description>
     </item>
     
     <item>
       <title>My Contributions to the First 30DayChartChallenge</title>
-      <link>/2021/05/09/contributions-30daychartchallenge-2021/</link>
+      <link>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/05/09/contributions-30daychartchallenge-2021/</guid>
+      <guid>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</guid>
       <description>What&amp;rsquo;s the #30DayChartChallenge? The #30DayChartChallenge is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations. The challenge is inspired by the #30DayMapChallenge which was initiated by Topi Tjukanov in 2019. I did participate back then and while it was exhausting</description>
     </item>
     
     <item>
       <title>My Personal Data Visualization Year 2020</title>
-      <link>/2021/01/01/review-2020-personal-dataviz-highlights/</link>
+      <link>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/01/01/review-2020-personal-dataviz-highlights/</guid>
+      <guid>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</guid>
       <description>Uff, what a year! 366 days ago, most people did not expect 2020 to be that exhausting, emotionally and physically (and let&amp;rsquo;s hope for a better 2021—happy new year to you!). COVID19 was literally everywhere, whether in the media or affecting your personal life, and made it hard to focus and keep social contacts. Plus all the other things that were happening: starting off with the bushfires in Australia, the massive series of police brutality protests after the shocking death of George Floyd, tiring and everlasting Brexit negotiations, Trump&amp;rsquo;s madness reaching new levels, and all the news and uncertainty around COVID19 mutations circulating at the end of 2020.</description>
     </item>
     
     <item>
       <title>What do I binge next? A detailed overview of the top 250 TV shows</title>
-      <link>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
+      <link>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
+      <guid>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
       <description>Update December 24th 2020: My table made it into the &amp;ldquo;Honourable Mentions&amp;rdquo; section. Congrats to the winner Niels van der Velden and all the others that are mentioned!
 In consequence, I decided to visualize the top 250 TV shows according to IMDb users as a more helpful table then the original one on IMDb as my contribution to the ongoing RStudio table contest:
  Tables are a fantastic way to communicate lists of quantitative and qualitative information.</description>
@@ -57,20 +57,20 @@ In consequence, I decided to visualize the top 250 TV shows according to IMDb us
     
     <item>
       <title>My Contributions to the First 30DayMapChallenge</title>
-      <link>/2019/12/15/contributions-first-30daymapchallenge-2019/</link>
+      <link>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/12/15/contributions-first-30daymapchallenge-2019/</guid>
+      <guid>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</guid>
       <description>What&amp;rsquo;s the #30DayMapChallenge? The #30DayMapChallenge which was initiated by Topi Tjukanov in 2019. The goal is to create a map each day of November with a broad topic provided by Topi, no matter which tool, and to share it with the hashtag &amp;ldquo;#30DayMapChallenge&amp;rdquo; on Twitter.
  The idea is to create (and publish) maps based on different themes on each day of the month using the hashtag #30DayMapChallenge, You can prepare the maps beforehand, but the main idea is to publish maps from specific topics on specific days listed below.</description>
     </item>
     
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
-      <link>/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <link>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <guid>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>Sunday Two days ago, I was sitting in the sun with a friend working in UX and Graphic Design, chatting about DataViz:
  She: &amp;ldquo;Oh man, last week we had one customer asking for a bar chart race. Do you know these?&amp;rdquo;
 Me: &amp;ldquo;Yes&amp;hellip; They are literally EVERYWHERE 1&amp;rdquo;.She: &amp;ldquo;Yeah, and we had some tough time to make that work and to customize it in Adobe Animate.&amp;rdquo;
@@ -80,10 +80,10 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?</d
     
     <item>
       <title>A ggplot2 Tutorial for Beautiful Plotting in R</title>
-      <link>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</link>
+      <link>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</link>
       <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
+      <guid>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</guid>
       <description>Last update: 2021-02-09
 Introductory WordsI don’t care, just show me the content!
 Back in 2016, I had to prepare my PhD introductory talk and I started using {ggplot2} to visualize my data.</description>
@@ -91,10 +91,10 @@ Back in 2016, I had to prepare my PhD introductory talk and I started using {ggp
     
     <item>
       <title>The Evolution of a ggplot (Ep. 1)</title>
-      <link>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
+      <link>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
+      <guid>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
       <description>🏁 Aim of this Tutorial🗃️ Data Preparation🌱 The Default Boxplot🔀 ️Sort Your Data!💎 Let Your Plot Shine—Get Rid of the Default Settings📊 The Choice of the Chart Type💯 More Geoms, More Fun, More Info!💬 Add Text Boxes to Let The Plot Speak for Itself🗺️ Bonus: Add a Tile Map as Legend🎄 The Final Evolved Visualization💻 Complete Code for Final Plot📝 Post Scriptum: Mean versus Median🏁 Aim of this TutorialIn this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way.</description>
     </item>
     
