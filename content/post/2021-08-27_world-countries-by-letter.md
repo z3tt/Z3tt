@@ -12,7 +12,7 @@ editor_options:
   chunk_output_type: inline
 ---
 
-**Next month, I am going to give a live training session for Pearson and O'Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and `{ggplot2}` for the first time. While searching for a cool variable to illustrate how to create [choropleth maps](https://www.data-to-viz.com/graph/choropleth.html), I came up with the idea to visualize each countries name. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.**
+**Next month, I am going to give a live training session for Pearson and O'Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and `{ggplot2}` for the first time. While searching for a cool variable to illustrate how to create [choropleth maps](https://www.data-to-viz.com/graph/choropleth.html), I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.**
 
 While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem ([here](https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/) and [here](https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/)) or that do not permit to see the complete data by [aggregating rare letters](http://alphabetpassport.com/world.png).
 
@@ -28,7 +28,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 
 ##### Motivation
 
-* Finding a cool variable in the NaturalEarth data set to visualize
+* Finding a cool variable in the NaturalEarth data set to visualize.
 * Curiosity: Which letter covers the largest area, which are rare?
 
 ##### Design Choices
@@ -55,7 +55,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 * For each country, I checked if a name is provided by the CIA world Factbook; if not, I used the sovereignty provided by NaturalEarth.
 * For each country in the shape file, I extracted the first letter with the help of the [`{stringr}` R package](https://stringr.tidyverse.org/) from the tidyverse.
 * For each letter I calculated the area covered with the help of the [`{sf}` package](https://r-spatial.github.io/sf/)
-* Plotting was done completely in R (for a list of packages see "Tools").ybr>
+* Plotting was done completely in R (for a list of packages see "Tools").<br>
 
 ### Alternative Versions
 
