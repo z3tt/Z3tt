@@ -6,31 +6,49 @@
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Annotations</title>
-      <link>https://cedricscherer.com/tags/annotations/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/annotations/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DataViz</title>
       <link>https://cedricscherer.com/tags/dataviz/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>design</title>
+      <link>https://cedricscherer.com/tags/design/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ggplot2</title>
       <link>https://cedricscherer.com/tags/ggplot2/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maps</title>
+      <link>https://cedricscherer.com/tags/maps/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/maps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Annotations</title>
+      <link>https://cedricscherer.com/tags/annotations/</link>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/annotations/</guid>
       <description></description>
     </item>
     
@@ -94,15 +112,6 @@
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/cultures/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>design</title>
-      <link>https://cedricscherer.com/tags/design/</link>
-      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/design/</guid>
       <description></description>
     </item>
     
@@ -265,15 +274,6 @@
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/heatmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maps</title>
-      <link>https://cedricscherer.com/tags/maps/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/maps/</guid>
       <description></description>
     </item>
     

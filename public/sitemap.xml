@@ -2,28 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cedricscherer.com/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/dataviz/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/design/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/ggplot2/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/maps/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/post/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</loc>
+    <lastmod>2021-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
+    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/annotations/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/dataviz/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/ggplot2/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/post/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cedricscherer.com/tags/r/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/tidyverse/</loc>
@@ -45,9 +57,6 @@
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/cultures/</loc>
-    <lastmod>2021-06-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/design/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/emotions/</loc>
@@ -114,9 +123,6 @@
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/heatmap/</loc>
-    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/maps/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/swdchallenge/</loc>

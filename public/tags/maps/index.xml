@@ -6,7 +6,16 @@
     <description>Recent content in maps on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The World&#39;s Countries colored by Their First Letter</title>
+      <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
+      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
+      <description>Next month, I am going to give a live training session for Pearson and O’Reilly called “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and {ggplot2} for the first time. While searching for a cool variable to illustrate choropleth map, I came up with the idea to visualize each countries name. But not the full name— hat would be too silly and not insightful at all—but the first letter of each country.</description>
+    </item>
+    
     <item>
       <title>The Worst Days of the Coronavirus Pandemic So Far</title>
       <link>https://cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</link>
