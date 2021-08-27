@@ -339,7 +339,7 @@ $(function() {
                 post-container">
 
                 
-                <p><strong>Next month, I am going to give a live training session for Pearson and O&rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and <code>{ggplot2}</code> for the first time. While searching for a cool variable to illustrate how to create <a href="https://www.data-to-viz.com/graph/choropleth.html">choropleth maps</a>, I came up with the idea to visualize each countries name. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.</strong></p>
+                <p><strong>Next month, I am going to give a live training session for Pearson and O&rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and <code>{ggplot2}</code> for the first time. While searching for a cool variable to illustrate how to create <a href="https://www.data-to-viz.com/graph/choropleth.html">choropleth maps</a>, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.</strong></p>
 <p>While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (<a href="https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/">here</a> and <a href="https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/">here</a>) or that do not permit to see the complete data by <a href="http://alphabetpassport.com/world.png">aggregating rare letters</a>.</p>
 <p>So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to <code>{ggplot2}</code>’s facet functionality, it was super–easy to turn it into small multiples.</p>
 <img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png', 'blank');"/>
@@ -350,14 +350,14 @@ $(function() {
 </ul>
 <h5 id="motivation">Motivation</h5>
 <ul>
-<li>Finding a cool variable in the NaturalEarth data set to visualize</li>
+<li>Finding a cool variable in the NaturalEarth data set to visualize.</li>
 <li>Curiosity: Which letter covers the largest area, which are rare?</li>
 </ul>
 <h5 id="design-choices">Design Choices</h5>
 <ul>
 <li><em>Small multiples</em> to allow for direct access of single letters which allows also to add the area covered to each map.</li>
 <li>A <em>cyclical color palette</em>; of course, 25 categories are too many but with this approach one can at least identify the range a country falls into.  Color-vision deficiency problems are likely but not problematic thanks to the small multiples.</li>
-<li>I searched through a ton of fonts: I settled on <a href="https://www.fontshare.com/fonts/neco"><em>Neco Black</em></a> for the title and letters and <a href="https://www.omnibus-type.com/fonts/chivo/"><em>Chivo</em></a> with it&rsquo;s tabular numbers for the areas and the caption.</li>
+<li>I searched through a ton of fonts: I settled on <a href="https://www.fontshare.com/fonts/neco"><em>Neco Black</em></a> for the title and letters and <a href="https://www.omnibus-type.com/fonts/chivo/"><em>Chivo</em></a> with its tabular numbers for the areas and the caption.</li>
 </ul>
 <h5 id="data-source">Data Source</h5>
 <ul>
@@ -377,7 +377,7 @@ $(function() {
 <li>For each country, I checked if a name is provided by the CIA world Factbook; if not, I used the sovereignty provided by NaturalEarth.</li>
 <li>For each country in the shape file, I extracted the first letter with the help of the <a href="https://stringr.tidyverse.org/"><code>{stringr}</code> R package</a> from the tidyverse.</li>
 <li>For each letter I calculated the area covered with the help of the <a href="https://r-spatial.github.io/sf/"><code>{sf}</code> package</a></li>
-<li>Plotting was done completely in R (for a list of packages see &ldquo;Tools&rdquo;).ybr&gt;</li>
+<li>Plotting was done completely in R (for a list of packages see &ldquo;Tools&rdquo;).<br></li>
 </ul>
 <h3 id="alternative-versions">Alternative Versions</h3>
 <h5 id="single-version-of-the-small-multiples">Single Version of the Small Multiples</h5>
