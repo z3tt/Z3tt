@@ -367,7 +367,7 @@ $(function() {
 <h5 id="tools">Tools</h5>
 <ul>
 <li>Data: <a href="https://docs.ropensci.org/rnaturalearthdata/"><code>{rnaturalearth}</code></a></li>
-<li>Data Preparation: <a href="https://r-spatial.github.io/sf/"><code>{stringr}](https://stringr.tidyverse.org/) and [</code>{sf}`</a></li>
+<li>Data Preparation: <a href="https://stringr.tidyverse.org/"><code>{stringr}</code></a> and <a href="https://r-spatial.github.io/sf/"><code>{sf}</code></a></li>
 <li>Graphics: <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a>; <a href="https://wilkelab.org/ggtext/"><code>{ggtext}</code></a> for title and caption; <a href="https://patchwork.data-imaginist.com/"><code>{patchwork}</code></a> for plot composition</li>
 <li>Colors: <a href="https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm">Tableau cyclic color palette</a> via the <a href="https://jrnold.github.io/ggthemes/index.html"><code>{ggthemes}</code></a></li>
 </ul>
@@ -387,10 +387,10 @@ $(function() {
 <img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png', 'blank');">
 <img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png', 'blank');">
 <h3 id="how-about-the-last-letter">How about the last letter?</h3>
-<p><a href="https://twitter.com/humeursdevictor">Victor</a> asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with &ldquo;, Republic of&rdquo; or something wrapped into parentheses.</p>
+<p><a href="https://twitter.com/humeursdevictor">Victor</a> asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with &ldquo;, Republic of&rdquo; or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.</p>
 <img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png', 'blank');">
 <img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png', 'blank');">
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
+<img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
 
 
                 
@@ -436,10 +436,6 @@ $(function() {
                         </a>
                         
                         
-                        
-                        <a href="/tags/annotations" title="annotations">
-                            annotations
-                        </a>
                         
                         
                         

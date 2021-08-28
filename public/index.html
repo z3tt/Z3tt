@@ -6,32 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    
     <meta property="og:site_name" content="Cédric Scherer">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://cedricscherer.com/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
 
-
+    
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/banner.png" >
+    
 
+    
 
-
-
-
+    
       <meta name="title" content="Cédric Scherer" />
       <meta property="og:title" content="Cédric Scherer - Cédric Scherer" />
       <meta property="twitter:title" content="Cédric Scherer - Cédric Scherer" />
       <meta property="twitter:text:title" content="Cédric Scherer - Cédric Scherer" />
+    
 
-
-
+    
       <meta name="description" content="Blog by Cédric Scherer">
       <meta property="og:description" content="Blog by Cédric Scherer" />
       <meta property="twitter:description" content="Blog by Cédric Scherer" />
+    
 
-
-
+    
 
     <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
     <link rel="shortcut icon" href="/img/favicon.ico">
@@ -42,31 +42,31 @@
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
-
+    
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/hux-blog.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/syntax.css">
 
-
+    
     <link rel="stylesheet" href="/css/zanshang.css">
 
-
+    
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
+    
+    
     <script src="/js/jquery.min.js"></script>
 
-
+    
     <script src="/js/bootstrap.min.js"></script>
 
-
+    
     <script src="/js/hux-blog.min.js"></script>
 
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -75,7 +75,7 @@
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
-
+        
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -86,38 +86,38 @@
             <a class="navbar-brand" href="/">Cédric Scherer</a>
         </div>
 
-
-
+        
+        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Blog</a>
                     </li>
+                    
 
-
-
+		    
                         <li><a href="/top/portfolio/">Portfolio</a></li>
-
+                    
                         <li><a href="/top/dataviz/">Gallery</a></li>
-
+                    
                         <li><a href="/top/about/">About Me</a></li>
-
+                    
                         <li><a href="/top/links/">Links</a></li>
+                    
 
-
-
+                    
                 </ul>
             </div>
         </div>
-
+        
     </div>
-
+    
 </nav>
 <script>
-
-
-
+    
+    
+    
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
@@ -126,17 +126,17 @@
     $toggle.addEventListener('click', handleMagic)
     function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
-
+        
             $navbar.className = " ";
-
+            
             setTimeout(function(){
-
+                
                 if($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
             },400)
         }else{
-
+        
             $collapse.style.height = "auto"
             $navbar.className += " in";
         }
@@ -151,7 +151,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
                     <h1>Cédric Scherer </h1>
-
+                    
 		    <span class="subheading">Data Visualization &amp; Computational Ecology</span>
                 </div>
             </div>
@@ -161,11 +161,11 @@
 
 
 
-
+  
 <div class="container">
     <div class="row">
-
-
+        
+        
    	    <div class="
             col-lg-8 col-lg-offset-1
             col-md-8 col-md-offset-1
@@ -173,18 +173,18 @@
             col-xs-12
             post-container
         ">
-
+            
 
 <div class="post-preview">
     <a href="https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/">
         <h2 class="post-title">
             The World&#39;s Countries Colored by Their First Letter
         </h2>
-
+	
         <div class="post-content-preview">
-
+	
             While preparing the mapping section for a Pearson–O&#39;Reilly training, I got the idea to visualize the first letter of each country. And got especially curious about how much landmass each letter covers. Turns out: A, C and R are covering the largest areas!
-
+        
         </div>
     </a>
     <p class="post-meta">
@@ -198,11 +198,11 @@
         <h2 class="post-title">
             A Quick How-to on Labelling Bar Graphs in ggplot2
         </h2>
-
+	
         <div class="post-content-preview">
-
+	
             Bar charts are likely the most common chart type out there and come in several varieties. Most notably, Direct labels can increase accessibility of a bar graph. I got a request how one can add percentage labels inside the bars and how to highlight specific bars with {ggplot2}. This short tutorial shows you multiple ways how to do so.
-
+        
         </div>
     </a>
     <p class="post-meta">
@@ -216,11 +216,11 @@
         <h2 class="post-title">
             Colors and Emotions in Data Visualization
         </h2>
-
+	
         <div class="post-content-preview">
-
+	
             As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements.
-
+        
         </div>
     </a>
     <p class="post-meta">
@@ -234,11 +234,11 @@
         <h2 class="post-title">
             Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)
         </h2>
-
+	
         <div class="post-content-preview">
-
+	
             Raincloud plots, that provide an overview of the raw data, its distribution, and important statistical properties, are a good alternative to classical boxplots. In this tutorial, I highlight the potential problem of boxplots, illustrate why raincloud plots are great, and show numerous ways how to create such hybrid charts in R with {ggplot2}.
-
+        
         </div>
     </a>
     <p class="post-meta">
@@ -252,11 +252,11 @@
         <h2 class="post-title">
             My Contributions to the First 30DayChartChallenge
         </h2>
-
+	
         <div class="post-content-preview">
-
+	
             This April, Dominic Royé and I hosted the first #30DayChartChallenge, a data visualization challenge with the aim to create a chart every day of April with a given prompt. In total, we collected 1,960 contributions from around the world!
-
+        
         </div>
     </a>
     <p class="post-meta">
@@ -265,22 +265,40 @@
 </div>
 <hr>
 
+<div class="post-preview">
+    <a href="https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/">
+        <h2 class="post-title">
+            My Personal Data Visualization Year 2020
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            Even though it was a crazy and exhausting year, there were also some good and exiting things happening. Therefore I&#39;ve decided to take a short break on New Year&#39;s Day and look back at some of the positive moments of my personal data visualization journey during 2020.
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by Cédric Friday, January 1, 2021
+    </p>
+</div>
+<hr>
 
 
+            
 
 
 <ul class="pager">
-
-
+    
+    
     <li class="next">
         <a href="/page/2/">Older Posts &rarr;</a>
     </li>
-
+    
 </ul>
 
 
        	</div>
-
+        
 
 <div class="
     col-lg-3 col-lg-offset-0
@@ -290,22 +308,22 @@
     sidebar-container
 ">
 
-
-
+    
+	
     <section class="visible-md visible-lg">
 	<hr><h5><a href="/top/cv">ABOUT ME</a></h5>
         <div class="short-about">
-
+            
             <a href="/top/about">
                <img src="/img/cedric_headshot_round.png" alt="avatar" style="cursor: pointer" />
             </a>
-
-
+            
+            
                 <p>Always coding. Passionate about design. Worried about nature. Proud dad.</p>
-
-
+            
+           
            <ul class="list-inline">
-
+           
            <li>
                <a href="mailto:info@data-vizard.de">
                    <span class="fa-stack fa-lg">
@@ -314,9 +332,9 @@
                    </span>
                </a>
            </li>
-
-
-
+           
+               
+               
                <li>
                    <a href="https://twitter.com/CedScherer">
                        <span class="fa-stack fa-lg">
@@ -325,9 +343,9 @@
                        </span>
                    </a>
                </li>
-
-
-
+               
+               
+               
                <li>
                    <a target="_blank" href="https://www.behance.net/cedscherer">
                             <span class="fa-stack fa-lg">
@@ -336,8 +354,8 @@
                             </span>
                    </a>
                </li>
-
-
+               
+               
                <li>
                    <a target="_blank" href="https://github.com/Z3tt">
                        <span class="fa-stack fa-lg">
@@ -346,8 +364,8 @@
                        </span>
                    </a>
                </li>
-
-
+               
+               
                <li>
                    <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
                        <span class="fa-stack fa-lg">
@@ -356,197 +374,193 @@
                        </span>
                    </a>
                </li>
-
-
+               
+               
                 </ul>
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji="💚"  data-font="Cookie" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
             </div>
     </section>
+	
 
-
-
-
+  
+  
   <section>
       <hr class="hidden-sm hidden-xs">
       <h5>FEATURED TAGS</h5>
       <div class="tags">
-
-
-
-
-
-
-
+          
+          
+             
+          
+             
+          
+             
                   <a href="/tags/animations" title="animations">
                       animations
                   </a>
-
-
-
-                  <a href="/tags/annotations" title="annotations">
-                      annotations
-                  </a>
-
-
-
+             
+          
+             
+          
+             
                   <a href="/tags/announcement" title="announcement">
                       announcement
                   </a>
-
-
-
+             
+          
+             
                   <a href="/tags/berlin" title="berlin">
                       berlin
                   </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
                   <a href="/tags/covid19" title="covid19">
                       covid19
                   </a>
-
-
-
-
-
+             
+          
+             
+          
+             
                   <a href="/tags/dataviz" title="dataviz">
                       dataviz
                   </a>
-
-
-
-
-
+             
+          
+             
+          
+             
                   <a href="/tags/design" title="design">
                       design
                   </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
+          
+             
                   <a href="/tags/ggplot2" title="ggplot2">
                       ggplot2
                   </a>
-
-
-
-
-
-
-
-
-
+             
+          
+             
+          
+             
+          
+             
+          
+             
                   <a href="/tags/maps" title="maps">
                       maps
                   </a>
-
-
-
-
-
+             
+          
+             
+          
+             
                   <a href="/tags/r" title="r">
                       r
                   </a>
-
-
-
-
-
-
-
-
-
+             
+          
+             
+          
+             
+          
+             
+          
+             
                   <a href="/tags/tidytuesday" title="tidytuesday">
                       tidytuesday
                   </a>
-
-
-
+             
+          
+             
                   <a href="/tags/tidyverse" title="tidyverse">
                       tidyverse
                   </a>
-
-
-
+             
+          
+             
                   <a href="/tags/tutorial" title="tutorial">
                       tutorial
                   </a>
-
-
-
-
-
+             
+          
+             
+          
+             
                   <a href="/tags/weather" title="weather">
                       weather
                   </a>
-
-
-
+             
+          
+             
                   <a href="/tags/workshop" title="workshop">
                       workshop
                   </a>
-
-
+             
+          
       </div>
   </section>
+  
 
 
 
-
-
-
+    
+    
     <section>
         <hr class="hidden-sm hidden-xs">
         <h5>FRIENDS</h5>
         <ul class="list-inline">
-
+            
             <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
-
+            
             <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
-
+            
             <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
-
+            
             <li><a target="_blank" href="https://www.williamrchase.com/tags/dataviz/">Will Chase</a></li>
-
+            
             <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
-
+            
             <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
-
+            
             <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
-
+            
             <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
-
+            
         </ul>
     </section>
+    
 
-
-
-
+    
+    
 </div>
 
 	</div>
@@ -561,8 +575,8 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-
-
+                    
+                    
                     <li>
                         <a href="mailto:info@data-vizard.de">
                             <span class="fa-stack fa-lg">
@@ -571,8 +585,8 @@
                             </span>
                         </a>
                     </li>
-
-
+		                
+                    
                     <li>
                         <a href="https://twitter.com/CedScherer">
                             <span class="fa-stack fa-lg">
@@ -581,9 +595,9 @@
                             </span>
                         </a>
                     </li>
-
-
-
+                    
+                    
+                    
                     <li>
                         <a target="_blank" href="https://github.com/Z3tt">
                             <span class="fa-stack fa-lg">
@@ -592,8 +606,8 @@
                             </span>
                         </a>
                     </li>
-
-
+		                
+                    
                     <li>
                         <a target="_blank" href="https://www.behance.net/cedscherer">
                             <span class="fa-stack fa-lg">
@@ -602,8 +616,8 @@
                             </span>
                         </a>
                     </li>
-
-
+                    
+                    
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
                             <span class="fa-stack fa-lg">
@@ -612,8 +626,8 @@
                             </span>
                         </a>
                     </li>
-
-
+		                
+                    
                 </ul>
                 <div align="center">
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji="🌯"  data-font="Cookie" data-text="Buy me a kebab" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
@@ -653,11 +667,11 @@
 
 
 <script>
-
+    
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-
+                
                 color: {start: '#bbbbee', end: '#28a87d'},
             };
             $('#tag_cloud a').tagcloud();

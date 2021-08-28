@@ -45,7 +45,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 ##### Tools
 
 * Data: [`{rnaturalearth}`](https://docs.ropensci.org/rnaturalearthdata/)
-* Data Preparation: [`{stringr}](https://stringr.tidyverse.org/) and [`{sf}`](https://r-spatial.github.io/sf/)
+* Data Preparation: [`{stringr}`](https://stringr.tidyverse.org/) and [`{sf}`](https://r-spatial.github.io/sf/)
 * Graphics: [`{ggplot2}`](https://ggplot2.tidyverse.org/); [`{ggtext}`](https://wilkelab.org/ggtext/) for title and caption; [`{patchwork}`](https://patchwork.data-imaginist.com/) for plot composition
 * Colors: [Tableau cyclic color palette](https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm) via the [`{ggthemes}`](https://jrnold.github.io/ggthemes/index.html)
 
@@ -75,11 +75,10 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 
 ### How about the last letter?
 
-[Victor](https://twitter.com/humeursdevictor) asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with ", Republic of" or something wrapped into parentheses.
+[Victor](https://twitter.com/humeursdevictor) asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with ", Republic of" or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.
 
 <img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png', 'blank');">
 
 <img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png', 'blank');">
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
-
+<img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
