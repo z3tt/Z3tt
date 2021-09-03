@@ -94,20 +94,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   title = "Georgios Karamanis"
   href =  "https://karaman.is/" 
   [[params.friend_link]]
-  title = "Inbal Rief"
-  href =  "https://www.inbal-rief.com/" 
+  title = "Julie Brunet"
+  href =  "https://www.instagram.com/datacitron/"
   [[params.friend_link]]
   title = "Matthias Stahl"
   href =  "https://www.higsch.com/"
   [[params.friend_link]]
-  title = "Anne-Marie Dufour"
-  href =  "https://www.delightfuldata.art/"
+  title = "Inbal Rief"
+  href =  "https://www.inbal-rief.com/" 
   [[params.friend_link]]
   title = "Will Chase"
   href =  "https://www.williamrchase.com/"
   [[params.friend_link]]
-  title = "Julie Brunet"
-  href =  "https://www.instagram.com/datacitron/"
+  title = "Anne-Marie Dufour"
+  href =  "https://www.delightfuldata.art/"
   [[params.friend_link]]
   title = "Heureka Labs"
   href =  "https://www.heurekalabs.org/"

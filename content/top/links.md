@@ -126,7 +126,7 @@
 * [Maëlle Salmon](https://masalmon.eu/) — "goofing around with R"
 * [Matthias Stahl](https://www.higsch.com/) — visualizations with D3.js and Svelte
 * [Moritz Stefaner](https://truth-and-beauty.net/) — data stories and visualizations
-* [Nadieh Bremer](https://www.visualcinnamon.com) — wonderful visualizations and art, my personal DataViz hero
+* [Nadieh Bremer](https://www.visualcinnamon.com) — wonderful visualizations and art
 * [Oliver Schöndorfer](https://pimpmytype.com/articles/) — “Pimp my Type”
 * [Oscar Baruffa](https://oscarbaruffa.com/) — data science and guides
 * [Shirley Wu](https://shirleywu.studio/) — data-driven art and visualizations
