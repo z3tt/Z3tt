@@ -97,6 +97,11 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 -  [*“One Chart At A Time – Episode 32: Beeswarm Charts”*](https://www.youtube.com/watch?v=kTtV2GRCkj0&list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-&index=32) as part of the [“One Chart At A Time” Series](https://www.youtube.com/playlist?list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-) by Jon Schwabisch
 
 
+##### Podcasts
+
+- [*“Lollipops und Regenwolken”*](https://www.buzzsprout.com/1174520/8969083), "Die Sendung mit der Ziege" (german)
+
+
 ##### Interviews
 
 - [*“Data visualization shows countries with highest-rated coffees”*](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen) (August 2020)
