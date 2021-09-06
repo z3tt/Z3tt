@@ -206,6 +206,9 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 Selection of talks:
 
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> My favorite ggplot2 extension packages. ([Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I))  
+<i style="font-size:11pt;color:grey;">R Ladies Tunis – 07|2021 – Online Meeting</i>
+
 - <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>  
 [Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
 <i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
