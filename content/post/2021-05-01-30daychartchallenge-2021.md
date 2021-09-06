@@ -32,6 +32,8 @@ Begin of 2021, Dominic and I sat down (remotely) to organize the event and brain
 
 ![](https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/topics_ol_blank.png)
 
+*If you want to learn more about the challenge, our learning, and some of my favorite contributions, [watch the talk I gave at the DataVis Lisboa meeting](https://www.youtube.com/watch?v=ckOAWmObIyM) ([Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf)).*
+
 <hr>
 
 ## My Goal for the #30DayChartChallenge

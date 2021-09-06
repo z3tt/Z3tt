@@ -210,7 +210,7 @@ Selection of talks:
 <i style="font-size:11pt;color:grey;">R Ladies Tunis – 07|2021 – Online Meeting</i>
 
 - <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>  
-[Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
+[Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
 <i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
 
 - <i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
