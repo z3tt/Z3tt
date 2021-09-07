@@ -11,7 +11,7 @@
     <!-- Short About -->
   	{{ if .Site.Params.about_me }}
       <section class="visible-md visible-lg">
-  	<hr><h5><a href="{{ "/top/cv" | relLangURL }}">ABOUT ME</a></h5>
+  	<hr><h6>ABOUT ME</h6>
           <div class="short-about">
               {{ with .Site.Params.sidebar_avatar }}
               <a href="{{ "/top/about" | relLangURL }}">
@@ -113,10 +113,10 @@
       {{ if .Site.Params.bookmarks }}
       <section>
           <hr>
-          <h5><a href="{{ "/top/links" | relLangURL }}">QUICK LINKS</a></h5>
+          <h6>QUICK LINKS</h6>
           <ul class="list-inline">
               {{ range .Site.Params.bookmark_link }}
-              <li><a target="_blank" href="{{.href | relLangURL}}">{{.title}}</a></li>
+              <li><a target="_self" href="{{.href | relLangURL}}">{{.title}}</a></li>
               {{ end }}
           </ul>
       </section>
@@ -126,7 +126,7 @@
         {{ if .Site.Params.featured_tags }}
         <section>
             <hr class="hidden-sm hidden-xs">
-            <h5>FEATURED TAGS</h5>
+            <h6>FEATURED TAGS</h6>
             <div class="tags">
                 {{ $featured_condition_size := .Site.Params.featured_condition_size }}
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
@@ -144,7 +144,7 @@
     {{ if .Site.Params.friends }}
     <section>
         <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
+        <h6>FRIENDS</h6>
         <ul class="list-inline">
             {{ range .Site.Params.friend_link }}
             <li><a target="_blank" href="{{.href | relLangURL}}">{{.title}}</a></li>
