@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Staatliches';
-    src: url("../fonts/Staatliches.ttf") format("truetype");
+    src: url("../fonts/Staatliches-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Bebas Neue';
@@ -125,7 +125,7 @@ p{
 }
 
 h1,h2,h3,h4,h5{
-  font-family:'Intro Black','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
+  font-family:'Staatliches','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   line-height:1.1;
   font-weight:400
 }
@@ -317,7 +317,7 @@ pre code{
   left:0;
   width:100%;
   z-index:3;
-  font-family:-apple-system,'Intro Black','Arial Black',sans-serif;
+  font-family:-apple-system,'Staatliches','Arial Black',sans-serif;
   line-height:1.9;
   font-weight:400
 }
