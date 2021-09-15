@@ -1,6 +1,7 @@
 ##### Content
 
 * [Peer-Reviewed Publications](#publications)
+* [Book Chapters](#books)
 * [Invited Talks](#talks)
 * [Conference Presentations](#conferences)
 * [R Packages](#rstats)
@@ -14,9 +15,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Accepted
 
-- <span style='font-variant:small-caps;'>L. Marescot, M. Franz, S. Benhaiem, H. Hofer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, M. East & S. Kramer-Schadt</span> (accepted)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. [*Journal of Animal Ecology*](https://doi.org/10.1111/1365-2656.13555).
-
-- <span style='font-variant:small-caps;'>V. Radchuk, U. Berger, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (accepted)</span> Individual-based models. *Chapter for the upcoming book „Demographic Methods across the Tree of Life” by R. Salguero-Gómez & M. Gamelon.*
+- <span style='font-variant:small-caps;'>L. Marescot, M. Franz, S. Benhaiem, H. Hofer, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, M. East & S. Kramer-Schadt</span> (early view)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. [*Journal of Animal Ecology*](https://doi.org/10.1111/1365-2656.13555).
 
 ##### Published
 
@@ -40,6 +39,11 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 [*Methods in Ecology and Evolution* **9** (11):2240–2248](https://doi.org/10.1111/2041-210X.13076).
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. [*Ecological Modelling* **326**:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
+
+
+### Book Chapters {#books}
+
+- <span style='font-variant:small-caps;'>V. Radchuk, U. Berger, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (2021)</span> Individual-based models. In: (eds. R. Salguero-Gómez & M. Gamelon (Eds.), *[Demographic Methods across the Tree of Life](https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&lang=en&)*. Oxford University Press, 400 pages, ISBN 0198838603.
 
 
 ### Invited Talks {#talks}
