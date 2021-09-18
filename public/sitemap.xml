@@ -164,12 +164,6 @@
     <loc>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/announcement/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -181,6 +175,9 @@
   </url><url>
     <loc>https://cedricscherer.com/2019/05/06/tidytuesday_intro/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/announcement/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/2019/05/04/welcome/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
