@@ -48,11 +48,15 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Invited Talks {#talks}
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> My favorite ggplot2 extension packages. ([Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I))  
-<i style="font-size:11pt;color:grey;">R Ladies Tunis – 07|2021 – Online Meeting</i>
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> Beyond bar and box plots: chart alternatives and how to design them with ggplot2. 
+([Slides](https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf) | [Recording](https://www.youtube.com/watch?v=WBA04fjTVU0) | [Hands-On Tutorial](https://z3tt.github.io/beyond-bar-and-box-plots))  
+<i style="font-size:11pt;color:grey;"><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</i>
+
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> My favorite ggplot2 extension packages. ([Slides](https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf) | [Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I))  
+<i style="font-size:11pt;color:grey;"><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general. ([Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM))  
-<i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
+<i style="font-size:11pt;color:grey;"><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R (Extended Version). ([Slides](https://www.cedricscherer.com/slides/https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf) | [Recording](https://www.youtube.com/watch?v=5KHvEXYtnOo))  
 <i style="font-size:11pt;color:grey;">useR Oslo – 03|2021 – Online Meeting</i>
@@ -61,12 +65,12 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 <i style="font-size:11pt;color:grey;">CorrelCon: A Weekend of Data4Good – 11|2020 – Online Conference</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Effective Data Visualization: How to design impactful and aesthetically pleasing charts. ([Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk))  
-<i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
+<i style="font-size:11pt;color:grey;"><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)</i>
 
 ## Conference Presentations {#conferences}
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R. ([Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/))  
-<i style="font-size:11pt;color:grey;">Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>
+<i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, V. Radchuk, M. Franz, C. Staubach, S. Müller, H.-H. Thulke, N. Blaum, V. Grimm & S. Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence.  
 <i style="font-size:11pt;color:grey;">Poster – Gordon Research Conference on Movement Ecology of Animals – 03|2019 – Lucca, Italy</i>
