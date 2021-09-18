@@ -23,7 +23,7 @@ I have been working as an independent data visualization specialist since the be
 I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://cedricscherer.netlify.com/top/pubs/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research projects](https://cedricscherer.netlify.com/top/projects/)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://cedricscherer.netlify.com/top/projects/)<br>
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 

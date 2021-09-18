@@ -727,7 +727,7 @@ form .row:first-child .floating-label-form-group{
 .pager{
   margin:20px 0 0!important;padding:0!important}
 .pager li>a,.pager li>span{
-  font-family:'Thrillers Regular','Arial',sans-serif,-apple-system;
+  font-family:'Thrillers SemiBold','Arial',sans-serif,-apple-system;
   line-height:1.7;
   text-transform:uppercase;
   font-size:18px;
@@ -747,7 +747,7 @@ form .row:first-child .floating-label-form-group{
 }
 
 .pager li>a{
-  color:#404040;
+color:gray;
 }
 .pager li>a:hover,.pager li>a:focus{
   color:#fff;
