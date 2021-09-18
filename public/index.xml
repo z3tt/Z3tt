@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cédric Scherer</title>
@@ -11,70 +10,70 @@
       <title>Cédric Scherer</title>
       <link>https://cedricscherer.com/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>DataViz</title>
       <link>https://cedricscherer.com/tags/dataviz/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/dataviz/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>design</title>
       <link>https://cedricscherer.com/tags/design/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/design/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>ggplot2</title>
       <link>https://cedricscherer.com/tags/ggplot2/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/ggplot2/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>maps</title>
       <link>https://cedricscherer.com/tags/maps/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/maps/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Posts</title>
       <link>https://cedricscherer.com/post/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/post/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Tags</title>
       <link>https://cedricscherer.com/tags/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>The World&#39;s Countries Colored by Their First Letter</title>
       <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and &lt;code&gt;{ggplot2}&lt;/code&gt; for the first time. While searching for a cool variable to illustrate how to create &lt;a href=&#34;https://www.data-to-viz.com/graph/choropleth.html&#34;&gt;choropleth maps&lt;/a&gt;, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (&lt;a href=&#34;https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/&#34;&gt;here&lt;/a&gt;) or that do not permit to see the complete data by &lt;a href=&#34;http://alphabetpassport.com/world.png&#34;&gt;aggregating rare letters&lt;/a&gt;.&lt;/p&gt;
@@ -130,12 +129,12 @@
 &lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png&#39;, &#39;blank&#39;);&#34;&gt;
 </description>
     </item>
-    
+
     <item>
       <title>A Quick How-to on Labelling Bar Graphs in ggplot2</title>
       <link>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>
 &lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
@@ -195,16 +194,16 @@ The simple bar chart I made for &lt;a href=&#34;https://www.kuendigung.org/studi
 &lt;/ul&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 
-mpg_sum &amp;lt;- mpg %&amp;gt;% 
+mpg_sum &amp;lt;- mpg %&amp;gt;%
   ## just use 2008 data
   dplyr::filter(year == 2008) %&amp;gt;%
   ## turn into lumped factors with capitalized names
   dplyr::mutate(
     manufacturer = stringr::str_to_title(manufacturer),
     manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %&amp;gt;% 
+  ) %&amp;gt;%
   ## add counts
-  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;% 
+  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;%
   ## order factor levels by number, put &amp;quot;Other&amp;quot; to end
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
@@ -228,8 +227,8 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
 ## 11 Jeep             6&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let’s check if our factor reordering worked:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;levels(mpg_sum$manufacturer)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Other&amp;quot;      &amp;quot;Jeep&amp;quot;       &amp;quot;Nissan&amp;quot;     &amp;quot;Subaru&amp;quot;     &amp;quot;Hyundai&amp;quot;   
-##  [6] &amp;quot;Audi&amp;quot;       &amp;quot;Ford&amp;quot;       &amp;quot;Volkswagen&amp;quot; &amp;quot;Chevrolet&amp;quot;  &amp;quot;Toyota&amp;quot;    
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Other&amp;quot;      &amp;quot;Jeep&amp;quot;       &amp;quot;Nissan&amp;quot;     &amp;quot;Subaru&amp;quot;     &amp;quot;Hyundai&amp;quot;
+##  [6] &amp;quot;Audi&amp;quot;       &amp;quot;Ford&amp;quot;       &amp;quot;Volkswagen&amp;quot; &amp;quot;Chevrolet&amp;quot;  &amp;quot;Toyota&amp;quot;
 ## [11] &amp;quot;Dodge&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Keep in mind that we have reversed the ordering since &lt;code&gt;{ggplot2}&lt;/code&gt; plots factors from bottom to top when being mapped to &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
 &lt;hr /&gt;
@@ -248,14 +247,14 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
 &lt;h5&gt;How to Calculate the Percentage Values&lt;/h5&gt;
 &lt;p&gt;We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of &lt;code&gt;geom_bar()&lt;/code&gt; and &lt;code&gt;stat_summary(geom = &#34;text&#34;)&lt;/code&gt; is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.&lt;/p&gt;
 &lt;p&gt;Here are two ways how to quickly add the percentage labels to your data set. The percentage can be easily calculated by dividing the number of cars per manufacturer &lt;code&gt;n&lt;/code&gt; by the total number of cars &lt;code&gt;sum(n)&lt;/code&gt;, times 100. &lt;code&gt;sprintf()&lt;/code&gt; is a handy function to format text and variables. &lt;code&gt;sprintf()&lt;/code&gt; allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. &lt;code&gt;12.0%&lt;/code&gt; instead of &lt;code&gt;12%&lt;/code&gt; which is useful here). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See &lt;a href=&#34;https://www.php.net/manual/en/function.sprintf.php&#34;&gt;here&lt;/a&gt; for more about the parameters one can use. Using &lt;code&gt;paste0&lt;/code&gt;, or alternatively the &lt;code&gt;glue()&lt;/code&gt; function from the &lt;a href=&#34;https://glue.tidyverse.org/&#34;&gt;&lt;code&gt;{glue}&lt;/code&gt; package&lt;/a&gt;, we add the percentage symbol to that number.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;%
   ## add percentage label with `sprintf()`
   dplyr::mutate(perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;))
 
 mpg_sum&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 11 x 3
-##    manufacturer     n perc   
-##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;  
+##    manufacturer     n perc
+##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;
 ##  1 Dodge           21 &amp;quot;17.9%&amp;quot;
 ##  2 Toyota          14 &amp;quot;12.0%&amp;quot;
 ##  3 Chevrolet       12 &amp;quot;10.3%&amp;quot;
@@ -268,12 +267,12 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
 ## 10 Nissan           7 &amp;quot; 6.0%&amp;quot;
 ## 11 Jeep             6 &amp;quot; 5.1%&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;One could also use the &lt;code&gt;percent()&lt;/code&gt; function from the &lt;code&gt;{scales}&lt;/code&gt; package. The accuracy determines the number of digits (here &lt;code&gt;.1&lt;/code&gt;) and we can similarly add the leading white space by setting &lt;code&gt;trim&lt;/code&gt; to &lt;code&gt;FALSE&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;%
   ## add percentage label with `scales::percent()`
   dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 11 x 3
-##    manufacturer     n perc   
-##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;  
+##    manufacturer     n perc
+##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;
 ##  1 Dodge           21 &amp;quot;17.9%&amp;quot;
 ##  2 Toyota          14 &amp;quot;12.0%&amp;quot;
 ##  3 Chevrolet       12 &amp;quot;10.3%&amp;quot;
@@ -293,7 +292,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;And in case you want to add some more description to one of the bars, you can use an &lt;code&gt;if_else()&lt;/code&gt; (or an &lt;code&gt;ifelse()&lt;/code&gt;) statement like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;%
   dplyr::mutate(
     perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
     ## customize label for the first category
@@ -309,7 +308,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use &lt;code&gt;geom_bar()&lt;/code&gt; instead of &lt;code&gt;geom_col()&lt;/code&gt; which takes not two but only one variable and calculates counts by default. To add the labels, we again use &lt;code&gt;geom_text()&lt;/code&gt; but this time we overwrite the default statistical transformation &lt;code&gt;stat = &#34;identity&#34;&lt;/code&gt; with &lt;code&gt;stat = &#34;count&#34;&lt;/code&gt; (the same as the default for &lt;code&gt;geom_bar()&lt;/code&gt;).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## prepare non-aggregated data set with lumped and ordered factors
-mpg_fct &amp;lt;- mpg %&amp;gt;% 
+mpg_fct &amp;lt;- mpg %&amp;gt;%
   dplyr::filter(year == 2008) %&amp;gt;%
   dplyr::mutate(
     ## add count to calculate percentages later
@@ -321,7 +320,7 @@ mpg_fct &amp;lt;- mpg %&amp;gt;%
     manufacturer = forcats::fct_rev(forcats::fct_infreq(manufacturer)),
     manufacturer = forcats::fct_relevel(manufacturer, &amp;quot;Other&amp;quot;, after = 0)
   )
-  
+
 ggplot(mpg_fct, aes(x = manufacturer)) +
   geom_bar(fill = &amp;quot;gray70&amp;quot;) +
   ## add count labels
@@ -347,7 +346,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     ## make labels left-aligned
     hjust = 1, nudge_x = -.5
   ) +
@@ -362,7 +361,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 0, nudge_x = .5
   ) +
   ## make sure labels doesn&amp;#39;t get cut, part 1
@@ -375,7 +374,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 0, nudge_x = .5
   ) +
   ## make sure labels doesn&amp;#39;t get cut
@@ -391,17 +390,17 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## create color palette based on input data
 pal &amp;lt;- c(
   &amp;quot;gray85&amp;quot;,
-  rep(&amp;quot;gray70&amp;quot;, length(mpg_sum$manufacturer) - 4), 
+  rep(&amp;quot;gray70&amp;quot;, length(mpg_sum$manufacturer) - 4),
   &amp;quot;coral2&amp;quot;, &amp;quot;mediumpurple1&amp;quot;, &amp;quot;goldenrod1&amp;quot;
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In this approach, we create a vector that holds the colors for each of the levels—from the lowest bar to the bar with the most values.
 We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for all non-highlighted bars and subtract the number of bars we want to highlight. Here, we have a colorful top 3 and a lighter “Other” category. The vector can then be used in combination with &lt;code&gt;scale_color|fill_manual()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Now, we can use the custom palette to color each bar by mapping &lt;code&gt;manufacturer&lt;/code&gt; to the bar’s &lt;code&gt;fill&lt;/code&gt; property and by passing the &lt;code&gt;pals&lt;/code&gt; vector to &lt;code&gt;scale_fill_manual()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer, 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer,
                     fill = manufacturer)) +
   geom_col() +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 1, nudge_x = -.5
   ) +
   ## add custom colors
@@ -410,7 +409,7 @@ We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for al
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One could also add the color to the data set and map the fill to that column and use &lt;code&gt;scale_fill_identity()&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;-
-  mpg_sum %&amp;gt;% 
+  mpg_sum %&amp;gt;%
   mutate(
     color = case_when(
       row_number() == 1 ~ &amp;quot;goldenrod1&amp;quot;,
@@ -425,7 +424,7 @@ We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for al
 ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 1, nudge_x = -.5
   ) +
   ## add custom colors
@@ -437,14 +436,14 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
 &lt;summary&gt;
 💁 &lt;i&gt;Expand to see that it still works with “updated” data.&lt;/code&gt;&lt;/i&gt;
 &lt;/summary&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   ## use 1999 data now
   dplyr::filter(year == 1999) %&amp;gt;%
   dplyr::mutate(
     manufacturer = stringr::str_to_title(manufacturer),
     manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %&amp;gt;% 
-  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;% 
+  ) %&amp;gt;%
+  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;%
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
     manufacturer = forcats::fct_relevel(manufacturer, &amp;quot;Other&amp;quot;, after = 0),
@@ -457,11 +456,11 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
       manufacturer == &amp;quot;Other&amp;quot; ~ &amp;quot;gray85&amp;quot;,
       TRUE ~ &amp;quot;gray70&amp;quot;
     )
-  ) %&amp;gt;% 
+  ) %&amp;gt;%
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 1, nudge_x = -.5
   ) +
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
@@ -477,7 +476,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 1, nudge_x = -.5,
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;
   ) +
@@ -500,7 +499,7 @@ We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label(
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_label(
-    aes(label = perc), 
+    aes(label = perc),
     hjust = 1, nudge_x = -.5,
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;,
     ## turn into white box without outline
@@ -516,18 +515,18 @@ We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label(
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version with different label placement:&lt;/strong&gt;
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column &lt;code&gt;place&lt;/code&gt; to the &lt;code&gt;hjust&lt;/code&gt; argument. Since we cannot map a variable to &lt;code&gt;nudge_x&lt;/code&gt;, we cannot use it to offset the labels. To add some pacing, I simply add some white space to the begin and end of each percentage label.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;%
   mutate(
-    ## set justification based on data 
+    ## set justification based on data
     ## so that only the first label is placed inside
     place = if_else(row_number() == 1, 1, 0),
     ## add some spacing to labels since we cant use nudge_x anymore
     perc = paste(&amp;quot; &amp;quot;, perc, &amp;quot; &amp;quot;)
-  ) %&amp;gt;% 
+  ) %&amp;gt;%
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
-    aes(label = perc, hjust = place), 
+    aes(label = perc, hjust = place),
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;
   ) +
   scale_x_continuous(expand = c(.01, .01)) +
@@ -540,16 +539,16 @@ I like the idea of placing only those labels inside that mess up the aspect rati
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version placing the long label not at the top:&lt;/strong&gt;
 We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;%
   ## overwrite old percentage labels
   mutate(
     perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
     perc = if_else(row_number() == 2, paste(perc, &amp;quot;of all car models&amp;quot;), perc)
-  ) %&amp;gt;% 
+  ) %&amp;gt;%
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
-    aes(label = perc,), 
+    aes(label = perc,),
     hjust = 0, nudge_x = .5,
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;
   ) +
@@ -572,104 +571,104 @@ R Session Info
 &lt;pre&gt;&lt;code&gt;## R version 4.1.0 (2021-05-18)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 19043)
-## 
+##
 ## Matrix products: default
-## 
+##
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
-## [3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
-## [5] LC_TIME=German_Germany.1252    
+## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252
+## [3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C
+## [5] LC_TIME=German_Germany.1252
 ## system code page: 65001
-## 
+##
 ## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
+## [1] stats     graphics  grDevices utils     datasets  methods   base
+##
 ## other attached packages:
-##  [1] forcats_0.5.1     stringr_1.4.0     dplyr_1.0.7       purrr_0.3.4      
-##  [5] readr_1.4.0       tidyr_1.1.3       tibble_3.1.2      ggplot2_3.3.5    
+##  [1] forcats_0.5.1     stringr_1.4.0     dplyr_1.0.7       purrr_0.3.4
+##  [5] readr_1.4.0       tidyr_1.1.3       tibble_3.1.2      ggplot2_3.3.5
 ##  [9] tidyverse_1.3.1   systemfonts_1.0.2
-## 
+##
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.7        lubridate_1.7.10  assertthat_0.2.1  digest_0.6.27    
-##  [5] utf8_1.2.1        R6_2.5.0          cellranger_1.1.0  backports_1.2.1  
-##  [9] reprex_2.0.0      evaluate_0.14     highr_0.9         httr_1.4.2       
-## [13] blogdown_1.3      pillar_1.6.1      rlang_0.4.11      readxl_1.3.1     
+##  [1] Rcpp_1.0.7        lubridate_1.7.10  assertthat_0.2.1  digest_0.6.27
+##  [5] utf8_1.2.1        R6_2.5.0          cellranger_1.1.0  backports_1.2.1
+##  [9] reprex_2.0.0      evaluate_0.14     highr_0.9         httr_1.4.2
+## [13] blogdown_1.3      pillar_1.6.1      rlang_0.4.11      readxl_1.3.1
 ## [17] rstudioapi_0.13   jquerylib_0.1.4   rmarkdown_2.9     textshaping_0.3.5
-## [21] labeling_0.4.2    munsell_0.5.0     broom_0.7.8       compiler_4.1.0   
+## [21] labeling_0.4.2    munsell_0.5.0     broom_0.7.8       compiler_4.1.0
 ## [25] modelr_0.1.8      xfun_0.24         pkgconfig_2.0.3   htmltools_0.5.1.1
-## [29] tidyselect_1.1.1  bookdown_0.22     fansi_0.5.0       crayon_1.4.1     
-## [33] dbplyr_2.1.1      withr_2.4.2       grid_4.1.0        jsonlite_1.7.2   
-## [37] gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1         magrittr_2.0.1   
-## [41] scales_1.1.1      cli_3.0.0         stringi_1.7.3     farver_2.1.0     
-## [45] fs_1.5.0          xml2_1.3.2        bslib_0.2.5.1     ellipsis_0.3.2   
-## [49] ragg_1.1.3        generics_0.1.0    vctrs_0.3.8       tools_4.1.0      
-## [53] glue_1.4.2        hms_1.1.0         yaml_2.2.1        colorspace_2.0-2 
+## [29] tidyselect_1.1.1  bookdown_0.22     fansi_0.5.0       crayon_1.4.1
+## [33] dbplyr_2.1.1      withr_2.4.2       grid_4.1.0        jsonlite_1.7.2
+## [37] gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1         magrittr_2.0.1
+## [41] scales_1.1.1      cli_3.0.0         stringi_1.7.3     farver_2.1.0
+## [45] fs_1.5.0          xml2_1.3.2        bslib_0.2.5.1     ellipsis_0.3.2
+## [49] ragg_1.1.3        generics_0.1.0    vctrs_0.3.8       tools_4.1.0
+## [53] glue_1.4.2        hms_1.1.0         yaml_2.2.1        colorspace_2.0-2
 ## [57] rvest_1.0.0       knitr_1.33        haven_2.4.1       sass_0.4.0&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>Annotations</title>
       <link>https://cedricscherer.com/tags/annotations/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/annotations/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>R</title>
       <link>https://cedricscherer.com/tags/r/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/r/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>tidyverse</title>
       <link>https://cedricscherer.com/tags/tidyverse/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/tidyverse/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>tutorial</title>
       <link>https://cedricscherer.com/tags/tutorial/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/tutorial/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>climate</title>
       <link>https://cedricscherer.com/tags/climate/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/climate/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>colors</title>
       <link>https://cedricscherer.com/tags/colors/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/colors/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Colors and Emotions in Data Visualization</title>
       <link>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
       <description>
 &lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
@@ -767,42 +766,42 @@ Some exemplary graphs from the “COVID-19 Impfdashboard” using moderate blue 
 &lt;/div&gt;
 </description>
     </item>
-    
+
     <item>
       <title>COVID–19</title>
       <link>https://cedricscherer.com/tags/covid19/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/covid19/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>cultures</title>
       <link>https://cedricscherer.com/tags/cultures/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/cultures/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>emotions</title>
       <link>https://cedricscherer.com/tags/emotions/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/emotions/</guid>
       <description></description>
     </item>
-    
+
     <item>
       <title>Chart selection</title>
       <link>https://cedricscherer.com/tags/chart-selection/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
-      
+
       <guid>https://cedricscherer.com/tags/chart-selection/</guid>
       <description></description>
     </item>
-    
+
   </channel>
 </rss>
