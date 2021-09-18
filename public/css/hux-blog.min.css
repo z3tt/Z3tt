@@ -108,7 +108,7 @@
 }
 .sidebar-container .tags a{
   border-color:#9a9a9a;
-  font-size:12px;
+  font-size:10px;
   margin-right:1px;
   margin-bottom:3px;
 }
@@ -788,7 +788,7 @@ body{
   display:inline-block;
   border:1.2px solid rgba(255,255,255,.8);
   border-radius:999em;
-  padding:2px 8px 2px;
+  padding:2px 8px 1px;
   font-family:'Amulya','Arial',sans-serif,-apple-system;
   color:#fff;
   line-height:16px;
