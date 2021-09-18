@@ -1,29 +1,4 @@
-@import url("//hello.myfonts.net/count/3fcf92");
-
-@font-face {
-  font-family: "Thrillers-SemiBold";
-  src: url('webFonts/ThrillersSemiBold/font.woff2') format('woff2'), url('webFonts/ThrillersSemiBold/font.woff') format('woff');
-}
-@font-face {
-  font-family: "Thrillers-Medium";
-  src: url('webFonts/ThrillersMedium/font.woff2') format('woff2'), url('webFonts/ThrillersMedium/font.woff') format('woff');
-}
-@font-face {
-  font-family: "Thrillers-Regular";
-  src: url('webFonts/ThrillersRegular/font.woff2') format('woff2'), url('webFonts/ThrillersRegular/font.woff') format('woff');
-}
-@font-face {
-  font-family: "Thrillers-Black";
-  src: url('webFonts/ThrillersBlack/font.woff2') format('woff2'), url('webFonts/ThrillersBlack/font.woff') format('woff');
-}
-@font-face {
-  font-family: "Thrillers-Light";
-  src: url('webFonts/ThrillersLight/font.woff2') format('woff2'), url('webFonts/ThrillersLight/font.woff') format('woff');
-}
-@font-face {
-  font-family: "Thrillers-Bold";
-  src: url('webFonts/ThrillersBold/font.woff2') format('woff2'), url('webFonts/ThrillersBold/font.woff') format('woff');
-}
+<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
 @font-face {
     font-family: 'Amulya';
     src: url('../fonts/Amulya-Regular.woff2') format('woff2'), url('../fonts/Amulya-Regular.woff') format('woff');
