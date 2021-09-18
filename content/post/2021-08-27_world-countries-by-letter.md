@@ -57,7 +57,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 * For each letter I calculated the area covered with the help of the [`{sf}` package](https://r-spatial.github.io/sf/)
 * Plotting was done completely in R (for a list of packages see "Tools").<br>
 
-### Alternative Versions
+## Alternative Versions
 
 ##### Single Version of the Small Multiples
 
@@ -73,7 +73,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 <img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png', 'blank');">
 
 
-### How about the last letter?
+## How about the last letter?
 
 [Victor](https://twitter.com/humeursdevictor) asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with ", Republic of" or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.
 

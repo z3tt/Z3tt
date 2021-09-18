@@ -7,7 +7,7 @@ licenselink = "https://github.com/zhaohuabing/hugo-theme-cleanwhite/blob/master/
 description = "A clean, elegant blog theme for hugo"
 homepage = "https://github.com/zhaohuabing/hugo-theme-cleanwhite"
 tags = [ "minimal", "responsive", "blog","light", "clean", "search"]
-features = ["disqus", "site search", "responsive", "google analytics", "side bar"]
+features = ["site search", "responsive", "google analytics", "side bar"]
 min_version = 0.10
 
 [author]

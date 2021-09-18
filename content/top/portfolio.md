@@ -8,7 +8,7 @@
 * [Media Appearances](#media)
 
 
-### Peer-Reviewed Publications {#publications}
+## Peer-Reviewed Publications {#publications}
 
 You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra) and [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions).  
 My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
@@ -41,12 +41,12 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u>, F. Jeltsch, V. Grimm & N. Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. [*Ecological Modelling* **326**:75–89](https://doi.org/10.1016/j.ecolmodel.2015.07.005).
 
 
-### Book Chapters {#books}
+## Book Chapters {#books}
 
 - <span style='font-variant:small-caps;'>V. Radchuk, U. Berger, <u style='font-weight:700;color:#414141;'>C. Scherer</u>, P. Backmann, V. Grimm & S. Kramer-Schadt</span> (2021)</span> Individual-based models. In: (eds. R. Salguero-Gómez & M. Gamelon (Eds.), *[Demographic Methods across the Tree of Life](https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&lang=en&)*. Oxford University Press, 400 pages, ISBN 0198838603.
 
 
-### Invited Talks {#talks}
+## Invited Talks {#talks}
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> My favorite ggplot2 extension packages. ([Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I))  
 <i style="font-size:11pt;color:grey;">R Ladies Tunis – 07|2021 – Online Meeting</i>
@@ -63,7 +63,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2020)</span> Effective Data Visualization: How to design impactful and aesthetically pleasing charts. ([Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk))  
 <i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
 
-### Conference Presentations {#conferences}
+## Conference Presentations {#conferences}
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R. ([Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/))  
 <i style="font-size:11pt;color:grey;">Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>

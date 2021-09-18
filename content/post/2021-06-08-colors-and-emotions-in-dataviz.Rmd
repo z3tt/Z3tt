@@ -24,7 +24,7 @@ library(systemfonts)
 
 ---
 
-<i style='font-size:18px;'><b>If you are only moved by color relationships, you are missing the point. I am interested in expressing the big emotions.</b> — Mark Rothko</i>
+<span style='font-family:"Thrillers SemiBold";font-size:28px;line-height:1.2;'>If you are only moved by color relationships, you are missing the point. I am interested in expressing the big emotions.</span><span style='font-family:"Thrillers Regular";font-size:28px;line-height:1.2;'> — Mark Rothko</span>
 
 As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers. 
 

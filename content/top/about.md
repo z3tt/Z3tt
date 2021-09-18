@@ -1,4 +1,4 @@
-### About Me {#about}  
+## About Me {#about}  
 
 <style>
   li:not(:last-child) {
@@ -29,7 +29,7 @@ My favorite tool for all data-related tasks is [R](https://www.r-project.org/abo
 
 <hr/>
 
-### Contact {#contact}
+## Contact {#contact}
 
 <b>Dr. rer. nat. Cédric Scherer</b>
 <div style="line-height:0%;">
@@ -53,7 +53,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 <hr/>
 
-### Curriculum Vitae {#cv}
+## Curriculum Vitae {#cv}
 
 * [Personal Details](#person)
 * [Education & Professional Expericence](#career)
@@ -75,7 +75,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 ##### Education & Professional Experience {#career}
 
-<ul style="font-size:17px;">
+<ul style="font-size:16px;">
 
   <li style="color:#282828;font-style:italic;"><b>Data Visualization Designer</b> (since 2020)</li>
   <ul>
@@ -206,19 +206,21 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 Selection of talks:
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C. Scherer</u> (2021)</span> My favorite ggplot2 extension packages. ([Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I))  
-<i style="font-size:11pt;color:grey;">R Ladies Tunis – 07|2021 – Online Meeting</i>
+- <i>“My favorite ggplot2 extension packages.” </i>  
+[Slides](https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf) | [Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I)  
+<i style="font-size:14px;color:#989898;">R Ladies Tunis – 07|2021 – Online Meeting</i>
 
 - <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>  
 [Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
-<i style="font-size:11pt;color:grey;">DataVis Lisboa – 05|2021 – Online Meeting</i>
+<i style="font-size:14px;color:#989898;">DataVis Lisboa – 05|2021 – Online Meeting</i>
 
 - <i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
 [Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/)  
-<i style="font-size:11pt;color:grey;">Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>
+<i style="font-size:14px;color:#989898;">Outlier 2021 – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>
 
-- <i>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”</i>   [Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk)  
-<i style="font-size:11pt;color:grey;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
+- <i>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”</i>   
+[Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk)  
+<i style="font-size:14px;color:#989898;">Heureka Labs & Duke+DataScience – 10|2020 – Duke University, Durham, USA (Webinar)</i>
 
 <a href="https://cedricscherer.netlify.com/top/pubs/">Full List of Presentations</a>
 

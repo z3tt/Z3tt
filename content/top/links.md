@@ -5,7 +5,7 @@
 * [Personal Blogs](#blogs)
 
 
-### DataViz {#dataviz}
+## DataViz {#dataviz}
 
 ##### Open-Access Books
 
@@ -55,11 +55,11 @@
 
 
 
-### R Programing Language {#rstats}
+## R Programing Language {#rstats}
 
 ##### Open-Access Books
 
-* **[Big Book of R](https://www.bigbookofr.com/)** by Oscar Baruffa — colleciton of 150+ books!
+* [“Big Book of R”](https://www.bigbookofr.com/) by Oscar Baruffa — a collection of 150+ books!
 * [“R for Data Science”](https://r4ds.had.co.nz/) by Hadley Wickham & Garrett Grolemund
 * [“ggplot2: Elegant Graphics for Data Analysis”](https://ggplot2-book.org) by Hadley Wickham 
 * [“Geocomputation with R”](https://geocompr.robinlovelace.net/index.html) by Robin Lovelace, Jakub Nowosad & Jannes Muenchow
@@ -98,7 +98,7 @@
 
 
 
-### Interesting Personal Pages<br>(Random Topics, Alphabetic Order 🤷) {#blogs}
+## Interesting Personal Pages<br>(Random Topics, Alphabetic Order 🤷) {#blogs}
 
 * [Achim Tack](https://www.achim-tack.org/) — data & maps
 * [Alberto Cairo](http://www.thefunctionalart.com/) — information design and visualization
