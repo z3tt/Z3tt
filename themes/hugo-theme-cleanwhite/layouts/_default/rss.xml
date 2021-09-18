@@ -2,7 +2,7 @@
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
 {{- if or $.IsHome $.IsSection -}}
-{{- $pages = $paginator.Pages -}}
+{{- $pages = $pctx.Site.RegularPages -}}
 {{- else -}}
 {{- $pages = $pctx.Pages -}}
 {{- end -}}
