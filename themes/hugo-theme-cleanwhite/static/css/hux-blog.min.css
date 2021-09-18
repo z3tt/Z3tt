@@ -114,7 +114,9 @@
 }
 .sidebar-container .tags a{
   border-color:#9a9a9a;
-  font-size:12px
+  font-size:12px;
+  margin-right:1px;
+  margin-bottom:3px;
 }
 .sidebar-container .tags a:hover,.sidebar-container .tags a:active{
   border-color:#28a87d
@@ -771,7 +773,8 @@ body{
   webkit-tap-highlight-color:#28a87d;
 }
 .tags{
-  margin-bottom:1px;
+  margin-right:1px;
+  margin-bottom:3px;
 }
 .tags a,.tags .tag{
   display:inline-block;
@@ -782,10 +785,10 @@ body{
   color:#fff;
   line-height:16px;
   font-size:12px;
-  font-weight:400;
+  font-weight:500;
   text-decoration:none;
-  text-transform: lowercase;
-  margin:1 1px;
+  text-transform: uppercase;
+  margin:3 3px;
 }
 .tags a:hover,.tags .tag:hover,.tags a:active,.tags .tag:active{
   color:#fff;
