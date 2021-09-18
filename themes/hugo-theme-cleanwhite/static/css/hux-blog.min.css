@@ -524,9 +524,8 @@ pre code{
 }
 .intro-header .post-heading .meta{
   font-family:'Amulya','Arial','Helvetica',sans-serif;
-  font-style:plain;
-  font-weight:500;
-  font-size:16px;
+  font-weight:600;
+  font-size:14px;
 }
 .intro-header .post-heading .meta a{
   color:#fff;
@@ -569,8 +568,7 @@ pre code{
   font-family:'Amulya','Arial', sans-serif;
   color:#28a87d;
   font-size:13px;
-  font-style:plain;
-  font-weight:500;
+  font-weight:600;
   margin-top:.5em;
 }
 .post-preview>.post-meta>a{
