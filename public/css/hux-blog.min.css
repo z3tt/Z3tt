@@ -504,6 +504,7 @@ pre code{
   margin-top:0;
   font-size:45px;
   line-height:.9;
+  letter-spacing:1.25px;
 }
 .intro-header .site-heading .subheading{
   font-family:'Amulya','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
@@ -517,7 +518,8 @@ pre code{
 
 @media only screen and (min-width:768px){
   .intro-header .site-heading h1,.intro-header .page-heading h1{
-    font-size:80px;
+    font-size:90px;
+    letter-spacing:1.25px;
   }
   .intro-header .site-heading .subheading{
     font-size:27px;
