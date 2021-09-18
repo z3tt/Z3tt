@@ -1,44 +1,44 @@
 @font-face {
   font-family: "Thrillers Black";
-  src: url('ThrillersBlack/font.woff2') format('woff2'), url('ThrillersBlack/font.woff') format('woff');
+  src: url('../fonts/ThrillersBlack/font.woff2') format('woff2'), url('../fonts/ThrillersBlack/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers Bold";
-  src: url('ThrillersBold/font.woff2') format('woff2'), url('ThrillersBold/font.woff') format('woff');
+  src: url('../fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers SemiBold";
-  src: url('ThrillersSemiBold/font.woff2') format('woff2'), url('ThrillersSemiBold/font.woff') format('woff');
+  src: url('../fonts/ThrillersSemiBold/font.woff2') format('woff2'), url('../fonts/ThrillersSemiBold/font.woff') format('woff');
 }
 @font-face {
     font-family: 'Thrillers Medium';
-    src: url('ThrillersMedium/font.woff2') format('woff2'), url('ThrillersMedium/font.woff') format('woff');
+    src: url('../fonts/ThrillersMedium/font.woff2') format('woff2'), url('../fonts/ThrillersMedium/font.woff') format('woff');
 }
 @font-face {
     font-family: 'Thrillers Regular';
-    src: url('ThrillersRegular/font.woff2') format('woff2'), url('ThrillersRegular/font.woff') format('woff');
+    src: url('../fonts/ThrillersRegular/font.woff2') format('woff2'), url('../fonts/ThrillersRegular/font.woff') format('woff');
 }
 @font-face {
     font-family: 'Thrillers Light';
-    src: url('ThrillersLight/font.woff2') format('woff2'), url('ThrillersLight/font.woff') format('woff');
+    src: url('../fonts/ThrillersLight/font.woff2') format('woff2'), url('../fonts/ThrillersLight/font.woff') format('woff');
 }
 @font-face {
     font-family: 'Amulya';
-    src: url('Amulya-Regular.woff2') format('woff2'), url('Amulya-Regular.woff') format('woff');
+    src: url('../fonts/Amulya-Regular.woff2') format('woff2'), url('../fonts/Amulya-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Amulya';
-    src: url('Amulya-Bold.woff2') format('woff2'), url('Amulya-Bold.woff') format('woff');
+    src: url('../fonts/Amulya-Bold.woff2') format('woff2'), url('../fonts/Amulya-Bold.woff') format('woff');
     font-weight:bold;
 }
 @font-face {
     font-family: 'Amulya';
-    src: url('Amulya-Italic.woff2') format('woff2'), url('Amulya-Italic.woff') format('woff');
+    src: url('../fonts/Amulya-Italic.woff2') format('woff2'), url('../fonts/Amulya-Italic.woff') format('woff');
     font-style: italic;
 }
 @font-face {
     font-family: 'Amulya';
-    src: url('Amulya-BoldItalic.woff2') format('woff2'), url('Amulya-BoldItalic.woff') format('woff');
+    src: url('../fonts/Amulya-BoldItalic.woff2') format('woff2'), url('../fonts/Amulya-BoldItalic.woff') format('woff');
     font-weight:bold;
     font-style: italic;
 }
