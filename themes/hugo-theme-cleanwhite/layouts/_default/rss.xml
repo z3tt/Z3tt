@@ -1,11 +1,7 @@
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
-{{- if or $.IsHome $.IsSection -}}
 {{- $pages = $pctx.Pages -}}
-{{- else -}}
-{{- $pages = $pctx.Pages -}}
-{{- end -}}
 {{- $limit := .Site.Params.rssLimit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
