@@ -85,13 +85,6 @@
     font-style: italic;
 }
 
-@media (min-width:1200px){
-  .post-container,.sidebar-container{padding-right:5%}
-}
-@media (min-width:768px){
-  .post-container{padding-right:5%}
-}
-
 .sidebar-container{
   color:#676767;
   font-size:13px
@@ -100,7 +93,6 @@
   color:gray;
   font-size:26px;
   padding-top:.7em;
-  padding-bottom:.1em
 }
 .sidebar-container h6 a{
   color:gray!important;
@@ -133,6 +125,20 @@
 }
 .sidebar-container .short-about .list-inline>li{
   padding-left:0
+}
+
+@media (min-width:1200px){
+  .post-container,.sidebar-container{
+    padding-right:5%;
+  }
+  .sidebar-container h6{
+    padding-top:0em;
+  }
+}
+@media (min-width:768px){
+  .post-container{
+    padding-right:5%
+  }
 }
 
 body{
@@ -517,7 +523,7 @@ pre code{
 }
 
 .intro-header .post-heading h1{
-  font-size:46px;
+  font-size:42px;
   margin-bottom:24px;
 }
 .intro-header .post-heading .subheading{
