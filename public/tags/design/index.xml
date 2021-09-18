@@ -13,7 +13,59 @@
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
-      <description>Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and {ggplot2} for the first time. While searching for a cool variable to illustrate how to create choropleth maps, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and &lt;code&gt;{ggplot2}&lt;/code&gt; for the first time. While searching for a cool variable to illustrate how to create &lt;a href=&#34;https://www.data-to-viz.com/graph/choropleth.html&#34;&gt;choropleth maps&lt;/a&gt;, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (&lt;a href=&#34;https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/&#34;&gt;here&lt;/a&gt;) or that do not permit to see the complete data by &lt;a href=&#34;http://alphabetpassport.com/world.png&#34;&gt;aggregating rare letters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to &lt;code&gt;{ggplot2}&lt;/code&gt;’s facet functionality, it was super–easy to turn it into small multiples.&lt;/p&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The final poster version with the colorful overview map and 25 small maps, one for each letter.&lt;/figcaption&gt;&lt;/p&gt;&lt;br&gt;
+&lt;h5 id=&#34;project-type&#34;&gt;Project Type&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal Project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;motivation&#34;&gt;Motivation&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Finding a cool variable in the NaturalEarth data set to visualize.&lt;/li&gt;
+&lt;li&gt;Curiosity: Which letter covers the largest area, which are rare?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;design-choices&#34;&gt;Design Choices&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Small multiples&lt;/em&gt; to allow for direct access of single letters which allows also to add the area covered to each map.&lt;/li&gt;
+&lt;li&gt;A &lt;em&gt;cyclical color palette&lt;/em&gt;; of course, 25 categories are too many but with this approach one can at least identify the range a country falls into.  Color-vision deficiency problems are likely but not problematic thanks to the small multiples.&lt;/li&gt;
+&lt;li&gt;I searched through a ton of fonts: I settled on &lt;a href=&#34;https://www.fontshare.com/fonts/neco&#34;&gt;&lt;em&gt;Neco Black&lt;/em&gt;&lt;/a&gt; for the title and letters and &lt;a href=&#34;https://www.omnibus-type.com/fonts/chivo/&#34;&gt;&lt;em&gt;Chivo&lt;/em&gt;&lt;/a&gt; with its tabular numbers for the areas and the caption.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;data-source&#34;&gt;Data Source&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.naturalearthdata.com/&#34;&gt;NaturalEarth&lt;/a&gt; for the country boundaries via the &lt;a href=&#34;https://docs.ropensci.org/rnaturalearthdata/&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt; R package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Country names from the &lt;a href=&#34;https://www.cia.gov/the-world-factbook/&#34;&gt;CIA World Factbook&lt;/a&gt;, contained in the world data set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;tools&#34;&gt;Tools&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Data: &lt;a href=&#34;https://docs.ropensci.org/rnaturalearthdata/&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Preparation: &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Graphics: &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt;; &lt;a href=&#34;https://wilkelab.org/ggtext/&#34;&gt;&lt;code&gt;{ggtext}&lt;/code&gt;&lt;/a&gt; for title and caption; &lt;a href=&#34;https://patchwork.data-imaginist.com/&#34;&gt;&lt;code&gt;{patchwork}&lt;/code&gt;&lt;/a&gt; for plot composition&lt;/li&gt;
+&lt;li&gt;Colors: &lt;a href=&#34;https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm&#34;&gt;Tableau cyclic color palette&lt;/a&gt; via the &lt;a href=&#34;https://jrnold.github.io/ggthemes/index.html&#34;&gt;&lt;code&gt;{ggthemes}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;methods&#34;&gt;Methods&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;I had to choose one source for the names; after checking several naming conventions, I settled on those provided by the CIA World Factbook. Why? Because this was the easiest way to get rid of &amp;ldquo;Republic&amp;rdquo; and other prefixes and it has a pretty good coverage.&lt;/li&gt;
+&lt;li&gt;For each country, I checked if a name is provided by the CIA world Factbook; if not, I used the sovereignty provided by NaturalEarth.&lt;/li&gt;
+&lt;li&gt;For each country in the shape file, I extracted the first letter with the help of the &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt; R package&lt;/a&gt; from the tidyverse.&lt;/li&gt;
+&lt;li&gt;For each letter I calculated the area covered with the help of the &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt; package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plotting was done completely in R (for a list of packages see &amp;ldquo;Tools&amp;rdquo;).&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;alternative-versions&#34;&gt;Alternative Versions&lt;/h2&gt;
+&lt;h5 id=&#34;single-version-of-the-small-multiples&#34;&gt;Single Version of the Small Multiples&lt;/h5&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;h5 id=&#34;single-version-of-the-overview-map&#34;&gt;Single Version of the Overview Map&lt;/h5&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;h2 id=&#34;how-about-the-last-letter&#34;&gt;How about the last letter?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/humeursdevictor&#34;&gt;Victor&lt;/a&gt; asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with &amp;ldquo;, Republic of&amp;rdquo; or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.&lt;/p&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png&#39;, &#39;blank&#39;);&#34;&gt;
+</description>
     </item>
     
     <item>
@@ -22,8 +74,101 @@
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
-      <description>This blog post originally appeared as a guest post on the “Storytelling with Data” blog as part of the color series. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.
-As we continue our exploration of color in data visualization this month, we are happy to share this guest post from notable #SWDchallenge contributor and community member Cédric Scherer.</description>
+      <description>
+&lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;em&gt;This blog post originally appeared as a &lt;a href=&#34;https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization&#34;&gt;guest post on the “Storytelling with Data” blog&lt;/a&gt; as part of the color series. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As we continue our exploration of color in data visualization this month, we are happy to share this guest post from notable #SWDchallenge contributor and community member Cédric Scherer. Before becoming a freelance data visualization specialist, Cédric was a trained ecologist, which required a unique combination of responsibilities: in addition to analysing and visualizing tons of animal data, he was also capturing foxes, raccoons, and hares in the wild! Now, he is combining his expertise in analysing and visualizing large data sets with his passion for design to create visualizations across all disciplines, purposes, and styles. We thank Cédric for sharing this post with us, and we hope you enjoy it!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:&amp;quot;Thrillers SemiBold&amp;quot;;font-size:28px;line-height:1.2;&#34;&gt;If you are only moved by color relationships, you are missing the point. I am interested in expressing the big emotions.&lt;/span&gt;&lt;span style=&#34;font-family:&amp;quot;Thrillers Regular&amp;quot;;font-size:28px;line-height:1.2;&#34;&gt; — Mark Rothko&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers.&lt;/p&gt;
+&lt;div id=&#34;warm-city-cold-city&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Warm city, cold city&lt;/h2&gt;
+&lt;p&gt;When designing my contribution to the &lt;a href=&#34;https://www.storytellingwithdata.com/blog/2019/9/3/swdchallenge-visualize-uncertainty&#34;&gt;#SWDchallenge of September 2019 on the topic “Visualizing Uncertainty”&lt;/a&gt;, I depicted the variation in monthly temperatures in my hometown of Berlin.&lt;/p&gt;
+&lt;p&gt;For me, it was straightforward to use a warm, reddish color palette and to display the temperature range in degrees of Celsius. To make it easily accessible for local people, I also created a version in German—and just for the sake of variety and to make them easily distinguishable at a glance, I created this version in a blue color scale.&lt;/p&gt;
+&lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092163899-E6CYKSAW3GJTJ9KEGFU0/daily-temps-in-berlin.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;p&gt;
+&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+Variation in daily temperatures in Berlin, in English and German with two different color palettes.
+&lt;/figcaption&gt;
+&lt;/p&gt;
+&lt;p&gt;Without any intention, the two variations of my visualization triggered different emotional reactions. While the red chart likely leads you to think “Wow, Berlin summers are quite hot,” the blue version may push you to think of summers as rainy and rather cold.&lt;/p&gt;
+&lt;p&gt;In general, we should have in mind that different details might spark different emotions and expectations in our viewers. Some of these details will make it easier for them to understand the chart in the manner the designer intended.&lt;/p&gt;
+&lt;p&gt;In the above example, how people perceive the temperatures in Berlin depends on (at least) two different factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What does the color used in the chart commonly represent in the experience and culture of the reader?&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Which range of temperatures (or temperature scale) is the reader regularly exposed to?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While we cannot account for the last factor, the choice of colors is up to the designer. It is important though, that colors may be perceived differently depending on the audience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;colors-and-their-associations&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Colors and their associations&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Which colors do you associate with temperatures and precipitation?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Which colors do you associate with trees and urban areas?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We are used to attributing certain colors to specific objects and emotions. Most people expect the sea to be colored in blue on a map; a green ocean looks plain wrong to us. Similarly, humans perceive bright colors on elevation maps to represent a high altitude, with darker colors representing naturally low-lying and shady areas like valleys.&lt;/p&gt;
+&lt;p&gt;Temperatures are regularly displayed as a gradient from blue (cold) to red (hot). A famous example is this “warming stripes” design by Ed Hawkins:&lt;/p&gt;
+&lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092203312-8BKCNNOD9QA0GJUIULPP/hawkins-warming-stripes.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;p&gt;
+&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+Warming stripes for 1850-2018 by Ed Hawkins, Climate Lab Book (4 December 2018).
+&lt;/figcaption&gt;
+&lt;/p&gt;
+&lt;p&gt;Most people around the globe likely agree on the blue-red gradient when it comes to temperatures, and in first looking at this visual, we naturally translate each stripe into a relative temperature (difference) along this gradient. A legend or annotations explaining the color gradient, while adding specificity and detail, would weaken the minimalist style of the visualization, which is communicating not through the precision of numbers but through the inherent emotional reaction to the rapid change from decades of cool blues to warm, intense reds. (Nevertheless, there is also &lt;a href=&#34;https://showyourstripes.info/&#34;&gt;a version with minimal labeling&lt;/a&gt;.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;colors-spark-emotions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Colors spark emotions&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Which color set comes to your mind when you think about happiness and sadness?&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;What color would you pick to visualize honesty?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When it comes to emotions, things might get a bit more difficult. In 2007’s &lt;a href=&#34;https://books.google.de/books/about/Introduction_to_Multimodal_Analysis.html?id=xSyDAAAACAAJ&amp;amp;redir_esc=y&#34;&gt;“Introduction to Multimodal Analysis”&lt;/a&gt;, author David Machin proposed that lightness, brightness, and saturation can communicate the level of seriousness, intensity, and emotional weight in a visual work. Dark and saturated colors are thus perceived as more dramatic and can evoke emotions such as sadness and anger, while bright and flat colors achieve the opposite effect.&lt;/p&gt;
+&lt;p&gt;Moreover, colors might be perceived differently in different cultures. A fantastic resource in this context is the &lt;a href=&#34;https://informationisbeautiful.net/visualizations/colours-in-cultures/&#34;&gt;“Colours in Culture” visualization&lt;/a&gt; by &lt;a href=&#34;http://davidmccandless.com/&#34;&gt;David McCandless&lt;/a&gt; and &lt;a href=&#34;https://alwayswithhonor.com/&#34;&gt;AlwaysWithHonor.com&lt;/a&gt;:&lt;/p&gt;
+&lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092245319-DMGBMO4S9R14G0A1LYTP/colours-in-culture-iib.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;p&gt;
+&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+The visualization “Colours in Culture” by David McCandless and AlwaysWithHonor.com summarizes the meaning of colors across the world in a visually appealing way.
+&lt;/figcaption&gt;
+&lt;/p&gt;
+&lt;p&gt;We make use of these emotional values all the time, either with or without attention. Thus, I often come back to the “culture–color wheel” when designing visualizations since Cole showed it to me. We can see that Ed Hawkins’ use of red and blue is an emotionally good choice since the colors are interpreted as &lt;em&gt;heat&lt;/em&gt; [41] and &lt;em&gt;cold&lt;/em&gt; [10], respectively, in all cultures.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bloody-red-covid-maps&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bloody-red COVID maps&lt;/h2&gt;
+&lt;p&gt;Take, as another example, the famous COVID-19 tracker hosted by Johns Hopkins University that became popular in early 2020. The dark map used bloody red bubbles to display reported infections or deaths due to the novel coronavirus. It’s likely that these color choices elicited anxiety and fear in many of its viewers, thanks to the &lt;a href=&#34;https://twitter.com/visualisingdata/status/1237276833286103045&#34;&gt;“alien-death-blood visual identity,”&lt;/a&gt; as data visualization consultant Andy Kirk termed it at the time.&lt;/p&gt;
+&lt;p&gt;While a black map might be attention-grabbing, it likely also sparks panic in some people. In many cultures, black is associated with &lt;em&gt;death&lt;/em&gt; and &lt;em&gt;evil&lt;/em&gt;, and red is not only associated with &lt;em&gt;love&lt;/em&gt; and &lt;em&gt;passion&lt;/em&gt; but also &lt;em&gt;blood&lt;/em&gt; or &lt;em&gt;anger&lt;/em&gt;. As a resource meant to inform the public during the early days of a serious and deadly pandemic, this tracker used colors that, unfortunately, likely inspired additional panic and fear in some of its audience.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.datawrapper.de/coronaviruscharts/&#34;&gt;Lisa Charlotte Rost and her team of Datawrapper&lt;/a&gt; were among several other designers who took different approaches, using less intimidating colors on a light background. (Johns Hopkins University themselves did the same in &lt;a href=&#34;https://coronavirus.jhu.edu/data/new-cases-50-states&#34;&gt;other COVID graphics&lt;/a&gt; they eventually developed.)&lt;/p&gt;
+&lt;p&gt;Rost explained the reasoning from a very emotional and personal standpoint:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you’re infected, you want to find yourself on a map as a blue (or orange, or beige, or purple…) dot, not as a “attention, danger, run!”-screaming red dot. Related, we show deaths in black, not red – it feels more respectful.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092295406-ER9FYEYQDE2U7LC6IYD8/covid-maps.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;p&gt;
+&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+The famous COVID-19 tracker by the John Hopkins University using an “alien-death-blood visual identity” (&lt;a href=&#39;https://coronavirus.jhu.edu/map.html&#39;&gt;coronavirus.jhu.edu/map.html&lt;/a&gt;; Screenshot 2020-07-27) next to a map of confirmed COVID-19 cases by Datawrapper using more decent colors to avoid an emotion of fear (&lt;a href=&#39;blog.datawrapper.de/coronaviruscharts&#39;&gt;blog.datawrapper.de/coronaviruscharts&lt;/a&gt;; Screenshot 2020-07-27).
+&lt;/figcaption&gt;
+&lt;/p&gt;
+&lt;p&gt;In general, I try to avoid black backgrounds as often as possible, although I will use dark gray colors in those cases where dark scenery simply looks better. Light colors may in most cases be a better choice since the color represents truce [79], purity [67] and trust [80] — characteristics that we all certainly like to get as feedback on our data visualizations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;colors-of-healing-visualizing-vaccinations&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Colors of healing: visualizing vaccinations&lt;/h2&gt;
+&lt;p&gt;As of this writing in June 2021, we are in a very different phase of COVID-19 pandemic than we were when those trackers were first launched in early 2020. While we are still collecting data on negative events like infections, hospitalizations, and deaths, our visualizations are now focusing more and more on the positive events: vaccinations and vaccination rates. Many of the charts and maps showing how countries perform on this metric are designed on light backgrounds.&lt;/p&gt;
+&lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092352309-DJIK4US9EJ0NJYTHS7MX/immunization-bars-and-waffles.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;p&gt;
+&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+Some exemplary graphs from the “COVID-19 Impfdashboard” using moderate blue on light gray and white backgrounds. The chart is maintained by the German Federal Ministry of Health in collaboration with the Robert Koch-Institute (RKI) and was designed by Studio NAND and Moritz Stefaner.
+&lt;/figcaption&gt;
+&lt;/p&gt;
+&lt;p&gt;Let’s take a look at the wonderful &lt;a href=&#34;https://impfdashboard.de/&#34;&gt;COVID-19 vaccination dashboard&lt;/a&gt; by the German Federal Ministry of Health in collaboration with the Robert Koch-Institute (RKI). This dashboard shows vaccination rates in Germany with moderate blue graphs on a light background. Blue is a versatile color, representing many different values around the world. However, by intention or by chance, the designers’ choice of blue is a very good one: in Western cultures the color is not only attributed to cold but also to values such as healing, freedom and rationality.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;final-thoughts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Final thoughts&lt;/h2&gt;
+&lt;p&gt;I love colors. Ever since my contribution to the #SWDchallenge, I have learned to take even more care when I choose colors and try to avoid stereotypic colors, especially those that spark certain emotions or are associated with features I actually don’t want to communicate with my visualization.&lt;/p&gt;
+&lt;p&gt;If you like, creating a suitable emotional setting can be subsumed under the term accessibility: more familiar colors will help the reader to access the visualization and may reduce the guidance needed to explain certain features.&lt;/p&gt;
+&lt;p&gt;On the contrary, badly chosen colors may in the worst case mislead the reader or put them in the wrong mindset to accept the intended message, which is definitely something I want to avoid as a truthful designer.&lt;/p&gt;
+&lt;p&gt;Picking suitable colors—not only in terms of accessibility but also based on their emotional values—is an important skill for every designer to practice.&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>

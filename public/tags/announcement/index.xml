@@ -13,11 +13,31 @@
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/2019/09/04/workshop-announcement-datascience-dataviz-tidyverse/</guid>
-      <description>I am proud to announce three workshops that I am going to lead/teach in autumn 2019 and spring 2020! 🎉 Thanks to all of you for that opportunity!
-→ Data Visualization Workshop in Berlin, Germany (Sep 26th 2019)
-→ Data Exploration in R with tidyverse in Modica, Italy (Nov 4th to 8th 2019)
-→ Data Visualization in R with ggplot2 in Berlin, Germany (Mar 2nd to 6th 2020)
-&amp;ldquo;Data Visualization&amp;rdquo; Workshop in Berlin (September 2019) I am delighted to be one of the invited workshop host during the 2-day PhD symposium (September 26th and 27th 2019) at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research).</description>
+      <description>&lt;p&gt;&lt;strong&gt;I am proud to announce three workshops that I am going to lead/teach in autumn 2019 and spring 2020! 🎉 Thanks to all of you for that opportunity!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;→ &lt;a href=&#34;http://www.izw-berlin.de/invitation.html&#34;&gt;Data Visualization Workshop&lt;/a&gt; in Berlin, Germany (Sep 26th 2019)&lt;br&gt;
+→ &lt;a href=&#34;https://www.hybleatraining.com/course/data-exploration-and-visualization-in-r/&#34;&gt;Data Exploration in R with tidyverse&lt;/a&gt; in Modica, Italy (Nov 4th to 8th 2019)&lt;br&gt;
+→ &lt;a href=&#34;https://www.physalia-courses.org/courses-workshops/course56/&#34;&gt;Data Visualization in R with ggplot2&lt;/a&gt; in Berlin, Germany (Mar 2nd to 6th 2020)&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;data-visualization-workshop-in-berlin-september-2019&#34;&gt;&amp;ldquo;Data Visualization&amp;rdquo; Workshop in Berlin (September 2019)&lt;/h3&gt;
+&lt;p&gt;I am delighted to be one of the invited workshop host during the &lt;a href=&#34;http://www.izw-berlin.de/invitation.html&#34;&gt;2-day PhD symposium (September 26th and 27th 2019)&lt;/a&gt; at my home affiliation IZW (Leibniz Institute for Zoo and Wildlife Research). This biannual symposium is organized by PhD students (of the IZW) for PhD students (from everywhere) and traditionally focuses on science-related topics such as career planning, publishing systems, and other &amp;ldquo;soft skills&amp;rdquo;. This year, the title is &lt;em&gt;&amp;ldquo;Science is also yours: working &amp;amp; communicating with the public&amp;rdquo;&lt;/em&gt;. Within this event, I am giving a theoretical and practical workshop entitled &lt;strong&gt;&amp;ldquo;Data Visualization: How to create informative and visually appealing figures&amp;rdquo;&lt;/strong&gt;. Here is how the abstract reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data visualization is an important skill in all data-related fields such as scientific research and journalism. In this workshop, you are going to explore data visualization techniques and tips for important steps during that process such as the choice of chart types and color palettes. After an introduction to current practices and some showcase, we discuss pro and cons of different visualizations and how one could improve them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are still a few slots available, so if you are a PhD student, interested in that topic and not too far away from Berlin, &lt;a href=&#34;http://www.izw-berlin.de/1045.html&#34;&gt;register here&lt;/a&gt; and come by!&lt;/p&gt;
+&lt;h3 id=&#34;5-day-workshop-data-exploration-in-r-in-sicily-november-2019&#34;&gt;5-Day Workshop &amp;ldquo;Data Exploration in R&amp;rdquo; in Sicily (November 2019)&lt;/h3&gt;
+&lt;p&gt;One of my former PhD colleagues within the &lt;a href=&#34;https://cedricscherer.netlify.com/top/projects/#biomove&#34;&gt;BioMove project&lt;/a&gt; left the beautiful Brandenburg area to go back to Sicily, Italy (which I guess is at least equally beautiful) in order to start a training school for scientists called &lt;a href=&#34;https://www.hybleatraining.com/&#34;&gt;Hyblea Training&lt;/a&gt;. From this summer on they offer &amp;ldquo;a wide range of courses dealing with established and emerging topics in life-sciences to deepen your preceding expertise in biology, ecology, remote sensing, data science and related scientific fields.&amp;rdquo; Pierluigi invited me to share my expertise on data wrangling and visualization using the &lt;code&gt;{tidyverse}&lt;/code&gt; and that&amp;rsquo;s going to happen in &lt;strong&gt;November 2019**! The course is entitled &lt;/strong&gt;&amp;ldquo;Data Exploration and Visualization in R with &lt;code&gt;{tidyverse}&lt;/code&gt; &amp;amp; &lt;code&gt;{ggplot2}&lt;/code&gt;&amp;quot;**&lt;a href=&#34;https://www.hybleatraining.com/course/data-exploration-and-visualization-in-r/&#34;&gt;&lt;/a&gt; and is aimed at beginners and people already using R but without much experience in the &lt;code&gt;{tidyverse}&lt;/code&gt;. In general, no programming experience is needed:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The upsurge of data sets complexity in evolutionary biology requires researchers the ability to organize, explore and visualize information in an efficient and reproducible way. Data exploration and visualization is a fundamental component of data science and scientific research. Extracting knowledge and insights from structured and unstructured biological data is a key skill and requires not only a good understanding of the scientific methods, but also the ability to process and visualize data in a reproducible way. &lt;br&gt;
+In this course, you will learn how to explore, transform, analyze and visualize different data sets to gain knowledge and to communicate these insights to a scientific and/or general audience. The course will cover all the necessary steps that are needed for data exploration and visualization in R.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you like to join, please apply &lt;a href=&#34;https://www.hybleatraining.com/course/data-exploration-and-visualization-in-r/&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;5-day-workshop-data-visualization-in-r-with-ggplot2-in-berlin-march-2020&#34;&gt;5-Day Workshop &amp;ldquo;Data Visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;&amp;rdquo; in Berlin (March 2020)&lt;/h3&gt;
+&lt;p&gt;A few days later, &lt;a href=&#34;https://www.physalia-courses.org&#34;&gt;Physalia Courses&lt;/a&gt; approached me thanks to my DataViz output on Twitter and showed interest in a &lt;code&gt;{ggplot2}&lt;/code&gt; related course. While the course in Sicily aims to train all steps from data import to data analyses and visualization, this course aims to focus only on data visualization with &lt;code&gt;{ggplot2}&lt;/code&gt; (and some relevant snippets one need to get the data in the right format). The course named &lt;a href=&#34;https://www.physalia-courses.org/courses-workshops/course56/&#34;&gt;&lt;strong&gt;&amp;ldquo;Data Visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;&amp;quot;&lt;/strong&gt;&lt;/a&gt; thus will be significantly different from the on in Italy since I am providing some theoretical background on DataViz history, how-tos and techniques and a much more in-depth hands-on course on &lt;code&gt;{ggplot2}&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data visualization is an important skill in all data-related fields such as scientific research and journalism. An elegant way to produce such visualizations in a reproducible way is the &lt;code&gt;{ggplot2}&lt;/code&gt; package providing a structured graphics framework in R. In this course, you learn how to use R to load, transform, explore and visualize data. The course also covers the basic concepts in data visualization and a suite of different chart types and tricks to make appealing and informative-rich plots using &lt;code&gt;{ggplot2}&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Again, no R programming experience is needed so if you like that topic and my visualizations, I am happy to welcome you in Berlin during the first week of &lt;strong&gt;March 2020&lt;/strong&gt;!
+If you like to join, please apply &lt;a href=&#34;https://www.physalia-courses.org/courses-workshops/course56/&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,9 +46,10 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/2019/05/04/welcome/</guid>
-      <description>Header image by Negative Space
-Hi, I am glad you found your way here! Come in, have a look.
-I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package {blogdown} Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source Hugo framework. Much thanks also to Huabing Zhao for sharing his &amp;ldquo;CleanWhite&amp;rdquo; theme!</description>
+      <description>&lt;p style=&#34;font-size:14px&#34;&gt;Header image by Negative Space&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hi, I am glad you found your way here! Come in, have a look.&lt;/p&gt;
+&lt;p&gt;I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;&lt;code&gt;{blogdown}&lt;/code&gt;&lt;/a&gt; Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo framework&lt;/a&gt;. Much thanks also to &lt;a href=&#34;https://github.com/zhaohuabing&#34;&gt;Huabing Zhao&lt;/a&gt; for sharing his &lt;a href=&#34;https://github.com/zhaohuabing/hugo-theme-cleanwhite&#34;&gt;&amp;ldquo;CleanWhite&amp;rdquo; theme&lt;/a&gt;!&lt;/p&gt;
+</description>
     </item>
     
   </channel>
