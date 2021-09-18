@@ -11,7 +11,7 @@
     <!-- Short About -->
   	{{ if .Site.Params.about_me }}
       <section class="visible-md visible-lg">
-  	  <h6></h6>
+  	  <h6> </h6>
           <div class="short-about">
               {{ with .Site.Params.sidebar_avatar }}
               <a href="{{ "/top/about" | relLangURL }}">
@@ -33,78 +33,68 @@
                  </a>
              </li>
              {{ end }}
-                 {{ if .Site.Params.social.rss }}
-                 <li>
-                     <a href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" >
-                         <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                         </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                 {{ with .Site.Params.social.twitter }}
-                 <li>
-                     <a href="{{ . }}">
-                         <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                         </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                 {{ with .Site.Params.social.facebook }}
-                 <li>
-                     <a target="_blank" href="{{ . }}">
-                         <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                         </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                 {{ with .Site.Params.social.behance }}
-                 <li>
-                     <a target="_blank" href="{{ . }}">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
-                              </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                 {{ with .Site.Params.social.github }}
-                 <li>
-                     <a target="_blank" href="{{ . }}">
-                         <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                         </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                 {{ with .Site.Params.social.linkedin }}
-                 <li>
-                     <a target="_blank" href="{{ . }}">
-                         <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                         </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                 {{ with .Site.Params.social.medium }}
-                 <li>
-                     <a target="_blank" href="{{ . }}">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                              </span>
-                     </a>
-                 </li>
-                 {{ end }}
-                  </ul>
-              </div>
+               {{ with .Site.Params.social.twitter }}
+               <li>
+                   <a href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.facebook }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.behance }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.github }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.linkedin }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               {{ end }}
+               {{ with .Site.Params.social.medium }}
+               <li>
+                   <a target="_blank" href="{{ . }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                            </span>
+                   </a>
+               </li>
+               {{ end }}
+              </ul>
+            </div>
       </section>
   	{{ end }}
 

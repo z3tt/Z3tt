@@ -19,37 +19,48 @@
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
+              <!-- Featured Tags -->
+              {{ if .Site.Params.featured_tags }}
+              <section>
+                <hr>
+                <br>
+                  <h5>FEATURED TAGS</h5>
+                  <div class="tags">
+                      {{ $featured_condition_size := .Site.Params.featured_condition_size }}
+                      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                      {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
+                      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
+                          {{ $name }}
+                      </a>
+                      {{ end }}
+                      {{ end }}
+                  </div>
+              </section>
+              {{ end }}
 
-                <!-- Featured Tags -->
-                {{ if .Site.Params.featured_tags }}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        {{ $featured_condition_size := .Site.Params.featured_condition_size }}
-                        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                        {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
-                        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
-                        {{ $name }}
-                        </a>
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                </section>
-                {{ end }}
+              <!-- Quick Links -->
+              <section>
+                <br>
+                <h5>QUICK LINKS</h5>
+                  <ul class="list-inline">
+                      {{ range .Site.Params.bookmark_link }}
+                      <li><a target="_self" href="{{.href | relLangURL}}">{{.title}}</a></li>
+                      {{ end }}
+                  </ul>
+              </section>
 
-                <!-- Friends Blog -->
-                {{ if .Site.Params.friends }}
-                <section>
-                    <hr>
-                    <h5>FRIENDS</h5>
-                    <ul class="list-inline">
-                        {{ range .Site.Params.friend_link }}
-                        <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
-                        {{ end }}
-                    </ul>
-                </section>
-                {{ end }}
+              <!-- Friends Blog -->
+              {{ if .Site.Params.friends }}
+              <section>
+                <br>
+                <h5>FRIENDS</h5>
+                  <ul class="list-inline">
+                      {{ range .Site.Params.friend_link }}
+                      <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
+                      {{ end }}
+                  </ul>
+              </section>
+              {{ end }}
             </div>
         </div>
     </div>

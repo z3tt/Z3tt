@@ -77,7 +77,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   #medium        = "full profile url in medium"
   #pinterest     = "full profile url in pinterest"
   behance        = "https://www.behance.net/cedscherer"
-  rss            = false
+  rss            = true
 
   #[[params.friend_link]]
   #title = "DataVizard"

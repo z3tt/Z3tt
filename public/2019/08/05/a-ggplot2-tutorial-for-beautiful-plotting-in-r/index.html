@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    
     <meta property="og:site_name" content="Cédric Scherer">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://cedricscherer.com/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
 
-
+    
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/sun_RichardStrozynski.png" >
+    
 
+    
 
-
-
-
+    
       <meta name="title" content="A ggplot2 Tutorial for Beautiful Plotting in R" />
       <meta property="og:title" content="A ggplot2 Tutorial for Beautiful Plotting in R - Dr. Cédric Scherer" />
       <meta property="twitter:title" content="A ggplot2 Tutorial for Beautiful Plotting in R - Dr. Cédric Scherer" />
       <meta property="twitter:text:title" content="A ggplot2 Tutorial for Beautiful Plotting in R - Dr. Cédric Scherer" />
+    
 
-
-
+    
       <meta name="description" content="An extensive tutorial containing a general introduction to ggplot2 as well as many examples how to modify a ggplot, step by step. It covers several topics such as different chart types, themes, design choices, plot combinations, and modification of axes, labels, and legends, custom fonts, interactive charts and many more.">
       <meta property="og:description" content="An extensive tutorial containing a general introduction to ggplot2 as well as many examples how to modify a ggplot, step by step. It covers several topics such as different chart types, themes, design choices, plot combinations, and modification of axes, labels, and legends, custom fonts, interactive charts and many more." />
       <meta property="twitter:description" content="An extensive tutorial containing a general introduction to ggplot2 as well as many examples how to modify a ggplot, step by step. It covers several topics such as different chart types, themes, design choices, plot combinations, and modification of axes, labels, and legends, custom fonts, interactive charts and many more." />
+    
 
-
-
+    
 
     <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
     <link rel="shortcut icon" href="/img/favicon.ico">
@@ -39,42 +39,42 @@
 
     <link rel="canonical" href="/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">
 
-
+    
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/hux-blog.min.css">
 
-
+    
     <link rel="stylesheet" href="/css/syntax.css">
 
-
+    
     <link rel="stylesheet" href="/css/zanshang.css">
 
-
+    
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-
+    
+    
     <script src="/js/jquery.min.js"></script>
 
-
+    
     <script src="/js/bootstrap.min.js"></script>
 
-
+    
     <script src="/js/hux-blog.min.js"></script>
 
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-
+    
     </head>
 
 
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
-
+        
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -85,38 +85,38 @@
             <a class="navbar-brand" href="/">Cédric Scherer</a>
         </div>
 
-
-
+        
+        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="/">Blog</a>
                     </li>
+                    
 
-
-
+		    
                         <li><a href="/top/portfolio/">Portfolio</a></li>
-
+                    
                         <li><a href="/top/dataviz/">Gallery</a></li>
-
+                    
                         <li><a href="/top/about/">About Me</a></li>
-
+                    
                         <li><a href="/top/links/">Links</a></li>
+                    
 
-
-
+                    
                 </ul>
             </div>
         </div>
-
+        
     </div>
-
+    
 </nav>
 <script>
-
-
-
+    
+    
+    
     var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
@@ -125,17 +125,17 @@
     $toggle.addEventListener('click', handleMagic)
     function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
-
+        
             $navbar.className = " ";
-
+            
             setTimeout(function(){
-
+                
                 if($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
             },400)
         }else{
-
+        
             $collapse.style.height = "auto"
             $navbar.className += " in";
         }
@@ -156,41 +156,41 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="tags">
-
+                        
                         <a class="tag" href="/tags/dataviz" title="DataViz">
                             DataViz
                         </a>
-
+                        
                         <a class="tag" href="/tags/tutorial" title="tutorial">
                             tutorial
                         </a>
-
+                        
                         <a class="tag" href="/tags/r" title="R">
                             R
                         </a>
-
+                        
                         <a class="tag" href="/tags/tidyverse" title="tidyverse">
                             tidyverse
                         </a>
-
+                        
                         <a class="tag" href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
-
+                        
                     </div>
                     <h1>A ggplot2 Tutorial for Beautiful Plotting in R</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
 			Posted by
-
+			
 			    Cédric
-
+			
 			on
 			Monday, August 5, 2019
-
+                        
                             <span id="/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
-      <span class="octicon octicon-eye"></span>
+      <span class="octicon octicon-eye"></span> 
     </span>
     <i class="fa fa-eye"></i>
     <span class="old-visitors-count" style="display: none;"></span>
@@ -221,10 +221,10 @@ function showTime(Counter) {
             var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
             var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
 
-
-
-
-
+            
+            
+            
+            
 
             for (var i = 0; i < results.length; i++) {
                 var item = results[i];
@@ -243,7 +243,7 @@ function showTime(Counter) {
                     if(oldCountSpan!=''){
                         countSpan.text(0+parseInt(oldCountSpan));
                     }else{
-                        countSpan.text(0);
+                        countSpan.text(0);          
                     }
                 }
             }
@@ -277,12 +277,12 @@ function addCount(Counter) {
                 });
             } else {
                 var newcounter = new Counter();
-
+                 
                 var acl = new AV.ACL();
                 acl.setPublicReadAccess(true);
                 acl.setPublicWriteAccess(true);
                 newcounter.setACL(acl);
-
+                 
                 newcounter.set("title", title);
                 newcounter.set("url", url);
                 var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
@@ -311,8 +311,8 @@ function addCount(Counter) {
 }
 $(function() {
     var Counter = AV.Object.extend("Counter");
-
-
+    
+    
     if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
     } else {
@@ -321,7 +321,7 @@ $(function() {
 });
 </script>
 
-
+                        
                     </span>
                 </div>
             </div>
@@ -336,14 +336,14 @@ $(function() {
     <div class="container">
         <div class="row">
 
-
+            
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
 
-
-
+                
+                
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
 <script src="/rmarkdown-libs/plotly-binding/plotly.js"></script>
@@ -432,7 +432,7 @@ Some exemplary plots included in this tutorial.
 <ul>
 <li><a href="#prep">Preparation</a></li>
 <li><a href="#data">The Dataset</a></li>
-<li><a href="#ggplot">The {ggplot2} Package</a></li>
+<li><a href="#ggplot">The <code>{ggplot2}</code> Package</a></li>
 <li><a href="#default">A Default ggplot</a></li>
 <li><a href="#axes">Working with Axes</a></li>
 <li><a href="#titles">Working with Titles</a></li>
@@ -542,7 +542,7 @@ You can download the data we are using during this tutorial <a href="https://git
 ## 10 chic  1997-01-10   121  16       5.38 24.8  10.4   3663 Winter  1997</code></pre>
 </div>
 <div id="ggplot" class="section level2">
-<h2>The {ggplot2} Package</h2>
+<h2>The <code>{ggplot2}</code> Package</h2>
 <blockquote>
 <p><code>ggplot2</code> is a system for declaratively creating graphics, based on <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl?ie=UTF8&amp;qid=1477928463&amp;sr=8-1&amp;keywords=the+grammar+of+graphics&amp;linkCode=sl1&amp;tag=ggplot2-20&amp;linkId=f0130e557161b83fbe97ba0e9175c431">The Grammar of Graphics</a>. You provide the data, tell <code>ggplot2</code> how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.</p>
 </blockquote>
@@ -1048,7 +1048,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
   geom_point() +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
   scale_color_discrete(
-    name = &quot;Seasons:&quot;,
+    name = &quot;Seasons:&quot;, 
     labels = c(&quot;Mar—May&quot;, &quot;Jun—Aug&quot;, &quot;Sep—Nov&quot;, &quot;Dec—Feb&quot;)
   ) +
   theme(legend.title = element_text(
@@ -1285,7 +1285,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
 <div id="create-small-multiples-based-on-one-variable" class="section level5">
 <h5>Create Small Multiples Based on One Variable</h5>
 <p><code>facet_wrap</code> creates a facet of a single variable, written with a tilde in front: <code>facet_wrap(~ variable)</code>. The appearance of these subplots is controlled by the arguments <code>ncol</code> and <code>nrow</code>:</p>
-<pre class="r"><code>g &lt;-
+<pre class="r"><code>g &lt;- 
   ggplot(chic, aes(x = date, y = temp)) +
     geom_point(color = &quot;chartreuse4&quot;, alpha = .3) +
     labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;) +
@@ -1678,61 +1678,61 @@ g + theme_bw(base_family = &quot;Playfair&quot;)</code></pre>
 <h5>Create Your Own Theme</h5>
 <p>If you want to change the theme for an entire session you can use <code>theme_set</code> as in <code>theme_set(theme_bw())</code>. The default is called <code>theme_gray</code> (or <code>theme_gray</code>). If you wanted to create your own custom theme, you could extract the code directly from the gray theme and modify. Note that the <code>rel()</code> function change the sizes relative to the <code>base_size</code>.</p>
 <pre class="r"><code>theme_gray</code></pre>
-<pre><code>## function (base_size = 11, base_family = &quot;&quot;, base_line_size = base_size/22,
-##     base_rect_size = base_size/22)
+<pre><code>## function (base_size = 11, base_family = &quot;&quot;, base_line_size = base_size/22, 
+##     base_rect_size = base_size/22) 
 ## {
 ##     half_line &lt;- base_size/2
-##     t &lt;- theme(line = element_line(colour = &quot;black&quot;, size = base_line_size,
-##         linetype = 1, lineend = &quot;butt&quot;), rect = element_rect(fill = &quot;white&quot;,
-##         colour = &quot;black&quot;, size = base_rect_size, linetype = 1),
-##         text = element_text(family = base_family, face = &quot;plain&quot;,
-##             colour = &quot;black&quot;, size = base_size, lineheight = 0.9,
-##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(),
-##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL,
-##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8),
-##             colour = &quot;grey30&quot;), axis.text.x = element_text(margin = margin(t = 0.8 *
-##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 *
-##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 *
-##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 *
-##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &quot;grey20&quot;),
-##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.ticks.length.x = NULL,
-##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL,
-##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL,
-##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2),
-##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2),
-##             vjust = 0), axis.title.y = element_text(angle = 90,
-##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90,
-##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA),
-##         legend.spacing = unit(2 * half_line, &quot;pt&quot;), legend.spacing.x = NULL,
-##         legend.spacing.y = NULL, legend.margin = margin(half_line,
-##             half_line, half_line, half_line), legend.key = element_rect(fill = &quot;grey95&quot;,
-##             colour = NA), legend.key.size = unit(1.2, &quot;lines&quot;),
-##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)),
-##         legend.text.align = NULL, legend.title = element_text(hjust = 0),
-##         legend.title.align = NULL, legend.position = &quot;right&quot;,
-##         legend.direction = NULL, legend.justification = &quot;center&quot;,
-##         legend.box = NULL, legend.box.margin = margin(0, 0, 0,
-##             0, &quot;cm&quot;), legend.box.background = element_blank(),
-##         legend.box.spacing = unit(2 * half_line, &quot;pt&quot;), panel.background = element_rect(fill = &quot;grey92&quot;,
-##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = &quot;white&quot;),
-##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line,
-##             &quot;pt&quot;), panel.spacing.x = NULL, panel.spacing.y = NULL,
-##         panel.ontop = FALSE, strip.background = element_rect(fill = &quot;grey85&quot;,
-##             colour = NA), strip.text = element_text(colour = &quot;grey10&quot;,
-##             size = rel(0.8), margin = margin(0.8 * half_line,
-##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)),
-##         strip.text.x = NULL, strip.text.y = element_text(angle = -90),
-##         strip.text.y.left = element_text(angle = 90), strip.placement = &quot;inside&quot;,
-##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2,
-##             &quot;pt&quot;), strip.switch.pad.wrap = unit(half_line/2,
-##             &quot;pt&quot;), plot.background = element_rect(colour = &quot;white&quot;),
-##         plot.title = element_text(size = rel(1.2), hjust = 0,
-##             vjust = 1, margin = margin(b = half_line)), plot.title.position = &quot;panel&quot;,
-##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)),
-##         plot.caption = element_text(size = rel(0.8), hjust = 1,
-##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = &quot;panel&quot;,
-##         plot.tag = element_text(size = rel(1.2), hjust = 0.5,
-##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line,
+##     t &lt;- theme(line = element_line(colour = &quot;black&quot;, size = base_line_size, 
+##         linetype = 1, lineend = &quot;butt&quot;), rect = element_rect(fill = &quot;white&quot;, 
+##         colour = &quot;black&quot;, size = base_rect_size, linetype = 1), 
+##         text = element_text(family = base_family, face = &quot;plain&quot;, 
+##             colour = &quot;black&quot;, size = base_size, lineheight = 0.9, 
+##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(), 
+##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL, 
+##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8), 
+##             colour = &quot;grey30&quot;), axis.text.x = element_text(margin = margin(t = 0.8 * 
+##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
+##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 * 
+##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 * 
+##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &quot;grey20&quot;), 
+##         axis.ticks.length = unit(half_line/2, &quot;pt&quot;), axis.ticks.length.x = NULL, 
+##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
+##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
+##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2), 
+##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2), 
+##             vjust = 0), axis.title.y = element_text(angle = 90, 
+##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90, 
+##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA), 
+##         legend.spacing = unit(2 * half_line, &quot;pt&quot;), legend.spacing.x = NULL, 
+##         legend.spacing.y = NULL, legend.margin = margin(half_line, 
+##             half_line, half_line, half_line), legend.key = element_rect(fill = &quot;grey95&quot;, 
+##             colour = NA), legend.key.size = unit(1.2, &quot;lines&quot;), 
+##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)), 
+##         legend.text.align = NULL, legend.title = element_text(hjust = 0), 
+##         legend.title.align = NULL, legend.position = &quot;right&quot;, 
+##         legend.direction = NULL, legend.justification = &quot;center&quot;, 
+##         legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
+##             0, &quot;cm&quot;), legend.box.background = element_blank(), 
+##         legend.box.spacing = unit(2 * half_line, &quot;pt&quot;), panel.background = element_rect(fill = &quot;grey92&quot;, 
+##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = &quot;white&quot;), 
+##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line, 
+##             &quot;pt&quot;), panel.spacing.x = NULL, panel.spacing.y = NULL, 
+##         panel.ontop = FALSE, strip.background = element_rect(fill = &quot;grey85&quot;, 
+##             colour = NA), strip.text = element_text(colour = &quot;grey10&quot;, 
+##             size = rel(0.8), margin = margin(0.8 * half_line, 
+##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)), 
+##         strip.text.x = NULL, strip.text.y = element_text(angle = -90), 
+##         strip.text.y.left = element_text(angle = 90), strip.placement = &quot;inside&quot;, 
+##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2, 
+##             &quot;pt&quot;), strip.switch.pad.wrap = unit(half_line/2, 
+##             &quot;pt&quot;), plot.background = element_rect(colour = &quot;white&quot;), 
+##         plot.title = element_text(size = rel(1.2), hjust = 0, 
+##             vjust = 1, margin = margin(b = half_line)), plot.title.position = &quot;panel&quot;, 
+##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)), 
+##         plot.caption = element_text(size = rel(0.8), hjust = 1, 
+##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = &quot;panel&quot;, 
+##         plot.tag = element_text(size = rel(1.2), hjust = 0.5, 
+##             vjust = 0.5), plot.tag.position = &quot;topleft&quot;, plot.margin = margin(half_line, 
 ##             half_line, half_line, half_line), complete = TRUE)
 ##     ggplot_global$theme_all_null %+replace% t
 ## }
@@ -2366,17 +2366,17 @@ corm &lt;-
          colname = fct_inorder(colname))</code></pre>
 <pre><code>## # A tibble: 25 x 4
 ##    term  colname      corr rowname
-##    &lt;chr&gt; &lt;fct&gt;       &lt;dbl&gt; &lt;fct&gt;
-##  1 death death     1       death
-##  2 death temp     -0.486   death
-##  3 death dewpoint -0.465   death
-##  4 death pm10     -0.00294 death
-##  5 death o3       -0.238   death
-##  6 temp  death    NA       temp
-##  7 temp  temp      1       temp
-##  8 temp  dewpoint  0.958   temp
-##  9 temp  pm10      0.368   temp
-## 10 temp  o3        0.535   temp
+##    &lt;chr&gt; &lt;fct&gt;       &lt;dbl&gt; &lt;fct&gt;  
+##  1 death death     1       death  
+##  2 death temp     -0.486   death  
+##  3 death dewpoint -0.465   death  
+##  4 death pm10     -0.00294 death  
+##  5 death o3       -0.238   death  
+##  6 temp  death    NA       temp   
+##  7 temp  temp      1       temp   
+##  8 temp  dewpoint  0.958   temp   
+##  9 temp  pm10      0.368   temp   
+## 10 temp  o3        0.535   temp   
 ## # ... with 15 more rows</code></pre>
 <p>For the plot we will use <code>geom_tile()</code> for the heatmap and <code>geom_text()</code> for the labels:</p>
 <pre class="r"><code>ggplot(corm, aes(rowname, fct_rev(colname),
@@ -2760,220 +2760,235 @@ R Session Info
 <pre><code>## R version 4.0.2 (2020-06-22)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 19041)
-##
+## 
 ## Matrix products: default
-##
+## 
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252
+## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252    
 ## system code page: 65001
-##
+## 
 ## attached base packages:
-## [1] grid      stats     graphics  grDevices utils     datasets  methods   base
-##
+## [1] grid      stats     graphics  grDevices utils     datasets  methods   base     
+## 
 ## other attached packages:
-##  [1] echarts4r_0.3.3   highcharter_0.8.2 gdtools_0.2.3     ggiraph_0.7.8     plotly_4.9.3      ggridges_0.5.3    reshape2_1.4.4    akima_0.6-2.1     ggforce_0.3.2     ggrepel_0.9.1     hrbrthemes_0.8.6  colorspace_2.0-0  ggdark_0.2.1      scico_1.2.0.9000  rcartocolor_2.0.0 ggsci_2.9         ggthemes_4.2.4    gridExtra_2.3     cowplot_1.1.1     rlang_0.4.10      ggtext_0.1.1      showtext_0.9-2    showtextdb_3.0    sysfonts_0.8.3    patchwork_1.1.1   forcats_0.5.1     stringr_1.4.0     dplyr_1.0.5       purrr_0.3.4       readr_1.4.0       tidyr_1.1.3       tibble_3.1.0      ggplot2_3.3.3     tidyverse_1.3.0
-##
+##  [1] echarts4r_0.3.3   highcharter_0.8.2 gdtools_0.2.3     ggiraph_0.7.8     plotly_4.9.3      ggridges_0.5.3    reshape2_1.4.4    akima_0.6-2.1     ggforce_0.3.2     ggrepel_0.9.1     hrbrthemes_0.8.6  colorspace_2.0-0  ggdark_0.2.1      scico_1.2.0.9000  rcartocolor_2.0.0 ggsci_2.9         ggthemes_4.2.4    gridExtra_2.3     cowplot_1.1.1     rlang_0.4.10      ggtext_0.1.1      showtext_0.9-2    showtextdb_3.0    sysfonts_0.8.3    patchwork_1.1.1   forcats_0.5.1     stringr_1.4.0     dplyr_1.0.5       purrr_0.3.4       readr_1.4.0       tidyr_1.1.3       tibble_3.1.0      ggplot2_3.3.3     tidyverse_1.3.0  
+## 
 ## loaded via a namespace (and not attached):
-##  [1] ellipsis_0.3.1     markdown_1.1       fs_1.5.0           gridtext_0.1.4     rstudioapi_0.13    farver_2.1.0       hexbin_1.28.2      fansi_0.4.2        lubridate_1.7.10   xml2_1.3.2         splines_4.0.2      extrafont_0.17     knitr_1.31         rlist_0.4.6.1      polyclip_1.10-0    jsonlite_1.7.2     broom_0.7.4        Rttf2pt1_1.3.8     dbplyr_2.0.0       shiny_1.6.0        compiler_4.0.2     httr_1.4.2         backports_1.1.7    fastmap_1.1.0      assertthat_0.2.1   Matrix_1.2-18      lazyeval_0.2.2     cli_2.3.1          later_1.1.0.1      tweenr_1.0.1       htmltools_0.5.1.1  tools_4.0.2        igraph_1.2.6       gtable_0.3.0       glue_1.4.2         corrr_0.4.3
-## [37] Rcpp_1.0.6         cellranger_1.1.0   vctrs_0.3.6        nlme_3.1-148       blogdown_0.20      extrafontdb_1.0    crosstalk_1.1.1    xfun_0.22          ps_1.5.0           rvest_0.3.6        mime_0.10          lifecycle_1.0.0    zoo_1.8-9          MASS_7.3-51.6      scales_1.1.1       promises_1.2.0.1   hms_1.0.0          RColorBrewer_1.1-2 quantmod_0.4.18    yaml_2.2.1         curl_4.3           stringi_1.5.3      highr_0.8          TTR_0.24.2         pkgconfig_2.0.3    systemfonts_1.0.1  evaluate_0.14      lattice_0.20-41    htmlwidgets_1.5.3  labeling_0.4.2     tidyselect_1.1.0   plyr_1.8.6         magrittr_2.0.1     bookdown_0.21      R6_2.5.0           generics_0.1.0
+##  [1] ellipsis_0.3.1     markdown_1.1       fs_1.5.0           gridtext_0.1.4     rstudioapi_0.13    farver_2.1.0       hexbin_1.28.2      fansi_0.4.2        lubridate_1.7.10   xml2_1.3.2         splines_4.0.2      extrafont_0.17     knitr_1.31         rlist_0.4.6.1      polyclip_1.10-0    jsonlite_1.7.2     broom_0.7.4        Rttf2pt1_1.3.8     dbplyr_2.0.0       shiny_1.6.0        compiler_4.0.2     httr_1.4.2         backports_1.1.7    fastmap_1.1.0      assertthat_0.2.1   Matrix_1.2-18      lazyeval_0.2.2     cli_2.3.1          later_1.1.0.1      tweenr_1.0.1       htmltools_0.5.1.1  tools_4.0.2        igraph_1.2.6       gtable_0.3.0       glue_1.4.2         corrr_0.4.3       
+## [37] Rcpp_1.0.6         cellranger_1.1.0   vctrs_0.3.6        nlme_3.1-148       blogdown_0.20      extrafontdb_1.0    crosstalk_1.1.1    xfun_0.22          ps_1.5.0           rvest_0.3.6        mime_0.10          lifecycle_1.0.0    zoo_1.8-9          MASS_7.3-51.6      scales_1.1.1       promises_1.2.0.1   hms_1.0.0          RColorBrewer_1.1-2 quantmod_0.4.18    yaml_2.2.1         curl_4.3           stringi_1.5.3      highr_0.8          TTR_0.24.2         pkgconfig_2.0.3    systemfonts_1.0.1  evaluate_0.14      lattice_0.20-41    htmlwidgets_1.5.3  labeling_0.4.2     tidyselect_1.1.0   plyr_1.8.6         magrittr_2.0.1     bookdown_0.21      R6_2.5.0           generics_0.1.0    
 ## [73] DBI_1.1.1          pillar_1.6.0       haven_2.3.1        withr_2.4.1        mgcv_1.8-31        xts_0.12.1         sp_1.4-5           modelr_0.1.8       crayon_1.4.1       uuid_0.1-4         utf8_1.2.1         rmarkdown_2.6      readxl_1.3.1       isoband_0.2.4      data.table_1.14.0  reprex_1.0.0       digest_0.6.27      xtable_1.8-4       httpuv_1.5.5       munsell_0.5.0      viridisLite_0.4.0</code></pre>
 </details>
 </div>
 </div>
 
 
-
+                
 
                 <hr>
                 <ul class="pager">
-
+                    
                     <li class="previous">
                         <a href="/2019/05/17/the-evolution-of-a-ggplot-ep.-1/" data-toggle="tooltip" data-placement="top" title="The Evolution of a ggplot (Ep. 1)">Previous Post</a>
                     </li>
-
-
+                    
+                    
                     <li class="next">
                         <a href="/2019/09/17/bar-chart-race-temperatures-berlin/" data-toggle="tooltip" data-placement="top" title="Visualizing Temperatures in Berlin with Bar Chart Races">Next Post</a>
                     </li>
-
+                    
                 </ul>
 
             </div>
-
+            
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-
-
+                
+                
                 <section>
-                    <br><h6><a href="/tags/">FEATURED TAGS</a></h6>
+                  <hr class="hidden-sm hidden-xs">
+                  <br>
+                    <h5>FEATURED TAGS</h5>
                     <div class="tags">
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/animations" title="animations">
                             animations
                         </a>
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/berlin" title="berlin">
                             berlin
                         </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/covid19" title="covid19">
                             covid19
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/dataviz" title="dataviz">
                             dataviz
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/design" title="design">
                             design
                         </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/maps" title="maps">
                             maps
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/r" title="r">
                             r
                         </a>
-
-
-
-
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/tidytuesday" title="tidytuesday">
                             tidytuesday
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/tidyverse" title="tidyverse">
                             tidyverse
                         </a>
-
-
-
+                        
+                        
+                        
                         <a href="/tags/tutorial" title="tutorial">
                             tutorial
                         </a>
-
-
-
-
-
+                        
+                        
+                        
+                        
+                        
                         <a href="/tags/weather" title="weather">
                             weather
                         </a>
-
-
-
-
+                        
+                        
+                        
+                        
                     </div>
                 </section>
+                
 
-
-
-
+                
                 <section>
-                    <br>
-                    <h6>FRIENDS</h6>
+                  <br>
+                  <h5>QUICK LINKS</h5>
                     <ul class="list-inline">
-
-                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
-
-                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
-
-                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
-
-                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
-
-                        <li><a target="_blank" href="https://www.instagram.com/datacitron/">Julie Brunet</a></li>
-
-                        <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
-
-                        <li><a target="_blank" href="https://www.inbal-rief.com/">Inbal Rief</a></li>
-
-                        <li><a target="_blank" href="https://www.williamrchase.com/">Will Chase</a></li>
-
-                        <li><a target="_blank" href="https://www.delightfuldata.art/">Anne-Marie Dufour</a></li>
-
-                        <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
-
+                        
+                        <li><a target="_self" href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
+                        
+                        <li><a target="_self" href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/">Evolution of a ggpplot</a></li>
+                        
                     </ul>
                 </section>
 
+                
+                
+                <section>
+                  <br>
+                  <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://www.rfordatasci.com/">R4DS Community</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                        
+                        <li><a target="_blank" href="https://www.instagram.com/datacitron/">Julie Brunet</a></li>
+                        
+                        <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
+                        
+                        <li><a target="_blank" href="https://www.inbal-rief.com/">Inbal Rief</a></li>
+                        
+                        <li><a target="_blank" href="https://www.williamrchase.com/">Will Chase</a></li>
+                        
+                        <li><a target="_blank" href="https://www.delightfuldata.art/">Anne-Marie Dufour</a></li>
+                        
+                        <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
+                        
+                    </ul>
+                </section>
+                
             </div>
         </div>
     </div>
@@ -2987,8 +3002,17 @@ R Session Info
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-
-
+                    
+                    <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Cédric Scherer" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                    </li>
+                    
+                    
                     <li>
                         <a href="mailto:info@data-vizard.de">
                             <span class="fa-stack fa-lg">
@@ -2997,8 +3021,8 @@ R Session Info
                             </span>
                         </a>
                     </li>
-
-
+		                
+                    
                     <li>
                         <a href="https://twitter.com/CedScherer">
                             <span class="fa-stack fa-lg">
@@ -3007,9 +3031,9 @@ R Session Info
                             </span>
                         </a>
                     </li>
-
-
-
+                    
+                    
+                    
                     <li>
                         <a target="_blank" href="https://github.com/Z3tt">
                             <span class="fa-stack fa-lg">
@@ -3018,8 +3042,8 @@ R Session Info
                             </span>
                         </a>
                     </li>
-
-
+		                
+                    
                     <li>
                         <a target="_blank" href="https://www.behance.net/cedscherer">
                             <span class="fa-stack fa-lg">
@@ -3028,8 +3052,8 @@ R Session Info
                             </span>
                         </a>
                     </li>
-
-
+                    
+                    
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
                             <span class="fa-stack fa-lg">
@@ -3038,8 +3062,8 @@ R Session Info
                             </span>
                         </a>
                     </li>
-
-
+		                
+                    
                 </ul>
                 <div align="center">
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji=""  data-font="Lato" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
@@ -3079,11 +3103,11 @@ R Session Info
 
 
 <script>
-
+    
     if($('#tag_cloud').length !== 0){
         async("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
-
+                
                 color: {start: '#bbbbee', end: '#28a87d'},
             };
             $('#tag_cloud a').tagcloud();
