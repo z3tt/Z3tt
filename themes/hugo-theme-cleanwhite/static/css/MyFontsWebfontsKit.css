@@ -8,22 +8,22 @@
  *
  * You may obtain a valid license at the URLs below.
  *
- * Webfont: Thrillers-Light by Ndiscover
+ * Webfont: Thrillers Light by Ndiscover
  * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/light/
  *
- * Webfont: Thrillers-Regular by Ndiscover
+ * Webfont: Thrillers Regular by Ndiscover
  * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/regular/
  *
- * Webfont: Thrillers-Medium by Ndiscover
+ * Webfont: Thrillers Medium by Ndiscover
  * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/medium/
  *
- * Webfont: Thrillers-SemiBold by Ndiscover
+ * Webfont: Thrillers SemiBold by Ndiscover
  * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/semi-bold/
  *
- * Webfont: Thrillers-Bold by Ndiscover
+ * Webfont: Thrillers Bold by Ndiscover
  * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/bold/
  *
- * Webfont: Thrillers-Black by Ndiscover
+ * Webfont: Thrillers Black by Ndiscover
  * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/black/
  *
  *
@@ -37,26 +37,26 @@
 @import url("//hello.myfonts.net/count/3fcf92");
 
 @font-face {
-  font-family: "Thrillers-SemiBold";
+  font-family: "Thrillers SemiBold";
   src: url('../fonts/ThrillersSemiBold/font.woff2') format('woff2'), url('../fonts/ThrillersSemiBold/font.woff') format('woff');
 }
 @font-face {
-  font-family: "Thrillers-Medium";
+  font-family: "Thrillers Medium";
   src: url('../fonts/ThrillersMedium/font.woff2') format('woff2'), url('../fonts/ThrillersMedium/font.woff') format('woff');
 }
 @font-face {
-  font-family: "Thrillers-Regular";
+  font-family: "Thrillers Regular";
   src: url('../fonts/ThrillersRegular/font.woff2') format('woff2'), url('../fonts/ThrillersRegular/font.woff') format('woff');
 }
 @font-face {
-  font-family: "Thrillers-Black";
+  font-family: "Thrillers Black";
   src: url('../fonts/ThrillersBlack/font.woff2') format('woff2'), url('../fonts/ThrillersBlack/font.woff') format('woff');
 }
 @font-face {
-  font-family: "Thrillers-Light";
+  font-family: "Thrillers Light";
   src: url('../fonts/ThrillersLight/font.woff2') format('woff2'), url('../fonts/ThrillersLight/font.woff') format('woff');
 }
 @font-face {
-  font-family: "Thrillers-Bold";
+  font-family: "Thrillers Bold";
   src: url('../fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
 }
