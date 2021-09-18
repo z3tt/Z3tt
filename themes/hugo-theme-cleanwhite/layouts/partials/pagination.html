@@ -4,12 +4,12 @@
 <ul class="pager">
     {{ if $pag.HasPrev }}
     <li class="previous">
-        <a href="{{ $pag.Prev.URL }}">&larr; Newer Posts</a>
+        <a href="{{ $pag.Prev.URL }}">< Newer Posts</a>
     </li>
     {{ end }}
     {{ if $pag.HasNext }}
     <li class="next">
-        <a href="{{ $pag.Next.URL }}">Older Posts &rarr;</a>
+        <a href="{{ $pag.Next.URL }}">Older Posts ></a>
     </li>
     {{ end }}
 </ul>

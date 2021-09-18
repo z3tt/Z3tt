@@ -96,13 +96,13 @@
   color:#676767;
   font-size:13px
 }
-.sidebar-container h5{
+.sidebar-container h6{
   color:gray;
-  font-size:18px;
+  font-size:26px;
   padding-top:.7em;
   padding-bottom:.1em
 }
-.sidebar-container h5 a{
+.sidebar-container h6 a{
   color:gray!important;
   text-decoration:none
 }
@@ -720,7 +720,7 @@ form .row:first-child .floating-label-form-group{
   font-family:'Thrillers Regular','Arial',sans-serif,-apple-system;
   line-height:1.7;
   text-transform:uppercase;
-  font-size:14px;
+  font-size:18px;
   font-weight:400;
   letter-spacing:1px;
   padding:10px 20px 8px 20px;
@@ -797,7 +797,8 @@ body{
 @media only screen and (min-width:768px){
   .tags a,.tags .tag{
     font-size:12px;
-    margin-right:5px;
+    margin-right:3px;
+    margin-bottom:3px;
   }
 }
 
