@@ -9,7 +9,6 @@ preserveTaxonomyNames = true
 paginate = 6 #frontpage pagination
 hasCJKLanguage = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-rssLimit = 20
 
 [outputs]
   home = ["HTML", "RSS", "Algolia"]
@@ -22,12 +21,13 @@ rssLimit = 20
   twitter_image = "img/banner/banner.png"
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
-  title = "Cédric Scherer"
+  title = "Dr. Cédric Scherer"
   description = "Blog by Cédric Scherer"
   keyword = "Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2"
   slogan = "Data Visualization & Computational Ecology" #"Charts & False Promises"
   google_fonts = ""
   title_404 = ""
+  rssLimit = 20
 
   # leancloud storage for page view counter
   page_view_conter = true
