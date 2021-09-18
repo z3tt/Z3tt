@@ -1,0 +1,63 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4181906, 2021-09-17T17:20:17-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Thrillers-Light by Ndiscover
+ * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/light/
+ * 
+ * Webfont: Thrillers-Regular by Ndiscover
+ * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/regular/
+ * 
+ * Webfont: Thrillers-Medium by Ndiscover
+ * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/medium/
+ * 
+ * Webfont: Thrillers-SemiBold by Ndiscover
+ * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/semi-bold/
+ * 
+ * Webfont: Thrillers-Bold by Ndiscover
+ * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/bold/
+ * 
+ * Webfont: Thrillers-Black by Ndiscover
+ * URL: https://www.myfonts.com/fonts/ndiscovered/thrillers/black/
+ * 
+ * 
+ * Webfonts copyright: @2020 Natanael Gama
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3fcf92");
+  
+@font-face {
+  font-family: "Thrillers-SemiBold";
+  src: url('webFonts/ThrillersSemiBold/font.woff2') format('woff2'), url('webFonts/ThrillersSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Thrillers-Medium";
+  src: url('webFonts/ThrillersMedium/font.woff2') format('woff2'), url('webFonts/ThrillersMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Thrillers-Regular";
+  src: url('webFonts/ThrillersRegular/font.woff2') format('woff2'), url('webFonts/ThrillersRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Thrillers-Black";
+  src: url('webFonts/ThrillersBlack/font.woff2') format('woff2'), url('webFonts/ThrillersBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Thrillers-Light";
+  src: url('webFonts/ThrillersLight/font.woff2') format('woff2'), url('webFonts/ThrillersLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Thrillers-Bold";
+  src: url('webFonts/ThrillersBold/font.woff2') format('woff2'), url('webFonts/ThrillersBold/font.woff') format('woff');
+}
+
