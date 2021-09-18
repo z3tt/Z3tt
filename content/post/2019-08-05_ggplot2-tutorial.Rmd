@@ -47,7 +47,7 @@ Major changes I've made:
 
 * [Preparation](#prep)
 * [The Dataset](#data)
-* [The `{ggplot2}` Package](#ggplot)
+* [The {ggplot2} Package](#ggplot)
 * [A Default ggplot](#default)
 * [Working with Axes](#axes)
 * [Working with Titles](#titles)
@@ -139,7 +139,7 @@ head(chic, 10)
 ```
 
 
-## The `{ggplot2}` Package {#ggplot}
+## The {ggplot2} Package {#ggplot}
 
 > `ggplot2` is a system for declaratively creating graphics, based on [The Grammar of Graphics](https://link.springer.com/chapter/10.1007/978-3-642-21551-3_13). You provide the data, tell `ggplot2` how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.
 
