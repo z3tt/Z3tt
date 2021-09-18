@@ -126,7 +126,8 @@
   margin-bottom:20px
 }
 .sidebar-container .short-about .list-inline>li{
-  padding-left:0
+  padding-left:0;
+  margin-right:-4px;
 }
 
 @media (min-width:1200px){
@@ -641,8 +642,8 @@ pre code{
   border-bottom-left-radius:5px;
 }
 footer{
-  font-size:20px;
-  padding:50px 0 65px
+  font-size:16px;
+  padding:30px 0 65px;
 }
 footer .list-inline{
   margin:0;
