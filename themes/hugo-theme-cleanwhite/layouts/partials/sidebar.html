@@ -93,6 +93,16 @@
                    </a>
                </li>
                {{ end }}
+               {{ if .Site.Params.social.rss }}
+               <li>
+                  <a href="https://www.cedricscherer.com/post/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title | default "" }}" >
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+               </li>
+               {{ end }}
               </ul>
             </div>
       </section>
