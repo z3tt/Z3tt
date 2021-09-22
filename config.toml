@@ -92,6 +92,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   title = "CorrelAid"
   href =  "https://correlaid.org/en/"
   [[params.friend_link]]
+  title = "From Data to Viz"
+  href =  "https://www.data-to-viz.com/"
+  [[params.friend_link]]
   title = "Georgios Karamanis"
   href =  "https://karaman.is/" 
   [[params.friend_link]]
