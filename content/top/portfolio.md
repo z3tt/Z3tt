@@ -113,14 +113,13 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Podcasts
 
-- [*“Lollipops und Regenwolken”*](https://www.buzzsprout.com/1174520/8969083), "Die Sendung mit der Ziege" (german)
+- [*“Lollipops und Regenwolken”*](https://www.buzzsprout.com/1174520/8969083), German podcast "Die Sendung mit der Ziege" by Madlen Ziege
 
 
 ##### Interviews
 
-- [*“Data visualization shows countries with highest-rated coffees”*](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen) (August 2020)
-
-- [*“Vignette: Interviews of the Beautiful People that Use R”*](https://vignette.md/interviews/2020-02-03-cedric-scherer/) (February 2020)
+- [*“Data visualization shows countries with highest-rated coffees”*](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen)
+- [*“Vignette: Interviews of the Beautiful People that Use R”*](https://vignette.md/interviews/2020-02-03-cedric-scherer/) by Georgios Karamanis
 
 ##### Blog Mentions
 
