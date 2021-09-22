@@ -6,7 +6,9 @@
   }
 </style>
 
-**I am a graduated computational ecologist by training and an independent data visualization specialist/designer by heart with an extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization. I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.**
+**I am a graduated computational ecologist by training and an independent data visualization specialist/designer by heart with an extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.** 
+
+**I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.**<br><br>
 
 
 ##### Data Visualization {#dataviz}
@@ -16,7 +18,7 @@ I have been working as an independent data visualization specialist since the be
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://cedricscherer.netlify.com/top/dataviz/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://cedricscherer.netlify.com/top/about/#presentations)<br>
 
-<img src="/img/dataviz_collage2.png" style="height: 100%; width: 100%; object-fit: contain"/>
+<img src="/img/dataviz_collage2.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
 ##### Computational Ecology {#ecology}
 
@@ -25,7 +27,7 @@ I am working as a scientific researcher (*PostDoc*) in the [Department "Ecologic
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://cedricscherer.netlify.com/top/pubs/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://cedricscherer.netlify.com/top/projects/)<br>
 
-<img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
+<img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
 My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/).
 
@@ -57,7 +59,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 ## Curriculum Vitae {#cv}
 
-* [Personal Details](#person)
+<!--* [Personal Details](#person)-->
 * [Education & Professional Expericence](#career)
 * [Teaching](#teaching)
 * [Publications](#publications)
@@ -66,6 +68,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 * [Skills](#skills)
 * [Memberships & Services](#services)
 
+<!--
 ##### Personal Details {#person}
 
 <ul style="font-size:15px;">
@@ -73,9 +76,9 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
   <li><i>Place of Birth:</i> Berlin, Germany</li>
   <li><i>Family Status:</i> married with 1 dependent daughter (5 months parental leave in 2017-2018)</li>
 </ul>
+-->
 
-
-##### Education & Professional Experience {#career}
+### Education & Professional Experience {#career}
 
 <ul style="font-size:16px;">
 
@@ -94,7 +97,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
   <li style="color:#282828;font-style:italic;"><b>Ph.D. in Ecology</b> (2015–2019)</li>
   <ul>
-    <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany & <a href="https://cedricscherer.netlify.com/top/projects/">RTG "BioMove"</a>, University of Potsdam, Germany</li>
+    <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany within the <a href="https://cedricscherer.netlify.com/top/projects/">DFG Research Trainign Group "BioMove"</a>, University of Potsdam, Germany</li>
     <li style="font-size:13px;"><i>Topics:</i> Movement ecology, disease ecology, population dynamics, coexistence theory</li>
     <li style="font-size:13px;"><i>Tasks:</i> Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development (Tools: R, Shiny, NetLogo, QGIS)</li>
   </ul>
@@ -141,7 +144,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 </ul>
 
 <!--
-##### Trainings & Further Education {#training}
+### Trainings & Further Education {#training}
 
 <ul style="font-size:15px;">
 
@@ -173,65 +176,73 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 //-->
 
 
-##### Teaching {#teaching}
+### Teaching {#teaching}
 
 <ul style="font-size:15px;">
 
-  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: 2–Day Course on DataViz Principles and Beautiful Plotting in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.bio-move.org/">BioMove Research Training Group</a>, 2 days, remote, Apr 2021)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;''>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a>, 5 hours, remote, Sep 2021)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Training “Data Visualisation Techniques for Data Scientists</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;''>“Data visualization with <code>{ggplot2}</code>: 2–day course on data visualization principles and beautiful plotting in R”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.bio-move.org/">BioMove Research Training Group</a>, 2-days, remote, Apr 2021)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;''>Workshop “Data Visualization with <code>{ggplot2}</code>: Data Visualization Principles and Beautiful Plotting in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualisation techniques for data scientists</code>”<br><span style="color:#989898;font-size:13px;">(Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Data Visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses</a>, 5 days, Berlin/remote, Mar and Nov 2020)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;''>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Scientific Data Visualization: Principles & Good Practices”<br><span style="color:#989898;font-size:13px;">(Leibniz Institute for Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar and Nov 2020)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Introduction to Ecological Modelling”<br><span style="color:#989898;font-size:13px;">(Department of Theoretical Ecology, 5 days, University of Potsdam, 2016)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Scientific data visualization: principles and good practices”<br><span style="color:#989898;font-size:13px;">(Workshop at Leibniz Institute for Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Practical Workshop “Zoology”<br><span style="color:#989898;font-size:13px;">(Department for Zoology, University of Potsdam, 2009–2014)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Introduction to ecological modelling”<br><span style="color:#989898;font-size:13px;">(Department of Theoretical Ecology, 5 days, University of Potsdam, Workshop, 2016)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Workshop “Research & Presentation”<br><span style="color:#989898;font-size:13px;">(Department for Didactics of Biology, University of Potsdam, 2013–2014)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Zoology”<br><span style="color:#989898;font-size:13px;">(Department for Zoology, University of Potsdam, Practical Workshop, 2009–2014)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>Field workshop “Systematic Zoology II”<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, 2013–2014)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Research and presentation”<br><span style="color:#989898;font-size:13px;">(Department for Didactics of Biology, University of Potsdam, Workshop, 2013–2014)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Systematic zoology II”<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop, 2013–2014)</span></li>
 
 </ul>
 
 
-##### Publications {#publications}
+### Selected Publications {#publications}
 
-<a href="https://cedricscherer.netlify.com/top/pubs/">List of Publications</a>
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u>, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos* **129** (5):651–667](https://doi.org/10.1111/oik.07002).
 
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. [*Journal of Animal Ecology* 88 (11):1639–1824](https://doi.org/10.1111/1365-2656.13070).
 
+- <span style='font-variant:small-caps;'>V Radchuk, F De Laender, J Sarmento Cabral, I Boulangeat, M Crawford, F Bohn, J De Raedt, <u style='font-weight:700;color:#414141;'>C Scherer</u>, J-C Svenning, K Thonicke, F Schurr, V Grimm & S Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type. [*Ecology Letters* **22** (4):647–684](https://doi.org/10.1111/ele.13226).
 
-##### Presentations {#presentations}
+- <span style='font-variant:small-caps;'>M Sciaini, M Fritsch, <u style='font-weight:700;color:#414141;'>C Scherer</u> & CE Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R. [*Methods in Ecology and Evolution* **9** (11):2240–2248](https://doi.org/10.1111/2041-210X.13076).
 
-Selection of talks:
-
-- <i>“Beyond bar and box plots: chart alternatives and how to design them with ggplot2” </i>  
-[Slides](https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf) | [Recording](https://www.youtube.com/watch?v=WBA04fjTVU0) | [Hands-On Tutorial](https://z3tt.github.io/beyond-bar-and-box-plots)   
-<i style="font-size:14px;color:#989898;"><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</i>
-
-- <i>“My favorite ggplot2 extension packages.” </i>  
-[Slides](https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf) | [Recording](https://www.youtube.com/watch?v=8ikFe82Mb1I)  
-<i style="font-size:14px;color:#989898;"><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</i>
-
-- <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>  
-[Slides](https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf) | [Recording](https://www.youtube.com/watch?v=ckOAWmObIyM)  
-<i style="font-size:14px;color:#989898;"><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</i>
-
-- <i>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”</i>  
-[Slides](https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf) | [Recording](https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=33) | [Hands-On Tutorial](https://z3tt.github.io/OutlierConf2021/)  
-<i style="font-size:14px;color:#989898;"><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>
-
-- <i>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”</i>   
-[Slides](https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf) | [Recording](https://www.youtube.com/watch?v=swzFdMc6WPk)  
-<i style="font-size:14px;color:#989898;"><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)</i>
-
-<a href="https://cedricscherer.netlify.com/top/pubs/">Full List of Presentations</a>
+<a href="https://cedricscherer.netlify.com/top/portfolio/#publications">Full List of Publications</a>
 
 
-##### Awards & Honors {#awards}
+
+### Selected Presentations {#presentations}
+
+- “Beyond bar and box plots: chart alternatives and how to design them with ggplot2”   
+<i style="font-size:14px;color:#989898;"><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</i>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=WBA04fjTVU0">&#x21aa; Recording</a> &ensp; <a href="https://z3tt.github.io/beyond-bar-and-box-plots">&#x21aa; Hands-On Tutorial</a> </b>  
+
+- “My favorite ggplot2 extension packages.”  
+<i style="font-size:14px;color:#989898;"><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</i>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=8ikFe82Mb1I">&#x21aa; Recording</a></b>
+
+- <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>   
+<i style="font-size:14px;color:#989898;"><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</i>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=ckOAWmObIyM">&#x21aa; Recording</a></b>
+
+- “ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”
+<i style="font-size:14px;color:#989898;"><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">&#x21aa; Slides</a> &ensp; <a href="https://youtu.be/7UjA_5gNvdw">&#x21aa; Recording</a> &ensp; <a href="https://z3tt.github.io/OutlierConf2021/">&#x21aa; Hands-On Tutorial</a> </b>   
+
+- “Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”
+<i style="font-size:14px;color:#989898;"><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)</i>  
+<b style="font-size:14px;"><a href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></b>
+
+<a href="https://cedricscherer.netlify.com/top/portfolio/#talks">Full List of Presentations</a>
+
+
+### Awards & Honors {#awards}
 
 <ul style="font-size:15px;">
 
@@ -248,7 +259,7 @@ Selection of talks:
 </ul>
 
 
-##### Skills {#skills}
+### Skills {#skills}
 
 <ul style="font-size:15px;">
 
@@ -267,7 +278,7 @@ Selection of talks:
 </ul>
 
 
-##### Memberships & Services {#services}
+### Memberships & Services {#services}
 
 <ul style="font-size:15px;">
 
