@@ -753,7 +753,19 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;/ul&gt;
 &lt;h5 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://policyviz.com/2020/12/07/r-learning-sprint/&#34;&gt;&lt;em&gt;Jon Schwabisch&amp;rsquo;s “R Sprint”&lt;/em&gt;&lt;/a&gt; following my &lt;a href=&#34;https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/&#34;&gt;step-by-step ggplot2 tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Collection of tutorials featured on the &lt;a href=&#34;https://www.r-graph-gallery.com/index.html&#34;&gt;R Graph Gallery&lt;/a&gt; by Yan Holtz, based on my #TidyTuesday contributions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/web-lollipop-plot-with-r-mario-kart-64-world-records.html&#34;&gt;&lt;em&gt;“Mario Kart 64 World Records”&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/web-circular-lollipop-plot-with-ggplot2.html&#34;&gt;&lt;em&gt;“Circular lollipop plot with R and ggplot2”&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/web-lollipop-plot-with-R-the-office.html&#34;&gt;&lt;em&gt;“The Office Ratings”&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/web-streamchart-with-ggstream.html&#34;&gt;&lt;em&gt;“Chris Claremont’s X-Men comics exploration with streamcharts”&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html&#34;&gt;&lt;em&gt;“Line chart with labels at end of lines”&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://policyviz.com/2020/12/07/r-learning-sprint/&#34;&gt;&lt;em&gt;Jon Schwabisch&amp;rsquo;s “R Sprint”&lt;/em&gt;&lt;/a&gt; following my &lt;a href=&#34;https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/&#34;&gt;step-by-step ggplot2 tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

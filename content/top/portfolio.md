@@ -139,4 +139,12 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Miscellaneous 
 
+
+- Collection of tutorials featured on the [R Graph Gallery](https://www.r-graph-gallery.com/index.html) by Yan Holtz, based on my #TidyTuesday contributions
+  + [*“Mario Kart 64 World Records”*](https://www.r-graph-gallery.com/web-lollipop-plot-with-r-mario-kart-64-world-records.html)
+  + [*“Circular lollipop plot with R and ggplot2”*](https://www.r-graph-gallery.com/web-circular-lollipop-plot-with-ggplot2.html)
+  + [*“The Office Ratings”*](https://www.r-graph-gallery.com/web-lollipop-plot-with-R-the-office.html)
+  + [*“Chris Claremont’s X-Men comics exploration with streamcharts”*](https://www.r-graph-gallery.com/web-streamchart-with-ggstream.html)
+  + [*“Line chart with labels at end of lines”*](https://www.r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html)
+
 - [*Jon Schwabisch's “R Sprint”*](https://policyviz.com/2020/12/07/r-learning-sprint/) following my [step-by-step ggplot2 tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
