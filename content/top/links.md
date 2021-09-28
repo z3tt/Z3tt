@@ -9,49 +9,50 @@
 
 ##### Open-Access Books
 
-* [“Data Visualization”](http://socviz.co/) by Kieran Healy  
-* [“Hands-On Data Visualization”](https://handsondataviz.org/) by Jack Dougherty & Ilya Ilyankou
-* [“Fundamentals of Data Visualization”](https://serialmentor.com/dataviz/) by Claus Wilke
+* <a href="https://socviz.co/" target="_blank">“Data Visualization”</a> by Kieran Healy
+* <a href="https://handsondataviz.org/" target="_blank">“Hands-On Data Visualization”</a> by Jack Dougherty & Ilya Ilyankou
+* <a href="https://serialmentor.com/dataviz/" target="_blank">“Fundamentals of Data Visualization”</a> by Claus Wilke
 
 
 ##### Readings & Learnings
 
-* [“Nightingale”](https://nightingaledvs.com/) — journal by the Data Visualization Society
-* [“Our World in Data”](https://ourworldindata.org/blog) — data on the world’s largest problems
-* [“Multiple Views: Visualization Research Explained”](https://medium.com/multiple-views-visualization-research-explained) — data visualization blog on Medium
-* [Graphics Principles](https://graphicsprinciples.github.io/)
-* [Explorable Explanations](https://explorabl.es/)
-
+* <a href="https://nightingaledvs.com/" target="_blank">“Nightingale Visualization”</a> — journal by the Data Visualization Society
+* <a href="https://ourworldindata.org/blog" target="_blank">“Our World in Data”</a> — data on the world’s largest problems
+* <a href="https://medium.com/multiple-views-visualization-research-explained" target="_blank">“Multiple Views: Visualization Research Explained”</a> — data visualization blog on Medium
+* <a href="https://graphicsprinciples.github.io/" target="_blank">“Graphics Principles”</a>
+* <a href="https://explorabl.es/" target="_blank">“Explorable Explanations”</a>
+* <a href="https://www.businesspundit.com/guide-to-infographics/" target="_blank">“Guide to Infographics”</a>
 
 
 ##### Color Choice
 
-* [Viz Palette](https://projects.susielu.com/viz-palette?colors=["#ffd700","#ffb14e","#fa8775","#ea5f94","#cd34b5","#9d02d7","#0000ff"]&backgroundColor="white"&fontColor="black"&mode="normal") — colors in action (plus colorblind check)
-* [Color Space](https://mycolor.space/) — color palette generator
-* [Chroma.js](https://gka.github.io/palettes/#/9|s|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1) — color palette helper
-* [HCL Wizard](http://hclwizard.org/) — manipulating and assessing colors & palettes
-* [ColorThief](https://lokeshdhakar.com/projects/color-thief/) — grab color palettes from any image
-* [Data Color Picker](https://learnui.design/tools/data-color-picker.html) — Generator of equidistant sequential, monochromatic and diverging palettes
-* DataWrapper's [“Friendly Guide to Colors”](https://blog.datawrapper.de/colorguide/) and [“What to Consider when Choosing Colors”](https://blog.datawrapper.de/colors/)
+* <a href="https://projects.susielu.com/viz-palette" target="_blank">VizPalette</a> — colors in action (plus colorblind check)
+* <a href="https://palettte.app/" target="_blank">palettte.app</a> — build, analyze, and edit smooth color palettes
+* <a href="https://gka.github.io/palettes" target="_blank">Chroma.js</a> — color palette helper to master multi-hued, multi-stops color scales
+* <a href="https://learnui.design/tools/data-color-picker.html" target="_blank">Data Color Picker</a> — generator of equidistant sequential, monochromatic, and diverging palettes
+* <a href="http://hclwizard.org/" target="_blank">HCL Wizard</a> — manipulating and assessing colors & palettes
+* <a href="https://demo.appsilon.com/apps/pixelator/" target="_blank">Semantic Pixel Generator</a> — pixelate images and  extract random palettes
+* <a href="https://mycolor.space/" target="_blank">Color Space</a> — color palette generator
+* <a href="https://lokeshdhakar.com/projects/color-thief/" target="_blank">ColorThief</a> — grab color palettes from any image
+* DataWrapper's <a href="https://blog.datawrapper.de/colorguide/" target="_blank">“Friendly Guide to Colors”</a> and <a href="https://blog.datawrapper.de/colors/" target="_blank">“What to Consider when Choosing Colors”</a>
 
 
 ##### Chart Types
 
-* [From Data to Viz](https://www.data-to-viz.com/)
-* [Data Viz Project](https://datavizproject.com/)
-* [Visualization Universe](http://visualizationuniverse.com/charts/)
-* [Material.io](https://material.io/design/communication/data-visualization.html)
-* [Data Visualization 101](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization)
-* [Chart of Chart Suggestions](https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf)
-* [One Chart at a Time](https://www.youtube.com/playlist?list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-), 56 videos on 56 chart types
+* <a href="https://www.data-to-viz.com/" target="_blank">From Data to Viz</a>
+* <a href="https://datavizproject.com/" target="_blank">Data Viz Project</a>
+* <a href="http://visualizationuniverse.com/charts/" target="_blank">Visualization Universe</a>
+* <a href="https://material.io/design/communication/data-visualization.html" target="_blank">Material.io</a>
+* <a href="https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization" target="_blank">Data Visualization 101</a>
+* <a href="https://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf" target="_blank">Chart of Chart Suggestions</a>
+* <a href="https://www.youtube.com/playlist?list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-" target="_blank">One Chart at a Time</a>, 56 videos on 56 chart types
 
 
 ##### Mapping
 
-* [Spatial.ly Blog](http://spatial.ly/) by James Cheshire
-* [Bivariate Choropleth Maps](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/)
-* [Value-by-Alpha Maps](http://andywoodruff.com/blog/value-by-alpha-maps/)
-
+* <a href="http://spatial.ly/" target="_blank">Spatial.ly Blog</a> by James Cheshire
+* <a href="http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/" target="_blank">Bivariate Choropleth Maps</a>
+* <a href="http://andywoodruff.com/blog/value-by-alpha-maps/" target="_blank">Value-by-Alpha Maps</a>
 
 
 
@@ -59,75 +60,78 @@
 
 ##### Open-Access Books
 
-* [“Big Book of R”](https://www.bigbookofr.com/) by Oscar Baruffa — a collection of 150+ books!
-* [“R for Data Science”](https://r4ds.had.co.nz/) by Hadley Wickham & Garrett Grolemund
-* [“ggplot2: Elegant Graphics for Data Analysis”](https://ggplot2-book.org) by Hadley Wickham 
-* [“Geocomputation with R”](https://geocompr.robinlovelace.net/index.html) by Robin Lovelace, Jakub Nowosad & Jannes Muenchow
-* [“Cookbook for R”](http://www.cookbook-r.com/) by Winston Chang
-* [“Technical Foundations of Informatics”](https://info201.github.io/) by Michael Freeman & Joel Ross
-* [“Efficient R Programming”](https://bookdown.org/csgillespie/efficientR/) by Colin Gillespie & Robin Lovelace
-* [“YaRrr! The Pirate's Guide to R”](https://bookdown.org/ndphillips/YaRrr/) by Nathaniel Phillips
-* [“Analyzing US Census Data: Methods, Maps, and Models in R”](https://walker-data.com/census-r/) by Kyle Walker
-
+* <a href="https://www.bigbookofr.com/" target="_blank">“Big Book of R”</a> — a collection of 150+ books!
+* <a href="https://r4ds.had.co.nz/" target="_blank">“R for Data Science”</a> by Hadley Wickham & Garrett Grolemund
+* <a href="https://ggplot2-book.org" target="_blank">“ggplot2: Elegant Graphics for Data Analysis”</a> by Hadley Wickham 
+* <a href="https://geocompr.robinlovelace.net/index.html" target="_blank">“Geocomputation with R”</a> by Robin Lovelace, Jakub Nowosad & Jannes Muenchow
+* <a href="http://www.cookbook-r.com/" target="_blank">“Cookbook for R”</a> by Winston Chang
+* <a href="https://walker-data.com/census-r/" target="_blank">“Analyzing US Census Data: Methods, Maps, and Models in R”</a> by Kyle Walker
+* <a href="https://info201.github.io/" target="_blank">“Technical Foundations of Informatics”</a> by Michael Freeman & Joel Ross
+* <a href="https://bookdown.org/csgillespie/efficientR/" target="_blank">“Efficient R Programming”</a> by Colin Gillespie & Robin Lovelace
+* <a href="https://bookdown.org/ndphillips/YaRrr/" target="_blank">“YaRrr! The Pirate's Guide to R”</a> by Nathaniel Phillips
 
 ##### Galleries
 
-* [R Graph Gallery](https://www.r-graph-gallery.com/)
-* [Gallery of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
-* [Color Palettes in R](https://github.com/EmilHvitfeldt/r-color-palettes/)
-* [tidytuesday.rocks (#TidyTuesday Collection)](http://tidytuesday.rocks/)
+* <a href="https://www.r-graph-gallery.com/" target="_blank">R Graph Gallery</a>
+* <a href="https://exts.ggplot2.tidyverse.org/" target="_blank">Gallery of ggplot2 extensions</a>
+* <a href="https://github.com/EmilHvitfeldt/r-color-palettes/" target="_blank">Color Palettes in R</a>
+* <a href="http://tidytuesday.rocks/" target="_blank">tidytuesday.rocks</a> (#TidyTuesday Collection)
 
 
 ##### Get Help
 
-* [RStudio Community](wwww.community.rstudio.com)
-* [R4DS Learning Community](https://www.rfordatasci.com)
-* [#TidyTuesday Community on Twitter](https://twitter.com/hashtag/tidytuesday?lang=en)
-* [Rstudio Cheatsheet Collection](https://www.rstudio.com/resources/cheatsheets/)
-* [{ggplot2} reference](https://ggplot2.tidyverse.org/reference/)
-* [Aesthetics finder](https://ggplot2tor.com/aesthetics/)
+* <a href="https://wwww.community.rstudio.com" target="_blank">RStudio Community</a>
+* <a href="https://www.rfordatasci.com" target="_blank">R4DS Learning Community</a>
+* <a href="https://twitter.com/hashtag/tidytuesday?lang=en" target="_blank">#TidyTuesday Community on Twitter</a>
+* <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank">Rstudio Cheatsheet Collection</a>
+* <a href="https://ggplot2.tidyverse.org/reference/" target="_blank">{ggplot2} reference</a>
+* <a href="https://ggplot2tor.com/aesthetics/" target="_blank">{ggplot2} aesthetics finder</a>
 
 
 ##### Misc
 
-* [“Five Simple Tipps to Improve Your R Code”](https://drsimonj.svbtle.com/five-simple-tricks-to-improve-your-r-code) by Simon Jackson
-* [Extending ggplot2](https://exts.ggplot2.tidyverse.org/gallery/)
-* [“Creating and Using Custom ggplot2 Themes”](https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/) by Thomas Mock
-* [“Themes to Improve Your ggplot Figures”](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/) from [R for the Rest of Us](https://rfortherestofus.com/) 
-
+* <a href="https://drsimonj.svbtle.com/five-simple-tricks-to-improve-your-r-code" target="_blank">“Five Simple Tipps to Improve Your R Code”</a> by Simon Jackson
+* <a href="https://exts.ggplot2.tidyverse.org/gallery/" target="_blank">“Extending ggplot2”</a>
+* <a href="https://themockup.blog/posts/2020-12-26-creating-and-using-custom-ggplot2-themes/" target="_blank">“Creating and Using Custom ggplot2 Themes”</a> by Thomas Mock
+* <a href="https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/" target="_blank">“Themes to Improve Your ggplot Figures”</a> from <a href="https://rfortherestofus.com/" target="_blank">R for the Rest of Us</a> 
 
 
 
 ## Interesting Personal Pages<br>(Random Topics, Alphabetic Order 🤷) {#blogs}
 
-* [Achim Tack](https://www.achim-tack.org/) — data & maps
-* [Alberto Cairo](http://www.thefunctionalart.com/) — information design and visualization
-* [Alli Torban](https://www.allitorban.com/) — information design + DataViz Today podcast
-* [Andy Kirk](https://www.visualisingdata.com/blog/) — all about data visualization
-* [Anne–Marie Dofour](https://www.delightfuldata.art/) — digital visualization design & development
-* [Bruno Rodrigues](https://www.brodrigues.co/) — data science in R and Python
-* [Charlotte Robinson](https://hookedondata.org/) — how to build a career in data science
-* [Chisato](https://chichacha.netlify.com/) — colors & art with `{ggplot2}`
-* [David Robinson](http://varianceexplained.org/) — data science using the `{tidyverse}`
-* [David Smale](https://davidsmale.netlify.com/) — `{shiny}`, `{ggplot2}` and more
-* [Dominic Roye](https://dominicroye.github.io/en/) — mapping with `{ggplot2}`
-* [Dominikus Baur](http://do.minik.us/) — theory and practice of visualizing data
-* [Emily Riederer](https://emilyriederer.netlify.app/) — analytics with R
-* [Evelina Judeikyte](https://www.evelinajudeikyte.com/) — information design
-* [Geoff Boeing](https://geoffboeing.com) — Python & GIS
-* [Georgios Karamanis](https://karaman.is/) — R, visualizations  & design
-* [Hugo Toscano](https://toscano84.github.io/) — data science in R
-* [Ilya Kashnitsky](https://ikashnitsky.github.io/) — maps & demography in R
-* [Inbal Rief](https://www.inbal-rief.com/) — product design thinker & doer
-* [James Cheshire](https://spatial.ly/) — beautiful mapping
-* [Jon Schwabisch](https://policyviz.com/blog/) — policy viz
-* [Jorge Camões](https://wisevis.com/) — data visualization
-* [Julia Ledur](https://julialedur.com.br/work-english) — visual journalism
-* [Maëlle Salmon](https://masalmon.eu/) — "goofing around with R"
-* [Matthias Stahl](https://www.higsch.com/) — visualizations with D3.js and Svelte
-* [Moritz Stefaner](https://truth-and-beauty.net/) — data stories and visualizations
-* [Nadieh Bremer](https://www.visualcinnamon.com) — wonderful visualizations and art
-* [Oliver Schöndorfer](https://pimpmytype.com/articles/) — “Pimp my Type”
-* [Oscar Baruffa](https://oscarbaruffa.com/) — data science and guides
-* [Shirley Wu](https://shirleywu.studio/) — data-driven art and visualizations
-* [William Chase](https://www.williamrchase.com/) — visualizations with R and D3.js
+* <a href="https://www.achim-tack.org/" target="_blank">Achim Tack</a> — data & maps
+* <a href="http://www.thefunctionalart.com/" target="_blank">Alberto Cairo</a> — information design and visualization
+* <a href="https://www.allitorban.com/" target="_blank">Alli Torban</a> — information design + DataViz Today podcast
+* <a href="https://www.visualisingdata.com/blog/" target="_blank">Andy Kirk</a> — all about data visualization
+* <a href="https://www.delightfuldata.art/" target="_blank">Anne–Marie Dofour</a> — digital visualization design & development
+* <a href="https://www.brodrigues.co/" target="_blank">Bruno Rodrigues</a> — data science in R and Python
+* <a href="https://hookedondata.org/" target="_blank">Charlotte Robinson</a> — how to build a career in data science
+* <a href="https://chichacha.netlify.com/" target="_blank">Chisato</a> — colors & art with `{ggplot2}`
+* <a href="http://varianceexplained.org/" target="_blank">David Robinson</a> — data science using the `{tidyverse}`
+* <a href="https://davidsmale.netlify.com/" target="_blank">David Smale</a> — `{shiny}`, `{ggplot2}` and more
+* <a href="https://dominicroye.github.io/en/" target="_blank">Dominic Royé</a> — mapping with `{ggplot2}`
+* <a href="http://do.minik.us/" target="_blank">Dominikus Baur</a> — theory and practice of visualizing data
+* <a href="https://emilyriederer.netlify.app/" target="_blank">Emily Riederer</a> — analytics with R
+* <a href="https://www.evelinajudeikyte.com/" target="_blank">Evelina Judeikyte</a> — information design
+* <a href="https://geoffboeing.com" target="_blank">Geoff Boeing</a> — Python & GIS
+* <a href="https://karaman.is/" target="_blank">Georgios Karamanis</a> — R, visualizations & design
+* <a href="https://toscano84.github.io/" target="_blank">Hugo Toscano</a> — data science in R
+* <a href="https://ikashnitsky.github.io/" target="_blank">Ilya Kashnitsky</a> — maps & demography in R
+* <a href="https://www.inbal-rief.com/" target="_blank">Inbal Rief</a> — product design thinker & doer
+* <a href="https://spatial.ly/" target="_blank">James Cheshire</a> — beautiful mapping
+* <a href="https://policyviz.com/blog" target="_blank">Jon Schwabisch</a> — policy viz
+* <a href="https://wisevis.com/" target="_blank">Jorge Camões</a> — data visualization
+* <a href="https://julialedur.com.br/work-english" target="_blank">Julia Ledur</a> — visual journalism
+* <a href="https://masalmon.eu/" target="_blank">Maëlle Salmon</a> — “goofing around with R”
+* <a href="https://www.higsch.com/" target="_blank">Matthias Stahl</a> — visualizations with D3.js and Svelte
+* <a href="https://truth-and-beauty.net/" target="_blank">Moritz Stefaner</a> — beautiful data stories and visualizations
+* <a href="https://www.visualcinnamon.com" target="_blank">Nadieh Bremer</a> — wonderful visualizations and art
+* <a href="https://pimpmytype.com/articles/" target="_blank">Oliver Schöndorfer</a> — “Pimp my Type”
+* <a href="https://oscarbaruffa.com/" target="_blank">Oscar Baruffa</a> — data science and guides
+* <a href="https://shirleywu.studio/" target="_blank">Shirley Wu</a> — data-driven art and visualizations
+* <a href="https://www.williamrchase.com/" target="_blank">William Chase</a> — visualizations with R and D3.js
+
+
+
+
+
