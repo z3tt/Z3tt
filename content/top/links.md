@@ -26,7 +26,7 @@
 
 ##### Color Choice
 
-* <a href="https://projects.susielu.com/viz-palette" target="_blank">VizPalette</a> — colors in action (plus colorblind check)
+* <a href="https://projects.susielu.com/viz-palette" target="_blank">VizPalette</a> — colors in action (plus colorblind check)ando
 * <a href="https://palettte.app/" target="_blank">palettte.app</a> — build, analyze, and edit smooth color palettes
 * <a href="https://gka.github.io/palettes" target="_blank">Chroma.js</a> — color palette helper to master multi-hued, multi-stops color scales
 * <a href="https://learnui.design/tools/data-color-picker.html" target="_blank">Data Color Picker</a> — generator of equidistant sequential, monochromatic, and diverging palettes
@@ -97,7 +97,8 @@
 
 
 
-## Interesting Personal Pages<br>(Random Topics, Alphabetic Order 🤷) {#blogs}
+## Interesting Personal Pages<br><span style='font-size:19pt;color:darkgrey;'>(Random Topics, Alphabetic Order 🤷)</span> {#blogs}
+
 
 * <a href="https://www.achim-tack.org/" target="_blank">Achim Tack</a> — data & maps
 * <a href="http://www.thefunctionalart.com/" target="_blank">Alberto Cairo</a> — information design and visualization
