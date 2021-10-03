@@ -6,7 +6,7 @@
   }
 </style>
 
-**I am a graduated computational ecologist by training and an independent data visualization specialist/designer by heart with an extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.** 
+**I am a graduated computational ecologist by training and an independent data visualization specialist/designer by heart with extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.** 
 
 **I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.**<br><br>
 
