@@ -26,7 +26,7 @@
 
 ##### Color Choice
 
-* <a href="https://projects.susielu.com/viz-palette" target="_blank">VizPalette</a> — colors in action (plus colorblind check)ando
+* <a href="https://projects.susielu.com/viz-palette" target="_blank">VizPalette</a> — colors in action (plus colorblind check)
 * <a href="https://palettte.app/" target="_blank">palettte.app</a> — build, analyze, and edit smooth color palettes
 * <a href="https://gka.github.io/palettes" target="_blank">Chroma.js</a> — color palette helper to master multi-hued, multi-stops color scales
 * <a href="https://learnui.design/tools/data-color-picker.html" target="_blank">Data Color Picker</a> — generator of equidistant sequential, monochromatic, and diverging palettes
