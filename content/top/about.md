@@ -265,7 +265,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
   <li><b>Languages:</b> German <i>(native)</i>, English <i>(fluent)</i></li>
 
-  <li><b>Programming:</b> R, NetLogo, CSS, html, SQL/SQLite, Python, C++</li>
+  <li><b>Programming:</b> R, CSS, html, SQL/SQLite, NetLogo, Python, C++</li>
 
   <li><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), SPSS, Excel</li>
 
