@@ -225,7 +225,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 - “My favorite ggplot2 extension packages.”  
 <i style="font-size:14px;color:#989898;"><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</i>  
-<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=8ikFe82Mb1I">&#x21aa; Recording</a></b>
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a href="https://youtu.be/8ikFe82Mb1I">&#x21aa; Recording</a></b>
 
 - <i>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.”</i>   
 <i style="font-size:14px;color:#989898;"><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</i>  

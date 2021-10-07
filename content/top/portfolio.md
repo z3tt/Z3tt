@@ -51,7 +51,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> My favorite ggplot2 extension packages.  
 <i style="font-size:11pt;color:grey;"><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</i>  
-<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=8ikFe82Mb1I">&#x21aa; Recording</a></b>
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a href="https://youtu.be/8ikFe82Mb1I">&#x21aa; Recording</a></b>
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.  
 <i style="font-size:11pt;color:grey;"><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</i>  
