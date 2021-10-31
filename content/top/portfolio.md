@@ -137,7 +137,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 - [*“Creating Lollipop-Jitter Plots in Tableau”*](https://co-data.de/2020/07/14/lollipop-jitter-plot-in-tableau) by Klaus Schulte replicating my [“Evolution of a ggplot (Ep. 1)”](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) with Tableau
 
-##### Miscellaneous 
+##### Miscellaneous
 
 
 - Collection of tutorials featured on the [R Graph Gallery](https://www.r-graph-gallery.com/index.html) by Yan Holtz, based on my #TidyTuesday contributions
