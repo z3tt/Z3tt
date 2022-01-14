@@ -128,7 +128,7 @@ You can download the data we are using during this tutorial [here](https://githu
 We can import the data into our R session for example with `read_csv()` from the `{readr}` package. To access the data later, we are storing it in a variable called `chic` by using the *assignment arrow* `<-`.
 
 ```{r data-import}
-chic <- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
+chic <- readr::read_csv("https://raw.githubusercontent.com/z3tt/ggplot-courses/master/data/chicago-nmmaps.csv")
 ```
 
 💡 **The `::` is called *namespace* and can be used to access a function without loading the package. Here, you could also run `library(readr)` first and `chic <- read_csv(...)` afterwards.**
