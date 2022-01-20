@@ -222,14 +222,17 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderings, as age groupings!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the &lt;code&gt;ggplot&lt;/code&gt; call—but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;). It is also a good practice to include the 0 in plots which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the &lt;code&gt;ggplot&lt;/code&gt; call &lt;s&gt;but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;&lt;/s&gt; and it now also works for box plots!). It is also a good practice to include the 0 in plots which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, NA))&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-flipped-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;💡 &lt;strong&gt;Since the latest version 3.x.x of &lt;code&gt;{ggplot2}&lt;/code&gt; you can also flip the orientation by using the orientation argument &lt;code&gt;geom_*(orientation = &#34;y&#34;)&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Since the latest version 3.x.x of &lt;code&gt;{ggplot2}&lt;/code&gt; you can also flip the orientation by switch x and y arguments:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = student_ratio, y = region)) +
+  geom_boxplot() +
+  scale_x_continuous(limits = c(0, 90))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The order of the categories is perfect as it is after flipping the coordinates—the lower the student-teacher ratio, the better.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;let-your-plot-shineget-rid-of-the-default-settings&#34; class=&#34;section level3&#34;&gt;
@@ -261,7 +264,7 @@ g &amp;lt;-
       axis.text.x = element_text(family = &amp;quot;Roboto Mono&amp;quot;, size = 12),
       panel.grid = element_blank()
     )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;(Note that to include these fonts we make use of the &lt;strike&gt;&lt;a href=&#34;https://github.com/wch/extrafont&#34;&gt;&lt;code&gt;extrafont&lt;/code&gt; package&lt;/a&gt;&lt;/strike&gt; &lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;&lt;code&gt;showtext&lt;/code&gt; package&lt;/a&gt;. This package allows for the use of system fonts and is especially simple to use in combination with &lt;a href=&#34;https://fonts.google.com/&#34;&gt;Google fonts&lt;/a&gt;. You need to have (a) the fonts installed on your system, (b) the package &lt;code&gt;showtext&lt;/code&gt; installed, (c) import the fonts by running &lt;code&gt;font_add_google()&lt;/code&gt; and (d) preferably turn on the automatic use of its functionality with &lt;code&gt;showtext_auto()&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;(Note that to include these fonts we make use of the &lt;s&gt;&lt;a href=&#34;https://github.com/wch/extrafont&#34;&gt;&lt;code&gt;{extrafont}&lt;/code&gt; package&lt;/a&gt;&lt;/s&gt; &lt;s&gt;&lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;&lt;code&gt;{showtext}&lt;/code&gt; package&lt;/a&gt;&lt;/s&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/systemfonts/index.html&#34;&gt;{systemfonts} package&lt;/a&gt;. This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package &lt;code&gt;systemfonts&lt;/code&gt; installed. Read more about how to use custom fonts in &lt;a href=&#34;https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/&#34;&gt;this blog post by June Choe&lt;/a&gt;.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;geoms&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;📊 The Choice of the Chart Type&lt;/h3&gt;

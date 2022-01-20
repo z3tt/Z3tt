@@ -163,7 +163,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 
 💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderings,  as age groupings!**
 
-To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot` call—<s>but this does not work for box plots so we use `coord_flip()`</s>it now does!). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
+To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the `ggplot` call <s>but this does not work for box plots so we use `coord_flip()`</s> and it now also works for box plots!). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, NA))`.
 
 ```{r boxplot-flipped, fig.width=8, fig.heigh = 4.5}
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
@@ -174,7 +174,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 
 💡 **Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!**
 
-💡 **Since the latest version 3.x.x of `{ggplot2}` you can also flip the orientation by switch x and y arguments:**
+💡 **Since the latest version 3.x.x of `{ggplot2}` you can also flip the orientation by switching the x and y variables:**
 
 ```{r boxplot-flipped-x-y, eval=FALSE}
 ggplot(df_sorted, aes(x = student_ratio, y = region)) +
@@ -222,7 +222,7 @@ g <-
     )
 ```
 
-(Note that to include these fonts we make use of the <strike>[`extrafont` package](https://github.com/wch/extrafont)</strike> [`showtext` package](https://github.com/yixuan/showtext). This package allows for the use of system fonts and is especially simple to use in combination with [Google fonts](https://fonts.google.com/). You need to have (a) the fonts installed on your system, (b) the package `showtext` installed, (c) import the fonts by running `font_add_google()` and (d) preferably turn on the automatic use of its functionality with `showtext_auto()`.)
+(Note that to include these fonts we make use of the <s>[`{extrafont}` package](https://github.com/wch/extrafont)</s> <s>[`{showtext}` package](https://github.com/yixuan/showtext)</s> [{systemfonts} package](https://cran.r-project.org/web/packages/systemfonts/index.html). This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package `systemfonts` installed. Read more about how to use custom fonts in [this blog post by June Choe](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/).)
 
 
 ### 📊 The Choice of the Chart Type {#geoms}
