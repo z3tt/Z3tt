@@ -615,7 +615,7 @@ pre code{
 }
 
 .post-content-preview{
-  font-size:1.4rem;
+  font-size:1.7rem;
   font-style:plain;
   line-height:1.6;
   font-weight:400;
@@ -627,7 +627,7 @@ pre code{
 
 @media only screen and (min-width:768px){
   .post-content-preview{
-    font-size:1.9rem;
+    font-size:1.5rem;
   }
 }
 
