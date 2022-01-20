@@ -161,15 +161,15 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()
 ```
 
-💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderings,  as age groupings!**
+💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!**
 
-To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the `ggplot` call <s>but this does not work for box plots so we use `coord_flip()`</s> and it now also works for box plots!). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, NA))`.
+To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the `ggplot` call <s>but this does not work for box plots so we use `coord_flip()`</s> and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis which we can force by adding `scale_y_continuous(limits = c(0, NA))`.
 
 ```{r boxplot-flipped, fig.width=8, fig.heigh = 4.5}
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
-  scale_y_continuous(limits = c(0, 90))
+  scale_y_continuous(limits = c(0, NA))
 ```
 
 💡 **Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!**
@@ -179,7 +179,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 ```{r boxplot-flipped-x-y, eval=FALSE}
 ggplot(df_sorted, aes(x = student_ratio, y = region)) +
   geom_boxplot() +
-  scale_x_continuous(limits = c(0, 90))
+  scale_x_continuous(limits = c(0, NA))
 ```
 
 
@@ -191,11 +191,11 @@ The order of the categories is perfect as it is after flipping the coordinates�
 
 Let's spice this plot up! One great thing about `{ggplot2}` is that it is structured in an *adaptive way*, allowing to add further levels to an existing ggplot object. We are going to
 
-* use a different theme that comes with the `{ggplot2}` package by calling `theme_set(theme_light())` (several themes come along with the `{ggplot2}` package but if you need more check for example the packages [`ggthemes`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) or [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/)),
+* use a different theme that comes with the `{ggplot2}` package by calling `theme_set(theme_light())` (several themes come along with the `{ggplot2}` package but if you need more check for example the packages [`{ggthemes}`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) or [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/)),
 * change the font and the overall font size by adding the arguments `base_size` and `base_family` to `theme_light()`,
 * flip the axes by adding `coord_flip()` (as seen before),
 * let the axis start at 0 and reduce the spacing to the plot margin by adding `expand = c(0.005, 0.005)` as argument to the `scale_y_continious()`,
-* add some color encoding the continent by adding `color = region` to the `aes` argument and picking a palette from the [`ggsci` package](),
+* add some color encoding the continent by adding `color = region` to the `aes` argument and picking a palette from the [`{ggsci}` package](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html),
 * add meaningful labels/removing useless labels by adding `labs(x = NULL, y = "title y")`
 * adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding `theme()`.
 
@@ -211,7 +211,7 @@ theme_set(theme_light(base_size = 18, base_family = "Poppins"))
 g <-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, NA), expand = c(0.005, 0.005)) +
     scale_color_uchicago() +
     labs(x = NULL, y = "Student to teacher ratio") +
     theme(
@@ -222,20 +222,22 @@ g <-
     )
 ```
 
+Even thought we already wrote a lot of code, the plot `g` is just an empty plot until with a custom theme and pretty axes but actually not a "data visualization" yet.  
+
 (Note that to include these fonts we make use of the <s>[`{extrafont}` package](https://github.com/wch/extrafont)</s> <s>[`{showtext}` package](https://github.com/yixuan/showtext)</s> [{systemfonts} package](https://cran.r-project.org/web/packages/systemfonts/index.html). This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package `systemfonts` installed. Read more about how to use custom fonts in [this blog post by June Choe](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/).)
 
 
 ### 📊 The Choice of the Chart Type {#geoms}
 
-We can add any `geom_` to our ggplot-preset `g` that fits the data (note that until now it is just an empty plot with pretty axes):
+We can add any `geom_` to our ggplot-preset `g` that fits the data, i.e. that take two positional variables of which one is allowed to be qualitative. Here are some examples that fulfill these criteria:
 
 ```{r geoms, echo=FALSE, fig.width=10, fig.height=7}
 library(patchwork)
 
-(g + geom_boxplot() + labs(title = "Boxplot", subtitle = "g + geom_boxplot()")) +
+(g + geom_boxplot() + labs(title = "Box plot", subtitle = "g + geom_boxplot()")) +
 (g + geom_violin() + labs(title = "Violin plot", subtitle = "g + geom_violin()")) +
 (g + geom_line(size = 1) + labs(title = "Line plot", subtitle = "g + geom_line(size = 1)")) +
-(g + geom_point(size = 1) + labs(title = "Dot strip plot", subtitle = "g + geom_point(size = 1)")) &
+(g + geom_point(size = 1) + labs(title = "Strip plot", subtitle = "g + geom_point(size = 1)")) &
   theme(
     plot.title = element_text(face = "bold", size = 18, margin = margin(t = 5, b = 0)),
     plot.subtitle = element_text(family = "Roboto Mono", size = 15, margin = margin(t = 5, b = 10)),
@@ -246,9 +248,9 @@ library(patchwork)
   )
 ```
 
-All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line  (see below for an explanation [how to read a boxplot](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps))plot shows only the range (minimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:
+All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation [how to read a boxplot](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps)). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:
 
-```{r dot-plot-alpha, fig.width=8, fig.heigh = 4.5}
+```{r strip-plot-alpha, fig.width=8, fig.heigh = 4.5}
 g + geom_point(size = 3, alpha = 0.15)
 ```
 
@@ -260,23 +262,23 @@ g +
   geom_point(size = 3, alpha = 0.15)
 ```
 
-⚡ **Remove the outliers to avoid overlapping points! You can achieve this via `outlier.shape = NA` or `outlier.alpha = 0`.**
+⚡ **Remove the outliers of the box plot to avoid double-encoding of the same information! You can achieve this via `outlier.alpha = 0`, `outlier.color = NA`, `outlier.color = "transparent"`, or `outlier.shape = NA`.**
 
-We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
+We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box or violin plots.
 To achieve a higher readability, we use another geom, `geom_jitter()` which scatters the points in a given direction (x and/or y via `width` and `height`) to prevent over-plotting:
 
 ```{r plot-jitter-countries, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
 
-g + geom_jitter(size = 2, alpha = 0.25, width = 0.2, height = 0)
+g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
 ```
 
 💡 **Set a seed to keep the jittering of the points fixed every time you call `geom_jitter()` by calling `set.seed()`—this becomes especially important when we later label some of the points.**
 
-💡 **You can also set the seed within the `geom_jitter()` call by setting `position = position_jitter(seed)`. Note that in this case the `width` and/or `height` argument needs to be placed inside the position_jitter() as well:**
+💡 **You can also set the seed within the `geom_jitter()` call by setting `position = position_jitter(seed)`. Note that in this case the `width` and/or `height` argument needs to be placed inside the `position_jitter()` function as well:**
 
 ```{r plot-jitter-seed, eval=FALSE}
-g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2, height = 0), size = 2, alpha = 0.25)
+g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)
 ```
 
 (In the next code chunks, I am going to use the redundant call of `set.seed(2019)` before creating the plot but do not show it each time.)
@@ -424,7 +426,7 @@ set.seed(2019)
 (g_final <-
   g_arrows +
   scale_y_continuous(
-    limits = c(0, 90), expand = c(0.005, 0.005),
+    limits = c(1, NA), expand = c(0.005, 0.005),
     breaks = c(1, seq(20, 80, by = 20))
   ) +
   labs(caption = "Data: UNESCO Institute for Statistics") +
@@ -558,7 +560,7 @@ after <-
       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
     ) +
     scale_y_continuous(
-      limits = c(0, 90), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.005, 0.005),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +
@@ -687,7 +689,7 @@ df_ratios %>%
       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
     ) +
     scale_y_continuous(
-      limits = c(0, 90), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.005, 0.005),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +

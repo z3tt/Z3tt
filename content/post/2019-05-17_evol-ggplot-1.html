@@ -75,29 +75,29 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png" width="768" /></p>
-<p>💡 <strong>Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderings, as age groupings!</strong></p>
-<p>To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the <code>ggplot</code> call <s>but this does not work for box plots so we use <code>coord_flip()</code></s> and it now also works for box plots!). It is also a good practice to include the 0 in plots which we can force by adding <code>scale_y_continuous(limits = c(0, NA))</code>.</p>
+<p>💡 <strong>Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!</strong></p>
+<p>To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the <code>ggplot</code> call <s>but this does not work for box plots so we use <code>coord_flip()</code></s> and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis which we can force by adding <code>scale_y_continuous(limits = c(0, NA))</code>.</p>
 <pre class="r"><code>ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
-  scale_y_continuous(limits = c(0, 90))</code></pre>
+  scale_y_continuous(limits = c(0, NA))</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-flipped-1.png" width="768" /></p>
 <p>💡 <strong>Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!</strong></p>
-<p>💡 <strong>Since the latest version 3.x.x of <code>{ggplot2}</code> you can also flip the orientation by switch x and y arguments:</strong></p>
+<p>💡 <strong>Since the latest version 3.x.x of <code>{ggplot2}</code> you can also flip the orientation by switching the x and y variables:</strong></p>
 <pre class="r"><code>ggplot(df_sorted, aes(x = student_ratio, y = region)) +
   geom_boxplot() +
-  scale_x_continuous(limits = c(0, 90))</code></pre>
+  scale_x_continuous(limits = c(0, NA))</code></pre>
 <p>The order of the categories is perfect as it is after flipping the coordinates—the lower the student-teacher ratio, the better.</p>
 </div>
 <div id="let-your-plot-shineget-rid-of-the-default-settings" class="section level3">
 <h3>💎 Let Your Plot Shine—Get Rid of the Default Settings</h3>
 <p>Let’s spice this plot up! One great thing about <code>{ggplot2}</code> is that it is structured in an <em>adaptive way</em>, allowing to add further levels to an existing ggplot object. We are going to</p>
 <ul>
-<li>use a different theme that comes with the <code>{ggplot2}</code> package by calling <code>theme_set(theme_light())</code> (several themes come along with the <code>{ggplot2}</code> package but if you need more check for example the packages <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>ggthemes</code></a> or <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a>),</li>
+<li>use a different theme that comes with the <code>{ggplot2}</code> package by calling <code>theme_set(theme_light())</code> (several themes come along with the <code>{ggplot2}</code> package but if you need more check for example the packages <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>{ggthemes}</code></a> or <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a>),</li>
 <li>change the font and the overall font size by adding the arguments <code>base_size</code> and <code>base_family</code> to <code>theme_light()</code>,</li>
 <li>flip the axes by adding <code>coord_flip()</code> (as seen before),</li>
 <li>let the axis start at 0 and reduce the spacing to the plot margin by adding <code>expand = c(0.005, 0.005)</code> as argument to the <code>scale_y_continious()</code>,</li>
-<li>add some color encoding the continent by adding <code>color = region</code> to the <code>aes</code> argument and picking a palette from the <a href=""><code>ggsci</code> package</a>,</li>
+<li>add some color encoding the continent by adding <code>color = region</code> to the <code>aes</code> argument and picking a palette from the <a href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html"><code>{ggsci}</code> package</a>,</li>
 <li>add meaningful labels/removing useless labels by adding <code>labs(x = NULL, y = "title y")</code></li>
 <li>adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding <code>theme()</code>.</li>
 </ul>
@@ -109,7 +109,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 g &lt;-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, NA), expand = c(0.005, 0.005)) +
     scale_color_uchicago() +
     labs(x = NULL, y = &quot;Student to teacher ratio&quot;) +
     theme(
@@ -118,30 +118,31 @@ g &lt;-
       axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 12),
       panel.grid = element_blank()
     )</code></pre>
+<p>Even thought we already wrote a lot of code, the plot <code>g</code> is just an empty plot until with a custom theme and pretty axes but actually not a “data visualization” yet.</p>
 <p>(Note that to include these fonts we make use of the <s><a href="https://github.com/wch/extrafont"><code>{extrafont}</code> package</a></s> <s><a href="https://github.com/yixuan/showtext"><code>{showtext}</code> package</a></s> <a href="https://cran.r-project.org/web/packages/systemfonts/index.html">{systemfonts} package</a>. This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package <code>systemfonts</code> installed. Read more about how to use custom fonts in <a href="https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/">this blog post by June Choe</a>.)</p>
 </div>
 <div id="geoms" class="section level3">
 <h3>📊 The Choice of the Chart Type</h3>
-<p>We can add any <code>geom_</code> to our ggplot-preset <code>g</code> that fits the data (note that until now it is just an empty plot with pretty axes):</p>
+<p>We can add any <code>geom_</code> to our ggplot-preset <code>g</code> that fits the data, i.e. that take two positional variables of which one is allowed to be qualitative. Here are some examples that fulfill these criteria:</p>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/geoms-1.png" width="960" /></p>
-<p>All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line (see below for an explanation <a href="https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps">how to read a boxplot</a>)plot shows only the range (minimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an <code>alpha</code> argument to <code>geom_point()</code>, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:</p>
+<p>All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation <a href="https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps">how to read a boxplot</a>). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an <code>alpha</code> argument to <code>geom_point()</code>, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:</p>
 <pre class="r"><code>g + geom_point(size = 3, alpha = 0.15)</code></pre>
-<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/dot-plot-alpha-1.png" width="768" /></p>
+<p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/strip-plot-alpha-1.png" width="768" /></p>
 <p>Of course, different geoms can also be combined to provide even more information in one plot:</p>
 <pre class="r"><code>g +
   geom_boxplot(color = &quot;gray60&quot;, outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/box-dot-plot-1.png" width="768" /></p>
-<p>⚡ <strong>Remove the outliers to avoid overlapping points! You can achieve this via <code>outlier.shape = NA</code> or <code>outlier.alpha = 0</code>.</strong></p>
-<p>We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
+<p>⚡ <strong>Remove the outliers of the box plot to avoid double-encoding of the same information! You can achieve this via <code>outlier.alpha = 0</code>, <code>outlier.color = NA</code>, <code>outlier.color = "transparent"</code>, or <code>outlier.shape = NA</code>.</strong></p>
+<p>We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box or violin plots.
 To achieve a higher readability, we use another geom, <code>geom_jitter()</code> which scatters the points in a given direction (x and/or y via <code>width</code> and <code>height</code>) to prevent over-plotting:</p>
 <pre class="r"><code>set.seed(2019)
 
-g + geom_jitter(size = 2, alpha = 0.25, width = 0.2, height = 0)</code></pre>
+g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-countries-1.png" width="768" /></p>
 <p>💡 <strong>Set a seed to keep the jittering of the points fixed every time you call <code>geom_jitter()</code> by calling <code>set.seed()</code>—this becomes especially important when we later label some of the points.</strong></p>
-<p>💡 <strong>You can also set the seed within the <code>geom_jitter()</code> call by setting <code>position = position_jitter(seed)</code>. Note that in this case the <code>width</code> and/or <code>height</code> argument needs to be placed inside the position_jitter() as well:</strong></p>
-<pre class="r"><code>g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2, height = 0), size = 2, alpha = 0.25)</code></pre>
+<p>💡 <strong>You can also set the seed within the <code>geom_jitter()</code> call by setting <code>position = position_jitter(seed)</code>. Note that in this case the <code>width</code> and/or <code>height</code> argument needs to be placed inside the <code>position_jitter()</code> function as well:</strong></p>
+<pre class="r"><code>g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)</code></pre>
 <p>(In the next code chunks, I am going to use the redundant call of <code>set.seed(2019)</code> before creating the plot but do not show it each time.)</p>
 </div>
 <div id="more" class="section level3">
@@ -248,7 +249,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 <pre class="r"><code>(g_final &lt;-
   g_arrows +
   scale_y_continuous(
-    limits = c(0, 90), expand = c(0.005, 0.005),
+    limits = c(1, NA), expand = c(0.005, 0.005),
     breaks = c(1, seq(20, 80, by = 20))
   ) +
   labs(caption = &quot;Data: UNESCO Institute for Statistics&quot;) +
@@ -389,7 +390,7 @@ df_ratios %&gt;%
       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
     ) +
     scale_y_continuous(
-      limits = c(0, 90), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.005, 0.005),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +
