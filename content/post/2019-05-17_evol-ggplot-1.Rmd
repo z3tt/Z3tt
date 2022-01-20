@@ -336,7 +336,7 @@ g +
 
 ### 💬 Add Text Boxes to Let The Plot Speak for Itself {#text}
 
-Since I don't want to include legends, I add some text boxes that explain the different point sizes and the baseline level via `annotate("text")`:
+Since I don't want to include legends, I add some text boxes that explain the different point sizes and the baseline level via `annotate(geom = "text")`:
 
 ```{r text-labels, echo=-1, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
@@ -368,6 +368,8 @@ set.seed(2019)
     label = "The Central African Republic has by far\nthe most students per teacher")
   )
 ```
+
+💡 **You could also create a new data set (similar to our `arrows` data frame below) that holds the labels and the exact position, along with some other information if needed, and add that via `geom_text(data = my_labels, aes(label = my_label_column))`. Note that here we also would need to create a factor for the region to match the original data!**
 
 💡 **Use [`glue::glue()`](https://glue.tidyverse.org/) to combine strings with variables—this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend `paste0()`.)**
 

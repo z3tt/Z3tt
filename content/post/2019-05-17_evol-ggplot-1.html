@@ -180,7 +180,7 @@ g +
 </div>
 <div id="text" class="section level3">
 <h3>💬 Add Text Boxes to Let The Plot Speak for Itself</h3>
-<p>Since I don’t want to include legends, I add some text boxes that explain the different point sizes and the baseline level via <code>annotate("text")</code>:</p>
+<p>Since I don’t want to include legends, I add some text boxes that explain the different point sizes and the baseline level via <code>annotate(geom = "text")</code>:</p>
 <pre class="r"><code>(g_text &lt;-
   g +
   geom_segment(
@@ -208,6 +208,7 @@ g +
     label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;)
   )</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/text-labels-1.png" width="768" /></p>
+<p>💡 <strong>You could also create a new data set (similar to our <code>arrows</code> data frame below) that holds the labels and the exact position, along with some other information if needed, and add that via <code>geom_text(data = my_labels, aes(label = my_label_column))</code>. Note that here we also would need to create a factor for the region to match the original data!</strong></p>
 <p>💡 <strong>Use <a href="https://glue.tidyverse.org/"><code>glue::glue()</code></a> to combine strings with variables—this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend <code>paste0()</code>.)</strong></p>
 <p>… and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling <code>geom_curve()</code>. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes…</p>
 <pre class="r"><code>arrows &lt;-

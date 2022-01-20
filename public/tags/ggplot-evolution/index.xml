@@ -77,7 +77,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the &lt;code&gt;ggplot&lt;/code&gt; call &lt;s&gt;but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;&lt;/s&gt; and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the &lt;code&gt;ggplot&lt;/code&gt; call &lt;s&gt;but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;&lt;/s&gt; and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis. I also add some space to the right (mostly for later) which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt; (be cautious here to use limits that are beyond the limits of your data—or better use &lt;code&gt;coord_*(ylim = c(0, 90)&lt;/code&gt; so you’re not accidentally subsetting your data).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
@@ -181,7 +181,7 @@ g +
 &lt;/div&gt;
 &lt;div id=&#34;text&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;💬 Add Text Boxes to Let The Plot Speak for Itself&lt;/h3&gt;
-&lt;p&gt;Since I don’t want to include legends, I add some text boxes that explain the different point sizes and the baseline level via &lt;code&gt;annotate(&#34;text&#34;)&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Since I don’t want to include legends, I add some text boxes that explain the different point sizes and the baseline level via &lt;code&gt;annotate(geom = &#34;text&#34;)&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(g_text &amp;lt;-
   g +
   geom_segment(
@@ -209,6 +209,7 @@ g +
     label = &amp;quot;The Central African Republic has by far\nthe most students per teacher&amp;quot;)
   )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/text-labels-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;You could also create a new data set (similar to our &lt;code&gt;arrows&lt;/code&gt; data frame below) that holds the labels and the exact position, along with some other information if needed, and add that via &lt;code&gt;geom_text(data = my_labels, aes(label = my_label_column))&lt;/code&gt;. Note that here we also would need to create a factor for the region to match the original data!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Use &lt;a href=&#34;https://glue.tidyverse.org/&#34;&gt;&lt;code&gt;glue::glue()&lt;/code&gt;&lt;/a&gt; to combine strings with variables—this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend &lt;code&gt;paste0()&lt;/code&gt;.)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;… and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling &lt;code&gt;geom_curve()&lt;/code&gt;. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes…&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;arrows &amp;lt;-
