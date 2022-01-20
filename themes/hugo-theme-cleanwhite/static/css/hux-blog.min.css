@@ -147,7 +147,7 @@
 body{
   font-family:'Amulya','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height:1.8;
-  font-size:1.7rem;
+  font-size:1.8rem;
   font-weight:400;
   color:#000;
   overflow-x:hidden
@@ -627,7 +627,7 @@ pre code{
 
 @media only screen and (min-width:768px){
   .post-content-preview{
-    font-size:1.5rem;
+    font-size:1.9rem;
   }
 }
 
