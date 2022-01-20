@@ -163,13 +163,13 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 
 💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!**
 
-To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the `ggplot` call <s>but this does not work for box plots so we use `coord_flip()`</s> and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis which we can force by adding `scale_y_continuous(limits = c(0, NA))`.
+To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the `ggplot` call <s>but this does not work for box plots so we use `coord_flip()`</s> and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis. I also add some space to the right (mostly for later) which we can force by adding `scale_y_continuous(limits = c(0, 90))` (be cautious here to use limits that are beyond the limits of your data—or better use `coord_*(ylim = c(0, 90)` so you're not accidentally subsetting your data).
 
 ```{r boxplot-flipped, fig.width=8, fig.heigh = 4.5}
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
-  scale_y_continuous(limits = c(0, NA))
+  scale_y_continuous(limits = c(0, 90))
 ```
 
 💡 **Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!**
@@ -179,7 +179,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 ```{r boxplot-flipped-x-y, eval=FALSE}
 ggplot(df_sorted, aes(x = student_ratio, y = region)) +
   geom_boxplot() +
-  scale_x_continuous(limits = c(0, NA))
+  scale_x_continuous(limits = c(0, 90))
 ```
 
 
@@ -211,7 +211,7 @@ theme_set(theme_light(base_size = 18, base_family = "Poppins"))
 g <-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, NA), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
     scale_color_uchicago() +
     labs(x = NULL, y = "Student to teacher ratio") +
     theme(
