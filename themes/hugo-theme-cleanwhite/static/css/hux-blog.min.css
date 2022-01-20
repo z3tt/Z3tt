@@ -888,7 +888,7 @@ body{
   position:relative;
 }
 .one-tag-list .post-preview>a .post-title{
-  font-size:1.9rem;
+  font-size:2.2rem;
   font-weight:500;
   line-height:1.3;
   margin-top:2rem;
@@ -908,6 +908,9 @@ body{
 @media only screen and (min-width:768px){
   .one-tag-list .post-preview{
     margin-left:2rem;
+  }
+  .one-tag-list .post-preview>a .post-title{
+    font-size:1.9rem;
   }
   .one-tag-list .post-preview>a>.post-subtitle{
     font-size:1.4rem;
