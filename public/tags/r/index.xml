@@ -3923,17 +3923,17 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the &lt;code&gt;ggplot&lt;/code&gt; call &lt;s&gt;but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;&lt;/s&gt; and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, NA))&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the &lt;code&gt;ggplot&lt;/code&gt; call &lt;s&gt;but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;&lt;/s&gt; and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
-  scale_y_continuous(limits = c(0, NA))&lt;/code&gt;&lt;/pre&gt;
+  scale_y_continuous(limits = c(0, 90))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-flipped-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Since the latest version 3.x.x of &lt;code&gt;{ggplot2}&lt;/code&gt; you can also flip the orientation by switching the x and y variables:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = student_ratio, y = region)) +
   geom_boxplot() +
-  scale_x_continuous(limits = c(0, NA))&lt;/code&gt;&lt;/pre&gt;
+  scale_x_continuous(limits = c(0, 90))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The order of the categories is perfect as it is after flipping the coordinates—the lower the student-teacher ratio, the better.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;let-your-plot-shineget-rid-of-the-default-settings&#34; class=&#34;section level3&#34;&gt;
@@ -3956,7 +3956,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 g &amp;lt;-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, NA), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
     scale_color_uchicago() +
     labs(x = NULL, y = &amp;quot;Student to teacher ratio&amp;quot;) +
     theme(
