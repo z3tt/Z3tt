@@ -512,7 +512,7 @@ devtools::install_github(&quot;JohnCoene/charter&quot;)</code></pre>
 <p>We are using data from the <em>National Morbidity and Mortality Air Pollution Study</em> (NMMAPS). To make the plots manageable we are limiting the data to Chicago and 1997–2000. For more detail on this data set, consult Roger Peng’s book <a href="http://www.springer.com/de/book/9780387781662">Statistical Methods in Environmental Epidemiology with R</a>.
 You can download the data we are using during this tutorial <a href="https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv">here</a> (but you don’t have to).</p>
 <p>We can import the data into our R session for example with <code>read_csv()</code> from the <code>{readr}</code> package. To access the data later, we are storing it in a variable called <code>chic</code> by using the <em>assignment arrow</em> <code>&lt;-</code>.</p>
-<pre class="r"><code>chic &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv&quot;)</code></pre>
+<pre class="r"><code>chic &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/z3tt/ggplot-courses/master/data/chicago-nmmaps.csv&quot;)</code></pre>
 <p>💡 <strong>The <code>::</code> is called <em>namespace</em> and can be used to access a function without loading the package. Here, you could also run <code>library(readr)</code> first and <code>chic &lt;- read_csv(...)</code> afterwards.</strong></p>
 <pre class="r"><code>tibble::glimpse(chic)</code></pre>
 <pre><code>## Rows: 1,461

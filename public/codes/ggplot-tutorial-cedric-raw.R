@@ -19,7 +19,7 @@
 ## install from GitHub since not on CRAN
 ## devtools::install_github("JohnCoene/charter")
 
-chic <- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
+chic <- readr::read_csv("https://raw.githubusercontent.com/z3tt/ggplot-courses/master/data/chicago-nmmaps.csv")
 tibble::glimpse(chic)
 head(chic, 10)
 

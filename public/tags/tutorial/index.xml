@@ -1158,7 +1158,7 @@ devtools::install_github(&amp;quot;JohnCoene/charter&amp;quot;)&lt;/code&gt;&lt;
 &lt;p&gt;We are using data from the &lt;em&gt;National Morbidity and Mortality Air Pollution Study&lt;/em&gt; (NMMAPS). To make the plots manageable we are limiting the data to Chicago and 1997–2000. For more detail on this data set, consult Roger Peng’s book &lt;a href=&#34;http://www.springer.com/de/book/9780387781662&#34;&gt;Statistical Methods in Environmental Epidemiology with R&lt;/a&gt;.
 You can download the data we are using during this tutorial &lt;a href=&#34;https://github.com/Z3tt/R-Tutorials/blob/master/ggplot2/chicago-nmmaps.csv&#34;&gt;here&lt;/a&gt; (but you don’t have to).&lt;/p&gt;
 &lt;p&gt;We can import the data into our R session for example with &lt;code&gt;read_csv()&lt;/code&gt; from the &lt;code&gt;{readr}&lt;/code&gt; package. To access the data later, we are storing it in a variable called &lt;code&gt;chic&lt;/code&gt; by using the &lt;em&gt;assignment arrow&lt;/em&gt; &lt;code&gt;&amp;lt;-&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chic &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;chic &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/z3tt/ggplot-courses/master/data/chicago-nmmaps.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;💡 &lt;strong&gt;The &lt;code&gt;::&lt;/code&gt; is called &lt;em&gt;namespace&lt;/em&gt; and can be used to access a function without loading the package. Here, you could also run &lt;code&gt;library(readr)&lt;/code&gt; first and &lt;code&gt;chic &amp;lt;- read_csv(...)&lt;/code&gt; afterwards.&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tibble::glimpse(chic)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Rows: 1,461
@@ -3458,32 +3458,32 @@ R Session Info
 &lt;div id=&#34;aim&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🏁 Aim of this Tutorial&lt;/h3&gt;
 &lt;p&gt;In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% &lt;code&gt;{ggplot2}&lt;/code&gt; and 0% Inkscape.&lt;/p&gt;
-&lt;p&gt;In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use &lt;a href=&#34;http://data.uis.unesco.org/index.aspx?queryid=180&#34;&gt;data provided by the UNESCO on global student to teacher ratios&lt;/a&gt; that was selected as data &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07&#34;&gt;for the #TidyTuesday challenge 19 of 2019&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the first episode, I transform a basic box plot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use &lt;a href=&#34;http://data.uis.unesco.org/index.aspx?queryid=180&#34;&gt;data provided by the UNESCO on global student to teacher ratios&lt;/a&gt; that was selected as data &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07&#34;&gt;for the #TidyTuesday challenge 19 of 2019&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;data&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🗃️ Data Preparation&lt;/h3&gt;
-&lt;p&gt;I have prepared the data in the first way to map each countrys most recently reported student-teacher ratio in primary education as a tile map. I used the &lt;a href=&#34;%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22&#34;&gt;tile-based world data provided by Maarten Lambrechts&lt;/a&gt; to create this map as the first visualization for my weekly contribution:&lt;/p&gt;
+&lt;p&gt;I have prepared the data in the first way to map each country’s most recently reported student-teacher ratio in primary education as a tile map. I used the &lt;a href=&#34;%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22&#34;&gt;tile-based world data provided by Maarten Lambrechts&lt;/a&gt; to create this map as the first visualization for my weekly contribution:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps &lt;a href=&#34;https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11&#34;&gt;here&lt;/a&gt;. This is how the relevant columns of the merged and cleaned dataset looks like, showing two examples per continent:&lt;/p&gt;
+&lt;p&gt;For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both data sets. If you would like to run the code yourself, you find the data preparation steps &lt;a href=&#34;https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11&#34;&gt;here&lt;/a&gt;. This is how the relevant columns of the merged and cleaned data set looks like, showing two examples per continent:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 12 x 5
-##    indicator     country              region    student_ratio student_ratio_reg~
-##    &amp;lt;chr&amp;gt;         &amp;lt;chr&amp;gt;                &amp;lt;chr&amp;gt;             &amp;lt;dbl&amp;gt;              &amp;lt;dbl&amp;gt;
-##  1 Primary Educ~ Lesotho              Africa             32.9               37.3
-##  2 Primary Educ~ South Africa         Africa             30.3               37.3
-##  3 Primary Educ~ Bangladesh           Asia               30.1               20.7
-##  4 Primary Educ~ Viet Nam             Asia               19.6               20.7
-##  5 Primary Educ~ Ireland              Europe             16.1               13.6
-##  6 Primary Educ~ France               Europe             18.2               13.6
-##  7 Primary Educ~ Saint Vincent and t~ North Am~          14.4               17.7
-##  8 Primary Educ~ Dominican Republic   North Am~          18.9               17.7
-##  9 Primary Educ~ Vanuatu              Oceania            26.6               24.7
-## 10 Primary Educ~ Solomon Islands      Oceania            25.8               24.7
-## 11 Primary Educ~ Argentina            South Am~          NA                 19.4
-## 12 Primary Educ~ Paraguay             South Am~          24.2               19.4&lt;/code&gt;&lt;/pre&gt;
+##    indicator         country           region    student_ratio student_ratio_re~
+##    &amp;lt;chr&amp;gt;             &amp;lt;chr&amp;gt;             &amp;lt;chr&amp;gt;             &amp;lt;dbl&amp;gt;             &amp;lt;dbl&amp;gt;
+##  1 Primary Education Lesotho           Africa             32.9              37.3
+##  2 Primary Education South Africa      Africa             30.3              37.3
+##  3 Primary Education Bangladesh        Asia               30.1              20.7
+##  4 Primary Education Viet Nam          Asia               19.6              20.7
+##  5 Primary Education Ireland           Europe             16.1              13.6
+##  6 Primary Education France            Europe             18.2              13.6
+##  7 Primary Education Saint Vincent an~ North Am~          14.4              17.7
+##  8 Primary Education Dominican Republ~ North Am~          18.9              17.7
+##  9 Primary Education Vanuatu           Oceania            26.6              24.7
+## 10 Primary Education Solomon Islands   Oceania            25.8              24.7
+## 11 Primary Education Argentina         South Am~          NA                19.4
+## 12 Primary Education Paraguay          South Am~          24.2              19.4&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;default&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🌱 The Default Boxplot&lt;/h3&gt;
-&lt;p&gt;I was particularly interested to visualize the most-recent student-teacher ratio in primary education as a tile chloropleth map per country. A usual way reresenting several data points per group is to use a boxplot:&lt;/p&gt;
+&lt;p&gt;I was particularly interested to visualize the most-recent student-teacher ratio in primary education as a tile grid map per country. A usual way representing several data points per group is to use a box plot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 
 ggplot(df_ratios, aes(x = region, y = student_ratio)) +
@@ -3492,7 +3492,7 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 &lt;/div&gt;
 &lt;div id=&#34;sort&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🔀 ️Sort Your Data!&lt;/h3&gt;
-&lt;p&gt;A good routine with such kind of data (qualitative and unsorted) is to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category “continent” does not have an intrinsic order, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:&lt;/p&gt;
+&lt;p&gt;A good routine with such kind of data (qualitative and unsorted) is to arrange the box plots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category “continent” does not have an intrinsic order, I rearrange the box plots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_sorted &amp;lt;-
   df_ratios %&amp;gt;%
   mutate(region = fct_reorder(region, -student_ratio_region))
@@ -3500,8 +3500,8 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;💡 &lt;strong&gt;Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderinsic, as age groupings!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the &lt;code&gt;ggplot&lt;/code&gt; call—but this does not work for boxplots so we use &lt;code&gt;coord_flip()&lt;/code&gt;). It is also a good practice to include the 0 in plots which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderings, as age groupings!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the &lt;code&gt;ggplot&lt;/code&gt; call—but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;). It is also a good practice to include the 0 in plots which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
@@ -3526,12 +3526,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 &lt;p&gt;💡 &lt;strong&gt;You can easily adjust all sizes of the theme by calling &lt;code&gt;theme_xyz(base_size = )&lt;/code&gt;—this is very handy if you need the same viz for a different purpose!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Do not use &lt;code&gt;c(0, 0)&lt;/code&gt; since the zero tick is in most cases too close to the axis—use something close to zero instead!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I am going to save the ggplot call and all these visual adjustments in a &lt;code&gt;gg&lt;/code&gt; object that I name &lt;code&gt;g&lt;/code&gt; so we can use it for the next plots.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(showtext)
-font_add_google(&amp;quot;Poppins&amp;quot;, &amp;quot;Poppins&amp;quot;)
-font_add_google(&amp;quot;Roboto Mono&amp;quot;, &amp;quot;Roboto Mono&amp;quot;)
-showtext_auto()
-
-theme_set(theme_light(base_size = 18, base_family = &amp;quot;Poppins&amp;quot;))
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;theme_set(theme_light(base_size = 18, base_family = &amp;quot;Poppins&amp;quot;))
 
 g &amp;lt;-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
@@ -3551,7 +3546,7 @@ g &amp;lt;-
 &lt;h3&gt;📊 The Choice of the Chart Type&lt;/h3&gt;
 &lt;p&gt;We can add any &lt;code&gt;geom_&lt;/code&gt; to our ggplot-preset &lt;code&gt;g&lt;/code&gt; that fits the data (note that until now it is just an empty plot with pretty axes):&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/geoms-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line (see below for an explanation &lt;a href=&#34;https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps&#34;&gt;how to read a boxplot&lt;/a&gt;)plot shows only the range (mimimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an &lt;code&gt;alpha&lt;/code&gt; argument to &lt;code&gt;geom_point()&lt;/code&gt;, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:&lt;/p&gt;
+&lt;p&gt;All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line (see below for an explanation &lt;a href=&#34;https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps&#34;&gt;how to read a boxplot&lt;/a&gt;)plot shows only the range (minimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an &lt;code&gt;alpha&lt;/code&gt; argument to &lt;code&gt;geom_point()&lt;/code&gt;, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + geom_point(size = 3, alpha = 0.15)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/dot-plot-alpha-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, different geoms can also be combined to provide even more information in one plot:&lt;/p&gt;
@@ -3561,28 +3556,28 @@ g &amp;lt;-
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/box-dot-plot-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;⚡ &lt;strong&gt;Remove the outliers to avoid overlapping points! You can achieve this via &lt;code&gt;outlier.shape = NA&lt;/code&gt; or &lt;code&gt;outlier.alpha = 0&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
-To achieve a higher readability, we use another geom, &lt;code&gt;geom_jitter()&lt;/code&gt; which scatters the points in a given direction (x and/or y via &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) to prevent overplotting:&lt;/p&gt;
+To achieve a higher readability, we use another geom, &lt;code&gt;geom_jitter()&lt;/code&gt; which scatters the points in a given direction (x and/or y via &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) to prevent over-plotting:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(2019)
 
-g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)&lt;/code&gt;&lt;/pre&gt;
+g + geom_jitter(size = 2, alpha = 0.25, width = 0.2, height = 0)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-countries-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Set a seed to keep the jittering of the points fixed every time you call &lt;code&gt;geom_jitter()&lt;/code&gt; by calling &lt;code&gt;set.seed()&lt;/code&gt;—this becomes especially important when we later label some of the points.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;You can also set the seed within the &lt;code&gt;geom_jitter()&lt;/code&gt; call by setting &lt;code&gt;position = position_jitter(seed)&lt;/code&gt;. Note that in this case the &lt;code&gt;width&lt;/code&gt; and/or &lt;code&gt;height&lt;/code&gt; argument needs to be placed inside the position_jitter() as well:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2, height = 0), size = 2, alpha = 0.25)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;(In the next code chunks, I am going to use the redundant call of &lt;code&gt;set.seed(2019)&lt;/code&gt; before creating the plot but do not show it each time.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;more&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;💯 More Geoms, More Fun, More Info!&lt;/h3&gt;
-&lt;p&gt;As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding a summary statistic via &lt;code&gt;stat_summary()&lt;/code&gt;with a different point size as the points of &lt;code&gt;geom_jitter()&lt;/code&gt;. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:&lt;/p&gt;
+&lt;p&gt;As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focused on countries only. We can indicate the continental average by adding a summary statistic via &lt;code&gt;stat_summary()&lt;/code&gt;with a different point size as the points of &lt;code&gt;geom_jitter()&lt;/code&gt;. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   stat_summary(fun = mean, geom = &amp;quot;point&amp;quot;, size = 5)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Note that we could also use &lt;code&gt;geom_point(aes(x = region, y = student_ratio_region), size = 5)&lt;/code&gt; to achieve the same since we already have a regional meanaverage in our data.&lt;/p&gt;
+&lt;p&gt;Note that we could also use &lt;code&gt;geom_point(aes(x = region, y = student_ratio_region), size = 5)&lt;/code&gt; to achieve the same since we already have a regional mean average in our data.&lt;/p&gt;
 &lt;p&gt;To relate all these points to a baseline, we add a line indicating the worldwide average:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;world_avg &amp;lt;-
   df_ratios %&amp;gt;%
-  summarize(avg = mean(student_ratio, na.rm = T)) %&amp;gt;%
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) %&amp;gt;%
   pull(avg)
 
 g +
@@ -3681,8 +3676,6 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
   labs(caption = &amp;quot;Data: UNESCO Institute for Statistics&amp;quot;) +
   theme(plot.caption = element_text(size = 9, color = &amp;quot;gray50&amp;quot;))
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Scale for &amp;#39;y&amp;#39; is already present. Adding another scale for &amp;#39;y&amp;#39;, which will
-## replace the existing scale.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/final-caption-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;legend&#34; class=&#34;section level3&#34;&gt;
@@ -3693,7 +3686,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = &amp;quot;white&amp;quot;) +
     scale_y_reverse() +
-    ggsci::scale_fill_uchicago(guide = F) +
+    ggsci::scale_fill_uchicago(guide = &amp;quot;none&amp;quot;) +
     coord_equal() +
     theme(line = element_blank(),
           panel.background = element_rect(fill = &amp;quot;transparent&amp;quot;),
@@ -3712,7 +3705,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 &lt;/div&gt;
 &lt;div id=&#34;final&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🎄 The Final Evolved Visualization&lt;/h3&gt;
-&lt;p&gt;And here it is, our final plot—evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉&lt;/p&gt;
+&lt;p&gt;And here it is, our final plot—evolved from a dreary gray box plot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-before-after-1.png&#34; width=&#34;1536&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Thanks for reading, I hope you’ve enjoyed it! Here you find &lt;a href=&#34;https://www.cedricscherer.netlify.com/top/dataviz/&#34;&gt;more visualizations I’ve contributed to the #TidyTuesday challenges&lt;/a&gt; including my full contribution to week 19 of 2019 we have dissected here:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/tidytuesday/2019_19_StudentTeacher.png&#34; /&gt;&lt;/p&gt;
@@ -3740,7 +3733,7 @@ map_regions &amp;lt;-
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = &amp;quot;white&amp;quot;) +
     scale_y_reverse() +
-    scale_fill_uchicago(guide = F) +
+    scale_fill_uchicago(guide = &amp;quot;none&amp;quot;) +
     coord_equal() +
     theme_light() +
     theme(
@@ -3758,7 +3751,7 @@ map_regions &amp;lt;-
 ## calculate worldwide average
 world_avg &amp;lt;-
   df_ratios %&amp;gt;%
-  summarize(avg = mean(student_ratio, na.rm = T)) %&amp;gt;%
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) %&amp;gt;%
   pull(avg)
 
 ## coordinates for arrows
@@ -3837,14 +3830,14 @@ df_ratios %&amp;gt;%
 &lt;/div&gt;
 &lt;div id=&#34;ps&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;📝 Post Scriptum: Mean versus Median&lt;/h3&gt;
-&lt;p&gt;One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):&lt;/p&gt;
+&lt;p&gt;One thing I want to highlight is that the final plot does not contain the same information as the original box plot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
 &lt;img src=&#34;https://cedricscherer.com/img/evol-ggplot/boxplot.png&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;In a Box-and-Whisker plot the box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;The 2nd quartile is known as the &lt;strong&gt;median&lt;/strong&gt;, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean (“average”) values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-mean-1.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some compared to the one visualzing average ratios.&lt;/p&gt;
+&lt;p&gt;The 2nd quartile is known as the &lt;strong&gt;median&lt;/strong&gt;, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean (“average”) values but not to median estimates. However, in case of skewed data, the mean value of a data set is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-median-1.png&#34; width=&#34;816&#34; /&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-median-2.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic box plot we used in the beginning but may be harder to interpret for some compared to the one visualizing average ratios.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

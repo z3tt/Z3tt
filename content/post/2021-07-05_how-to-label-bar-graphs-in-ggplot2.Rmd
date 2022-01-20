@@ -403,7 +403,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
 ``` 
 
 **Version with different label placement:**
-I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that's only the first entry. We can place the labels differently by mapping a new created column `place` to the `hjust` argument. Since we cannot map a variable to `nudge_x`, we cannot use it to offset the labels. To add some pacing, I simply add some white space to the begin and end of each percentage label.
+I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that's only the first entry. We can place the labels differently by mapping a new created column `place` to the `hjust` argument. Since we cannot map a variable to `nudge_x`, we cannot use it to offset the labels. To add some spacing, I simply add some white space to the begin and end of each percentage label.
 
 ```{r plot-bars-alternating-labs}
 mpg_sum %>% 

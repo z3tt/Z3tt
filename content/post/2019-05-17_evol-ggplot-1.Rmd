@@ -13,7 +13,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, fig.showtext = TRUE, retina = 2)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, dev = "ragg_png", retina = 2)
 ```
 
 ```{r libraries, include=FALSE}
@@ -21,12 +21,6 @@ library(tidyverse)
 library(patchwork)
 library(rcartocolor)
 library(ggsci)
-library(showtext)
-
-font_add_google("Poppins", "Poppins")
-font_add_google("Roboto Mono", "Roboto Mono")
-
-showtext_auto()
 
 theme_set(theme_gray(base_size = 16))
 ```
@@ -36,9 +30,9 @@ df_students <- readr::read_csv("https://raw.githubusercontent.com/rfordatascienc
 
 df_world_tile <- readr::read_csv("https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv") %>%
   mutate(
-    ## Namibias two-digit country code is handled as `NA` - let us fix that
+    ## Namibia's two-digit country code is handled as `NA` - let us fix that
     alpha.2 = if_else(name == "Namibia", "NA", alpha.2),
-    ## We are going to split "Americas" into "North America" and "Sout America"
+    ## We are going to split "Americas" into "North America" and "South America"
     region = if_else(region == "Americas", sub.region, region),
     region = if_else(region %in% c("Northern America", "Central America", "Caribbean"),
                      "North America", region),
@@ -66,7 +60,7 @@ df_ratios <- df_students %>%
     !is.na(indicator)
   ) %>%
   group_by(region) %>%
-  mutate(student_ratio_region = mean(student_ratio, na.rm = T)) %>%
+  mutate(student_ratio_region = mean(student_ratio, na.rm = TRUE)) %>%
   ungroup()
 ```
 
@@ -91,13 +85,13 @@ df_ratios <- df_students %>%
 
 In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% `{ggplot2}` and 0% Inkscape.
 
-In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [for the #TidyTuesday challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
+In the first episode, I transform a basic box plot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [for the #TidyTuesday challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
 
 ### 🗃️ Data Preparation {#data}
 
-I have prepared the data in the first way to map each countrys most recently reported student-teacher ratio in primary education as a tile map. I used the [tile-based world data provided by Maarten Lambrechts]("https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv") to create this map as the first visualization for my weekly contribution:
+I have prepared the data in the first way to map each country's most recently reported student-teacher ratio in primary education as a tile map. I used the [tile-based world data provided by Maarten Lambrechts]("https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv") to create this map as the first visualization for my weekly contribution:
 
-```{r map-students, echo=FALSE, fig.width = 8, fig.height = 6.5}
+```{r map-students, echo=FALSE, fig.width=8, fig.height=6.5}
 library(rcartocolor)
 
 ## primary education map by country
@@ -128,7 +122,7 @@ df_ratios %>%
 ```
 
 
-For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so... 🐧) and merged both datasets. If you would like to run the code yourself, you find the data preparation steps [here](https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11). This is how the relevant columns of the merged and cleaned dataset looks like, showing two examples per continent:
+For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so... 🐧) and merged both data sets. If you would like to run the code yourself, you find the data preparation steps [here](https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11). This is how the relevant columns of the merged and cleaned data set looks like, showing two examples per continent:
 
 ```{r data-sample, echo=FALSE}
 set.seed(2019)
@@ -144,9 +138,9 @@ df_ratios %>%
 
 ### 🌱 The Default Boxplot {#default}
 
-I was particularly interested to visualize the most-recent student-teacher ratio in primary education as a tile chloropleth map per country. A usual way reresenting several data points per group is to use a boxplot:
+I was particularly interested to visualize the most-recent student-teacher ratio in primary education as a tile grid map per country. A usual way representing several data points per group is to use a box plot:
 
-```{r boxplot-basic, warning=FALSE, fig.width = 8, fig.heigh = 4.5}
+```{r boxplot-basic, warning=FALSE, fig.width=8, fig.heigh = 4.5}
 library(tidyverse)
 
 ggplot(df_ratios, aes(x = region, y = student_ratio)) +
@@ -156,9 +150,9 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 
 ### 🔀 ️Sort Your Data! {#sort}
 
-A good routine with such kind of data (qualitative and unsorted) is to arrange the boxplots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category "continent" does not have an intrinsic order, I rearrange the boxplots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:
+A good routine with such kind of data (qualitative and unsorted) is to arrange the box plots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category "continent" does not have an intrinsic order, I rearrange the box plots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:
 
-```{r boxplot-sorted, fig.width = 8, fig.heigh = 4.5}
+```{r boxplot-sorted, fig.width=8, fig.heigh = 4.5}
 df_sorted <-
   df_ratios %>%
   mutate(region = fct_reorder(region, -student_ratio_region))
@@ -167,11 +161,11 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()
 ```
 
-💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderinsic,  as age groupings!**
+💡 **Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical orderings,  as age groupings!**
 
-To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot` call—but this does not work for boxplots so we use `coord_flip()`). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
+To increase the readability we are going to flip the coordinates (note that we could also switch x and y arguments in the `ggplot` call—<s>but this does not work for box plots so we use `coord_flip()`</s>it now does!). It is also a good practice to include the 0 in plots which we can force by adding `scale_y_continuous(limits = c(0, 90))`.
 
-```{r boxplot-flipped, fig.width = 8, fig.heigh = 4.5}
+```{r boxplot-flipped, fig.width=8, fig.heigh = 4.5}
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
@@ -180,7 +174,13 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 
 💡 **Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!**
 
-💡 **Since the latest version 3.x.x of `{ggplot2}` you can also flip the orientation by using the orientation argument `geom_*(orientation = "y")`**
+💡 **Since the latest version 3.x.x of `{ggplot2}` you can also flip the orientation by switch x and y arguments:**
+
+```{r boxplot-flipped-x-y, eval=FALSE}
+ggplot(df_sorted, aes(x = student_ratio, y = region)) +
+  geom_boxplot() +
+  scale_x_continuous(limits = c(0, 90))
+```
 
 
 The order of the categories is perfect as it is after flipping the coordinates—the lower the student-teacher ratio, the better.
@@ -206,11 +206,6 @@ Let's spice this plot up! One great thing about `{ggplot2}` is that it is struct
 I am going to save the ggplot call and all these visual adjustments in a `gg` object that I name `g` so we can use it for the next plots.
 
 ```{r gg-preset, message=FALSE}
-library(showtext)
-font_add_google("Poppins", "Poppins")
-font_add_google("Roboto Mono", "Roboto Mono")
-showtext_auto()
-
 theme_set(theme_light(base_size = 18, base_family = "Poppins"))
 
 g <-
@@ -234,7 +229,7 @@ g <-
 
 We can add any `geom_` to our ggplot-preset `g` that fits the data (note that until now it is just an empty plot with pretty axes):
 
-```{r geoms, echo=FALSE, fig.width = 10, fig.height = 7}
+```{r geoms, echo=FALSE, fig.width=10, fig.height=7}
 library(patchwork)
 
 (g + geom_boxplot() + labs(title = "Boxplot", subtitle = "g + geom_boxplot()")) +
@@ -251,15 +246,15 @@ library(patchwork)
   )
 ```
 
-All of the four chart types let readers explore the range of values but with different detail and focus. The boxplot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line  (see below for an explanation [how to read a boxplot](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps))plot shows only the range (mimimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:
+All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways. By contrast, the line  (see below for an explanation [how to read a boxplot](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps))plot shows only the range (minimum and maximum of the data) and the dot strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an `alpha` argument to `geom_point()`, the dot strip plot is able to highlight the range of student-teacher ratios while providing the raw data:
 
-```{r dot-plot-alpha, fig.width = 8, fig.heigh = 4.5}
+```{r dot-plot-alpha, fig.width=8, fig.heigh = 4.5}
 g + geom_point(size = 3, alpha = 0.15)
 ```
 
 Of course, different geoms can also be combined to provide even more information in one plot:
 
-```{r box-dot-plot, fig.width = 8, fig.heigh = 4.5}
+```{r box-dot-plot, fig.width=8, fig.heigh = 4.5}
 g +
   geom_boxplot(color = "gray60", outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)
@@ -268,20 +263,20 @@ g +
 ⚡ **Remove the outliers to avoid overlapping points! You can achieve this via `outlier.shape = NA` or `outlier.alpha = 0`.**
 
 We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box- or violin plots.
-To achieve a higher readability, we use another geom, `geom_jitter()` which scatters the points in a given direction (x and/or y via `width` and `height`) to prevent overplotting:
+To achieve a higher readability, we use another geom, `geom_jitter()` which scatters the points in a given direction (x and/or y via `width` and `height`) to prevent over-plotting:
 
-```{r plot-jitter-countries, fig.width = 8, fig.heigh = 4.5}
+```{r plot-jitter-countries, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
 
-g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)
+g + geom_jitter(size = 2, alpha = 0.25, width = 0.2, height = 0)
 ```
 
 💡 **Set a seed to keep the jittering of the points fixed every time you call `geom_jitter()` by calling `set.seed()`—this becomes especially important when we later label some of the points.**
 
 💡 **You can also set the seed within the `geom_jitter()` call by setting `position = position_jitter(seed)`. Note that in this case the `width` and/or `height` argument needs to be placed inside the position_jitter() as well:**
 
-```{r plot-jitter-seed, eval = F}
-g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)
+```{r plot-jitter-seed, eval=FALSE}
+g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2, height = 0), size = 2, alpha = 0.25)
 ```
 
 (In the next code chunks, I am going to use the redundant call of `set.seed(2019)` before creating the plot but do not show it each time.)
@@ -289,9 +284,9 @@ g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, 
 
 ### 💯 More Geoms, More Fun, More Info! {#more}
 
-As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focussed on countries only. We can indicate the continental average by adding a summary statistic via `stat_summary()`with a different point size as the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
+As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focused on countries only. We can indicate the continental average by adding a summary statistic via `stat_summary()`with a different point size as the points of `geom_jitter()`. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:
 
-```{r plot-jitter-regions, echo = -1, fig.width = 8, fig.heigh = 4.5}
+```{r plot-jitter-regions, echo = -1, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
 
 g +
@@ -299,16 +294,16 @@ g +
   stat_summary(fun = mean, geom = "point", size = 5)
 ```
 
-Note that we could also use `geom_point(aes(x = region, y = student_ratio_region), size = 5)` to achieve the same since we already have a regional meanaverage in our data.
+Note that we could also use `geom_point(aes(x = region, y = student_ratio_region), size = 5)` to achieve the same since we already have a regional mean average in our data.
 
 To relate all these points to a baseline, we add a line indicating the worldwide average:
 
-```{r worldwide-avg, echo=-1, fig.width = 8, fig.heigh = 4.5}
+```{r worldwide-avg, echo=-1, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
 
 world_avg <-
   df_ratios %>%
-  summarize(avg = mean(student_ratio, na.rm = T)) %>%
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) %>%
   pull(avg)
 
 g +
@@ -321,7 +316,7 @@ g +
 
 We can further highlight that the baseline is the worldwide average ratio rather than a ratio of 0 (or 1?) by adding a line from each continental average to the worldwide average. The result is a combination of a jitter and a lollipop plot:
 
-```{r plot-jitter-regions-world, echo=-1, fig.width = 8, fig.heigh = 4.5}
+```{r plot-jitter-regions-world, echo=-1, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
 
 g +
@@ -341,7 +336,7 @@ g +
 
 Since I don't want to include legends, I add some text boxes that explain the different point sizes and the baseline level via `annotate("text")`:
 
-```{r text-labels, echo=-1, fig.width = 8, fig.heigh = 4.5}
+```{r text-labels, echo=-1, fig.width=8, fig.heigh = 4.5}
 set.seed(2019)
 
 (g_text <-
@@ -376,7 +371,9 @@ set.seed(2019)
 
 ... and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling `geom_curve()`. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes...
 
-```{r arrows-annotations, fig.width = 8, fig.heigh = 4.5}
+```{r arrows-annotations, echo=-1, fig.width=8, fig.heigh = 4.5}
+set.seed(2019)
+
 arrows <-
   tibble(
     x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
@@ -395,7 +392,9 @@ g_text +
 
 ... and then adjust, adjust, adjust...
 
-```{r text-arrows, fig.width = 8, fig.heigh = 4.5}
+```{r text-arrows, echo=-1, fig.width=8, fig.heigh = 4.5}
+set.seed(2019)
+
 arrows <-
   tibble(
     x1 = c(6.1, 3.62, 1.8, 1.8, 1.8),
@@ -419,7 +418,9 @@ arrows <-
 One last thing that bothers me: A student-teacher ratio of 0 does not make much sense—I definitely prefer to start at a ratio of 1!  
 And—oh my!—we almost forgot to mention and acknowledge the data source 😨 Let's quickly also add a plot caption:
 
-```{r final-caption, fig.width = 8, fig.heigh = 5.2}
+```{r final-caption, message=FALSE, echo=-1, fig.width=8, fig.heigh = 5.2}
+set.seed(2019)
+
 (g_final <-
   g_arrows +
   scale_y_continuous(
@@ -436,7 +437,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 
 To make it easier to match the countries of the second plot, the country-level tile map, to each continent we have visualized with our jitter plot, we can add a geographical "legend". For this, I encode the region by color instead by the country-level ratios:
 
-```{r map-regions, echo=-1, fig.width = 6.5, fig.height = 5}
+```{r map-regions, echo=-1, fig.width=6.5, fig.height=5}
 library(ggsci)
 
 (map_regions <-
@@ -444,7 +445,7 @@ library(ggsci)
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
     scale_y_reverse() +
-    ggsci::scale_fill_uchicago(guide = F) +
+    ggsci::scale_fill_uchicago(guide = "none") +
     coord_equal() +
     theme(line = element_blank(),
           panel.background = element_rect(fill = "transparent"),
@@ -459,28 +460,29 @@ library(ggsci)
 
 ... and add this map to the existing plot via `annotation_custom(ggplotGrob())`:
 
-```{r plot-with.map, fig.width = 8, fig.height = 5.2}
+```{r plot-with.map, echo=-1, fig.width=8, fig.height=5.2}
+set.seed(2019)
+
 g_final +
   annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
 ```
 
-```{r, include = F}
+```{r, include=FALSE}
 g_end <- g_final +
   annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
-
 ```
 
 ### 🎄 The Final Evolved Visualization {#final}
 
-And here it is, our final plot—evolved from a dreary gray boxplot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉
+And here it is, our final plot—evolved from a dreary gray box plot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉
 
-```{r plot-before-after, echo=FALSE, message=FALSE, fig.width = 16, fig.height = 6}
+```{r plot-before-after, echo=FALSE, message=FALSE, fig.width=16, fig.height=6}
 before <-
   ggplot(df_ratios, aes(x = region, y = student_ratio)) +
     geom_boxplot() +
     labs(title = "Before") +
     theme_gray(base_size = 18) +
-    theme(plot.title = element_text(family = "Poppins", size = 2.80, face = "bold", hjust = 0.5))
+    theme(plot.title = element_text(family = "Poppins", size = 30, face = "bold", hjust = 0.5))
 
 map_regions <-
   df_ratios %>%
@@ -488,7 +490,7 @@ map_regions <-
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
     scale_y_reverse() +
-    scale_fill_uchicago(guide = F) +
+    scale_fill_uchicago(guide = "none") +
     coord_equal() +
     theme_light() +
     theme(
@@ -504,7 +506,7 @@ map_regions <-
 
 # world_avg <-
 #   df_ratios %>%
-#   summarize(avg = mean(student_ratio, na.rm = T)) %>%
+#   summarize(avg = mean(student_ratio, na.rm = TRUE)) %>%
 #   pull(avg)
 #
 # arrows <-
@@ -607,7 +609,7 @@ map_regions <-
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
     scale_y_reverse() +
-    scale_fill_uchicago(guide = F) +
+    scale_fill_uchicago(guide = "none") +
     coord_equal() +
     theme_light() +
     theme(
@@ -625,7 +627,7 @@ map_regions <-
 ## calculate worldwide average
 world_avg <-
   df_ratios %>%
-  summarize(avg = mean(student_ratio, na.rm = T)) %>%
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) %>%
   pull(avg)
 
 ## coordinates for arrows
@@ -706,16 +708,16 @@ df_ratios %>%
 
 ### 📝 Post Scriptum: Mean versus Median {#ps}
 
-One thing I want to highlight is that the final plot does not contain the same information as the original boxplot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):
+One thing I want to highlight is that the final plot does not contain the same information as the original box plot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):
 
 ![In a Box-and-Whisker plot the box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.](/img/evol-ggplot/boxplot.png)
 
-The 2nd quartile is known as the **median**, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean ("average") values but not to median estimates. However, in case of skewed data, the mean value of a dataset is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
+The 2nd quartile is known as the **median**, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean ("average") values but not to median estimates. However, in case of skewed data, the mean value of a data set is also biased towards higher or lower values. Let's compare both a plot based on the mean and the median:
 
-```{r mean-vs-mean, echo=FALSE, message=FALSE, fig.width = 8.5, fig.height = 11}
+```{r mean-vs-median, echo=FALSE, message=FALSE, fig.width=8.5, fig.height=6}
 world_med <-
   df_ratios %>%
-  summarize(med = median(student_ratio, na.rm = T)) %>%
+  summarize(med = median(student_ratio, na.rm = TRUE)) %>%
   pull(med)
 
 arrows <-
@@ -726,12 +728,10 @@ arrows <-
     y2 = c(world_med + 0.1, 18.4, 14.16, 12, 83.42)
   )
 
-set.seed(2019)
-
 median <-
   df_ratios %>%
   group_by(region) %>%
-  mutate(student_ratio_region = median(student_ratio, na.rm = T)) %>%
+  mutate(student_ratio_region = median(student_ratio, na.rm = TRUE)) %>%
   ungroup() %>%
   mutate(region = fct_reorder(region, -student_ratio_region)) %>%
   ggplot(aes(x = region, y = student_ratio, color = region)) +
@@ -786,13 +786,19 @@ median <-
       panel.grid = element_blank()
     )
 
-(g_end + labs(title = "Mean ratios", caption = "") +
+set.seed(2019)
+
+g_end + labs(title = "Mean ratios",
+             caption = "Data: UNESCO Institute for Statistics\nVisualization by Cédric Scherer") +
     theme(plot.title = element_text(size = 25, face = "bold", hjust = 0.5),
-          plot.caption = element_text(size = 11, family = "Poppins", margin = margin(t = 10)))) +
-  (median + ggtitle("Median ratios")) + plot_layout(ncol = 1)
+          plot.caption = element_text(size = 11, family = "Poppins", margin = margin(t = 10)))
+
+
+set.seed(2019)
+median + ggtitle("Median ratios")
 ```
 
-As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic boxplot we used in the beginning but may be harder to interpret for some compared to the one visualzing average ratios.
+As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic box plot we used in the beginning but may be harder to interpret for some compared to the one visualizing average ratios.
 
 ```{r gif, eval=FALSE, include=FALSE}
 library(animation)
