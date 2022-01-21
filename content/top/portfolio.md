@@ -4,6 +4,7 @@
 * [Book Chapters](#books)
 * [Invited Talks](#talks)
 * [Conference Presentations](#conferences)
+* [Workshops and Trainings](#workshops)
 * [R Packages](#rstats)
 * [Media Appearances](#media)
 
@@ -13,11 +14,7 @@
 You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra) and [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions).  
 My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
-##### Accepted
-
-- <span style='font-variant:small-caps;'>L Marescot, M Franz, S Benhaiem, H Hofer, <u style='font-weight:700;color:#414141;'>C Scherer</u>, M East & S Kramer-Schadt</span> (early view)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. [*Journal of Animal Ecology*](https://doi.org/10.1111/1365-2656.13555).
-
-##### Published
+- <span style='font-variant:small-caps;'>L Marescot, M Franz, S Benhaiem, H Hofer, <u style='font-weight:700;color:#414141;'>C Scherer</u>, M East & S Kramer-Schadt</span> (2021)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. [*Journal of Animal Ecology* **90** (11):2523–2535](https://doi.org/10.1111/1365-2656.13555).  
 
 - <span style='font-variant:small-caps;'>T Kürschner, <u style='font-weight:700;color:#414141;'>C Scherer</u>, V Radchuk, N Blaum & S Kramer-Schadt</span> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. [*Ecology and Evolution* **11** (10):5728–5741](https://doi.org/10.1002/ece3.7478).
 
@@ -39,8 +36,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 
 ## Book Chapters {#books}
-
-- <span style='font-variant:small-caps;'>V Radchuk, U Berger, <u style='font-weight:700;color:#414141;'>C Scherer</u>, P Backmann, V Grimm & S Kramer-Schadt</span> (2021)</span> Individual-based models. In: (eds. R. Salguero-Gómez & M. Gamelon (Eds.), *[Demographic Methods across the Tree of Life](https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&lang=en&)*. Oxford University Press, 400 pages, ISBN 0198838603.
+  
+- <p><span style='font-variant:small-caps;'>V Radchuk, U Berger, <u style='font-weight:700;color:#414141;'>C Scherer</u>, P Backmann, V Grimm & S Kramer-Schadt</span> (2021)</span> Individual-based models. In: (eds. R. Salguero-Gómez & M. Gamelon (Eds.), <i><a href='https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&lang=en&)'>Demographic Methods across the Tree of Life</a></i>. Oxford University Press, 400 pages, ISBN 0198838603.</p>
 
 
 ## Invited Talks {#talks}
@@ -97,11 +94,62 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 <i style="font-size:11pt;color:grey;">Poster – Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09|2015 – Goettingen, Germany</i>
 
 
+### Workshops and Trainings {#workshops}
+
+<ul style="font-size:15px;">
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a>, 1/2 day, remote, Jan 2022)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a>, 5 hours, remote, Sep 2021 and Dec 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar 2020, Nov 2020, and Nov 2021)</span></li>
+  
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br><span style="color:#989898;font-size:13px;">2-Day Workshop for <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a>, 2 days, remote, Dec 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.uu.se/en">University of Uppsala</a>, 1/2 day, remote, Nov 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Effective data visualization: convert information into visual forms—and tell a story”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a>, 1/2 day, remote, Nov 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Effective data visualization: theory and hands-on with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.geo-x.net/en/">Geo.X Research Network</a>, 1/2 day, Berlin, Nov 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R (Beginner + Advanced)” as part of the RBSZ DataViz Workshop Series<br><span style="color:#989898;font-size:13px;">2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a>, 2 days, remote, Oct 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://bigs-clinpopscience.de/">Bonn International Graduate School Clinical and Population Science</a>, 1/2 day, remote, Oct 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization with <code>{ggplot2}</code>: 2–day course on data visualization principles and beautiful plotting in R”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.bio-move.org/">BioMove Research Training Group</a>, 2 days, remote, Apr 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualisation techniques for data scientists</code>”<br><span style="color:#989898;font-size:13px;">(Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;''>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Scientific data visualization: principles and good practices”<br><span style="color:#989898;font-size:13px;">(Workshop at Leibniz Institute for Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Introduction to ecological modelling”<br><span style="color:#989898;font-size:13px;">(Department of Theoretical Ecology, 5 days, University of Potsdam, Workshop, 2016)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Introduction to Zoology: Microscopy and Dissection”<br><span style="color:#989898;font-size:13px;">(Department for Zoology, University of Potsdam, Practical Workshop, 2009–2014)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Research and presentation”<br><span style="color:#989898;font-size:13px;">(Department for Didactics of Biology, University of Potsdam, Workshop, 2013–2014)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Systematic zoology II”<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop, 2013–2014)</span></li>
+
+</ul>
+
+
 ## Contributions to R Packages {#rstats}
 
-- <span style='font-variant:small-caps;'>S Garnier, N Ross, B Rudis, M Sciaini & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2018: `viridis`: Default color maps from 'matplotlib'. R package version 0.5.1, available on [GitHub](https://github.com/sjmgarnier/viridis) and [CRAN](https://cran.r-project.org/web/packages/viridis/index.html).
+##### CRAN Packages
 
-- <span style='font-variant:small-caps;'>M Sciaini, C Simpkins, M Fritsch & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2017: `NLMR`: Simulating neutral landscape models with R. R package version 0.4.2, available on [GitHub](https://ropensci.github.io/NLMR/) and [CRAN](https://cran.r-project.org/web/packages/NLMR/index.html).
+- <span style='font-variant:small-caps;'>M Sciaini & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2022: `layer`: Create stacked tilted maps in ggplot2. R package version 0.0.1, available on [GitHub](https://ropensci.github.io/NLMR/) and [CRAN](https://cran.r-project.org/web/packages/layer/index.html).
+
+- <span style='font-variant:small-caps;'>S Garnier, N Ross, B Rudis, PA Camargo, M Sciaini & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2021: `viridis`: Default color maps from 'matplotlib'. R package version 0.6.2, available on [GitHub](https://github.com/sjmgarnier/viridis) and [CRAN](https://cran.r-project.org/web/packages/viridis/index.html).
+
+- <span style='font-variant:small-caps;'>M Sciaini, C Simpkins, M Fritsch & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2017: `NLMR`: Simulating neutral landscape models with R. R package version 1.1, available on [GitHub](https://github.com/marcosci/layer) and [CRAN](https://cran.r-project.org/web/packages/NLMR/index.html).
+
+##### Non-CRAN Packages
+
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2021: `d6berlin`: Spatial data and template maps for Berlins. Available on [GitHub](https://github.com/EcoDynIZW/d6berlin).
+
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2020: `d6`: Simplify workflows of D6 research projects. Available on [GitHub](https://github.com/EcoDynIZW/d6).
 
 
 ## Media Appearances {#media}

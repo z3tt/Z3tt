@@ -91,13 +91,13 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
   <li style="color:#282828;font-style:italic;"><b>Scientific Researcher (PostDoc)</b> (since 2019)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany</li>
-    <li style="font-size:13px;"><i>Topics:</i>Movement ecology, population dynamics, disease ecology, coexistence theory</li>
+    <li style="font-size:13px;"><i>Topics:</i> Movement ecology, population dynamics, disease ecology, coexistence theory</li>
     <li style="font-size:13px;"><i>Tasks:</i> Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision (Tools: R, QGIS, NetLogo)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Ph.D. in Ecology</b> (2015–2019)</li>
   <ul>
-    <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany within the <a href="https://cedricscherer.netlify.com/top/projects/">DFG Research Trainign Group "BioMove"</a>, University of Potsdam, Germany</li>
+    <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany within the <a href="https://cedricscherer.netlify.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
     <li style="font-size:13px;"><i>Topics:</i> Movement ecology, disease ecology, population dynamics, coexistence theory</li>
     <li style="font-size:13px;"><i>Tasks:</i> Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development (Tools: R, Shiny, NetLogo, QGIS)</li>
   </ul>
@@ -176,33 +176,6 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 //-->
 
 
-### Teaching {#teaching}
-
-<ul style="font-size:15px;">
-
-  <li style='line-height:1.3;margin-bottom:12px;''>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a>, 5 hours, remote, Sep 2021)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;''>“Data visualization with <code>{ggplot2}</code>: 2–day course on data visualization principles and beautiful plotting in R”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.bio-move.org/">BioMove Research Training Group</a>, 2-days, remote, Apr 2021)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualisation techniques for data scientists</code>”<br><span style="color:#989898;font-size:13px;">(Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;''>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar and Nov 2020)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Scientific data visualization: principles and good practices”<br><span style="color:#989898;font-size:13px;">(Workshop at Leibniz Institute for Zoo and Wildlife Research, 1 day, Berlin, 2019)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Introduction to ecological modelling”<br><span style="color:#989898;font-size:13px;">(Department of Theoretical Ecology, 5 days, University of Potsdam, Workshop, 2016)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Zoology”<br><span style="color:#989898;font-size:13px;">(Department for Zoology, University of Potsdam, Practical Workshop, 2009–2014)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Research and presentation”<br><span style="color:#989898;font-size:13px;">(Department for Didactics of Biology, University of Potsdam, Workshop, 2013–2014)</span></li>
-
-  <li style='line-height:1.3;margin-bottom:12px;'>“Systematic zoology II”<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop, 2013–2014)</span></li>
-
-</ul>
-
-
 ### Selected Publications {#publications}
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u>, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. [*Oikos* **129** (5):651–667](https://doi.org/10.1111/oik.07002).
@@ -240,6 +213,30 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 <b style="font-size:14px;"><a href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></b>
 
 <a href="https://cedricscherer.netlify.com/top/portfolio/#talks">Full List of Presentations</a>
+
+
+### Selected Workshops & Trainings {#teaching}
+
+<ul style="font-size:15px;">
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a>, 5 hours, remote, Sep 2021 and Dec 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar 2020, Nov 2020, and Nov 2021)</span></li>
+  
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br><span style="color:#989898;font-size:13px;">2-Day Workshop for <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a>, 2 days, remote, Dec 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.uu.se/en">University of Uppsala</a>, 1/2 day, remote, Nov 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Effective data visualization: convert information into visual forms—and tell a story”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a>, 1/2 day, remote, Nov 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R (Beginner + Advanced)”<br><span style="color:#989898;font-size:13px;">2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> and <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a>, 2 days, remote, Oct 2021 and Dec 2021)</span></li>
+
+  <li style='line-height:1.3;margin-bottom:12px;'>“Data visualisation techniques for data scientists</code>”<br><span style="color:#989898;font-size:13px;">(Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021)</span></li>
+  
+  <li style='line-height:1.3;margin-bottom:12px;'>“Scientific data visualization: principles and good practices”<br><span style="color:#989898;font-size:13px;">(Workshop at Leibniz Institute for Zoo and Wildlife Research, 1/2 day, Berlin, 2019)</span></li>
+</ul>
+
+<a href="https://cedricscherer.netlify.com/top/portfolio/#workshops">Full List of Workshops and Trainings</a>
 
 
 ### Awards & Honors {#awards}

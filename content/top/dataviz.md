@@ -112,7 +112,7 @@ A selection of data visualizations I have produced for personal projects and as 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_20/2020_20_Volcanoes_center2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100654239/Volcanic-Eruptions', 'blank');"/>
 
 
-#### UNESCO's "e-Atlas of Teachers"
+##### UNESCO's "e-Atlas of Teachers"
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png', 'blank');"/>
 
