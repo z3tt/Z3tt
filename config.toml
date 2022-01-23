@@ -72,7 +72,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   linkedin       = "https://www.linkedin.com/in/cedricpscherer"
   #stackoverflow = "https://stackoverflow.com/users/yourstackoverflowid"
   #instagram     = "full profile url in instagram"
-  github         = "https://github.com/Z3tt"
+  github         = "https://github.com/z3tt"
   #wechat        = "your wechat qr code image"
   #medium        = "full profile url in medium"
   #pinterest     = "full profile url in pinterest"
@@ -86,14 +86,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   title = "DataVizSociety"
   href =  "https://www.datavisualizationsociety.com/"
   [[params.friend_link]]
-  title = "R4DS Community"
-  href =  "https://www.rfordatasci.com/"
+  title = "From Data to Viz"
+  href =  "https://www.data-to-viz.com/"
   [[params.friend_link]]
   title = "CorrelAid"
   href =  "https://correlaid.org/en/"
   [[params.friend_link]]
-  title = "From Data to Viz"
-  href =  "https://www.data-to-viz.com/"
+  title = "Marco Sciaini"
+  href =  "https://marcosci.github.io/"
   [[params.friend_link]]
   title = "Georgios Karamanis"
   href =  "https://karaman.is/" 
