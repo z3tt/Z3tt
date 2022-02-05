@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>30DayMapChallenge on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/30daymapchallenge/</link>
+    <link>https://www.cedricscherer.com/tags/30daymapchallenge/</link>
     <description>Recent content in 30DayMapChallenge on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/30daymapchallenge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cedricscherer.com/tags/30daymapchallenge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Contributions to the First 30DayMapChallenge</title>
-      <link>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</link>
+      <link>https://www.cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</guid>
+      <guid>https://www.cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</guid>
       <description>&lt;h2 id=&#34;whats-the-30daymapchallenge&#34;&gt;What&amp;rsquo;s the #30DayMapChallenge?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayMapChallenge&lt;/strong&gt; which was &lt;a href=&#34;https://twitter.com/tjukanov/status/1187713840550744066&#34;&gt;initiated by Topi Tjukanov in 2019&lt;/a&gt;. The goal is to create a map each day of November with a broad topic provided by Topi, no matter which tool, and to share it with the &lt;a href=&#34;https://twitter.com/search?q=%2330DayMapChallenge&#34;&gt;hashtag &amp;ldquo;#30DayMapChallenge&amp;rdquo; on Twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/30DayMapChallenge/master/data/30daymapchallenge.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -95,7 +95,7 @@ Me on first of December: &amp;ldquo;Uff, what a month!&amp;rdquo;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge was exciting! I learned so many new things, especially about map projections, new standards of geodata processing in R, and data sources. I extensively used the &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt; package&lt;/a&gt; and rarely something else. I found the &lt;a href=&#34;https://www.naturalearthdata.com/&#34;&gt;Natural Earth page&lt;/a&gt; which provides public domain map data sets. And there is an R package called &lt;a href=&#34;https://cran.r-project.org/web/packages/rnaturalearth/README.html&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt; as well that will from now on my first choice of getting geodata into R—its usage is so simple! I also worked a lot with &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Main_Page&#34;&gt;OpenStreetMap (OSM) data&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/map-challenge/maps_geom.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/map-challenge/maps_geom.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Overall, I feel way more confident to work with spatial data in R now thanks to the challenge. And this extends to all things related to #rspatial:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;searching, loading, and processing geodata&lt;/li&gt;
