@@ -1,5 +1,9 @@
 An overview of selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
 
+
+#### You need some help with visualizing data? [Let's get in touch!](mailto:info@data-vizard.de)
+<br>
+
 * [**Client Projects**](#clients)
   * [Escalating Drought (Scientific American)](#SciAm)
   * [Afrozensus 2020 (EOTO & Citizens for Europe)](#afrozensus)
@@ -10,9 +14,6 @@ An overview of selected data visualizations, maps and other designs I have produ
   * [Other Challenges](#miscchallenges)
 * [**Personal Projects & Spare-Time Visualizations**](#personal)
 <br><br>
-
-#### You need some help with visualizing data? [Let's get in touch!](mailto:info@data-vizard.de)
-<br>
 
 # Client Projects {#clients}
 
