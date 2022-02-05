@@ -125,7 +125,6 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 ##### MakeoverMonday
 
 {{< gallery dir="img/gallery-makeovermonday/" />}} {{< load-photoswipe >}}
-<br>
 
 <hr>
 
