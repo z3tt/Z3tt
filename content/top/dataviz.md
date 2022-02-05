@@ -44,7 +44,7 @@ An overview of selected data visualizations, maps and other designs I have produ
 
 ### #TidyTuesday {#tidytuesday}
 
-[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). All visualizations are the <b><u>100% produced by [R code](https://www.r-project.org/about.html) without any post-processing</u></b> using the package [`{ggplot2}`](https://ggplot2.tidyverse.org/).
+[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). <i><b>All visualizations are produced with 100% code using the [`{ggplot2}` graphics library ](https://ggplot2.tidyverse.org/)</b></i> in R and without any post-processing.
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
 
