@@ -56,7 +56,7 @@ HTMLWidgets.widget({
           mapboxgl.accessToken = x.mapboxToken;
         }
         
-        chart = echarts.init(document.getElementById(el.id), x.theme, {renderer: x.renderer});
+        chart = echarts.init(document.getElementById(el.id), x.theme, x.mainOpts);
         
         opts = evalFun(x.opts);
         
@@ -85,14 +85,14 @@ HTMLWidgets.widget({
           
           if(x.hasOwnProperty('capture')){
             chart.on(x.capture, function(e){
-              Shiny.onInputChange(el.id + '_' + x.capture + ":echarts4rParse", e);
+              Shiny.onInputChange(el.id + '_' + x.capture + ":echarts4rParse", e, {priority: 'event'});
             });
           }
           
           chart.on("click", function(e){
-            Shiny.onInputChange(el.id + '_clicked_data' + ":echarts4rParse", e.data);
-            Shiny.onInputChange(el.id + '_clicked_row' + ":echarts4rParse", e.dataIndex + 1);
-            Shiny.onInputChange(el.id + '_clicked_serie' + ":echarts4rParse", e.seriesName);
+            Shiny.onInputChange(el.id + '_clicked_data' + ":echarts4rParse", e.data, {priority: 'event'});
+            Shiny.onInputChange(el.id + '_clicked_row' + ":echarts4rParse", e.dataIndex + 1, {priority: 'event'});
+            Shiny.onInputChange(el.id + '_clicked_serie' + ":echarts4rParse", e.seriesName, {priority: 'event'});
           });
           
           chart.on("mouseover", function(e){
@@ -238,6 +238,10 @@ function distinct(value, index, self) {
   return self.indexOf(value) === index;
 }
 
+function rm_undefined(el){
+  return el != undefined;
+}
+
 if (HTMLWidgets.shinyMode) {
   
   // DRAW
@@ -368,20 +372,33 @@ if (HTMLWidgets.shinyMode) {
         if(!opts.series)
           opts.series = [];
 
-        data.opts.series.forEach(function(serie){
-          opts.series.push(serie);
-        })
+        if(data.opts.series)
+          data.opts.series.forEach(function(serie){
+            opts.series.push(serie);
+          });
+
+        if(data.opts.color){
+          if(data.opts.appendColor)
+            data.opts.color.forEach(function(color){
+              opts.color.push(color);
+            });
+          else 
+            opts.color = data.opts.color;
+        }
+        
+        if(data.opts.backgroundColor)
+          opts.color = data.opts.backgroundColor;
 
         // legend
-        if(opts.legend.length > 0)
+        if(data.opts.legend && opts.legend.length > 0)
           if(data.opts.legend.data)
             opts.legend[0].data = opts.legend[0].data.concat(data.opts.legend.data);
-
+        
         // x Axis
         if(opts.xAxis){
           if(opts.xAxis[0].data){
             let xaxis = opts.xAxis[0].data.concat(data.opts.xAxis[0].data);
-            xaxis = xaxis.filter(distinct);
+            xaxis = xaxis.filter(distinct).filter(rm_undefined);
             opts.xAxis[0].data = xaxis;
           }
         }
@@ -390,7 +407,7 @@ if (HTMLWidgets.shinyMode) {
         if(opts.yAxis){
           if(opts.yAxis[0].data){
             let yaxis = opts.yAxis[0].data.concat(data.opts.yAxis[0].data);
-            yaxis = yaxis.filter(distinct);
+            yaxis = yaxis.filter(distinct).filter(rm_undefined);
             opts.yAxis[0].data = yaxis;
           }
         }
@@ -401,6 +418,7 @@ if (HTMLWidgets.shinyMode) {
 
   Shiny.addCustomMessageHandler('e_remove_serie_p',
     function(data) {
+      
       var chart = get_e_charts(data.id);
       if (typeof chart != 'undefined') {
         let opts = chart.getOption();
@@ -408,17 +426,33 @@ if (HTMLWidgets.shinyMode) {
         if(data.serie_name){
           let series = opts.series;
           series.forEach(function(s, index){
+            if (typeof s.name == "undefined"){
+             if (s.data[[0]].name == data.serie_name){
+               this.splice(index, 1);
+             }
+            } else {
             if(s.name == data.serie_name){
               this.splice(index, 1);
+            }
             }
           }, series)
           opts.series = series;
         }
 
-        if(data.serie_index)
-          opts.series = opts.series.splice(data.index, 1);
+        if(data.serie_index != null){
+          opts.series = opts.series.splice(data.serie_index, 1);
+        }
 
         chart.setOption(opts, true);
+      }
+  });
+
+  Shiny.addCustomMessageHandler('e_merge_p',
+    function(data) {    
+      // called by e_merge, add marks to serie
+      var chart = get_e_charts(data.id);
+      if (typeof chart != 'undefined') {
+        chart.setOption(data.opts); 
       }
   });
   

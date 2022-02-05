@@ -25,7 +25,7 @@ In consequence, I decided to visualize the top  250 TV shows according to IMDb u
 
 > Tables are a fantastic way to communicate lists of quantitative and qualitative information. Sometimes, tables can fall very short of their potential for greatness. But that was the past: we now have some excellent R packages at our disposal to generate well-designed and functional presentation tables. And because of this renaissance of table-making in R, we’re announcing a contest: The 2020 RStudio Table Contest!
 
-<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top250_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.app/img/table-contest/IMDb_Top250.png', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top250_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/img/table-contest/IMDb_Top250.png', 'blank');"/>
 <p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">Click on the preview to see the full table of all 250 TV shows.</figcaption></p>
 
 ##### What's shown?

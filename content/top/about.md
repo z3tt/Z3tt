@@ -15,8 +15,8 @@
 
 I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [#30DayMapChallenge](https://github.com/Z3tt/30DayMapChallenge), and [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge). 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://cedricscherer.netlify.com/top/dataviz/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://cedricscherer.netlify.com/top/about/#presentations)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://cedricscherer.com/top/dataviz/)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://cedricscherer.com/top/about/#presentations)<br>
 
 <img src="/img/dataviz_collage2.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
@@ -24,8 +24,8 @@ I have been working as an independent data visualization specialist since the be
 
 I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://cedricscherer.netlify.com/top/pubs/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://cedricscherer.netlify.com/top/projects/)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://cedricscherer.com/top/pubs/)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://cedricscherer.com/top/projects/)<br>
 
 <img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
@@ -52,7 +52,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 <a href="mailto:scherer@izw-berlin.de">scherer@izw-berlin.de</a>
 
 <!--
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Get a pdf copy of my resume!](https://cedricscherer.netlify.com/files/Resume_CedricScherer_2020-01-01.pdf)
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Get a pdf copy of my resume!](https://cedricscherer.com/files/Resume_CedricScherer_2020-01-01.pdf)
 //-->
 
 <hr/>
@@ -97,7 +97,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
   <li style="color:#282828;font-style:italic;"><b>Ph.D. in Ecology</b> (2015–2019)</li>
   <ul>
-    <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany within the <a href="https://cedricscherer.netlify.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
+    <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany within the <a href="https://cedricscherer.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
     <li style="font-size:13px;"><i>Topics:</i> Movement ecology, disease ecology, population dynamics, coexistence theory</li>
     <li style="font-size:13px;"><i>Tasks:</i> Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development (Tools: R, Shiny, NetLogo, QGIS)</li>
   </ul>
@@ -186,7 +186,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
 - <span style='font-variant:small-caps;'>M Sciaini, M Fritsch, <u style='font-weight:700;color:#414141;'>C Scherer</u> & CE Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R. [*Methods in Ecology and Evolution* **9** (11):2240–2248](https://doi.org/10.1111/2041-210X.13076).
 
-<a href="https://cedricscherer.netlify.com/top/portfolio/#publications">Full List of Publications</a>
+<a href="https://cedricscherer.com/top/portfolio/#publications">Full List of Publications</a>
 
 
 
@@ -212,7 +212,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 <i style="font-size:14px;color:#989898;"><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)</i>  
 <b style="font-size:14px;"><a href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></b>
 
-<a href="https://cedricscherer.netlify.com/top/portfolio/#talks">Full List of Presentations</a>
+<a href="https://cedricscherer.com/top/portfolio/#talks">Full List of Presentations</a>
 
 
 ### Selected Workshops & Trainings {#teaching}
@@ -236,7 +236,7 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
   <li style='line-height:1.3;margin-bottom:12px;'>“Scientific data visualization: principles and good practices”<br><span style="color:#989898;font-size:13px;">(Workshop at Leibniz Institute for Zoo and Wildlife Research, 1/2 day, Berlin, 2019)</span></li>
 </ul>
 
-<a href="https://cedricscherer.netlify.com/top/portfolio/#workshops">Full List of Workshops and Trainings</a>
+<a href="https://cedricscherer.com/top/portfolio/#workshops">Full List of Workshops and Trainings</a>
 
 
 ### Awards & Honors {#awards}

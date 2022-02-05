@@ -1,229 +1,143 @@
-A selection of data visualizations I have produced for personal projects and as challenge contributions using the [`{ggplot2}`](https://ggplot2.tidyverse.org/) package in the programming language [R](https://www.r-project.org/about.html). All visualizations are the result of the code without any post-processing.
+An overview of selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved porgraming steps.
 
+* [**Client Projects**](#clients)
+  * [Escalating Drought (Scientific American)](#SciAm)
+  * [Afrozensus 2020 (EOTO & Citizens for Europe)](#afrozensus)
+  * [Visualizations for Various Projects](#variousclients)
+* [**Challenge Contributions**](#challenges)
+  * [#TidyTuesday](#tidytuesday)
+  * [#30DayMapChallenge](#mapchallenge)
+  * [Other Challenges](#miscchallenges)
+* [**Personal Projects & Spare-Time Visualizations**](#personal)
+<br><br>
 
-* [#TidyTuesday Contributions](#tidytuesday)
-* [#30DayMapChallenge Contributions](#mapchallenge)
-* [#MakeoverMonday Contributions](#makeovermonday)
-* [#SWDchallenge Contributions](#swdchallenge)
-* [RStudio Table Contest](#tablecontest)
+#### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>
 
-##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
+# Client Projects {#clients}
+
+### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) (Scientific American, Nov 2021 Issue) {#SciAm}
+
+<img src="/img/SciAm/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
+<p class='caption'>Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz</p>
+
+### [Afrozensus 2020](https://afrozensus.de/reports/2020/) (EOTO & Citizens for Europe) {#afrozensus}
+
+<img src="/img/afrozensus2020/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+
+<img src="/img/afrozensus2020/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+
+<img src="/img/afrozensus2020/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+
+{{< gallery dir="/img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
 <br>
 
+### Visualizations for Various Projects {#variousclients}
 
-## Contributions to #TidyTuesday {#tidytuesday}
-
-[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/).
-
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/TidyTuesday)
-
-##### Coffee Ratings
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
-
-
-##### Travelling to Outer Space
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
-
-##### Appearance of Popular X-Men Characters
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
-
-##### Foot Carbon Footprint Index 2018
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_08/2020_08_CarbonFoodprint_alt.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100712749/Global-Food-Carbon-Footprint-2018', 'blank');"/>
-
-##### Palmer Penguins
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_31/2020_31_PalmerPenguins.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/101517403/Bill-Dimensions-of-Penguins', 'blank');"/>
-
-##### Northern Caribou Locations
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_26/2020_26_Caribous_full_title.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100714579/Spatial-Patterns-of-South-Peace-Northern-Caribou', 'blank');"/>
-
-##### American Slavery
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_25/2020_25_AmericanSlavery.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100644779/An-Economy-Built-on-Slavery', 'blank');"/>
-
-##### Planted Trees in San Francisco
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_05/2020_05_TreesSF.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100834555/The-Most-Common-Street-Trees-of-San-Francisco', 'blank');"/>
-
-##### Australian Bushfires 2019&ndash;2020
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_02/2020_02_AustralianFires.png', 'blank');"/>
-
-##### Renewable Energy Production in Europe
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_32/2020_32_EuropeanEnergy.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/101922257/Renewable-Energy-Production-in-Europe', 'blank');"/>
-
-##### US Spendings on Children Public Health
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_38/2020_38_KidSpendings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/104624779/US-Children-Public-Health-Efforts-19972016', 'blank');"/>
-
-##### Canadian Wind Turbines
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_44/2020_44_CanadianWindTurbines_h.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_44/2020_44_CanadianWindTurbines_h.png', 'blank');"/>
-
-##### Most Common Passwords
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_03/2020_03_Passwords.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_03/2020_03_Passwords.png', 'blank');"/>
-
-##### Greatest Hip Hop Artists of All Time
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_16/2020_16_BestRapArtists.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100649609/Greatest-Hip-Hop-Artists', 'blank');"/>
-
-##### Mobile Subscriptions
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_46/2020_46_HistoricalPhones.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_46/2020_46_HistoricalPhones.png', 'blank');"/>
-
-##### FIFA Women's World Cups
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_28/2019_28_FIFA_WWCs_stellar_teaser.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_28/2019_28_FIFA_WWCs_stellar.png', 'blank');"/>
-
-##### NCAA Women's Basketball Championship
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_41/2020_41_NCAAWomensBasketball.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/105788485/The-Rise-Fall-of-Womens-Basketball-Dynasties', 'blank');"/>
-
-##### Avatar, The Last Airbender
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_33/2020_33_AvatarLastAirbender.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/102443565/The-Elements-of-Avatar-The-Last-Airbender', 'blank');"/>
-
-##### Friends Chatting about Friends
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_37/2020_37_Friends.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_37/2020_37_Friends.png', 'blank');"/>
-
-##### Tour de France
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_15/2020_15_TourDeFrance.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100656153/Tour-de-France-19032019', 'blank');"/>
-
-##### FIVB World Tour
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_21/2020_21_BeachVolleyball.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_21/2020_21_BeachVolleyball.png', 'blank');"/>
-
-##### Plants in Danger
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_34/2020_34_ExtinctPlants_2_poster_legend_Oceania_1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_34/2020_34_ExtinctPlants_2_poster_legend_Oceania_1.png', 'blank');"/>
-
-##### Volcano Eruptions
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_20/2020_20_Volcanoes_center2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100654239/Volcanic-Eruptions', 'blank');"/>
-
-
-##### UNESCO's "e-Atlas of Teachers"
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_19/2019_19_StudentTeacher.png', 'blank');"/>
-
-##### "The Office" IMDb Ratings
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_12/2020_12_TheOffice.png', 'blank');"/>
-
-##### NYC Squirrels
-
-  <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_44/2019_44_Squirrels.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_44/2019_44_Squirrels.png', 'blank');"/>
-
-##### Meteorites
-
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_24/2019_24_Meteorites.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2019_24/2019_24_Meteorites.png', 'blank');"/>
-<br>
-
-
-
-## Contributions to #30DayMapChallenge {#mapchallenge}
-
-[#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019.
-
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/30DayMapChallenge)
-
-
-##### Polygons
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day03_Polygons/Polygons_GlobalMortality.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
-
-##### Names
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
-
-##### Urban
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day19_Urban/Urban_GlobalUrbanAreas_bg.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day19_Urban', 'blank');"/>
-
-##### Boundaries
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
-
-##### Built Environment
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BerlinBuildings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.netlify.com/img/30daymapchallenge/BuiltEnv_BerlinBuildings_HQ.png', 'blank');"/>
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BuildingsMoabit.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day22_BuiltEnvironment/BuiltEnv_BuildingsMoabit.png', 'blank');"/>
-
-##### Tracks
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day13_Tracks/Tracks_StorksGili.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day13_Tracks/Tracks_StorksGili.png', 'blank');"/>
-
-##### Movement
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day12_Movement/Movement_BerlinByBike.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day12_Movement', 'blank');"/>
-
-##### Zones
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day17_Zones/Zones_TimezonesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day17_Zones', 'blank');"/>
-
-##### Places
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day16_Places/Places_ExtremesEarth.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day16_Places/Places_ExtremesEarth.png', 'blank');"/>
-
-##### Experimental
-
-<img src="https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day29_Experimental/Experimental_PopIntervals.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day29_Experimental/Experimental_PopIntervals.png', 'blank');"/>
-<br>
-
-
-## Contributions to #MakeoverMonday {#makeovermonday}
-
-[#MakeoverMonday](https://www.makeovermonday.co.uk/) is a weekly social data project aimed to help people learn how to create better, more effective visualizations.
-
-
-##### Ironman History
-
-<img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_42/2019_42_ironman.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/MakeoverMonday/tree/master/plots/2019_42', 'blank');"/>
-
-##### Suicides in UK
-
-<img src="https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_43/2019_43_suicide_deaths.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/MakeOverMonday/master/plots/2019_43/2019_43_suicide_deaths.png', 'blank');"/>
-<br>
-
-
-
-## Contributions to the #SWDchallenge {#swdchallenge}
-
-[#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge) is a monthly challenge where you can practice and apply data visualization and storytelling skills initiated by [Cole Nussbaumer Knaflic](https://twitter.com/storywithdata?lang=en)
-
-##### Topic: Small Multiples
-
-<img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_01/SWD_2020_01_SmallMultiples_grey.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://community.storytellingwithdata.com/members/me/gallery/2ab74315-c687-42a3-9d94-192a7799058c', 'blank');"/>
-
-##### Topic: Get Animated!
-
-<img src="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2020_03/corona_begin.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/2020/03/31/corona-covid-19-death-tolls-worst-day-so-far/', 'blank');"/>
-
-##### Topic: Visualizing Uncertainty
-
-<img src="https://cedricscherer.netlify.com/img/swdchallenge/SWD_2019_09_Uncertainty.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://community.storytellingwithdata.com/members/me/gallery/2c51616f-eff5-46d9-9df7-981881e6cc09', 'blank');"/>
-<br>
-
-
-## RStudio Table Contest {#tablecontest}
-
-##### Top 250 TV Shows on IMDb (Contribution 2020)
-
-<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
+{{< gallery dir="/img/gallery-clients/" />}} {{< load-photoswipe >}}
 <br>
 
 <hr>
 
-##### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
+# Challenge Contributions {#challenges}
+
+### #TidyTuesday {#tidytuesday}
+
+[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). All visualizations are the <b><u>100% produced by [R code](https://www.r-project.org/about.html) without any post-processing</u></b> using the package [`{ggplot2}`](https://ggplot2.tidyverse.org/).
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
+
+<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
+
+{{< gallery dir="/img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
+
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes](https://github.com/Z3tt/TidyTuesday)
+<br><br>
+
+
+### #30DayChartChallenge {#chartchallenge}
+
+The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily community challenge happening every April and is hosted by Dominic Royé and myself since 2021. The challenge is inspired by the #30DayMapChallenge.
+
+<img src="/img/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
+
+<img src="/img/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
+
+<img src="/img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/04_magical/04_magical.png', 'blank');"/>
+
+{{< gallery dir="/img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
+
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes](https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/)
+<br><br>
+
+
+
+### #30DayMapChallenge {#mapchallenge}
+
+[#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019. i have participated in [2019](#mapchallenge2019) and [2021](#mapchallenge2021) .
+
+##### 2021 Edition {#mapchallenge2021}
+
+<img src="/img/map-challenge/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+
+<img src="/img/map-challenge/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+
+<img src="/img/map-challenge/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
+
+{{< gallery dir="/img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
+
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes to the 2021 edition](https://github.com/Z3tt/30DayMapChallenge)
+<br><br>
+
+##### 2019 Edition {#mapchallenge2019}
+
+<img src="/img/map-challenge/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+
+<img src="/img/map-challenge/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+
+<img src="/img/map-challenge/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
+
+{{< gallery dir="/img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
+
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes to the 2019 edition](https://github.com/Z3tt/30DayMapChallenge)
+<br><br>
+
+
+
+## Contributions to Other Challenges {#miscchallenges}
+
+Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/2021/02/25/mapping-movements-the-art-and-the-science-we-have-the-winners/), the [RStudio Table Contest](), [#MakeoverMonday](https://www.makeovermonday.co.uk/), and the [#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge).
+
+##### BES MoveMap Competition 2021 (Pretty Category Winner)
+
+<img src="https://raw.githubusercontent.com/z3tt/Cheetah-Map/main/plots/CheetahMap_rcarto_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/z3tt/Cheetah-Map', 'blank');"/>
+
+##### RStudio Table Contest 2020 (Honourable Mention)
+
+<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
+
+##### Storytelling with Data
+
+{{< gallery dir="/img/gallery-swdchallenge/" />}} {{< load-photoswipe >}}
+
+##### MakeoverMonday
+
+{{< gallery dir="/img/gallery-makeovermonday/" />}} {{< load-photoswipe >}}
+
+<hr>
+
+# Personal Projects & Spare-Time Visualizations {#personal}
+
+<img src="/img/personal-viz/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
+
+<img src="/img/personal-viz/2021_WarmingStripesGeofacet_Europe_dark.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1364663679812272131', 'blank');"/>
+
+{{< gallery dir="/img/gallery-personal/" />}} {{< load-photoswipe >}}
+<br>
+
+<hr>
+
+#### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>

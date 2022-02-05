@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://cedricscherer.com/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/banner.png" >
+    
+
+    
+
+    
+      <meta name="title" content="Dr. Cédric Scherer" />
+      <meta property="og:title" content="Dr. Cédric Scherer" />
+      <meta property="twitter:title" content="Dr. Cédric Scherer" />
+      <meta property="twitter:text:title" content="Dr. Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="Blog by Cédric Scherer">
+      <meta property="og:description" content="Blog by Cédric Scherer" />
+      <meta property="twitter:description" content="Blog by Cédric Scherer" />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Cédric Scherer</title>
+
+    <link rel="canonical" href="/top/dataviz/tidytuesday/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/portfolio/">Portfolio</a></li>
+                    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Cédric Scherer </h1>
+                    
+		    <span class="subheading">Data Visualization &amp; Computational Ecology</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+         	<p>A selection of data visualizations I have produced as contributions for the weekly [#TidyTuesday challenge](<a href="https://github.com/rfordatascience/tidytuesday">#TidyTuesday</a> using the <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a> package in the programming language <a href="https://www.r-project.org/about.html">R</a>. All visualizations are the result of the code without any post-processing.</p>
+<h5 id="you-need-a-visualization-lets-get-in-touchmailtoinfodata-vizardde">You need a visualization? <a href="mailto:info@data-vizard.de">Let&rsquo;s get in touch!</a></h5>
+<p><a href="https://github.com/rfordatascience/tidytuesday">#TidyTuesday</a> is a weekly data project aimed at the R ecosystem and the <code>{tidyverse}</code> package bundle to wrangle, explore and visualize the data set that is provided by the <a href="https://www.rfordatasci.com/">R4DS Online Learning Community</a>.</p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2019_28_FIFA_WWCs_stellar-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2019_28_FIFA_WWCs_stellar-thumb.jpg" alt="2019 28 fifa wwcs stellar" />
+				    </div>
+			      <figcaption>
+		          <p>2019 28 fifa wwcs stellar</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2019_28_FIFA_WWCs_stellar.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_02_AustralianFires-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_02_AustralianFires-thumb.jpg" alt="2020 02 australian fires" />
+				    </div>
+			      <figcaption>
+		          <p>2020 02 australian fires</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_02_AustralianFires.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_04_SpotifySongs-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_04_SpotifySongs-thumb.jpg" alt="2020 04 spotify songs" />
+				    </div>
+			      <figcaption>
+		          <p>2020 04 spotify songs</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_04_SpotifySongs.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_05_TreesSF-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_05_TreesSF-thumb.jpg" alt="2020 05 trees sf" />
+				    </div>
+			      <figcaption>
+		          <p>2020 05 trees sf</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_05_TreesSF.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_08_CarbonFoodprint.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_08_CarbonFoodprint.jpg" alt="2020 08 carbon foodprint" />
+				    </div>
+			      <figcaption>
+		          <p>2020 08 carbon foodprint</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_08_CarbonFoodprint.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_15_TourDeFrance-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_15_TourDeFrance-thumb.jpg" alt="2020 15 tour de france" />
+				    </div>
+			      <figcaption>
+		          <p>2020 15 tour de france</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_15_TourDeFrance.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_16_BestRapArtists-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_16_BestRapArtists-thumb.jpg" alt="2020 16 best rap artists" />
+				    </div>
+			      <figcaption>
+		          <p>2020 16 best rap artists</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_16_BestRapArtists.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_25_AmericanSlavery-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_25_AmericanSlavery-thumb.jpg" alt="2020 25 american slavery" />
+				    </div>
+			      <figcaption>
+		          <p>2020 25 american slavery</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_25_AmericanSlavery.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_26_Caribous.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_26_Caribous.jpg" alt="2020 26 caribous" />
+				    </div>
+			      <figcaption>
+		          <p>2020 26 caribous</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_26_Caribous.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_31_PalmerPenguins.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_31_PalmerPenguins.jpg" alt="2020 31 palmer penguins" />
+				    </div>
+			      <figcaption>
+		          <p>2020 31 palmer penguins</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_31_PalmerPenguins.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_32_EuropeanEnergy-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_32_EuropeanEnergy-thumb.jpg" alt="2020 32 european energy" />
+				    </div>
+			      <figcaption>
+		          <p>2020 32 european energy</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_32_EuropeanEnergy.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_33_AvatarLastAirbender-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_33_AvatarLastAirbender-thumb.jpg" alt="2020 33 avatar last airbender" />
+				    </div>
+			      <figcaption>
+		          <p>2020 33 avatar last airbender</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_33_AvatarLastAirbender.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_34_ExtinctPlants_Asia-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_34_ExtinctPlants_Asia-thumb.jpg" alt="2020 34 extinct plants asia" />
+				    </div>
+			      <figcaption>
+		          <p>2020 34 extinct plants asia</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_34_ExtinctPlants_Asia.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_37_Friends.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_37_Friends.jpg" alt="2020 37 friends" />
+				    </div>
+			      <figcaption>
+		          <p>2020 37 friends</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_37_Friends.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_38_KidSpendings-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_38_KidSpendings-thumb.jpg" alt="2020 38 kid spendings" />
+				    </div>
+			      <figcaption>
+		          <p>2020 38 kid spendings</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_38_KidSpendings.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_41_NCAAWomensBasketball-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_41_NCAAWomensBasketball-thumb.jpg" alt="2020 41 ncaawomens basketball" />
+				    </div>
+			      <figcaption>
+		          <p>2020 41 ncaawomens basketball</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_41_NCAAWomensBasketball.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_44_CanadianWindTurbines_v.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_44_CanadianWindTurbines_v.jpg" alt="2020 44 canadian wind turbines v" />
+				    </div>
+			      <figcaption>
+		          <p>2020 44 canadian wind turbines v</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_44_CanadianWindTurbines_v.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2020_51_NinjaWarrior-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2020_51_NinjaWarrior-thumb.jpg" alt="2020 51 ninja warrior" />
+				    </div>
+			      <figcaption>
+		          <p>2020 51 ninja warrior</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2020_51_NinjaWarrior.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2021_09_Employment-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2021_09_Employment-thumb.jpg" alt="2021 09 employment" />
+				    </div>
+			      <figcaption>
+		          <p>2021 09 employment</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2021_09_Employment.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2021_19_WaterPoints-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2021_19_WaterPoints-thumb.jpg" alt="2021 19 water points" />
+				    </div>
+			      <figcaption>
+		          <p>2021 19 water points</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2021_19_WaterPoints.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com//img/gallery-tidytuesday//2021_22_MarioKart-thumb.jpg');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com//img/gallery-tidytuesday//2021_22_MarioKart-thumb.jpg" alt="2021 22 mario kart" />
+				    </div>
+			      <figcaption>
+		          <p>2021 22 mario kart</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com//img/gallery-tidytuesday//2021_22_MarioKart.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</p>
+<p>  →  <a href="https://github.com/Z3tt/TidyTuesday">all my contributions and codes</a></p>
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+              
+              
+              <section>
+                <hr>
+                <br>
+                  <h5>FEATURED TAGS</h5>
+                  <div class="tags">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/animations" title="animations">
+                          animations
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/berlin" title="berlin">
+                          berlin
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/covid19" title="covid19">
+                          covid19
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/dataviz" title="dataviz">
+                          dataviz
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/design" title="design">
+                          design
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/ggplot2" title="ggplot2">
+                          ggplot2
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/maps" title="maps">
+                          maps
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/r" title="r">
+                          r
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/tidytuesday" title="tidytuesday">
+                          tidytuesday
+                      </a>
+                      
+                      
+                      
+                      <a href="/tags/tidyverse" title="tidyverse">
+                          tidyverse
+                      </a>
+                      
+                      
+                      
+                      <a href="/tags/tutorial" title="tutorial">
+                          tutorial
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/weather" title="weather">
+                          weather
+                      </a>
+                      
+                      
+                      
+                      
+                  </div>
+              </section>
+              
+
+              
+              <section>
+                <br>
+                <h5>QUICK LINKS</h5>
+                  <ul class="list-inline">
+                      
+                      <li><a target="_self" href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
+                      
+                      <li><a target="_self" href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/">Evolution of a ggpplot</a></li>
+                      
+                  </ul>
+              </section>
+
+              
+              
+              <section>
+                <br>
+                <h5>FRIENDS</h5>
+                  <ul class="list-inline">
+                      
+                      <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                      
+                      <li><a target="_blank" href="https://www.data-to-viz.com/">From Data to Viz</a></li>
+                      
+                      <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                      
+                      <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
+                      
+                      <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                      
+                      <li><a target="_blank" href="https://www.instagram.com/datacitron/">Julie Brunet</a></li>
+                      
+                      <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
+                      
+                      <li><a target="_blank" href="https://www.inbal-rief.com/">Inbal Rief</a></li>
+                      
+                      <li><a target="_blank" href="https://www.williamrchase.com/">Will Chase</a></li>
+                      
+                      <li><a target="_blank" href="https://www.delightfuldata.art/">Anne-Marie Dufour</a></li>
+                      
+                      <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
+                      
+                  </ul>
+              </section>
+              
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:info@data-vizard.de">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                      <li>
+                         <a href="https://www.cedricscherer.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Cédric Scherer" >
+                             <span class="fa-stack fa-lg">
+                                 <i class="fa fa-circle fa-stack-2x"></i>
+                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                             </span>
+                         </a>
+                      </li>
+                      
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji=""  data-font="Lato" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2021. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

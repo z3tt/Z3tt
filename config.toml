@@ -128,12 +128,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   #href =  "https://www.data-vizard.com/"
 
   [[params.addtional_menus]]
-  title =  "Portfolio"
-  href =  "/top/portfolio/"
+  title =  "Visualizations"
+  href =  "/top/dataviz/"
 
   [[params.addtional_menus]]
-  title =  "Gallery"
-  href =  "/top/dataviz/"
+  title =  "Portfolio"
+  href =  "/top/portfolio/"
   
   [[params.addtional_menus]]
   title =  "About Me"

@@ -51,4 +51,4 @@ And finally my contribution to the challenge last week with a data set from a [s
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-You can find all these and upcoming  #TidyTuesday contributions in the [Visualization section](https://cedricscherer.netlify.com/top/dataviz/) and the corresponding codes on [my GitHub page](https://github.com/Z3tt/TidyTuesday)! In future blog posts, I am going to share some thoughts on why I picked a given chart type, which color palettes I use and some tips and tricks of styling your ggplots - stay tuned 🤓
+You can find all these and upcoming  #TidyTuesday contributions in the [Visualization section](https://cedricscherer.com/top/dataviz/) and the corresponding codes on [my GitHub page](https://github.com/Z3tt/TidyTuesday)! In future blog posts, I am going to share some thoughts on why I picked a given chart type, which color palettes I use and some tips and tricks of styling your ggplots - stay tuned 🤓
