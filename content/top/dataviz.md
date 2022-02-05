@@ -29,12 +29,12 @@ An overview of selected data visualizations, maps and other designs I have produ
 
 <img src="/img/afrozensus2020/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
-{{< gallery dir="/img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
 <br>
 
 ### Visualizations for Various Projects {#variousclients}
 
-{{< gallery dir="/img/gallery-clients/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-clients/" />}} {{< load-photoswipe >}}
 <br>
 
 <hr>
@@ -51,7 +51,7 @@ An overview of selected data visualizations, maps and other designs I have produ
 
 <img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
 
-{{< gallery dir="/img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes](https://github.com/Z3tt/TidyTuesday)
 <br><br>
@@ -67,7 +67,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 <img src="/img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/04_magical/04_magical.png', 'blank');"/>
 
-{{< gallery dir="/img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
 
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes](https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/)
 <br><br>
@@ -86,7 +86,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 <img src="/img/map-challenge/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
 
-{{< gallery dir="/img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes to the 2021 edition](https://github.com/Z3tt/30DayMapChallenge)
 <br><br>
@@ -99,7 +99,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 <img src="/img/map-challenge/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
 
-{{< gallery dir="/img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
 
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes to the 2019 edition](https://github.com/Z3tt/30DayMapChallenge)
 <br><br>
@@ -120,11 +120,11 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 ##### Storytelling with Data
 
-{{< gallery dir="/img/gallery-swdchallenge/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-swdchallenge/" />}} {{< load-photoswipe >}}
 
 ##### MakeoverMonday
 
-{{< gallery dir="/img/gallery-makeovermonday/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-makeovermonday/" />}} {{< load-photoswipe >}}
 
 <hr>
 
@@ -134,7 +134,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 <img src="/img/personal-viz/2021_WarmingStripesGeofacet_Europe_dark.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1364663679812272131', 'blank');"/>
 
-{{< gallery dir="/img/gallery-personal/" />}} {{< load-photoswipe >}}
+{{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br>
 
 <hr>
