@@ -1,4 +1,4 @@
-An overview of selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved porgraming steps.
+An overview of selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
 
 * [**Client Projects**](#clients)
   * [Escalating Drought (Scientific American)](#SciAm)
@@ -11,7 +11,7 @@ An overview of selected data visualizations, maps and other designs I have produ
 * [**Personal Projects & Spare-Time Visualizations**](#personal)
 <br><br>
 
-#### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
+#### You need some help with visualizing data? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>
 
 # Client Projects {#clients}
@@ -138,7 +138,5 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br><br>
 
-<hr>
-
-#### You need a visualization? [Let's get in touch!](mailto:info@data-vizard.de)
+#### You need some help with visualizing data? [Let's get in touch!](mailto:info@data-vizard.de)
 <br>
