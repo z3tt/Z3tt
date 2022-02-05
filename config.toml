@@ -1,4 +1,4 @@
-baseurl = "https://www.cedricscherer.com/"
+baseurl = "https://cedricscherer.com/"
 title = "Cédric Scherer"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
