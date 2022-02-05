@@ -1,7 +1,7 @@
 An overview of selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
 
 
-#### Need some help with visualizing data? [Let's get in touch!](mailto:info@data-vizard.de)
+### Need some support with visualizing data?&nbsp;&nbsp;[Let's get in touch!](mailto:info@data-vizard.de)
 <br>
 
 * [**Client Projects**](#clients)
@@ -54,7 +54,7 @@ An overview of selected data visualizations, maps and other designs I have produ
 
 {{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes](https://github.com/Z3tt/TidyTuesday)
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/TidyTuesday)
 <br><br>
 
 
@@ -70,7 +70,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes](https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/)
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/)
 <br><br>
 
 
@@ -89,7 +89,6 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes to the 2021 edition](https://github.com/Z3tt/30DayMapChallenge)
 <br><br>
 
 ##### 2019 Edition {#mapchallenge2019}
@@ -102,7 +101,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions and codes to the 2019 edition](https://github.com/Z3tt/30DayMapChallenge)
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions to the 2019 edition](https://github.com/Z3tt/30DayMapChallenge)
 <br><br>
 
 
@@ -139,5 +138,5 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br><br>
 
-#### Need some help with visualizing data?<br>[Let's get in touch!](mailto:info@data-vizard.de)
+### Need some support with visualizing data?&nbsp;&nbsp;[Let's get in touch!](mailto:info@data-vizard.de)
 <br>
