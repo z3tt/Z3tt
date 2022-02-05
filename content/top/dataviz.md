@@ -125,6 +125,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 ##### MakeoverMonday
 
 {{< gallery dir="img/gallery-makeovermonday/" />}} {{< load-photoswipe >}}
+<br>
 
 <hr>
 
@@ -135,7 +136,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 <img src="img/personal-viz/2021_WarmingStripesGeofacet_Europe_dark.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1364663679812272131', 'blank');"/>
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
-<br>
+<br><br>
 
 <hr>
 
