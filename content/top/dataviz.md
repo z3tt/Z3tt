@@ -10,6 +10,7 @@ An overview of selected data visualizations, maps and other designs I have produ
   * [Visualizations for Various Projects](#variousclients)
 * [**Challenge Contributions**](#challenges)
   * [#TidyTuesday](#tidytuesday)
+  * [#30DayChartChallenge](#chartchallenge)
   * [#30DayMapChallenge](#mapchallenge)
   * [Other Challenges](#miscchallenges)
 * [**Personal Projects & Spare-Time Visualizations**](#personal)
