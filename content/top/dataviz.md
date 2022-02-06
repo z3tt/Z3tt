@@ -109,7 +109,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ## Contributions to Other Challenges {#miscchallenges}
 
-Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/2021/02/25/mapping-movements-the-art-and-the-science-we-have-the-winners/), the [RStudio Table Contest](), [#MakeoverMonday](https://www.makeovermonday.co.uk/), and the [#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge).
+Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/2021/02/25/mapping-movements-the-art-and-the-science-we-have-the-winners/), the [RStudio Table Contest](https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/), [#MakeoverMonday](https://www.makeovermonday.co.uk/), and the [#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge).
 
 ##### BES MoveMap Competition 2021 (Pretty Category Winner)
 
