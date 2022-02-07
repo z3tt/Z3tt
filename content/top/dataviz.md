@@ -1,4 +1,4 @@
-An overview of selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
+An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
 
 
 ##### Need some support with visualizing data?&nbsp;&nbsp;[Let's get in touch!](mailto:info@data-vizard.de)
