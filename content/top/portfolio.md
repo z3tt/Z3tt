@@ -72,10 +72,10 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Conference Presentations {#conferences}
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> & Wendy Shijia (2022)</span> DataViz Challenges: A Fun Way to Learn and Build a Portfolio and Network.  
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> & Wendy Shijia (2022)</span> DataViz challenges: A fun way to learn and build a portfolio and network.  
 <i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</i> 
 
-- <span style='font-variant:small-caps;'>Alenka Gucek & <u style='font-weight:700;color:#414141;'>C Scherer</u> (2022)</span> Data Visualization in Non-DataViz Research.  
+- <span style='font-variant:small-caps;'>Alenka Gucek & <u style='font-weight:700;color:#414141;'>C Scherer</u> (2022)</span> Data visualization in non-dataviz research.  
 <i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</i> 
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.
@@ -108,9 +108,11 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul style="font-size:15px;">
 
+  <li style='line-height:1.3;margin-bottom:12px;'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.fbn-dummerstorf.de/en/">Research Institute for Farm Animal Biology (FBN)</a>, 1/2 day, remote, Jan 2022)</span></li>
+
   <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a>, 1/2 day, remote, Jan 2022)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a>, 5 hours, remote, Sep 2021 and Dec 2021)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event</a>, 5 hours, remote, Sep 2021 and Dec 2021)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar 2020, Nov 2020, and Nov 2021)</span></li>
   
