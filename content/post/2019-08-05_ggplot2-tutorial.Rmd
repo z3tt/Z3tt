@@ -30,7 +30,7 @@ After giving the talk which contained some decent plots thanks to the blog post,
 
 Since the blog entry by Zev Ross was not updated for some years and step by step this became a unique version of a tutorial, I decided to host the updated version on my GitHub. Now it finds its proper place on this homepage! (Plus I added a ton of other updates—just to name a few: The fantastic `{patchwork}`, `{ggtext}` and `{ggforce}` packages. How to deal with custom fonts and colors. A collection of R packages tailored to create interactive charts. And several other chart types including pie charts because everyone looooves pie charts!)
 
-<img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/img/ggplot-tutorial/overview.png', 'blank');"/>
+<img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/ggplot-tutorial/overview.png', 'blank');"/>
 <p><figcaption class="caption">Some exemplary plots included in this tutorial.</figcaption></p>
 
 Major changes I've made:
@@ -71,7 +71,7 @@ Major changes I've made:
 ## Preparation {#prep}
 
 * You can find the Rmarkdown script with the code executed in this blogpost [here](https://github.com/Z3tt/Z3tt/blob/master/content/post/2019-08-05_ggplot2-tutorial.Rmd).
-* You can also download the R script containing only the code [here](https://cedricscherer.com/codes/ggplot-tutorial-cedric-raw.R).
+* You can also download the R script containing only the code [here](https://www.cedricscherer.com/codes/ggplot-tutorial-cedric-raw.R).
 * You need to install the following packages to execute the full tutorial:
     + `{ggplot2}`, part of the `{tidyverse}` package collection
     + `{tidyverse}` package collection, namely

@@ -1,7 +1,7 @@
 ############################################################################
 #                                                                          #
 #        Code for "A ggplot2 Tutorial for Beautiful Plotting in R"         #
-#             https://cedricscherer.com/2019/08/05/                #
+#             https://www.cedricscherer.com/2019/08/05/                #
 #             a-ggplot2-tutorial-for-beautiful-plotting-in-r               #
 #                                                                          #
 #       Cédric Scherer (@CedScherer | cedricphilippscherer@gmail.com)      #

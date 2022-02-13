@@ -17,7 +17,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Tables are a fantastic way to communicate lists of quantitative and qualitative information. Sometimes, tables can fall very short of their potential for greatness. But that was the past: we now have some excellent R packages at our disposal to generate well-designed and functional presentation tables. And because of this renaissance of table-making in R, we’re announcing a contest: The 2020 RStudio Table Contest!&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top250_teaser.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://cedricscherer.com/img/table-contest/IMDb_Top250.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_Top250_teaser.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/table-contest/IMDb_Top250.png&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;Click on the preview to see the full table of all 250 TV shows.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h5 id=&#34;whats-shown&#34;&gt;What&amp;rsquo;s shown?&lt;/h5&gt;
 &lt;p&gt;The table shows relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying the details I and my friends care about: of course the ranking and overall rating but additionally the runtime per episode, genres, number of seasons and episodes, ID of the best episodes. But most importantly—the trend of ratings as the TV show progresses.&lt;/p&gt;

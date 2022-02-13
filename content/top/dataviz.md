@@ -117,7 +117,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 ##### RStudio Table Contest 2020 (Honourable Mention)
 
-<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
+<img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
 
 ##### Storytelling with Data
 

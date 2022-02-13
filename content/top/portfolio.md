@@ -42,6 +42,10 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Invited Talks {#talks}
 
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> #30DayMapChallenge: The good, the bad and the ugly of crafting maps with ggplot2.  
+<i style="font-size:11pt;color:grey;"><a href='https://www.meetup.com/rladies-bangalore/'>R Ladies Bangalore</a> – 12|2021 – Online Meeting</i>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf">&#x21aa; Slides</a></b>  
+
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> Beyond bar and box plots: chart alternatives and how to design them with ggplot2.  
 <i style="font-size:11pt;color:grey;"><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</i>  
 <b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=WBA04fjTVU0">&#x21aa; Recording</a> &ensp; <a href="https://z3tt.github.io/beyond-bar-and-box-plots">&#x21aa; Hands-On Tutorial</a> </b>  
@@ -67,6 +71,12 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 
 ## Conference Presentations {#conferences}
+
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> & Wendy Shijia (2022)</span> DataViz Challenges: A Fun Way to Learn and Build a Portfolio and Network.  
+<i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</i> 
+
+- <span style='font-variant:small-caps;'>Alenka Gucek & <u style='font-weight:700;color:#414141;'>C Scherer</u> (2022)</span> Data Visualization in Non-DataViz Research.  
+<i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</i> 
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.
 <i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>  
