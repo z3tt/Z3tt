@@ -11,16 +11,20 @@
 **I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.**<br><br>
 
 
-##### Data Visualization {#dataviz}
+#### Data Visualization {#dataviz}
 
 I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [#30DayMapChallenge](https://github.com/Z3tt/30DayMapChallenge), and [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge). 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://www.cedricscherer.com/top/dataviz/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Schedule a discovery call](https://calendly.com/cedricscherer/lets-meet)<br><br>
 
 <img src="/img/dataviz_collage2.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
-##### Computational Ecology {#ecology}
+##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;[Let's get in touch!](https://calendly.com/cedricscherer/lets-meet)
+<br>
+
+#### Computational Ecology {#ecology}
 
 I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
