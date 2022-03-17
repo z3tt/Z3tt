@@ -146,6 +146,9 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 </ul>
 
+##### Do you want to hire me for workshop?&nbsp;&nbsp;[Let's get in touch!](https://calendly.com/cedricscherer/lets-meet)
+<br>
+
 
 ## Contributions to R Packages {#rstats}
 

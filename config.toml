@@ -115,7 +115,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [[params.friend_link]]
   title = "Heureka Labs"
   href =  "https://www.heurekalabs.org/"
-
+  
   [[params.bookmark_link]]
   title = "ggplot2 Tutorial"
   href =  "https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/"
