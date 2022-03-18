@@ -61,24 +61,24 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 
 ##### Single Version of the Small Multiples
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png', 'blank');">
+<img src="img/world-by-letters/letter_world_facet_top.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png', 'blank');">
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png', 'blank');">
+<img src="img/world-by-letters/letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png', 'blank');">
 
 
 ##### Single Version of the Overview Map
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png', 'blank');">
+<img src="img/world-by-letters/letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png', 'blank');">
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png', 'blank');">
+<img src="img/world-by-letters/letter_world_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png', 'blank');">
 
 
 ## How about the last letter?
 
 [Victor](https://twitter.com/humeursdevictor) asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with ", Republic of" or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png', 'blank');">
+<img src="img/world-by-letters/last_letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png', 'blank');">
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png', 'blank');">
+<img src="img/world-by-letters/last_letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png', 'blank');">
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
+<img src="img/world-by-letters/last_letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
