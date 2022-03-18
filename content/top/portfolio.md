@@ -14,7 +14,7 @@
 You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra) and [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions).  
 My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
-- <span style='font-variant:small-caps;'>L Figueiredo, <u style='font-weight:700;color:#414141;'>C Scherer</u> & J.S. Cabral</span> (accepted)</span> Computational notebooks to facilitate writing asnd improve reproducibility of (ecological) research. *PLOS Computational Biology*.  
+- <span style='font-variant:small-caps;'>L Figueiredo, <u style='font-weight:700;color:#414141;'>C Scherer</u> & JS Cabral</span> (accepted)</span> Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. *PLOS Computational Biology*.  
 
 - <span style='font-variant:small-caps;'>L Marescot, M Franz, S Benhaiem, H Hofer, <u style='font-weight:700;color:#414141;'>C Scherer</u>, M East & S Kramer-Schadt</span> (2021)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. [*Journal of Animal Ecology* **90** (11):2523–2535](https://doi.org/10.1111/1365-2656.13555).  
 
