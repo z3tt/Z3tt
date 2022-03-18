@@ -42,7 +42,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   # Sidebar settings
   sidebar_about_description = "Always coding. Passionate about design. Worried about nature. Proud dad."
-  sidebar_avatar = "img/cedric_headshot_round.png"
+  sidebar_avatar = "img/cedric-headshot-round.png"
 
   featured_tags = true
   featured_condition_size = 1

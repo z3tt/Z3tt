@@ -20,16 +20,16 @@ An overview of selected static data visualizations, maps and other designs I hav
 
 ### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) (Scientific American, Nov 2021 Issue) {#SciAm}
 
-<img src="img/SciAm/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 <p class='caption'>Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz</p>
 
 ### [Afrozensus 2020](https://afrozensus.de/reports/2020/) (EOTO & Citizens for Europe) {#afrozensus}
 
-<img src="img/afrozensus2020/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+<img src="img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
-<img src="img/afrozensus2020/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+<img src="img/dataviz-portfolio/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
-<img src="img/afrozensus2020/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+<img src="img/dataviz-portfolio/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
 {{< gallery dir="img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
 <br>
@@ -82,11 +82,11 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ##### 2021 Edition {#mapchallenge2021}
 
-<img src="img/map-challenge/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
 
-<img src="img/map-challenge/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
 
-<img src="img/map-challenge/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
@@ -94,11 +94,11 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ##### 2019 Edition {#mapchallenge2019}
 
-<img src="img/map-challenge/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
 
-<img src="img/map-challenge/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
 
-<img src="img/map-challenge/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
+<img src="img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
 
 {{< gallery dir="img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
 
@@ -131,9 +131,9 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 # Personal Projects & Spare-Time Visualizations {#personal}
 
-<img src="img/personal-viz/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
 
-<img src="img/personal-viz/2021_WarmingStripesGeofacet_Europe_dark.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1364663679812272131', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_WarmingStripesGeofacet_Europe_dark.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1364663679812272131', 'blank');"/>
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br><br>

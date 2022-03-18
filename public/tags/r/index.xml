@@ -1335,7 +1335,7 @@ Me on first of December: &amp;ldquo;Uff, what a month!&amp;rdquo;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge was exciting! I learned so many new things, especially about map projections, new standards of geodata processing in R, and data sources. I extensively used the &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt; package&lt;/a&gt; and rarely something else. I found the &lt;a href=&#34;https://www.naturalearthdata.com/&#34;&gt;Natural Earth page&lt;/a&gt; which provides public domain map data sets. And there is an R package called &lt;a href=&#34;https://cran.r-project.org/web/packages/rnaturalearth/README.html&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt; as well that will from now on my first choice of getting geodata into R—its usage is so simple! I also worked a lot with &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Main_Page&#34;&gt;OpenStreetMap (OSM) data&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/map-challenge/maps_geom.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/mapchallenge-geoms.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Overall, I feel way more confident to work with spatial data in R now thanks to the challenge. And this extends to all things related to #rspatial:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;searching, loading, and processing geodata&lt;/li&gt;

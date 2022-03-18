@@ -154,7 +154,7 @@ In the end, I made 28 out of 30 maps. Which I believe is quite a success given t
 
 The challenge was exciting! I learned so many new things, especially about map projections, new standards of geodata processing in R, and data sources. I extensively used the [`{sf}` package](https://r-spatial.github.io/sf/) and rarely something else. I found the [Natural Earth page](https://www.naturalearthdata.com/) which provides public domain map data sets. And there is an R package called [`{rnaturalearth}`](https://cran.r-project.org/web/packages/rnaturalearth/README.html) as well that will from now on my first choice of getting geodata into R—its usage is so simple! I also worked a lot with [OpenStreetMap (OSM) data](https://wiki.openstreetmap.org/wiki/Main_Page).
 
-![](/img/map-challenge/maps_geom.png)
+![](/img/dataviz-posts/mapchallenge-geoms.png)
 
 Overall, I feel way more confident to work with spatial data in R now thanks to the challenge. And this extends to all things related to #rspatial:
 

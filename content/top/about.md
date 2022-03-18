@@ -19,7 +19,7 @@ I have been working as an independent data visualization specialist since the be
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Schedule a discovery call](https://calendly.com/cedricscherer/lets-meet)<br><br>
 
-<img src="/img/dataviz_collage2.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
+<img src="/img/about/dataviz-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
 ##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;[Let's get in touch!](https://calendly.com/cedricscherer/lets-meet)
 <br>
@@ -31,7 +31,7 @@ I am working as a scientific researcher (*PostDoc*) in the [Department "Ecologic
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/pubs/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
 
-<img src="/img/cedric_collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
+<img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
 My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/).
 
