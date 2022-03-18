@@ -55,7 +55,7 @@ An overview of selected static data visualizations, maps and other designs I hav
 
 {{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://github.com/Z3tt/TidyTuesday)
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions to #TidyTuesday](https://github.com/Z3tt/TidyTuesday)
 <br><br>
 
 
@@ -71,7 +71,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
 
-&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions](https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/)
+&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions to the #30DayChartChallenge 2021](https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/)
 <br><br>
 
 
