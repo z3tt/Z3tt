@@ -82,11 +82,11 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ##### 2021 Edition {#mapchallenge2021}
 
-<img src="img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
+<img src="img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg', 'blank');"/>
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
