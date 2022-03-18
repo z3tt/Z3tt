@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gt on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/gt/</link>
+    <link>https://www.cedricscherer.com/tags/gt/</link>
     <description>Recent content in gt on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/gt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cedricscherer.com/tags/gt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What do I binge next? A detailed overview of the top 250 TV shows</title>
-      <link>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
+      <link>https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
+      <guid>https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/&#34;&gt;&lt;i style=&#39;color:#28a87d;&#39;&gt;&lt;b&gt;Update December 24&lt;sup&gt;th&lt;/sup&gt; 2020:&lt;/b&gt; My table made it into the &lt;b&gt;&amp;ldquo;Honourable Mentions&amp;rdquo;&lt;/b&gt; section. Congrats to the winner Niels van der Velden and all the others that are mentioned!&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the &lt;a href=&#34;https://www.imdb.com/chart/toptv/&#34;&gt;original one on IMDb&lt;/a&gt; as &lt;a href=&#34;https://community.rstudio.com/t/what-do-i-binge-next-an-overview-of-the-top-imdb-tv-shows-table-contest-submission/86409&#34;&gt;my contribution&lt;/a&gt; to the ongoing &lt;a href=&#34;https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/&#34;&gt;RStudio table contest&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -22,26 +22,26 @@
 &lt;h5 id=&#34;whats-shown&#34;&gt;What&amp;rsquo;s shown?&lt;/h5&gt;
 &lt;p&gt;The table shows relevant details of the top 250 TV shows as rated by IMDb users. I focused on displaying the details I and my friends care about: of course the ranking and overall rating but additionally the runtime per episode, genres, number of seasons and episodes, ID of the best episodes. But most importantly—the trend of ratings as the TV show progresses.&lt;/p&gt;
 &lt;p&gt;To visualize the runtime I decided to use a restrained, grey-toned, area-scaled circle. The normalized trends in episode ratings are visualized as stripes similar to the famous &lt;a href=&#34;https://en.wikipedia.org/wiki/Warming_stripes&#34;&gt;&amp;ldquo;warming stripes&amp;rdquo; by Ed Hawkins&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/southpark.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/table-contest/southpark.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The “trending stripes” for 309 epsiodes of “Southpark”, covering 24 seasons in total.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;In addition, a line indicates the average rating per season on a range from 1 to 10:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/southpark_full.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/table-contest/southpark_full.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The “trending stripes” of “Southpark”, including trends in average rating per season visualized as a step chart.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;How does this help? Here are two more examples showing the dramatic (and completely deserved) fall of ratings for the last season of “Game of Thrones” as well as the brilliant  “Bojack Horseman” that got better and better over time:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/got-bojack.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/table-contest/got-bojack.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;Two trending stripes illustrating  completely different courses of ratings as the series progresses.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;While the line shows the absolute decrease or increase in rating across seasons, the colored stripes gives an idea how each episode performed relative to the series&#39; average. Also, from the color intensity one can see that the worst episodes were far more off from the average rating than the best episodes in “Game of Thrones”, while there was not that much variation across episodes in “Bojack Horseman”.&lt;/p&gt;
 &lt;p&gt;The idea is built upon a personal project that I started in March 2020 after visualizing &lt;a href=&#34;https://twitter.com/cedscherer/status/1242229041488433152&#34;&gt;IMDb ratings of &amp;ldquo;The Office&amp;rdquo; as contribution to #TidyTuesday&lt;/a&gt; but I never had the drive to finish. Here is a visualization from back then that served as inspiration:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/2019_02_TVsGoldenAge_rel100_rank.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/table-contest/2019_02_TVsGoldenAge_rel100_rank.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;Trends in season ratings for the top 100 of series comprising 3 to 12 seasons.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;During the development of the table, I tried different versions showing either rating trends scaled across  or per show, absolute versus relative changes and  a version where each season and its average rating is indicated below the episode ratings:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/snapshot_dev.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/table-contest/snapshot_dev.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;Screenshot of the development process of the trending stripes to show episode and season ratings across series.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h5 id=&#34;data-source-and-preparation&#34;&gt;Data Source and Preparation&lt;/h5&gt;
 &lt;p&gt;The data is a mixture of scraped data using a modified&lt;a href=&#34;ttps://github.com/WittmannF/imdb-tv-ratings/blob/master/IMDB_get_ratings.ipynb&#34;&gt; Python script&lt;/a&gt; (ranks, ratings, votes, year of release) and data downloaded from the &lt;a href=&#34;https://datasets.imdbws.com/&#34;&gt;IMDb dataset interface&lt;/a&gt; (title basics: original title, genre, runtime). The data was cleaned (e.g. correct wrong runtimes, title spellings etc.) and missing entries filled. (However, some series are returned as having 1 season only but have several actually and I didn&amp;rsquo;t find a good workaround yet.)&lt;/p&gt;
 &lt;h5 id=&#34;r-packages-used&#34;&gt;R Packages Used&lt;/h5&gt;
 &lt;p&gt;I used the &lt;a href=&#34;https://gt.rstudio.com/&#34;&gt;&lt;code&gt;{gt}&lt;/code&gt; package&lt;/a&gt; which allows to generate static tables in R. It also allows adding &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;visualizations created with &lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; as in-line plots such as simple sparkline or bar charts as demonstrated in &lt;a href=&#34;https://twitter.com/thomas_mock&#34;&gt;Thomas Mock&lt;/a&gt;&amp;rsquo;s great &lt;a href=&#34;https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/&#34;&gt;&lt;code&gt;{gt}&lt;/code&gt; tutorial&lt;/a&gt; that helped me along the way:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/tables_thomas.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/table-contest/tables_thomas.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;Two example tables with in-line ggplots from Thomas Mock&#39;s great tutorial series.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;In addition, I used several &lt;code&gt;{tidyverse}&lt;/code&gt; packages (&lt;code&gt;{dplyr}&lt;/code&gt;, &lt;code&gt;{tidyr}&lt;/code&gt;, &lt;code&gt;{readr}&lt;/code&gt;, &lt;code&gt;{magrittr}&lt;/code&gt;) for data preparation as well as &lt;code&gt;{reticulate}&lt;/code&gt; o run the Python scrapping script, &lt;code&gt;{here}&lt;/code&gt; for easy handling of paths, &lt;code&gt;{glue}&lt;/code&gt; for string pasting and &lt;code&gt;{pkgconfig}&lt;/code&gt; to deal with header names. The code to generate the table is &lt;a href=&#34;https://github.com/Z3tt/Rstudio_TableContest_2020/blob/main/imdb_top_tvshows.Rmd&#34;&gt;available on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h5 id=&#34;varieties&#34;&gt;Varieties&lt;/h5&gt;

@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>COVID–19 on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/covid19/</link>
+    <link>https://www.cedricscherer.com/tags/covid19/</link>
     <description>Recent content in COVID–19 on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/covid19/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cedricscherer.com/tags/covid19/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Colors and Emotions in Data Visualization</title>
-      <link>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
+      <link>https://www.cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
+      <guid>https://www.cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
       <description>
-&lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;em&gt;This blog post originally appeared as a &lt;a href=&#34;https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization&#34;&gt;guest post on the “Storytelling with Data” blog&lt;/a&gt; as part of the color series. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.&lt;/em&gt;&lt;/p&gt;
@@ -111,10 +111,10 @@ Some exemplary graphs from the “COVID-19 Impfdashboard” using moderate blue 
     
     <item>
       <title>The Worst Days of the Coronavirus Pandemic So Far</title>
-      <link>https://cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</link>
+      <link>https://www.cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</guid>
+      <guid>https://www.cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</guid>
       <description>&lt;style&gt;
 p.small {
   line-height: 1.15;
@@ -136,9 +136,9 @@ p.small {
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h3 id=&#34;the-idea&#34;&gt;The idea&lt;/h3&gt;
 &lt;p&gt;Inspired by my colleague &lt;a href=&#34;https://twitter.com/alexcourtiol&#34;&gt;Alexandre Courtiol&lt;/a&gt;, who looked at &lt;a href=&#34;https://github.com/courtiol/excess_mortality_COVID19&#34;&gt;the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size&lt;/a&gt;, I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling &amp;ldquo;today is the worst day&amp;rdquo; and also the &lt;em&gt;current&lt;/em&gt; trends, either today or a week ago—are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif&#34; alt=&#34;animation-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif&#34; alt=&#34;animation-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The first version with data until the 29th of March that I submitted as my contribution to the &lt;a href=&#34;https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b&#34;&gt;#SWDchallenge&lt;/a&gt;.&lt;/figcaption&gt;&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png&#34; alt=&#34;static-plot-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png&#34; alt=&#34;static-plot-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;A static version of the situation as of 29th of March with countries sorted by first reported death.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h3 id=&#34;how-to-read-the-visualization&#34;&gt;How to read the visualization&lt;/h3&gt;
 &lt;p&gt;As explained above, I calculated for each day the number of death cases relative to the &amp;ldquo;worst day&amp;rdquo;, namely the day with the most reported deaths so far. Imagine a naïve population that was not facing the virus before. At some point, there might be individuals dying but likely only a few (with regard to COVID-19—in general, this depends on the severity of the infection caused by the pathogen, often referred to as &lt;em&gt;case fatality ratio&lt;/em&gt; or simply &lt;em&gt;case fatality&lt;/em&gt;). Consequently, the proportion of deaths on the first day compared to the worst day has to be 100% (since the first day is, by definition, the worst day so far). On the next day, there might be more deaths than on the day before, a known pattern we see in reality and in simulations of early epidemics. Exponential growth, an always increasing curve we aim to flatten by reducing contact between infected and susceptible (individuals that are not infected but able to catch the infection). So on day two, two times as many individuals might die which makes the second day the worst day with a proportion of 100%. At the same time, the proportion of deaths on day one decreases from 100% to 50%. This way of transforming the data enables to see if we are still facing (exponential) growth or if we, at least for now, over the peak if deaths.&lt;/p&gt;
