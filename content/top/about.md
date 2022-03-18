@@ -17,11 +17,11 @@ I have been working as an independent data visualization specialist since the be
 
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://www.cedricscherer.com/top/dataviz/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Schedule a discovery call](https://calendly.com/cedricscherer/lets-meet)<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call</a><br><br>
 
 <img src="/img/about/dataviz-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
-##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;[Let's get in touch!](https://calendly.com/cedricscherer/lets-meet)
+##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call</a>
 <br>
 
 #### Computational Ecology {#ecology}
