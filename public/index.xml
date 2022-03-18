@@ -1,84 +1,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cédric Scherer</title>
-    <link>https://www.cedricscherer.com/</link>
+    <link>https://cedricscherer.com/</link>
     <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cédric Scherer</title>
-      <link>https://www.cedricscherer.com/</link>
+      <link>https://cedricscherer.com/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/</guid>
+      <guid>https://cedricscherer.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataViz</title>
-      <link>https://www.cedricscherer.com/tags/dataviz/</link>
+      <link>https://cedricscherer.com/tags/dataviz/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/dataviz/</guid>
+      <guid>https://cedricscherer.com/tags/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design</title>
-      <link>https://www.cedricscherer.com/tags/design/</link>
+      <link>https://cedricscherer.com/tags/design/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/design/</guid>
+      <guid>https://cedricscherer.com/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ggplot2</title>
-      <link>https://www.cedricscherer.com/tags/ggplot2/</link>
+      <link>https://cedricscherer.com/tags/ggplot2/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/ggplot2/</guid>
+      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maps</title>
-      <link>https://www.cedricscherer.com/tags/maps/</link>
+      <link>https://cedricscherer.com/tags/maps/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/maps/</guid>
+      <guid>https://cedricscherer.com/tags/maps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://www.cedricscherer.com/post/</link>
+      <link>https://cedricscherer.com/post/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/post/</guid>
+      <guid>https://cedricscherer.com/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://www.cedricscherer.com/tags/</link>
+      <link>https://cedricscherer.com/tags/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/</guid>
+      <guid>https://cedricscherer.com/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The World&#39;s Countries Colored by Their First Letter</title>
-      <link>https://www.cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
+      <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
+      <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and &lt;code&gt;{ggplot2}&lt;/code&gt; for the first time. While searching for a cool variable to illustrate how to create &lt;a href=&#34;https://www.data-to-viz.com/graph/choropleth.html&#34;&gt;choropleth maps&lt;/a&gt;, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (&lt;a href=&#34;https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/&#34;&gt;here&lt;/a&gt;) or that do not permit to see the complete data by &lt;a href=&#34;http://alphabetpassport.com/world.png&#34;&gt;aggregating rare letters&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to &lt;code&gt;{ggplot2}&lt;/code&gt;’s facet functionality, it was super–easy to turn it into small multiples.&lt;/p&gt;
-&lt;img src=&#34;https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/world-by-letters/letter_world_poster.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;img/world-by-letters/letter_world_poster.png&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The final poster version with the colorful overview map and 25 small maps, one for each letter.&lt;/figcaption&gt;&lt;/p&gt;&lt;br&gt;
 &lt;h5 id=&#34;project-type&#34;&gt;Project Type&lt;/h5&gt;
 &lt;ul&gt;
@@ -132,12 +132,12 @@
     
     <item>
       <title>A Quick How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
+      <link>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>
-&lt;script src=&#34;https://www.cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;table-of-content&#34; class=&#34;section level5&#34;&gt;
@@ -241,7 +241,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
   ## change plot appearance
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;how-to-1&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;How to Calculate the Percentage Values&lt;/h5&gt;
@@ -290,7 +290,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   ## add percentage labels
   geom_text(aes(label = perc)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;And in case you want to add some more description to one of the bars, you can use an &lt;code&gt;if_else()&lt;/code&gt; (or an &lt;code&gt;ifelse()&lt;/code&gt;) statement like this:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
   dplyr::mutate(
@@ -305,7 +305,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   ## make sure labels doesn&amp;#39;t get cut
   scale_x_continuous(limits = c(NA, 24)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use &lt;code&gt;geom_bar()&lt;/code&gt; instead of &lt;code&gt;geom_col()&lt;/code&gt; which takes not two but only one variable and calculates counts by default. To add the labels, we again use &lt;code&gt;geom_text()&lt;/code&gt; but this time we overwrite the default statistical transformation &lt;code&gt;stat = &#34;identity&#34;&lt;/code&gt; with &lt;code&gt;stat = &#34;count&#34;&lt;/code&gt; (the same as the default for &lt;code&gt;geom_bar()&lt;/code&gt;).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## prepare non-aggregated data set with lumped and ordered factors
 mpg_fct &amp;lt;- mpg %&amp;gt;% 
@@ -331,7 +331,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   ## rotate plot
   coord_flip()  +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, the default settings of &lt;code&gt;geom_text()&lt;/code&gt; place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -351,7 +351,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
     hjust = 1, nudge_x = -.5
   ) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In case you want to put the next to the bars, you often need to adjust the plot margin and/or the limits to avoid that the labels are cut off. The drawback of using limits is that you have to define them manually. Thus, I prefer to use the first approach. You can make sure that labels are not truncated by the panel by adding &lt;code&gt;clip = &#34;off&#34;&lt;/code&gt; to any coordinate system.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -369,7 +369,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   theme_minimal() +
   ## make sure labels doesn&amp;#39;t get cut, part 2
   theme(plot.margin = margin(r = 120))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Increase space on the right via &lt;code&gt;scale_x_continuous(limits)&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
@@ -380,7 +380,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   ## make sure labels doesn&amp;#39;t get cut
   scale_x_continuous(limits = c(NA, 30)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -406,7 +406,7 @@ We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for al
   ## add custom colors
   scale_fill_manual(values = pal, guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One could also add the color to the data set and map the fill to that column and use &lt;code&gt;scale_fill_identity()&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;-
   mpg_sum %&amp;gt;% 
@@ -430,7 +430,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   ## add custom colors
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This approach is less error-prone since the color is tied to the properties of the data. Thus, in case we update the data, the colors are still applied correctly.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -465,7 +465,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   ) +
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -487,7 +487,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   theme_void() +
   theme(axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
         plot.margin = margin(rep(15, 4)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You can find the full code to create the final plot in this &lt;a href=&#34;https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5&#34;&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -512,7 +512,7 @@ We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label(
     axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
     plot.margin = margin(rep(15, 4))
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version with different label placement:&lt;/strong&gt;
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column &lt;code&gt;place&lt;/code&gt; to the &lt;code&gt;hjust&lt;/code&gt; argument. Since we cannot map a variable to &lt;code&gt;nudge_x&lt;/code&gt;, we cannot use it to offset the labels. To add some pacing, I simply add some white space to the begin and end of each percentage label.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
@@ -536,7 +536,7 @@ I like the idea of placing only those labels inside that mess up the aspect rati
     axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
     plot.margin = margin(rep(15, 4))
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version placing the long label not at the top:&lt;/strong&gt;
 We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
@@ -562,7 +562,7 @@ We could also add the “of all car models” bit to a bar that is short enough 
     ## make sure labels doesn&amp;#39;t get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, you could add that information also to the title, figure caption or simply leave it out. But that’s not what the request was about 🤷&lt;/p&gt;
 &lt;details&gt;
 &lt;summary style=&#34;font-size:10pt;&#34;&gt;
@@ -613,66 +613,66 @@ R Session Info
     
     <item>
       <title>Annotations</title>
-      <link>https://www.cedricscherer.com/tags/annotations/</link>
+      <link>https://cedricscherer.com/tags/annotations/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/annotations/</guid>
+      <guid>https://cedricscherer.com/tags/annotations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://www.cedricscherer.com/tags/r/</link>
+      <link>https://cedricscherer.com/tags/r/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/r/</guid>
+      <guid>https://cedricscherer.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>https://www.cedricscherer.com/tags/tidyverse/</link>
+      <link>https://cedricscherer.com/tags/tidyverse/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/tidyverse/</guid>
+      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>https://www.cedricscherer.com/tags/tutorial/</link>
+      <link>https://cedricscherer.com/tags/tutorial/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/tutorial/</guid>
+      <guid>https://cedricscherer.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>climate</title>
-      <link>https://www.cedricscherer.com/tags/climate/</link>
+      <link>https://cedricscherer.com/tags/climate/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/climate/</guid>
+      <guid>https://cedricscherer.com/tags/climate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>colors</title>
-      <link>https://www.cedricscherer.com/tags/colors/</link>
+      <link>https://cedricscherer.com/tags/colors/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/colors/</guid>
+      <guid>https://cedricscherer.com/tags/colors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Colors and Emotions in Data Visualization</title>
-      <link>https://www.cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
+      <link>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
+      <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
       <description>
-&lt;script src=&#34;https://www.cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;em&gt;This blog post originally appeared as a &lt;a href=&#34;https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization&#34;&gt;guest post on the “Storytelling with Data” blog&lt;/a&gt; as part of the color series. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.&lt;/em&gt;&lt;/p&gt;
@@ -770,37 +770,37 @@ Some exemplary graphs from the “COVID-19 Impfdashboard” using moderate blue 
     
     <item>
       <title>COVID–19</title>
-      <link>https://www.cedricscherer.com/tags/covid19/</link>
+      <link>https://cedricscherer.com/tags/covid19/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/covid19/</guid>
+      <guid>https://cedricscherer.com/tags/covid19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cultures</title>
-      <link>https://www.cedricscherer.com/tags/cultures/</link>
+      <link>https://cedricscherer.com/tags/cultures/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/cultures/</guid>
+      <guid>https://cedricscherer.com/tags/cultures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emotions</title>
-      <link>https://www.cedricscherer.com/tags/emotions/</link>
+      <link>https://cedricscherer.com/tags/emotions/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/emotions/</guid>
+      <guid>https://cedricscherer.com/tags/emotions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chart selection</title>
-      <link>https://www.cedricscherer.com/tags/chart-selection/</link>
+      <link>https://cedricscherer.com/tags/chart-selection/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/tags/chart-selection/</guid>
+      <guid>https://cedricscherer.com/tags/chart-selection/</guid>
       <description></description>
     </item>
     

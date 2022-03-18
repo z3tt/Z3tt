@@ -19,7 +19,7 @@ While drafting the first map, it quickly became obvious that mapping color to al
 So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to `{ggplot2}`’s facet functionality, it was super–easy to turn it into small multiples.
 
 
-<img src="https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_poster.png', 'blank');"/>
+<img src="img/world-by-letters/letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/world-by-letters/letter_world_poster.png', 'blank');"/>
 <p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The final poster version with the colorful overview map and 25 small maps, one for each letter.</figcaption></p><br>
 
 ##### Project Type

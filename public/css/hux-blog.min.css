@@ -560,6 +560,18 @@ pre code{
   .intro-header .post-heading .meta{
     font-size:1.8rem;
   }
+.button {
+  border: none;
+  color: 'red';
+  background-color: #676767;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 }
 
 .post-preview>a{

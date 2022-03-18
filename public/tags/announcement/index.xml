@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>announcement on Cédric Scherer</title>
-    <link>https://www.cedricscherer.com/tags/announcement/</link>
+    <link>https://cedricscherer.com/tags/announcement/</link>
     <description>Recent content in announcement on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cedricscherer.com/tags/announcement/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/announcement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, World!</title>
-      <link>https://www.cedricscherer.com/2019/05/04/welcome/</link>
+      <link>https://cedricscherer.com/2019/05/04/welcome/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/2019/05/04/welcome/</guid>
+      <guid>https://cedricscherer.com/2019/05/04/welcome/</guid>
       <description>&lt;p style=&#34;font-size:14px&#34;&gt;Header image by Negative Space&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hi, I am glad you found your way here! Come in, have a look.&lt;/p&gt;
 &lt;p&gt;I finally managed to set up a personal homepage - and how easy it was! Huge thanks to the developers of the R package &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;&lt;code&gt;{blogdown}&lt;/code&gt;&lt;/a&gt; Yihui Xie, Amber Thomas and Alison Presmanes Hill and the open-source &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo framework&lt;/a&gt;. Much thanks also to &lt;a href=&#34;https://github.com/zhaohuabing&#34;&gt;Huabing Zhao&lt;/a&gt; for sharing his &lt;a href=&#34;https://github.com/zhaohuabing/hugo-theme-cleanwhite&#34;&gt;&amp;ldquo;CleanWhite&amp;rdquo; theme&lt;/a&gt;!&lt;/p&gt;

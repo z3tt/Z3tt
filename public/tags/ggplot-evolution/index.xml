@@ -1,22 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ggplot Evolution on Cédric Scherer</title>
-    <link>https://www.cedricscherer.com/tags/ggplot-evolution/</link>
+    <link>https://cedricscherer.com/tags/ggplot-evolution/</link>
     <description>Recent content in ggplot Evolution on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.cedricscherer.com/tags/ggplot-evolution/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/ggplot-evolution/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Evolution of a ggplot (Ep. 1)</title>
-      <link>https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
+      <link>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
+      <guid>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
       <description>
-&lt;script src=&#34;https://www.cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/evol-ggplot/evol-ggplot-1.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/evol-ggplot/evol-ggplot-1.gif&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#aim&#34;&gt;🏁 Aim of this Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#data&#34;&gt;🗃️ Data Preparation&lt;/a&gt;&lt;/li&gt;
@@ -39,7 +39,7 @@
 &lt;div id=&#34;data&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🗃️ Data Preparation&lt;/h3&gt;
 &lt;p&gt;I have prepared the data in the first way to map each country’s most recently reported student-teacher ratio in primary education as a tile map. I used the &lt;a href=&#34;%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22&#34;&gt;tile-based world data provided by Maarten Lambrechts&lt;/a&gt; to create this map as the first visualization for my weekly contribution:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both data sets. If you would like to run the code yourself, you find the data preparation steps &lt;a href=&#34;https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11&#34;&gt;here&lt;/a&gt;. This is how the relevant columns of the merged and cleaned data set looks like, showing two examples per continent:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 12 x 5
 ##    indicator         country           region    student_ratio student_ratio_re~
@@ -64,7 +64,7 @@
 
 ggplot(df_ratios, aes(x = region, y = student_ratio)) +
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-basic-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-basic-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;sort&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🔀 ️Sort Your Data!&lt;/h3&gt;
@@ -75,14 +75,14 @@ ggplot(df_ratios, aes(x = region, y = student_ratio)) +
 
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-sorted-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the &lt;code&gt;ggplot&lt;/code&gt; call &lt;s&gt;but this does not work for box plots so we use &lt;code&gt;coord_flip()&lt;/code&gt;&lt;/s&gt; and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis. I also add some space to the right (mostly for later) which we can force by adding &lt;code&gt;scale_y_continuous(limits = c(0, 90))&lt;/code&gt; (be cautious here to use limits that are beyond the limits of your data—or better use &lt;code&gt;coord_*(ylim = c(0, 90)&lt;/code&gt; so you’re not accidentally subsetting your data).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = region, y = student_ratio)) +
   geom_boxplot() +
   coord_flip() +
   scale_y_continuous(limits = c(0, 90))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-flipped-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/boxplot-flipped-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Since the latest version 3.x.x of &lt;code&gt;{ggplot2}&lt;/code&gt; you can also flip the orientation by switching the x and y variables:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df_sorted, aes(x = student_ratio, y = region)) +
@@ -125,22 +125,22 @@ g &amp;lt;-
 &lt;div id=&#34;geoms&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;📊 The Choice of the Chart Type&lt;/h3&gt;
 &lt;p&gt;We can add any &lt;code&gt;geom_&lt;/code&gt; to our ggplot-preset &lt;code&gt;g&lt;/code&gt; that fits the data, i.e. that take two positional variables of which one is allowed to be qualitative. Here are some examples that fulfill these criteria:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/geoms-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/geoms-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation &lt;a href=&#34;https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps&#34;&gt;how to read a boxplot&lt;/a&gt;). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an &lt;code&gt;alpha&lt;/code&gt; argument to &lt;code&gt;geom_point()&lt;/code&gt;, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + geom_point(size = 3, alpha = 0.15)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/strip-plot-alpha-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/strip-plot-alpha-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, different geoms can also be combined to provide even more information in one plot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g +
   geom_boxplot(color = &amp;quot;gray60&amp;quot;, outlier.alpha = 0) +
   geom_point(size = 3, alpha = 0.15)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/box-dot-plot-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/box-dot-plot-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;⚡ &lt;strong&gt;Remove the outliers of the box plot to avoid double-encoding of the same information! You can achieve this via &lt;code&gt;outlier.alpha = 0&lt;/code&gt;, &lt;code&gt;outlier.color = NA&lt;/code&gt;, &lt;code&gt;outlier.color = &#34;transparent&#34;&lt;/code&gt;, or &lt;code&gt;outlier.shape = NA&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box or violin plots.
 To achieve a higher readability, we use another geom, &lt;code&gt;geom_jitter()&lt;/code&gt; which scatters the points in a given direction (x and/or y via &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) to prevent over-plotting:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(2019)
 
 g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-countries-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-countries-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Set a seed to keep the jittering of the points fixed every time you call &lt;code&gt;geom_jitter()&lt;/code&gt; by calling &lt;code&gt;set.seed()&lt;/code&gt;—this becomes especially important when we later label some of the points.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;You can also set the seed within the &lt;code&gt;geom_jitter()&lt;/code&gt; call by setting &lt;code&gt;position = position_jitter(seed)&lt;/code&gt;. Note that in this case the &lt;code&gt;width&lt;/code&gt; and/or &lt;code&gt;height&lt;/code&gt; argument needs to be placed inside the &lt;code&gt;position_jitter()&lt;/code&gt; function as well:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)&lt;/code&gt;&lt;/pre&gt;
@@ -152,7 +152,7 @@ g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   stat_summary(fun = mean, geom = &amp;quot;point&amp;quot;, size = 5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Note that we could also use &lt;code&gt;geom_point(aes(x = region, y = student_ratio_region), size = 5)&lt;/code&gt; to achieve the same since we already have a regional mean average in our data.&lt;/p&gt;
 &lt;p&gt;To relate all these points to a baseline, we add a line indicating the worldwide average:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;world_avg &amp;lt;-
@@ -164,7 +164,7 @@ g +
   geom_hline(aes(yintercept = world_avg), color = &amp;quot;gray70&amp;quot;, size = 0.6) +
   stat_summary(fun = mean, geom = &amp;quot;point&amp;quot;, size = 5) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/worldwide-avg-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/worldwide-avg-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;One could derive the worldwide average also within the &lt;code&gt;geom_hline()&lt;/code&gt; call, but I prefer to keep both steps separated.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We can further highlight that the baseline is the worldwide average ratio rather than a ratio of 0 (or 1?) by adding a line from each continental average to the worldwide average. The result is a combination of a jitter and a lollipop plot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g +
@@ -176,7 +176,7 @@ g +
   geom_hline(aes(yintercept = world_avg), color = &amp;quot;gray70&amp;quot;, size = 0.6) +
   geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
   stat_summary(fun = mean, geom = &amp;quot;point&amp;quot;, size = 5)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-world-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-jitter-regions-world-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;⚡ &lt;strong&gt;Check the order of the geoms to prevent any overlapping—here, for example, draw the line after calling &lt;code&gt;geom_segment()&lt;/code&gt; to avoid overlapping!&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;text&#34; class=&#34;section level3&#34;&gt;
@@ -208,7 +208,7 @@ g +
     &amp;quot;text&amp;quot;, x = 1.9, y = 64, family = &amp;quot;Poppins&amp;quot;, size = 2.8, color = &amp;quot;gray20&amp;quot;, lineheight = .9,
     label = &amp;quot;The Central African Republic has by far\nthe most students per teacher&amp;quot;)
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/text-labels-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/text-labels-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;You could also create a new data set (similar to our &lt;code&gt;arrows&lt;/code&gt; data frame below) that holds the labels and the exact position, along with some other information if needed, and add that via &lt;code&gt;geom_text(data = my_labels, aes(label = my_label_column))&lt;/code&gt;. Note that here we also would need to create a factor for the region to match the original data!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Use &lt;a href=&#34;https://glue.tidyverse.org/&#34;&gt;&lt;code&gt;glue::glue()&lt;/code&gt;&lt;/a&gt; to combine strings with variables—this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend &lt;code&gt;paste0()&lt;/code&gt;.)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;… and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling &lt;code&gt;geom_curve()&lt;/code&gt;. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes…&lt;/p&gt;
@@ -226,7 +226,7 @@ g_text +
     arrow = arrow(length = unit(0.07, &amp;quot;inch&amp;quot;)), size = 0.4,
     color = &amp;quot;gray20&amp;quot;, curvature = -0.3
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/arrows-annotations-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/arrows-annotations-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;… and then adjust, adjust, adjust…&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;arrows &amp;lt;-
   tibble(
@@ -244,7 +244,7 @@ g_text +
     color = &amp;quot;gray20&amp;quot;, curvature = -0.3
   )
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/text-arrows-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/text-arrows-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Since the curvature is the same for all arrows, one can use different x and y distances and directions between the start end and points to vary their shape!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;One last thing that bothers me: A student-teacher ratio of 0 does not make much sense—I definitely prefer to start at a ratio of 1!&lt;br /&gt;
 And—oh my!—we almost forgot to mention and acknowledge the data source 😨 Let’s quickly also add a plot caption:&lt;/p&gt;
@@ -257,7 +257,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
   labs(caption = &amp;quot;Data: UNESCO Institute for Statistics&amp;quot;) +
   theme(plot.caption = element_text(size = 9, color = &amp;quot;gray50&amp;quot;))
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/final-caption-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/final-caption-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;legend&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🗺️ Bonus: Add a Tile Map as Legend&lt;/h3&gt;
@@ -278,18 +278,18 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
           plot.margin = margin(0, 0, 0, 0)) +
     labs(x = NULL, y = NULL)
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-regions-1.png&#34; width=&#34;624&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-regions-1.png&#34; width=&#34;624&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;… and add this map to the existing plot via &lt;code&gt;annotation_custom(ggplotGrob())&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g_final +
   annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-with.map-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-with.map-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;final&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🎄 The Final Evolved Visualization&lt;/h3&gt;
 &lt;p&gt;And here it is, our final plot—evolved from a dreary gray box plot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-before-after-1.png&#34; width=&#34;1536&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-before-after-1.png&#34; width=&#34;1536&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Thanks for reading, I hope you’ve enjoyed it! Here you find &lt;a href=&#34;https://www.cedricscherer.com/top/dataviz/&#34;&gt;more visualizations I’ve contributed to the #TidyTuesday challenges&lt;/a&gt; including my full contribution to week 19 of 2019 we have dissected here:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/img/tidytuesday/2019_19_StudentTeacher.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/tidytuesday/2019_19_StudentTeacher.png&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;code&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;💻 Complete Code for Final Plot&lt;/h3&gt;
@@ -413,11 +413,11 @@ df_ratios %&amp;gt;%
 &lt;h3&gt;📝 Post Scriptum: Mean versus Median&lt;/h3&gt;
 &lt;p&gt;One thing I want to highlight is that the final plot does not contain the same information as the original box plot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://www.cedricscherer.com/img/evol-ggplot/boxplot.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/evol-ggplot/boxplot.png&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;In a Box-and-Whisker plot the box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;The 2nd quartile is known as the &lt;strong&gt;median&lt;/strong&gt;, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean (“average”) values but not to median estimates. However, in case of skewed data, the mean value of a data set is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-median-1.png&#34; width=&#34;816&#34; /&gt;&lt;img src=&#34;https://www.cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-median-2.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-median-1.png&#34; width=&#34;816&#34; /&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/mean-vs-median-2.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic box plot we used in the beginning but may be harder to interpret for some compared to the one visualizing average ratios.&lt;/p&gt;
 &lt;/div&gt;
 </description>
