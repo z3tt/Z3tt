@@ -114,7 +114,7 @@
 }
 .sidebar-container .tags a{
   border-color:#9a9a9a;
-  font-size:12px
+  font-size:1rem;
 }
 .sidebar-container .tags a:hover,.sidebar-container .tags a:active{
   border-color:#28a87d
