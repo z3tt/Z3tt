@@ -117,7 +117,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
   <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a>, 1/2 day, remote, Jan 2022)</span></li>
 
-  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event</a>, 5 hours, remote, Sep 2021 and Dec 2021)</span></li>
+  <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization with <code>{ggplot2}</code>: how to create engaging and well-designed visualizations in R”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event</a>, 5 hours, remote, Sep 2021 and Dec 2021)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>“Data visualization in R with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(<a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar 2020, Nov 2020, and Nov 2021)</span></li>
   
