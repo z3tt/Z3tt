@@ -18,7 +18,7 @@ editor_options:
 
 Eurostat provides the metric for all EU countries except Iceland and Greece between 2002 and 2020 (but number of years included differ per country). It also provides gropuped metrics for all EU countries and for the 19 countries of the Euro area. The indicator includes all employees working in firms with ten or more employees, without restrictions for age and hours worked. [Samples contain about 12 million employees EU-wide and the gross hourly earnings are estimated with high precision at total economy level (sampling error below 1%)](https://twitter.com/EU_Eurostat/status/1501840155489013762).
 
-<img src="img/paygap-europe/paygap_eu_dumbbell.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/paygap-europe/paygap_eu_dumbbell.png', 'blank');"/>
+<img src="img/paygap-europe/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/paygap-europe/paygap_eu_dumbbell.jpg', 'blank');"/>
 <p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The dumbbell chart comparing the pay gap from a reference period 2002–2010 (point) with the pay gap in 2020 (arrow head). Colors indicate the trend and countries are sorted by the recent pay gap in decreasing order from left to right.</figcaption></p>
 
 My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a *typical time series* would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an *unusual slope chart* in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a *hybrid of a slope chart and a time series* as it only compares two values, connected by a line, with a continuous date axis.
@@ -70,7 +70,7 @@ As the slope chart was very difficult to read due to the many overlapping lines 
 
 ##### Slope Chart x Time Series Hybrid
 
-<img src="img/paygap-europe/paygap_eu_slope.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.png', 'blank');">
+<img src="img/paygap-europe/paygap_eu_slope.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.jpg', 'blank');">
 
 
 

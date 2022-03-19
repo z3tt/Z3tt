@@ -133,7 +133,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 <img src="img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_WarmingStripesGeofacet_Europe_dark.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1364663679812272131', 'blank');"/>
+<img src="img/dataviz-portfolio/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricshcerer.com/img/dataviz-portfolio/paygap_eu_dumbbell.jpg', 'blank');"/>
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br><br>
