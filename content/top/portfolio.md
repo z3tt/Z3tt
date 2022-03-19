@@ -44,9 +44,13 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ## Invited Talks {#talks}
 
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> Mit Grafiken Mehrwert schaffen: Prinzipien effektiver Datenvisualisierung und -kommunikation.  
+<i style="font-size:11pt;color:grey;"><a href='https://www.bib.bund.de/DE/Startseite.html'>Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)</a> – 02|2022 – Online Meeting</i>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf">&#x21aa; Slides (German)</a> &ensp; <a href="https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf">&#x21aa; Slides (English)</a></b>  
+
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> #30DayMapChallenge: The good, the bad and the ugly of crafting maps with ggplot2.  
 <i style="font-size:11pt;color:grey;"><a href='https://www.meetup.com/rladies-bangalore/'>R Ladies Bangalore</a> – 12|2021 – Online Meeting</i>  
-<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf">&#x21aa; Slides</a></b>  
+<b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf">&#x21aa; Slides</a> &ensp; <a href="https://drive.google.com/file/d/1RU37oUE_7BHCkKzASC-I9R2-SMIjKAKT/view?usp=sharing">&#x21aa; Recording</a></b>  
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> Beyond bar and box plots: chart alternatives and how to design them with ggplot2.  
 <i style="font-size:11pt;color:grey;"><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</i>  
@@ -64,11 +68,11 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 <i style="font-size:11pt;color:grey;"><a href="https://www.meetup.com/Oslo-useR-Group/">useR Oslo</a> – 03|2021 – Online Meeting</i>  
 <b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=5KHvEXYtnOo">&#x21aa; Recording</a></b>  
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets.   <i style="font-size:11pt;color:grey;"><a href="https://correlaid.org/events/2020-11/correlcon/">CorrelCon: A Weekend of Data4Good</a> – 11|2020 – Online Conference</i>  
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets.   <i style="font-size:11pt;color:grey;"><a href="https://correlaid.org/events/2020-11/correlcon/">CorrelCon: A Weekend of Data4Good</a> – 11|2020 – Online Conference by CorrelAid</i>  
 <b style="font-size:14px;"><a href="https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=zCG3xk-QLSI">&#x21aa; Recording</a></b>  
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2020)</span> Effective Data Visualization: How to design impactful and aesthetically pleasing charts.  
-<i style="font-size:11pt;color:grey;"><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)</i>  
+<i style="font-size:11pt;color:grey;"><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Webinar by Duke University</i>  
 <b style="font-size:14px;"><a href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></b>  
 
 
@@ -81,7 +85,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 <i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</i> 
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.
-<i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</i>  
+<i style="font-size:11pt;color:grey;"><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference by the Data Visualization Society (Talk + Seminar)</i>  
 <b style="font-size:14px;"><a href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">&#x21aa; Slides</a> &ensp; <a href="https://youtu.be/7UjA_5gNvdw">&#x21aa; Recording</a> &ensp; <a href="https://z3tt.github.io/OutlierConf2021/">&#x21aa; Hands-On Tutorial</a> </b>  
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence.  
@@ -109,7 +113,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ### Workshops and Trainings {#workshops}
 
 <ul style="font-size:15px;">
-
   <li style='line-height:1.3;margin-bottom:12px;'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://www.fbn-dummerstorf.de/en/">Research Institute for Farm Animal Biology (FBN)</a>, 1/2 day, remote, Jan 2022)</span></li>
 
   <li style='line-height:1.3;margin-bottom:12px;'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br><span style="color:#989898;font-size:13px;">(Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a>, 1/2 day, remote, Jan 2022)</span></li>

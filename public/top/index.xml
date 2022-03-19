@@ -1811,9 +1811,14 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;h2 id=&#34;talks&#34;&gt;Invited Talks&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2021)&lt;/span&gt; Mit Grafiken Mehrwert schaffen: Prinzipien effektiver Datenvisualisierung und -kommunikation.&lt;br&gt;
+&lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#39;https://www.bib.bund.de/DE/Startseite.html&#39;&gt;Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)&lt;/a&gt; – 02|2022 – Online Meeting&lt;/i&gt;&lt;br&gt;
+&lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf&#34;&gt;↪ Slides (German)&lt;/a&gt;   &lt;a href=&#34;https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf&#34;&gt;↪ Slides (English)&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2021)&lt;/span&gt; #30DayMapChallenge: The good, the bad and the ugly of crafting maps with ggplot2.&lt;br&gt;
 &lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#39;https://www.meetup.com/rladies-bangalore/&#39;&gt;R Ladies Bangalore&lt;/a&gt; – 12|2021 – Online Meeting&lt;/i&gt;&lt;br&gt;
-&lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf&#34;&gt;↪ Slides&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf&#34;&gt;↪ Slides&lt;/a&gt;   &lt;a href=&#34;https://drive.google.com/file/d/1RU37oUE_7BHCkKzASC-I9R2-SMIjKAKT/view?usp=sharing&#34;&gt;↪ Recording&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2021)&lt;/span&gt; Beyond bar and box plots: chart alternatives and how to design them with ggplot2.&lt;br&gt;
@@ -1836,12 +1841,12 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf&#34;&gt;↪ Slides&lt;/a&gt;   &lt;a href=&#34;https://www.youtube.com/watch?v=5KHvEXYtnOo&#34;&gt;↪ Recording&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2020)&lt;/span&gt; Building a modularized Shiny app with &lt;code&gt;{golem}&lt;/code&gt; and html widgets.   &lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#34;https://correlaid.org/events/2020-11/correlcon/&#34;&gt;CorrelCon: A Weekend of Data4Good&lt;/a&gt; – 11|2020 – Online Conference&lt;/i&gt;&lt;br&gt;
+&lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2020)&lt;/span&gt; Building a modularized Shiny app with &lt;code&gt;{golem}&lt;/code&gt; and html widgets.   &lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#34;https://correlaid.org/events/2020-11/correlcon/&#34;&gt;CorrelCon: A Weekend of Data4Good&lt;/a&gt; – 11|2020 – Online Conference by CorrelAid&lt;/i&gt;&lt;br&gt;
 &lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf&#34;&gt;↪ Slides&lt;/a&gt;   &lt;a href=&#34;https://www.youtube.com/watch?v=zCG3xk-QLSI&#34;&gt;↪ Recording&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2020)&lt;/span&gt; Effective Data Visualization: How to design impactful and aesthetically pleasing charts.&lt;br&gt;
-&lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#39;https://www.heurekalabs.org/&#39;&gt;Heureka Labs&lt;/a&gt; &amp;amp; &lt;a href=&#39;https://datascience.duke.edu/&#39;&gt;Duke+DataScience&lt;/a&gt; – 10|2020 – Duke University, Durham, USA (Webinar)&lt;/i&gt;&lt;br&gt;
+&lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#39;https://www.heurekalabs.org/&#39;&gt;Heureka Labs&lt;/a&gt; &amp;amp; &lt;a href=&#39;https://datascience.duke.edu/&#39;&gt;Duke+DataScience&lt;/a&gt; – 10|2020 – Webinar by Duke University&lt;/i&gt;&lt;br&gt;
 &lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf&#34;&gt;↪ Slides&lt;/a&gt;   &lt;a href=&#34;https://www.youtube.com/watch?v=swzFdMc6WPk&#34;&gt;↪ Recording&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1857,7 +1862,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;&lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; (2021)&lt;/span&gt; ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.
-&lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#39;https://2021.outlierconf.com/&#39;&gt;Outlier 2021&lt;/a&gt; – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)&lt;/i&gt;&lt;br&gt;
+&lt;i style=&#34;font-size:11pt;color:grey;&#34;&gt;&lt;a href=&#39;https://2021.outlierconf.com/&#39;&gt;Outlier 2021&lt;/a&gt; – 02|2021 – Online Conference by the Data Visualization Society (Talk + Seminar)&lt;/i&gt;&lt;br&gt;
 &lt;b style=&#34;font-size:14px;&#34;&gt;&lt;a href=&#34;https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf&#34;&gt;↪ Slides&lt;/a&gt;   &lt;a href=&#34;https://youtu.be/7UjA_5gNvdw&#34;&gt;↪ Recording&lt;/a&gt;   &lt;a href=&#34;https://z3tt.github.io/OutlierConf2021/&#34;&gt;↪ Hands-On Tutorial&lt;/a&gt; &lt;/b&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
