@@ -13,7 +13,7 @@ An overview of selected static data visualizations, maps and other designs I hav
   * [#30DayChartChallenge](#chartchallenge)
   * [#30DayMapChallenge](#mapchallenge)
   * [Other Challenges](#miscchallenges)
-* [**Personal Projects & Spare-Time Visualizations**](#personal)
+* [**Personal Projects**](#personal)
 <br><br>
 
 # Client Projects {#clients}
@@ -129,7 +129,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 <hr>
 
-# Personal Projects & Spare-Time Visualizations {#personal}
+# Personal Projects {#personal}
 
 <img src="img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
 

@@ -221,46 +221,7 @@
 <p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The dumbbell chart comparing the pay gap from a reference period 2002–2010 (point) with the pay gap in 2020 (arrow head). Colors indicate the trend and countries are sorted by the recent pay gap in decreasing order from left to right.</figcaption></p>
 <p>My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a <em>typical time series</em> would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an <em>unusual slope chart</em> in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a <em>hybrid of a slope chart and a time series</em> as it only compares two values, connected by a line, with a continuous date axis.</p>
 <p>As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a <em>dumbbell chart</em> with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to display the sample size in chart.</p>
-<h5 id="project-type">Project Type</h5>
-<ul>
-<li>Personal Project</li>
-</ul>
-<h5 id="motivation">Motivation</h5>
-<ul>
-<li><a href="https://www.internationalwomensday.com">International Women&rsquo;s Day 2022</a></li>
-<li>EuroStat shared <a href="https://ec.europa.eu/eurostat/en/web/products-statistical-working-papers/-/ks-tc-22-002">data set on gender pay gaps in the EU</a> on <a href="https://twitter.com/EU_Eurostat/status/1500755719796236288">Twitter</a></li>
-</ul>
-<h5 id="design-choices">Design Choices</h5>
-<ul>
-<li>A <em>dumbbell chart</em> to allow for direct comparison per country and across countries.</li>
-<li><em>Ranking</em> of countries by the pay gap in 2020 (original version; ranking by reference period as alternative versions)</li>
-<li>A colorblind-safe <em>traffic-light colors</em> for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.</li>
-<li><em>Chart title serves as axis title</em> as well.</li>
-<li>A <em>detailed legend</em> explaining the trend colors and dumbbell.</li>
-<li><em>Annotations</em> to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.</li>
-<li><em>Highlighting EU27 and EA19</em> as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).</li>
-<li>To focus on the women, I wanted to show how much less the earning is compared to men. This becomes a bit tricky as the percentage is actually positive but shows a gap (it is <em>&quot;+13% below&quot;</em>). In the end, I decided to flip the axis as it feels much more intuitive to me. By adding big axis text I guide the reader how to interpret the y axis.</li>
-<li>Unfortunately, I had to use the country abbreviations due to space issues. Long labels made the chart way too busy.</li>
-</ul>
-<h5 id="data-source">Data Source</h5>
-<ul>
-<li>EuroStat data set <a href="https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en">SDG_05_20 &ldquo;Gender pay gap in unadjusted form&rdquo;</a></li>
-</ul>
-<h5 id="tools">Tools</h5>
-<ul>
-<li>Data Preparation: <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code></a>, <a href="https://stringr.tidyverse.org/"><code>{stringr}</code></a>, and <a href="https://sfirke.github.io/janitor/"><code>{janitor}</code></a></li>
-<li>Graphics: <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a>; <a href="https://wilkelab.org/ggtext/"><code>{ggtext}</code></a> for advanced text styling; <a href="https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html"><code>{colorspace}</code></a> for color manipulation; <a href="https://ggrepel.slowkow.com/articles/examples.html"><code>{ggrepel}</code></a> for label positions in alternative slope chart</li>
-<li>Colors: Picked with <a href="https://palettte.app/">palettte.app</a> and colorblind–tested with <a href="https://projects.susielu.com/viz-palette?colors=%5B%22#B55951%22,%22#F0B48E%22,%22#669d8f%22%5D&amp;backgroundColor=%22white%22&amp;fontColor=%22black%22&amp;mode=%22deuteranomaly%22">Viz Palette</a></li>
-</ul>
-<h5 id="methods">Methods</h5>
-<ul>
-<li>For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.</li>
-<li>Plotting was done completely in R (for a list of packages see &ldquo;Tools&rdquo;).<br></li>
-</ul>
-<h2 id="alternative-versions">Alternative Versions</h2>
-<h5 id="slope-chart-x-time-series-hybrid">Slope Chart x Time Series Hybrid</h5>
-<img src="img/paygap-europe/paygap_eu_slope.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.jpg', 'blank');">
-<h5 id="experimental-colorful-versions-for-instagram">Experimental, Colorful Versions for Instagram</h5>
+<p>For the first time, I also created a colorful, eye-catching version with larger fonts and less detail to share it on my <a href="https://www.instagram.com/cedscherer/">Instagram</a>:</p>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 
@@ -360,11 +321,51 @@
     </div>
 </div>
 
-</p>
+
+<br></p>
+<h5 id="project-type">Project Type</h5>
+<ul>
+<li>Personal Project</li>
+</ul>
+<h5 id="motivation">Motivation</h5>
+<ul>
+<li><a href="https://www.internationalwomensday.com">International Women&rsquo;s Day 2022</a></li>
+<li>EuroStat shared <a href="https://ec.europa.eu/eurostat/en/web/products-statistical-working-papers/-/ks-tc-22-002">data set on gender pay gaps in the EU</a> on <a href="https://twitter.com/EU_Eurostat/status/1500755719796236288">Twitter</a></li>
+</ul>
+<h5 id="design-choices">Design Choices</h5>
+<ul>
+<li>A <em>dumbbell chart</em> to allow for direct comparison per country and across countries.</li>
+<li><em>Ranking</em> of countries by the pay gap in 2020 (original version; ranking by reference period as alternative versions)</li>
+<li>A colorblind-safe <em>traffic-light colors</em> for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.</li>
+<li><em>Chart title serves as axis title</em> as well.</li>
+<li>A <em>detailed legend</em> explaining the trend colors and dumbbell.</li>
+<li><em>Annotations</em> to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.</li>
+<li><em>Highlighting EU27 and EA19</em> as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).</li>
+<li>To focus on the women, I wanted to show how much less the earning is compared to men. This becomes a bit tricky as the percentage is actually positive but shows a gap (it is <em>&quot;+13% below&quot;</em>). In the end, I decided to flip the axis as it feels much more intuitive to me. By adding big axis text I guide the reader how to interpret the y axis.</li>
+<li>Unfortunately, I had to use the country abbreviations due to space issues. Long labels made the chart way too busy.</li>
+</ul>
+<h5 id="data-source">Data Source</h5>
+<ul>
+<li>EuroStat data set <a href="https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en">SDG_05_20 &ldquo;Gender pay gap in unadjusted form&rdquo;</a></li>
+</ul>
+<h5 id="tools">Tools</h5>
+<ul>
+<li>Data Preparation: <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code></a>, <a href="https://stringr.tidyverse.org/"><code>{stringr}</code></a>, and <a href="https://sfirke.github.io/janitor/"><code>{janitor}</code></a></li>
+<li>Graphics: <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a>; <a href="https://wilkelab.org/ggtext/"><code>{ggtext}</code></a> for advanced text styling; <a href="https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html"><code>{colorspace}</code></a> for color manipulation; <a href="https://ggrepel.slowkow.com/articles/examples.html"><code>{ggrepel}</code></a> for label positions in alternative slope chart</li>
+<li>Colors: Picked with <a href="https://palettte.app/">palettte.app</a> and colorblind–tested with <a href="https://projects.susielu.com/viz-palette?colors=%5B%22#B55951%22,%22#F0B48E%22,%22#669d8f%22%5D&amp;backgroundColor=%22white%22&amp;fontColor=%22black%22&amp;mode=%22deuteranomaly%22">Viz Palette</a></li>
+</ul>
+<h5 id="methods">Methods</h5>
+<ul>
+<li>For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.</li>
+<li>Plotting was done completely in R (for a list of packages see &ldquo;Tools&rdquo;).<br></li>
+</ul>
+<h2 id="alternative-versions">Alternative Versions</h2>
+<h5 id="slope-chart-x-time-series-hybrid">Slope Chart x Time Series Hybrid</h5>
+<img src="img/paygap-europe/paygap_eu_slope.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.jpg', 'blank');">
 <h5 id="dumbbell-chart-sorted-by-pay-gap-20022010">Dumbbell Chart sorted by Pay Gap 2002–2010</h5>
-<img src="img/paygap-europe/paygap_eu_dumbbell_alt" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt', 'blank');">
+<img src="img/paygap-europe/paygap_eu_dumbbell_alt.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt.jpg', 'blank');">
 <h5 id="dumbbell-chart-for-all-countries-listed">Dumbbell Chart for All Countries Listed</h5>
-<img src="img/paygap-europe/paygap_all_dumbbell" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt', 'blank');">
+<img src="img/paygap-europe/paygap_all_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt.jpg', 'blank');">
 
 
                 

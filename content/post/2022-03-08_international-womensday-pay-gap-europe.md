@@ -25,6 +25,10 @@ My aim was to make a comparison instead of showing the 2020 metric alone. From t
 
 As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a *dumbbell chart* with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to display the sample size in chart.
 
+For the first time, I also created a colorful, eye-catching version with larger fonts and less detail to share it on my [Instagram](https://www.instagram.com/cedscherer/):
+
+{{< gallery dir="img/paygap-europe/insta" />}} {{< load-photoswipe >}}
+<br>
 
 
 ##### Project Type
@@ -73,18 +77,12 @@ As the slope chart was very difficult to read due to the many overlapping lines 
 <img src="img/paygap-europe/paygap_eu_slope.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.jpg', 'blank');">
 
 
-
-##### Experimental, Colorful Versions for Instagram
-
-{{< gallery dir="img/paygap-europe/insta" />}} {{< load-photoswipe >}}
-
-
 ##### Dumbbell Chart sorted by Pay Gap 2002–2010
 
-<img src="img/paygap-europe/paygap_eu_dumbbell_alt" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt', 'blank');">
+<img src="img/paygap-europe/paygap_eu_dumbbell_alt.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt.jpg', 'blank');">
 
 
 ##### Dumbbell Chart for All Countries Listed
 
-<img src="img/paygap-europe/paygap_all_dumbbell" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt', 'blank');">
+<img src="img/paygap-europe/paygap_all_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt.jpg', 'blank');">
 
