@@ -167,7 +167,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Non-CRAN Packages
 
-- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2021: `d6berlin`: Spatial data and template maps for Berlins. Available on [GitHub](https://github.com/EcoDynIZW/d6berlin).
+- <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2021: `d6berlin`: Spatial data and template maps for Berlin. Available on [GitHub](https://github.com/EcoDynIZW/d6berlin).
 
 - <span style='font-variant:small-caps;'><u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2020: `d6`: Simplify workflows of D6 research projects. Available on [GitHub](https://github.com/EcoDynIZW/d6).
 
@@ -181,7 +181,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 ##### Podcasts
 
-- [*“Lollipops und Regenwolken”*](https://www.buzzsprout.com/1174520/8969083), German podcast "Die Sendung mit der Ziege" by Madlen Ziege
+- [*“PolicyViz Episode #212”*](https://policyviz.com/podcast/episode-212-dr-cedric-scherer/) hosted by Jon Schwabisch
+- [*“Die Sendung mit der Ziege: Lollipops und Regenwolken”*](https://www.buzzsprout.com/1174520/8969083) hosted by Madlen Ziege
 
 
 ##### Interviews
@@ -189,7 +190,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 - [*“Data visualization shows countries with highest-rated coffees”*](https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/) by BeanPoet (Erik Rolfsen)
 - [*“Vignette: Interviews of the Beautiful People that Use R”*](https://vignette.md/interviews/2020-02-03-cedric-scherer/) by Georgios Karamanis
 
-##### Blog Mentions
+##### Mentions
 
 - [*“Best of The Visualization Web September 2020”*](https://www.visualisingdata.com/2020/12/best-of-the-visualisation-web-september-2020/) by Andy Kirk highlighting the [“Not My Cup of Coffee”](https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee) visualization
 
