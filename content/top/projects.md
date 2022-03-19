@@ -1,6 +1,6 @@
 ### Overview of Research Projects
 
-As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by [movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability measures of ecological communities](https://doi.org/10.1111/ele.13226), and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). 
+As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the **movement ecology of animals and the dynamics of populations, communities and diseases in space and time**. By using empirical and simulated data, I investigate how disease dynamics are influenced by [movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability measures of ecological communities](https://doi.org/10.1111/ele.13226), and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). 
 
 ##### Content
 
