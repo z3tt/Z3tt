@@ -14,7 +14,7 @@ editor_options:
 
 **Sadly, inequality between women and men is still an issue. A metric that is one of the most used to illustrate the inequality is the pay gap. In its simplest, unadjusted form, the pay gap shows the difference between the average gross hourly earnings of men and women, expressed as a percentage of the average gross hourly earnings of men.**
 
-**In 2020, women's gross hourly earnings were on average 13.0% below those of male paid employees in the European Union. This is still a significant gap, but at least it was decreasing over the last years. Unfortunately, this is not the case for all countries in the EU: Latvia, Portugal, Croatia, and Malta have decreasing trends compared to the average pay gap from 2002–2010. Disappointingly, only  out of the 28 the EU countries Eurostat provides data for have a pay gap that is smaller than 5% with Luxembourg being closest to zero (0.7%).**
+**In 2020, women's gross hourly earnings were on average 13.0% below those of male paid employees in the European Union. This is still a significant gap, but at least it was decreasing over the last years. Unfortunately, this is not the case for all countries in the EU: Latvia, Portugal, Croatia, and Malta have decreasing trends compared to the average pay gap from 2002–2010. Disappointingly, only five out of the 28 EU countries Eurostat provides data for have a pay gap that is smaller than 5% (Luxembourg, Romania, Slovenia, Italia, and Poland) with Luxembourg being closest to zero (0.7%).**
 
 [Eurostat provides the metric](https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en) for all EU countries except Iceland and Greece between 2002 and 2020 (but number of years included differ per country). It also provides gropuped metrics for all EU countries and for the 19 countries of the Euro area. The indicator includes all employees working in firms with ten or more employees, without restrictions for age and hours worked. [Samples contain about 12 million employees EU-wide and the gross hourly earnings are estimated with high precision at total economy level (sampling error below 1%)](https://twitter.com/EU_Eurostat/status/1501840155489013762).
 
@@ -43,7 +43,7 @@ For the first time, I also created a colorful, eye-catching version with larger 
 ##### Design Choices
 
 * A *dumbbell chart* to allow for direct comparison per country and across countries.
-* *Ranking* of countries by the pay gap in 2020 (original version; ranking by reference period as alternative versions)
+* *Ranking* of countries by the pay gap in 2020 (original version; ranking by pay gap during the reference period as alternative version).
 * A colorblind-safe *traffic-light colors* for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.
 * *Chart title serves as axis title* as well. 
 * A *detailed legend* explaining the trend colors and dumbbell.
