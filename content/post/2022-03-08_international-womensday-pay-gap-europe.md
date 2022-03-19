@@ -23,7 +23,7 @@ Eurostat provides the metric for all EU countries except Iceland and Greece betw
 
 My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a *typical time series* would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an *unusual slope chart* in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a *hybrid of a slope chart and a time series* as it only compares two values, connected by a line, with a continuous date axis.
 
-As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a *dumbbell chart* with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to display the sample size in chart.
+As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a *dumbbell chart* with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to encode the sample size in the dot size.
 
 For the first time, I also created a colorful, eye-catching version with larger fonts and less detail to share it on my [Instagram](https://www.instagram.com/cedscherer/):
 
@@ -62,12 +62,13 @@ For the first time, I also created a colorful, eye-catching version with larger 
 * Data Preparation: [`{dplyr}`](https://dplyr.tidyverse.org/), [`{stringr}`](https://stringr.tidyverse.org/), and [`{janitor}`](https://sfirke.github.io/janitor/)
 * Graphics: [`{ggplot2}`](https://ggplot2.tidyverse.org/); [`{ggtext}`](https://wilkelab.org/ggtext/) for advanced text styling; [`{colorspace}`](https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html) for color manipulation; [`{ggrepel}`](https://ggrepel.slowkow.com/articles/examples.html) for label positions in alternative slope chart 
 * Colors: Picked with [palettte.app](https://palettte.app/) and colorblind–tested with [Viz Palette](https://projects.susielu.com/viz-palette?colors=[%22#B55951%22,%22#F0B48E%22,%22#669d8f%22]&backgroundColor=%22white%22&fontColor=%22black%22&mode=%22deuteranomaly%22)
+* [Code available for both the dumbbell and slope graph](https://gist.github.com/z3tt/45235c5a2ee0e03e61d03f8db710e3b7)
 
 
 ##### Methods
 
 * For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.
-* Plotting was done completely in R (for a list of packages see "Tools").<br>
+* [Plotting was done completely in R](https://gist.github.com/z3tt/45235c5a2ee0e03e61d03f8db710e3b7) (for a list of packages see "Tools").<br>
 
 
 ## Alternative Versions

@@ -220,7 +220,7 @@
 <img src="img/paygap-europe/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/paygap-europe/paygap_eu_dumbbell.jpg', 'blank');"/>
 <p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The dumbbell chart comparing the pay gap from a reference period 2002–2010 (point) with the pay gap in 2020 (arrow head). Colors indicate the trend and countries are sorted by the recent pay gap in decreasing order from left to right.</figcaption></p>
 <p>My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a <em>typical time series</em> would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an <em>unusual slope chart</em> in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a <em>hybrid of a slope chart and a time series</em> as it only compares two values, connected by a line, with a continuous date axis.</p>
-<p>As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a <em>dumbbell chart</em> with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to display the sample size in chart.</p>
+<p>As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a <em>dumbbell chart</em> with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to encode the sample size in the dot size.</p>
 <p>For the first time, I also created a colorful, eye-catching version with larger fonts and less detail to share it on my <a href="https://www.instagram.com/cedscherer/">Instagram</a>:</p>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
@@ -353,11 +353,12 @@
 <li>Data Preparation: <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code></a>, <a href="https://stringr.tidyverse.org/"><code>{stringr}</code></a>, and <a href="https://sfirke.github.io/janitor/"><code>{janitor}</code></a></li>
 <li>Graphics: <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a>; <a href="https://wilkelab.org/ggtext/"><code>{ggtext}</code></a> for advanced text styling; <a href="https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html"><code>{colorspace}</code></a> for color manipulation; <a href="https://ggrepel.slowkow.com/articles/examples.html"><code>{ggrepel}</code></a> for label positions in alternative slope chart</li>
 <li>Colors: Picked with <a href="https://palettte.app/">palettte.app</a> and colorblind–tested with <a href="https://projects.susielu.com/viz-palette?colors=%5B%22#B55951%22,%22#F0B48E%22,%22#669d8f%22%5D&amp;backgroundColor=%22white%22&amp;fontColor=%22black%22&amp;mode=%22deuteranomaly%22">Viz Palette</a></li>
+<li><a href="https://gist.github.com/z3tt/45235c5a2ee0e03e61d03f8db710e3b7">Code available for both the dumbbell and slope graph</a></li>
 </ul>
 <h5 id="methods">Methods</h5>
 <ul>
 <li>For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.</li>
-<li>Plotting was done completely in R (for a list of packages see &ldquo;Tools&rdquo;).<br></li>
+<li><a href="https://gist.github.com/z3tt/45235c5a2ee0e03e61d03f8db710e3b7">Plotting was done completely in R</a> (for a list of packages see &ldquo;Tools&rdquo;).<br></li>
 </ul>
 <h2 id="alternative-versions">Alternative Versions</h2>
 <h5 id="slope-chart-x-time-series-hybrid">Slope Chart x Time Series Hybrid</h5>
