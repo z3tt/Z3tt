@@ -28,7 +28,7 @@ I have been working as an independent data visualization specialist since the be
 
 I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](http://ecological-dynamics-izw.com) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/pubs/)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/portfolio/#publications)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
 
 <img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
@@ -266,13 +266,13 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
 
   <li><b>Languages:</b> German <i>(native)</i>, English <i>(fluent)</i></li>
 
-  <li><b>Programming:</b> R, CSS, html, SQL/SQLite, NetLogo, Python, C++</li>
+  <li><b>Programming:</b> R, CSS, html, SQL/SQLite, NetLogo, Python</li>
 
-  <li><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), SPSS, Excel</li>
+  <li><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), Excel, SPSS</li>
 
   <li><b>GIS:</b> R (e.g. sf, stars, terra, raster, rgdal, rgeos, sp), QGIS, GRASS, ArcGIS</li>
 
-  <li><b>Visualization:</b> R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highcharter), Figma, DataWrapper, Flourish, RAWgraphs, CartoDB</li>
+  <li><b>Visualization:</b> R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highchartr), Figma, DataWrapper, Flourish, RAWgraphs, Highcharts, CartoDB</li>
 
   <li><b>Markup:</b> Markdown, R (e.g. Rmarkdown, blogdown, bookdown, xaringan), LaTeX</li>
 

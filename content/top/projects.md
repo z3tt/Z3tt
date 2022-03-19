@@ -1,4 +1,5 @@
-### Overview of Research Project
+### Overview of Research Projects
+
 As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by [movement behavior](https://doi.org/10.1111/oik.07002), [landscape structure](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076) and [seasonality](https://doi.org/10.1111/1365-2656.13070), how [disturbances affect stability measures of ecological communities](https://doi.org/10.1111/ele.13226), and how [birds respond to global change](https://doi.org/10.1016/j.ecolmodel.2015.07.005). 
 
 ##### Content
@@ -9,7 +10,7 @@ As a computational scientist, I apply analytic and mechanistic modeling approach
 * [AFT (Animal Functional Type Approach)](#aft)
 
 
-#### BioMove {#biomove}
+#### BioMove (PhD Thesis) {#biomove}
 
 The [DFG](https://www.dfg.de/en/funded_projects/current_projects_programmes/list/index.jsp?id=GRK) funded Research Training Group ['Integrating **Biodiversity Research** with **Movement Ecology** in dynamic agricultural landscapes (BioMove)'](https://www.biomove.org/) aims to:
 
@@ -21,8 +22,13 @@ The [DFG](https://www.dfg.de/en/funded_projects/current_projects_programmes/list
 
 4. link impacts of land-use on resource availability, landscape structures and disturbance regimes to movement processes of organisms of different taxa to identify common factors that influence biodiversity patterns.
 
-BioMove is a joint project of the [University of Potsdam](https://www.uni-potsdam.de/) together with [Freie Universität Berlin](https://www.fu-berlin.de/), [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) and [Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx) led by [Prof. Dr. Florian Jeltsch](https://www.uni-potsdam.de/ibb-vegnat/members/prof-dr-florian-jeltsch.html) that started in October 2015.
+BioMove is a joint project of the [University of Potsdam](https://www.uni-potsdam.de/) together with [Freie Universität Berlin](https://www.fu-berlin.de/), [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) and [Leibniz Centre for Agricultural Landscape Research (ZALF)](http://www.zalf.de/en/Pages/ZALF.aspx) led by [Prof. Dr. Florian Jeltsch](https://www.uni-potsdam.de/ibb-vegnat/members/prof-dr-florian-jeltsch.html) that started in October 2015. We explained the general framework idea of in a [joint review paper entitled "Movement-mediated community assembly and coexistence"](https://doi.org/10.1111/brv.12600).
 
+Movement plays a major role in shaping population densities and contact rates among individuals, two factors that are particularly relevant for disease outbreaks. Although any differences in movement behavior due to individual characteristics of the host and heterogeneity in landscape structure are likely to have considerable consequences for disease dynamics, these mechanisms are neglected in most epidemiological studies. Therefore, developing a general understanding how the interaction of movement behavior and spatial heterogeneity shapes host densities, contact rates and ultimately pathogen spread is a key question in ecological and epidemiological research.
+
+In my PhD project, I have addressed this gap using both theoretical and empirical modelling approaches. In the theoretical part of my thesis, we have investigated bottom-up effects of individual movement behavior and landscape structure on host density, contact rates, and ultimately disease dynamics. We have extended an established [agent-based model that simulates ecological and epidemiological key processes to incorporate explicit movement of host individuals and landscape complexity](https://doi.org/10.1111/oik.07002). In the empirical part, we have focused on the [spatiotemporal dynamics of Classical Swine Fever in a wild boar population](https://doi.org/10.1111/1365-2656.13070) by analyzing epidemiological data that was collected during an outbreak in Northern Germany persisting for eight years.
+
+In the follow-up project, we use an extended version of the individual-based model to investigate different host-pathogen coexistence patterns under the effect of dynamic resource landscapes and the role of dispersal in the evolution of pathogenic virulence.
 
 #### NLMR (Neutral Landscape Models in R) {#nlmr}
 

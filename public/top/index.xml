@@ -29,7 +29,7 @@
 &lt;br&gt;
 &lt;h4 id=&#34;ecology&#34;&gt;Computational Ecology&lt;/h4&gt;
 &lt;p&gt;I am working as a scientific researcher (&lt;em&gt;PostDoc&lt;/em&gt;) in the &lt;a href=&#34;http://ecological-dynamics-izw.com&#34;&gt;Department &amp;ldquo;Ecological Dynamics&amp;rdquo;&lt;/a&gt; at the &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Leibniz Institute for Zoo and Wildlife Research (IZW)&lt;/a&gt; in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the &lt;a href=&#34;https://www.uni-potsdam.de/en/ibb.html&#34;&gt;University of Potsdam&lt;/a&gt; as part of the &lt;a href=&#34;https://www.biomove.org/&#34;&gt;BioMove&lt;/a&gt; research training group.&lt;/p&gt;
-&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/pubs/&#34;&gt;Read my publications&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;Read my publications&lt;/a&gt;&lt;br&gt;
     →  &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;Learn more about my research&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/about/cedric-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;My favorite tool for all data-related tasks is &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; from the &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;code&gt;{tidyverse}&lt;/code&gt; package collection&lt;/a&gt; including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as &lt;a href=&#34;https://www.figma.com/ui-design-tool/&#34;&gt;Figma&lt;/a&gt;, &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;, and &lt;a href=&#34;https://flourish.studio/&#34;&gt;Flourish&lt;/a&gt;.&lt;/p&gt;
@@ -226,10 +226,10 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany&lt;br&gt;
 &lt;h3 id=&#34;skills&#34;&gt;Skills&lt;/h3&gt;
 &lt;ul style=&#34;font-size:15px;&#34;&gt;
   &lt;li&gt;&lt;b&gt;Languages:&lt;/b&gt; German &lt;i&gt;(native)&lt;/i&gt;, English &lt;i&gt;(fluent)&lt;/i&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;Programming:&lt;/b&gt; R, CSS, html, SQL/SQLite, NetLogo, Python, C++&lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;Statistics:&lt;/b&gt; R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), SPSS, Excel&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Programming:&lt;/b&gt; R, CSS, html, SQL/SQLite, NetLogo, Python&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Statistics:&lt;/b&gt; R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), Excel, SPSS&lt;/li&gt;
   &lt;li&gt;&lt;b&gt;GIS:&lt;/b&gt; R (e.g. sf, stars, terra, raster, rgdal, rgeos, sp), QGIS, GRASS, ArcGIS&lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;Visualization:&lt;/b&gt; R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highcharter), Figma, DataWrapper, Flourish, RAWgraphs, CartoDB&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Visualization:&lt;/b&gt; R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highchartr), Figma, DataWrapper, Flourish, RAWgraphs, Highcharts, CartoDB&lt;/li&gt;
   &lt;li&gt;&lt;b&gt;Markup:&lt;/b&gt; Markdown, R (e.g. Rmarkdown, blogdown, bookdown, xaringan), LaTeX&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;services&#34;&gt;Memberships &amp;amp; Services&lt;/h3&gt;
@@ -2003,7 +2003,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/projects/</guid>
-      <description>&lt;h3 id=&#34;overview-of-research-project&#34;&gt;Overview of Research Project&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;overview-of-research-projects&#34;&gt;Overview of Research Projects&lt;/h3&gt;
 &lt;p&gt;As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. By using empirical and simulated data, I investigate how disease dynamics are influenced by &lt;a href=&#34;https://doi.org/10.1111/oik.07002&#34;&gt;movement behavior&lt;/a&gt;, &lt;a href=&#34;https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076&#34;&gt;landscape structure&lt;/a&gt; and &lt;a href=&#34;https://doi.org/10.1111/1365-2656.13070&#34;&gt;seasonality&lt;/a&gt;, how &lt;a href=&#34;https://doi.org/10.1111/ele.13226&#34;&gt;disturbances affect stability measures of ecological communities&lt;/a&gt;, and how &lt;a href=&#34;https://doi.org/10.1016/j.ecolmodel.2015.07.005&#34;&gt;birds respond to global change&lt;/a&gt;.&lt;/p&gt;
 &lt;h5 id=&#34;content&#34;&gt;Content&lt;/h5&gt;
 &lt;ul&gt;
@@ -2012,7 +2012,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;li&gt;&lt;a href=&#34;#stability&#34;&gt;Multidimensionality of Stability&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#aft&#34;&gt;AFT (Animal Functional Type Approach)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;biomove&#34;&gt;BioMove&lt;/h4&gt;
+&lt;h4 id=&#34;biomove&#34;&gt;BioMove (PhD Thesis)&lt;/h4&gt;
 &lt;p&gt;The &lt;a href=&#34;https://www.dfg.de/en/funded_projects/current_projects_programmes/list/index.jsp?id=GRK&#34;&gt;DFG&lt;/a&gt; funded Research Training Group &lt;a href=&#34;https://www.biomove.org/&#34;&gt;&amp;lsquo;Integrating &lt;strong&gt;Biodiversity Research&lt;/strong&gt; with &lt;strong&gt;Movement Ecology&lt;/strong&gt; in dynamic agricultural landscapes (BioMove)&#39;&lt;/a&gt; aims to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -2028,7 +2028,10 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;p&gt;link impacts of land-use on resource availability, landscape structures and disturbance regimes to movement processes of organisms of different taxa to identify common factors that influence biodiversity patterns.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;BioMove is a joint project of the &lt;a href=&#34;https://www.uni-potsdam.de/&#34;&gt;University of Potsdam&lt;/a&gt; together with &lt;a href=&#34;https://www.fu-berlin.de/&#34;&gt;Freie Universität Berlin&lt;/a&gt;, &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Leibniz Institute for Zoo and Wildlife Research (IZW)&lt;/a&gt; and &lt;a href=&#34;http://www.zalf.de/en/Pages/ZALF.aspx&#34;&gt;Leibniz Centre for Agricultural Landscape Research (ZALF)&lt;/a&gt; led by &lt;a href=&#34;https://www.uni-potsdam.de/ibb-vegnat/members/prof-dr-florian-jeltsch.html&#34;&gt;Prof. Dr. Florian Jeltsch&lt;/a&gt; that started in October 2015.&lt;/p&gt;
+&lt;p&gt;BioMove is a joint project of the &lt;a href=&#34;https://www.uni-potsdam.de/&#34;&gt;University of Potsdam&lt;/a&gt; together with &lt;a href=&#34;https://www.fu-berlin.de/&#34;&gt;Freie Universität Berlin&lt;/a&gt;, &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Leibniz Institute for Zoo and Wildlife Research (IZW)&lt;/a&gt; and &lt;a href=&#34;http://www.zalf.de/en/Pages/ZALF.aspx&#34;&gt;Leibniz Centre for Agricultural Landscape Research (ZALF)&lt;/a&gt; led by &lt;a href=&#34;https://www.uni-potsdam.de/ibb-vegnat/members/prof-dr-florian-jeltsch.html&#34;&gt;Prof. Dr. Florian Jeltsch&lt;/a&gt; that started in October 2015. We explained the general framework idea of in a &lt;a href=&#34;https://doi.org/10.1111/brv.12600&#34;&gt;joint review paper entitled &amp;ldquo;Movement-mediated community assembly and coexistence&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Movement plays a major role in shaping population densities and contact rates among individuals, two factors that are particularly relevant for disease outbreaks. Although any differences in movement behavior due to individual characteristics of the host and heterogeneity in landscape structure are likely to have considerable consequences for disease dynamics, these mechanisms are neglected in most epidemiological studies. Therefore, developing a general understanding how the interaction of movement behavior and spatial heterogeneity shapes host densities, contact rates and ultimately pathogen spread is a key question in ecological and epidemiological research.&lt;/p&gt;
+&lt;p&gt;In my PhD project, I have addressed this gap using both theoretical and empirical modelling approaches. In the theoretical part of my thesis, we have investigated bottom-up effects of individual movement behavior and landscape structure on host density, contact rates, and ultimately disease dynamics. We have extended an established &lt;a href=&#34;https://doi.org/10.1111/oik.07002&#34;&gt;agent-based model that simulates ecological and epidemiological key processes to incorporate explicit movement of host individuals and landscape complexity&lt;/a&gt;. In the empirical part, we have focused on the &lt;a href=&#34;https://doi.org/10.1111/1365-2656.13070&#34;&gt;spatiotemporal dynamics of Classical Swine Fever in a wild boar population&lt;/a&gt; by analyzing epidemiological data that was collected during an outbreak in Northern Germany persisting for eight years.&lt;/p&gt;
+&lt;p&gt;In the follow-up project, we use an extended version of the individual-based model to investigate different host-pathogen coexistence patterns under the effect of dynamic resource landscapes and the role of dispersal in the evolution of pathogenic virulence.&lt;/p&gt;
 &lt;h4 id=&#34;nlmr&#34;&gt;NLMR (Neutral Landscape Models in R)&lt;/h4&gt;
 &lt;p&gt;Neutral landscape models (NLMs) are algorithms which generate landscape patterns in the absence of biotic and abiotic processes. &lt;a href=&#34;https://doi.org/10.2307/3546007&#34;&gt;With and King (1997)&lt;/a&gt; outlined three uses for NLMs which were further highlighted by &lt;a href=&#34;https://link.springer.com/book/10.1007%2F978-1-4939-2794-4&#34;&gt;Turner and Gardner (2015)&lt;/a&gt;:&lt;/p&gt;
 &lt;ol&gt;
