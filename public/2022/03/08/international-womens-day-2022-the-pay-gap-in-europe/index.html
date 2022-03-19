@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://cedricscherer.com/img/banner/mountainsnstars_crystal_RichardStrozynski.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/paygap-insta-artsy.png" >
+    
+
+    
+
+    
+      <meta name="title" content="International Women&#39;s Day 2022: The Pay Gap in Europe" />
+      <meta property="og:title" content="International Women&#39;s Day 2022: The Pay Gap in Europe - Dr. Cédric Scherer" />
+      <meta property="twitter:title" content="International Women&#39;s Day 2022: The Pay Gap in Europe - Dr. Cédric Scherer" />
+      <meta property="twitter:text:title" content="International Women&#39;s Day 2022: The Pay Gap in Europe - Dr. Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="Sadly, inequality between women and men is still an issue. In 2020, women&#39;s gross hourly earnings were on average 13% below those of male paid employees in the European Union. Disappointingly, only five countries in the EU report a gap smaller than 5% with Luxembourg being closest to zero.">
+      <meta property="og:description" content="Sadly, inequality between women and men is still an issue. In 2020, women&#39;s gross hourly earnings were on average 13% below those of male paid employees in the European Union. Disappointingly, only five countries in the EU report a gap smaller than 5% with Luxembourg being closest to zero." />
+      <meta property="twitter:description" content="Sadly, inequality between women and men is still an issue. In 2020, women&#39;s gross hourly earnings were on average 13% below those of male paid employees in the European Union. Disappointingly, only five countries in the EU report a gap smaller than 5% with Luxembourg being closest to zero." />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>International Women&#39;s Day 2022: The Pay Gap in Europe - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cédric Scherer</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
+                        <li><a href="/top/portfolio/">Portfolio</a></li>
+                    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/paygap-insta-artsy.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        <a class="tag" href="/tags/design" title="design">
+                            design
+                        </a>
+                        
+                        <a class="tag" href="/tags/equality" title="equality">
+                            equality
+                        </a>
+                        
+                        <a class="tag" href="/tags/paygap" title="paygap">
+                            paygap
+                        </a>
+                        
+                        <a class="tag" href="/tags/europe" title="Europe">
+                            Europe
+                        </a>
+                        
+                    </div>
+                    <h1>International Women&#39;s Day 2022: The Pay Gap in Europe</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			Posted by
+			
+			    Cédric
+			
+			on
+			Tuesday, March 8, 2022
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p><strong>Sadly, inequality between women and men is still an issue. A metric that is one of the most used to illustrate the inequality is the pay gap. In its simplest, unadjusted form, the pay gap shows the difference between the average gross hourly earnings of men and women, expressed as a percentage of the average gross hourly earnings of men.</strong></p>
+<p><strong>In 2020, women&rsquo;s gross hourly earnings were on average 13.0% below those of male paid employees in the European Union. This is still a significant gap, but at least it was decreasing over the last years. Unfortunately, this is not the case for all countries in the EU: Latvia, Portugal, Croatia, and Malta have decreasing trends compared to the average pay gap from 2002–2010. Disappointingly, only  out of the 28 the EU countries Eurostat provides data for have a pay gap that is smaller than 5% with Luxembourg being closest to zero (0.7%).</strong></p>
+<p>Eurostat provides the metric for all EU countries except Iceland and Greece between 2002 and 2020 (but number of years included differ per country). It also provides gropuped metrics for all EU countries and for the 19 countries of the Euro area. The indicator includes all employees working in firms with ten or more employees, without restrictions for age and hours worked. <a href="https://twitter.com/EU_Eurostat/status/1501840155489013762">Samples contain about 12 million employees EU-wide and the gross hourly earnings are estimated with high precision at total economy level (sampling error below 1%)</a>.</p>
+<img src="img/paygap-europe/paygap_eu_dumbbell.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/paygap-europe/paygap_eu_dumbbell.png', 'blank');"/>
+<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The dumbbell chart comparing the pay gap from a reference period 2002–2010 (point) with the pay gap in 2020 (arrow head). Colors indicate the trend and countries are sorted by the recent pay gap in decreasing order from left to right.</figcaption></p>
+<p>My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a <em>typical time series</em> would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an <em>unusual slope chart</em> in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a <em>hybrid of a slope chart and a time series</em> as it only compares two values, connected by a line, with a continuous date axis.</p>
+<p>As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a <em>dumbbell chart</em> with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to display the sample size in chart.</p>
+<h5 id="project-type">Project Type</h5>
+<ul>
+<li>Personal Project</li>
+</ul>
+<h5 id="motivation">Motivation</h5>
+<ul>
+<li><a href="https://www.internationalwomensday.com">International Women&rsquo;s Day 2022</a></li>
+<li>EuroStat shared <a href="https://ec.europa.eu/eurostat/en/web/products-statistical-working-papers/-/ks-tc-22-002">data set on gender pay gaps in the EU</a> on <a href="https://twitter.com/EU_Eurostat/status/1500755719796236288">Twitter</a></li>
+</ul>
+<h5 id="design-choices">Design Choices</h5>
+<ul>
+<li>A <em>dumbbell chart</em> to allow for direct comparison per country and across countries.</li>
+<li><em>Ranking</em> of countries by the pay gap in 2020 (original version; ranking by reference period as alternative versions)</li>
+<li>A colorblind-safe <em>traffic-light colors</em> for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.</li>
+<li><em>Chart title serves as axis title</em> as well.</li>
+<li>A <em>detailed legend</em> explaining the trend colors and dumbbell.</li>
+<li><em>Annotations</em> to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.</li>
+<li><em>Highlighting EU27 and EA19</em> as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).</li>
+<li>To focus on the women, I wanted to show how much less the earning is compared to men. This becomes a bit tricky as the percentage is actually positive but shows a gap (it is <em>&quot;+13% below&quot;</em>). In the end, I decided to flip the axis as it feels much more intuitive to me. By adding big axis text I guide the reader how to interpret the y axis.</li>
+<li>Unfortunately, I had to use the country abbreviations due to space issues. Long labels made the chart way too busy.</li>
+</ul>
+<h5 id="data-source">Data Source</h5>
+<ul>
+<li>EuroStat data set <a href="https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en">SDG_05_20 &ldquo;Gender pay gap in unadjusted form&rdquo;</a></li>
+</ul>
+<h5 id="tools">Tools</h5>
+<ul>
+<li>Data Preparation: <a href="https://dplyr.tidyverse.org/"><code>{dplyr}</code></a>, <a href="https://stringr.tidyverse.org/"><code>{stringr}</code></a>, and <a href="https://sfirke.github.io/janitor/"><code>{janitor}</code></a></li>
+<li>Graphics: <a href="https://ggplot2.tidyverse.org/"><code>{ggplot2}</code></a>; <a href="https://wilkelab.org/ggtext/"><code>{ggtext}</code></a> for advanced text styling; <a href="https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html"><code>{colorspace}</code></a> for color manipulation; <a href="https://ggrepel.slowkow.com/articles/examples.html"><code>{ggrepel}</code></a> for label positions in alternative slope chart</li>
+<li>Colors: Picked with <a href="https://palettte.app/">palettte.app</a> and colorblind–tested with <a href="https://projects.susielu.com/viz-palette?colors=%5B%22#B55951%22,%22#F0B48E%22,%22#669d8f%22%5D&amp;backgroundColor=%22white%22&amp;fontColor=%22black%22&amp;mode=%22deuteranomaly%22">Viz Palette</a></li>
+</ul>
+<h5 id="methods">Methods</h5>
+<ul>
+<li>For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.</li>
+<li>Plotting was done completely in R (for a list of packages see &ldquo;Tools&rdquo;).<br></li>
+</ul>
+<h2 id="alternative-versions">Alternative Versions</h2>
+<h5 id="slope-chart-x-time-series-hybrid">Slope Chart x Time Series Hybrid</h5>
+<img src="img/paygap-europe/paygap_eu_slope.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.png', 'blank');">
+<h5 id="experimental-colorful-versions-for-instagram">Experimental, Colorful Versions for Instagram</h5>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png" alt="Pay Gap in Europe for Instagram 1" />
+				    </div>
+			      <figcaption>
+		          <p>Pay Gap in Europe for Instagram 1</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png" alt="Pay Gap in Europe for Instagram 2" />
+				    </div>
+			      <figcaption>
+		          <p>Pay Gap in Europe for Instagram 2</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png');" >
+				      <img itemprop="thumbnail" src="https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png" alt="Pay Gap in Europe for Instagram 3" />
+				    </div>
+			      <figcaption>
+		          <p>Pay Gap in Europe for Instagram 3</p>
+			      </figcaption>
+				    <a href="https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</p>
+<h5 id="dumbbell-chart-sorted-by-pay-gap-20022010">Dumbbell Chart sorted by Pay Gap 2002–2010</h5>
+<img src="img/paygap-europe/paygap_eu_dumbbell_alt" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt', 'blank');">
+<h5 id="dumbbell-chart-for-all-countries-listed">Dumbbell Chart for All Countries Listed</h5>
+<img src="img/paygap-europe/paygap_all_dumbbell" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt', 'blank');">
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/08/27/the-worlds-countries-colored-by-their-first-letter/" data-toggle="tooltip" data-placement="top" title="The World&#39;s Countries Colored by Their First Letter">Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                  <hr class="hidden-sm hidden-xs">
+                  <br>
+                    <h5>FEATURED TAGS</h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/covid19" title="covid19">
+                            covid19
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/design" title="design">
+                            design
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section>
+                  <br>
+                  <h5>QUICK LINKS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_self" href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
+                        
+                        <li><a target="_self" href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/">Evolution of a ggpplot</a></li>
+                        
+                    </ul>
+                </section>
+
+                
+                
+                <section>
+                  <br>
+                  <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://www.datavisualizationsociety.com/">DataVizSociety</a></li>
+                        
+                        <li><a target="_blank" href="https://www.data-to-viz.com/">From Data to Viz</a></li>
+                        
+                        <li><a target="_blank" href="https://correlaid.org/en/">CorrelAid</a></li>
+                        
+                        <li><a target="_blank" href="https://marcosci.github.io/">Marco Sciaini</a></li>
+                        
+                        <li><a target="_blank" href="https://karaman.is/">Georgios Karamanis</a></li>
+                        
+                        <li><a target="_blank" href="https://www.instagram.com/datacitron/">Julie Brunet</a></li>
+                        
+                        <li><a target="_blank" href="https://www.higsch.com/">Matthias Stahl</a></li>
+                        
+                        <li><a target="_blank" href="https://www.inbal-rief.com/">Inbal Rief</a></li>
+                        
+                        <li><a target="_blank" href="https://www.williamrchase.com/">Will Chase</a></li>
+                        
+                        <li><a target="_blank" href="https://www.delightfuldata.art/">Anne-Marie Dufour</a></li>
+                        
+                        <li><a target="_blank" href="https://www.heurekalabs.org/">Heureka Labs</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="mailto:info@data-vizard.de">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                      <li>
+                         <a href="https://www.cedricscherer.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Cédric Scherer" >
+                             <span class="fa-stack fa-lg">
+                                 <i class="fa fa-circle fa-stack-2x"></i>
+                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                             </span>
+                         </a>
+                      </li>
+                      
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji=""  data-font="Lato" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2022. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -5,7 +5,167 @@
     <description>Recent content in DataViz on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>International Women&#39;s Day 2022: The Pay Gap in Europe</title>
+      <link>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Sadly, inequality between women and men is still an issue. A metric that is one of the most used to illustrate the inequality is the pay gap. In its simplest, unadjusted form, the pay gap shows the difference between the average gross hourly earnings of men and women, expressed as a percentage of the average gross hourly earnings of men.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In 2020, women&amp;rsquo;s gross hourly earnings were on average 13.0% below those of male paid employees in the European Union. This is still a significant gap, but at least it was decreasing over the last years. Unfortunately, this is not the case for all countries in the EU: Latvia, Portugal, Croatia, and Malta have decreasing trends compared to the average pay gap from 2002–2010. Disappointingly, only  out of the 28 the EU countries Eurostat provides data for have a pay gap that is smaller than 5% with Luxembourg being closest to zero (0.7%).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Eurostat provides the metric for all EU countries except Iceland and Greece between 2002 and 2020 (but number of years included differ per country). It also provides gropuped metrics for all EU countries and for the 19 countries of the Euro area. The indicator includes all employees working in firms with ten or more employees, without restrictions for age and hours worked. &lt;a href=&#34;https://twitter.com/EU_Eurostat/status/1501840155489013762&#34;&gt;Samples contain about 12 million employees EU-wide and the gross hourly earnings are estimated with high precision at total economy level (sampling error below 1%)&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&#34;img/paygap-europe/paygap_eu_dumbbell.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;img/paygap-europe/paygap_eu_dumbbell.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;p&gt;&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;The dumbbell chart comparing the pay gap from a reference period 2002–2010 (point) with the pay gap in 2020 (arrow head). Colors indicate the trend and countries are sorted by the recent pay gap in decreasing order from left to right.&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a &lt;em&gt;typical time series&lt;/em&gt; would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an &lt;em&gt;unusual slope chart&lt;/em&gt; in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a &lt;em&gt;hybrid of a slope chart and a time series&lt;/em&gt; as it only compares two values, connected by a line, with a continuous date axis.&lt;/p&gt;
+&lt;p&gt;As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a &lt;em&gt;dumbbell chart&lt;/em&gt; with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to display the sample size in chart.&lt;/p&gt;
+&lt;h5 id=&#34;project-type&#34;&gt;Project Type&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal Project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;motivation&#34;&gt;Motivation&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.internationalwomensday.com&#34;&gt;International Women&amp;rsquo;s Day 2022&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;EuroStat shared &lt;a href=&#34;https://ec.europa.eu/eurostat/en/web/products-statistical-working-papers/-/ks-tc-22-002&#34;&gt;data set on gender pay gaps in the EU&lt;/a&gt; on &lt;a href=&#34;https://twitter.com/EU_Eurostat/status/1500755719796236288&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;design-choices&#34;&gt;Design Choices&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;em&gt;dumbbell chart&lt;/em&gt; to allow for direct comparison per country and across countries.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ranking&lt;/em&gt; of countries by the pay gap in 2020 (original version; ranking by reference period as alternative versions)&lt;/li&gt;
+&lt;li&gt;A colorblind-safe &lt;em&gt;traffic-light colors&lt;/em&gt; for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Chart title serves as axis title&lt;/em&gt; as well.&lt;/li&gt;
+&lt;li&gt;A &lt;em&gt;detailed legend&lt;/em&gt; explaining the trend colors and dumbbell.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Annotations&lt;/em&gt; to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Highlighting EU27 and EA19&lt;/em&gt; as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).&lt;/li&gt;
+&lt;li&gt;To focus on the women, I wanted to show how much less the earning is compared to men. This becomes a bit tricky as the percentage is actually positive but shows a gap (it is &lt;em&gt;&amp;quot;+13% below&amp;quot;&lt;/em&gt;). In the end, I decided to flip the axis as it feels much more intuitive to me. By adding big axis text I guide the reader how to interpret the y axis.&lt;/li&gt;
+&lt;li&gt;Unfortunately, I had to use the country abbreviations due to space issues. Long labels made the chart way too busy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;data-source&#34;&gt;Data Source&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;EuroStat data set &lt;a href=&#34;https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en&#34;&gt;SDG_05_20 &amp;ldquo;Gender pay gap in unadjusted form&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;tools&#34;&gt;Tools&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Preparation: &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&#34;https://sfirke.github.io/janitor/&#34;&gt;&lt;code&gt;{janitor}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Graphics: &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt;; &lt;a href=&#34;https://wilkelab.org/ggtext/&#34;&gt;&lt;code&gt;{ggtext}&lt;/code&gt;&lt;/a&gt; for advanced text styling; &lt;a href=&#34;https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html&#34;&gt;&lt;code&gt;{colorspace}&lt;/code&gt;&lt;/a&gt; for color manipulation; &lt;a href=&#34;https://ggrepel.slowkow.com/articles/examples.html&#34;&gt;&lt;code&gt;{ggrepel}&lt;/code&gt;&lt;/a&gt; for label positions in alternative slope chart&lt;/li&gt;
+&lt;li&gt;Colors: Picked with &lt;a href=&#34;https://palettte.app/&#34;&gt;palettte.app&lt;/a&gt; and colorblind–tested with &lt;a href=&#34;https://projects.susielu.com/viz-palette?colors=%5B%22#B55951%22,%22#F0B48E%22,%22#669d8f%22%5D&amp;amp;backgroundColor=%22white%22&amp;amp;fontColor=%22black%22&amp;amp;mode=%22deuteranomaly%22&#34;&gt;Viz Palette&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;methods&#34;&gt;Methods&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.&lt;/li&gt;
+&lt;li&gt;Plotting was done completely in R (for a list of packages see &amp;ldquo;Tools&amp;rdquo;).&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;alternative-versions&#34;&gt;Alternative Versions&lt;/h2&gt;
+&lt;h5 id=&#34;slope-chart-x-time-series-hybrid&#34;&gt;Slope Chart x Time Series Hybrid&lt;/h5&gt;
+&lt;img src=&#34;img/paygap-europe/paygap_eu_slope.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.png&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;h5 id=&#34;experimental-colorful-versions-for-instagram&#34;&gt;Experimental, Colorful Versions for Instagram&lt;/h5&gt;
+&lt;p&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cedricscherer.com/css/hugo-easy-gallery.css&#34; /&gt;
+
+&lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; alt=&#34;Pay Gap in Europe for Instagram 1&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Pay Gap in Europe for Instagram 1&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; alt=&#34;Pay Gap in Europe for Instagram 2&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Pay Gap in Europe for Instagram 2&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; alt=&#34;Pay Gap in Europe for Instagram 3&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Pay Gap in Europe for Instagram 3&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+&lt;/div&gt;
+ 
+
+
+
+  
+
+
+&lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+&lt;h5 id=&#34;dumbbell-chart-sorted-by-pay-gap-20022010&#34;&gt;Dumbbell Chart sorted by Pay Gap 2002–2010&lt;/h5&gt;
+&lt;img src=&#34;img/paygap-europe/paygap_eu_dumbbell_alt&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;h5 id=&#34;dumbbell-chart-for-all-countries-listed&#34;&gt;Dumbbell Chart for All Countries Listed&lt;/h5&gt;
+&lt;img src=&#34;img/paygap-europe/paygap_all_dumbbell&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt&#39;, &#39;blank&#39;);&#34;&gt;
+</description>
+    </item>
+    
     <item>
       <title>The World&#39;s Countries Colored by Their First Letter</title>
       <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
@@ -40,7 +200,7 @@
 &lt;h5 id=&#34;tools&#34;&gt;Tools&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Data: &lt;a href=&#34;https://docs.ropensci.org/rnaturalearthdata/&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Data Preparation: &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Preparation: &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Graphics: &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt;; &lt;a href=&#34;https://wilkelab.org/ggtext/&#34;&gt;&lt;code&gt;{ggtext}&lt;/code&gt;&lt;/a&gt; for title and caption; &lt;a href=&#34;https://patchwork.data-imaginist.com/&#34;&gt;&lt;code&gt;{patchwork}&lt;/code&gt;&lt;/a&gt; for plot composition&lt;/li&gt;
 &lt;li&gt;Colors: &lt;a href=&#34;https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm&#34;&gt;Tableau cyclic color palette&lt;/a&gt; via the &lt;a href=&#34;https://jrnold.github.io/ggthemes/index.html&#34;&gt;&lt;code&gt;{ggthemes}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

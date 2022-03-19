@@ -40,7 +40,7 @@
 &lt;h5 id=&#34;tools&#34;&gt;Tools&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Data: &lt;a href=&#34;https://docs.ropensci.org/rnaturalearthdata/&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Data Preparation: &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Preparation: &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Graphics: &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt;; &lt;a href=&#34;https://wilkelab.org/ggtext/&#34;&gt;&lt;code&gt;{ggtext}&lt;/code&gt;&lt;/a&gt; for title and caption; &lt;a href=&#34;https://patchwork.data-imaginist.com/&#34;&gt;&lt;code&gt;{patchwork}&lt;/code&gt;&lt;/a&gt; for plot composition&lt;/li&gt;
 &lt;li&gt;Colors: &lt;a href=&#34;https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm&#34;&gt;Tableau cyclic color palette&lt;/a&gt; via the &lt;a href=&#34;https://jrnold.github.io/ggthemes/index.html&#34;&gt;&lt;code&gt;{ggthemes}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

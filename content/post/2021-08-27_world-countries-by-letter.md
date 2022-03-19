@@ -45,7 +45,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 ##### Tools
 
 * Data: [`{rnaturalearth}`](https://docs.ropensci.org/rnaturalearthdata/)
-* Data Preparation: [`{stringr}`](https://stringr.tidyverse.org/) and [`{sf}`](https://r-spatial.github.io/sf/)
+* Data Preparation: [`{dplyr}`](https://dplyr.tidyverse.org/), [`{stringr}`](https://stringr.tidyverse.org/) and [`{sf}`](https://r-spatial.github.io/sf/)
 * Graphics: [`{ggplot2}`](https://ggplot2.tidyverse.org/); [`{ggtext}`](https://wilkelab.org/ggtext/) for title and caption; [`{patchwork}`](https://patchwork.data-imaginist.com/) for plot composition
 * Colors: [Tableau cyclic color palette](https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm) via the [`{ggthemes}`](https://jrnold.github.io/ggthemes/index.html)
 

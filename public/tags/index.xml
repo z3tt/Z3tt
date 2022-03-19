@@ -5,11 +5,11 @@
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DataViz</title>
       <link>https://cedricscherer.com/tags/dataviz/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/dataviz/</guid>
       <description></description>
@@ -18,18 +18,45 @@
     <item>
       <title>design</title>
       <link>https://cedricscherer.com/tags/design/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>equality</title>
+      <link>https://cedricscherer.com/tags/equality/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/equality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Europe</title>
+      <link>https://cedricscherer.com/tags/europe/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/europe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ggplot2</title>
       <link>https://cedricscherer.com/tags/ggplot2/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paygap</title>
+      <link>https://cedricscherer.com/tags/paygap/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/paygap/</guid>
       <description></description>
     </item>
     
@@ -156,33 +183,6 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/datawrapper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Figma</title>
-      <link>https://cedricscherer.com/tags/figma/</link>
-      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/figma/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Flourish</title>
-      <link>https://cedricscherer.com/tags/flourish/</link>
-      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/flourish/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CorrelAid</title>
-      <link>https://cedricscherer.com/tags/correlaid/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/correlaid/</guid>
       <description></description>
     </item>
     
