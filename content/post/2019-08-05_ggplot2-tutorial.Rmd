@@ -18,7 +18,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE, out.width = "100%",
                       fig.showtext = TRUE, retina = 1)
 ```
 
-*Last update: 2021-02-09*
+*Last update: 2022-03-24*
 
 
 ## Introductory Words
@@ -858,7 +858,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
   geom_point() +
   labs(x = "Year", y = "Temperature (°F)") +
   scale_color_discrete(
-    name = "Seasons:", 
+    name = "Seasons:",
     labels = c("Mar—May", "Jun—Aug", "Sep—Nov", "Dec—Feb")
   ) +
   theme(legend.title = element_text(
@@ -1179,7 +1179,7 @@ To change from row to column arrangement you can change `facet_grid(year ~ seaso
 `facet_wrap` creates a facet of a single variable, written with a tilde in front: `facet_wrap(~ variable)`. The appearance of these subplots is controlled by the arguments `ncol` and `nrow`:
 
 ```{r wrap-plots-1-row}
-g <- 
+g <-
   ggplot(chic, aes(x = date, y = temp)) +
     geom_point(color = "chartreuse4", alpha = .3) +
     labs(x = "Year", y = "Temperature (°F)") +
@@ -2497,13 +2497,13 @@ corm <- corm %>%
     rowname = fct_inorder(term),
     colname = fct_inorder(colname),
     label = ifelse(is.na(corr), "", sprintf("%1.2f", corr))
-  ) 
+  )
 
 corm
 ```
 
 For the plot we will use `geom_tile()` for the heatmap and `geom_text()` for the labels:
- 
+
 ```{r tile-corr-plot}
 ggplot(corm, aes(rowname, fct_rev(colname),
                  fill = corr)) +
@@ -2760,7 +2760,7 @@ ggplot(chic, aes(x = date, y = o3run)) +
    labs(x = "Year", y = "Ozone")
 ```
 
-[↑ Jump back to Table of Content.](#toc)<br><br> 
+[↑ Jump back to Table of Content.](#toc)<br><br>
 
 
 
