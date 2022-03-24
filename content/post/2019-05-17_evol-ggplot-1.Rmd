@@ -194,7 +194,7 @@ Let's spice this plot up! One great thing about `{ggplot2}` is that it is struct
 * use a different theme that comes with the `{ggplot2}` package by calling `theme_set(theme_light())` (several themes come along with the `{ggplot2}` package but if you need more check for example the packages [`{ggthemes}`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/) or [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/)),
 * change the font and the overall font size by adding the arguments `base_size` and `base_family` to `theme_light()`,
 * flip the axes by adding `coord_flip()` (as seen before),
-* let the axis start at 0 and reduce the spacing to the plot margin by adding `expand = c(0.005, 0.005)` as argument to the `scale_y_continious()`,
+* let the axis start at 0 and reduce the spacing to the plot margin by adding `expand = c(0.02, 0.02)` as argument to the `scale_y_continious()`,
 * add some color encoding the continent by adding `color = region` to the `aes` argument and picking a palette from the [`{ggsci}` package](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html),
 * add meaningful labels/removing useless labels by adding `labs(x = NULL, y = "title y")`
 * adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding `theme()`.
@@ -211,7 +211,7 @@ theme_set(theme_light(base_size = 18, base_family = "Poppins"))
 g <-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.02, 0.02)) +
     scale_color_uchicago() +
     labs(x = NULL, y = "Student to teacher ratio") +
     theme(
@@ -428,7 +428,7 @@ set.seed(2019)
 (g_final <-
   g_arrows +
   scale_y_continuous(
-    limits = c(1, NA), expand = c(0.005, 0.005),
+    limits = c(1, NA), expand = c(0.02, 0.02),
     breaks = c(1, seq(20, 80, by = 20))
   ) +
   labs(caption = "Data: UNESCO Institute for Statistics") +
@@ -468,12 +468,12 @@ library(ggsci)
 set.seed(2019)
 
 g_final +
-  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)
 ```
 
 ```{r, include=FALSE}
 g_end <- g_final +
-  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)
 ```
 
 ### 🎄 The Final Evolved Visualization {#final}
@@ -559,10 +559,10 @@ after <-
     ) +
     annotation_custom(
       ggplotGrob(map_regions),
-      xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
+      xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82
     ) +
     scale_y_continuous(
-      limits = c(1, NA), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.02, 0.02),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +
@@ -688,10 +688,10 @@ df_ratios %>%
     ) +
     annotation_custom(
       ggplotGrob(map_regions),
-      xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
+      xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82
     ) +
     scale_y_continuous(
-      limits = c(1, NA), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.02, 0.02),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +
@@ -769,9 +769,9 @@ median <-
       arrow = arrow(length = unit(0.08, "inch")), size = 0.5,
       color = "gray20", curvature = -0.3
     ) +
-    annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85) +
+    annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82) +
     scale_y_continuous(
-      limits = c(0, 90), expand = c(0.005, 0.005),
+      limits = c(0, 90), expand = c(0.02, 0.02),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +
@@ -919,9 +919,9 @@ g18 <- g15 +
              color = "gray20", curvature = -0.3)
 
 g19 <- g18 +
-  scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005), breaks = c(1, seq(20, 80, by = 20)))
+  scale_y_continuous(limits = c(0, 90), expand = c(0.02, 0.02), breaks = c(1, seq(20, 80, by = 20)))
 
-g20 <- g19 + annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)
+g20 <- g19 + annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)
 
 
 ## gif pure plot

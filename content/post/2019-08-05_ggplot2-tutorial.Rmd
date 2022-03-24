@@ -2484,7 +2484,7 @@ corm <-
 corm
 ```
 
-Now we put the resulting matrix in **long** format using the `pivot_longer()` function from the `{tidyr}` package:
+Now we put the resulting matrix in **long** format using the `pivot_longer()` function from the `{tidyr}` package. We also directly format the labels and place empty quotes for the upper triangle. Note that I use `sprintf()` to ensure that the label always display two digits.
 
 ```{r melt-corr-matrix, echo=-3}
 corm <- corm %>%
@@ -2493,8 +2493,11 @@ corm <- corm %>%
     names_to = "colname",
     values_to = "corr"
   ) %>%
-  mutate(rowname = fct_inorder(term),
-         colname = fct_inorder(colname))
+  mutate(
+    rowname = fct_inorder(term),
+    colname = fct_inorder(colname),
+    label = ifelse(is.na(corr), "", sprintf("%1.2f", corr))
+  ) 
 
 corm
 ```
@@ -2505,27 +2508,30 @@ For the plot we will use `geom_tile()` for the heatmap and `geom_text()` for the
 ggplot(corm, aes(rowname, fct_rev(colname),
                  fill = corr)) +
   geom_tile() +
-  geom_text(aes(label = round(corr, 2))) +
+  geom_text(aes(label = label)) +
   coord_fixed() +
   labs(x = NULL, y = NULL)
 ```
 
-I like to have a diverging color palette, centered at zero correlation, with white indicating missing data. Also I like to have no grid lines and padding around the heatmap as well as nicely formatted labels that are colored depending on the underlying fill:
+I like to have a diverging color palette—it is important that the scale is centered at zero correlation!—with white indicating missing data. Also I like to have no grid lines and padding around the heatmap as well as labels that are colored depending on the underlying fill:
 
 ```{r tile-corr-plot-polished}
 ggplot(corm, aes(rowname, fct_rev(colname),
                  fill = corr)) +
   geom_tile() +
   geom_text(aes(
-    label = format(round(corr, 2), nsmall = 2),
+    label = label,
     color = abs(corr) < .75
   )) +
   coord_fixed(expand = FALSE) +
-  scale_color_manual(values = c("white", "black"),
-                     guide = "none") +
+  scale_color_manual(
+    values = c("white", "black"),
+    guide = "none"
+  ) +
   scale_fill_distiller(
     palette = "PuOr", na.value = "white",
-    direction = 1, limits = c(-1, 1)
+    direction = 1, limits = c(-1, 1),
+    name = "Pearson\nCorrelation:"
   ) +
   labs(x = NULL, y = NULL) +
   theme(panel.border = element_rect(color = NA, fill = NA),

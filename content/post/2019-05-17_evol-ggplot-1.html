@@ -96,7 +96,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 <li>use a different theme that comes with the <code>{ggplot2}</code> package by calling <code>theme_set(theme_light())</code> (several themes come along with the <code>{ggplot2}</code> package but if you need more check for example the packages <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>{ggthemes}</code></a> or <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a>),</li>
 <li>change the font and the overall font size by adding the arguments <code>base_size</code> and <code>base_family</code> to <code>theme_light()</code>,</li>
 <li>flip the axes by adding <code>coord_flip()</code> (as seen before),</li>
-<li>let the axis start at 0 and reduce the spacing to the plot margin by adding <code>expand = c(0.005, 0.005)</code> as argument to the <code>scale_y_continious()</code>,</li>
+<li>let the axis start at 0 and reduce the spacing to the plot margin by adding <code>expand = c(0.02, 0.02)</code> as argument to the <code>scale_y_continious()</code>,</li>
 <li>add some color encoding the continent by adding <code>color = region</code> to the <code>aes</code> argument and picking a palette from the <a href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html"><code>{ggsci}</code> package</a>,</li>
 <li>add meaningful labels/removing useless labels by adding <code>labs(x = NULL, y = "title y")</code></li>
 <li>adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding <code>theme()</code>.</li>
@@ -109,7 +109,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 g &lt;-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.02, 0.02)) +
     scale_color_uchicago() +
     labs(x = NULL, y = &quot;Student to teacher ratio&quot;) +
     theme(
@@ -125,7 +125,7 @@ g &lt;-
 <h3>📊 The Choice of the Chart Type</h3>
 <p>We can add any <code>geom_</code> to our ggplot-preset <code>g</code> that fits the data, i.e. that take two positional variables of which one is allowed to be qualitative. Here are some examples that fulfill these criteria:</p>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/geoms-1.png" width="960" /></p>
-<p>All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation <a href="https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps">how to read a boxplot</a>). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an <code>alpha</code> argument to <code>geom_point()</code>, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:</p>
+<p>All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation <a href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps">how to read a boxplot</a>). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an <code>alpha</code> argument to <code>geom_point()</code>, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:</p>
 <pre class="r"><code>g + geom_point(size = 3, alpha = 0.15)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/strip-plot-alpha-1.png" width="768" /></p>
 <p>Of course, different geoms can also be combined to provide even more information in one plot:</p>
@@ -250,7 +250,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 <pre class="r"><code>(g_final &lt;-
   g_arrows +
   scale_y_continuous(
-    limits = c(1, NA), expand = c(0.005, 0.005),
+    limits = c(1, NA), expand = c(0.02, 0.02),
     breaks = c(1, seq(20, 80, by = 20))
   ) +
   labs(caption = &quot;Data: UNESCO Institute for Statistics&quot;) +
@@ -280,7 +280,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/map-regions-1.png" width="624" /></p>
 <p>… and add this map to the existing plot via <code>annotation_custom(ggplotGrob())</code>:</p>
 <pre class="r"><code>g_final +
-  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)</code></pre>
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-with.map-1.png" width="768" /></p>
 </div>
 <div id="final" class="section level3">
@@ -388,10 +388,10 @@ df_ratios %&gt;%
     ) +
     annotation_custom(
       ggplotGrob(map_regions),
-      xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
+      xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82
     ) +
     scale_y_continuous(
-      limits = c(1, NA), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.02, 0.02),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +

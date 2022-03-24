@@ -97,7 +97,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 &lt;li&gt;use a different theme that comes with the &lt;code&gt;{ggplot2}&lt;/code&gt; package by calling &lt;code&gt;theme_set(theme_light())&lt;/code&gt; (several themes come along with the &lt;code&gt;{ggplot2}&lt;/code&gt; package but if you need more check for example the packages &lt;a href=&#34;https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/&#34;&gt;&lt;code&gt;{ggthemes}&lt;/code&gt;&lt;/a&gt; or &lt;a href=&#34;https://hrbrmstr.github.io/hrbrthemes/&#34;&gt;&lt;code&gt;hrbrthemes&lt;/code&gt;&lt;/a&gt;),&lt;/li&gt;
 &lt;li&gt;change the font and the overall font size by adding the arguments &lt;code&gt;base_size&lt;/code&gt; and &lt;code&gt;base_family&lt;/code&gt; to &lt;code&gt;theme_light()&lt;/code&gt;,&lt;/li&gt;
 &lt;li&gt;flip the axes by adding &lt;code&gt;coord_flip()&lt;/code&gt; (as seen before),&lt;/li&gt;
-&lt;li&gt;let the axis start at 0 and reduce the spacing to the plot margin by adding &lt;code&gt;expand = c(0.005, 0.005)&lt;/code&gt; as argument to the &lt;code&gt;scale_y_continious()&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;let the axis start at 0 and reduce the spacing to the plot margin by adding &lt;code&gt;expand = c(0.02, 0.02)&lt;/code&gt; as argument to the &lt;code&gt;scale_y_continious()&lt;/code&gt;,&lt;/li&gt;
 &lt;li&gt;add some color encoding the continent by adding &lt;code&gt;color = region&lt;/code&gt; to the &lt;code&gt;aes&lt;/code&gt; argument and picking a palette from the &lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html&#34;&gt;&lt;code&gt;{ggsci}&lt;/code&gt; package&lt;/a&gt;,&lt;/li&gt;
 &lt;li&gt;add meaningful labels/removing useless labels by adding &lt;code&gt;labs(x = NULL, y = &#34;title y&#34;)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding &lt;code&gt;theme()&lt;/code&gt;.&lt;/li&gt;
@@ -110,7 +110,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 g &amp;lt;-
   ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
     coord_flip() +
-    scale_y_continuous(limits = c(0, 90), expand = c(0.005, 0.005)) +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.02, 0.02)) +
     scale_color_uchicago() +
     labs(x = NULL, y = &amp;quot;Student to teacher ratio&amp;quot;) +
     theme(
@@ -126,7 +126,7 @@ g &amp;lt;-
 &lt;h3&gt;📊 The Choice of the Chart Type&lt;/h3&gt;
 &lt;p&gt;We can add any &lt;code&gt;geom_&lt;/code&gt; to our ggplot-preset &lt;code&gt;g&lt;/code&gt; that fits the data, i.e. that take two positional variables of which one is allowed to be qualitative. Here are some examples that fulfill these criteria:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/geoms-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation &lt;a href=&#34;https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps&#34;&gt;how to read a boxplot&lt;/a&gt;). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an &lt;code&gt;alpha&lt;/code&gt; argument to &lt;code&gt;geom_point()&lt;/code&gt;, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:&lt;/p&gt;
+&lt;p&gt;All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation &lt;a href=&#34;https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps&#34;&gt;how to read a boxplot&lt;/a&gt;). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an &lt;code&gt;alpha&lt;/code&gt; argument to &lt;code&gt;geom_point()&lt;/code&gt;, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + geom_point(size = 3, alpha = 0.15)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/strip-plot-alpha-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, different geoms can also be combined to provide even more information in one plot:&lt;/p&gt;
@@ -251,7 +251,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(g_final &amp;lt;-
   g_arrows +
   scale_y_continuous(
-    limits = c(1, NA), expand = c(0.005, 0.005),
+    limits = c(1, NA), expand = c(0.02, 0.02),
     breaks = c(1, seq(20, 80, by = 20))
   ) +
   labs(caption = &amp;quot;Data: UNESCO Institute for Statistics&amp;quot;) +
@@ -392,7 +392,7 @@ df_ratios %&amp;gt;%
       xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
     ) +
     scale_y_continuous(
-      limits = c(1, NA), expand = c(0.005, 0.005),
+      limits = c(1, NA), expand = c(0.02, 0.02),
       breaks = c(1, seq(20, 80, by = 20))
     ) +
     scale_color_uchicago() +
