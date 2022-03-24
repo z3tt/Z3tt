@@ -2966,7 +2966,7 @@ chart(data = chic, caes(date_num, temp)) %>%
 
 ## Remarks, Tipps & Resources {#tipps}
 
-##### Using `ggplot()` in Loops and Functions
+##### Using ggplot2 in Loops and Functions
 
 The grid-based graphics functions in lattice and ggplot2 create a graph object. When you use these functions interactively at the command line, the result is automatically printed, but in `source()` or inside your own functions you will need an explicit `print()` statement, i.e. `print(g)` in most of our examples. See also the [Q&A page of R](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-do-lattice_002ftrellis-graphics-not-work_003f).
 

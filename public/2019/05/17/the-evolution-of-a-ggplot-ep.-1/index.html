@@ -491,7 +491,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/map-regions-1.png" width="624" /></p>
 <p>… and add this map to the existing plot via <code>annotation_custom(ggplotGrob())</code>:</p>
 <pre class="r"><code>g_final +
-  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)</code></pre>
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)</code></pre>
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-with.map-1.png" width="768" /></p>
 </div>
 <div id="final" class="section level3">
@@ -599,7 +599,7 @@ df_ratios %&gt;%
     ) +
     annotation_custom(
       ggplotGrob(map_regions),
-      xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
+      xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82
     ) +
     scale_y_continuous(
       limits = c(1, NA), expand = c(0.02, 0.02),

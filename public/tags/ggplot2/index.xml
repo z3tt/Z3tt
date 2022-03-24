@@ -4215,7 +4215,7 @@ chart(data = chic, caes(date_num, temp)) %&amp;gt;%
 &lt;div id=&#34;tipps&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Remarks, Tipps &amp;amp; Resources&lt;/h2&gt;
 &lt;div id=&#34;using-ggplot-in-loops-and-functions&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;Using &lt;code&gt;ggplot()&lt;/code&gt; in Loops and Functions&lt;/h5&gt;
+&lt;h5&gt;Using ggplot2 in Loops and Functions&lt;/h5&gt;
 &lt;p&gt;The grid-based graphics functions in lattice and ggplot2 create a graph object. When you use these functions interactively at the command line, the result is automatically printed, but in &lt;code&gt;source()&lt;/code&gt; or inside your own functions you will need an explicit &lt;code&gt;print()&lt;/code&gt; statement, i.e. &lt;code&gt;print(g)&lt;/code&gt; in most of our examples. See also the &lt;a href=&#34;https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-do-lattice_002ftrellis-graphics-not-work_003f&#34;&gt;Q&amp;amp;A page of R&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;additional-resources&#34; class=&#34;section level5&#34;&gt;
@@ -4539,7 +4539,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-regions-1.png&#34; width=&#34;624&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;… and add this map to the existing plot via &lt;code&gt;annotation_custom(ggplotGrob())&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g_final +
-  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85)&lt;/code&gt;&lt;/pre&gt;
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/plot-with.map-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;final&#34; class=&#34;section level3&#34;&gt;
@@ -4647,7 +4647,7 @@ df_ratios %&amp;gt;%
     ) +
     annotation_custom(
       ggplotGrob(map_regions),
-      xmin = 2.5, xmax = 7.5, ymin = 55, ymax = 85
+      xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82
     ) +
     scale_y_continuous(
       limits = c(1, NA), expand = c(0.02, 0.02),
