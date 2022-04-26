@@ -1475,7 +1475,7 @@ Also me: Next time, my friend&amp;rsquo;s agency hopefully contacts someone who 
 &lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/echarts4r-binding/echarts4r.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;em&gt;Last update: 2021-02-09&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last update: 2022-03-24&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;introductory-words&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Introductory Words&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;#toc&#34;&gt;I don’t care, just show me the content!&lt;/a&gt;&lt;/p&gt;
@@ -1734,7 +1734,7 @@ g + geom_point(color = &amp;quot;firebrick&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
         axis.title.y = element_text(margin = margin(r = 10), size = 15))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-08-05_ggplot2-tutorial_files/figure-html/labs-move-away-margin-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The labels &lt;code&gt;t&lt;/code&gt; and &lt;code&gt;r&lt;/code&gt; within the &lt;code&gt;margin()&lt;/code&gt; object refer to &lt;em&gt;top&lt;/em&gt; and &lt;em&gt;right&lt;/em&gt;, respectively. You can also specify the four margins as &lt;code&gt;margin(t, r, b, l)&lt;/code&gt;. Note that we now have to change the right margin to modify the space on the y axis, not the bottom margin.&lt;/p&gt;
-&lt;p&gt;💡 &lt;strong&gt;A good way to remember the order of the margin sides is “&lt;em&gt;t&lt;/em&gt;-&lt;em&gt;r&lt;/em&gt;-oub-&lt;em&gt;l&lt;/em&gt;-&lt;em&gt;e&lt;/em&gt;”.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;A good way to remember the order of the margin sides is  “&lt;em&gt;t&lt;/em&gt;-&lt;em&gt;r&lt;/em&gt;-ou-&lt;em&gt;b&lt;/em&gt;-&lt;em&gt;l&lt;/em&gt;-e”.&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;change-aesthetics-of-axis-titles&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Change Aesthetics of Axis Titles&lt;/h5&gt;
@@ -2118,7 +2118,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
   geom_point() +
   labs(x = &amp;quot;Year&amp;quot;, y = &amp;quot;Temperature (°F)&amp;quot;) +
   scale_color_discrete(
-    name = &amp;quot;Seasons:&amp;quot;, 
+    name = &amp;quot;Seasons:&amp;quot;,
     labels = c(&amp;quot;Mar—May&amp;quot;, &amp;quot;Jun—Aug&amp;quot;, &amp;quot;Sep—Nov&amp;quot;, &amp;quot;Dec—Feb&amp;quot;)
   ) +
   theme(legend.title = element_text(
@@ -2355,7 +2355,7 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
 &lt;div id=&#34;create-small-multiples-based-on-one-variable&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Create Small Multiples Based on One Variable&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;facet_wrap&lt;/code&gt; creates a facet of a single variable, written with a tilde in front: &lt;code&gt;facet_wrap(~ variable)&lt;/code&gt;. The appearance of these subplots is controlled by the arguments &lt;code&gt;ncol&lt;/code&gt; and &lt;code&gt;nrow&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g &amp;lt;- 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g &amp;lt;-
   ggplot(chic, aes(x = date, y = temp)) +
     geom_point(color = &amp;quot;chartreuse4&amp;quot;, alpha = .3) +
     labs(x = &amp;quot;Year&amp;quot;, y = &amp;quot;Temperature (°F)&amp;quot;) +
@@ -2748,61 +2748,61 @@ g + theme_bw(base_family = &amp;quot;Playfair&amp;quot;)&lt;/code&gt;&lt;/pre&gt
 &lt;h5&gt;Create Your Own Theme&lt;/h5&gt;
 &lt;p&gt;If you want to change the theme for an entire session you can use &lt;code&gt;theme_set&lt;/code&gt; as in &lt;code&gt;theme_set(theme_bw())&lt;/code&gt;. The default is called &lt;code&gt;theme_gray&lt;/code&gt; (or &lt;code&gt;theme_gray&lt;/code&gt;). If you wanted to create your own custom theme, you could extract the code directly from the gray theme and modify. Note that the &lt;code&gt;rel()&lt;/code&gt; function change the sizes relative to the &lt;code&gt;base_size&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;theme_gray&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## function (base_size = 11, base_family = &amp;quot;&amp;quot;, base_line_size = base_size/22, 
-##     base_rect_size = base_size/22) 
+&lt;pre&gt;&lt;code&gt;## function (base_size = 11, base_family = &amp;quot;&amp;quot;, base_line_size = base_size/22,
+##     base_rect_size = base_size/22)
 ## {
 ##     half_line &amp;lt;- base_size/2
-##     t &amp;lt;- theme(line = element_line(colour = &amp;quot;black&amp;quot;, size = base_line_size, 
-##         linetype = 1, lineend = &amp;quot;butt&amp;quot;), rect = element_rect(fill = &amp;quot;white&amp;quot;, 
-##         colour = &amp;quot;black&amp;quot;, size = base_rect_size, linetype = 1), 
-##         text = element_text(family = base_family, face = &amp;quot;plain&amp;quot;, 
-##             colour = &amp;quot;black&amp;quot;, size = base_size, lineheight = 0.9, 
-##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(), 
-##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL, 
-##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8), 
-##             colour = &amp;quot;grey30&amp;quot;), axis.text.x = element_text(margin = margin(t = 0.8 * 
-##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 * 
-##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 * 
-##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 * 
-##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &amp;quot;grey20&amp;quot;), 
-##         axis.ticks.length = unit(half_line/2, &amp;quot;pt&amp;quot;), axis.ticks.length.x = NULL, 
-##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL, 
-##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL, 
-##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2), 
-##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2), 
-##             vjust = 0), axis.title.y = element_text(angle = 90, 
-##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90, 
-##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA), 
-##         legend.spacing = unit(2 * half_line, &amp;quot;pt&amp;quot;), legend.spacing.x = NULL, 
-##         legend.spacing.y = NULL, legend.margin = margin(half_line, 
-##             half_line, half_line, half_line), legend.key = element_rect(fill = &amp;quot;grey95&amp;quot;, 
-##             colour = NA), legend.key.size = unit(1.2, &amp;quot;lines&amp;quot;), 
-##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)), 
-##         legend.text.align = NULL, legend.title = element_text(hjust = 0), 
-##         legend.title.align = NULL, legend.position = &amp;quot;right&amp;quot;, 
-##         legend.direction = NULL, legend.justification = &amp;quot;center&amp;quot;, 
-##         legend.box = NULL, legend.box.margin = margin(0, 0, 0, 
-##             0, &amp;quot;cm&amp;quot;), legend.box.background = element_blank(), 
-##         legend.box.spacing = unit(2 * half_line, &amp;quot;pt&amp;quot;), panel.background = element_rect(fill = &amp;quot;grey92&amp;quot;, 
-##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = &amp;quot;white&amp;quot;), 
-##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line, 
-##             &amp;quot;pt&amp;quot;), panel.spacing.x = NULL, panel.spacing.y = NULL, 
-##         panel.ontop = FALSE, strip.background = element_rect(fill = &amp;quot;grey85&amp;quot;, 
-##             colour = NA), strip.text = element_text(colour = &amp;quot;grey10&amp;quot;, 
-##             size = rel(0.8), margin = margin(0.8 * half_line, 
-##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)), 
-##         strip.text.x = NULL, strip.text.y = element_text(angle = -90), 
-##         strip.text.y.left = element_text(angle = 90), strip.placement = &amp;quot;inside&amp;quot;, 
-##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2, 
-##             &amp;quot;pt&amp;quot;), strip.switch.pad.wrap = unit(half_line/2, 
-##             &amp;quot;pt&amp;quot;), plot.background = element_rect(colour = &amp;quot;white&amp;quot;), 
-##         plot.title = element_text(size = rel(1.2), hjust = 0, 
-##             vjust = 1, margin = margin(b = half_line)), plot.title.position = &amp;quot;panel&amp;quot;, 
-##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)), 
-##         plot.caption = element_text(size = rel(0.8), hjust = 1, 
-##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = &amp;quot;panel&amp;quot;, 
-##         plot.tag = element_text(size = rel(1.2), hjust = 0.5, 
-##             vjust = 0.5), plot.tag.position = &amp;quot;topleft&amp;quot;, plot.margin = margin(half_line, 
+##     t &amp;lt;- theme(line = element_line(colour = &amp;quot;black&amp;quot;, size = base_line_size,
+##         linetype = 1, lineend = &amp;quot;butt&amp;quot;), rect = element_rect(fill = &amp;quot;white&amp;quot;,
+##         colour = &amp;quot;black&amp;quot;, size = base_rect_size, linetype = 1),
+##         text = element_text(family = base_family, face = &amp;quot;plain&amp;quot;,
+##             colour = &amp;quot;black&amp;quot;, size = base_size, lineheight = 0.9,
+##             hjust = 0.5, vjust = 0.5, angle = 0, margin = margin(),
+##             debug = FALSE), axis.line = element_blank(), axis.line.x = NULL,
+##         axis.line.y = NULL, axis.text = element_text(size = rel(0.8),
+##             colour = &amp;quot;grey30&amp;quot;), axis.text.x = element_text(margin = margin(t = 0.8 *
+##             half_line/2), vjust = 1), axis.text.x.top = element_text(margin = margin(b = 0.8 *
+##             half_line/2), vjust = 0), axis.text.y = element_text(margin = margin(r = 0.8 *
+##             half_line/2), hjust = 1), axis.text.y.right = element_text(margin = margin(l = 0.8 *
+##             half_line/2), hjust = 0), axis.ticks = element_line(colour = &amp;quot;grey20&amp;quot;),
+##         axis.ticks.length = unit(half_line/2, &amp;quot;pt&amp;quot;), axis.ticks.length.x = NULL,
+##         axis.ticks.length.x.top = NULL, axis.ticks.length.x.bottom = NULL,
+##         axis.ticks.length.y = NULL, axis.ticks.length.y.left = NULL,
+##         axis.ticks.length.y.right = NULL, axis.title.x = element_text(margin = margin(t = half_line/2),
+##             vjust = 1), axis.title.x.top = element_text(margin = margin(b = half_line/2),
+##             vjust = 0), axis.title.y = element_text(angle = 90,
+##             margin = margin(r = half_line/2), vjust = 1), axis.title.y.right = element_text(angle = -90,
+##             margin = margin(l = half_line/2), vjust = 0), legend.background = element_rect(colour = NA),
+##         legend.spacing = unit(2 * half_line, &amp;quot;pt&amp;quot;), legend.spacing.x = NULL,
+##         legend.spacing.y = NULL, legend.margin = margin(half_line,
+##             half_line, half_line, half_line), legend.key = element_rect(fill = &amp;quot;grey95&amp;quot;,
+##             colour = NA), legend.key.size = unit(1.2, &amp;quot;lines&amp;quot;),
+##         legend.key.height = NULL, legend.key.width = NULL, legend.text = element_text(size = rel(0.8)),
+##         legend.text.align = NULL, legend.title = element_text(hjust = 0),
+##         legend.title.align = NULL, legend.position = &amp;quot;right&amp;quot;,
+##         legend.direction = NULL, legend.justification = &amp;quot;center&amp;quot;,
+##         legend.box = NULL, legend.box.margin = margin(0, 0, 0,
+##             0, &amp;quot;cm&amp;quot;), legend.box.background = element_blank(),
+##         legend.box.spacing = unit(2 * half_line, &amp;quot;pt&amp;quot;), panel.background = element_rect(fill = &amp;quot;grey92&amp;quot;,
+##             colour = NA), panel.border = element_blank(), panel.grid = element_line(colour = &amp;quot;white&amp;quot;),
+##         panel.grid.minor = element_line(size = rel(0.5)), panel.spacing = unit(half_line,
+##             &amp;quot;pt&amp;quot;), panel.spacing.x = NULL, panel.spacing.y = NULL,
+##         panel.ontop = FALSE, strip.background = element_rect(fill = &amp;quot;grey85&amp;quot;,
+##             colour = NA), strip.text = element_text(colour = &amp;quot;grey10&amp;quot;,
+##             size = rel(0.8), margin = margin(0.8 * half_line,
+##                 0.8 * half_line, 0.8 * half_line, 0.8 * half_line)),
+##         strip.text.x = NULL, strip.text.y = element_text(angle = -90),
+##         strip.text.y.left = element_text(angle = 90), strip.placement = &amp;quot;inside&amp;quot;,
+##         strip.placement.x = NULL, strip.placement.y = NULL, strip.switch.pad.grid = unit(half_line/2,
+##             &amp;quot;pt&amp;quot;), strip.switch.pad.wrap = unit(half_line/2,
+##             &amp;quot;pt&amp;quot;), plot.background = element_rect(colour = &amp;quot;white&amp;quot;),
+##         plot.title = element_text(size = rel(1.2), hjust = 0,
+##             vjust = 1, margin = margin(b = half_line)), plot.title.position = &amp;quot;panel&amp;quot;,
+##         plot.subtitle = element_text(hjust = 0, vjust = 1, margin = margin(b = half_line)),
+##         plot.caption = element_text(size = rel(0.8), hjust = 1,
+##             vjust = 1, margin = margin(t = half_line)), plot.caption.position = &amp;quot;panel&amp;quot;,
+##         plot.tag = element_text(size = rel(1.2), hjust = 0.5,
+##             vjust = 0.5), plot.tag.position = &amp;quot;topleft&amp;quot;, plot.margin = margin(half_line,
 ##             half_line, half_line, half_line), complete = TRUE)
 ##     ggplot_global$theme_all_null %+replace% t
 ## }
@@ -3438,18 +3438,18 @@ corm &amp;lt;-
     label = ifelse(is.na(corr), &amp;quot;&amp;quot;, sprintf(&amp;quot;%1.2f&amp;quot;, corr))
   ) &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 25 x 5
-##    term  colname      corr rowname label  
-##    &amp;lt;chr&amp;gt; &amp;lt;fct&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;fct&amp;gt;   &amp;lt;chr&amp;gt;  
-##  1 death death     1       death   &amp;quot;1.00&amp;quot; 
+##    term  colname      corr rowname label
+##    &amp;lt;chr&amp;gt; &amp;lt;fct&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;fct&amp;gt;   &amp;lt;chr&amp;gt;
+##  1 death death     1       death   &amp;quot;1.00&amp;quot;
 ##  2 death temp     -0.486   death   &amp;quot;-0.49&amp;quot;
 ##  3 death dewpoint -0.465   death   &amp;quot;-0.47&amp;quot;
 ##  4 death pm10     -0.00294 death   &amp;quot;-0.00&amp;quot;
 ##  5 death o3       -0.238   death   &amp;quot;-0.24&amp;quot;
-##  6 temp  death    NA       temp    &amp;quot;&amp;quot;     
-##  7 temp  temp      1       temp    &amp;quot;1.00&amp;quot; 
-##  8 temp  dewpoint  0.958   temp    &amp;quot;0.96&amp;quot; 
-##  9 temp  pm10      0.368   temp    &amp;quot;0.37&amp;quot; 
-## 10 temp  o3        0.535   temp    &amp;quot;0.53&amp;quot; 
+##  6 temp  death    NA       temp    &amp;quot;&amp;quot;
+##  7 temp  temp      1       temp    &amp;quot;1.00&amp;quot;
+##  8 temp  dewpoint  0.958   temp    &amp;quot;0.96&amp;quot;
+##  9 temp  pm10      0.368   temp    &amp;quot;0.37&amp;quot;
+## 10 temp  o3        0.535   temp    &amp;quot;0.53&amp;quot;
 ## # ... with 15 more rows&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For the plot we will use &lt;code&gt;geom_tile()&lt;/code&gt; for the heatmap and &lt;code&gt;geom_text()&lt;/code&gt; for the labels:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(corm, aes(rowname, fct_rev(colname),
@@ -3836,22 +3836,22 @@ R Session Info
 &lt;pre&gt;&lt;code&gt;## R version 4.1.2 (2021-11-01)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 19043)
-## 
+##
 ## Matrix products: default
-## 
+##
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252    
+## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252    LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                    LC_TIME=German_Germany.1252
 ## system code page: 65001
-## 
+##
 ## attached base packages:
-## [1] grid      stats     graphics  grDevices utils     datasets  methods   base     
-## 
+## [1] grid      stats     graphics  grDevices utils     datasets  methods   base
+##
 ## other attached packages:
-##  [1] echarts4r_0.4.2   highcharter_0.9.4 ggiraph_0.8.0     plotly_4.10.0     ggridges_0.5.3    reshape2_1.4.4    akima_0.6-2.3     ggforce_0.3.3     ggrepel_0.9.1     hrbrthemes_0.8.6  colorspace_2.0-2  ggdark_0.2.1      scico_1.3.0       rcartocolor_2.0.0 ggsci_2.9         ggthemes_4.2.4    gridExtra_2.3     cowplot_1.1.1     rlang_0.4.12      ggtext_0.1.1      showtext_0.9-4    showtextdb_3.0    sysfonts_0.8.5    patchwork_1.1.1   forcats_0.5.1     stringr_1.4.0     dplyr_1.0.7       purrr_0.3.4       readr_2.0.2       tidyr_1.1.4       tibble_3.1.6      ggplot2_3.3.5     tidyverse_1.3.1  
-## 
+##  [1] echarts4r_0.4.2   highcharter_0.9.4 ggiraph_0.8.0     plotly_4.10.0     ggridges_0.5.3    reshape2_1.4.4    akima_0.6-2.3     ggforce_0.3.3     ggrepel_0.9.1     hrbrthemes_0.8.6  colorspace_2.0-2  ggdark_0.2.1      scico_1.3.0       rcartocolor_2.0.0 ggsci_2.9         ggthemes_4.2.4    gridExtra_2.3     cowplot_1.1.1     rlang_0.4.12      ggtext_0.1.1      showtext_0.9-4    showtextdb_3.0    sysfonts_0.8.5    patchwork_1.1.1   forcats_0.5.1     stringr_1.4.0     dplyr_1.0.7       purrr_0.3.4       readr_2.0.2       tidyr_1.1.4       tibble_3.1.6      ggplot2_3.3.5     tidyverse_1.3.1
+##
 ## loaded via a namespace (and not attached):
-##   [1] ellipsis_0.3.2     markdown_1.1       fs_1.5.0           gridtext_0.1.4     rstudioapi_0.13    farver_2.1.0       hexbin_1.28.2      bit64_4.0.5        fansi_0.5.0        lubridate_1.8.0    xml2_1.3.2         splines_4.1.2      extrafont_0.17     knitr_1.36         rlist_0.4.6.2      polyclip_1.10-0    jsonlite_1.7.2     broom_0.7.11       Rttf2pt1_1.3.9     dbplyr_2.1.1       shiny_1.7.1        compiler_4.1.2     httr_1.4.2         backports_1.2.1    lazyeval_0.2.2     assertthat_0.2.1   Matrix_1.3-4       fastmap_1.1.0      cli_3.1.0          later_1.3.0        tweenr_1.0.2       htmltools_0.5.2    tools_4.1.2        igraph_1.2.11      gtable_0.3.0       glue_1.4.2        
-##  [37] corrr_0.4.3        Rcpp_1.0.7         cellranger_1.1.0   jquerylib_0.1.4    vctrs_0.3.8        nlme_3.1-153       blogdown_1.6       extrafontdb_1.0    crosstalk_1.2.0    xfun_0.27          rvest_1.0.2        mime_0.12          lifecycle_1.0.1    zoo_1.8-9          MASS_7.3-54        scales_1.1.1       vroom_1.5.5        promises_1.2.0.1   hms_1.1.1          parallel_4.1.2     RColorBrewer_1.1-2 quantmod_0.4.18    yaml_2.2.1         curl_4.3.2         gdtools_0.2.3      sass_0.4.0         stringi_1.7.5      highr_0.9          TTR_0.24.3         pkgconfig_2.0.3    systemfonts_1.0.3  evaluate_0.14      lattice_0.20-45    htmlwidgets_1.5.4  labeling_0.4.2     bit_4.0.4         
+##   [1] ellipsis_0.3.2     markdown_1.1       fs_1.5.0           gridtext_0.1.4     rstudioapi_0.13    farver_2.1.0       hexbin_1.28.2      bit64_4.0.5        fansi_0.5.0        lubridate_1.8.0    xml2_1.3.2         splines_4.1.2      extrafont_0.17     knitr_1.36         rlist_0.4.6.2      polyclip_1.10-0    jsonlite_1.7.2     broom_0.7.11       Rttf2pt1_1.3.9     dbplyr_2.1.1       shiny_1.7.1        compiler_4.1.2     httr_1.4.2         backports_1.2.1    lazyeval_0.2.2     assertthat_0.2.1   Matrix_1.3-4       fastmap_1.1.0      cli_3.1.0          later_1.3.0        tweenr_1.0.2       htmltools_0.5.2    tools_4.1.2        igraph_1.2.11      gtable_0.3.0       glue_1.4.2
+##  [37] corrr_0.4.3        Rcpp_1.0.7         cellranger_1.1.0   jquerylib_0.1.4    vctrs_0.3.8        nlme_3.1-153       blogdown_1.6       extrafontdb_1.0    crosstalk_1.2.0    xfun_0.27          rvest_1.0.2        mime_0.12          lifecycle_1.0.1    zoo_1.8-9          MASS_7.3-54        scales_1.1.1       vroom_1.5.5        promises_1.2.0.1   hms_1.1.1          parallel_4.1.2     RColorBrewer_1.1-2 quantmod_0.4.18    yaml_2.2.1         curl_4.3.2         gdtools_0.2.3      sass_0.4.0         stringi_1.7.5      highr_0.9          TTR_0.24.3         pkgconfig_2.0.3    systemfonts_1.0.3  evaluate_0.14      lattice_0.20-45    htmlwidgets_1.5.4  labeling_0.4.2     bit_4.0.4
 ##  [73] tidyselect_1.1.1   plyr_1.8.6         magrittr_2.0.1     bookdown_0.24      R6_2.5.1           generics_0.1.1     DBI_1.1.2          pillar_1.6.4       haven_2.4.3        withr_2.4.3        mgcv_1.8-38        xts_0.12.1         sp_1.4-6           modelr_0.1.8       crayon_1.4.2       uuid_1.0-3         utf8_1.2.2         tzdb_0.1.2         rmarkdown_2.11     readxl_1.3.1       isoband_0.2.5      data.table_1.14.2  reprex_2.0.1       digest_0.6.29      xtable_1.8-4       httpuv_1.6.3       munsell_0.5.0      viridisLite_0.4.0  bslib_0.3.1&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;/div&gt;

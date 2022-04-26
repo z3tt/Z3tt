@@ -320,7 +320,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 
 The labels `t` and `r` within the `margin()` object refer to *top* and *right*, respectively. You can also specify the four margins as `margin(t, r, b, l)`. Note that we now have to change the right margin to modify the space on the y axis, not the bottom margin.
 
-💡 **A good way to remember the order of the margin sides is "*t*-*r*-oub-*l*-*e*".**
+💡 **A good way to remember the order of the margin sides is "*t*-*r*-ou-*b*-*l*-e".**
 
 
 ##### Change Aesthetics of Axis Titles
