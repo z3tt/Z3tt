@@ -512,9 +512,7 @@ ggplot(chic_high, aes(x = temp, y = o3)) +
   labs(x = "Temperature higher than 25°F",
        y = "Ozone higher than 20 ppb") +
   expand_limits(x = 0, y = 0) +
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0)) +
-  coord_cartesian(clip = "off")
+  coord_cartesian(expand = FALSE, clip = "off")
 ```
 
 💡 **The argument `clip = "off"` in any coordinate system, always starting with `coord_*`, allows to draw outside of the panel area.**
