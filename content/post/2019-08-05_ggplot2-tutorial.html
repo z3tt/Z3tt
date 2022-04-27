@@ -458,9 +458,7 @@ ggplot(chic_high, aes(x = temp, y = o3)) +
   labs(x = &quot;Temperature higher than 25°F&quot;,
        y = &quot;Ozone higher than 20 ppb&quot;) +
   expand_limits(x = 0, y = 0) +
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0)) +
-  coord_cartesian(clip = &quot;off&quot;)</code></pre>
+  coord_cartesian(expand = FALSE, clip = &quot;off&quot;)</code></pre>
 <p><img src="/post/2019-08-05_ggplot2-tutorial_files/figure-html/origin-force-1.png" width="100%" /></p>
 <p>💡 <strong>The argument <code>clip = "off"</code> in any coordinate system, always starting with <code>coord_*</code>, allows to draw outside of the panel area.</strong></p>
 <p>Here, I call it to make sure that the tick marks at <code>c(0, 0)</code> are not cut. See the <a href="https://twitter.com/clauswilke/status/991542952802619392?lang=en">Twitter thread by Claus Wilke</a> for more details.</p>
