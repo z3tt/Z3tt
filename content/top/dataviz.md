@@ -65,9 +65,9 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 <img src="img/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
 
-<img src="img/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
+<img src="img/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
 
-<img src="img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayChartChallenge/main/04_magical/04_magical.png', 'blank');"/>
+<img src="img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/04_magical/04_magical.png', 'blank');"/>
 
 {{< gallery dir="img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
 
