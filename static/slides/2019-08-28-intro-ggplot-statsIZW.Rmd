@@ -229,7 +229,7 @@ library(tidyverse)
 We use data from the *National Morbidity and Mortality Air Pollution Study* (NMMAPS),<br>filtered for the city of Chicago and the timespan January 1997 to December 2000.
 
 ```{r data, echo = -2}
-chic <- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv")
+chic <- readr::read_csv("https://raw.githubusercontent.com/z3tt/ggplot-courses/main/data/chicago-nmmaps-custom.csv")
 chic$season <- factor(chic$season, levels = c("Spring", "Summer", "Autumn", "Winter"))
 chic$year <- factor(chic$year, levels = as.character(1997:2000))
 tibble::glimpse(chic)

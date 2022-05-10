@@ -216,7 +216,7 @@ We use data from the *National Morbidity and Mortality Air Pollution Study* (NMM
 
 
 ```r
-chic &lt;- readr::read_csv("https://raw.githubusercontent.com/Z3tt/ggplot-courses/master/data/chicago-nmmaps.csv")
+chic &lt;- readr::read_csv("https://raw.githubusercontent.com/z3tt/ggplot-courses/main/data/chicago-nmmaps-custom.csv")
 chic$year &lt;- factor(chic$year, levels = as.character(1997:2000))
 tibble::glimpse(chic)
 ```

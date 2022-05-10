@@ -47,11 +47,11 @@ An overview of selected static data visualizations, maps and other designs I hav
 
 [#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). <i><b>All visualizations are produced with 100% code using the [`{ggplot2}` graphics library ](https://ggplot2.tidyverse.org/)</b></i> in R and without any post-processing.
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
+<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
+<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
 
-<img src="https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
+<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
 
 {{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
@@ -94,11 +94,11 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ##### 2019 Edition {#mapchallenge2019}
 
-<img src="img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+<img src="img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons', 'blank');"/>
+<img src="img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/z3tt/30DayMapChallenge2019/tree/master/contributions/Day03_Polygons', 'blank');"/>
 
 {{< gallery dir="img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
 
