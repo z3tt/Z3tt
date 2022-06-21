@@ -649,9 +649,9 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;h1 id=&#34;challenges&#34;&gt;Challenge Contributions&lt;/h1&gt;
 &lt;h3 id=&#34;tidytuesday&#34;&gt;#TidyTuesday&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;#TidyTuesday&lt;/a&gt; is a weekly data project aimed at the R ecosystem and the &lt;code&gt;{tidyverse}&lt;/code&gt; package bundle to wrangle, explore and visualize the data set that is provided by the &lt;a href=&#34;https://www.rfordatasci.com/&#34;&gt;R4DS Online Learning Community&lt;/a&gt;. &lt;i&gt;&lt;b&gt;All visualizations are produced with 100% code using the &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt; graphics library &lt;/a&gt;&lt;/b&gt;&lt;/i&gt; in R and without any post-processing.&lt;/p&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_28/2020_28_CoffeeRatings.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_29/2020_29_Astronauts_blur_color.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/Z3tt/TidyTuesday/master/plots/2020_27/2020_27_Xmen_annotated.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_28/2020_28_CoffeeRatings.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_29/2020_29_Astronauts_blur_color.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_27/2020_27_Xmen_annotated.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;
 
 
@@ -1227,9 +1227,9 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h5 id=&#34;mapchallenge2019&#34;&gt;2019 Edition&lt;/h5&gt;
-&lt;img src=&#34;img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;img src=&#34;img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://raw.githubusercontent.com/Z3tt/30DayMapChallenge/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;img src=&#34;img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://github.com/Z3tt/30DayMapChallenge/tree/master/contributions/Day03_Polygons&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://github.com/z3tt/30DayMapChallenge2019/tree/master/contributions/Day03_Polygons&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;
 
 
@@ -1470,8 +1470,9 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;personal&#34;&gt;Personal Projects&lt;/h1&gt;
-&lt;img src=&#34;img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://twitter.com/CedScherer/status/1433138076356853767&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://twitter.com/CedScherer/status/1537169626257317894&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;img src=&#34;img/dataviz-portfolio/paygap_eu_dumbbell.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://twitter.com/CedScherer/status/1433138076356853767&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;
 
 
