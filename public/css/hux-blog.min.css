@@ -25,13 +25,13 @@
   src: url('../fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
 }
 @font-face {
-    font-family: 'Cabinet Grotesk';
-    src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
+  font-family: 'Cabinet Grotesk';
+  src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
 }
 @font-face {
-    font-family: 'Cabinet Grotesk';
-    src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
-    font-weight: 500;
+  font-family: 'Cabinet Grotesk';
+  src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
@@ -45,7 +45,7 @@
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
-    src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Italic.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Italic.woff') format('woff');
+    src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff') format('woff');
     font-weight: 900;
 }
 @font-face {
@@ -126,6 +126,7 @@
   margin-bottom:20px
 }
 .sidebar-container .short-about p{
+  font-size:1.5rem;
   margin-top:0;
   margin-bottom:20px
 }
@@ -472,7 +473,7 @@ pre code{
 
 .intro-header{
   background:no-repeat center center;
-  background-color:gray;
+  background-color:white;
   background-attachment:scroll;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -483,7 +484,7 @@ pre code{
 
 @media only screen and (min-width:768px){
   .intro-header{
-    margin-bottom:20px;
+    margin-bottom:10px;
   }
 }
 
@@ -636,7 +637,7 @@ pre code{
 }
 
 .post-content-preview{
-  font-size:1.8rem;
+  font-size:1.7rem;
   font-style:plain;
   line-height:1.6;
   font-weight:400;
