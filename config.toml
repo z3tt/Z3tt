@@ -24,7 +24,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   title = "Dr. Cédric Scherer"
   description = "Blog by Cédric Scherer"
   keyword = "Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2"
-  slogan = "Data Visualization & Computational Ecology" #"Charts & False Promises"
+  slogan = "Data Visualization & Information Design" #Data Visualization & Computational Ecology #"Charts & False Promises"
   google_fonts = ""
   title_404 = ""
   rssLimit = 20
@@ -41,7 +41,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Always coding. Passionate about design. Worried about nature. Proud dad."
+  sidebar_about_description = "Always coding. Passionate about design. Worried about nature and inequality. Proud dad."
   sidebar_avatar = "img/cedric-headshot-round.png"
 
   featured_tags = true

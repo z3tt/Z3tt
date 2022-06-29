@@ -95,54 +95,54 @@ Alfred-Kowalke-Straße 17, 10315 Berlin, Germany<br>
   <li style="color:#282828;font-style:italic;"><b>Scientific Researcher (PostDoc)</b> (since 2019)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany</li>
-    <li style="font-size:13px;"><i>Topics:</i> Movement ecology, population dynamics, disease ecology, coexistence theory</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision (Tools: R, QGIS, NetLogo)</li>
+    <li style="font-size:13px;">Topics: Movement ecology, population dynamics, disease ecology, coexistence theory</li>
+    <li style="font-size:13px;">Tasks: Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision (Tools: R, QGIS, NetLogo)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Ph.D. in Ecology</b> (2015–2019)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://ecological-dynamics-izw.com/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a>, Berlin, Germany within the <a href="https://www.cedricscherer.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
-    <li style="font-size:13px;"><i>Topics:</i> Movement ecology, disease ecology, population dynamics, coexistence theory</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development (Tools: R, Shiny, NetLogo, QGIS)</li>
+    <li style="font-size:13px;">Topics: Movement ecology, disease ecology, population dynamics, coexistence theory</li>
+    <li style="font-size:13px;">Tasks: Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development (Tools: R, Shiny, NetLogo, QGIS)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Speaker SIG "Young Modellers in Ecology"</b> (2015–2019)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://www.yomos.org/about">Young Modellers in Ecology (YoMos)</a>, <a href="https://www.gfoe.org/en">Special Interest Group of the Ecological Society of Germany, Austria & Switzerland (GfOe)</a></li>
-    <li style="font-size:13px;"><i>Tasks:</i> Lead of the organizational teams, conference chair, workshop instructor</li>
+    <li style="font-size:13px;">Tasks: Lead of the organizational teams, conference chair, workshop instructor</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Visiting Research Student</b> (2017)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://nature.berkeley.edu/getzlab/">Getz Lab</a>, <a href="https://www.berkeley.edu/">University of California, Berkeley</a>, CA, USA</li>
-    <li style="font-size:13px;"><i>Topics:</i> Evolutionary biology, disease ecology, population dynamics, theoretical ecology</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Developing genetic algorithms for agent-based models (Tool: <a href="https://www.numerusinc.com/">Numerus modelling platform</a>)</li>
+    <li style="font-size:13px;">Topics: Evolutionary biology, disease ecology, population dynamics, theoretical ecology</li>
+    <li style="font-size:13px;">Tasks: Developing genetic algorithms for agent-based models (Tool: <a href="https://www.numerusinc.com/">Numerus modelling platform</a>)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Research Assistant</b> (2015)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://www.uni-potsdam.de/en/ibb-vegnat/index.html">Department of Plant Ecology and Nature Conservation</a>, University of Potsdam, Germany within the <a href="http://www.biodiversity-exploratories.de/1/home/">DFG Priority Program "Infrastructure-Biodiversity-Exploratories”</a></li>
-    <li style="font-size:13px;"><i>Tasks:</i> Mechanistic modeling, literature research, proposal writing (Tools: R, Netlogo, C++)</li>
+    <li style="font-size:13px;">Tasks: Mechanistic modeling, literature research, proposal writing (Tools: R, Netlogo, C++)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>M.Sc. in Ecology, Evolution and Nature Conservation</b> (2011–2014)</li>
   <ul>
     <li style="font-size:13px;"><a href="http://www.uni-potsdam.de/en/)">University of Potsdam</a>, Potsdam, Germany</li>
-    <li style="font-size:13px;"><i>Topics:</i> Computational ecology, climate change biology, population dynamics, dryland ecology</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Deterministic and stohastic modeling, data collection, data analysis (Tools: R, C++, MatLab, SPSS)</li>
+    <li style="font-size:13px;">Topics: Computational ecology, climate change biology, population dynamics, dryland ecology</li>
+    <li style="font-size:13px;">Tasks: Deterministic and stohastic modeling, data collection, data analysis (Tools: R, C++, MatLab, SPSS)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>Internship</b> (2011)</li>
   <ul>
     <li style="font-size:13px;"><a href="https://www.bbib.org/scapelabs.html">"AgroScapeLabs"</a>, <a href="http://www.zalf.de/en/Pages/ZALF.aspx)">Leibniz Centre for Agricultural Landscape Research (ZALF)</a>, Muencheberg, Germany</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Catching, collaring and analysis of movement data of red foxes, raccoons and brown hares (Tools: R, QGIS)</li>
+    <li style="font-size:13px;">Tasks: Catching, collaring and analysis of movement data of red foxes, raccoons and brown hares (Tools: R, QGIS)</li>
   </ul>
 
   <li style="color:#282828;font-style:italic;"><b>B.Sc. in Life Sciences</b> (2008–2011)</li>
   <ul>
     <li style="font-size:13px;"><a href="http://www.uni-potsdam.de/en/)">University of Potsdam</a>, Potsdam, Germany</li>
-    <li style="font-size:13px;"><i>Topics:</i> Organismic biology, movement ecology, animal behavior</li>
-    <li style="font-size:13px;"><i>Tasks:</i> Data collection, processing, statistical modeling (Tools: R, MatLab, Excel)</li>
+    <li style="font-size:13px;">Topics: Organismic biology, movement ecology, animal behavior</li>
+    <li style="font-size:13px;">Tasks: Data collection, processing, statistical modeling (Tools: R, MatLab, Excel)</li>
   </ul>
 
 </ul>

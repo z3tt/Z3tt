@@ -25,24 +25,28 @@
   src: url('../fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
 }
 @font-face {
-    font-family: 'Amulya';
-    src: url('../fonts/Amulya-Regular.woff2') format('woff2'), url('../fonts/Amulya-Regular.woff') format('woff');
+    font-family: 'Cabinet Grotesk';
+    src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
 }
 @font-face {
-    font-family: 'Amulya';
-    src: url('../fonts/Amulya-Bold.woff2') format('woff2'), url('../fonts/Amulya-Bold.woff') format('woff');
-    font-weight:bold;
+    font-family: 'Cabinet Grotesk';
+    src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
 }
 @font-face {
-    font-family: 'Amulya';
-    src: url('../fonts/Amulya-Italic.woff2') format('woff2'), url('../fonts/Amulya-Italic.woff') format('woff');
-    font-style: italic;
+    font-family: 'Cabinet Grotesk';
+    src: url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff2') format('woff2'), url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff') format('woff');
+    font-weight: 600;
 }
 @font-face {
-    font-family: 'Amulya';
-    src: url('../fonts/Amulya-BoldItalic.woff2') format('woff2'), url('../fonts/Amulya-BoldItalic.woff') format('woff');
-    font-weight:bold;
-    font-style: italic;
+    font-family: 'Cabinet Grotesk';
+    src: url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff2') format('woff2'), url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff') format('woff');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Italic.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Italic.woff') format('woff');
+    font-weight: 900;
 }
 @font-face {
     font-family: 'Input Mono';
@@ -145,9 +149,9 @@
 }
 
 body{
-  font-family:'Amulya','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height:1.8;
-  font-size:1.8rem;
+  font-size:2.05rem;
   font-weight:400;
   color:#000;
   overflow-x:hidden
@@ -155,7 +159,7 @@ body{
 
 @media only screen and (min-width:768px){
   body{
-    font-size:1.6rem;
+    font-size:2rem;
   }
 }
 
@@ -484,8 +488,12 @@ pre code{
 }
 
 .intro-header .site-heading,.intro-header .post-heading,.intro-header .page-heading{
-  padding:85px 0 55px;
+  padding:85px 0 25px;
   color:#fff;
+}
+
+.intro-header .site-heading{
+  text-shadow: 3px 5px #00000040;
 }
 
 @media only screen and (min-width:768px){
@@ -514,13 +522,13 @@ pre code{
   letter-spacing:1.25px;
 }
 .intro-header .site-heading .subheading{
-  font-family:'Amulya','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
-  font-style:italic;
-  font-size:1.45rem;
+  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  font-size:1.75rem;
   line-height:1.1;
   display:block;
-  font-weight:400;
+  font-weight:900;
   margin:5px 0 30px;
+  text-shadow: 1.8px 2.8px #00000040;
 }
 
 @media only screen and (min-width:768px){
@@ -542,7 +550,7 @@ pre code{
   display:block;
 }
 .intro-header .post-heading .meta{
-  font-family:'Amulya','Arial','Helvetica',sans-serif;
+  font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif;
   font-weight:600;
   font-size:1.4rem;
 }
@@ -596,9 +604,9 @@ pre code{
   margin-bottom:1rem;
 }
 .post-preview>.post-meta{
-  font-family:'Amulya','Arial', sans-serif;
+  font-family:'Cabinet Grotesk','Arial', sans-serif;
   color:#28a87d;
-  font-size:1.3rem;
+  font-size:1.45rem;
   font-weight:600;
   margin-top:.5em;
 }
@@ -622,13 +630,13 @@ pre code{
     font-size:1.6rem;
   }
   .post-preview .post-meta{
-    font-size:1.3rem;
+    font-size:1.45rem;
     line-height:1.7;
   }
 }
 
 .post-content-preview{
-  font-size:1.7rem;
+  font-size:1.8rem;
   font-style:plain;
   line-height:1.6;
   font-weight:400;
@@ -640,7 +648,7 @@ pre code{
 
 @media only screen and (min-width:768px){
   .post-content-preview{
-    font-size:1.5rem;
+    font-size:1.65rem;
   }
 }
 
@@ -809,7 +817,7 @@ body{
   border:1.2px solid rgba(255,255,255,.8);
   border-radius:999em;
   padding:.2rem .8rem .1rem;
-  font-family:'Amulya','Arial',sans-serif,-apple-system;
+  font-family:'Cabinet Grotesk','Arial',sans-serif,-apple-system;
   color:#fff;
   line-height:1.6;
   font-size:1.2rem;
@@ -929,7 +937,7 @@ body{
     font-size:1.4rem;
   }
   .one-tag-list .post-preview .post-meta{
-    font-size:1.5rem;
+    font-size:1.6rem;
   }
 }
 
