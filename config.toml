@@ -17,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   unsafe = true
 
 [params]
-  header_image = "img/banner/mountainsnstars_crystal_RichardStrozynski.jpg" #berlin-build.png
+  header_image = "img/banner/stream.jpg"#mountainsnstars_crystal_RichardStrozynski.jpg" #berlin-build.png
   twitter_image = "img/banner/banner.png"
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
