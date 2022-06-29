@@ -25,13 +25,13 @@
   src: url('../fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
 }
 @font-face {
-    font-family: 'Cabinet Grotesk';
-    src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
+  font-family: 'Cabinet Grotesk';
+  src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
 }
 @font-face {
-    font-family: 'Cabinet Grotesk';
-    src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
-    font-weight: 500;
+  font-family: 'Cabinet Grotesk';
+  src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
@@ -45,7 +45,7 @@
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
-    src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Italic.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Italic.woff') format('woff');
+    src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff') format('woff');
     font-weight: 900;
 }
 @font-face {
