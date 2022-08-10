@@ -250,13 +250,13 @@ Twitter friends - I love violin plots but a reviewer is concerned that “their 
 <p>Since I am still working (part–time) as a researcher, I also regularly review scientific articles myself. And in contrast to the reviewer above, I argue completely opposite and always share my concerns in case bar charts or box plots are not suited to convey the study results. Here is a fun meme I made a few months ago when I encountered so–called “dynamite plots” in a paper I was reviewing (plus <a href="https://github.com/z3tt/30DayChartChallenge2021/tree/main/27_educational">here is a reworked version with Shrek instead</a>):</p>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://twitter.com/hashtag/datavisualization?src=hash&amp;ref_src=twsrc%5Etfw">#datavisualization</a> <a href="https://twitter.com/hashtag/barbarplot?src=hash&amp;ref_src=twsrc%5Etfw">#barbarplot</a> <a href="https://twitter.com/hashtag/DoBetter?src=hash&amp;ref_src=twsrc%5Etfw">#DoBetter</a> <a href="https://t.co/ncuxquEoAF"><img src="/img/dataviz-posts/barbar-drake.jpg"></a>
+That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://twitter.com/hashtag/datavisualization?src=hash&amp;ref_src=twsrc%5Etfw">#datavisualization</a> <a href="https://twitter.com/hashtag/barbarplot?src=hash&amp;ref_src=twsrc%5Etfw">#barbarplot</a> <a href="https://twitter.com/hashtag/DoBetter?src=hash&amp;ref_src=twsrc%5Etfw">#DoBetter</a> <a href="https://t.co/ncuxquEoAF"><img src="https://pbs.twimg.com/media/ExaJkaXWUAMoN6k?format=jpg&name=small"></a>
 </p>
 — Cédric Scherer (<span class="citation">@CedScherer</span>) <a href="https://twitter.com/CedScherer/status/1375438100298674179?ref_src=twsrc%5Etfw">March 26, 2021</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p>The use of other chart types such as violin and raincloud plots to show the distribution or even the raw data is a topic I am since years pretty passionate about. I always <a href="https://github.com/z3tt/DataViz-Teaching/blob/master/ChartsRaw/charts_raw_panel.png">cover the topic in detail during my workshops</a> and I have regularly used raincloud plots for various occasions: during my PhD to <a href="https://raw.githubusercontent.com/EcoDynIZW/Scherer_2020_OIKOS/master/figures/FigS5_R0_best_fit.png">show that the model fitting was appropriate across simulations</a> (<a href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS/blob/master/R/rainclouds.R">code</a>), as contribution to the <a href="https://www.storytellingwithdata.com/swdchallenge">#SWDchallenge</a> to <a href="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2019_09/SWD_2019_09_Uncertainty.png">illustrate differences in temperatures in Berlin across months</a> (<a href="https://github.com/z3tt/SWDchallenge/blob/master/R/SWD_2019-09_Uncertainty.Rmd">code</a>), or as contribution to <a href="https://github.com/rfordatascience/tidytuesday">#TidyTuesday</a> to <a href="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_31/2020_31_PalmerPenguins.png">visualize the distribution of bill ratios</a> in <a href="https://allisonhorst.github.io/palmerpenguins/">brush–tailed penguins</a> (<a href="https://github.com/z3tt/TidyTuesday/blob/master/R/2020_31_PalmerPenguins.Rmd">code</a> and <a href="https://z3tt.github.io/OutlierConf2021/">code</a>):</p>
-<img src="/img/dataviz-posts/distributions-examples.png" style="height: 100%; width: 100%; object-fit: contain;">
+<img src="https://d33wubrfki0l68.cloudfront.net/cd8cf5432a905b3f800259c2ceda9a7e19091e94/71f01/img/dataviz-posts/distributions-examples.png" style="height: 100%; width: 100%; object-fit: contain;">
 <p>
 <figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
 Some examples for which I used raincloud or violin plots to explicitly highlight the distributions of the values.
@@ -639,8 +639,10 @@ ggplot(data, aes(x = group, y = value)) +
 </div>
 <div id="polish" class="section level2">
 <h2>Next: Let Your Plot Shine</h2>
-<p>Stay tuned, in the upcoming follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:</p>
+<p>Stay tuned, in the upcoming follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a
+colorful version with annotations and added illustrations:</p>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/unnamed-chunk-1-1.png" width="960" /></p>
+<p><em>Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry.</em></p>
 <hr />
 <div id="footnotes" class="section level5">
 <h5><em>Footnotes</em></h5>
@@ -655,7 +657,7 @@ I personally doubt that the general audience is well aware of how to interpret b
 <summary style="font-size:10pt;">
 R Session Info
 </summary>
-<pre><code>## R version 4.1.2 (2021-11-01)
+<pre><code>## R version 4.1.0 (2021-05-18)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 19043)
 ## 
@@ -675,34 +677,34 @@ R Session Info
 ##  [4] palmerpenguins_0.1.0 patchwork_1.1.1      forcats_0.5.1       
 ##  [7] stringr_1.4.0        dplyr_1.0.7          purrr_0.3.4         
 ## [10] readr_2.0.2          tidyr_1.1.4          tibble_3.1.6        
-## [13] ggplot2_3.3.5        tidyverse_1.3.1     
+## [13] ggplot2_3.3.6        tidyverse_1.3.1     
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] fs_1.5.0             lubridate_1.8.0      gghalves_0.1.1      
-##  [4] httr_1.4.2           tools_4.1.2          backports_1.2.1     
+##  [4] httr_1.4.2           tools_4.1.0          backports_1.2.1     
 ##  [7] bslib_0.3.1          utf8_1.2.2           R6_2.5.1            
 ## [10] vipor_0.4.5          DBI_1.1.2            ggdist_3.0.0        
-## [13] withr_2.4.3          tidyselect_1.1.1     curl_4.3.2          
-## [16] compiler_4.1.2       textshaping_0.3.6    cli_3.1.0           
+## [13] withr_2.5.0          tidyselect_1.1.2     curl_4.3.2          
+## [16] compiler_4.1.0       textshaping_0.3.6    cli_3.1.0           
 ## [19] rvest_1.0.2          xml2_1.3.2           labeling_0.4.2      
-## [22] bookdown_0.24        sass_0.4.0           scales_1.1.1        
+## [22] bookdown_0.24        sass_0.4.0           scales_1.2.0        
 ## [25] systemfonts_1.0.3    digest_0.6.29        rmarkdown_2.11      
 ## [28] pkgconfig_2.0.3      htmltools_0.5.2      dbplyr_2.1.1        
-## [31] fastmap_1.1.0        highr_0.9            rlang_0.4.12        
+## [31] fastmap_1.1.0        highr_0.9            rlang_1.0.2         
 ## [34] readxl_1.3.1         rstudioapi_0.13      jquerylib_0.1.4     
-## [37] farver_2.1.0         generics_0.1.1       jsonlite_1.7.2      
+## [37] farver_2.1.0         generics_0.1.2       jsonlite_1.7.2      
 ## [40] distributional_0.2.2 magrittr_2.0.1       Rcpp_1.0.7          
 ## [43] ggbeeswarm_0.6.0     munsell_0.5.0        fansi_0.5.0         
 ## [46] lifecycle_1.0.1      stringi_1.7.5        yaml_2.2.1          
-## [49] MASS_7.3-54          grid_4.1.2           crayon_1.4.2        
-## [52] haven_2.4.3          gridtext_0.1.4       hms_1.1.1           
-## [55] magick_2.7.3         knitr_1.36           pillar_1.6.4        
+## [49] MASS_7.3-54          grid_4.1.0           crayon_1.5.1        
+## [52] haven_2.4.3          gridtext_0.1.4.9000  hms_1.1.1           
+## [55] magick_2.7.3         knitr_1.39           pillar_1.7.0        
 ## [58] markdown_1.1         reprex_2.0.1         glue_1.4.2          
-## [61] evaluate_0.14        blogdown_1.6         modelr_0.1.8        
+## [61] evaluate_0.15        blogdown_1.6         modelr_0.1.8        
 ## [64] vctrs_0.3.8          tzdb_0.1.2           tweenr_1.0.2        
 ## [67] cellranger_1.1.0     gtable_0.3.0         polyclip_1.10-0     
-## [70] assertthat_0.2.1     xfun_0.27            ggforce_0.3.3       
-## [73] broom_0.7.11         beeswarm_0.4.0       ellipsis_0.3.2</code></pre>
+## [70] assertthat_0.2.1     xfun_0.31            ggforce_0.3.3       
+## [73] broom_0.8.0          beeswarm_0.4.0       ellipsis_0.3.2</code></pre>
 </details>
 </div>
 </div>
@@ -1003,7 +1005,7 @@ R Session Info
                 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji=""  data-font="Lato" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
                 </div>
 		<p class="copyright text-muted">
-                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header images by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page build with ♥ and powered by <a href="https://www.netlify.com/">Netlify</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;Header photographs by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
     </p>
     <p class="copyright text-muted" style='font-size:8pt;'>
                     &copy; Cédric Scherer 2019–2022. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/conduct/">Code of Conduct</a>
