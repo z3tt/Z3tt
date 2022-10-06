@@ -1926,6 +1926,9 @@ productivity in research. &lt;em&gt;PLOS Computational Biology&lt;/em&gt;.&lt;/p
 &lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;M Sciaini &amp;amp; &lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt;&lt;/span&gt; 2022: &lt;code&gt;layer&lt;/code&gt;: Create stacked tilted maps in ggplot2. R package version 0.0.1, available on &lt;a href=&#34;https://ropensci.github.io/NLMR/&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://cran.r-project.org/web/packages/layer/index.html&#34;&gt;CRAN&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;E Hughes, &lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt; &amp;amp; G Karamanis&lt;/span&gt; 2022: &lt;code&gt;camcorder&lt;/code&gt;: Record Your Plot History. R package version 0.1.0, available on &lt;a href=&#34;https://github.com/thebioengineer/camcorder&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://cloud.r-project.org/web/packages/camcorder/index.html&#34;&gt;CRAN&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;span style=&#39;font-variant:small-caps;&#39;&gt;S Garnier, N Ross, B Rudis, PA Camargo, M Sciaini &amp;amp; &lt;u style=&#39;font-weight:700;color:#414141;&#39;&gt;C Scherer&lt;/u&gt;&lt;/span&gt; 2021: &lt;code&gt;viridis&lt;/code&gt;: Default color maps from &amp;lsquo;matplotlib&amp;rsquo;. R package version 0.6.2, available on &lt;a href=&#34;https://github.com/sjmgarnier/viridis&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/index.html&#34;&gt;CRAN&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;

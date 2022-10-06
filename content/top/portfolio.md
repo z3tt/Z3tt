@@ -162,6 +162,8 @@ productivity in research. *PLOS Computational Biology*.
 
 - <span style='font-variant:small-caps;'>M Sciaini & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2022: `layer`: Create stacked tilted maps in ggplot2. R package version 0.0.1, available on [GitHub](https://ropensci.github.io/NLMR/) and [CRAN](https://cran.r-project.org/web/packages/layer/index.html).
 
+- <span style='font-variant:small-caps;'>E Hughes, <u style='font-weight:700;color:#414141;'>C Scherer</u> & G Karamanis</span> 2022: `camcorder`: Record Your Plot History. R package version 0.1.0, available on [GitHub](https://github.com/thebioengineer/camcorder) and [CRAN](https://cloud.r-project.org/web/packages/camcorder/index.html).
+
 - <span style='font-variant:small-caps;'>S Garnier, N Ross, B Rudis, PA Camargo, M Sciaini & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2021: `viridis`: Default color maps from 'matplotlib'. R package version 0.6.2, available on [GitHub](https://github.com/sjmgarnier/viridis) and [CRAN](https://cran.r-project.org/web/packages/viridis/index.html).
 
 - <span style='font-variant:small-caps;'>M Sciaini, C Simpkins, M Fritsch & <u style='font-weight:700;color:#414141;'>C Scherer</u></span> 2017: `NLMR`: Simulating neutral landscape models with R. R package version 1.1, available on [GitHub](https://github.com/marcosci/layer) and [CRAN](https://cran.r-project.org/web/packages/NLMR/index.html).
