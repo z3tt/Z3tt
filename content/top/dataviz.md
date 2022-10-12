@@ -1,7 +1,7 @@
 An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
 
 
-##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call</a>
+##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<br><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a>
 <br>
 
 * [**Client Projects**](#clients)
@@ -16,14 +16,14 @@ An overview of selected static data visualizations, maps and other designs I hav
 * [**Personal Projects**](#personal)
 <br><br>
 
-# Client Projects {#clients}
+## Client Projects {#clients}
 
-### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) (Scientific American, Nov 2021 Issue) {#SciAm}
+#### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) (Scientific American, Nov 2021 Issue) {#SciAm}
 
 <img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 <p class='caption'>Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz</p>
 
-### [Afrozensus 2020](https://afrozensus.de/reports/2020/) (EOTO & Citizens for Europe) {#afrozensus}
+#### [Afrozensus 2020](https://afrozensus.de/reports/2020/) (EOTO & Citizens for Europe) {#afrozensus}
 
 <img src="img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
@@ -34,18 +34,18 @@ An overview of selected static data visualizations, maps and other designs I hav
 {{< gallery dir="img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
 <br>
 
-### Visualizations for Various Projects {#variousclients}
+#### Visualizations for Various Projects {#variousclients}
 
 {{< gallery dir="img/gallery-clients/" />}} {{< load-photoswipe >}}
 <br>
 
 <hr>
 
-# Challenge Contributions {#challenges}
+## Challenge Contributions {#challenges}
 
-### #TidyTuesday {#tidytuesday}
+#### #TidyTuesday {#tidytuesday}
 
-[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). <i><b>All visualizations are produced with 100% code using the [`{ggplot2}` graphics library ](https://ggplot2.tidyverse.org/)</b></i> in R and without any post-processing.
+[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). <b>All visualizations are produced with 100% code using the [`{ggplot2}` graphics library ](https://ggplot2.tidyverse.org/)</b> in R and without any post-processing.
 
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
 
@@ -59,9 +59,9 @@ An overview of selected static data visualizations, maps and other designs I hav
 <br><br>
 
 
-### #30DayChartChallenge {#chartchallenge}
+#### #30DayChartChallenge {#chartchallenge}
 
-The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily community challenge happening every April and is hosted by Dominic Royé and myself since 2021. The challenge is inspired by the #30DayMapChallenge.
+The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily community challenge happening every April and is hosted by Dominic Royé and myself since 2021. The challenge is inspired by the #30DayMapChallenge.
 
 <img src="img/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
 
@@ -76,7 +76,7 @@ The [#30DaychartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 
 
-### #30DayMapChallenge {#mapchallenge}
+#### #30DayMapChallenge {#mapchallenge}
 
 [#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019. i have participated in [2019](#mapchallenge2019) and [2021](#mapchallenge2021) .
 
@@ -129,7 +129,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 <hr>
 
-# Personal Projects {#personal}
+## Personal Projects {#personal}
 
 <img src="img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1537169626257317894', 'blank');"/>
 
@@ -141,5 +141,5 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br><br>
 
-##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call</a>
+##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<br><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a>
 <br>

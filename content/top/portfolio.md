@@ -151,9 +151,14 @@ productivity in research. *PLOS Computational Biology*.
   <li style='line-height:1.3;margin-bottom:12px;'>“Systematic zoology II”<br><span style="color:#989898;font-size:13px;">(Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop, 2013–2014)</span></li>
 
 </ul>
+<hr/>
 
-##### Do you want to hire me for workshop?&nbsp;&nbsp;<a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call</a>
 <br>
+
+##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<br><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a>
+<br>
+
+<hr/>
 
 
 ## Contributions to R Packages {#rstats}

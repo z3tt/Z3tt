@@ -160,7 +160,7 @@ body{
 
 @media only screen and (min-width:768px){
   body{
-    font-size:2rem;
+    font-size:1.9rem;
   }
 }
 
@@ -170,35 +170,44 @@ p{
 
 h1{
   font-family:'Thrillers Black','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  line-height:1.1;
+  line-height:1.2;
   text-transform: uppercase;
 }
 h2,h3{
   font-family:'Thrillers SemiBold','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  line-height:1.1;
+  line-height:1.2;
 }
 h4{
-  font-family:'Thrillers Medium','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  line-height:1.1;
+  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  line-height:1.2;
+  font-weight:800;
 }
 h5{
-  font-family:'Thrillers Regular','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  line-height:1.1;
+  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  line-height:1.2;
+  font-weight:800;
 }
 h6{
   font-family:'Thrillers Light','Arial','Helvetica',sans-serif,-apple-system;
-  line-height:1.1;
-  font-weight:400
+  line-height:1.2;
 }
 
 a{
-  color:#000
+  color:#000;
+  font-weight:500;
 }
 a:hover,a:focus{
-  color:#28a87d
+  color:#28a87d;
+  font-weight:500;
 }
 a img:hover,a img:focus{
   cursor:zoom-in
+}
+h4 a, h5 a{
+  font-weight:800;
+}
+h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus{
+  font-weight:800;
 }
 
 article{
@@ -273,23 +282,19 @@ pre code{
   margin:30px 0 10px;
 }
 .post-container h5{
-  font-size:28px;
-  font-weight:400;
   color:gray;
 }
 .post-container h5+p{
   margin-top:5px;
 }
 .post-container h6{
-  font-size:16px;
-  font-weight:500;
   color:gray;
 }
 .post-container h6+p{
   margin-top:5px;
 }
 .post-container ul,.post-container ol{
-  margin-bottom:40px;
+  margin-bottom:30px;
 }
 
 @media screen and (max-width:768px){
@@ -1038,4 +1043,33 @@ body{
 }
 .page-fullscreen footer .copyright a:hover{
   color:#ddd;
+}
+
+li.header{
+  font-size:1.9rem;
+  line-height:1.4;
+  padding-top:12px;
+}
+li.description{
+  font-size:1.5rem;
+}
+li.about{
+  font-size:1.75rem;
+  line-height:1.4;
+  padding-top:12px;
+}
+.authors{
+  font-variant:small-caps;
+}
+.author-hl{
+  font-variant:small-caps;
+}
+
+.subline{
+  font-size:1.5rem;
+  color:#989898;
+}
+a.about-bold{
+  font-size:1.5rem;
+  font-weight:700;
 }

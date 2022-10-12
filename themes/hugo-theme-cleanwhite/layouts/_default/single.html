@@ -89,7 +89,7 @@
                 <section>
                   <hr class="hidden-sm hidden-xs">
                   <br>
-                    <h5>FEATURED TAGS</h5>
+                    <h6>FEATURED TAGS</h6>
                     <div class="tags">
                         {{ $featured_condition_size := .Site.Params.featured_condition_size }}
                         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
@@ -106,7 +106,7 @@
                 <!-- Quick Links -->
                 <section>
                   <br>
-                  <h5>QUICK LINKS</h5>
+                  <h6>QUICK LINKS</h6>
                     <ul class="list-inline">
                         {{ range .Site.Params.bookmark_link }}
                         <li><a target="_self" href="{{.href | relLangURL}}">{{.title}}</a></li>
@@ -118,7 +118,7 @@
                 {{ if .Site.Params.friends }}
                 <section>
                   <br>
-                  <h5>FRIENDS</h5>
+                  <h6>FRIENDS</h6>
                     <ul class="list-inline">
                         {{ range .Site.Params.friend_link }}
                         <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
