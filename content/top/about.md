@@ -69,6 +69,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 * [Teaching](#teaching)
 * [Publications](#publications)
 * [Presentations](#presentations)
+* [Teaching](#teaching)
 * [Awards & Honors](#awards)
 * [Skills](#skills)
 * [Memberships & Services](#services)
@@ -205,23 +206,33 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 <ul>
 
+  <li class='about'>“Engaging visualization design to succesfully communicate data.”<br>
+  <span class='subline'><a href='https://en.malt.de/'>MALT Community</a> – 09|2022 – remote</span></li> 
+
+  <li class='about'>“Effective data visualization: design graphics to tell stories in an engaging way.”<br>
+  <span class='subline'><a href='https://www.mariecuriealumni.eu/'>Marie Curie Alumni Association (MCAA)</a> – 04|2022 – remote</span></li> 
+
+  <li class='about'>“Mit Grafiken Mehrwert schaffen: Prinzipien effektiver Datenvisualisierung und -kommunikation.”<br>
+  <span class='subline'><a href='https://www.bib.bund.de/DE/Startseite.html'>Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)</a> – 02|2022 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf">&#x21aa; Slides (German)</a> &ensp; <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf">&#x21aa; Slides (English)</a></b></li> 
+
   <li class='about'>“Beyond bar and box plots: chart alternatives and how to design them with ggplot2”<br>
-  <span class='subline'><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</span><br>
+  <span class='subline'><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=WBA04fjTVU0">&#x21aa; Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/beyond-bar-and-box-plots">&#x21aa; Hands-On Tutorial</a></li>
 
   <li class='about'>“My favorite ggplot2 extension packages.”<br> 
-  <span class='subline'><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</span><br>
+  <span class='subline'><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold'  href="https://youtu.be/8ikFe82Mb1I">&#x21aa; Recording</a></b>
 
   <li class='about'>“The first #30DayChartChallenge: A summary of inspiring contributions, our learnings, and about the value of challenges in general.”<br>
-  <span class='subline'><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</span><br>
+  <span class='subline'><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=ckOAWmObIyM">&#x21aa; Recording</a></b>
 
-  <li class='about'>“ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.”<br>
-  <span class='subline'><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</span><br>
+  <li class='about'>“ggplot wizardry: my favorite tricks and secrets for beautiful plots in R.”<br>
+  <span class='subline'>Talks + Coding Session</a> – <a href='https://2021.outlierconf.com/'>DVS Outlier Conference 2021</a> – 02|2022 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/7UjA_5gNvdw">&#x21aa; Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/OutlierConf2021/">&#x21aa; Hands-On Tutorial</a> </b>   
 
-  <li class='about'>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts.”<br>
+  <li class='about'>“Effective data visualization: how to design impactful and aesthetically pleasing charts.”<br>
   <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)<br>
   <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a>
 
@@ -231,31 +242,33 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 
 
-### Selected Workshops & Trainings {#teaching}
+### Selected Workshops & Trainings Conducted {#teaching}
 
 <ul>
 
+  <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
+  <span class='subline'><a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by Posit – 2 days – 07|2022 – Washington, D.C., USA</span></li>
+
+  <li class='about'>“Mastering scientific data visualizations: principles and practice with <code>{ggplot2}</code>”<br>
+  <span class='subline'><a href='https://empseb.wordpress.com/'>European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 2x3 hours – 05|2022 – Espoo, Finland</span></li>
+
   <li class='about'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br>
-  <span class='subline'><a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a>, 5 hours, remote, Sep 2021, Dec 2021, and Apr 2022</span></li>
+  <span class='subline'><a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event </a> – 5 hours – 09|2021, 12|2021 + 04|2022 – remote</span></li>
 
   <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
-  <span class='subline'><a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar 2020, Nov 2020, and Nov 2021</span></li>
-  
-  <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br>
-  <span class='subline'>2-Day Workshop for <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a>, 2 days, remote, Dec 2021</span></li>
+  <span class='subline'><a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a> – 5 days – 03|2020, 11|2020 + 11|2021 – Berlin/remote</span></li>
 
-  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br><span class='subline'>(Workshop for <a href="https://www.uu.se/en">University of Uppsala</a>, 1/2 day, remote, Nov 2021)</span></li>
+  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
+  <span class='subline'>Workshop for <a href="https://www.uu.se/en">University of Uppsala</a> – 1/2 day – 11|2021 – remote</span></li>
 
   <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
-  <span class='subline'>Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a>, 1/2 day, remote, Nov 2021</span></li>
+  <span class='subline'>Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 1/2 day – 11|2021 – remote</span></li>
 
   <li class='about'>“Data visualization in R (Beginner + Advanced)”<br>
-  <span class='subline'>2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> and <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a>, 2 days, remote, Oct 2021 and Dec 2021</span></li>
+  <span class='subline'>2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> and <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – 2 days – remote – 10|2021 + 12|2021</span></li>
 
-  <li class='about'>“Data visualisation techniques for data scientists</code>”<br<span class='subline'>(Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021</span></li>
-  
-  <li class='about'>“Scientific data visualization: principles and good practices”<br>
-  <span class='subline'>Workshop at Leibniz Institute for Zoo and Wildlife Research, 1/2 day, Berlin, 2019</span></li>
+  <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
+  <span class='subline'>Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 2 days – 02|2021 – remote</span></li>
 </ul>
 
 &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#workshops">List of Workshops and Trainings</a>

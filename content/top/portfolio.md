@@ -73,37 +73,43 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
 
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to succesfully communicate data.<br>
+  <span class='subline'><a href='https://en.malt.de/'>MALT Community</a> – 09|2022 – remote</span></li> 
+
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Effective data visualization: design graphics to tell stories in an engaging way.<br>
+  <span class='subline'><a href='https://www.mariecuriealumni.eu/'>Marie Curie Alumni Association (MCAA)</a> – 04|2022 – remote</span></li> 
+
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> Mit Grafiken Mehrwert schaffen: Prinzipien effektiver Datenvisualisierung und -kommunikation.<br>
-  <span class='subline'><a href='https://www.bib.bund.de/DE/Startseite.html'>Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)</a> – 02|2022 – Online Meeting</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf">&#x21aa; Slides (German)</a> &ensp; <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf">&#x21aa; Slides (English)</a></b>  
+  <span class='subline'><a href='https://www.bib.bund.de/DE/Startseite.html'>Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)</a> – 02|2022 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf">&#x21aa; Slides (German)</a> &ensp; <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf">&#x21aa; Slides (English)</a></b></li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> #30DayMapChallenge: The good, the bad and the ugly of crafting maps with ggplot2.<br>
-  <span class='subline'><a href='https://www.meetup.com/rladies-bangalore/'>R Ladies Bangalore</a> – 12|2021 – Online Meeting</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://drive.google.com/file/d/1RU37oUE_7BHCkKzASC-I9R2-SMIjKAKT/view?usp=sharing">&#x21aa; Recording</a></b>  
+  <span class='subline'><a href='https://www.meetup.com/rladies-bangalore/'>R Ladies Bangalore</a> – 12|2021 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://drive.google.com/file/d/1RU37oUE_7BHCkKzASC-I9R2-SMIjKAKT/view?usp=sharing">&#x21aa; Recording</a></b></li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> Beyond bar and box plots: chart alternatives and how to design them with ggplot2”<br>
-  <span class='subline'><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – Online Meeting</span><br>
+  <span class='subline'><a href='https://www.usgs.gov/centers/cdi'>USGS Community for Data Integration</a> – 09|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=WBA04fjTVU0">&#x21aa; Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/beyond-bar-and-box-plots">&#x21aa; Hands-On Tutorial</a></li>
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> My favorite ggplot2 extension packages.<br>
-  <span class='subline'><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – Online Meeting</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/8ikFe82Mb1I">&#x21aa; Recording</a></b>
+  <span class='subline'><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/8ikFe82Mb1I">&#x21aa; Recording</a></b></li>
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.<br>
-  <span class='subline'><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – Online Meeting</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=ckOAWmObIyM">&#x21aa; Recording</a></b>  
+  <span class='subline'><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=ckOAWmObIyM">&#x21aa; Recording</a></b></li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R (Extended Version).   <br>
-  <span class='subline'><a href="https://www.meetup.com/Oslo-useR-Group/">useR Oslo</a> – 03|2021 – Online Meeting</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=5KHvEXYtnOo">&#x21aa; Recording</a></b>  
+  <span class='subline'><a href="https://www.meetup.com/Oslo-useR-Group/">useR Oslo</a> – 03|2021 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=5KHvEXYtnOo">&#x21aa; Recording</a></b></li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets.<br>
   <span class='subline'><a href="https://correlaid.org/events/2020-11/correlcon/">CorrelCon: A Weekend of Data4Good</a> – 11|2020 – Online Conference by CorrelAid</span><br>
-  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=zCG3xk-QLSI">&#x21aa; Recording</a></b>  
+  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=zCG3xk-QLSI">&#x21aa; Recording</a></b></li> 
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Effective Data Visualization: How to design impactful and aesthetically pleasing charts.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Effective data visualization: how to design impactful and aesthetically pleasing charts.<br>
   <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Webinar by Duke University</span><br>
-  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></b>  
+  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></b></li>  
 
 </ul>
 
@@ -114,33 +120,34 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 </div>
 
 
+
 ## Conference Presentations {#conferences}
 
 <ul>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> & Wendy Shijia (2022)</span> DataViz challenges: A fun way to learn and build a portfolio and network.<br>
-  <span class='subline'><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</span> 
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> & W Shijia (2022)</span> DataViz challenges: a fun way to learn and build a portfolio and network.<br>
+  <span class='subline'>Panel Discussion</a> – <a href='https://outlierconf.com/'>DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
 
-  <li class='about'><span class='authors'>Alenka Gucek & <u style='font-weight:700;'>C Scherer</u> (2022)</span> Data visualization in non-dataviz research.<br>
-  <span class='subline'><a href='https://2021.outlierconf.com/'>Outlier 2022 Unconf Session</a> – 02|2022 – Online Conference</span> 
+  <li class='about'><span class='authors'>A Gucek & <u style='font-weight:700;'>C Scherer</u> (2022)</span> Data visualization in non-dataviz research.<br>
+  <span class='subline'>Panel Discussion</a> – <a href='https://outlierconf.com/'>DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R.<br>
-  <span class='subline'><a href='https://2021.outlierconf.com/'>Outlier 2021</a> – 02|2021 – Online Conference hosted by the Data Visualization Society (Talk + Seminar)</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/7UjA_5gNvdw">&#x21aa; Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/OutlierConf2021/">&#x21aa; Hands-On Tutorial</a> </b> 
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot wizardry: my favorite tricks and secrets for beautiful plots in R.<br>
+  <span class='subline'>Talks + Coding Session</a> – <a href='https://2021.outlierconf.com/'>DVS Outlier Conference 2021</a> – 02|2022 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/7UjA_5gNvdw">&#x21aa; Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/OutlierConf2021/">&#x21aa; Hands-On Tutorial</a></b> 
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence.<br>
   <span class='subline'>Poster – Gordon Research Conference on Movement Ecology of Animals – 03|2019 – Lucca, Italy</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: The case of classical swine fever in wild boar.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: zhe case of classical swine fever in wild boar.<br>
   <span class='subline'>Talk – 1st International BioMove Symposium – 09|2018 – Potsdam, Germany</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: Combining movement ecology and epidemiological models.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: vombining movement ecology and epidemiological models.<br>
   <span class='subline'>Talk – Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09|2016 – Marburg, Germany</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, F Jeltsch, V Grimm & N Blaum (2014)</span>: Can we use functional types to predict responses of birds to changes in African savannas? An individual-based modelling approach.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, F Jeltsch, V Grimm & N Blaum (2014)</span>: Can we use functional types to predict responses of birds to changes in African savannas? an individual-based modelling approach.<br>
   <span class='subline'>Talk – Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09|2014 – Hildesheim, Germany</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, N Blaum, V Grimm & S Kramer-Schadt (2017)</span>: Infection on the move: Combining movement ecology and epidemiological models.  <br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, N Blaum, V Grimm & S Kramer-Schadt (2017)</span>: Infection on the move: combining movement ecology and epidemiological models.  <br>
   <span class='subline'>Poster – Gordon Research Conference on Movement Ecology of Animals – 03|2017 – Ventura, CA, USA</span>
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Combined effects of land-use and individual movement decisions shape disease dynamics.<br>
@@ -159,57 +166,69 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
 
-  <li class='about'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://www.fbn-dummerstorf.de/en/">Research Institute for Farm Animal Biology (FBN)</a>, 1/2 day, remote, Jan 2022</span></li>
+  <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
+  <span class='subline'><a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by Posit – 2 days – 07|2022 – Washington, D.C., USA</span></li>
 
-  <li class='about'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a>, 1/2 day, remote, Jan 2022</span></li>
+  <li class='about'>“Data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
+  <span class='subline'><a href='https://www.rki.de/EN/Home/homepage_node.html'>Robert-Koch-Institute (RKI)</a> – 6 hours – 06|2022 – Berlin, Germany</span></li>
+
+  <li class='about'>“Mastering scientific data visualizations: principles and practice with <code>{ggplot2}</code>”<br>
+  <span class='subline'><a href='https://empseb.wordpress.com/'>European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 2x3 hours – 05|2022 – Espoo, Finland</span></li>
 
   <li class='about'>“Hands-on data visualization with <code>{ggplot2}</code>: how to create engaging and well-designed visualizations in R”<br>
-  <span class='subline'><a href="https://www.oreilly.com/live-events/">Pearson/O'Reilly Live Training Event</a>, 5 hours, remote, Sep 2021 and Dec 2021</span></li>
+  <span class='subline'><a href='https://www.oreilly.com/live-events/'>Pearson/O'Reilly Live Training Event</a>, 5 hours – 09|2021, 12|2021 + 04|2022 – remote</span></li>
+
+  <li class='about'>“R goes spatial: handling geo data with <code>terra</code>”<br>
+  <span class='subline'>Part of the "Biodiversity Dynamics" module at the <a href='https://www.tu.berlin/en/'>Technical University Berlin</a> – 1 day – 03|2022 – remote</span></li>
+
+  <li class='about'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br>
+  <span class='subline'>Workshop for <a href="https://www.fbn-dummerstorf.de/en/">Research Institute for Farm Animal Biology (FBN)</a> – 1/2 day – 01|2022 – remote</span></li>
+
+  <li class='about'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
+  <span class='subline'>Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a> – 1/2 day – 01|2022 – remote</span></li>
 
   <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
-  <span class='subline'><a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a>, 5 days, Berlin/remote, Mar 2020, Nov 2020, and Nov 2021</span></li>
+  <span class='subline'><a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a> – 5 days – 03|2020, 11|2020 + 11|2021 – Berlin/remote</span></li>
   
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br>
-  <span class='subline'>2-Day Workshop for <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a>, 2 days, remote, Dec 2021</span></li>
+  <span class='subline'>2-Day Workshop for <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – 2 days – remote – 12|2021</span></li>
 
   <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://www.uu.se/en">University of Uppsala</a>, 1/2 day, remote, Nov 2021</span></li>
+  <span class='subline'>Workshop for <a href="https://www.uu.se/en">University of Uppsala</a> – 1/2 day – 11|2021 – remote</span></li>
 
   <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
-  <span class='subline'>Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a>, 1/2 day, remote, Nov 2021</span></li>
+  <span class='subline'>Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 1/2 day – 11|2021 – remote</span></li>
 
   <li class='about'>“Effective data visualization: theory and hands-on with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://www.geo-x.net/en/">Geo.X Research Network</a>, 1/2 day, Berlin, Nov 2021</span></li>
+  <span class='subline'>Workshop for <a href="https://www.geo-x.net/en/">Geo.X Research Network</a> – 1/2 day – 11|2021 – Berlin</span></li>
 
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the RBSZ DataViz Workshop Series<br>
-  <span class='subline'>2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a>, 2 days, remote, Oct 2021</span></li>
+  <span class='subline'>2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> – 2 days – Oct 2021 – remote</span></li>
 
-  <li class='about'>“Effective Data Visualization: How to design impactful and aesthetically pleasing charts”<br>
-  <span class='subline'>Workshop for <a href="https://bigs-clinpopscience.de/">Bonn International Graduate School Clinical and Population Science</a>, 1/2 day, remote, Oct 2021</span></li>
+  <li class='about'>“Effective data visualization: How to design impactful and aesthetically pleasing charts”<br>
+  <span class='subline'>Workshop for <a href="https://bigs-clinpopscience.de/">Bonn International Graduate School Clinical and Population Science</a> – 1/2 day – Oct 2021 – remote</span></li>
 
   <li class='about'>“Data visualization with <code>{ggplot2}</code>: 2–day course on data visualization principles and beautiful plotting in R”<br>
-  <span class='subline'>Workshop for <a href="https://www.bio-move.org/">BioMove Research Training Group</a>, 2 days, remote, Apr 2021</span></li>
+  <span class='subline'>Workshop for <a href="https://www.bio-move.org/">BioMove Research Training Group</a> – 2 days – 04|2021 – remote</span></li>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
-  <span class='subline'>Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a>, 2 days, remote, Feb 2021</span></li>
+  <span class='subline'>Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 2 days – 02|2021 – remote</span></li>
 
-  <li class='about'>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span class='subline'>Workshop for <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a>, 2 days, remote, Nov 2020</span></li>
+  <li class='about'>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span class='subline'>Workshop for <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a> – 2 days – remote – 11|2020</span></li>
 
   <li class='about'>“Scientific data visualization: principles and good practices”<br>
-  <span class='subline'>Workshop at Leibniz Institute for Zoo and Wildlife Research, 1 day, Berlin, 2019</span></li>
+  <span class='subline'>Workshop at Leibniz Institute for Zoo and Wildlife Research – 1 day – 2019 – Berlin</span></li>
 
-  <li class='about'>“Introduction to ecological modelling”<br><span class='subline'>Department of Theoretical Ecology, 5 days, University of Potsdam, Workshop, 2016</span></li>
+  <li class='about'>“Introduction to ecological modelling”<br><span class='subline'>Department of Theoretical Ecology, University of Potsdam – 5 days – 03|2016 – Potsdam</span></li>
 
   <li class='about'>“Introduction to Zoology: Microscopy and Dissection”<br>
-  <span class='subline'>Department for Zoology, University of Potsdam, Practical Workshop, 2009–2014</span></li>
+  <span class='subline'>Department for Zoology, University of Potsdam – Weekly Practical Workshop –  2009–2014 – Potsdam, Germany</span></li>
 
   <li class='about'>“Research and presentation”<br>
-  <span class='subline'>Department for Didactics of Biology, University of Potsdam, Workshop, 2013–2014</span></li>
+  <span class='subline'>Department for Didactics of Biology, University of Potsdam – Semester Course – 2013–2014 – Potsdam, Germany</span></li>
 
   <li class='about'>“Systematic zoology II”<br>
-  <span class='subline'>Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop, 2013–2014</span></li>
+  <span class='subline'>Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop – 2013–2014 – Gülpe, Germany</span></li>
 
 </ul>
 
