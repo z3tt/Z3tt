@@ -1073,3 +1073,39 @@ a.about-bold{
   font-size:1.5rem;
   font-weight:700;
 }
+
+.highlightbox{
+  padding: 3rem 0 2.5rem 0;
+  text-align: center;
+  box-shadow: 0 0 0 8pt #d9f6ec;
+  margin: 8rem 0 8rem 0;
+  border-radius: 12px;
+}
+
+.highlight{
+  font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-size:1.85rem;
+  font-weight:800;
+  color:#212121;
+  line-height:1.1;
+}
+.highlight a{
+  font-size:2.25rem;
+  font-weight:800;
+}
+.highlight a:hover, .highlight a:focus{
+  font-size:2.25rem;
+  font-weight:800;
+}
+
+@media only screen and (min-width:768px){
+  .highlight{
+    font-size:2.1rem;
+  }
+  .highlight a{
+    font-size:2.6rem;
+  }
+  .highlight a:hover, .highlight a:focus{
+    font-size:2.6rem;
+  }
+}

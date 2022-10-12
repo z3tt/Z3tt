@@ -32,14 +32,12 @@ I am working as a scientific researcher (*PostDoc*) in the [Department "Ecologic
 
 My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/).
 
-<hr/>
 
-<br>
+<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+  <span class='highlight'>Do you want to hire me for a project or workshop?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
 
-##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<br><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a>
-<br>
-
-<hr/>
 
 ## Contact {#contact}
 
@@ -90,59 +88,59 @@ Department "Ecological Dynamics"<br>
 
 <ul style="font-size:16px;">
 
-  <li class='header'><b>Independent Data Visualization Specialist</b> (since 2020)</li>
+  <li class='header'><b>Independent Data Visualization Specialist</b>(since 2020)</li>
   <ul>
     <li class='description'>Self-employed, Berlin, Germany</li>
     <li class='description'><i>Services:</i> Graphic design, cartography, reproducible data analysis, statistical modeling, consulting, workshops (Tools: R, Shiny, Figma, DataWrapper, Flourish, RAWgraphs, SQL, html, CSS)</li>
   </ul>
 
-  <li class='header'><b>Scientific Researcher (PostDoc)</b> (since 2019)</li>
+  <li class='header'><b>Scientific Researcher (PostDoc)</b>(since 2019)</li>
   <ul>
     <li class='description'><a href="http://www.ecodynizw.github.io">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany</li>
     <li class='description'>Topics: Movement ecology, population dynamics, disease ecology, coexistence theory</li>
     <li class='description'>Tasks: Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision (Tools: R, QGIS, NetLogo)</li>
   </ul>
 
-  <li class='header'><b>Ph.D. in Ecology</b> (2015–2019)</li>
+  <li class='header'><b>Ph.D. in Ecology</b>(2015–2019)</li>
   <ul>
     <li class='description'><a href="http://www.ecodynizw.github.io">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany, within the <a href="https://www.cedricscherer.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
     <li class='description'>Topics: Movement ecology, disease ecology, population dynamics, coexistence theory</li>
     <li class='description'>Tasks: Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development (Tools: R, Shiny, NetLogo, QGIS)</li>
   </ul>
 
-  <li class='header'><b>Speaker SIG "Young Modellers in Ecology"</b> (2015–2019)</li>
+  <li class='header'><b>Speaker SIG "Young Modellers in Ecology"</b>(2015–2019)</li>
   <ul>
     <li class='description'><a href="https://www.yomos.org/about">Young Modellers in Ecology (YoMos)</a>, <a href="https://www.gfoe.org/en">Special Interest Group of the Ecological Society of Germany, Austria & Switzerland (GfOe)</a></li>
     <li class='description'>Tasks: Lead of the organizational teams, conference chair, workshop instructor</li>
   </ul>
 
-  <li class='header'><b>Visiting Research Student</b> (2017)</li>
+  <li class='header'><b>Visiting Research Student</b>(2017)</li>
   <ul>
     <li class='description'><a href="https://nature.berkeley.edu/getzlab/">Getz Lab</a>, <a href="https://www.berkeley.edu/">University of California, Berkeley</a>, CA, USA</li>
     <li class='description'>Topics: Evolutionary biology, disease ecology, population dynamics, theoretical ecology</li>
     <li class='description'>Tasks: Developing genetic algorithms for agent-based models (Tool: <a href="https://www.numerusinc.com/">Numerus modelling platform</a>)</li>
   </ul>
 
-  <li class='header'><b>Research Assistant</b> (2015)</li>
+  <li class='header'><b>Research Assistant</b>(2015)</li>
   <ul>
     <li class='description'><a href="https://www.uni-potsdam.de/en/ibb-vegnat/index.html">Department of Plant Ecology and Nature Conservation</a>, University of Potsdam, Germany within the <a href="http://www.biodiversity-exploratories.de/1/home/">DFG Priority Program "Infrastructure-Biodiversity-Exploratories”</a></li>
     <li class='description'>Tasks: Mechanistic modeling, literature research, proposal writing (Tools: R, Netlogo, C++)</li>
   </ul>
 
-  <li class='header'><b>M.Sc. in Ecology, Evolution and Nature Conservation</b> (2011–2014)</li>
+  <li class='header'><b>M.Sc. in Ecology, Evolution and Nature Conservation</b>(2011–2014)</li>
   <ul>
     <li class='description'><a href="http://www.uni-potsdam.de/en/)">University of Potsdam</a>, Potsdam, Germany</li>
     <li class='description'>Topics: Computational ecology, climate change biology, population dynamics, dryland ecology</li>
     <li class='description'>Tasks: Deterministic and stohastic modeling, data collection, data analysis (Tools: R, C++, MatLab, SPSS)</li>
   </ul>
 
-  <li class='header'><b>Internship</b> (2011)</li>
+  <li class='header'><b>Internship</b>(2011)</li>
   <ul>
     <li class='description'><a href="https://www.bbib.org/scapelabs.html">"AgroScapeLabs"</a>, <a href="http://www.zalf.de/en/Pages/ZALF.aspx)">Leibniz Centre for Agricultural Landscape Research (ZALF)</a>, Muencheberg, Germany</li>
     <li class='description'>Tasks: Catching, collaring and analysis of movement data of red foxes, raccoons and brown hares (Tools: R, QGIS)</li>
   </ul>
 
-  <li class='header'><b>B.Sc. in Life Sciences</b> (2008–2011)</li>
+  <li class='header'><b>B.Sc. in Life Sciences</b>(2008–2011)</li>
   <ul>
     <li class='description'><a href="http://www.uni-potsdam.de/en/)">University of Potsdam</a>, Potsdam, Germany</li>
     <li class='description'>Topics: Organismic biology, movement ecology, animal behavior</li>
@@ -188,15 +186,15 @@ Department "Ecological Dynamics"<br>
 
 <ul>
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
-  <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b> (5):651–667</a>.</li>
+  <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b>(5):651–667</a>.</li>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. <a href='https://doi.org/10.1111/1365-2656.13070'><i>Journal of Animal Ecology</i> <b>88</b> (11):1639–1824</a>.</li>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. <a href='https://doi.org/10.1111/1365-2656.13070'><i>Journal of Animal Ecology</i> <b>88</b>(11):1639–1824</a>.</li>
 
   <li class='about'><span class='authors'>V Radchuk, F De Laender, J Sarmento Cabral, I Boulangeat, M Crawford, F Bohn, J De Raedt, <u style='font-weight:700;'>C Scherer</u>, J-C Svenning, K Thonicke, F Schurr, V Grimm & S Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type. 
-  <a href='https://doi.org/10.1111/ele.13226'><i>Ecology Letters</i> <b>22</b> (4):647–684</a>.</li>
+  <a href='https://doi.org/10.1111/ele.13226'><i>Ecology Letters</i> <b>22</b>(4):647–684</a>.</li>
 
   <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R. 
-  <a href='https://doi.org/10.1111/2041-210X.13076'><i>Methods in Ecology and Evolution</i> <b>9</b> (11):2240–2248</a></li>
+  <a href='https://doi.org/10.1111/2041-210X.13076'><i>Methods in Ecology and Evolution</i> <b>9</b>(11):2240–2248</a></li>
   
 </ul>
 

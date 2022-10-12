@@ -1,11 +1,14 @@
 An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
 
 
-##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<br><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a>
-<br>
+<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+  <span class='highlight'>Do you want to hire me for a project or workshop?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
+
 
 * [**Client Projects**](#clients)
-  * [Escalating Drought (Scientific American)](#SciAm)
+  * [Escalating Drought (Scientific American)](#SciAm)+
   * [Afrozensus 2020 (EOTO & Citizens for Europe)](#afrozensus)
   * [Visualizations for Various Projects](#variousclients)
 * [**Challenge Contributions**](#challenges)
@@ -141,5 +144,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 <br><br>
 
-##### Do you want to hire me for a project or workshop?&nbsp;&nbsp;<br><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a>
-<br>
+<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+  <span class='highlight'>Do you want to hire me for a project or workshop?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
