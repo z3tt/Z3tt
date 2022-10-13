@@ -33,10 +33,10 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <li class='about'><span class='authors'>U Schlägel, V Grimm, N Blaum, P Colangeli, M Dammhahn, J Eccard, S Hausmann, A Herde, H Hofer, J Joshi, S Kramer-Schadt, M Litwin, S Lozada-Gobilard, M Müller, T Müller, R Nathan, J Petermann, K Pirhofer-Walzl, V Radchuk, M Rillig, M Roeleke, M Schäfer, <u style='font-weight:700;'>C Scherer</u>, G Schiro, C Scholz, L Teckentrup, R Tiedemann, W Ullmann, C Voigt, G Weithoff & F Jeltsch</span> (2020) Movement-mediated community assembly and coexistence. 
   <a href='https://doi.org/10.1111/brv.12600'><i>Biological Reviews</i> <b>95</b> (4):1073–1096</a>.</li>  
 
-  <li class='about'><span class='authors'>B Pietzsch, S Fiedler, K.G  Mertens, M Richter, <u style='font-weight:700;'>C Scherer</u>, K Widyastuti, M.-C Wimmler, L Zakharova & U Berger</span> (2020) Metamodels for evaluating, calibrating and applying agent-based models: A review. 
+  <li class='about'><span class='authors'>B Pietzsch, S Fiedler, K.G  Mertens, M Richter, <u style='font-weight:700;'>C Scherer</u>, K Widyastuti, M.-C Wimmler, L Zakharova & U Berger</span> (2020) Metamodels for evaluating, calibrating and applying agent-based models: a review. 
   <a href='http://doi.org/10.18564/jasss.4274'><i>Journal of Artificial Societies and Social Simulation</i> <b>23</b>(2):9</a>.</li>  
 
-  <li class='about'><span class='authors'>C Pecoraro, I Zudaire, G Galiberti, M Romeo, H Murua, C Fruciano, <u style='font-weight:700;'>C Scherer</u>, F Tinti, N.C Diaha, N Bodin & E Chassot</span> (2020)</span> When size matters: large yellowfin tuna (*Thunnus albacares*) females allocate more energetic resources for reproduction than smaller individuals in the central–eastern Atlantic Ocean. 
+  <li class='about'><span class='authors'>C Pecoraro, I Zudaire, G Galiberti, M Romeo, H Murua, C Fruciano, <u style='font-weight:700;'>C Scherer</u>, F Tinti, N.C Diaha, N Bodin & E Chassot</span> (2020)</span> When size matters: large yellowfin tuna (<i>Thunnus albacares</i>) females allocate more energetic resources for reproduction than smaller individuals in the central–eastern Atlantic Ocean. 
   <a href='https://doi.org/10.1016/j.fishres.2020.105726'><i>Fisheries Research</i> <b>232</b>:105726</a>.</li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum,  H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. 
@@ -45,7 +45,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <li class='about'><span class='authors'>V Radchuk, F De Laender, J Sarmento Cabral, I Boulangeat, M Crawford, F Bohn, J De Raedt, <u style='font-weight:700;'>C Scherer</u>, J-C Svenning, K Thonicke, F Schurr, V Grimm & S Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type. 
   <a href='https://doi.org/10.1111/ele.13226'><i>Ecology Letters</i> <b>22</b>(4):647–684</a>.</li>  
 
-  <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R. 
+  <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> <code>NLMR</code> and <code>landscapetools</code>: An integrated environment for simulating and modifying neutral landscape models in R. 
   <a href='https://doi.org/10.1111/2041-210X.13076'><i>Methods in Ecology and Evolution</i> <b>9</b>(11):2240–2248</a>.</li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, F Jeltsch, V Grimm & N Blaum (2016)</span> Merging trait-based and individual-based modelling: An animal functional type approach to explore the responses of birds to climatic and land use changes in semi-arid African savannas. 
@@ -61,7 +61,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>  
 
-  <li class='about'><span class='authors'> Radchuk, U Berger, <u style='font-weight:700;'>C Scherer</u>, P Backmann, V Grimm & S Kramer-Schadt</span> (2021)</span> Individual-based models. In: (eds. R. Salguero-Gómez & M. Gamelon (Eds.), <i><a href='https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&lang=en&)'>Demographic Methods across the Tree of Life</a></i>. Oxford University Press, 400 pages, ISBN 0198838603.</p>
+  <li class='about'><span class='authors'> Radchuk, U Berger, <u style='font-weight:700;'>C Scherer</u>, P Backmann, V Grimm & S Kramer-Schadt</span> (2021)</span> Individual-based models. In: R. Salguero-Gómez & M. Gamelon (Eds.), <i><a href='https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&lang=en&)'>Demographic Methods across the Tree of Life</a></i>. Oxford University Press, 400 pages, ISBN 0198838603.</p>
 
 </ul>
 
@@ -83,7 +83,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <span class='subline'><a href='https://www.bib.bund.de/DE/Startseite.html'>Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)</a> – 02|2022 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf">&#x21aa; Slides (German)</a> &ensp; <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf">&#x21aa; Slides (English)</a></b></li>  
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> #30DayMapChallenge: The good, the bad and the ugly of crafting maps with ggplot2.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> #30DayMapChallenge: the good, the bad and the ugly of crafting maps with ggplot2.<br>
   <span class='subline'><a href='https://www.meetup.com/rladies-bangalore/'>R Ladies Bangalore</a> – 12|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/RladiesBangalore_30DayMapChallenge.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://drive.google.com/file/d/1RU37oUE_7BHCkKzASC-I9R2-SMIjKAKT/view?usp=sharing">&#x21aa; Recording</a></b></li>  
 
@@ -95,15 +95,15 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <span class='subline'><a href='https://rladies.org/tunisia-rladies/'>R Ladies Tunis</a> – 07|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/RLadiesTunis-2021-favorite-ggplot-extensions.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/8ikFe82Mb1I">&#x21aa; Recording</a></b></li>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> The first #30DayChartChallenge: A summary of inspiring contributions, our learnings,  and about the value of challenges in general.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> The first #30DayChartChallenge: a summary of inspiring contributions, our learnings,  and about the value of challenges in general.<br>
   <span class='subline'><a href='https://www.datavis-lisboa.pt/'>DataVis Lisboa</a> – 05|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/DataVisLisboa2021_30daychartchallenge_summary.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=ckOAWmObIyM">&#x21aa; Recording</a></b></li>  
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot Wizardry: My favorite tricks and secrets for beautiful plots in R (Extended Version).   <br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot wizardry: My favorite tricks and secrets for beautiful plots in R (Extended Version).   <br>
   <span class='subline'><a href="https://www.meetup.com/Oslo-useR-Group/">useR Oslo</a> – 03|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=5KHvEXYtnOo">&#x21aa; Recording</a></b></li>  
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with `{golem}` and html widgets.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with <code>{golem}</code> and html widgets.<br>
   <span class='subline'><a href="https://correlaid.org/events/2020-11/correlcon/">CorrelCon: A Weekend of Data4Good</a> – 11|2020 – Online Conference by CorrelAid</span><br>
   <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=zCG3xk-QLSI">&#x21aa; Recording</a></b></li> 
 
@@ -166,74 +166,83 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
 
+  <li class='about'>“Effective data visualization: design graphics to tell stories in an engaging way”<br>
+  <span class='subline'>3-Hour Internal Workshop – <a href='https://www.cafeyn.co/ca-en/newsstand'>cafeyn / Lekiosque.fr</a> – 10|2022 – remote</span></li>
+
+  <li class='about'>“Effective data visualization: design graphics to tell stories in an engaging way”<br>
+  <span class='subline'>3-Hour Conference Workshop – <a href='https://www.bsio-cancerschool.de/'>Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 09|2022 – Berlin, Germany</span></li>
+
+  <li class='about'>“Data visualization in <code>ggplot2</code>: beautiful and reproducible graphics in R”<br>
+  <span class='subline'>1.5-Day Workshop – <a href='https://www.idiv.de/en/ydiv.html'>German Centre for Integrative Biodiversity Research (iDiv)</a> – 09|2022 – Leipzig, Germany</span></li>
+
   <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
-  <span class='subline'><a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by Posit – 2 days – 07|2022 – Washington, D.C., USA</span></li>
+  <span class='subline'>2-Day Conference Workshop – <a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by <a href='https://posit.co/'>Posit</a> – 2 days – 07|2022 – Washington, D.C., USA</span></li>
 
   <li class='about'>“Data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'><a href='https://www.rki.de/EN/Home/homepage_node.html'>Robert-Koch-Institute (RKI)</a> – 6 hours – 06|2022 – Berlin, Germany</span></li>
+  <span class='subline'>1/2-Day Internal Training – <a href='https://www.rki.de/EN/Home/homepage_node.html'>Robert-Koch-Institute (RKI)</a> – 06|2022 – Berlin, Germany</span></li>
 
   <li class='about'>“Mastering scientific data visualizations: principles and practice with <code>{ggplot2}</code>”<br>
-  <span class='subline'><a href='https://empseb.wordpress.com/'>European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 2x3 hours – 05|2022 – Espoo, Finland</span></li>
+  <span class='subline'>2x 1/2-Day Conference Workshops – <a href='https://empseb.wordpress.com/'>European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 05|2022 – Espoo, Finland</span></li>
 
   <li class='about'>“Hands-on data visualization with <code>{ggplot2}</code>: how to create engaging and well-designed visualizations in R”<br>
-  <span class='subline'><a href='https://www.oreilly.com/live-events/'>Pearson/O'Reilly Live Training Event</a>, 5 hours – 09|2021, 12|2021 + 04|2022 – remote</span></li>
+  <span class='subline'>5-hour Live Training – <a href='https://www.oreilly.com/live-events/'>Pearson/O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
 
   <li class='about'>“R goes spatial: handling geo data with <code>terra</code>”<br>
-  <span class='subline'>Part of the "Biodiversity Dynamics" module at the <a href='https://www.tu.berlin/en/'>Technical University Berlin</a> – 1 day – 03|2022 – remote</span></li>
+  <span class='subline'>1-Day Workshop – "Biodiversity Dynamics" module at <a href='https://www.tu.berlin/en/'>Technical University Berlin</a> – 03|2022 – remote</span></li>
 
   <li class='about'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://www.fbn-dummerstorf.de/en/">Research Institute for Farm Animal Biology (FBN)</a> – 1/2 day – 01|2022 – remote</span></li>
+  <span class='subline'>1/2-Day Workshop – <a href="https://www.fbn-dummerstorf.de/en/">Research Institute for Farm Animal Biology (FBN)</a> – 01|2022 – remote</span></li>
 
   <li class='about'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a> – 1/2 day – 01|2022 – remote</span></li>
+  <span class='subline'>1/2-Day Workshop – <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a> – 01|2022 – remote</span></li>
 
   <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
-  <span class='subline'><a href="https://www.physalia-courses.org/">Physalia Courses Workshop</a> – 5 days – 03|2020, 11|2020 + 11|2021 – Berlin/remote</span></li>
+  <span class='subline'>5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020 + 11|2021 – Berlin/remote</span></li>
   
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br>
-  <span class='subline'>2-Day Workshop for <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – 2 days – remote – 12|2021</span></li>
+  <span class='subline'>2-Day Workshop – <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – 12|2021 – remote</span></li>
 
   <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://www.uu.se/en">University of Uppsala</a> – 1/2 day – 11|2021 – remote</span></li>
+  <span class='subline'>1/2-Day Workshop – <a href="https://www.uu.se/en">University of Uppsala</a> – 11|2021 – remote</span></li>
 
   <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
-  <span class='subline'>Workshop for <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 1/2 day – 11|2021 – remote</span></li>
+  <span class='subline'>1/2-Day Workshop –  <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 11|2021 – remote</span></li>
 
   <li class='about'>“Effective data visualization: theory and hands-on with <code>{ggplot2}</code>”<br>
-  <span class='subline'>Workshop for <a href="https://www.geo-x.net/en/">Geo.X Research Network</a> – 1/2 day – 11|2021 – Berlin</span></li>
+  <span class='subline'>1/2-Day Workshop – <a href="https://www.geo-x.net/en/">Geo.X Research Network</a> – 11|2021 – Berlin</span></li>
 
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the RBSZ DataViz Workshop Series<br>
-  <span class='subline'>2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> – 2 days – Oct 2021 – remote</span></li>
+  <span class='subline'>2-Day Workshop – <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> – 10|2021 – remote</span></li>
 
-  <li class='about'>“Effective data visualization: How to design impactful and aesthetically pleasing charts”<br>
-  <span class='subline'>Workshop for <a href="https://bigs-clinpopscience.de/">Bonn International Graduate School Clinical and Population Science</a> – 1/2 day – Oct 2021 – remote</span></li>
+  <li class='about'>“Effective data visualization: how to design impactful and aesthetically pleasing charts”<br>
+  <span class='subline'>1/2-Day Workshop – <a href="https://bigs-clinpopscience.de/">Bonn International Graduate School Clinical and Population Science</a> – 10|2021 – remote</span></li>
 
   <li class='about'>“Data visualization with <code>{ggplot2}</code>: 2–day course on data visualization principles and beautiful plotting in R”<br>
-  <span class='subline'>Workshop for <a href="https://www.bio-move.org/">BioMove Research Training Group</a> – 2 days – 04|2021 – remote</span></li>
+  <span class='subline'>2-day Workshop – <a href="https://www.bio-move.org/">BioMove Research Training Group</a> – 04|2021 – remote</span></li>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
-  <span class='subline'>Internal Training for <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 2 days – 02|2021 – remote</span></li>
+  <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
 
-  <li class='about'>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span class='subline'>Workshop for <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a> – 2 days – remote – 11|2020</span></li>
+  <li class='about'>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span class='subline'>2-Day Workshop – <a href="https://www.uni-bielefeld.de/biologie/crc212/">NC<sup>3</sup> Collaborative Research Centre</a> – 11|2020 – remote</span></li>
 
   <li class='about'>“Scientific data visualization: principles and good practices”<br>
-  <span class='subline'>Workshop at Leibniz Institute for Zoo and Wildlife Research – 1 day – 2019 – Berlin</span></li>
+  <span class='subline'>1-Day Workshop – <a href='https://www.izw-berlin.de/en/home.html'>Leibniz Institute for Zoo and Wildlife Research</a> – 09|2019 – Berlin</span></li>
 
-  <li class='about'>“Introduction to ecological modelling”<br><span class='subline'>Department of Theoretical Ecology, University of Potsdam – 5 days – 03|2016 – Potsdam</span></li>
+  <li class='about'>“Introduction to ecological modelling”<br><span class='subline'>5-Day Block Course – <a href='https://www.uni-potsdam.de/en/ibb/'>Department of Theoretical Ecology, University of Potsdam</a> – 03|2016 – Potsdam</span></li>
 
-  <li class='about'>“Introduction to Zoology: Microscopy and Dissection”<br>
-  <span class='subline'>Department for Zoology, University of Potsdam – Weekly Practical Workshop –  2009–2014 – Potsdam, Germany</span></li>
+  <li class='about'>“Introduction to zoology: microscopy and dissection”<br>
+  <span class='subline'>Weekly Practical Workshop – <a href='https://www.uni-potsdam.de/en/ibb/'>Department for Zoology, University of Potsdam</a> – 2009–2014 – Potsdam, Germany</span></li>
 
   <li class='about'>“Research and presentation”<br>
-  <span class='subline'>Department for Didactics of Biology, University of Potsdam – Semester Course – 2013–2014 – Potsdam, Germany</span></li>
+  <span class='subline'>Semester Course – <a href='https://www.uni-potsdam.de/en/ibb/'>Department for Didactics of Biology, University of Potsdam</a> – 2013–2014 – Potsdam, Germany</span></li>
 
   <li class='about'>“Systematic zoology II”<br>
-  <span class='subline'>Department for Evolutionary Biology and Systematic Zoology, University of Potsdam, Field Workshop – 2013–2014 – Gülpe, Germany</span></li>
+  <span class='subline'>Field Workshop – <a href='https://www.uni-potsdam.de/en/ibb/'>Department for Evolutionary Biology and Systematic Zoology, University of Potsdam</a> – 2013–2014 – Gülpe, Germany</span></li>
 
 </ul>
 
 <div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
-  <span class='highlight'>Do you want to hire me for a seminar or workshop?<br>
+  <span class='highlight'>Do you fancy a workshop or seminar?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
 

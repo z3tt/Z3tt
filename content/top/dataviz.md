@@ -1,14 +1,14 @@
-An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Many of the visualizations are generated purely with code and almost all of them involved several programming steps.
+An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
 
 
 <div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
-  <span class='highlight'>Do you want to hire me for a project or workshop?<br>
+  <span class='highlight'>Are you looking for a dataviz designer?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
 
 
 * [**Client Projects**](#clients)
-  * [Escalating Drought (Scientific American)](#SciAm)+
+  * [Escalating Drought (Scientific American)](#SciAm)
   * [Afrozensus 2020 (EOTO & Citizens for Europe)](#afrozensus)
   * [Visualizations for Various Projects](#variousclients)
 * [**Challenge Contributions**](#challenges)
@@ -93,7 +93,12 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
-<br><br>
+<br>
+
+<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+  <span class='highlight'>You need some map design?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
 
 ##### 2019 Edition {#mapchallenge2019}
 
@@ -142,9 +147,9 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
-<br><br>
+<br>
 
 <div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
-  <span class='highlight'>Do you want to hire me for a project or workshop?<br>
+  <span class='highlight'>Want to hire me for a project or training?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
