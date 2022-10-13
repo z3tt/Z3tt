@@ -93,8 +93,6 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
-<br>
-
 <div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
   <span class='highlight'>You need some map design?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
@@ -145,9 +143,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 <img src="img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
 
-
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
-<br>
 
 <div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
   <span class='highlight'>Want to hire me for a project or training?<br>

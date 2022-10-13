@@ -32,7 +32,7 @@
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/about/cedric-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;My favorite tool for all data-related tasks is &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; from the &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;code&gt;{tidyverse}&lt;/code&gt; package collection&lt;/a&gt; including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as &lt;a href=&#34;https://www.figma.com/ui-design-tool/&#34;&gt;Figma&lt;/a&gt;, &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;, and &lt;a href=&#34;https://flourish.studio/&#34;&gt;Flourish&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
-  &lt;span class=&#39;highlight&#39;&gt;Do you want to hire me for a project or workshop?&lt;br&gt;
+  &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
@@ -195,7 +195,7 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;a class=&#39;about-bold&#39; href=&#34;https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf&#34;&gt;&amp;#x21aa; Slides&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://www.youtube.com/watch?v=swzFdMc6WPk&#34;&gt;&amp;#x21aa; Recording&lt;/a&gt;
 &lt;/ul&gt;
 &lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#talks&#34;&gt;List of Presentations&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;teaching&#34;&gt;Selected Workshops &amp;amp; Trainings Conducted&lt;/h3&gt;
+&lt;h3 id=&#34;teaching&#34;&gt;Selected Conducted Workshops &amp;amp; Trainings&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;“Graphic design with &lt;code&gt;{ggplot2}&lt;/code&gt;: how to create engaging and complex visualizations in R”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://www.rstudio.com/conference/&#39;&gt;rstudio::conf(2022)&lt;/a&gt; by Posit – 2 days – 07|2022 – Washington, D.C., USA&lt;/span&gt;&lt;/li&gt;
@@ -1227,7 +1227,6 @@ If those published comments could be construed as a threat, and the perpetrator 
 
 
 &lt;/p&gt;
-&lt;br&gt;
 &lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
   &lt;span class=&#39;highlight&#39;&gt;You need some map design?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
@@ -1587,8 +1586,7 @@ If those published comments could be construed as a threat, and the perpetrator 
 
 
 
-
-&lt;br&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
@@ -1867,7 +1865,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;span class=&#39;subline&#39;&gt;Poster – Annual Meeting of the Ecological Society of Germany, Austria &amp; Switzerland (GfOe) – 09|2015 – Goettingen, Germany&lt;/span&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h3 id=&#34;workshops&#34;&gt;Workshops and Trainings&lt;/h3&gt;
+&lt;h3 id=&#34;workshops&#34;&gt;Conducted Workshops &amp;amp; Trainings&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: design graphics to tell stories in an engaging way”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Workshop – &lt;a href=&#39;https://www.cafeyn.co/ca-en/newsstand&#39;&gt;cafeyn / Lekiosque.fr&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;

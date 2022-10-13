@@ -34,7 +34,7 @@ My favorite tool for all data-related tasks is [R](https://www.r-project.org/abo
 
 
 <div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
-  <span class='highlight'>Do you want to hire me for a project or workshop?<br>
+  <span class='highlight'>Want to hire me for a project or training?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
 
