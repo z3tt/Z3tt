@@ -6,7 +6,7 @@ image: img/banner/paygap-insta-artsy.png
 twitterImg: img/banner/paygap-insta-artsy.png
 layout: post
 showtoc: false
-description: "Sadly, inequality between women and men is still an issue. In 2020, women's gross hourly earnings were on average 13% below those of male paid employees in the European Union. Disappointingly, only five countries in the EU report a gap smaller than 5% with Luxembourg being closest to zero."
+description: "Sadly, inequality between women and men is still an issue. In 2020, women's gross hourly earnings were on average 13% below those of male paid employees in the European Union. Only five countries in the EU report a gap smaller than 5% with Luxembourg being closest to zero."
 tags: ["DataViz", "ggplot2", "design", "equality", "paygap", "Europe"]
 editor_options:
   chunk_output_type: inline
@@ -42,13 +42,13 @@ For the first time, I also created a colorful, eye-catching version with larger 
 
 ##### Design Choices
 
-* A *dumbbell chart* to allow for direct comparison per country and across countries.
-* *Ranking* of countries by the pay gap in 2020 (original version; ranking by pay gap during the reference period as alternative version).
-* A colorblind-safe *traffic-light colors* for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.
-* *Chart title serves as axis title* as well. 
-* A *detailed legend* explaining the trend colors and dumbbell.
-* *Annotations* to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.
-* *Highlighting EU27 and EA19* as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).
+* A **dumbbell chart** to allow for direct comparison per country and across countries.
+* **Ranking** of countries by the pay gap in 2020 (original version; ranking by pay gap during the reference period as alternative version).
+* A colorblind-safe **traffic-light colors** for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.
+* **Chart title serves as axis title** as well. 
+* A **detailed legend** explaining the trend colors and dumbbell.
+* **Annotations** to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.
+* **Highlighting EU27 and EA19** as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).
 * To focus on the women, I wanted to show how much less the earning is compared to men. This becomes a bit tricky as the percentage is actually positive but shows a gap (it is *"+13% below"*). In the end, I decided to flip the axis as it feels much more intuitive to me. By adding big axis text I guide the reader how to interpret the y axis.
 * Unfortunately, I had to use the country abbreviations due to space issues. Long labels made the chart way too busy.
 

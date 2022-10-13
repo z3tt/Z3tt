@@ -33,8 +33,8 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 
 ##### Design Choices
 
-* *Small multiples* to allow for direct access of single letters which allows also to add the area covered to each map.
-* A *cyclical color palette*; of course, 25 categories are too many but with this approach one can at least identify the range a country falls into.  Color-vision deficiency problems are likely but not problematic thanks to the small multiples.
+* **Small multiples** to allow for direct access of single letters which allows also to add the area covered to each map.
+* A **cyclical color palette**; of course, 25 categories are too many but with this approach one can at least identify the range a country falls into.  Color-vision deficiency problems are likely but not problematic thanks to the small multiples.
 * I searched through a ton of fonts: I settled on [*Hatton*](https://pangrampangram.com/products/hatton) for the title and letters and [*Chivo*](https://www.omnibus-type.com/fonts/chivo/) with its tabular numbers for the areas and the caption.
 
 ##### Data Source
