@@ -242,7 +242,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 
 
-### Selected Workshops & Trainings Conducted {#teaching}
+### Selected Conducted Workshops & Trainings{#teaching}
 
 <ul>
 

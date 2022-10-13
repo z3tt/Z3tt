@@ -1075,10 +1075,10 @@ a.about-bold{
 }
 
 .highlightbox{
-  padding: 3rem 0 2.5rem 0;
+  padding: 3rem .05rem 2.5rem .05rem;
   text-align: center;
   box-shadow: 0 0 0 8pt #d9f6ec;
-  margin: 8rem 0 8rem 0;
+  margin: 8rem .25rem 8rem .25rem;
   border-radius: 12px;
 }
 

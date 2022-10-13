@@ -162,7 +162,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 
 
-### Workshops and Trainings {#workshops}
+### Conducted Workshops & Trainings{#workshops}
 
 <ul>
 
