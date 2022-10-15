@@ -173,6 +173,10 @@ h1{
   line-height:1.2;
   text-transform: uppercase;
 }
+.navbar h1{
+  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  font-weight:800;
+}
 h2,h3{
   font-family:'Thrillers SemiBold','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   line-height:1.2;
@@ -371,6 +375,21 @@ pre code{
   }
 }
 
+
+.navbar-custom, .navbar-brand, .nav li a{
+  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  font-weight:800;
+  color:#d9d9d9;
+  height:56px;
+  line-height:35px;
+  font-size:2.4rem;
+}
+.navbar-custom .navbar-brand{
+  color:rgba(255, 255, 255, 0);
+}
+.navbar-custom .navbar-brand:hover{
+  color:rgba(255, 255, 255, 0);
+}
 .navbar-custom{
   background:0 0;
   border:none;
@@ -379,27 +398,6 @@ pre code{
   left:0;
   width:100%;
   z-index:3;
-  font-family:'Thrillers Regular','Arial Black',sans-serif,-apple-system;
-  line-height:1.9;
-  font-weight:400;
-}
-.navbar-custom .navbar-brand{
-  font-weight:400;
-  color:#fff;
-  height:56px;
-  line-height:25px;
-  font-size:28px;
-  text-transform:uppercase;
-}
-.navbar-custom .navbar-brand:hover{
-  color:rgba(255,255,255,.8);
-}
-.navbar-custom .nav li a{
-  font-size:28px;
-  line-height:32px;
-  font-weight:400;
-  letter-spacing:1px;
-  text-transform:uppercase;
 }
 .navbar-custom .nav li a:active{
   background:rgba(0,0,0,.12);
@@ -415,18 +413,74 @@ pre code{
   }
   .navbar-custom .navbar-brand{
     color:#fff;
-    padding:20px;
-    line-height:20px;
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      #fff 50%,
+      #d9d9d9 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    margin: 0 0 0 12px;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
   }
-  .navbar-custom .navbar-brand:hover,.navbar-custom .navbar-brand:focus{
-    color:rgba(40,168,125, 0.8);
+  .navbar-custom .navbar-brand:before{
+    content: '';
+    background: #28a87d;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-custom .navbar-brand:hover{
+    font-weight:800;
+    background-position: 0;
+  }
+  .navbar-custom .navbar-brand:hover::before{
+    width: 100%;
   }
   .navbar-custom .nav li a{
-    color:#fff;
-    padding:12px;
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      #fff 50%,
+      #d9d9d9 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    margin: 0 3px 0 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-custom .nav li a:before{
+    content: '';
+    background: #28a87d;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar-custom .nav li a:hover{
+   background-position: 0;
+  }
+  .navbar-custom .nav li a:hover::before{
+    width: 100%;
   }
   .navbar-custom .nav li a:hover,.navbar-custom .nav li a:focus{
-    color:rgba(40,168,125, 0.8);
+    color:#fff;
   }
   .navbar-custom .nav li a:active{
     background:0 0;
