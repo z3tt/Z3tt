@@ -176,7 +176,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <span class='subline'>1.5-Day Workshop – <a href='https://www.idiv.de/en/ydiv.html'>German Centre for Integrative Biodiversity Research (iDiv)</a> – 09|2022 – Leipzig, Germany</span></li>
 
   <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
-  <span class='subline'>2-Day Conference Workshop – <a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by <a href='https://posit.co/'>Posit</a> – 2 days – 07|2022 – Washington, D.C., USA</span></li>
+  <span class='subline'>2-Day Conference Workshop – <a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by <a href='https://posit.co/'>Posit</a> – 07|2022 – Washington, D.C., USA</span></li>
 
   <li class='about'>“Data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
   <span class='subline'>1/2-Day Internal Training – <a href='https://www.rki.de/EN/Home/homepage_node.html'>Robert-Koch-Institute (RKI)</a> – 06|2022 – Berlin, Germany</span></li>
