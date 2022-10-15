@@ -1039,8 +1039,8 @@ body{
   background-color:#28a87d;
 }
 .navbar-default .navbar-toggle:active{
-  color:#fff;
-  background-color:#fff;
+  color:#28a87d;
+  background-color:#28a87d;
 }
 .navbar-default .navbar-toggle{
   border-color:transparent;

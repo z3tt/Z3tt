@@ -384,7 +384,6 @@ pre code{
   line-height:35px;
   font-size:2.4rem;
 }
-
 .navbar-custom .navbar-brand{
   color:#fff;
   background-image: linear-gradient(
@@ -455,7 +454,7 @@ pre code{
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  margin: 0 3px 0 0;
+  margin: 0 12px 0 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -494,6 +493,7 @@ pre code{
       #212121 50%,
       #fff 50%
     );
+    margin: 0px .1px 0px 0px;
   }
   .navbar-custom .nav li a:before{
     content: '';
@@ -507,7 +507,7 @@ pre code{
     transition: all 0.3s ease-in-out;
   }
   .navbar-custom .nav li a:hover{
-   background-position: 0;
+    background-position: 0;
   }
   .navbar-custom .nav li a:hover::before{
     width: 100%;
@@ -1035,12 +1035,12 @@ body{
   margin:1.5rem auto 1.6rem auto;
 }
 .navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{
-  color:#fff;
-  background-color:#fff;
+  color:#28a87d;
+  background-color:#28a87d;
 }
 .navbar-default .navbar-toggle:active{
-  color:#fff;
-  background-color:#fff;
+  color:#28a87d;
+  background-color:#28a87d;
 }
 .navbar-default .navbar-toggle{
   border-color:transparent;
@@ -1053,12 +1053,11 @@ body{
 .navbar-default .navbar-toggle .icon-bar{
   width:1.8rem;
   border-radius:0;
-  background-color:#212121;
+  background-color:#fff;
 }
 .navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus{
   width:1.8rem;
   border-radius:0;
-  background-color:#28a87d;
 }
 .navbar-default .navbar-toggle .icon-bar+.icon-bar{
   margin-top:.3rem;
@@ -1179,10 +1178,37 @@ a.about-bold{
 .highlight a{
   font-size:2.25rem;
   font-weight:800;
+  background-image: linear-gradient(
+    to right,
+    #28a87d,
+    #28a87d 50%,
+    #212121 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0 12px 0 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
-.highlight a:hover, .highlight a:focus{
-  font-size:2.25rem;
-  font-weight:800;
+.highlight .nav li a:before{
+  content: '';
+  background: #28a87d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.highlight .nav li a:hover{
+  background-position: 0;
+}
+.highlight.nav li a:hover::before{
+  width: 100%;
 }
 
 @media only screen and (min-width:768px){
