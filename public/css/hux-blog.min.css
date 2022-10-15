@@ -419,22 +419,6 @@ pre code{
 .navbar-custom .navbar-brand:hover::before{
   width: 100%;
 }
-.navbar-custom .nav li a{
-  background-image: linear-gradient(
-    to right,
-    #fff,
-    #fff 50%,
-    #212121 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  margin: 0 3px 0 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
 .navbar-custom{
   background:0 0;
   border:none;
@@ -1180,20 +1164,20 @@ a.about-bold{
   font-weight:800;
   background-image: linear-gradient(
     to right,
-    #28a87d,
-    #28a87d 50%,
-    #212121 50%
+    #663399,
+    #663399 50%,
+    #28a87d 50%
   );
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  margin: 0 12px 0 0;
+  margin: 0 3px 0 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-.highlight .nav li a:before{
+.highlight a:before{
   content: '';
   background: #28a87d;
   display: block;
@@ -1204,10 +1188,10 @@ a.about-bold{
   height: 4px;
   transition: all 0.3s ease-in-out;
 }
-.highlight .nav li a:hover{
+.highlight a:hover{
   background-position: 0;
 }
-.highlight.nav li a:hover::before{
+.highlight. a:hover::before{
   width: 100%;
 }
 
