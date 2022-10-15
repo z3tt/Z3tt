@@ -248,8 +248,8 @@ img.shadow{
   select{
     -webkit-appearance:none;
     margin-top:15px;
-    color:#208865;
-    border-color:#208865;
+    color:#28a87d;
+    border-color:#28a87d;
     padding:0 .4em;
     background:#fff
   }
@@ -385,10 +385,11 @@ pre code{
   font-size:2.4rem;
 }
 .navbar-custom .navbar-brand{
-  color:rgba(255, 255, 255, 0);
+  color:#d9d9d9;
 }
 .navbar-custom .navbar-brand:hover{
-  color:rgba(255, 255, 255, 0);
+  font-weight:800;
+  color:#fff;
 }
 .navbar-custom{
   background:0 0;
@@ -703,7 +704,7 @@ pre code{
   color:#787878;
 }
 .post-content-preview:hover{
-  color:#208865;
+  color:#28a87d;
 }
 
 @media only screen and (min-width:768px){
@@ -741,7 +742,7 @@ footer .copyright{
   margin-bottom:0;
 }
 footer .copyright a{
-  color:#208865;
+  color:#28a87d;
 }
 footer .copyright a:hover,footer .copyright a:focus{
   color:#28a87d;
