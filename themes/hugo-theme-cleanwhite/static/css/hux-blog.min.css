@@ -419,22 +419,6 @@ pre code{
 .navbar-custom .navbar-brand:hover::before{
   width: 100%;
 }
-.navbar-custom .nav li a{
-  background-image: linear-gradient(
-    to right,
-    #fff,
-    #fff 50%,
-    #212121 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  margin: 0 3px 0 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
 .navbar-custom{
   background:0 0;
   border:none;
