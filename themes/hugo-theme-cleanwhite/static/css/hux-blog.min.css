@@ -385,57 +385,57 @@ pre code{
   font-size:2.4rem;
 }
 
-  .navbar-custom .navbar-brand{
-    color:#fff;
-    background-image: linear-gradient(
-      to right,
-      #fff,
-      #fff 50%,
-      #212121 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    margin: 0 0 0 12px;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar-custom .navbar-brand:before{
-    content: '';
-    background: #28a87d;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 4px;
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar-custom .navbar-brand:hover{
-    font-weight:900;
-    background-position: 0;
-  }
-  .navbar-custom .navbar-brand:hover::before{
-    width: 100%;
-  }
-  .navbar-custom .nav li a{
-    background-image: linear-gradient(
-      to right,
-      #fff,
-      #fff 50%,
-      #212121 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    margin: 0 3px 0 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
+.navbar-custom .navbar-brand{
+  color:#fff;
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    #fff 50%,
+    #212121 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0 0 0 12px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-custom .navbar-brand:before{
+  content: '';
+  background: #28a87d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-custom .navbar-brand:hover{
+  font-weight:900;
+  background-position: 0;
+}
+.navbar-custom .navbar-brand:hover::before{
+  width: 100%;
+}
+.navbar-custom .nav li a{
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    #fff 50%,
+    #212121 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0 3px 0 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
 .navbar-custom{
   background:0 0;
   border:none;
@@ -486,6 +486,14 @@ pre code{
   }
   .navbar-custom body{
     font-size:1.6rem;
+  }
+  .navbar-custom .nav li a{
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      #fff 50%,
+      #212121 50%
+    );
   }
   .navbar-custom .nav li a:before{
     content: '';
