@@ -384,14 +384,13 @@ pre code{
   line-height:35px;
   font-size:2.4rem;
 }
-
 .navbar-custom .navbar-brand{
   color:#fff;
   background-image: linear-gradient(
     to right,
-    #fff,
-    #fff 50%,
-    #212121 50%
+    #212121,
+    #212121 50%,
+    #fff 50%
   );
   background-size: 200% 100%;
   background-position: -100%;
@@ -455,7 +454,7 @@ pre code{
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  margin: 0 3px 0 0;
+  margin: 0 12px 0 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -490,10 +489,11 @@ pre code{
   .navbar-custom .nav li a{
     background-image: linear-gradient(
       to right,
-      #fff,
-      #fff 50%,
-      #212121 50%
+      #212121,
+      #212121 50%,
+      #fff 50%
     );
+    margin: 0px .1px 0px 0px;
   }
   .navbar-custom .nav li a:before{
     content: '';
@@ -507,7 +507,7 @@ pre code{
     transition: all 0.3s ease-in-out;
   }
   .navbar-custom .nav li a:hover{
-   background-position: 0;
+    background-position: 0;
   }
   .navbar-custom .nav li a:hover::before{
     width: 100%;

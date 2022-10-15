@@ -378,18 +378,63 @@ pre code{
 
 .navbar-custom, .navbar-brand, .nav li a{
   font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
-  font-weight:800;
+  font-weight:900;
   color:#d9d9d9;
   height:56px;
   line-height:35px;
   font-size:2.4rem;
 }
+
 .navbar-custom .navbar-brand{
-  color:#d9d9d9;
+  color:#fff;
+  background-image: linear-gradient(
+    to right,
+    #212121,
+    #212121 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0 0 0 12px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-custom .navbar-brand:before{
+  content: '';
+  background: #28a87d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
 }
 .navbar-custom .navbar-brand:hover{
-  font-weight:800;
-  color:#fff;
+  font-weight:900;
+  background-position: 0;
+}
+.navbar-custom .navbar-brand:hover::before{
+  width: 100%;
+}
+.navbar-custom .nav li a{
+  background-image: linear-gradient(
+    to right,
+    #fff,
+    #fff 50%,
+    #212121 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0 3px 0 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 .navbar-custom{
   background:0 0;
@@ -400,8 +445,38 @@ pre code{
   width:100%;
   z-index:3;
 }
-.navbar-custom .nav li a:active{
-  background:rgba(0,0,0,.12);
+.navbar-custom .nav li a{
+  background-image: linear-gradient(
+    to right,
+    #28a87d,
+    #28a87d 50%,
+    #212121 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  margin: 0 3px 0 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:before{
+  content: '';
+  background: #28a87d;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover{
+ background-position: 0;
+}
+.navbar-custom .nav li a:hover::before{
+  width: 100%;
 }
 
 @media only screen and (min-width:768px){
@@ -412,56 +487,13 @@ pre code{
   .navbar-custom body{
     font-size:1.6rem;
   }
-  .navbar-custom .navbar-brand{
-    color:#fff;
-    background-image: linear-gradient(
-      to right,
-      #fff,
-      #fff 50%,
-      #d9d9d9 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    margin: 0 0 0 12px;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar-custom .navbar-brand:before{
-    content: '';
-    background: #28a87d;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 4px;
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar-custom .navbar-brand:hover{
-    font-weight:800;
-    background-position: 0;
-  }
-  .navbar-custom .navbar-brand:hover::before{
-    width: 100%;
-  }
   .navbar-custom .nav li a{
     background-image: linear-gradient(
       to right,
-      #fff,
-      #fff 50%,
-      #d9d9d9 50%
+      #212121,
+      #212121 50%,
+      #fff 50%
     );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    margin: 0 3px 0 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
   }
   .navbar-custom .nav li a:before{
     content: '';
@@ -479,12 +511,6 @@ pre code{
   }
   .navbar-custom .nav li a:hover::before{
     width: 100%;
-  }
-  .navbar-custom .nav li a:hover,.navbar-custom .nav li a:focus{
-    color:#fff;
-  }
-  .navbar-custom .nav li a:active{
-    background:0 0;
   }
 }
 
@@ -1009,15 +1035,16 @@ body{
   margin:1.5rem auto 1.6rem auto;
 }
 .navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{
-  background-color:inherit;
+  color:#fff;
+  background-color:#fff;
 }
 .navbar-default .navbar-toggle:active{
-  color:rgba(40,168,125, 0.8);
-  background-color:rgba(40,168,125, 0.8);
+  color:#fff;
+  background-color:#fff;
 }
 .navbar-default .navbar-toggle{
   border-color:transparent;
-  padding:1.9rem 1.6rem;
+  padding:18px 14px;
   margin-top:.12rem;
   margin-right:.2rem;
   margin-bottom:.2rem;
@@ -1026,7 +1053,12 @@ body{
 .navbar-default .navbar-toggle .icon-bar{
   width:1.8rem;
   border-radius:0;
-  background-color:#fff;
+  background-color:#212121;
+}
+.navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus{
+  width:1.8rem;
+  border-radius:0;
+  background-color:#28a87d;
 }
 .navbar-default .navbar-toggle .icon-bar+.icon-bar{
   margin-top:.3rem;
