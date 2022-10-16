@@ -185,9 +185,9 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <span class='subline'>2x 1/2-Day Conference Workshops – <a href='https://empseb.wordpress.com/'>European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 05|2022 – Espoo, Finland</span></li>
 
   <li class='about'>“Hands-on data visualization with <code>{ggplot2}</code>: how to create engaging and well-designed visualizations in R”<br>
-  <span class='subline'>5-hour Live Training – <a href='https://www.oreilly.com/live-events/'>Pearson/O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
+  <span class='subline'>5-hour Live Training – <a href='https://www.oreilly.com/live-events/'>Pearson–O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
 
-  <li class='about'>“R goes spatial: handling geo data with <code>terra</code>”<br>
+  <li class='about'>“R goes spatial: handling geo data with <code>{terra}</code>”<br>
   <span class='subline'>1-Day Workshop – "Biodiversity Dynamics" module at <a href='https://www.tu.berlin/en/'>Technical University Berlin</a> – 03|2022 – remote</span></li>
 
   <li class='about'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br>

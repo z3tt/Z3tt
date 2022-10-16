@@ -513,24 +513,12 @@ pre code{
   }
   .navbar-custom.is-fixed{
     position:fixed;
-    top:-61px;
-    background-color:rgba(255,255,255,.9);
-    border-bottom:1px solid #f2f2f2;
+    margin:-61px 0 24px 0;
+    background-color:rgba(180,180,180,.92);
+    border-bottom:3px solid #28a87d;
     -webkit-transition:-webkit-transform .3s;
     -moz-transition:-moz-transform .3s;
     transition:transform .3s;
-  }
-  .navbar-custom.is-fixed .navbar-brand{
-    color:#404040;
-  }
-  .navbar-custom.is-fixed .navbar-brand:hover,.navbar-custom.is-fixed .navbar-brand:focus{
-    color:#28a87d;
-  }
-  .navbar-custom.is-fixed .nav li a{
-    color:#404040;
-  }
-  .navbar-custom.is-fixed .nav li a:hover,.navbar-custom.is-fixed .nav li a:focus{
-    color:#28a87d;
   }
   .navbar-custom.is-visible{
     -webkit-transform:translate3d(0,100%,0);
