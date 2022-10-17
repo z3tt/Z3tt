@@ -8,8 +8,7 @@
 * [R Packages](#rstats)
 * [Media Appearances](#media)
 
-<br>
-
+<hr>
 
 ## Peer-Reviewed Publications {#publications}
 

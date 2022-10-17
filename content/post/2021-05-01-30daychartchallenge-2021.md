@@ -181,10 +181,10 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of **1,960 contributions** (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!
 
 <img src="/img/chart-challenge/timeseries_category.png" style="height: 100%; width: 100%; object-fit: contain;">
-<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">All 1,960 contributions (as of May 9) as stacked bar chart, per category.</figcaption></p>
+<p><figcaption class="caption">All 1,960 contributions (as of May 9) as stacked bar chart, per category.</figcaption></p>
 
 <img src="/img/chart-challenge/timeseries_weekday.png" style="height: 100%; width: 100%; object-fit: contain;">
-<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.</figcaption></p>
+<p><figcaption class="caption">The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.</figcaption></p>
 
 By the way, for more charts about the #30DayChartChallenge, have a look at [Georgios Karamanis' collection of meta-contributions](https://github.com/gkaramanis/30DayChartChallenge).
 

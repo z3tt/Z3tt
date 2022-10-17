@@ -1,11 +1,12 @@
 ##### Content
 
 * [Data Visualization](#dataviz)
-* [Rstats](#rstats)
-* [Personal Blogs](#blogs)
+* [R Programing Language](#rstats)
+* [Personal Pages](#blogs)
 
+<hr>
 
-## DataViz {#dataviz}
+## Data Visualization {#dataviz}
 
 ##### Open-Access Books
 
@@ -97,7 +98,7 @@
 
 
 
-## Interesting Personal Pages<br><span style='font-size:19pt;color:darkgrey;'>(Random Topics, Alphabetic Order 🤷)</span> {#blogs}
+## Interesting Personal Pages<br><span style='font-family:"Cabinet Grotesk";font-weight:800;font-size:2.2rem;color:#777;'>(Random Topics, Alphabetic Order 🤷)</span> {#blogs}
 
 
 * <a href="https://www.achim-tack.org/" target="_blank">Achim Tack</a> — data & maps

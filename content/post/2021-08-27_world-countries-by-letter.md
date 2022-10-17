@@ -20,7 +20,7 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 
 
 <img src="img/world-by-letters/letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/world-by-letters/letter_world_poster.png', 'blank');"/>
-<p><figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">The final poster version with the colorful overview map and 25 small maps, one for each letter.</figcaption></p><br>
+<p><figcaption class="caption">The final poster version with the colorful overview map and 25 small maps, one for each letter.</figcaption></p><br>
 
 ##### Project Type
 
