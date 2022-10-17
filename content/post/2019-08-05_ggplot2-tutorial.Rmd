@@ -31,7 +31,7 @@ After giving the talk which contained some decent plots thanks to the blog post,
 Since the blog entry by Zev Ross was not updated for some years and step by step this became a unique version of a tutorial, I decided to host the updated version on my GitHub. Now it finds its proper place on this homepage! (Plus I added a ton of other updates—just to name a few: The fantastic `{patchwork}`, `{ggtext}` and `{ggforce}` packages. How to deal with custom fonts and colors. A collection of R packages tailored to create interactive charts. And several other chart types including pie charts because everyone looooves pie charts!)
 
 <img src="/img/ggplot-tutorial/overview.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/ggplot-tutorial/overview.png', 'blank');"/>
-<p><figcaption>Some exemplary plots included in this tutorial.</figcaption></p>
+<figcaption>Some exemplary plots included in this tutorial.</figcaption>
 
 Major changes I've made:
 
@@ -1414,7 +1414,7 @@ Tian Zheng at Columbia has created a useful [PDF of R colors](http://www.stat.co
 In `{ggplot2}`, colors that are assigned to variables are modified via the `scale_color_*` and the `scale_fill_*` functions. In order to use color with your data, most importantly you need to know if you are dealing with a categorical or continuous variable. The color palette should be chosen depending on type of the variable, with sequential or diverging color palettes being used for continuous variables and qualitative color palettes for categorical variables:
 
 <img src="/img/ggplot-tutorial/map-principles-color-schemes.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://handsondataviz.org/images/07-map/map-principles-color-schemes.png', 'blank');"/>
-<p><figcaption>Source: "Hands-On Data Visualization" by Jack Dougherty & Ilya Ilyankou</figcaption></p>
+<figcaption>Source: "Hands-On Data Visualization" by Jack Dougherty & Ilya Ilyankou</figcaption>
 
 
 ##### Qualitative Variables
@@ -1422,7 +1422,7 @@ In `{ggplot2}`, colors that are assigned to variables are modified via the `scal
 Qualitative or categorical variables represent types of data which can be divided into groups (*categories*). The variable can be further specified as nominal, ordinal, and binary (dichotomous). Examples of qualitative/categorical variables are:
 
 <img src="/img/ggplot-tutorial/nominal_ordinal_binary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/allisonhorst/stats-illustrations/raw/master/other-stats-artwork/nominal_ordinal_binary.png', 'blank');"/>
-<p><figcaption>Artwork by Allison Horst</figcaption></p>
+<figcaption>Artwork by Allison Horst</figcaption>
 
 The default categorical color palette looks like this:
 
@@ -1486,7 +1486,7 @@ library(patchwork)
 Quantitative variables represent a measurable quantity and are thus numerical. Quantitative data can be further classified as being either continuous (floating numbers possible) or discrete (integers only):
 
 <img src="/img/ggplot-tutorial/continuous_discrete.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/allisonhorst/stats-illustrations/raw/master/other-stats-artwork/continuous_discrete.png', 'blank');"/>
-<p><figcaption>Artwork by Allison Horst</figcaption></p>
+<figcaption>Artwork by Allison Horst</figcaption>
 
 In our example we will change the variable we want to color to ozone, a continuous variable that is strongly related to temperature (higher temperature = higher ozone). The function `scale_*_gradient()` is a sequential gradient while `scale_*_gradient2()` is diverging.
 

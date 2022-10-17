@@ -31,7 +31,7 @@
     →  &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;Learn more about my research&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/about/cedric-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;My favorite tool for all data-related tasks is &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; from the &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;code&gt;{tidyverse}&lt;/code&gt; package collection&lt;/a&gt; including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as &lt;a href=&#34;https://www.figma.com/ui-design-tool/&#34;&gt;Figma&lt;/a&gt;, &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;, and &lt;a href=&#34;https://flourish.studio/&#34;&gt;Flourish&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
@@ -312,7 +312,7 @@ If those published comments could be construed as a threat, and the perpetrator 
       
       <guid>https://cedricscherer.com/top/dataviz/</guid>
       <description>&lt;p&gt;An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
-&lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Are you looking for a dataviz designer?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
@@ -338,7 +338,7 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;h2 id=&#34;clients&#34;&gt;Client Projects&lt;/h2&gt;
 &lt;h4 id=&#34;SciAm&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Escalating Drought&lt;/a&gt; (Scientific American, Nov 2021 Issue)&lt;/h4&gt;
 &lt;img src=&#34;img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;p class=&#39;caption&#39;&gt;Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz&lt;/p&gt;
+&lt;figcaption&gt;Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz&lt;/figcaption&gt;
 &lt;h4 id=&#34;afrozensus&#34;&gt;&lt;a href=&#34;https://afrozensus.de/reports/2020/&#34;&gt;Afrozensus 2020&lt;/a&gt; (EOTO &amp;amp; Citizens for Europe)&lt;/h4&gt;
 &lt;img src=&#34;img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://afrozensus.de/reports/2020/&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;img src=&#34;img/dataviz-portfolio/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://afrozensus.de/reports/2020/&#39;, &#39;blank&#39;);&#34;/&gt;
@@ -1234,7 +1234,7 @@ If those published comments could be construed as a threat, and the perpetrator 
 
 
 &lt;/p&gt;
-&lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;You need some map design?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
@@ -1594,7 +1594,7 @@ If those published comments could be construed as a threat, and the perpetrator 
 
 
 &lt;/p&gt;
-&lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
@@ -1844,7 +1844,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://www.heurekalabs.org/&#39;&gt;Heureka Labs&lt;/a&gt; &amp; &lt;a href=&#39;https://datascience.duke.edu/&#39;&gt;Duke+DataScience&lt;/a&gt; – 10|2020 – Webinar by Duke University&lt;/span&gt;&lt;br&gt;
   &lt;a class=&#39;about-bold&#39; href=&#34;https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf&#34;&gt;&amp;#x21aa; Slides&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://www.youtube.com/watch?v=swzFdMc6WPk&#34;&gt;&amp;#x21aa; Recording&lt;/a&gt;&lt;/b&gt;&lt;/li&gt;  
 &lt;/ul&gt;
-&lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Do you want to engage me as a speaker?&amp;nbsp;&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
@@ -1924,7 +1924,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;li class=&#39;about&#39;&gt;“Systematic zoology II”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;Field Workshop – &lt;a href=&#39;https://www.uni-potsdam.de/en/ibb/&#39;&gt;Department for Evolutionary Biology and Systematic Zoology, University of Potsdam&lt;/a&gt; – 2013–2014 – Gülpe, Germany&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#39;highlightbox&#39; onclick=&#34;location.href=&#39;https://calendly.com/cedricscherer/lets-meet&#39;;&#34;&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Do you fancy a workshop or seminar?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;

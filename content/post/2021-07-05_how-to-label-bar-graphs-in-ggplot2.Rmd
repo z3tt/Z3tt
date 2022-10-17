@@ -39,7 +39,7 @@ A few days ago, I got a request on some code creating bar charts with individual
 > Watching your [webinar about ggplot2 on UseR Oslo YouTube Channel](https://www.youtube.com/watch?v=5KHvEXYtnOo), I noticed some charts you made for a project called ['Survey on contract termination during the COVID-19 pandemic for kuendigung.org'](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/).<br><br>Because they have many interesting aesthetic features, I started looking for source code on your [GitHub repo](https://github.com/z3tt), but I didn't find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.
 
 <img src="https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png" style="height: 100%; width: 100%; object-fit: contain;">
-<p><figcaption>The simple bar chart I made for [kuendigung.org](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/). Note that this was a multiple choice question and thus the sum is larger than 100%.</figcaption></p>
+<figcaption>The simple bar chart I made for [kuendigung.org](https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/). Note that this was a multiple choice question and thus the sum is larger than 100%.</figcaption>
 
 Specifically, the main things of interest where:
 

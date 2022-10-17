@@ -26,7 +26,7 @@ showtoc: false
 As of the 6th of January, the estimated area burnt in Australia was [63,000 square kilometres (~24,000 square miles)](https://www.bbc.com/news/world-australia-50951043)—an area as large as the Latvian country in Europe. The plume of smoke created by the bushfires covered [an area of 5.5 million square kilometer (2.1 million square miles)](https://www.independent.co.uk/news/world/australasia/australia-fires-latest-smoke-forecast-nsw-victoria-food-water-a9266846.html) and [can be seen from space](https://www.businessinsider.de/international/australia-wildfires-space-satellite-pictures-smoke-new-zealand-2020-1/?r=US&IR=T). This area is as large as the area of Denmark including Greenland and the Faroe Islands, France, Spain, Sweden, Norway, Germany, Finland, Poland & Italy together!
 
 <img src="/img/dataviz-posts/2020_02_AustralianFires_blog.png" alt="map-burnt-land-smoke-europe" style="width:100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/tidytuesday/2020_02_AustralianFires_blog.png', 'blank');"/>
-<p><figcaption>Extent of burnt land and smoke caused by the Australian bushfires in relation to European countries.</figcaption></p>
+<figcaption>Extent of burnt land and smoke caused by the Australian bushfires in relation to European countries.</figcaption>
 
 
 ### How much of your country's area would have been burnt if the bushfires had raged there?
@@ -34,7 +34,7 @@ As of the 6th of January, the estimated area burnt in Australia was [63,000 squa
 As of 8th of January, the land burnt increased to [107,000 square kilometres (41,300 square miles)](https://www.theguardian.com/australia-news/datablog/ng-interactive/2019/dec/07/how-big-are-the-fires-burning-on-the-east-coast-of-australia-interactive-map). To imagine how large the area is, it might be simpler to compare the area to a country you are familiar with:
 
 <img src="/img/dataviz-posts/2020_02_AustralianFires_Global_blog.png" alt="map-burnt-land-world" style="width:100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/tidytuesday/2020_02_AustralianFires_Global_blog.png', 'blank');"/>
-<p><figcaption>Burnt area in relation to countries worldwide.</figcaption></p>
+<figcaption>Burnt area in relation to countries worldwide.</figcaption>
 
 ### How to help victims of Australia’s fires
 

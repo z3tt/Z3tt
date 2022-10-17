@@ -113,7 +113,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 </ul>
 
 
-<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+<div class='highlightbox'>
   <span class='highlight'>Do you want to engage me as a speaker?&nbsp;<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
@@ -240,7 +240,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 </ul>
 
-<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+<div class='highlightbox'>
   <span class='highlight'>Do you fancy a workshop or seminar?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>

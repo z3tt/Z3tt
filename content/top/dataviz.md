@@ -1,7 +1,7 @@
 An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
 
 
-<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+<div class='highlightbox'>
   <span class='highlight'>Are you looking for a dataviz designer?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
@@ -24,7 +24,7 @@ An overview of selected static data visualizations, maps and other designs I hav
 #### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) (Scientific American, Nov 2021 Issue) {#SciAm}
 
 <img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
-<p class='caption'>Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz</p>
+<figcaption>Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz</figcaption>
 
 #### [Afrozensus 2020](https://afrozensus.de/reports/2020/) (EOTO & Citizens for Europe) {#afrozensus}
 
@@ -93,7 +93,7 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
-<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+<div class='highlightbox'>
   <span class='highlight'>You need some map design?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
@@ -145,7 +145,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 
-<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+<div class='highlightbox'>
   <span class='highlight'>Want to hire me for a project or training?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>

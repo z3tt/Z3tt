@@ -33,7 +33,7 @@ I am working as a scientific researcher (*PostDoc*) in the [Department "Ecologic
 My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/).
 
 
-<div class='highlightbox' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+<div class='highlightbox'>
   <span class='highlight'>Want to hire me for a project or training?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
