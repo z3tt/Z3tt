@@ -76,12 +76,13 @@
     font-size:13px
 }
 .sidebar-container h6{
-  color:gray;
-  font-size:2.15rem;
+  color:#777;
+  font-size:2.1rem;
   padding-top:.7em;
+  text-transform:uppercase;
 }
 .sidebar-container h6 a{
-  color:gray!important;
+  color:#777!important;
   text-decoration:none
 }
 .sidebar-container a{
@@ -242,8 +243,8 @@ img.shadow{
     -webkit-appearance:none;
     margin-top:15px;
     color:#28a87d;
-      border-color:#28a87d;
-      padding:0 .4em;
+    border-color:#28a87d;
+    padding:0 .4em;
     background:#fff
   }
 }

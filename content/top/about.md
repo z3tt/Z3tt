@@ -282,6 +282,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
+</ul>
 
 &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#workshops">List of Workshops and Trainings</a>
 
