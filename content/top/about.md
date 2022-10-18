@@ -6,9 +6,11 @@
   }
 </style>
 
-<b>I am a graduated computational ecologist by training and an independent data visualization designer by heart with extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization. 
+<span style='font-family:"Canicule Display";font-size:2.9rem;font-weight:720;line-height:1.3;'>I am a computational ecologist by 🎓</b> and an independent data visualization designer by ❤️</b>
 
-I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.</b><br>
+<b style='font-size:2.2rem;'>As a researcher, I have acquired an extensive hypothesis–driven research experience and expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
+
+As an independent data visualization designer, I have created graphics across all disciplines, purposes, and styles applying a code–first approach. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.</b><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Curriculum Vitae](https://www.cedricscherer.com/top/about#cv) 
 <br><br>

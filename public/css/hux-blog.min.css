@@ -1147,7 +1147,7 @@ a.about-bold{
   font-size:1.85rem;
   font-weight:800;
   color:#212121;
-    line-height:1.1;
+  line-height:1.1;
 }
 .highlight a{
   font-size:2.25rem;
@@ -1170,7 +1170,7 @@ a.about-bold{
 .highlight a:before{
   content: '';
   background: #28a87d;
-    display: block;
+  display: block;
   position: absolute;
   bottom: -3px;
   left: 0;
