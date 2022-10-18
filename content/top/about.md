@@ -6,9 +6,9 @@
   }
 </style>
 
-<span style='font-family:"Canicule Display";font-size:2.9rem;font-weight:720;line-height:1.3;'>I am a computational ecologist by 🎓</b> and an independent data visualization designer by ❤️</b>
+<span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️</span>
 
-<b style='font-size:2.2rem;'>As a researcher, I have acquired an extensive hypothesis–driven research experience and expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
+<b style='font-size:2.2rem;font-weight:500;'>As a researcher, I have acquired an extensive hypothesis–driven research experience and expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
 
 As an independent data visualization designer, I have created graphics across all disciplines, purposes, and styles applying a code–first approach. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.</b><br>
 
