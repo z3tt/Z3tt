@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/about/</guid>
-      <description>&lt;h2 id=&#34;about&#34;&gt;About Me&lt;/h2&gt;
+      <description>&lt;h1 id=&#34;about&#34;&gt;About Me&lt;/h1&gt;
 &lt;style&gt;
   li:not(:last-child) {
     margin-bottom: 3px;
@@ -53,7 +53,7 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;[Get a pdf copy of my resume!](https://www.cedricscherer.com/files/Resume_CedricScherer_2020-01-01.pdf)
 //--&gt;
 &lt;hr/&gt;
-&lt;h2 id=&#34;cv&#34;&gt;Curriculum Vitae&lt;/h2&gt;
+&lt;h1 id=&#34;cv&#34;&gt;Curriculum Vitae&lt;/h1&gt;
 &lt;!--* [Personal Details](#person)--&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#career&#34;&gt;Education &amp;amp; Professional Expericence&lt;/a&gt;&lt;/li&gt;
@@ -311,11 +311,8 @@ If those published comments could be construed as a threat, and the perpetrator 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/dataviz/</guid>
-      <description>&lt;p&gt;An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
-&lt;div class=&#39;highlightbox&#39;&gt;
-  &lt;span class=&#39;highlight&#39;&gt;Are you looking for a dataviz designer?&lt;br&gt;
-  &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
-&lt;/div&gt;
+      <description>&lt;h1 id=&#34;data-visualization-gallery&#34;&gt;Data Visualization Gallery&lt;/h1&gt;
+&lt;p&gt;An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#clients&#34;&gt;&lt;strong&gt;Client Projects&lt;/strong&gt;&lt;/a&gt;
 &lt;ul&gt;
@@ -333,8 +330,9 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#personal&#34;&gt;&lt;strong&gt;Personal Projects&lt;/strong&gt;&lt;/a&gt;
-&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;clients&#34;&gt;Client Projects&lt;/h2&gt;
 &lt;h4 id=&#34;SciAm&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Escalating Drought&lt;/a&gt; (Scientific American, Nov 2021 Issue)&lt;/h4&gt;
 &lt;img src=&#34;img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#39;, &#39;blank&#39;);&#34;/&gt;
@@ -508,8 +506,11 @@ If those published comments could be construed as a threat, and the perpetrator 
     &lt;/div&gt;
 &lt;/div&gt;
 
-
-&lt;br&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;div class=&#39;highlightbox&#39;&gt;
+  &lt;span class=&#39;highlight&#39;&gt;Are you looking for a dataviz designer?&lt;br&gt;
+  &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
 &lt;h4 id=&#34;variousclients&#34;&gt;Visualizations for Various Projects&lt;/h4&gt;
 &lt;p&gt;
 
@@ -1639,7 +1640,8 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/links/</guid>
-      <description>&lt;h5 id=&#34;content&#34;&gt;Content&lt;/h5&gt;
+      <description>&lt;h1 id=&#34;link-collection&#34;&gt;Link Collection&lt;/h1&gt;
+&lt;p&gt;A loose collection of interesting open-access books, tools, tutorials, and personal blogs.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#dataviz&#34;&gt;Data Visualization&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#rstats&#34;&gt;R Programing Language&lt;/a&gt;&lt;/li&gt;
@@ -1769,7 +1771,8 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/portfolio/</guid>
-      <description>&lt;h5 id=&#34;content&#34;&gt;Content&lt;/h5&gt;
+      <description>&lt;h1 id=&#34;portfolio&#34;&gt;Portfolio&lt;/h1&gt;
+&lt;p&gt;A detailed overview overview of my achievements to date, from scientific publications to contributions to R packages to presentations, trainings, workshops and media appearances.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#publications&#34;&gt;Peer-Reviewed Publications&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#books&#34;&gt;Book Chapters&lt;/a&gt;&lt;/li&gt;

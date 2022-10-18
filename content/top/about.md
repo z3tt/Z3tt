@@ -1,4 +1,4 @@
-## About Me {#about}  
+# About Me {#about}  
 
 <style>
   li:not(:last-child) {
@@ -62,7 +62,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 <hr/>
 
-## Curriculum Vitae {#cv}
+# Curriculum Vitae {#cv}
 
 <!--* [Personal Details](#person)-->
 * [Education & Professional Expericence](#career)

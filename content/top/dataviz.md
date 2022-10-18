@@ -1,10 +1,6 @@
+# Data Visualization Gallery
+
 An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
-
-
-<div class='highlightbox'>
-  <span class='highlight'>Are you looking for a dataviz designer?<br>
-  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
-</div>
 
 
 * [**Client Projects**](#clients)
@@ -17,7 +13,9 @@ An overview of selected static data visualizations, maps and other designs I hav
   * [#30DayMapChallenge](#mapchallenge)
   * [Other Challenges](#miscchallenges)
 * [**Personal Projects**](#personal)
-<br><br>
+<br>
+
+<hr>
 
 ## Client Projects {#clients}
 
@@ -35,7 +33,11 @@ An overview of selected static data visualizations, maps and other designs I hav
 <img src="img/dataviz-portfolio/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
 {{< gallery dir="img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
-<br>
+
+<div class='highlightbox'>
+  <span class='highlight'>Are you looking for a dataviz designer?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
 
 #### Visualizations for Various Projects {#variousclients}
 

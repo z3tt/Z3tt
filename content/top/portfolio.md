@@ -1,4 +1,6 @@
-##### Content
+# Portfolio
+
+A detailed overview overview of my achievements to date, from scientific publications to contributions to R packages to presentations, trainings, workshops and media appearances.
 
 * [Peer-Reviewed Publications](#publications)
 * [Book Chapters](#books)

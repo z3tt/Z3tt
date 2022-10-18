@@ -1,4 +1,6 @@
-##### Content
+# Link Collection
+
+A loose collection of interesting open-access books, tools, tutorials, and personal blogs.
 
 * [Data Visualization](#dataviz)
 * [R Programing Language](#rstats)
