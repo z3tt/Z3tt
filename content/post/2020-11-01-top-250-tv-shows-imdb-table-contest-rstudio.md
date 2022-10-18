@@ -19,7 +19,7 @@ tags:
 showtoc: false
 ---
 
-<a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/"><i style='color:#28a87d;'><b>Update December 24<sup>th</sup> 2020:</b> My table made it into the <b>"Honourable Mentions"</b> section. Congrats to the winner Niels van der Velden and all the others that are mentioned!</i></a>
+<a href="https://blog.rstudio.com/2020/12/23/winners-of-the-2020-rstudio-table-contest/"><span style='color:#28a87d;'><b>Update December 24<sup>th</sup> 2020:</b> My table made it into the <b>"Honourable Mentions"</b> section. Congrats to the winner Niels van der Velden and all the others that are mentioned!</span></a>
 
 In consequence, I decided to visualize the top  250 TV shows according to IMDb users as a more helpful table then the [original one on IMDb](https://www.imdb.com/chart/toptv/) as [my contribution](https://community.rstudio.com/t/what-do-i-binge-next-an-overview-of-the-top-imdb-tv-shows-table-contest-submission/86409) to the ongoing [RStudio table contest](https://blog.rstudio.com/2020/09/15/announcing-the-2020-rstudio-table-contest/):
 

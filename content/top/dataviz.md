@@ -1,6 +1,4 @@
-# Data Visualization Gallery
-
-An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
+An showcase of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
 
 
 * [**Client Projects**](#clients)

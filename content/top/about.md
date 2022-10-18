@@ -1,4 +1,4 @@
-# About Me {#about}  
+## Hi, I am Cédric 👋
 
 <style>
   li:not(:last-child) {
@@ -6,9 +6,14 @@
   }
 </style>
 
-**I am a graduated computational ecologist by training and an independent data visualization specialist/designer by heart with extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.** 
+<b>I am a graduated computational ecologist by training and an independent data visualization designer by heart with extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization. 
 
-**I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.**<br><br>
+I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.</b><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Curriculum Vitae](https://www.cedricscherer.com/top/about#cv) 
+<br><br>
+
+
 
 
 #### Data Visualization {#dataviz}

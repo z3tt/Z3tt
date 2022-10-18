@@ -11,14 +11,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/about/</guid>
-      <description>&lt;h1 id=&#34;about&#34;&gt;About Me&lt;/h1&gt;
+      <description>&lt;h2 id=&#34;hi-i-am-cédric-&#34;&gt;Hi, I am Cédric 👋&lt;/h2&gt;
 &lt;style&gt;
   li:not(:last-child) {
     margin-bottom: 3px;
   }
 &lt;/style&gt;
-&lt;p&gt;&lt;strong&gt;I am a graduated computational ecologist by training and an independent data visualization specialist/designer by heart with extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;I am a graduated computational ecologist by training and an independent data visualization designer by heart with extensive hypothesis-driven research experience and strong skills in data wrangling, statistical analysis, model development, and data visualization.&lt;/p&gt;
+&lt;p&gt;I have created visualizations across all disciplines, purposes, and styles and regularly teach data visualization principles as well as basic and advanced ggplot2 techniques.&lt;/b&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/about#cv&#34;&gt;Curriculum Vitae&lt;/a&gt; 
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h4 id=&#34;dataviz&#34;&gt;Data Visualization&lt;/h4&gt;
 &lt;p&gt;I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as &lt;a href=&#34;https://github.com/Z3tt/TidyTuesday&#34;&gt;TidyTuesday&lt;/a&gt;, &lt;a href=&#34;https://github.com/Z3tt/30DayMapChallenge&#34;&gt;#30DayMapChallenge&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Z3tt/30DayChartChallenge&#34;&gt;#30DayChartChallenge&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/dataviz/&#34;&gt;Have a look at my portfolio&lt;/a&gt;&lt;br&gt;
@@ -311,8 +313,7 @@ If those published comments could be construed as a threat, and the perpetrator 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/dataviz/</guid>
-      <description>&lt;h1 id=&#34;data-visualization-gallery&#34;&gt;Data Visualization Gallery&lt;/h1&gt;
-&lt;p&gt;An overview of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
+      <description>&lt;p&gt;An showcase of selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#clients&#34;&gt;&lt;strong&gt;Client Projects&lt;/strong&gt;&lt;/a&gt;
 &lt;ul&gt;
@@ -1640,8 +1641,7 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/links/</guid>
-      <description>&lt;h1 id=&#34;link-collection&#34;&gt;Link Collection&lt;/h1&gt;
-&lt;p&gt;A loose collection of interesting open-access books, tools, tutorials, and personal blogs.&lt;/p&gt;
+      <description>&lt;p&gt;A loose collection of interesting links featuring open-access books, tools, tutorials, and personal blogs.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#dataviz&#34;&gt;Data Visualization&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#rstats&#34;&gt;R Programing Language&lt;/a&gt;&lt;/li&gt;
@@ -1771,8 +1771,7 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/portfolio/</guid>
-      <description>&lt;h1 id=&#34;portfolio&#34;&gt;Portfolio&lt;/h1&gt;
-&lt;p&gt;A detailed overview overview of my achievements to date, from scientific publications to contributions to R packages to presentations, trainings, workshops and media appearances.&lt;/p&gt;
+      <description>&lt;p&gt;A detailed overview of my achievements to date, from scientific publications to contributions to R packages to presentations, trainings, workshops and media appearances.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#publications&#34;&gt;Peer-Reviewed Publications&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#books&#34;&gt;Book Chapters&lt;/a&gt;&lt;/li&gt;
