@@ -21,7 +21,7 @@ An showcase of selected static data visualizations, maps and other designs I hav
 
 #### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for Scientific American {#SciAm}
 
-Design of a one-page data visualization for the "Graphic Science" section of the popular science magazine ["Scientific American"](https://scientificamerican.com/) featured in the Nov 2021 issue in [print](https://twitter.com/geokaramanis/status/1461004013818810371) and [digital](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought). Created together with Georgios Karamanis with editorial support by Jen Christiansen and Clara Moskowitz.
+A one-page data visualization for the "Graphic Science" section of the popular science magazine ["Scientific American"](https://scientificamerican.com/) featured in the Nov 2021 issue in [print](https://twitter.com/geokaramanis/status/1461004013818810371) and [digital](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought). Created together with Georgios Karamanis with editorial support by Jen Christiansen and Clara Moskowitz.
 
 <img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 
@@ -31,8 +31,7 @@ Design of a one-page data visualization for the "Graphic Science" section of the
 
 #### [Q Vadis? Q Anon Activity on Telegram](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for CeMAS {#pyramids}
 
-Design of an unfoldable four-page multi-panel graphic with the main element being a stream graph visualizing the spread of Q Anon messages on Telegram. As the timeline unfolds (see <a href="https://twitter.com/holnburger/status/1509799933355905048" target="_blank">video</a>), it reveals the huge amount of messages sent annotated with important events such as the storming of the capital.    
-The graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in the German-Speaking World"](https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/) by the [Center for Monitoring, Analysis and Strategy (CeMAS)](https://cemas.io/) which is available in print and digital in [German](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/) and [English](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/CeMAS_Q_Vadis_Zur_Verbreitung_von_QAnon_im_deutschsprachigen_Raum.pdf).
+An unfoldable (see <a href="https://twitter.com/holnburger/status/1509799933355905048" target="_blank">video</a>) four-page graphic with the main element being a stream graph visualizing the huge amount of Q Anon messages sent on Telegram, annotated with important events such as the storming of the capital. The multi-panel graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in the German-Speaking World"](https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/) by the [Center for Monitoring, Analysis and Strategy (CeMAS)](https://cemas.io/) which is available in print and digital in [German](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/) and [English](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/CeMAS_Q_Vadis_Zur_Verbreitung_von_QAnon_im_deutschsprachigen_Raum.pdf).
 
 <img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
 
@@ -42,7 +41,7 @@ The graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in
 
 #### [Rediscovering Demographic Change](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for the German Federal Institute for Population Research (BiB) {#pyramids}
 
-Design of 13 sets of population pyramids for the report "Rediscovering demographic change" by the Bundesinstitut für Bevölkerungsforschung (German Federal Institute for Population Research),
+13 sets of population pyramids for the report "Rediscovering demographic change" by the Bundesinstitut für Bevölkerungsforschung (German Federal Institute for Population Research),
 illustrating the demographic change in Germany over 30 years from various perspectives.
 
 <img src="img/dataviz-portfolio/2021_bib_population_pyramids_compilation.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
@@ -57,7 +56,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 #### [Afrozensus 2020](https://afrozensus.de/reports/2020/) for EOTO e.V. & Citizens for Europe {#afrozensus} 
 
-Design of 89 data visualizations for the report ["Afrozensus 2020"](https://afrozensus.de/reports/2020/) published by [EOTO e.V.](https://www.eoto-archiv.de/) and [Citizen for Europe](https://citizensforeurope.org/). The visualizations show the results from the largest survey ever conducted among black, African and Afrodiasporic people in Germany. 
+89 data visualizations for the report ["Afrozensus 2020"](https://afrozensus.de/reports/2020/) published by [EOTO e.V.](https://www.eoto-archiv.de/) and [Citizen for Europe](https://citizensforeurope.org/). The visualizations show the results from the largest survey ever conducted among black, African and Afrodiasporic people in Germany. 
 
 <img src="img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
