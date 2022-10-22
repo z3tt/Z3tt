@@ -1,4 +1,4 @@
-A detailed overview of my achievements to date, from scientific publications to contributions to R packages to presentations, trainings, workshops and media appearances.
+A detailed overview of my achievements to date:
 
 * [Peer-Reviewed Publications](#publications)
 * [Book Chapters](#books)
@@ -15,8 +15,11 @@ A detailed overview of my achievements to date, from scientific publications to 
 You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra) and [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions).  
 My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
-
 <ul>
+  <li class='about'><span class='authors'>C Voigt, <u style='font-weight:700;'>C Scherer</u> & V Runkel</span> (accepted)</span> Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines.<br>
+  <i>Conservation Science and Practice</i>.</li>  
+
+
   <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022)</span> A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research.<br>
   <a href='https://doi.org/10.1371/journal.pcbi.1010356'><i>PLOS Computational Biology</i> <b>18</b>(9):e1010356</a>.</li>  
 
@@ -161,7 +164,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 
 
-### Conducted Workshops & Trainings{#workshops}
+## Conducted Workshops & Trainings{#workshops}
 
 <ul>
 

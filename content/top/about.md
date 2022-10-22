@@ -1,4 +1,4 @@
-## Hi, I am Cédric 👋
+## Hi, I am Cédric.
 
 <style>
   li:not(:last-child) {
@@ -8,42 +8,44 @@
 
 <span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️</span>
 
-<b style='font-size:2.2rem;font-weight:500;'>As a researcher, I have acquired an extensive hypothesis–driven research experience and expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
+<b style='font-size:2.2rem;font-weight:500;'>As a trained researcher, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
 
-As an independent data visualization designer, I have created graphics across all disciplines, purposes, and styles applying a code–first approach. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.</b><br>
+As an independent data visualization designer, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles applying a code–first approach</b>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.<br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Curriculum Vitae](https://www.cedricscherer.com/top/about#cv) 
-<br><br>
-
-
-
-
-#### Data Visualization {#dataviz}
-
-I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as [TidyTuesday](https://github.com/Z3tt/TidyTuesday), [#30DayMapChallenge](https://github.com/Z3tt/30DayMapChallenge), and [#30DayChartChallenge](https://github.com/Z3tt/30DayChartChallenge). 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Have a look at my portfolio](https://www.cedricscherer.com/top/dataviz/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call</a><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Curriculum Vitae](https://www.cedricscherer.com/top/about#cv)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Data Visualization Gallery](https://www.cedricscherer.com/top/dataviz)<br>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Portfolio](https://www.cedricscherer.com/top/portfolio)</b>
+<br>
 
 <img src="/img/about/dataviz-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
-#### Computational Ecology {#ecology}
+#### Data Visualization Design {#dataviz}
 
-I am working as a scientific researcher (*PostDoc*) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
+I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis.  
+  
+I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by creating [commisioned work](https://cedricscherer.com/top/dataviz#clients), conducting [self-led personal projects](https://cedricscherer.com/top/dataviz#personal), and contributing to numerous data visualization challenges such as [#TidyTuesday](https://cedricscherer.com/top/dataviz#tidytuesday), [#30DayMapChallenge](https://cedricscherer.com/top/dataviz#mapchallenge), and [#30DayChartChallenge](https://cedricscherer.com/top/dataviz#chartchallenge). 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/portfolio/#publications)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
-
-<img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
-
-My favorite tool for all data-related tasks is [R](https://www.r-project.org/about.html), an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/).
-
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Check out my data visualization designs](https://www.cedricscherer.com/top/dataviz/)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations) 
 
 <div class='highlightbox'>
   <span class='highlight'>Want to hire me for a project or training?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
+
+#### Computational Ecology {#ecology}
+
+I am working as a scientific researcher (PostDoc) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/portfolio/#publications)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
+
+#### Code–First Approach {#code}
+
+My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the <b>programing language <a href='https://www.r-project.org/about.html'>R</a></b>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow allows for <b>reproducible, transparent, and partly or completely automated workflows</b>.  
+  
+To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/) which I combine with the code–first approach.<br>
+
+<img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
 
 
 ## Contact {#contact}
@@ -200,20 +202,24 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 ### Selected Publications {#publications}
 
 <ul>
+  <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022)</span> A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research. 
+  <a href='https://doi.org/10.1371/journal.pcbi.1010356'><i>PLOS Computational Biology</i> <b>18</b>(9):e1010356</a>.</li>  
+  
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
   <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b>(5):651–667</a>.</li>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. <a href='https://doi.org/10.1111/1365-2656.13070'><i>Journal of Animal Ecology</i> <b>88</b>(11):1639–1824</a>.</li>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. 
+  <a href='https://doi.org/10.1111/1365-2656.13070'><i>Journal of Animal Ecology</i> <b>88</b>(11):1639–1824</a>.</li>
 
   <li class='about'><span class='authors'>V Radchuk, F De Laender, J Sarmento Cabral, I Boulangeat, M Crawford, F Bohn, J De Raedt, <u style='font-weight:700;'>C Scherer</u>, J-C Svenning, K Thonicke, F Schurr, V Grimm & S Kramer-Schadt (2019)</span> The dimensionality of stability depends on disturbance type. 
   <a href='https://doi.org/10.1111/ele.13226'><i>Ecology Letters</i> <b>22</b>(4):647–684</a>.</li>
 
-  <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R. 
+  <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> <code>NLMR</code> and <code>landscapetools</code>: An integrated environment for simulating and modifying neutral landscape models in R. 
   <a href='https://doi.org/10.1111/2041-210X.13076'><i>Methods in Ecology and Evolution</i> <b>9</b>(11):2240–2248</a></li>
+
+  &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#publications">List of Publications</a>
   
 </ul>
-
-&rarr; <a href="https://www.cedricscherer.com/top/portfolio/#publications">List of Publications</a>
 
 
 
@@ -249,11 +255,11 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
   <li class='about'>“Effective data visualization: how to design impactful and aesthetically pleasing charts.”<br>
   <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)<br>
-  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a>
+  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></li>
+
+  &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#talks">List of Presentations</a>
 
 </ul>
-
-&rarr; <a href="https://www.cedricscherer.com/top/portfolio/#talks">List of Presentations</a>
 
 
 
@@ -280,13 +286,14 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <span class='subline'>1/2-Day Workshop –  <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 11|2021 – remote</span></li>
 
   <li class='about'>“Data visualization in R (Beginner + Advanced)”<br>
-  <span class='subline'>Two 2-Day Workshop for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> and <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – remote – 10|2021 + 12|2021</span></li>
+  <span class='subline'>Two 2-Day Workshops for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> and <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – remote – 10|2021 + 12|2021</span></li>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
-</ul>
 
-&rarr; <a href="https://www.cedricscherer.com/top/portfolio/#workshops">List of Workshops and Trainings</a>
+  &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#workshops">List of Workshops and Trainings</a>
+
+</ul>
 
 
 ### Awards & Honors {#awards}

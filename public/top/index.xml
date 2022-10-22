@@ -11,33 +11,36 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/about/</guid>
-      <description>&lt;h2 id=&#34;hi-i-am-cédric-&#34;&gt;Hi, I am Cédric 👋&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;hi-i-am-cédric&#34;&gt;Hi, I am Cédric.&lt;/h2&gt;
 &lt;style&gt;
   li:not(:last-child) {
     margin-bottom: 3px;
   }
 &lt;/style&gt;
-&lt;p&gt;&lt;span style=&#39;font-family:&#34;Canicule Display&#34;;font-size:2.9rem;font-weight:720;line-height:1.3;&#39;&gt;I am a computational ecologist by 🎓&lt;/b&gt; and an independent data visualization designer by ❤️&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;As a researcher, I have acquired an extensive hypothesis–driven research experience and expertise in data wrangling, statistical analysis, and model development. Since communicating data is paramount importance, I have subsequently developed strong skills in data visualization, journalism, and design.&lt;/p&gt;
-&lt;p&gt;As an independent data visualization designer, I have created graphics across all disciplines, purposes, and styles applying a code–first approach. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.&lt;/b&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/about#cv&#34;&gt;Curriculum Vitae&lt;/a&gt; 
-&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h4 id=&#34;dataviz&#34;&gt;Data Visualization&lt;/h4&gt;
-&lt;p&gt;I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis. I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by contributing to self-led personal projects and numerous data visualization challenges such as &lt;a href=&#34;https://github.com/Z3tt/TidyTuesday&#34;&gt;TidyTuesday&lt;/a&gt;, &lt;a href=&#34;https://github.com/Z3tt/30DayMapChallenge&#34;&gt;#30DayMapChallenge&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Z3tt/30DayChartChallenge&#34;&gt;#30DayChartChallenge&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/dataviz/&#34;&gt;Have a look at my portfolio&lt;/a&gt;&lt;br&gt;
-    →  &lt;a href=&#34;https://www.cedricscherer.com/top/about/#presentations&#34;&gt;Watch my most-recent talks&lt;/a&gt;&lt;br&gt;
-    →  &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#39;emphasize&#39;&gt;I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#39;font-size:2.2rem;font-weight:500;&#39;&gt;As a trained researcher, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in &lt;b style=&#39;font-weight:900;&#39;&gt;data wrangling, statistical analysis, and model development&lt;/b&gt;. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in &lt;b style=&#39;font-weight:900;&#39;&gt;data visualization, journalism, and design&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;As an independent data visualization designer, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed &lt;b style=&#39;font-weight:900;&#39;&gt;graphics across all disciplines, purposes, and styles applying a code–first approach&lt;/b&gt;. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/about#cv&#34;&gt;Curriculum Vitae&lt;/a&gt;&lt;br&gt;
+    →  &lt;a href=&#34;https://www.cedricscherer.com/top/dataviz&#34;&gt;Data Visualization Gallery&lt;/a&gt;&lt;br&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio&#34;&gt;Portfolio&lt;/a&gt;&lt;/b&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/about/dataviz-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h4 id=&#34;ecology&#34;&gt;Computational Ecology&lt;/h4&gt;
-&lt;p&gt;I am working as a scientific researcher (&lt;em&gt;PostDoc&lt;/em&gt;) in the &lt;a href=&#34;www.ecodynizw.github.io&#34;&gt;Department &amp;ldquo;Ecological Dynamics&amp;rdquo;&lt;/a&gt; at the &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Leibniz Institute for Zoo and Wildlife Research (IZW)&lt;/a&gt; in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the &lt;a href=&#34;https://www.uni-potsdam.de/en/ibb.html&#34;&gt;University of Potsdam&lt;/a&gt; as part of the &lt;a href=&#34;https://www.biomove.org/&#34;&gt;BioMove&lt;/a&gt; research training group.&lt;/p&gt;
-&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;Read my publications&lt;/a&gt;&lt;br&gt;
-    →  &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;Learn more about my research&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/about/cedric-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;My favorite tool for all data-related tasks is &lt;a href=&#34;https://www.r-project.org/about.html&#34;&gt;R&lt;/a&gt;, an open source and highly extensible language for statistical computing and graphics techniques. To visualize data I mainly utilize the package &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; from the &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;code&gt;{tidyverse}&lt;/code&gt; package collection&lt;/a&gt; including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying a lot using other, non-programing design and charting tools such as &lt;a href=&#34;https://www.figma.com/ui-design-tool/&#34;&gt;Figma&lt;/a&gt;, &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;, and &lt;a href=&#34;https://flourish.studio/&#34;&gt;Flourish&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;dataviz&#34;&gt;Data Visualization Design&lt;/h4&gt;
+&lt;p&gt;I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis.&lt;/p&gt;
+&lt;p&gt;I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by creating &lt;a href=&#34;https://cedricscherer.com/top/dataviz#clients&#34;&gt;commisioned work&lt;/a&gt;, conducting &lt;a href=&#34;https://cedricscherer.com/top/dataviz#personal&#34;&gt;self-led personal projects&lt;/a&gt;, and contributing to numerous data visualization challenges such as &lt;a href=&#34;https://cedricscherer.com/top/dataviz#tidytuesday&#34;&gt;#TidyTuesday&lt;/a&gt;, &lt;a href=&#34;https://cedricscherer.com/top/dataviz#mapchallenge&#34;&gt;#30DayMapChallenge&lt;/a&gt;, and &lt;a href=&#34;https://cedricscherer.com/top/dataviz#chartchallenge&#34;&gt;#30DayChartChallenge&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/dataviz/&#34;&gt;Check out my data visualization designs&lt;/a&gt;&lt;br&gt;
+    →  &lt;a href=&#34;https://www.cedricscherer.com/top/about/#presentations&#34;&gt;Watch my most-recent talks&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
   &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
+&lt;h4 id=&#34;ecology&#34;&gt;Computational Ecology&lt;/h4&gt;
+&lt;p&gt;I am working as a scientific researcher (PostDoc) in the &lt;a href=&#34;www.ecodynizw.github.io&#34;&gt;Department &amp;ldquo;Ecological Dynamics&amp;rdquo;&lt;/a&gt; at the &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Leibniz Institute for Zoo and Wildlife Research (IZW)&lt;/a&gt; in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the &lt;a href=&#34;https://www.uni-potsdam.de/en/ibb.html&#34;&gt;University of Potsdam&lt;/a&gt; as part of the &lt;a href=&#34;https://www.biomove.org/&#34;&gt;BioMove&lt;/a&gt; research training group.&lt;/p&gt;
+&lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;Read my publications&lt;/a&gt;&lt;br&gt;
+    →  &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;Learn more about my research&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4 id=&#34;code&#34;&gt;Code–First Approach&lt;/h4&gt;
+&lt;p&gt;My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the &lt;b&gt;programing language &lt;a href=&#39;https://www.r-project.org/about.html&#39;&gt;R&lt;/a&gt;&lt;/b&gt;, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow allows for &lt;b&gt;reproducible, transparent, and partly or completely automated workflows&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;To visualize data I mainly utilize the package &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; from the &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;code&gt;{tidyverse}&lt;/code&gt; package collection&lt;/a&gt; including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, non-programing design and charting tools such as &lt;a href=&#34;https://www.figma.com/ui-design-tool/&#34;&gt;Figma&lt;/a&gt;, &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;, and &lt;a href=&#34;https://flourish.studio/&#34;&gt;Flourish&lt;/a&gt; which I combine with the code–first approach.&lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/about/cedric-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;
 &lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
 &lt;p&gt;&lt;b&gt;Dr. rer. nat. Cédric Scherer&lt;/b&gt;&lt;/p&gt;
 &lt;div style=&#34;line-height:0%;&#34;&gt;
@@ -171,15 +174,18 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
 //--&gt;
 &lt;h3 id=&#34;publications&#34;&gt;Selected Publications&lt;/h3&gt;
 &lt;ul&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;L Figueiredo, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; JS Cabral&lt;/span&gt; (2022)&lt;/span&gt; A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research. 
+  &lt;a href=&#39;https://doi.org/10.1371/journal.pcbi.1010356&#39;&gt;&lt;i&gt;PLOS Computational Biology&lt;/i&gt; &lt;b&gt;18&lt;/b&gt;(9):e1010356&lt;/a&gt;.&lt;/li&gt;  
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm &amp; S Kramer-Schadt&lt;/span&gt; (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
   &lt;a href=&#39;https://doi.org/10.1111/oik.07002&#39;&gt;&lt;i&gt;Oikos&lt;/i&gt; &lt;b&gt;129&lt;/b&gt;(5):651–667&lt;/a&gt;.&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke &amp; S Kramer-Schadt&lt;/span&gt; (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. &lt;a href=&#39;https://doi.org/10.1111/1365-2656.13070&#39;&gt;&lt;i&gt;Journal of Animal Ecology&lt;/i&gt; &lt;b&gt;88&lt;/b&gt;(11):1639–1824&lt;/a&gt;.&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke &amp; S Kramer-Schadt&lt;/span&gt; (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. 
+  &lt;a href=&#39;https://doi.org/10.1111/1365-2656.13070&#39;&gt;&lt;i&gt;Journal of Animal Ecology&lt;/i&gt; &lt;b&gt;88&lt;/b&gt;(11):1639–1824&lt;/a&gt;.&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;V Radchuk, F De Laender, J Sarmento Cabral, I Boulangeat, M Crawford, F Bohn, J De Raedt, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, J-C Svenning, K Thonicke, F Schurr, V Grimm &amp; S Kramer-Schadt (2019)&lt;/span&gt; The dimensionality of stability depends on disturbance type. 
   &lt;a href=&#39;https://doi.org/10.1111/ele.13226&#39;&gt;&lt;i&gt;Ecology Letters&lt;/i&gt; &lt;b&gt;22&lt;/b&gt;(4):647–684&lt;/a&gt;.&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;M Sciaini, M Fritsch, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; CE Simpkins (2018)&lt;/span&gt; `NLMR` and `landscapetools`: An integrated environment for simulating and modifying neutral landscape models in R. 
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;M Sciaini, M Fritsch, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; CE Simpkins (2018)&lt;/span&gt; &lt;code&gt;NLMR&lt;/code&gt; and &lt;code&gt;landscapetools&lt;/code&gt;: An integrated environment for simulating and modifying neutral landscape models in R. 
   &lt;a href=&#39;https://doi.org/10.1111/2041-210X.13076&#39;&gt;&lt;i&gt;Methods in Ecology and Evolution&lt;/i&gt; &lt;b&gt;9&lt;/b&gt;(11):2240–2248&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;List of Publications&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;presentations&#34;&gt;Selected Presentations&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;“Engaging visualization design to succesfully communicate data.”&lt;br&gt;
@@ -203,9 +209,9 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;a class=&#39;about-bold&#39; href=&#34;https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf&#34;&gt;&amp;#x21aa; Slides&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://youtu.be/7UjA_5gNvdw&#34;&gt;&amp;#x21aa; Recording&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://z3tt.github.io/OutlierConf2021/&#34;&gt;&amp;#x21aa; Hands-On Tutorial&lt;/a&gt; &lt;/b&gt;   
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: how to design impactful and aesthetically pleasing charts.”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://www.heurekalabs.org/&#39;&gt;Heureka Labs&lt;/a&gt; &amp; &lt;a href=&#39;https://datascience.duke.edu/&#39;&gt;Duke+DataScience&lt;/a&gt; – 10|2020 – Duke University, Durham, USA (Webinar)&lt;br&gt;
-  &lt;a class=&#39;about-bold&#39; href=&#34;https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf&#34;&gt;&amp;#x21aa; Slides&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://www.youtube.com/watch?v=swzFdMc6WPk&#34;&gt;&amp;#x21aa; Recording&lt;/a&gt;
-&lt;/ul&gt;
+  &lt;a class=&#39;about-bold&#39; href=&#34;https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf&#34;&gt;&amp;#x21aa; Slides&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://www.youtube.com/watch?v=swzFdMc6WPk&#34;&gt;&amp;#x21aa; Recording&lt;/a&gt;&lt;/li&gt;
 &lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#talks&#34;&gt;List of Presentations&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;teaching&#34;&gt;Selected Conducted Workshops &amp;amp; Trainings&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;“Graphic design with &lt;code&gt;{ggplot2}&lt;/code&gt;: how to create engaging and complex visualizations in R”&lt;br&gt;
@@ -221,11 +227,11 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: convert information into visual forms—and tell a story”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop –  &lt;a href=&#34;https://www.senckenberg.de/en/science/young-scientists-2/&#34;&gt;Senckenberg Young Scientists&lt;/a&gt; – 11|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in R (Beginner + Advanced)”&lt;br&gt;
-  &lt;span class=&#39;subline&#39;&gt;Two 2-Day Workshop for &lt;a href=&#34;http://rbzs.be/workshops2021/&#34;&gt;Royal Zoological Society of Belgium (RZSB)&lt;/a&gt; and &lt;a href=&#34;https://www.vvsor.nl/&#34;&gt;Statistics Communication Section of the Netherlands Society for Statistics and Operations Research&lt;/a&gt; – remote – 10|2021 + 12|2021&lt;/span&gt;&lt;/li&gt;
+  &lt;span class=&#39;subline&#39;&gt;Two 2-Day Workshops for &lt;a href=&#34;http://rbzs.be/workshops2021/&#34;&gt;Royal Zoological Society of Belgium (RZSB)&lt;/a&gt; and &lt;a href=&#34;https://www.vvsor.nl/&#34;&gt;Statistics Communication Section of the Netherlands Society for Statistics and Operations Research&lt;/a&gt; – remote – 10|2021 + 12|2021&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualisation techniques for data scientists&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Internal Training – &lt;a href=&#34;https://www.msc.org/&#34;&gt;Marine Stewardship Council (MSC)&lt;/a&gt; – 02|2021 – remote&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#workshops&#34;&gt;List of Workshops and Trainings&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;awards&#34;&gt;Awards &amp;amp; Honors&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li class=&#39;description&#39;&gt;&lt;a class=&#39;about-bold&#39; href=&#34;https://besmovesig.wordpress.com/blog-2/&#34;&gt;Winner “Mapping Movements” Contest 2021&lt;/a&gt; in the category &#34;Pretty Map&#34; plus Runner-Up in the category “R Maps” for the &lt;a href=&#34;https://raw.githubusercontent.com/Z3tt/Cheetah-Map/main/plots/CheetahMap_rcarto_sd.png&#34;&gt;Cheetah map&lt;/a&gt;&lt;/li&gt;
@@ -320,7 +326,9 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;li&gt;&lt;a href=&#34;#clients&#34;&gt;&lt;strong&gt;Client Projects&lt;/strong&gt;&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#SciAm&#34;&gt;Escalating Drought (Scientific American)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#afrozensus&#34;&gt;Afrozensus 2020 (EOTO &amp;amp; Citizens for Europe)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#pyramids&#34;&gt;Q Vadis? Q Anon Activity on Telegram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#pyramids&#34;&gt;Rediscovering Demographic Change&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#afrozensus&#34;&gt;Afrozensus 2020&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#variousclients&#34;&gt;Visualizations for Various Projects&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -337,15 +345,161 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;clients&#34;&gt;Client Projects&lt;/h2&gt;
-&lt;h4 id=&#34;SciAm&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Escalating Drought&lt;/a&gt; (Scientific American, Nov 2021 Issue)&lt;/h4&gt;
+&lt;h4 id=&#34;SciAm&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Escalating Drought&lt;/a&gt; for Scientific American&lt;/h4&gt;
+&lt;p&gt;Design of a one-page data visualization for the &amp;ldquo;Graphic Science&amp;rdquo; section of the popular science magazine &lt;a href=&#34;https://scientificamerican.com/&#34;&gt;&amp;ldquo;Scientific American&amp;rdquo;&lt;/a&gt; featured in the Nov 2021 issue in &lt;a href=&#34;https://twitter.com/geokaramanis/status/1461004013818810371&#34;&gt;print&lt;/a&gt; and &lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;digital&lt;/a&gt;. Designed together with Georgios Karamanis with editorial support by Jen Christiansen and Clara Moskowitz.&lt;/p&gt;
 &lt;img src=&#34;img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;figcaption&gt;Together with Georgios Karamanis, Jen Christiansen, and Clara Moskowitz&lt;/figcaption&gt;
-&lt;h4 id=&#34;afrozensus&#34;&gt;&lt;a href=&#34;https://afrozensus.de/reports/2020/&#34;&gt;Afrozensus 2020&lt;/a&gt; (EOTO &amp;amp; Citizens for Europe)&lt;/h4&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought_printed.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;h4 id=&#34;pyramids&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Q Vadis? Q Anon Activity on Telegram&lt;/a&gt; for CeMAS&lt;/h4&gt;
+&lt;p&gt;Design of an unfoldable four-page multi-panel graphic with the main element being a stream graph visualizing the spread of Q Anon messages on Telegram. As the timeline unfolds (see &lt;a href=&#34;https://twitter.com/holnburger/status/1509799933355905048&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt;), it reveals the huge amount of messages sent annotated with important events such as the storming of the capital. &lt;br&gt;
+The graphic is the central part of the report &lt;a href=&#34;https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/&#34;&gt;&amp;ldquo;Q Vadis? The Spread of Q Anon in the German-Speaking World&amp;rdquo;&lt;/a&gt; by the &lt;a href=&#34;https://cemas.io/&#34;&gt;Center for Monitoring, Analysis and Strategy (CeMAS)&lt;/a&gt; which is available in print and digital in &lt;a href=&#34;https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/&#34;&gt;German&lt;/a&gt; and &lt;a href=&#34;https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/CeMAS_Q_Vadis_Zur_Verbreitung_von_QAnon_im_deutschsprachigen_Raum.pdf&#34;&gt;English&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html&#39;, &#39;blank&#39;);&#34;/&gt;  
+&lt;img src=&#34;img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;h4 id=&#34;pyramids&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Rediscovering Demographic Change&lt;/a&gt; for the German Federal Institute for Population Research (BiB)&lt;/h4&gt;
+&lt;p&gt;Design of 13 sets of population pyramids for the report &amp;ldquo;Rediscovering demographic change&amp;rdquo; by the Bundesinstitut für Bevölkerungsforschung (German Federal Institute for Population Research),
+illustrating the demographic change in Germany over 30 years from various perspectives.&lt;/p&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2021_bib_population_pyramids_compilation.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html&#39;, &#39;blank&#39;);&#34;/&gt;  
+&lt;img src=&#34;img/dataviz-portfolio/2021_bib_population_pyramids_printed_report.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;img/dataviz-portfolio/2021_BiB_population_pyramids_employment_animation.gif&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html&#39;, &#39;blank&#39;);&#34;/&gt;  
+&lt;p&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cedricscherer.com/css/hugo-easy-gallery.css&#34; /&gt;
+
+&lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-pyramids//1_BiB_population_pyramids_excerpts_from_the_report.jpg&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-pyramids//1_BiB_population_pyramids_excerpts_from_the_report.jpg&#34; alt=&#34;1 BiB population pyramids excerpts from the report&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;1 BiB population pyramids excerpts from the report&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-pyramids//1_BiB_population_pyramids_excerpts_from_the_report.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-pyramids//2_BiB_population_pyramids_topic_profession.jpg&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-pyramids//2_BiB_population_pyramids_topic_profession.jpg&#34; alt=&#34;2 BiB population pyramids topic profession&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;2 BiB population pyramids topic profession&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-pyramids//2_BiB_population_pyramids_topic_profession.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-pyramids//3_BiB_population_pyramids_topic_living_type-thumb.jpg&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-pyramids//3_BiB_population_pyramids_topic_living_type-thumb.jpg&#34; alt=&#34;3 BiB population pyramids topic living type&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;3 BiB population pyramids topic living type&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-pyramids//3_BiB_population_pyramids_topic_living_type.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-pyramids//4_BiB_population_pyramids_redesign_for_Instagram.jpg&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-pyramids//4_BiB_population_pyramids_redesign_for_Instagram.jpg&#34; alt=&#34;4 BiB population pyramids redesign for Instagram&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;4 BiB population pyramids redesign for Instagram&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-pyramids//4_BiB_population_pyramids_redesign_for_Instagram.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-pyramids//5_BiB_population_pyramids_details_printed_report.jpg&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-pyramids//5_BiB_population_pyramids_details_printed_report.jpg&#34; alt=&#34;5 BiB population pyramids details printed report&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;5 BiB population pyramids details printed report&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-pyramids//5_BiB_population_pyramids_details_printed_report.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-pyramids//6_BiB_population_pyramids_featured_in_the_German_newspaper_Frankfurter_Allgemeine_Zeitung.jpg&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-pyramids//6_BiB_population_pyramids_featured_in_the_German_newspaper_Frankfurter_Allgemeine_Zeitung.jpg&#34; alt=&#34;6 BiB population pyramids featured in the German newspaper Frankfurter Allgemeine Zeitung&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;6 BiB population pyramids featured in the German newspaper Frankfurter Allgemeine Zeitung&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-pyramids//6_BiB_population_pyramids_featured_in_the_German_newspaper_Frankfurter_Allgemeine_Zeitung.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+&lt;/div&gt;
+ 
+
+
+
+  
+
+
+&lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+&lt;h4 id=&#34;afrozensus&#34;&gt;&lt;a href=&#34;https://afrozensus.de/reports/2020/&#34;&gt;Afrozensus 2020&lt;/a&gt; for EOTO e.V. &amp;amp; Citizens for Europe&lt;/h4&gt;
+&lt;p&gt;Design of 89 data visualizations for the report &lt;a href=&#34;https://afrozensus.de/reports/2020/&#34;&gt;&amp;ldquo;Afrozensus 2020&amp;rdquo;&lt;/a&gt; published by &lt;a href=&#34;https://www.eoto-archiv.de/&#34;&gt;EOTO e.V.&lt;/a&gt; and &lt;a href=&#34;https://citizensforeurope.org/&#34;&gt;Citizen for Europe&lt;/a&gt;. The visualizations show the results from the largest survey ever conducted among black, African and Afrodiasporic people in Germany.&lt;/p&gt;
 &lt;img src=&#34;img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://afrozensus.de/reports/2020/&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;img src=&#34;img/dataviz-portfolio/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://afrozensus.de/reports/2020/&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;img src=&#34;img/dataviz-portfolio/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://afrozensus.de/reports/2020/&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cedricscherer.com/css/hugo-easy-gallery.css&#34; /&gt;
+
 
 &lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
 				&lt;div class=&#34;box&#34;&gt;
@@ -451,63 +605,6 @@ If those published comments could be construed as a threat, and the perpetrator 
  
 
 
-
-  
-
-
-&lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
-&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-
-
-&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
-
-&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
-
-&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
-    
-    &lt;div class=&#34;pswp__container&#34;&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
-    &lt;div class=&#34;pswp__top-bar&#34;&gt;
-      
-      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
-      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
-      
-      
-      &lt;div class=&#34;pswp__preloader&#34;&gt;
-        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
-          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
-            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
-      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
-    &lt;/button&gt;
-    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
-    &lt;/button&gt;
-    &lt;div class=&#34;pswp__caption&#34;&gt;
-      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39;&gt;
@@ -1773,7 +1870,7 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/portfolio/</guid>
-      <description>&lt;p&gt;A detailed overview of my achievements to date, from scientific publications to contributions to R packages to presentations, trainings, workshops and media appearances.&lt;/p&gt;
+      <description>&lt;p&gt;A detailed overview of my achievements to date:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#publications&#34;&gt;Peer-Reviewed Publications&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#books&#34;&gt;Book Chapters&lt;/a&gt;&lt;/li&gt;
@@ -1788,6 +1885,8 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
 &lt;p&gt;You can also find me on &lt;a href=&#34;https://scholar.google.com/citations?user=6o61j_IAAAAJ&amp;amp;hl=en&amp;amp;oi=sra&#34;&gt;Google Scholar&lt;/a&gt; and &lt;a href=&#34;https://www.researchgate.net/profile/Cedric_Scherer/contributions&#34;&gt;ResearchGate&lt;/a&gt;.&lt;br&gt;
 My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;0000-0003-0465-2543&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;C Voigt, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; V Runkel&lt;/span&gt; (accepted)&lt;/span&gt; Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines.&lt;br&gt;
+  &lt;i&gt;Conservation Science and Practice&lt;/i&gt;.&lt;/li&gt;  
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;L Figueiredo, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; JS Cabral&lt;/span&gt; (2022)&lt;/span&gt; A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research.&lt;br&gt;
   &lt;a href=&#39;https://doi.org/10.1371/journal.pcbi.1010356&#39;&gt;&lt;i&gt;PLOS Computational Biology&lt;/i&gt; &lt;b&gt;18&lt;/b&gt;(9):e1010356&lt;/a&gt;.&lt;/li&gt;  
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;L Marescot, M Franz, S Benhaiem, H Hofer, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, M East &amp; S Kramer-Schadt&lt;/span&gt; (2021)&lt;/span&gt; ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. 
@@ -1877,7 +1976,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;span class=&#39;subline&#39;&gt;Poster – Annual Meeting of the Ecological Society of Germany, Austria &amp; Switzerland (GfOe) – 09|2015 – Goettingen, Germany&lt;/span&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h3 id=&#34;workshops&#34;&gt;Conducted Workshops &amp;amp; Trainings&lt;/h3&gt;
+&lt;h2 id=&#34;workshops&#34;&gt;Conducted Workshops &amp;amp; Trainings&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: design graphics to tell stories in an engaging way”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Workshop – &lt;a href=&#39;https://www.cafeyn.co/ca-en/newsstand&#39;&gt;cafeyn / Lekiosque.fr&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
