@@ -21,13 +21,13 @@ An showcase of selected static data visualizations, maps and other designs I hav
 
 #### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for Scientific American {#SciAm}
 
-Design of a one-page data visualization for the "Graphic Science" section of the popular science magazine ["Scientific American"](https://scientificamerican.com/) featured in the Nov 2021 issue in [print](https://twitter.com/geokaramanis/status/1461004013818810371) and [digital](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought). Designed together with Georgios Karamanis with editorial support by Jen Christiansen and Clara Moskowitz.
+Design of a one-page data visualization for the "Graphic Science" section of the popular science magazine ["Scientific American"](https://scientificamerican.com/) featured in the Nov 2021 issue in [print](https://twitter.com/geokaramanis/status/1461004013818810371) and [digital](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought). Created together with Georgios Karamanis with editorial support by Jen Christiansen and Clara Moskowitz.
 
 <img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 
 <img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought_printed.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 
-
+<hr>
 
 #### [Q Vadis? Q Anon Activity on Telegram](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for CeMAS {#pyramids}
 
@@ -38,6 +38,7 @@ The graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in
 
 <img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>
 
+<hr>
 
 #### [Rediscovering Demographic Change](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for the German Federal Institute for Population Research (BiB) {#pyramids}
 
@@ -52,6 +53,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 {{< gallery dir="img/gallery-pyramids/" />}} {{< load-photoswipe >}}  
 
+<hr>
 
 #### [Afrozensus 2020](https://afrozensus.de/reports/2020/) for EOTO e.V. & Citizens for Europe {#afrozensus} 
 
