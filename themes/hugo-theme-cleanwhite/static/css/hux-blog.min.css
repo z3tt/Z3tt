@@ -1147,7 +1147,7 @@ a.about-bold{
 
 .highlight{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
-  font-size:1.85rem;
+  font-size:1.8rem;
   font-weight:800;
   color:#212121;
   line-height:1.1;
@@ -1191,8 +1191,8 @@ a.about-bold{
 .emphasize{
   font-family:'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-weight:600;
-  font-size:2.6rem;
-  line-height:1.3;
+  font-size:2.97rem;
+  line-height:1.15;
 }
 
 @media only screen and (min-width:768px){
@@ -1206,6 +1206,6 @@ a.about-bold{
     font-size:2.6rem;
   }
   .emphasize{
-    font-size:2.97rem;
+    line-height:1.3;
   }
 }

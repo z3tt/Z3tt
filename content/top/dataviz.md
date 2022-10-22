@@ -76,13 +76,11 @@ illustrating the demographic change in Germany over 30 years from various perspe
 {{< gallery dir="img/gallery-clients/" />}} {{< load-photoswipe >}}
 <br>
 
-<hr>
-
 ## Challenge Contributions {#challenges}
 
 #### #TidyTuesday {#tidytuesday}
 
-[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). <b>All visualizations are produced with 100% code using the [`{ggplot2}` graphics library ](https://ggplot2.tidyverse.org/)</b> in R and without any post-processing.
+[#TidyTuesday](https://github.com/rfordatascience/tidytuesday) is a weekly data project aimed at the R ecosystem and the `{tidyverse}` package bundle to wrangle, explore and visualize the data set that is provided by the [R4DS Online Learning Community](https://www.rfordatasci.com/). All visualizations are produced with 100% code using the [`{ggplot2}` graphics library ](https://ggplot2.tidyverse.org/) in R and without any post-processing.
 
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_28/2020_28_CoffeeRatings.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee', 'blank');"/>
 
@@ -115,7 +113,7 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 #### #30DayMapChallenge {#mapchallenge}
 
-[#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019. i have participated in [2019](#mapchallenge2019) and [2021](#mapchallenge2021) .
+[#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019. I have participated in [2019](#mapchallenge2019) and [2021](#mapchallenge2021) .
 
 ##### 2021 Edition {#mapchallenge2021}
 
