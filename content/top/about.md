@@ -8,9 +8,9 @@
 
 <span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️</span>
 
-<b style='font-size:2.2rem;font-weight:500;'>As a trained researcher, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
+<b style='font-size:2.2rem;font-weight:500;'>As a <a style='font-weight:500;' href='https://www.cedricscherer.com/top/about/#ecology'>graduated ecologist</a>, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
 
-As an independent data visualization designer, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles applying a code–first approach</b>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.<br>
+As an <a href='https://www.cedricscherer.com/top/about/#dataviz'>independent data visualization designer</a>, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles</b> applying a <a href='https://www.cedricscherer.com/top/about/#codefirst'>code–first approach</a>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Curriculum Vitae](https://www.cedricscherer.com/top/about#cv)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Data Visualization Gallery](https://www.cedricscherer.com/top/dataviz)<br>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Portfolio](https://www.cedricscherer.com/top/portfolio)</b>
@@ -24,7 +24,7 @@ I have been working as an independent data visualization specialist since the be
   
 I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by creating [commisioned work](https://cedricscherer.com/top/dataviz#clients), conducting [self-led personal projects](https://cedricscherer.com/top/dataviz#personal), and contributing to numerous data visualization challenges such as [#TidyTuesday](https://cedricscherer.com/top/dataviz#tidytuesday), [#30DayMapChallenge](https://cedricscherer.com/top/dataviz#mapchallenge), and [#30DayChartChallenge](https://cedricscherer.com/top/dataviz#chartchallenge). 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Check out my data visualization designs](https://www.cedricscherer.com/top/dataviz/)  
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Check out my designs](https://www.cedricscherer.com/top/dataviz/)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations) 
 
 <div class='highlightbox'>
@@ -39,7 +39,7 @@ I am working as a scientific researcher (PostDoc) in the [Department "Ecological
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/portfolio/#publications)  
 &nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
 
-#### Code–First Approach {#code}
+#### Code–First Approach {#codefirst}
 
 My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the <b>programing language <a href='https://www.r-project.org/about.html'>R</a></b>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow allows for <b>reproducible, transparent, and partly or completely automated workflows</b>.  
   
