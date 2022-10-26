@@ -583,13 +583,15 @@ pre code{
 
 @media only screen and (min-width:768px){
   .intro-header .site-heading,.intro-header .post-heading,.intro-header .page-heading, .intro-header .site-heading{
-    padding:150px 0;
+    padding:15vw 0;
   }
   .intro-header .site-heading h1,.intro-header .page-heading h1{
+    /*padding:15vw 0 0 0;*/
     font-size:8.3rem;
     letter-spacing:1.25px;
   }
   .intro-header .site-heading .subheading{
+    /*padding:0 0 15vw 0;*/
     font-size:2.7rem;
   }
 }
