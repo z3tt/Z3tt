@@ -35,7 +35,7 @@ An unfoldable (see <a href="https://twitter.com/holnburger/status/15097999333559
 
 <img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>  
 
-<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>
 
 <hr>
 
@@ -46,9 +46,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 <img src="img/dataviz-portfolio/2021_bib_population_pyramids_compilation.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
 
-<img src="img/dataviz-portfolio/2021_bib_population_pyramids_printed_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>
-
 <img src="img/dataviz-portfolio/2021_BiB_population_pyramids_employment_animation.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
+
+<img src="img/dataviz-portfolio/2021_bib_population_pyramids_printed_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>
 
 {{< gallery dir="img/gallery-pyramids/" />}} {{< load-photoswipe >}}  
 
@@ -87,6 +87,8 @@ illustrating the demographic change in Germany over 30 years from various perspe
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
 
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
+
+<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_36/2022_36_LEGO_bricks" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
 
 {{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
