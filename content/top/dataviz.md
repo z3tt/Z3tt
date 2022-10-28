@@ -88,7 +88,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
 
-<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_36/2022_36_LEGO_bricks.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
+<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2022_36/2022_36_LEGO_bricks_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
 
 {{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
