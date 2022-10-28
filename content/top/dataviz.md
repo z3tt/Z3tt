@@ -33,9 +33,9 @@ A one-page data visualization for the "Graphic Science" section of the popular s
 
 An unfoldable (see <a href="https://twitter.com/holnburger/status/1509799933355905048" target="_blank">video</a>) four-page graphic with the main element being a stream graph visualizing the huge amount of Q Anon messages sent on Telegram, annotated with important events such as the storming of the capital. The multi-panel graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in the German-Speaking World"](https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/) by the [Center for Monitoring, Analysis and Strategy (CeMAS)](https://cemas.io/) which is available in print and digital in [German](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/) and [English](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/CeMAS_Q_Vadis_Zur_Verbreitung_von_QAnon_im_deutschsprachigen_Raum.pdf).
 
-<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
+<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>  
 
-<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>
+<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
 
 <hr>
 
