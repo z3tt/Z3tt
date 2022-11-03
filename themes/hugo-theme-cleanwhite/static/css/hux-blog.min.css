@@ -156,13 +156,15 @@ h1,h2,h3,h6{
 }
 h1{
   font-size:4.35rem;
-  text-transform: uppercase;
   letter-spacing:1px;
 }
 .navbar h1{
   font-family:'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   font-weight:860;
   font-size:4rem;
+}
+.site-heading h1{
+  text-transform:uppercase
 }
 h2{
   font-size:3.9rem;
