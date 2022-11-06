@@ -33,7 +33,7 @@
 &lt;/ol&gt;
 &lt;p&gt;The session pages contain not only the slides but also hands-on R codes, recap notes, exercises including prepared scripts (either as Quarto or Rmarkdown reports) and step-by-step solutions.&lt;/p&gt;
 &lt;img src=&#34;img/rstudioconf-workshop/session-example-colors.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-04_colors.html&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;figcaption&gt;The session pages contain features the slides, sesion outline, recap and exercises as well as links to the hands-on codes and solutions.&lt;/figcaption&gt;
+&lt;figcaption&gt;The session pages features the slides, session outline, recap and exercises as well as links to the hands-on codes and solutions.&lt;/figcaption&gt;
 &lt;img src=&#34;img/rstudioconf-workshop/exercise-code-example-annotations.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/exercises/05_annotations_ex1.html&#39;, &#39;blank&#39;);&#34;&gt;
 &lt;figcaption&gt;The exercises are pre-written Quarto (or Rmarkdown) reports to allow for a quick start and the ability to keep a rendered version of the personal solution.&lt;/figcaption&gt;
 &lt;p&gt;Here is an overview of all recaps:&lt;/p&gt;
