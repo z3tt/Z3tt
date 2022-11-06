@@ -1,12 +1,12 @@
 ---
-title: '2-Day Workshop "Graphic Design with ggplot2" at rstudio::conf 2022'
+title: '2-Day Workshop on "Graphic Design with ggplot2" at rstudio::conf 2022'
 author: "Cédric"
 date: 2022-08-09
 image: img/banner/rstudiconf-workshop.jpg
 twitterImg: img/banner/rstudiconf-workshop.jpg
 layout: post
 showtoc: false
-description: "End of July, I had the honor to teach an in-person ggplot2 workshop at the rstudio::conf in Washington DC. All course resources are available on the course webpage featuring slides, hands-on R codes, recap notes, and exercises including prepared scripts and step-by-step solutions"
+description: "End of July, I had the honor to teach an in-person ggplot2 workshop at the rstudio::conf in Washington DC. All course resources are available on the course webpage featuring slides, hands-on R codes, recap notes, and exercises including prepared scripts and step-by-step solutions."
 tags: ["DataViz", "ggplot2", "rstats", "workshop", "tutorial"]
 editor_options:
   chunk_output_type: inline
@@ -16,10 +16,10 @@ editor_options:
 
 **End of July, I had the honor to teach a <a href='https://www.rstudio.com/blog/rstudio-conf-2022-workshops/' style='font-weight:800;'>2-day, in-person workshop at the rstudio::conf(2022)</a> in Washington DC. Invited by RStudio (now named <a href='https://posit.co/' style='font-weight:800;'>Posit</a>, I developed a new course that covers the most important steps and helpful tips to create visually appealing, engaging and complex graphics with ggplot2. The course focused on the main concepts of the grammar of graphics and used hands-on examples to explore ggplot2’s utility to create multi-layered, more complex graphs. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/' style='font-weight:800;'>All course resources are available as open-source material on the course page.</a>**
 
+The course webpage as well ass the slidedecks and the exercises and solutions were developed with the new open-source scientific and technical publishing system <a href='https://quarto.org/' target="_blank">Quarto</a>. The new workshop development was a perfect opportunity to give it a try and the experience was overall wonderful—the <a href='https://quarto.org/' target="_blank">reveal.js</a> integration for the slides works perfect and allows for a lot of customization. Thanks to Marco Sciaini for helping me setting up the course webpage which was, after learning about a few quirks, a smooth experience as well.
+
 <img src="img/rstudioconf-workshop/graphic-design-course-page.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design', 'blank');">
 <figcaption>The <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design'>course webpage</a> which gives an overview of the course objectives and links to all session and the <a href='https://github.com/rstudio-conf-2022/ggplot2-graphic-design'>GitHub repository</a>.</figcaption>
-
-The course webpage as well ass the slidedecks and the exercises and solutions were developed with the new open-source scientific and technical publishing system <a href='https://quarto.org/' target="_blank">Quarto</a>. The new workshop development was a perfect opportunity to give it a try and the experience was overall wonderful—the <a href='https://quarto.org/' target="_blank">reveal.js</a> integration for the slides works perfect and allows for a lot of customization. Thanks to Marco Sciaini for helping me setting up the course webpage which was, after learning about a few quirks, a smooth experience as well.
 
 <iframe class="slide-deck" src="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/01_introduction.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 <figcaption>The slide decks can be hosted as HTML files and thus embedded in the course pages.</figcaption>
@@ -27,8 +27,8 @@ The course webpage as well ass the slidedecks and the exercises and solutions we
 The workshop is structured in 9 sessions, covering both ggplot2 techniques and general data visualization recommendations:
 
 1. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-01_introduction.html' target="_blank">Introduction</a>
-2. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-02_concepts_pt1.html' target="_blank">Concepts of the `{ggplot2}` Package Pt. 1</a>
-3. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-05_concepts_pt2.html' target="_blank">Concepts of the `{ggplot2}` Package Pt. 2</a>
+2. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-02_concepts_pt1.html' target="_blank">Concepts of the ggplot2 Package Pt. 1</a>
+3. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-05_concepts_pt2.html' target="_blank">Concepts of the ggplot2 Package Pt. 2</a>
 4. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-09_data_com.html' target="_blank">Data Communication</a>
 5. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-01_lab_ann.html' target="_blank">Working with Labels & Annotations</a>
 6. <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-03_colorful_graphics.html' target="_blank">Colorful Graphics</a>
