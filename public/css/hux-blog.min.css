@@ -135,7 +135,7 @@ body{
   font-size:2.05rem;
   font-weight:400;
   color:#000;
-  overflow-x:hidden
+  overflow-x:hidden;
 }
 
 @media only screen and (min-width:768px){
@@ -157,6 +157,7 @@ h1,h2,h3,h6{
 h1{
   font-size:4.35rem;
   letter-spacing:1px;
+  text-transform:uppercase;
 }
 .navbar h1{
   font-family:'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
@@ -164,7 +165,6 @@ h1{
   font-size:4rem;
 }
 .site-heading h1{
-  text-transform:uppercase
 }
 h2{
   font-size:3.9rem;

@@ -176,7 +176,7 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;L Figueiredo, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; JS Cabral&lt;/span&gt; (2022)&lt;/span&gt; A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research. 
   &lt;a href=&#39;https://doi.org/10.1371/journal.pcbi.1010356&#39;&gt;&lt;i&gt;PLOS Computational Biology&lt;/i&gt; &lt;b&gt;18&lt;/b&gt;(9):e1010356&lt;/a&gt;.&lt;/li&gt;  
-  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm &amp; S Kramer-Schadt&lt;/span&gt; (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, M Franz, H-H Thulke, M Lange, V Grimm &amp; S Kramer-Schadt&lt;/span&gt; (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
   &lt;a href=&#39;https://doi.org/10.1111/oik.07002&#39;&gt;&lt;i&gt;Oikos&lt;/i&gt; &lt;b&gt;129&lt;/b&gt;(5):651–667&lt;/a&gt;.&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke &amp; S Kramer-Schadt&lt;/span&gt; (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. 
   &lt;a href=&#39;https://doi.org/10.1111/1365-2656.13070&#39;&gt;&lt;i&gt;Journal of Animal Ecology&lt;/i&gt; &lt;b&gt;88&lt;/b&gt;(11):1639–1824&lt;/a&gt;.&lt;/li&gt;
@@ -184,7 +184,7 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;a href=&#39;https://doi.org/10.1111/ele.13226&#39;&gt;&lt;i&gt;Ecology Letters&lt;/i&gt; &lt;b&gt;22&lt;/b&gt;(4):647–684&lt;/a&gt;.&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;M Sciaini, M Fritsch, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; &amp; CE Simpkins (2018)&lt;/span&gt; &lt;code&gt;NLMR&lt;/code&gt; and &lt;code&gt;landscapetools&lt;/code&gt;: An integrated environment for simulating and modifying neutral landscape models in R. 
   &lt;a href=&#39;https://doi.org/10.1111/2041-210X.13076&#39;&gt;&lt;i&gt;Methods in Ecology and Evolution&lt;/i&gt; &lt;b&gt;9&lt;/b&gt;(11):2240–2248&lt;/a&gt;&lt;/li&gt;
-&lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;List of Publications&lt;/a&gt;&lt;/p&gt;
+  &lt;p style=&#39;margin-top:25px;&#39;&gt;&amp;rarr; &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;List of Publications&lt;/a&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;presentations&#34;&gt;Selected Presentations&lt;/h3&gt;
 &lt;ul&gt;
@@ -210,7 +210,7 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: how to design impactful and aesthetically pleasing charts.”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://www.heurekalabs.org/&#39;&gt;Heureka Labs&lt;/a&gt; &amp; &lt;a href=&#39;https://datascience.duke.edu/&#39;&gt;Duke+DataScience&lt;/a&gt; – 10|2020 – Duke University, Durham, USA (Webinar)&lt;br&gt;
   &lt;a class=&#39;about-bold&#39; href=&#34;https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf&#34;&gt;&amp;#x21aa; Slides&lt;/a&gt; &amp;ensp; &lt;a class=&#39;about-bold&#39; href=&#34;https://www.youtube.com/watch?v=swzFdMc6WPk&#34;&gt;&amp;#x21aa; Recording&lt;/a&gt;&lt;/li&gt;
-&lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#talks&#34;&gt;List of Presentations&lt;/a&gt;&lt;/p&gt;
+  &lt;p style=&#39;margin-top:25px;&#39;&gt;&amp;rarr; &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#talks&#34;&gt;List of Presentations&lt;/a&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;teaching&#34;&gt;Selected Conducted Workshops &amp;amp; Trainings&lt;/h3&gt;
 &lt;ul&gt;
@@ -230,7 +230,7 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;span class=&#39;subline&#39;&gt;Two 2-Day Workshops for &lt;a href=&#34;http://rbzs.be/workshops2021/&#34;&gt;Royal Zoological Society of Belgium (RZSB)&lt;/a&gt; and &lt;a href=&#34;https://www.vvsor.nl/&#34;&gt;Statistics Communication Section of the Netherlands Society for Statistics and Operations Research&lt;/a&gt; – remote – 10|2021 + 12|2021&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualisation techniques for data scientists&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Internal Training – &lt;a href=&#34;https://www.msc.org/&#34;&gt;Marine Stewardship Council (MSC)&lt;/a&gt; – 02|2021 – remote&lt;/span&gt;&lt;/li&gt;
-&lt;p&gt;→ &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#workshops&#34;&gt;List of Workshops and Trainings&lt;/a&gt;&lt;/p&gt;
+  &lt;p style=&#39;margin-top:25px;&#39;&gt;&amp;rarr; &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#workshops&#34;&gt;List of Workshops and Trainings&lt;/a&gt;&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;awards&#34;&gt;Awards &amp;amp; Honors&lt;/h3&gt;
 &lt;ul&gt;
@@ -1895,7 +1895,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;a href=&#39;https://doi.org/10.1111/1365-2656.13555&#39;&gt;&lt;i&gt;Journal of Animal Ecology&lt;/i&gt; &lt;b&gt;90&lt;/b&gt;(11):2523–2535&lt;/a&gt;.&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;T Kürschner, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, N Blaum &amp; S Kramer-Schadt&lt;/span&gt; (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. 
   &lt;a href=&#39;https://doi.org/10.1002/ece3.7478&#39;&gt;&lt;i&gt;Ecology and Evolution&lt;/i&gt; &lt;b&gt;11&lt;/b&gt;(10):5728–5741&lt;/a&gt;.&lt;/li&gt;  
-  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm &amp; S Kramer-Schadt&lt;/span&gt; (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, V Radchuk, M Franz, H-H Thulke, M Lange, V Grimm &amp; S Kramer-Schadt&lt;/span&gt; (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
   &lt;a href=&#39;https://doi.org/10.1111/oik.07002&#39;&gt;&lt;i&gt;Oikos&lt;/i&gt; &lt;b&gt;129&lt;/b&gt;(5):651–667&lt;/a&gt;.&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;U Schlägel, V Grimm, N Blaum, P Colangeli, M Dammhahn, J Eccard, S Hausmann, A Herde, H Hofer, J Joshi, S Kramer-Schadt, M Litwin, S Lozada-Gobilard, M Müller, T Müller, R Nathan, J Petermann, K Pirhofer-Walzl, V Radchuk, M Rillig, M Roeleke, M Schäfer, &lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt;, G Schiro, C Scholz, L Teckentrup, R Tiedemann, W Ullmann, C Voigt, G Weithoff &amp; F Jeltsch&lt;/span&gt; (2020) Movement-mediated community assembly and coexistence. 
   &lt;a href=&#39;https://doi.org/10.1111/brv.12600&#39;&gt;&lt;i&gt;Biological Reviews&lt;/i&gt; &lt;b&gt;95&lt;/b&gt; (4):1073–1096&lt;/a&gt;.&lt;/li&gt;  

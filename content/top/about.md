@@ -205,7 +205,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022)</span> A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research. 
   <a href='https://doi.org/10.1371/journal.pcbi.1010356'><i>PLOS Computational Biology</i> <b>18</b>(9):e1010356</a>.</li>  
   
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
   <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b>(5):651–667</a>.</li>
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, C Staubach, S Müller, N Blaum, H-H Thulke & S Kramer-Schadt</span> (2019) Seasonal host life-history processes fuel disease dynamics at different spatial scales. 
@@ -217,7 +217,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> <code>NLMR</code> and <code>landscapetools</code>: An integrated environment for simulating and modifying neutral landscape models in R. 
   <a href='https://doi.org/10.1111/2041-210X.13076'><i>Methods in Ecology and Evolution</i> <b>9</b>(11):2240–2248</a></li>
 
-  &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#publications">List of Publications</a>
+  <p style='margin-top:25px;'>&rarr; <a href="https://www.cedricscherer.com/top/portfolio/#publications">List of Publications</a></p>
   
 </ul>
 
@@ -257,7 +257,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)<br>
   <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></li>
 
-  &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#talks">List of Presentations</a>
+  <p style='margin-top:25px;'>&rarr; <a href="https://www.cedricscherer.com/top/portfolio/#talks">List of Presentations</a></p>
 
 </ul>
 
@@ -291,7 +291,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
 
-  &rarr; <a href="https://www.cedricscherer.com/top/portfolio/#workshops">List of Workshops and Trainings</a>
+  <p style='margin-top:25px;'>&rarr; <a href="https://www.cedricscherer.com/top/portfolio/#workshops">List of Workshops and Trainings</a></p>
 
 </ul>
 

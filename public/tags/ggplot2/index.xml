@@ -5,7 +5,148 @@
     <description>Recent content in ggplot2 on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2-Day Workshop &#34;Graphic Design with ggplot2&#34; at rstudio::conf 2022</title>
+      <link>https://cedricscherer.com/2022/08/09/2-day-workshop-graphic-design-with-ggplot2-at-rstudioconf-2022/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/2022/08/09/2-day-workshop-graphic-design-with-ggplot2-at-rstudioconf-2022/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;End of July, I had the honor to teach a &lt;a href=&#39;https://www.rstudio.com/blog/rstudio-conf-2022-workshops/&#39; style=&#39;font-weight:800;&#39;&gt;2-day, in-person workshop at the rstudio::conf(2022)&lt;/a&gt; in Washington DC. Invited by RStudio (now named &lt;a href=&#39;https://posit.co/&#39; style=&#39;font-weight:800;&#39;&gt;Posit&lt;/a&gt;, I developed a new course that covers the most important steps and helpful tips to create visually appealing, engaging and complex graphics with ggplot2. The course focused on the main concepts of the grammar of graphics and used hands-on examples to explore ggplot2’s utility to create multi-layered, more complex graphs. &lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/&#39; style=&#39;font-weight:800;&#39;&gt;All course resources are available as open-source material on the course page.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&#34;img/paygap-europe/graphic-design-course-page.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;figcaption&gt;The &lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design&#39;&gt;course webpage&lt;/a&gt; which gives an overview of the course objectives and links to all session and the &lt;a href=&#39;https://github.com/rstudio-conf-2022/ggplot2-graphic-design&#39;&gt;GitHub repository&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;p&gt;The course webpage as well ass the slidedecks and the exercises and solutions were developed with the new open-source scientific and technical publishing system &lt;a href=&#39;https://quarto.org/&#39; target=&#34;_blank&#34;&gt;Quarto&lt;/a&gt;. The new workshop development was a perfect opportunity to give it a try and the experience was overall wonderful—the &lt;a href=&#39;https://quarto.org/&#39; target=&#34;_blank&#34;&gt;reveal.js&lt;/a&gt; integration for the slides works perfect and allows for a lot of customization. Thanks to Marco Sciaini for helping me setting up the copurse webpage which was, after learning about a few quirks, a seamingless experience as well.&lt;/p&gt;
+&lt;iframe class=&#34;slide-deck&#34; src=&#34;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/01_introduction.html&#34; height=&#34;420&#34; width=&#34;747&#34; style=&#34;border: 1px solid #2e3846;&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;The slide decks can be hosted as HTML files and thus embedded in the course pages.&lt;/figcaption&gt;
+&lt;p&gt;The workshop is structured in 9 sessions, covering both ggplot2 techniques and more general data visualization recommendations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-01_introduction.html&#39; target=&#34;_blank&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-02_concepts_pt1.html&#39; target=&#34;_blank&#34;&gt;Concepts of the &lt;code&gt;{ggplot2}&lt;/code&gt; Package Pt. 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-05_concepts_pt2.html&#39; target=&#34;_blank&#34;&gt;Concepts of the &lt;code&gt;{ggplot2}&lt;/code&gt; Package Pt. 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d1-09_data_com.html&#39; target=&#34;_blank&#34;&gt;Data Communication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-01_lab_ann.html&#39; target=&#34;_blank&#34;&gt;Working with Labels &amp;amp; Annotations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-03_colorful_graphics.html&#39; target=&#34;_blank&#34;&gt;Colorful Graphics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-04_colors.html&#39; target=&#34;_blank&#34;&gt;Working with Colors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;Working with Layouts &amp; Composition&#39; target=&#34;_blank&#34;&gt;Working with Layouts and Composition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-08_project.html&#39; target=&#34;_blank&#34;&gt;Group Projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The session pages contain not only the slides but also hands-on R codes, recap notes, exercises including prepared scripts, (either as Quarto or Rmarkdown reports) and step-by-step solutions.&lt;/p&gt;
+&lt;img src=&#34;img/rstudioconf-workshop/session-example-colors.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-04_colors.html&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;figcaption&gt;The session pages contain features the slides, table of content, recap and exercises as well as links to the hands-on codes and solutions.&lt;/figcaption&gt;
+&lt;img src=&#34;img/rstudioconf-workshop/exercise-code-example-annotations.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/exercises/05_annotations_ex1.html&#39;, &#39;blank&#39;);&#34;&gt;
+&lt;figcaption&gt;The exercises are pre-written Quarto (or Rmarkdown) reports to allow for a quick start and the ability to keep a rendered version of the personal solution.&lt;/figcaption&gt;
+&lt;p&gt;Here is an overview of all recaps:&lt;/p&gt;
+&lt;h4 id=&#34;concepts-of-the-ggplot2-package-pt-1&#34;&gt;Concepts of the &lt;code&gt;{ggplot2}&lt;/code&gt; Package Pt. 1&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/strong&gt; is a powerful library for reproducible graphic design&lt;/li&gt;
+&lt;li&gt;the components follow a consistent syntax&lt;/li&gt;
+&lt;li&gt;each ggplot needs at least &lt;strong&gt;data&lt;/strong&gt;, some &lt;strong&gt;aesthetics&lt;/strong&gt;, and a &lt;strong&gt;layer&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;we &lt;strong&gt;set&lt;/strong&gt; constant propeties outside &lt;code&gt;aes()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip; and &lt;strong&gt;map&lt;/strong&gt; data-related properties inside &lt;code&gt;aes()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;local settings and mappings override global properties&lt;/li&gt;
+&lt;li&gt;grouping allows applying layers for subsets&lt;/li&gt;
+&lt;li&gt;we can store a ggplot object and extend it afterwards&lt;/li&gt;
+&lt;li&gt;we can change the appearance for all plots with &lt;code&gt;theme_set()&lt;/code&gt; and &lt;code&gt;theme_update()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;concepts-of-the-ggplot2-package-pt-2&#34;&gt;Concepts of the &lt;code&gt;{ggplot2}&lt;/code&gt; Package Pt. 2&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;facet_*()&lt;/code&gt; functions allow to create small multiples&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_*()&lt;/code&gt; functions translate between aesthetics and properties&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;*_continuous()&lt;/code&gt; for numerical data&lt;/li&gt;
+&lt;li&gt;&amp;hellip; and &lt;code&gt;*_discrete()&lt;/code&gt; for categorical data&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;scale_color|fill_*()&lt;/code&gt; to customize data-related colors&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coord_*()&lt;/code&gt; functions interpret the positional aesthetics, e.g. create polar plots or work with spatial projections&lt;/li&gt;
+&lt;li&gt;be careful when adjusting axis limits:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scale_*_continuous(limits)&lt;/code&gt; removes the data outside the range&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coord_*(*lim)&lt;/code&gt; keeps the data and zooms into the range&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;data-communication&#34;&gt;Data Communication&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizing data is helpful to gain insights and discover anomalies&lt;/li&gt;
+&lt;li&gt;The design process of data visualizations can be broken down to 4 levels:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Information&lt;/strong&gt;: understand the data and be accurate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Story&lt;/strong&gt;: be clear about the message of the visualization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Goal&lt;/strong&gt;: select charts that successfully transport the story&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visual form&lt;/strong&gt;: follow design rules and data visualization principles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;working-with-annotations--labels&#34;&gt;Working with Annotations &amp;amp; Labels&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;style labels such as title, axis and legend texts with &lt;code&gt;theme()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;format data-related labels with the &lt;code&gt;labels&lt;/code&gt; argument of &lt;code&gt;scale_*()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;adjust strip text with the &lt;code&gt;facet_*(labeller)&lt;/code&gt; functionality&lt;/li&gt;
+&lt;li&gt;add data-related annotations with &lt;code&gt;geom_text|label()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip; and data-unrelated annotations with &lt;code&gt;annotate()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;annotation_custom(rasterGrob())&lt;/code&gt; is a basic way to add images&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{ggtext}&lt;/code&gt; allows to render labels with markdown and basic html&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{ggtext}&lt;/code&gt; also allows to add dynamic linebreaks and images&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{ggrepel}&lt;/code&gt; ensures clever placement of annotations&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ggforce::geom_mark_*()&lt;/code&gt; provide a set of advanced annotations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;colorful-graphics&#34;&gt;Colorful Graphics&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Pick the right palette type for your visualization
+&lt;ul&gt;
+&lt;li&gt;use &lt;strong&gt;sequential&lt;/strong&gt; to encode &lt;em&gt;numerical information with order&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;use &lt;strong&gt;diverging&lt;/strong&gt; to encode &lt;em&gt;numerical information with a critical midpoint&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;use &lt;strong&gt;quialitative&lt;/strong&gt; to encode &lt;em&gt;categorical information&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;map the color with the highest contrast of a sequential palette to the most important value&lt;/li&gt;
+&lt;li&gt;for categories use a maximum of 6-8 colors&lt;/li&gt;
+&lt;li&gt;test for &lt;strong&gt;color blindness&lt;/strong&gt; using a CVD simulator&lt;/li&gt;
+&lt;li&gt;check the &lt;strong&gt;contrast&lt;/strong&gt; of your data and text colors&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;avoid rainbow palettes!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;working-with-colors&#34;&gt;Working with Colors&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;use &lt;strong&gt;categorical&lt;/strong&gt; palettes for &lt;strong&gt;qualitative&lt;/strong&gt; data
+&lt;ul&gt;
+&lt;li&gt;e.g. &lt;code&gt;scale_*_discrete()&lt;/code&gt; and &lt;code&gt;scale_*_manual()&lt;/code&gt; for custom options&lt;/li&gt;
+&lt;li&gt;e.g. &lt;code&gt;scale_*_viridis_d&lt;/code&gt; and &lt;code&gt;scale_*_brewer()&lt;/code&gt; for pre-defined options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;use &lt;strong&gt;sequential or diverging&lt;/strong&gt; palettes for &lt;strong&gt;quantitative&lt;/strong&gt; data
+&lt;ul&gt;
+&lt;li&gt;e.g. &lt;code&gt;scale_*_gradient()&lt;/code&gt; or &lt;code&gt;scale_*_gradient2()&lt;/code&gt; for custom options&lt;/li&gt;
+&lt;li&gt;e.g. &lt;code&gt;scale_*_viridis_c&lt;/code&gt; and &lt;code&gt;scale_*_distiller()&lt;/code&gt; for pre-defined options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;various packages provide palettes incl. &lt;code&gt;scale_*&lt;/code&gt; components
+&lt;ul&gt;
+&lt;li&gt;e.g. &lt;code&gt;{rcartocolors}&lt;/code&gt;, &lt;code&gt;{scico}&lt;/code&gt;, &lt;code&gt;{ggsci}&lt;/code&gt;, &lt;code&gt;{ggthemes}&lt;/code&gt;, &lt;code&gt;{nord}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;those and even more packages return palettes as vectors
+&lt;ul&gt;
+&lt;li&gt;modify and supply them to &lt;code&gt;scale_*_manual()&lt;/code&gt; and &lt;code&gt;scale_*_gradientn()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;use &lt;strong&gt;&lt;code&gt;after_scale&lt;/code&gt;&lt;/strong&gt; to modify and recycle color scales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;working-with-layouts--composition&#34;&gt;Working with Layouts &amp;amp; Composition&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;guides&lt;/strong&gt; are the combination of scales and legends&lt;/li&gt;
+&lt;li&gt;legends can be either modified with the &lt;code&gt;guide_*&lt;/code&gt; function in &lt;code&gt;scale_*()&lt;/code&gt; or &lt;code&gt;guides()&lt;/code&gt;  and with the &lt;code&gt;theme()&lt;/code&gt; component
+qualitative&lt;/li&gt;
+&lt;li&gt;&amp;hellip; while quantitative guides are &lt;code&gt;colorbar&lt;/code&gt;, &lt;code&gt;colorsteps&lt;/code&gt; or &lt;code&gt;bins&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;{patchwork}&lt;/code&gt;&lt;/strong&gt; is the most modern and simplest way to compose plots
+&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt; and &lt;code&gt;|&lt;/code&gt; to combine plots&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;plot_layout()&lt;/code&gt; to adjust the layout, widths and heights&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;plot_annotation()&lt;/code&gt; to add tags and general labels&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;inset_element()&lt;/code&gt; to add inset graphics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>International Women&#39;s Day 2022: The Pay Gap in Europe</title>
       <link>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</link>

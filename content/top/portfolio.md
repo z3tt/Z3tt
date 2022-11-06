@@ -29,7 +29,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <li class='about'><span class='authors'>T Kürschner, <u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum & S Kramer-Schadt</span> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. 
   <a href='https://doi.org/10.1002/ece3.7478'><i>Ecology and Evolution</i> <b>11</b>(10):5728–5741</a>.</li>  
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H.-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
   <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b>(5):651–667</a>.</li>
 
   <li class='about'><span class='authors'>U Schlägel, V Grimm, N Blaum, P Colangeli, M Dammhahn, J Eccard, S Hausmann, A Herde, H Hofer, J Joshi, S Kramer-Schadt, M Litwin, S Lozada-Gobilard, M Müller, T Müller, R Nathan, J Petermann, K Pirhofer-Walzl, V Radchuk, M Rillig, M Roeleke, M Schäfer, <u style='font-weight:700;'>C Scherer</u>, G Schiro, C Scholz, L Teckentrup, R Tiedemann, W Ullmann, C Voigt, G Weithoff & F Jeltsch</span> (2020) Movement-mediated community assembly and coexistence. 
