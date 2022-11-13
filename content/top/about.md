@@ -8,13 +8,14 @@
 
 <span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️</span>
 
-<b style='font-size:2.2rem;font-weight:500;'>As a <a href='https://www.cedricscherer.com/top/about/#ecology'>graduated ecologist</a>, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
+<span style='font-size:2.2rem;'>As a <a href='https://www.cedricscherer.com/top/about/#ecology'>graduated ecologist</a>, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>.</span>
 
-As an <a href='https://www.cedricscherer.com/top/about/#dataviz'>independent data visualization designer</a>, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles</b> applying a <a href='https://www.cedricscherer.com/top/about/#codefirst'>code–first approach</a>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.<br>
+<span style='font-size:2.2rem;'>As an <a href='https://www.cedricscherer.com/top/about/#dataviz'>independent data visualization designer</a>, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles</b> applying a <a href='https://www.cedricscherer.com/top/about/#codefirst'>code–first approach</a>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.</span><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Curriculum Vitae](https://www.cedricscherer.com/top/about#cv)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Data Visualization Gallery](https://www.cedricscherer.com/top/dataviz)<br>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Portfolio](https://www.cedricscherer.com/top/portfolio)</b>
-<br>
+<span style='font-size:2.2rem;'>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href='https://www.cedricscherer.com/top/about#cv'>Curriculum Vitae</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href='https://www.cedricscherer.com/top/dataviz'>Data Visualization Gallery</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href='https://www.cedricscherer.com/top/portfolio'>Portfolio</a></span>
+<br><br>
 
 <img src="/img/about/dataviz-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
