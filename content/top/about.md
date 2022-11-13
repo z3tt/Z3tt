@@ -42,7 +42,7 @@ I am working as a scientific researcher (PostDoc) in the [Department "Ecological
 
 #### Code–First Approach {#codefirst}
 
-My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the <b>programing language <a href='https://www.r-project.org/about.html'>R</a></b>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow allows for <b>reproducible, transparent, and partly or completely automated workflows</b>.  
+My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the programing language <a href='https://www.r-project.org/about.html'>R</a>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow <b>allows for reproducible, transparent, and partly or completely automated workflows</b>.  
   
 To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/) which I combine with the code–first approach.<br>
 
