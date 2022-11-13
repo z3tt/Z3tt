@@ -42,7 +42,7 @@ I am working as a scientific researcher (PostDoc) in the [Department "Ecological
 
 #### Code–First Approach {#codefirst}
 
-My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the programing language <a href='https://www.r-project.org/about.html'>R</a>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow <b>allows for reproducible, transparent, and partly or completely automated workflows</b>.  
+My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the <a href='https://www.r-project.org/about.html'>programing language R</a>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow <b>allows for reproducible, transparent, and partly or completely automated workflows</b>.  
   
 To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/) which I combine with the code–first approach.<br>
 
@@ -270,12 +270,6 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   
   <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
   <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
-  
-  <li class='about'>“Data visualization best design: best principles and chart choice”<br>
-  <span class='subline'>3-Hour Internal Training – <a href="https://www.cit-ec.de/en">Center for Cognitive Interaction Technology (CITEC)</a> – 10|2022 – remote</span></li>
-  
-  <li class='about'>“Data visualization best design: best principles and chart choice”<br>
-  <span class='subline'>3-Hour Internal Training – <a href="https://www.cafeyn.co/">cafeyn</a> – 10|2022 – remote</span></li>
 
   <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
   <span class='subline'>2-Day Conference Workshop – <a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by <a href='https://posit.co/'>Posit</a> – 07|2022 – Washington, D.C., USA</span></li>

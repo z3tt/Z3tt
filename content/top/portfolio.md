@@ -167,8 +167,14 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ## Conducted Workshops & Trainings{#workshops}
 
 <ul>
-
-  <li class='about'>“Effective data visualization: design graphics to tell stories in an engaging way”<br>
+  
+  <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
+  <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
+  
+  <li class='about'>“Data visualization design: create engaging and effective graphics”<br>
+  <span class='subline'>3-Hour Internal Training – <a href="https://www.cit-ec.de/en">Center for Cognitive Interaction Technology (CITEC)</a> – 10|2022 – remote</span></li>
+  
+  <li class='about'>“Data visualization: best principles, chart choice, and design tips”<br>
   <span class='subline'>3-Hour Internal Workshop – <a href='https://www.cafeyn.co/ca-en/newsstand'>cafeyn / Lekiosque.fr</a> – 10|2022 – remote</span></li>
 
   <li class='about'>“Effective data visualization: design graphics to tell stories in an engaging way”<br>
@@ -197,9 +203,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
   <li class='about'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://en.www.inegi.org.mx/">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a> – 01|2022 – remote</span></li>
-
-  <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
-  <span class='subline'>5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020 + 11|2021 – Berlin/remote</span></li>
   
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br>
   <span class='subline'>2-Day Workshop – <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – 12|2021 – remote</span></li>

@@ -39,7 +39,7 @@
 &lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio/#publications&#34;&gt;Read my publications&lt;/a&gt;&lt;br&gt;
     →  &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;Learn more about my research&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h4 id=&#34;codefirst&#34;&gt;Code–First Approach&lt;/h4&gt;
-&lt;p&gt;My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the programing language &lt;a href=&#39;https://www.r-project.org/about.html&#39;&gt;R&lt;/a&gt;, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow &lt;b&gt;allows for reproducible, transparent, and partly or completely automated workflows&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the &lt;a href=&#39;https://www.r-project.org/about.html&#39;&gt;programing language R&lt;/a&gt;, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow &lt;b&gt;allows for reproducible, transparent, and partly or completely automated workflows&lt;/b&gt;.&lt;/p&gt;
 &lt;p&gt;To visualize data I mainly utilize the package &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt; from the &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;&lt;code&gt;{tidyverse}&lt;/code&gt; package collection&lt;/a&gt; including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, non-programing design and charting tools such as &lt;a href=&#34;https://www.figma.com/ui-design-tool/&#34;&gt;Figma&lt;/a&gt;, &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;, and &lt;a href=&#34;https://flourish.studio/&#34;&gt;Flourish&lt;/a&gt; which I combine with the code–first approach.&lt;br&gt;&lt;/p&gt;
 &lt;img src=&#34;https://cedricscherer.com/img/about/cedric-collage.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34;/&gt;
 &lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;
@@ -217,10 +217,6 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;4x 5-Day Workshop – &lt;a href=&#34;https://www.physalia-courses.org/&#34;&gt;Physalia Courses&lt;/a&gt; – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;“Data visualization best design: best principles and chart choice”&lt;br&gt;
-  &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Training – &lt;a href=&#34;https://www.cit-ec.de/en&#34;&gt;Center for Cognitive Interaction Technology (CITEC)&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;“Data visualization best design: best principles and chart choice”&lt;br&gt;
-  &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Training – &lt;a href=&#34;https://www.cafeyn.co/&#34;&gt;cafeyn&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Graphic design with &lt;code&gt;{ggplot2}&lt;/code&gt;: how to create engaging and complex visualizations in R”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Conference Workshop – &lt;a href=&#39;https://www.rstudio.com/conference/&#39;&gt;rstudio::conf(2022)&lt;/a&gt; by &lt;a href=&#39;https://posit.co/&#39;&gt;Posit&lt;/a&gt; – 07|2022 – Washington, D.C., USA&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Mastering scientific data visualizations: principles and practice with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
@@ -1985,7 +1981,11 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;br&gt;
 &lt;h2 id=&#34;workshops&#34;&gt;Conducted Workshops &amp;amp; Trainings&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li class=&#39;about&#39;&gt;“Effective data visualization: design graphics to tell stories in an engaging way”&lt;br&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;4x 5-Day Workshop – &lt;a href=&#34;https://www.physalia-courses.org/&#34;&gt;Physalia Courses&lt;/a&gt; – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization design: create engaging and effective graphics”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Training – &lt;a href=&#34;https://www.cit-ec.de/en&#34;&gt;Center for Cognitive Interaction Technology (CITEC)&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization: best principles, chart choice, and design tips”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Workshop – &lt;a href=&#39;https://www.cafeyn.co/ca-en/newsstand&#39;&gt;cafeyn / Lekiosque.fr&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: design graphics to tell stories in an engaging way”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;3-Hour Conference Workshop – &lt;a href=&#39;https://www.bsio-cancerschool.de/&#39;&gt;Berlin School of Integrative Oncology (BSIO), Charité University Hospital&lt;/a&gt; – 09|2022 – Berlin, Germany&lt;/span&gt;&lt;/li&gt;
@@ -2005,8 +2005,6 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop – &lt;a href=&#34;https://www.fbn-dummerstorf.de/en/&#34;&gt;Research Institute for Farm Animal Biology (FBN)&lt;/a&gt; – 01|2022 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Hands-on data visualization in R: how to create engaging charts with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop – &lt;a href=&#34;https://en.www.inegi.org.mx/&#34;&gt;National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)&lt;/a&gt; – 01|2022 – remote&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;“Data visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
-  &lt;span class=&#39;subline&#39;&gt;5-Day Workshop – &lt;a href=&#34;https://www.physalia-courses.org/&#34;&gt;Physalia Courses&lt;/a&gt; – 03|2020, 11|2020 + 11|2021 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Workshop – &lt;a href=&#34;https://www.vvsor.nl/&#34;&gt;Statistics Communication Section of the Netherlands Society for Statistics and Operations Research&lt;/a&gt; – 12|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in science: how to create beautiful charts with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
