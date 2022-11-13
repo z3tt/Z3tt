@@ -18,7 +18,7 @@
   }
 &lt;/style&gt;
 &lt;p&gt;&lt;span class=&#39;emphasize&#39;&gt;I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b style=&#39;font-size:2.2rem;font-weight:500;&#39;&gt;As a &lt;a style=&#39;font-weight:500;&#39; href=&#39;https://www.cedricscherer.com/top/about/#ecology&#39;&gt;graduated ecologist&lt;/a&gt;, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in &lt;b style=&#39;font-weight:900;&#39;&gt;data wrangling, statistical analysis, and model development&lt;/b&gt;. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in &lt;b style=&#39;font-weight:900;&#39;&gt;data visualization, journalism, and design&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b style=&#39;font-size:2.2rem;font-weight:500;&#39;&gt;As a &lt;a href=&#39;https://www.cedricscherer.com/top/about/#ecology&#39;&gt;graduated ecologist&lt;/a&gt;, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in &lt;b style=&#39;font-weight:900;&#39;&gt;data wrangling, statistical analysis, and model development&lt;/b&gt;. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in &lt;b style=&#39;font-weight:900;&#39;&gt;data visualization, journalism, and design&lt;/b&gt;.&lt;/p&gt;
 &lt;p&gt;As an &lt;a href=&#39;https://www.cedricscherer.com/top/about/#dataviz&#39;&gt;independent data visualization designer&lt;/a&gt;, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed &lt;b style=&#39;font-weight:900;&#39;&gt;graphics across all disciplines, purposes, and styles&lt;/b&gt; applying a &lt;a href=&#39;https://www.cedricscherer.com/top/about/#codefirst&#39;&gt;code–first approach&lt;/a&gt;. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/about#cv&#34;&gt;Curriculum Vitae&lt;/a&gt;&lt;br&gt;
     →  &lt;a href=&#34;https://www.cedricscherer.com/top/dataviz&#34;&gt;Data Visualization Gallery&lt;/a&gt;&lt;br&gt;    →  &lt;a href=&#34;https://www.cedricscherer.com/top/portfolio&#34;&gt;Portfolio&lt;/a&gt;&lt;/b&gt;
@@ -90,14 +90,14 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
   &lt;/ul&gt;
   &lt;li class=&#39;header&#39;&gt;&lt;b&gt;Scientific Researcher (PostDoc)&lt;/b&gt; (since 2019)&lt;/li&gt;
   &lt;ul&gt;
-    &lt;li class=&#39;description&#39;&gt;&lt;a href=&#34;http://www.ecodynizw.github.io&#34;&gt;Department of Ecological Dynamics&lt;/a&gt;, &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Institute for Zoo and Wildlife Research&lt;/a&gt;, Berlin, Germany&lt;/li&gt;
+    &lt;li class=&#39;description&#39;&gt;&lt;a href=&#34;https://ecodynizw.github.io/&#34;&gt;Department of Ecological Dynamics&lt;/a&gt;, &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Institute for Zoo and Wildlife Research&lt;/a&gt;, Berlin, Germany&lt;/li&gt;
     &lt;li class=&#39;description&#39;&gt;Topics: Movement ecology, population dynamics, disease ecology, coexistence theory&lt;/li&gt;
     &lt;li class=&#39;description&#39;&gt;Tasks: Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision&lt;/li&gt;
     &lt;li class=&#39;description&#39;&gt;Tools: R, QGIS, NetLogo&lt;/li&gt;
   &lt;/ul&gt;
   &lt;li class=&#39;header&#39;&gt;&lt;b&gt;Ph.D. in Ecology&lt;/b&gt; (2015–2019)&lt;/li&gt;
   &lt;ul&gt;
-    &lt;li class=&#39;description&#39;&gt;&lt;a href=&#34;http://www.ecodynizw.github.io&#34;&gt;Department of Ecological Dynamics&lt;/a&gt;, &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Institute for Zoo and Wildlife Research&lt;/a&gt;, Berlin, Germany, within the &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;DFG Research Training Group &#34;BioMove&#34;&lt;/a&gt;, University of Potsdam, Germany&lt;/li&gt;
+    &lt;li class=&#39;description&#39;&gt;&lt;a href=&#34;https://ecodynizw.github.io/&#34;&gt;Department of Ecological Dynamics&lt;/a&gt;, &lt;a href=&#34;http://www.izw-berlin.de/welcome.html&#34;&gt;Institute for Zoo and Wildlife Research&lt;/a&gt;, Berlin, Germany, within the &lt;a href=&#34;https://www.cedricscherer.com/top/projects/&#34;&gt;DFG Research Training Group &#34;BioMove&#34;&lt;/a&gt;, University of Potsdam, Germany&lt;/li&gt;
     &lt;li class=&#39;description&#39;&gt;Topics: Movement ecology, disease ecology, population dynamics, coexistence theory&lt;/li&gt;
     &lt;li class=&#39;description&#39;&gt;Tasks: Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development&lt;/li&gt;
     &lt;li class=&#39;description&#39;&gt;Tools: R, Shiny, NetLogo, QGIS&lt;/li&gt;
@@ -214,14 +214,18 @@ Movement Ecology • Eco-Epidemiology • Population &amp;amp; Community Dynamic
 &lt;/ul&gt;
 &lt;h3 id=&#34;teaching&#34;&gt;Selected Conducted Workshops &amp;amp; Trainings&lt;/h3&gt;
 &lt;ul&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;4x 5-Day Workshop – &lt;a href=&#34;https://www.physalia-courses.org/&#34;&gt;Physalia Courses&lt;/a&gt; – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization best design: best principles and chart choice”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Training – &lt;a href=&#34;https://www.cit-ec.de/en&#34;&gt;Center for Cognitive Interaction Technology (CITEC)&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization best design: best principles and chart choice”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;3-Hour Internal Training – &lt;a href=&#34;https://www.cafeyn.co/&#34;&gt;cafeyn&lt;/a&gt; – 10|2022 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Graphic design with &lt;code&gt;{ggplot2}&lt;/code&gt;: how to create engaging and complex visualizations in R”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Conference Workshop – &lt;a href=&#39;https://www.rstudio.com/conference/&#39;&gt;rstudio::conf(2022)&lt;/a&gt; by &lt;a href=&#39;https://posit.co/&#39;&gt;Posit&lt;/a&gt; – 07|2022 – Washington, D.C., USA&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Mastering scientific data visualizations: principles and practice with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2x 1/2-Day Conference Workshops – &lt;a href=&#39;https://empseb.wordpress.com/&#39;&gt;European Meeting for PhD Students in Evolutionary Biology (EMPSEB)&lt;/a&gt; – 05|2022 – Espoo, Finland&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;5-hour Live Training – &lt;a href=&#39;https://www.oreilly.com/live-events/&#39;&gt;Pearson–O&#39;Reilly Live Training Event&lt;/a&gt; – 09|2021, 12|2021 + 04|2022 – remote&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;“Data visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
-  &lt;span class=&#39;subline&#39;&gt;5-Day Workshop – &lt;a href=&#34;https://www.physalia-courses.org/&#34;&gt;Physalia Courses&lt;/a&gt; – 03|2020, 11|2020 + 11|2021 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in science: how to create beautiful charts with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop – &lt;a href=&#34;https://www.uu.se/en&#34;&gt;University of Uppsala&lt;/a&gt; – 11|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: convert information into visual forms—and tell a story”&lt;br&gt;

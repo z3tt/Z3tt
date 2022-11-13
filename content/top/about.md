@@ -8,7 +8,7 @@
 
 <span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️</span>
 
-<b style='font-size:2.2rem;font-weight:500;'>As a <a style='font-weight:500;' href='https://www.cedricscherer.com/top/about/#ecology'>graduated ecologist</a>, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
+<b style='font-size:2.2rem;font-weight:500;'>As a <a href='https://www.cedricscherer.com/top/about/#ecology'>graduated ecologist</a>, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>. 
 
 As an <a href='https://www.cedricscherer.com/top/about/#dataviz'>independent data visualization designer</a>, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles</b> applying a <a href='https://www.cedricscherer.com/top/about/#codefirst'>code–first approach</a>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.<br>
 
@@ -106,7 +106,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
   <li class='header'><b>Scientific Researcher (PostDoc)</b> (since 2019)</li>
   <ul>
-    <li class='description'><a href="http://www.ecodynizw.github.io">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany</li>
+    <li class='description'><a href="https://ecodynizw.github.io/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany</li>
     <li class='description'>Topics: Movement ecology, population dynamics, disease ecology, coexistence theory</li>
     <li class='description'>Tasks: Data analysis, statistical and mechanistic modeling, spatial analysis, data visualization, cartography, software development, code management, lab support and supervision</li>
     <li class='description'>Tools: R, QGIS, NetLogo</li>
@@ -114,7 +114,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
   <li class='header'><b>Ph.D. in Ecology</b> (2015–2019)</li>
   <ul>
-    <li class='description'><a href="http://www.ecodynizw.github.io">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany, within the <a href="https://www.cedricscherer.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
+    <li class='description'><a href="https://ecodynizw.github.io/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany, within the <a href="https://www.cedricscherer.com/top/projects/">DFG Research Training Group "BioMove"</a>, University of Potsdam, Germany</li>
     <li class='description'>Topics: Movement ecology, disease ecology, population dynamics, coexistence theory</li>
     <li class='description'>Tasks: Mechanistic and analytical modeling, spatial analysis, data visualization,  R package development</li>
     <li class='description'>Tools: R, Shiny, NetLogo, QGIS</li>
@@ -266,6 +266,15 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 ### Selected Conducted Workshops & Trainings{#teaching}
 
 <ul>
+  
+  <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
+  <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
+  
+  <li class='about'>“Data visualization best design: best principles and chart choice”<br>
+  <span class='subline'>3-Hour Internal Training – <a href="https://www.cit-ec.de/en">Center for Cognitive Interaction Technology (CITEC)</a> – 10|2022 – remote</span></li>
+  
+  <li class='about'>“Data visualization best design: best principles and chart choice”<br>
+  <span class='subline'>3-Hour Internal Training – <a href="https://www.cafeyn.co/">cafeyn</a> – 10|2022 – remote</span></li>
 
   <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
   <span class='subline'>2-Day Conference Workshop – <a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by <a href='https://posit.co/'>Posit</a> – 07|2022 – Washington, D.C., USA</span></li>
@@ -275,9 +284,6 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
   <li class='about'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br>
   <span class='subline'>5-hour Live Training – <a href='https://www.oreilly.com/live-events/'>Pearson–O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
-  
-  <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
-  <span class='subline'>5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020 + 11|2021 – Berlin/remote</span></li>
 
   <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://www.uu.se/en">University of Uppsala</a> – 11|2021 – remote</span></li>
