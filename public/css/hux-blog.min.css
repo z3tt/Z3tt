@@ -3,13 +3,13 @@
   src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff supports variations"),
        url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
   font-weight: 100 900;
+  font-feature-settings: "ss01" 1;
 }
-font-family: 'CabinetGrotesk-Variable';
+@font-family: 'CabinetGrotesk-Variable';
   src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
        url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
   font-weight: 100 900;
-  font-variant-alternates: character-variant("cv01")
 }
 @font-face {
   font-family: 'Input Mono';
@@ -78,6 +78,7 @@ font-family: 'CabinetGrotesk-Variable';
   font-size:1.2rem;
   margin-right:1px;
   margin-bottom:3px;
+  font-weight:650;
 }
 .sidebar-container .tags a:hover,.sidebar-container .tags a:active{
   border-color:#28a87d
@@ -119,6 +120,7 @@ body{
   font-weight:430;
   color:#000;
   overflow-x:hidden;
+	font-feature-settings: "ss01" 1;
 }
 @media only screen and (min-width:768px){
   body{
@@ -161,6 +163,7 @@ h4,h5{
   font-weight:860;
   line-height:1.2;
   letter-spacing:-.25px;
+	font-feature-settings: "ss01" 1;
 }
 h4{
   font-size:2.7rem;
@@ -371,6 +374,7 @@ pre code{
   height:56px;
   line-height:35px;
   font-size:2.4rem;
+	font-feature-settings: "ss01" 1;
 }
 .navbar-custom{
   background:0 0;
@@ -564,6 +568,7 @@ pre code{
   font-weight:860;
   margin:5px 0 30px;
   text-shadow: 1.8px 2.8px #00000040;
+	font-feature-settings: "ss01" 1;
 }
 
 @media only screen and (min-width:768px){
@@ -593,6 +598,7 @@ pre code{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
   font-weight:780;
   font-size:1.4rem;
+	font-feature-settings: "ss01" 1;
 }
 .intro-header .post-heading .meta a{
   color:#fff;
@@ -638,6 +644,7 @@ pre code{
   line-height:1.1;
   margin-top:3rem;
   margin-bottom:1rem;
+	font-feature-settings: "ss01" 1;
 }
 .post-preview>a>.post-subtitle{
   font-size:1.4rem;
@@ -648,11 +655,11 @@ pre code{
   margin-bottom:1rem;
 }
 .post-preview>.post-meta{
-  /*font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;*/
-  font-family:'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /*font-family:'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;*/
   color:#28a87d;
   font-size:1.5rem;
-  font-weight:650;
+  font-weight:620;
   margin-top:.5em;
 	font-feature-settings: "ss01" 1;
 }
@@ -680,9 +687,9 @@ pre code{
 }
 
 .post-content-preview{
-  font-size:1.95rem;
+  font-size:1.9rem;
   font-style:plain;
-  line-height:1.6;
+  line-height:1.5;
   font-weight:400;
   color:#787878;
 }
@@ -692,7 +699,7 @@ pre code{
 
 @media only screen and (min-width:768px){
   .post-content-preview{
-    font-size:1.65rem;
+    font-size:1.75rem;
   }
 }
 
@@ -868,10 +875,11 @@ body{
   color:#fff;
   line-height:1.6;
   font-size:1.2rem;
-  font-weight:580;
+  font-weight:620;
   text-decoration:none;
   text-transform: uppercase;
   margin:.3rem .3rem;
+	font-feature-settings: "ss01" 1;
 }
 .tags a:hover,.tags .tag:hover,.tags a:active,.tags .tag:active{
   color:#fff;
@@ -1140,9 +1148,10 @@ a.about-bold{
 .highlight{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
   font-size:1.8rem;
-  font-weight:860;
+  font-weight:780;
   color:#212121;
   line-height:1.1;
+	font-feature-settings: "ss01" 1;
 }
 .highlight a{
   font-size:2.2rem;
