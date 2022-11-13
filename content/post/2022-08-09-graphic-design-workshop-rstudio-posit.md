@@ -102,7 +102,7 @@ Here is an overview of all recaps:
 -   Pick the right palette type for your visualization
     -   use **sequential** to encode *numerical information with order*
     -   use **diverging** to encode *numerical information with a critical midpoint*
-    -   use **quialitative** to encode *categorical information*
+    -   use **qualitative** to encode *categorical information*
 -   map the color with the highest contrast of a sequential palette to the most important value
 -   for categories use a maximum of 6-8 colors
 -   test for **color blindness** using a CVD simulator

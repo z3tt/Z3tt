@@ -95,7 +95,7 @@
 &lt;ul&gt;
 &lt;li&gt;use &lt;strong&gt;sequential&lt;/strong&gt; to encode &lt;em&gt;numerical information with order&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;use &lt;strong&gt;diverging&lt;/strong&gt; to encode &lt;em&gt;numerical information with a critical midpoint&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;use &lt;strong&gt;quialitative&lt;/strong&gt; to encode &lt;em&gt;categorical information&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;use &lt;strong&gt;qualitative&lt;/strong&gt; to encode &lt;em&gt;categorical information&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;map the color with the highest contrast of a sequential palette to the most important value&lt;/li&gt;
