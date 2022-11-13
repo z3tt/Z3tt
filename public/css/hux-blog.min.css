@@ -1,32 +1,15 @@
 @font-face {
   font-family: "Canicule Display";
   src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff supports variations"),
-  url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
+       url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
   font-weight: 100 900;
 }
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff2') format('woff2'), url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff') format('woff');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff2') format('woff2'), url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff') format('woff');
-  font-weight: 800;
-}
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff') format('woff');
-  font-weight: 900;
+font-family: 'CabinetGrotesk-Variable';
+  src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-variant-alternates: character-variant("cv01")
 }
 @font-face {
   font-family: 'Input Mono';
@@ -35,7 +18,7 @@
 @font-face {
   font-family: 'Input Mono';
   src: url("../fonts/InputMono-Bold.ttf") format("truetype");
-  font-weight:bold;
+  font-weight: bold;
 }
 @font-face {
   font-family: 'Input Mono';
@@ -49,7 +32,7 @@
 @font-face {
   font-family: 'Input Mono Condensed';
   src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype");
-  font-weight:bold;
+  font-weight: bold;
 }
 @font-face {
   font-family: 'Input Mono Condensed';
@@ -133,11 +116,10 @@ body{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
   line-height:1.8;
   font-size:2.05rem;
-  font-weight:400;
+  font-weight:430;
   color:#000;
   overflow-x:hidden;
 }
-
 @media only screen and (min-width:768px){
   body{
     font-size:1.9rem;
@@ -148,11 +130,12 @@ p{
   margin:15px 0 30px 0;
 }
 
+
 h1,h2,h3,h6{
   font-family:'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height:1.2;
   font-weight:860;
-	/*font-feature-settings: "ss01" 1;*/
+	font-feature-settings: "ss01" 1;
 }
 h1{
   font-size:4.35rem;
@@ -175,7 +158,7 @@ h3{
 }
 h4,h5{
   font-family:'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  font-weight:800;
+  font-weight:860;
   line-height:1.2;
   letter-spacing:-.25px;
 }
@@ -194,27 +177,27 @@ h6{
 
 a{
   color:#9a9a9a;
-  font-weight:500;
+  font-weight:650;
 }
 a:hover,a:focus{
   color:#28a87d;
-  font-weight:500;
+  font-weight:650;
 }
 a img:hover,a img:focus{
   cursor:zoom-in
 }
 
 b>a{
-  font-weight:800;
+  font-weight:860;
 }
 b>a:hover,b>a:focus{
-  font-weight:800;
+  font-weight:860;
 }
-h4 a, h5 a{
-  font-weight:800;
+h4>a, h5>a{
+  font-weight:860;
 }
-h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus{
-  font-weight:800;
+h4>a:hover, h4>a:focus, h5>a:hover, h5>a:focus{
+  font-weight:860;
 }
 
 article{
@@ -608,7 +591,7 @@ pre code{
 }
 .intro-header .post-heading .meta{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
-  font-weight:600;
+  font-weight:780;
   font-size:1.4rem;
 }
 .intro-header .post-heading .meta a{
@@ -650,7 +633,7 @@ pre code{
 .post-preview>a>.post-title{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
   font-size:2.8rem;
-  font-weight:800;
+  font-weight:780;
   letter-spacing:-.25px;
   line-height:1.1;
   margin-top:3rem;
@@ -669,8 +652,9 @@ pre code{
   font-family:'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   color:#28a87d;
   font-size:1.5rem;
-  font-weight:600;
+  font-weight:650;
   margin-top:.5em;
+	font-feature-settings: "ss01" 1;
 }
 .post-preview>.post-meta>a{
   text-decoration:none;
@@ -690,7 +674,7 @@ pre code{
     font-size:1.6rem;
   }
   .post-preview .post-meta{
-    font-size:1.45rem;
+    font-size:1.55rem;
     line-height:1.7;
   }
 }
@@ -805,6 +789,7 @@ form .row:first-child .floating-label-form-group{
   letter-spacing:1px;
   border-radius:0;
   padding:15px 25px;
+	font-feature-settings: "ss01" 1;
 }
 .btn-lg{
   font-size:16px;
@@ -827,6 +812,7 @@ form .row:first-child .floating-label-form-group{
   background-color:#fff;
   border-radius:0;
   margin-bottom:1rem;
+	font-feature-settings: "ss01" 1;
 }
 
 @media only screen and (min-width:768px){
@@ -882,7 +868,7 @@ body{
   color:#fff;
   line-height:1.6;
   font-size:1.2rem;
-  font-weight:500;
+  font-weight:580;
   text-decoration:none;
   text-transform: uppercase;
   margin:.3rem .3rem;
@@ -965,6 +951,7 @@ background-color:#28a87d!important;
   font-family:'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-weight:720;
   line-height:1.7;
+	font-feature-settings: "ss01" 1;
 }
 .one-tag-list .post-preview{
   position:relative;
@@ -1153,7 +1140,7 @@ a.about-bold{
 .highlight{
   font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
   font-size:1.8rem;
-  font-weight:800;
+  font-weight:860;
   color:#212121;
   line-height:1.1;
 }
