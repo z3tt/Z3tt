@@ -1,13 +1,12 @@
 @font-face {
   font-family: "Canicule Display";
-  src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff supports variations"),
-       url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
+  src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
   font-weight: 100 900;
   font-feature-settings: "ss01" 1;
 }
 @font-face {
-  family: 'CabinetGrotesk-Variable';
-  src: url('../fonts/CabinetGrotesk-Variable.woff') format('woff supports variations'),
+  family: 'Cabinet Grotesk';
+  src: url('../fonts/CabinetGrotesk-Variable.woff2') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
   font-weight: 100 900;
