@@ -2,7 +2,6 @@
   font-family: "Canicule Display";
   src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
   font-weight: 100 900;
-  font-feature-settings: "ss01" 1;
 }
 @font-face {
   font-family: 'Cabinet Grotesk';
@@ -10,7 +9,6 @@
        url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
   font-weight: 100 900;
-	font-feature-settings: "ss01" 1;
 }
 @font-face {
   font-family: 'Input Mono';
@@ -121,6 +119,7 @@ body{
   font-weight:430;
   color:#000;
   overflow-x:hidden;
+	font-feature-settings: "ss01" 1;
 }
 @media only screen and (min-width:768px){
   body{
