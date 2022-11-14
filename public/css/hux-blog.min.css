@@ -5,11 +5,13 @@
   font-weight: 100 900;
   font-feature-settings: "ss01" 1;
 }
-@font-family: 'CabinetGrotesk-Variable';
+@font-face {
+  family: 'CabinetGrotesk-Variable';
   src: url('../fonts/CabinetGrotesk-Variable.woff') format('woff supports variations'),
        url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
   font-weight: 100 900;
+	font-feature-settings: "ss01" 1;
 }
 @font-face {
   font-family: 'Input Mono';
@@ -120,7 +122,6 @@ body{
   font-weight:430;
   color:#000;
   overflow-x:hidden;
-	font-feature-settings: "ss01" 1;
 }
 @media only screen and (min-width:768px){
   body{
@@ -147,6 +148,7 @@ h1{
   font-family:'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   font-weight:860;
   font-size:4rem;
+  font-feature-settings: "ss01" 1;
 }
 .site-heading h1{
   text-transform:uppercase;
