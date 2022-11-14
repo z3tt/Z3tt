@@ -5,7 +5,7 @@
   font-feature-settings: "ss01" 1;
 }
 @font-face {
-  family: 'Cabinet Grotesk';
+  font-family: 'Cabinet Grotesk';
   src: url('../fonts/CabinetGrotesk-Variable.woff2') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
