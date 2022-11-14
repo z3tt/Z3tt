@@ -6,8 +6,8 @@
   font-feature-settings: "ss01" 1;
 }
 @font-family: 'CabinetGrotesk-Variable';
-  src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
-       url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+  src: url('../fonts/CabinetGrotesk-Variable.woff') format('woff supports variations'),
+       url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
   font-weight: 100 900;
 }

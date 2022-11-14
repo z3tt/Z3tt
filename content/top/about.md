@@ -203,6 +203,9 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 ### Selected Publications {#publications}
 
 <ul>
+  <li class='about'><span class='authors'>C Voigt, <u style='font-weight:700;'>C Scherer</u> & V Runkel</span> (2022)</span> Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines.<br>
+  <a href='https://doi.org/10.1111/csp2.12841#><i>Conservation Science and Practice</i></a> X:e12841.</li>  
+  
   <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022)</span> A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research. 
   <a href='https://doi.org/10.1371/journal.pcbi.1010356'><i>PLOS Computational Biology</i> <b>18</b>(9):e1010356</a>.</li>  
   
