@@ -1053,10 +1053,9 @@ ggplot(data, aes(x = group, y = value)) +
 &lt;/div&gt;
 &lt;div id=&#34;polish&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Next: Let Your Plot Shine&lt;/h2&gt;
-&lt;p&gt;Stay tuned, in the upcoming follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a
-colorful version with annotations and added illustrations:&lt;/p&gt;
+&lt;p&gt;Stay tuned, in &lt;s&gt;the upcoming&lt;/s&gt; &lt;span style=&#39;color:#ff7202;&#39;&gt;a potential&lt;/span&gt; follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot &lt;a href=&#39;https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01&#39; target = &#34;_blank&#34;&gt;in this gist&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;footnotes&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;&lt;em&gt;Footnotes&lt;/em&gt;&lt;/h5&gt;
@@ -1073,7 +1072,7 @@ R Session Info
 &lt;/summary&gt;
 &lt;pre&gt;&lt;code&gt;## R version 4.1.0 (2021-05-18)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 22000)
+## Running under: Windows 10 x64 (build 22621)
 ## 
 ## Matrix products: default
 ## 
