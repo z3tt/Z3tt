@@ -13,7 +13,7 @@
 <a href="https://www.linkedin.com/in/cedricpscherer/"><img border="0" alt="LinkedIn" src="https://assets.dryicons.com/uploads/icon/svg/8337/a347cd89-1662-4421-be90-58e5e8004eae.svg" width="40" height="40"></a>&nbsp;&nbsp;&nbsp;
 
 <h3 align="center">
-  :sparkles: Data Visualization and Computational Ecology :man_technologist:
+  Data Visualization Designer, Consultant and Instructor for Engaging and Effective Graphical Storytelling
 </h3>
 <br>
 
