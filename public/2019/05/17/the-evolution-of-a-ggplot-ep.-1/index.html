@@ -12,7 +12,7 @@
 
     
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/dark_RichardStrozynski.png" >
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/map-grid-artsy.png" >
     
 
     
@@ -148,7 +148,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/banner/dark_RichardStrozynski.jpg')
+        background-image: url('/img/banner/map-grid-artsy.png')
     }
 </style>
 <header class="intro-header">
@@ -219,7 +219,6 @@
 
                 
                 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p><img src="/img/evol-ggplot/evol-ggplot-1.gif" /></p>
@@ -248,20 +247,21 @@
 <p><img src="/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png" width="768" /></p>
 <p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both data sets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned data set looks like, showing two examples per continent:</p>
 <pre><code>## # A tibble: 12 x 5
-##    indicator         country           region    student_ratio student_ratio_re~
-##    &lt;chr&gt;             &lt;chr&gt;             &lt;chr&gt;             &lt;dbl&gt;             &lt;dbl&gt;
-##  1 Primary Education Lesotho           Africa             32.9              37.3
-##  2 Primary Education South Africa      Africa             30.3              37.3
-##  3 Primary Education Bangladesh        Asia               30.1              20.7
-##  4 Primary Education Viet Nam          Asia               19.6              20.7
-##  5 Primary Education Ireland           Europe             16.1              13.6
-##  6 Primary Education France            Europe             18.2              13.6
-##  7 Primary Education Saint Vincent an~ North Am~          14.4              17.7
-##  8 Primary Education Dominican Republ~ North Am~          18.9              17.7
-##  9 Primary Education Vanuatu           Oceania            26.6              24.7
-## 10 Primary Education Solomon Islands   Oceania            25.8              24.7
-## 11 Primary Education Argentina         South Am~          NA                19.4
-## 12 Primary Education Paraguay          South Am~          24.2              19.4</code></pre>
+##    indicator         country                          region     stude~1 stude~2
+##    &lt;chr&gt;             &lt;chr&gt;                            &lt;chr&gt;        &lt;dbl&gt;   &lt;dbl&gt;
+##  1 Primary Education Lesotho                          Africa        32.9    37.3
+##  2 Primary Education South Africa                     Africa        30.3    37.3
+##  3 Primary Education Bangladesh                       Asia          30.1    20.7
+##  4 Primary Education Viet Nam                         Asia          19.6    20.7
+##  5 Primary Education Ireland                          Europe        16.1    13.6
+##  6 Primary Education France                           Europe        18.2    13.6
+##  7 Primary Education Saint Vincent and the Grenadines North Ame~    14.4    17.7
+##  8 Primary Education Dominican Republic               North Ame~    18.9    17.7
+##  9 Primary Education Vanuatu                          Oceania       26.6    24.7
+## 10 Primary Education Solomon Islands                  Oceania       25.8    24.7
+## 11 Primary Education Argentina                        South Ame~    NA      19.4
+## 12 Primary Education Paraguay                         South Ame~    24.2    19.4
+## # ... with abbreviated variable names 1: student_ratio, 2: student_ratio_region</code></pre>
 </div>
 <div id="default" class="section level3">
 <h3>🌱 The Default Boxplot</h3>
