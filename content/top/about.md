@@ -57,7 +57,7 @@ To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tid
 </div>
 <b style='color:#808080;'>Independent Data Visualization Specialist</b><br>
 Information-Driven Design • Reproducible Data Analysis and Reporting • Coachings<br>
-<a href="mailto:info@data-vizard.de">info@data-vizard.de</a>
+<a href="mailto:hello@cedricscherer.com">hello@cedricscherer.com</a>
 <div style="line-height:75%;">
     <br>
 </div>

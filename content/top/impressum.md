@@ -9,7 +9,7 @@ Birkenstra&szlig;e 18<br />
 ##### Kontakt
 
 <p>Telefon: +49 (0) 176 708 789 84<br />
-E-Mail: info@data-vizard.de</p>
+E-Mail: hello@cedricscherer.com</p>
 
 ##### Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV
 
