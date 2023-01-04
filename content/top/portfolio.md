@@ -74,6 +74,9 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ## Invited Talks {#talks}
 
 <ul>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to succesfully communicate data.<br>
+  <span class='subline'><a href='https://en.malt.de/'>CAMeL Seminar at University of Pittsburgh</a> – 11|2022 – remote</span></li> 
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to succesfully communicate data.<br>
   <span class='subline'><a href='https://en.malt.de/'>MALT Community</a> – 09|2022 – remote</span></li> 
@@ -167,6 +170,18 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ## Conducted Workshops & Trainings{#workshops}
 
 <ul>
+
+  <li class='about'>“Data visualization design: inspiration and process”<br>
+  <span class='subline'>1-Hour Webinar – <a href="https://octily.com/">Octily</a> – 12|2022 – remote</span></li>
+
+  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
+  <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en">University of Uppsala</a> – 11|2021 + 12|2022 – remote</span></li>
+
+  <li class='about'>“Data visualizaation with <code>ggplot2</code>: Fundamentals and Advanced Sessions”<br>
+  <span class='subline'>2-Day Winter School – <a href='https://www.bsio-cancerschool.de/'>Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 12|2022 – Berlin, Germany</span></li>
+  
+  <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
+  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/">Data Visualization Society</a> – 11|2022 – Berlin/remote</span></li>
   
   <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
   <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
@@ -207,9 +222,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br>
   <span class='subline'>2-Day Workshop – <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – 12|2021 – remote</span></li>
 
-  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'>1/2-Day Workshop – <a href="https://www.uu.se/en">University of Uppsala</a> – 11|2021 – remote</span></li>
-
   <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
   <span class='subline'>1/2-Day Workshop –  <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 11|2021 – remote</span></li>
 
@@ -222,7 +234,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <li class='about'>“Effective data visualization: how to design impactful and aesthetically pleasing charts”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://bigs-clinpopscience.de/">Bonn International Graduate School Clinical and Population Science</a> – 10|2021 – remote</span></li>
 
-  <li class='about'>“Data visualization with <code>{ggplot2}</code>: 2–day course on data visualization principles and beautiful plotting in R”<br>
+  <li class='about'>“Data visualization with <code>{ggplot2}</code>: principles and beautiful plotting in R”<br>
   <span class='subline'>2-day Workshop – <a href="https://www.bio-move.org/">BioMove Research Training Group</a> – 04|2021 – remote</span></li>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>

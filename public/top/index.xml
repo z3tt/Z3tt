@@ -1924,6 +1924,8 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;h2 id=&#34;talks&#34;&gt;Invited Talks&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; (2022)&lt;/span&gt; Engaging visualization design to succesfully communicate data.&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://en.malt.de/&#39;&gt;CAMeL Seminar at University of Pittsburgh&lt;/a&gt; – 11|2022 – remote&lt;/span&gt;&lt;/li&gt; 
+  &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; (2022)&lt;/span&gt; Engaging visualization design to succesfully communicate data.&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://en.malt.de/&#39;&gt;MALT Community&lt;/a&gt; – 09|2022 – remote&lt;/span&gt;&lt;/li&gt; 
   &lt;li class=&#39;about&#39;&gt;&lt;span class=&#39;authors&#39;&gt;&lt;u style=&#39;font-weight:700;&#39;&gt;C Scherer&lt;/u&gt; (2022)&lt;/span&gt; Effective data visualization: design graphics to tell stories in an engaging way.&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;&lt;a href=&#39;https://www.mariecuriealumni.eu/&#39;&gt;Marie Curie Alumni Association (MCAA)&lt;/a&gt; – 04|2022 – remote&lt;/span&gt;&lt;/li&gt; 
@@ -1983,6 +1985,14 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;br&gt;
 &lt;h2 id=&#34;workshops&#34;&gt;Conducted Workshops &amp;amp; Trainings&lt;/h2&gt;
 &lt;ul&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization design: inspiration and process”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;1-Hour Webinar – &lt;a href=&#34;https://octily.com/&#34;&gt;Octily&lt;/a&gt; – 12|2022 – remote&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization in science: how to create beautiful charts with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;2x 1/2-Day Workshop – &lt;a href=&#34;https://www.uu.se/en&#34;&gt;University of Uppsala&lt;/a&gt; – 11|2021 + 12|2022 – remote&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualizaation with &lt;code&gt;ggplot2&lt;/code&gt;: Fundamentals and Advanced Sessions”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;2-Day Winter School – &lt;a href=&#39;https://www.bsio-cancerschool.de/&#39;&gt;Berlin School of Integrative Oncology (BSIO), Charité University Hospital&lt;/a&gt; – 12|2022 – Berlin, Germany&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;“Designing charts in R: reproducible chart design with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
+  &lt;span class=&#39;subline&#39;&gt;3-Hour Workshop &amp; 2-Hour Coding Session – &lt;a href=&#34;https://www.informationisbeautifulawards.com/&#34;&gt;Intersections Workshop &#34;Information is Beautiful&#34; Awards&lt;/a&gt; by &lt;a href=&#34;https://www.datavisualizationsociety.org/&#34;&gt;Data Visualization Society&lt;/a&gt; – 11|2022 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in R with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;4x 5-Day Workshop – &lt;a href=&#34;https://www.physalia-courses.org/&#34;&gt;Physalia Courses&lt;/a&gt; – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization design: create engaging and effective graphics”&lt;br&gt;
@@ -2009,8 +2019,6 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop – &lt;a href=&#34;https://en.www.inegi.org.mx/&#34;&gt;National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)&lt;/a&gt; – 01|2022 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Workshop – &lt;a href=&#34;https://www.vvsor.nl/&#34;&gt;Statistics Communication Section of the Netherlands Society for Statistics and Operations Research&lt;/a&gt; – 12|2021 – remote&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;“Data visualization in science: how to create beautiful charts with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
-  &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop – &lt;a href=&#34;https://www.uu.se/en&#34;&gt;University of Uppsala&lt;/a&gt; – 11|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: convert information into visual forms—and tell a story”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop –  &lt;a href=&#34;https://www.senckenberg.de/en/science/young-scientists-2/&#34;&gt;Senckenberg Young Scientists&lt;/a&gt; – 11|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: theory and hands-on with &lt;code&gt;{ggplot2}&lt;/code&gt;”&lt;br&gt;
@@ -2019,7 +2027,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
   &lt;span class=&#39;subline&#39;&gt;2-Day Workshop – &lt;a href=&#34;http://rbzs.be/workshops2021/&#34;&gt;Royal Zoological Society of Belgium (RZSB)&lt;/a&gt; – 10|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Effective data visualization: how to design impactful and aesthetically pleasing charts”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;1/2-Day Workshop – &lt;a href=&#34;https://bigs-clinpopscience.de/&#34;&gt;Bonn International Graduate School Clinical and Population Science&lt;/a&gt; – 10|2021 – remote&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&#39;about&#39;&gt;“Data visualization with &lt;code&gt;{ggplot2}&lt;/code&gt;: 2–day course on data visualization principles and beautiful plotting in R”&lt;br&gt;
+  &lt;li class=&#39;about&#39;&gt;“Data visualization with &lt;code&gt;{ggplot2}&lt;/code&gt;: principles and beautiful plotting in R”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-day Workshop – &lt;a href=&#34;https://www.bio-move.org/&#34;&gt;BioMove Research Training Group&lt;/a&gt; – 04|2021 – remote&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;“Data visualisation techniques for data scientists&lt;/code&gt;”&lt;br&gt;
   &lt;span class=&#39;subline&#39;&gt;2-Day Internal Training – &lt;a href=&#34;https://www.msc.org/&#34;&gt;Marine Stewardship Council (MSC)&lt;/a&gt; – 02|2021 – remote&lt;/span&gt;&lt;/li&gt;
