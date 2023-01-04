@@ -17,7 +17,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
   <li class='about'><span class='authors'>C Voigt, <u style='font-weight:700;'>C Scherer</u> & V Runkel</span> (2022)</span> Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines.<br>
-  <a href='https://doi.org/10.1111/csp2.12841#><i>Conservation Science and Practice</i></a> X:e12841.</li>  
+  <a href='https://doi.org/10.1111/csp2.12841#'><i>Conservation Science and Practice</i></a> <b>4</b>:e12841.</li>  
 
 
   <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022)</span> A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research.<br>
@@ -177,8 +177,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
   <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en">University of Uppsala</a> – 11|2021 + 12|2022 – remote</span></li>
 
-  <li class='about'>“Data visualizaation with <code>ggplot2</code>: Fundamentals and Advanced Sessions”<br>
-  <span class='subline'>2-Day Winter School – <a href='https://www.bsio-cancerschool.de/'>Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 12|2022 – Berlin, Germany</span></li>
+  <li class='about'>“Data visualization with <code>ggplot2</code> Winter School”<br>
+  <span class='subline'>2-Day Workshop – <a href='https://www.bsio-cancerschool.de/'>Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 12|2022 – Berlin, Germany</span></li>
   
   <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
   <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/">Data Visualization Society</a> – 11|2022 – Berlin/remote</span></li>
