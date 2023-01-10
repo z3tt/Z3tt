@@ -75,16 +75,16 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
   
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to succesfully communicate data.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href='https://en.malt.de/'>CAMeL Seminar at University of Pittsburgh</a> – 11|2022 – remote</span></li> 
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to succesfully communicate data.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href='https://en.malt.de/'>MALT Community</a> – 09|2022 – remote</span></li> 
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Effective data visualization: design graphics to tell stories in an engaging way.<br>
   <span class='subline'><a href='https://www.mariecuriealumni.eu/'>Marie Curie Alumni Association (MCAA)</a> – 04|2022 – remote</span></li> 
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> Mit Grafiken Mehrwert schaffen: Prinzipien effektiver Datenvisualisierung und -kommunikation.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Mit Grafiken Mehrwert schaffen: Prinzipien effektiver Datenvisualisierung und -kommunikation.<br>
   <span class='subline'><a href='https://www.bib.bund.de/DE/Startseite.html'>Federal Institute for Population Research (Bundesinstitut für Bevölkerungsforschung)</a> – 02|2022 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffektiveDatenkommunikation.pdf">&#x21aa; Slides (German)</a> &ensp; <a class='about-bold' href="https://www.cedricscherer.com/slides/BiB_2022_EffectiveDataCommunication.pdf">&#x21aa; Slides (English)</a></b></li>  
 

@@ -231,7 +231,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 <ul>
 
-  <li class='about'>“Engaging visualization design to succesfully communicate data.”<br>
+  <li class='about'>“Engaging visualization design to successfully communicate data.”<br>
   <span class='subline'><a href='https://en.malt.de/'>MALT Community</a> – 09|2022 – remote</span></li> 
 
   <li class='about'>“Effective data visualization: design graphics to tell stories in an engaging way.”<br>
