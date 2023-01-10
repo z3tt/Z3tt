@@ -14,8 +14,8 @@
 </div>
 
 <!--![](https://www.cedricscherer.com/img/banner/avatars-logo-cabinet.png)-->
-![](https://www.cedricscherer.com/img/banner/portfolio-banner-centered.png)
-![](https://www.cedricscherer.com/img/banner/github-banner.png)
+<a href="https://cedricscherer.com">![](https://www.cedricscherer.com/img/banner/portfolio-banner-centered.png)</a>
+<a href="https://calendly.com/cedricscherer/lets-meet">![](https://www.cedricscherer.com/img/banner/github-banner.png)</a>
 
 <div align="center">
   <br>
