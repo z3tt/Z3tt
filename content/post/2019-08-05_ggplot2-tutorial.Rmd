@@ -241,7 +241,7 @@ Each geom comes with its own properties (called *arguments*) and the same argume
 
 ```{r ggplot-default-line_col-size-shape}
 g + geom_point(color = "firebrick", shape = "diamond", size = 2) +
-    geom_line(color = "firebrick", linetype = "dotted", size = .3)
+    geom_line(color = "firebrick", linetype = "dotted", lwd = .3)
 ```
 
 
