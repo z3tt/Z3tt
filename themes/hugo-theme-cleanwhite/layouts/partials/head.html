@@ -16,7 +16,7 @@
       <meta name="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" >
     {{ end }}
 
-    <!-- {{ if eq .URL "/" }}
+    <!-- {{ if eq .RelPermalink "/" }}
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.cedricscherer.com/{{ .Site.Params.twitter_image }}" >
     {{ else }}
@@ -53,7 +53,7 @@
 
     <title>{{ if .Title }}{{ .Title }} - {{ .Site.Params.SEOTitle }}{{ else }}{{ .Site.Params.SEOTitle }}{{ end }}</title>
 
-    <link rel="canonical" href="{{ .URL | relURL }}">
+    <link rel="canonical" href="{{ .RelPermalink | relURL }}">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">

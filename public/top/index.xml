@@ -436,66 +436,66 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
-  
-
-
-&lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
-&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-
-
-&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
-
-&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
-
-&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
-    
-    &lt;div class=&#34;pswp__container&#34;&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
-    &lt;div class=&#34;pswp__top-bar&#34;&gt;
-      
-      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
-      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
-      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
-      
-      
-      &lt;div class=&#34;pswp__preloader&#34;&gt;
-        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
-          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
-            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
-      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
-    &lt;/button&gt;
-    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
-    &lt;/button&gt;
-    &lt;div class=&#34;pswp__caption&#34;&gt;
-      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
+ 
+ 
+ 
+   
+ 
+ 
+ &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+ 
+ 
+ &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+ &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+ &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+ 
+ 
+ &lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+ 
+ &lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+ 
+ &lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+     
+     &lt;div class=&#34;pswp__container&#34;&gt;
+       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+     
+     &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+     &lt;div class=&#34;pswp__top-bar&#34;&gt;
+       
+       &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+       &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+       &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+       &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+       &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+       
+       
+       &lt;div class=&#34;pswp__preloader&#34;&gt;
+         &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+           &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+             &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+       &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+     &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+     &lt;/button&gt;
+     &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+     &lt;/button&gt;
+     &lt;div class=&#34;pswp__caption&#34;&gt;
+       &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+ 
 &lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;afrozensus&#34;&gt;&lt;a href=&#34;https://afrozensus.de/reports/2020/&#34;&gt;Afrozensus 2020&lt;/a&gt; for EOTO e.V. &amp;amp; Citizens for Europe&lt;/h4&gt;
@@ -527,17 +527,6 @@ illustrating the demographic change in Germany over 30 years from various perspe
 		          &lt;p&gt;2 Report Abb 34 und 35 Diskriminierungserfahrungen Kunst Freizeit&lt;/p&gt;
 			      &lt;/figcaption&gt;
 				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-afrozensus//2_Report_Abb_34_und_35_Diskriminierungserfahrungen_Kunst_Freizeit.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-				  &lt;/figure&gt;
-				&lt;/div&gt;
-				&lt;div class=&#34;box&#34;&gt;
-				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/gallery-afrozensus//3_Report_Abb_80_AZ_Diskriminierungsmerkmale_alle_Lebensbereiche-thumb.jpg&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/gallery-afrozensus//3_Report_Abb_80_AZ_Diskriminierungsmerkmale_alle_Lebensbereiche-thumb.jpg&#34; alt=&#34;3 Report Abb 80 AZ Diskriminierungsmerkmale alle Lebensbereiche&#34; /&gt;
-				    &lt;/div&gt;
-			      &lt;figcaption&gt;
-		          &lt;p&gt;3 Report Abb 80 AZ Diskriminierungsmerkmale alle Lebensbereiche&lt;/p&gt;
-			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://cedricscherer.com/img/gallery-afrozensus//3_Report_Abb_80_AZ_Diskriminierungsmerkmale_alle_Lebensbereiche.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
@@ -608,9 +597,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Are you looking for a dataviz designer?&lt;br&gt;
@@ -755,9 +744,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 
 &lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;challenges&#34;&gt;Challenge Contributions&lt;/h2&gt;
@@ -1004,9 +993,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;p&gt;  →  &lt;a href=&#34;https://github.com/Z3tt/TidyTuesday&#34;&gt;all my contributions to #TidyTuesday&lt;/a&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
@@ -1120,9 +1109,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;p&gt;  →  &lt;a href=&#34;https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/&#34;&gt;all my contributions to the #30DayChartChallenge 2021&lt;/a&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
@@ -1336,9 +1325,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;You need some map design?&lt;br&gt;
@@ -1486,9 +1475,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;p&gt;  →  &lt;a href=&#34;https://github.com/Z3tt/30DayMapChallenge&#34;&gt;all my contributions to the 2019 edition&lt;/a&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
@@ -1538,9 +1527,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;h5 id=&#34;makeovermonday&#34;&gt;MakeoverMonday&lt;/h5&gt;
 &lt;p&gt;
@@ -1582,9 +1571,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;personal&#34;&gt;Personal Projects&lt;/h2&gt;
@@ -1696,9 +1685,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 				&lt;/div&gt;
 &lt;/div&gt;
  
-
-
-
+ 
+ 
+ 
 &lt;/p&gt;
 &lt;div class=&#39;highlightbox&#39;&gt;
   &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
@@ -2120,7 +2109,7 @@ My ORCID ID is &lt;a href=&#34;https://orcid.org/0000-0003-0465-2543&#34;&gt;000
 &lt;li&gt;&lt;a href=&#34;#aft&#34;&gt;AFT (Animal Functional Type Approach)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;biomove&#34;&gt;BioMove (PhD Thesis)&lt;/h4&gt;
-&lt;p&gt;The &lt;a href=&#34;https://www.dfg.de/en/funded_projects/current_projects_programmes/list/index.jsp?id=GRK&#34;&gt;DFG&lt;/a&gt; funded Research Training Group &lt;a href=&#34;https://www.biomove.org/&#34;&gt;&amp;lsquo;Integrating &lt;strong&gt;Biodiversity Research&lt;/strong&gt; with &lt;strong&gt;Movement Ecology&lt;/strong&gt; in dynamic agricultural landscapes (BioMove)&#39;&lt;/a&gt; aims to:&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.dfg.de/en/funded_projects/current_projects_programmes/list/index.jsp?id=GRK&#34;&gt;DFG&lt;/a&gt; funded Research Training Group &lt;a href=&#34;https://www.biomove.org/&#34;&gt;&amp;lsquo;Integrating &lt;strong&gt;Biodiversity Research&lt;/strong&gt; with &lt;strong&gt;Movement Ecology&lt;/strong&gt; in dynamic agricultural landscapes (BioMove)&amp;rsquo;&lt;/a&gt; aims to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;link innovative individual research projects that overcome the apparent gap between movement ecology and biodiversity research, employing a joint conceptual framework;&lt;/p&gt;

@@ -12,28 +12,27 @@ A detailed overview of my achievements to date:
 
 ## Peer-Reviewed Publications {#publications}
 
-You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra) and [ResearchGate](https://www.researchgate.net/profile/Cedric_Scherer/contributions).  
-My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
+My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543). You can also find me on [Google Scholar](https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra).
 
 <ul>
-  <li class='about'><span class='authors'>C Voigt, <u style='font-weight:700;'>C Scherer</u> & V Runkel</span> (2022)</span> Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines.<br>
-  <a href='https://doi.org/10.1111/csp2.12841#'><i>Conservation Science and Practice</i></a> <b>4</b>:e12841.</li>  
+  <li class='about'><span class='authors'>S Drenske, V Radchuk, <u style='font-weight:700;'>C Scherer</u>, C Esterer, I Kowarik, J Fritz & S Kramer-Schadt</span> (2023) On the road to self-sustainability: Reintroduced migratory European northern bald ibises <i>Geronticus eremita</i> still need management interventions for population viability. <a href='https://doi.org/10.1017/S0030605322000540'><i>ORYX</i>:1-12</li></a>
+  
+  <li class='about'><span class='authors'>C Voigt, <u style='font-weight:700;'>C Scherer</u> & V Runkel</span> (2022) Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines. <a href='https://doi.org/10.1111/csp2.12841#'><i>Conservation Science and Practice</i> <b>4</b>:e12841</li> </a> 
 
-
-  <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022)</span> A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research.<br>
-  <a href='https://doi.org/10.1371/journal.pcbi.1010356'><i>PLOS Computational Biology</i> <b>18</b>(9):e1010356</a>.</li>  
+  <li class='about'><span class='authors'>L Figueiredo, <u style='font-weight:700;'>C Scherer</u> & JS Cabral</span> (2022) A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research.<br>
+  <a href='https://doi.org/10.1371/journal.pcbi.1010356'> <i>PLOS Computational Biology</i> <b>18</b>(9):e1010356</a></li>  
 
   <li class='about'><span class='authors'>L Marescot, M Franz, S Benhaiem, H Hofer, <u style='font-weight:700;'>C Scherer</u>, M East & S Kramer-Schadt</span> (2021)</span> ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. 
-  <a href='https://doi.org/10.1111/1365-2656.13555'><i>Journal of Animal Ecology</i> <b>90</b>(11):2523–2535</a>.</li>
+  <a href='https://doi.org/10.1111/1365-2656.13555'> <i>Journal of Animal Ecology</i> <b>90</b>(11):2523–2535</a></li>
 
   <li class='about'><span class='authors'>T Kürschner, <u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum & S Kramer-Schadt</span> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. 
-  <a href='https://doi.org/10.1002/ece3.7478'><i>Ecology and Evolution</i> <b>11</b>(10):5728–5741</a>.</li>  
+  <a href='https://doi.org/10.1002/ece3.7478'><i>Ecology and Evolution</i> <b>11</b>(10):5728–5741</a></li>  
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, H-H Thulke, M Lange, V Grimm & S Kramer-Schadt</span> (2020) Moving infections: Individual movement decisions drive disease persistence in spatially structured landscapes. 
-  <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b>(5):651–667</a>.</li>
+  <a href='https://doi.org/10.1111/oik.07002'><i>Oikos</i> <b>129</b>(5):651–667</a></li>
 
   <li class='about'><span class='authors'>U Schlägel, V Grimm, N Blaum, P Colangeli, M Dammhahn, J Eccard, S Hausmann, A Herde, H Hofer, J Joshi, S Kramer-Schadt, M Litwin, S Lozada-Gobilard, M Müller, T Müller, R Nathan, J Petermann, K Pirhofer-Walzl, V Radchuk, M Rillig, M Roeleke, M Schäfer, <u style='font-weight:700;'>C Scherer</u>, G Schiro, C Scholz, L Teckentrup, R Tiedemann, W Ullmann, C Voigt, G Weithoff & F Jeltsch</span> (2020) Movement-mediated community assembly and coexistence. 
-  <a href='https://doi.org/10.1111/brv.12600'><i>Biological Reviews</i> <b>95</b> (4):1073–1096</a>.</li>  
+  <a href='https://doi.org/10.1111/brv.12600'><i>Biological Reviews</i> <b>95</b> (4):1073–1096</a></li>  
 
   <li class='about'><span class='authors'>B Pietzsch, S Fiedler, K.G  Mertens, M Richter, <u style='font-weight:700;'>C Scherer</u>, K Widyastuti, M.-C Wimmler, L Zakharova & U Berger</span> (2020) Metamodels for evaluating, calibrating and applying agent-based models: a review. 
   <a href='http://doi.org/10.18564/jasss.4274'><i>Journal of Artificial Societies and Social Simulation</i> <b>23</b>(2):9</a>.</li>  
@@ -55,8 +54,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   
 </ul>
 
-<br>
-
 
 
 ## Book Chapters {#books}
@@ -67,13 +64,14 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 </ul>
 
-<br>
-
 
 
 ## Invited Talks {#talks}
 
 <ul>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
+  <span class='subline'><a href='https://foes.de/en-us/'>Forum Ökologisch-Soziale Marktwirtschaft e.V. (economic think tank)</a> – 01|2023 – remote</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href='https://en.malt.de/'>CAMeL Seminar at University of Pittsburgh</a> – 11|2022 – remote</span></li> 
@@ -163,13 +161,18 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 </ul>
 
-<br>
-
 
 
 ## Conducted Workshops & Trainings{#workshops}
 
 <ul>
+  
+  <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
+  <span class='subline'>4-Hour Workshop – <a href="https://www.informationisbeautifulawards.com/"<a href="https://www.datavisualizationsociety.org/">Data Visualization Society Masterclass</a> – 03|2023 – Berlin/remote</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/ggplot-dvs/slides.html">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ggplot-dvs">&#x21aa; Codes</a></b></li>
+
+  <li class='about'>“Reproducible data analysis with R”<br>
+  <span class='subline'>5-Day Workshop – <a href="https://tu-dresden.de/med/mf/msnz">Mildred Scheel Early Career Center, Faculty of Medicine, TU Dresden</a> – 02|2023 – Dresden, Germany</span></li>
 
   <li class='about'>“Data visualization design: inspiration and process”<br>
   <span class='subline'>1-Hour Webinar – <a href="https://octily.com/">Octily</a> – 12|2022 – remote</span></li>
@@ -181,7 +184,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
   <span class='subline'>2-Day Workshop – <a href='https://www.bsio-cancerschool.de/'>Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 12|2022 – Berlin, Germany</span></li>
   
   <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
-  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/">Data Visualization Society</a> – 11|2022 – Berlin/remote</span></li>
+  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/">Data Visualization Society</a> – 11|2022 – Washington D.C.</span></li>
   
   <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
   <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
@@ -296,7 +299,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 </ul>
 
-<br>
 
 ## Media Appearances {#media}
 
@@ -305,7 +307,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
 
-  <li class='about'><a href='(https://www.youtube.com/watch?v=kTtV2GRCkj0&list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-&index=32'>"One Chart At A Time – Episode 32: Beeswarm Charts”</a> as part of the <a href='https://www.youtube.com/playlist?list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-'>“One Chart At A Time” Series</a> by Jon Schwabisch</li>
+  <li class='about'><a href='(https://www.youtube.com/watch?v=kTtV2GRCkj0&list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-&index=32'>"One Chart At A Time – Episode 32: Beeswarm Charts”</a> as part of the <a href='https://www.youtube.com/playlist?list=PLfv89tPxlTiVIrwuSBCISiBaGSH1CJR5-'>“One Chart At A Time” Series</a> by Jon Schwabish</li>
 
 </ul>
 
@@ -314,7 +316,7 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 
 <ul>
 
-  <li class='about'><a href='https://policyviz.com/podcast/episode-212-dr-cedric-scherer/'>“PolicyViz Episode #212”</a> hosted by Jon Schwabisch</li>
+  <li class='about'><a href='https://policyviz.com/podcast/episode-212-dr-cedric-scherer/'>“PolicyViz Episode #212”</a> hosted by Jon Schwabish</li>
 
   <li class='about'><a href='https://www.buzzsprout.com/1174520/8969083'>“Die Sendung mit der Ziege: Lollipops und Regenwolken”</a> hosted by Dr. Madlen Ziege</li>
 
@@ -335,6 +337,8 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
 ##### Mentions
 
 <ul>
+
+  <li class='about'><a href='https://www.infoworld.com/article/3689971/data-workshops-for-ukraine-learn-a-skill-and-support-a-cause.html'>“Data Workshops for Ukraine: Learn a Skill and Support a Cause”</a> by Sharon Machlis</li>
 
   <li class='about'><a href='https://www.visualisingdata.com/2020/12/best-of-the-visualisation-web-september-2020/'>“Best of The Visualization Web September 2020”</a> by Andy Kirk highlighting the <a href='https://www.behance.net/gallery/100638417/Not-My-Cup-of-Coffee'>“Not My Cup of Coffee” graphic</a></li>
 
@@ -367,6 +371,6 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543).
     <li class='about'><a href='https://www.r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html'>“Line chart with labels at end of lines”</a></li>
   </ul>
 
-  <li class='about'><a href='https://policyviz.com/2020/12/07/r-learning-sprint/'>Jon Schwabisch's “R Sprint”</a> following my <a href='https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/'>extensive step-by-step ggplot2 tutorial</a></li>
+  <li class='about'><a href='https://policyviz.com/2020/12/07/r-learning-sprint/'>Jon Schwabish's “R Sprint”</a> following my <a href='https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/'>extensive step-by-step ggplot2 tutorial</a></li>
 
 </ul>
