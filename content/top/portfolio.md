@@ -169,10 +169,14 @@ My ORCID ID is [0000-0003-0465-2543](https://orcid.org/0000-0003-0465-2543). You
   
   <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
   <span class='subline'>4-Hour Workshop – <a href="https://www.informationisbeautifulawards.com/"<a href="https://www.datavisualizationsociety.org/">Data Visualization Society Masterclass</a> – 03|2023 – Berlin/remote</span><br>
-  <a class='about-bold' href="https://z3tt.github.io/ggplot-dvs/slides.html">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ggplot-dvs">&#x21aa; Codes</a></b></li>
+  <a class='about-bold' href="https://z3tt.github.io/ggplot-dvs/slides.html">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ggplot-dvs">&#x21aa; Course Materials</a></b></li>
 
   <li class='about'>“Reproducible data analysis with R”<br>
   <span class='subline'>5-Day Workshop – <a href="https://tu-dresden.de/med/mf/msnz">Mildred Scheel Early Career Center, Faculty of Medicine, TU Dresden</a> – 02|2023 – Dresden, Germany</span></li>
+
+  <li class='about'>“Color palette choice and customization in R and <code>ggplot2</code>”<br>
+  <span class='subline'>2-Hour Workshop – <a href="https://sites.google.com/view/dariia-mykhailyshyna/main/r-workshops-for-ukraine">Workshopos for Ukraine</a> – 02|2023 – remote</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/ukraine_colors_workshop/slides">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ukraine_colors_workshop">&#x21aa; Course Materials</a></b></li>
 
   <li class='about'>“Data visualization design: inspiration and process”<br>
   <span class='subline'>1-Hour Webinar – <a href="https://octily.com/">Octily</a> – 12|2022 – remote</span></li>
