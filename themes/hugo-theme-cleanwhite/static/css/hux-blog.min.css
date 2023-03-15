@@ -425,13 +425,13 @@ pre code{
 
 @media only screen and (min-width:768px){
   /*.navbar-custom .navbar-brand{
-    color:transparent;
+    color: transparent;
     background-image: linear-gradient(
-        to right,
-        #212121,
-        #212121 50%,
-        #fff 50%
-      );
+      to right,
+      #212121,
+      #212121 50%,
+      #fff 50%
+    );
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;

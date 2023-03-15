@@ -178,7 +178,7 @@ My ORCID ID is <a href="https://orcid.org/0000-0003-0465-2543" target="_blank">0
   <span class='subline'>5-Day Workshop – <a href="https://tu-dresden.de/med/mf/msnz" target="_blank">Mildred Scheel Early Career Center, Faculty of Medicine, TU Dresden</a> – 02|2023 – Dresden, Germany</span></li>
 
   <li class='about'>“Color palette choice and customization in R and <code>ggplot2</code>”<br>
-  <span class='subline'>2-Hour Workshop – <a href="https://sites.google.com/view/dariia-mykhailyshyna/main/r-workshops-for-ukraine" target="_blank">Workshops for Ukraine</a> – 02|2023 – remote</span><br>
+  <span class='subline'>2-Hour Workshop – <a href="https://sites.google.com/view/dariia-mykhailyshyna/main/r-workshops-for-ukraine" target="_blank">Workshops for Ukraine</a> – 01|2023 – remote</span><br>
   <a class='about-bold' href="https://z3tt.github.io/ukraine_colors_workshop/slides" target="_blank">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ukraine_colors_workshop" target="_blank">&#x21aa; Course Materials</a></b></li>
 
   <li class='about'>“Data visualization design: inspiration and process”<br>
