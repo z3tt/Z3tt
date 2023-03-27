@@ -201,66 +201,66 @@ qualitative&lt;/li&gt;
 				&lt;/div&gt;
 &lt;/div&gt;
  
- 
- 
- 
-   
- 
- 
- &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
- 
- 
- &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
- &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- 
- 
- &lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
- 
- &lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
- 
- &lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
-     
-     &lt;div class=&#34;pswp__container&#34;&gt;
-       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-     &lt;/div&gt;
-     
-     &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
-     &lt;div class=&#34;pswp__top-bar&#34;&gt;
-       
-       &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
-       &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
-       &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
-       &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
-       &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
-       
-       
-       &lt;div class=&#34;pswp__preloader&#34;&gt;
-         &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
-           &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
-             &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
-           &lt;/div&gt;
-         &lt;/div&gt;
-       &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
-       &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
-     &lt;/div&gt;
-     &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
-     &lt;/button&gt;
-     &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
-     &lt;/button&gt;
-     &lt;div class=&#34;pswp__caption&#34;&gt;
-       &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
-     &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;/div&gt;
- &lt;/div&gt;
- 
+
+
+
+  
+
+
+&lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 
 &lt;br&gt;&lt;/p&gt;
 &lt;h5 id=&#34;project-type&#34;&gt;Project Type&lt;/h5&gt;
@@ -1555,7 +1555,7 @@ R Session Info
 &lt;figcaption&gt;All 1,960 contributions (as of May 9) as stacked bar chart, per category.&lt;/figcaption&gt;
 &lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.&lt;/figcaption&gt;
-&lt;p&gt;By the way, for more charts about the #30DayChartChallenge, have a look at &lt;a href=&#34;https://github.com/gkaramanis/30DayChartChallenge&#34;&gt;Georgios Karamanis&amp;rsquo; collection of meta-contributions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By the way, for more charts about the #30DayChartChallenge, have a look at &lt;a href=&#34;https://github.com/gkaramanis/30DayChartChallenge&#34;&gt;Georgios Karamanis&#39; collection of meta-contributions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We have seen contributions from all around the world, using a wide variety of tools. It was also great to see the different approaches and interpretations of the topics. Many participants connected with each other and exchanged tips and tricks on finding data, chart types, and tools.&lt;/p&gt;
 &lt;p&gt;In personal notes, I am happy that I got to use different tools. Overall, I made 19 out of 30 charts with some drafts and ideas still laying arund. However, I often moved back to R when I realized that some things are not possible in one of the other tools (e.g. I started building the slope chart for day 5 in RAWGraphs but had no clue how to add a few labels, how to scale the colors etc.). I also sometimes had a hard time to move out of R after preparing the data for the other tools—for data preparation tasks R and the tidyverse will be my preferred tool, no interest and/or need to use Excel. So I ended up using &lt;code&gt;{ggplot}&lt;/code&gt; way more often than initially planned which was also due to time constraints.&lt;/p&gt;
 &lt;p&gt;The most difficult part was often to find data for the charts. But also I was more ambitious about both the data and the design than originally planned. While I aimed to make up data, at least from time to time, and focus on tools not the design bits, I had a grad time to remind myself to do so. The every day&amp;rsquo;s life of a perfectionist I guess ¯\_(ツ)_/¯&lt;/p&gt;
@@ -1574,7 +1574,7 @@ My contributions and codes (in case they were created with/in combination with R
       <description>&lt;p&gt;&lt;strong&gt;Uff, what a year! 366 days ago, most people &lt;a href=&#34;https://www.nytimes.com/issue/todaysheadlines/2020/01/01/todays-headlines&#34;&gt;did not expect 2020 to be that exhausting&lt;/a&gt;, emotionally and physically (and let&amp;rsquo;s hope for a better 2021—happy new year to you!). COVID19 was literally everywhere, whether in the media or affecting your personal life, and made it hard to focus and keep social contacts. Plus all the other things that were happening: starting off with the &lt;a href=&#34;https://www.cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/&#34;&gt;bushfires in Australia&lt;/a&gt;, the massive series of police brutality protests after the shocking death of George Floyd, tiring and everlasting Brexit negotiations, Trump&amp;rsquo;s madness reaching new levels, and all the news and uncertainty around COVID19 mutations circulating at the end of 2020.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Consequently, many people let the year end with a more or less cheerful&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;F*CK 2020!&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;F*CK 2020!&amp;quot;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;But that would be too easy and also ignorant. Even though it was a crazy and exhausting year, there were also some good and exiting things happening (I hope for you as well!). So I take a short break on New Year&amp;rsquo;s Day and look back at some of the positive moments of 2020 by focusing on my personal data visualization journey.&lt;/p&gt;
 &lt;ul&gt;
@@ -1688,7 +1688,7 @@ My contributions and codes (in case they were created with/in combination with R
 &lt;p&gt;How does this help? Here are two more examples showing the dramatic (and completely deserved) fall of ratings for the last season of “Game of Thrones” as well as the brilliant  “Bojack Horseman” that got better and better over time:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/got-bojack.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;figcaption&gt;Two trending stripes illustrating  completely different courses of ratings as the series progresses.&lt;/figcaption&gt;
-&lt;p&gt;While the line shows the absolute decrease or increase in rating across seasons, the colored stripes gives an idea how each episode performed relative to the series&amp;rsquo; average. Also, from the color intensity one can see that the worst episodes were far more off from the average rating than the best episodes in “Game of Thrones”, while there was not that much variation across episodes in “Bojack Horseman”.&lt;/p&gt;
+&lt;p&gt;While the line shows the absolute decrease or increase in rating across seasons, the colored stripes gives an idea how each episode performed relative to the series&#39; average. Also, from the color intensity one can see that the worst episodes were far more off from the average rating than the best episodes in “Game of Thrones”, while there was not that much variation across episodes in “Bojack Horseman”.&lt;/p&gt;
 &lt;p&gt;The idea is built upon a personal project that I started in March 2020 after visualizing &lt;a href=&#34;https://twitter.com/cedscherer/status/1242229041488433152&#34;&gt;IMDb ratings of &amp;ldquo;The Office&amp;rdquo; as contribution to #TidyTuesday&lt;/a&gt; but I never had the drive to finish. Here is a visualization from back then that served as inspiration:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/table-contest/2019_02_TVsGoldenAge_rel100_rank.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;figcaption&gt;Trends in season ratings for the top 100 of series comprising 3 to 12 seasons.&lt;/figcaption&gt;
@@ -1841,7 +1841,7 @@ You can find the codes for my submission to the &lt;a href=&#34;https://communit
 &lt;p&gt;Jake presented a similar design in combination with a geofacet of the United States a few weeks later as contribution to &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-07-23&#34;&gt;week 30 on wildlife strikes by aircrafts&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/best-tidytuesday-2019/jake_30.jpg&#34; alt=&#34;best-tidytuesday-2019-jake-week-30&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;ramen-ratings-by-georgios-karamanis&#34;&gt;Ramen Ratings by Georgios Karamanis&lt;/h3&gt;
-&lt;p&gt;Of course, &lt;a href=&#34;https://twitter.com/geokaramanis&#34;&gt;Georgios Karamanis&lt;/a&gt;&amp;rsquo; contributions also crossed my mind. Georgios started participating in 2019 and shared impressive visualization with a particular taste for artistic and creative design. I especially liked this simple but very well-designed contribution to week 23 on &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-04&#34;&gt;Ramen ratings&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Of course, &lt;a href=&#34;https://twitter.com/geokaramanis&#34;&gt;Georgios Karamanis&lt;/a&gt;&#39; contributions also crossed my mind. Georgios started participating in 2019 and shared impressive visualization with a particular taste for artistic and creative design. I especially liked this simple but very well-designed contribution to week 23 on &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-04&#34;&gt;Ramen ratings&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Instant ramen reviews by &lt;a href=&#34;https://twitter.com/theramenrater?ref_src=twsrc%5Etfw&#34;&gt;@theramenrater&lt;/a&gt; for &lt;a href=&#34;https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#TidyTuesday&lt;/a&gt;. Good luck reading the text, but couldn&amp;#39;t help it, it was too much fun making this plot!&lt;br&gt;&lt;br&gt;code: &lt;a href=&#34;https://t.co/jWEPqEefT7&#34;&gt;https://t.co/jWEPqEefT7&lt;/a&gt; &lt;a href=&#34;https://t.co/Rmb8Hslci6&#34;&gt;&lt;img src=&#34;https://cedricscherer.com/img/best-tidytuesday-2019/georgios_23.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;&amp;mdash; Georgios Karamanis (@geokaramanis) &lt;a href=&#34;https://twitter.com/geokaramanis/status/1136326761933955072?ref_src=twsrc%5Etfw&#34;&gt;June 5, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 Several other contributions by Georgios are on my list of favorites, including the fabulous small multiples of [Bob Ross paintings](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-06) and two—again simple but very clever—visualization of [Arcade game revenues](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-07-30) and [UFO sightings](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-06-25):
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/best-tidytuesday-2019/georgios_32.jpg&#34; alt=&#34;best-tidytuesday-2019-georgios-week-32&#34;&gt;
@@ -1866,7 +1866,7 @@ Several other contributions by Georgios are on my list of favorites, including t
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Quick and simple (but I think fun!) contribution for this week&amp;#39;s &lt;a href=&#34;https://twitter.com/hashtag/tidytuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#tidytuesday&lt;/a&gt;. &lt;br&gt;I plotted the age distribution of injuries as a rollercoaster 🎢. Main challenge: doing it without internet connection. Fake gridlines done w/ geom_linerange(), icons added w/ annotation_custom() 😬 &lt;a href=&#34;https://t.co/BGgQPq6gQ8&#34;&gt;&lt;img src=&#34;https://cedricscherer.com/img/best-tidytuesday-2019/ariane_37.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ariane Aumaitre (@ariamsita) &lt;a href=&#34;https://twitter.com/ariamsita/status/1171421023838687232?ref_src=twsrc%5Etfw&#34;&gt;September 10, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;p&gt;The clever use of pictograms can help to guide the reader. Another good example is her contribution to the Squirrel challenge:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/best-tidytuesday-2019/ariane_44.jpg&#34; alt=&#34;best-tidytuesday-2019-ariane-week-44&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I also would like to mention the contributions which are also contained in this blog post: Georgios&amp;rsquo; visualization of UFO sightings or my animated car race below. (However, the use of the Twitter logo to visualize sightings of European starlings may have the opposite effect and mislead the reader. At least, every time it takes a moment for me to realize that Christian is talking about real birds here.)&lt;/p&gt;
+&lt;p&gt;I also would like to mention the contributions which are also contained in this blog post: Georgios&#39; visualization of UFO sightings or my animated car race below. (However, the use of the Twitter logo to visualize sightings of European starlings may have the opposite effect and mislead the reader. At least, every time it takes a moment for me to realize that Christian is talking about real birds here.)&lt;/p&gt;
 &lt;h3 id=&#34;us-student-loan-debt-by-julia-watzek&#34;&gt;US Student Loan Debt by Julia Watzek&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/watzoever&#34;&gt;Julia Watzek&lt;/a&gt; has chosen two simple chart types to visualize &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-11-26&#34;&gt;student loan debt in the US&lt;/a&gt;: a line chart showing the outstanding debt over time (per quarter) and a stacked bar chart that gives more detailed insights on the paid debts by showing the proportion in total and for four different recovery methods:&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#TidyTuesday&lt;/a&gt; 2019-48 • US Student Loan Debt 🎓💸&lt;br&gt;&lt;br&gt;Not sure about all the loan terms, but 1st time using ggtext📦 was a success!&lt;br&gt;&lt;br&gt;Data: US Department of Education&lt;br&gt;Code: &lt;a href=&#34;https://t.co/XfnLSM55mu&#34;&gt;https://t.co/XfnLSM55mu&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/r4ds?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#r4ds&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#dataviz&lt;/a&gt; &lt;a href=&#34;https://t.co/VTKQFrA5aL&#34;&gt;&lt;img src=&#34;https://cedricscherer.com/img/best-tidytuesday-2019/julia_48.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;&amp;mdash; Julia Watzek (@watzoever) &lt;a href=&#34;https://twitter.com/watzoever/status/1199508300959752192?ref_src=twsrc%5Etfw&#34;&gt;November 27, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
