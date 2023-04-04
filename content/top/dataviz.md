@@ -1,18 +1,36 @@
-Selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
+# Data Visualization Gallery
+
+<style>
+  li:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  li:last-child {
+    margin-bottom: -15px;
+  }
+  h6 {
+    font-size:2.5rem;
+  }
+</style>
+
+Selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
 
 
-* [**Client Projects**](#clients)
+###### [Client Projects](#clients)
+
   * [Escalating Drought (Scientific American)](#SciAm)
   * [Q Vadis? Q Anon Activity on Telegram](#pyramids)
   * [Rediscovering Demographic Change](#pyramids)
   * [Afrozensus 2020](#afrozensus)
   * [Visualizations for Various Projects](#variousclients)
-* [**Challenge Contributions**](#challenges)
+
+###### [Challenge Contributions](#challenges)
+
   * [#TidyTuesday](#tidytuesday)
   * [#30DayChartChallenge](#chartchallenge)
   * [#30DayMapChallenge](#mapchallenge)
   * [Other Challenges](#miscchallenges)
-* [**Personal Projects**](#personal)
+
+###### [Personal Projects](#personal)
 <br>
 
 <hr>

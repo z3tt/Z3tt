@@ -1,4 +1,4 @@
-# Curriculum Vitae {#cv}
+# Curriculum Vitae
 
 <style>
   li:not(:last-child) {
@@ -308,13 +308,13 @@
 
   <li class='description'><b>Programming:</b> R, CSS, html, SQL/SQLite, NetLogo, Python</li>
 
-  <li class='description'><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), Excel, SPSS</li>
+  <li class='description'><b>Visualization:</b> R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highchartr), Figma, DataWrapper, Flourish, RAWgraphs, Highcharts, CartoDB</li>
 
   <li class='description'><b>GIS:</b> R (e.g. sf, stars, terra, raster, rgdal, rgeos, sp), QGIS, GRASS, ArcGIS</li>
 
-  <li class='description'><b>Visualization:</b> R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highchartr), Figma, DataWrapper, Flourish, RAWgraphs, Highcharts, CartoDB</li>
+  <li class='description'><b>Statistics:</b> R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), Excel, SPSS</li>
 
-  <li class='description'><b>Markup:</b> Markdown, R (e.g. Rmarkdown, blogdown, bookdown, xaringan), LaTeX</li>
+  <li class='description'><b>Markup (Reporting):</b> Markdown, R (e.g. Rmarkdown, blogdown, bookdown, xaringan), LaTeX</li>
 
 </ul>
 

@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/about/</guid>
-      <description>&lt;h2 id=&#34;hi-i-am-cédric&#34;&gt;Hi, I am Cédric.&lt;/h2&gt;
+      <description>&lt;h1 id=&#34;hi-i-am-cédric&#34;&gt;Hi, I am Cédric.&lt;/h1&gt;
 &lt;style&gt;
   li:not(:last-child) {
     margin-bottom: 3px;
@@ -200,7 +200,7 @@ If those published comments could be construed as a threat, and the perpetrator 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/cv/</guid>
-      <description>&lt;h1 id=&#34;cv&#34;&gt;Curriculum Vitae&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;curriculum-vitae&#34;&gt;Curriculum Vitae&lt;/h1&gt;
 &lt;style&gt;
   li:not(:last-child) {
     margin-bottom: 3px;
@@ -417,10 +417,10 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;ul&gt;
   &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Languages:&lt;/b&gt; German (native), English (fluent)&lt;/li&gt;
   &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Programming:&lt;/b&gt; R, CSS, html, SQL/SQLite, NetLogo, Python&lt;/li&gt;
-  &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Statistics:&lt;/b&gt; R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), Excel, SPSS&lt;/li&gt;
-  &lt;li class=&#39;description&#39;&gt;&lt;b&gt;GIS:&lt;/b&gt; R (e.g. sf, stars, terra, raster, rgdal, rgeos, sp), QGIS, GRASS, ArcGIS&lt;/li&gt;
   &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Visualization:&lt;/b&gt; R (e.g. ggplot2, Shiny, plotly, echarts4r, leaflet, tmap, gganimate, highchartr), Figma, DataWrapper, Flourish, RAWgraphs, Highcharts, CartoDB&lt;/li&gt;
-  &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Markup:&lt;/b&gt; Markdown, R (e.g. Rmarkdown, blogdown, bookdown, xaringan), LaTeX&lt;/li&gt;
+  &lt;li class=&#39;description&#39;&gt;&lt;b&gt;GIS:&lt;/b&gt; R (e.g. sf, stars, terra, raster, rgdal, rgeos, sp), QGIS, GRASS, ArcGIS&lt;/li&gt;
+  &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Statistics:&lt;/b&gt; R (e.g. lm4, glmmTMB, CARBayesST, adehabitat, broom, tidytext, tidymodels), Excel, SPSS&lt;/li&gt;
+  &lt;li class=&#39;description&#39;&gt;&lt;b&gt;Markup (Reporting):&lt;/b&gt; Markdown, R (e.g. Rmarkdown, blogdown, bookdown, xaringan), LaTeX&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;services&#34;&gt;Memberships &amp;amp; Services&lt;/h3&gt;
@@ -598,9 +598,20 @@ If those published comments could be construed as a threat, and the perpetrator 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/top/dataviz/</guid>
-      <description>&lt;p&gt;Selected static data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#clients&#34;&gt;&lt;strong&gt;Client Projects&lt;/strong&gt;&lt;/a&gt;
+      <description>&lt;h1 id=&#34;data-visualization-gallery&#34;&gt;Data Visualization Gallery&lt;/h1&gt;
+&lt;style&gt;
+  li:not(:last-child) {
+    margin-bottom: 3px;
+  }
+  li:last-child {
+    margin-bottom: -15px;
+  }
+  h6 {
+    font-size:2.5rem;
+  }
+&lt;/style&gt;
+&lt;p&gt;Selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.&lt;/p&gt;
+&lt;h6 id=&#34;client-projectsclients&#34;&gt;&lt;a href=&#34;#clients&#34;&gt;Client Projects&lt;/a&gt;&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#SciAm&#34;&gt;Escalating Drought (Scientific American)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#pyramids&#34;&gt;Q Vadis? Q Anon Activity on Telegram&lt;/a&gt;&lt;/li&gt;
@@ -608,18 +619,15 @@ If those published comments could be construed as a threat, and the perpetrator 
 &lt;li&gt;&lt;a href=&#34;#afrozensus&#34;&gt;Afrozensus 2020&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#variousclients&#34;&gt;Visualizations for Various Projects&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#challenges&#34;&gt;&lt;strong&gt;Challenge Contributions&lt;/strong&gt;&lt;/a&gt;
+&lt;h6 id=&#34;challenge-contributionschallenges&#34;&gt;&lt;a href=&#34;#challenges&#34;&gt;Challenge Contributions&lt;/a&gt;&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#tidytuesday&#34;&gt;#TidyTuesday&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#chartchallenge&#34;&gt;#30DayChartChallenge&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#mapchallenge&#34;&gt;#30DayMapChallenge&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#miscchallenges&#34;&gt;Other Challenges&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#personal&#34;&gt;&lt;strong&gt;Personal Projects&lt;/strong&gt;&lt;/a&gt;
-&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h6 id=&#34;personal-projectspersonal&#34;&gt;&lt;a href=&#34;#personal&#34;&gt;Personal Projects&lt;/a&gt;&lt;/h6&gt;
+&lt;br&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;clients&#34;&gt;Client Projects&lt;/h2&gt;
 &lt;h4 id=&#34;SciAm&#34;&gt;&lt;a href=&#34;https://www.scientificamerican.com/article/climate-change-drives-escalating-drought&#34;&gt;Escalating Drought&lt;/a&gt; for Scientific American&lt;/h4&gt;

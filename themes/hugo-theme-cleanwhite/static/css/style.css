@@ -105,13 +105,13 @@
   text-decoration:none
 }
 .sidebar-container a{
-  color:#9a9a9a!important
+  color:#8a8a8a!important
 }
 .sidebar-container a:hover,.sidebar-container a:active{
   color:#28a87d!important
 }
 .sidebar-container .tags a{
-  border-color:#9a9a9a;
+  border-color:#8a8a8a;
   font-size:1.2rem;
   margin-right:1px;
   margin-bottom:3px;
