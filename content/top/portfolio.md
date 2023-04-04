@@ -77,7 +77,7 @@ My ORCID ID is <a href="https://orcid.org/0000-0003-0465-2543" target="_blank">0
   <span class='subline'><a href="https://foes.de/en-us/" target="_blank">Forum Ökologisch-Soziale Marktwirtschaft e.V. (economic think tank)</a> – 01|2023 – remote</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
-  <span class='subline'><a href="https://en.malt.de/" target="_blank">CAMeL Seminar at University of Pittsburgh</a> – 11|2022 – remote</span></li> 
+  <span class='subline'><a href="http://psychology.pitt.edu/graduate/camel" target="_blank">CAMeL Seminar at University of Pittsburgh</a> – 11|2022 – remote</span></li> 
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href="https://en.malt.de/" target="_blank">MALT Community</a> – 09|2022 – remote</span></li> 
@@ -166,12 +166,12 @@ My ORCID ID is <a href="https://orcid.org/0000-0003-0465-2543" target="_blank">0
 
 
 
-## Conducted Workshops & Trainings{#workshops}
+## Conducted Workshops & Trainings {#workshops}
 
 <ul>
   
   <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
-  <span class='subline'>4-Hour Workshop – <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society Masterclass</a> – 03|2023 – Berlin/remote</span><br>
+  <span class='subline'>4-Hour Workshop – <a href="https://www.eventbrite.com/cc/dvs-masterclass-1933699" target="_blank">DVS Masterclass</a> presented by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 03|2023 – Berlin/remote</span><br>
   <a class='about-bold' href="https://z3tt.github.io/ggplot-dvs/slides.html" target="_blank">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ggplot-dvs" target="_blank">&#x21aa; Course Materials</a></b></li>
 
   <li class='about'>“Reproducible data analysis with R”<br>
@@ -209,7 +209,8 @@ My ORCID ID is <a href="https://orcid.org/0000-0003-0465-2543" target="_blank">0
   <span class='subline'>1.5-Day Workshop – <a href="https://www.idiv.de/en/ydiv.html" target="_blank">German Centre for Integrative Biodiversity Research (iDiv)</a> – 09|2022 – Leipzig, Germany</span></li>
 
   <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
-  <span class='subline'>2-Day Conference Workshop – <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf(2022)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 07|2022 – Washington, D.C., USA</span></li>
+  <span class='subline'>2-Day Conference Workshop – <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf(2022)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 07|2022 – Washington, D.C., USA</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/ukraine_colors_workshop/slides" target="_blank">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/" target="_blank">&#x21aa; Course Webpage</a></b></li>
 
   <li class='about'>“Data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
   <span class='subline'>1/2-Day Internal Training – <a href="https://www.rki.de/EN/Home/homepage_node.html" target="_blank">Robert-Koch-Institute (RKI)</a> – 06|2022 – Berlin, Germany</span></li>

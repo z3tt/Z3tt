@@ -18,6 +18,10 @@
  article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
    display:block
  }
+
+summary {
+  display: list-item;
+}
  
  cards,audio,canvas,progress,video{
    display:inline-block;
