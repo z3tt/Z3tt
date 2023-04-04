@@ -7,17 +7,20 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/ggplot-evolution/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Evolution of a ggplot (Ep. 1)</title>
-      <link>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</link>
+      <title>The Evolution of a ggplot</title>
+      <link>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</guid>
+      <guid>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot/</guid>
       <description>
 
 
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/evol-ggplot/evol-ggplot-1.gif&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;aim&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;🏁 Aim of this Tutorial&lt;/h3&gt;
+&lt;p&gt;In this blog post, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal is to provide a step-by-step tutorial explaining how my visualization evolves from a typical basic ggplot. All plots are created with 100% &lt;code&gt;{ggplot2}&lt;/code&gt; and 0% Inkscape.&lt;/p&gt;
+&lt;p&gt;We are going to transform a basic box plot into a compelling and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use &lt;a href=&#34;http://data.uis.unesco.org/index.aspx?queryid=180&#34;&gt;data provided by the UNESCO on global student to teacher ratios&lt;/a&gt; that was selected as data &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07&#34;&gt;for the #TidyTuesday challenge 19 of 2019&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#aim&#34;&gt;🏁 Aim of this Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#data&#34;&gt;🗃️ Data Preparation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#default&#34;&gt;🌱 The Default Boxplot&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#sort&#34;&gt;🔀 ️Sort Your Data!&lt;/a&gt;&lt;/li&gt;
@@ -27,35 +30,30 @@
 &lt;li&gt;&lt;a href=&#34;#text&#34;&gt;💬 Add Text Boxes to Let The Plot Speak for Itself&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;%7B#legend&#34;&gt;🗺️ Bonus: Add a Tile Map as Legend&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#final&#34;&gt;🎄 The Final Evolved Visualization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#code&#34;&gt;💻 Complete Code for Final Plot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#code&#34;&gt;💻 Complete Code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#ps&#34;&gt;📝 Post Scriptum: Mean versus Median&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div id=&#34;aim&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;🏁 Aim of this Tutorial&lt;/h3&gt;
-&lt;p&gt;In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% &lt;code&gt;{ggplot2}&lt;/code&gt; and 0% Inkscape.&lt;/p&gt;
-&lt;p&gt;In the first episode, I transform a basic box plot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use &lt;a href=&#34;http://data.uis.unesco.org/index.aspx?queryid=180&#34;&gt;data provided by the UNESCO on global student to teacher ratios&lt;/a&gt; that was selected as data &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07&#34;&gt;for the #TidyTuesday challenge 19 of 2019&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;data&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🗃️ Data Preparation&lt;/h3&gt;
 &lt;p&gt;I have prepared the data in the first way to map each country’s most recently reported student-teacher ratio in primary education as a tile map. I used the &lt;a href=&#34;%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22&#34;&gt;tile-based world data provided by Maarten Lambrechts&lt;/a&gt; to create this map as the first visualization for my weekly contribution:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2019-05-17_evol-ggplot-1_files/figure-html/map-students-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both data sets. If you would like to run the code yourself, you find the data preparation steps &lt;a href=&#34;https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11&#34;&gt;here&lt;/a&gt;. This is how the relevant columns of the merged and cleaned data set looks like, showing two examples per continent:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 12 x 5
-##    indicator         country                          region     stude~1 stude~2
-##    &amp;lt;chr&amp;gt;             &amp;lt;chr&amp;gt;                            &amp;lt;chr&amp;gt;        &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
-##  1 Primary Education Lesotho                          Africa        32.9    37.3
-##  2 Primary Education South Africa                     Africa        30.3    37.3
-##  3 Primary Education Bangladesh                       Asia          30.1    20.7
-##  4 Primary Education Viet Nam                         Asia          19.6    20.7
-##  5 Primary Education Ireland                          Europe        16.1    13.6
-##  6 Primary Education France                           Europe        18.2    13.6
-##  7 Primary Education Saint Vincent and the Grenadines North Ame~    14.4    17.7
-##  8 Primary Education Dominican Republic               North Ame~    18.9    17.7
-##  9 Primary Education Vanuatu                          Oceania       26.6    24.7
-## 10 Primary Education Solomon Islands                  Oceania       25.8    24.7
-## 11 Primary Education Argentina                        South Ame~    NA      19.4
-## 12 Primary Education Paraguay                         South Ame~    24.2    19.4
-## # ... with abbreviated variable names 1: student_ratio, 2: student_ratio_region&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 12 × 5
+##    indicator         country                          region        student_ratio student_ratio_region
+##    &amp;lt;chr&amp;gt;             &amp;lt;chr&amp;gt;                            &amp;lt;chr&amp;gt;                 &amp;lt;dbl&amp;gt;                &amp;lt;dbl&amp;gt;
+##  1 Primary Education Lesotho                          Africa                 32.9                 37.3
+##  2 Primary Education South Africa                     Africa                 30.3                 37.3
+##  3 Primary Education Bangladesh                       Asia                   30.1                 20.7
+##  4 Primary Education Viet Nam                         Asia                   19.6                 20.7
+##  5 Primary Education Ireland                          Europe                 16.1                 13.6
+##  6 Primary Education France                           Europe                 18.2                 13.6
+##  7 Primary Education Saint Vincent and the Grenadines North America          14.4                 17.7
+##  8 Primary Education Dominican Republic               North America          18.9                 17.7
+##  9 Primary Education Vanuatu                          Oceania                26.6                 24.7
+## 10 Primary Education Solomon Islands                  Oceania                25.8                 24.7
+## 11 Primary Education Argentina                        South America          NA                   19.4
+## 12 Primary Education Paraguay                         South America          24.2                 19.4&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;default&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;🌱 The Default Boxplot&lt;/h3&gt;
@@ -102,7 +100,7 @@ ggplot(df_sorted, aes(x = region, y = student_ratio)) +
 &lt;li&gt;add meaningful labels/removing useless labels by adding &lt;code&gt;labs(x = NULL, y = &#34;title y&#34;)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding &lt;code&gt;theme()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;💡 &lt;strong&gt;You can easily adjust all sizes of the theme by calling &lt;code&gt;theme_xyz(base_size = )&lt;/code&gt;—this is very handy if you need the same viz for a different purpose!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;You can easily adjust all sizes of the theme by calling &lt;code&gt;theme_*(base_size = )&lt;/code&gt;—this is very handy if you need the same viz for a different purpose!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;💡 &lt;strong&gt;Do not use &lt;code&gt;c(0, 0)&lt;/code&gt; since the zero tick is in most cases too close to the axis—use something close to zero instead!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I am going to save the ggplot call and all these visual adjustments in a &lt;code&gt;gg&lt;/code&gt; object that I name &lt;code&gt;g&lt;/code&gt; so we can use it for the next plots.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;theme_set(theme_light(base_size = 18, base_family = &amp;quot;Poppins&amp;quot;))
@@ -120,7 +118,7 @@ g &amp;lt;-
       panel.grid = element_blank()
     )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Even thought we already wrote a lot of code, the plot &lt;code&gt;g&lt;/code&gt; is just an empty plot until with a custom theme and pretty axes but actually not a “data visualization” yet.&lt;/p&gt;
-&lt;p&gt;(Note that to include these fonts we make use of the &lt;s&gt;&lt;a href=&#34;https://github.com/wch/extrafont&#34;&gt;&lt;code&gt;{extrafont}&lt;/code&gt; package&lt;/a&gt;&lt;/s&gt; &lt;s&gt;&lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;&lt;code&gt;{showtext}&lt;/code&gt; package&lt;/a&gt;&lt;/s&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/systemfonts/index.html&#34;&gt;{systemfonts} package&lt;/a&gt;. This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package &lt;code&gt;systemfonts&lt;/code&gt; installed. Read more about how to use custom fonts in &lt;a href=&#34;https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/&#34;&gt;this blog post by June Choe&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;(Note that to include these fonts we make use of the &lt;s&gt;&lt;a href=&#34;https://github.com/wch/extrafont&#34;&gt;&lt;code&gt;{extrafont}&lt;/code&gt; package&lt;/a&gt;&lt;/s&gt; &lt;s&gt;&lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;&lt;code&gt;{showtext}&lt;/code&gt; package&lt;/a&gt;&lt;/s&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/systemfonts/index.html&#34;&gt;{systemfonts} package&lt;/a&gt;. This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package &lt;code&gt;systemfonts&lt;/code&gt; installed. Read more about how to use custom fonts in &lt;a href=&#34;https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/&#34;&gt;this blog post by June Choe&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;geoms&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;📊 The Choice of the Chart Type&lt;/h3&gt;
@@ -292,7 +290,7 @@ And—oh my!—we almost forgot to mention and acknowledge the data source 😨 
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/tidytuesday/2019_19_StudentTeacher.png&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;code&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;💻 Complete Code for Final Plot&lt;/h3&gt;
+&lt;h3&gt;💻 Complete Code&lt;/h3&gt;
 &lt;p&gt;If you want to create the plot on your own or play around with the code, copy and paste these ~60 lines:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## packages
 library(tidyverse)

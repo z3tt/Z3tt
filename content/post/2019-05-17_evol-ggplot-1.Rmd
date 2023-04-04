@@ -1,12 +1,12 @@
 ---
-title: "The Evolution of a ggplot (Ep. 1)"
+title: "The Evolution of a ggplot"
 author: "Cédric"
 date: 2019-05-17
 image: img/banner/map-grid-artsy.png
 twitterImg: img/banner/map-grid-artsy.png
 layout: post
 showtoc: false
-description: "In this series of blog posts, I provide step-by-step tutorials explaining how my visualizations have evolved from a typical basic ggplot. In the first episode, I transform a basic boxplot into a colorful and self-explanatory combination of a jittered dot stripplot and a lollipop plot."
+description: "A step-by-step tutorial explaining how my visualizations have evolved from a typical basic ggplot. Here, I transform a basic boxplot into a compelling and self-explanatory combination of a jittered dot strip plot and a lollipop plot."
 tags: ["DataViz", "tutorial", "animations", "ggplot Evolution", "R", "ggplot2", "tidyverse", "TidyTuesday"]
 editor_options:
   chunk_output_type: inline
@@ -67,7 +67,12 @@ df_ratios <- df_students %>%
 
 ![](/img/evol-ggplot/evol-ggplot-1.gif)
 
-* [🏁 Aim of this Tutorial](#aim)
+### 🏁 Aim of this Tutorial {#aim}
+
+In this blog post, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal is to provide a step-by-step tutorial explaining how my visualization evolves from a typical basic ggplot. All plots are created with 100% `{ggplot2}` and 0% Inkscape.
+
+We are going to transform a basic box plot into a compelling and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [for the #TidyTuesday challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
+
 * [🗃️ Data Preparation](#data)
 * [🌱 The Default Boxplot](#default)
 * [🔀 ️Sort Your Data!](#sort)
@@ -77,15 +82,8 @@ df_ratios <- df_students %>%
 * [💬 Add Text Boxes to Let The Plot Speak for Itself](#text)
 * [🗺️ Bonus: Add a Tile Map as Legend]({#legend)
 * [🎄 The Final Evolved Visualization](#final)
-* [💻 Complete Code for Final Plot](#code)
+* [💻 Complete Code](#code)
 * [📝 Post Scriptum: Mean versus Median](#ps)
-
-
-### 🏁 Aim of this Tutorial {#aim}
-
-In this series of blog posts, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal of each blog post is to provide a step-by-step tutorial explaining how my visualization have evolved from a typical basic ggplot. All plots are going to be created with 100% `{ggplot2}` and 0% Inkscape.
-
-In the first episode, I transform a basic box plot into a colorful and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use [data provided by the UNESCO on global student to teacher ratios](http://data.uis.unesco.org/index.aspx?queryid=180) that was selected as data [for the #TidyTuesday challenge 19 of 2019](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07).
 
 ### 🗃️ Data Preparation {#data}
 
@@ -199,7 +197,7 @@ Let's spice this plot up! One great thing about `{ggplot2}` is that it is struct
 * add meaningful labels/removing useless labels by adding `labs(x = NULL, y = "title y")`
 * adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding `theme()`.
 
-💡 **You can easily adjust all sizes of the theme by calling `theme_xyz(base_size = )`—this is very handy if you need the same viz for a different purpose!**  
+💡 **You can easily adjust all sizes of the theme by calling `theme_*(base_size = )`—this is very handy if you need the same viz for a different purpose!**  
 
 💡 **Do not use `c(0, 0)` since the zero tick is in most cases too close to the axis—use something close to zero instead!**
 
@@ -224,7 +222,7 @@ g <-
 
 Even thought we already wrote a lot of code, the plot `g` is just an empty plot until with a custom theme and pretty axes but actually not a "data visualization" yet.  
 
-(Note that to include these fonts we make use of the <s>[`{extrafont}` package](https://github.com/wch/extrafont)</s> <s>[`{showtext}` package](https://github.com/yixuan/showtext)</s> [{systemfonts} package](https://cran.r-project.org/web/packages/systemfonts/index.html). This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package `systemfonts` installed. Read more about how to use custom fonts in [this blog post by June Choe](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/).)
+(Note that to include these fonts we make use of the <s>[`{extrafont}` package](https://github.com/wch/extrafont)</s> <s>[`{showtext}` package](https://github.com/yixuan/showtext)</s> [{systemfonts} package](https://cran.r-project.org/web/packages/systemfonts/index.html). This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package `systemfonts` installed. Read more about how to use custom fonts in [this blog post by June Choe](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/).
 
 
 ### 📊 The Choice of the Chart Type {#geoms}
@@ -588,7 +586,7 @@ Thanks for reading, I hope you've enjoyed it! Here you find [more visualizations
 ![](/img/tidytuesday/2019_19_StudentTeacher.png)
 
 
-### 💻 Complete Code for Final Plot {#code}
+### 💻 Complete Code {#code}
 
 If you want to create the plot on your own or play around with the code, copy and paste these ~60 lines:
 

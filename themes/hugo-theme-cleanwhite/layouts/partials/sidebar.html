@@ -116,7 +116,7 @@
           <h6>Quick Links</h6>
           <ul class="list-inline">
               {{ range .Site.Params.bookmark_link }}
-              <li><a target="_self" href="{{.href | relLangURL}}">{{.title}}</a></li>
+              <li><a target="_blank" href="{{.href | relLangURL}}">{{.title}}</a></li>
               {{ end }}
           </ul>
       </section>
@@ -151,6 +151,6 @@
             {{ end }}
         </ul>
     </section>
-            <div class='highlightbox' style='margin: 3.5rem 0;padding:1rem .3rem; box-shadow: 0 0 0 4pt #d9f6ec;' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';"><span class='highlight'><a style='font-size:1.75rem;' href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span></div>
     {{ end }}
+            <div class='highlightbox' style='margin: 3.5rem 0;padding:1rem .3rem; box-shadow: 0 0 0 4pt #d9f6ec;' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';"><span class='highlight'><a style='font-size:1.75rem;' href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span></div>
 </div>
