@@ -16,20 +16,20 @@
 <span style='font-size:2.2rem;'>As an <a href='https://www.cedricscherer.com/top/about/#dataviz'>independent data visualization designer</a>, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles</b> applying a <a href='https://www.cedricscherer.com/top/about/#codefirst'>code–first approach</a>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.</span><br>
 
 <span style='font-size:2.2rem;'>
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href='https://www.cedricscherer.com/top/dataviz'>Data Visualization Gallery</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;<a href='https://www.cedricscherer.com/top/cv'>Curriculum Vitae</a><br></span>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/top/dataviz'>Data Visualization Gallery</a><br>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/top/cv'>Curriculum Vitae</a><br></span>
 <br><br>
 
 <img src="/img/about/dataviz-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
 #### Data Visualization Design {#dataviz}
 
-I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and reproducible analysis.  
+I have been working as an independent data visualization specialist since the beginning of 2020. Since then I have worked for a large number of clients as a designer, consultant, analyst, and workshop instructor in the field of data visualization and information graphics as well as reproducible analysis and reporting.  
   
 I am constantly strengthening my skills in design and have built a diverse portfolio covering a wide range of topics, chart types, purposes, and tools by creating [commisioned work](https://cedricscherer.com/top/dataviz#clients), conducting [self-led personal projects](https://cedricscherer.com/top/dataviz#personal), and contributing to numerous data visualization challenges such as [#TidyTuesday](https://cedricscherer.com/top/dataviz#tidytuesday), [#30DayMapChallenge](https://cedricscherer.com/top/dataviz#mapchallenge), and [#30DayChartChallenge](https://cedricscherer.com/top/dataviz#chartchallenge). 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Check out my designs](https://www.cedricscherer.com/top/dataviz/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations) 
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Check out my designs](https://www.cedricscherer.com/top/dataviz/)  
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Watch my most-recent talks](https://www.cedricscherer.com/top/about/#presentations) 
 
 <div class='highlightbox'>
   <span class='highlight'>Want to hire me for a project or training?<br>
@@ -38,10 +38,10 @@ I am constantly strengthening my skills in design and have built a diverse portf
 
 #### Computational Ecology {#ecology}
 
-I am working as a scientific researcher (PostDoc) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
+I am working as a part-time scientific researcher (PostDoc) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Read my publications](https://www.cedricscherer.com/top/cv/#publications)  
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Read my publications](https://www.cedricscherer.com/top/cv/#publications)  
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
 
 #### Code–First Approach {#codefirst}
 
@@ -102,7 +102,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)<br>
   <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></li>
 
-  <p style='margin-top:25px;'>&rarr; <a href="https://www.cedricscherer.com/top/cv/#talks">Complete List of Presentations</a></p>
+  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#talks">Complete List of Talks and Presentations</a></p>
 
 </ul>
 
@@ -148,7 +148,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
 
-  <p style='margin-top:25px;'>&rarr; <a href="https://www.cedricscherer.com/top/cv/#teaching">Complete List of Workshops and Trainings</a></p>
+  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#teaching">Complete List of Workshops and Trainings</a></p>
 
 </ul>
 
@@ -180,6 +180,6 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <li class='about'><span class='authors'>M Sciaini, M Fritsch, <u style='font-weight:700;'>C Scherer</u> & CE Simpkins (2018)</span> <code>NLMR</code> and <code>landscapetools</code>: An integrated environment for simulating and modifying neutral landscape models in R.<br>
   <a class='subline' href="https://doi.org/10.1111/2041-210X.13076" target="_blank"><i>Methods in Ecology and Evolution</i> <b>9</b>(11):2240–2248</a></li>  
 
-  <p style='margin-top:25px;'>&rarr; <a href="https://www.cedricscherer.com/top/cv/#publications">Complete List of Publications</a></p>
+  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#publications">Complete List of Publications</a></p>
   
 </ul>
