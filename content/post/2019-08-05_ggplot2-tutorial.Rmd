@@ -2774,13 +2774,13 @@ It is amazingly easy to add smoothing to your data using `{ggplot2}`.
 
 ##### Default: Adding a LOESS or GAM Smoothing
 
-You can simply use `stat_smooth()`— not even a formula is required. This adds a LOESS (locally weighted scatter plot smoothing, `method = "loess"`) if you have fewer than 1000 points or a GAM (generalized additive model, `method = "gam"`) otherwise. Since we have more than 1000 points, the smoothing is based on a GAM:
+You can simply use `stat_smooth()`—not even a formula is required. This adds a LOESS (locally weighted scatter plot smoothing, `method = "loess"`) if you have fewer than 1000 points or a GAM (generalized additive model, `method = "gam"`) otherwise. Since we have more than 1000 points, the smoothing is based on a GAM:
 
 ```{r stat-smooth, message=TRUE}
 ggplot(chic, aes(x = date, y = temp)) +
-  labs(x = "Year", y = "Temperature (°F)") +
+  geom_point(color = "gray40", alpha = .5) +
   stat_smooth() +
-  geom_point(color = "gray40", alpha = .5)
+  labs(x = "Year", y = "Temperature (°F)") 
 ```
 💡 **In most cases one wants the points to be on top of the ribbon so make sure you always call the smoothing before you add the points.**
 
@@ -2790,10 +2790,10 @@ Though the default is a LOESS or GAM smoothing, it is also easy to add a standar
 
 ```{r LM}
 ggplot(chic, aes(x = temp, y = dewpoint)) +
-   labs(x = "Temperature (°F)", y = "Dewpoint") +
+   geom_point(color = "gray40", alpha = .5) +
    stat_smooth(method = "lm", se = FALSE,
                color = "firebrick", linewidth = 1.3) +
-   geom_point(color = "gray40", alpha = .5)
+   labs(x = "Temperature (°F)", y = "Dewpoint")
 ```
 
 
@@ -2802,31 +2802,31 @@ ggplot(chic, aes(x = temp, y = dewpoint)) +
 `{ggplot2}` allows you to specify the model you want it to use. Maybe you want to use a [polynomial regression](https://en.wikipedia.org/wiki/Polynomial_regression)?
 
 ```{r GAM-spec1}
-ggplot(chic, aes(x = o3, y = temp))+
-  labs(x = "Ozone Level", y = "Temperature (°F)") +
+ggplot(chic, aes(x = o3, y = temp)) +
+  geom_point(color = "gray40", alpha = .3) +
   geom_smooth(
     method = "lm",
     formula = y ~ x + I(x^2) + I(x^3) + I(x^4) + I(x^5),
     color = "black",
     fill = "firebrick"
   ) +
-  geom_point(color = "gray40", alpha = .3)
+  labs(x = "Ozone Level", y = "Temperature (°F)")
 ```
 
 <details>
-  <summary>&#128129; <i>Huh, `geom_smooth()`? There is an important difference between `geom` and `stat` layers but here it really doesn't matter which one you use. Expand to compare both.</i></summary>
+  <summary>&#128129; <i>Huh, `geom_smooth()`? There is an important difference between `geom` and `stat` but here it really doesn't matter which one you use. Expand to compare both.</i></summary>
 ```{r geom-stat-smooth-a}
-ggplot(chic, aes(x = o3, y = temp))+
-  labs(x = "Ozone Level", y = "Temperature (°F)") +
+ggplot(chic, aes(x = o3, y = temp)) +
+  geom_point(color = "gray40", alpha = .3) +
   geom_smooth(stat = "smooth") + ## the default
-  geom_point(color = "gray40", alpha = .3)
+  labs(x = "Ozone Level", y = "Temperature (°F)")
 ```
 
 ```{r geom-stat-smooth-b}
-ggplot(chic, aes(x = o3, y = temp))+
-  labs(x = "Ozone Level", y = "Temperature (°F)") +
+ggplot(chic, aes(x = o3, y = temp)) +
+  geom_point(color = "gray40", alpha = .3) +
   stat_smooth(geom = "smooth") + ## the default
-  geom_point(color = "gray40", alpha = .3)
+  labs(x = "Ozone Level", y = "Temperature (°F)")
 ```
 </details>
 
@@ -2837,7 +2837,6 @@ cols <- c("darkorange2", "firebrick", "dodgerblue3")
 
 ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = "gray40", alpha = .3) +
-  labs(x = "Year", y = "Temperature (°F)") +
   stat_smooth(aes(col = "1000"),
               method = "gam",
               formula = y ~ s(x, k = 1000),
@@ -2850,7 +2849,8 @@ ggplot(chic, aes(x = date, y = temp)) +
               method = "gam",
               formula = y ~ s(x, k = 10),
               se = FALSE, linewidth = .8) +
-  scale_color_manual(name = "k", values = cols)
+  scale_color_manual(name = "k", values = cols) +
+  labs(x = "Year", y = "Temperature (°F)")
 ```
 
 [↑ Jump back to Table of Content.](#toc)<br><br>
