@@ -236,7 +236,6 @@
       
       <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
       <description>
-&lt;script src=&#34;https://cedricscherer.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This blog post originally appeared as a &lt;a href=&#34;https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization&#34;&gt;guest post on the “Storytelling with Data” blog&lt;/a&gt; as part of the color series. Thanks again to Cole Knaflic and Mike Cisneros for inviting and motivating me as well as for your comments on the draft.&lt;/p&gt;
@@ -244,18 +243,18 @@
 &lt;p&gt;As we continue our exploration of color in data visualization this month, we are happy to share this guest post from notable #SWDchallenge contributor and community member Cédric Scherer. Before becoming a freelance data visualization specialist, Cédric was a trained ecologist, which required a unique combination of responsibilities: in addition to analysing and visualizing tons of animal data, he was also capturing foxes, raccoons, and hares in the wild! Now, he is combining his expertise in analysing and visualizing large data sets with his passion for design to create visualizations across all disciplines, purposes, and styles. We thank Cédric for sharing this post with us, and we hope you enjoy it!&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr /&gt;
-&lt;p&gt;&lt;span style=&#39;font-family:&#34;Canicule Display&#34;;font-size:2.85rem;font-weight:860;line-height:1.2;&#39;&gt;If you are only moved by color relationships, you are missing the point. I am interested in expressing the big emotions.&lt;/span&gt;&lt;span style=&#39;font-family:&#34;Canicule Display&#34;;font-size:2.85rem;font-weight:420;line-height:1.2;&#39;&gt; — Mark Rothko&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&#34;font-family:&amp;quot;Canicule Display&amp;quot;;font-size:2.85rem;font-weight:860;line-height:1.2;&#34;&gt;If you are only moved by color relationships, you are missing the point. I am interested in expressing the big emotions.&lt;/span&gt;&lt;span style=&#34;font-family:&amp;quot;Canicule Display&amp;quot;;font-size:2.85rem;font-weight:420;line-height:1.2;&#34;&gt; — Mark Rothko&lt;/span&gt;
+&lt;/p&gt;
 &lt;p&gt;As data visualization practitioners we are both engineers and designers. In our effort to create meaningful visualizations from our data, we transmit our message not only through the particular chart type and title we choose, but also through our choice of colors for the data itself and for any additional design elements. Whether intentional or not, the colors we use in any visualization inevitably spark emotions in our viewers.&lt;/p&gt;
 &lt;div id=&#34;warm-city-cold-city&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Warm city, cold city&lt;/h2&gt;
 &lt;p&gt;When designing my contribution to the &lt;a href=&#34;https://www.storytellingwithdata.com/blog/2019/9/3/swdchallenge-visualize-uncertainty&#34;&gt;#SWDchallenge of September 2019 on the topic “Visualizing Uncertainty”&lt;/a&gt;, I depicted the variation in monthly temperatures in my hometown of Berlin.&lt;/p&gt;
 &lt;p&gt;For me, it was straightforward to use a warm, reddish color palette and to display the temperature range in degrees of Celsius. To make it easily accessible for local people, I also created a version in German—and just for the sake of variety and to make them easily distinguishable at a glance, I created this version in a blue color scale.&lt;/p&gt;
 &lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092163899-E6CYKSAW3GJTJ9KEGFU0/daily-temps-in-berlin.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
-&lt;p&gt;
-&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+&lt;figcaption&gt;
 Variation in daily temperatures in Berlin, in English and German with two different color palettes.
 &lt;/figcaption&gt;
-&lt;/p&gt;
 &lt;p&gt;Without any intention, the two variations of my visualization triggered different emotional reactions. While the red chart likely leads you to think “Wow, Berlin summers are quite hot,” the blue version may push you to think of summers as rainy and rather cold.&lt;/p&gt;
 &lt;p&gt;In general, we should have in mind that different details might spark different emotions and expectations in our viewers. Some of these details will make it easier for them to understand the chart in the manner the designer intended.&lt;/p&gt;
 &lt;p&gt;In the above example, how people perceive the temperatures in Berlin depends on (at least) two different factors:&lt;/p&gt;
@@ -273,11 +272,9 @@ Variation in daily temperatures in Berlin, in English and German with two differ
 &lt;p&gt;We are used to attributing certain colors to specific objects and emotions. Most people expect the sea to be colored in blue on a map; a green ocean looks plain wrong to us. Similarly, humans perceive bright colors on elevation maps to represent a high altitude, with darker colors representing naturally low-lying and shady areas like valleys.&lt;/p&gt;
 &lt;p&gt;Temperatures are regularly displayed as a gradient from blue (cold) to red (hot). A famous example is this “warming stripes” design by Ed Hawkins:&lt;/p&gt;
 &lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092203312-8BKCNNOD9QA0GJUIULPP/hawkins-warming-stripes.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
-&lt;p&gt;
-&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+&lt;figcaption&gt;
 Warming stripes for 1850-2018 by Ed Hawkins, Climate Lab Book (4 December 2018).
 &lt;/figcaption&gt;
-&lt;/p&gt;
 &lt;p&gt;Most people around the globe likely agree on the blue-red gradient when it comes to temperatures, and in first looking at this visual, we naturally translate each stripe into a relative temperature (difference) along this gradient. A legend or annotations explaining the color gradient, while adding specificity and detail, would weaken the minimalist style of the visualization, which is communicating not through the precision of numbers but through the inherent emotional reaction to the rapid change from decades of cool blues to warm, intense reds. (Nevertheless, there is also &lt;a href=&#34;https://showyourstripes.info/&#34;&gt;a version with minimal labeling&lt;/a&gt;.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;colors-spark-emotions&#34; class=&#34;section level2&#34;&gt;
@@ -287,11 +284,9 @@ Warming stripes for 1850-2018 by Ed Hawkins, Climate Lab Book (4 December 2018).
 &lt;p&gt;When it comes to emotions, things might get a bit more difficult. In 2007’s &lt;a href=&#34;https://books.google.de/books/about/Introduction_to_Multimodal_Analysis.html?id=xSyDAAAACAAJ&amp;amp;redir_esc=y&#34;&gt;“Introduction to Multimodal Analysis”&lt;/a&gt;, author David Machin proposed that lightness, brightness, and saturation can communicate the level of seriousness, intensity, and emotional weight in a visual work. Dark and saturated colors are thus perceived as more dramatic and can evoke emotions such as sadness and anger, while bright and flat colors achieve the opposite effect.&lt;/p&gt;
 &lt;p&gt;Moreover, colors might be perceived differently in different cultures. A fantastic resource in this context is the &lt;a href=&#34;https://informationisbeautiful.net/visualizations/colours-in-cultures/&#34;&gt;“Colours in Culture” visualization&lt;/a&gt; by &lt;a href=&#34;http://davidmccandless.com/&#34;&gt;David McCandless&lt;/a&gt; and &lt;a href=&#34;https://alwayswithhonor.com/&#34;&gt;AlwaysWithHonor.com&lt;/a&gt;:&lt;/p&gt;
 &lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092245319-DMGBMO4S9R14G0A1LYTP/colours-in-culture-iib.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
-&lt;p&gt;
-&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+&lt;figcaption&gt;
 The visualization “Colours in Culture” by David McCandless and AlwaysWithHonor.com summarizes the meaning of colors across the world in a visually appealing way.
 &lt;/figcaption&gt;
-&lt;/p&gt;
 &lt;p&gt;We make use of these emotional values all the time, either with or without attention. Thus, I often come back to the “culture–color wheel” when designing visualizations since Cole showed it to me. We can see that Ed Hawkins’ use of red and blue is an emotionally good choice since the colors are interpreted as &lt;em&gt;heat&lt;/em&gt; [41] and &lt;em&gt;cold&lt;/em&gt; [10], respectively, in all cultures.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;bloody-red-covid-maps&#34; class=&#34;section level2&#34;&gt;
@@ -304,22 +299,18 @@ The visualization “Colours in Culture” by David McCandless and AlwaysWithHon
 &lt;p&gt;If you’re infected, you want to find yourself on a map as a blue (or orange, or beige, or purple…) dot, not as a “attention, danger, run!”-screaming red dot. Related, we show deaths in black, not red – it feels more respectful.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092295406-ER9FYEYQDE2U7LC6IYD8/covid-maps.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
-&lt;p&gt;
-&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+&lt;figcaption&gt;
 The famous COVID-19 tracker by the John Hopkins University using an “alien-death-blood visual identity” (&lt;a href=&#39;https://coronavirus.jhu.edu/map.html&#39;&gt;coronavirus.jhu.edu/map.html&lt;/a&gt;; Screenshot 2020-07-27) next to a map of confirmed COVID-19 cases by Datawrapper using more decent colors to avoid an emotion of fear (&lt;a href=&#39;blog.datawrapper.de/coronaviruscharts&#39;&gt;blog.datawrapper.de/coronaviruscharts&lt;/a&gt;; Screenshot 2020-07-27).
 &lt;/figcaption&gt;
-&lt;/p&gt;
 &lt;p&gt;In general, I try to avoid black backgrounds as often as possible, although I will use dark gray colors in those cases where dark scenery simply looks better. Light colors may in most cases be a better choice since the color represents truce [79], purity [67] and trust [80] — characteristics that we all certainly like to get as feedback on our data visualizations.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;colors-of-healing-visualizing-vaccinations&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Colors of healing: visualizing vaccinations&lt;/h2&gt;
 &lt;p&gt;As of this writing in June 2021, we are in a very different phase of COVID-19 pandemic than we were when those trackers were first launched in early 2020. While we are still collecting data on negative events like infections, hospitalizations, and deaths, our visualizations are now focusing more and more on the positive events: vaccinations and vaccination rates. Many of the charts and maps showing how countries perform on this metric are designed on light backgrounds.&lt;/p&gt;
 &lt;img src=&#34;https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1623092352309-DJIK4US9EJ0NJYTHS7MX/immunization-bars-and-waffles.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
-&lt;p&gt;
-&lt;figcaption class=&#34;small&#34; align=&#34;center&#34; style=&#34;color:#8c8c8c;font-style:italic;&#34;&gt;
+&lt;figcaption&gt;
 Some exemplary graphs from the “COVID-19 Impfdashboard” using moderate blue on light gray and white backgrounds. The chart is maintained by the German Federal Ministry of Health in collaboration with the Robert Koch-Institute (RKI) and was designed by Studio NAND and Moritz Stefaner.
 &lt;/figcaption&gt;
-&lt;/p&gt;
 &lt;p&gt;Let’s take a look at the wonderful &lt;a href=&#34;https://impfdashboard.de/&#34;&gt;COVID-19 vaccination dashboard&lt;/a&gt; by the German Federal Ministry of Health in collaboration with the Robert Koch-Institute (RKI). This dashboard shows vaccination rates in Germany with moderate blue graphs on a light background. Blue is a versatile color, representing many different values around the world. However, by intention or by chance, the designers’ choice of blue is a very good one: in Western cultures the color is not only attributed to cold but also to values such as healing, freedom and rationality.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;final-thoughts&#34; class=&#34;section level2&#34;&gt;

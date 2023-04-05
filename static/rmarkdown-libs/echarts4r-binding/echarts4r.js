@@ -56,6 +56,10 @@ HTMLWidgets.widget({
           mapboxgl.accessToken = x.mapboxToken;
         }
         
+        if(!x.mainOpts)
+          x.mainOpts = [];
+        x.mainOpts.renderer = x.renderer;
+
         chart = echarts.init(document.getElementById(el.id), x.theme, x.mainOpts);
         
         opts = evalFun(x.opts);
@@ -80,8 +84,18 @@ HTMLWidgets.widget({
           });
           
           chart.on("globalout", function(e){
-            Shiny.onInputChange(el.id + '_global_out' + ":echarts4rParse", e);
+            Shiny.onInputChange(el.id + '_global_out' + ":echarts4rParse", e, {priority: 'event'});
           });
+
+          if(x.hasOwnProperty('zr')){
+            chart.getZr().on("click", function(e){
+              delete e.stop;
+              delete e.topTarget;
+              delete e.target
+              delete e.event.path;
+              Shiny.setInputValue(el.id + '_clicked_zr' + ":echarts4rParse", e);
+            });
+          }
           
           if(x.hasOwnProperty('capture')){
             chart.on(x.capture, function(e){
@@ -197,11 +211,10 @@ HTMLWidgets.widget({
       },
 
       resize: function(width, height) {
+        if(!chart)
+          return;
 
-        if(chart){
-          chart.resize({width: width, height: height});
-        }
-
+        chart.resize({width: width, height: height});
       }
 
     };
@@ -343,11 +356,11 @@ if (HTMLWidgets.shinyMode) {
     function(data) {
       if (typeof chart != 'undefined') {
         $.ajax({ 
-          url: x.geoJSON, 
+          url: data.geoJSON, 
           dataType: 'json', 
-          async: x.mapAsync,
+          async: data.mapAsync,
           success: function(json){ 
-            echarts.registerMap(x.mapName, json);
+            echarts.registerMap(data.mapName, json);
           } 
         });
         

@@ -14,7 +14,9 @@ tags:
 showtoc: false
 ---
 
-During my after-thesis-vacation, I managed to tick off two long-term todo's on my list - set up a homepage and to participate in the [#TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday/blob/master/README.md) to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opportunity to do so!
+<p style="font-size:14px">Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a></p>
+
+**During my after-thesis-vacation, I managed to tick off two long-term todo's on my list - set up a homepage and to participate in the [#TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday/blob/master/README.md) to strengthen my data science and visualization skills and share my work and code tricks with the amazing Rstats community on Twitter. The #TidyTuesday challenge is a excellent opportunity to do so!**
 
 ### What is it about?
 

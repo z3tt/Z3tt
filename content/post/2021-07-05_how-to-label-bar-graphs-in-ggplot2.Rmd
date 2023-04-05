@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg
 library(systemfonts)
 ```
 
+<p style="font-size:14px">Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a></p>
+
 ##### Table of Content
 
 * [Introduction](#intro)

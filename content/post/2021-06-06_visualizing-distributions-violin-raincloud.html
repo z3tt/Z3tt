@@ -429,9 +429,9 @@ ggplot(data, aes(x = group, y = value)) +
 </div>
 <div id="polish" class="section level2">
 <h2>Next: Let Your Plot Shine</h2>
-<p>Stay tuned, in <s>the upcoming</s> <span style='color:#ff7202;'>a potential</span> follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:</p>
+<p>Stay tuned, in <s>the upcoming</s> <span style="color:#ff7202;">a potential</span> follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:</p>
 <p><img src="/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/unnamed-chunk-1-1.png" width="960" /></p>
-<p><strong>Note:</strong> Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot <a href='https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01' target = "_blank">in this gist</a>.</p>
+<p><strong>Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot <a href='https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01' target = "_blank">in this gist&lt;/a.</strong></p>
 <hr />
 <div id="footnotes" class="section level5">
 <h5><em>Footnotes</em></h5>
@@ -446,56 +446,39 @@ I personally doubt that the general audience is well aware of how to interpret b
 <summary style="font-size:10pt;">
 R Session Info
 </summary>
-<pre><code>## R version 4.1.0 (2021-05-18)
-## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 22621)
+<pre><code>## R version 4.2.2 (2022-10-31)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Ventura 13.2.1
 ## 
 ## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
-## [3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
-## [5] LC_TIME=German_Germany.1252    
-## system code page: 65001
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] ragg_1.2.2           colorspace_2.0-3     ggtext_0.1.1        
-##  [4] palmerpenguins_0.1.1 patchwork_1.1.2      forcats_0.5.2       
-##  [7] stringr_1.4.1        dplyr_1.0.9          purrr_0.3.4         
-## [10] readr_2.1.2          tidyr_1.2.0          tibble_3.1.8        
-## [13] ggplot2_3.3.6        tidyverse_1.3.2     
+##  [1] ragg_1.2.4           colorspace_2.1-0     ggtext_0.1.2         palmerpenguins_0.1.1 patchwork_1.1.2      forcats_0.5.2        stringr_1.5.0       
+##  [8] dplyr_1.1.0          purrr_1.0.1          readr_2.1.3          tidyr_1.3.0          tibble_3.1.8         ggplot2_3.4.0        tidyverse_1.3.2     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] fs_1.5.2             lubridate_1.8.0      gghalves_0.1.3      
-##  [4] httr_1.4.2           tools_4.1.0          backports_1.2.1     
-##  [7] bslib_0.4.0          utf8_1.2.2           R6_2.5.1            
-## [10] vipor_0.4.5          DBI_1.1.2            ggdist_3.2.0        
-## [13] withr_2.5.0          tidyselect_1.1.2     curl_4.3.2          
-## [16] compiler_4.1.0       textshaping_0.3.6    cli_3.3.0           
-## [19] rvest_1.0.2          xml2_1.3.3           labeling_0.4.2      
-## [22] bookdown_0.28        sass_0.4.2           scales_1.2.1        
-## [25] systemfonts_1.0.3    digest_0.6.29        rmarkdown_2.16      
-## [28] pkgconfig_2.0.3      htmltools_0.5.2      dbplyr_2.1.1        
-## [31] fastmap_1.1.0        highr_0.9            rlang_1.0.4         
-## [34] readxl_1.4.1         rstudioapi_0.14      jquerylib_0.1.4     
-## [37] farver_2.1.0         generics_0.1.3       jsonlite_1.7.2      
-## [40] googlesheets4_1.0.0  distributional_0.3.0 magrittr_2.0.3      
-## [43] Rcpp_1.0.7           ggbeeswarm_0.6.0     munsell_0.5.0       
-## [46] fansi_0.5.0          lifecycle_1.0.1      stringi_1.7.5       
-## [49] yaml_2.2.1           MASS_7.3-54          grid_4.1.0          
-## [52] crayon_1.5.1         haven_2.4.3          gridtext_0.1.4.9000 
-## [55] hms_1.1.2            magick_2.7.3         knitr_1.39          
-## [58] pillar_1.8.1         markdown_1.1         reprex_2.0.2        
-## [61] glue_1.6.2           evaluate_0.16        blogdown_1.11       
-## [64] modelr_0.1.8         vctrs_0.4.1          tzdb_0.1.2          
-## [67] tweenr_1.0.2         cellranger_1.1.0     gtable_0.3.0        
-## [70] polyclip_1.10-0      assertthat_0.2.1     cachem_1.0.6        
-## [73] xfun_0.31            ggforce_0.3.4        broom_1.0.0         
-## [76] googledrive_2.0.0    gargle_1.2.0         beeswarm_0.4.0      
-## [79] ellipsis_0.3.2</code></pre>
+##  [1] fs_1.5.2               lubridate_1.9.0        gghalves_0.1.4         httr_1.4.4             tools_4.2.2            backports_1.4.1       
+##  [7] bslib_0.4.2            utf8_1.2.2             R6_2.5.1               vipor_0.4.5            DBI_1.1.3              ggdist_3.2.0          
+## [13] withr_2.5.0            tidyselect_1.2.0       curl_4.3.3             compiler_4.2.2         textshaping_0.3.6      cli_3.5.0             
+## [19] rvest_1.0.3            xml2_1.3.3             labeling_0.4.2         bookdown_0.31          sass_0.4.4             scales_1.2.1          
+## [25] commonmark_1.8.1       systemfonts_1.0.4.9000 digest_0.6.31          rmarkdown_2.19         pkgconfig_2.0.3        htmltools_0.5.4       
+## [31] dbplyr_2.2.1           fastmap_1.1.0          highr_0.10             rlang_1.0.6            readxl_1.4.1           rstudioapi_0.14       
+## [37] jquerylib_0.1.4        farver_2.1.1           generics_0.1.3         jsonlite_1.8.4         googlesheets4_1.0.1    distributional_0.3.1  
+## [43] magrittr_2.0.3         Rcpp_1.0.9             ggbeeswarm_0.7.1       munsell_0.5.0          fansi_1.0.3            lifecycle_1.0.3       
+## [49] stringi_1.7.8          yaml_2.3.6             MASS_7.3-58.1          grid_4.2.2             crayon_1.5.2           haven_2.5.1           
+## [55] gridtext_0.1.5         hms_1.1.2              magick_2.7.3           knitr_1.41             pillar_1.8.1           markdown_1.4          
+## [61] reprex_2.0.2           glue_1.6.2             evaluate_0.19          blogdown_1.16          modelr_0.1.10          vctrs_0.5.2           
+## [67] tzdb_0.3.0             tweenr_2.0.2           cellranger_1.1.0       gtable_0.3.1           polyclip_1.10-4        assertthat_0.2.1      
+## [73] cachem_1.0.6           xfun_0.36              ggforce_0.4.1          broom_1.0.2            googledrive_2.0.0      gargle_1.2.1          
+## [79] beeswarm_0.4.0         timechange_0.1.1       ellipsis_0.3.2</code></pre>
 </details>
 </div>
 </div>

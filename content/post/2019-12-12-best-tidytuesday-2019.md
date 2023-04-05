@@ -14,6 +14,8 @@ tags:
 showtoc: false
 ---
 
+<p style="font-size:14px">Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a></p>
+
 At the end of an exiting second #TidyTuesday year, [Jon Harmon](https://twitter.com/JonTheGeek), host of the [TidyTuesday Podcast](https://www.tidytuesday.com/), asked on Twitter:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What was your favorite <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> dataset of 2019? What were some of your favorite visualizations? Why? Let me know with an @ or via <a href="https://twitter.com/hashtag/BestTidyTuesday2019?src=hash&amp;ref_src=twsrc%5Etfw">#BestTidyTuesday2019</a>!</p>&mdash; TidyTuesday Podcast (@tidypod) <a href="https://twitter.com/tidypod/status/1204975380416909312?ref_src=twsrc%5Etfw">December 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

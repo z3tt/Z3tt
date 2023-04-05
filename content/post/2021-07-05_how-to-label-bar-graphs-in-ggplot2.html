@@ -12,9 +12,11 @@ editor_options:
   chunk_output_type: inline
 ---
 
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
+<p style="font-size:14px">
+Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a>
+</p>
 <div id="table-of-content" class="section level5">
 <h5>Table of Content</h5>
 <ul>
@@ -39,11 +41,9 @@ editor_options:
 <p>Watching your <a href="https://www.youtube.com/watch?v=5KHvEXYtnOo">webinar about ggplot2 on UseR Oslo YouTube Channel</a>, I noticed some charts you made for a project called <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">‘Survey on contract termination during the COVID-19 pandemic for kuendigung.org’</a>.<br><br>Because they have many interesting aesthetic features, I started looking for source code on your <a href="https://github.com/z3tt">GitHub repo</a>, but I didn’t find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.</p>
 </blockquote>
 <img src="https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png" style="height: 100%; width: 100%; object-fit: contain;">
-<p>
-<figcaption class="small" align="center" style="color:#8c8c8c;font-style:italic;">
+<figcaption>
 The simple bar chart I made for <a href="https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/">kuendigung.org</a>. Note that this was a multiple choice question and thus the sum is larger than 100%.
 </figcaption>
-</p>
 <p>Specifically, the main things of interest where:</p>
 <ol style="list-style-type: decimal">
 <li>How to <strong>calculate the percentage values</strong>?<br>(Did you use a <code>{ggplot2}</code> function or calculate them manually?)</li>
@@ -86,7 +86,7 @@ mpg_sum &lt;- mpg %&gt;%
   )
 
 mpg_sum</code></pre>
-<pre><code>## # A tibble: 11 x 2
+<pre><code>## # A tibble: 11 × 2
 ##    manufacturer     n
 ##    &lt;fct&gt;        &lt;int&gt;
 ##  1 Dodge           21
@@ -102,9 +102,7 @@ mpg_sum</code></pre>
 ## 11 Jeep             6</code></pre>
 <p>Let’s check if our factor reordering worked:</p>
 <pre class="r"><code>levels(mpg_sum$manufacturer)</code></pre>
-<pre><code>##  [1] &quot;Other&quot;      &quot;Jeep&quot;       &quot;Nissan&quot;     &quot;Subaru&quot;     &quot;Hyundai&quot;   
-##  [6] &quot;Audi&quot;       &quot;Ford&quot;       &quot;Volkswagen&quot; &quot;Chevrolet&quot;  &quot;Toyota&quot;    
-## [11] &quot;Dodge&quot;</code></pre>
+<pre><code>##  [1] &quot;Other&quot;      &quot;Jeep&quot;       &quot;Nissan&quot;     &quot;Subaru&quot;     &quot;Hyundai&quot;    &quot;Audi&quot;       &quot;Ford&quot;       &quot;Volkswagen&quot; &quot;Chevrolet&quot;  &quot;Toyota&quot;     &quot;Dodge&quot;</code></pre>
 <p>Keep in mind that we have reversed the ordering since <code>{ggplot2}</code> plots factors from bottom to top when being mapped to <code>y</code>.</p>
 <hr />
 </div>
@@ -127,7 +125,7 @@ mpg_sum</code></pre>
   dplyr::mutate(perc = paste0(sprintf(&quot;%4.1f&quot;, n / sum(n) * 100), &quot;%&quot;))
 
 mpg_sum</code></pre>
-<pre><code>## # A tibble: 11 x 3
+<pre><code>## # A tibble: 11 × 3
 ##    manufacturer     n perc   
 ##    &lt;fct&gt;        &lt;int&gt; &lt;chr&gt;  
 ##  1 Dodge           21 &quot;17.9%&quot;
@@ -145,7 +143,7 @@ mpg_sum</code></pre>
 <pre class="r"><code>mpg_sum %&gt;% 
   ## add percentage label with `scales::percent()`
   dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))</code></pre>
-<pre><code>## # A tibble: 11 x 3
+<pre><code>## # A tibble: 11 × 3
 ##    manufacturer     n perc   
 ##    &lt;fct&gt;        &lt;int&gt; &lt;chr&gt;  
 ##  1 Dodge           21 &quot;17.9%&quot;
@@ -443,43 +441,35 @@ We could also add the “of all car models” bit to a bar that is short enough 
 <summary style="font-size:10pt;">
 R Session Info
 </summary>
-<pre><code>## R version 4.1.2 (2021-11-01)
-## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 19043)
+<pre><code>## R version 4.2.2 (2022-10-31)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Ventura 13.2.1
 ## 
 ## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
-## [1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
-## [3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
-## [5] LC_TIME=German_Germany.1252    
-## system code page: 65001
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] forcats_0.5.1     stringr_1.4.0     dplyr_1.0.7       purrr_0.3.4      
-##  [5] readr_2.0.2       tidyr_1.1.4       tibble_3.1.6      ggplot2_3.3.5    
-##  [9] tidyverse_1.3.1   systemfonts_1.0.3
+##  [1] forcats_0.5.2          stringr_1.5.0          dplyr_1.1.0            purrr_1.0.1            readr_2.1.3            tidyr_1.3.0           
+##  [7] tibble_3.1.8           ggplot2_3.4.0          tidyverse_1.3.2        systemfonts_1.0.4.9000
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.7        lubridate_1.8.0   assertthat_0.2.1  digest_0.6.29    
-##  [5] utf8_1.2.2        R6_2.5.1          cellranger_1.1.0  backports_1.2.1  
-##  [9] reprex_2.0.1      evaluate_0.14     highr_0.9         httr_1.4.2       
-## [13] blogdown_1.6      pillar_1.6.4      rlang_0.4.12      readxl_1.3.1     
-## [17] rstudioapi_0.13   jquerylib_0.1.4   rmarkdown_2.11    labeling_0.4.2   
-## [21] textshaping_0.3.6 munsell_0.5.0     broom_0.7.11      compiler_4.1.2   
-## [25] modelr_0.1.8      xfun_0.27         pkgconfig_2.0.3   htmltools_0.5.2  
-## [29] tidyselect_1.1.1  bookdown_0.24     fansi_0.5.0       crayon_1.4.2     
-## [33] tzdb_0.1.2        dbplyr_2.1.1      withr_2.4.3       grid_4.1.2       
-## [37] jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.1   DBI_1.1.2        
-## [41] magrittr_2.0.1    scales_1.1.1      cli_3.1.0         stringi_1.7.5    
-## [45] farver_2.1.0      fs_1.5.0          xml2_1.3.2        bslib_0.3.1      
-## [49] ellipsis_0.3.2    ragg_1.1.3        generics_0.1.1    vctrs_0.3.8      
-## [53] tools_4.1.2       glue_1.4.2        hms_1.1.1         fastmap_1.1.0    
-## [57] yaml_2.2.1        colorspace_2.0-2  rvest_1.0.2       knitr_1.36       
-## [61] haven_2.4.3       sass_0.4.0</code></pre>
+##  [1] lubridate_1.9.0     assertthat_0.2.1    digest_0.6.31       utf8_1.2.2          R6_2.5.1            cellranger_1.1.0    backports_1.4.1    
+##  [8] reprex_2.0.2        evaluate_0.19       highr_0.10          httr_1.4.4          blogdown_1.16       pillar_1.8.1        rlang_1.0.6        
+## [15] googlesheets4_1.0.1 readxl_1.4.1        rstudioapi_0.14     jquerylib_0.1.4     rmarkdown_2.19      labeling_0.4.2      textshaping_0.3.6  
+## [22] googledrive_2.0.0   munsell_0.5.0       broom_1.0.2         compiler_4.2.2      modelr_0.1.10       xfun_0.36           pkgconfig_2.0.3    
+## [29] htmltools_0.5.4     tidyselect_1.2.0    bookdown_0.31       fansi_1.0.3         crayon_1.5.2        tzdb_0.3.0          dbplyr_2.2.1       
+## [36] withr_2.5.0         grid_4.2.2          jsonlite_1.8.4      gtable_0.3.1        lifecycle_1.0.3     DBI_1.1.3           magrittr_2.0.3     
+## [43] scales_1.2.1        cli_3.5.0           stringi_1.7.8       cachem_1.0.6        farver_2.1.1        fs_1.5.2            xml2_1.3.3         
+## [50] bslib_0.4.2         ellipsis_0.3.2      ragg_1.2.4          generics_0.1.3      vctrs_0.5.2         tools_4.2.2         glue_1.6.2         
+## [57] hms_1.1.2           fastmap_1.1.0       yaml_2.3.6          timechange_0.1.1    colorspace_2.1-0    gargle_1.2.1        rvest_1.0.3        
+## [64] knitr_1.41          haven_2.5.1         sass_0.4.4</code></pre>
 </details>
 </div>
 </div>
