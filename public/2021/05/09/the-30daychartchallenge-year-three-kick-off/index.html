@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://cedricscherer.com/img/banner/stream.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/img/banner/challenge-kick-of-artsy.jpg" >
+    
+
+    
+
+    
+      <meta name="title" content="The #30DayChartChallenge Is Ready to Kick Off" />
+      <meta property="og:title" content="The #30DayChartChallenge Is Ready to Kick Off - Cédric Scherer" />
+      <meta property="twitter:title" content="The #30DayChartChallenge Is Ready to Kick Off - Cédric Scherer" />
+      <meta property="twitter:text:title" content="The #30DayChartChallenge Is Ready to Kick Off - Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="The #30DayChartChallenge is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate!">
+      <meta property="og:description" content="The #30DayChartChallenge is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate!" />
+      <meta property="twitter:description" content="The #30DayChartChallenge is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate!" />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>The #30DayChartChallenge Is Ready to Kick Off - Cédric Scherer</title>
+
+    <link rel="canonical" href="/2021/05/09/the-30daychartchallenge-year-three-kick-off/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='img/logo.png' width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/banner/challenge-kick-of-artsy.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/dataviz" title="DataViz">
+                            DataViz
+                        </a>
+                        
+                        <a class="tag" href="/tags/challenge" title="challenge">
+                            challenge
+                        </a>
+                        
+                        <a class="tag" href="/tags/30daychartchallenge" title="30DayChartChallenge">
+                            30DayChartChallenge
+                        </a>
+                        
+                        <a class="tag" href="/tags/community" title="community">
+                            community
+                        </a>
+                        
+                        <a class="tag" href="/tags/nightingale" title="Nightingale">
+                            Nightingale
+                        </a>
+                        
+                        <a class="tag" href="/tags/social-media" title="social media">
+                            social media
+                        </a>
+                        
+                    </div>
+                    <h1>The #30DayChartChallenge Is Ready to Kick Off</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			
+			Tuesday • March 28, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>This blog post originally appeared as a <a href="https://nightingaledvs.com/the-30daychartchallenge-year-three/">post on &ldquo;Nightingale&rdquo;</a>, the <a href="https://nightingaledvs.com/">journal of the Data Visualization Society</a>. Thanks to Claire Santos for all the helpful comments on and revisions of the draft!</p>
+<hr>
+<p><strong>The <a href='https://twitter.com/30daychartchall' style='font-weight:800;'>#30DayChartChallenge</a> is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. The challenge began in April 2021 and has continued every year since. Indeed, the third edition of the #30DayChartChallenge starts in a few days—and we have just shared this year’s prompts, if you want to get a head start!</strong></p>
+<p>Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate.</p>
+<h2 id="the-birth-of-the-30daychartchallenge">The Birth of the #30DayChartChallenge</h2>
+<p>The #30DayChartChallenge was inspired by the <a href="https://30daymapchallenge.com/">#30DayMapChallenge</a>, which was <a href="https://twitter.com/tjukanov/status/1187713840550744066">initiated by Topi Tjukanov in 2019</a> and focuses, as the name suggests, on creating 30 maps in 30 days, with a particular theme for each day. Those themes occasionally suggest a certain topic or data set, but many are open-ended—for example, the theme might be “experimental” or it might be a specific color or geometry. The #30DayMapChallenge attracts many participants, and also passive spectators, from around the world, who use a wide range of tools to create static, animated, and interactive maps on a diversity of topics.</p>
+<p>During the second edition of the map challenge in 2020, <a href="https://twitter.com/dr_xeo/status/1333479448746860544">Dominic Royé proposed to organize something similar</a> with a focus on all kinds of charts, not just maps. When <a href="https://twitter.com/dr_xeo/status/1333484208292044801">Dominic tagged me in this discussion</a>, I was a big fan of the idea and was all in. Both of us love maps and are skilled at creating spatial visualizations quickly, but for the many people who have never worked with spatial data, it seemed too difficult to find suitable data sources and navigate the quirks of map projections and unusual map types. Creating a similar challenge that was more open to the general data visualization community and that would allow for more flexibility in storytelling sounded like a great idea.</p>
+<p>At the beginning of 2021, Dominic and I began to organize the event and brainstorm the daily themes. We went back and forth on how to select the themes. One idea we had was to use only chart types as prompts; we also considered restricting the challenge to a single data set. In the end, we decided to allow for a lot of freedom, hoping to see a variety of interpretations by participants. We ended up grouping the prompts into five data visualization types, loosely following <a href="https://policyviz.com/2014/09/09/graphic-continuum">“The Graphic Continuum”</a> by Jonathan Schwabish and Severino Ribecca.</p>
+<p><img src="https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/image7.png" style="height: 100%; width: 100%; object-fit: contain;"><figcaption>The prompts of the first edition of the #30DayChartChallenge in 2021, grouped into five categories of data visualization types.</figcaption></p>
+<p>The 2021 challenge proved to be popular, with almost 2,000 data visualizations shared on Twitter with the hashtag #30DayChartChallenge. The daily, monthlong format is definitely demanding and time-consuming, so we did see a drop in contributions as the challenge progressed. Nevertheless, a number of participants showed incredible persistence and contributed all 30 days!</p>
+<p><img src="https://cedricscherer.com/img/chart-challenge/timeseries_category.png" style="height: 100%; width: 100%; object-fit: contain;"><figcaption>A visualization of all visualizations shared on Twitter with the hashtag #30DayChartChallenge in 2021. The bars are grouped by categories and made up from the 1,960 individual contributions.</figcaption></p>
+<h2 id="the-challenge-matures">The Challenge Matures</h2>
+<p>For the 2022 challenge, we adjusted the prompts a bit but stayed with the five main categories. We replaced some prompts for the sake of variety, especially for people who were participating for the second time. We also introduced two new types of prompts—“data days” and “theme days”—which provided specific data source and design theme prompts. The goal of “data days” and “theme days” was to make it easier for people to participate by reducing the need to come up with their own data and visualization styles every day.</p>
+<p>We also liked the idea of being able to compare submissions that all used the same data source or design aesthetic. Our two theme days in 2022 prompted participants to create charts in two distinctive newsroom styles—a distribution chart styled as in The Economist, and a time series styled as in the Financial Times.</p>
+<h2 id="the-third-edition-is-happening-now">The Third Edition is Happening Now!</h2>
+<p>The third edition of the #30DayChartChallenge will begin on April 1. This year’s challenge follows the same approach as in 2022, with some new topics and dedicated data and theme days.</p>
+<p><img src="https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/image1.png" style="height: 100%; width: 100%; object-fit: contain;"><figcaption>The prompts of the upcoming 3rd edition featuring dedicated data and theme days on the last day of each category.</figcaption></p>
+<p>The data days cover the fantastic open-data portals by <a href="https://ourworldindata.org/">OurWorldInData</a>, <a href="https://ec.europa.eu/eurostat">EuroStat</a>, and the <a href="https://data.worldbank.org/">World Bank</a>. The theme days feature the popular <a href="https://www.bbc.com/news/11628973">BBC News</a> and <a href="https://www.unwomen.org/en/digital-library/multimedia/2020/2/infographic-visualizing-the-data-womens-representation">UN Women</a>.</p>
+<p><img src="https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/UNWomen.png" style="height: 100%; width: 100%; object-fit: contain;"><figcaption>Two screenshots of animations visualizing data on “Women’s representation in society” from UN Women, the United Nations entity dedicated to gender equality and the empowerment of women.</figcaption></p>
+<h2 id="the-value-and-challenge-of-challenges">The Value and Challenge of Challenges</h2>
+<p>After two years of organizing the #30DayChartChallenge, we can confidently say that challenges like this one are a great way to practice and experiment with data visualization design, test new tools and data sources, build a portfolio, share work publicly and receive feedback, interact with like-minded people, and most importantly be creative and have fun. The feedback from both contributors and spectators in previous years has been largely positive. We saw many supportive conversations happening around participants’ data visualizations, chart types, suitability of tools for a certain task, and design choices.</p>
+<p><img src="https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/Feedback-1.png" style="height: 100%; width: 100%; object-fit: contain;"><figcaption>Examples of positive feedback and support throughout the challenge on Twitter.</figcaption></p>
+<p>Nevertheless, some critical voices also spoke up and made me think about the trade-off between the benefits of challenges like this one and their potential harms. For example, one comment read:</p>
+<blockquote>
+<p>I don’t want to criticise the challenge, a lot of people will learn a ton from participating and seeing the output. But it does bother me that the daily pressure can easily lead to false claims or misleading charts. In my view, if you put a chart out there, you have a responsibility of being truthful, or at least as truthful as possible. And that takes time, as any data journalist will tell you. So I feel there is a mismatch between the format of a challenge and the craft of making dataviz.∂</p>
+</blockquote>
+<p>Creating a visualization in a short time, especially if you are working on it outside of a regular job and family or other duties, is definitely hard; it’s true that the time available to spend on data exploration, research, and validation is limited. However, we experienced that participants in general seemed very open and honest about the potential limitations of their data sources and visualizations. When something was unintentionally wrong in their first iteration, they often shared an updated version later.</p>
+<p>Nevertheless, this is a valid criticism and we, Dominic and I as organizers, but also we as a community, have to keep this in mind. Most importantly, we need to be careful when creating and sharing our own visualizations and chime in if we spot something potentially misleading or suspicious.</p>
+<p>However, we are convinced that the value of these challenges are manifold, from education to building future interest in your work. Problems of sloppy chart design and data sources used to support false claims are broader issues not unique to challenges like the #30DayMapChallenge, though they certainly warrant continued discussion and consideration.</p>
+<h2 id="highlights-from-the-previous-editions">Highlights From the Previous Editions</h2>
+<p>We saw a ton of visualizations shared through the challenge, many of them quite well executed and creative. While the number of great visualizations is too many to feature in this article, I want to highlight a few that stuck with me. (You can check out more using the hashtag <a href="https://twitter.com/hashtag/30DayChartChallenge?src=hashtag_click">#30DayChartChallenge</a> on social media.)</p>
+<p>Join us for the 2023 Challenge, and let’s see what you can create!</p>
+<p><img src="https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/Submissions_sm.png" style="height: 100%; width: 100%; object-fit: contain;"><figcaption>Examples of memorable submissions demonstrating a variety of approaches, tools, and data.</figcaption></p>
+<h3 id="acknowledgements">Acknowledgements</h3>
+<p>First of all I want to thank Dominic who came up with the idea and invited me to join him as a co-founder. Also, thanks to Wendy Shijia, Marco Sciaini and Paula Casado for your support with organizing the challenge. A special shout-out to Topi Tjukanov for creating the #30DayMapChallenge, which served as the template for our challenge. Thank you for this fun project that allowed me to strengthen my spatial data visualization skills and was and remains a steady source of inspiration! And of course, a big thank you to everyone participating in the challenge, watching and sharing the contributions, and providing feedback and praise!</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/" data-toggle="tooltip" data-placement="top" title="2-Day Workshop on &#34;Graphic Design with ggplot2&#34; at rstudio::conf 2022">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                  <hr class="hidden-sm hidden-xs">
+                  <br>
+                    <h6>Featured Tags</h6>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/30daychartchallenge" title="30daychartchallenge">
+                            30daychartchallenge
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/animations" title="animations">
+                            animations
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/berlin" title="berlin">
+                            berlin
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/challenge" title="challenge">
+                            challenge
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/covid19" title="covid19">
+                            covid19
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/dataviz" title="dataviz">
+                            dataviz
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/design" title="design">
+                            design
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ggplot2" title="ggplot2">
+                            ggplot2
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/maps" title="maps">
+                            maps
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/r" title="r">
+                            r
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tidytuesday" title="tidytuesday">
+                            tidytuesday
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tidyverse" title="tidyverse">
+                            tidyverse
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/weather" title="weather">
+                            weather
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/workshop" title="workshop">
+                            workshop
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_self" href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
+                        
+                        <li><a target="_self" href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/">Evolution of a ggpplot</a></li>
+                        
+                        <li><a target="_self" href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/">rstudio::conf Workshop</a></li>
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+<div class='highlightbox' style='margin: 2rem 0 5rem;' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+  <span class='highlight'>Want to hire me for a project or training?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
+                    
+                    <li>
+                        <a href="mailto:hello@cedricscherer.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                      <li>
+                         <a href="https://www.cedricscherer.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Cédric Scherer" >
+                             <span class="fa-stack fa-lg">
+                                 <i class="fa fa-circle fa-stack-2x"></i>
+                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                             </span>
+                         </a>
+                      </li>
+                      
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji=""  data-font="Lato" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with R &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2022. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

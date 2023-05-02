@@ -7,11 +7,38 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>30DayChartChallenge</title>
+      <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/30daychartchallenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cédric Scherer</title>
       <link>https://cedricscherer.com/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>challenge</title>
+      <link>https://cedricscherer.com/tags/challenge/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>community</title>
+      <link>https://cedricscherer.com/tags/community/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/community/</guid>
       <description></description>
     </item>
     
@@ -25,11 +52,11 @@
     </item>
     
     <item>
-      <title>ggplot2</title>
-      <link>https://cedricscherer.com/tags/ggplot2/</link>
+      <title>Nightingale</title>
+      <link>https://cedricscherer.com/tags/nightingale/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <guid>https://cedricscherer.com/tags/nightingale/</guid>
       <description></description>
     </item>
     
@@ -43,11 +70,11 @@
     </item>
     
     <item>
-      <title>rstats</title>
-      <link>https://cedricscherer.com/tags/rstats/</link>
+      <title>social media</title>
+      <link>https://cedricscherer.com/tags/social-media/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/rstats/</guid>
+      <guid>https://cedricscherer.com/tags/social-media/</guid>
       <description></description>
     </item>
     
@@ -62,71 +89,46 @@
     
     <item>
       <title>The #30DayChartChallenge Is Ready to Kick Off</title>
-      <link>https://cedricscherer.com/2023/03/28/the-#30daychartchallenge-is-ready-to-kick-off/</link>
+      <link>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2023/03/28/the-#30daychartchallenge-is-ready-to-kick-off/</guid>
-      <description>&lt;p&gt;This blog post originally appeared as a &lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34;&gt;post on &amp;ldquo;Nightingale&amp;rdquo;&lt;/a&gt;, the &lt;a href=&#34;https://nightingaledvs.com/&#34;&gt;journal of the Data Visualization Society&lt;/a&gt;. Thanks to Claire Santos for all the helpful comments on and revisions of the draft.&lt;/p&gt;
+      <guid>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</guid>
+      <description>&lt;p&gt;This blog post originally appeared as a &lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34;&gt;post on &amp;ldquo;Nightingale&amp;rdquo;&lt;/a&gt;, the &lt;a href=&#34;https://nightingaledvs.com/&#34;&gt;journal of the Data Visualization Society&lt;/a&gt;. Thanks to Claire Santos for all the helpful comments on and revisions of the draft!&lt;/p&gt;
 &lt;hr&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/rstudio-conf-2022/ggplot2-graphic-design/main/images/logo.png&#34; style=&#34;float:right;padding: 0 0 0 10px;margin: 20px -10px 0 0 &#34; fig-alt=&#34;Course Hex Logo&#34; width=&#34;175&#34;&gt;
 &lt;p&gt;&lt;strong&gt;The &lt;a href=&#39;https://twitter.com/30daychartchall&#39; style=&#39;font-weight:800;&#39;&gt;#30DayChartChallenge&lt;/a&gt; is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. The challenge began in April 2021 and has continued every year since. Indeed, the third edition of the #30DayChartChallenge starts in a few days—and we have just shared this year’s prompts, if you want to get a head start!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate.&lt;/p&gt;
 &lt;h2 id=&#34;the-birth-of-the-30daychartchallenge&#34;&gt;The Birth of the #30DayChartChallenge&lt;/h2&gt;
-&lt;p&gt;The #30DayChartChallenge was inspired by the #30DayMapChallenge, which was initiated by Topi Tjukanov in 2019 and focuses, as the name suggests, on creating 30 maps in 30 days, with a particular theme for each day. Those themes occasionally suggest a certain topic or data set, but many are open-ended—for example, the theme might be “experimental,” or it might be a specific color or geometry. The #30DayMapChallenge attracts many participants, and also passive spectators, from around the world, who use a wide range of tools to create static, animated, and interactive maps on a diversity of topics.&lt;/p&gt;
-&lt;p&gt;During the second edition of the map challenge in 2020, Dominic Royé proposed to organize something similar with a focus on all kinds of charts, not just maps. When Dominic tagged me in this discussion, I was a big fan of the idea and was all in. Both of us love maps and are skilled at creating spatial visualizations quickly, but for the many people who have never worked with spatial data, it seemed too difficult to find suitable data sources and navigate the quirks of map projections and unusual map types. Creating a similar challenge that was more open to the general data visualization community and that would allow for more flexibility in storytelling sounded like a great idea.&lt;/p&gt;
-&lt;p&gt;At the beginning of 2021, Dominic and I began to organize the event and brainstorm the daily themes. We went back and forth on how to select the themes. One idea we had was to use only chart types as prompts; we also considered restricting the challenge to a single data set. In the end, we decided to allow for a lot of freedom, hoping to see a variety of interpretations by participants. We ended up grouping the prompts into five data visualization types, loosely following “The Graphic Continuum” by Jonathan Schwabish and Severino Ribecca.&lt;/p&gt;
-&lt;p&gt;{img}
-The prompts of the first edition of the #30DayChartChallenge in 2021, grouped into five categories of data visualization types.&lt;/p&gt;
+&lt;p&gt;The #30DayChartChallenge was inspired by the &lt;a href=&#34;https://30daymapchallenge.com/&#34;&gt;#30DayMapChallenge&lt;/a&gt;, which was &lt;a href=&#34;https://twitter.com/tjukanov/status/1187713840550744066&#34;&gt;initiated by Topi Tjukanov in 2019&lt;/a&gt; and focuses, as the name suggests, on creating 30 maps in 30 days, with a particular theme for each day. Those themes occasionally suggest a certain topic or data set, but many are open-ended—for example, the theme might be “experimental” or it might be a specific color or geometry. The #30DayMapChallenge attracts many participants, and also passive spectators, from around the world, who use a wide range of tools to create static, animated, and interactive maps on a diversity of topics.&lt;/p&gt;
+&lt;p&gt;During the second edition of the map challenge in 2020, &lt;a href=&#34;https://twitter.com/dr_xeo/status/1333479448746860544&#34;&gt;Dominic Royé proposed to organize something similar&lt;/a&gt; with a focus on all kinds of charts, not just maps. When &lt;a href=&#34;https://twitter.com/dr_xeo/status/1333484208292044801&#34;&gt;Dominic tagged me in this discussion&lt;/a&gt;, I was a big fan of the idea and was all in. Both of us love maps and are skilled at creating spatial visualizations quickly, but for the many people who have never worked with spatial data, it seemed too difficult to find suitable data sources and navigate the quirks of map projections and unusual map types. Creating a similar challenge that was more open to the general data visualization community and that would allow for more flexibility in storytelling sounded like a great idea.&lt;/p&gt;
+&lt;p&gt;At the beginning of 2021, Dominic and I began to organize the event and brainstorm the daily themes. We went back and forth on how to select the themes. One idea we had was to use only chart types as prompts; we also considered restricting the challenge to a single data set. In the end, we decided to allow for a lot of freedom, hoping to see a variety of interpretations by participants. We ended up grouping the prompts into five data visualization types, loosely following &lt;a href=&#34;https://policyviz.com/2014/09/09/graphic-continuum&#34;&gt;“The Graphic Continuum”&lt;/a&gt; by Jonathan Schwabish and Severino Ribecca.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/image7.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;&lt;figcaption&gt;The prompts of the first edition of the #30DayChartChallenge in 2021, grouped into five categories of data visualization types.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;The 2021 challenge proved to be popular, with almost 2,000 data visualizations shared on Twitter with the hashtag #30DayChartChallenge. The daily, monthlong format is definitely demanding and time-consuming, so we did see a drop in contributions as the challenge progressed. Nevertheless, a number of participants showed incredible persistence and contributed all 30 days!&lt;/p&gt;
-&lt;p&gt;{img}
-A visualization of all visualizations shared on Twitter with the hashtag #30DayChartChallenge in 2021. The bars are grouped by categories and made up from the 1,960 individual contributions.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;&lt;figcaption&gt;A visualization of all visualizations shared on Twitter with the hashtag #30DayChartChallenge in 2021. The bars are grouped by categories and made up from the 1,960 individual contributions.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h2 id=&#34;the-challenge-matures&#34;&gt;The Challenge Matures&lt;/h2&gt;
 &lt;p&gt;For the 2022 challenge, we adjusted the prompts a bit but stayed with the five main categories. We replaced some prompts for the sake of variety, especially for people who were participating for the second time. We also introduced two new types of prompts—“data days” and “theme days”—which provided specific data source and design theme prompts. The goal of “data days” and “theme days” was to make it easier for people to participate by reducing the need to come up with their own data and visualization styles every day.&lt;/p&gt;
 &lt;p&gt;We also liked the idea of being able to compare submissions that all used the same data source or design aesthetic. Our two theme days in 2022 prompted participants to create charts in two distinctive newsroom styles—a distribution chart styled as in The Economist, and a time series styled as in the Financial Times.&lt;/p&gt;
 &lt;h2 id=&#34;the-third-edition-is-happening-now&#34;&gt;The Third Edition is Happening Now!&lt;/h2&gt;
 &lt;p&gt;The third edition of the #30DayChartChallenge will begin on April 1. This year’s challenge follows the same approach as in 2022, with some new topics and dedicated data and theme days.&lt;/p&gt;
-&lt;p&gt;{img}
-The prompts of the upcoming 3rd edition featuring dedicated data and theme days on the last day of each category.&lt;/p&gt;
-&lt;p&gt;The data days cover the fantastic open-data portals by OurWorldInData, EuroStat, and the World Bank. The theme days feature the popular BBC News and UN Women.&lt;/p&gt;
-&lt;p&gt;{img}
-Two screenshots of animations visualizing data on “Women’s representation in society” from UN Women, the United Nations entity dedicated to gender equality and the empowerment of women.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/image1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;&lt;figcaption&gt;The prompts of the upcoming 3rd edition featuring dedicated data and theme days on the last day of each category.&lt;/figcaption&gt;&lt;/p&gt;
+&lt;p&gt;The data days cover the fantastic open-data portals by &lt;a href=&#34;https://ourworldindata.org/&#34;&gt;OurWorldInData&lt;/a&gt;, &lt;a href=&#34;https://ec.europa.eu/eurostat&#34;&gt;EuroStat&lt;/a&gt;, and the &lt;a href=&#34;https://data.worldbank.org/&#34;&gt;World Bank&lt;/a&gt;. The theme days feature the popular &lt;a href=&#34;https://www.bbc.com/news/11628973&#34;&gt;BBC News&lt;/a&gt; and &lt;a href=&#34;https://www.unwomen.org/en/digital-library/multimedia/2020/2/infographic-visualizing-the-data-womens-representation&#34;&gt;UN Women&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/UNWomen.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;&lt;figcaption&gt;Two screenshots of animations visualizing data on “Women’s representation in society” from UN Women, the United Nations entity dedicated to gender equality and the empowerment of women.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h2 id=&#34;the-value-and-challenge-of-challenges&#34;&gt;The Value and Challenge of Challenges&lt;/h2&gt;
 &lt;p&gt;After two years of organizing the #30DayChartChallenge, we can confidently say that challenges like this one are a great way to practice and experiment with data visualization design, test new tools and data sources, build a portfolio, share work publicly and receive feedback, interact with like-minded people, and most importantly be creative and have fun. The feedback from both contributors and spectators in previous years has been largely positive. We saw many supportive conversations happening around participants’ data visualizations, chart types, suitability of tools for a certain task, and design choices.&lt;/p&gt;
-&lt;p&gt;{img}
-Examples of positive feedback and support throughout the challenge on Twitter&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/Feedback-1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;&lt;figcaption&gt;Examples of positive feedback and support throughout the challenge on Twitter.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;p&gt;Nevertheless, some critical voices also spoke up and made me think about the trade-off between the benefits of challenges like this one and their potential harms. For example, one comment read:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“I don’t want to criticise the challenge, a lot of people will learn a ton from participating and seeing the output. But it does bother me that the daily pressure can easily lead to false claims or misleading charts. In my view, if you put a chart out there, you have a responsibility of being truthful, or at least as truthful as possible. And that takes time, as any data journalist will tell you. So I feel there is a mismatch between the format of a challenge and the craft of making dataviz.”&lt;/p&gt;
+&lt;p&gt;I don’t want to criticise the challenge, a lot of people will learn a ton from participating and seeing the output. But it does bother me that the daily pressure can easily lead to false claims or misleading charts. In my view, if you put a chart out there, you have a responsibility of being truthful, or at least as truthful as possible. And that takes time, as any data journalist will tell you. So I feel there is a mismatch between the format of a challenge and the craft of making dataviz.∂&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Creating a visualization in a short time, especially if you are working on it outside of a regular job and family or other duties, is definitely hard; it’s true that the time available to spend on data exploration, research, and validation is limited. However, we experienced that participants in general seemed very open and honest about the potential limitations of their data sources and visualizations. When something was unintentionally wrong in their first iteration, they often shared an updated version later.&lt;/p&gt;
 &lt;p&gt;Nevertheless, this is a valid criticism and we, Dominic and I as organizers, but also we as a community, have to keep this in mind. Most importantly, we need to be careful when creating and sharing our own visualizations and chime in if we spot something potentially misleading or suspicious.&lt;/p&gt;
 &lt;p&gt;However, we are convinced that the value of these challenges are manifold, from education to building future interest in your work. Problems of sloppy chart design and data sources used to support false claims are broader issues not unique to challenges like the #30DayMapChallenge, though they certainly warrant continued discussion and consideration.&lt;/p&gt;
 &lt;h2 id=&#34;highlights-from-the-previous-editions&#34;&gt;Highlights From the Previous Editions&lt;/h2&gt;
-&lt;p&gt;We saw a ton of visualizations shared through the challenge, many of them quite well executed and creative. While the number of great visualizations is too many to feature in this article, I want to highlight a few that stuck with me. (You can check out more using the hashtag #30DayChartChallenge on social media.)&lt;/p&gt;
+&lt;p&gt;We saw a ton of visualizations shared through the challenge, many of them quite well executed and creative. While the number of great visualizations is too many to feature in this article, I want to highlight a few that stuck with me. (You can check out more using the hashtag &lt;a href=&#34;https://twitter.com/hashtag/30DayChartChallenge?src=hashtag_click&#34;&gt;#30DayChartChallenge&lt;/a&gt; on social media.)&lt;/p&gt;
 &lt;p&gt;Join us for the 2023 Challenge, and let’s see what you can create!&lt;/p&gt;
-&lt;p&gt;{img}
-Examples of memorable submissions demonstrating a variety of approaches, tools, and data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i0.wp.com/nightingaledvs.com/wp-content/uploads/2023/03/Submissions_sm.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;&lt;figcaption&gt;Examples of memorable submissions demonstrating a variety of approaches, tools, and data.&lt;/figcaption&gt;&lt;/p&gt;
 &lt;h3 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h3&gt;
 &lt;p&gt;First of all I want to thank Dominic who came up with the idea and invited me to join him as a co-founder. Also, thanks to Wendy Shijia, Marco Sciaini and Paula Casado for your support with organizing the challenge. A special shout-out to Topi Tjukanov for creating the #30DayMapChallenge, which served as the template for our challenge. Thank you for this fun project that allowed me to strengthen my spatial data visualization skills and was and remains a steady source of inspiration! And of course, a big thank you to everyone participating in the challenge, watching and sharing the contributions, and providing feedback and praise!&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>https://cedricscherer.com/tags/tutorial/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Workshop</title>
-      <link>https://cedricscherer.com/tags/workshop/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/workshop/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -269,6 +271,42 @@ qualitative&lt;/li&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>https://cedricscherer.com/tags/ggplot2/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rstats</title>
+      <link>https://cedricscherer.com/tags/rstats/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/rstats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://cedricscherer.com/tags/tutorial/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workshop</title>
+      <link>https://cedricscherer.com/tags/workshop/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/workshop/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -466,565 +504,6 @@ qualitative&lt;/li&gt;
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/paygap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>maps</title>
-      <link>https://cedricscherer.com/tags/maps/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/maps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The World&#39;s Countries Colored by Their First Letter</title>
-      <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
-      <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and &lt;code&gt;{ggplot2}&lt;/code&gt; for the first time. While searching for a cool variable to illustrate how to create &lt;a href=&#34;https://www.data-to-viz.com/graph/choropleth.html&#34;&gt;choropleth maps&lt;/a&gt;, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (&lt;a href=&#34;https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/&#34;&gt;here&lt;/a&gt;) or that do not permit to see the complete data by &lt;a href=&#34;http://alphabetpassport.com/world.png&#34;&gt;aggregating rare letters&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to &lt;code&gt;{ggplot2}&lt;/code&gt;’s facet functionality, it was super–easy to turn it into small multiples.&lt;/p&gt;
-&lt;img src=&#34;img/world-by-letters/letter_world_poster.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;img/world-by-letters/letter_world_poster.png&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;figcaption&gt;The final poster version with the colorful overview map and 25 small maps, one for each letter.&lt;/figcaption&gt;&lt;br&gt;
-&lt;h5 id=&#34;project-type&#34;&gt;Project Type&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal Project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;motivation&#34;&gt;Motivation&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Finding a cool variable in the NaturalEarth data set to visualize.&lt;/li&gt;
-&lt;li&gt;Curiosity: Which letter covers the largest area, which are rare?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;design-choices&#34;&gt;Design Choices&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Small multiples&lt;/strong&gt; to allow for direct access of single letters which allows also to add the area covered to each map.&lt;/li&gt;
-&lt;li&gt;A &lt;strong&gt;cyclical color palette&lt;/strong&gt;; of course, 25 categories are too many but with this approach one can at least identify the range a country falls into.  Color-vision deficiency problems are likely but not problematic thanks to the small multiples.&lt;/li&gt;
-&lt;li&gt;I searched through a ton of fonts: I settled on &lt;a href=&#34;https://pangrampangram.com/products/hatton&#34;&gt;&lt;em&gt;Hatton&lt;/em&gt;&lt;/a&gt; for the title and letters and &lt;a href=&#34;https://www.omnibus-type.com/fonts/chivo/&#34;&gt;&lt;em&gt;Chivo&lt;/em&gt;&lt;/a&gt; with its tabular numbers for the areas and the caption.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;data-source&#34;&gt;Data Source&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.naturalearthdata.com/&#34;&gt;NaturalEarth&lt;/a&gt; for the country boundaries via the &lt;a href=&#34;https://docs.ropensci.org/rnaturalearthdata/&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt; R package&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Country names from the &lt;a href=&#34;https://www.cia.gov/the-world-factbook/&#34;&gt;CIA World Factbook&lt;/a&gt;, contained in the world data set&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;tools&#34;&gt;Tools&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Data: &lt;a href=&#34;https://docs.ropensci.org/rnaturalearthdata/&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Data Preparation: &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Graphics: &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt;; &lt;a href=&#34;https://wilkelab.org/ggtext/&#34;&gt;&lt;code&gt;{ggtext}&lt;/code&gt;&lt;/a&gt; for title and caption; &lt;a href=&#34;https://patchwork.data-imaginist.com/&#34;&gt;&lt;code&gt;{patchwork}&lt;/code&gt;&lt;/a&gt; for plot composition&lt;/li&gt;
-&lt;li&gt;Colors: &lt;a href=&#34;https://help.tableau.com/current/pro/desktop/en-us/formatting_create_custom_colors.htm&#34;&gt;Tableau cyclic color palette&lt;/a&gt; via the &lt;a href=&#34;https://jrnold.github.io/ggthemes/index.html&#34;&gt;&lt;code&gt;{ggthemes}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;methods&#34;&gt;Methods&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;I had to choose one source for the names; after checking several naming conventions, I settled on those provided by the CIA World Factbook. Why? Because this was the easiest way to get rid of &amp;ldquo;Republic&amp;rdquo; and other prefixes and it has a pretty good coverage.&lt;/li&gt;
-&lt;li&gt;For each country, I checked if a name is provided by the CIA world Factbook; if not, I used the sovereignty provided by NaturalEarth.&lt;/li&gt;
-&lt;li&gt;For each country in the shape file, I extracted the first letter with the help of the &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt; R package&lt;/a&gt; from the tidyverse.&lt;/li&gt;
-&lt;li&gt;For each letter I calculated the area covered with the help of the &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt; package&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Plotting was done completely in R (for a list of packages see &amp;ldquo;Tools&amp;rdquo;).&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;alternative-versions&#34;&gt;Alternative Versions&lt;/h2&gt;
-&lt;h5 id=&#34;single-version-of-the-small-multiples&#34;&gt;Single Version of the Small Multiples&lt;/h5&gt;
-&lt;img src=&#34;img/world-by-letters/letter_world_facet_top.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;img src=&#34;img/world-by-letters/letter_world_facet_left.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;h5 id=&#34;single-version-of-the-overview-map&#34;&gt;Single Version of the Overview Map&lt;/h5&gt;
-&lt;img src=&#34;img/world-by-letters/letter_world_v1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;img src=&#34;img/world-by-letters/letter_world_v2.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;h2 id=&#34;how-about-the-last-letter&#34;&gt;How about the last letter?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/humeursdevictor&#34;&gt;Victor&lt;/a&gt; asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with &amp;ldquo;, Republic of&amp;rdquo; or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.&lt;/p&gt;
-&lt;img src=&#34;img/world-by-letters/last_letter_world_poster.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;img src=&#34;img/world-by-letters/last_letter_world_v1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;img src=&#34;img/world-by-letters/last_letter_world_facet_left.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png&#39;, &#39;blank&#39;);&#34;&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Quick How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
-      <description>
-
-
-&lt;p style=&#34;font-size:14px&#34;&gt;
-Header image by &lt;a href=&#34;https://www.instagram.com/richard.strozynski/?hl=en&#34;&gt;Richard Strozynski&lt;/a&gt;
-&lt;/p&gt;
-&lt;div id=&#34;table-of-content&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;Table of Content&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#intro&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#data&#34;&gt;Data Preparation with the &lt;code&gt;tidyverse&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#dataviz&#34;&gt;Data Visualization with &lt;code&gt;ggplot2&lt;/code&gt;&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#how-to-1&#34;&gt;How to Calculate the Percentage Values&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#how-to-2&#34;&gt;How to Position the Percentage Labels Inside the Bars&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#how-to-3&#34;&gt;How to Color the Bars Using Different Colors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#polish&#34;&gt;Polish Your Plot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#accessibility&#34;&gt;Alternatives Improving the Accessibility&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;intro&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Bar charts are likely the most common chart type out there and come in several varieties. Most notably, direct labels can increase accessibility of a bar graph and reduce the “chart junk” since grid lines, axis labels, and even axis titles become obsolete. Ordering your bar charts make sense in case the categorical value has no internal order and helps focusing on the largest and smallest groups. In addition, one can highlight specific bars with use of custom colors. It is pretty easy to improve your ggplot with a few lines of code. And this short tutorial shows you multiple ways how to do so.&lt;/p&gt;
-&lt;p&gt;A few days ago, I got a request on some code creating bar charts with individual colors and percentage labels with the &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt; package&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Watching your &lt;a href=&#34;https://www.youtube.com/watch?v=5KHvEXYtnOo&#34;&gt;webinar about ggplot2 on UseR Oslo YouTube Channel&lt;/a&gt;, I noticed some charts you made for a project called &lt;a href=&#34;https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/&#34;&gt;‘Survey on contract termination during the COVID-19 pandemic for kuendigung.org’&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Because they have many interesting aesthetic features, I started looking for source code on your &lt;a href=&#34;https://github.com/z3tt&#34;&gt;GitHub repo&lt;/a&gt;, but I didn’t find anything. So, I kindly ask you if you can share the code you used to create those charts (or share its location), hoping that it is not copyrighted material.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;img src=&#34;https://www.kuendigung.org/downloads/studie/verbraucherumfrage-zur-zukunft-nach-der-krise/11_1_solidaritaet_erstattung_id_1.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
-&lt;figcaption&gt;
-The simple bar chart I made for &lt;a href=&#34;https://www.kuendigung.org/studien/verbraucherumfrage-zur-zukunft-nach-der-krise/&#34;&gt;kuendigung.org&lt;/a&gt;. Note that this was a multiple choice question and thus the sum is larger than 100%.
-&lt;/figcaption&gt;
-&lt;p&gt;Specifically, the main things of interest where:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;How to &lt;strong&gt;calculate the percentage values&lt;/strong&gt;?&lt;br&gt;(Did you use a &lt;code&gt;{ggplot2}&lt;/code&gt; function or calculate them manually?)&lt;/li&gt;
-&lt;li&gt;How to &lt;strong&gt;position the percentage labels inside&lt;/strong&gt; the bars?&lt;/li&gt;
-&lt;li&gt;How to &lt;strong&gt;color the bars&lt;/strong&gt; using different colors?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Unfortunately, the code is under lock but it’s a simple bar chart with some labels, so I will walk you through a short toy example using the manufacturers data set &lt;code&gt;mpg&lt;/code&gt; that comes with &lt;code&gt;{ggplot2}&lt;/code&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;data&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Data Preparation with the tidyverse&lt;/h2&gt;
-&lt;p&gt;First, let’s prepare the data for the bar chart. We are going to use the data from 2008 only and summarize the number of car model variants in the data per manufacturer. We also adjust the manufacturer labels and order them as they should appear in the final plot. Here are some notes on some of the functions used:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;count()&lt;/code&gt; from the &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt; package&lt;/a&gt; is a wrapper of &lt;code&gt;group_by(var) %&amp;gt;% summarize(n = n()))&lt;/code&gt;. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;str_to_title()&lt;/code&gt; from the &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt; package&lt;/a&gt; is a quick way to capitalize labels.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fct_lump()&lt;/code&gt;, &lt;code&gt;fct_inorder()&lt;/code&gt;, &lt;code&gt;fct_rev()&lt;/code&gt;, and &lt;code&gt;fct_relevel()&lt;/code&gt; are all from the &lt;a href=&#34;https://forcats.tidyverse.org/&#34;&gt;&lt;code&gt;{forcats}&lt;/code&gt; package&lt;/a&gt; that provides helpers for reordering factor levels.
-&lt;ul&gt;
-&lt;li&gt;First, we group all manufacturers together that do not belong to the top 10 with &lt;code&gt;fct_lump()&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Since our data set is sorted in descending order thanks to &lt;code&gt;count()&lt;/code&gt;, we first order them by appearance with &lt;code&gt;fct_inorder()&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Afterwards, we reverse them with &lt;code&gt;fct_rev()&lt;/code&gt;(so that the bar with the highest value is on top).&lt;/li&gt;
-&lt;li&gt;Finally, we move the category “Other” to the end (as the first level) with &lt;code&gt;fct_relevel()&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
-
-mpg_sum &amp;lt;- mpg %&amp;gt;% 
-  ## just use 2008 data
-  dplyr::filter(year == 2008) %&amp;gt;%
-  ## turn into lumped factors with capitalized names
-  dplyr::mutate(
-    manufacturer = stringr::str_to_title(manufacturer),
-    manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %&amp;gt;% 
-  ## add counts
-  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;% 
-  ## order factor levels by number, put &amp;quot;Other&amp;quot; to end
-  dplyr::mutate(
-    manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
-    manufacturer = forcats::fct_relevel(manufacturer, &amp;quot;Other&amp;quot;, after = 0)
-  )
-
-mpg_sum&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 11 × 2
-##    manufacturer     n
-##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt;
-##  1 Dodge           21
-##  2 Toyota          14
-##  3 Chevrolet       12
-##  4 Volkswagen      11
-##  5 Other           11
-##  6 Ford            10
-##  7 Audi             9
-##  8 Hyundai          8
-##  9 Subaru           8
-## 10 Nissan           7
-## 11 Jeep             6&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Let’s check if our factor reordering worked:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;levels(mpg_sum$manufacturer)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Other&amp;quot;      &amp;quot;Jeep&amp;quot;       &amp;quot;Nissan&amp;quot;     &amp;quot;Subaru&amp;quot;     &amp;quot;Hyundai&amp;quot;    &amp;quot;Audi&amp;quot;       &amp;quot;Ford&amp;quot;       &amp;quot;Volkswagen&amp;quot; &amp;quot;Chevrolet&amp;quot;  &amp;quot;Toyota&amp;quot;     &amp;quot;Dodge&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Keep in mind that we have reversed the ordering since &lt;code&gt;{ggplot2}&lt;/code&gt; plots factors from bottom to top when being mapped to &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;dataviz&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Data Visualization with ggplot2&lt;/h2&gt;
-&lt;p&gt;First, let’s draw the basic bar chart using our aggregated and ordered data set called &lt;code&gt;mpg_sum&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
-  ## draw bars
-  geom_col(fill = &amp;quot;gray70&amp;quot;) +
-  ## change plot appearance
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;div id=&#34;how-to-1&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;How to Calculate the Percentage Values&lt;/h5&gt;
-&lt;p&gt;We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of &lt;code&gt;geom_bar()&lt;/code&gt; and &lt;code&gt;stat_summary(geom = &#34;text&#34;)&lt;/code&gt; is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.&lt;/p&gt;
-&lt;p&gt;Here are two ways how to quickly add the percentage labels to your data set. The percentage can be easily calculated by dividing the number of cars per manufacturer &lt;code&gt;n&lt;/code&gt; by the total number of cars &lt;code&gt;sum(n)&lt;/code&gt;, times 100. &lt;code&gt;sprintf()&lt;/code&gt; is a handy function to format text and variables. &lt;code&gt;sprintf()&lt;/code&gt; allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. &lt;code&gt;12.0%&lt;/code&gt; instead of &lt;code&gt;12%&lt;/code&gt; which is useful here). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See &lt;a href=&#34;https://www.php.net/manual/en/function.sprintf.php&#34;&gt;here&lt;/a&gt; for more about the parameters one can use. Using &lt;code&gt;paste0&lt;/code&gt;, or alternatively the &lt;code&gt;glue()&lt;/code&gt; function from the &lt;a href=&#34;https://glue.tidyverse.org/&#34;&gt;&lt;code&gt;{glue}&lt;/code&gt; package&lt;/a&gt;, we add the percentage symbol to that number.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
-  ## add percentage label with `sprintf()`
-  dplyr::mutate(perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;))
-
-mpg_sum&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 11 × 3
-##    manufacturer     n perc   
-##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;  
-##  1 Dodge           21 &amp;quot;17.9%&amp;quot;
-##  2 Toyota          14 &amp;quot;12.0%&amp;quot;
-##  3 Chevrolet       12 &amp;quot;10.3%&amp;quot;
-##  4 Volkswagen      11 &amp;quot; 9.4%&amp;quot;
-##  5 Other           11 &amp;quot; 9.4%&amp;quot;
-##  6 Ford            10 &amp;quot; 8.5%&amp;quot;
-##  7 Audi             9 &amp;quot; 7.7%&amp;quot;
-##  8 Hyundai          8 &amp;quot; 6.8%&amp;quot;
-##  9 Subaru           8 &amp;quot; 6.8%&amp;quot;
-## 10 Nissan           7 &amp;quot; 6.0%&amp;quot;
-## 11 Jeep             6 &amp;quot; 5.1%&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;One could also use the &lt;code&gt;percent()&lt;/code&gt; function from the &lt;code&gt;{scales}&lt;/code&gt; package. The accuracy determines the number of digits (here &lt;code&gt;.1&lt;/code&gt;) and we can similarly add the leading white space by setting &lt;code&gt;trim&lt;/code&gt; to &lt;code&gt;FALSE&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
-  ## add percentage label with `scales::percent()`
-  dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 11 × 3
-##    manufacturer     n perc   
-##    &amp;lt;fct&amp;gt;        &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;  
-##  1 Dodge           21 &amp;quot;17.9%&amp;quot;
-##  2 Toyota          14 &amp;quot;12.0%&amp;quot;
-##  3 Chevrolet       12 &amp;quot;10.3%&amp;quot;
-##  4 Volkswagen      11 &amp;quot; 9.4%&amp;quot;
-##  5 Other           11 &amp;quot; 9.4%&amp;quot;
-##  6 Ford            10 &amp;quot; 8.5%&amp;quot;
-##  7 Audi             9 &amp;quot; 7.7%&amp;quot;
-##  8 Hyundai          8 &amp;quot; 6.8%&amp;quot;
-##  9 Subaru           8 &amp;quot; 6.8%&amp;quot;
-## 10 Nissan           7 &amp;quot; 6.0%&amp;quot;
-## 11 Jeep             6 &amp;quot; 5.1%&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So let’s add the prepared percentage label to our bar graph with &lt;code&gt;geom_text()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
-  geom_col(fill = &amp;quot;gray70&amp;quot;) +
-  ## add percentage labels
-  geom_text(aes(label = perc)) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;And in case you want to add some more description to one of the bars, you can use an &lt;code&gt;if_else()&lt;/code&gt; (or an &lt;code&gt;ifelse()&lt;/code&gt;) statement like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
-  dplyr::mutate(
-    perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
-    ## customize label for the first category
-    perc = if_else(row_number() == 1, paste(perc, &amp;quot;of all car models&amp;quot;), perc)
-  )
-
-ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
-  geom_col(fill = &amp;quot;gray70&amp;quot;) +
-  geom_text(aes(label = perc)) +
-  ## make sure labels doesn&amp;#39;t get cut
-  scale_x_continuous(limits = c(NA, 24)) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use &lt;code&gt;geom_bar()&lt;/code&gt; instead of &lt;code&gt;geom_col()&lt;/code&gt; which takes not two but only one variable and calculates counts by default. To add the labels, we again use &lt;code&gt;geom_text()&lt;/code&gt; but this time we overwrite the default statistical transformation &lt;code&gt;stat = &#34;identity&#34;&lt;/code&gt; with &lt;code&gt;stat = &#34;count&#34;&lt;/code&gt; (the same as the default for &lt;code&gt;geom_bar()&lt;/code&gt;).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## prepare non-aggregated data set with lumped and ordered factors
-mpg_fct &amp;lt;- mpg %&amp;gt;% 
-  dplyr::filter(year == 2008) %&amp;gt;%
-  dplyr::mutate(
-    ## add count to calculate percentages later
-    total = dplyr::n(),
-    ## turn into lumped factors with capitalized names
-    manufacturer = stringr::str_to_title(manufacturer),
-    manufacturer = forcats::fct_lump(manufacturer, n = 10),
-    ## order factor levels by number, put &amp;quot;Other&amp;quot; to end
-    manufacturer = forcats::fct_rev(forcats::fct_infreq(manufacturer)),
-    manufacturer = forcats::fct_relevel(manufacturer, &amp;quot;Other&amp;quot;, after = 0)
-  )
-  
-ggplot(mpg_fct, aes(x = manufacturer)) +
-  geom_bar(fill = &amp;quot;gray70&amp;quot;) +
-  ## add count labels
-  geom_text(
-    stat = &amp;quot;count&amp;quot;,
-    aes(label = ..count..)
-  ) +
-  ## rotate plot
-  coord_flip()  +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;As you can see, the default settings of &lt;code&gt;geom_text()&lt;/code&gt; place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!&lt;/p&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;how-to-2&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;How to Position the Percentage Labels Inside the Bars&lt;/h5&gt;
-&lt;p&gt;The &lt;code&gt;geom_text()&lt;/code&gt; function comes with arguments that help you to align and position text labels:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;hjust&lt;/code&gt; and &lt;code&gt;vjust&lt;/code&gt;: the horizontal and vertical justification to align text.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nudge_x&lt;/code&gt; and &lt;code&gt;nudge_y&lt;/code&gt;: the horizontal and vertical adjustment to offset text from points.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To put the labels inside, we first need to right-align the labels with &lt;code&gt;hjust = 1&lt;/code&gt;. We also add some negative horizontal adjustment via &lt;code&gt;nudge_x = -.5&lt;/code&gt; to add some spacing between the end of the bar and the label.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
-  geom_col(fill = &amp;quot;gray70&amp;quot;) +
-  geom_text(
-    aes(label = perc), 
-    ## make labels left-aligned
-    hjust = 1, nudge_x = -.5
-  ) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;In case you want to put the next to the bars, you often need to adjust the plot margin and/or the limits to avoid that the labels are cut off. The drawback of using limits is that you have to define them manually. Thus, I prefer to use the first approach. You can make sure that labels are not truncated by the panel by adding &lt;code&gt;clip = &#34;off&#34;&lt;/code&gt; to any coordinate system.&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;
-💁 &lt;i&gt;Expand to see examples with labels next to the bars.&lt;/i&gt;
-&lt;/summary&gt;
-&lt;p&gt;Increase space on the right via &lt;code&gt;theme(plot.margin)&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
-  geom_col(fill = &amp;quot;gray70&amp;quot;) +
-  geom_text(
-    aes(label = perc), 
-    hjust = 0, nudge_x = .5
-  ) +
-  ## make sure labels doesn&amp;#39;t get cut, part 1
-  coord_cartesian(clip = &amp;quot;off&amp;quot;) +
-  theme_minimal() +
-  ## make sure labels doesn&amp;#39;t get cut, part 2
-  theme(plot.margin = margin(r = 120))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Increase space on the right via &lt;code&gt;scale_x_continuous(limits)&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
-  geom_col(fill = &amp;quot;gray70&amp;quot;) +
-  geom_text(
-    aes(label = perc), 
-    hjust = 0, nudge_x = .5
-  ) +
-  ## make sure labels doesn&amp;#39;t get cut
-  scale_x_continuous(limits = c(NA, 30)) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
-&lt;/details&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;how-to-3&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;How to Color the Bars Using Different Colors&lt;/h5&gt;
-&lt;p&gt;Again, there are many ways how to add custom colors. As the first approach, we create the color palette as a vector based on our summarized data set. Let’s pick some colors that are similar to the original plot we started with:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## create color palette based on input data
-pal &amp;lt;- c(
-  &amp;quot;gray85&amp;quot;,
-  rep(&amp;quot;gray70&amp;quot;, length(mpg_sum$manufacturer) - 4), 
-  &amp;quot;coral2&amp;quot;, &amp;quot;mediumpurple1&amp;quot;, &amp;quot;goldenrod1&amp;quot;
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In this approach, we create a vector that holds the colors for each of the levels—from the lowest bar to the bar with the most values.
-We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for all non-highlighted bars and subtract the number of bars we want to highlight. Here, we have a colorful top 3 and a lighter “Other” category. The vector can then be used in combination with &lt;code&gt;scale_color|fill_manual()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Now, we can use the custom palette to color each bar by mapping &lt;code&gt;manufacturer&lt;/code&gt; to the bar’s &lt;code&gt;fill&lt;/code&gt; property and by passing the &lt;code&gt;pals&lt;/code&gt; vector to &lt;code&gt;scale_fill_manual()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer, 
-                    fill = manufacturer)) +
-  geom_col() +
-  geom_text(
-    aes(label = perc), 
-    hjust = 1, nudge_x = -.5
-  ) +
-  ## add custom colors
-  scale_fill_manual(values = pal, guide = &amp;quot;none&amp;quot;) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;One could also add the color to the data set and map the fill to that column and use &lt;code&gt;scale_fill_identity()&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;-
-  mpg_sum %&amp;gt;% 
-  mutate(
-    color = case_when(
-      row_number() == 1 ~ &amp;quot;goldenrod1&amp;quot;,
-      row_number() == 2 ~ &amp;quot;mediumpurple1&amp;quot;,
-      row_number() == 3 ~ &amp;quot;coral2&amp;quot;,
-      manufacturer == &amp;quot;Other&amp;quot; ~ &amp;quot;gray85&amp;quot;,
-      ## all others should be gray
-      TRUE ~ &amp;quot;gray70&amp;quot;
-    )
-  )
-
-ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
-  geom_col() +
-  geom_text(
-    aes(label = perc), 
-    hjust = 1, nudge_x = -.5
-  ) +
-  ## add custom colors
-  scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;This approach is less error-prone since the color is tied to the properties of the data. Thus, in case we update the data, the colors are still applied correctly.&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;
-💁 &lt;i&gt;Expand to see that it still works with “updated” data.&lt;/code&gt;&lt;/i&gt;
-&lt;/summary&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
-  ## use 1999 data now
-  dplyr::filter(year == 1999) %&amp;gt;%
-  dplyr::mutate(
-    manufacturer = stringr::str_to_title(manufacturer),
-    manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %&amp;gt;% 
-  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;% 
-  dplyr::mutate(
-    manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
-    manufacturer = forcats::fct_relevel(manufacturer, &amp;quot;Other&amp;quot;, after = 0),
-    perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
-    perc = if_else(row_number() == 1, paste(perc, &amp;quot;of all car models&amp;quot;), perc),
-    color = case_when(
-      row_number() == 1 ~ &amp;quot;goldenrod1&amp;quot;,
-      row_number() == 2 ~ &amp;quot;mediumpurple1&amp;quot;,
-      row_number() == 3 ~ &amp;quot;coral2&amp;quot;,
-      manufacturer == &amp;quot;Other&amp;quot; ~ &amp;quot;gray85&amp;quot;,
-      TRUE ~ &amp;quot;gray70&amp;quot;
-    )
-  ) %&amp;gt;% 
-  ggplot(aes(x = n, y = manufacturer, fill = color)) +
-  geom_col() +
-  geom_text(
-    aes(label = perc), 
-    hjust = 1, nudge_x = -.5
-  ) +
-  scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
-  theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
-&lt;/details&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;polish&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;Polish Your Plot&lt;/h5&gt;
-&lt;p&gt;Finally, we can adjust the visual appearance a bit, most importantly reduce redundancy. Since I only want to keep the labels on the y axis, I use &lt;code&gt;theme_void()&lt;/code&gt; and add the axis text afterwards again. Here, I use a custom font for both the axis text and the percentage labels and adjust the font size. (I am not going to cover it here but in case you want to include custom fonts, check the &lt;a href=&#34;https://github.com/r-lib/systemfonts&#34;&gt;&lt;code&gt;{systemfonts}&lt;/code&gt; package&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;By default, &lt;code&gt;{ggplot2}&lt;/code&gt; adds some padding to each axis which results in labels that are a bit off. To decrease the distance between the y axis text and the bars, adjust the expansion argument &lt;code&gt;expand&lt;/code&gt; in the according scale, here &lt;code&gt;scale_x_continuous()&lt;/code&gt;. I also add some white space around the plot by setting a &lt;code&gt;plot.margin&lt;/code&gt; which is of type &lt;code&gt;element_rect()&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
-  geom_col() +
-  geom_text(
-    aes(label = perc), 
-    hjust = 1, nudge_x = -.5,
-    size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;
-  ) +
-  ## reduce spacing between labels and bars
-  scale_x_continuous(expand = c(.01, .01)) +
-  scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
-  ## get rid of all elements except y axis labels + adjust plot margin
-  theme_void() +
-  theme(axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
-        plot.margin = margin(rep(15, 4)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;You can find the full code to create the final plot in this &lt;a href=&#34;https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5&#34;&gt;gist&lt;/a&gt;.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;/div&gt;
-&lt;div id=&#34;accessibility&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;Alternatives Improving the Accessibility&lt;/h5&gt;
-&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; Some feedback suggested that placing labels inside the bars can hinder accessibility due to contrast issues. I fully agree, so I want to present some approaches to decrease that barrier without the need to increase the white space towards the right when placing labels next to the bars.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Version with label boxes instead of pure text:&lt;/strong&gt;&lt;br /&gt;
-We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label()&lt;/code&gt; which adds a box around each label. While it doesn’t look as good, the high contrast of black labels on white ground maximizes readability.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
-  geom_col() +
-  geom_label(
-    aes(label = perc), 
-    hjust = 1, nudge_x = -.5,
-    size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;,
-    ## turn into white box without outline
-    fill = &amp;quot;white&amp;quot;, label.size = 0
-  ) +
-  scale_x_continuous(expand = c(.01, .01)) +
-  scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
-  theme_void() +
-  theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
-    plot.margin = margin(rep(15, 4))
-  )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Version with different label placement:&lt;/strong&gt;
-I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column &lt;code&gt;place&lt;/code&gt; to the &lt;code&gt;hjust&lt;/code&gt; argument. Since we cannot map a variable to &lt;code&gt;nudge_x&lt;/code&gt;, we cannot use it to offset the labels. To add some spacing, I simply add some white space to the begin and end of each percentage label.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
-  mutate(
-    ## set justification based on data 
-    ## so that only the first label is placed inside
-    place = if_else(row_number() == 1, 1, 0),
-    ## add some spacing to labels since we cant use nudge_x anymore
-    perc = paste(&amp;quot; &amp;quot;, perc, &amp;quot; &amp;quot;)
-  ) %&amp;gt;% 
-  ggplot(aes(x = n, y = manufacturer, fill = color)) +
-  geom_col() +
-  geom_text(
-    aes(label = perc, hjust = place), 
-    size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;
-  ) +
-  scale_x_continuous(expand = c(.01, .01)) +
-  scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
-  theme_void() +
-  theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
-    plot.margin = margin(rep(15, 4))
-  )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Version placing the long label not at the top:&lt;/strong&gt;
-We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
-  ## overwrite old percentage labels
-  mutate(
-    perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
-    perc = if_else(row_number() == 2, paste(perc, &amp;quot;of all car models&amp;quot;), perc)
-  ) %&amp;gt;% 
-  ggplot(aes(x = n, y = manufacturer, fill = color)) +
-  geom_col() +
-  geom_text(
-    aes(label = perc,), 
-    hjust = 0, nudge_x = .5,
-    size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Fira Sans&amp;quot;
-  ) +
-  ## make sure labels doesn&amp;#39;t get cut, part 1
-  coord_cartesian(clip = &amp;quot;off&amp;quot;) +
-  scale_x_continuous(expand = c(.01, .01)) +
-  scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
-  theme_void() +
-  theme(
-    axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
-    ## make sure labels doesn&amp;#39;t get cut, part 2
-    plot.margin = margin(15, 30, 15, 15)
-  )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Of course, you could add that information also to the title, figure caption or simply leave it out. But that’s not what the request was about 🤷&lt;/p&gt;
-&lt;details&gt;
-&lt;summary style=&#34;font-size:10pt;&#34;&gt;
-R Session Info
-&lt;/summary&gt;
-&lt;pre&gt;&lt;code&gt;## R version 4.2.2 (2022-10-31)
-## Platform: aarch64-apple-darwin20 (64-bit)
-## Running under: macOS Ventura 13.2.1
-## 
-## Matrix products: default
-## BLAS:   /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
-## 
-## locale:
-## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
-## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
-## other attached packages:
-##  [1] forcats_0.5.2          stringr_1.5.0          dplyr_1.1.0            purrr_1.0.1            readr_2.1.3            tidyr_1.3.0           
-##  [7] tibble_3.1.8           ggplot2_3.4.0          tidyverse_1.3.2        systemfonts_1.0.4.9000
-## 
-## loaded via a namespace (and not attached):
-##  [1] lubridate_1.9.0     assertthat_0.2.1    digest_0.6.31       utf8_1.2.2          R6_2.5.1            cellranger_1.1.0    backports_1.4.1    
-##  [8] reprex_2.0.2        evaluate_0.19       highr_0.10          httr_1.4.4          blogdown_1.16       pillar_1.8.1        rlang_1.0.6        
-## [15] googlesheets4_1.0.1 readxl_1.4.1        rstudioapi_0.14     jquerylib_0.1.4     rmarkdown_2.19      labeling_0.4.2      textshaping_0.3.6  
-## [22] googledrive_2.0.0   munsell_0.5.0       broom_1.0.2         compiler_4.2.2      modelr_0.1.10       xfun_0.36           pkgconfig_2.0.3    
-## [29] htmltools_0.5.4     tidyselect_1.2.0    bookdown_0.31       fansi_1.0.3         crayon_1.5.2        tzdb_0.3.0          dbplyr_2.2.1       
-## [36] withr_2.5.0         grid_4.2.2          jsonlite_1.8.4      gtable_0.3.1        lifecycle_1.0.3     DBI_1.1.3           magrittr_2.0.3     
-## [43] scales_1.2.1        cli_3.5.0           stringi_1.7.8       cachem_1.0.6        farver_2.1.1        fs_1.5.2            xml2_1.3.3         
-## [50] bslib_0.4.2         ellipsis_0.3.2      ragg_1.2.4          generics_0.1.3      vctrs_0.5.2         tools_4.2.2         glue_1.6.2         
-## [57] hms_1.1.2           fastmap_1.1.0       yaml_2.3.6          timechange_0.1.1    colorspace_2.1-0    gargle_1.2.1        rvest_1.0.3        
-## [64] knitr_1.41          haven_2.5.1         sass_0.4.4&lt;/code&gt;&lt;/pre&gt;
-&lt;/details&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Annotations</title>
-      <link>https://cedricscherer.com/tags/annotations/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/annotations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://cedricscherer.com/tags/r/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/r/</guid>
       <description></description>
     </item>
     
