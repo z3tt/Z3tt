@@ -15,10 +15,11 @@
 
 <span style='font-size:2.2rem;'>As an <a href='https://www.cedricscherer.com/top/about/#dataviz'>independent data visualization designer</a>, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed <b style='font-weight:900;'>graphics across all disciplines, purposes, and styles</b> applying a <a href='https://www.cedricscherer.com/top/about/#codefirst'>code–first approach</a>. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.</span><br>
 
+
 <span style='font-size:2.2rem;'>
 <span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/top/dataviz'>Data Visualization Gallery</a><br>
 <span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/top/cv'>Curriculum Vitae</a><br></span>
-<br><br>
+<br>
 
 <img src="/img/about/dataviz-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
@@ -41,16 +42,17 @@ I am constantly strengthening my skills in design and have built a diverse portf
 I am working as a part-time scientific researcher (PostDoc) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
 <span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Read my publications](https://www.cedricscherer.com/top/cv/#publications)  
-<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br><br>
+
+<img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
 #### Code–First Approach {#codefirst}
 
-My favorite tool for all data-related tasks, no matter if for data visualization design or research, is the <a href='https://www.r-project.org/about.html'>programing language R</a>, an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow <b>allows for reproducible, transparent, and partly or completely automated workflows</b>.  
+My favorite tool for all data-related tasks, no matter if for data visualization design, research, or analytics, is the <a href='https://www.r-project.org/about.html'>R programing language</a>. R is an open source and highly extensible language for statistical computing and graphics techniques. A code–first, script–based workflow <b>allows for reproducible, transparent, and partly or completely automated workflows</b>.  
   
-To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, non-programing design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/) which I combine with the code–first approach.<br>
+To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tidyverse.org/) from the [`{tidyverse}` package collection](https://www.tidyverse.org/) including many more that I use on a daily basis for all kinds of data preparation and analysis. More recently, I find myself enjoying using also other, no-coding design and charting tools such as [Figma](https://www.figma.com/ui-design-tool/), [DataWrapper](https://www.datawrapper.de/), and [Flourish](https://flourish.studio/) which I combine with the code–first approach.<br>
 
-<img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/>
-
+<hr>
 
 ## Contact {#contact}
 
@@ -71,7 +73,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 <hr>
 
-#### Selected Talks & Presentations {#presentations}
+## Selected Talks & Presentations {#presentations}
 
 <ul>
 
@@ -113,7 +115,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 </div>
 
 
-#### Selected Workshops & Trainings {#teaching}
+## Selected Workshops & Trainings {#teaching}
 
 <ul>
   
@@ -157,7 +159,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 </div>
 
 
-#### Selected Publications {#publications}
+## Selected Publications {#publications}
 
 <ul>
   <li class='about'><span class='authors'>C Voigt, <u style='font-weight:700;'>C Scherer</u> & V Runkel</span> (2022) Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines.<br>
