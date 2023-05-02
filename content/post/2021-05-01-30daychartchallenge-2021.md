@@ -177,7 +177,7 @@ No matter how many I may manage to finish, one of my main goals was to use a var
 
 <hr>
 
-## Final Thoughts
+## Final Thoughts {#final-thoughts}
 
 The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of **1,960 contributions** (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!
 
