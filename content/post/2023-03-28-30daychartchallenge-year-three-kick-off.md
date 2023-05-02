@@ -2,8 +2,8 @@
 title: 'The #30DayChartChallenge Is Ready to Kick Off'
 author: "Cédric"
 date: 2023-03-28
-image: img/banner/rstudiconf-workshop.jpg
-twitterImg: img/banner/rstudiconf-workshop.jpg
+image: img/banner/challenge-kick-of-artsy.jpg
+twitterImg: img/banner/challenge-kick-of-artsy.jpg
 layout: post
 showtoc: false
 description: "The #30DayChartChallenge is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate!"

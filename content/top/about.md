@@ -112,7 +112,6 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
 
-<hr>
 
 #### Selected Workshops & Trainings {#teaching}
 
@@ -157,7 +156,6 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
 
-<hr>
 
 #### Selected Publications {#publications}
 
