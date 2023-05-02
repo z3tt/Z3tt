@@ -5,7 +5,58 @@
     <description>Recent content in tutorial on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The #30DayChartChallenge Is Ready to Kick Off</title>
+      <link>https://cedricscherer.com/2023/03/28/the-#30daychartchallenge-is-ready-to-kick-off/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/2023/03/28/the-#30daychartchallenge-is-ready-to-kick-off/</guid>
+      <description>&lt;p&gt;This blog post originally appeared as a &lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34;&gt;post on &amp;ldquo;Nightingale&amp;rdquo;&lt;/a&gt;, the &lt;a href=&#34;https://nightingaledvs.com/&#34;&gt;journal of the Data Visualization Society&lt;/a&gt;. Thanks to Claire Santos for all the helpful comments on and revisions of the draft.&lt;/p&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/rstudio-conf-2022/ggplot2-graphic-design/main/images/logo.png&#34; style=&#34;float:right;padding: 0 0 0 10px;margin: 20px -10px 0 0 &#34; fig-alt=&#34;Course Hex Logo&#34; width=&#34;175&#34;&gt;
+&lt;p&gt;&lt;strong&gt;The &lt;a href=&#39;https://twitter.com/30daychartchall&#39; style=&#39;font-weight:800;&#39;&gt;#30DayChartChallenge&lt;/a&gt; is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. The challenge began in April 2021 and has continued every year since. Indeed, the third edition of the #30DayChartChallenge starts in a few days—and we have just shared this year’s prompts, if you want to get a head start!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Read on for a behind-the-scenes look at the two previous years’ challenges, then join us on social media (Twitter, Instagram, LinkedIn, and Mastodon) to participate.&lt;/p&gt;
+&lt;h2 id=&#34;the-birth-of-the-30daychartchallenge&#34;&gt;The Birth of the #30DayChartChallenge&lt;/h2&gt;
+&lt;p&gt;The #30DayChartChallenge was inspired by the #30DayMapChallenge, which was initiated by Topi Tjukanov in 2019 and focuses, as the name suggests, on creating 30 maps in 30 days, with a particular theme for each day. Those themes occasionally suggest a certain topic or data set, but many are open-ended—for example, the theme might be “experimental,” or it might be a specific color or geometry. The #30DayMapChallenge attracts many participants, and also passive spectators, from around the world, who use a wide range of tools to create static, animated, and interactive maps on a diversity of topics.&lt;/p&gt;
+&lt;p&gt;During the second edition of the map challenge in 2020, Dominic Royé proposed to organize something similar with a focus on all kinds of charts, not just maps. When Dominic tagged me in this discussion, I was a big fan of the idea and was all in. Both of us love maps and are skilled at creating spatial visualizations quickly, but for the many people who have never worked with spatial data, it seemed too difficult to find suitable data sources and navigate the quirks of map projections and unusual map types. Creating a similar challenge that was more open to the general data visualization community and that would allow for more flexibility in storytelling sounded like a great idea.&lt;/p&gt;
+&lt;p&gt;At the beginning of 2021, Dominic and I began to organize the event and brainstorm the daily themes. We went back and forth on how to select the themes. One idea we had was to use only chart types as prompts; we also considered restricting the challenge to a single data set. In the end, we decided to allow for a lot of freedom, hoping to see a variety of interpretations by participants. We ended up grouping the prompts into five data visualization types, loosely following “The Graphic Continuum” by Jonathan Schwabish and Severino Ribecca.&lt;/p&gt;
+&lt;p&gt;{img}
+The prompts of the first edition of the #30DayChartChallenge in 2021, grouped into five categories of data visualization types.&lt;/p&gt;
+&lt;p&gt;The 2021 challenge proved to be popular, with almost 2,000 data visualizations shared on Twitter with the hashtag #30DayChartChallenge. The daily, monthlong format is definitely demanding and time-consuming, so we did see a drop in contributions as the challenge progressed. Nevertheless, a number of participants showed incredible persistence and contributed all 30 days!&lt;/p&gt;
+&lt;p&gt;{img}
+A visualization of all visualizations shared on Twitter with the hashtag #30DayChartChallenge in 2021. The bars are grouped by categories and made up from the 1,960 individual contributions.&lt;/p&gt;
+&lt;h2 id=&#34;the-challenge-matures&#34;&gt;The Challenge Matures&lt;/h2&gt;
+&lt;p&gt;For the 2022 challenge, we adjusted the prompts a bit but stayed with the five main categories. We replaced some prompts for the sake of variety, especially for people who were participating for the second time. We also introduced two new types of prompts—“data days” and “theme days”—which provided specific data source and design theme prompts. The goal of “data days” and “theme days” was to make it easier for people to participate by reducing the need to come up with their own data and visualization styles every day.&lt;/p&gt;
+&lt;p&gt;We also liked the idea of being able to compare submissions that all used the same data source or design aesthetic. Our two theme days in 2022 prompted participants to create charts in two distinctive newsroom styles—a distribution chart styled as in The Economist, and a time series styled as in the Financial Times.&lt;/p&gt;
+&lt;h2 id=&#34;the-third-edition-is-happening-now&#34;&gt;The Third Edition is Happening Now!&lt;/h2&gt;
+&lt;p&gt;The third edition of the #30DayChartChallenge will begin on April 1. This year’s challenge follows the same approach as in 2022, with some new topics and dedicated data and theme days.&lt;/p&gt;
+&lt;p&gt;{img}
+The prompts of the upcoming 3rd edition featuring dedicated data and theme days on the last day of each category.&lt;/p&gt;
+&lt;p&gt;The data days cover the fantastic open-data portals by OurWorldInData, EuroStat, and the World Bank. The theme days feature the popular BBC News and UN Women.&lt;/p&gt;
+&lt;p&gt;{img}
+Two screenshots of animations visualizing data on “Women’s representation in society” from UN Women, the United Nations entity dedicated to gender equality and the empowerment of women.&lt;/p&gt;
+&lt;h2 id=&#34;the-value-and-challenge-of-challenges&#34;&gt;The Value and Challenge of Challenges&lt;/h2&gt;
+&lt;p&gt;After two years of organizing the #30DayChartChallenge, we can confidently say that challenges like this one are a great way to practice and experiment with data visualization design, test new tools and data sources, build a portfolio, share work publicly and receive feedback, interact with like-minded people, and most importantly be creative and have fun. The feedback from both contributors and spectators in previous years has been largely positive. We saw many supportive conversations happening around participants’ data visualizations, chart types, suitability of tools for a certain task, and design choices.&lt;/p&gt;
+&lt;p&gt;{img}
+Examples of positive feedback and support throughout the challenge on Twitter&lt;/p&gt;
+&lt;p&gt;Nevertheless, some critical voices also spoke up and made me think about the trade-off between the benefits of challenges like this one and their potential harms. For example, one comment read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“I don’t want to criticise the challenge, a lot of people will learn a ton from participating and seeing the output. But it does bother me that the daily pressure can easily lead to false claims or misleading charts. In my view, if you put a chart out there, you have a responsibility of being truthful, or at least as truthful as possible. And that takes time, as any data journalist will tell you. So I feel there is a mismatch between the format of a challenge and the craft of making dataviz.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Creating a visualization in a short time, especially if you are working on it outside of a regular job and family or other duties, is definitely hard; it’s true that the time available to spend on data exploration, research, and validation is limited. However, we experienced that participants in general seemed very open and honest about the potential limitations of their data sources and visualizations. When something was unintentionally wrong in their first iteration, they often shared an updated version later.&lt;/p&gt;
+&lt;p&gt;Nevertheless, this is a valid criticism and we, Dominic and I as organizers, but also we as a community, have to keep this in mind. Most importantly, we need to be careful when creating and sharing our own visualizations and chime in if we spot something potentially misleading or suspicious.&lt;/p&gt;
+&lt;p&gt;However, we are convinced that the value of these challenges are manifold, from education to building future interest in your work. Problems of sloppy chart design and data sources used to support false claims are broader issues not unique to challenges like the #30DayMapChallenge, though they certainly warrant continued discussion and consideration.&lt;/p&gt;
+&lt;h2 id=&#34;highlights-from-the-previous-editions&#34;&gt;Highlights From the Previous Editions&lt;/h2&gt;
+&lt;p&gt;We saw a ton of visualizations shared through the challenge, many of them quite well executed and creative. While the number of great visualizations is too many to feature in this article, I want to highlight a few that stuck with me. (You can check out more using the hashtag #30DayChartChallenge on social media.)&lt;/p&gt;
+&lt;p&gt;Join us for the 2023 Challenge, and let’s see what you can create!&lt;/p&gt;
+&lt;p&gt;{img}
+Examples of memorable submissions demonstrating a variety of approaches, tools, and data.&lt;/p&gt;
+&lt;h3 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h3&gt;
+&lt;p&gt;First of all I want to thank Dominic who came up with the idea and invited me to join him as a co-founder. Also, thanks to Wendy Shijia, Marco Sciaini and Paula Casado for your support with organizing the challenge. A special shout-out to Topi Tjukanov for creating the #30DayMapChallenge, which served as the template for our challenge. Thank you for this fun project that allowed me to strengthen my spatial data visualization skills and was and remains a steady source of inspiration! And of course, a big thank you to everyone participating in the challenge, watching and sharing the contributions, and providing feedback and praise!&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>2-Day Workshop on &#34;Graphic Design with ggplot2&#34; at rstudio::conf 2022</title>
       <link>https://cedricscherer.com/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</link>

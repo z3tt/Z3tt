@@ -10,6 +10,7 @@ description: "This April, Dominic Royé and I hosted the first #30DayChartChalle
 tags:
     - DataViz
     - 30DayChartChallenge
+    - challenge
     - R
     - ggplot2
     - Figma
