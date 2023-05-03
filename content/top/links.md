@@ -61,7 +61,7 @@ A loose collection of interesting links featuring open-access books, tools, tuto
 
 ##### Open-Access Books
 
-* <a href="https://www.bigbookofr.com/" target="_blank">“Big Book of R”</a> — a collection of 150+ books!
+* <a href="https://www.bigbookofr.com/" target="_blank">“Big Book of R”</a> — a collection of 150+ R books!
 * <a href="https://r4ds.had.co.nz/" target="_blank">“R for Data Science”</a> by Hadley Wickham & Garrett Grolemund
 * <a href="https://ggplot2-book.org" target="_blank">“ggplot2: Elegant Graphics for Data Analysis”</a> by Hadley Wickham 
 * <a href="https://geocompr.robinlovelace.net/index.html" target="_blank">“Geocomputation with R”</a> by Robin Lovelace, Jakub Nowosad & Jannes Muenchow
@@ -74,7 +74,7 @@ A loose collection of interesting links featuring open-access books, tools, tuto
 ##### Galleries
 
 * <a href="https://www.r-graph-gallery.com/" target="_blank">R Graph Gallery</a>
-* <a href="https://exts.ggplot2.tidyverse.org/" target="_blank">Gallery of ggplot2 extensions</a>
+* <a href="https://exts.ggplot2.tidyverse.org/" target="_blank">Gallery of ggplot2 Extension Packages</a>
 * <a href="https://github.com/EmilHvitfeldt/r-color-palettes/" target="_blank">Color Palettes in R</a>
 * <a href="http://tidytuesday.rocks/" target="_blank">tidytuesday.rocks</a> (#TidyTuesday Collection)
 
@@ -85,8 +85,8 @@ A loose collection of interesting links featuring open-access books, tools, tuto
 * <a href="https://www.rfordatasci.com" target="_blank">R4DS Learning Community</a>
 * <a href="https://twitter.com/hashtag/tidytuesday?lang=en" target="_blank">#TidyTuesday Community on Twitter</a>
 * <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank">Rstudio Cheatsheet Collection</a>
-* <a href="https://ggplot2.tidyverse.org/reference/" target="_blank">{ggplot2} reference</a>
-* <a href="https://ggplot2tor.com/aesthetics/" target="_blank">{ggplot2} aesthetics finder</a>
+* <a href="https://ggplot2.tidyverse.org/reference/" target="_blank">{ggplot2} Reference</a>
+* <a href="https://ggplot2tor.com/aesthetics/" target="_blank">{ggplot2} Aesthetics Finder</a>
 
 
 ##### Misc

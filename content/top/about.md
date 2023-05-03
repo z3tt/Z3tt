@@ -73,7 +73,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 
 <hr>
 
-## Selected Talks & Presentations {#presentations}
+## Selected Presentations {#presentations}
 
 <ul>
 
@@ -104,7 +104,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)<br>
   <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">&#x21aa; Recording</a></li>
 
-  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#talks">Complete List of Talks and Presentations</a></p>
+  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#talks">Complete List of Presentations</a></p>
 
 </ul>
 
@@ -115,7 +115,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
 </div>
 
 
-## Selected Workshops & Trainings {#teaching}
+## Selected Trainings {#teaching}
 
 <ul>
   
@@ -149,7 +149,7 @@ Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
 
-  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#teaching">Complete List of Workshops and Trainings</a></p>
+  <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#teaching">Complete List of Trainings</a></p>
 
 </ul>
 
