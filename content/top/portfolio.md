@@ -331,6 +331,17 @@ My ORCID ID is <a href="https://orcid.org/0000-0003-0465-2543" target="_blank">0
 </ul>
 
 
+##### Guest Posts
+
+<ul>
+
+  <li class='about'><a href="https://nightingaledvs.com/the-30daychartchallenge-year-three/" target="_blank">“The #30DayChartChallenge Is Ready to Kick Off”</a> @ Nightingale</li>
+
+  <li class='about'><a href="https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization" target="_blank">“Colors and Emotions in Data Visualization”</a> @ Storytelling With Data</li>
+
+</ul>
+
+
 ##### Interviews
 
 <ul>

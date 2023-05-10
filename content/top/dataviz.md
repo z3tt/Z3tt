@@ -35,7 +35,11 @@ Selected data visualizations, maps and other designs I have produced for clients
 
 <hr>
 
+
+
 ## Client Projects {#clients}
+
+
 
 #### [Escalating Drought](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for Scientific American {#SciAm}
 
@@ -47,6 +51,8 @@ A one-page data visualization for the "Graphic Science" section of the popular s
 
 <hr>
 
+
+
 #### [Q Vadis? Q Anon Activity on Telegram](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for CeMAS {#pyramids}
 
 An unfoldable (see <a href="https://twitter.com/holnburger/status/1509799933355905048" target="_blank">video</a>) four-page graphic with the main element being a stream graph visualizing the huge amount of Q Anon messages sent on Telegram, annotated with important events such as the storming of the capital. The multi-panel graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in the German-Speaking World"](https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/) by the [Center for Monitoring, Analysis and Strategy (CeMAS)](https://cemas.io/) which is available in print and digital in [German](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/) and [English](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/CeMAS_Q_Vadis_Zur_Verbreitung_von_QAnon_im_deutschsprachigen_Raum.pdf).
@@ -56,6 +62,8 @@ An unfoldable (see <a href="https://twitter.com/holnburger/status/15097999333559
 <img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>
 
 <hr>
+
+
 
 #### [Rediscovering Demographic Change](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought) for the German Federal Institute for Population Research (BiB) {#pyramids}
 
@@ -72,7 +80,9 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 <hr>
 
-#### [Afrozensus 2020](https://afrozensus.de/reports/2020/) for EOTO e.V. & Citizens for Europe {#afrozensus} 
+
+
+#### [Afrozensus 2020](https://afrozensus.de/reports/2020/) for EOTO e.V. & Citizens for Europe {#afrozensus}
 
 89 data visualizations for the report ["Afrozensus 2020"](https://afrozensus.de/reports/2020/) published by [EOTO e.V.](https://www.eoto-archiv.de/) and [Citizen for Europe](https://citizensforeurope.org/). The visualizations show the results from the largest survey ever conducted among black, African and Afrodiasporic people in Germany. 
 
@@ -89,12 +99,21 @@ illustrating the demographic change in Germany over 30 years from various perspe
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
 
+
+
 #### Visualizations for Various Projects {#variousclients}
 
 {{< gallery dir="img/gallery-clients/" />}} {{< load-photoswipe >}}
 <br>
 
+<hr>
+
+
+
+
 ## Challenge Contributions {#challenges}
+
+
 
 #### #TidyTuesday {#tidytuesday}
 
@@ -112,6 +131,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 &nbsp;&nbsp;&rarr;&nbsp;&nbsp;[all my contributions to #TidyTuesday](https://github.com/Z3tt/TidyTuesday)
 <br><br>
+
 
 
 #### #30DayChartChallenge {#chartchallenge}
@@ -135,6 +155,7 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 [#30DayMapChallenge](https://twitter.com/tjukanov/status/1187713840550744066) is a challenge initiated by Topi Tjukanov and took place for the first time in November 2019. I have participated in [2019](#mapchallenge2019) and [2021](#mapchallenge2021) .
 
+
 ##### 2021 Edition {#mapchallenge2021}
 
 <img src="img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg', 'blank');"/>
@@ -149,6 +170,7 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
   <span class='highlight'>You need some map design?<br>
   <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
 </div>
+
 
 ##### 2019 Edition {#mapchallenge2019}
 
@@ -165,27 +187,32 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 
 
+
 ## Contributions to Other Challenges {#miscchallenges}
 
 Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/2021/02/25/mapping-movements-the-art-and-the-science-we-have-the-winners/), the [RStudio Table Contest](https://www.rstudio.com/blog/winners-of-the-2020-rstudio-table-contest/), [#MakeoverMonday](https://www.makeovermonday.co.uk/), and the [#SWDchallenge ("Storytelling with Data" challenge)](http://www.storytellingwithdata.com/swdchallenge).
+
 
 ##### BES MoveMap Competition 2021 (Pretty Category Winner)
 
 <img src="https://raw.githubusercontent.com/z3tt/Cheetah-Map/main/plots/CheetahMap_rcarto_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/z3tt/Cheetah-Map', 'blank');"/>
 
+
 ##### RStudio Table Contest 2020 (Honourable Mention)
 
 <img src="https://raw.githubusercontent.com/Z3tt/Rstudio_TableContest_2020/main/output/IMDb_TopDocumentary.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/', 'blank');"/>
+
 
 ##### Storytelling with Data
 
 {{< gallery dir="img/gallery-swdchallenge/" />}} {{< load-photoswipe >}}
 
+
 ##### MakeoverMonday
 
 {{< gallery dir="img/gallery-makeovermonday/" />}} {{< load-photoswipe >}}
 
-<hr>
+
 
 ## Personal Projects {#personal}
 
@@ -197,7 +224,4 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 
-<div class='highlightbox'>
-  <span class='highlight'>Want to hire me for a project or training?<br>
-  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
-</div>
+<hr>

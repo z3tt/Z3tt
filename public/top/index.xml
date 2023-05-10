@@ -21,7 +21,7 @@
   }
 &lt;/style&gt;
 &lt;p&gt;&lt;span class=&#39;emphasize&#39;&gt;I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#39;font-size:2.2rem;&#39;&gt;As a &lt;a href=&#39;https://www.cedricscherer.com/top/about/#ecology&#39;&gt;graduated ecologist&lt;/a&gt;, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in &lt;b style=&#39;font-weight:900;&#39;&gt;data wrangling, statistical analysis, and model development&lt;/b&gt;. Since effective communicating of data is of paramount importance, I have subsequently developed strong skills in &lt;b style=&#39;font-weight:900;&#39;&gt;data visualization, journalism, and design&lt;/b&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#39;font-size:2.2rem;&#39;&gt;As a &lt;a href=&#39;https://www.cedricscherer.com/top/about/#ecology&#39;&gt;graduated ecologist&lt;/a&gt;, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in &lt;b style=&#39;font-weight:900;&#39;&gt;data wrangling, statistical analysis, and model development&lt;/b&gt;. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in &lt;b style=&#39;font-weight:900;&#39;&gt;data visualization, journalism, and design&lt;/b&gt;.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#39;font-size:2.2rem;&#39;&gt;As an &lt;a href=&#39;https://www.cedricscherer.com/top/about/#dataviz&#39;&gt;independent data visualization designer&lt;/a&gt;, I combine my expertise in analyzing large data sets with my passion for design, colors and typefaces. I have designed &lt;b style=&#39;font-weight:900;&#39;&gt;graphics across all disciplines, purposes, and styles&lt;/b&gt; applying a &lt;a href=&#39;https://www.cedricscherer.com/top/about/#codefirst&#39;&gt;code–first approach&lt;/a&gt;. I regularly talk about data visualization design and teach fundamental and advanced R coding and ggplot2 techniques.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
 &lt;span style=&#39;font-size:2.2rem;&#39;&gt;
 &lt;span style=&#39;font-family:Canicule Display;&#39;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;rarr;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/top/dataviz&#39;&gt;Data Visualization Gallery&lt;/a&gt;&lt;br&gt;
@@ -560,6 +560,11 @@ If those published comments could be construed as a threat, and the perpetrator 
   &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://policyviz.com/podcast/episode-212-dr-cedric-scherer/&#34; target=&#34;_blank&#34;&gt;“PolicyViz Episode #212”&lt;/a&gt; hosted by Jon Schwabish&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://www.buzzsprout.com/1174520/8969083&#34; target=&#34;_blank&#34;&gt;“Die Sendung mit der Ziege: Lollipops und Regenwolken”&lt;/a&gt; hosted by Dr. Madlen Ziege&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h5 id=&#34;guest-posts&#34;&gt;Guest Posts&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34; target=&#34;_blank&#34;&gt;“The #30DayChartChallenge Is Ready to Kick Off”&lt;/a&gt; @ Nightingale&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization&#34; target=&#34;_blank&#34;&gt;“Colors and Emotions in Data Visualization”&lt;/a&gt; @ Storytelling With Data&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h5 id=&#34;interviews&#34;&gt;Interviews&lt;/h5&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://www.beanpoet.com/data-visualization-show-countries-with-highest-rated-coffees/&#34; target=&#34;_blank&#34;&gt;“Data visualization shows countries with highest-rated coffees”&lt;/a&gt; by BeanPoet&lt;/li&gt;
@@ -1030,6 +1035,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
  
 
 &lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;challenges&#34;&gt;Challenge Contributions&lt;/h2&gt;
 &lt;h4 id=&#34;tidytuesday&#34;&gt;#TidyTuesday&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;#TidyTuesday&lt;/a&gt; is a weekly data project aimed at the R ecosystem and the &lt;code&gt;{tidyverse}&lt;/code&gt; package bundle to wrangle, explore and visualize the data set that is provided by the &lt;a href=&#34;https://www.rfordatasci.com/&#34;&gt;R4DS Online Learning Community&lt;/a&gt;. All visualizations are produced with 100% code using the &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt; graphics library &lt;/a&gt; in R and without any post-processing.&lt;/p&gt;
@@ -1856,7 +1862,6 @@ illustrating the demographic change in Germany over 30 years from various perspe
  
  
 &lt;/p&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;personal&#34;&gt;Personal Projects&lt;/h2&gt;
 &lt;img src=&#34;img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://twitter.com/CedScherer/status/1537169626257317894&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;img src=&#34;img/dataviz-portfolio/paygap_eu_dumbbell.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg&#39;, &#39;blank&#39;);&#34;/&gt;
@@ -1970,10 +1975,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
  
  
 &lt;/p&gt;
-&lt;div class=&#39;highlightbox&#39;&gt;
-  &lt;span class=&#39;highlight&#39;&gt;Want to hire me for a project or training?&lt;br&gt;
-  &lt;a href=&#34;https://calendly.com/cedricscherer/lets-meet&#34; target=&#34;_blank&#34;&gt;Schedule a discovery call!&lt;/a&gt;&lt;/span&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 </description>
     </item>
     
@@ -2352,6 +2354,11 @@ Birkenstra&amp;szlig;e 18&lt;br /&gt;
 &lt;ul&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://policyviz.com/podcast/episode-212-dr-cedric-scherer/&#34; target=&#34;_blank&#34;&gt;“PolicyViz Episode #212”&lt;/a&gt; hosted by Jon Schwabish&lt;/li&gt;
   &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://www.buzzsprout.com/1174520/8969083&#34; target=&#34;_blank&#34;&gt;“Die Sendung mit der Ziege: Lollipops und Regenwolken”&lt;/a&gt; hosted by Dr. Madlen Ziege&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;guest-posts&#34;&gt;Guest Posts&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34; target=&#34;_blank&#34;&gt;“The #30DayChartChallenge Is Ready to Kick Off”&lt;/a&gt; @ Nightingale&lt;/li&gt;
+  &lt;li class=&#39;about&#39;&gt;&lt;a href=&#34;https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization&#34; target=&#34;_blank&#34;&gt;“Colors and Emotions in Data Visualization”&lt;/a&gt; @ Storytelling With Data&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;interviews&#34;&gt;Interviews&lt;/h5&gt;
 &lt;ul&gt;

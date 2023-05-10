@@ -572,6 +572,17 @@
 </ul>
 
 
+##### Guest Posts
+
+<ul>
+
+  <li class='about'><a href="https://nightingaledvs.com/the-30daychartchallenge-year-three/" target="_blank">“The #30DayChartChallenge Is Ready to Kick Off”</a> @ Nightingale</li>
+
+  <li class='about'><a href="https://www.storytellingwithdata.com/blog/2021/6/8/colors-and-emotions-in-data-visualization" target="_blank">“Colors and Emotions in Data Visualization”</a> @ Storytelling With Data</li>
+
+</ul>
+
+
 ##### Interviews
 
 <ul>
