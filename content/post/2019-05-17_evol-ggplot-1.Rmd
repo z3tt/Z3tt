@@ -180,7 +180,6 @@ ggplot(df_sorted, aes(x = student_ratio, y = region)) +
   scale_x_continuous(limits = c(0, 90))
 ```
 
-
 The order of the categories is perfect as it is after flipping the coordinates—the lower the student-teacher ratio, the better.
 
 
@@ -980,7 +979,7 @@ saveGIF({
   print(ggdraw_title(g13))
   print(ggdraw_title(g14))
   print(ggdraw_title(g15))
-  #print(ggdraw_title(g16))<
+  #print(ggdraw_title(g16))
   print(ggdraw_title(g17))
   print(ggdraw_title(g18))
   print(ggdraw_title(g19))
