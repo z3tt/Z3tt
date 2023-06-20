@@ -65,7 +65,7 @@ p.small {
 &lt;p&gt;By &lt;strong&gt;scaling death tolls by country&lt;/strong&gt;, the visualization accounts for different population sizes and states of the epidemic which enables us to compare them more easily.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Each country has it&amp;rsquo;s on row which helps to see a clear pattern for each country without dealing with overplotting.&lt;/p&gt;
+&lt;p&gt;Each country has its on row which helps to see a clear pattern for each country without dealing with overplotting.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The evolving patterns mimics the way we have experienced and are experiencing the pandemic. I found it very interesting to look at the &lt;strong&gt;change in a dynamic way&lt;/strong&gt; since values that look very high today might be low in a few days depending on the trend. This way the animations mimics us humans and how we see the situation without making any claims about how the numbers will change in the next days. You can also &lt;em&gt;ride the wave&lt;/em&gt; and wait for the new colors to be not pink anymore.&lt;/p&gt;

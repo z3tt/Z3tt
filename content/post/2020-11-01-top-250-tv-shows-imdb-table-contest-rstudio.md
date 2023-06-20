@@ -1,6 +1,6 @@
 ---
 URL: /2020/11/01/imdb-top-250-series-table-contest-rstudio/
-title: What do I binge next? A detailed overview of the top 250 TV shows
+title: What Do I Binge Next? A Detailed Overview of the Top 250 TV Shows
 author: Cédric
 date: "2020-11-01"
 image: img/banner/imdb-southpark-artsy.png
