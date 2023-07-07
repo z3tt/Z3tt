@@ -110,7 +110,7 @@
                   <h6>Quick Links</h6>
                     <ul class="list-inline">
                         {{ range .Site.Params.bookmark_link }}
-                        <li><a target="_self" href="{{.href | relLangURL}}">{{.title}}</a></li>
+                        <li><a href="{{.href | relLangURL}}">{{.title}}</a></li>
                         {{ end }}
                     </ul>
                 </section>
