@@ -29,7 +29,7 @@ There are several use cases why you may want to use a functional programming app
 * communicate results for different groups
 * generate charts for custom reports using various data (sub)sets
 
-There is a great <a href="https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/" target="_blank">blogpost by Ariel Muldoon on automating explorative plots</a> by iterating over different variables. This blog post here focuses more on the generation of polished charts to visualize subsets of the dame data set. In the end, I will also share some [examples for working with variables](#variables) and some [shortcuts for exploring data sets visually](#shortcuts).
+There is a great <a href="https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/" target="_blank">blogpost by Ariel Muldoon on automating explorative plots</a> by iterating over different variables. This blog post here focuses more on the generation of polished charts to visualize subsets of the same data set. In the end, I will also share some [examples for working with variables](#variables) and some [shortcuts for exploring data sets visually](#shortcuts).
 
 ---
 
