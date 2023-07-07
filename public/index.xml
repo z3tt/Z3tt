@@ -5,22 +5,472 @@
     <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>30DayChartChallenge</title>
-      <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <title>automation</title>
+      <link>https://cedricscherer.com/tags/automation/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/30daychartchallenge/</guid>
+      <guid>https://cedricscherer.com/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cédric Scherer</title>
       <link>https://cedricscherer.com/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataViz</title>
+      <link>https://cedricscherer.com/tags/dataviz/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>efficiency</title>
+      <link>https://cedricscherer.com/tags/efficiency/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/efficiency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr</title>
+      <link>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</guid>
+      <description>
+
+
+&lt;p style=&#34;font-size:14px&#34;&gt;
+Header image by &lt;a href=&#39;https://www.youtube.com/watch?v=kLvZUXtVXQ0&#39; target=&#34;_blank&#34;&gt;Purrple Cat&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;During a consulting session a few weeks ago, we discussed automated plot generation with &lt;code&gt;{ggplot2}&lt;/code&gt;. What does that mean? If you have a bunch of variables, you may want to create a set of explorative charts for different variables.
+Or you may want to create a set of explanatory charts, one for each category of your data set. For both use cases, this requires redundant work as the plots use &lt;em&gt;almost&lt;/em&gt; the same code to generate the visualizations.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Instead of copying and pasting the same code and adjusting the variables, iterate over a vector of groups (variables, categories, numeric ranges) to generate the same visual for different data sets by using a custom function.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are several use cases why you may want to use a functional programming approach to generate the same chart for different data subsets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;explore distributions or relationships of different variables&lt;/li&gt;
+&lt;li&gt;communicate results for different groups&lt;/li&gt;
+&lt;li&gt;generate charts for custom reports using various data (sub)sets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is a great &lt;a href=&#34;https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/&#34; target=&#34;_blank&#34;&gt;blogpost by Ariel Muldoon on automating explorative plots&lt;/a&gt; by iterating over different variables. This blog post here focuses more on the generation of polished charts to visualize subsets of the dame data set. In the end, I will also share some &lt;a href=&#34;#variables&#34;&gt;examples for working with variables&lt;/a&gt; and some &lt;a href=&#34;#shortcuts&#34;&gt;shortcuts for exploring data sets visually&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;table-of-content&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Table of Content&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#setup&#34;&gt;The Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#case&#34;&gt;The Use Case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#function&#34;&gt;The Function&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#automation&#34;&gt;The Automation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#complex&#34;&gt;A More Complex Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#variables&#34;&gt;An Example with Variables as Inputs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;setup&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Setup&lt;/h2&gt;
+&lt;p&gt;We are going to visualize relationships for different numeric variables of the &lt;code&gt;mpg&lt;/code&gt; data set which features fuel economy data of popular car models for different years, manufacturers, and car types. In this tutorial, we are using only data from 2008.&lt;/p&gt;
+&lt;p&gt;For some data-wrangling steps, we make use of the &lt;code&gt;{dplyr}&lt;/code&gt; packages. To visualize the data, we use the packages &lt;code&gt;{ggplot2}&lt;/code&gt; and &lt;code&gt;{patchwork}&lt;/code&gt;. We will also use some functions of other packages, namely &lt;code&gt;{tidyr}&lt;/code&gt;, &lt;code&gt;{stringr}&lt;/code&gt;, &lt;code&gt;{prismatic}&lt;/code&gt; and &lt;code&gt;{ggforce}&lt;/code&gt; which we address via the namespace.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+Unfold to explore setup steps
+&lt;/summary&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)   ## for plotting
+library(purrr)     ## for iterative tasks
+library(dplyr)     ## for data wrangling
+library(patchwork) ## for multi-panel plots
+
+## customize plot style
+theme_set(theme_minimal(base_size = 15, base_family = &amp;quot;Anybody&amp;quot;))
+theme_update(
+  axis.title.x = element_text(margin = margin(12, 0, 0, 0), color = &amp;quot;grey30&amp;quot;),
+  axis.title.y = element_text(margin = margin(0, 12, 0, 0), color = &amp;quot;grey30&amp;quot;),
+  panel.grid.minor = element_blank(),
+  panel.border = element_rect(color = &amp;quot;grey45&amp;quot;, fill = NA, linewidth = 1.5),
+  panel.spacing = unit(.9, &amp;quot;lines&amp;quot;),
+  strip.text = element_text(size = rel(1)),
+  plot.title = element_text(size = rel(1.4), face = &amp;quot;bold&amp;quot;, hjust = .5),
+  plot.title.position = &amp;quot;plot&amp;quot;
+)
+
+## adjust data set
+mpg &amp;lt;-
+  ggplot2::mpg %&amp;gt;% 
+  filter(year == 2008) %&amp;gt;% 
+  mutate(manufacturer = stringr::str_to_title(manufacturer))&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;/div&gt;
+&lt;div id=&#34;case&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Use Case&lt;/h2&gt;
+&lt;p&gt;Let’s visualize the 2008 car fuel data and explore the relationship of displacement and highway miles per gallon per manufacturer.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g &amp;lt;- 
+  ggplot(mpg, aes(x = hwy, y = displ)) +
+  scale_x_continuous(breaks = 2:8*5) +
+  labs(x = &amp;quot;Highway miles per gallon&amp;quot;, y = &amp;quot;Displacement in litres&amp;quot;, color = NULL)
+
+g + geom_point(aes(color = manufacturer), alpha = .5, size = 3)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-all-color-1.png&#34; width=&#34;768&#34; /&gt;
+&lt;figcaption&gt;
+A (too) colorful scatterplot of displacement versus highway miles per gallon with points colored by manufacturer.
+&lt;/figcaption&gt;
+&lt;p&gt;Two issues arise here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;too many categories:&lt;/strong&gt; the use of color encoding is not useful given the large number of manufacturers (a usual recommended limit of categorical colors is 5-8)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;too many data points:&lt;/strong&gt; the number of observations, especially with identical value combinations, leads to* overplotting and color mixing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A common solution to circumvent these issues are small multiples:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt; g + 
+  geom_point(alpha = .5, size = 2) +
+  facet_wrap(~ manufacturer, ncol = 3)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-facet-1.png&#34; width=&#34;960&#34; /&gt;
+&lt;figcaption&gt;
+Small multiples visualizing the relationship of displacement versus highway miles per gallon per manufaturer as a grid of scatter plots.
+&lt;/figcaption&gt;
+&lt;p&gt;While it solves the mentioned issues, the resulting small multiple is likely too dense to effectively communicate the relationships for each manufacturer. Due to the large number of manufacturers, each plot also becomes rather small.&lt;/p&gt;
+&lt;p&gt;To focus on a single manufacturer, we may decide to create a plot for a subset of the data. To allow for comparison, we also plot all other car models as smaller, grey circles.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g +
+  ## filter for manufacturer of interest
+  geom_point(data = filter(mpg, manufacturer == &amp;quot;Audi&amp;quot;), 
+             color = &amp;quot;#007cb1&amp;quot;, alpha = .5, size = 4) +
+  ## add shaded points for other data
+  geom_point(data = filter(mpg, manufacturer != &amp;quot;Audi&amp;quot;), 
+             shape = 1, color = &amp;quot;grey45&amp;quot;, size = 2) +
+  ## add title manually
+  ggtitle(&amp;quot;Audi&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-single-audi-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;figcaption&gt;
+A scatterplot highlighting the car models manufactured by Audi. The grey circles represent all other car models featured in the data set.
+&lt;/figcaption&gt;
+&lt;p&gt;To communicate the relationship for all manufacturers, e.g. a dedicated section for each in a report or revealing the results step by step in a presentation, we now need to repeat the same code 15 times and replace the filter conditions and title. Or we iterate the process.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;function&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Function&lt;/h2&gt;
+&lt;p&gt;The first step is to create a custom function that takes the subset condition as an input and creates the plot with the filtered data. The code inside the user-defined function below is basically the same as the one to create the Audi chart. The only difference is that we do not specify Audi but create a placeholder, here called &lt;code&gt;group&lt;/code&gt;, to control the filtering condition and title: In the &lt;code&gt;geom_point()&lt;/code&gt; calls, we subset our data based on &lt;code&gt;group&lt;/code&gt;; in the &lt;code&gt;labs()&lt;/code&gt; function we use this string as the plot title.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer &amp;lt;- function(group) {
+  
+  ## check if input is valid
+  if (!group %in% mpg$manufacturer) stop(&amp;quot;Manufacturer not listed in the data set.&amp;quot;)
+  
+  ggplot(mapping = aes(x = hwy, y = displ)) +
+    ## filter for manufacturer of interest
+    geom_point(data = filter(mpg, manufacturer %in% group), 
+               color = &amp;quot;#007cb1&amp;quot;, alpha = .5, size = 4) +
+    ## add shaded points for other data
+    geom_point(data = filter(mpg, !manufacturer %in% group), 
+               shape = 1, color = &amp;quot;grey45&amp;quot;, size = 2) +
+    scale_x_continuous(breaks = 2:8*5) +
+    ## add title automatically based on subset choice
+    labs(x = &amp;quot;Highway gallons&amp;quot;, y = &amp;quot;Displacement&amp;quot;, 
+         title = group, color = NULL)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can run the functional manually for each manufacturer featured in the data set:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## run function for specific subsets
+plot_manufacturer(&amp;quot;Audi&amp;quot;)
+plot_manufacturer(&amp;quot;Chevrolet&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;figcaption&gt;
+We now can manually create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;div id=&#34;automation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The Automation&lt;/h2&gt;
+&lt;p&gt;The final step is simple: we use the &lt;code&gt;map()&lt;/code&gt; function from the &lt;code&gt;{purrr}&lt;/code&gt; package to iterate over a vector of manufacturers and pass the elements to our &lt;code&gt;plot_manufacturer()&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;groups &amp;lt;- unique(mpg$manufacturer)
+map(groups, ~plot_manufacturer(group = .x))&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-highlight-plots-1.png&#34; width=&#34;1920&#34; /&gt;
+&lt;figcaption&gt;
+All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;div id=&#34;complex&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;A More Complex Example&lt;/h2&gt;
+&lt;p&gt;Let’s consider a more complex visualization which consists of multiple plots. As before, we first check the input and filter the data. Afterwards, we create three plots and combine them with the help of the &lt;code&gt;{patchwork}&lt;/code&gt; package.&lt;/p&gt;
+&lt;p&gt;The main plot is again a scatter plot of displacement versus highway miles per gallon. This time, we do not add the other car models to our plot. To ensure that the plots cover the full range of the data, I set the axis limits based on the variable ranges of the full data set (&lt;code&gt;lims_x&lt;/code&gt; and &lt;code&gt;lims_y&lt;/code&gt; in &lt;code&gt;scale_x_continuous()&lt;/code&gt; and &lt;code&gt;scale_y_continuous()&lt;/code&gt;, respectively). The color of the points is mapped to the car type. To avoid inconsistent coloring of the points due to different car types listed per manufacturer, I create a named color vector (&lt;code&gt;pal&lt;/code&gt;) to match the colors by class (&lt;code&gt;scale_color_manual()&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;To both axes, I add marginal box plots showing the 1-D summary statistics of the variables. Again, I am applying the limits based on the full data set to match the axis ranges of the scatter plot. I also remove all non-data elements (&lt;code&gt;theme_void()&lt;/code&gt;) and the axis guides (&lt;code&gt;guide = &#34;none&#34;&lt;/code&gt; in the positional scales).&lt;/p&gt;
+&lt;p&gt;Another function argument allows to control whether the plot is saved to disk (&lt;code&gt;save = TRUE&lt;/code&gt;) or not (&lt;code&gt;save = FALSE&lt;/code&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal &amp;lt;- function(group, save = FALSE) {
+  
+  ## check if input is valid
+  if (!group %in% mpg$manufacturer) stop(&amp;quot;Manufacturer not listed in the data set.&amp;quot;)
+  
+  ## filter data
+  data &amp;lt;- filter(mpg, manufacturer %in% group)
+  
+  ## set limits
+  lims_x &amp;lt;- range(mpg$hwy) 
+  lims_y &amp;lt;- range(mpg$displ)
+  
+  ## define colors
+  pal &amp;lt;- RColorBrewer::brewer.pal(n = n_distinct(mpg$class), name = &amp;quot;Dark2&amp;quot;)
+  names(pal) &amp;lt;- unique(mpg$class)
+  
+  ## scatter plot
+  main &amp;lt;- ggplot(data, aes(x = hwy, y = displ, color = class)) +
+    geom_point(size = 3, alpha = .5) +
+    scale_x_continuous(limits = lims_x, breaks = 2:8*5) +
+    scale_y_continuous(limits = lims_y) +
+    scale_color_manual(values = pal, name = NULL) +
+    labs(x = &amp;quot;Highway miles per gallon&amp;quot;, y = &amp;quot;Displacement&amp;quot;) +
+    theme(legend.position = &amp;quot;bottom&amp;quot;)
+  
+  ## boxplots
+  right &amp;lt;- ggplot(data, aes(x = manufacturer, y = displ)) +
+    geom_boxplot(linewidth = .7, color = &amp;quot;grey45&amp;quot;) +
+    scale_y_continuous(limits = lims_y, guide = &amp;quot;none&amp;quot;, name = NULL) +
+    scale_x_discrete(guide = &amp;quot;none&amp;quot;, name = NULL) +
+    theme_void()
+  
+  top &amp;lt;- ggplot(data, aes(x = hwy, y = manufacturer)) +
+    geom_boxplot(linewidth = .7, color = &amp;quot;grey45&amp;quot;) +
+    scale_x_continuous(limits = lims_x, guide = &amp;quot;none&amp;quot;, name = NULL) +
+    scale_y_discrete(guide = &amp;quot;none&amp;quot;, name = NULL) +
+    theme_void()
+  
+  ## combine plots
+  p &amp;lt;- top + plot_spacer() + main + right + 
+    plot_annotation(title = group) + 
+    plot_layout(widths = c(1, .05), heights = c(.1, 1))
+  
+  ## save multi-panel plot
+  if (isTRUE(save)) {
+    ggsave(p, filename = paste0(group, &amp;quot;.pdf&amp;quot;), 
+           width = 6, height = 6, device = cairo_pdf)
+  }
+  
+  return(p)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can apply the function to manufacturers line by line:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal(&amp;quot;Dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-dodge-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;figcaption&gt;
+There are 11 cars listed that are produced by Dodge: 5 minivans, 12 pickups, and 4 SUVs.
+&lt;/figcaption&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal(&amp;quot;Nissan&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-nissan-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;figcaption&gt;
+The 7 Nissan cars belong either to the midsize or the SUV class.
+&lt;/figcaption&gt;
+&lt;p&gt;Or we iterate over the vector of manufacturers with the &lt;code&gt;{purrr}&lt;/code&gt; package.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;map(groups, ~plot_manufacturer_marginal(.x))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you wish to only save the visualizations but not plot them, use the &lt;code&gt;walk()&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;walk(groups, ~plot_manufacturer_marginal(.x, save = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;variables&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;An Example with Variables as Inputs&lt;/h2&gt;
+&lt;p&gt;To wrap up, let’s consider the use case of exploring the data set. We create a general function that works with any data set and two numeric variables. Based on these three inputs, the function generates a scatter plot with a linear fitting.&lt;/p&gt;
+&lt;p&gt;In addition, we allow to define a variable to encode points by color as well as to control the size and transparency of the points. If the user passes a column for color encoding, we either use (i) a categorical palette and linear fittings for each group for qualitative variables or (ii) a sequential palette with a single smoothing line for quantitative variables.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm &amp;lt;- function(data, var1, var2, pointsize = 2, transparency = .5, color = &amp;quot;&amp;quot;) {
+  
+  ## check if inputs are valid
+  if (!is.data.frame(data)) stop(&amp;quot;data needs to be a data frame.&amp;quot;)
+  if (!is.numeric(pull(data[var1]))) stop(&amp;quot;Column var1 needs to be of type numeric, passed as string.&amp;quot;)
+  if (!is.numeric(pull(data[var2]))) stop(&amp;quot;Column var2 needs to be of type numeric, passed as string.&amp;quot;)
+  if (!is.numeric(pointsize)) stop(&amp;quot;pointsize needs to be of type numeric.&amp;quot;)
+  if (!is.numeric(transparency)) stop(&amp;quot;transparency needs to be of type numeric.&amp;quot;)
+  if (color != &amp;quot;&amp;quot;) { if (!color %in% names(data)) stop(&amp;quot;Column color needs to be a column of data, passed as string.&amp;quot;) }
+  
+  g &amp;lt;- 
+    ggplot(data, aes(x = !!sym(var1), y = !!sym(var2))) +
+    geom_point(aes(color = !!sym(color)), size = pointsize, alpha = transparency) +
+    geom_smooth(aes(color = !!sym(color), color = after_scale(prismatic::clr_darken(color, .3))), 
+                method = &amp;quot;lm&amp;quot;, se = FALSE) +
+    theme_minimal(base_family = &amp;quot;Roboto Condensed&amp;quot;, base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          legend.position = &amp;quot;top&amp;quot;)
+   
+  if (color != &amp;quot;&amp;quot;) { 
+    if (is.numeric(pull(data[color]))) {
+      g &amp;lt;- g + scale_color_viridis_c(direction = -1, end = .85) +
+        guides(color = guide_colorbar(
+          barwidth = unit(12, &amp;quot;lines&amp;quot;), barheight = unit(.6, &amp;quot;lines&amp;quot;), title.position = &amp;quot;top&amp;quot;
+        ))
+    } else {
+      g &amp;lt;- g + scale_color_brewer(palette = &amp;quot;Set2&amp;quot;)
+    }
+  }
+    
+  return(g)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To iterate over the function, we have two options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we can fix one variable and pass the other as vector with &lt;code&gt;map()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;we can pass two variables as vectors to &lt;code&gt;var1&lt;/code&gt; and &lt;code&gt;var2&lt;/code&gt; with &lt;code&gt;map2()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let’s consider an example in which we vary both positional variables, using the 2008 car fule data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;map2(c(&amp;quot;displ&amp;quot;, &amp;quot;displ&amp;quot;, &amp;quot;hwy&amp;quot;), c(&amp;quot;hwy&amp;quot;, &amp;quot;cty&amp;quot;, &amp;quot;cty&amp;quot;),
+           ~plot_scatter_lm(data = mpg, var1 = .x, var2 = .y, color = &amp;quot;cyl&amp;quot;, pointsize = 3.5))&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png&#34; width=&#34;1440&#34; /&gt;
+&lt;figcaption&gt;
+Scatter plot showing the linear trends for different combinations of &lt;code&gt;displ&lt;/code&gt;, &lt;code&gt;cty&lt;/code&gt;, and &lt;code&gt;hwy&lt;/code&gt; for the 2008 car fuel data. As the number of cylinders is encoded as numeric, the sequential green-purple viridis scale is applied to the points.
+&lt;/figcaption&gt;
+&lt;p&gt;Now we are going to apply our function to a different data set, the &lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34;&gt;Palmer penguins&lt;/a&gt; to visualize x-y relationships per species. We automatically iterate over all combinations of a set of chosen numeric variables: we first generate a vector containing the column names of interest (&lt;code&gt;names&lt;/code&gt;) and then create a data frame with all possible combinations (&lt;code&gt;names_set&lt;/code&gt;) with the help of &lt;code&gt;expand_grid()&lt;/code&gt; from the &lt;code&gt;{tidyr}&lt;/code&gt; package.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## set up variables of interest
+names &amp;lt;- c(&amp;quot;bill_length_mm&amp;quot;, &amp;quot;bill_depth_mm&amp;quot;, &amp;quot;flipper_length_mm&amp;quot;, &amp;quot;body_mass_g&amp;quot;)
+## ... and create all possible combinations
+names_set &amp;lt;- tidyr::expand_grid(names, names)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using another mapping function from the &lt;code&gt;{purrr}&lt;/code&gt; package called &lt;code&gt;pmap()&lt;/code&gt;, we can map over multiple arguments simultaneously:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pmap(
+  names_set, ~plot_scatter_lm(data = palmerpenguins::penguins, 
+                              var1 = .x, var2 = .y, color = &amp;quot;species&amp;quot;)
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png&#34; width=&#34;1920&#34; /&gt;
+&lt;figcaption&gt;
+Scatter plots for each combination of four numeric variables of the Palmer penguins data set. Passing the categorical variable species to &lt;code&gt;color&lt;/code&gt; in our custom function returns linear smoothing lines for each of the three groups which are encoded with a categorical palette from the ColorBrewer project.
+&lt;/figcaption&gt;
+&lt;div id=&#34;shortcuts&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Shortcuts for Explorative Plots&lt;/h4&gt;
+&lt;div id=&#34;plot&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;code&gt;plot()&lt;/code&gt;&lt;/h5&gt;
+&lt;p&gt;I am not a fan of base R plots but one big advantage is the behavior when applying the &lt;code&gt;plot()&lt;/code&gt; function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(palmerpenguins::penguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;figcaption&gt;
+Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
+&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ggforcefacet_matrix&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;code&gt;ggforce::facet_matrix()&lt;/code&gt;&lt;/h5&gt;
+&lt;p&gt;A similar, and more flexible take on this idea is the &lt;code&gt;facet_matrix()&lt;/code&gt; functionality from the &lt;a href=&#34;https://ggforce.data-imaginist.com/&#34;&gt;&lt;code&gt;{ggforce}&lt;/code&gt; package&lt;/a&gt;. Instead of passing variable names in the aesthetics, we specify placeholders called &lt;code&gt;.panel_x&lt;/code&gt; and &lt;code&gt;.panel_y&lt;/code&gt;. We then create our ggplot as usual by adding layers and scales.&lt;/p&gt;
+&lt;p&gt;Finally, we specify the variables to use in the facet inside the &lt;code&gt;facet_matrix()&lt;/code&gt; component. You can also specify specific layers for different areas (upper, diagonal, lower) inside &lt;code&gt;facet_matrix()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +
+  geom_point(aes(color = species), alpha = .5) +
+  geom_smooth(aes(color = species), method = &amp;quot;lm&amp;quot;) +
+  ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
+  scale_color_brewer(palette = &amp;quot;Set2&amp;quot;, name = NULL) +
+  ggforce::facet_matrix(vars(names), layer.lower = 2, layer.diag = 3)&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/facet-matrix-layers-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;figcaption&gt;
+&lt;code&gt;facet_matrix()&lt;/code&gt; from the &lt;code&gt;{ggforce}&lt;/code&gt; package offers a great way to generate similar grids with &lt;code&gt;{ggplot2}&lt;/code&gt;, allowing for the usual flexibility in terms of fine-tuning and polishing. By specifying different layers for the three areas , we can combine all kind of chart types to visualize the relationships of the variables.
+&lt;/figcaption&gt;
+&lt;hr /&gt;
+&lt;details&gt;
+&lt;summary style=&#34;font-size:10pt;&#34;&gt;
+R Session Info
+&lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;## R version 4.2.3 (2023-03-15)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Big Sur ... 10.16
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] patchwork_1.1.2 dplyr_1.1.2     purrr_1.0.1     ggplot2_3.4.1  
+## 
+## loaded via a namespace (and not attached):
+##  [1] tidyselect_1.2.0     xfun_0.39            bslib_0.4.2          splines_4.2.3        lattice_0.20-45      colorspace_2.1-0     vctrs_0.6.2         
+##  [8] generics_0.1.3       htmltools_0.5.4      viridisLite_0.4.1    yaml_2.3.7           mgcv_1.8-42          utf8_1.2.3           rlang_1.1.1         
+## [15] jquerylib_0.1.4      pillar_1.9.0         glue_1.6.2           withr_2.5.0          tweenr_2.0.2         palmerpenguins_0.1.1 RColorBrewer_1.1-3  
+## [22] lifecycle_1.0.3      stringr_1.5.0        munsell_0.5.0        blogdown_1.18        gtable_0.3.1         ragg_1.2.5           evaluate_0.20       
+## [29] labeling_0.4.2       knitr_1.42           fastmap_1.1.1        fansi_1.0.4          highr_0.10           Rcpp_1.0.10          scales_1.2.1        
+## [36] cachem_1.0.7         jsonlite_1.8.4       farver_2.1.1         systemfonts_1.0.4    textshaping_0.3.6    ggforce_0.4.1        digest_0.6.31       
+## [43] stringi_1.7.12       bookdown_0.34        polyclip_1.10-4      grid_4.2.3           cli_3.6.0            tools_4.2.3          magrittr_2.0.3      
+## [50] sass_0.4.5           tibble_3.2.1         tidyr_1.3.0          pkgconfig_2.0.3      MASS_7.3-58.2        Matrix_1.5-3         rmarkdown_2.20      
+## [57] rstudioapi_0.14      R6_2.5.1             prismatic_1.1.1      nlme_3.1-162         compiler_4.2.3&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>https://cedricscherer.com/tags/ggplot2/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://cedricscherer.com/post/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://cedricscherer.com/tags/r/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://cedricscherer.com/tags/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>https://cedricscherer.com/tags/tidyverse/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://cedricscherer.com/tags/tips/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://cedricscherer.com/tags/tutorial/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://cedricscherer.com/tags/workflow/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>30DayChartChallenge</title>
+      <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/30daychartchallenge/</guid>
       <description></description>
     </item>
     
@@ -43,15 +493,6 @@
     </item>
     
     <item>
-      <title>DataViz</title>
-      <link>https://cedricscherer.com/tags/dataviz/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/dataviz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Nightingale</title>
       <link>https://cedricscherer.com/tags/nightingale/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
@@ -61,29 +502,11 @@
     </item>
     
     <item>
-      <title>Posts</title>
-      <link>https://cedricscherer.com/post/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>social media</title>
       <link>https://cedricscherer.com/tags/social-media/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/social-media/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>https://cedricscherer.com/tags/</link>
-      <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/</guid>
       <description></description>
     </item>
     
@@ -271,240 +694,6 @@ qualitative&lt;/li&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>ggplot2</title>
-      <link>https://cedricscherer.com/tags/ggplot2/</link>
-      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rstats</title>
-      <link>https://cedricscherer.com/tags/rstats/</link>
-      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/rstats/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>https://cedricscherer.com/tags/tutorial/</link>
-      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Workshop</title>
-      <link>https://cedricscherer.com/tags/workshop/</link>
-      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/workshop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>design</title>
-      <link>https://cedricscherer.com/tags/design/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>equality</title>
-      <link>https://cedricscherer.com/tags/equality/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/equality/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Europe</title>
-      <link>https://cedricscherer.com/tags/europe/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/europe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>International Women&#39;s Day 2022: The Pay Gap in Europe</title>
-      <link>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Sadly, inequality between women and men is still an issue. A metric that is one of the most used to illustrate the inequality is the pay gap. In its simplest, unadjusted form, the pay gap shows the difference between the average gross hourly earnings of men and women, expressed as a percentage of the average gross hourly earnings of men.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;In 2020, women&amp;rsquo;s gross hourly earnings were on average 13.0 percentage point (pp) below those of male paid employees in the European Union. This is still a significant gap, but at least it was decreasing over the last years. Unfortunately, this is not the case for all countries in the EU: Latvia, Portugal, Croatia, and Malta have decreasing trends compared to the average pay gap from 2002–2010. Disappointingly, only five out of the 28 EU countries Eurostat provides data for have a pay gap that is smaller than 5 pp (Luxembourg, Romania, Slovenia, Italia, and Poland) with Luxembourg being closest to zero (0.7 pp).&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en&#34;&gt;Eurostat provides the metric&lt;/a&gt; for all EU countries except Iceland and Greece between 2002 and 2020 (but number of years included differ per country). It also provides gropuped metrics for all EU countries and for the 19 countries of the Euro area. The indicator includes all employees working in firms with ten or more employees, without restrictions for age and hours worked. &lt;a href=&#34;https://twitter.com/EU_Eurostat/status/1501840155489013762&#34;&gt;Samples contain about 12 million employees EU-wide and the gross hourly earnings are estimated with high precision at total economy level (sampling error below 1%)&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&#34;img/paygap-europe/paygap_eu_dumbbell.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;img/paygap-europe/paygap_eu_dumbbell.jpg&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;figcaption&gt;The dumbbell chart comparing the pay gap from a reference period 2002–2010 (point) with the pay gap in 2020 (arrow head). Colors indicate the trend and countries are sorted by the recent pay gap in decreasing order from left to right.&lt;/figcaption&gt;
-&lt;p&gt;My aim was to make a comparison instead of showing the 2020 metric alone. From the beginning, it was clear to me that a &lt;em&gt;typical time series&lt;/em&gt; would not work due to irregular data entries and too many countries. The initial idea was to create a slope chart (see alternative versions below). However, I quickly realized that it is difficult to pick one particular year for comparison as multiple countries were always missing. So I thought of an &lt;em&gt;unusual slope chart&lt;/em&gt; in which the starting points on the left are not aligned vertically but placed according to the first year data is provided. Actually, it is a &lt;em&gt;hybrid of a slope chart and a time series&lt;/em&gt; as it only compares two values, connected by a line, with a continuous date axis.&lt;/p&gt;
-&lt;p&gt;As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a &lt;em&gt;dumbbell chart&lt;/em&gt; with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to encode the sample size in the dot size.&lt;/p&gt;
-&lt;p&gt;For the first time, I also created a colorful, eye-catching version with larger fonts and less detail to share it on my &lt;a href=&#34;https://www.instagram.com/cedscherer/&#34;&gt;Instagram&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cedricscherer.com/css/hugo-easy-gallery.css&#34; /&gt;
-
-&lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
-				&lt;div class=&#34;box&#34;&gt;
-				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; alt=&#34;Pay Gap in Europe for Instagram 1&#34; /&gt;
-				    &lt;/div&gt;
-			      &lt;figcaption&gt;
-		          &lt;p&gt;Pay Gap in Europe for Instagram 1&lt;/p&gt;
-			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-				  &lt;/figure&gt;
-				&lt;/div&gt;
-				&lt;div class=&#34;box&#34;&gt;
-				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; alt=&#34;Pay Gap in Europe for Instagram 2&#34; /&gt;
-				    &lt;/div&gt;
-			      &lt;figcaption&gt;
-		          &lt;p&gt;Pay Gap in Europe for Instagram 2&lt;/p&gt;
-			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-				  &lt;/figure&gt;
-				&lt;/div&gt;
-				&lt;div class=&#34;box&#34;&gt;
-				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; alt=&#34;Pay Gap in Europe for Instagram 3&#34; /&gt;
-				    &lt;/div&gt;
-			      &lt;figcaption&gt;
-		          &lt;p&gt;Pay Gap in Europe for Instagram 3&lt;/p&gt;
-			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-				  &lt;/figure&gt;
-				&lt;/div&gt;
-&lt;/div&gt;
- 
- 
- 
- 
-   
- 
- 
- &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
- 
- 
- &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
- &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- 
- 
- &lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
- 
- &lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
- 
- &lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
-     
-     &lt;div class=&#34;pswp__container&#34;&gt;
-       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
-     &lt;/div&gt;
-     
-     &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
-     &lt;div class=&#34;pswp__top-bar&#34;&gt;
-       
-       &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
-       &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
-       &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
-       &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
-       &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
-       
-       
-       &lt;div class=&#34;pswp__preloader&#34;&gt;
-         &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
-           &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
-             &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
-           &lt;/div&gt;
-         &lt;/div&gt;
-       &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
-       &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
-     &lt;/div&gt;
-     &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
-     &lt;/button&gt;
-     &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
-     &lt;/button&gt;
-     &lt;div class=&#34;pswp__caption&#34;&gt;
-       &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
-     &lt;/div&gt;
-     &lt;/div&gt;
-     &lt;/div&gt;
- &lt;/div&gt;
- 
-
-&lt;br&gt;&lt;/p&gt;
-&lt;h5 id=&#34;project-type&#34;&gt;Project Type&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal Project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;motivation&#34;&gt;Motivation&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.internationalwomensday.com&#34;&gt;International Women&amp;rsquo;s Day 2022&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;EuroStat shared &lt;a href=&#34;https://ec.europa.eu/eurostat/en/web/products-statistical-working-papers/-/ks-tc-22-002&#34;&gt;data set on gender pay gaps in the EU&lt;/a&gt; on &lt;a href=&#34;https://twitter.com/EU_Eurostat/status/1500755719796236288&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;design-choices&#34;&gt;Design Choices&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;A &lt;strong&gt;dumbbell chart&lt;/strong&gt; to allow for direct comparison per country and across countries.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ranking&lt;/strong&gt; of countries by the pay gap in 2020 (original version; ranking by pay gap during the reference period as alternative version).&lt;/li&gt;
-&lt;li&gt;A colorblind-safe &lt;strong&gt;traffic-light colors&lt;/strong&gt; for the three different trends: larger (red), stable (orange), and smaller (green) pay gap in 2020.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Chart title serves as axis title&lt;/strong&gt; as well.&lt;/li&gt;
-&lt;li&gt;A &lt;strong&gt;detailed legend&lt;/strong&gt; explaining the trend colors and dumbbell.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Annotations&lt;/strong&gt; to explicitly state the percentages and in addition the change plus explaining what the the abbreviations EU27 and EA19 represent.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Highlighting EU27 and EA19&lt;/strong&gt; as aggregated metrics by adding a grey box to them and using a different font with a higher weight of the same typeface (actually, it I use only one typeface in the chart!).&lt;/li&gt;
-&lt;li&gt;To focus on the women, I wanted to show how much less the earning is compared to men. This becomes a bit tricky as the percentage is actually positive but shows a gap (it is &lt;em&gt;&amp;quot;+13 percentage points below&amp;quot;&lt;/em&gt;). In the end, I decided to flip the axis as it feels much more intuitive to me. By adding big axis text I guide the reader how to interpret the y axis.&lt;/li&gt;
-&lt;li&gt;Unfortunately, I had to use the country abbreviations due to space issues. Long labels made the chart way too busy.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;data-source&#34;&gt;Data Source&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;EuroStat data set &lt;a href=&#34;https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en&#34;&gt;SDG_05_20 &amp;ldquo;Gender pay gap in unadjusted form&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;tools&#34;&gt;Tools&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;Data Preparation: &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&#34;https://sfirke.github.io/janitor/&#34;&gt;&lt;code&gt;{janitor}&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Graphics: &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34;&gt;&lt;code&gt;{ggplot2}&lt;/code&gt;&lt;/a&gt;; &lt;a href=&#34;https://wilkelab.org/ggtext/&#34;&gt;&lt;code&gt;{ggtext}&lt;/code&gt;&lt;/a&gt; for advanced text styling; &lt;a href=&#34;https://cran.r-project.org/web/packages/colorspace/vignettes/colorspace.html&#34;&gt;&lt;code&gt;{colorspace}&lt;/code&gt;&lt;/a&gt; for color manipulation; &lt;a href=&#34;https://ggrepel.slowkow.com/articles/examples.html&#34;&gt;&lt;code&gt;{ggrepel}&lt;/code&gt;&lt;/a&gt; for label positions in alternative slope chart&lt;/li&gt;
-&lt;li&gt;Colors: Picked with &lt;a href=&#34;https://palettte.app/&#34;&gt;palettte.app&lt;/a&gt; and colorblind–tested with &lt;a href=&#34;https://projects.susielu.com/viz-palette?colors=%5B%22#B55951%22,%22#F0B48E%22,%22#669d8f%22%5D&amp;amp;backgroundColor=%22white%22&amp;amp;fontColor=%22black%22&amp;amp;mode=%22deuteranomaly%22&#34;&gt;Viz Palette&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/z3tt/45235c5a2ee0e03e61d03f8db710e3b7&#34;&gt;Code available for both the dumbbell and slope graph&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;methods&#34;&gt;Methods&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;For each country and the two aggregated groups, I summarized all years available in the period between 2002 and 2010 (as this was the period that covered all countries) as average. I also kept track of the sample size per group. Afterwards, I calculated the difference from the averaged reference value to the value in 2020.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/z3tt/45235c5a2ee0e03e61d03f8db710e3b7&#34;&gt;Plotting was done completely in R&lt;/a&gt; (for a list of packages see &amp;ldquo;Tools&amp;rdquo;).&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;alternative-versions&#34;&gt;Alternative Versions&lt;/h2&gt;
-&lt;h5 id=&#34;slope-chart-x-time-series-hybrid&#34;&gt;Slope Chart x Time Series Hybrid&lt;/h5&gt;
-&lt;img src=&#34;img/paygap-europe/paygap_eu_slope.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_slope.jpg&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;h5 id=&#34;dumbbell-chart-sorted-by-pay-gap-20022010&#34;&gt;Dumbbell Chart sorted by Pay Gap 2002–2010&lt;/h5&gt;
-&lt;img src=&#34;img/paygap-europe/paygap_eu_dumbbell_alt.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt.jpg&#39;, &#39;blank&#39;);&#34;&gt;
-&lt;h5 id=&#34;dumbbell-chart-for-all-countries-listed&#34;&gt;Dumbbell Chart for All Countries Listed&lt;/h5&gt;
-&lt;img src=&#34;img/paygap-europe/paygap_all_dumbbell.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell_alt.jpg&#39;, &#39;blank&#39;);&#34;&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>paygap</title>
-      <link>https://cedricscherer.com/tags/paygap/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/paygap/</guid>
-      <description></description>
     </item>
     
   </channel>
