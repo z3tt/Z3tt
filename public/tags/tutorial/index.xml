@@ -313,8 +313,8 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
 &lt;/figcaption&gt;
 &lt;/div&gt;
-&lt;div id=&#34;facet_matrix-from-the-ggforce&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;&lt;code&gt;facet_matrix()&lt;/code&gt; from the &lt;code&gt;{ggforce}&lt;/code&gt; 📦&lt;/h5&gt;
+&lt;div id=&#34;facet_matrix&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;code&gt;facet_matrix()&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;A similar, and more flexible take on this idea is the &lt;code&gt;facet_matrix()&lt;/code&gt; functionality from the &lt;a href=&#34;https://ggforce.data-imaginist.com/&#34;&gt;&lt;code&gt;{ggforce}&lt;/code&gt; package&lt;/a&gt;. Instead of passing variable names in the aesthetics, we specify placeholders called &lt;code&gt;.panel_x&lt;/code&gt; and &lt;code&gt;.panel_y&lt;/code&gt;. We then create our ggplot as usual by adding layers and scales.&lt;/p&gt;
 &lt;p&gt;Finally, we specify the variables to use in the facet inside the &lt;code&gt;facet_matrix()&lt;/code&gt; component. You can also specify specific layers for different areas (upper, diagonal, lower) inside &lt;code&gt;facet_matrix()&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +

@@ -521,8 +521,8 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 Running <code>plot()</code> on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
 </figcaption>
 </div>
-<div id="facet_matrix-from-the-ggforce" class="section level5">
-<h5><code>facet_matrix()</code> from the <code>{ggforce}</code> 📦</h5>
+<div id="facet_matrix" class="section level5">
+<h5><code>facet_matrix()</code></h5>
 <p>A similar, and more flexible take on this idea is the <code>facet_matrix()</code> functionality from the <a href="https://ggforce.data-imaginist.com/"><code>{ggforce}</code> package</a>. Instead of passing variable names in the aesthetics, we specify placeholders called <code>.panel_x</code> and <code>.panel_y</code>. We then create our ggplot as usual by adding layers and scales.</p>
 <p>Finally, we specify the variables to use in the facet inside the <code>facet_matrix()</code> component. You can also specify specific layers for different areas (upper, diagonal, lower) inside <code>facet_matrix()</code>:</p>
 <pre class="r"><code>ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +
