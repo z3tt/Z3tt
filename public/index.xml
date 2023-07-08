@@ -175,13 +175,13 @@ A scatterplot highlighting the car models manufactured by Audi. The grey circles
     labs(x = &amp;quot;Highway gallons&amp;quot;, y = &amp;quot;Displacement&amp;quot;, 
          title = group, color = NULL)
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now we can run the functional manually for each manufacturer featured in the data set:&lt;/p&gt;
+&lt;p&gt;Now we can run the function manually for each manufacturer featured in the data set:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## run function for specific subsets
 plot_manufacturer(&amp;quot;Audi&amp;quot;)
 plot_manufacturer(&amp;quot;Chevrolet&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
-We now can manually create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
+Using the custom function, we can create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
 &lt;/figcaption&gt;
 &lt;/div&gt;
 &lt;div id=&#34;automation&#34; class=&#34;section level2&#34;&gt;
@@ -204,6 +204,7 @@ All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
   
   ## check if input is valid
   if (!group %in% mpg$manufacturer) stop(&amp;quot;Manufacturer not listed in the data set.&amp;quot;)
+  if (!is.logical(save)) stop(&amp;quot;save should be either TRUE or FALSE.&amp;quot;)
   
   ## filter data
   data &amp;lt;- filter(mpg, manufacturer %in% group)
@@ -308,9 +309,15 @@ The 7 Nissan cars belong either to the midsize or the SUV class.
 &lt;li&gt;we can fix one variable and pass the other as vector with &lt;code&gt;map()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;we can pass two variables as vectors to &lt;code&gt;var1&lt;/code&gt; and &lt;code&gt;var2&lt;/code&gt; with &lt;code&gt;map2()&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let’s consider an example in which we vary both positional variables, using the 2008 car fule data:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;map2(c(&amp;quot;displ&amp;quot;, &amp;quot;displ&amp;quot;, &amp;quot;hwy&amp;quot;), c(&amp;quot;hwy&amp;quot;, &amp;quot;cty&amp;quot;, &amp;quot;cty&amp;quot;),
-           ~plot_scatter_lm(data = mpg, var1 = .x, var2 = .y, color = &amp;quot;cyl&amp;quot;, pointsize = 3.5))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s consider an example in which we vary both positional variables, using the 2008 car fuel data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;map2(
+  c(&amp;quot;displ&amp;quot;, &amp;quot;displ&amp;quot;, &amp;quot;hwy&amp;quot;), 
+  c(&amp;quot;hwy&amp;quot;, &amp;quot;cty&amp;quot;, &amp;quot;cty&amp;quot;),
+  ~plot_scatter_lm(
+    data = mpg, var1 = .x, var2 = .y, 
+    color = &amp;quot;cyl&amp;quot;, pointsize = 3.5
+  )
+)&lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png&#34; width=&#34;1440&#34; /&gt;
 &lt;figcaption&gt;
 Scatter plot showing the linear trends for different combinations of &lt;code&gt;displ&lt;/code&gt;, &lt;code&gt;cty&lt;/code&gt;, and &lt;code&gt;hwy&lt;/code&gt; for the 2008 car fuel data. As the number of cylinders is encoded as numeric, the sequential green-purple viridis scale is applied to the points.
@@ -322,8 +329,10 @@ names &amp;lt;- c(&amp;quot;bill_length_mm&amp;quot;, &amp;quot;bill_depth_mm&am
 names_set &amp;lt;- tidyr::expand_grid(names, names)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Using another mapping function from the &lt;code&gt;{purrr}&lt;/code&gt; package called &lt;code&gt;pmap()&lt;/code&gt;, we can map over multiple arguments simultaneously:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pmap(
-  names_set, ~plot_scatter_lm(data = palmerpenguins::penguins, 
-                              var1 = .x, var2 = .y, color = &amp;quot;species&amp;quot;)
+  names_set, ~plot_scatter_lm(
+    data = palmerpenguins::penguins, 
+    var1 = .x, var2 = .y, color = &amp;quot;species&amp;quot;
+  )
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png&#34; width=&#34;1920&#34; /&gt;
 &lt;figcaption&gt;
@@ -340,8 +349,8 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
 &lt;/figcaption&gt;
 &lt;/div&gt;
-&lt;div id=&#34;ggforcefacet_matrix&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;&lt;code&gt;ggforce::facet_matrix()&lt;/code&gt;&lt;/h5&gt;
+&lt;div id=&#34;facet_matrix-from-the-ggforce&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;&lt;code&gt;facet_matrix()&lt;/code&gt; from the &lt;code&gt;{ggforce}&lt;/code&gt; 📦&lt;/h5&gt;
 &lt;p&gt;A similar, and more flexible take on this idea is the &lt;code&gt;facet_matrix()&lt;/code&gt; functionality from the &lt;a href=&#34;https://ggforce.data-imaginist.com/&#34;&gt;&lt;code&gt;{ggforce}&lt;/code&gt; package&lt;/a&gt;. Instead of passing variable names in the aesthetics, we specify placeholders called &lt;code&gt;.panel_x&lt;/code&gt; and &lt;code&gt;.panel_y&lt;/code&gt;. We then create our ggplot as usual by adding layers and scales.&lt;/p&gt;
 &lt;p&gt;Finally, we specify the variables to use in the facet inside the &lt;code&gt;facet_matrix()&lt;/code&gt; component. You can also specify specific layers for different areas (upper, diagonal, lower) inside &lt;code&gt;facet_matrix()&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +

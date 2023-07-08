@@ -138,13 +138,13 @@ A scatterplot highlighting the car models manufactured by Audi. The grey circles
     labs(x = &quot;Highway gallons&quot;, y = &quot;Displacement&quot;, 
          title = group, color = NULL)
 }</code></pre>
-<p>Now we can run the functional manually for each manufacturer featured in the data set:</p>
+<p>Now we can run the function manually for each manufacturer featured in the data set:</p>
 <pre class="r"><code>## run function for specific subsets
 plot_manufacturer(&quot;Audi&quot;)
 plot_manufacturer(&quot;Chevrolet&quot;)</code></pre>
 <img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png" width="1152" />
 <figcaption>
-We now can manually create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
+Using the custom function, we can create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
 </figcaption>
 </div>
 <div id="automation" class="section level2">
@@ -167,6 +167,7 @@ All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
   
   ## check if input is valid
   if (!group %in% mpg$manufacturer) stop(&quot;Manufacturer not listed in the data set.&quot;)
+  if (!is.logical(save)) stop(&quot;save should be either TRUE or FALSE.&quot;)
   
   ## filter data
   data &lt;- filter(mpg, manufacturer %in% group)
@@ -271,9 +272,15 @@ The 7 Nissan cars belong either to the midsize or the SUV class.
 <li>we can fix one variable and pass the other as vector with <code>map()</code></li>
 <li>we can pass two variables as vectors to <code>var1</code> and <code>var2</code> with <code>map2()</code></li>
 </ul>
-<p>Let’s consider an example in which we vary both positional variables, using the 2008 car fule data:</p>
-<pre class="r"><code>map2(c(&quot;displ&quot;, &quot;displ&quot;, &quot;hwy&quot;), c(&quot;hwy&quot;, &quot;cty&quot;, &quot;cty&quot;),
-           ~plot_scatter_lm(data = mpg, var1 = .x, var2 = .y, color = &quot;cyl&quot;, pointsize = 3.5))</code></pre>
+<p>Let’s consider an example in which we vary both positional variables, using the 2008 car fuel data:</p>
+<pre class="r"><code>map2(
+  c(&quot;displ&quot;, &quot;displ&quot;, &quot;hwy&quot;), 
+  c(&quot;hwy&quot;, &quot;cty&quot;, &quot;cty&quot;),
+  ~plot_scatter_lm(
+    data = mpg, var1 = .x, var2 = .y, 
+    color = &quot;cyl&quot;, pointsize = 3.5
+  )
+)</code></pre>
 <img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png" width="1440" />
 <figcaption>
 Scatter plot showing the linear trends for different combinations of <code>displ</code>, <code>cty</code>, and <code>hwy</code> for the 2008 car fuel data. As the number of cylinders is encoded as numeric, the sequential green-purple viridis scale is applied to the points.
@@ -285,8 +292,10 @@ names &lt;- c(&quot;bill_length_mm&quot;, &quot;bill_depth_mm&quot;, &quot;flipp
 names_set &lt;- tidyr::expand_grid(names, names)</code></pre>
 <p>Using another mapping function from the <code>{purrr}</code> package called <code>pmap()</code>, we can map over multiple arguments simultaneously:</p>
 <pre class="r"><code>pmap(
-  names_set, ~plot_scatter_lm(data = palmerpenguins::penguins, 
-                              var1 = .x, var2 = .y, color = &quot;species&quot;)
+  names_set, ~plot_scatter_lm(
+    data = palmerpenguins::penguins, 
+    var1 = .x, var2 = .y, color = &quot;species&quot;
+  )
 )</code></pre>
 <img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png" width="1920" />
 <figcaption>
@@ -303,8 +312,8 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 Running <code>plot()</code> on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
 </figcaption>
 </div>
-<div id="ggforcefacet_matrix" class="section level5">
-<h5><code>ggforce::facet_matrix()</code></h5>
+<div id="facet_matrix" class="section level5">
+<h5><code>facet_matrix()</code></h5>
 <p>A similar, and more flexible take on this idea is the <code>facet_matrix()</code> functionality from the <a href="https://ggforce.data-imaginist.com/"><code>{ggforce}</code> package</a>. Instead of passing variable names in the aesthetics, we specify placeholders called <code>.panel_x</code> and <code>.panel_y</code>. We then create our ggplot as usual by adding layers and scales.</p>
 <p>Finally, we specify the variables to use in the facet inside the <code>facet_matrix()</code> component. You can also specify specific layers for different areas (upper, diagonal, lower) inside <code>facet_matrix()</code>:</p>
 <pre class="r"><code>ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +

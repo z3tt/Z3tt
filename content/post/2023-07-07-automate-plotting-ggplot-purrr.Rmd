@@ -153,7 +153,7 @@ plot_manufacturer <- function(group) {
 }
 ```
 
-Now we can run the functional manually for each manufacturer featured in the data set:
+Now we can run the function manually for each manufacturer featured in the data set:
 
 ```{r run-function-scatter-highlight, eval=FALSE}
 ## run function for specific subsets
@@ -163,7 +163,7 @@ plot_manufacturer("Chevrolet")
 ```{r run-function-scatter-highlight-plot, echo=FALSE, fig.width=12, fig.height=5}
 plot_manufacturer("Audi") + plot_spacer() + plot_manufacturer("Chevrolet") + plot_layout(widths = c(1, .05, 1))
 ```
-<figcaption>We now can manually create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.</figcaption>
+<figcaption>Using the custom function, we can create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.</figcaption>
 
 
 ## The Automation {#automation}
@@ -195,6 +195,7 @@ plot_manufacturer_marginal <- function(group, save = FALSE) {
   
   ## check if input is valid
   if (!group %in% mpg$manufacturer) stop("Manufacturer not listed in the data set.")
+  if (!is.logical(save)) stop("save should be either TRUE or FALSE.")
   
   ## filter data
   data <- filter(mpg, manufacturer %in% group)
@@ -314,11 +315,17 @@ To iterate over the function, we have two options:
 * we can fix one variable and pass the other as vector with `map()`
 * we can pass two variables as vectors to `var1` and `var2` with `map2()`
 
-Let's consider an example in which we vary both positional variables, using the 2008 car fule data:
+Let's consider an example in which we vary both positional variables, using the 2008 car fuel data:
 
 ```{r purrr-function-scatter-lm, eval=FALSE}
-map2(c("displ", "displ", "hwy"), c("hwy", "cty", "cty"),
-           ~plot_scatter_lm(data = mpg, var1 = .x, var2 = .y, color = "cyl", pointsize = 3.5))
+map2(
+  c("displ", "displ", "hwy"), 
+  c("hwy", "cty", "cty"),
+  ~plot_scatter_lm(
+    data = mpg, var1 = .x, var2 = .y, 
+    color = "cyl", pointsize = 3.5
+  )
+)
 ```
 ```{r purrr-function-scatter-lm-plots, echo=FALSE, fig.width=15, fig.height=5}
 wrap_plots(map2(c("displ", "displ", "hwy"), c("hwy", "cty", "cty"),
@@ -340,8 +347,10 @@ Using another mapping function from the `{purrr}` package called `pmap()`, we ca
 
 ```{r purrr-function-scatter-lm-penguins, eval=FALSE}
 pmap(
-  names_set, ~plot_scatter_lm(data = palmerpenguins::penguins, 
-                              var1 = .x, var2 = .y, color = "species")
+  names_set, ~plot_scatter_lm(
+    data = palmerpenguins::penguins, 
+    var1 = .x, var2 = .y, color = "species"
+  )
 )
 ```
 ```{r purrr-function-scatter-lm-penguins-plots, echo=FALSE, fig.width=20, fig.height=20}
@@ -365,7 +374,7 @@ plot(palmerpenguins::penguins)
 <figcaption>Running `plot()` on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.</figcaption>
 
 
-##### `ggforce::facet_matrix()`
+##### `facet_matrix()`
 
 A similar, and more flexible take on this idea is the `facet_matrix()` functionality from the [`{ggforce}` package](https://ggforce.data-imaginist.com/). Instead of passing variable names in the aesthetics, we specify placeholders called `.panel_x` and `.panel_y`. We then create our ggplot as usual by adding layers and scales. 
 
