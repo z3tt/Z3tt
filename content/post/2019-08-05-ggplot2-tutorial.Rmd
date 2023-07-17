@@ -118,10 +118,10 @@ Major changes I've made:
 ```{r install-packages, eval=FALSE}
 # install CRAN packages
 install.packages(
-  c("ggplot2", "tibble", "tidyr", "forcats", "prismatic", "corrr",  "cowplot", 
-    "ggforce", "ggrepel", "ggridges", "ggsci", "ggtext", "ggthemes", "grid", 
-    "gridExtra", "patchwork", "rcartocolor", "scico", "showtext", "shiny", 
-    "plotly", "highcharter", "echarts4r")
+  c("ggplot2", "tibble", "tidyr", "forcats", "purrr", "prismatic", "corrr", 
+    "cowplot", "ggforce", "ggrepel", "ggridges", "ggsci", "ggtext", "ggthemes", 
+    "grid", "gridExtra", "patchwork", "rcartocolor", "scico", "showtext", 
+    "shiny", "plotly", "highcharter", "echarts4r")
 )
 
 # install from GitHub since not on CRAN
@@ -208,7 +208,7 @@ This is because `{ggplot2}` does not know *how* we want to plot that data---we s
 `ggplot2` allows you to store the current `ggobject` in a variable of your choice by assigning it to a variable, in our case called `g`.
 You can extend this `ggobject` later by adding other layers, either all at once or by assigning it to the same or another variable.
 
-💡 **By using parentheses while assigning an object, the object will be printed immediately (instead of writing `g <- ggplot(...)` and then `g` we simply write `(g <- ggplot(...))`).**
+💡 **By using parentheses while assigning an object, the object will be printed immediately. Instead of writing `g <- ggplot(...)` and then `g` we simply write `(g <- ggplot(...))`.**
 
 There are many, many different geometries (called *geoms* because each function usually starts with `geom_`) one can add to a ggplot by default (see [here](https://ggplot2.tidyverse.org/reference/) for a full list) and even more provided by extension packages (see [here](https://exts.ggplot2.tidyverse.org/) for a collection of extension packages).
 Let's tell `{ggplot2}` which style we want to use, for example by adding `geom_point()` to create a scatter plot:
