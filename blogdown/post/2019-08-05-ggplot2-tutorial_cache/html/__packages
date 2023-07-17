@@ -27,3 +27,5 @@ ggforce
 akima
 reshape2
 ggridges
+lubridate
+corrr
