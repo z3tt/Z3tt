@@ -884,7 +884,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
   ## change plot appearance
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;how-to-1&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;How to Calculate the Percentage Values&lt;/h5&gt;
@@ -933,7 +933,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   ## add percentage labels
   geom_text(aes(label = perc)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;And in case you want to add some more description to one of the bars, you can use an &lt;code&gt;if_else()&lt;/code&gt; (or an &lt;code&gt;ifelse()&lt;/code&gt;) statement like this:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
   dplyr::mutate(
@@ -948,7 +948,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   ## make sure labels doesn&amp;#39;t get cut
   scale_x_continuous(limits = c(NA, 24)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use &lt;code&gt;geom_bar()&lt;/code&gt; instead of &lt;code&gt;geom_col()&lt;/code&gt; which takes not two but only one variable and calculates counts by default. To add the labels, we again use &lt;code&gt;geom_text()&lt;/code&gt; but this time we overwrite the default statistical transformation &lt;code&gt;stat = &#34;identity&#34;&lt;/code&gt; with &lt;code&gt;stat = &#34;count&#34;&lt;/code&gt; (the same as the default for &lt;code&gt;geom_bar()&lt;/code&gt;).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## prepare non-aggregated data set with lumped and ordered factors
 mpg_fct &amp;lt;- mpg %&amp;gt;% 
@@ -974,7 +974,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   ## rotate plot
   coord_flip()  +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, the default settings of &lt;code&gt;geom_text()&lt;/code&gt; place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -994,7 +994,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
     hjust = 1, nudge_x = -.5
   ) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In case you want to put the next to the bars, you often need to adjust the plot margin and/or the limits to avoid that the labels are cut off. The drawback of using limits is that you have to define them manually. Thus, I prefer to use the first approach. You can make sure that labels are not truncated by the panel by adding &lt;code&gt;clip = &#34;off&#34;&lt;/code&gt; to any coordinate system.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -1012,7 +1012,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   theme_minimal() +
   ## make sure labels doesn&amp;#39;t get cut, part 2
   theme(plot.margin = margin(r = 120))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Increase space on the right via &lt;code&gt;scale_x_continuous(limits)&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
@@ -1023,7 +1023,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   ## make sure labels doesn&amp;#39;t get cut
   scale_x_continuous(limits = c(NA, 30)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -1049,7 +1049,7 @@ We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for al
   ## add custom colors
   scale_fill_manual(values = pal, guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One could also add the color to the data set and map the fill to that column and use &lt;code&gt;scale_fill_identity()&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;-
   mpg_sum %&amp;gt;% 
@@ -1073,7 +1073,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   ## add custom colors
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This approach is less error-prone since the color is tied to the properties of the data. Thus, in case we update the data, the colors are still applied correctly.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -1108,7 +1108,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   ) +
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -1130,7 +1130,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   theme_void() +
   theme(axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
         plot.margin = margin(rep(15, 4)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You can find the full code to create the final plot in this &lt;a href=&#34;https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5&#34;&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -1155,7 +1155,7 @@ We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label(
     axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
     plot.margin = margin(rep(15, 4))
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version with different label placement:&lt;/strong&gt;
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column &lt;code&gt;place&lt;/code&gt; to the &lt;code&gt;hjust&lt;/code&gt; argument. Since we cannot map a variable to &lt;code&gt;nudge_x&lt;/code&gt;, we cannot use it to offset the labels. To add some spacing, I simply add some white space to the begin and end of each percentage label.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
@@ -1179,7 +1179,7 @@ I like the idea of placing only those labels inside that mess up the aspect rati
     axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
     plot.margin = margin(rep(15, 4))
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version placing the long label not at the top:&lt;/strong&gt;
 We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
@@ -1205,19 +1205,19 @@ We could also add the “of all car models” bit to a bar that is short enough 
     ## make sure labels doesn&amp;#39;t get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05_how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, you could add that information also to the title, figure caption or simply leave it out. But that’s not what the request was about 🤷&lt;/p&gt;
 &lt;details&gt;
 &lt;summary style=&#34;font-size:10pt;&#34;&gt;
 R Session Info
 &lt;/summary&gt;
-&lt;pre&gt;&lt;code&gt;## R version 4.2.2 (2022-10-31)
-## Platform: aarch64-apple-darwin20 (64-bit)
-## Running under: macOS Ventura 13.2.1
+&lt;pre&gt;&lt;code&gt;## R version 4.2.3 (2023-03-15)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Big Sur ... 10.16
 ## 
 ## Matrix products: default
-## BLAS:   /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -1226,20 +1226,16 @@ R Session Info
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] forcats_0.5.2          stringr_1.5.0          dplyr_1.1.0            purrr_1.0.1            readr_2.1.3            tidyr_1.3.0           
-##  [7] tibble_3.1.8           ggplot2_3.4.0          tidyverse_1.3.2        systemfonts_1.0.4.9000
+##  [1] lubridate_1.9.2   forcats_1.0.0     stringr_1.5.0     dplyr_1.1.2       purrr_1.0.1       readr_2.1.4       tidyr_1.3.0       tibble_3.2.1     
+##  [9] ggplot2_3.4.2     tidyverse_2.0.0   systemfonts_1.0.4
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] lubridate_1.9.0     assertthat_0.2.1    digest_0.6.31       utf8_1.2.2          R6_2.5.1            cellranger_1.1.0    backports_1.4.1    
-##  [8] reprex_2.0.2        evaluate_0.19       highr_0.10          httr_1.4.4          blogdown_1.16       pillar_1.8.1        rlang_1.0.6        
-## [15] googlesheets4_1.0.1 readxl_1.4.1        rstudioapi_0.14     jquerylib_0.1.4     rmarkdown_2.19      labeling_0.4.2      textshaping_0.3.6  
-## [22] googledrive_2.0.0   munsell_0.5.0       broom_1.0.2         compiler_4.2.2      modelr_0.1.10       xfun_0.36           pkgconfig_2.0.3    
-## [29] htmltools_0.5.4     tidyselect_1.2.0    bookdown_0.31       fansi_1.0.3         crayon_1.5.2        tzdb_0.3.0          dbplyr_2.2.1       
-## [36] withr_2.5.0         grid_4.2.2          jsonlite_1.8.4      gtable_0.3.1        lifecycle_1.0.3     DBI_1.1.3           magrittr_2.0.3     
-## [43] scales_1.2.1        cli_3.5.0           stringi_1.7.8       cachem_1.0.6        farver_2.1.1        fs_1.5.2            xml2_1.3.3         
-## [50] bslib_0.4.2         ellipsis_0.3.2      ragg_1.2.4          generics_0.1.3      vctrs_0.5.2         tools_4.2.2         glue_1.6.2         
-## [57] hms_1.1.2           fastmap_1.1.0       yaml_2.3.6          timechange_0.1.1    colorspace_2.1-0    gargle_1.2.1        rvest_1.0.3        
-## [64] knitr_1.41          haven_2.5.1         sass_0.4.4&lt;/code&gt;&lt;/pre&gt;
+##  [1] tidyselect_1.2.0  xfun_0.39         bslib_0.5.0       colorspace_2.1-0  vctrs_0.6.2       generics_0.1.3    htmltools_0.5.4   yaml_2.3.7       
+##  [9] utf8_1.2.3        rlang_1.1.1       jquerylib_0.1.4   pillar_1.9.0      glue_1.6.2        withr_2.5.0       lifecycle_1.0.3   munsell_0.5.0    
+## [17] blogdown_1.18     gtable_0.3.1      ragg_1.2.5        evaluate_0.20     labeling_0.4.2    knitr_1.42        tzdb_0.3.0        fastmap_1.1.1    
+## [25] fansi_1.0.4       highr_0.10        scales_1.2.1      cachem_1.0.7      jsonlite_1.8.4    farver_2.1.1      textshaping_0.3.6 hms_1.1.2        
+## [33] digest_0.6.31     stringi_1.7.12    bookdown_0.34     grid_4.2.3        cli_3.6.0         tools_4.2.3       magrittr_2.0.3    sass_0.4.5       
+## [41] pkgconfig_2.0.3   ellipsis_0.3.2    timechange_0.2.0  rmarkdown_2.20    rstudioapi_0.14   R6_2.5.1          compiler_4.2.3&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1423,7 +1419,7 @@ theme_set(
     ## increase size of all text elements
     base_size = 18, 
     ## set custom font family for all text elements
-    base_family = &amp;quot;Oswald&amp;quot;)
+    base_family = &amp;quot;Roboto Condensed&amp;quot;)
 )
 
 ## overwrite other defaults of theme_minimal()
@@ -1449,7 +1445,7 @@ theme_update(
 &lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &amp;quot;grey92&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to generate same sample data.&lt;/i&gt;
@@ -1467,7 +1463,7 @@ data &amp;lt;- tibble(
 &lt;/details&gt;
 &lt;p&gt;So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?&lt;/p&gt;
 &lt;p&gt;Sure, adding a note on the sample size might be considered good practice but it still doesn’t tell you much about the actual pattern.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show code.&lt;/i&gt;
@@ -1484,7 +1480,7 @@ ggplot(data, aes(x = group, y = value)) +
   stat_summary(
     geom = &amp;quot;text&amp;quot;,
     fun.data = n_fun,
-    family = &amp;quot;Oswald&amp;quot;,
+    family = &amp;quot;Roboto Condensed&amp;quot;,
     size = 5
   )&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
@@ -1507,10 +1503,10 @@ ggplot(data, aes(x = group, y = value)) +
       seed = 1, width = .2
     )
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Oh, the patterns are very different! Values of Group 1 are uniformly distributed. The values in Group 2 are clustered with a distinct gap around the group’s median! And the few observations of Group 3 are all integers.&lt;/p&gt;
 &lt;p&gt;We can improve the look a bit further by plotting the raw data points according to their distribution with either &lt;code&gt;ggbeeswarm::geom_quasirandom()&lt;/code&gt; or &lt;code&gt;ggforce::geom_sina()&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-distribution-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-distribution-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show codes.&lt;/i&gt;
@@ -1544,10 +1540,10 @@ ggplot(data, aes(x = group, y = value)) +
 &lt;p&gt;Violin plots can be used to visualize the distribution of numeric variables. It’s basically a mirrored density curve, representing the number of data points along a continuous axis.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) +
   geom_violin(fill = &amp;quot;grey92&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/violin-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;By default, the violin plot can look a bit odd. The default setting (&lt;code&gt;scale = &#34;area&#34;&lt;/code&gt;) is misleading. Group 1 looks almost the same as Group 3, while consisting of four times as many observations. Also, the default standard deviation of the smoothing kernel is not optimal in our case since it hides the true pattern by smoothing out areas without any data.&lt;/p&gt;
 &lt;p&gt;We can manipulate both defaults by setting the width to the number of observations via &lt;code&gt;scale = &#34;count&#34;&lt;/code&gt; and adjusting the bandwidth (&lt;code&gt;bw&lt;/code&gt;). Aesthetically, I prefer to remove the default outline:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/violin-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show code.&lt;/i&gt;
@@ -1564,7 +1560,7 @@ ggplot(data, aes(x = group, y = value)) +
   )&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;p&gt;The violin plot allows an explicit representation of the distribution but doesn’t provide summary statistics. To get the best of both worlds, it is often mixed with a box plot—either a complete box plot with whiskers and outliers or only the box indicating the median and interquartile range (IQR):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/violin-box-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-box-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show codes.&lt;/i&gt;
@@ -1636,13 +1632,13 @@ ggplot(data, aes(x = group, y = value)) +
   ) + 
   ## remove white space on the left
   coord_cartesian(xlim = c(1.2, NA))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Here, I combine two layers from the &lt;a href=&#34;https://mjskay.github.io/ggdist/&#34;&gt;&lt;code&gt;{ggdist}&lt;/code&gt; package&lt;/a&gt;, namely &lt;code&gt;stat_dots()&lt;/code&gt; to draw the rain and &lt;code&gt;stat_halfeye()&lt;/code&gt; to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the box plot. I also remove the slab interval from the halfeye by setting &lt;code&gt;.width&lt;/code&gt; to zero and &lt;code&gt;point_colour&lt;/code&gt; to &lt;code&gt;NA&lt;/code&gt;. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show plot without limit adjustment.&lt;/i&gt;
 &lt;/summary&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-no-lim-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-no-lim-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;p&gt;One can also solely rely on layers from the &lt;code&gt;{ggdist}&lt;/code&gt; package by using the default halfeye which consists of a density curve and a slab interval:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
@@ -1659,7 +1655,7 @@ ggplot(data, aes(x = group, y = value)) +
     binwidth = .3
   ) +
   coord_cartesian(xlim = c(1.2, NA))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-slab-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-slab-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;While I love the reduced design and the possibility to indicate two different ranges (here the interquartile range and the 95% quantile) I admit that this alternative is less intuitive and potentially even misleading since they look more like credible intervals than box plots. Maybe a bit like the &lt;a href=&#34;http://motioninsocial.com/tufte/#minimal-boxplot&#34;&gt;minimal box plots proposed by Edward Tufte&lt;/a&gt; but still I definitely would add a note to be sure the reader understands what the slabs show.&lt;/p&gt;
 &lt;p&gt;Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use &lt;code&gt;geom_half_dotplot()&lt;/code&gt; from the &lt;a href=&#34;https://erocoar.github.io/gghalves/&#34;&gt;&lt;code&gt;{gghalves}&lt;/code&gt; package&lt;/a&gt;. Why? Because it comes with the possibility to add some justification which is not possible for the default layers &lt;code&gt;geom_point()&lt;/code&gt; and &lt;code&gt;geom_jitter()&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
@@ -1684,7 +1680,7 @@ ggplot(data, aes(x = group, y = value)) +
     alpha = .3
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Note that the &lt;code&gt;{gghalves}&lt;/code&gt; packages adds also some jitter along the y axis which is far from optimal. The packages provides a &lt;a href=&#34;https://camo.githubusercontent.com/763daaddffeefed1fbad498721526bc739326da7822df84f09b153bd6c48d3c4/68747470733a2f2f692e696d6775722e636f6d2f374150787831742e706e67&#34;&gt;half–box plot alternative&lt;/a&gt; as well but I personally will never consider or recommend these as an option&lt;a href=&#34;#section2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. Also, note that the &lt;code&gt;{gghalves}&lt;/code&gt; package is not available on CRAN (yet) as well.&lt;/p&gt;
 &lt;p id=&#34;back2&#34;&gt;
 &lt;p&gt;A good alternative may to place the jittered points on top of the box plot by using &lt;code&gt;geom_jitter()&lt;/code&gt; (or &lt;code&gt;geom_point()&lt;/code&gt;):&lt;/p&gt;
@@ -1707,7 +1703,7 @@ ggplot(data, aes(x = group, y = value)) +
     )
   ) + 
   coord_cartesian(xlim = c(1.2, NA), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-on-top-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-on-top-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As a last alternative, I also like to use barcode strips instead of jittered points:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
   ggdist::stat_halfeye(
@@ -1728,7 +1724,7 @@ ggplot(data, aes(x = group, y = value)) +
     alpha = .2
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-barcode-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-barcode-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, it’s not optimal here since the actual values of Group 3 are hard to spot because they fall exactly along the summary stats provided by the box plot. One could use &lt;code&gt;geom_half_point()&lt;/code&gt;, however, I want to avoid the added jittering along the y axis.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -1758,14 +1754,14 @@ ggplot(data, aes(x = group, y = value)) +
     alpha = .2
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/raincloud-barcode-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-barcode-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;polish&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Next: Let Your Plot Shine&lt;/h2&gt;
 &lt;p&gt;Stay tuned, in &lt;s&gt;the upcoming&lt;/s&gt; &lt;span style=&#34;color:#ff7202;&#34;&gt;a potential&lt;/span&gt; follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06_visualizing-distributions-violin-raincloud_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot &lt;a href=&#39;https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01&#39; target = &#34;_blank&#34;&gt;in this gist&amp;lt;/a.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;footnotes&#34; class=&#34;section level5&#34;&gt;
@@ -1781,13 +1777,13 @@ I personally doubt that the general audience is well aware of how to interpret b
 &lt;summary style=&#34;font-size:10pt;&#34;&gt;
 R Session Info
 &lt;/summary&gt;
-&lt;pre&gt;&lt;code&gt;## R version 4.2.2 (2022-10-31)
-## Platform: aarch64-apple-darwin20 (64-bit)
-## Running under: macOS Ventura 13.2.1
+&lt;pre&gt;&lt;code&gt;## R version 4.2.3 (2023-03-15)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Big Sur ... 10.16
 ## 
 ## Matrix products: default
-## BLAS:   /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -1796,24 +1792,21 @@ R Session Info
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] ragg_1.2.4           colorspace_2.1-0     ggtext_0.1.2         palmerpenguins_0.1.1 patchwork_1.1.2      forcats_0.5.2        stringr_1.5.0       
-##  [8] dplyr_1.1.0          purrr_1.0.1          readr_2.1.3          tidyr_1.3.0          tibble_3.1.8         ggplot2_3.4.0        tidyverse_1.3.2     
+##  [1] ragg_1.2.5           colorspace_2.1-0     ggtext_0.1.2         palmerpenguins_0.1.1 patchwork_1.1.2      lubridate_1.9.2      forcats_1.0.0       
+##  [8] stringr_1.5.0        dplyr_1.1.2          purrr_1.0.1          readr_2.1.4          tidyr_1.3.0          tibble_3.2.1         ggplot2_3.4.2       
+## [15] tidyverse_2.0.0     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] fs_1.5.2               lubridate_1.9.0        gghalves_0.1.4         httr_1.4.4             tools_4.2.2            backports_1.4.1       
-##  [7] bslib_0.4.2            utf8_1.2.2             R6_2.5.1               vipor_0.4.5            DBI_1.1.3              ggdist_3.2.0          
-## [13] withr_2.5.0            tidyselect_1.2.0       curl_4.3.3             compiler_4.2.2         textshaping_0.3.6      cli_3.5.0             
-## [19] rvest_1.0.3            xml2_1.3.3             labeling_0.4.2         bookdown_0.31          sass_0.4.4             scales_1.2.1          
-## [25] commonmark_1.8.1       systemfonts_1.0.4.9000 digest_0.6.31          rmarkdown_2.19         pkgconfig_2.0.3        htmltools_0.5.4       
-## [31] dbplyr_2.2.1           fastmap_1.1.0          highr_0.10             rlang_1.0.6            readxl_1.4.1           rstudioapi_0.14       
-## [37] jquerylib_0.1.4        farver_2.1.1           generics_0.1.3         jsonlite_1.8.4         googlesheets4_1.0.1    distributional_0.3.1  
-## [43] magrittr_2.0.3         Rcpp_1.0.9             ggbeeswarm_0.7.1       munsell_0.5.0          fansi_1.0.3            lifecycle_1.0.3       
-## [49] stringi_1.7.8          yaml_2.3.6             MASS_7.3-58.1          grid_4.2.2             crayon_1.5.2           haven_2.5.1           
-## [55] gridtext_0.1.5         hms_1.1.2              magick_2.7.3           knitr_1.41             pillar_1.8.1           markdown_1.4          
-## [61] reprex_2.0.2           glue_1.6.2             evaluate_0.19          blogdown_1.16          modelr_0.1.10          vctrs_0.5.2           
-## [67] tzdb_0.3.0             tweenr_2.0.2           cellranger_1.1.0       gtable_0.3.1           polyclip_1.10-4        assertthat_0.2.1      
-## [73] cachem_1.0.6           xfun_0.36              ggforce_0.4.1          broom_1.0.2            googledrive_2.0.0      gargle_1.2.1          
-## [79] beeswarm_0.4.0         timechange_0.1.1       ellipsis_0.3.2&lt;/code&gt;&lt;/pre&gt;
+##  [1] Rcpp_1.0.10          digest_0.6.31        utf8_1.2.3           ggforce_0.4.1        R6_2.5.1             evaluate_0.20        highr_0.10          
+##  [8] blogdown_1.18        pillar_1.9.0         rlang_1.1.1          curl_5.0.0           rstudioapi_0.14      jquerylib_0.1.4      magick_2.7.3        
+## [15] rmarkdown_2.20       textshaping_0.3.6    labeling_0.4.2       gridtext_0.1.5       polyclip_1.10-4      munsell_0.5.0        compiler_4.2.3      
+## [22] vipor_0.4.5          xfun_0.39            pkgconfig_2.0.3      systemfonts_1.0.4    ggbeeswarm_0.7.2     htmltools_0.5.4      tidyselect_1.2.0    
+## [29] bookdown_0.34        quadprog_1.5-8       fansi_1.0.4          tzdb_0.3.0           withr_2.5.0          commonmark_1.9.0     MASS_7.3-58.2       
+## [36] distributional_0.3.2 ggdist_3.3.0         grid_4.2.3           jsonlite_1.8.4       gtable_0.3.1         lifecycle_1.0.3      magrittr_2.0.3      
+## [43] scales_1.2.1         cli_3.6.0            stringi_1.7.12       cachem_1.0.7         farver_2.1.1         xml2_1.3.3           bslib_0.5.0         
+## [50] ellipsis_0.3.2       generics_0.1.3       vctrs_0.6.2          tools_4.2.3          glue_1.6.2           beeswarm_0.4.0       markdown_1.7        
+## [57] tweenr_2.0.2         hms_1.1.2            fastmap_1.1.1        yaml_2.3.7           timechange_0.2.0     knitr_1.42           gghalves_0.1.4      
+## [64] sass_0.4.5&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;/div&gt;
 &lt;/div&gt;

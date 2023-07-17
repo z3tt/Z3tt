@@ -92,7 +92,7 @@ theme_set(
     ## increase size of all text elements
     base_size = 18, 
     ## set custom font family for all text elements
-    base_family = "Oswald")
+    base_family = "Roboto Condensed")
 )
 
 ## overwrite other defaults of theme_minimal()
@@ -134,7 +134,7 @@ data <- tibble(
   rowwise() %>%
   mutate(value = if_else(group == "Group 2", value + rnorm(1, 0, .4), value))
 
-theme_set(theme_minimal(base_size = 18, base_family = "Oswald"))
+theme_set(theme_minimal(base_size = 18, base_family = "Roboto Condensed"))
 theme_update(
   panel.grid.major.x = element_blank(),
   panel.grid.minor = element_blank(),
@@ -187,7 +187,7 @@ ggplot(data, aes(x = group, y = value)) +
     ## ... using our custom function...
     fun.data = n_fun,
     ## ... with custom typeface and size
-    family = "Oswald",
+    family = "Roboto Condensed",
     size = 5
   )
 ```
@@ -207,7 +207,7 @@ ggplot(data, aes(x = group, y = value)) +
   stat_summary(
     geom = "text",
     fun.data = n_fun,
-    family = "Oswald",
+    family = "Roboto Condensed",
     size = 5
   )
 ```
@@ -346,7 +346,7 @@ v1 <- ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = NA, width = .1) +
   labs(title = 'Full box-and-whiskers plot') +
   theme(plot.margin = margin(8, 4, 8, 0), 
-        plot.title = element_text(family = "Oswald", face = "bold", size = 20))
+        plot.title = element_text(family = "Roboto Condensed", face = "bold", size = 20))
 
 v2 <- ggplot(data, aes(x = group, y = value)) +
   geom_violin(fill = "grey72", color = NA, 
@@ -355,7 +355,7 @@ v2 <- ggplot(data, aes(x = group, y = value)) +
                coef = 0, outlier.color = NA) +
   labs(title = 'IQR box and median only') +
   theme(plot.margin = margin(8, 0, 8, 4), 
-        plot.title = element_text(family = "Oswald", face = "bold", size = 20))
+        plot.title = element_text(family = "Roboto Condensed", face = "bold", size = 20))
 
 v1 + v2
 ```
