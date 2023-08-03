@@ -557,7 +557,7 @@ Here you can add several arguments, e.g. additionally a subtitle, a caption and
 <div id="make-title-bold-add-a-space-at-the-baseline" class="section level5">
 <h5>Make Title Bold &amp; Add a Space at the Baseline</h5>
 <p>Again, since we want to modify the properties of a theme element, we use the <code>theme()</code> function and as for the text elements <code>axis.title</code> and <code>axis.text</code> modify the font face and the margin.
-All the following modifications of theme elements work not only for the title but for all other labels such as <code>plot.subtitle</code>, <code>plot.caption</code>, <code>plot.caption</code>, <code>legend.title</code>, <code>legend.text</code>, and <code>axis.title</code> and <code>axis.text</code>.</p>
+All the following modifications of theme elements work not only for the title but for all other labels such as <code>plot.subtitle</code>, <code>plot.caption</code>, <code>plot.tag</code>, <code>legend.title</code>, <code>legend.text</code>, and <code>axis.title</code> and <code>axis.text</code>.</p>
 <pre class="r"><code>ggplot(chic, aes(x = date, y = temp)) +
   geom_point(color = &quot;firebrick&quot;) +
   labs(x = &quot;Year&quot;, y = &quot;Temperature (°F)&quot;,

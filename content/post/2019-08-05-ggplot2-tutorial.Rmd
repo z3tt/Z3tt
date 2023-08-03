@@ -649,7 +649,7 @@ ggplot(chic, aes(x = date, y = temp)) +
 ##### Make Title Bold & Add a Space at the Baseline
 
 Again, since we want to modify the properties of a theme element, we use the `theme()` function and as for the text elements `axis.title` and `axis.text` modify the font face and the margin.
-All the following modifications of theme elements work not only for the title but for all other labels such as `plot.subtitle`, `plot.caption`, `plot.caption`, `legend.title`, `legend.text`, and `axis.title` and `axis.text`.
+All the following modifications of theme elements work not only for the title but for all other labels such as `plot.subtitle`, `plot.caption`, `plot.tag`, `legend.title`, `legend.text`, and `axis.title` and `axis.text`.
 
 ```{r title-bold}
 ggplot(chic, aes(x = date, y = temp)) +
