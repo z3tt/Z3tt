@@ -262,7 +262,7 @@ Some examples for which I used raincloud or violin plots to explicitly highlight
 </summary>
 <pre class="r"><code>## INSTALL PACKAGES ----------------------------------------------
 ## install CRAN packages if needed
-pckgs &lt;- c(&quot;ggplot2&quot;, &quot;systemfonts&quot;, &quot;ggforce&quot;, 
+pckgs &lt;- c(&quot;ggplot2&quot;, &quot;dplyr&quot;, &quot;systemfonts&quot;, &quot;ggforce&quot;, 
            &quot;ggdist&quot;, &quot;ggbeeswarm&quot;, &quot;devtools&quot;)
 new_pckgs &lt;- pckgs[!(pckgs %in% installed.packages()[,&quot;Package&quot;])]
 if(length(new_pckgs)) install.packages(new_pckgs)
@@ -316,14 +316,14 @@ theme_update(
 </summary>
 <pre class="r"><code>set.seed(2021)
 
-data &lt;- tibble(
-  group = factor(c(rep(&quot;Group 1&quot;, 100), rep(&quot;Group 2&quot;, 250), rep(&quot;Group 3&quot;, 25))),
-  value = c(seq(0, 20, length.out = 100),
-            c(rep(0, 5), rnorm(30, 2, .1), rnorm(90, 5.4, .1), rnorm(90, 14.6, .1), rnorm(30, 18, .1), rep(20, 5)),
+data &lt;- tibble::tibble(
+  group = factor(c(rep(&quot;Group 1&quot;, 75), rep(&quot;Group 2&quot;, 130), rep(&quot;Group 3&quot;, 25))),
+  value = c(seq(0, 20, length.out = 75),
+            c(rep(0, 5), rnorm(15, 2, .1), rnorm(45, 5.4, .1), rnorm(45, 14.6, .1), rnorm(15, 18, .1), rep(20, 5)),
             rep(seq(0, 20, length.out = 5), 5))
   ) |&gt; 
-  rowwise() |&gt;
-  mutate(value = if_else(group == &quot;Group 2&quot;, value + rnorm(1, 0, .4), value))</code></pre>
+  dplyr::rowwise() |&gt;
+  dplyr::mutate(value = dplyr::if_else(group == &quot;Group 2&quot;, value + rnorm(1, 0, .4), value))</code></pre>
 </details>
 <p>So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?</p>
 <p>Sure, adding a note on the sample size might be considered good practice but it still doesn’t tell you much about the actual pattern.</p>
@@ -355,7 +355,7 @@ ggplot(data, aes(x = group, y = value)) +
 </div>
 <div id="rawdata" class="section level2">
 <h2>We Can Do Better: Add Raw Data</h2>
-<p>An obvious improvement is to add the data points. Since we know already that Group 2 consists of 200 observations, let’s use jitter strips instead of a traditional strip plot:</p>
+<p>An obvious improvement is to add the data points. Since we know already that Group 2 consists of 130 observations, let’s use jitter strips instead of a traditional strip plot:</p>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &quot;grey92&quot;) +
   ## use either geom_point() or geom_jitter()
@@ -484,7 +484,7 @@ ggplot(data, aes(x = group, y = value)) +
     point_colour = NA
   ) + 
   geom_boxplot(
-    width = .12, 
+    width = .15, 
     ## remove outliers
     outlier.color = NA ## `outlier.shape = NA` or `outlier.alpha = 0` works as well
   ) +
@@ -493,7 +493,7 @@ ggplot(data, aes(x = group, y = value)) +
     ## orientation to the left
     side = &quot;left&quot;, 
     ## move geom to the left
-    justification = 1.1, 
+    justification = 1.12, 
     ## adjust grouping (binning) of observations 
     binwidth = .25
   ) + 
@@ -519,9 +519,9 @@ ggplot(data, aes(x = group, y = value)) +
     side = &quot;left&quot;, 
     dotsize = .8, 
     justification = 1.05, 
-    binwidth = .3
+    binwidth = .5
   ) +
-  coord_cartesian(xlim = c(1.2, NA))</code></pre>
+  coord_cartesian(xlim = c(1.2, 2.9))</code></pre>
 <p><img src="/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-slab-1.png" width="672" /></p>
 <p>While I love the reduced design and the possibility to indicate two different ranges (here the interquartile range and the 95% quantile) I admit that this alternative is less intuitive and potentially even misleading since they look more like credible intervals than box plots. Maybe a bit like the <a href="http://motioninsocial.com/tufte/#minimal-boxplot">minimal box plots proposed by Edward Tufte</a> but still I definitely would add a note to be sure the reader understands what the slabs show.</p>
 <p>Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use <code>geom_half_dotplot()</code> from the <a href="https://erocoar.github.io/gghalves/"><code>{gghalves}</code> package</a>. Why? Because it comes with the possibility to add some justification which is not possible for the default layers <code>geom_point()</code> and <code>geom_jitter()</code>:</p>
@@ -544,9 +544,9 @@ ggplot(data, aes(x = group, y = value)) +
     ## control range of jitter
     range_scale = .4, 
     ## add some transparency
-    alpha = .3
+    alpha = .2
   ) +
-  coord_cartesian(xlim = c(1.2, NA), clip = &quot;off&quot;)</code></pre>
+  coord_cartesian(xlim = c(1.2, 2.9), clip = &quot;off&quot;)</code></pre>
 <p><img src="/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-1.png" width="672" /></p>
 <p>Note that the <code>{gghalves}</code> packages adds also some jitter along the y axis which is far from optimal. The packages provides a <a href="https://camo.githubusercontent.com/763daaddffeefed1fbad498721526bc739326da7822df84f09b153bd6c48d3c4/68747470733a2f2f692e696d6775722e636f6d2f374150787831742e706e67">half–box plot alternative</a> as well but I personally will never consider or recommend these as an option<a href="#section2"><sup>2</sup></a>. Also, note that the <code>{gghalves}</code> package is not available on CRAN (yet) as well.</p>
 <p id="back2">
@@ -563,13 +563,13 @@ ggplot(data, aes(x = group, y = value)) +
     outlier.shape = NA
   ) +
   geom_point(
-    size = 1.3,
-    alpha = .3,
+    size = 1.5,
+    alpha = .2,
     position = position_jitter(
       seed = 1, width = .1
     )
   ) + 
-  coord_cartesian(xlim = c(1.2, NA), clip = &quot;off&quot;)</code></pre>
+  coord_cartesian(xlim = c(1.2, 2.9), clip = &quot;off&quot;)</code></pre>
 <p><img src="/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-on-top-1.png" width="672" /></p>
 <p>As a last alternative, I also like to use barcode strips instead of jittered points:</p>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) + 
@@ -587,10 +587,11 @@ ggplot(data, aes(x = group, y = value)) +
   geom_point(
     ## draw horizontal lines instead of points
     shape = 95,
-    size = 10,
-    alpha = .2
+    size = 15,
+    alpha = .2,
+    color = &quot;#1D785A&quot;
   ) +
-  coord_cartesian(xlim = c(1.2, NA), clip = &quot;off&quot;)</code></pre>
+  coord_cartesian(xlim = c(1.2, 2.9), clip = &quot;off&quot;)</code></pre>
 <p><img src="/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-barcode-1.png" width="672" /></p>
 <p>As you can see, it’s not optimal here since the actual values of Group 3 are hard to spot because they fall exactly along the summary stats provided by the box plot. One could use <code>geom_half_point()</code>, however, I want to avoid the added jittering along the y axis.</p>
 <details>
@@ -617,7 +618,7 @@ ggplot(data, aes(x = group, y = value)) +
     shape = 95,
     ## remove jitter along x axis
     range_scale = 0,
-    size = 10, 
+    size = 15, 
     alpha = .2
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &quot;off&quot;)</code></pre>
