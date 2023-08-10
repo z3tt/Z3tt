@@ -2,7 +2,7 @@ library(tidyverse)
 library(extrafont)
 library(viridis)
 
-tibble(x = c(34, 100, 166) , y = rep(60, 3), a = c("4", "0", "4"), b = 1:3) %>% 
+tibble(x = c(34, 100, 166) , y = rep(60, 3), a = c("4", "0", "4"), b = 1:3) |> 
   ggplot(aes(x, y)) + 
   geom_text(aes(label = a, color = b), size = 220, family = "Roboto Mono", fontface = "bold") +
   annotate("text", x = 100, y = 10, label = "Error: Can't find page in `.data`.", size = 18, family = "Roboto Mono") +

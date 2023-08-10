@@ -31,25 +31,19 @@
 &lt;div id=&#34;intro&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;A few weeks ago, I came across this tweet:&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;
-&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
-Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. &lt;br&gt;&lt;br&gt;Are there better alternatives, or ways to clarify/address this?
-&lt;/p&gt;
-— Alexandra Lautarescu (&lt;span class=&#34;citation&#34;&gt;@AleLautarescu&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/AleLautarescu/status/1374024886214086669?ref_src=twsrc%5Etfw&#34;&gt;March 22, 2021&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/rainclouds/tweet-alelautarescu.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain; alt=&#39;A tweet by Alexandra Lautarescu (@alelautarescu) from March 22, 2021: Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. Are there better alternatives, or ways to clarify/address this?&#39;&#34;&gt;
+&lt;figcaption&gt;
+Note: Due to the recent changes on X (formerly known as Twitter) I have replaced the embedded tweets with static images.
+&lt;/figcaption&gt;
 &lt;p&gt;Quickly, people settled that &lt;strong&gt;(a) violin plots are &lt;a href=&#34;https://twitter.com/lakens/status/1374028350549803010&#34;&gt;not novel at all&lt;/a&gt;&lt;/strong&gt; but were introduced 23 years ago and &lt;strong&gt;(b) providing an overview of the summary statistics and even the raw data itself might be a good addition&lt;/strong&gt;. A suitable chart hybrid, consisting of a combination of box plots, violin plots, and jittered points, is called a &lt;a href=&#34;https://wellcomeopenresearch.org/articles/4-63&#34;&gt;&lt;strong&gt;&lt;em&gt;raincloud plot&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Raincloud plots were &lt;a href=&#34;https://twitter.com/micahgallen/status/1112780615198429185?lang=en&#34;&gt;presented in 2019&lt;/a&gt; as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars—also known as &lt;a href=&#34;https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/&#34;&gt;&lt;em&gt;dynamite plots&lt;/em&gt;&lt;/a&gt;)—or box plots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.&lt;/p&gt;
 &lt;p&gt;Since I am still working (part–time) as a researcher, I also regularly review scientific articles myself. And in contrast to the reviewer above, I argue completely opposite and always share my concerns in case bar charts or box plots are not suited to convey the study results. Here is a fun meme I made a few months ago when I encountered so–called “dynamite plots” in a paper I was reviewing (plus &lt;a href=&#34;https://github.com/z3tt/30DayChartChallenge2021/tree/main/27_educational&#34;&gt;here is a reworked version with Shrek instead&lt;/a&gt;):&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;
-&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;
-That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! &lt;a href=&#34;https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#dataviz&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/datavisualization?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#datavisualization&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/barbarplot?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#barbarplot&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/DoBetter?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#DoBetter&lt;/a&gt; &lt;a href=&#34;https://t.co/ncuxquEoAF&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/ExaJkaXWUAMoN6k?format=jpg&amp;name=small&#34;&gt;&lt;/a&gt;
-&lt;/p&gt;
-— Cédric Scherer (&lt;span class=&#34;citation&#34;&gt;@CedScherer&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/CedScherer/status/1375438100298674179?ref_src=twsrc%5Etfw&#34;&gt;March 26, 2021&lt;/a&gt;
-&lt;/blockquote&gt;
-&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/rainclouds/tweet-barbarplots-drake.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain; alt=&#39;A tweet by me (@CedScherer) from March 26, 2021: That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! #dataviz #datavisualization #barbarplot #DoBetter. Followed by an imagew using the Drake meme with barbarplots aka dynamite plots next to annoyed Drake and raincloud plots next to happy Drake. Both plots use the same data and orange-purple-green color encoding.&#39;&#34;&gt;
+&lt;figcaption&gt;
+Note: Due to the recent changes on X (formerly known as Twitter) I have replaced the embedded tweets with static images.
+&lt;/figcaption&gt;
 &lt;p&gt;The use of other chart types such as violin and raincloud plots to show the distribution or even the raw data is a topic I am since years pretty passionate about. I always &lt;a href=&#34;https://github.com/z3tt/DataViz-Teaching/blob/master/ChartsRaw/charts_raw_panel.png&#34;&gt;cover the topic in detail during my workshops&lt;/a&gt; and I have regularly used raincloud plots for various occasions: during my PhD to &lt;a href=&#34;https://raw.githubusercontent.com/EcoDynIZW/Scherer_2020_OIKOS/master/figures/FigS5_R0_best_fit.png&#34;&gt;show that the model fitting was appropriate across simulations&lt;/a&gt; (&lt;a href=&#34;https://github.com/EcoDynIZW/Scherer_2020_OIKOS/blob/master/R/rainclouds.R&#34;&gt;code&lt;/a&gt;), as contribution to the &lt;a href=&#34;https://www.storytellingwithdata.com/swdchallenge&#34;&gt;#SWDchallenge&lt;/a&gt; to &lt;a href=&#34;https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2019_09/SWD_2019_09_Uncertainty.png&#34;&gt;illustrate differences in temperatures in Berlin across months&lt;/a&gt; (&lt;a href=&#34;https://github.com/z3tt/SWDchallenge/blob/master/R/SWD_2019-09_Uncertainty.Rmd&#34;&gt;code&lt;/a&gt;), or as contribution to &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday&#34;&gt;#TidyTuesday&lt;/a&gt; to &lt;a href=&#34;https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_31/2020_31_PalmerPenguins.png&#34;&gt;visualize the distribution of bill ratios&lt;/a&gt; in &lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34;&gt;brush–tailed penguins&lt;/a&gt; (&lt;a href=&#34;https://github.com/z3tt/TidyTuesday/blob/master/R/2020_31_PalmerPenguins.Rmd&#34;&gt;code&lt;/a&gt; and &lt;a href=&#34;https://z3tt.github.io/OutlierConf2021/&#34;&gt;code&lt;/a&gt;):&lt;/p&gt;
-&lt;img src=&#34;https://d33wubrfki0l68.cloudfront.net/cd8cf5432a905b3f800259c2ceda9a7e19091e94/71f01/img/dataviz-posts/distributions-examples.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;https://www.cedricscherer.com/img/dataviz-posts/distributions-examples.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain; alt=&#39;Three visualizations using raincloud plots and variants. Left: A combined graphic showing bill dimensions of brush-tailed penguins with a scatterplot on the top and horizontal raincloud plots on the bottom, with fancy Tableau-styled boxplots and barcodes to visualize the raw data. Top right: Vertical area charts combined with interval strips showing the distributions of temperatures in Berlin, germany, per month. Bottom right: Vertical raincloud plots comparing the outcomes of my simulation model, developed during my PhD project, to illustrate the similarity of summary stats (boxplot) and the distributions (area plots) along with the raw data (points).&#39;&#34;&gt;
 &lt;figcaption&gt;
 Some examples for which I used raincloud or violin plots to explicitly highlight the distributions of the values.
 &lt;/figcaption&gt;
@@ -127,8 +121,8 @@ data &amp;lt;- tibble(
   value = c(seq(0, 20, length.out = 100),
             c(rep(0, 5), rnorm(30, 2, .1), rnorm(90, 5.4, .1), rnorm(90, 14.6, .1), rnorm(30, 18, .1), rep(20, 5)),
             rep(seq(0, 20, length.out = 5), 5))
-  ) %&amp;gt;% 
-  rowwise() %&amp;gt;%
+  ) |&amp;gt; 
+  rowwise() |&amp;gt;
   mutate(value = if_else(group == &amp;quot;Group 2&amp;quot;, value + rnorm(1, 0, .4), value))&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;p&gt;So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?&lt;/p&gt;

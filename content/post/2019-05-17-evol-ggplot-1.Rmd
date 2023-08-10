@@ -28,7 +28,7 @@ theme_set(theme_gray(base_size = 16))
 ```{r data, include=FALSE}
 df_students <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-07/student_teacher_ratio.csv")
 
-df_world_tile <- readr::read_csv("https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv") %>%
+df_world_tile <- readr::read_csv("https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv") |>
   mutate(
     ## Namibia's two-digit country code is handled as `NA` - let us fix that
     alpha.2 = if_else(name == "Namibia", "NA", alpha.2),
@@ -41,26 +41,26 @@ df_world_tile <- readr::read_csv("https://gist.githubusercontent.com/maartenzam/
     country_code = alpha.3
   )
 
-df_ratios <- df_students %>%
+df_ratios <- df_students |>
   ## Let's keep only the most recent data per country
-  group_by(country, indicator) %>%
-  filter(year == max(year)) %>%
-  ungroup() %>%
+  group_by(country, indicator) |>
+  filter(year == max(year)) |>
+  ungroup() |>
   # Create `NA`s for countries which do not have any data 2012-2018
-  complete(indicator, nesting(country, country_code)) %>%
+  complete(indicator, nesting(country, country_code)) |>
   ## Let's focus on primary education and keep only countries (coded by letters)
   filter(
     indicator == "Primary Education",
     str_detect(country_code, "[A-Z]")
-  ) %>%
+  ) |>
   ## merge with world tile map data
-  full_join(df_world_tile) %>%
+  full_join(df_world_tile) |>
   filter(
     !is.na(region),
     !is.na(indicator)
-  ) %>%
-  group_by(region) %>%
-  mutate(student_ratio_region = mean(student_ratio, na.rm = TRUE)) %>%
+  ) |>
+  group_by(region) |>
+  mutate(student_ratio_region = mean(student_ratio, na.rm = TRUE)) |>
   ungroup()
 ```
 
@@ -93,7 +93,7 @@ I have prepared the data in the first way to map each country's most recently re
 library(rcartocolor)
 
 ## primary education map by country
-df_ratios %>%
+df_ratios |>
   ggplot(aes(x = x, y = y, fill = student_ratio)) +
     geom_tile(color = "gray70") +
     geom_tile(data = filter(df_ratios, is.na(student_ratio),
@@ -125,11 +125,11 @@ For the second chart next to the tile map, I wanted to highlight the difference 
 ```{r data-sample, echo=FALSE}
 set.seed(2019)
 
-df_ratios %>%
-  group_by(region) %>%
-  sample_n(2) %>%
-  ungroup() %>%
-  dplyr::select(indicator, country, region, student_ratio, student_ratio_region) %>%
+df_ratios |>
+  group_by(region) |>
+  sample_n(2) |>
+  ungroup() |>
+  dplyr::select(indicator, country, region, student_ratio, student_ratio_region) |>
   head(12)
 ```
 
@@ -152,7 +152,7 @@ A good routine with such kind of data (qualitative and unsorted) is to arrange t
 
 ```{r boxplot-sorted, fig.width=8, fig.heigh = 4.5}
 df_sorted <-
-  df_ratios %>%
+  df_ratios |>
   mutate(region = fct_reorder(region, -student_ratio_region))
 
 ggplot(df_sorted, aes(x = region, y = student_ratio)) +
@@ -301,8 +301,8 @@ To relate all these points to a baseline, we add a line indicating the worldwide
 set.seed(2019)
 
 world_avg <-
-  df_ratios %>%
-  summarize(avg = mean(student_ratio, na.rm = TRUE)) %>%
+  df_ratios |>
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) |>
   pull(avg)
 
 g +
@@ -442,7 +442,7 @@ To make it easier to match the countries of the second plot, the country-level t
 library(ggsci)
 
 (map_regions <-
-  df_sorted %>%
+  df_sorted |>
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
     scale_y_reverse() +
@@ -486,8 +486,8 @@ before <-
     theme(plot.title = element_text(family = "Poppins", size = 30, face = "bold", hjust = 0.5))
 
 map_regions <-
-  df_ratios %>%
-  mutate(region = fct_reorder(region, -student_ratio_region)) %>%
+  df_ratios |>
+  mutate(region = fct_reorder(region, -student_ratio_region)) |>
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
     scale_y_reverse() +
@@ -506,8 +506,8 @@ map_regions <-
     labs(x = NULL, y = NULL)
 
 # world_avg <-
-#   df_ratios %>%
-#   summarize(avg = mean(student_ratio, na.rm = TRUE)) %>%
+#   df_ratios |>
+#   summarize(avg = mean(student_ratio, na.rm = TRUE)) |>
 #   pull(avg)
 #
 # arrows <-
@@ -521,8 +521,8 @@ map_regions <-
 set.seed(2019)
 
 after <-
-  df_ratios %>%
-  mutate(region = fct_reorder(region, -student_ratio_region)) %>%
+  df_ratios |>
+  mutate(region = fct_reorder(region, -student_ratio_region)) |>
   ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(
       aes(x = region, xend = region,
@@ -605,8 +605,8 @@ devtools::source_gist("https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd6
 
 ## tile map as legend
 map_regions <-
-  df_ratios %>%
-  mutate(region = fct_reorder(region, -student_ratio_region)) %>%
+  df_ratios |>
+  mutate(region = fct_reorder(region, -student_ratio_region)) |>
   ggplot(aes(x = x, y = y, fill = region, color = region)) +
     geom_tile(color = "white") +
     scale_y_reverse() +
@@ -627,8 +627,8 @@ map_regions <-
 
 ## calculate worldwide average
 world_avg <-
-  df_ratios %>%
-  summarize(avg = mean(student_ratio, na.rm = TRUE)) %>%
+  df_ratios |>
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) |>
   pull(avg)
 
 ## coordinates for arrows
@@ -645,8 +645,8 @@ arrows <-
 set.seed(2019)
 
 ## final plot
-df_ratios %>%
-  mutate(region = fct_reorder(region, -student_ratio_region)) %>%
+df_ratios |>
+  mutate(region = fct_reorder(region, -student_ratio_region)) |>
   ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(
       aes(x = region, xend = region,
@@ -717,8 +717,8 @@ The 2nd quartile is known as the **median**, i.e. 50% of the data points fall be
 
 ```{r mean-vs-median, echo=FALSE, message=FALSE, fig.width=8.5, fig.height=6}
 world_med <-
-  df_ratios %>%
-  summarize(med = median(student_ratio, na.rm = TRUE)) %>%
+  df_ratios |>
+  summarize(med = median(student_ratio, na.rm = TRUE)) |>
   pull(med)
 
 arrows <-
@@ -730,11 +730,11 @@ arrows <-
   )
 
 median <-
-  df_ratios %>%
-  group_by(region) %>%
-  mutate(student_ratio_region = median(student_ratio, na.rm = TRUE)) %>%
-  ungroup() %>%
-  mutate(region = fct_reorder(region, -student_ratio_region)) %>%
+  df_ratios |>
+  group_by(region) |>
+  mutate(student_ratio_region = median(student_ratio, na.rm = TRUE)) |>
+  ungroup() |>
+  mutate(region = fct_reorder(region, -student_ratio_region)) |>
   ggplot(aes(x = region, y = student_ratio, color = region)) +
     geom_segment(
       aes(x = region, xend = region,

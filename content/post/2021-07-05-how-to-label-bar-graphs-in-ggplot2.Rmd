@@ -57,7 +57,7 @@ Unfortunately, the code is under lock but it's a simple bar chart with some labe
 
 First, let's prepare the data for the bar chart. We are going to use the data from 2008 only and summarize the number of car model variants in the data per manufacturer. We also adjust the manufacturer labels and order them as they should appear in the final plot. Here are some notes on some of the functions used:
 
-* `count()` from the [`{dplyr}` package](https://dplyr.tidyverse.org/) is a wrapper of `group_by(var) %>% summarize(n = n()))`. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.
+* `count()` from the [`{dplyr}` package](https://dplyr.tidyverse.org/) is a wrapper of `group_by(var) |> summarize(n = n()))`. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.
 * `str_to_title()` from the [`{stringr}` package](https://stringr.tidyverse.org/) is a quick way to capitalize labels.
 * `fct_lump()`, `fct_inorder()`, `fct_rev()`, and `fct_relevel()` are all from the [`{forcats}` package](https://forcats.tidyverse.org/) that provides helpers for reordering factor levels.
   - First, we group all manufacturers together that do not belong to the top 10 with `fct_lump()`.
@@ -68,16 +68,16 @@ First, let's prepare the data for the bar chart. We are going to use the data fr
 ```{r data-prep}
 library(tidyverse)
 
-mpg_sum <- mpg %>% 
+mpg_sum <- mpg |> 
   ## just use 2008 data
-  dplyr::filter(year == 2008) %>%
+  dplyr::filter(year == 2008) |>
   ## turn into lumped factors with capitalized names
   dplyr::mutate(
     manufacturer = stringr::str_to_title(manufacturer),
     manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %>% 
+  ) |> 
   ## add counts
-  dplyr::count(manufacturer, sort = TRUE) %>% 
+  dplyr::count(manufacturer, sort = TRUE) |> 
   ## order factor levels by number, put "Other" to end
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
@@ -119,7 +119,7 @@ We can go both routes, either creating the labels first or on the fly. However, 
 Here are two ways how to quickly add the percentage labels to your data set. The percentage can be easily calculated by dividing the number of cars per manufacturer `n` by the total number of cars `sum(n)`, times 100. `sprintf()` is a handy function to format text and variables. `sprintf()` allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. `12.0%` instead of `12%` which is useful here). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See [here](https://www.php.net/manual/en/function.sprintf.php) for more about the parameters one can use. Using `paste0`, or alternatively the `glue()` function from the [`{glue}` package](https://glue.tidyverse.org/), we add the percentage symbol to that number.
 
 ```{r perc-label-sprintf}
-mpg_sum <- mpg_sum %>% 
+mpg_sum <- mpg_sum |> 
   ## add percentage label with `sprintf()`
   dplyr::mutate(perc = paste0(sprintf("%4.1f", n / sum(n) * 100), "%"))
 
@@ -129,7 +129,7 @@ mpg_sum
 One could also use the `percent()` function from the `{scales}` package. The accuracy determines the number of digits (here `.1`) and we can similarly add the leading white space by setting `trim` to `FALSE`.
 
 ```{r perc-label-scales}
-mpg_sum %>% 
+mpg_sum |> 
   ## add percentage label with `scales::percent()`
   dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))
 ```
@@ -147,7 +147,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
 And in case you want to add some more description to one of the bars, you can use an `if_else()` (or an `ifelse()`) statement like this:
 
 ```{r perc-label-custom}
-mpg_sum <- mpg_sum %>% 
+mpg_sum <- mpg_sum |> 
   dplyr::mutate(
     perc = paste0(sprintf("%4.1f", n / sum(n) * 100), "%"),
     ## customize label for the first category
@@ -166,8 +166,8 @@ To illustrate how to create and place the labels on the fly, here is an example 
 
 ```{r plot-bars-summary}
 ## prepare non-aggregated data set with lumped and ordered factors
-mpg_fct <- mpg %>% 
-  dplyr::filter(year == 2008) %>%
+mpg_fct <- mpg |> 
+  dplyr::filter(year == 2008) |>
   dplyr::mutate(
     ## add count to calculate percentages later
     total = dplyr::n(),
@@ -289,7 +289,7 @@ One could also add the color to the data set and map the fill to that column and
 
 ```{r palette-as-col}
 mpg_sum <-
-  mpg_sum %>% 
+  mpg_sum |> 
   mutate(
     color = case_when(
       row_number() == 1 ~ "goldenrod1",
@@ -317,14 +317,14 @@ This approach is less error-prone since the color is tied to the properties of t
 <details>
   <summary>&#128129; <i>Expand to see that it still works with "updated" data.</code></i></summary>
 ```{r}
-mpg %>% 
+mpg |> 
   ## use 1999 data now
-  dplyr::filter(year == 1999) %>%
+  dplyr::filter(year == 1999) |>
   dplyr::mutate(
     manufacturer = stringr::str_to_title(manufacturer),
     manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %>% 
-  dplyr::count(manufacturer, sort = TRUE) %>% 
+  ) |> 
+  dplyr::count(manufacturer, sort = TRUE) |> 
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
     manufacturer = forcats::fct_relevel(manufacturer, "Other", after = 0),
@@ -337,7 +337,7 @@ mpg %>%
       manufacturer == "Other" ~ "gray85",
       TRUE ~ "gray70"
     )
-  ) %>% 
+  ) |> 
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
@@ -408,14 +408,14 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that's only the first entry. We can place the labels differently by mapping a new created column `place` to the `hjust` argument. Since we cannot map a variable to `nudge_x`, we cannot use it to offset the labels. To add some spacing, I simply add some white space to the begin and end of each percentage label.
 
 ```{r plot-bars-alternating-labs}
-mpg_sum %>% 
+mpg_sum |> 
   mutate(
     ## set justification based on data 
     ## so that only the first label is placed inside
     place = if_else(row_number() == 1, 1, 0),
     ## add some spacing to labels since we cant use nudge_x anymore
     perc = paste(" ", perc, " ")
-  ) %>% 
+  ) |> 
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
@@ -435,12 +435,12 @@ mpg_sum %>%
 We could also add the "of all car models" bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:
 
 ```{r plot-bars-lab-2nd}
-mpg_sum %>% 
+mpg_sum |> 
   ## overwrite old percentage labels
   mutate(
     perc = paste0(sprintf("%4.1f", n / sum(n) * 100), "%"),
     perc = if_else(row_number() == 2, paste(perc, "of all car models"), perc)
-  ) %>% 
+  ) |> 
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(

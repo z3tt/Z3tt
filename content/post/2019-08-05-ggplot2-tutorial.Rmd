@@ -2824,7 +2824,7 @@ g + geom_tile(aes(fill = Dewpoint)) +
 ```
 
 
-##### Create a Heatmap
+##### Create a Heatmap of Counts
 
 Similarly to our first contour maps, one can easily show the counts or densities of points binned to a hexagonal grid via `geom_hex()`:
 
@@ -3191,7 +3191,7 @@ hchart(chic, "scatter", hcaes(x = date, y = temp, group = season))
 
 [Apache ECharts](https://echarts.apache.org/en/index.html) is a free, powerful charting and visualization library offering an easy way of building intuitive, interactive, and highly customizable charts.
 Even though it is written in pure JavaScript, one can use it in R via the [`{echarts4r}` library](https://echarts4r.john-coene.com/) thanks to [John Coene](https://john-coene.com/).
-Check out the impressive [example gallery](https://echarts4r.john-coene.com/articles/chart_types.html) or these two apps ([App 1](https://johncoene.shinyapps.io/fopi-contest/) and [App 2](https://berlinbikes.correlaid.org/)) making use of the `{echarts4r}` functionality.
+Check out the impressive [example gallery](https://echarts4r.john-coene.com/articles/chart_types.html) or [this app](https://johncoene.shinyapps.io/fopi-contest/) made by the package developer John Coene.
 
 ```{r echarts4r}
 library(echarts4r)

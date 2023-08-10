@@ -58,7 +58,7 @@ The simple bar chart I made for &lt;a href=&#34;https://www.kuendigung.org/studi
 &lt;h2&gt;Data Preparation with the tidyverse&lt;/h2&gt;
 &lt;p&gt;First, let’s prepare the data for the bar chart. We are going to use the data from 2008 only and summarize the number of car model variants in the data per manufacturer. We also adjust the manufacturer labels and order them as they should appear in the final plot. Here are some notes on some of the functions used:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;count()&lt;/code&gt; from the &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt; package&lt;/a&gt; is a wrapper of &lt;code&gt;group_by(var) %&amp;gt;% summarize(n = n()))&lt;/code&gt;. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;count()&lt;/code&gt; from the &lt;a href=&#34;https://dplyr.tidyverse.org/&#34;&gt;&lt;code&gt;{dplyr}&lt;/code&gt; package&lt;/a&gt; is a wrapper of &lt;code&gt;group_by(var) |&amp;gt; summarize(n = n()))&lt;/code&gt;. It allows you to sort the values which is useful here because we want to order the bars based on their value in our visualization.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;str_to_title()&lt;/code&gt; from the &lt;a href=&#34;https://stringr.tidyverse.org/&#34;&gt;&lt;code&gt;{stringr}&lt;/code&gt; package&lt;/a&gt; is a quick way to capitalize labels.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;fct_lump()&lt;/code&gt;, &lt;code&gt;fct_inorder()&lt;/code&gt;, &lt;code&gt;fct_rev()&lt;/code&gt;, and &lt;code&gt;fct_relevel()&lt;/code&gt; are all from the &lt;a href=&#34;https://forcats.tidyverse.org/&#34;&gt;&lt;code&gt;{forcats}&lt;/code&gt; package&lt;/a&gt; that provides helpers for reordering factor levels.
 &lt;ul&gt;
@@ -70,16 +70,16 @@ The simple bar chart I made for &lt;a href=&#34;https://www.kuendigung.org/studi
 &lt;/ul&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 
-mpg_sum &amp;lt;- mpg %&amp;gt;% 
+mpg_sum &amp;lt;- mpg |&amp;gt; 
   ## just use 2008 data
-  dplyr::filter(year == 2008) %&amp;gt;%
+  dplyr::filter(year == 2008) |&amp;gt;
   ## turn into lumped factors with capitalized names
   dplyr::mutate(
     manufacturer = stringr::str_to_title(manufacturer),
     manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %&amp;gt;% 
+  ) |&amp;gt; 
   ## add counts
-  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;% 
+  dplyr::count(manufacturer, sort = TRUE) |&amp;gt; 
   ## order factor levels by number, put &amp;quot;Other&amp;quot; to end
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
@@ -121,7 +121,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
 &lt;h5&gt;How to Calculate the Percentage Values&lt;/h5&gt;
 &lt;p&gt;We can go both routes, either creating the labels first or on the fly. However, creating the bars and labels with the help of &lt;code&gt;geom_bar()&lt;/code&gt; and &lt;code&gt;stat_summary(geom = &#34;text&#34;)&lt;/code&gt; is a bit more difficult and I prefer to build a temporary data frame for that task. The benefit is that you always can control and check the output, i.e. the sorting of the factor and the formatting of the labels.&lt;/p&gt;
 &lt;p&gt;Here are two ways how to quickly add the percentage labels to your data set. The percentage can be easily calculated by dividing the number of cars per manufacturer &lt;code&gt;n&lt;/code&gt; by the total number of cars &lt;code&gt;sum(n)&lt;/code&gt;, times 100. &lt;code&gt;sprintf()&lt;/code&gt; is a handy function to format text and variables. &lt;code&gt;sprintf()&lt;/code&gt; allows you to include for example leading spaces (not important here but useful for left-aligned labels) and zero digits (e.g. &lt;code&gt;12.0%&lt;/code&gt; instead of &lt;code&gt;12%&lt;/code&gt; which is useful here). The syntax is likely confusing for you because it relies on the C library of the same name. Here, we want to retrieve 4 characters in total, 1 of the to the right of the decimal. See &lt;a href=&#34;https://www.php.net/manual/en/function.sprintf.php&#34;&gt;here&lt;/a&gt; for more about the parameters one can use. Using &lt;code&gt;paste0&lt;/code&gt;, or alternatively the &lt;code&gt;glue()&lt;/code&gt; function from the &lt;a href=&#34;https://glue.tidyverse.org/&#34;&gt;&lt;code&gt;{glue}&lt;/code&gt; package&lt;/a&gt;, we add the percentage symbol to that number.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum |&amp;gt; 
   ## add percentage label with `sprintf()`
   dplyr::mutate(perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;))
 
@@ -141,7 +141,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
 ## 10 Nissan           7 &amp;quot; 6.0%&amp;quot;
 ## 11 Jeep             6 &amp;quot; 5.1%&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;One could also use the &lt;code&gt;percent()&lt;/code&gt; function from the &lt;code&gt;{scales}&lt;/code&gt; package. The accuracy determines the number of digits (here &lt;code&gt;.1&lt;/code&gt;) and we can similarly add the leading white space by setting &lt;code&gt;trim&lt;/code&gt; to &lt;code&gt;FALSE&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum |&amp;gt; 
   ## add percentage label with `scales::percent()`
   dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 11 × 3
@@ -166,7 +166,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;And in case you want to add some more description to one of the bars, you can use an &lt;code&gt;if_else()&lt;/code&gt; (or an &lt;code&gt;ifelse()&lt;/code&gt;) statement like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum |&amp;gt; 
   dplyr::mutate(
     perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
     ## customize label for the first category
@@ -182,8 +182,8 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use &lt;code&gt;geom_bar()&lt;/code&gt; instead of &lt;code&gt;geom_col()&lt;/code&gt; which takes not two but only one variable and calculates counts by default. To add the labels, we again use &lt;code&gt;geom_text()&lt;/code&gt; but this time we overwrite the default statistical transformation &lt;code&gt;stat = &#34;identity&#34;&lt;/code&gt; with &lt;code&gt;stat = &#34;count&#34;&lt;/code&gt; (the same as the default for &lt;code&gt;geom_bar()&lt;/code&gt;).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## prepare non-aggregated data set with lumped and ordered factors
-mpg_fct &amp;lt;- mpg %&amp;gt;% 
-  dplyr::filter(year == 2008) %&amp;gt;%
+mpg_fct &amp;lt;- mpg |&amp;gt; 
+  dplyr::filter(year == 2008) |&amp;gt;
   dplyr::mutate(
     ## add count to calculate percentages later
     total = dplyr::n(),
@@ -283,7 +283,7 @@ We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for al
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One could also add the color to the data set and map the fill to that column and use &lt;code&gt;scale_fill_identity()&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;-
-  mpg_sum %&amp;gt;% 
+  mpg_sum |&amp;gt; 
   mutate(
     color = case_when(
       row_number() == 1 ~ &amp;quot;goldenrod1&amp;quot;,
@@ -310,14 +310,14 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
 &lt;summary&gt;
 💁 &lt;i&gt;Expand to see that it still works with “updated” data.&lt;/code&gt;&lt;/i&gt;
 &lt;/summary&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg |&amp;gt; 
   ## use 1999 data now
-  dplyr::filter(year == 1999) %&amp;gt;%
+  dplyr::filter(year == 1999) |&amp;gt;
   dplyr::mutate(
     manufacturer = stringr::str_to_title(manufacturer),
     manufacturer = forcats::fct_lump(manufacturer, n = 10)
-  ) %&amp;gt;% 
-  dplyr::count(manufacturer, sort = TRUE) %&amp;gt;% 
+  ) |&amp;gt; 
+  dplyr::count(manufacturer, sort = TRUE) |&amp;gt; 
   dplyr::mutate(
     manufacturer = forcats::fct_rev(forcats::fct_inorder(manufacturer)),
     manufacturer = forcats::fct_relevel(manufacturer, &amp;quot;Other&amp;quot;, after = 0),
@@ -330,7 +330,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
       manufacturer == &amp;quot;Other&amp;quot; ~ &amp;quot;gray85&amp;quot;,
       TRUE ~ &amp;quot;gray70&amp;quot;
     )
-  ) %&amp;gt;% 
+  ) |&amp;gt; 
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
@@ -389,14 +389,14 @@ We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label(
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version with different label placement:&lt;/strong&gt;
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column &lt;code&gt;place&lt;/code&gt; to the &lt;code&gt;hjust&lt;/code&gt; argument. Since we cannot map a variable to &lt;code&gt;nudge_x&lt;/code&gt;, we cannot use it to offset the labels. To add some spacing, I simply add some white space to the begin and end of each percentage label.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum |&amp;gt; 
   mutate(
     ## set justification based on data 
     ## so that only the first label is placed inside
     place = if_else(row_number() == 1, 1, 0),
     ## add some spacing to labels since we cant use nudge_x anymore
     perc = paste(&amp;quot; &amp;quot;, perc, &amp;quot; &amp;quot;)
-  ) %&amp;gt;% 
+  ) |&amp;gt; 
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(
@@ -413,12 +413,12 @@ I like the idea of placing only those labels inside that mess up the aspect rati
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version placing the long label not at the top:&lt;/strong&gt;
 We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum %&amp;gt;% 
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum |&amp;gt; 
   ## overwrite old percentage labels
   mutate(
     perc = paste0(sprintf(&amp;quot;%4.1f&amp;quot;, n / sum(n) * 100), &amp;quot;%&amp;quot;),
     perc = if_else(row_number() == 2, paste(perc, &amp;quot;of all car models&amp;quot;), perc)
-  ) %&amp;gt;% 
+  ) |&amp;gt; 
   ggplot(aes(x = n, y = manufacturer, fill = color)) +
   geom_col() +
   geom_text(

@@ -30,25 +30,19 @@ editor_options:
 <div id="intro" class="section level2">
 <h2>Introduction</h2>
 <p>A few weeks ago, I came across this tweet:</p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. <br><br>Are there better alternatives, or ways to clarify/address this?
-</p>
-— Alexandra Lautarescu (<span class="citation">@AleLautarescu</span>) <a href="https://twitter.com/AleLautarescu/status/1374024886214086669?ref_src=twsrc%5Etfw">March 22, 2021</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="https://cedricscherer.com/img/rainclouds/tweet-alelautarescu.png" style="height: 100%; width: 100%; object-fit: contain; alt='A tweet by Alexandra Lautarescu (@alelautarescu) from March 22, 2021: Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. Are there better alternatives, or ways to clarify/address this?'">
+<figcaption>
+Note: Due to the recent changes on X (formerly known as Twitter) I have replaced the embedded tweets with static images.
+</figcaption>
 <p>Quickly, people settled that <strong>(a) violin plots are <a href="https://twitter.com/lakens/status/1374028350549803010">not novel at all</a></strong> but were introduced 23 years ago and <strong>(b) providing an overview of the summary statistics and even the raw data itself might be a good addition</strong>. A suitable chart hybrid, consisting of a combination of box plots, violin plots, and jittered points, is called a <a href="https://wellcomeopenresearch.org/articles/4-63"><strong><em>raincloud plot</em></strong></a>.</p>
 <p>Raincloud plots were <a href="https://twitter.com/micahgallen/status/1112780615198429185?lang=en">presented in 2019</a> as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars—also known as <a href="https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/"><em>dynamite plots</em></a>)—or box plots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.</p>
 <p>Since I am still working (part–time) as a researcher, I also regularly review scientific articles myself. And in contrast to the reviewer above, I argue completely opposite and always share my concerns in case bar charts or box plots are not suited to convey the study results. Here is a fun meme I made a few months ago when I encountered so–called “dynamite plots” in a paper I was reviewing (plus <a href="https://github.com/z3tt/30DayChartChallenge2021/tree/main/27_educational">here is a reworked version with Shrek instead</a>):</p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://twitter.com/hashtag/datavisualization?src=hash&amp;ref_src=twsrc%5Etfw">#datavisualization</a> <a href="https://twitter.com/hashtag/barbarplot?src=hash&amp;ref_src=twsrc%5Etfw">#barbarplot</a> <a href="https://twitter.com/hashtag/DoBetter?src=hash&amp;ref_src=twsrc%5Etfw">#DoBetter</a> <a href="https://t.co/ncuxquEoAF"><img src="https://pbs.twimg.com/media/ExaJkaXWUAMoN6k?format=jpg&name=small"></a>
-</p>
-— Cédric Scherer (<span class="citation">@CedScherer</span>) <a href="https://twitter.com/CedScherer/status/1375438100298674179?ref_src=twsrc%5Etfw">March 26, 2021</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="https://cedricscherer.com/img/rainclouds/tweet-barbarplots-drake.png" style="height: 100%; width: 100%; object-fit: contain; alt='A tweet by me (@CedScherer) from March 26, 2021: That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! #dataviz #datavisualization #barbarplot #DoBetter. Followed by an imagew using the Drake meme with barbarplots aka dynamite plots next to annoyed Drake and raincloud plots next to happy Drake. Both plots use the same data and orange-purple-green color encoding.'">
+<figcaption>
+Note: Due to the recent changes on X (formerly known as Twitter) I have replaced the embedded tweets with static images.
+</figcaption>
 <p>The use of other chart types such as violin and raincloud plots to show the distribution or even the raw data is a topic I am since years pretty passionate about. I always <a href="https://github.com/z3tt/DataViz-Teaching/blob/master/ChartsRaw/charts_raw_panel.png">cover the topic in detail during my workshops</a> and I have regularly used raincloud plots for various occasions: during my PhD to <a href="https://raw.githubusercontent.com/EcoDynIZW/Scherer_2020_OIKOS/master/figures/FigS5_R0_best_fit.png">show that the model fitting was appropriate across simulations</a> (<a href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS/blob/master/R/rainclouds.R">code</a>), as contribution to the <a href="https://www.storytellingwithdata.com/swdchallenge">#SWDchallenge</a> to <a href="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2019_09/SWD_2019_09_Uncertainty.png">illustrate differences in temperatures in Berlin across months</a> (<a href="https://github.com/z3tt/SWDchallenge/blob/master/R/SWD_2019-09_Uncertainty.Rmd">code</a>), or as contribution to <a href="https://github.com/rfordatascience/tidytuesday">#TidyTuesday</a> to <a href="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_31/2020_31_PalmerPenguins.png">visualize the distribution of bill ratios</a> in <a href="https://allisonhorst.github.io/palmerpenguins/">brush–tailed penguins</a> (<a href="https://github.com/z3tt/TidyTuesday/blob/master/R/2020_31_PalmerPenguins.Rmd">code</a> and <a href="https://z3tt.github.io/OutlierConf2021/">code</a>):</p>
-<img src="https://d33wubrfki0l68.cloudfront.net/cd8cf5432a905b3f800259c2ceda9a7e19091e94/71f01/img/dataviz-posts/distributions-examples.png" style="height: 100%; width: 100%; object-fit: contain;">
+<img src="https://www.cedricscherer.com/img/dataviz-posts/distributions-examples.png" style="height: 100%; width: 100%; object-fit: contain; alt='Three visualizations using raincloud plots and variants. Left: A combined graphic showing bill dimensions of brush-tailed penguins with a scatterplot on the top and horizontal raincloud plots on the bottom, with fancy Tableau-styled boxplots and barcodes to visualize the raw data. Top right: Vertical area charts combined with interval strips showing the distributions of temperatures in Berlin, germany, per month. Bottom right: Vertical raincloud plots comparing the outcomes of my simulation model, developed during my PhD project, to illustrate the similarity of summary stats (boxplot) and the distributions (area plots) along with the raw data (points).'">
 <figcaption>
 Some examples for which I used raincloud or violin plots to explicitly highlight the distributions of the values.
 </figcaption>
@@ -126,8 +120,8 @@ data &lt;- tibble(
   value = c(seq(0, 20, length.out = 100),
             c(rep(0, 5), rnorm(30, 2, .1), rnorm(90, 5.4, .1), rnorm(90, 14.6, .1), rnorm(30, 18, .1), rep(20, 5)),
             rep(seq(0, 20, length.out = 5), 5))
-  ) %&gt;% 
-  rowwise() %&gt;%
+  ) |&gt; 
+  rowwise() |&gt;
   mutate(value = if_else(group == &quot;Group 2&quot;, value + rnorm(1, 0, .4), value))</code></pre>
 </details>
 <p>So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?</p>

@@ -73,8 +73,8 @@ theme_update(
 
 ## adjust data set
 mpg <-
-  ggplot2::mpg %>% 
-  filter(year == 2008) %>% 
+  ggplot2::mpg |> 
+  filter(year == 2008) |> 
   mutate(manufacturer = stringr::str_to_title(manufacturer))
 ```
 
