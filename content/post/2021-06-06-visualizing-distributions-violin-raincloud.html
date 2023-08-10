@@ -150,6 +150,10 @@ ggplot(data, aes(x = group, y = value)) +
     size = 5
   )</code></pre>
 </details>
+<p>Alternatively, one can “map” the width of the box to the sample size which indicates difference in the sample size but the exact numbers and distributions are still hidden:</p>
+<pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = &quot;grey92&quot;, varwidth = TRUE)</code></pre>
+<p><img src="/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-varwidth-1.png" width="672" /></p>
 <hr />
 </div>
 <div id="rawdata" class="section level2">

@@ -194,6 +194,13 @@ ggplot(data, aes(x = group, y = value)) +
 
 </details>
 
+Alternatively, one can "map" the width of the box to the sample size which indicates difference in the sample size but the exact numbers and distributions are still hidden:
+
+```{r boxplot-with-varwidth}
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92", varwidth = TRUE)
+```
+
 ---
 
 ## We Can Do Better: Add Raw Data {#rawdata}
