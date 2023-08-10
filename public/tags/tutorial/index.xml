@@ -1041,7 +1041,7 @@ if(!require(gghalves)) {
   devtools::install_github(&amp;#39;erocoar/gghalves&amp;#39;)
 }
 
-## INSTALL PACKAGES ----------------------------------------------
+## LOAD PACKAGES -------------------------------------------------
 library(ggplot2) ## plotting
 library(systemfonts) ## custom fonts
 
@@ -1109,10 +1109,13 @@ n_fun &amp;lt;- function(x){
 
 ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &amp;quot;grey92&amp;quot;) +
-  ## use summary function to add text labels
+  ## use summary function to add labels
   stat_summary(
+    ## plot text labels...
     geom = &amp;quot;text&amp;quot;,
+    ## ... using our custom function...
     fun.data = n_fun,
+    ## ... with custom typeface and size
     family = &amp;quot;Roboto Condensed&amp;quot;,
     size = 5
   )&lt;/code&gt;&lt;/pre&gt;
@@ -1209,7 +1212,7 @@ ggplot(data, aes(x = group, y = value)) +
     ## remove white filling
     fill = NA, 
     ## reduce width
-    width = .1
+    width = .2
   )
 
 ggplot(data, aes(x = group, y = value)) +
@@ -1223,7 +1226,7 @@ ggplot(data, aes(x = group, y = value)) +
     ## remove white filling
     fill = NA, 
     ## reduce width
-    width = .1,
+    width = .2,
     ## remove whiskers
     coef = 0, 
     ## remove outliers
@@ -1252,7 +1255,7 @@ ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(
     width = .12, 
     ## remove outliers
-    outlier.color = NA ## `outlier.shape = NA` works as well
+    outlier.color = NA ## `outlier.shape = NA` or `outlier.alpha = 0` works as well
   ) +
   ## add dot plots from {ggdist} package
   ggdist::stat_dots(
@@ -1263,17 +1266,17 @@ ggplot(data, aes(x = group, y = value)) +
     ## adjust grouping (binning) of observations 
     binwidth = .25
   ) + 
-  ## remove white space on the left
-  coord_cartesian(xlim = c(1.2, NA))&lt;/code&gt;&lt;/pre&gt;
+  ## remove white space on the sides
+  coord_cartesian(xlim = c(1.3, 2.9))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Here, I combine two layers from the &lt;a href=&#34;https://mjskay.github.io/ggdist/&#34;&gt;&lt;code&gt;{ggdist}&lt;/code&gt; package&lt;/a&gt;, namely &lt;code&gt;stat_dots()&lt;/code&gt; to draw the rain and &lt;code&gt;stat_halfeye()&lt;/code&gt; to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the box plot. I also remove the slab interval from the halfeye by setting &lt;code&gt;.width&lt;/code&gt; to zero and &lt;code&gt;point_colour&lt;/code&gt; to &lt;code&gt;NA&lt;/code&gt;. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left, we simply add a limit the x axis.&lt;/p&gt;
+&lt;p&gt;Here, I combine two layers from the &lt;a href=&#34;https://mjskay.github.io/ggdist/&#34;&gt;&lt;code&gt;{ggdist}&lt;/code&gt; package&lt;/a&gt;, namely &lt;code&gt;stat_dots()&lt;/code&gt; to draw the rain and &lt;code&gt;stat_halfeye()&lt;/code&gt; to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the box plot. I also remove the slab interval from the halfeye by setting &lt;code&gt;.width&lt;/code&gt; to zero and &lt;code&gt;point_colour&lt;/code&gt; to &lt;code&gt;NA&lt;/code&gt;. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left and right, we simply add a limit the x axis.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show plot without limit adjustment.&lt;/i&gt;
 &lt;/summary&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-no-lim-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/details&gt;
-&lt;p&gt;One can also solely rely on layers from the &lt;code&gt;{ggdist}&lt;/code&gt; package by using the default halfeye which consists of a density curve and a slab interval:&lt;/p&gt;
+&lt;p&gt;One can also solely rely on layers from the &lt;code&gt;{ggdist}&lt;/code&gt; package by using the default halfeye which consists of a density curve and a slab interval. The later is replacing the boxplot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
   ggdist::stat_halfeye(
     adjust = .5,
@@ -1394,8 +1397,8 @@ ggplot(data, aes(x = group, y = value)) +
 &lt;div id=&#34;polish&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Next: Let Your Plot Shine&lt;/h2&gt;
 &lt;p&gt;Stay tuned, in &lt;s&gt;the upcoming&lt;/s&gt; &lt;span style=&#34;color:#ff7202;&#34;&gt;a potential&lt;/span&gt; follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot &lt;a href=&#39;https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01&#39; target = &#34;_blank&#34;&gt;in this gist&amp;lt;/a.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/polished-penguins-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot &lt;a href=&#39;https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01&#39; target = &#34;_blank&#34;&gt;in this gist&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;footnotes&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;&lt;em&gt;Footnotes&lt;/em&gt;&lt;/h5&gt;
@@ -1425,21 +1428,18 @@ R Session Info
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] ragg_1.2.5           colorspace_2.1-0     ggtext_0.1.2         palmerpenguins_0.1.1 patchwork_1.1.2      lubridate_1.9.2      forcats_1.0.0       
-##  [8] stringr_1.5.0        dplyr_1.1.2          purrr_1.0.1          readr_2.1.4          tidyr_1.3.0          tibble_3.2.1         ggplot2_3.4.2       
-## [15] tidyverse_2.0.0     
+## [1] ragg_1.2.5           colorspace_2.1-0     ggtext_0.1.2         palmerpenguins_0.1.1 patchwork_1.1.2      ggplot2_3.4.2        dplyr_1.1.2         
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.10          digest_0.6.31        utf8_1.2.3           ggforce_0.4.1        R6_2.5.1             evaluate_0.20        highr_0.10          
 ##  [8] blogdown_1.18        pillar_1.9.0         rlang_1.1.1          curl_5.0.0           rstudioapi_0.14      jquerylib_0.1.4      magick_2.7.3        
-## [15] rmarkdown_2.20       textshaping_0.3.6    labeling_0.4.2       gridtext_0.1.5       polyclip_1.10-4      munsell_0.5.0        compiler_4.2.3      
-## [22] vipor_0.4.5          xfun_0.39            pkgconfig_2.0.3      systemfonts_1.0.4    ggbeeswarm_0.7.2     htmltools_0.5.4      tidyselect_1.2.0    
-## [29] bookdown_0.34        quadprog_1.5-8       fansi_1.0.4          tzdb_0.3.0           withr_2.5.0          commonmark_1.9.0     MASS_7.3-58.2       
-## [36] distributional_0.3.2 ggdist_3.3.0         grid_4.2.3           jsonlite_1.8.4       gtable_0.3.1         lifecycle_1.0.3      magrittr_2.0.3      
-## [43] scales_1.2.1         cli_3.6.0            stringi_1.7.12       cachem_1.0.7         farver_2.1.1         xml2_1.3.3           bslib_0.5.0         
-## [50] ellipsis_0.3.2       generics_0.1.3       vctrs_0.6.2          tools_4.2.3          glue_1.6.2           beeswarm_0.4.0       markdown_1.7        
-## [57] tweenr_2.0.2         hms_1.1.2            fastmap_1.1.1        yaml_2.3.7           timechange_0.2.0     knitr_1.42           gghalves_0.1.4      
-## [64] sass_0.4.5&lt;/code&gt;&lt;/pre&gt;
+## [15] rmarkdown_2.20       textshaping_0.3.6    labeling_0.4.2       stringr_1.5.0        polyclip_1.10-4      munsell_0.5.0        gridtext_0.1.5      
+## [22] compiler_4.2.3       vipor_0.4.5          xfun_0.39            pkgconfig_2.0.3      systemfonts_1.0.4    ggbeeswarm_0.7.2     htmltools_0.5.4     
+## [29] tidyselect_1.2.0     tibble_3.2.1         bookdown_0.34        quadprog_1.5-8       fansi_1.0.4          withr_2.5.0          MASS_7.3-58.2       
+## [36] commonmark_1.9.0     ggdist_3.3.0         grid_4.2.3           distributional_0.3.2 jsonlite_1.8.4       gtable_0.3.1         lifecycle_1.0.3     
+## [43] magrittr_2.0.3       scales_1.2.1         cli_3.6.0            stringi_1.7.12       cachem_1.0.7         farver_2.1.1         xml2_1.3.3          
+## [50] bslib_0.5.0          generics_0.1.3       vctrs_0.6.2          tools_4.2.3          forcats_1.0.0        glue_1.6.2           beeswarm_0.4.0      
+## [57] markdown_1.7         tweenr_2.0.2         fastmap_1.1.1        yaml_2.3.7           knitr_1.42           sass_0.4.5           gghalves_0.1.4&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;/div&gt;
 &lt;/div&gt;
