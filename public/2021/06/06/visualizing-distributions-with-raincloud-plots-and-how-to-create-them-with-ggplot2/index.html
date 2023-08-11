@@ -275,6 +275,7 @@ if(!require(gghalves)) {
 ## LOAD PACKAGES -------------------------------------------------
 library(ggplot2) ## plotting
 library(systemfonts) ## custom fonts
+library(dplyr) ## data handling
 
 ## CUSTOM THEME --------------------------------------------------
 ## overwrite default ggplot2 theme
@@ -316,16 +317,23 @@ theme_update(
 </summary>
 <pre class="r"><code>set.seed(2021)
 
-data &lt;- tibble::tibble(
-  group = factor(c(rep(&quot;Group 1&quot;, 75), rep(&quot;Group 2&quot;, 130), rep(&quot;Group 3&quot;, 25))),
-  value = c(seq(0, 20, length.out = 75),
-            c(rep(0, 5), rnorm(15, 2, .1), rnorm(45, 5.4, .1), rnorm(45, 14.6, .1), rnorm(15, 18, .1), rep(20, 5)),
-            rep(seq(0, 20, length.out = 5), 5))
-  ) |&gt; 
-  dplyr::rowwise() |&gt;
-  dplyr::mutate(value = dplyr::if_else(group == &quot;Group 2&quot;, value + rnorm(1, 0, .4), value))</code></pre>
+## uniform
+grp1 &lt;- tibble(value = seq(0, 20, length.out = 75), group = &quot;Group 1&quot;)
+
+## weird pattern
+grp2 &lt;- tibble(value = c(rep(0, 5), rnorm(20, 2, .2), rnorm(50, 6, 1), rnorm(50, 14.5, 1), rnorm(20, 18, .2), rep(20, 5)), group = &quot;Group 2&quot;)
+
+## integer with steps of 5
+grp3 &lt;- tibble(value = rep(seq(0, 20, length.out = 5), 5), group = &quot;Group 3&quot;)
+
+data &lt;- bind_rows(grp1, grp2, grp3)</code></pre>
 </details>
-<p>So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?</p>
+<p>So tell me:</p>
+<blockquote>
+<p>How big is the sample size?<br />
+Are there underlying patterns in the data?</p>
+</blockquote>
+<p>Difficult to answer.</p>
 <p>Sure, adding a note on the sample size might be considered good practice but it still doesn’t tell you much about the actual pattern.</p>
 <p><img src="/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png" width="672" /></p>
 <details>
@@ -359,7 +367,7 @@ ggplot(data, aes(x = group, y = value)) +
 </div>
 <div id="rawdata" class="section level2">
 <h2>We Can Do Better: Add Raw Data</h2>
-<p>An obvious improvement is to add the data points. Since we know already that Group 2 consists of 130 observations, let’s use jitter strips instead of a traditional strip plot:</p>
+<p>An obvious improvement is to add the data points. Since we know already that Group 2 consists of 150 observations, let’s use jitter strips instead of a traditional strip plot:</p>
 <pre class="r"><code>ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &quot;grey92&quot;) +
   ## use either geom_point() or geom_jitter()

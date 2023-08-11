@@ -87,6 +87,7 @@ if(!require(gghalves)) {
 ## LOAD PACKAGES -------------------------------------------------
 library(ggplot2) ## plotting
 library(systemfonts) ## custom fonts
+library(dplyr) ## data handling
 
 ## CUSTOM THEME --------------------------------------------------
 ## overwrite default ggplot2 theme
@@ -128,14 +129,17 @@ Thanks to my ["Evolution of a ggplot" blogpost](https://www.cedricscherer.com/20
 ```{r data-prep, include=FALSE}
 set.seed(2021)
 
-data <- tibble::tibble(
-  group = factor(c(rep("Group 1", 75), rep("Group 2", 130), rep("Group 3", 25))),
-  value = c(seq(0, 20, length.out = 75),
-            c(rep(0, 5), rnorm(15, 2, .1), rnorm(45, 5.4, .1), rnorm(45, 14.6, .1), rnorm(15, 18, .1), rep(20, 5)),
-            rep(seq(0, 20, length.out = 5), 5))
-  ) |> 
-  dplyr::rowwise() |>
-  dplyr::mutate(value = dplyr::if_else(group == "Group 2", value + rnorm(1, 0, .4), value))
+grp1 <- tibble(value = seq(0, 20, length.out = 75), 
+               group = "Group 1")
+
+grp2 <- tibble(value = c(rep(0, 5), rnorm(20, 2, .2), rnorm(50, 6, 1), 
+                         rnorm(50, 14.5, 1), rnorm(20, 18, .2), rep(20, 5)), 
+               group = "Group 2")
+
+grp3 <- tibble(value = rep(seq(0, 20, length.out = 5), 5), 
+               group = "Group 3")
+
+data <- bind_rows(grp1, grp2, grp3)
 ```
 
 ```{r theme-set, include=FALSE}
@@ -162,7 +166,12 @@ ggplot(data, aes(x = group, y = value)) +
 ```
 </details>
 
-So tell me: How big is the sample size? Are there underlying patterns in the data? Difficult?
+So tell me: 
+
+> How big is the sample size?  
+Are there underlying patterns in the data? 
+
+Difficult to answer.
 
 Sure, adding a note on the sample size might be considered good practice but it still doesn't tell you much about the actual pattern.
 
@@ -205,7 +214,7 @@ ggplot(data, aes(x = group, y = value)) +
 
 ## We Can Do Better: Add Raw Data {#rawdata}
 
-An obvious improvement is to add the data points. Since we know already that Group 2 consists of 130 observations, let's use jitter strips instead of a traditional strip plot:
+An obvious improvement is to add the data points. Since we know already that Group 2 consists of 150 observations, let's use jitter strips instead of a traditional strip plot:
 
 ```{r boxplot-raw}
 ggplot(data, aes(x = group, y = value)) +
