@@ -347,26 +347,20 @@ Unfold to see &lt;code&gt;{{ }}&lt;/code&gt; example
   return(g)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:run-embraced-function-1&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; alt=&#34;An example using the function with embracing without passing a color column.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: An example using the function with embracing without passing a color column.
-&lt;/p&gt;
-&lt;/div&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;figcaption&gt;
+An example using the function with embracing without passing a color column.
+&lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:run-embraced-function-2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; alt=&#34;An example using the function with embracing, passing a quantitative variable to color.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 2: An example using the function with embracing, passing a quantitative variable to color.
-&lt;/p&gt;
-&lt;/div&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;figcaption&gt;
+An example using the function with embracing, passing a &lt;b&gt;quantitative variable&lt;/b&gt; to color.
+&lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:run-embraced-function-3&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; alt=&#34;An example using the function with embracing, passing a qualitative variable to color.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 3: An example using the function with embracing, passing a qualitative variable to color.
-&lt;/p&gt;
-&lt;/div&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;figcaption&gt;
+An example using the function with embracing, passing a &lt;b&gt;qualitative variable&lt;/b&gt; to color.
+&lt;/figcaption&gt;
 &lt;/details&gt;
 &lt;p&gt;To iterate over the function, we have two options:&lt;/p&gt;
 &lt;ul&gt;
