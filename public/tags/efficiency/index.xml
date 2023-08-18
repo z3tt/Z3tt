@@ -239,6 +239,7 @@ The 7 Nissan cars belong either to the midsize or the SUV class.
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm &amp;lt;- function(data, var1, var2, pointsize = 2, transparency = .5, color = &amp;quot;&amp;quot;) {
   
   ## check if inputs are valid
+  if (!exists(substitute(data))) stop(&amp;quot;data needs to be a data frame.&amp;quot;)
   if (!is.data.frame(data)) stop(&amp;quot;data needs to be a data frame.&amp;quot;)
   if (!is.numeric(pull(data[var1]))) stop(&amp;quot;Column var1 needs to be of type numeric, passed as string.&amp;quot;)
   if (!is.numeric(pull(data[var2]))) stop(&amp;quot;Column var2 needs to be of type numeric, passed as string.&amp;quot;)
@@ -268,6 +269,69 @@ The 7 Nissan cars belong either to the midsize or the SUV class.
     
   return(g)
 }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because I want (better have to) pass the aesthetics as strings with &lt;code&gt;{purrr}&lt;/code&gt;, I first turn the input into symbols by using the &lt;code&gt;sym()&lt;/code&gt; function and then those get evaluated with &lt;code&gt;!!&lt;/code&gt; (so-called “bang-bang”). Note that, in case you just want to use the function without iteration, you can also use &lt;code&gt;{{ }}&lt;/code&gt; (so-called embracing) to pass unquoted variables.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+Unfold to see &lt;code&gt;{{ }}&lt;/code&gt; example
+&lt;/summary&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced &amp;lt;- function(data, var1, var2, color = NULL) {
+  
+  v1 &amp;lt;- deparse(substitute(var1))
+  v2 &amp;lt;- deparse(substitute(var2))
+  v3 &amp;lt;- deparse(substitute(color))
+  
+  ## check if inputs are valid
+  if (!exists(substitute(data))) stop(&amp;quot;data needs to be a data frame.&amp;quot;)
+  if (!is.data.frame(data)) stop(&amp;quot;data needs to be a data frame.&amp;quot;)
+  if (!v1 %in% names(data)) stop(&amp;quot;Column var1 needs to be a column of data.&amp;quot;)
+  if (!v2 %in% names(data)) stop(&amp;quot;Column var2 needs to be a column of data.&amp;quot;)
+  if (!is.numeric(pull(data[v1]))) stop(&amp;quot;Column var1 needs to be of type numeric.&amp;quot;)
+  if (!is.numeric(pull(data[v2]))) stop(&amp;quot;Column var2 needs to be of type numeric.&amp;quot;)
+  if (!v3 %in% c(names(data), &amp;quot;NULL&amp;quot;)) stop(&amp;quot;Column color needs to be a column of data.&amp;quot;)
+  
+  g &amp;lt;- 
+    ggplot(data, aes(x = {{ var1 }}, y = {{ var2 }})) +
+    geom_point(aes(color = {{ color }}), alpha = .5) +
+    geom_smooth(aes(color = {{ color }}), method = &amp;quot;lm&amp;quot;, se = FALSE) +
+    theme_minimal(base_family = &amp;quot;Roboto Condensed&amp;quot;, base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          legend.position = &amp;quot;top&amp;quot;)
+   
+  if (v3 != &amp;quot;NULL&amp;quot;) {
+    if (is.numeric(pull(data[v3])))  {
+      g &amp;lt;- g + scale_color_viridis_c(direction = -1, end = .85) +
+        guides(color = guide_colorbar(
+          barwidth = unit(12, &amp;quot;lines&amp;quot;), barheight = unit(.6, &amp;quot;lines&amp;quot;), title.position = &amp;quot;top&amp;quot;
+        ))
+    } else {
+      g &amp;lt;- g + scale_color_brewer(palette = &amp;quot;Set2&amp;quot;)
+    }
+  }
+  
+  return(g)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:run-embraced-function-1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; alt=&#34;An example using the function with embracing without passing a color column.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: An example using the function with embracing without passing a color column.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:run-embraced-function-2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; alt=&#34;An example using the function with embracing, passing a quantitative variable to color.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: An example using the function with embracing, passing a quantitative variable to color.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:run-embraced-function-3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; alt=&#34;An example using the function with embracing, passing a qualitative variable to color.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: An example using the function with embracing, passing a qualitative variable to color.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;p&gt;To iterate over the function, we have two options:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;we can fix one variable and pass the other as vector with &lt;code&gt;map()&lt;/code&gt;&lt;/li&gt;
@@ -292,9 +356,11 @@ names &amp;lt;- c(&amp;quot;bill_length_mm&amp;quot;, &amp;quot;bill_depth_mm&am
 ## ... and create all possible combinations
 names_set &amp;lt;- tidyr::expand_grid(names, names)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Using another mapping function from the &lt;code&gt;{purrr}&lt;/code&gt; package called &lt;code&gt;pmap()&lt;/code&gt;, we can map over multiple arguments simultaneously:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pmap(
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(palmerpenguins)
+
+pmap(
   names_set, ~plot_scatter_lm(
-    data = palmerpenguins::penguins, 
+    data = penguins, 
     var1 = .x, var2 = .y, color = &amp;quot;species&amp;quot;
   )
 )&lt;/code&gt;&lt;/pre&gt;
@@ -307,7 +373,7 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 &lt;div id=&#34;plot&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;&lt;code&gt;plot()&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;I am not a fan of base R plots but one big advantage is the behavior when applying the &lt;code&gt;plot()&lt;/code&gt; function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(palmerpenguins::penguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(penguins)&lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
@@ -317,7 +383,7 @@ Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatte
 &lt;h5&gt;&lt;code&gt;facet_matrix()&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;A similar, and more flexible take on this idea is the &lt;code&gt;facet_matrix()&lt;/code&gt; functionality from the &lt;a href=&#34;https://ggforce.data-imaginist.com/&#34;&gt;&lt;code&gt;{ggforce}&lt;/code&gt; package&lt;/a&gt;. Instead of passing variable names in the aesthetics, we specify placeholders called &lt;code&gt;.panel_x&lt;/code&gt; and &lt;code&gt;.panel_y&lt;/code&gt;. We then create our ggplot as usual by adding layers and scales.&lt;/p&gt;
 &lt;p&gt;Finally, we specify the variables to use in the facet inside the &lt;code&gt;facet_matrix()&lt;/code&gt; component. You can also specify specific layers for different areas (upper, diagonal, lower) inside &lt;code&gt;facet_matrix()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(penguins, aes(x = .panel_x, y = .panel_y)) +
   geom_point(aes(color = species), alpha = .5) +
   geom_smooth(aes(color = species), method = &amp;quot;lm&amp;quot;) +
   ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
@@ -347,18 +413,17 @@ R Session Info
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] patchwork_1.1.2 dplyr_1.1.2     purrr_1.0.1     ggplot2_3.4.2  
+## [1] palmerpenguins_0.1.1 patchwork_1.1.2      dplyr_1.1.2          purrr_1.0.1          ggplot2_3.4.2       
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] tidyselect_1.2.0     xfun_0.39            bslib_0.5.0          splines_4.2.3        lattice_0.20-45      colorspace_2.1-0     vctrs_0.6.2         
-##  [8] generics_0.1.3       htmltools_0.5.4      viridisLite_0.4.1    yaml_2.3.7           mgcv_1.8-42          utf8_1.2.3           rlang_1.1.1         
-## [15] jquerylib_0.1.4      pillar_1.9.0         glue_1.6.2           withr_2.5.0          tweenr_2.0.2         palmerpenguins_0.1.1 RColorBrewer_1.1-3  
-## [22] lifecycle_1.0.3      stringr_1.5.0        munsell_0.5.0        blogdown_1.18        gtable_0.3.1         ragg_1.2.5           evaluate_0.20       
-## [29] labeling_0.4.2       knitr_1.42           fastmap_1.1.1        fansi_1.0.4          highr_0.10           Rcpp_1.0.10          scales_1.2.1        
-## [36] cachem_1.0.7         jsonlite_1.8.4       farver_2.1.1         systemfonts_1.0.4    textshaping_0.3.6    ggforce_0.4.1        digest_0.6.31       
-## [43] stringi_1.7.12       bookdown_0.34        polyclip_1.10-4      grid_4.2.3           cli_3.6.0            tools_4.2.3          magrittr_2.0.3      
-## [50] sass_0.4.5           tibble_3.2.1         tidyr_1.3.0          pkgconfig_2.0.3      MASS_7.3-58.2        Matrix_1.5-3         rmarkdown_2.20      
-## [57] rstudioapi_0.14      R6_2.5.1             prismatic_1.1.1      nlme_3.1-162         compiler_4.2.3&lt;/code&gt;&lt;/pre&gt;
+##  [1] tidyselect_1.2.0   xfun_0.39          bslib_0.5.0        splines_4.2.3      lattice_0.20-45    colorspace_2.1-0   vctrs_0.6.2        generics_0.1.3    
+##  [9] htmltools_0.5.4    viridisLite_0.4.1  yaml_2.3.7         mgcv_1.8-42        utf8_1.2.3         rlang_1.1.1        jquerylib_0.1.4    pillar_1.9.0      
+## [17] glue_1.6.2         withr_2.5.0        tweenr_2.0.2       RColorBrewer_1.1-3 lifecycle_1.0.3    stringr_1.5.0      munsell_0.5.0      blogdown_1.18     
+## [25] gtable_0.3.1       ragg_1.2.5         evaluate_0.20      labeling_0.4.2     knitr_1.42         fastmap_1.1.1      fansi_1.0.4        highr_0.10        
+## [33] Rcpp_1.0.10        scales_1.2.1       cachem_1.0.7       jsonlite_1.8.4     farver_2.1.1       systemfonts_1.0.4  textshaping_0.3.6  ggforce_0.4.1     
+## [41] digest_0.6.31      stringi_1.7.12     bookdown_0.34      polyclip_1.10-4    grid_4.2.3         cli_3.6.0          tools_4.2.3        magrittr_2.0.3    
+## [49] sass_0.4.5         tibble_3.2.1       tidyr_1.3.0        pkgconfig_2.0.3    MASS_7.3-58.2      Matrix_1.5-3       rmarkdown_2.20     rstudioapi_0.14   
+## [57] R6_2.5.1           prismatic_1.1.1    nlme_3.1-162       compiler_4.2.3&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;/div&gt;
 &lt;/div&gt;

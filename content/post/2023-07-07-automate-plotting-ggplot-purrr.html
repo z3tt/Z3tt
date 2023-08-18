@@ -238,6 +238,7 @@ The 7 Nissan cars belong either to the midsize or the SUV class.
 <pre class="r"><code>plot_scatter_lm &lt;- function(data, var1, var2, pointsize = 2, transparency = .5, color = &quot;&quot;) {
   
   ## check if inputs are valid
+  if (!exists(substitute(data))) stop(&quot;data needs to be a data frame.&quot;)
   if (!is.data.frame(data)) stop(&quot;data needs to be a data frame.&quot;)
   if (!is.numeric(pull(data[var1]))) stop(&quot;Column var1 needs to be of type numeric, passed as string.&quot;)
   if (!is.numeric(pull(data[var2]))) stop(&quot;Column var2 needs to be of type numeric, passed as string.&quot;)
@@ -267,6 +268,69 @@ The 7 Nissan cars belong either to the midsize or the SUV class.
     
   return(g)
 }</code></pre>
+<p>Because I want (better have to) pass the aesthetics as strings with <code>{purrr}</code>, I first turn the input into symbols by using the <code>sym()</code> function and then those get evaluated with <code>!!</code> (so-called “bang-bang”). Note that, in case you just want to use the function without iteration, you can also use <code>{{ }}</code> (so-called embracing) to pass unquoted variables.</p>
+<details>
+<summary>
+Unfold to see <code>{{ }}</code> example
+</summary>
+<pre class="r"><code>plot_scatter_lm_embraced &lt;- function(data, var1, var2, color = NULL) {
+  
+  v1 &lt;- deparse(substitute(var1))
+  v2 &lt;- deparse(substitute(var2))
+  v3 &lt;- deparse(substitute(color))
+  
+  ## check if inputs are valid
+  if (!exists(substitute(data))) stop(&quot;data needs to be a data frame.&quot;)
+  if (!is.data.frame(data)) stop(&quot;data needs to be a data frame.&quot;)
+  if (!v1 %in% names(data)) stop(&quot;Column var1 needs to be a column of data.&quot;)
+  if (!v2 %in% names(data)) stop(&quot;Column var2 needs to be a column of data.&quot;)
+  if (!is.numeric(pull(data[v1]))) stop(&quot;Column var1 needs to be of type numeric.&quot;)
+  if (!is.numeric(pull(data[v2]))) stop(&quot;Column var2 needs to be of type numeric.&quot;)
+  if (!v3 %in% c(names(data), &quot;NULL&quot;)) stop(&quot;Column color needs to be a column of data.&quot;)
+  
+  g &lt;- 
+    ggplot(data, aes(x = {{ var1 }}, y = {{ var2 }})) +
+    geom_point(aes(color = {{ color }}), alpha = .5) +
+    geom_smooth(aes(color = {{ color }}), method = &quot;lm&quot;, se = FALSE) +
+    theme_minimal(base_family = &quot;Roboto Condensed&quot;, base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          legend.position = &quot;top&quot;)
+   
+  if (v3 != &quot;NULL&quot;) {
+    if (is.numeric(pull(data[v3])))  {
+      g &lt;- g + scale_color_viridis_c(direction = -1, end = .85) +
+        guides(color = guide_colorbar(
+          barwidth = unit(12, &quot;lines&quot;), barheight = unit(.6, &quot;lines&quot;), title.position = &quot;top&quot;
+        ))
+    } else {
+      g &lt;- g + scale_color_brewer(palette = &quot;Set2&quot;)
+    }
+  }
+  
+  return(g)
+}</code></pre>
+<pre class="r"><code>plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)</code></pre>
+<div class="figure"><span style="display:block;" id="fig:run-embraced-function-1"></span>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png" alt="An example using the function with embracing without passing a color column." width="672" />
+<p class="caption">
+Figure 1: An example using the function with embracing without passing a color column.
+</p>
+</div>
+<pre class="r"><code>plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)</code></pre>
+<div class="figure"><span style="display:block;" id="fig:run-embraced-function-2"></span>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png" alt="An example using the function with embracing, passing a quantitative variable to color." width="672" />
+<p class="caption">
+Figure 2: An example using the function with embracing, passing a quantitative variable to color.
+</p>
+</div>
+<pre class="r"><code>plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)</code></pre>
+<div class="figure"><span style="display:block;" id="fig:run-embraced-function-3"></span>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png" alt="An example using the function with embracing, passing a qualitative variable to color." width="672" />
+<p class="caption">
+Figure 3: An example using the function with embracing, passing a qualitative variable to color.
+</p>
+</div>
+</details>
 <p>To iterate over the function, we have two options:</p>
 <ul>
 <li>we can fix one variable and pass the other as vector with <code>map()</code></li>
@@ -291,9 +355,11 @@ names &lt;- c(&quot;bill_length_mm&quot;, &quot;bill_depth_mm&quot;, &quot;flipp
 ## ... and create all possible combinations
 names_set &lt;- tidyr::expand_grid(names, names)</code></pre>
 <p>Using another mapping function from the <code>{purrr}</code> package called <code>pmap()</code>, we can map over multiple arguments simultaneously:</p>
-<pre class="r"><code>pmap(
+<pre class="r"><code>library(palmerpenguins)
+
+pmap(
   names_set, ~plot_scatter_lm(
-    data = palmerpenguins::penguins, 
+    data = penguins, 
     var1 = .x, var2 = .y, color = &quot;species&quot;
   )
 )</code></pre>
@@ -306,7 +372,7 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 <div id="plot" class="section level5">
 <h5><code>plot()</code></h5>
 <p>I am not a fan of base R plots but one big advantage is the behavior when applying the <code>plot()</code> function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:</p>
-<pre class="r"><code>plot(palmerpenguins::penguins)</code></pre>
+<pre class="r"><code>plot(penguins)</code></pre>
 <img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png" width="672" />
 <figcaption>
 Running <code>plot()</code> on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
@@ -316,7 +382,7 @@ Running <code>plot()</code> on a data frame returns a grid of scatter plots visu
 <h5><code>facet_matrix()</code></h5>
 <p>A similar, and more flexible take on this idea is the <code>facet_matrix()</code> functionality from the <a href="https://ggforce.data-imaginist.com/"><code>{ggforce}</code> package</a>. Instead of passing variable names in the aesthetics, we specify placeholders called <code>.panel_x</code> and <code>.panel_y</code>. We then create our ggplot as usual by adding layers and scales.</p>
 <p>Finally, we specify the variables to use in the facet inside the <code>facet_matrix()</code> component. You can also specify specific layers for different areas (upper, diagonal, lower) inside <code>facet_matrix()</code>:</p>
-<pre class="r"><code>ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +
+<pre class="r"><code>ggplot(penguins, aes(x = .panel_x, y = .panel_y)) +
   geom_point(aes(color = species), alpha = .5) +
   geom_smooth(aes(color = species), method = &quot;lm&quot;) +
   ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
@@ -346,18 +412,17 @@ R Session Info
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] patchwork_1.1.2 dplyr_1.1.2     purrr_1.0.1     ggplot2_3.4.2  
+## [1] palmerpenguins_0.1.1 patchwork_1.1.2      dplyr_1.1.2          purrr_1.0.1          ggplot2_3.4.2       
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] tidyselect_1.2.0     xfun_0.39            bslib_0.5.0          splines_4.2.3        lattice_0.20-45      colorspace_2.1-0     vctrs_0.6.2         
-##  [8] generics_0.1.3       htmltools_0.5.4      viridisLite_0.4.1    yaml_2.3.7           mgcv_1.8-42          utf8_1.2.3           rlang_1.1.1         
-## [15] jquerylib_0.1.4      pillar_1.9.0         glue_1.6.2           withr_2.5.0          tweenr_2.0.2         palmerpenguins_0.1.1 RColorBrewer_1.1-3  
-## [22] lifecycle_1.0.3      stringr_1.5.0        munsell_0.5.0        blogdown_1.18        gtable_0.3.1         ragg_1.2.5           evaluate_0.20       
-## [29] labeling_0.4.2       knitr_1.42           fastmap_1.1.1        fansi_1.0.4          highr_0.10           Rcpp_1.0.10          scales_1.2.1        
-## [36] cachem_1.0.7         jsonlite_1.8.4       farver_2.1.1         systemfonts_1.0.4    textshaping_0.3.6    ggforce_0.4.1        digest_0.6.31       
-## [43] stringi_1.7.12       bookdown_0.34        polyclip_1.10-4      grid_4.2.3           cli_3.6.0            tools_4.2.3          magrittr_2.0.3      
-## [50] sass_0.4.5           tibble_3.2.1         tidyr_1.3.0          pkgconfig_2.0.3      MASS_7.3-58.2        Matrix_1.5-3         rmarkdown_2.20      
-## [57] rstudioapi_0.14      R6_2.5.1             prismatic_1.1.1      nlme_3.1-162         compiler_4.2.3</code></pre>
+##  [1] tidyselect_1.2.0   xfun_0.39          bslib_0.5.0        splines_4.2.3      lattice_0.20-45    colorspace_2.1-0   vctrs_0.6.2        generics_0.1.3    
+##  [9] htmltools_0.5.4    viridisLite_0.4.1  yaml_2.3.7         mgcv_1.8-42        utf8_1.2.3         rlang_1.1.1        jquerylib_0.1.4    pillar_1.9.0      
+## [17] glue_1.6.2         withr_2.5.0        tweenr_2.0.2       RColorBrewer_1.1-3 lifecycle_1.0.3    stringr_1.5.0      munsell_0.5.0      blogdown_1.18     
+## [25] gtable_0.3.1       ragg_1.2.5         evaluate_0.20      labeling_0.4.2     knitr_1.42         fastmap_1.1.1      fansi_1.0.4        highr_0.10        
+## [33] Rcpp_1.0.10        scales_1.2.1       cachem_1.0.7       jsonlite_1.8.4     farver_2.1.1       systemfonts_1.0.4  textshaping_0.3.6  ggforce_0.4.1     
+## [41] digest_0.6.31      stringi_1.7.12     bookdown_0.34      polyclip_1.10-4    grid_4.2.3         cli_3.6.0          tools_4.2.3        magrittr_2.0.3    
+## [49] sass_0.4.5         tibble_3.2.1       tidyr_1.3.0        pkgconfig_2.0.3    MASS_7.3-58.2      Matrix_1.5-3       rmarkdown_2.20     rstudioapi_0.14   
+## [57] R6_2.5.1           prismatic_1.1.1    nlme_3.1-162       compiler_4.2.3</code></pre>
 </details>
 </div>
 </div>

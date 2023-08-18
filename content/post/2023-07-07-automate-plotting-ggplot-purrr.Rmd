@@ -279,6 +279,7 @@ In addition, we allow to define a variable to encode points by color as well as 
 plot_scatter_lm <- function(data, var1, var2, pointsize = 2, transparency = .5, color = "") {
   
   ## check if inputs are valid
+  if (!exists(substitute(data))) stop("data needs to be a data frame.")
   if (!is.data.frame(data)) stop("data needs to be a data frame.")
   if (!is.numeric(pull(data[var1]))) stop("Column var1 needs to be of type numeric, passed as string.")
   if (!is.numeric(pull(data[var2]))) stop("Column var2 needs to be of type numeric, passed as string.")
@@ -309,6 +310,60 @@ plot_scatter_lm <- function(data, var1, var2, pointsize = 2, transparency = .5, 
   return(g)
 }
 ```
+
+Because I want (better have to) pass the aesthetics as strings with `{purrr}`, I first turn the input into symbols by using the `sym()` function and then those get evaluated with `!!` (so-called "bang-bang"). Note that, in case you just want to use the function without iteration, you can also use `{{ }}` (so-called embracing) to pass unquoted variables.
+
+<details><summary>Unfold to see `{{ }}` example</summary>
+
+```{r embraced-function}
+plot_scatter_lm_embraced <- function(data, var1, var2, color = NULL) {
+  
+  v1 <- deparse(substitute(var1))
+  v2 <- deparse(substitute(var2))
+  v3 <- deparse(substitute(color))
+  
+  ## check if inputs are valid
+  if (!exists(substitute(data))) stop("data needs to be a data frame.")
+  if (!is.data.frame(data)) stop("data needs to be a data frame.")
+  if (!v1 %in% names(data)) stop("Column var1 needs to be a column of data.")
+  if (!v2 %in% names(data)) stop("Column var2 needs to be a column of data.")
+  if (!is.numeric(pull(data[v1]))) stop("Column var1 needs to be of type numeric.")
+  if (!is.numeric(pull(data[v2]))) stop("Column var2 needs to be of type numeric.")
+  if (!v3 %in% c(names(data), "NULL")) stop("Column color needs to be a column of data.")
+  
+  g <- 
+    ggplot(data, aes(x = {{ var1 }}, y = {{ var2 }})) +
+    geom_point(aes(color = {{ color }}), alpha = .5) +
+    geom_smooth(aes(color = {{ color }}), method = "lm", se = FALSE) +
+    theme_minimal(base_family = "Roboto Condensed", base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          legend.position = "top")
+   
+  if (v3 != "NULL") {
+    if (is.numeric(pull(data[v3])))  {
+      g <- g + scale_color_viridis_c(direction = -1, end = .85) +
+        guides(color = guide_colorbar(
+          barwidth = unit(12, "lines"), barheight = unit(.6, "lines"), title.position = "top"
+        ))
+    } else {
+      g <- g + scale_color_brewer(palette = "Set2")
+    }
+  }
+  
+  return(g)
+}
+```
+```{r run-embraced-function-1, fig.cap='An example using the function with embracing without passing a color column.'}
+plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)
+```
+```{r run-embraced-function-2, fig.cap='An example using the function with embracing, passing a quantitative variable to color.'}
+plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)
+```
+```{r run-embraced-function-3, fig.cap='An example using the function with embracing, passing a qualitative variable to color.'}
+plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)
+```
+
+</details>
 
 To iterate over the function, we have two options: 
 
@@ -346,17 +401,21 @@ names_set <- tidyr::expand_grid(names, names)
 Using another mapping function from the `{purrr}` package called `pmap()`, we can map over multiple arguments simultaneously:
 
 ```{r purrr-function-scatter-lm-penguins, eval=FALSE}
+library(palmerpenguins)
+
 pmap(
   names_set, ~plot_scatter_lm(
-    data = palmerpenguins::penguins, 
+    data = penguins, 
     var1 = .x, var2 = .y, color = "species"
   )
 )
 ```
 ```{r purrr-function-scatter-lm-penguins-plots, echo=FALSE, fig.width=20, fig.height=20}
+library(palmerpenguins)
+
 wrap_plots(pmap(names_set,
            ~plot_scatter_lm(
-             data = palmerpenguins::penguins, var1 = .x, var2 = .y, color = "species"
+             data = penguins, var1 = .x, var2 = .y, color = "species"
            ) + theme(plot.margin = margin(rep(15, 4)))))
 ```
 <figcaption>Scatter plots for each combination of four numeric variables of the Palmer penguins data set. Passing the categorical variable species to `color` in our custom function returns linear smoothing lines for each of the three groups which are encoded with a categorical palette from the ColorBrewer project.</figcaption>
@@ -369,7 +428,7 @@ wrap_plots(pmap(names_set,
 I am not a fan of base R plots but one big advantage is the behavior when applying the `plot()` function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:
 
 ```{r base-plot-data}
-plot(palmerpenguins::penguins)
+plot(penguins)
 ```
 <figcaption>Running `plot()` on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.</figcaption>
 
@@ -381,7 +440,7 @@ A similar, and more flexible take on this idea is the `facet_matrix()` functiona
 Finally, we specify the variables to use in the facet inside the `facet_matrix()` component. You can also specify specific layers for different areas (upper, diagonal, lower) inside `facet_matrix()`: 
 
 ```{r facet-matrix-layers, fig.width=12, fig.height=9}
-ggplot(palmerpenguins::penguins, aes(x = .panel_x, y = .panel_y)) +
+ggplot(penguins, aes(x = .panel_x, y = .panel_y)) +
   geom_point(aes(color = species), alpha = .5) +
   geom_smooth(aes(color = species), method = "lm") +
   ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
