@@ -49,7 +49,8 @@ A loose collection of interesting links featuring open-access books, articles to
 * <a href="http://colormind.io/" target="_blank">Colormind</a> — color scheme generator
 * <a href="https://meodai.github.io/poline/" target="_blank">Poline</a> — enigmatic color palette generator
 * <a href="https://huemint.com/" target="_blank">Huemint</a> — AI color palette generator (whatever that means)
-* <a href="https://demo.appsilon.com/apps/pixelator/" target="_blank">Semantic Pixel Generator</a> — pixelate images and  extract palettes
+* <a href="https://pigment.shapefactory.co/" target="_blank">Pigment</a> — two-color palette generator
+* <a href="https://demo.appsilon.com/apps/pixelator/" target="_blank">Semantic Pixel Generator</a> — pixelate images and extract palettes
 * <a href="https://mycolor.space/" target="_blank">Color Space</a> — color palette generator
 * <a href="https://lokeshdhakar.com/projects/color-thief/" target="_blank">ColorThief</a> — grab color palettes from any image
 * <a href="https://poolors.com/" target="_blank">Poolors</a> — least-used color combos
