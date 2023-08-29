@@ -40,3 +40,7 @@ rsconnect/
 
 # dev folder
 dev/
+
+**/.DS_Store
+**/._.DS_Store*_cache
+
