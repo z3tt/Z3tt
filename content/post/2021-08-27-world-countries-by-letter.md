@@ -19,7 +19,7 @@ While drafting the first map, it quickly became obvious that mapping color to al
 So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to `{ggplot2}`’s facet functionality, it was super–easy to turn it into small multiples.
 
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/world-by-letters/letter_world_poster.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/world-by-letters/letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('img/world-by-letters/letter_world_poster.png', 'blank');"/>
 <figcaption>The final poster version with the colorful overview map and 25 small maps, one for each letter.</figcaption><br>
 
 ##### Project Type
@@ -61,24 +61,24 @@ So I quickly came up to use small multiples, which would allow for an easy ident
 
 ##### Single Version of the Small Multiples
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/letter_world_facet_top.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/letter_world_facet_top.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_top.png', 'blank');">
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_facet_left.png', 'blank');">
 
 
 ##### Single Version of the Overview Map
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v1.png', 'blank');">
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/letter_world_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/letter_world_v2.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/letter_world_v2.png', 'blank');">
 
 
 ## How about the last letter?
 
 [Victor](https://twitter.com/humeursdevictor) asked on Twitter if there is some interesting patterns when looking at the last letter of each country. I had no idea so I went ahead and mapped it. I had to make more assumptions here since several countries in the CIA World Factbook end e.g. with ", Republic of" or something wrapped into parentheses. I decided to remove these bits and pick the last letter of these adjusted CIA World Factbook names.
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/last_letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/last_letter_world_poster.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_poster.png', 'blank');">
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/last_letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/last_letter_world_v1.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_v1.png', 'blank');">
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/world-by-letters/last_letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">
+<img src="https://cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/world-by-letters/last_letter_world_facet_left.png', 'blank');">

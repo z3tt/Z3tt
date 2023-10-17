@@ -18,7 +18,7 @@ editor_options:
 
 The course webpage as well ass the slidedecks and the exercises and solutions were developed with the new open-source scientific and technical publishing system <a href='https://quarto.org/' target="_blank">Quarto</a>. The new workshop development was a perfect opportunity to give it a try and the experience was overall wonderful—the <a href='https://revealjs.com/' target="_blank">reveal.js</a> integration for the slides works perfect and allows for a lot of customization. Thanks to Marco Sciaini for helping me setting up the course webpage which was, after learning about a few quirks, a smooth experience as well.
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/rstudioconf-workshop/graphic-design-course-page.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design', 'blank');">
+<img src="https://cedricscherer.com/img/rstudioconf-workshop/graphic-design-course-page.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design', 'blank');">
 <figcaption>The <a href='https://rstudio-conf-2022.github.io/ggplot2-graphic-design'>course webpage</a> which gives an overview of the course objectives and links to all session and the <a href='https://github.com/rstudio-conf-2022/ggplot2-graphic-design'>GitHub repository</a>.</figcaption>
 
 <iframe class="slide-deck" src="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/01_introduction.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
@@ -39,10 +39,10 @@ The workshop is structured in 9 sessions, covering both ggplot2 techniques and g
 
 The session pages contain not only the slides but also hands-on R codes, recap notes, exercises including prepared scripts (either as Quarto or Rmarkdown reports) and step-by-step solutions.
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/rstudioconf-workshop/session-example-colors.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-04_colors.html', 'blank');">
+<img src="https://cedricscherer.com/img/rstudioconf-workshop/session-example-colors.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design/modules/d2-04_colors.html', 'blank');">
 <figcaption>The session pages feature slides, session outline, recap and exercises as well as links to the hands-on codes and solutions.</figcaption>
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/rstudioconf-workshop/exercise-code-example-annotations.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/exercises/05_annotations_ex1.html', 'blank');">
+<img src="https://cedricscherer.com/img/rstudioconf-workshop/exercise-code-example-annotations.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://rstudio-conf-2022.github.io/ggplot2-graphic-design/materials/exercises/05_annotations_ex1.html', 'blank');">
 <figcaption>The exercises are pre-written Quarto (or Rmarkdown) reports to allow for a quick start and the ability to keep a rendered version of the personal solution.</figcaption>
 
 Here is an overview of all recaps:
