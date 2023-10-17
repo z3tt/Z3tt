@@ -11,6 +11,12 @@
   font-weight: 100 900;
 }
 @font-face {
+  font-family: 'General Sans';
+  src: url('../fonts/GeneralSans-Variable.woff2') format("woff-variations"),
+       url('../fonts/GeneralSans-Variable.woff') format("woff-variations"),
+  font-weight: 100 900;
+}
+@font-face {
   font-family: 'Input Mono';
   src: url("../fonts/InputMono-Regular.ttf") format("truetype");
 }
@@ -113,7 +119,7 @@
 }
 
 body {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   line-height: 1.8;
   font-size: 2.05rem;
   font-weight: 430;
@@ -143,7 +149,7 @@ h1 {
   letter-spacing: 1px;
 }
 .navbar h1 {
-  font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 860;
   font-size: 4rem;
   font-feature-settings: "ss01" 1;
@@ -159,7 +165,7 @@ h3 {
   font-size: 3.1rem;
 }
 h4,h5 {
-  font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 860;
   line-height: 1.2;
   letter-spacing: -.25px;
@@ -372,7 +378,7 @@ pre code {
   color: transparent;
 }
 .navbar-custom, .navbar-brand, .nav li a {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 860;
   color: #fff;
   height: 56px;
@@ -565,7 +571,7 @@ pre code {
   letter-spacing: 1.25px;
 }
 .intro-header .site-heading .subheading {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   font-size: 1.75rem;
   line-height: 1.1;
   display: block;
@@ -599,7 +605,7 @@ pre code {
   display: block;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 780;
   font-size: 1.4rem;
 	font-feature-settings: "ss01" 1;
@@ -641,7 +647,7 @@ pre code {
 }
 
 .post-preview>a>.post-title {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   font-size: 2.8rem;
   font-weight: 780;
   letter-spacing: -.25px;
@@ -659,7 +665,7 @@ pre code {
   margin-bottom: 1rem;
 }
 .post-preview>.post-meta {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   /*font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;*/
   color: #28a87d;
   font-size: 1.5rem;
@@ -878,7 +884,7 @@ body {
   border: 1.2px solid rgba(255,255,255,.8);
   border-radius: 999em;
   padding: .2rem .8rem .1rem;
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   color: #fff;
   line-height: 1.6;
   font-size: 1.2rem;
@@ -1166,7 +1172,7 @@ a.about-bold:hover {
 }
 
 .highlight {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'General Sans','Arial','Helvetica',sans-serif,-apple-system;
   font-size: 1.8rem;
   font-weight: 780;
   color: #212121;
