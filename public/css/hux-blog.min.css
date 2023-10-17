@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: 'Bricolage Grotesque';
-  src: url('../fonts/BricolageGrotesque[opsz,wdth,wght]') format("truetype"),
+  src: url('../fonts/BricolageGrotesque[opsz,wdth,wght].ttf') format("truetype"),
   font-weight: 200 800;
 }
 @font-face {
