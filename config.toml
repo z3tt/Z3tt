@@ -2,6 +2,7 @@ baseurl = "https://cedricscherer.com/"
 title = "Cédric Scherer"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
+baseURL = "https://www.cedricscherer.com/"
 # Enable comments by entering your Disqus shortname
 #disqusShortname = "Cédric"
 googleAnalytics = ""
@@ -17,8 +18,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   unsafe = true
 
 [params]
-  header_image = "img/banner/stream.jpg"#mountainsnstars_crystal_RichardStrozynski.jpg" #berlin-build.png
-  twitter_image = "img/banner/banner.png"
+  header_image = "https://cedricscherer.com/img/banner/stream.jpg"
+  twitter_image = "https://cedricscherer.com/img/banner/banner.png"
   copyright = "Cédric Scherer"
   SEOTitle = "Cédric Scherer"
   title = "Cédric Scherer"
@@ -42,7 +43,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   # Sidebar settings
   sidebar_about_description = "Always coding. Passionate about design. Worried about nature and inequality. Proud dad."
-  sidebar_avatar = "img/ced-ciruclar-logo-jungle.png"
+  sidebar_avatar = "https://cedricscherer.com/img/ced-ciruclar-logo-jungle.png"
 
   featured_tags = true
   featured_condition_size = 1
