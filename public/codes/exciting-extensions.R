@@ -30,7 +30,7 @@ bikes <- readr::read_csv(
 library(dplyr)
 
 bikes_day <- filter(
-  bikes, day_night == "day", !is.na(weather_type)
+  bikes, day_night == "day"
 )
 
 bikes_monthly <-
@@ -176,12 +176,12 @@ ggplot(bikes, aes(x = humidity, y = temp)) +
 
 ## -----------------------------------------------------------------------------
 ggplot(bikes, aes(x = humidity, y = temp)) +
-  ggpointdensity::geom_pointdensity(size = 3)
+  ggpointdensity::geom_pointdensity(size = 2)
 
 
 ## -----------------------------------------------------------------------------
 ggplot(bikes, aes(x = humidity, y = temp)) +
-  ggpointdensity::geom_pointdensity(size = 3, adjust = .5) +
+  ggpointdensity::geom_pointdensity(size = 2, adjust = .5) +
   scale_color_gradient(low = "#FFCE52", high = "#663399")
 
 
