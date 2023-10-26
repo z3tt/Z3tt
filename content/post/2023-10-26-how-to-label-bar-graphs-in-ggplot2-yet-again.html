@@ -62,7 +62,7 @@ diamonds |&gt;
 ## 4 Very Good 0.224 
 ## 5 Fair      0.0298</code></pre>
 <p>There are multiple other ways to calculate the shares, including <code>diamonds |&gt; mutate(n = n()) |&gt; summarize(prop = n() / unique(n), .by = cut)</code>. Instead of using the experimental <code>.by</code> argument you can also group your data first with <code>group_by(cut)</code> before summarizing per cut quality.</p>
-<p>The last step is not needed in our case as the ranking by shares follows the defined order of the cut qualities. However, in most other cases you likely have to sort your categories on your own.</p>
+<p>The last step is not needed in our example case here as the ranking by shares follows the defined order of the cut qualities. However, in most other cases you likely have to sort your categories on your own.</p>
 </div>
 <div id="basic-bars" class="section level2">
 <h2>Create a Basic Bar Chart</h2>
@@ -79,7 +79,10 @@ The default horizontal bar chart, ranked by shares.
 <p>Alternatively, you can transform the complete data set on the fly instead of calculating shares first:</p>
 <pre class="r"><code>ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
   geom_bar()</code></pre>
-<p><img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-3-1.png" width="576" />
+<figcaption>
+The same default horizontal bar chart, this time created with <code>geom_bar()</code> and <code>after_stat()</code>.
+</figcaption>
 </div>
 <div id="theming" class="section level2">
 <h2>Style the Visualization</h2>
@@ -189,7 +192,11 @@ The final version with polished category labels by adjusting the strip text of t
     name = &quot;Proportion&quot;
   ) +
   scale_y_discrete(guide = &quot;none&quot;, expand = expansion(add = c(.7, .45))) +
-  scale_fill_manual(values = c(&quot;grey50&quot;, &quot;#1D785A&quot;), guide = &quot;none&quot;)
+  scale_fill_manual(values = c(&quot;grey50&quot;, &quot;#1D785A&quot;), guide = &quot;none&quot;) +
+  theme(strip.text = element_text(
+    hjust = 0, size = rel(1.1), 
+    face = &quot;bold&quot;, margin = margin(rep(0, 4))
+  ))
 
 p</code></pre>
 <img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-8-1.png" width="576" />
