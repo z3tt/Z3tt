@@ -174,7 +174,7 @@ diamonds |>
     name = "Proportion"
   ) +
   scale_y_discrete(
-    guide = "none", expand = expansion(add = c(1, .7))
+    guide = "none", expand = expansion(add = c(.8, .5))
   ) +
   theme(strip.text = element_text(
     hjust = 0, size = rel(1.1), 
@@ -205,7 +205,7 @@ p <-
     labels = scales::label_percent(),
     name = "Proportion"
   ) +
-  scale_y_discrete(guide = "none", expand = expansion(add = c(.7, .45))) +
+  scale_y_discrete(guide = "none", expand = expansion(add = c(.8, .5))) +
   scale_fill_manual(values = c("grey50", "#1D785A"), guide = "none") +
   theme(strip.text = element_text(
     hjust = 0, size = rel(1.1), 

@@ -162,7 +162,7 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
     name = &quot;Proportion&quot;
   ) +
   scale_y_discrete(
-    guide = &quot;none&quot;, expand = expansion(add = c(1, .7))
+    guide = &quot;none&quot;, expand = expansion(add = c(.8, .5))
   ) +
   theme(strip.text = element_text(
     hjust = 0, size = rel(1.1), 
@@ -191,7 +191,7 @@ The final version with polished category labels by adjusting the strip text of t
     labels = scales::label_percent(),
     name = &quot;Proportion&quot;
   ) +
-  scale_y_discrete(guide = &quot;none&quot;, expand = expansion(add = c(.7, .45))) +
+  scale_y_discrete(guide = &quot;none&quot;, expand = expansion(add = c(.8, .5))) +
   scale_fill_manual(values = c(&quot;grey50&quot;, &quot;#1D785A&quot;), guide = &quot;none&quot;) +
   theme(strip.text = element_text(
     hjust = 0, size = rel(1.1), 
