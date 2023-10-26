@@ -138,11 +138,11 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily community challenge happening every April and is hosted by Dominic Royé and myself since 2021. The challenge is inspired by the #30DayMapChallenge.
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
+<img src="https://cedricscherer.com/img/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
 
-<img src="https://cedricscherer.com/img/dataviz-portfolio/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/04_magical/04_magical.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/04_magical/04_magical.png', 'blank');"/>
 
 {{< gallery dir="img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
 
@@ -224,4 +224,3 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 
-<hr>

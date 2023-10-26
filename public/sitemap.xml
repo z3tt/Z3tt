@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cedricscherer.com/tags/automation/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+    <loc>https://cedricscherer.com/tags/annotations/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/dataviz/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/ggplot2/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/post/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/r/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/tidyverse/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/tutorial/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
+    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cedricscherer.com/tags/automation/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/efficiency/</loc>
@@ -17,25 +41,7 @@
     <loc>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/ggplot2/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/post/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/r/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/tidyverse/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cedricscherer.com/tags/tips/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/tutorial/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/workflow/</loc>
@@ -90,9 +96,6 @@
     <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
-    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cedricscherer.com/tags/annotations/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cedricscherer.com/tags/climate/</loc>

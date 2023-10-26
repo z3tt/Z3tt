@@ -5,22 +5,67 @@
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>automation</title>
-      <link>https://cedricscherer.com/tags/automation/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <title>Annotations</title>
+      <link>https://cedricscherer.com/tags/annotations/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/tags/automation/</guid>
+      <guid>https://cedricscherer.com/tags/annotations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataViz</title>
       <link>https://cedricscherer.com/tags/dataviz/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>https://cedricscherer.com/tags/ggplot2/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://cedricscherer.com/tags/r/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>https://cedricscherer.com/tags/tidyverse/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://cedricscherer.com/tags/tutorial/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://cedricscherer.com/tags/automation/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cedricscherer.com/tags/automation/</guid>
       <description></description>
     </item>
     
@@ -34,47 +79,11 @@
     </item>
     
     <item>
-      <title>ggplot2</title>
-      <link>https://cedricscherer.com/tags/ggplot2/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://cedricscherer.com/tags/r/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tidyverse</title>
-      <link>https://cedricscherer.com/tags/tidyverse/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>tips</title>
       <link>https://cedricscherer.com/tags/tips/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>https://cedricscherer.com/tags/tutorial/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
@@ -174,15 +183,6 @@
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://cedricscherer.com/tags/europe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>paygap</title>
-      <link>https://cedricscherer.com/tags/paygap/</link>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://cedricscherer.com/tags/paygap/</guid>
       <description></description>
     </item>
     

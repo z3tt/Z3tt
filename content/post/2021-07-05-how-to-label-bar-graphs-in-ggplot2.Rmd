@@ -134,6 +134,14 @@ mpg_sum |>
   dplyr::mutate(perc = scales::percent(n / sum(n), accuracy = .1, trim = FALSE))
 ```
 
+Edit: As this function is superseded by now, I am using the `sprintf` approach. One could also use `scales::label_percent(accuracy = .1, prefix = "  ", suffix = "%  ")(n / sum(n)` but I find that rather complicated:
+
+```{r perc-label-scales}
+mpg_sum |> 
+  ## add percentage label with `scales::label_percent()`
+  dplyr::mutate(perc = scales::label_percent(accuracy = .1, prefix = "  ", suffix = "%  ")(n / sum(n)))
+```
+
 So let's add the prepared percentage label to our bar graph with `geom_text()`:
 
 ```{r plot-bars-with-labels}
