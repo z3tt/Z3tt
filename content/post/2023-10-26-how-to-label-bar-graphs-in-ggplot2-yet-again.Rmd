@@ -28,6 +28,7 @@ library(systemfonts)
 * [Place Category Labels on the Top](#placing-labels)
 * [Bonus: Style the Bars](#styling)
 * [Alternative Approach](#alternative-approach)
+* [Conclusion](#conclusion)
 
 ---
 
@@ -51,7 +52,7 @@ Inspired by a question by one of my clients, I am now extending that list by sho
 
 I am using the `diamonds` data set from the `{ggplot2}` package to generate shares of diamonds for five different categories describing the quality of the cut. In a first step, I am calculating the shares per quality and turn the categories into a factor ordered by that metric.
 
-```{r}
+```{r data-prep}
 library(dplyr)
 library(ggplot2)
 
@@ -69,7 +70,7 @@ The last step is not needed in our example case here as the ranking by shares fo
 
 Now, I can easily pass the summarized data set to `ggplot()` and create a simple horizontal bar graph:
 
-```{r, fig.width=6, fig.height=4}
+```{r basic, fig.width=6, fig.height=4}
 diamonds |> 
   summarize(prop = n() / nrow(diamonds), .by = cut) |> 
   mutate(cut = forcats::fct_reorder(cut, prop)) |> 
@@ -80,7 +81,7 @@ diamonds |>
 
 Alternatively, you can transform the complete data set on the fly instead of calculating shares first:
 
-```{r, fig.width=6, fig.height=4}
+```{r basic-after-stat, fig.width=6, fig.height=4}
 ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
   geom_bar()
 ```
@@ -93,7 +94,7 @@ If you know me a bit, you know that before moving on I **have to** modify the th
 
 Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (0-100). Also, to follow good practice I am adding the percentage label to the axis using `label_percent()` from the `{scales}` package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well. 
 
-```{r, fig.width=6, fig.height=4}
+```{r theming, fig.width=6, fig.height=4}
 theme_set(theme_minimal(base_family = "Spline Sans"))
 theme_update(
   panel.grid.minor = element_blank(),
@@ -124,7 +125,7 @@ The approach I take to now to move the labels to the top of the bars is: facetin
 
 There are multiple options including placing the labels with geom_text and shifting them upwards. But by far the fastest way (and also likely the one that breaks last when the number of bars changes) is using the facet functionality of `{ggplot2}`. 
 
-```{r, fig.width=6, fig.height=4}
+```{r facet-default, fig.width=6, fig.height=4}
 diamonds |> 
   summarize(prop = n() / nrow(diamonds), .by = cut) |> 
   mutate(cut = forcats::fct_reorder(cut, prop)) |> 
@@ -140,7 +141,7 @@ diamonds |>
 
 It doesn't work "out of the box", however. But that's a quick fix if you know about the `ncol` and the `scales` arguments in the `facet_` function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting `ncol = 1`. By default, the axis ranges are kept constant across small multiples. By setting `scales = "free_y"` we can *free* the axis which removes redundancy and all the resulting white space. 
 
-```{r, fig.width=6, fig.height=4}
+```{r facet-adjust, fig.width=6, fig.height=4}
 diamonds |> 
   summarize(prop = n() / nrow(diamonds), .by = cut) |> 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |> 
@@ -148,20 +149,19 @@ diamonds |>
   geom_col() +
   facet_wrap(~ cut, ncol = 1, scales = "free_y") +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = "Proportion"
+    name = "Proportion", expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
   )
 ```
 <figcaption>Now, our facets looks like a regular bar chart. However, we have redundant labels which we remove in the next step.</figcaption>
 
 Note that we also have to flip the order of our categories as now they're ordered top to bottom, not bottom to top anymore.
 
-The final step is cleaning up the labels. First, let's remove the category names on the y axis by passing `guide = "none"` in `scale_y_discrete()`. To add some spacing between the bars and especially the last bar and the axis line, I adjust the vertical padding. 
+The final step is cleaning up the labels. First, let's remove the category names on the y axis by passing `guide = "none"` in `scale_y_discrete()`. 
 
-To modify the new labels, the so-called strip texts, we address the text element `strip.text` via `theme()`.
+To modify the new labels, the so-called strip texts, we address the text element `strip.text` via `theme()`. The  margin of zero on the left ensures that, together with the horizontal justification (`hjust = 0`) that the strip text labels are full left-aligned with the baseline of the bars. The small margin at the top and the bottom ensure that the labels are not clipped (e.g. that the descender of y is shown completely).
 
-```{r, fig.width=6, fig.height=4}
+```{r strip-text, fig.width=6, fig.height=4}
 diamonds |> 
   summarize(prop = n() / nrow(diamonds), .by = cut) |> 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |> 
@@ -169,16 +169,35 @@ diamonds |>
   geom_col() +
   facet_wrap(~ cut, ncol = 1, scales = "free_y") +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = "Proportion"
+    name = "Proportion", expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
+  ) +
+  scale_y_discrete(guide = "none") +
+  theme(strip.text = element_text(
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = "bold"
+  ))
+```
+
+To add some spacing between the last bar and the axis line, one can adjust the vertical padding of each panel by passing `expansion(add = c(.8, .6)` to the `expand` argument in `scale_y_discrete()`. 
+
+```{r expansion, fig.width=6, fig.height=4}
+diamonds |> 
+  summarize(prop = n() / nrow(diamonds), .by = cut) |> 
+  mutate(cut = forcats::fct_reorder(cut, -prop)) |> 
+  ggplot(aes(prop, cut)) +
+  geom_col() +
+  facet_wrap(~ cut, ncol = 1, scales = "free_y") +
+  scale_x_continuous(
+    name = "Proportion", expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
   ) +
   scale_y_discrete(
-    guide = "none", expand = expansion(add = c(.8, .5))
+    guide = "none", expand = expansion(add = c(.8, .6))
   ) +
   theme(strip.text = element_text(
-    hjust = 0, size = rel(1.1), 
-    face = "bold", margin = margin(rep(0, 4))
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = "bold"
   ))
 ```
 <figcaption>The final version with polished category labels by adjusting the strip text of the facets.</figcaption>
@@ -192,7 +211,7 @@ Let's merge this new approach with some of the [tricks from my previous blog pos
 
 By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to `as.numeric(cut) == 1)` returns `TRUE` for "Ideal" and `FALSE` otherwise. To customize the fill colors, we add `scale_fill_manual()` to pass a vector of two custom colors. As we don't need a legend, we also set `guide = "none"`.
 
-```{r, fig.width=6, fig.height=4}
+```{r color-encoding, fig.width=6, fig.height=4}
 p <- 
   diamonds |> 
   summarize(prop = n() / nrow(diamonds), .by = cut) |> 
@@ -201,15 +220,14 @@ p <-
   geom_col(aes(fill = as.numeric(cut) == 1)) +
   facet_wrap(~ cut, ncol = 1, scales = "free_y") +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = "Proportion"
+    name = "Proportion", expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
   ) +
-  scale_y_discrete(guide = "none", expand = expansion(add = c(.8, .5))) +
+  scale_y_discrete(guide = "none", expand = expansion(add = c(.8, .6))) +
   scale_fill_manual(values = c("grey50", "#1D785A"), guide = "none") +
   theme(strip.text = element_text(
-    hjust = 0, size = rel(1.1), 
-    face = "bold", margin = margin(rep(0, 4))
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = "bold"
   ))
 
 p
@@ -221,29 +239,39 @@ p
 
 Similarly, we can pass an expression to `color` and `hjust` inside the `geom_text()` component that we use to add the direct labels. As `TRUE` is encoded as `1`, all group that have a share lower than 5% are right-aligned while all others are left-aligned (as `FALSE` = `0`). To move the labels a bit more inside and outside, respectively, I am cheating by adding some spaces before and after the label.
 
-Alternatively, you can pass the value for `hjust` directly by using an `ifelse`or `if_else` condition: `hjust = if_else(prop > .05, 1.2, -.2)`.
-
-The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final `scale_color_manual()` I change the text color to white in case the label is placed inside the bar and black otherwise.
-
-```{r, fig.width=6, fig.height=4}
+```{r percentage-labels-a, fig.width=6, fig.height=4}
 p +
   geom_text(
-    aes(label = paste("  ", sprintf("%2.1f", prop * 100), "%  "), 
+    aes(label = paste0("  ", sprintf("%2.1f", prop * 100), "%  "), 
         color = prop > .05, hjust = prop > .05),
     size = 4, fontface = "bold", family = "Spline Sans"
   ) +
   scale_color_manual(values = c("black", "white"), guide = "none")
 ```
+
+Alternatively, you can pass the value for `hjust` directly by using an `ifelse`or `if_else` condition: `hjust = if_else(prop > .05, 1.2, -.2)`:
+
+```{r percentage-labels-b, eval=FALSE}
+p +
+  geom_text(
+    aes(label = paste0(sprintf("%2.1f", prop * 100), "%"), 
+        color = prop > .05, hjust = if_else(prop > .05, 1.2, -.2)),
+    size = 4, fontface = "bold", family = "Spline Sans"
+  ) +
+  scale_color_manual(values = c("black", "white"), guide = "none")
+```
+
+The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final `scale_color_manual()` I change the text color to white in case the label is placed inside the bar and black otherwise.
 <figcaption>Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.</figcaption>
 
 Another way to style the labels would be `scales::label_percent(accuracy = .1, prefix = "  ", suffix = "%  ")(prop)` (or make use of the superseded `scales::percent()`) but that's rather long and also not that easy to remember.
 
 One could of course also remove the x axis as the values are now shown as direct labels. 
 
-```{r, fig.width=6, fig.height=4}
+```{r no-x-axis, fig.width=6, fig.height=4}
 p +
   geom_text(
-    aes(label = paste("  ", sprintf("%2.1f", prop * 100), "%  "), 
+    aes(label = paste0("  ", sprintf("%2.1f", prop * 100), "%  "), 
         color = prop > .05, hjust = prop > .05),
     size = 4, fontface = "bold", family = "Spline Sans"
   ) +
@@ -257,7 +285,7 @@ p +
 
 Here is an approach using `geom_text()`. The trick here is to (i) reduce the width (read: height in our case) of the bars to allow for space for the labels and (ii) add the labels with `geom_text()` in combination with a custom `vjust` or `nudge_y` setting.
 
-```{r, fig.width=6, fig.height=4}
+```{r alternative, fig.width=6, fig.height=4}
 diamonds |> 
   summarize(prop = n() / nrow(diamonds), .by = cut) |> 
   mutate(cut = forcats::fct_reorder(cut, prop)) |> 
@@ -266,7 +294,7 @@ diamonds |>
   geom_text(
     aes(label = cut, x = 0),
     family = "Spline Sans", fontface = "bold",
-    hjust = 0, vjust = -2, size = 4
+    hjust = 0, vjust = -1.7, size = 4.5
   ) +
   scale_x_continuous(
     expand = c(0, 0), limits = c(0, .4),
@@ -279,27 +307,64 @@ diamonds |>
 
 That's a great solution, too. I see some potential issues coming up here, for example problems in case the labels become larger (can be fixed by removing the clipping and adding some margin) or the number of bars increases (and that may be especially a problem in an automated workflow). In the latter case, the space between bars may become too small and/or the placement of the labels, adjusted via `vjust` or `nudge_y`, is not perfectly above the bars anymore.
 
-```{r, fig.width=6, fig.height=4}
-diamonds |> 
-  summarize(prop = n() / nrow(diamonds), .by = cut) |> 
-  mutate(cut = forcats::fct_reorder(cut, prop)) |> 
-  ggplot(aes(prop, cut)) +
+
+## Conclusion {#conclusion}
+
+To illustrate the different behavior of the two approaches, let's run the exact same codes on a new data set with more categories:
+
+```{r compare-1, fig.width=12, fig.height=8}
+p1 <- 
+  mpg |> 
+  filter(year == "2008") |> 
+  summarize(prop = n() / nrow(mpg), .by = manufacturer) |> 
+  mutate(manufacturer = forcats::fct_reorder(stringr::str_to_title(manufacturer), -prop)) |> 
+  ggplot(aes(prop, manufacturer)) +
+  geom_col() +
+  facet_wrap(~ manufacturer, ncol = 1, scales = "free_y") +
+  scale_x_continuous(
+    name = "Proportion", expand = c(0, 0), 
+    limits = c(0, .1), labels = scales::label_percent()
+  ) +
+  scale_y_discrete(
+    guide = "none", expand = expansion(add = c(.8, .6))
+  ) +
+  theme(strip.text = element_text(
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = "bold"
+  ))
+
+p2 <- 
+  mpg |> 
+  filter(year == "2008") |> 
+  summarize(prop = n() / nrow(mpg), .by = manufacturer) |> 
+  mutate(manufacturer = forcats::fct_reorder(stringr::str_to_title(manufacturer), prop)) |> 
+  ggplot(aes(prop, manufacturer)) +
   geom_col(width = .5) +
   geom_text(
-    aes(label = cut, x = 0),
+    aes(label = manufacturer, x = 0),
     family = "Spline Sans", fontface = "bold",
-    hjust = 0, nudge_y = .5, size = 6.5
+    hjust = 0, vjust = -1.7, size = 4.5
   ) +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = "Proportion"
+    name = "Proportion", expand = c(0, 0), 
+    limits = c(0, .1), labels = scales::label_percent()
   ) +
   scale_y_discrete(guide = "none")
+
+library(patchwork)
+p1 + p2
 ```
-<figcaption>An example using <code>nudge_y</code> but also a larger font size for the category labels. Note the cut label for the first bar.</figcaption>
+<figcaption>Applying both approaches to a different data set illustrates nicely the differences of the both approaches to place labels on top. While the facet approach (left) ensures that labels are placed above, the geom approach (right) uses a fixed bar width and thus the labels overlap at some point.</figcaption>
 
+Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the `geom_text()` approach might be easier to set up. 
+However, using the `facet_wrap()` ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing. 
 
+Finally, I should note that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is something one can easy automate as well.
+
+```{r compare-2, fig.width=12, fig.height=5}
+p1 + p2
+```
+<figcaption>Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.</figcaption>
 
 <details>
 <summary style='font-size:10pt;'>R Session Info</summary>

@@ -27,6 +27,7 @@ Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Ri
 <li><a href="#placing-labels">Place Category Labels on the Top</a></li>
 <li><a href="#styling">Bonus: Style the Bars</a></li>
 <li><a href="#alternative-approach">Alternative Approach</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
 </ul>
 <hr />
 </div>
@@ -72,14 +73,14 @@ diamonds |&gt;
   mutate(cut = forcats::fct_reorder(cut, prop)) |&gt; 
   ggplot(aes(prop, cut)) +
   geom_col()</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-2-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-1.png" width="576" />
 <figcaption>
 The default horizontal bar chart, ranked by shares.
 </figcaption>
 <p>Alternatively, you can transform the complete data set on the fly instead of calculating shares first:</p>
 <pre class="r"><code>ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
   geom_bar()</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-3-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-after-stat-1.png" width="576" />
 <figcaption>
 The same default horizontal bar chart, this time created with <code>geom_bar()</code> and <code>after_stat()</code>.
 </figcaption>
@@ -108,7 +109,7 @@ diamonds |&gt;
     labels = scales::label_percent(),
     name = &quot;Proportion&quot;
   ) </code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-4-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/theming-1.png" width="576" />
 <figcaption>
 The same bar chart with a modified theme and a polished x axis.
 </figcaption>
@@ -127,7 +128,7 @@ The same bar chart with a modified theme and a polished x axis.
     expand = c(0, 0), limits = c(0, .4),
     labels = scales::label_percent(),
   )</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-5-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-default-1.png" width="576" />
 <figcaption>
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 </figcaption>
@@ -139,17 +140,16 @@ Creating small multiples based on the variable mapped to the y axis leads to a s
   geom_col() +
   facet_wrap(~ cut, ncol = 1, scales = &quot;free_y&quot;) +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = &quot;Proportion&quot;
+    name = &quot;Proportion&quot;, expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
   )</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-6-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-adjust-1.png" width="576" />
 <figcaption>
 Now, our facets looks like a regular bar chart. However, we have redundant labels which we remove in the next step.
 </figcaption>
 <p>Note that we also have to flip the order of our categories as now they’re ordered top to bottom, not bottom to top anymore.</p>
-<p>The final step is cleaning up the labels. First, let’s remove the category names on the y axis by passing <code>guide = "none"</code> in <code>scale_y_discrete()</code>. To add some spacing between the bars and especially the last bar and the axis line, I adjust the vertical padding.</p>
-<p>To modify the new labels, the so-called strip texts, we address the text element <code>strip.text</code> via <code>theme()</code>.</p>
+<p>The final step is cleaning up the labels. First, let’s remove the category names on the y axis by passing <code>guide = "none"</code> in <code>scale_y_discrete()</code>.</p>
+<p>To modify the new labels, the so-called strip texts, we address the text element <code>strip.text</code> via <code>theme()</code>. The margin of zero on the left ensures that, together with the horizontal justification (<code>hjust = 0</code>) that the strip text labels are full left-aligned with the baseline of the bars. The small margin at the top and the bottom ensure that the labels are not clipped (e.g. that the descender of y is shown completely).</p>
 <pre class="r"><code>diamonds |&gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |&gt; 
@@ -157,18 +157,34 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
   geom_col() +
   facet_wrap(~ cut, ncol = 1, scales = &quot;free_y&quot;) +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = &quot;Proportion&quot;
+    name = &quot;Proportion&quot;, expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
+  ) +
+  scale_y_discrete(guide = &quot;none&quot;) +
+  theme(strip.text = element_text(
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = &quot;bold&quot;
+  ))</code></pre>
+<p><img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png" width="576" /></p>
+<p>To add some spacing between the last bar and the axis line, one can adjust the vertical padding of each panel by passing <code>expansion(add = c(.8, .6)</code> to the <code>expand</code> argument in <code>scale_y_discrete()</code>.</p>
+<pre class="r"><code>diamonds |&gt; 
+  summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
+  mutate(cut = forcats::fct_reorder(cut, -prop)) |&gt; 
+  ggplot(aes(prop, cut)) +
+  geom_col() +
+  facet_wrap(~ cut, ncol = 1, scales = &quot;free_y&quot;) +
+  scale_x_continuous(
+    name = &quot;Proportion&quot;, expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
   ) +
   scale_y_discrete(
-    guide = &quot;none&quot;, expand = expansion(add = c(.8, .5))
+    guide = &quot;none&quot;, expand = expansion(add = c(.8, .6))
   ) +
   theme(strip.text = element_text(
-    hjust = 0, size = rel(1.1), 
-    face = &quot;bold&quot;, margin = margin(rep(0, 4))
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = &quot;bold&quot;
   ))</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-7-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/expansion-1.png" width="576" />
 <figcaption>
 The final version with polished category labels by adjusting the strip text of the facets.
 </figcaption>
@@ -187,19 +203,18 @@ The final version with polished category labels by adjusting the strip text of t
   geom_col(aes(fill = as.numeric(cut) == 1)) +
   facet_wrap(~ cut, ncol = 1, scales = &quot;free_y&quot;) +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = &quot;Proportion&quot;
+    name = &quot;Proportion&quot;, expand = c(0, 0), 
+    limits = c(0, .4), labels = scales::label_percent()
   ) +
-  scale_y_discrete(guide = &quot;none&quot;, expand = expansion(add = c(.8, .5))) +
+  scale_y_discrete(guide = &quot;none&quot;, expand = expansion(add = c(.8, .6))) +
   scale_fill_manual(values = c(&quot;grey50&quot;, &quot;#1D785A&quot;), guide = &quot;none&quot;) +
   theme(strip.text = element_text(
-    hjust = 0, size = rel(1.1), 
-    face = &quot;bold&quot;, margin = margin(rep(0, 4))
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = &quot;bold&quot;
   ))
 
 p</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-8-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/color-encoding-1.png" width="576" />
 <figcaption>
 Drawing attention to the top-ranked category by using a different fill color.
 </figcaption>
@@ -207,16 +222,23 @@ Drawing attention to the top-ranked category by using a different fill color.
 <div id="add-percentages-as-direct-labels" class="section level4">
 <h4>Add Percentages as Direct Labels</h4>
 <p>Similarly, we can pass an expression to <code>color</code> and <code>hjust</code> inside the <code>geom_text()</code> component that we use to add the direct labels. As <code>TRUE</code> is encoded as <code>1</code>, all group that have a share lower than 5% are right-aligned while all others are left-aligned (as <code>FALSE</code> = <code>0</code>). To move the labels a bit more inside and outside, respectively, I am cheating by adding some spaces before and after the label.</p>
-<p>Alternatively, you can pass the value for <code>hjust</code> directly by using an <code>ifelse</code>or <code>if_else</code> condition: <code>hjust = if_else(prop &gt; .05, 1.2, -.2)</code>.</p>
-<p>The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final <code>scale_color_manual()</code> I change the text color to white in case the label is placed inside the bar and black otherwise.</p>
 <pre class="r"><code>p +
   geom_text(
-    aes(label = paste(&quot;  &quot;, sprintf(&quot;%2.1f&quot;, prop * 100), &quot;%  &quot;), 
+    aes(label = paste0(&quot;  &quot;, sprintf(&quot;%2.1f&quot;, prop * 100), &quot;%  &quot;), 
         color = prop &gt; .05, hjust = prop &gt; .05),
     size = 4, fontface = &quot;bold&quot;, family = &quot;Spline Sans&quot;
   ) +
   scale_color_manual(values = c(&quot;black&quot;, &quot;white&quot;), guide = &quot;none&quot;)</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-9-1.png" width="576" />
+<p><img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png" width="576" /></p>
+<p>Alternatively, you can pass the value for <code>hjust</code> directly by using an <code>ifelse</code>or <code>if_else</code> condition: <code>hjust = if_else(prop &gt; .05, 1.2, -.2)</code>:</p>
+<pre class="r"><code>p +
+  geom_text(
+    aes(label = paste0(sprintf(&quot;%2.1f&quot;, prop * 100), &quot;%&quot;), 
+        color = prop &gt; .05, hjust = if_else(prop &gt; .05, 1.2, -.2)),
+    size = 4, fontface = &quot;bold&quot;, family = &quot;Spline Sans&quot;
+  ) +
+  scale_color_manual(values = c(&quot;black&quot;, &quot;white&quot;), guide = &quot;none&quot;)</code></pre>
+The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final <code>scale_color_manual()</code> I change the text color to white in case the label is placed inside the bar and black otherwise.
 <figcaption>
 Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
 </figcaption>
@@ -224,13 +246,13 @@ Now, the bars are labelled directly including a rule that automatically places t
 <p>One could of course also remove the x axis as the values are now shown as direct labels.</p>
 <pre class="r"><code>p +
   geom_text(
-    aes(label = paste(&quot;  &quot;, sprintf(&quot;%2.1f&quot;, prop * 100), &quot;%  &quot;), 
+    aes(label = paste0(&quot;  &quot;, sprintf(&quot;%2.1f&quot;, prop * 100), &quot;%  &quot;), 
         color = prop &gt; .05, hjust = prop &gt; .05),
     size = 4, fontface = &quot;bold&quot;, family = &quot;Spline Sans&quot;
   ) +
   scale_x_continuous(guide = &quot;none&quot;, name = NULL, expand = c(0, 0)) +
   scale_color_manual(values = c(&quot;black&quot;, &quot;white&quot;), guide = &quot;none&quot;)</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-10-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/no-x-axis-1.png" width="576" />
 <figcaption>
 A version in which the x axis has been removed as it shows redundant information.
 </figcaption>
@@ -247,7 +269,7 @@ A version in which the x axis has been removed as it shows redundant information
   geom_text(
     aes(label = cut, x = 0),
     family = &quot;Spline Sans&quot;, fontface = &quot;bold&quot;,
-    hjust = 0, vjust = -2, size = 4
+    hjust = 0, vjust = -1.7, size = 4.5
   ) +
   scale_x_continuous(
     expand = c(0, 0), limits = c(0, .4),
@@ -255,30 +277,66 @@ A version in which the x axis has been removed as it shows redundant information
     name = &quot;Proportion&quot;
   ) +
   scale_y_discrete(guide = &quot;none&quot;)</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-11-1.png" width="576" />
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/alternative-1.png" width="576" />
 <figcaption>
 An example using <code>geom_text()</code> to place the category labels in combination with <code>vjust</code>.
 </figcaption>
 <p>That’s a great solution, too. I see some potential issues coming up here, for example problems in case the labels become larger (can be fixed by removing the clipping and adding some margin) or the number of bars increases (and that may be especially a problem in an automated workflow). In the latter case, the space between bars may become too small and/or the placement of the labels, adjusted via <code>vjust</code> or <code>nudge_y</code>, is not perfectly above the bars anymore.</p>
-<pre class="r"><code>diamonds |&gt; 
-  summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
-  mutate(cut = forcats::fct_reorder(cut, prop)) |&gt; 
-  ggplot(aes(prop, cut)) +
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>To illustrate the different behavior of the two approaches, let’s run the exact same codes on a new data set with more categories:</p>
+<pre class="r"><code>p1 &lt;- 
+  mpg |&gt; 
+  filter(year == &quot;2008&quot;) |&gt; 
+  summarize(prop = n() / nrow(mpg), .by = manufacturer) |&gt; 
+  mutate(manufacturer = forcats::fct_reorder(stringr::str_to_title(manufacturer), -prop)) |&gt; 
+  ggplot(aes(prop, manufacturer)) +
+  geom_col() +
+  facet_wrap(~ manufacturer, ncol = 1, scales = &quot;free_y&quot;) +
+  scale_x_continuous(
+    name = &quot;Proportion&quot;, expand = c(0, 0), 
+    limits = c(0, .1), labels = scales::label_percent()
+  ) +
+  scale_y_discrete(
+    guide = &quot;none&quot;, expand = expansion(add = c(.8, .6))
+  ) +
+  theme(strip.text = element_text(
+    hjust = 0, margin = margin(1, 0, 1, 0), 
+    size = rel(1.1), face = &quot;bold&quot;
+  ))
+
+p2 &lt;- 
+  mpg |&gt; 
+  filter(year == &quot;2008&quot;) |&gt; 
+  summarize(prop = n() / nrow(mpg), .by = manufacturer) |&gt; 
+  mutate(manufacturer = forcats::fct_reorder(stringr::str_to_title(manufacturer), prop)) |&gt; 
+  ggplot(aes(prop, manufacturer)) +
   geom_col(width = .5) +
   geom_text(
-    aes(label = cut, x = 0),
+    aes(label = manufacturer, x = 0),
     family = &quot;Spline Sans&quot;, fontface = &quot;bold&quot;,
-    hjust = 0, nudge_y = .5, size = 6.5
+    hjust = 0, vjust = -1.7, size = 4.5
   ) +
   scale_x_continuous(
-    expand = c(0, 0), limits = c(0, .4),
-    labels = scales::label_percent(),
-    name = &quot;Proportion&quot;
+    name = &quot;Proportion&quot;, expand = c(0, 0), 
+    limits = c(0, .1), labels = scales::label_percent()
   ) +
-  scale_y_discrete(guide = &quot;none&quot;)</code></pre>
-<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-12-1.png" width="576" />
+  scale_y_discrete(guide = &quot;none&quot;)
+
+library(patchwork)
+p1 + p2</code></pre>
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-1-1.png" width="1152" />
 <figcaption>
-An example using <code>nudge_y</code> but also a larger font size for the category labels. Note the cut label for the first bar.
+Applying both approaches to a different data set illustrates nicely the differences of the both approaches to place labels on top. While the facet approach (left) ensures that labels are placed above, the geom approach (right) uses a fixed bar width and thus the labels overlap at some point.
+</figcaption>
+<p>Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the <code>geom_text()</code> approach might be easier to set up.
+However, using the <code>facet_wrap()</code> ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing.</p>
+<p>Finally, I should note that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is something one can easy automate as well.</p>
+<pre class="r"><code>p1 + p2</code></pre>
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-2-1.png" width="1152" />
+<figcaption>
+Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.
 </figcaption>
 <details>
 <summary style="font-size:10pt;">
@@ -302,14 +360,14 @@ R Session Info
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] ggplot2_3.4.3     dplyr_1.1.0       systemfonts_1.0.4
+## [1] patchwork_1.1.2   ggplot2_3.4.3     dplyr_1.1.0       systemfonts_1.0.4
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] gtable_0.3.4      jsonlite_1.8.7    highr_0.10        compiler_4.3.0    tidyselect_1.2.0  jquerylib_0.1.4   scales_1.2.1      textshaping_0.3.6
-##  [9] yaml_2.3.7        fastmap_1.1.1     R6_2.5.1          labeling_0.4.2    generics_0.1.3    knitr_1.42        forcats_1.0.0     tibble_3.2.1     
-## [17] bookdown_0.35     munsell_0.5.0     bslib_0.5.1       pillar_1.9.0      rlang_1.1.1       utf8_1.2.3        cachem_1.0.8      xfun_0.40        
-## [25] sass_0.4.7        cli_3.6.1         withr_2.5.0       magrittr_2.0.3    digest_0.6.33     grid_4.3.0        rstudioapi_0.15.0 lifecycle_1.0.3  
-## [33] vctrs_0.6.3       evaluate_0.20     glue_1.6.2        farver_2.1.1      blogdown_1.18     ragg_1.2.5        fansi_1.0.4       colorspace_2.1-0 
-## [41] rmarkdown_2.20    tools_4.3.0       pkgconfig_2.0.3   htmltools_0.5.6</code></pre>
+##  [1] gtable_0.3.4      jsonlite_1.8.7    highr_0.10        compiler_4.3.0    tidyselect_1.2.0  stringr_1.5.0     jquerylib_0.1.4   scales_1.2.1     
+##  [9] textshaping_0.3.6 yaml_2.3.7        fastmap_1.1.1     R6_2.5.1          labeling_0.4.2    generics_0.1.3    knitr_1.42        forcats_1.0.0    
+## [17] tibble_3.2.1      bookdown_0.35     munsell_0.5.0     bslib_0.5.1       pillar_1.9.0      rlang_1.1.1       utf8_1.2.3        stringi_1.7.12   
+## [25] cachem_1.0.8      xfun_0.40         sass_0.4.7        cli_3.6.1         withr_2.5.0       magrittr_2.0.3    digest_0.6.33     grid_4.3.0       
+## [33] rstudioapi_0.15.0 lifecycle_1.0.3   vctrs_0.6.3       evaluate_0.20     glue_1.6.2        farver_2.1.1      blogdown_1.18     ragg_1.2.5       
+## [41] fansi_1.0.4       colorspace_2.1-0  rmarkdown_2.20    tools_4.3.0       pkgconfig_2.0.3   htmltools_0.5.6</code></pre>
 </details>
 </div>
