@@ -2,8 +2,8 @@
 title: "Yet Another How-to on Labelling Bar Graphs in ggplot2"
 author: "Cédric"
 date: 2023-10-26
-image: img/banner/sun_RichardStrozynski.jpg
-twitterImg: img/banner/sun_RichardStrozynski.png
+image: img/banner/bars-3d-maischberger.png
+twitterImg: img/banner/bars-3d-maischberger.png
 layout: post
 showtoc: false
 description: "Yes, I have written about creating bar charts with ggplot2 before. As one of the most common chart types, creating bar charts is a task that thousands of people likely face every day. This time we discuss approaches to place the category labels above the bars."
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg
 library(systemfonts)
 ```
 
-<p style="font-size:14px">Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Richard Strozynski</a></p>
+<p style="font-size:14px">Header visualization from <a href="https://www.daserste.de/information/talk/maischberger/sendung/maischberger-838.html" target=_blank>"maischberger"</a> (see my <a href="https://www.cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/#note-header">note</a> below)</p>
 
 ##### Table of Content
 
@@ -366,6 +366,14 @@ Finally, I should note that also the facet approach will break at some point: if
 p1 + p2
 ```
 <figcaption>Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.</figcaption>
+
+
+<hr>
+
+#### Note on the Header Image {#note-header}
+
+I've seen this bar chart on the german TV talk show <a href="https://www.daserste.de/information/talk/maischberger/sendung/maischberger-838.html" target=_blank>"maischberger"</a>, airing on September 27, 2023. A wonderful revival of 3D-bars, combined with a glossy, transparent gradient style. It shows the number of newly constructed apartments per year over time.
+
 
 <details>
 <summary style='font-size:10pt;'>R Session Info</summary>

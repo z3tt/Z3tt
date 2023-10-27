@@ -16,7 +16,7 @@
 
 
 &lt;p style=&#34;font-size:14px&#34;&gt;
-Header image by &lt;a href=&#34;https://www.instagram.com/richard.strozynski/?hl=en&#34;&gt;Richard Strozynski&lt;/a&gt;
+Header visualization from &lt;a href=&#34;https://www.daserste.de/information/talk/maischberger/sendung/maischberger-838.html&#34; target=_blank&gt;“maischberger”&lt;/a&gt; (see my &lt;a href=&#34;https://www.cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/#note-header&#34;&gt;note&lt;/a&gt; below)
 &lt;/p&gt;
 &lt;div id=&#34;table-of-content&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Table of Content&lt;/h5&gt;
@@ -338,6 +338,10 @@ Applying both codes to a different data set illustrates nicely the differences o
 &lt;figcaption&gt;
 Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.
 &lt;/figcaption&gt;
+&lt;hr&gt;
+&lt;div id=&#34;note-header&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Note on the Header Image&lt;/h4&gt;
+&lt;p&gt;I’ve seen this bar chart on the german TV talk show &lt;a href=&#34;https://www.daserste.de/information/talk/maischberger/sendung/maischberger-838.html&#34; target=_blank&gt;“maischberger”&lt;/a&gt;, airing on September 27, 2023. A wonderful revival of 3D-bars, combined with a glossy, transparent gradient style. It shows the number of newly constructed apartments per year over time.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary style=&#34;font-size:10pt;&#34;&gt;
 R Session Info
@@ -370,6 +374,7 @@ R Session Info
 ## [33] rstudioapi_0.15.0 lifecycle_1.0.3   vctrs_0.6.3       evaluate_0.20     glue_1.6.2        farver_2.1.1      blogdown_1.18     ragg_1.2.5       
 ## [41] fansi_1.0.4       colorspace_2.1-0  rmarkdown_2.20    tools_4.3.0       pkgconfig_2.0.3   htmltools_0.5.6&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
