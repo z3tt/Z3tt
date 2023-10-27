@@ -178,6 +178,7 @@ diamonds |>
     size = rel(1.1), face = "bold"
   ))
 ```
+<figcaption>The polished new y axis labels, originally strip text of small multiples, replace the original axis labels.</figcaption>
 
 To add some spacing between the last bar and the axis line, one can adjust the vertical padding of each panel by passing `expansion(add = c(.8, .6)` to the `expand` argument in `scale_y_discrete()`. 
 
@@ -260,9 +261,9 @@ p +
   ) +
   scale_color_manual(values = c("black", "white"), guide = "none")
 ```
+<figcaption>Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.</figcaption>
 
 The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final `scale_color_manual()` I change the text color to white in case the label is placed inside the bar and black otherwise.
-<figcaption>Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.</figcaption>
 
 Another way to style the labels would be `scales::label_percent(accuracy = .1, prefix = "  ", suffix = "%  ")(prop)` (or make use of the superseded `scales::percent()`) but that's rather long and also not that easy to remember.
 

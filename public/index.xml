@@ -247,7 +247,10 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
     hjust = 0, margin = margin(1, 0, 1, 0), 
     size = rel(1.1), face = &amp;quot;bold&amp;quot;
   ))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;figcaption&gt;
+The polished new y axis labels, originally strip text of small multiples, replace the original axis labels.
+&lt;/figcaption&gt;
 &lt;p&gt;To add some spacing between the last bar and the axis line, one can adjust the vertical padding of each panel by passing &lt;code&gt;expansion(add = c(.8, .6)&lt;/code&gt; to the &lt;code&gt;expand&lt;/code&gt; argument in &lt;code&gt;scale_y_discrete()&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds |&amp;gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&amp;gt; 
@@ -320,10 +323,10 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Spline Sans&amp;quot;
   ) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final &lt;code&gt;scale_color_manual()&lt;/code&gt; I change the text color to white in case the label is placed inside the bar and black otherwise.
 &lt;figcaption&gt;
 Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
 &lt;/figcaption&gt;
+&lt;p&gt;The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final &lt;code&gt;scale_color_manual()&lt;/code&gt; I change the text color to white in case the label is placed inside the bar and black otherwise.&lt;/p&gt;
 &lt;p&gt;Another way to style the labels would be &lt;code&gt;scales::label_percent(accuracy = .1, prefix = &#34;  &#34;, suffix = &#34;%  &#34;)(prop)&lt;/code&gt; (or make use of the superseded &lt;code&gt;scales::percent()&lt;/code&gt;) but that’s rather long and also not that easy to remember.&lt;/p&gt;
 &lt;p&gt;One could of course also remove the x axis as the values are now shown as direct labels.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p +

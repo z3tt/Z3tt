@@ -165,7 +165,10 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
     hjust = 0, margin = margin(1, 0, 1, 0), 
     size = rel(1.1), face = &quot;bold&quot;
   ))</code></pre>
-<p><img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png" width="576" /></p>
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png" width="576" />
+<figcaption>
+The polished new y axis labels, originally strip text of small multiples, replace the original axis labels.
+</figcaption>
 <p>To add some spacing between the last bar and the axis line, one can adjust the vertical padding of each panel by passing <code>expansion(add = c(.8, .6)</code> to the <code>expand</code> argument in <code>scale_y_discrete()</code>.</p>
 <pre class="r"><code>diamonds |&gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
@@ -238,10 +241,10 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &quot;bold&quot;, family = &quot;Spline Sans&quot;
   ) +
   scale_color_manual(values = c(&quot;black&quot;, &quot;white&quot;), guide = &quot;none&quot;)</code></pre>
-The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final <code>scale_color_manual()</code> I change the text color to white in case the label is placed inside the bar and black otherwise.
 <figcaption>
 Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
 </figcaption>
+<p>The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final <code>scale_color_manual()</code> I change the text color to white in case the label is placed inside the bar and black otherwise.</p>
 <p>Another way to style the labels would be <code>scales::label_percent(accuracy = .1, prefix = "  ", suffix = "%  ")(prop)</code> (or make use of the superseded <code>scales::percent()</code>) but that’s rather long and also not that easy to remember.</p>
 <p>One could of course also remove the x axis as the values are now shown as direct labels.</p>
 <pre class="r"><code>p +
