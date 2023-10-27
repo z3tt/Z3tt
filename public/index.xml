@@ -109,6 +109,7 @@ Header image by &lt;a href=&#34;https://www.instagram.com/richard.strozynski/?hl
 &lt;li&gt;&lt;a href=&#34;#placing-labels&#34;&gt;Place Category Labels on the Top&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#styling&#34;&gt;Bonus: Style the Bars&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#alternative-approach&#34;&gt;Alternative Approach&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -363,7 +364,10 @@ A version in which the x axis has been removed as it shows redundant information
 An example using &lt;code&gt;geom_text()&lt;/code&gt; to place the category labels in combination with &lt;code&gt;vjust&lt;/code&gt;.
 &lt;/figcaption&gt;
 &lt;p&gt;That’s a great solution, too. I see some potential issues coming up here, for example problems in case the labels become larger (can be fixed by removing the clipping and adding some margin) or the number of bars increases (and that may be especially a problem in an automated workflow). In the latter case, the space between bars may become too small and/or the placement of the labels, adjusted via &lt;code&gt;vjust&lt;/code&gt; or &lt;code&gt;nudge_y&lt;/code&gt;, is not perfectly above the bars anymore.&lt;/p&gt;
-&lt;p&gt;Running the exact same codes on a data set with more categories, one can see the differences of the two approaches:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusion&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;To illustrate the different behavior of the two approaches, let’s run the exact same codes on a new data set with more categories:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p1 &amp;lt;- 
   mpg |&amp;gt; 
   filter(year == &amp;quot;2008&amp;quot;) |&amp;gt; 
@@ -406,12 +410,11 @@ library(patchwork)
 p1 + p2&lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-1-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
-Applying both approaches to a different data set illustrates nicely the differences of the both approaches to place labels on top. While the facet approach (left) ensures that labels are placed above, the geom approach (right) uses a fixed bar width and thus the labels overlap at some point.
+Applying both codes to a different data set illustrates nicely the differences of the two approaches to place labels on top. The facet approach (left) ensures that labels are placed above, while the bars get thinner. The geom approach (right) uses a fixed bar width and thus the labels overlap at some point.
 &lt;/figcaption&gt;
-&lt;p&gt;Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the &lt;code&gt;geom_text()&lt;/code&gt; approach might be easier to set up.
-However, using the &lt;code&gt;facet_wrap()&lt;/code&gt; ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing.&lt;/p&gt;
-&lt;p&gt;Finally, I should not that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is somnething one can easy automate as well.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p1 + p2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the &lt;code&gt;geom_text()&lt;/code&gt; approach might be easier to set up.&lt;/p&gt;
+&lt;p&gt;Using the &lt;code&gt;facet_wrap()&lt;/code&gt; approach ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This is especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing. At the same time, the thinner bars make it more difficult to place labels inside the bars. However, the same issue would pop up when adjusting the widths and font sizes in the &lt;code&gt;geom_text()&lt;/code&gt; example.&lt;/p&gt;
+&lt;p&gt;Finally, I should note that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is something one can easy automate as well.&lt;/p&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-2-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.

@@ -354,14 +354,15 @@ p2 <-
 library(patchwork)
 p1 + p2
 ```
-<figcaption>Applying both approaches to a different data set illustrates nicely the differences of the both approaches to place labels on top. While the facet approach (left) ensures that labels are placed above, the geom approach (right) uses a fixed bar width and thus the labels overlap at some point.</figcaption>
+<figcaption>Applying both codes to a different data set illustrates nicely the differences of the two approaches to place labels on top. The facet approach (left) ensures that labels are placed above, while the bars get thinner. The geom approach (right) uses a fixed bar width and thus the labels overlap at some point.</figcaption>
 
 Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the `geom_text()` approach might be easier to set up. 
-However, using the `facet_wrap()` ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing. 
+
+Using the `facet_wrap()` approach ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This is especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing. At the same time, the thinner bars make it more difficult to place labels inside the bars. However, the same issue would pop up when adjusting the widths and font sizes in the `geom_text()` example.
 
 Finally, I should note that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is something one can easy automate as well.
 
-```{r compare-2, fig.width=12, fig.height=5}
+```{r compare-2, fig.width=12, fig.height=5, echo=FALSE}
 p1 + p2
 ```
 <figcaption>Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.</figcaption>
