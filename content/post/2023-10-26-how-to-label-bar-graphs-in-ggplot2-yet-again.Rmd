@@ -39,7 +39,7 @@ Yes, [I have written about creating bar charts with `{ggplot2}` before](https://
 1. how to [position the percentage labels inside](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/#how-to-2), and
 1. how to [color the bars using different colors](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/#how-to-3).
 
-Inspired by a question by one of my client, I extending that list by showcasing 
+Inspired by a question by one of my clients, I am now extending that list by showcasing 
 
 4. how to **place the category labels above the bars**.
 
