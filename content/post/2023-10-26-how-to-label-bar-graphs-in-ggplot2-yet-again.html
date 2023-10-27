@@ -87,7 +87,7 @@ The same default horizontal bar chart, this time created with <code>geom_bar()</
 <div id="theming" class="section level2">
 <h2>Style the Visualization</h2>
 <p>If you know me a bit, you know that before moving on I <strong>have to</strong> modify the theme and fix the grid lines (read: remove them all together in this case).</p>
-<p>Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (ß-100). Also, to follow good practice I am adding the percentage label to the axis using <code>label_percent()</code> from the <code>{scales}</code> package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well.</p>
+<p>Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (0-100). Also, to follow good practice I am adding the percentage label to the axis using <code>label_percent()</code> from the <code>{scales}</code> package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well.</p>
 <pre class="r"><code>theme_set(theme_minimal(base_family = &quot;Spline Sans&quot;))
 theme_update(
   panel.grid.minor = element_blank(),
@@ -131,7 +131,7 @@ The same bar chart with a modified theme and a polished x axis.
 <figcaption>
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 </figcaption>
-<p>It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the <code>ncol</code> and the <code>scales</code> arguments in the <code>facet_</code> function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting <code>ncol = 1</code>. By default, the axis ranges are kept constant across small multiples. By setting <code>scales = "free_y"</code> we can <em>free</em> the axis which removes reduncancy and all the resulting white space.</p>
+<p>It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the <code>ncol</code> and the <code>scales</code> arguments in the <code>facet_</code> function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting <code>ncol = 1</code>. By default, the axis ranges are kept constant across small multiples. By setting <code>scales = "free_y"</code> we can <em>free</em> the axis which removes redundancy and all the resulting white space.</p>
 <pre class="r"><code>diamonds |&gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |&gt; 
@@ -176,9 +176,9 @@ The final version with polished category labels by adjusting the strip text of t
 <div id="styling" class="section level2">
 <h2>Bonus: Style the Bars</h2>
 <p>Let’s merge this new approach with some of the <a href="https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/">tricks from my previous blog post</a>. We add direct labels and highlight the top-ranked category.</p>
-<div id="highlight-top-ranked-category" class="section level3">
-<h3>Highlight Top-Ranked Category</h3>
-<p>By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to <code>as.numeric(cut) == 1)</code> returns <code>TRUE</code> for “Ideal” and <code>FALSE</code> otherwise. To customize the fill colors, we add <code>scale_fill_manual()</code> to pass a vector of two custom colors. As we don’t need a legend, we als set <code>guide = "none"</code>.</p>
+<div id="highlight-top-ranked-category" class="section level4">
+<h4>Highlight Top-Ranked Category</h4>
+<p>By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to <code>as.numeric(cut) == 1)</code> returns <code>TRUE</code> for “Ideal” and <code>FALSE</code> otherwise. To customize the fill colors, we add <code>scale_fill_manual()</code> to pass a vector of two custom colors. As we don’t need a legend, we also set <code>guide = "none"</code>.</p>
 <pre class="r"><code>p &lt;- 
   diamonds |&gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
@@ -204,9 +204,8 @@ p</code></pre>
 Drawing attention to the top-ranked category by using a different fill color.
 </figcaption>
 </div>
-</div>
-<div id="add-percentages-as-direct-labels" class="section level2">
-<h2>Add Percentages as Direct Labels</h2>
+<div id="add-percentages-as-direct-labels" class="section level4">
+<h4>Add Percentages as Direct Labels</h4>
 <p>Similarly, we can pass an expression to <code>color</code> and <code>hjust</code> inside the <code>geom_text()</code> component that we use to add the direct labels. As <code>TRUE</code> is encoded as <code>1</code>, all group that have a share lower than 5% are right-aligned while all others are left-aligned (as <code>FALSE</code> = <code>0</code>). To move the labels a bit more inside and outside, respectively, I am cheating by adding some spaces before and after the label.</p>
 <p>Alternatively, you can pass the value for <code>hjust</code> directly by using an <code>ifelse</code>or <code>if_else</code> condition: <code>hjust = if_else(prop &gt; .05, 1.2, -.2)</code>.</p>
 <p>The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final <code>scale_color_manual()</code> I change the text color to white in case the label is placed inside the bar and black otherwise.</p>
@@ -235,6 +234,7 @@ Now, the bars are labelled directly including a rule that automatically places t
 <figcaption>
 A version in which the x axis has been removed as it shows redundant information.
 </figcaption>
+</div>
 </div>
 <div id="alternative-approach" class="section level2">
 <h2>Alternative Approach</h2>

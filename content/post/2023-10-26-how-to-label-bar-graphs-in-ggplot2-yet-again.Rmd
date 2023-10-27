@@ -91,7 +91,7 @@ ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
 
 If you know me a bit, you know that before moving on I **have to** modify the theme and fix the grid lines (read: remove them all together in this case). 
 
-Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (ß-100). Also, to follow good practice I am adding the percentage label to the axis using `label_percent()` from the `{scales}` package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well. 
+Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (0-100). Also, to follow good practice I am adding the percentage label to the axis using `label_percent()` from the `{scales}` package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well. 
 
 ```{r, fig.width=6, fig.height=4}
 theme_set(theme_minimal(base_family = "Spline Sans"))
@@ -138,7 +138,7 @@ diamonds |>
 ```
 <figcaption>Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.</figcaption>
 
-It doesn't work "out of the box", however. But that's a quick fix if you know about the `ncol` and the `scales` arguments in the `facet_` function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting `ncol = 1`. By default, the axis ranges are kept constant across small multiples. By setting `scales = "free_y"` we can *free* the axis which removes reduncancy and all the resulting white space. 
+It doesn't work "out of the box", however. But that's a quick fix if you know about the `ncol` and the `scales` arguments in the `facet_` function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting `ncol = 1`. By default, the axis ranges are kept constant across small multiples. By setting `scales = "free_y"` we can *free* the axis which removes redundancy and all the resulting white space. 
 
 ```{r, fig.width=6, fig.height=4}
 diamonds |> 
@@ -188,9 +188,9 @@ diamonds |>
 
 Let's merge this new approach with some of the [tricks from my previous blog post](https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/). We add direct labels and highlight the top-ranked category.
 
-### Highlight Top-Ranked Category
+#### Highlight Top-Ranked Category
 
-By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to `as.numeric(cut) == 1)` returns `TRUE` for "Ideal" and `FALSE` otherwise. To customize the fill colors, we add `scale_fill_manual()` to pass a vector of two custom colors. As we don't need a legend, we als set `guide = "none"`.
+By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to `as.numeric(cut) == 1)` returns `TRUE` for "Ideal" and `FALSE` otherwise. To customize the fill colors, we add `scale_fill_manual()` to pass a vector of two custom colors. As we don't need a legend, we also set `guide = "none"`.
 
 ```{r, fig.width=6, fig.height=4}
 p <- 
@@ -217,7 +217,7 @@ p
 <figcaption>Drawing attention to the top-ranked category by using a different fill color.</figcaption>
 
 
-## Add Percentages as Direct Labels
+#### Add Percentages as Direct Labels
 
 Similarly, we can pass an expression to `color` and `hjust` inside the `geom_text()` component that we use to add the direct labels. As `TRUE` is encoded as `1`, all group that have a share lower than 5% are right-aligned while all others are left-aligned (as `FALSE` = `0`). To move the labels a bit more inside and outside, respectively, I am cheating by adding some spaces before and after the label.
 

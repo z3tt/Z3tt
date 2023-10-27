@@ -63,7 +63,7 @@ diamonds |&amp;gt;
 ## 4 Very Good 0.224 
 ## 5 Fair      0.0298&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;There are multiple other ways to calculate the shares, including &lt;code&gt;diamonds |&amp;gt; mutate(n = n()) |&amp;gt; summarize(prop = n() / unique(n), .by = cut)&lt;/code&gt;. Instead of using the experimental &lt;code&gt;.by&lt;/code&gt; argument you can also group your data first with &lt;code&gt;group_by(cut)&lt;/code&gt; before summarizing per cut quality.&lt;/p&gt;
-&lt;p&gt;The last step is not needed in our case as the ranking by shares follows the defined order of the cut qualities. However, in most other cases you likely have to sort your categories on your own.&lt;/p&gt;
+&lt;p&gt;The last step is not needed in our example case here as the ranking by shares follows the defined order of the cut qualities. However, in most other cases you likely have to sort your categories on your own.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;basic-bars&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Create a Basic Bar Chart&lt;/h2&gt;
@@ -80,12 +80,15 @@ The default horizontal bar chart, ranked by shares.
 &lt;p&gt;Alternatively, you can transform the complete data set on the fly instead of calculating shares first:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
   geom_bar()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;figcaption&gt;
+The same default horizontal bar chart, this time created with &lt;code&gt;geom_bar()&lt;/code&gt; and &lt;code&gt;after_stat()&lt;/code&gt;.
+&lt;/figcaption&gt;
 &lt;/div&gt;
 &lt;div id=&#34;theming&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Style the Visualization&lt;/h2&gt;
 &lt;p&gt;If you know me a bit, you know that before moving on I &lt;strong&gt;have to&lt;/strong&gt; modify the theme and fix the grid lines (read: remove them all together in this case).&lt;/p&gt;
-&lt;p&gt;Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (ß-100). Also, to follow good practice I am adding the percentage label to the axis using &lt;code&gt;label_percent()&lt;/code&gt; from the &lt;code&gt;{scales}&lt;/code&gt; package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well.&lt;/p&gt;
+&lt;p&gt;Also, I am modifying the x axis range and labels. Instead of showing proportions, I decide to show percentages (0-100). Also, to follow good practice I am adding the percentage label to the axis using &lt;code&gt;label_percent()&lt;/code&gt; from the &lt;code&gt;{scales}&lt;/code&gt; package. I am also removing the padding on the left and right of the bars and adjust the limits so that the 40% label is shown as well.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;theme_set(theme_minimal(base_family = &amp;quot;Spline Sans&amp;quot;))
 theme_update(
   panel.grid.minor = element_blank(),
@@ -129,7 +132,7 @@ The same bar chart with a modified theme and a polished x axis.
 &lt;figcaption&gt;
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 &lt;/figcaption&gt;
-&lt;p&gt;It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the &lt;code&gt;ncol&lt;/code&gt; and the &lt;code&gt;scales&lt;/code&gt; arguments in the &lt;code&gt;facet_&lt;/code&gt; function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting &lt;code&gt;ncol = 1&lt;/code&gt;. By default, the axis ranges are kept constant across small multiples. By setting &lt;code&gt;scales = &#34;free_y&#34;&lt;/code&gt; we can &lt;em&gt;free&lt;/em&gt; the axis which removes reduncancy and all the resulting white space.&lt;/p&gt;
+&lt;p&gt;It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the &lt;code&gt;ncol&lt;/code&gt; and the &lt;code&gt;scales&lt;/code&gt; arguments in the &lt;code&gt;facet_&lt;/code&gt; function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting &lt;code&gt;ncol = 1&lt;/code&gt;. By default, the axis ranges are kept constant across small multiples. By setting &lt;code&gt;scales = &#34;free_y&#34;&lt;/code&gt; we can &lt;em&gt;free&lt;/em&gt; the axis which removes redundancy and all the resulting white space.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds |&amp;gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&amp;gt; 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |&amp;gt; 
@@ -160,7 +163,7 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
     name = &amp;quot;Proportion&amp;quot;
   ) +
   scale_y_discrete(
-    guide = &amp;quot;none&amp;quot;, expand = expansion(add = c(1, .7))
+    guide = &amp;quot;none&amp;quot;, expand = expansion(add = c(.8, .5))
   ) +
   theme(strip.text = element_text(
     hjust = 0, size = rel(1.1), 
@@ -176,7 +179,7 @@ The final version with polished category labels by adjusting the strip text of t
 &lt;p&gt;Let’s merge this new approach with some of the &lt;a href=&#34;https://www.cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/&#34;&gt;tricks from my previous blog post&lt;/a&gt;. We add direct labels and highlight the top-ranked category.&lt;/p&gt;
 &lt;div id=&#34;highlight-top-ranked-category&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Highlight Top-Ranked Category&lt;/h3&gt;
-&lt;p&gt;By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to &lt;code&gt;as.numeric(cut) == 1)&lt;/code&gt; returns &lt;code&gt;TRUE&lt;/code&gt; for “Ideal” and &lt;code&gt;FALSE&lt;/code&gt; otherwise. To customize the fill colors, we add &lt;code&gt;scale_fill_manual()&lt;/code&gt; to pass a vector of two custom colors. As we don’t need a legend, we als set &lt;code&gt;guide = &#34;none&#34;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;By mapping the cut variable to fill, bars would be colored by categories. To color only the first, top ranked bar, I am making use of the rank which is equal to the factor level. Thus, mapping the fill to &lt;code&gt;as.numeric(cut) == 1)&lt;/code&gt; returns &lt;code&gt;TRUE&lt;/code&gt; for “Ideal” and &lt;code&gt;FALSE&lt;/code&gt; otherwise. To customize the fill colors, we add &lt;code&gt;scale_fill_manual()&lt;/code&gt; to pass a vector of two custom colors. As we don’t need a legend, we also set &lt;code&gt;guide = &#34;none&#34;&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p &amp;lt;- 
   diamonds |&amp;gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&amp;gt; 
@@ -189,8 +192,12 @@ The final version with polished category labels by adjusting the strip text of t
     labels = scales::label_percent(),
     name = &amp;quot;Proportion&amp;quot;
   ) +
-  scale_y_discrete(guide = &amp;quot;none&amp;quot;, expand = expansion(add = c(.7, .45))) +
-  scale_fill_manual(values = c(&amp;quot;grey50&amp;quot;, &amp;quot;#1D785A&amp;quot;), guide = &amp;quot;none&amp;quot;)
+  scale_y_discrete(guide = &amp;quot;none&amp;quot;, expand = expansion(add = c(.8, .5))) +
+  scale_fill_manual(values = c(&amp;quot;grey50&amp;quot;, &amp;quot;#1D785A&amp;quot;), guide = &amp;quot;none&amp;quot;) +
+  theme(strip.text = element_text(
+    hjust = 0, size = rel(1.1), 
+    face = &amp;quot;bold&amp;quot;, margin = margin(rep(0, 4))
+  ))
 
 p&lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;576&#34; /&gt;
@@ -198,9 +205,8 @@ p&lt;/code&gt;&lt;/pre&gt;
 Drawing attention to the top-ranked category by using a different fill color.
 &lt;/figcaption&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;add-percentages-as-direct-labels&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Add Percentages as Direct Labels&lt;/h2&gt;
+&lt;div id=&#34;add-percentages-as-direct-labels&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Add Percentages as Direct Labels&lt;/h3&gt;
 &lt;p&gt;Similarly, we can pass an expression to &lt;code&gt;color&lt;/code&gt; and &lt;code&gt;hjust&lt;/code&gt; inside the &lt;code&gt;geom_text()&lt;/code&gt; component that we use to add the direct labels. As &lt;code&gt;TRUE&lt;/code&gt; is encoded as &lt;code&gt;1&lt;/code&gt;, all group that have a share lower than 5% are right-aligned while all others are left-aligned (as &lt;code&gt;FALSE&lt;/code&gt; = &lt;code&gt;0&lt;/code&gt;). To move the labels a bit more inside and outside, respectively, I am cheating by adding some spaces before and after the label.&lt;/p&gt;
 &lt;p&gt;Alternatively, you can pass the value for &lt;code&gt;hjust&lt;/code&gt; directly by using an &lt;code&gt;ifelse&lt;/code&gt;or &lt;code&gt;if_else&lt;/code&gt; condition: &lt;code&gt;hjust = if_else(prop &amp;gt; .05, 1.2, -.2)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final &lt;code&gt;scale_color_manual()&lt;/code&gt; I change the text color to white in case the label is placed inside the bar and black otherwise.&lt;/p&gt;
@@ -229,6 +235,7 @@ Now, the bars are labelled directly including a rule that automatically places t
 &lt;figcaption&gt;
 A version in which the x axis has been removed as it shows redundant information.
 &lt;/figcaption&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;alternative-approach&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Alternative Approach&lt;/h2&gt;
