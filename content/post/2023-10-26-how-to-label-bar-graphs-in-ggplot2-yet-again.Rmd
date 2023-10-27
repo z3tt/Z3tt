@@ -139,7 +139,7 @@ diamonds |>
 ```
 <figcaption>Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.</figcaption>
 
-It doesn't work "out of the box", however. But that's a quick fix if you know about the `ncol` and the `scales` arguments in the `facet_` function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting `ncol = 1`. By default, the axis ranges are kept constant across small multiples. By setting `scales = "free_y"` we can *free* the axis which removes redundancy and all the resulting white space. 
+It doesn't work "out of the box", however. But that's a quick fix if you know about the `ncol` and the `scales` arguments in the `facet_wrap()` function! The trick is that we force all small multiples in a single column (so that bars share a common baseline again) by setting `ncol = 1`. By default, the axis ranges are kept constant across small multiples. By setting `scales = "free_y"` we can *free* the axis range which removes redundant, empty groups and all the resulting white space. 
 
 ```{r facet-adjust, fig.width=6, fig.height=4}
 diamonds |> 
@@ -249,6 +249,7 @@ p +
   ) +
   scale_color_manual(values = c("black", "white"), guide = "none")
 ```
+<figcaption>Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.</figcaption>
 
 Alternatively, you can pass the value for `hjust` directly by using an `ifelse`or `if_else` condition: `hjust = if_else(prop > .05, 1.2, -.2)`:
 
@@ -261,7 +262,6 @@ p +
   ) +
   scale_color_manual(values = c("black", "white"), guide = "none")
 ```
-<figcaption>Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.</figcaption>
 
 The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final `scale_color_manual()` I change the text color to white in case the label is placed inside the bar and black otherwise.
 

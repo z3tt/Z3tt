@@ -132,7 +132,7 @@ The same bar chart with a modified theme and a polished x axis.
 <figcaption>
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 </figcaption>
-<p>It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the <code>ncol</code> and the <code>scales</code> arguments in the <code>facet_</code> function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting <code>ncol = 1</code>. By default, the axis ranges are kept constant across small multiples. By setting <code>scales = "free_y"</code> we can <em>free</em> the axis which removes redundancy and all the resulting white space.</p>
+<p>It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the <code>ncol</code> and the <code>scales</code> arguments in the <code>facet_wrap()</code> function! The trick is that we force all small multiples in a single column (so that bars share a common baseline again) by setting <code>ncol = 1</code>. By default, the axis ranges are kept constant across small multiples. By setting <code>scales = "free_y"</code> we can <em>free</em> the axis range which removes redundant, empty groups and all the resulting white space.</p>
 <pre class="r"><code>diamonds |&gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&gt; 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |&gt; 
@@ -232,7 +232,10 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &quot;bold&quot;, family = &quot;Spline Sans&quot;
   ) +
   scale_color_manual(values = c(&quot;black&quot;, &quot;white&quot;), guide = &quot;none&quot;)</code></pre>
-<p><img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png" width="576" /></p>
+<img src="/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png" width="576" />
+<figcaption>
+Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
+</figcaption>
 <p>Alternatively, you can pass the value for <code>hjust</code> directly by using an <code>ifelse</code>or <code>if_else</code> condition: <code>hjust = if_else(prop &gt; .05, 1.2, -.2)</code>:</p>
 <pre class="r"><code>p +
   geom_text(
@@ -241,9 +244,6 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &quot;bold&quot;, family = &quot;Spline Sans&quot;
   ) +
   scale_color_manual(values = c(&quot;black&quot;, &quot;white&quot;), guide = &quot;none&quot;)</code></pre>
-<figcaption>
-Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
-</figcaption>
 <p>The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final <code>scale_color_manual()</code> I change the text color to white in case the label is placed inside the bar and black otherwise.</p>
 <p>Another way to style the labels would be <code>scales::label_percent(accuracy = .1, prefix = "  ", suffix = "%  ")(prop)</code> (or make use of the superseded <code>scales::percent()</code>) but that’s rather long and also not that easy to remember.</p>
 <p>One could of course also remove the x axis as the values are now shown as direct labels.</p>
