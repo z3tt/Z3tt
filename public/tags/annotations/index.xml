@@ -133,7 +133,7 @@ The same bar chart with a modified theme and a polished x axis.
 &lt;figcaption&gt;
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 &lt;/figcaption&gt;
-&lt;p&gt;It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the &lt;code&gt;ncol&lt;/code&gt; and the &lt;code&gt;scales&lt;/code&gt; arguments in the &lt;code&gt;facet_&lt;/code&gt; function family! The idea is that we force all small multiples in a single column (so that bars share a common baseline again) by setting &lt;code&gt;ncol = 1&lt;/code&gt;. By default, the axis ranges are kept constant across small multiples. By setting &lt;code&gt;scales = &#34;free_y&#34;&lt;/code&gt; we can &lt;em&gt;free&lt;/em&gt; the axis which removes redundancy and all the resulting white space.&lt;/p&gt;
+&lt;p&gt;It doesn’t work “out of the box”, however. But that’s a quick fix if you know about the &lt;code&gt;ncol&lt;/code&gt; and the &lt;code&gt;scales&lt;/code&gt; arguments in the &lt;code&gt;facet_wrap()&lt;/code&gt; function! The trick is that we force all small multiples in a single column (so that bars share a common baseline again) by setting &lt;code&gt;ncol = 1&lt;/code&gt;. By default, the axis ranges are kept constant across small multiples. By setting &lt;code&gt;scales = &#34;free_y&#34;&lt;/code&gt; we can &lt;em&gt;free&lt;/em&gt; the axis range which removes redundant, empty groups and all the resulting white space.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds |&amp;gt; 
   summarize(prop = n() / nrow(diamonds), .by = cut) |&amp;gt; 
   mutate(cut = forcats::fct_reorder(cut, -prop)) |&amp;gt; 
@@ -233,7 +233,10 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Spline Sans&amp;quot;
   ) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;figcaption&gt;
+Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
+&lt;/figcaption&gt;
 &lt;p&gt;Alternatively, you can pass the value for &lt;code&gt;hjust&lt;/code&gt; directly by using an &lt;code&gt;ifelse&lt;/code&gt;or &lt;code&gt;if_else&lt;/code&gt; condition: &lt;code&gt;hjust = if_else(prop &amp;gt; .05, 1.2, -.2)&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p +
   geom_text(
@@ -242,9 +245,6 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Spline Sans&amp;quot;
   ) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;figcaption&gt;
-Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
-&lt;/figcaption&gt;
 &lt;p&gt;The same logic applies when we want to control the text color, which is recommended here to increase the contrast. With the final &lt;code&gt;scale_color_manual()&lt;/code&gt; I change the text color to white in case the label is placed inside the bar and black otherwise.&lt;/p&gt;
 &lt;p&gt;Another way to style the labels would be &lt;code&gt;scales::label_percent(accuracy = .1, prefix = &#34;  &#34;, suffix = &#34;%  &#34;)(prop)&lt;/code&gt; (or make use of the superseded &lt;code&gt;scales::percent()&lt;/code&gt;) but that’s rather long and also not that easy to remember.&lt;/p&gt;
 &lt;p&gt;One could of course also remove the x axis as the values are now shown as direct labels.&lt;/p&gt;

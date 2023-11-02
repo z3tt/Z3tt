@@ -138,13 +138,13 @@ devtools::install_github("JohnCoene/charter")
 We are using data from the *National Morbidity and Mortality Air Pollution Study* (NMMAPS).
 To make the plots manageable we are limiting the data to Chicago and 1997--2000.
 For more detail on this data set, consult Roger Peng's book [Statistical Methods in Environmental Epidemiology with R](http://www.springer.com/de/book/9780387781662).
-You can download the data we are using during this tutorial [here](https://raw.githubusercontent.com/z3tt/ggplot-courses/main/data/chicago-nmmaps-custom.csv) (but you don't have to).
+You can download the data we are using during this tutorial [here](https://cedricscherer.com/data/chicago-nmmaps-custom.csv) (but you don't have to).
 
 We can import the data into our R session for example with `read_csv()` from the `{readr}` package.
 To access the data later, we are storing it in a variable called `chic` by using the *assignment arrow* `<-`.
 
 ```{r data-import}
-chic <- readr::read_csv("https://raw.githubusercontent.com/z3tt/ggplot-courses/main/data/chicago-nmmaps-custom.csv")
+chic <- readr::read_csv("https://cedricscherer.com/data/chicago-nmmaps-custom.csv")
 ```
 
 💡 **The `::` is called *namespace* and can be used to access a function without loading the package. Here, you could also run `library(readr)` first and `chic <- read_csv(...)` afterwards.**
