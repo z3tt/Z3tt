@@ -8,7 +8,7 @@
     
     <meta property="og:site_name" content="Cédric Scherer">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://cedricscherer.com/img/banner/stream.jpg">
+    <meta property="og:image" content="https://cedricscherer.com/https://cedricscherer.com/img/banner/stream.jpg">
 
     
       <meta name="twitter:card" content="summary_large_image">
@@ -83,7 +83,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img src='img/logo.png' width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+            <a class="navbar-brand" href="/"><img src='https://www.cedricscherer.com/img/logo.png' width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
         </div>
 
         
@@ -220,39 +220,39 @@ p.small {
 </style>
 <p><strong>Coronavirus SARS-CoV-2, COVID-19 or simply Corona—what started as an epidemic in China’s Hubei province has become a global pandemic, leading to hundreds of thousands of infections and thousands of deaths so far, national lockdowns and quarantines of cities, <a href="https://twitter.com/hashtag/stayhome">#stayhome</a> and <a href="https://twitter.com/hashtag/flattenthecurve">#flattenthecurve</a> hashtags—and obviously a global shortage of toilet paper.</strong></p>
 <p>When the corona pandemic started, I felt scared, curious and tired at the same time. <em>Scared as a husband and father</em> by the impact this virus outbreak <strike>might</strike> is going to have on our life, in 2020 and way beyond. <em>Curious as a scientist</em> who studies the spread and persistence of directly transmitted diseases in the context of contact rates and animal movement. And <em>tired as a data visualization specialist</em> when I saw a lot of visualizations that were created by persons that neither had the knowledge nor the interest to produce accurate visualizations. Back then I decided against creating corona-related data visualizations for several reasons, some related to my mood, some to the uncertainty in data and the sheer mass of unimportant or misleading visualizations popping up everywhere. However, I have the feeling that the initial spread of misleading visualizations that either trigger panic or play down the risk is mainly over and we now have a lot of data and background knowledge to base our visualizations on. And, more importantly, I had an idea how to visualize and compare the death tolls among countries. (Also I had a reason to create an animation thanks to the <a href="http://www.storytellingwithdata.com/blog/2020/3/2/swdchallenge-get-animated">latest #SWDchallenge</a>.)</p>
-<h5 id="latest-updatenbspnbspjune-28-2020">Latest update:  June 28, 2020</h5>
+<h5 id="latest-updatenbspnbspjune-28-2020">Latest Update:  June 28, 2020</h5>
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_begin.gif" alt="latest-corona-animation" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_begin.gif', 'blank');"/>
 <figcaption>Latest animation of daily death tolls relative to the "worst day" so far, sorted by the day of the first reported death due to COVID-19.</figcaption>
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png" alt="latest-corona-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_heat_trend_latest_1.png', 'blank');"/>
 <figcaption>A static visualization showing the latest data, sorted by time since the "worst day".</figcaption>
-<h5 id="new-chart-trajectories">New chart: Trajectories</h5>
+<h5 id="new-chart-trajectories">New Chart: Trajectories</h5>
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_trajectory_facet_1.png" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_trajectory_facet_1.png', 'blank');"/>
 <figcaption>The same data as 7-day rolling average as trajectories, showing worst days, death tolls and latest trends per country.</figcaption>
-<h5 id="new-animation-tile-map">New animation: Tile map</h5>
+<h5 id="new-animation-tile-map">New Animation: Tile Map</h5>
 <img src="https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_map.gif" alt="latest-corona-line-plot" style="width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/Z3tt/Corona-Worst-Days/master/plots/corona_map.gif', 'blank');"/>
 <figcaption>The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.</figcaption>
-<h3 id="the-idea">The idea</h3>
+<h3 id="the-idea">The Idea</h3>
 <p>Inspired by my colleague <a href="https://twitter.com/alexcourtiol">Alexandre Courtiol</a>, who looked at <a href="https://github.com/courtiol/excess_mortality_COVID19">the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size</a>, I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling &ldquo;today is the worst day&rdquo; and also the <em>current</em> trends, either today or a week ago—are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.</p>
 <img src="/img/dataviz-posts/SWD_2020_03_Animation_corona_sum.gif" alt="animation-corona-original" style="width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif, 'blank');"/>
 <figcaption>The first version with data until the 29th of March that I submitted as my contribution to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">#SWDchallenge</a>.</figcaption>
 <img src="/img/dataviz-posts/SWD_2020_03_Animation_corona_begin.png" alt="static-plot-corona-original" style="width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png', 'blank');"/>
 <figcaption>A static version of the situation as of 29th of March with countries sorted by first reported death.</figcaption>
-<h3 id="how-to-read-the-visualization">How to read the visualization</h3>
+<h3 id="how-to-read-the-visualization">How to Read the Visualization</h3>
 <p>As explained above, I calculated for each day the number of death cases relative to the &ldquo;worst day&rdquo;, namely the day with the most reported deaths so far. Imagine a naïve population that was not facing the virus before. At some point, there might be individuals dying but likely only a few (with regard to COVID-19—in general, this depends on the severity of the infection caused by the pathogen, often referred to as <em>case fatality ratio</em> or simply <em>case fatality</em>). Consequently, the proportion of deaths on the first day compared to the worst day has to be 100% (since the first day is, by definition, the worst day so far). On the next day, there might be more deaths than on the day before, a known pattern we see in reality and in simulations of early epidemics. Exponential growth, an always increasing curve we aim to flatten by reducing contact between infected and susceptible (individuals that are not infected but able to catch the infection). So on day two, two times as many individuals might die which makes the second day the worst day with a proportion of 100%. At the same time, the proportion of deaths on day one decreases from 100% to 50%. This way of transforming the data enables to see if we are still facing (exponential) growth or if we, at least for now, over the peak if deaths.</p>
-<h3 id="things-to-keep-in-mind-when-visualizing-covid-19-data">Things to keep in mind when visualizing COVID-19 data</h3>
+<h3 id="things-to-keep-in-mind-when-visualizing-covid-19-data">Things to Keep in Mind When Visualizing COVID-19 Data</h3>
 <p>In the recent weeks, there is a lot of discussion on several things to account for when analyzing data and designing visualizations on the topic of the corona pandemic.</p>
-<h5 id="make-design-choices-carefully">Make design choices carefully</h5>
+<h5 id="make-design-choices-carefully">Make Design Choices Carefully</h5>
 <p>First of all, the final visualization should be as precise and transparent as possible. (Of course, this should be the case for all visualizations!) This means that the final product should be designed with care by adding the source of data, how the data was aggregated and analyzed, and what the visualization shows. Further, this implies a careful choice of text, especially the title, and the colors which should both neither be hysteric nor play down the current situation. For example, the <a href="https://blog.datawrapper.de/coronaviruscharts/">use of bloodish colors</a> to <a href="https://twitter.com/visualisingdata/status/1237276833286103045">make it crystal-clear that this virus is deadly</a> might spark panic in some people. If this is an intended choice, this is <a href="https://twitter.com/AlbertoCairo/status/1241374480351576064">professional malpractice and must be called out by us as data visualization specialists</a>.</p>
-<h5 id="gain-knowledge-contact-experts-check-your-facts">Gain knowledge, contact experts, check your facts</h5>
+<h5 id="gain-knowledge-contact-experts-check-your-facts">Gain Knowledge, Contact Experts, Check Your Facts</h5>
 <p>In the early days of the global pandemic, the intention of a particular graphic was often not clear to the reader. Also, I hardly could tell if the designer has the knowledge to analyze and visualize the data in a meaningful way (no, <a href="https://twitter.com/CT_Bergstrom/status/1241522140559503360">you are not an expert in pathogen spread when you&rsquo;re investigating market sales!</a>) or contacted any experts when preparing the chart. To cite Alberto Cairo, knight chair in visual journalism at the University of Miami: <a href="https://twitter.com/AlbertoCairo/status/1241371617680293888">&ldquo;Numbers without domain knowledge are dangerous&rdquo;</a> and <a href="https://twitter.com/AlbertoCairo/status/1241386040570626048">&ldquo;the rule should be to ignore <strong>any</strong> analysis from people who haven&rsquo;t consulted with epidemiologists/biostatisticians&rdquo;</a>.</p>
-<h5 id="be-explicit-about-uncertainty">Be explicit about uncertainty</h5>
+<h5 id="be-explicit-about-uncertainty">Be Explicit About Uncertainty</h5>
 <p>The data we read about and see in the news and our social media streams come with a lot of uncertainty. It is very important to understand that detected or confirmed cases do not necessarily reflect the reality but underestimate the real number of cases—and to communicate this fact explicitly in the visualization. The number of detected persons with an infection depends on the number of tests that were performed—and that <a href="https://ourworldindata.org/covid-testing">differs a lot among countries</a>! A more robust measure might be deaths due to the coronavirus but keep in mind that the way to report these numbers differs between countries. Furthermore, <a href="https://edition.cnn.com/2020/03/26/health/number-of-cases-testing-data-intl/index.html">no two countries are alike when it comes to access to healthcare and medical resources and even the age structure of the population</a> which in turn influences the number of reported cases.</p>
 <p>Since we are still in the early days of the coronavirus pandemic, correlations with any variable such as temperature or cultural differences need to be treated with caution. Do not release any of such analyses or visualizations if you are not sure what you are doing and did your best to account for any biases. There are experts for this and they are already searching for correlations with the right tools and knowledge.</p>
-<h5 id="do-i-need-to-adjust-for-population">Do I need to adjust for population?</h5>
+<h5 id="do-i-need-to-adjust-for-population">Do I Need to Adjust for Population?</h5>
 <p>There is a ongoing discussion of <a href="https://twitter.com/jburnmurdoch/status/1242904596856614912">&ldquo;showing the raw numbers&rdquo; versus &ldquo;adjust data for population&rdquo;</a>. As John Burn-Murdoch—data visualization designer at the Financial Times and creator of <a href="https://www.ft.com/coronavirus-latest">these fantastic and very informative visualizations on the current situation of the corona spread</a>—states: <a href="https://twitter.com/jburnmurdoch/status/1242904703144464390">&ldquo;Generally, and especially early in outbreak (first few weeks), higher per-capita numbers just mean smaller country, not anything different about how that country’s dealing with covid&rdquo;</a>. Of course, <em>population density</em> matters since the coronavirus is transmitted by direct or close contact. However, <em>population size</em> does not necessarily reflect the density in a country. So if accounting for population, this should be optimally done on a regional level sufficient to capture the area of spread instead of borders drawn by influential humans. In the end, it also depends on the story you want to tell if and how you adjust the data. There are also other ways to adjust the data such as those which two ways <a href="https://github.com/courtiol/excess_mortality_COVID19">Alexandre</a> and I have chosen.</p>
-<h5 id="should-i-use-a-logarithmic-axis">Should I use a logarithmic axis?</h5>
+<h5 id="should-i-use-a-logarithmic-axis">Should I Use a Logarithmic Axis?</h5>
 <p>Furthermore, the use of logarithmic axes is another ongoing discussion. Since the initial growth is likely exponential in case of directly transmitted diseases—and this is what we see with the coronavirus as well—a logarithmic scale <a href="https://twitter.com/jburnmurdoch/status/1237748598051409921">&ldquo;is the natural way to track the spread&rdquo;</a>. While I would not name it the <em>natural</em> way, it is true that such a transformation helps to understand the dynamics and makes (some) comparisons more easy. But again, the choice depends on the picture you want to draw: when turning the y axis into a logarithmic one as John did, <a href="https://twitter.com/jburnmurdoch/status/1237749654281912321">&ldquo;readers now only have to draw a straight line in their head to see if two countries are one the same path&rdquo;</a>. While with this transformation it might be easier to compare countries there might be disadvantages: the reader needs to realize and understand the logarithmic axis and small differences might be underestimated which are in reality much higher than some might think.</p>
-<h3 id="benefits-and-caveats-of-the-visualization">Benefits and caveats of the visualization</h3>
+<h3 id="benefits-and-caveats-of-the-visualization">Benefits and Caveats of the Visualization</h3>
 <p>By calculating the proportion of deaths per country, I avoid some of the issues with current visualizations on the COVID-19 topic:</p>
 <ol>
 <li>
@@ -286,7 +286,7 @@ p.small {
 <p>I might run out of space soon&hellip;</p>
 </li>
 </ul>
-<h3 id="how-to-create-the-visualization">How to create the visualization?</h3>
+<h3 id="how-to-create-the-visualization">How to Create the Visualization?</h3>
 <p>The data is made available by the Johns Hopkins University Center for Systems Science and Engineering (CSSE) and can be downloaded via <a href="https://datahub.io/core/covid-19">datahub.io</a>.<br>
 You can find the codes for my submission to the <a href="https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b">SWDchallenge</a> showing the death tolls until the 29th of March in my corresponding <a href="https://github.com/Z3tt/SWDchallenge">GitHub repository</a>. The code for the latest visualization are uploaded to this <a href="https://github.com/Z3tt/Corona-Daily-Deaths-Animation">GitHub repository</a>.</p>
 
@@ -297,12 +297,12 @@ You can find the codes for my submission to the <a href="https://community.story
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2020/01/09/australian-bushfires-comparison-europe-world/" data-toggle="tooltip" data-placement="top" title="Comparing the Extent of the Australian Bushfires 2019/20">&larr; Previous Post</a>
+                        <a href="/2020/01/09/australian-bushfires-comparison-europe-world/" data-toggle="tooltip" data-placement="top" title="Comparing the Extent of the Australian Bushfires 2019/20">&larr; Previous</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2020/11/01/imdb-top-250-series-table-contest-rstudio/" data-toggle="tooltip" data-placement="top" title="What do I binge next? A detailed overview of the top 250 TV shows">Next Post &rarr;</a>
+                        <a href="/2020/11/01/imdb-top-250-series-table-contest-rstudio/" data-toggle="tooltip" data-placement="top" title="What Do I Binge Next? A Detailed Overview of the Top 250 TV Shows">Next &rarr;</a>
                     </li>
                     
                 </ul>
@@ -334,6 +334,12 @@ You can find the codes for my submission to the <a href="https://community.story
                         
                         <a href="/tags/animations" title="animations">
                             animations
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/annotations" title="annotations">
+                            annotations
                         </a>
                         
                         
@@ -408,6 +414,8 @@ You can find the codes for my submission to the <a href="https://community.story
                         
                         
                         
+                        
+                        
                         <a href="/tags/ggplot2" title="ggplot2">
                             ggplot2
                         </a>
@@ -460,6 +468,8 @@ You can find the codes for my submission to the <a href="https://community.story
                         
                         
                         
+                        
+                        
                         <a href="/tags/tutorial" title="tutorial">
                             tutorial
                         </a>
@@ -471,6 +481,8 @@ You can find the codes for my submission to the <a href="https://community.story
                         <a href="/tags/weather" title="weather">
                             weather
                         </a>
+                        
+                        
                         
                         
                         
@@ -489,11 +501,11 @@ You can find the codes for my submission to the <a href="https://community.story
                   <h6>Quick Links</h6>
                     <ul class="list-inline">
                         
-                        <li><a target="_self" href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
+                        <li><a href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
                         
-                        <li><a target="_self" href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/">Evolution of a ggpplot</a></li>
+                        <li><a href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot/">Evolution of a ggpplot</a></li>
                         
-                        <li><a target="_self" href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/">rstudio::conf Workshop</a></li>
+                        <li><a href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/">rstudio::conf Workshop</a></li>
                         
                     </ul>
                 </section>

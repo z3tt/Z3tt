@@ -1,0 +1,423 @@
+---
+title: "Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr"
+author: "Cédric"
+date: 2023-07-05
+image: img/banner/purrple-cat-sea-of-stars.png
+twitterImg: img/banner/purrple-cat-sea-of-stars.png
+layout: post
+showtoc: false
+description: "Discover how to effortlessly generate custom and even complex graphics for subsets of your data by seamlessly integrating {ggplot2}'s versatile plotting functionalities with {purrr}'s powerful functional programing capabilities. This is especially helpful for data featuring many categories or step-by-step graphical storytelling"
+tags: ["DataViz", "tutorial", "R", "ggplot2", "tidyverse", "automation", "workflow", "efficiency", "tips"]
+editor_options:
+  chunk_output_type: inline
+---
+
+
+
+<p style="font-size:14px">
+Header image by <a href='https://www.youtube.com/watch?v=kLvZUXtVXQ0' target="_blank">Purrple Cat</a>
+</p>
+<p>During a consulting session a few weeks ago, we discussed automated plot generation with <code>{ggplot2}</code>. What does that mean? If you have a bunch of variables, you may want to create a set of explorative charts for different variables.
+Or you may want to create a set of explanatory charts, one for each category of your data set. For both use cases, this requires redundant work as the plots use <em>almost</em> the same code to generate the visualizations.</p>
+<blockquote>
+<p>Instead of copying and pasting the same code and adjusting the variables, iterate over a vector of groups (variables, categories, numeric ranges) to generate the same visual for different data sets by using a custom function.</p>
+</blockquote>
+<p>There are several use cases why you may want to use a functional programming approach to generate the same chart for different data subsets:</p>
+<ul>
+<li>explore distributions or relationships of different variables</li>
+<li>communicate results for different groups</li>
+<li>generate charts for custom reports using various data (sub)sets</li>
+</ul>
+<p>There is a great <a href="https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/" target="_blank">blogpost by Ariel Muldoon on automating explorative plots</a> by iterating over different variables. This blog post here focuses more on the generation of polished charts to visualize subsets of the same data set. In the end, I will also share some <a href="#variables">examples for working with variables</a> and some <a href="#shortcuts">shortcuts for exploring data sets visually</a>.</p>
+<hr />
+<div id="table-of-content" class="section level5">
+<h5>Table of Content</h5>
+<ul>
+<li><a href="#setup">The Setup</a></li>
+<li><a href="#case">The Use Case</a></li>
+<li><a href="#function">The Function</a></li>
+<li><a href="#automation">The Automation</a></li>
+<li><a href="#complex">A More Complex Example</a></li>
+<li><a href="#variables">An Example with Variables as Inputs</a></li>
+</ul>
+<hr />
+</div>
+<div id="setup" class="section level2">
+<h2>The Setup</h2>
+<p>We are going to visualize relationships for different numeric variables of the <code>mpg</code> data set which features fuel economy data of popular car models for different years, manufacturers, and car types. In this tutorial, we are using only data from 2008.</p>
+<p>For some data-wrangling steps, we make use of the <code>{dplyr}</code> packages. To visualize the data, we use the packages <code>{ggplot2}</code> and <code>{patchwork}</code>. We will also use some functions of other packages, namely <code>{tidyr}</code>, <code>{stringr}</code>, <code>{prismatic}</code> and <code>{ggforce}</code> which we address via the namespace.</p>
+<details>
+<summary>
+Unfold to explore setup steps
+</summary>
+<pre class="r"><code>library(ggplot2)   ## for plotting
+library(purrr)     ## for iterative tasks
+library(dplyr)     ## for data wrangling
+library(patchwork) ## for multi-panel plots
+
+## customize plot style
+theme_set(theme_minimal(base_size = 15, base_family = &quot;Anybody&quot;))
+theme_update(
+  axis.title.x = element_text(margin = margin(12, 0, 0, 0), color = &quot;grey30&quot;),
+  axis.title.y = element_text(margin = margin(0, 12, 0, 0), color = &quot;grey30&quot;),
+  panel.grid.minor = element_blank(),
+  panel.border = element_rect(color = &quot;grey45&quot;, fill = NA, linewidth = 1.5),
+  panel.spacing = unit(.9, &quot;lines&quot;),
+  strip.text = element_text(size = rel(1)),
+  plot.title = element_text(size = rel(1.4), face = &quot;bold&quot;, hjust = .5),
+  plot.title.position = &quot;plot&quot;
+)
+
+## adjust data set
+mpg &lt;-
+  ggplot2::mpg |&gt; 
+  filter(year == 2008) |&gt; 
+  mutate(manufacturer = stringr::str_to_title(manufacturer))</code></pre>
+</details>
+</div>
+<div id="case" class="section level2">
+<h2>The Use Case</h2>
+<p>Let’s visualize the 2008 car fuel data and explore the relationship of displacement and highway miles per gallon per manufacturer.</p>
+<pre class="r"><code>g &lt;- 
+  ggplot(mpg, aes(x = hwy, y = displ)) +
+  scale_x_continuous(breaks = 2:8*5) +
+  labs(x = &quot;Highway miles per gallon&quot;, y = &quot;Displacement in litres&quot;, color = NULL)
+
+g + geom_point(aes(color = manufacturer), alpha = .5, size = 3)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-all-color-1.png" width="768" />
+<figcaption>
+A (too) colorful scatterplot of displacement versus highway miles per gallon with points colored by manufacturer.
+</figcaption>
+<p>Two issues arise here:</p>
+<ul>
+<li><strong>too many categories:</strong> the use of color encoding is not useful given the large number of manufacturers (a usual recommended limit of categorical colors is 5-8)</li>
+<li><strong>too many data points:</strong> the number of observations, especially with identical value combinations, leads to* overplotting and color mixing</li>
+</ul>
+<p>A common solution to circumvent these issues are small multiples:</p>
+<pre class="r"><code> g + 
+  geom_point(alpha = .5, size = 2) +
+  facet_wrap(~ manufacturer, ncol = 3)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-facet-1.png" width="960" />
+<figcaption>
+Small multiples visualizing the relationship of displacement versus highway miles per gallon per manufaturer as a grid of scatter plots.
+</figcaption>
+<p>While it solves the mentioned issues, the resulting small multiple is likely too dense to effectively communicate the relationships for each manufacturer. Due to the large number of manufacturers, each plot also becomes rather small.</p>
+<p>To focus on a single manufacturer, we may decide to create a plot for a subset of the data. To allow for comparison, we also plot all other car models as smaller, grey circles.</p>
+<pre class="r"><code>g +
+  ## filter for manufacturer of interest
+  geom_point(data = filter(mpg, manufacturer == &quot;Audi&quot;), 
+             color = &quot;#007cb1&quot;, alpha = .5, size = 4) +
+  ## add shaded points for other data
+  geom_point(data = filter(mpg, manufacturer != &quot;Audi&quot;), 
+             shape = 1, color = &quot;grey45&quot;, size = 2) +
+  ## add title manually
+  ggtitle(&quot;Audi&quot;)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-single-audi-1.png" width="672" />
+<figcaption>
+A scatterplot highlighting the car models manufactured by Audi. The grey circles represent all other car models featured in the data set.
+</figcaption>
+<p>To communicate the relationship for all manufacturers, e.g. a dedicated section for each in a report or revealing the results step by step in a presentation, we now need to repeat the same code 15 times and replace the filter conditions and title. Or we iterate the process.</p>
+</div>
+<div id="function" class="section level2">
+<h2>The Function</h2>
+<p>The first step is to create a custom function that takes the subset condition as an input and creates the plot with the filtered data. The code inside the user-defined function below is basically the same as the one to create the Audi chart. The only difference is that we do not specify Audi but create a placeholder, here called <code>group</code>, to control the filtering condition and title: In the <code>geom_point()</code> calls, we subset our data based on <code>group</code>; in the <code>labs()</code> function we use this string as the plot title.</p>
+<pre class="r"><code>plot_manufacturer &lt;- function(group) {
+  
+  ## check if input is valid
+  if (!group %in% mpg$manufacturer) stop(&quot;Manufacturer not listed in the data set.&quot;)
+  
+  ggplot(mapping = aes(x = hwy, y = displ)) +
+    ## filter for manufacturer of interest
+    geom_point(data = filter(mpg, manufacturer %in% group), 
+               color = &quot;#007cb1&quot;, alpha = .5, size = 4) +
+    ## add shaded points for other data
+    geom_point(data = filter(mpg, !manufacturer %in% group), 
+               shape = 1, color = &quot;grey45&quot;, size = 2) +
+    scale_x_continuous(breaks = 2:8*5) +
+    ## add title automatically based on subset choice
+    labs(x = &quot;Highway gallons&quot;, y = &quot;Displacement&quot;, 
+         title = group, color = NULL)
+}</code></pre>
+<p>Now we can run the function manually for each manufacturer featured in the data set:</p>
+<pre class="r"><code>## run function for specific subsets
+plot_manufacturer(&quot;Audi&quot;)
+plot_manufacturer(&quot;Chevrolet&quot;)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png" width="1152" />
+<figcaption>
+Using the custom function, we can create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
+</figcaption>
+</div>
+<div id="automation" class="section level2">
+<h2>The Automation</h2>
+<p>The final step is simple: we use the <code>map()</code> function from the <code>{purrr}</code> package to iterate over a vector of manufacturers and pass the elements to our <code>plot_manufacturer()</code> function:</p>
+<pre class="r"><code>groups &lt;- unique(mpg$manufacturer)
+map(groups, ~plot_manufacturer(group = .x))</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-highlight-plots-1.png" width="1920" />
+<figcaption>
+All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
+</figcaption>
+</div>
+<div id="complex" class="section level2">
+<h2>A More Complex Example</h2>
+<p>Let’s consider a more complex visualization which consists of multiple plots. As before, we first check the input and filter the data. Afterwards, we create three plots and combine them with the help of the <code>{patchwork}</code> package.</p>
+<p>The main plot is again a scatter plot of displacement versus highway miles per gallon. This time, we do not add the other car models to our plot. To ensure that the plots cover the full range of the data, I set the axis limits based on the variable ranges of the full data set (<code>lims_x</code> and <code>lims_y</code> in <code>scale_x_continuous()</code> and <code>scale_y_continuous()</code>, respectively). The color of the points is mapped to the car type. To avoid inconsistent coloring of the points due to different car types listed per manufacturer, I create a named color vector (<code>pal</code>) to match the colors by class (<code>scale_color_manual()</code>).</p>
+<p>To both axes, I add marginal box plots showing the 1-D summary statistics of the variables. Again, I am applying the limits based on the full data set to match the axis ranges of the scatter plot. I also remove all non-data elements (<code>theme_void()</code>) and the axis guides (<code>guide = "none"</code> in the positional scales).</p>
+<p>Another function argument allows to control whether the plot is saved to disk (<code>save = TRUE</code>) or not (<code>save = FALSE</code>).</p>
+<pre class="r"><code>plot_manufacturer_marginal &lt;- function(group, save = FALSE) {
+  
+  ## check if input is valid
+  if (!group %in% mpg$manufacturer) stop(&quot;Manufacturer not listed in the data set.&quot;)
+  if (!is.logical(save)) stop(&quot;save should be either TRUE or FALSE.&quot;)
+  
+  ## filter data
+  data &lt;- filter(mpg, manufacturer %in% group)
+  
+  ## set limits
+  lims_x &lt;- range(mpg$hwy) 
+  lims_y &lt;- range(mpg$displ)
+  
+  ## define colors
+  pal &lt;- RColorBrewer::brewer.pal(n = n_distinct(mpg$class), name = &quot;Dark2&quot;)
+  names(pal) &lt;- unique(mpg$class)
+  
+  ## scatter plot
+  main &lt;- ggplot(data, aes(x = hwy, y = displ, color = class)) +
+    geom_point(size = 3, alpha = .5) +
+    scale_x_continuous(limits = lims_x, breaks = 2:8*5) +
+    scale_y_continuous(limits = lims_y) +
+    scale_color_manual(values = pal, name = NULL) +
+    labs(x = &quot;Highway miles per gallon&quot;, y = &quot;Displacement&quot;) +
+    theme(legend.position = &quot;bottom&quot;)
+  
+  ## boxplots
+  right &lt;- ggplot(data, aes(x = manufacturer, y = displ)) +
+    geom_boxplot(linewidth = .7, color = &quot;grey45&quot;) +
+    scale_y_continuous(limits = lims_y, guide = &quot;none&quot;, name = NULL) +
+    scale_x_discrete(guide = &quot;none&quot;, name = NULL) +
+    theme_void()
+  
+  top &lt;- ggplot(data, aes(x = hwy, y = manufacturer)) +
+    geom_boxplot(linewidth = .7, color = &quot;grey45&quot;) +
+    scale_x_continuous(limits = lims_x, guide = &quot;none&quot;, name = NULL) +
+    scale_y_discrete(guide = &quot;none&quot;, name = NULL) +
+    theme_void()
+  
+  ## combine plots
+  p &lt;- top + plot_spacer() + main + right + 
+    plot_annotation(title = group) + 
+    plot_layout(widths = c(1, .05), heights = c(.1, 1))
+  
+  ## save multi-panel plot
+  if (isTRUE(save)) {
+    ggsave(p, filename = paste0(group, &quot;.pdf&quot;), 
+           width = 6, height = 6, device = cairo_pdf)
+  }
+  
+  return(p)
+}</code></pre>
+<p>Now we can apply the function to manufacturers line by line:</p>
+<pre class="r"><code>plot_manufacturer_marginal(&quot;Dodge&quot;)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-dodge-1.png" width="864" />
+<figcaption>
+There are 11 cars listed that are produced by Dodge: 5 minivans, 12 pickups, and 4 SUVs.
+</figcaption>
+<pre class="r"><code>plot_manufacturer_marginal(&quot;Nissan&quot;) </code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-nissan-1.png" width="864" />
+<figcaption>
+The 7 Nissan cars belong either to the midsize or the SUV class.
+</figcaption>
+<p>Or we iterate over the vector of manufacturers with the <code>{purrr}</code> package.</p>
+<pre class="r"><code>map(groups, ~plot_manufacturer_marginal(.x))</code></pre>
+<p>If you wish to only save the visualizations but not plot them, use the <code>walk()</code> function:</p>
+<pre class="r"><code>walk(groups, ~plot_manufacturer_marginal(.x, save = TRUE))</code></pre>
+</div>
+<div id="variables" class="section level2">
+<h2>An Example with Variables as Inputs</h2>
+<p>To wrap up, let’s consider the use case of exploring the data set. We create a general function that works with any data set and two numeric variables. Based on these three inputs, the function generates a scatter plot with a linear fitting.</p>
+<p>In addition, we allow to define a variable to encode points by color as well as to control the size and transparency of the points. If the user passes a column for color encoding, we either use (i) a categorical palette and linear fittings for each group for qualitative variables or (ii) a sequential palette with a single smoothing line for quantitative variables.</p>
+<pre class="r"><code>plot_scatter_lm &lt;- function(data, var1, var2, pointsize = 2, transparency = .5, color = &quot;&quot;) {
+  
+  ## check if inputs are valid
+  if (!exists(substitute(data))) stop(&quot;data needs to be a data frame.&quot;)
+  if (!is.data.frame(data)) stop(&quot;data needs to be a data frame.&quot;)
+  if (!is.numeric(pull(data[var1]))) stop(&quot;Column var1 needs to be of type numeric, passed as string.&quot;)
+  if (!is.numeric(pull(data[var2]))) stop(&quot;Column var2 needs to be of type numeric, passed as string.&quot;)
+  if (!is.numeric(pointsize)) stop(&quot;pointsize needs to be of type numeric.&quot;)
+  if (!is.numeric(transparency)) stop(&quot;transparency needs to be of type numeric.&quot;)
+  if (color != &quot;&quot;) { if (!color %in% names(data)) stop(&quot;Column color needs to be a column of data, passed as string.&quot;) }
+  
+  g &lt;- 
+    ggplot(data, aes(x = !!sym(var1), y = !!sym(var2))) +
+    geom_point(aes(color = !!sym(color)), size = pointsize, alpha = transparency) +
+    geom_smooth(aes(color = !!sym(color), color = after_scale(prismatic::clr_darken(color, .3))), 
+                method = &quot;lm&quot;, se = FALSE) +
+    theme_minimal(base_family = &quot;Roboto Condensed&quot;, base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          legend.position = &quot;top&quot;)
+   
+  if (color != &quot;&quot;) { 
+    if (is.numeric(pull(data[color]))) {
+      g &lt;- g + scale_color_viridis_c(direction = -1, end = .85) +
+        guides(color = guide_colorbar(
+          barwidth = unit(12, &quot;lines&quot;), barheight = unit(.6, &quot;lines&quot;), title.position = &quot;top&quot;
+        ))
+    } else {
+      g &lt;- g + scale_color_brewer(palette = &quot;Set2&quot;)
+    }
+  }
+    
+  return(g)
+}</code></pre>
+<p>Because I want (better have to) pass the aesthetics as strings with <code>{purrr}</code>, I first turn the input into symbols by using the <code>sym()</code> function and then those get evaluated with <code>!!</code> (so-called “bang-bang”). Note that, in case you just want to use the function without iteration, you can also use <code>{{ }}</code> (so-called embracing) to pass unquoted variables.</p>
+<details>
+<summary>
+Unfold to see <code>{{ }}</code> example
+</summary>
+<pre class="r"><code>plot_scatter_lm_embraced &lt;- function(data, var1, var2, color = NULL) {
+  
+  v1 &lt;- deparse(substitute(var1))
+  v2 &lt;- deparse(substitute(var2))
+  v3 &lt;- deparse(substitute(color))
+  
+  ## check if inputs are valid
+  if (!exists(substitute(data))) stop(&quot;data needs to be a data frame.&quot;)
+  if (!is.data.frame(data)) stop(&quot;data needs to be a data frame.&quot;)
+  if (!v1 %in% names(data)) stop(&quot;Column var1 needs to be a column of data.&quot;)
+  if (!v2 %in% names(data)) stop(&quot;Column var2 needs to be a column of data.&quot;)
+  if (!is.numeric(pull(data[v1]))) stop(&quot;Column var1 needs to be of type numeric.&quot;)
+  if (!is.numeric(pull(data[v2]))) stop(&quot;Column var2 needs to be of type numeric.&quot;)
+  if (!v3 %in% c(names(data), &quot;NULL&quot;)) stop(&quot;Column color needs to be a column of data.&quot;)
+  
+  g &lt;- 
+    ggplot(data, aes(x = {{ var1 }}, y = {{ var2 }})) +
+    geom_point(aes(color = {{ color }}), alpha = .5) +
+    geom_smooth(aes(color = {{ color }}), method = &quot;lm&quot;, se = FALSE) +
+    theme_minimal(base_family = &quot;Roboto Condensed&quot;, base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          legend.position = &quot;top&quot;)
+   
+  if (v3 != &quot;NULL&quot;) {
+    if (is.numeric(pull(data[v3])))  {
+      g &lt;- g + scale_color_viridis_c(direction = -1, end = .85) +
+        guides(color = guide_colorbar(
+          barwidth = unit(12, &quot;lines&quot;), barheight = unit(.6, &quot;lines&quot;), title.position = &quot;top&quot;
+        ))
+    } else {
+      g &lt;- g + scale_color_brewer(palette = &quot;Set2&quot;)
+    }
+  }
+  
+  return(g)
+}</code></pre>
+<pre class="r"><code>plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png" width="672" />
+<figcaption>
+An example using the function with embracing without passing a color column.
+</figcaption>
+<pre class="r"><code>plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png" width="672" />
+<figcaption>
+An example using the function with embracing, passing a <b>quantitative variable</b> to color.
+</figcaption>
+<pre class="r"><code>plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png" width="672" />
+<figcaption>
+An example using the function with embracing, passing a <b>qualitative variable</b> to color.
+</figcaption>
+</details>
+<p>To iterate over the function, we have two options:</p>
+<ul>
+<li>we can fix one variable and pass the other as vector with <code>map()</code></li>
+<li>we can pass two variables as vectors to <code>var1</code> and <code>var2</code> with <code>map2()</code></li>
+</ul>
+<p>Let’s consider an example in which we vary both positional variables, using the 2008 car fuel data:</p>
+<pre class="r"><code>map2(
+  c(&quot;displ&quot;, &quot;displ&quot;, &quot;hwy&quot;), 
+  c(&quot;hwy&quot;, &quot;cty&quot;, &quot;cty&quot;),
+  ~plot_scatter_lm(
+    data = mpg, var1 = .x, var2 = .y, 
+    color = &quot;cyl&quot;, pointsize = 3.5
+  )
+)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png" width="1440" />
+<figcaption>
+Scatter plot showing the linear trends for different combinations of <code>displ</code>, <code>cty</code>, and <code>hwy</code> for the 2008 car fuel data. As the number of cylinders is encoded as numeric, the sequential green-purple viridis scale is applied to the points.
+</figcaption>
+<p>Now we are going to apply our function to a different data set, the <a href="https://allisonhorst.github.io/palmerpenguins/">Palmer penguins</a> to visualize x-y relationships per species. We automatically iterate over all combinations of a set of chosen numeric variables: we first generate a vector containing the column names of interest (<code>names</code>) and then create a data frame with all possible combinations (<code>names_set</code>) with the help of <code>expand_grid()</code> from the <code>{tidyr}</code> package.</p>
+<pre class="r"><code>## set up variables of interest
+names &lt;- c(&quot;bill_length_mm&quot;, &quot;bill_depth_mm&quot;, &quot;flipper_length_mm&quot;, &quot;body_mass_g&quot;)
+## ... and create all possible combinations
+names_set &lt;- tidyr::expand_grid(names, names)</code></pre>
+<p>Using another mapping function from the <code>{purrr}</code> package called <code>pmap()</code>, we can map over multiple arguments simultaneously:</p>
+<pre class="r"><code>library(palmerpenguins)
+
+pmap(
+  names_set, ~plot_scatter_lm(
+    data = penguins, 
+    var1 = .x, var2 = .y, color = &quot;species&quot;
+  )
+)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png" width="1920" />
+<figcaption>
+Scatter plots for each combination of four numeric variables of the Palmer penguins data set. Passing the categorical variable species to <code>color</code> in our custom function returns linear smoothing lines for each of the three groups which are encoded with a categorical palette from the ColorBrewer project.
+</figcaption>
+<div id="shortcuts" class="section level4">
+<h4>Shortcuts for Explorative Plots</h4>
+<div id="plot" class="section level5">
+<h5><code>plot()</code></h5>
+<p>I am not a fan of base R plots but one big advantage is the behavior when applying the <code>plot()</code> function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:</p>
+<pre class="r"><code>plot(penguins)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png" width="672" />
+<figcaption>
+Running <code>plot()</code> on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
+</figcaption>
+</div>
+<div id="facet_matrix" class="section level5">
+<h5><code>facet_matrix()</code></h5>
+<p>A similar, and more flexible take on this idea is the <code>facet_matrix()</code> functionality from the <a href="https://ggforce.data-imaginist.com/"><code>{ggforce}</code> package</a>. Instead of passing variable names in the aesthetics, we specify placeholders called <code>.panel_x</code> and <code>.panel_y</code>. We then create our ggplot as usual by adding layers and scales.</p>
+<p>Finally, we specify the variables to use in the facet inside the <code>facet_matrix()</code> component. You can also specify specific layers for different areas (upper, diagonal, lower) inside <code>facet_matrix()</code>:</p>
+<pre class="r"><code>ggplot(penguins, aes(x = .panel_x, y = .panel_y)) +
+  geom_point(aes(color = species), alpha = .5) +
+  geom_smooth(aes(color = species), method = &quot;lm&quot;) +
+  ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
+  scale_color_brewer(palette = &quot;Set2&quot;, name = NULL) +
+  ggforce::facet_matrix(vars(names), layer.lower = 2, layer.diag = 3)</code></pre>
+<img src="/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/facet-matrix-layers-1.png" width="1152" />
+<figcaption>
+<code>facet_matrix()</code> from the <code>{ggforce}</code> package offers a great way to generate similar grids with <code>{ggplot2}</code>, allowing for the usual flexibility in terms of fine-tuning and polishing. By specifying different layers for the three areas , we can combine all kind of chart types to visualize the relationships of the variables.
+</figcaption>
+<hr />
+<details>
+<summary style="font-size:10pt;">
+R Session Info
+</summary>
+<pre><code>## R version 4.2.3 (2023-03-15)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Big Sur ... 10.16
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] palmerpenguins_0.1.1 patchwork_1.1.2      dplyr_1.1.2          purrr_1.0.1          ggplot2_3.4.2       
+## 
+## loaded via a namespace (and not attached):
+##  [1] tidyselect_1.2.0   xfun_0.39          bslib_0.5.0        splines_4.2.3      lattice_0.20-45    colorspace_2.1-0   vctrs_0.6.2        generics_0.1.3    
+##  [9] htmltools_0.5.4    viridisLite_0.4.1  yaml_2.3.7         mgcv_1.8-42        utf8_1.2.3         rlang_1.1.1        jquerylib_0.1.4    pillar_1.9.0      
+## [17] glue_1.6.2         withr_2.5.0        tweenr_2.0.2       RColorBrewer_1.1-3 lifecycle_1.0.3    stringr_1.5.0      munsell_0.5.0      blogdown_1.18     
+## [25] gtable_0.3.1       ragg_1.2.5         evaluate_0.20      labeling_0.4.2     knitr_1.42         fastmap_1.1.1      fansi_1.0.4        highr_0.10        
+## [33] Rcpp_1.0.10        scales_1.2.1       cachem_1.0.7       jsonlite_1.8.4     farver_2.1.1       systemfonts_1.0.4  textshaping_0.3.6  ggforce_0.4.1     
+## [41] digest_0.6.31      stringi_1.7.12     bookdown_0.34      polyclip_1.10-4    grid_4.2.3         cli_3.6.0          tools_4.2.3        magrittr_2.0.3    
+## [49] sass_0.4.5         tibble_3.2.1       tidyr_1.3.0        pkgconfig_2.0.3    MASS_7.3-58.2      Matrix_1.5-3       rmarkdown_2.20     rstudioapi_0.14   
+## [57] R6_2.5.1           prismatic_1.1.1    nlme_3.1-162       compiler_4.2.3</code></pre>
+</details>
+</div>
+</div>
+</div>

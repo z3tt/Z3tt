@@ -1,0 +1,744 @@
+---
+title: "Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)"
+author: "Cédric"
+date: 2021-06-06
+image: img/banner/raincloud-artsy.png
+twitterImg: img/banner/raincloud-artsy.png
+layout: post
+showtoc: false
+description: "Raincloud plots, that provide an overview of the raw data, its distribution, and important statistical properties, are a good alternative to classical box plots. In this tutorial, I highlight the potential problem of box plots, illustrate why raincloud plots are great, and show numerous ways how to create such hybrid charts in R with {ggplot2}."
+tags: ["DataViz", "tutorial", "R", "ggplot2", "tidyverse", "chart selection", "distributions"]
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dev = "ragg_png", res = 300)
+```
+
+```{r libraries, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+```
+
+##### Table of Content
+
+-   [Introduction](#intro)
+-   [Aim of this Tutorial 🏁](#aim)
+-   [Box plots: The Reviewer's Dream](#boxplot)
+-   [We Can Do Better: Add Raw Data](#rawdata)
+-   [Violin Plots: The Reviewer's Nightmare?](#violin)
+-   [Raincloud Plots: A Great Alternative](#rain)
+-   [Let Your Plot Shine](#polish)
+
+---
+
+## Introduction {#intro}
+
+A few weeks ago, I came across this tweet:
+
+<img src="https://cedricscherer.com/img/rainclouds/tweet-alelautarescu.png" style="height: 100%; width: 100%; object-fit: contain; alt='A tweet by Alexandra Lautarescu (@alelautarescu) from March 22, 2021: Twitter friends - I love violin plots but a reviewer is concerned that “their novelty might distract from the message”. Are there better alternatives, or ways to clarify/address this?'">
+<figcaption>Note: Due to the recent changes on X (formerly known as Twitter) I have replaced the embedded tweets with static images.</figcaption>
+ 
+Quickly, people settled that **(a) violin plots are <a href="https://twitter.com/lakens/status/1374028350549803010" target="_blank">not novel at all</a>** but were introduced 23 years ago and **(b) providing an overview of the summary statistics and even the raw data itself might be a good addition**. A suitable chart hybrid, consisting of a combination of box plots, violin plots, and jittered points, is called a **<a href="https://wellcomeopenresearch.org/articles/4-63" target="_blank">raincloud plot</a>**. 
+
+Raincloud plots were <a href="https://twitter.com/micahgallen/status/1112780615198429185?lang=en" target="_blank">presented in 2019</a> as an approach to overcome issues of hiding the true data distribution when plotting bars with errorbars—also known as <a href="https://simplystatistics.org/2019/02/21/dynamite-plots-must-die/" target="_blank">dynamite plots</a> or <a href="https://barbarplots.github.io/" target="_blank">barbarplots</a>—or box plots. Instead, raincloud plots combine several chart types to visualize the raw data, the distribution of the data as density, and key summary statistics at the same time.
+
+Since I am still working (part–time) as a researcher, I also regularly review scientific articles myself. And in contrast to the reviewer above, I argue completely opposite and always share my concerns in case bar charts or box plots are not suited to convey the study results. Here is a fun meme I made a few months ago when I encountered so–called "dynamite plots" in a paper I was reviewing (plus <a href="https://github.com/z3tt/30DayChartChallenge2021/tree/main/27_educational" target="_blank">here is a reworked version with Shrek</a> instead):
+
+<img src="https://cedricscherer.com/img/rainclouds/tweet-barbarplots-drake.png" style="height: 100%; width: 100%; object-fit: contain; alt='A tweet by me (@CedScherer) from March 26, 2021: That moment when you review a journal submission and you see dynamite plots: rage and joy at the same time! #dataviz #datavisualization #barbarplot #DoBetter. Followed by an imagew using the Drake meme with barbarplots aka dynamite plots next to annoyed Drake and raincloud plots next to happy Drake. Both plots use the same data and orange-purple-green color encoding.'">
+<figcaption>Note: Due to the recent changes on X (formerly known as Twitter) I have replaced the embedded tweets with static images.</figcaption>
+
+The use of other chart types such as violin and raincloud plots to show the distribution or even the raw data is a topic I am since years pretty passionate about. I always cover the topic in detail during my workshops <a href="https://github.com/z3tt/beyond-bar-and-box-plots" target="_blank">and sometimes even specific sessions on the topic</a> and I have regularly used raincloud plots for various occasions: during my PhD to <a href="https://raw.githubusercontent.com/EcoDynIZW/Scherer_2020_OIKOS/master/figures/FigS5_R0_best_fit.png" target="_blank">show that the model fitting was appropriate across simulations</a> (<a href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS/blob/master/R/rainclouds.R" target="_blank">code</a>), as contribution to the <a href="https://www.storytellingwithdata.com/swdchallenge" target="_blank">#SWDchallenge</a> to <a href="https://raw.githubusercontent.com/Z3tt/SWDchallenge/master/plots/2019_09/SWD_2019_09_Uncertainty.png" target="_blank">illustrate differences in temperatures in Berlin across months</a> (<a href="https://github.com/z3tt/SWDchallenge/blob/master/R/SWD_2019-09_Uncertainty.Rmd" target="_blank">code</a>), or as contribution to <a href="https://github.com/rfordatascience/tidytuesday" target="_blank">#TidyTuesday</a> to <a href="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_31/2020_31_PalmerPenguins.png" target="_blank">visualize the distribution of bill ratios</a> in <a href="https://allisonhorst.github.io/palmerpenguins/" target="_blank">brush–tailed penguins</a> (<a href="https://github.com/z3tt/TidyTuesday/blob/master/R/2020_31_PalmerPenguins.Rmd" target="_blank">code</a> and <a href="https://z3tt.github.io/OutlierConf2021/" target="_blank">code</a>):
+
+<img src="https://www.cedricscherer.com/img/dataviz-posts/distributions-examples.png" style="height: 100%; width: 100%; object-fit: contain; alt='Three visualizations using raincloud plots and variants. Left: A combined graphic showing bill dimensions of brush-tailed penguins with a scatterplot on the top and horizontal raincloud plots on the bottom, with fancy Tableau-styled boxplots and barcodes to visualize the raw data. Top right: Vertical area charts combined with interval strips showing the distributions of temperatures in Berlin, germany, per month. Bottom right: Vertical raincloud plots comparing the outcomes of my simulation model, developed during my PhD project, to illustrate the similarity of summary stats (boxplot) and the distributions (area plots) along with the raw data (points).'">
+<figcaption>Some examples for which I used raincloud or violin plots to explicitly highlight the distributions of the values.</figcaption>
+
+The paper itself that introduces raincloud plots comes with a "multi-platform tool for robust data visualization" which consists of a collection of codes and tutorials to draw raincloud plots in R, Python, or Matlab. In January 2021, a <a href="https://doi.org/10.12688/wellcomeopenres.15191.2" target="_blank">revised version</a> was submitted together with a <a href="https://github.com/jorvlan/raincloudplots" target="_blank">"fully functional R-package" called <code>{raincloudplots}</code></a>. 
+
+However, there may be two drawbacks: First, the package wraps ggplot functionality into one function instead of adding a `geom_` and/or `stat_` layers (and I definitely prefer to be able to adjust every detail of my plot in traditional ggplot habit). Secondly, the package is (not yet?) on CRAN and needs to be installed from GitHub (which can be problematic in a work context); it is also not available for R version 4 yet. Because of that I also don't provide examples here, but you might want to check the <a href="https://github.com/RainCloudPlots/RainCloudPlots/blob/master/README.md" target="_blank">tutorial of that package</a>. 
+
+Here, I show you numerous other ways to create violin and raincloud plots in `{ggplot2}`. The tutorial is based on a <a href="https://z3tt.github.io/Rainclouds/" target="_blank">collection of code snippets I shared with the author</a> of the above mentioned tweet.
+
+---
+
+## Aim of this Tutorial 🏁 {#aim}
+
+Visualizing distributions as box-and-whisker plots is common practice, at least for researchers. Even though box plots are great in summarizing the data, an issue is that the underlying data structure is hidden. In this short tutorial I show you why box plots can be problematic, how to improve them, and alternative approaches that can be used to show both, summary statistics as well as the true distribution of the raw data.
+
+I show you how to plot different version of violin-box plot combinations and raincloud plots with the <a href="https://ggplot2.tidyverse.org/" target="_blank"><code>{ggplot2}</code> package</a>. Some use functionality from extension packages (that are hosted on CRAN): two of my favorite packages (<a href="https://www.youtube.com/watch?v=7UjA_5gNvdw&list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co&index=34" target="_blank">1</a>, <a href="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2021_01/2021_01_geomUsage.png" target="_blank">2</a>) namely <a href="https://ggforce.data-imaginist.com/" target="_blank"><code>{ggforce}</code></a> and <a href="https://mjskay.github.io/ggdist/" target="_blank"><code>{ggdist}</code></a>, plus the packages <a href="https://erocoar.github.io/gghalves/" target="_blank"><code>{gghalves}</code></a> and <a href="https://github.com/eclarke/ggbeeswarm" target="_blank"><code>[`{ggbeeswarm}</code></a>.
+
+<details><summary><i>Expand to see the preparation steps.</i></summary>
+
+```{r preparation, eval=FALSE}
+## INSTALL PACKAGES ----------------------------------------------
+## install CRAN packages if needed
+pckgs <- c("ggplot2", "dplyr", "systemfonts", "ggforce", 
+           "ggdist", "ggbeeswarm", "devtools")
+new_pckgs <- pckgs[!(pckgs %in% installed.packages()[,"Package"])]
+if(length(new_pckgs)) install.packages(new_pckgs)
+
+## install gghalves from GitHub if needed
+if(!require(gghalves)) {  
+  devtools::install_github('erocoar/gghalves')
+}
+
+## LOAD PACKAGES -------------------------------------------------
+library(ggplot2) ## plotting
+library(systemfonts) ## custom fonts
+library(dplyr) ## data handling
+
+## CUSTOM THEME --------------------------------------------------
+## overwrite default ggplot2 theme
+theme_set(
+  theme_minimal(
+    ## increase size of all text elements
+    base_size = 18, 
+    ## set custom font family for all text elements
+    base_family = "Roboto Condensed")
+)
+
+## overwrite other defaults of theme_minimal()
+theme_update(
+  ## remove major horizontal grid lines
+  panel.grid.major.x = element_blank(),
+  ## remove all minor grid lines
+  panel.grid.minor = element_blank(),
+  ## remove axis titles
+  axis.title = element_blank(),
+  ## larger axis text for x
+  axis.text.x = element_text(size = 16),
+  ## add some white space around the plot
+  plot.margin = margin(rep(8, 4))
+)
+```
+
+</details>
+
+---
+
+## Box plots: The Reviewer's Dream {#boxplot}
+
+Thanks to my <a href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/" target="_blank">"Evolution of a ggplot" blogpost</a>, I am already known as someone who is not a fan of box plots. And before that impression settles, that's not correct. **Box plots are great! Box plots are an artwork combining many summary statistics into one chart type.** But in my opinion they are not always helpful<a href="#section1"><sup>1</sup></a>. They also have a high potential of misleading your audience---and yourself. Why? Let's plot some box-and-whisker plots:
+
+<p id="back1">
+
+</p>
+
+```{r data-prep, include=FALSE}
+set.seed(2021)
+
+grp1 <- tibble(value = seq(0, 20, length.out = 75), 
+               group = "Group 1")
+
+grp2 <- tibble(value = c(rep(0, 5), rnorm(20, 2, .2), rnorm(50, 6, 1), 
+                         rnorm(50, 14.5, 1), rnorm(20, 18, .2), rep(20, 5)), 
+               group = "Group 2")
+
+grp3 <- tibble(value = rep(seq(0, 20, length.out = 5), 5), 
+               group = "Group 3")
+
+data <- bind_rows(grp1, grp2, grp3)
+```
+
+```{r theme-set, include=FALSE}
+theme_set(theme_minimal(base_size = 18, base_family = "Roboto Condensed"))
+theme_update(
+  panel.grid.major.x = element_blank(),
+  panel.grid.minor = element_blank(),
+  axis.title = element_blank(),
+  plot.title = element_text(family = "Fira Code", size = 18, face = "plain",
+                            margin = margin(t = 0, b = 7)),
+  plot.subtitle = element_text(family = "Fira Sans", margin = margin(t = 0, b = 18), 
+                               size = 13, color = "grey40"),
+  plot.title.position = "plot"
+)
+```
+
+```{r boxplot}
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92")
+```
+
+<details><summary><i>Expand to generate same sample data.</i></summary>
+```{r data-prep, eval=FALSE}
+```
+</details>
+
+So tell me: 
+
+> How big is the sample size?  
+Are there underlying patterns in the data? 
+
+Difficult to answer.
+
+Sure, adding a note on the sample size might be considered good practice but it still doesn't tell you much about the actual pattern.
+
+```{r boxplot-with-n, echo=FALSE}
+## function to return median and labels
+n_fun <- function(x){
+  return(data.frame(y = median(x) - 1.25, 
+                    label = paste0("n = ",length(x))))
+}
+
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92") +
+  ## use summary function to add labels
+  stat_summary(
+    ## plot text labels...
+    geom = "text",
+    ## ... using our custom function...
+    fun.data = n_fun,
+    ## ... with custom typeface and size
+    family = "Roboto Condensed",
+    size = 5
+  )
+```
+
+<details><summary><i>Expand to show code.</i></summary>
+
+```{r boxplot-with-n, eval=FALSE}
+```
+
+</details>
+
+Alternatively, one can "map" the width of the box to the sample size which indicates difference in the sample size but the exact numbers and distributions are still hidden:
+
+```{r boxplot-with-varwidth}
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92", varwidth = TRUE)
+```
+
+---
+
+## We Can Do Better: Add Raw Data {#rawdata}
+
+An obvious improvement is to add the data points. Since we know already that Group 2 consists of 150 observations, let's use jitter strips instead of a traditional strip plot:
+
+```{r boxplot-raw}
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92") +
+  ## use either geom_point() or geom_jitter()
+  geom_point(
+    ## draw bigger points
+    size = 2,
+    ## add some transparency
+    alpha = .3,
+    ## add some jittering
+    position = position_jitter(
+      ## control randomness and range of jitter
+      seed = 1, width = .2
+    )
+  )
+```
+
+Oh, the patterns are very different! Values of Group 1 are uniformly distributed. The values in Group 2 are clustered with a distinct gap around the group's median! And the few observations of Group 3 are all integers.
+
+We can improve the look a bit further by plotting the raw data points according to their distribution with either `ggbeeswarm::geom_quasirandom()` or `ggforce::geom_sina()`:
+
+```{r boxplot-raw-distribution, echo=FALSE}
+set.seed(1)
+
+p1 <- ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92") +
+  ggbeeswarm::geom_quasirandom(
+    size = 1.5,
+    alpha = .3,
+    width = .2
+  ) +
+  labs(title = "geom_quasirandom()",
+       subtitle = "from the {ggbeeswarm} package") +
+  theme(plot.margin = margin(8, 4, 8, 0))
+
+p2 <- ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92") +
+  ggforce::geom_sina(
+    size = 1.5,
+    alpha = .3,
+    maxwidth = .5
+  ) +
+  labs(title = "geom_sina()",
+       subtitle = "from the {ggforce} package") +
+  theme(plot.margin = margin(8, 0, 8, 4))
+
+p1 + p2
+```
+
+<details><summary><i>Expand to show codes.</i></summary>
+
+```{r boxplot-raw-distribution-code, eval=FALSE}
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92") +
+  ggbeeswarm::geom_quasirandom(
+    ## draw bigger points
+    size = 1.5,
+    ## add some transparency
+    alpha = .4,
+    ## control range of the beeswarm
+    width = .2
+  ) 
+
+ggplot(data, aes(x = group, y = value)) +
+  geom_boxplot(fill = "grey92") +
+  ggforce::geom_sina(
+    ## draw bigger points
+    size = 1.5,
+    ## add some transparency
+    alpha = .4,
+    ## control range of the sina plot
+    maxwidth = .5
+  ) 
+```
+
+</details>
+
+---
+
+## Violin Plots: The Reviewer's Nightmare? {#violin}
+
+Violin plots can be used to visualize the distribution of numeric variables. It's basically a mirrored density curve, representing the number of data points along a continuous axis. 
+
+```{r violin}
+ggplot(data, aes(x = group, y = value)) +
+  geom_violin(fill = "grey92")
+```
+
+By default, the violin plot can look a bit odd. The default setting (`scale = "area"`) is misleading. Group 1 looks almost the same as Group 3, while consisting of four times as many observations. Also, the default standard deviation of the smoothing kernel is not optimal in our case since it hides the true pattern by smoothing out areas without any data.
+
+We can manipulate both defaults by setting the width to the number of observations via `scale = "count"` and adjusting the bandwidth (`bw`). Aesthetically, I prefer to remove the default outline:
+
+```{r violin-custom, echo=FALSE}
+ggplot(data, aes(x = group, y = value)) +
+  geom_violin(
+    fill = "grey72", 
+    color = NA, 
+    scale = "count", 
+    bw = .4
+  )
+```
+
+<details><summary><i>Expand to show code.</i></summary>
+```{r violin-custom-code, eval=FALSE}
+ggplot(data, aes(x = group, y = value)) +
+  geom_violin(
+    fill = "grey72", 
+    ## remove outline
+    color = NA, 
+    ## width of violins mapped to # observations
+    scale = "count", 
+    ## custom bandwidth (smoothing)
+    bw = .4
+  )
+```
+</details>
+
+The violin plot allows an explicit representation of the distribution but doesn't provide summary statistics. To get the best of both worlds, it is often mixed with a box plot—either a complete box plot with whiskers and outliers or only the box indicating the median and interquartile range (IQR):
+
+```{r violin-box-plot, echo=FALSE}
+v1 <- ggplot(data, aes(x = group, y = value)) +
+  geom_violin(fill = "grey72", color = NA, 
+              scale = "count", bw = .5) +
+  geom_boxplot(fill = NA, width = .2) +
+  labs(title = 'Full box-and-whiskers plot') +
+  theme(plot.margin = margin(8, 4, 8, 0), 
+        plot.title = element_text(family = "Roboto Condensed", face = "bold", size = 20))
+
+v2 <- ggplot(data, aes(x = group, y = value)) +
+  geom_violin(fill = "grey72", color = NA, 
+              scale = "count", bw = .5) +
+  geom_boxplot(fill = NA, width = .2,
+               coef = 0, outlier.color = NA) +
+  labs(title = 'IQR box and median only') +
+  theme(plot.margin = margin(8, 0, 8, 4), 
+        plot.title = element_text(family = "Roboto Condensed", face = "bold", size = 20))
+
+v1 + v2
+```
+
+<details><summary><i>Expand to show codes.</i></summary>
+
+```{r violin-box, eval=FALSE}
+ggplot(data, aes(x = group, y = value)) +
+  geom_violin(
+    fill = "grey72", 
+    color = NA, 
+    scale = "count", 
+    bw = .5
+  ) +
+  geom_boxplot(
+    ## remove white filling
+    fill = NA, 
+    ## reduce width
+    width = .2
+  )
+
+ggplot(data, aes(x = group, y = value)) +
+  geom_violin(
+    fill = "grey72", 
+    color = NA, 
+    scale = "count", 
+    bw = .5
+  ) +
+  geom_boxplot(
+    ## remove white filling
+    fill = NA, 
+    ## reduce width
+    width = .2,
+    ## remove whiskers
+    coef = 0, 
+    ## remove outliers
+    outlier.color = NA ## `outlier.shape = NA` works as well
+  )
+```
+
+</details>
+
+You might wonder: why should you use violins instead of box plots with superimposed raw observations? Well, in case you have many more observations, all approaches of plotting raw data become difficult. In terms of readability as well as in terms of computation(al time). Violin plots are a good alternative in such a case, and even better in combination with some summary stats. But we also can combine all three...
+
+---
+
+## Raincloud Plots: A Great Alternative {#rain}
+
+Raincloud plots can be used to visualize raw data, the distribution of the data, and key summary statistics at the same time. Actually, it is a hybrid plot consisting of a halved violin plot, a box plot, and the raw data as some kind of scatter.
+
+```{r raincloud}
+ggplot(data, aes(x = group, y = value)) + 
+  ## add half-violin from {ggdist} package
+  ggdist::stat_halfeye(
+    ## custom bandwidth
+    adjust = .5, 
+    ## adjust height
+    width = .6, 
+    ## move geom to the right
+    justification = -.2, 
+    ## remove slab interval
+    .width = 0, 
+    point_colour = NA
+  ) + 
+  geom_boxplot(
+    width = .15, 
+    ## remove outliers
+    outlier.color = NA ## `outlier.shape = NA` or `outlier.alpha = 0` works as well
+  ) +
+  ## add dot plots from {ggdist} package
+  ggdist::stat_dots(
+    ## orientation to the left
+    side = "left", 
+    ## move geom to the left
+    justification = 1.12, 
+    ## adjust grouping (binning) of observations 
+    binwidth = .25
+  ) + 
+  ## remove white space on the sides
+  coord_cartesian(xlim = c(1.3, 2.9))
+```
+
+Here, I combine two layers from the <a href="https://mjskay.github.io/ggdist/" target="_blank"><code>{ggdist}</code> package</a>, namely `stat_dots()` to draw the rain and `stat_halfeye()` to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the box plot. I also remove the slab interval from the halfeye by setting `.width` to zero and `point_colour` to `NA`. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left and right, we simply add a limit the x axis.
+
+<details><summary><i>Expand to show plot without limit adjustment.</i></summary>
+
+```{r raincloud-no-lim, echo=FALSE}
+ggplot(data, aes(x = group, y = value)) + 
+  ggdist::stat_halfeye(
+    adjust = .5, 
+    width = .6, 
+    .width = 0, 
+    justification = -.2, 
+    point_colour = NA
+  ) + 
+  geom_boxplot(
+    width = .15, 
+    outlier.shape = NA
+  ) +
+  ggdist::stat_dots(
+    side = "left", 
+    justification = 1.12, 
+    binwidth = .25
+  )
+```
+
+</details>
+
+One can also solely rely on layers from the `{ggdist}` package by using the default halfeye which consists of a density curve and a slab interval. The later is replacing the boxplot:
+
+```{r raincloud-slab}
+ggplot(data, aes(x = group, y = value)) + 
+  ggdist::stat_halfeye(
+    adjust = .5,
+    width = .6, 
+    ## set slab interval to show IQR and 95% data range
+    .width = c(.5, .95)
+  ) + 
+  ggdist::stat_dots(
+    side = "left", 
+    dotsize = .8, 
+    justification = 1.05, 
+    binwidth = .5
+  ) +
+  coord_cartesian(xlim = c(1.2, 2.9))
+```
+
+While I love the reduced design and the possibility to indicate two different ranges (here the interquartile range and the 95% quantile) I admit that this alternative is less intuitive and potentially even misleading since they look more like credible intervals than box plots. Maybe a bit like the <a href="http://motioninsocial.com/tufte/#minimal-boxplot" target="_blank">minimal box plots proposed by Edward Tufte</a> but still I definitely would add a note to be sure the reader understands what the slabs show.
+
+Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use `geom_half_dotplot()` from the <a href="https://erocoar.github.io/gghalves/" target="_blank"><code>{gghalves}</code> package</a>. Why? Because it comes with the possibility to add some justification which is not possible for the default layers `geom_point()` and `geom_jitter()`:
+
+```{r raincloud-halves}
+ggplot(data, aes(x = group, y = value)) + 
+  ggdist::stat_halfeye(
+    adjust = .5, 
+    width = .6, 
+    .width = 0, 
+    justification = -.2, 
+    point_colour = NA
+  ) + 
+  geom_boxplot(
+    width = .15, 
+    outlier.shape = NA
+  ) +
+  ## add justified jitter from the {gghalves} package
+  gghalves::geom_half_point(
+    ## draw jitter on the left
+    side = "l", 
+    ## control range of jitter
+    range_scale = .4, 
+    ## add some transparency
+    alpha = .2
+  ) +
+  coord_cartesian(xlim = c(1.2, 2.9), clip = "off")
+```
+
+Note that the `{gghalves}` packages adds also some jitter along the y axis which is far from optimal. This becomes especially obvious in group 3 with its usually integer values.
+  
+The packages provides a <a href="https://camo.githubusercontent.com/763daaddffeefed1fbad498721526bc739326da7822df84f09b153bd6c48d3c4/68747470733a2f2f692e696d6775722e636f6d2f374150787831742e706e67" target="_blank">half–box plot alternative</a> as well but I personally will never consider or recommend these as an option<a href="#section2"><sup>2</sup></a>. Also, note that the `{gghalves}` package is not available on CRAN (yet) as well.
+
+<p id="back2">
+
+A good alternative may to place the jittered points on top of the box plot by using `geom_jitter()` (or `geom_point()`):
+
+```{r raincloud-on-top}
+ggplot(data, aes(x = group, y = value)) + 
+  ggdist::stat_halfeye(
+    adjust = .5, 
+    width = .6, 
+    .width = 0, 
+    justification = -.3, 
+    point_colour = NA) + 
+  geom_boxplot(
+    width = .25, 
+    outlier.shape = NA
+  ) +
+  geom_point(
+    size = 1.5,
+    alpha = .2,
+    position = position_jitter(
+      seed = 1, width = .1
+    )
+  ) + 
+  coord_cartesian(xlim = c(1.2, 2.9), clip = "off")
+```
+
+As a last alternative, I also like to use barcode strips instead of jittered points:
+
+```{r raincloud-halves-barcode}
+ggplot(data, aes(x = group, y = value)) + 
+  ggdist::stat_halfeye(
+    adjust = .5, 
+    width = .6, 
+    .width = 0, 
+    justification = -.2, 
+    point_colour = NA
+  ) + 
+  geom_boxplot(
+    width = .15, 
+    outlier.shape = NA
+  ) +
+  geom_point(
+    ## draw horizontal lines instead of points
+    shape = 95,
+    size = 15,
+    alpha = .2,
+    color = "#1D785A"
+  ) +
+  coord_cartesian(xlim = c(1.2, 2.9), clip = "off")
+```
+
+As you can see, it's not optimal here since the actual values of Group 3 are hard to spot because they fall exactly along the summary stats provided by the box plot. One could use `geom_half_point()`, however, I want to avoid the added jittering along the y axis.
+
+<details><summary><i>Expand to show barcode version with</i> <code>{gghalves}</code>.</summary>
+
+```{r raincloud-barcode-halves}
+ggplot(data, aes(x = group, y = value)) + 
+  ggdist::stat_halfeye(
+    adjust = .5, 
+    width = .6, 
+    .width = 0, 
+    justification = -.2, 
+    point_colour = NA
+  ) + 
+  geom_boxplot(
+    width = .15, 
+    outlier.shape = NA
+  ) +
+  ## add justified jitter from the {gghalves} package
+  gghalves::geom_half_point(
+    ## draw bar codes on the left
+    side = "l", 
+    ## draw horizontal lines instead of points
+    shape = 95,
+    ## remove jitter along x axis
+    range_scale = 0,
+    size = 15, 
+    alpha = .2
+  ) +
+  coord_cartesian(xlim = c(1.2, NA), clip = "off")
+```
+
+</details>
+
+---
+
+## Next: Let Your Plot Shine {#polish}
+
+Stay tuned, in <s>the upcoming</s> <span style='color:#ff7202;'>a potential</span> follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:
+
+```{r polished-penguins, echo=FALSE, fig.width=10, fig.height=7}
+library(palmerpenguins)
+library(ggtext)
+library(colorspace)
+library(ragg)
+
+url <- "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/man/figures/lter_penguins.png"
+img <- magick::image_read((url))
+pic <- grid::rasterGrob(img, interpolate = TRUE)
+
+pal <- c("#FF8C00", "#A034F0", "#159090")
+
+add_sample <- function(x){
+   return(c(y = max(x) + .025, 
+            label = length(x)))
+}
+
+penguins |> 
+  group_by(species) |> 
+  mutate(bill_ratio = bill_length_mm / bill_depth_mm) |> 
+  filter(!is.na(bill_ratio)) |> 
+  ggplot(aes(x = forcats::fct_rev(species), y = bill_ratio)) + 
+  ggdist::stat_halfeye(
+    aes(color = species,
+        fill = after_scale(lighten(color, .5))),
+    adjust = .5, 
+    width = .75, 
+    .width = 0,
+    justification = -.4, 
+    point_color = NA) + 
+  geom_boxplot(
+    aes(color = species,
+        color = after_scale(darken(color, .1, space = "HLS")),
+        fill = after_scale(desaturate(lighten(color, .8), .4))),
+    width = .42, 
+    outlier.shape = NA
+  ) +
+  geom_point(
+    aes(color = species,
+        color = after_scale(darken(color, .1, space = "HLS"))),
+    fill = "white",
+    shape = 21,
+    stroke = .4,
+    size = 2,
+    position = position_jitter(seed = 1, width = .12)
+  ) + 
+  geom_point(
+    aes(fill = species),
+    color = "transparent",
+    shape = 21,
+    stroke = .4,
+    size = 2,
+    alpha = .3,
+    position = position_jitter(seed = 1, width = .12)
+  ) + 
+  stat_summary(
+    geom = "text",
+    fun = "median",
+    aes(label = round(..y.., 2),
+        color = species,
+        color = after_scale(darken(color, .1, space = "HLS"))),
+    family = "Roboto Mono",
+    fontface = "bold",
+    size = 4.5,
+    vjust = -3.5
+  ) +
+  stat_summary(
+    geom = "text",
+    fun.data = add_sample,
+    aes(label = paste("n =", ..label..),
+        color = species,
+        color = after_scale(darken(color, .1, space = "HLS"))),
+    family = "Roboto Condensed",
+    size = 4,
+    hjust = 0
+  ) +
+  coord_flip(xlim = c(1.2, NA), clip = "off") +
+  annotation_custom(pic, ymin = 2.9, ymax = 3.85, xmin = 2.7, xmax = 4.7) +
+  scale_y_continuous(
+    limits = c(1.57, 3.8),
+    breaks = seq(1.6, 3.8, by = .2),
+    expand = c(.001, .001)
+  ) +
+  scale_color_manual(values = pal, guide = "none") +
+  scale_fill_manual(values = pal, guide = "none") +
+  labs(
+    x = NULL,
+    y = "Bill ratio",
+    title = "Bill Ratios of Brush–Tailed Penguins (*Pygoscelis* spec.)",
+    subtitle = "Distribution of bill ratios, estimated as bill length divided by bill depth.",
+    caption = "Gorman, Williams & Fraser (2014) *PLoS ONE* DOI: 10.1371/journal.pone.0090081<br>Visualization: Cédric Scherer  &bull;    Illustration: Allison Horst"
+  ) +
+  theme_minimal(base_family = "Zilla Slab", base_size = 15) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_text(family = "Roboto Mono"),
+    axis.text.y = element_text(
+      color = rev(darken(pal, .1, space = "HLS")), 
+      size = 18
+    ),
+    axis.title.x = element_text(margin = margin(t = 10),
+                                size = 16),
+    plot.title = element_markdown(face = "bold", size = 21),
+    plot.subtitle = element_text(
+      color = "grey40", hjust = 0,
+      margin = margin(0, 0, 20, 0)
+    ),
+    plot.title.position = "plot",
+    plot.caption = element_markdown(
+      color = "grey40", lineheight = 1.2,
+      margin = margin(20, 0, 0, 0)),
+    plot.margin = margin(15, 15, 10, 15)
+  )
+```
+
+**Note: Due to other duties and shifting priorities, I still haven't finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot <a href='https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01' target = "_blank">in this gist</a>.**
+
+---
+
+##### *Footnotes*
+
+<p id="section1">
+<sup>1</sup> In my opinion, in case your audience is not well trained in statistical concepts and visualizations, consider using something else than a box plot. Or make sure to explain it sufficiently.  
+I personally doubt that the general audience is well aware of how to interpret box plots or how they can be misleading. And even within your institution or university: give it a try, go around (once the lockdown is over or remotly) and ask your colleagues what the thick line in the middle of a box plot represents. <a href="#back1"><i>Go back</i> ↑</a>
+</p>
+
+<p id="section1">
+<sup>2</sup> Why? Because the box plot itself can be reduced easily in width without you getting into trouble. At the same time, I believe that these "half–box plots" have an uncommon look and thus the potential to confuse readers. <a href="#back2"><i>Go back</i> ↑</a>
+</p>
+
+<details>
+<summary style='font-size:10pt;'>R Session Info</summary>
+
+```{r session-info, echo=FALSE, purl=FALSE}
+sessionInfo()
+```
+
+</details>

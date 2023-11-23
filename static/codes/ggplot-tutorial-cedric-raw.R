@@ -886,8 +886,8 @@ g +
 set.seed(2020)
 
 library(dplyr)
-sample <- chic %>%
-  dplyr::group_by(season) %>%
+sample <- chic |>
+  dplyr::group_by(season) |>
   dplyr::sample_frac(0.01)
 
 ## code without pipes:
@@ -974,8 +974,8 @@ g +
 
 library(tidyverse)
 (ann <-
-    chic %>% 
-    group_by(season) %>% 
+    chic |> 
+    group_by(season) |> 
     summarize(o3 = min(o3, na.rm = TRUE) + 
                 (max(o3, na.rm = TRUE) - min(o3, na.rm = TRUE)) / 2))
 
@@ -1075,9 +1075,9 @@ ggplot(chic, aes(x = date, y = temp, color = o3)) +
 
 library(tidyverse)
 
-chic %>%
-  dplyr::group_by(season) %>%
-  dplyr::summarize(o3 = median(o3)) %>%
+chic |>
+  dplyr::group_by(season) |>
+  dplyr::summarize(o3 = median(o3)) |>
   ggplot(aes(x = season, y = o3)) +
   geom_col(aes(fill = season), color = NA) +
   labs(x = "", y = "Median Ozone Level") +
@@ -1085,11 +1085,11 @@ chic %>%
   guides(fill = FALSE)
 
 chic_sum <-
-  chic %>%
-  dplyr::mutate(o3_avg = median(o3)) %>%
-  dplyr::filter(o3 > o3_avg) %>%
-  dplyr::mutate(n_all = n()) %>%
-  dplyr::group_by(season) %>%
+  chic |>
+  dplyr::mutate(o3_avg = median(o3)) |>
+  dplyr::filter(o3 > o3_avg) |>
+  dplyr::mutate(n_all = n()) |>
+  dplyr::group_by(season) |>
   dplyr::summarize(rel = n() / unique(n_all))
 
 ggplot(chic_sum, aes(x = "", y = rel)) +
@@ -1154,19 +1154,19 @@ ggplot(chic, aes(x = date, y = temp, color = season)) +
 library(tidyverse)
 
 corm <- 
-  chic %>%
-  select(death, temp, dewpoint, pm10, o3) %>% 
-  corrr::correlate(diagonal = 1) %>%
+  chic |>
+  select(death, temp, dewpoint, pm10, o3) |> 
+  corrr::correlate(diagonal = 1) |>
   corrr::shave(upper = FALSE) 
 
 corm
 
-corm <- corm %>%
+corm <- corm |>
   pivot_longer(
     cols = -rowname, 
     names_to = "colname", 
     values_to = "corr"
-  ) %>% 
+  ) |> 
   mutate(rowname = fct_inorder(rowname),
          colname = fct_inorder(colname))
 
@@ -1407,11 +1407,11 @@ hchart(chic, "scatter", hcaes(x = date, y = temp, group = season))
 
 library(echarts4r)
 
-chic %>% 
-  e_charts(date) %>% 
-  e_scatter(temp, symbol_size = 7) %>% 
-  e_visual_map(temp) %>% 
-  e_y_axis(name = "Temperature (°F)") %>% 
+chic |> 
+  e_charts(date) |> 
+  e_scatter(temp, symbol_size = 7) |> 
+  e_visual_map(temp) |> 
+  e_y_axis(name = "Temperature (°F)") |> 
   e_legend(FALSE)
 
 library(charter)
@@ -1419,6 +1419,6 @@ library(charter)
 chic$date_num <- as.numeric(chic$date)
 ## doesn't work with class date
 
-chart(data = chic, caes(date_num, temp)) %>%
-  c_scatter(caes(color = season, group = season)) %>%
+chart(data = chic, caes(date_num, temp)) |>
+  c_scatter(caes(color = season, group = season)) |>
   c_colors(RColorBrewer::brewer.pal(4, name = "Dark2"))

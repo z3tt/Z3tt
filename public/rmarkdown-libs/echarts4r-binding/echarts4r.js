@@ -48,7 +48,10 @@ HTMLWidgets.widget({
 
         if(x.hasOwnProperty('registerMap')){
           for( var map = 0; map < x.registerMap.length; map++){
-            echarts.registerMap(x.registerMap[map].mapName, x.registerMap[map].geoJSON);
+            if(x.registerMap[map].extra)
+              echarts.registerMap(x.registerMap[map].mapName, x.registerMap[map].geoJSON, x.registerMap[map].extra);
+            else
+              echarts.registerMap(x.registerMap[map].mapName, x.registerMap[map].geoJSON);
           }
         }
         
@@ -63,6 +66,10 @@ HTMLWidgets.widget({
         chart = echarts.init(document.getElementById(el.id), x.theme, x.mainOpts);
         
         opts = evalFun(x.opts);
+
+        if(x.morphed){
+          opts = x.opts[0][x.morphed.default]   
+        }
         
         if(x.draw === true)
           chart.setOption(opts);
@@ -199,6 +206,13 @@ HTMLWidgets.widget({
         if(x.hasOwnProperty('groupDisconnect')){
           echarts.disconnect(x.groupDisconnect);
         }
+        
+        if(x.morphed){
+          opts = x.opts[0];
+          console.log(x.morphed);
+          let fn = eval(x.morphed.callback);
+          fn();
+        }
 
       },
       
@@ -326,6 +340,7 @@ if (HTMLWidgets.shinyMode) {
   
   Shiny.addCustomMessageHandler('e_focus_node_adjacency_p',
     function(data) {
+      console.log(data);
       var chart = get_e_charts(data[0].id);
       if (typeof chart != 'undefined') {
         data.forEach(function(highlight){

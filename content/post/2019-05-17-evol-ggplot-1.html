@@ -1,0 +1,419 @@
+---
+title: "The Evolution of a ggplot"
+author: "Cédric"
+date: 2019-05-17
+image: img/banner/map-grid-artsy.png
+twitterImg: img/banner/map-grid-artsy.png
+layout: post
+showtoc: false
+description: "A step-by-step tutorial explaining how my visualizations have evolved from a typical basic ggplot. Here, I transform a basic boxplot into a compelling and self-explanatory combination of a jittered dot strip plot and a lollipop plot."
+tags: ["DataViz", "tutorial", "animations", "ggplot Evolution", "R", "ggplot2", "tidyverse", "TidyTuesday"]
+editor_options:
+  chunk_output_type: inline
+---
+
+
+
+<p><img src="/img/evol-ggplot/evol-ggplot-1.gif" /></p>
+<div id="aim" class="section level3">
+<h3>🏁 Aim of this Tutorial</h3>
+<p>In this blog post, I aim to show you how to turn a default ggplot into a plot that visualizes information in an appealing and easily understandable way. The goal is to provide a step-by-step tutorial explaining how my visualization evolves from a typical basic ggplot. All plots are created with 100% <code>{ggplot2}</code> and 0% Inkscape.</p>
+<p>We are going to transform a basic box plot into a compelling and self-explanatory combination of a jittered dot strip plot and a lollipop plot. I am going to use <a href="http://data.uis.unesco.org/index.aspx?queryid=180">data provided by the UNESCO on global student to teacher ratios</a> that was selected as data <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-07">for the #TidyTuesday challenge 19 of 2019</a>.</p>
+<ul>
+<li><a href="#data">🗃️ Data Preparation</a></li>
+<li><a href="#default">🌱 The Default Boxplot</a></li>
+<li><a href="#sort">🔀 ️Sort Your Data!</a></li>
+<li><a href="#polish">💎 Let Your Plot Shine—Get Rid of the Default Settings</a></li>
+<li><a href="#geoms">📊 The Choice of the Chart Type</a></li>
+<li><a href="#more">💯 More Geoms, More Fun, More Info!</a></li>
+<li><a href="#text">💬 Add Text Boxes to Let The Plot Speak for Itself</a></li>
+<li><a href="%7B#legend">🗺️ Bonus: Add a Tile Map as Legend</a></li>
+<li><a href="#final">🎄 The Final Evolved Visualization</a></li>
+<li><a href="#code">💻 Complete Code</a></li>
+<li><a href="#ps">📝 Post Scriptum: Mean versus Median</a></li>
+</ul>
+</div>
+<div id="data" class="section level3">
+<h3>🗃️ Data Preparation</h3>
+<p>I have prepared the data in the first way to map each country’s most recently reported student-teacher ratio in primary education as a tile map. I used the <a href="%22https://gist.githubusercontent.com/maartenzam/787498bbc07ae06b637447dbd430ea0a/raw/9a9dafafb44d8990f85243a9c7ca349acd3a0d07/worldtilegrid.csv%22">tile-based world data provided by Maarten Lambrechts</a> to create this map as the first visualization for my weekly contribution:</p>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/map-students-1.png" width="768" /></p>
+<p>For the second chart next to the tile map, I wanted to highlight the difference of the mean student ratio per continent but without discarding the raw data on the country-level. Therefore, I transformed the information on the region to represent the six continents excluding Antarctica (hm, do penguins not go to school?! Seems so… 🐧) and merged both data sets. If you would like to run the code yourself, you find the data preparation steps <a href="https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11">here</a>. This is how the relevant columns of the merged and cleaned data set looks like, showing two examples per continent:</p>
+<pre><code>## # A tibble: 12 × 5
+##    indicator         country                          region        student_ratio student_ratio_region
+##    &lt;chr&gt;             &lt;chr&gt;                            &lt;chr&gt;                 &lt;dbl&gt;                &lt;dbl&gt;
+##  1 Primary Education Lesotho                          Africa                 32.9                 37.3
+##  2 Primary Education South Africa                     Africa                 30.3                 37.3
+##  3 Primary Education Bangladesh                       Asia                   30.1                 20.7
+##  4 Primary Education Viet Nam                         Asia                   19.6                 20.7
+##  5 Primary Education Ireland                          Europe                 16.1                 13.6
+##  6 Primary Education France                           Europe                 18.2                 13.6
+##  7 Primary Education Saint Vincent and the Grenadines North America          14.4                 17.7
+##  8 Primary Education Dominican Republic               North America          18.9                 17.7
+##  9 Primary Education Vanuatu                          Oceania                26.6                 24.7
+## 10 Primary Education Solomon Islands                  Oceania                25.8                 24.7
+## 11 Primary Education Argentina                        South America          NA                   19.4
+## 12 Primary Education Paraguay                         South America          24.2                 19.4</code></pre>
+</div>
+<div id="default" class="section level3">
+<h3>🌱 The Default Boxplot</h3>
+<p>I was particularly interested to visualize the most-recent student-teacher ratio in primary education as a tile grid map per country. A usual way representing several data points per group is to use a box plot:</p>
+<pre class="r"><code>library(tidyverse)
+
+ggplot(df_ratios, aes(x = region, y = student_ratio)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/boxplot-basic-1.png" width="768" /></p>
+</div>
+<div id="sort" class="section level3">
+<h3>🔀 ️Sort Your Data!</h3>
+<p>A good routine with such kind of data (qualitative and unsorted) is to arrange the box plots or any other type such as bars or violins in an in- or decreasing order to simplify readability. Since the category “continent” does not have an intrinsic order, I rearrange the box plots by their mean student-teacher ratio instead of sorting them alphabetically which is the default:</p>
+<pre class="r"><code>df_sorted &lt;-
+  df_ratios %&gt;%
+  mutate(region = fct_reorder(region, -student_ratio_region))
+
+ggplot(df_sorted, aes(x = region, y = student_ratio)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/boxplot-sorted-1.png" width="768" /></p>
+<p>💡 <strong>Sort your data according to the best or worst, highest or lowest value to make your graph easily readable—do not sort them if the categories have an internal logical ordering, e.g. age groups or income classes!</strong></p>
+<p>To increase the readability we are going to flip the coordinates (note that we could also switch the variables mapped to x and y in the <code>ggplot</code> call <s>but this does not work for box plots so we use <code>coord_flip()</code></s> and it now also works for box plots!). As some ratios are pretty close to zero, it might be also a good idea to include the 0 on the y axis. I also add some space to the right (mostly for later) which we can force by adding <code>scale_y_continuous(limits = c(0, 90))</code> (be cautious here to use limits that are beyond the limits of your data—or better use <code>coord_*(ylim = c(0, 90)</code> so you’re not accidentally subsetting your data).</p>
+<pre class="r"><code>ggplot(df_sorted, aes(x = region, y = student_ratio)) +
+  geom_boxplot() +
+  coord_flip() +
+  scale_y_continuous(limits = c(0, 90))</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/boxplot-flipped-1.png" width="768" /></p>
+<p>💡 <strong>Flip the chart in case of long labels to increase readability and to avoid overlapping or rotated labels!</strong></p>
+<p>💡 <strong>Since the latest version 3.x.x of <code>{ggplot2}</code> you can also flip the orientation by switching the x and y variables:</strong></p>
+<pre class="r"><code>ggplot(df_sorted, aes(x = student_ratio, y = region)) +
+  geom_boxplot() +
+  scale_x_continuous(limits = c(0, 90))</code></pre>
+<p>The order of the categories is perfect as it is after flipping the coordinates—the lower the student-teacher ratio, the better.</p>
+</div>
+<div id="let-your-plot-shineget-rid-of-the-default-settings" class="section level3">
+<h3>💎 Let Your Plot Shine—Get Rid of the Default Settings</h3>
+<p>Let’s spice this plot up! One great thing about <code>{ggplot2}</code> is that it is structured in an <em>adaptive way</em>, allowing to add further levels to an existing ggplot object. We are going to</p>
+<ul>
+<li>use a different theme that comes with the <code>{ggplot2}</code> package by calling <code>theme_set(theme_light())</code> (several themes come along with the <code>{ggplot2}</code> package but if you need more check for example the packages <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>{ggthemes}</code></a> or <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a>),</li>
+<li>change the font and the overall font size by adding the arguments <code>base_size</code> and <code>base_family</code> to <code>theme_light()</code>,</li>
+<li>flip the axes by adding <code>coord_flip()</code> (as seen before),</li>
+<li>let the axis start at 0 and reduce the spacing to the plot margin by adding <code>expand = c(0.02, 0.02)</code> as argument to the <code>scale_y_continious()</code>,</li>
+<li>add some color encoding the continent by adding <code>color = region</code> to the <code>aes</code> argument and picking a palette from the <a href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html"><code>{ggsci}</code> package</a>,</li>
+<li>add meaningful labels/removing useless labels by adding <code>labs(x = NULL, y = "title y")</code></li>
+<li>adjust the new theme (e.g. changing some font settings and removing the legend and grid) by adding <code>theme()</code>.</li>
+</ul>
+<p>💡 <strong>You can easily adjust all sizes of the theme by calling <code>theme_*(base_size = )</code>—this is very handy if you need the same viz for a different purpose!</strong></p>
+<p>💡 <strong>Do not use <code>c(0, 0)</code> since the zero tick is in most cases too close to the axis—use something close to zero instead!</strong></p>
+<p>I am going to save the ggplot call and all these visual adjustments in a <code>gg</code> object that I name <code>g</code> so we can use it for the next plots.</p>
+<pre class="r"><code>theme_set(theme_light(base_size = 18, base_family = &quot;Poppins&quot;))
+
+g &lt;-
+  ggplot(df_sorted, aes(x = region, y = student_ratio, color = region)) +
+    coord_flip() +
+    scale_y_continuous(limits = c(0, 90), expand = c(0.02, 0.02)) +
+    scale_color_uchicago() +
+    labs(x = NULL, y = &quot;Student to teacher ratio&quot;) +
+    theme(
+      legend.position = &quot;none&quot;,
+      axis.title = element_text(size = 16),
+      axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 12),
+      panel.grid = element_blank()
+    )</code></pre>
+<p>Even thought we already wrote a lot of code, the plot <code>g</code> is just an empty plot until with a custom theme and pretty axes but actually not a “data visualization” yet.</p>
+<p>(Note that to include these fonts we make use of the <s><a href="https://github.com/wch/extrafont"><code>{extrafont}</code> package</a></s> <s><a href="https://github.com/yixuan/showtext"><code>{showtext}</code> package</a></s> <a href="https://cran.r-project.org/web/packages/systemfonts/index.html">{systemfonts} package</a>. This package allows for the use of system fonts without the need to import or register fonts. And it even allows to use various font weights and styles, to turn on ligatures and much more. You need to have (a) the fonts installed on your system and (b) the package <code>systemfonts</code> installed. Read more about how to use custom fonts in <a href="https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/">this blog post by June Choe</a>.</p>
+</div>
+<div id="geoms" class="section level3">
+<h3>📊 The Choice of the Chart Type</h3>
+<p>We can add any <code>geom_</code> to our ggplot-preset <code>g</code> that fits the data, i.e. that take two positional variables of which one is allowed to be qualitative. Here are some examples that fulfill these criteria:</p>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/geoms-1.png" width="960" /></p>
+<p>All of the four chart types let readers explore the range of values but with different detail and focus. The box plot and the violin plot both summarize the data, they contain a lot of information by visualizing the distribution of the data points in two different ways (see below for an explanation <a href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#ps">how to read a boxplot</a>). By contrast, the line plot shows only the range (minimum and maximum of the data) and the strip plot the raw data with each single observation. However, a line chart is not a good choice here since it does not allow for the identification of single countries. By adding an <code>alpha</code> argument to <code>geom_point()</code>, the strip plot is able to highlight the main range of student-teacher ratios while also showing the raw data:</p>
+<pre class="r"><code>g + geom_point(size = 3, alpha = 0.15)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/strip-plot-alpha-1.png" width="768" /></p>
+<p>Of course, different geoms can also be combined to provide even more information in one plot:</p>
+<pre class="r"><code>g +
+  geom_boxplot(color = &quot;gray60&quot;, outlier.alpha = 0) +
+  geom_point(size = 3, alpha = 0.15)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/box-dot-plot-1.png" width="768" /></p>
+<p>⚡ <strong>Remove the outliers of the box plot to avoid double-encoding of the same information! You can achieve this via <code>outlier.alpha = 0</code>, <code>outlier.color = NA</code>, <code>outlier.color = "transparent"</code>, or <code>outlier.shape = NA</code>.</strong></p>
+<p>We are going to stick to points to visualize the countries explicitly instead of aggregating the data into box or violin plots.
+To achieve a higher readability, we use another geom, <code>geom_jitter()</code> which scatters the points in a given direction (x and/or y via <code>width</code> and <code>height</code>) to prevent over-plotting:</p>
+<pre class="r"><code>set.seed(2019)
+
+g + geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/plot-jitter-countries-1.png" width="768" /></p>
+<p>💡 <strong>Set a seed to keep the jittering of the points fixed every time you call <code>geom_jitter()</code> by calling <code>set.seed()</code>—this becomes especially important when we later label some of the points.</strong></p>
+<p>💡 <strong>You can also set the seed within the <code>geom_jitter()</code> call by setting <code>position = position_jitter(seed)</code>. Note that in this case the <code>width</code> and/or <code>height</code> argument needs to be placed inside the <code>position_jitter()</code> function as well:</strong></p>
+<pre class="r"><code>g + geom_jitter(position = position_jitter(seed = 2019, width = 0.2), size = 2, alpha = 0.25)</code></pre>
+<p>(In the next code chunks, I am going to use the redundant call of <code>set.seed(2019)</code> before creating the plot but do not show it each time.)</p>
+</div>
+<div id="more" class="section level3">
+<h3>💯 More Geoms, More Fun, More Info!</h3>
+<p>As mentioned in the beginning, my intention was to visualize both, the country- and continental-level ratios, in addition to the tile map. Until now, we focused on countries only. We can indicate the continental average by adding a summary statistic via <code>stat_summary()</code>with a different point size as the points of <code>geom_jitter()</code>. Since the average is more important here, I am going to highlight it with a bigger size and zero transparency:</p>
+<pre class="r"><code>g +
+  geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/plot-jitter-regions-1.png" width="768" /></p>
+<p>Note that we could also use <code>geom_point(aes(x = region, y = student_ratio_region), size = 5)</code> to achieve the same since we already have a regional mean average in our data.</p>
+<p>To relate all these points to a baseline, we add a line indicating the worldwide average:</p>
+<pre class="r"><code>world_avg &lt;-
+  df_ratios %&gt;%
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) %&gt;%
+  pull(avg)
+
+g +
+  geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
+  geom_jitter(size = 2, alpha = 0.25, width = 0.2)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/worldwide-avg-1.png" width="768" /></p>
+<p>💡 <strong>One could derive the worldwide average also within the <code>geom_hline()</code> call, but I prefer to keep both steps separated.</strong></p>
+<p>We can further highlight that the baseline is the worldwide average ratio rather than a ratio of 0 (or 1?) by adding a line from each continental average to the worldwide average. The result is a combination of a jitter and a lollipop plot:</p>
+<pre class="r"><code>g +
+  geom_segment(
+    aes(x = region, xend = region,
+        y = world_avg, yend = student_ratio_region),
+    size = 0.8
+  ) +
+  geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
+  geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/plot-jitter-regions-world-1.png" width="768" /></p>
+<p>⚡ <strong>Check the order of the geoms to prevent any overlapping—here, for example, draw the line after calling <code>geom_segment()</code> to avoid overlapping!</strong></p>
+</div>
+<div id="text" class="section level3">
+<h3>💬 Add Text Boxes to Let The Plot Speak for Itself</h3>
+<p>Since I don’t want to include legends, I add some text boxes that explain the different point sizes and the baseline level via <code>annotate(geom = "text")</code>:</p>
+<pre class="r"><code>(g_text &lt;-
+  g +
+  geom_segment(
+    aes(x = region, xend = region,
+        y = world_avg, yend = student_ratio_region),
+    size = 0.8
+  ) +
+  geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
+  stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
+  geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
+  annotate(
+    &quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;, lineheight = .9,
+    label = glue::glue(&quot;Worldwide average:\n{round(world_avg, 1)} students per teacher&quot;)
+  ) +
+  annotate(
+    &quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;,
+    label = &quot;Continental average&quot;
+  ) +
+  annotate(
+    &quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;,
+    label = &quot;Countries per continent&quot;
+  ) +
+  annotate(
+    &quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;, size = 2.8, color = &quot;gray20&quot;, lineheight = .9,
+    label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;)
+  )</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/text-labels-1.png" width="768" /></p>
+<p>💡 <strong>You could also create a new data set (similar to our <code>arrows</code> data frame below) that holds the labels and the exact position, along with some other information if needed, and add that via <code>geom_text(data = my_labels, aes(label = my_label_column))</code>. Note that here we also would need to create a factor for the region to match the original data!</strong></p>
+<p>💡 <strong>Use <a href="https://glue.tidyverse.org/"><code>glue::glue()</code></a> to combine strings with variables—this way, you can update your plots without copying and pasting values! (Of course, you can also use your good old friend <code>paste0()</code>.)</strong></p>
+<p>… and add some arrows to match the text to the visual elements by providing start- and endpoints of the arrows when calling <code>geom_curve()</code>. I am going to draw all arrows with one call—but you could also draw arrow by arrow. This is not that simple as the absolute position depends on the dimension of the plot. Good guess based on the coordinates of the text boxes…</p>
+<pre class="r"><code>arrows &lt;-
+  tibble(
+    x1 = c(6.2, 3.5, 1.7, 1.7, 1.9),
+    x2 = c(5.6, 4, 1.9, 2.9, 1.1),
+    y1 = c(35, 10, 11, 11, 73),
+    y2 = c(world_avg, 19.4, 14.16, 12, 83.4)
+  )
+
+g_text +
+  geom_curve(
+    data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.07, &quot;inch&quot;)), size = 0.4,
+    color = &quot;gray20&quot;, curvature = -0.3
+  )</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/arrows-annotations-1.png" width="768" /></p>
+<p>… and then adjust, adjust, adjust…</p>
+<pre class="r"><code>arrows &lt;-
+  tibble(
+    x1 = c(6.1, 3.62, 1.8, 1.8, 1.8),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
+    y1 = c(world_avg + 6, 10.5, 9, 9, 77),
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.45)
+  )
+
+(g_arrows &lt;-
+  g_text +
+  geom_curve(
+    data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
+    arrow = arrow(length = unit(0.08, &quot;inch&quot;)), size = 0.5,
+    color = &quot;gray20&quot;, curvature = -0.3
+  )
+)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/text-arrows-1.png" width="768" /></p>
+<p>💡 <strong>Since the curvature is the same for all arrows, one can use different x and y distances and directions between the start end and points to vary their shape!</strong></p>
+<p>One last thing that bothers me: A student-teacher ratio of 0 does not make much sense—I definitely prefer to start at a ratio of 1!<br />
+And—oh my!—we almost forgot to mention and acknowledge the data source 😨 Let’s quickly also add a plot caption:</p>
+<pre class="r"><code>(g_final &lt;-
+  g_arrows +
+  scale_y_continuous(
+    limits = c(1, NA), expand = c(0.02, 0.02),
+    breaks = c(1, seq(20, 80, by = 20))
+  ) +
+  labs(caption = &quot;Data: UNESCO Institute for Statistics&quot;) +
+  theme(plot.caption = element_text(size = 9, color = &quot;gray50&quot;))
+)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/final-caption-1.png" width="768" /></p>
+</div>
+<div id="legend" class="section level3">
+<h3>🗺️ Bonus: Add a Tile Map as Legend</h3>
+<p>To make it easier to match the countries of the second plot, the country-level tile map, to each continent we have visualized with our jitter plot, we can add a geographical “legend”. For this, I encode the region by color instead by the country-level ratios:</p>
+<pre class="r"><code>(map_regions &lt;-
+  df_sorted %&gt;%
+  ggplot(aes(x = x, y = y, fill = region, color = region)) +
+    geom_tile(color = &quot;white&quot;) +
+    scale_y_reverse() +
+    ggsci::scale_fill_uchicago(guide = &quot;none&quot;) +
+    coord_equal() +
+    theme(line = element_blank(),
+          panel.background = element_rect(fill = &quot;transparent&quot;),
+          plot.background = element_rect(fill = &quot;transparent&quot;, color = &quot;transparent&quot;),
+          panel.border = element_rect(color = &quot;transparent&quot;),
+          strip.background = element_rect(color = &quot;gray20&quot;),
+          axis.text = element_blank(),
+          plot.margin = margin(0, 0, 0, 0)) +
+    labs(x = NULL, y = NULL)
+)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/map-regions-1.png" width="624" /></p>
+<p>… and add this map to the existing plot via <code>annotation_custom(ggplotGrob())</code>:</p>
+<pre class="r"><code>g_final +
+  annotation_custom(ggplotGrob(map_regions), xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82)</code></pre>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/plot-with.map-1.png" width="768" /></p>
+</div>
+<div id="final" class="section level3">
+<h3>🎄 The Final Evolved Visualization</h3>
+<p>And here it is, our final plot—evolved from a dreary gray box plot to a self-explanatory, colorful visualization including the raw data and a tile map legend! 🎉</p>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/plot-before-after-1.png" width="1536" /></p>
+<p>Thanks for reading, I hope you’ve enjoyed it! Here you find <a href="https://www.cedricscherer.com/top/dataviz/">more visualizations I’ve contributed to the #TidyTuesday challenges</a> including my full contribution to week 19 of 2019 we have dissected here:</p>
+<p><img src="/img/tidytuesday/2019_19_StudentTeacher.png" /></p>
+</div>
+<div id="code" class="section level3">
+<h3>💻 Complete Code</h3>
+<p>If you want to create the plot on your own or play around with the code, copy and paste these ~60 lines:</p>
+<pre class="r"><code>## packages
+library(tidyverse)
+library(ggsci)
+library(showtext)
+
+## load fonts
+font_add_google(&quot;Poppins&quot;, &quot;Poppins&quot;)
+font_add_google(&quot;Roboto Mono&quot;, &quot;Roboto Mono&quot;)
+showtext_auto()
+
+## get data
+devtools::source_gist(&quot;https://gist.github.com/Z3tt/301bb0c7e3565111770121af2bd60c11&quot;)
+
+## tile map as legend
+map_regions &lt;-
+  df_ratios %&gt;%
+  mutate(region = fct_reorder(region, -student_ratio_region)) %&gt;%
+  ggplot(aes(x = x, y = y, fill = region, color = region)) +
+    geom_tile(color = &quot;white&quot;) +
+    scale_y_reverse() +
+    scale_fill_uchicago(guide = &quot;none&quot;) +
+    coord_equal() +
+    theme_light() +
+    theme(
+      line = element_blank(),
+      panel.background = element_rect(fill = &quot;transparent&quot;),
+      plot.background = element_rect(fill = &quot;transparent&quot;,
+                                     color = &quot;transparent&quot;),
+      panel.border = element_rect(color = &quot;transparent&quot;),
+      strip.background = element_rect(color = &quot;gray20&quot;),
+      axis.text = element_blank(),
+      plot.margin = margin(0, 0, 0, 0)
+    ) +
+    labs(x = NULL, y = NULL)
+
+## calculate worldwide average
+world_avg &lt;-
+  df_ratios %&gt;%
+  summarize(avg = mean(student_ratio, na.rm = TRUE)) %&gt;%
+  pull(avg)
+
+## coordinates for arrows
+arrows &lt;-
+  tibble(
+    x1 = c(6, 3.65, 1.8, 1.8, 1.8),
+    x2 = c(5.6, 4, 2.18, 2.76, 0.9),
+    y1 = c(world_avg + 6, 10.5, 9, 9, 77),
+    y2 = c(world_avg + 0.1, 18.4, 14.16, 12, 83.42)
+  )
+
+## final plot
+## set seed to fix position of jittered points
+set.seed(2019)
+
+## final plot
+df_ratios %&gt;%
+  mutate(region = fct_reorder(region, -student_ratio_region)) %&gt;%
+  ggplot(aes(x = region, y = student_ratio, color = region)) +
+    geom_segment(
+      aes(x = region, xend = region,
+          y = world_avg, yend = student_ratio_region),
+      size = 0.8
+    ) +
+    geom_hline(aes(yintercept = world_avg), color = &quot;gray70&quot;, size = 0.6) +
+    stat_summary(fun = mean, geom = &quot;point&quot;, size = 5) +
+    geom_jitter(size = 2, alpha = 0.25, width = 0.2) +
+    coord_flip() +
+    annotate(
+      &quot;text&quot;, x = 6.3, y = 35, family = &quot;Poppins&quot;,
+      size = 2.7, color = &quot;gray20&quot;,
+      label = glue::glue(&quot;Worldwide average:\n{round(world_avg, 1)} students per teacher&quot;)
+    ) +
+    annotate(
+      &quot;text&quot;, x = 3.5, y = 10, family = &quot;Poppins&quot;,
+      size = 2.7, color = &quot;gray20&quot;,
+      label = &quot;Continental average&quot;
+    ) +
+    annotate(
+      &quot;text&quot;, x = 1.7, y = 11, family = &quot;Poppins&quot;,
+      size = 2.7, color = &quot;gray20&quot;,
+      label = &quot;Countries per continent&quot;
+    ) +
+    annotate(
+      &quot;text&quot;, x = 1.9, y = 64, family = &quot;Poppins&quot;,
+      size = 2.7, color = &quot;gray20&quot;,
+      label = &quot;The Central African Republic has by far\nthe most students per teacher&quot;
+    ) +
+    geom_curve(
+      data = arrows, aes(x = x1, xend = x2,
+                         y = y1, yend = y2),
+      arrow = arrow(length = unit(0.08, &quot;inch&quot;)), size = 0.5,
+      color = &quot;gray20&quot;, curvature = -0.3#
+    ) +
+    annotation_custom(
+      ggplotGrob(map_regions),
+      xmin = 2.5, xmax = 7.5, ymin = 52, ymax = 82
+    ) +
+    scale_y_continuous(
+      limits = c(1, NA), expand = c(0.02, 0.02),
+      breaks = c(1, seq(20, 80, by = 20))
+    ) +
+    scale_color_uchicago() +
+    labs(
+      x = NULL, y = &quot;Student to teacher ratio&quot;,
+      caption = &#39;Data: UNESCO Institute for Statistics&#39;
+    ) +
+    theme_light(base_size = 18, base_family = &quot;Poppins&quot;) +
+    theme(
+      legend.position = &quot;none&quot;,
+      axis.title = element_text(size = 12),
+      axis.text.x = element_text(family = &quot;Roboto Mono&quot;, size = 10),
+      plot.caption = element_text(size = 9, color = &quot;gray50&quot;),
+      panel.grid = element_blank()
+    )</code></pre>
+</div>
+<div id="ps" class="section level3">
+<h3>📝 Post Scriptum: Mean versus Median</h3>
+<p>One thing I want to highlight is that the final plot does not contain the same information as the original box plot. While I have visualized the mean values of each country and across the globe, the box of a Box-and-Whisker plot represents the 25th, 50th, 75th percentile of the data (also known as first, second and third quartile):</p>
+<div class="figure">
+<img src="/img/evol-ggplot/boxplot.png" alt="" />
+<p class="caption">In a Box-and-Whisker plot the box visualizes the upper and lower quartiles, so the box spans the interquartile range (IQR) containing 50 percent of the data, and the median is marked by a vertical line inside the box.</p>
+</div>
+<p>The 2nd quartile is known as the <strong>median</strong>, i.e. 50% of the data points fall below this value and the other 50% are higher than this value. My decision to estimate the mean value was based on the fact that my aim was a visualization that is easily understandable to a large (non-scientific) audience that are used to mean (“average”) values but not to median estimates. However, in case of skewed data, the mean value of a data set is also biased towards higher or lower values. Let’s compare both a plot based on the mean and the median:</p>
+<p><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/mean-vs-median-1.png" width="816" /><img src="/post/2019-05-17-evol-ggplot-1_files/figure-html/mean-vs-median-2.png" width="816" /></p>
+<p>As one can see, the differences between continents stay roughly the same but the worldwide median is lower than the worldwide average (19.6 students per teacher versus 23.5). The plot with medians highlights that the median student-teacher ratio of Asia and Oceania are similar to the worldwide median. This plot now resembles much more the basic box plot we used in the beginning but may be harder to interpret for some compared to the one visualizing average ratios.</p>
+</div>

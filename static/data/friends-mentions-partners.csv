@@ -1,0 +1,726 @@
+id,season,episode,key,partners,mentions
+1,1,1,Ross & Rachel,Ross & Rachel,4
+1,1,1,Rachel & Joey,Rachel & Joey,1
+2,1,2,Ross & Rachel,Ross & Rachel,1
+2,1,2,Ross,Ross & Carol,2
+2,1,2,Rachel & Joey,Rachel & Joey,1
+2,1,2,Rachel,Rachel & Barry,3
+2,1,2,Monica & Chandler,Monica & Chandler,1
+5,1,5,Ross & Rachel,Ross & Rachel,3
+5,1,5,Ross,Ross & Carol,1
+5,1,5,Chandler,Chandler & Janice,2
+6,1,6,Monica & Chandler,Monica & Chandler,1
+7,1,7,Ross & Rachel,Ross & Rachel,3
+7,1,7,Rachel & Joey,Rachel & Joey,2
+7,1,7,Rachel,Rachel & Paolo,2
+8,1,8,Rachel,Rachel & Paolo,1
+10,1,10,Rachel,Rachel & Paolo,1
+10,1,10,Phoebe,Phoebe & David,3
+11,1,11,Ross & Rachel,Ross & Rachel,3
+11,1,11,Rachel & Joey,Rachel & Joey,3
+11,1,11,Rachel,Rachel & Paolo,5
+11,1,11,Monica & Chandler,Monica & Chandler,1
+12,1,12,Ross & Rachel,Ross & Rachel,2
+12,1,12,Rachel,Rachel & Paolo,3
+13,1,13,Monica & Chandler,Monica & Chandler,1
+14,1,14,Ross & Rachel,Ross & Rachel,1
+14,1,14,Ross,Ross & Carol,1
+14,1,14,Chandler,Chandler & Janice,3
+16,1,16,Ross & Rachel,Ross & Rachel,3
+16,1,16,Ross,Ross & Carol,2
+16,1,16,Rachel & Joey,Rachel & Joey,1
+16,1,16,Monica & Chandler,Monica & Chandler,3
+17,1,17,Ross & Rachel,Ross & Rachel,6
+17,1,17,Rachel,Rachel & Tag,1
+17,1,17,Monica & Chandler,Monica & Chandler,4
+18,1,18,Ross & Rachel,Ross & Rachel,1
+18,1,18,Monica & Chandler,Monica & Chandler,2
+19,1,19,Ross & Rachel,Ross & Rachel,2
+19,1,19,Rachel,Rachel & Tag,1
+20,1,20,Rachel,Rachel & Barry,4
+22,1,22,Ross & Rachel,Ross & Rachel,3
+22,1,22,Rachel & Joey,Rachel & Joey,1
+22,1,22,Monica & Chandler,Monica & Chandler,1
+23,1,23,Monica & Chandler,Monica & Chandler,2
+24,1,24,Ross & Rachel,Ross & Rachel,6
+24,1,24,Ross,Ross & Carol,1
+24,1,24,Rachel & Joey,Rachel & Joey,2
+24,1,24,Monica & Chandler,Monica & Chandler,2
+25,2,1,Ross & Rachel,Ross & Rachel,5
+25,2,1,Ross,Ross & Julie,2
+25,2,1,Rachel,Rachel & Tag,1
+25,2,1,Monica & Chandler,Monica & Chandler,1
+26,2,2,Ross & Rachel,Ross & Rachel,3
+26,2,2,Ross,Ross & Carol,1
+26,2,2,Rachel & Joey,Rachel & Joey,2
+26,2,2,Monica & Chandler,Monica & Chandler,3
+27,2,3,Monica & Chandler,Monica & Chandler,1
+27,2,3,Chandler,Chandler & Janice,2
+28,2,4,Ross & Rachel,Ross & Rachel,1
+28,2,4,Ross,Ross & Julie,4
+29,2,5,Rachel & Joey,Rachel & Joey,1
+31,2,7,Ross & Rachel,Ross & Rachel,3
+31,2,7,Ross,Ross & Julie,1
+31,2,7,Rachel & Joey,Rachel & Joey,1
+31,2,7,Monica & Chandler,Monica & Chandler,3
+32,2,8,Ross & Rachel,Ross & Rachel,4
+32,2,8,Ross,Ross & Julie,2
+32,2,8,Rachel & Joey,Rachel & Joey,1
+32,2,8,Monica & Chandler,Monica & Chandler,2
+33,2,9,Ross & Rachel,Ross & Rachel,3
+33,2,9,Rachel & Joey,Rachel & Joey,4
+33,2,9,Monica & Chandler,Monica & Chandler,4
+34,2,10,Ross & Rachel,Ross & Rachel,1
+34,2,10,Rachel & Joey,Rachel & Joey,1
+34,2,10,Monica & Chandler,Monica & Chandler,3
+35,2,11,Ross,Ross & Carol,3
+36,2,12,Rachel & Joey,Rachel & Joey,2
+36,2,12,Monica & Chandler,Monica & Chandler,3
+37,2,13,Rachel,Rachel & Barry,1
+38,2,14,Ross & Rachel,Ross & Rachel,3
+38,2,14,Monica & Chandler,Monica & Chandler,1
+39,2,15,Ross & Rachel,Ross & Rachel,5
+39,2,15,Rachel,Rachel & Tag,1
+39,2,15,Monica & Chandler,Monica & Chandler,1
+40,2,16,Rachel & Joey,Rachel & Joey,1
+40,2,16,Monica & Chandler,Monica & Chandler,1
+40,2,16,Monica,Monica & Richard,4
+41,2,17,Ross & Rachel,Ross & Rachel,6
+41,2,17,Monica & Chandler,Monica & Chandler,2
+42,2,18,Ross & Rachel,Ross & Rachel,4
+42,2,18,Rachel & Joey,Rachel & Joey,1
+42,2,18,Monica,Monica & Richard,4
+43,2,19,Rachel & Joey,Rachel & Joey,1
+43,2,19,Monica & Chandler,Monica & Chandler,2
+44,2,20,Ross & Rachel,Ross & Rachel,3
+44,2,20,Monica,Monica & Richard,3
+45,2,21,Rachel & Joey,Rachel & Joey,4
+46,2,22,Rachel & Joey,Rachel & Joey,2
+46,2,22,Monica & Chandler,Monica & Chandler,3
+47,2,23,Ross & Rachel,Ross & Rachel,3
+47,2,23,Rachel & Joey,Rachel & Joey,1
+47,2,23,Monica & Chandler,Monica & Chandler,2
+47,2,23,Monica,Monica & Richard,3
+48,2,24,Ross & Rachel,Ross & Rachel,4
+48,2,24,Rachel & Joey,Rachel & Joey,1
+48,2,24,Rachel,Rachel & Barry,2
+48,2,24,Monica,Monica & Richard,5
+49,3,1,Ross & Rachel,Ross & Rachel,4
+49,3,1,Rachel & Joey,Rachel & Joey,1
+49,3,1,Monica,Monica & Richard,1
+49,3,1,Chandler,Chandler & Janice,3
+50,3,2,Ross & Rachel,Ross & Rachel,1
+50,3,2,Monica,Monica & Richard,3
+51,3,3,Ross & Rachel,Ross & Rachel,2
+51,3,3,Rachel & Joey,Rachel & Joey,3
+51,3,3,Monica & Chandler,Monica & Chandler,1
+51,3,3,Chandler,Chandler & Janice,1
+52,3,4,Ross & Rachel,Ross & Rachel,1
+52,3,4,Rachel & Joey,Rachel & Joey,2
+52,3,4,Monica & Chandler,Monica & Chandler,3
+52,3,4,Chandler,Chandler & Janice,3
+53,3,5,Rachel & Joey,Rachel & Joey,2
+54,3,6,Ross,Ross & Carol,1
+54,3,6,Monica & Chandler,Monica & Chandler,3
+55,3,7,Ross & Rachel,Ross & Rachel,2
+55,3,7,Rachel & Joey,Rachel & Joey,2
+55,3,7,Monica & Chandler,Monica & Chandler,4
+55,3,7,Chandler,Chandler & Janice,1
+56,3,8,Ross & Rachel,Ross & Rachel,4
+56,3,8,Rachel & Joey,Rachel & Joey,2
+56,3,8,Monica & Chandler,Monica & Chandler,2
+56,3,8,Chandler,Chandler & Janice,2
+57,3,9,Ross & Rachel,Ross & Rachel,4
+57,3,9,Rachel & Joey,Rachel & Joey,5
+57,3,9,Rachel,Rachel & Tag,1
+57,3,9,Monica & Chandler,Monica & Chandler,4
+57,3,9,Chandler,Chandler & Janice,1
+58,3,10,Ross & Rachel,Ross & Rachel,4
+58,3,10,Rachel & Joey,Rachel & Joey,1
+58,3,10,Monica & Chandler,Monica & Chandler,2
+59,3,11,Ross & Rachel,Ross & Rachel,5
+59,3,11,Rachel & Joey,Rachel & Joey,1
+59,3,11,Chandler,Chandler & Janice,1
+60,3,12,Ross & Rachel,Ross & Rachel,4
+61,3,13,Ross & Rachel,Ross & Rachel,1
+61,3,13,Rachel & Joey,Rachel & Joey,2
+61,3,13,Monica & Chandler,Monica & Chandler,1
+61,3,13,Monica,Monica & Richard,6
+62,3,14,Ross & Rachel,Ross & Rachel,7
+62,3,14,Rachel & Joey,Rachel & Joey,1
+62,3,14,Monica & Chandler,Monica & Chandler,2
+63,3,15,Ross & Rachel,Ross & Rachel,4
+63,3,15,Rachel & Joey,Rachel & Joey,1
+64,3,16,Ross & Rachel,Ross & Rachel,8
+64,3,16,Rachel & Joey,Rachel & Joey,3
+64,3,16,Monica & Chandler,Monica & Chandler,2
+65,3,17,Ross & Rachel,Ross & Rachel,5
+65,3,17,Ross,Ross & Carol,1
+65,3,17,Rachel & Joey,Rachel & Joey,2
+65,3,17,Monica & Chandler,Monica & Chandler,2
+66,3,18,Ross & Rachel,Ross & Rachel,1
+67,3,19,Ross & Rachel,Ross & Rachel,3
+67,3,19,Monica & Chandler,Monica & Chandler,1
+67,3,19,Monica,Monica & Pete,2
+68,3,20,Ross & Rachel,Ross & Rachel,3
+68,3,20,Rachel & Joey,Rachel & Joey,2
+68,3,20,Monica & Chandler,Monica & Chandler,1
+69,3,21,Ross & Rachel,Ross & Rachel,5
+69,3,21,Rachel & Joey,Rachel & Joey,1
+69,3,21,Monica,Monica & Pete,5
+70,3,22,Ross & Rachel,Ross & Rachel,3
+70,3,22,Rachel & Joey,Rachel & Joey,4
+70,3,22,Monica & Chandler,Monica & Chandler,3
+70,3,22,Monica,Monica & Pete,1
+71,3,23,Rachel & Joey,Rachel & Joey,1
+71,3,23,Monica & Chandler,Monica & Chandler,1
+71,3,23,Monica,Monica & Pete,3
+72,3,24,Ross & Rachel,Ross & Rachel,2
+72,3,24,Ross,Ross & Bonnie,3
+72,3,24,Rachel & Joey,Rachel & Joey,1
+72,3,24,Monica & Chandler,Monica & Chandler,1
+72,3,24,Monica,Monica & Pete,9
+73,3,25,Ross & Rachel,Ross & Rachel,6
+73,3,25,Ross,Ross & Bonnie,1
+73,3,25,Rachel & Joey,Rachel & Joey,2
+73,3,25,Monica & Chandler,Monica & Chandler,6
+74,4,1,Ross & Rachel,Ross & Rachel,7
+74,4,1,Ross,Ross & Bonnie,1
+74,4,1,Rachel & Joey,Rachel & Joey,1
+74,4,1,Monica & Chandler,Monica & Chandler,4
+75,4,2,Ross & Rachel,Ross & Rachel,1
+75,4,2,Rachel & Joey,Rachel & Joey,2
+75,4,2,Monica & Chandler,Monica & Chandler,2
+76,4,3,Ross & Rachel,Ross & Rachel,1
+77,4,4,Ross & Rachel,Ross & Rachel,1
+77,4,4,Rachel & Joey,Rachel & Joey,3
+77,4,4,Monica & Chandler,Monica & Chandler,2
+78,4,5,Ross & Rachel,Ross & Rachel,3
+78,4,5,Monica & Chandler,Monica & Chandler,3
+78,4,5,Joey,Joey & Kathy,3
+78,4,5,Chandler,Chandler & Kathy,4
+79,4,6,Ross & Rachel,Ross & Rachel,3
+79,4,6,Monica & Chandler,Monica & Chandler,3
+79,4,6,Joey,Joey & Kathy,1
+80,4,7,Ross & Rachel,Ross & Rachel,4
+80,4,7,Rachel & Joey,Rachel & Joey,1
+80,4,7,Monica & Chandler,Monica & Chandler,2
+80,4,7,Joey,Joey & Kathy,2
+80,4,7,Chandler,Chandler & Kathy,4
+81,4,8,Ross & Rachel,Ross & Rachel,1
+81,4,8,Rachel & Joey,Rachel & Joey,2
+81,4,8,Monica & Chandler,Monica & Chandler,2
+81,4,8,Monica,Monica & Richard,1
+81,4,8,Joey,Joey & Kathy,1
+81,4,8,Chandler,Chandler & Kathy,1
+83,4,10,Ross & Rachel,Ross & Rachel,2
+83,4,10,Rachel & Joey,Rachel & Joey,4
+83,4,10,Monica & Chandler,Monica & Chandler,3
+84,4,11,Ross & Rachel,Ross & Rachel,1
+84,4,11,Rachel & Joey,Rachel & Joey,1
+84,4,11,Monica & Chandler,Monica & Chandler,2
+84,4,11,Joey,Joey & Kathy,1
+84,4,11,Chandler,Chandler & Kathy,1
+85,4,12,Ross & Rachel,Ross & Rachel,2
+85,4,12,Rachel & Joey,Rachel & Joey,3
+85,4,12,Monica & Chandler,Monica & Chandler,4
+86,4,13,Ross & Rachel,Ross & Rachel,4
+86,4,13,Rachel & Joey,Rachel & Joey,5
+86,4,13,Rachel,Rachel & Joshua,7
+86,4,13,Monica & Chandler,Monica & Chandler,5
+86,4,13,Chandler,Chandler & Kathy,5
+87,4,14,Ross & Rachel,Ross & Rachel,1
+87,4,14,Rachel & Joey,Rachel & Joey,7
+87,4,14,Rachel,Rachel & Joshua,3
+87,4,14,Monica & Chandler,Monica & Chandler,6
+87,4,14,Joey,Joey & Kathy,1
+87,4,14,Chandler,Chandler & Kathy,1
+88,4,15,Ross & Rachel,Ross & Rachel,2
+88,4,15,Ross,Ross & Emily,2
+88,4,15,Rachel & Joey,Rachel & Joey,7
+88,4,15,Monica & Chandler,Monica & Chandler,6
+88,4,15,Chandler,Chandler & Janice,2
+89,4,16,Ross & Rachel,Ross & Rachel,3
+89,4,16,Ross,Ross & Emily,2
+89,4,16,Rachel & Joey,Rachel & Joey,6
+89,4,16,Rachel,Rachel & Joshua,4
+89,4,16,Monica & Chandler,Monica & Chandler,5
+90,4,17,Ross & Rachel,Ross & Rachel,2
+90,4,17,Ross,Ross & Emily,4
+90,4,17,Rachel & Joey,Rachel & Joey,9
+90,4,17,Rachel,Rachel & Paul,1
+90,4,17,Monica & Chandler,Monica & Chandler,9
+91,4,18,Ross & Rachel,Ross & Rachel,2
+91,4,18,Ross,Ross & Carol,2
+91,4,18,Ross,Ross & Emily,2
+91,4,18,Rachel & Joey,Rachel & Joey,7
+91,4,18,Rachel,Rachel & Joshua,5
+91,4,18,Monica & Chandler,Monica & Chandler,6
+92,4,19,Ross & Rachel,Ross & Rachel,1
+92,4,19,Ross,Ross & Emily,4
+92,4,19,Rachel & Joey,Rachel & Joey,4
+92,4,19,Monica & Chandler,Monica & Chandler,3
+93,4,20,Ross,Ross & Emily,1
+93,4,20,Rachel,Rachel & Joshua,1
+94,4,21,Ross & Rachel,Ross & Rachel,31
+94,4,21,Ross,Ross & Carol,2
+94,4,21,Ross,Ross & Emily,2
+94,4,21,Ross,Ross & Julie,4
+94,4,21,Rachel & Joey,Rachel & Joey,4
+94,4,21,Rachel,Rachel & Paul,1
+94,4,21,Monica & Chandler,Monica & Chandler,1
+95,4,22,Monica & Chandler,Monica & Chandler,1
+96,4,23,Ross & Rachel,Ross & Rachel,1
+96,4,23,Ross,Ross & Emily,4
+96,4,23,Rachel & Joey,Rachel & Joey,1
+96,4,23,Monica & Chandler,Monica & Chandler,1
+97,4,24,Ross & Rachel,Ross & Rachel,9
+97,4,24,Ross,Ross & Emily,22
+97,4,24,Rachel & Joey,Rachel & Joey,5
+97,4,24,Monica & Chandler,Monica & Chandler,17
+98,5,1,Ross & Rachel,Ross & Rachel,5
+98,5,1,Ross,Ross & Emily,15
+98,5,1,Rachel & Joey,Rachel & Joey,2
+98,5,1,Monica & Chandler,Monica & Chandler,11
+99,5,2,Ross & Rachel,Ross & Rachel,1
+99,5,2,Rachel & Joey,Rachel & Joey,6
+99,5,2,Monica & Chandler,Monica & Chandler,10
+100,5,3,Ross & Rachel,Ross & Rachel,4
+100,5,3,Rachel & Joey,Rachel & Joey,1
+100,5,3,Monica & Chandler,Monica & Chandler,6
+101,5,4,Ross & Rachel,Ross & Rachel,2
+101,5,4,Ross,Ross & Emily,3
+101,5,4,Monica & Chandler,Monica & Chandler,6
+102,5,5,Ross & Rachel,Ross & Rachel,6
+102,5,5,Ross,Ross & Emily,1
+102,5,5,Rachel & Joey,Rachel & Joey,2
+102,5,5,Monica & Chandler,Monica & Chandler,8
+103,5,6,Ross & Rachel,Ross & Rachel,2
+103,5,6,Ross,Ross & Emily,5
+103,5,6,Rachel,Rachel & Paul,1
+103,5,6,Monica & Chandler,Monica & Chandler,4
+104,5,7,Ross,Ross & Emily,1
+105,5,8,Ross & Rachel,Ross & Rachel,2
+105,5,8,Ross,Ross & Carol,1
+105,5,8,Rachel & Joey,Rachel & Joey,1
+105,5,8,Monica & Chandler,Monica & Chandler,5
+106,5,9,Ross & Rachel,Ross & Rachel,2
+106,5,9,Rachel & Joey,Rachel & Joey,3
+106,5,9,Monica & Chandler,Monica & Chandler,8
+107,5,10,Ross & Rachel,Ross & Rachel,2
+107,5,10,Rachel & Joey,Rachel & Joey,3
+107,5,10,Monica & Chandler,Monica & Chandler,4
+108,5,11,Ross & Rachel,Ross & Rachel,4
+108,5,11,Ross,Ross & Elizabeth,3
+108,5,11,Rachel & Joey,Rachel & Joey,2
+108,5,11,Monica & Chandler,Monica & Chandler,2
+109,5,12,Ross & Rachel,Ross & Rachel,1
+109,5,12,Rachel & Joey,Rachel & Joey,4
+109,5,12,Monica & Chandler,Monica & Chandler,13
+110,5,13,Rachel & Joey,Rachel & Joey,2
+110,5,13,Monica & Chandler,Monica & Chandler,2
+111,5,14,Ross & Rachel,Ross & Rachel,2
+111,5,14,Rachel & Joey,Rachel & Joey,2
+111,5,14,Monica & Chandler,Monica & Chandler,15
+112,5,15,Ross & Rachel,Ross & Rachel,2
+112,5,15,Rachel & Joey,Rachel & Joey,4
+112,5,15,Monica & Chandler,Monica & Chandler,5
+112,5,15,Monica,Monica & Richard,1
+113,5,16,Ross & Rachel,Ross & Rachel,5
+113,5,16,Rachel & Joey,Rachel & Joey,4
+113,5,16,Monica & Chandler,Monica & Chandler,7
+114,5,17,Ross & Rachel,Ross & Rachel,2
+114,5,17,Rachel & Joey,Rachel & Joey,5
+114,5,17,Monica & Chandler,Monica & Chandler,5
+114,5,17,Phoebe,Phoebe & Gary,7
+115,5,18,Ross & Rachel,Ross & Rachel,2
+115,5,18,Ross,Ross & Carol,1
+115,5,18,Monica & Chandler,Monica & Chandler,3
+116,5,19,Ross & Rachel,Ross & Rachel,4
+116,5,19,Rachel & Joey,Rachel & Joey,3
+116,5,19,Monica & Chandler,Monica & Chandler,4
+117,5,20,Ross & Rachel,Ross & Rachel,4
+117,5,20,Ross,Ross & Emily,4
+117,5,20,Rachel & Joey,Rachel & Joey,1
+117,5,20,Monica & Chandler,Monica & Chandler,1
+118,5,21,Ross & Rachel,Ross & Rachel,3
+118,5,21,Rachel & Joey,Rachel & Joey,3
+118,5,21,Monica & Chandler,Monica & Chandler,5
+118,5,21,Phoebe,Phoebe & Gary,4
+119,5,22,Ross & Rachel,Ross & Rachel,5
+119,5,22,Rachel & Joey,Rachel & Joey,3
+119,5,22,Monica & Chandler,Monica & Chandler,4
+120,5,23,Ross & Rachel,Ross & Rachel,7
+120,5,23,Monica & Chandler,Monica & Chandler,4
+120,5,23,Monica,Monica & Richard,1
+121,5,24,Ross & Rachel,Ross & Rachel,6
+121,5,24,Monica & Chandler,Monica & Chandler,4
+122,6,1,Ross & Rachel,Ross & Rachel,8
+122,6,1,Monica & Chandler,Monica & Chandler,7
+123,6,2,Ross & Rachel,Ross & Rachel,4
+123,6,2,Rachel & Joey,Rachel & Joey,1
+123,6,2,Monica & Chandler,Monica & Chandler,5
+124,6,3,Ross & Rachel,Ross & Rachel,5
+124,6,3,Rachel & Joey,Rachel & Joey,3
+124,6,3,Monica & Chandler,Monica & Chandler,9
+125,6,4,Ross & Rachel,Ross & Rachel,7
+125,6,4,Rachel & Joey,Rachel & Joey,1
+125,6,4,Monica & Chandler,Monica & Chandler,3
+126,6,5,Ross & Rachel,Ross & Rachel,4
+126,6,5,Monica & Chandler,Monica & Chandler,3
+127,6,6,Ross & Rachel,Ross & Rachel,1
+127,6,6,Rachel & Joey,Rachel & Joey,2
+127,6,6,Monica & Chandler,Monica & Chandler,2
+128,6,7,Ross & Rachel,Ross & Rachel,1
+128,6,7,Monica & Chandler,Monica & Chandler,7
+128,6,7,Joey,Joey & Janine,2
+129,6,8,Monica & Chandler,Monica & Chandler,3
+129,6,8,Joey,Joey & Janine,5
+130,6,9,Ross & Rachel,Ross & Rachel,13
+130,6,9,Rachel & Joey,Rachel & Joey,8
+130,6,9,Monica & Chandler,Monica & Chandler,16
+130,6,9,Joey,Joey & Janine,2
+131,6,10,Monica & Chandler,Monica & Chandler,6
+131,6,10,Joey,Joey & Janine,4
+132,6,11,Ross & Rachel,Ross & Rachel,4
+132,6,11,Rachel & Joey,Rachel & Joey,1
+132,6,11,Monica & Chandler,Monica & Chandler,8
+132,6,11,Joey,Joey & Janine,8
+133,6,12,Ross & Rachel,Ross & Rachel,3
+133,6,12,Monica & Chandler,Monica & Chandler,8
+134,6,13,Ross & Rachel,Ross & Rachel,4
+134,6,13,Rachel & Joey,Rachel & Joey,1
+134,6,13,Monica & Chandler,Monica & Chandler,5
+135,6,14,Ross & Rachel,Ross & Rachel,4
+135,6,14,Rachel & Joey,Rachel & Joey,1
+135,6,14,Rachel,Rachel & Tag,1
+135,6,14,Monica & Chandler,Monica & Chandler,7
+136,6,15,Ross & Rachel,Ross & Rachel,1
+136,6,15,Ross,Ross & Carol,1
+136,6,15,Rachel & Joey,Rachel & Joey,2
+136,6,15,Rachel,Rachel & Barry,1
+136,6,15,Monica & Chandler,Monica & Chandler,6
+137,6,16,Ross & Rachel,Ross & Rachel,1
+137,6,16,Ross,Ross & Carol,3
+137,6,16,Rachel & Joey,Rachel & Joey,4
+137,6,16,Rachel,Rachel & Barry,1
+137,6,16,Monica & Chandler,Monica & Chandler,7
+138,6,17,Ross & Rachel,Ross & Rachel,7
+138,6,17,Monica & Chandler,Monica & Chandler,6
+138,6,17,Chandler,Chandler & Janice,1
+139,6,18,Ross & Rachel,Ross & Rachel,2
+139,6,18,Ross,Ross & Elizabeth,4
+139,6,18,Rachel & Joey,Rachel & Joey,4
+139,6,18,Monica & Chandler,Monica & Chandler,6
+140,6,19,Ross & Rachel,Ross & Rachel,2
+140,6,19,Ross,Ross & Elizabeth,6
+140,6,19,Rachel & Joey,Rachel & Joey,4
+140,6,19,Monica & Chandler,Monica & Chandler,5
+141,6,20,Ross & Rachel,Ross & Rachel,1
+141,6,20,Rachel & Joey,Rachel & Joey,10
+141,6,20,Rachel,Rachel & Paul,1
+141,6,20,Monica & Chandler,Monica & Chandler,1
+142,6,21,Ross & Rachel,Ross & Rachel,4
+142,6,21,Ross,Ross & Elizabeth,1
+142,6,21,Rachel & Joey,Rachel & Joey,2
+142,6,21,Rachel,Rachel & Paul,2
+142,6,21,Monica & Chandler,Monica & Chandler,7
+143,6,22,Ross,Ross & Elizabeth,2
+143,6,22,Rachel & Joey,Rachel & Joey,1
+143,6,22,Rachel,Rachel & Paul,2
+143,6,22,Monica & Chandler,Monica & Chandler,5
+144,6,23,Ross & Rachel,Ross & Rachel,3
+144,6,23,Rachel & Joey,Rachel & Joey,6
+144,6,23,Rachel,Rachel & Paul,6
+144,6,23,Monica & Chandler,Monica & Chandler,4
+145,6,24,Ross & Rachel,Ross & Rachel,1
+145,6,24,Ross,Ross & Elizabeth,2
+145,6,24,Rachel & Joey,Rachel & Joey,6
+145,6,24,Monica & Chandler,Monica & Chandler,13
+145,6,24,Monica,Monica & Richard,1
+146,6,25,Rachel & Joey,Rachel & Joey,1
+146,6,25,Monica & Chandler,Monica & Chandler,7
+146,6,25,Monica,Monica & Richard,2
+147,7,1,Ross & Rachel,Ross & Rachel,7
+147,7,1,Rachel & Joey,Rachel & Joey,3
+147,7,1,Monica & Chandler,Monica & Chandler,9
+148,7,2,Ross & Rachel,Ross & Rachel,1
+148,7,2,Rachel & Joey,Rachel & Joey,4
+148,7,2,Monica & Chandler,Monica & Chandler,8
+149,7,3,Ross & Rachel,Ross & Rachel,2
+149,7,3,Rachel & Joey,Rachel & Joey,4
+149,7,3,Rachel,Rachel & Tag,1
+149,7,3,Monica & Chandler,Monica & Chandler,8
+150,7,4,Rachel & Joey,Rachel & Joey,3
+150,7,4,Rachel,Rachel & Tag,3
+150,7,4,Monica & Chandler,Monica & Chandler,5
+151,7,5,Ross & Rachel,Ross & Rachel,1
+151,7,5,Rachel & Joey,Rachel & Joey,2
+151,7,5,Rachel,Rachel & Tag,3
+151,7,5,Monica & Chandler,Monica & Chandler,7
+152,7,6,Ross & Rachel,Ross & Rachel,4
+152,7,6,Rachel & Joey,Rachel & Joey,5
+152,7,6,Monica & Chandler,Monica & Chandler,9
+153,7,7,Ross & Rachel,Ross & Rachel,1
+153,7,7,Rachel & Joey,Rachel & Joey,6
+153,7,7,Monica & Chandler,Monica & Chandler,4
+153,7,7,Chandler,Chandler & Janice,2
+154,7,8,Ross & Rachel,Ross & Rachel,1
+154,7,8,Rachel & Joey,Rachel & Joey,5
+154,7,8,Rachel,Rachel & Tag,2
+154,7,8,Monica & Chandler,Monica & Chandler,8
+155,7,9,Rachel & Joey,Rachel & Joey,1
+155,7,9,Rachel,Rachel & Tag,3
+155,7,9,Monica & Chandler,Monica & Chandler,7
+156,7,10,Ross & Rachel,Ross & Rachel,1
+156,7,10,Rachel & Joey,Rachel & Joey,6
+156,7,10,Monica & Chandler,Monica & Chandler,8
+157,7,11,Ross & Rachel,Ross & Rachel,1
+157,7,11,Rachel & Joey,Rachel & Joey,6
+157,7,11,Monica & Chandler,Monica & Chandler,4
+157,7,11,Phoebe,Phoebe & David,2
+158,7,12,Rachel & Joey,Rachel & Joey,1
+158,7,12,Rachel,Rachel & Tag,4
+158,7,12,Monica & Chandler,Monica & Chandler,6
+159,7,13,Rachel & Joey,Rachel & Joey,11
+159,7,13,Monica & Chandler,Monica & Chandler,2
+160,7,14,Ross & Rachel,Ross & Rachel,2
+160,7,14,Rachel & Joey,Rachel & Joey,8
+160,7,14,Rachel,Rachel & Tag,2
+160,7,14,Monica & Chandler,Monica & Chandler,8
+161,7,15,Ross & Rachel,Ross & Rachel,4
+161,7,15,Rachel & Joey,Rachel & Joey,2
+161,7,15,Monica & Chandler,Monica & Chandler,7
+162,7,16,Ross & Rachel,Ross & Rachel,2
+162,7,16,Rachel & Joey,Rachel & Joey,4
+162,7,16,Monica & Chandler,Monica & Chandler,8
+163,7,17,Monica & Chandler,Monica & Chandler,5
+164,7,18,Ross & Rachel,Ross & Rachel,2
+164,7,18,Rachel & Joey,Rachel & Joey,7
+164,7,18,Monica & Chandler,Monica & Chandler,3
+165,7,19,Rachel & Joey,Rachel & Joey,2
+165,7,19,Monica & Chandler,Monica & Chandler,5
+166,7,20,Ross & Rachel,Ross & Rachel,2
+166,7,20,Rachel & Joey,Rachel & Joey,2
+166,7,20,Monica & Chandler,Monica & Chandler,7
+167,7,21,Ross & Rachel,Ross & Rachel,3
+167,7,21,Rachel & Joey,Rachel & Joey,5
+167,7,21,Monica & Chandler,Monica & Chandler,26
+168,7,22,Ross & Rachel,Ross & Rachel,3
+168,7,22,Rachel & Joey,Rachel & Joey,2
+168,7,22,Monica & Chandler,Monica & Chandler,6
+169,7,23,Ross & Rachel,Ross & Rachel,2
+169,7,23,Rachel & Joey,Rachel & Joey,1
+169,7,23,Monica & Chandler,Monica & Chandler,9
+170,7,24,Ross & Rachel,Ross & Rachel,4
+170,7,24,Rachel & Joey,Rachel & Joey,1
+170,7,24,Monica & Chandler,Monica & Chandler,8
+171,8,1,Ross,Ross & Mona,2
+171,8,1,Monica & Chandler,Monica & Chandler,5
+172,8,2,Monica & Chandler,Monica & Chandler,4
+173,8,3,Ross & Rachel,Ross & Rachel,5
+173,8,3,Rachel & Joey,Rachel & Joey,3
+173,8,3,Monica & Chandler,Monica & Chandler,10
+174,8,4,Ross & Rachel,Ross & Rachel,7
+174,8,4,Rachel & Joey,Rachel & Joey,6
+174,8,4,Monica & Chandler,Monica & Chandler,9
+175,8,5,Ross & Rachel,Ross & Rachel,5
+175,8,5,Ross,Ross & Mona,1
+175,8,5,Rachel & Joey,Rachel & Joey,4
+175,8,5,Monica & Chandler,Monica & Chandler,1
+176,8,6,Ross,Ross & Mona,3
+176,8,6,Monica & Chandler,Monica & Chandler,5
+177,8,7,Ross & Rachel,Ross & Rachel,1
+177,8,7,Rachel & Joey,Rachel & Joey,3
+177,8,7,Monica & Chandler,Monica & Chandler,5
+178,8,8,Ross & Rachel,Ross & Rachel,3
+178,8,8,Ross,Ross & Mona,3
+178,8,8,Rachel & Joey,Rachel & Joey,2
+178,8,8,Monica & Chandler,Monica & Chandler,5
+179,8,9,Ross & Rachel,Ross & Rachel,3
+179,8,9,Rachel & Joey,Rachel & Joey,2
+179,8,9,Monica & Chandler,Monica & Chandler,5
+180,8,10,Ross & Rachel,Ross & Rachel,2
+180,8,10,Rachel & Joey,Rachel & Joey,5
+180,8,10,Monica & Chandler,Monica & Chandler,4
+181,8,11,Ross & Rachel,Ross & Rachel,1
+181,8,11,Ross,Ross & Mona,6
+181,8,11,Rachel & Joey,Rachel & Joey,3
+181,8,11,Monica & Chandler,Monica & Chandler,2
+182,8,12,Ross & Rachel,Ross & Rachel,2
+182,8,12,Rachel & Joey,Rachel & Joey,5
+182,8,12,Monica & Chandler,Monica & Chandler,6
+183,8,13,Ross & Rachel,Ross & Rachel,4
+183,8,13,Rachel & Joey,Rachel & Joey,3
+183,8,13,Monica & Chandler,Monica & Chandler,7
+184,8,14,Ross & Rachel,Ross & Rachel,4
+184,8,14,Rachel & Joey,Rachel & Joey,5
+184,8,14,Monica & Chandler,Monica & Chandler,6
+184,8,14,Monica,Monica & Richard,1
+185,8,15,Ross & Rachel,Ross & Rachel,2
+185,8,15,Ross,Ross & Mona,2
+185,8,15,Rachel & Joey,Rachel & Joey,2
+185,8,15,Monica & Chandler,Monica & Chandler,7
+186,8,16,Ross & Rachel,Ross & Rachel,3
+186,8,16,Rachel & Joey,Rachel & Joey,6
+186,8,16,Monica & Chandler,Monica & Chandler,4
+187,8,17,Ross & Rachel,Ross & Rachel,2
+187,8,17,Ross,Ross & Mona,2
+187,8,17,Rachel & Joey,Rachel & Joey,3
+187,8,17,Monica & Chandler,Monica & Chandler,6
+188,8,18,Ross & Rachel,Ross & Rachel,8
+188,8,18,Rachel & Joey,Rachel & Joey,2
+188,8,18,Monica & Chandler,Monica & Chandler,3
+189,8,19,Ross & Rachel,Ross & Rachel,5
+189,8,19,Rachel & Joey,Rachel & Joey,12
+189,8,19,Monica & Chandler,Monica & Chandler,3
+190,8,20,Ross & Rachel,Ross & Rachel,1
+190,8,20,Monica & Chandler,Monica & Chandler,5
+191,8,21,Ross & Rachel,Ross & Rachel,6
+191,8,21,Monica & Chandler,Monica & Chandler,3
+192,8,22,Ross & Rachel,Ross & Rachel,5
+192,8,22,Rachel & Joey,Rachel & Joey,1
+192,8,22,Monica & Chandler,Monica & Chandler,4
+193,8,23,Ross & Rachel,Ross & Rachel,8
+193,8,23,Ross,Ross & Julie,1
+193,8,23,Monica & Chandler,Monica & Chandler,3
+194,8,24,Ross & Rachel,Ross & Rachel,5
+194,8,24,Rachel & Joey,Rachel & Joey,1
+194,8,24,Monica & Chandler,Monica & Chandler,3
+194,8,24,Chandler,Chandler & Janice,1
+195,9,1,Ross & Rachel,Ross & Rachel,6
+195,9,1,Rachel & Joey,Rachel & Joey,2
+195,9,1,Monica & Chandler,Monica & Chandler,1
+196,9,2,Ross & Rachel,Ross & Rachel,9
+196,9,2,Rachel & Joey,Rachel & Joey,1
+196,9,2,Monica & Chandler,Monica & Chandler,1
+197,9,3,Ross & Rachel,Ross & Rachel,4
+197,9,3,Monica & Chandler,Monica & Chandler,8
+197,9,3,Phoebe,Phoebe & Mike,2
+198,9,4,Ross & Rachel,Ross & Rachel,1
+198,9,4,Monica & Chandler,Monica & Chandler,2
+198,9,4,Phoebe,Phoebe & Mike,3
+199,9,5,Ross & Rachel,Ross & Rachel,3
+199,9,5,Monica & Chandler,Monica & Chandler,2
+200,9,6,Ross & Rachel,Ross & Rachel,6
+200,9,6,Rachel & Joey,Rachel & Joey,1
+200,9,6,Monica & Chandler,Monica & Chandler,3
+200,9,6,Phoebe,Phoebe & David,3
+200,9,6,Phoebe,Phoebe & Mike,3
+201,9,7,Ross & Rachel,Ross & Rachel,4
+201,9,7,Monica & Chandler,Monica & Chandler,4
+201,9,7,Monica,Monica & Richard,1
+201,9,7,Phoebe,Phoebe & Mike,4
+202,9,8,Ross & Rachel,Ross & Rachel,5
+202,9,8,Rachel & Joey,Rachel & Joey,1
+202,9,8,Monica & Chandler,Monica & Chandler,8
+203,9,9,Ross & Rachel,Ross & Rachel,6
+203,9,9,Rachel & Joey,Rachel & Joey,2
+203,9,9,Monica & Chandler,Monica & Chandler,4
+203,9,9,Phoebe,Phoebe & Mike,5
+204,9,10,Ross & Rachel,Ross & Rachel,1
+204,9,10,Rachel & Joey,Rachel & Joey,2
+204,9,10,Monica & Chandler,Monica & Chandler,13
+205,9,11,Monica & Chandler,Monica & Chandler,6
+206,9,12,Phoebe,Phoebe & Mike,3
+207,9,13,Monica & Chandler,Monica & Chandler,3
+208,9,14,Ross & Rachel,Ross & Rachel,5
+208,9,14,Rachel & Joey,Rachel & Joey,2
+208,9,14,Monica & Chandler,Monica & Chandler,5
+209,9,15,Monica & Chandler,Monica & Chandler,5
+210,9,16,Ross,Ross & Carol,1
+210,9,16,Rachel & Joey,Rachel & Joey,3
+210,9,16,Monica & Chandler,Monica & Chandler,6
+210,9,16,Phoebe,Phoebe & Mike,4
+211,9,17,Rachel & Joey,Rachel & Joey,4
+211,9,17,Monica & Chandler,Monica & Chandler,3
+211,9,17,Phoebe,Phoebe & Mike,1
+212,9,18,Ross & Rachel,Ross & Rachel,2
+212,9,18,Rachel & Joey,Rachel & Joey,2
+212,9,18,Monica & Chandler,Monica & Chandler,3
+213,9,19,Rachel & Joey,Rachel & Joey,2
+213,9,19,Monica & Chandler,Monica & Chandler,1
+214,9,20,Ross,Ross & Charlie,3
+214,9,20,Monica & Chandler,Monica & Chandler,3
+215,9,21,Ross,Ross & Charlie,2
+215,9,21,Rachel & Joey,Rachel & Joey,1
+215,9,21,Monica & Chandler,Monica & Chandler,3
+215,9,21,Joey,Joey & Charlie,3
+216,9,22,Rachel & Joey,Rachel & Joey,2
+216,9,22,Monica & Chandler,Monica & Chandler,2
+216,9,22,Joey,Joey & Charlie,3
+216,9,22,Phoebe,Phoebe & Mike,1
+217,9,23,Ross & Rachel,Ross & Rachel,1
+217,9,23,Ross,Ross & Charlie,2
+217,9,23,Rachel & Joey,Rachel & Joey,2
+217,9,23,Monica & Chandler,Monica & Chandler,4
+217,9,23,Monica,Monica & Richard,1
+217,9,23,Phoebe,Phoebe & David,10
+217,9,23,Phoebe,Phoebe & Mike,8
+218,9,24,Ross & Rachel,Ross & Rachel,1
+218,9,24,Ross,Ross & Charlie,1
+218,9,24,Rachel & Joey,Rachel & Joey,1
+218,9,24,Monica & Chandler,Monica & Chandler,4
+218,9,24,Joey,Joey & Charlie,1
+218,9,24,Phoebe,Phoebe & Mike,2
+219,10,1,Ross & Rachel,Ross & Rachel,2
+219,10,1,Ross,Ross & Charlie,3
+219,10,1,Rachel & Joey,Rachel & Joey,5
+219,10,1,Monica & Chandler,Monica & Chandler,5
+219,10,1,Joey,Joey & Charlie,1
+219,10,1,Phoebe,Phoebe & Mike,4
+220,10,2,Ross & Rachel,Ross & Rachel,6
+220,10,2,Ross,Ross & Charlie,2
+220,10,2,Rachel & Joey,Rachel & Joey,7
+220,10,2,Monica & Chandler,Monica & Chandler,4
+220,10,2,Joey,Joey & Charlie,3
+221,10,3,Rachel & Joey,Rachel & Joey,6
+221,10,3,Monica & Chandler,Monica & Chandler,4
+222,10,4,Ross & Rachel,Ross & Rachel,4
+222,10,4,Rachel & Joey,Rachel & Joey,2
+222,10,4,Monica & Chandler,Monica & Chandler,1
+223,10,5,Ross & Rachel,Ross & Rachel,1
+223,10,5,Ross,Ross & Charlie,1
+223,10,5,Rachel & Joey,Rachel & Joey,4
+223,10,5,Monica & Chandler,Monica & Chandler,3
+223,10,5,Phoebe,Phoebe & Mike,3
+224,10,6,Ross,Ross & Charlie,4
+224,10,6,Rachel & Joey,Rachel & Joey,4
+224,10,6,Monica & Chandler,Monica & Chandler,1
+224,10,6,Phoebe,Phoebe & Mike,1
+225,10,7,Ross & Rachel,Ross & Rachel,2
+225,10,7,Ross,Ross & Charlie,1
+225,10,7,Rachel & Joey,Rachel & Joey,1
+225,10,7,Monica & Chandler,Monica & Chandler,6
+225,10,7,Phoebe,Phoebe & Mike,3
+226,10,8,Rachel & Joey,Rachel & Joey,1
+226,10,8,Monica & Chandler,Monica & Chandler,5
+227,10,9,Rachel & Joey,Rachel & Joey,1
+227,10,9,Monica & Chandler,Monica & Chandler,9
+228,10,10,Monica & Chandler,Monica & Chandler,6
+228,10,10,Phoebe,Phoebe & Mike,1
+229,10,11,Ross & Rachel,Ross & Rachel,1
+229,10,11,Monica & Chandler,Monica & Chandler,1
+230,10,12,Rachel & Joey,Rachel & Joey,1
+230,10,12,Monica & Chandler,Monica & Chandler,1
+230,10,12,Phoebe,Phoebe & Mike,2
+231,10,13,Ross & Rachel,Ross & Rachel,4
+231,10,13,Rachel & Joey,Rachel & Joey,2
+231,10,13,Monica & Chandler,Monica & Chandler,2
+232,10,14,Rachel & Joey,Rachel & Joey,1
+232,10,14,Monica & Chandler,Monica & Chandler,9
+232,10,14,Phoebe,Phoebe & Mike,4
+233,10,15,Ross & Rachel,Ross & Rachel,2
+233,10,15,Rachel & Joey,Rachel & Joey,1
+233,10,15,Monica & Chandler,Monica & Chandler,5
+233,10,15,Chandler,Chandler & Janice,2
+234,10,16,Ross & Rachel,Ross & Rachel,2
+234,10,16,Rachel & Joey,Rachel & Joey,2
+234,10,16,Monica & Chandler,Monica & Chandler,3
+234,10,16,Monica,Monica & Richard,1
+235,10,17,Ross & Rachel,Ross & Rachel,2
+235,10,17,Rachel & Joey,Rachel & Joey,1
+235,10,17,Monica & Chandler,Monica & Chandler,9
+236,10,18,Ross & Rachel,Ross & Rachel,1
+236,10,18,Rachel & Joey,Rachel & Joey,1
+236,10,18,Monica & Chandler,Monica & Chandler,3

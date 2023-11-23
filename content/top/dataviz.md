@@ -45,9 +45,9 @@ Selected data visualizations, maps and other designs I have produced for clients
 
 A one-page data visualization for the "Graphic Science" section of the popular science magazine ["Scientific American"](https://scientificamerican.com/) featured in the Nov 2021 issue in [print](https://twitter.com/geokaramanis/status/1461004013818810371) and [digital](https://www.scientificamerican.com/article/climate-change-drives-escalating-drought). Created together with Georgios Karamanis with editorial support by Jen Christiansen and Clara Moskowitz.
 
-<img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought_printed.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_11_SciAm_EscalatingDrought_printed.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.scientificamerican.com/article/climate-change-drives-escalating-drought', 'blank');"/>
 
 <hr>
 
@@ -57,9 +57,9 @@ A one-page data visualization for the "Graphic Science" section of the popular s
 
 An unfoldable (see <a href="https://twitter.com/holnburger/status/1509799933355905048" target="_blank">video</a>) four-page graphic with the main element being a stream graph visualizing the huge amount of Q Anon messages sent on Telegram, annotated with important events such as the storming of the capital. The multi-panel graphic is the central part of the report ["Q Vadis? The Spread of Q Anon in the German-Speaking World"](https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/) by the [Center for Monitoring, Analysis and Strategy (CeMAS)](https://cemas.io/) which is available in print and digital in [German](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/) and [English](https://cemas.io/publikationen/q-vadis-zur-verbreitung-von-qanon-im-deutschsprachigen-raum/CeMAS_Q_Vadis_Zur_Verbreitung_von_QAnon_im_deutschsprachigen_Raum.pdf).
 
-<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>  
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>  
 
-<img src="img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2022_CeMAS_Q_vadis_streamgraph.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://cemas.io/en/publications/q-vadis-the-spread-of-qanon-in-the-german-speaking-world/', 'blank');"/>
 
 <hr>
 
@@ -70,11 +70,11 @@ An unfoldable (see <a href="https://twitter.com/holnburger/status/15097999333559
 13 sets of population pyramids for the report "Rediscovering demographic change" by the Bundesinstitut für Bevölkerungsforschung (German Federal Institute for Population Research),
 illustrating the demographic change in Germany over 30 years from various perspectives.
 
-<img src="img/dataviz-portfolio/2021_bib_population_pyramids_compilation.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_bib_population_pyramids_compilation.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
 
-<img src="img/dataviz-portfolio/2021_BiB_population_pyramids_employment_animation.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_BiB_population_pyramids_employment_animation.gif" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>  
 
-<img src="img/dataviz-portfolio/2021_bib_population_pyramids_printed_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_bib_population_pyramids_printed_report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.bib.bund.de/DE/Presse/Konferenzen/2022-07-11-Broschuere-Demografischen-Wandel-neu-entdecken.html', 'blank');"/>
 
 {{< gallery dir="img/gallery-pyramids/" />}} {{< load-photoswipe >}}  
 
@@ -86,11 +86,11 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 89 data visualizations for the report ["Afrozensus 2020"](https://afrozensus.de/reports/2020/) published by [EOTO e.V.](https://www.eoto-archiv.de/) and [Citizen for Europe](https://citizensforeurope.org/). The visualizations show the results from the largest survey ever conducted among black, African and Afrodiasporic people in Germany. 
 
-<img src="img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/Abb_91_AZ_Vertrauen_Parteien_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
-<img src="img/dataviz-portfolio/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/Abb_25_AZ_Diskriminierungserfahrungen_Vielfaltsdimensionen_Arbeitsleben_mit_Lesebsp.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
-<img src="img/dataviz-portfolio/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/Abb_32_und_Abb_33_Diskriminierung_Freizeit_Kultur_Report.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://afrozensus.de/reports/2020/', 'blank');"/>
 
 {{< gallery dir="img/gallery-afrozensus/" />}} {{< load-photoswipe >}}
 
@@ -138,11 +138,11 @@ illustrating the demographic change in Germany over 30 years from various perspe
 
 The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily community challenge happening every April and is hosted by Dominic Royé and myself since 2021. The challenge is inspired by the #30DayMapChallenge.
 
-<img src="img/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
+<img src="https://cedricscherer.com/img/chart-challenge/19_global_change.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/126632133/Global-Agricultural-Land-Use', 'blank');"/>
 
-<img src="img/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/chart-challenge/02_pictogram_en.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/02_pictogram/02_pictogram_en.png', 'blank');"/>
 
-<img src="img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/04_magical/04_magical.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/chart-challenge/04_magical.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayChartChallenge2021/main/04_magical/04_magical.png', 'blank');"/>
 
 {{< gallery dir="img/gallery-chartchallenge2021/" />}} {{< load-photoswipe >}}
 
@@ -158,11 +158,11 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ##### 2021 Edition {#mapchallenge2021}
 
-<img src="img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_01_points_btw21_grid_moon.jpg', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_10_raster_pop_europe_geostat.jpg', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/dataviz-portfolio/2021_05_osm_beekeepers_germany.jpg', 'blank');"/>
 
 {{< gallery dir="img/gallery-mapchallenge2021/" />}} {{< load-photoswipe >}}
 
@@ -174,11 +174,11 @@ The [#30DayChartChallenge](https://twitter.com/30daychartchall) is a daily commu
 
 ##### 2019 Edition {#mapchallenge2019}
 
-<img src="img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2019_15_Names_BerlinRoads.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day15_Names/Names_BerlinRoads_HQ.png', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2019_14_Boundaries_GlobalNeighbors.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/master/contributions/Day14_Boundaries/Boundaries_GlobalNeighbors.png', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/z3tt/30DayMapChallenge2019/tree/master/contributions/Day03_Polygons', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2019_03_Polygons_GlobalMortality.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://github.com/z3tt/30DayMapChallenge2019/tree/master/contributions/Day03_Polygons', 'blank');"/>
 
 {{< gallery dir="img/gallery-mapchallenge2019/" />}} {{< load-photoswipe >}}
 
@@ -216,12 +216,11 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 ## Personal Projects {#personal}
 
-<img src="img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1537169626257317894', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1537169626257317894', 'blank');"/>
 
-<img src="img/dataviz-portfolio/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg', 'blank');"/>
+<img src="https://cedricscherer.com/img/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg', 'blank');"/>
 
-<img src="img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
 
 {{< gallery dir="img/gallery-personal/" />}} {{< load-photoswipe >}}
 
-<hr>
