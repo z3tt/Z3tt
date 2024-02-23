@@ -9,7 +9,9 @@
   }
 </style>
 
-<span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization designer by ❤️</span>
+<span class='emphasize'>I am a computational ecologist by 🎓 and an independent data visualization specialist by ❤️</span>
+
+As an independent data visualization specialist, I assist organizations, research teams, and businesses in effectively communicating insights through engaging graphical storytelling. I combine my analytical research expertise with a passion for design, colors, and typography to craft compelling and meaningful data visualizations. Additionally, I also frequently engage as a speaker and workshop trainer.
 
 <span style='font-size:2.2rem;'>As a <a href='https://www.cedricscherer.com/top/about/#ecology'>graduated ecologist</a>, I have acquired an extensive hypothesis–driven research experience and problem–solving expertise in <b style='font-weight:900;'>data wrangling, statistical analysis, and model development</b>. Since communicating data effectively is of paramount importance, I have subsequently developed strong skills in <b style='font-weight:900;'>data visualization, journalism, and design</b>.</span>
 
@@ -39,10 +41,9 @@ I am constantly strengthening my skills in design and have built a diverse portf
 
 #### Computational Ecology {#ecology}
 
-I am working as a part-time scientific researcher (PostDoc) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
+Before becoming a independent contractor, I was working as a part-time scientific researcher (PostDoc) in the [Department "Ecological Dynamics"](www.ecodynizw.github.io) at the [Leibniz Institute for Zoo and Wildlife Research (IZW)](http://www.izw-berlin.de/welcome.html) in Berlin, Germany. As a computational scientist, I applied analytic and mechanistic modeling approaches to answer questions related to the movement ecology of animals and the dynamics of populations, communities and diseases in space and time. In 2019, I was awarded a Ph.D. degree in Ecology (Dr. rer. nat.) at the [University of Potsdam](https://www.uni-potsdam.de/en/ibb.html) as part of the [BioMove](https://www.biomove.org/) research training group.
 
-<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Read my publications](https://www.cedricscherer.com/top/cv/#publications)  
-<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Learn more about my research](https://www.cedricscherer.com/top/projects/)<br><br>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span>[Read my publications](https://www.cedricscherer.com/top/cv/#publications) 
 
 <img src="/img/about/cedric-collage.png" style="height: 100%; width: 100%; object-fit: contain"/><br>
 
@@ -58,7 +59,6 @@ To visualize data I mainly utilize the package [`{ggplot2}`](https://ggplot2.tid
 
 <b>Dr. rer. nat. Cédric Scherer</b>
 <div style="line-height:0%;">
-    <br>
 </div>
 <b style='color:#808080;'>Independent Data Visualization Specialist</b><br>
 Information-Driven Design • Reproducible Data Analysis and Reporting • Coachings<br>
@@ -66,10 +66,6 @@ Information-Driven Design • Reproducible Data Analysis and Reporting • Coach
 <div style="line-height:75%;">
     <br>
 </div>
-
-<b style='color:#808080;'>Researcher at Leibniz Institute for Zoo and Wildlife Research (IZW)</b><br>
-Movement Ecology • Eco-Epidemiology • Population & Community Dynamics<br>
-<a href="mailto:scherer@izw-berlin.de">scherer@izw-berlin.de</a>
 
 <hr>
 

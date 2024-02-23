@@ -48,7 +48,7 @@
     <li class='description'>Tools: R, Shiny, Figma, DataWrapper, Flourish, RAWgraphs, SQL, html, CSS</li>
   </ul>
 
-  <li class='header'><b>Scientific Researcher (PostDoc)</b> (since 2019)</li>
+  <li class='header'><b>Scientific Researcher (PostDoc)</b> (2019–2023)</li>
   <ul>
     <li class='description'><a href="https://ecodynizw.github.io/">Department of Ecological Dynamics</a>, <a href="http://www.izw-berlin.de/welcome.html">Institute for Zoo and Wildlife Research</a>, Berlin, Germany</li>
     <li class='description'>Topics: Movement ecology, population dynamics, disease ecology, coexistence theory</li>
