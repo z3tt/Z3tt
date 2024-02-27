@@ -12,10 +12,9 @@
   }
 </style>
 
-<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/files/cedric-scherer-data-visualizaiton-portfolio.pdf'>Download Portfolio Slides</a>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/files/cedric-scherer-data-visualization-portfolio.pdf'>Download Portfolio Slides</a>
 
 Collection of  data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Most visualizations are generated with a code-first approach and many of them do not involve any manual post-processing steps.
-
 
 ###### [<b style='color:black;'>Client Projects</b>](#clients)
 
@@ -218,7 +217,7 @@ Contributions to the [BES MoveMap Competition](https://besmovesig.wordpress.com/
 
 <img src="https://cedricscherer.com/img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1537169626257317894', 'blank');"/>
 
-<img src="https://cedricscherer.com/img/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg', 'blank');"/>
+<img src="https://cedricscherer.com/img/dataviz-portfolio/paygap_eu_dumbbell.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg', 'blank');"/>
 
 <img src="https://cedricscherer.com/img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://twitter.com/CedScherer/status/1433138076356853767', 'blank');"/>
 

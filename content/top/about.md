@@ -27,7 +27,7 @@ By applying a <a style='font-weight:820;' href='https://www.cedricscherer.com/to
 I frequently engage as a <a style='font-weight:820;' href='https://www.cedricscherer.com/top/about/#teaching'>workshop trainer</a> and <a style='font-weight:820;' href='https://www.cedricscherer.com/top/about/#presentations'>speaker</a> on topics such as effective and engaging data visualization design, code-driven graphics with {ggplot2}, and reproducible data science workflows in R.<br>
 
 <span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/top/dataviz'>Data Visualization Gallery</a><br>
-<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/files/cedric-scherer-data-visualizaiton-portfolio.pdf'>Portfolio Slides</a><br>
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/files/cedric-scherer-data-visualization-portfolio.pdf'>Portfolio Slides</a><br>
 <span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/top/cv'>Curriculum Vitae</a><br></span>
 
 </div>
