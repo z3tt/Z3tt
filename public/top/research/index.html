@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Cédric Scherer">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://cedricscherer.com/https://cedricscherer.com/img/banner/stream.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/https://cedricscherer.com/img/banner/banner.png" >
+    
+
+    
+
+    
+      <meta name="title" content="Cédric Scherer" />
+      <meta property="og:title" content="Cédric Scherer" />
+      <meta property="twitter:title" content="Cédric Scherer" />
+      <meta property="twitter:text:title" content="Cédric Scherer" />
+    
+
+    
+      <meta name="description" content="Blog by Cédric Scherer">
+      <meta property="og:description" content="Blog by Cédric Scherer" />
+      <meta property="twitter:description" content="Blog by Cédric Scherer" />
+    
+
+    
+
+    <meta name="keyword"  content="Data Visualization, Data Science, Computational Ecology, Infographics, ggplot2">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Cédric Scherer</title>
+
+    <link rel="canonical" href="/top/research/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='https://www.cedricscherer.com/img/logo.png' width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/top/dataviz/">Gallery</a></li>
+                    
+                        <li><a href="/top/about/">About Me</a></li>
+                    
+                        <li><a href="/top/links/">Links</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/banner/stream.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Cédric Scherer </h1>
+                    
+		    <span class="subheading">Data Visualization &amp; Information Design</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+         	<h3 id="overview-of-research-projects">Overview of Research Projects</h3>
+<p>As a computational scientist, I apply analytic and mechanistic modeling approaches to answer questions related to the <strong>movement ecology of animals and the dynamics of populations, communities and diseases in space and time</strong>. By using empirical and simulated data, I investigate how disease dynamics are influenced by <a href="https://doi.org/10.1111/oik.07002">movement behavior</a>, <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076">landscape structure</a> and <a href="https://doi.org/10.1111/1365-2656.13070">seasonality</a>, how <a href="https://doi.org/10.1111/ele.13226">disturbances affect stability measures of ecological communities</a>, and how <a href="https://doi.org/10.1016/j.ecolmodel.2015.07.005">birds respond to global change</a>.</p>
+<h5 id="content">Content</h5>
+<ul>
+<li><a href="#biomove">BioMove</a></li>
+<li><a href="#nlmr">NLMR (Neutral Landscape Models in R)</a></li>
+<li><a href="#stability">Multidimensionality of Stability</a></li>
+<li><a href="#aft">AFT (Animal Functional Type Approach)</a></li>
+</ul>
+<h4 id="biomove">BioMove (PhD Thesis)</h4>
+<p>The <a href="https://www.dfg.de/en/funded_projects/current_projects_programmes/list/index.jsp?id=GRK">DFG</a> funded Research Training Group <a href="https://www.biomove.org/">&lsquo;Integrating <strong>Biodiversity Research</strong> with <strong>Movement Ecology</strong> in dynamic agricultural landscapes (BioMove)&rsquo;</a> aims to:</p>
+<ol>
+<li>
+<p>link innovative individual research projects that overcome the apparent gap between movement ecology and biodiversity research, employing a joint conceptual framework;</p>
+</li>
+<li>
+<p>strategically combine empirical, experimental and modelling approaches based in one common study area (<a href="https://deims.org/270a41c4-33a8-4da6-9258-2ab10916f262">AgroScapeLab-Quillow</a>, Brandenburg, Germany) of sufficient size to address questions of varying spatial scales;</p>
+</li>
+<li>
+<p>pursue bottom-up and top-down approaches (i.e., study the influence of individual movement processes on biodiversity and infer movement mechanisms from biodiversity patterns, respectively) to better understand possible consequences of movement changes on biodiversity;</p>
+</li>
+<li>
+<p>link impacts of land-use on resource availability, landscape structures and disturbance regimes to movement processes of organisms of different taxa to identify common factors that influence biodiversity patterns.</p>
+</li>
+</ol>
+<p>BioMove is a joint project of the <a href="https://www.uni-potsdam.de/">University of Potsdam</a> together with <a href="https://www.fu-berlin.de/">Freie Universität Berlin</a>, <a href="http://www.izw-berlin.de/welcome.html">Leibniz Institute for Zoo and Wildlife Research (IZW)</a> and <a href="http://www.zalf.de/en/Pages/ZALF.aspx">Leibniz Centre for Agricultural Landscape Research (ZALF)</a> led by <a href="https://www.uni-potsdam.de/ibb-vegnat/members/prof-dr-florian-jeltsch.html">Prof. Dr. Florian Jeltsch</a> that started in October 2015. We explained the general framework idea of in a <a href="https://doi.org/10.1111/brv.12600">joint review paper entitled &ldquo;Movement-mediated community assembly and coexistence&rdquo;</a>.</p>
+<p>Movement plays a major role in shaping population densities and contact rates among individuals, two factors that are particularly relevant for disease outbreaks. Although any differences in movement behavior due to individual characteristics of the host and heterogeneity in landscape structure are likely to have considerable consequences for disease dynamics, these mechanisms are neglected in most epidemiological studies. Therefore, developing a general understanding how the interaction of movement behavior and spatial heterogeneity shapes host densities, contact rates and ultimately pathogen spread is a key question in ecological and epidemiological research.</p>
+<p>In my PhD project, I have addressed this gap using both theoretical and empirical modelling approaches. In the theoretical part of my thesis, we have investigated bottom-up effects of individual movement behavior and landscape structure on host density, contact rates, and ultimately disease dynamics. We have extended an established <a href="https://doi.org/10.1111/oik.07002">agent-based model that simulates ecological and epidemiological key processes to incorporate explicit movement of host individuals and landscape complexity</a>. In the empirical part, we have focused on the <a href="https://doi.org/10.1111/1365-2656.13070">spatiotemporal dynamics of Classical Swine Fever in a wild boar population</a> by analyzing epidemiological data that was collected during an outbreak in Northern Germany persisting for eight years.</p>
+<p>In the follow-up project, we use an extended version of the individual-based model to investigate different host-pathogen coexistence patterns under the effect of dynamic resource landscapes and the role of dispersal in the evolution of pathogenic virulence.</p>
+<h4 id="nlmr">NLMR (Neutral Landscape Models in R)</h4>
+<p>Neutral landscape models (NLMs) are algorithms which generate landscape patterns in the absence of biotic and abiotic processes. <a href="https://doi.org/10.2307/3546007">With and King (1997)</a> outlined three uses for NLMs which were further highlighted by <a href="https://link.springer.com/book/10.1007%2F978-1-4939-2794-4">Turner and Gardner (2015)</a>:</p>
+<ol>
+<li>coupling ecological models with NLMs to predict changes in ecological processes,</li>
+<li>analyze the extent of structural deviation between real and neutral landscapes, and</li>
+<li>development and testing of novel landscape metrics.</li>
+</ol>
+<p>NLMs are often used for spatially explicit models to explore effects of changes in landscape structure on processes such as connectivity between suitable patches or disease spread. During the beginning of our PhD projects, Marco Sciaini and I were not happy about the possibilities to modify NLMs with the current software, especially in R that we use for the analyses of our simulations. This was the rise of the &ldquo;Neutral Landscape Models in R&rdquo; (NLMR) project (splitted into the two packages <code>{NLMR}</code> and <code>{landscapetools}</code>) under the main lead of Marco.</p>
+<p><a href="https://ropensci.github.io/NLMR/index.html"><code>{NLMR}</code></a> is an R package with a comprehensive collection of algorithms with which to simulate neutral landscape models (NLMs). In combination with <a href="https://github.com/ropensci/landscapetools"><code>{landscapetools}</code></a>, a utility toolbox to modify simulated NLMs and other raster data, this suite of packages provides a utility toolbox which facilitates an easy workflow with simulated NLMs and other raster data. Both packages are reviewed by the amazing <a href="https://ropensci.org/">rOpenSci</a> community and published in &ldquo;Methods in Ecology and Evolution&rdquo;: <a href="https://doi.org/10.1111/2041-210X.13076"><code>NLMR</code> and <code>landscapetools</code>: An integrated environment for simulating and modifying neutral landscape models in R</a>.</p>
+<h4 id="stability">Multidimensionality of Stability</h4>
+<p>Ecosystems respond in various ways to disturbances and quantifying ecological stability therefore requires inspecting multiple stability properties, such as resistance, recovery, persistence and invariability. Correlations among these properties can reduce the dimensionality of stability, simplifying the study of environmental effects on ecosystems. In an important work, <a href="https://doi.org/10.1111/ele.12086">Donohue et al. (2013)</a> showed that when disturbed by consumer removal, the dimensionality of stability increased in marine shore communities. However, it is unclear if such conclusions can be extrapolated to other kinds of disturbance. Integration of modelling and empirical studies is urgently needed, but impeded, according to our review, by the fact that a specific model type usually addresses a certain level of organization, and, respectively, can incorporate only mechanisms of resilience corresponding to this level. Additionally, processes corresponding to resilience mechanisms such as phenotypic plasticity and genetic variability can be incorporated in only one model class, the full-flex individual-based models. In this project we suggest that the individual-based framework, due to its flexibility, has a huge potential in integrating the processes covering mechanisms of resilience at all organization levels.</p>
+<p>Using five process-based, spatially-explicit models we assessed how the intensity and the type of disturbance affect different stability metrics at the population and community levels <a href="https://doi.org/10.1111/ele.13226">(Radchuk et al. 2019)</a>. Our models are well tested and structurally realistic, and represent five different communities varying in species richness and the number of trophic levels. We tested the effect of three disturbance types (random, species‐specific, local) applied at four intensity levels and found that disturbance type but not intensity affected the dimensionality of stability and only at the population level. The dimensionality of stability also varied greatly among species and communities.</p>
+<h4 id="aft">AFT (Animal Functional Type Approach)</h4>
+<p>The need to transfer knowledge gained from single species to a more generalized approach has led to the development of categorization systems where species’ similarities in life strategies and traits are classified into ecological
+groups like functional groups/types or guilds. While approaches in plant ecology undergo a steady improvement and refinement of methodologies, progression in animal ecology is lagging behind. Motivated by a <a href="https://link.springer.com/article/10.1007/s10531-011-9995-1">review led by Niels Blaum</a>, the aim of the AFT project is to initiate a further development of functional classification systems in animal ecology, comparable to recent developments in plant ecology.</p>
+<p>In my Master&rsquo;s thesis I have used an animal functional type classification to investigate responses of birds to climatic and land use changes in semi-arid African savannas <a href="https://doi.org/10.1016/j.ecolmodel.2015.07.005">using a trait-based and individual-based model</a>. The functional types are characterized by different traits, in particular body mass, which is related to life-history traits (reproduction and mortality) and spatial scales (home range area and dispersal ability), as well as the use of vegetation structures for foraging and nesting, which is related to habitat quality and suitability. We tested the performance of the functional types in artificial landscapes varying in shrub:grass ratio and patchiness. We found that an increase in shrub encroachment and a decrease in habitat quality caused by land use mismanagement and climate change endangered all simulated bird functional types.</p>
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+              
+              
+              <section>
+                <hr>
+                <br>
+                  <h6>Featured Tags</h6>
+                  <div class="tags">
+                      
+                      
+                      
+                      <a href="/tags/30daychartchallenge" title="30daychartchallenge">
+                          30daychartchallenge
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/animations" title="animations">
+                          animations
+                      </a>
+                      
+                      
+                      
+                      <a href="/tags/annotations" title="annotations">
+                          annotations
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/berlin" title="berlin">
+                          berlin
+                      </a>
+                      
+                      
+                      
+                      <a href="/tags/challenge" title="challenge">
+                          challenge
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/covid19" title="covid–19">
+                          covid–19
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/dataviz" title="dataviz">
+                          dataviz
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/design" title="design">
+                          design
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/ggplot2" title="ggplot2">
+                          ggplot2
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/maps" title="maps">
+                          maps
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/r" title="r">
+                          r
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/tidytuesday" title="tidytuesday">
+                          tidytuesday
+                      </a>
+                      
+                      
+                      
+                      <a href="/tags/tidyverse" title="tidyverse">
+                          tidyverse
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/tutorial" title="tutorial">
+                          tutorial
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/weather" title="weather">
+                          weather
+                      </a>
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tags/workshop" title="workshop">
+                          workshop
+                      </a>
+                      
+                      
+                  </div>
+              </section>
+              
+
+              
+              <section>
+                <br>
+                <h6>Quick Links</h6>
+                  <ul class="list-inline">
+                      
+                      <li><a target="_self" href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/">ggplot2 Tutorial</a></li>
+                      
+                      <li><a target="_self" href="https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot/">Evolution of a ggpplot</a></li>
+                      
+                      <li><a target="_self" href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/">rstudio::conf Workshop</a></li>
+                      
+                  </ul>
+              </section>
+
+              
+              
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+<div class='highlightbox' style='margin: 2rem 0 5rem;' onclick="location.href='https://calendly.com/cedricscherer/lets-meet';">
+  <span class='highlight'>Want to hire me for a project or training?<br>
+  <a href="https://calendly.com/cedricscherer/lets-meet" target="_blank">Schedule a discovery call!</a></span>
+</div>
+                    
+                    <li>
+                        <a href="mailto:hello@cedricscherer.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a href="https://twitter.com/CedScherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/z3tt">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    <li>
+                        <a target="_blank" href="https://www.behance.net/cedscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/cedricpscherer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                      <li>
+                         <a href="https://www.cedricscherer.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Cédric Scherer" >
+                             <span class="fa-stack fa-lg">
+                                 <i class="fa fa-circle fa-stack-2x"></i>
+                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                             </span>
+                         </a>
+                      </li>
+                      
+                </ul>
+                <div align="center">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="z3tt" data-color="#ffffff" data-emoji=""  data-font="Lato" data-text="Support me" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                </div>
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with R &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Cédric Scherer 2019–2022. All rights reserved.&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/impressum/">Impressum</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://cedricscherer.com/top/conduct/">Code of Conduct</a>
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

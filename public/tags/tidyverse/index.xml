@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tidyverse on Cédric Scherer</title>
+    <title>Tidyverse on Cédric Scherer</title>
     <link>https://cedricscherer.com/tags/tidyverse/</link>
-    <description>Recent content in tidyverse on Cédric Scherer</description>
+    <description>Recent content in Tidyverse on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />

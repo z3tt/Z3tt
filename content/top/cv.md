@@ -132,7 +132,35 @@
 
 <ul>
   
-  <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Communicating insights with engaging data visualizations and dashboards”<br>
+  <span class='subline'>2-Day Workshop – <a href="https://supercell.com/en/" target="_blank">Supercell</a> – 02|2024 – Helsinki, Finland</span>
+
+  <li class='about'>“Engaging & reproducible data visualization: from theory to implementation with <code>ggplot2</code>”<br><span class='subline'>2-Day Workshop – <a href="https://www.uni-bielefeld.de/biologie/crc212/" target="_blank">NC<sup>3</sup> Collaborative Research Centre</a> – 01|2024 – remote</span></li>
+
+  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>ggplot2</code>”<br>
+  <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en" target="_blank">University of Uppsala</a> – 11|2021, 12|2022 + 11|2023 – remote</span></li>
+  
+  <li class='about'>“Engaging & reproducible data visualization: from theory to implementation with <code>ggplot2</code>”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://www.tum.de/en/" target="_blank">TU Munich</a> – 10|2023 – Freising, Germany</span>
+
+  <li class='about'>“Engaging and beautiful data visualizations with <code>ggplot2</code>”<br>
+  <span class='subline'>1-Day Conference Workshop – <a href="https://posit.co/conference/" target="_blank">posit::conf(2023)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 09|2023 – Chicago, IL, USA</span><br>
+  <a class='about-bold' href="https://posit-conf-2023.github.io/dataviz-ggplot2/" target="_blank">&#x21aa; Course Webpage</a></b></li>
+
+  <li class='about'>“Designing data visualizations to successfully tell a story”<br>
+  <span class='subline'>1-Day Conference Workshop – <a href="https://posit.co/conference/" target="_blank">posit::conf(2023)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 09|2023 – Chicago, IL, USA</span><br>
+  <a class='about-bold' href="https://posit-conf-2023.github.io/dataviz-storytelling/" target="_blank">&#x21aa; Course Webpage</a></b></li>
+  
+  <li class='about'>“Hands-on guide to advanced data visualization with <code>ggplot2</code>: custom design”<br>
+  <span class='subline'>3-hour Live Training – <a href="https://www.oreilly.com/live-events/" target="_blank">Pearson–O'Reilly Live Training Event</a> – 07|2023 – remote</span></li>
+  
+  <li class='about'>“Data visualization: principles, inspirations, and effective design to tell stories graphically”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://www.heibrids.berlin/" target="_blank">Helmholtz Einstein International Berlin Research School in Data Science (HEIBRiDS)</a> – 06|2023 – Berlin, Germany</span>
+
+  <li class='about'>“Hands-on data visualization with <code>ggplot2</code>:concepts”<br>
+  <span class='subline'>3-hour Live Training – <a href="https://www.oreilly.com/live-events/" target="_blank">Pearson–O'Reilly Live Training Event</a> – 06|2023 – remote</span></li>
+  
+  <li class='about'>“Designing charts in R: reproducible chart design with <code>ggplot2</code>”<br>
   <span class='subline'>4-Hour Workshop – <a href="https://www.eventbrite.com/cc/dvs-masterclass-1933699" target="_blank">DVS Masterclass</a> presented by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 03|2023 – Berlin/remote</span><br>
   <a class='about-bold' href="https://z3tt.github.io/ggplot-dvs/slides.html" target="_blank">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ggplot-dvs" target="_blank">&#x21aa; Course Materials</a></b></li>
 
@@ -146,16 +174,13 @@
   <li class='about'>“Data visualization design: inspiration and process”<br>
   <span class='subline'>1-Hour Webinar – <a href="https://octily.com/" target="_blank">Octily</a> – 12|2022 – remote</span></li>
 
-  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>{ggplot2}</code>”<br>
-  <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en" target="_blank">University of Uppsala</a> – 11|2021 + 12|2022 – remote</span></li>
-
   <li class='about'>“Data visualization with <code>ggplot2</code> Winter School”<br>
   <span class='subline'>2-Day Workshop – <a href="https://www.bsio-cancerschool.de/" target="_blank">Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 12|2022 – Berlin, Germany</span></li>
   
-  <li class='about'>“Designing charts in R: reproducible chart design with <code>{ggplot2}</code>”<br>
-  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/" target="_blank">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 11|2022 – Washington D.C.</span></li>
+  <li class='about'>“Designing charts in R: reproducible chart design with <code>ggplot2</code>”<br>
+  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/" target="_blank">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 11|2022 – Washington DC</span></li>
   
-  <li class='about'>“Data visualization in R with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Data visualization in R with <code>ggplot2</code>”<br>
   <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/" target="_blank">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
   
   <li class='about'>“Data visualization design: create engaging and effective graphics”<br>
@@ -170,26 +195,26 @@
   <li class='about'>“Data visualization in <code>ggplot2</code>: beautiful and reproducible graphics in R”<br>
   <span class='subline'>1.5-Day Workshop – <a href="https://www.idiv.de/en/ydiv.html" target="_blank">German Centre for Integrative Biodiversity Research (iDiv)</a> – 09|2022 – Leipzig, Germany</span></li>
 
-  <li class='about'>“Graphic design with <code>{ggplot2}</code>: how to create engaging and complex visualizations in R”<br>
-  <span class='subline'>2-Day Conference Workshop – <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf(2022)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 07|2022 – Washington, D.C., USA</span><br>
-  <a class='about-bold' href="https://z3tt.github.io/ukraine_colors_workshop/slides" target="_blank">&#x21aa; Slides</a>&ensp; <a class='about-bold' href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/" target="_blank">&#x21aa; Course Webpage</a></b></li>
+  <li class='about'>“Graphic design with <code>ggplot2</code>: how to create engaging and complex visualizations in R”<br>
+  <span class='subline'>2-Day Conference Workshop – <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf(2022)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 07|2022 – Washington, DC, USA</span><br>
+  <a class='about-bold' href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/" target="_blank">&#x21aa; Course Webpage</a></b></li>
 
-  <li class='about'>“Data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Data visualization in R: how to create engaging charts with <code>ggplot2</code>”<br>
   <span class='subline'>1/2-Day Internal Training – <a href="https://www.rki.de/EN/Home/homepage_node.html" target="_blank">Robert-Koch-Institute (RKI)</a> – 06|2022 – Berlin, Germany</span></li>
 
-  <li class='about'>“Mastering scientific data visualizations: principles and practice with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Mastering scientific data visualizations: principles and practice with <code>ggplot2</code>”<br>
   <span class='subline'>2x 1/2-Day Conference Workshops – <a href="https://empseb.wordpress.com/" target="_blank">European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 05|2022 – Espoo, Finland</span></li>
 
-  <li class='about'>“Hands-on data visualization with <code>{ggplot2}</code>: how to create engaging and well-designed visualizations in R”<br>
+  <li class='about'>“Hands-on data visualization with <code>ggplot2</code>: how to create engaging and well-designed visualizations in R”<br>
   <span class='subline'>5-hour Live Training – <a href="https://www.oreilly.com/live-events/" target="_blank">Pearson–O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
 
-  <li class='about'>“R goes spatial: handling geo data with <code>{terra}</code>”<br>
+  <li class='about'>“R goes spatial: handling geo data with <code>terra</code>”<br>
   <span class='subline'>1-Day Workshop – "Biodiversity Dynamics" module at <a href="https://www.tu.berlin/en/" target="_blank">Technical University Berlin</a> – 03|2022 – remote</span></li>
 
-  <li class='about'>“Effective and engaging data visualization with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Effective and engaging data visualization with <code>ggplot2</code>”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://www.fbn-dummerstorf.de/en/" target="_blank">Research Institute for Farm Animal Biology (FBN)</a> – 01|2022 – remote</span></li>
 
-  <li class='about'>“Hands-on data visualization in R: how to create engaging charts with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Hands-on data visualization in R: how to create engaging charts with <code>ggplot2</code>”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://en.www.inegi.org.mx/" target="_blank">National Institute of Statistics and Geography of Mexico (INEGI and CIMAT)</a> – 01|2022 – remote</span></li>
   
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the VVSOR DataViz Workshop Series<br>
@@ -198,7 +223,7 @@
   <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
   <span class='subline'>1/2-Day Workshop –  <a href="https://www.senckenberg.de/en/science/young-scientists-2/" target="_blank">Senckenberg Young Scientists</a> – 11|2021 – remote</span></li>
 
-  <li class='about'>“Effective data visualization: theory and hands-on with <code>{ggplot2}</code>”<br>
+  <li class='about'>“Effective data visualization: theory and hands-on with <code>ggplot2</code>”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://www.geo-x.net/en/" target="_blank">Geo.X Research Network</a> – 11|2021 – Berlin</span></li>
 
   <li class='about'>“Data visualization in R (Beginner + Advanced)” as part of the RBSZ DataViz Workshop Series<br>
@@ -207,13 +232,13 @@
   <li class='about'>“Effective data visualization: how to design impactful and aesthetically pleasing charts”<br>
   <span class='subline'>1/2-Day Workshop – <a href="https://bigs-clinpopscience.de/" target="_blank">Bonn International Graduate School Clinical and Population Science</a> – 10|2021 – remote</span></li>
 
-  <li class='about'>“Data visualization with <code>{ggplot2}</code>: principles and beautiful plotting in R”<br>
+  <li class='about'>“Data visualization with <code>ggplot2</code>: principles and beautiful plotting in R”<br>
   <span class='subline'>2-day Workshop – <a href="https://www.bio-move.org/" target="_blank">BioMove Research Training Group</a> – 04|2021 – remote</span></li>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/" target="_blank">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>
 
-  <li class='about'>“Data visualization with <code>{ggplot2}</code>: data visualization principles and beautiful plotting in R”<br><span class='subline'>2-Day Workshop – <a href="https://www.uni-bielefeld.de/biologie/crc212/" target="_blank">NC<sup>3</sup> Collaborative Research Centre</a> – 11|2020 – remote</span></li>
+  <li class='about'>“Data visualization with <code>ggplot2</code>: data visualization principles and beautiful plotting in R”<br><span class='subline'>2-Day Workshop – <a href="https://www.uni-bielefeld.de/biologie/crc212/" target="_blank">NC<sup>3</sup> Collaborative Research Centre</a> – 11|2020 – remote</span></li>
 
   <li class='about'>“Scientific data visualization: principles and good practices”<br>
   <span class='subline'>1-Day Workshop – <a href="https://www.izw-berlin.de/en/home.html" target="_blank">Leibniz Institute for Zoo and Wildlife Research</a> – 09|2019 – Berlin</span></li>
@@ -245,29 +270,29 @@
 
 <ul style="font-size:15px;">
 
-  <li>Workshop "Creative Visualization" <span style="color:#989898;">(Berlin, 2018)</span></li>
+  <li>Workshop "Creative Visualization" <span style="color:#808080;">(Berlin, 2018)</span></li>
 
-  <li>Workshop "Patch Occupancy Modelling" <span style="color:#989898;">(Berlin, 2018)</span></li>
+  <li>Workshop "Patch Occupancy Modelling" <span style="color:#808080;">(Berlin, 2018)</span></li>
 
-  <li>Workshop “Scientific Writing” <span style="color:#989898;">(Potsdam, 2017)</span></li>
+  <li>Workshop “Scientific Writing” <span style="color:#808080;">(Potsdam, 2017)</span></li>
 
-  <li>Workshop “Advanced Approaches in GIS and Remote Sensing” <span style="color:#989898;">(Berlin, 2016)</span></li>
+  <li>Workshop “Advanced Approaches in GIS and Remote Sensing” <span style="color:#808080;">(Berlin, 2016)</span></li>
 
-  <li>Summer School “Animal Tracking Methods and Advanced Data Analyses” <span style="color:#989898;">(Gülpe, 2016)</span></li>
+  <li>Summer School “Animal Tracking Methods and Advanced Data Analyses” <span style="color:#808080;">(Gülpe, 2016)</span></li>
 
-  <li>Workshop “Modelling Approach: Wildlife Populations & Diseases” <span style="color:#989898;">(Berlin, EWDA, 2016)</span></li>
+  <li>Workshop “Modelling Approach: Wildlife Populations & Diseases” <span style="color:#808080;">(Berlin, EWDA, 2016)</span></li>
 
-  <li>Symposium <a href="http://move-ecol-minerva.huji.ac.il/page/5">“Emerging High-throughput Systems for Wildlife Tracking”</a> <span style="color:#989898;">(Jerusalem, 2016)</span></li>
+  <li>Symposium <a href="http://move-ecol-minerva.huji.ac.il/page/5">“Emerging High-throughput Systems for Wildlife Tracking”</a> <span style="color:#808080;">(Jerusalem, 2016)</span></li>
 
-  <li>Workshop “Advanced Statistical Analysis and Experimental Design” <span style="color:#989898;">(Potsdam, 2016)</span></li>
+  <li>Workshop “Advanced Statistical Analysis and Experimental Design” <span style="color:#808080;">(Potsdam, 2016)</span></li>
 
-  <li>Summer School "Animal Movement Analysis" <span style="color:#989898;">(Amsterdam, 2015)</span></li>
+  <li>Summer School "Animal Movement Analysis" <span style="color:#808080;">(Amsterdam, 2015)</span></li>
 
-  <li>Summer School <a href="https://bgc.yale.edu/news/summer-school-spatio-temporal-analysis-and-big-data-processing-using-free-and-open-source">“Spatio-Temporal Data Analyses & Big Data Processing”</a> <span style="color:#989898;">(Matera, 2015)</span></li>
+  <li>Summer School <a href="https://bgc.yale.edu/news/summer-school-spatio-temporal-analysis-and-big-data-processing-using-free-and-open-source">“Spatio-Temporal Data Analyses & Big Data Processing”</a> <span style="color:#808080;">(Matera, 2015)</span></li>
 
-  <li>Symposium “Movement Ecology” <span style="color:#989898;">(Goettingen, 2014)</span></li>
+  <li>Symposium “Movement Ecology” <span style="color:#808080;">(Goettingen, 2014)</span></li>
 
-  <li>Workshop “Movement Ecology & Biodiversity” <span style="color:#989898;">(Potsdam, 2012)</span></li>
+  <li>Workshop “Movement Ecology & Biodiversity” <span style="color:#808080;">(Potsdam, 2012)</span></li>
 
 </ul>
 //-->
@@ -415,6 +440,27 @@
 
 <ul>
   
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Datenvisualisierung—wie mache ich das richtig?<br>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">Deutsche Gesellschaft für Innere Medizin (German Society for Gastroenterology, Digestive and Metabolic Diseases, DGVS)</a> – 11|2023 – Berlin, Germany</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> (Even more) exciting data visualizations with <code>ggplot2</code> extensions<br>
+  <span class='subline'><a href="https://www.meetup.com/rladies-rome/events/296857565/" target="_blank">R Ladies Rome</a> – 11|2023 – remote</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/exciting-extensions/slides.html#/title-slide" target="_blank">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=ngkhOhp5qU4" target="_blank">&#x21aa; Recording</a></li> 
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> (Even more) exciting data visualizations with <code>ggplot2</code> extensions<br>
+  <span class='subline'><a href="https://www.meetup.com/berlin-r-users-group/events/296352038/" target="_blank">Berlin useR Group</a> – 10|2023 – Berlin, Germany</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/exciting-extensions/slides.html#/title-slide" target="_blank">&#x21aa; Slides</a></li> 
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Visualizing information with confidence: principles & best practices to tell a story with data<br>
+  <span class='subline'><a href="https://www.k-state.edu/" target="_blank">Kansas State University</a> – 10|2023 – remote</span></li>
+
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Engaging data visualization: create graphics that successfully tell a story<br>
+  <span class='subline'><a href="https://www.senckenberg.de/en/science/young-scientists-2/" target="_blank">Senckenberg Young Scientists</a> – 06|2023 – remote</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Datenvisualisierung—wie mache ich das richtig?<br>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">Deutsche Gesellschaft für Gastroenterologie, Verdauungs- und Stoffwechselkrankheiten (German Society of Internal Medicine, DGVS)</a> – 05|2023 – Berlin, Germany</span></li>
+  
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href="https://foes.de/en-us/" target="_blank">Forum Ökologisch-Soziale Marktwirtschaft e.V. (economic think tank)</a> – 01|2023 – remote</span></li>
   
@@ -451,7 +497,7 @@
   <span class='subline'><a href="https://www.meetup.com/Oslo-useR-Group/" target="_blank">useR Oslo</a> – 03|2021 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/useR-2021_ggplot-wizardry-extended.pdf" target="_blank">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=5KHvEXYtnOo" target="_blank">&#x21aa; Recording</a></li>  
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with <code>{golem}</code> and html widgets.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2020)</span> Building a modularized Shiny app with <code>golem</code> and html widgets.<br>
   <span class='subline'><a href="https://correlaid.org/events/2020-11/correlcon/" target="_blank">CorrelCon: A Weekend of Data4Good</a> – 11|2020 – Online Conference by CorrelAid</span><br>
   <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/CorrelCon2020_golem_html_widgets/main/man/CorrelCon2020_ShinyGolemHtml.pdf" target="_blank">&#x21aa; Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=zCG3xk-QLSI" target="_blank">&#x21aa; Recording</a></b></li> 
 
