@@ -1,98 +1,98 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cédric Scherer</title>
-    <link>http://localhost:4321/</link>
+    <link>https://cedricscherer.com/</link>
     <description>Recent content on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Annotations</title>
-      <link>http://localhost:4321/tags/annotations/</link>
+      <link>https://cedricscherer.com/tags/annotations/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/annotations/</guid>
+      <guid>https://cedricscherer.com/tags/annotations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cédric Scherer</title>
-      <link>http://localhost:4321/</link>
+      <link>https://cedricscherer.com/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/</guid>
+      <guid>https://cedricscherer.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataViz</title>
-      <link>http://localhost:4321/tags/dataviz/</link>
+      <link>https://cedricscherer.com/tags/dataviz/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/dataviz/</guid>
+      <guid>https://cedricscherer.com/tags/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ggplot2</title>
-      <link>http://localhost:4321/tags/ggplot2/</link>
+      <link>https://cedricscherer.com/tags/ggplot2/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/ggplot2/</guid>
+      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>http://localhost:4321/post/</link>
+      <link>https://cedricscherer.com/post/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/post/</guid>
+      <guid>https://cedricscherer.com/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://localhost:4321/tags/r/</link>
+      <link>https://cedricscherer.com/tags/r/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/r/</guid>
+      <guid>https://cedricscherer.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>http://localhost:4321/tags/</link>
+      <link>https://cedricscherer.com/tags/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/</guid>
+      <guid>https://cedricscherer.com/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidyverse</title>
-      <link>http://localhost:4321/tags/tidyverse/</link>
+      <link>https://cedricscherer.com/tags/tidyverse/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/tidyverse/</guid>
+      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:4321/tags/tutorial/</link>
+      <link>https://cedricscherer.com/tags/tutorial/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/tutorial/</guid>
+      <guid>https://cedricscherer.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yet Another How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>http://localhost:4321/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
+      <link>https://cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>
 
 
@@ -155,14 +155,14 @@ diamonds |&amp;gt;
   mutate(cut = forcats::fct_reorder(cut, prop)) |&amp;gt; 
   ggplot(aes(prop, cut)) +
   geom_col()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The default horizontal bar chart, ranked by shares.
 &lt;/figcaption&gt;
 &lt;p&gt;Alternatively, you can transform the complete data set on the fly instead of calculating shares first:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
   geom_bar()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-after-stat-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-after-stat-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The same default horizontal bar chart, this time created with &lt;code&gt;geom_bar()&lt;/code&gt; and &lt;code&gt;after_stat()&lt;/code&gt;.
 &lt;/figcaption&gt;
@@ -191,7 +191,7 @@ diamonds |&amp;gt;
     labels = scales::label_percent(),
     name = &amp;quot;Proportion&amp;quot;
   ) &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/theming-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/theming-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The same bar chart with a modified theme and a polished x axis.
 &lt;/figcaption&gt;
@@ -210,7 +210,7 @@ The same bar chart with a modified theme and a polished x axis.
     expand = c(0, 0), limits = c(0, .4),
     labels = scales::label_percent(),
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-default-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-default-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 &lt;/figcaption&gt;
@@ -225,7 +225,7 @@ Creating small multiples based on the variable mapped to the y axis leads to a s
     name = &amp;quot;Proportion&amp;quot;, expand = c(0, 0), 
     limits = c(0, .4), labels = scales::label_percent()
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-adjust-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-adjust-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Now, our facets looks like a regular bar chart. However, we have redundant labels which we remove in the next step.
 &lt;/figcaption&gt;
@@ -247,7 +247,7 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
     hjust = 0, margin = margin(1, 0, 1, 0), 
     size = rel(1.1), face = &amp;quot;bold&amp;quot;
   ))&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The polished new y axis labels, originally strip text of small multiples, replace the original axis labels.
 &lt;/figcaption&gt;
@@ -269,7 +269,7 @@ The polished new y axis labels, originally strip text of small multiples, replac
     hjust = 0, margin = margin(1, 0, 1, 0), 
     size = rel(1.1), face = &amp;quot;bold&amp;quot;
   ))&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/expansion-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/expansion-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The final version with polished category labels by adjusting the strip text of the facets.
 &lt;/figcaption&gt;
@@ -299,7 +299,7 @@ The final version with polished category labels by adjusting the strip text of t
   ))
 
 p&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/color-encoding-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/color-encoding-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Drawing attention to the top-ranked category by using a different fill color.
 &lt;/figcaption&gt;
@@ -314,7 +314,7 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Spline Sans&amp;quot;
   ) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
 &lt;/figcaption&gt;
@@ -337,7 +337,7 @@ Now, the bars are labelled directly including a rule that automatically places t
   ) +
   scale_x_continuous(guide = &amp;quot;none&amp;quot;, name = NULL, expand = c(0, 0)) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/no-x-axis-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/no-x-axis-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 A version in which the x axis has been removed as it shows redundant information.
 &lt;/figcaption&gt;
@@ -362,7 +362,7 @@ A version in which the x axis has been removed as it shows redundant information
     name = &amp;quot;Proportion&amp;quot;
   ) +
   scale_y_discrete(guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/alternative-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/alternative-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 An example using &lt;code&gt;geom_text()&lt;/code&gt; to place the category labels in combination with &lt;code&gt;vjust&lt;/code&gt;.
 &lt;/figcaption&gt;
@@ -411,14 +411,14 @@ p2 &amp;lt;-
 
 library(patchwork)
 p1 + p2&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-1-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-1-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Applying both codes to a different data set illustrates nicely the differences of the two approaches to place labels on top. The facet approach (left) ensures that labels are placed above, while the bars get thinner. The geom approach (right) uses a fixed bar width and thus the labels overlap at some point.
 &lt;/figcaption&gt;
 &lt;p&gt;Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the &lt;code&gt;geom_text()&lt;/code&gt; approach might be easier to set up.&lt;/p&gt;
 &lt;p&gt;Using the &lt;code&gt;facet_wrap()&lt;/code&gt; approach ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This is especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing. At the same time, the thinner bars make it more difficult to place labels inside the bars. However, the same issue would pop up when adjusting the widths and font sizes in the &lt;code&gt;geom_text()&lt;/code&gt; example.&lt;/p&gt;
 &lt;p&gt;Finally, I should note that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is something one can easy automate as well.&lt;/p&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-2-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-2-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.
 &lt;/figcaption&gt;
@@ -465,28 +465,28 @@ R Session Info
     
     <item>
       <title>Automation</title>
-      <link>http://localhost:4321/tags/automation/</link>
+      <link>https://cedricscherer.com/tags/automation/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/automation/</guid>
+      <guid>https://cedricscherer.com/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficiency</title>
-      <link>http://localhost:4321/tags/efficiency/</link>
+      <link>https://cedricscherer.com/tags/efficiency/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/efficiency/</guid>
+      <guid>https://cedricscherer.com/tags/efficiency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr</title>
-      <link>http://localhost:4321/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</link>
+      <link>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</guid>
+      <guid>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</guid>
       <description>
 
 
@@ -560,7 +560,7 @@ mpg &amp;lt;-
   labs(x = &amp;quot;Highway miles per gallon&amp;quot;, y = &amp;quot;Displacement in litres&amp;quot;, color = NULL)
 
 g + geom_point(aes(color = manufacturer), alpha = .5, size = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-all-color-1.png&#34; width=&#34;768&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-all-color-1.png&#34; width=&#34;768&#34; /&gt;
 &lt;figcaption&gt;
 A (too) colorful scatterplot of displacement versus highway miles per gallon with points colored by manufacturer.
 &lt;/figcaption&gt;
@@ -573,7 +573,7 @@ A (too) colorful scatterplot of displacement versus highway miles per gallon wit
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt; g + 
   geom_point(alpha = .5, size = 2) +
   facet_wrap(~ manufacturer, ncol = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-facet-1.png&#34; width=&#34;960&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-facet-1.png&#34; width=&#34;960&#34; /&gt;
 &lt;figcaption&gt;
 Small multiples visualizing the relationship of displacement versus highway miles per gallon per manufaturer as a grid of scatter plots.
 &lt;/figcaption&gt;
@@ -588,7 +588,7 @@ Small multiples visualizing the relationship of displacement versus highway mile
              shape = 1, color = &amp;quot;grey45&amp;quot;, size = 2) +
   ## add title manually
   ggtitle(&amp;quot;Audi&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-single-audi-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-single-audi-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 A scatterplot highlighting the car models manufactured by Audi. The grey circles represent all other car models featured in the data set.
 &lt;/figcaption&gt;
@@ -618,7 +618,7 @@ A scatterplot highlighting the car models manufactured by Audi. The grey circles
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## run function for specific subsets
 plot_manufacturer(&amp;quot;Audi&amp;quot;)
 plot_manufacturer(&amp;quot;Chevrolet&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Using the custom function, we can create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
 &lt;/figcaption&gt;
@@ -628,7 +628,7 @@ Using the custom function, we can create plots for specific manufacturers withou
 &lt;p&gt;The final step is simple: we use the &lt;code&gt;map()&lt;/code&gt; function from the &lt;code&gt;{purrr}&lt;/code&gt; package to iterate over a vector of manufacturers and pass the elements to our &lt;code&gt;plot_manufacturer()&lt;/code&gt; function:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;groups &amp;lt;- unique(mpg$manufacturer)
 map(groups, ~plot_manufacturer(group = .x))&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-highlight-plots-1.png&#34; width=&#34;1920&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-highlight-plots-1.png&#34; width=&#34;1920&#34; /&gt;
 &lt;figcaption&gt;
 All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
 &lt;/figcaption&gt;
@@ -693,12 +693,12 @@ All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now we can apply the function to manufacturers line by line:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal(&amp;quot;Dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-dodge-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-dodge-1.png&#34; width=&#34;864&#34; /&gt;
 &lt;figcaption&gt;
 There are 11 cars listed that are produced by Dodge: 5 minivans, 12 pickups, and 4 SUVs.
 &lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal(&amp;quot;Nissan&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-nissan-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-nissan-1.png&#34; width=&#34;864&#34; /&gt;
 &lt;figcaption&gt;
 The 7 Nissan cars belong either to the midsize or the SUV class.
 &lt;/figcaption&gt;
@@ -786,17 +786,17 @@ Unfold to see &lt;code&gt;{{ }}&lt;/code&gt; example
   return(g)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 An example using the function with embracing without passing a color column.
 &lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 An example using the function with embracing, passing a &lt;b&gt;quantitative variable&lt;/b&gt; to color.
 &lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 An example using the function with embracing, passing a &lt;b&gt;qualitative variable&lt;/b&gt; to color.
 &lt;/figcaption&gt;
@@ -815,7 +815,7 @@ An example using the function with embracing, passing a &lt;b&gt;qualitative var
     color = &amp;quot;cyl&amp;quot;, pointsize = 3.5
   )
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png&#34; width=&#34;1440&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png&#34; width=&#34;1440&#34; /&gt;
 &lt;figcaption&gt;
 Scatter plot showing the linear trends for different combinations of &lt;code&gt;displ&lt;/code&gt;, &lt;code&gt;cty&lt;/code&gt;, and &lt;code&gt;hwy&lt;/code&gt; for the 2008 car fuel data. As the number of cylinders is encoded as numeric, the sequential green-purple viridis scale is applied to the points.
 &lt;/figcaption&gt;
@@ -833,7 +833,7 @@ pmap(
     var1 = .x, var2 = .y, color = &amp;quot;species&amp;quot;
   )
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png&#34; width=&#34;1920&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png&#34; width=&#34;1920&#34; /&gt;
 &lt;figcaption&gt;
 Scatter plots for each combination of four numeric variables of the Palmer penguins data set. Passing the categorical variable species to &lt;code&gt;color&lt;/code&gt; in our custom function returns linear smoothing lines for each of the three groups which are encoded with a categorical palette from the ColorBrewer project.
 &lt;/figcaption&gt;
@@ -843,7 +843,7 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 &lt;h5&gt;&lt;code&gt;plot()&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;I am not a fan of base R plots but one big advantage is the behavior when applying the &lt;code&gt;plot()&lt;/code&gt; function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(penguins)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
 &lt;/figcaption&gt;
@@ -858,7 +858,7 @@ Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatte
   ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
   scale_color_brewer(palette = &amp;quot;Set2&amp;quot;, name = NULL) +
   ggforce::facet_matrix(vars(names), layer.lower = 2, layer.diag = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/facet-matrix-layers-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/facet-matrix-layers-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 &lt;code&gt;facet_matrix()&lt;/code&gt; from the &lt;code&gt;{ggforce}&lt;/code&gt; package offers a great way to generate similar grids with &lt;code&gt;{ggplot2}&lt;/code&gt;, allowing for the usual flexibility in terms of fine-tuning and polishing. By specifying different layers for the three areas , we can combine all kind of chart types to visualize the relationships of the variables.
 &lt;/figcaption&gt;
@@ -902,64 +902,64 @@ R Session Info
     
     <item>
       <title>Tips</title>
-      <link>http://localhost:4321/tags/tips/</link>
+      <link>https://cedricscherer.com/tags/tips/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/tips/</guid>
+      <guid>https://cedricscherer.com/tags/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Workflow</title>
-      <link>http://localhost:4321/tags/workflow/</link>
+      <link>https://cedricscherer.com/tags/workflow/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/workflow/</guid>
+      <guid>https://cedricscherer.com/tags/workflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>30DayChartChallenge</title>
-      <link>http://localhost:4321/tags/30daychartchallenge/</link>
+      <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/30daychartchallenge/</guid>
+      <guid>https://cedricscherer.com/tags/30daychartchallenge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Challenge</title>
-      <link>http://localhost:4321/tags/challenge/</link>
+      <link>https://cedricscherer.com/tags/challenge/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/challenge/</guid>
+      <guid>https://cedricscherer.com/tags/challenge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Community</title>
-      <link>http://localhost:4321/tags/community/</link>
+      <link>https://cedricscherer.com/tags/community/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/community/</guid>
+      <guid>https://cedricscherer.com/tags/community/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nightingale</title>
-      <link>http://localhost:4321/tags/nightingale/</link>
+      <link>https://cedricscherer.com/tags/nightingale/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/nightingale/</guid>
+      <guid>https://cedricscherer.com/tags/nightingale/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Social Media</title>
-      <link>http://localhost:4321/tags/social-media/</link>
+      <link>https://cedricscherer.com/tags/social-media/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/social-media/</guid>
+      <guid>https://cedricscherer.com/tags/social-media/</guid>
       <description></description>
     </item>
     
