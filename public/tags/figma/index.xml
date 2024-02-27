@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Figma on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/figma/</link>
+    <link>http://localhost:4321/tags/figma/</link>
     <description>Recent content in Figma on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/figma/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/figma/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Contributions to the First 30DayChartChallenge</title>
-      <link>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</link>
+      <link>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</guid>
+      <guid>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</guid>
       <description>&lt;h2 id=&#34;whats-the-30daychartchallenge&#34;&gt;What&amp;rsquo;s the #30DayChartChallenge?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/banner.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -105,9 +105,9 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of &lt;strong&gt;1,960 contributions&lt;/strong&gt; (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;All 1,960 contributions (as of May 9) as stacked bar chart, per category.&lt;/figcaption&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.&lt;/figcaption&gt;
 &lt;p&gt;By the way, for more charts about the #30DayChartChallenge, have a look at &lt;a href=&#34;https://github.com/gkaramanis/30DayChartChallenge&#34;&gt;Georgios Karamanis&amp;rsquo; collection of meta-contributions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We have seen contributions from all around the world, using a wide variety of tools. It was also great to see the different approaches and interpretations of the topics. Many participants connected with each other and exchanged tips and tricks on finding data, chart types, and tools.&lt;/p&gt;

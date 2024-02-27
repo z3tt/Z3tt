@@ -376,6 +376,13 @@
 <p style='margin-top:10px;margin-bottom:0px;'>My ORCID ID is <a href="https://orcid.org/0000-0003-0465-2543" target="_blank">0000-0003-0465-2543</a>. You can also find me on <a href="https://scholar.google.com/citations?user=6o61j_IAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>.</p>
 
 <ul>
+
+  <li class='about'><span class='authors'>C Schmied née Stommel, H Hofer, <u style='font-weight:700;'>C Scherer</u>, S Kramer‐Schadt & ML East</span> (2024) Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania.<br>
+  <a class='subline' href="https://doi.org/10.1002/wlb3.01131" target="_blank"><i>Wildlife Biology</i>:e01131</li></a>
+
+  <li class='about'><span class='authors'>T Kürschner, <u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum & S Kramer-Schadt</span> (2024) Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host.<br>
+  <a class='subline' href="https://doi.org/10.1002/ece3.11065" target="_blank"><i>Ecology and Evolution</i> <b>14</b>:e11065</li></a>
+
   <li class='about'><span class='authors'>S Drenske, V Radchuk, <u style='font-weight:700;'>C Scherer</u>, C Esterer, I Kowarik, J Fritz & S Kramer-Schadt</span> (2023) On the road to self-sustainability: Reintroduced migratory European northern bald ibises <i>Geronticus eremita</i> still need management interventions for population viability.<br>
   <a class='subline' href="https://doi.org/10.1017/S0030605322000540" target="_blank"><i>ORYX</i>:1-12</li></a>
   

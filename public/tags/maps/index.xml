@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maps on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/maps/</link>
+    <link>http://localhost:4321/tags/maps/</link>
     <description>Recent content in Maps on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/maps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The World&#39;s Countries Colored by Their First Letter</title>
-      <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
+      <link>http://localhost:4321/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
+      <guid>http://localhost:4321/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and &lt;code&gt;{ggplot2}&lt;/code&gt; for the first time. While searching for a cool variable to illustrate how to create &lt;a href=&#34;https://www.data-to-viz.com/graph/choropleth.html&#34;&gt;choropleth maps&lt;/a&gt;, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (&lt;a href=&#34;https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/&#34;&gt;here&lt;/a&gt;) or that do not permit to see the complete data by &lt;a href=&#34;http://alphabetpassport.com/world.png&#34;&gt;aggregating rare letters&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to &lt;code&gt;{ggplot2}&lt;/code&gt;’s facet functionality, it was super–easy to turn it into small multiples.&lt;/p&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>The Worst Days of the Coronavirus Pandemic So Far</title>
-      <link>https://cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</link>
+      <link>http://localhost:4321/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</guid>
+      <guid>http://localhost:4321/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</guid>
       <description>&lt;style&gt;
 p.small {
   line-height: 1.15;
@@ -94,9 +94,9 @@ p.small {
 &lt;figcaption&gt;The animated heatmap as tile map showing the global pattern of worst days calculated as 7-day rolling average.&lt;/figcaption&gt;
 &lt;h3 id=&#34;the-idea&#34;&gt;The Idea&lt;/h3&gt;
 &lt;p&gt;Inspired by my colleague &lt;a href=&#34;https://twitter.com/alexcourtiol&#34;&gt;Alexandre Courtiol&lt;/a&gt;, who looked at &lt;a href=&#34;https://github.com/courtiol/excess_mortality_COVID19&#34;&gt;the worst day on a country-level by visualizing the deaths due to COVID-19 adjusted for baseline mortality and population size&lt;/a&gt;, I decided to highlight where each country falls along the wave. While his plot reveals some interesting patterns, I aimed for a timeline to reveal the temporal trends. Particularly, I wanted to highlight the relativity of the feeling &amp;ldquo;today is the worst day&amp;rdquo; and also the &lt;em&gt;current&lt;/em&gt; trends, either today or a week ago—are we already over the (first) wave or can we expect more and more deaths in the next days? So I decided to take a different approach by calculating the number of daily deaths relative to the worst day on both the global and the country level.&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/SWD_2020_03_Animation_corona_sum.gif&#34; alt=&#34;animation-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;http://localhost:4321/img/dataviz-posts/SWD_2020_03_Animation_corona_sum.gif&#34; alt=&#34;animation-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_sum.gif, &#39;blank&#39;);&#34;/&gt;
 &lt;figcaption&gt;The first version with data until the 29th of March that I submitted as my contribution to the &lt;a href=&#34;https://community.storytellingwithdata.com/challenges/ed4eaf73-f659-4f41-b7ec-58396809a907/95f2ba49-12ee-4ea0-951c-ce4ba394ff7b&#34;&gt;#SWDchallenge&lt;/a&gt;.&lt;/figcaption&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/SWD_2020_03_Animation_corona_begin.png&#34; alt=&#34;static-plot-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;http://localhost:4321/img/dataviz-posts/SWD_2020_03_Animation_corona_begin.png&#34; alt=&#34;static-plot-corona-original&#34; style=&#34;width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/SWDchallenge/SWD_2020_03_Animation_corona_begin.png&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;figcaption&gt;A static version of the situation as of 29th of March with countries sorted by first reported death.&lt;/figcaption&gt;
 &lt;h3 id=&#34;how-to-read-the-visualization&#34;&gt;How to Read the Visualization&lt;/h3&gt;
 &lt;p&gt;As explained above, I calculated for each day the number of death cases relative to the &amp;ldquo;worst day&amp;rdquo;, namely the day with the most reported deaths so far. Imagine a naïve population that was not facing the virus before. At some point, there might be individuals dying but likely only a few (with regard to COVID-19—in general, this depends on the severity of the infection caused by the pathogen, often referred to as &lt;em&gt;case fatality ratio&lt;/em&gt; or simply &lt;em&gt;case fatality&lt;/em&gt;). Consequently, the proportion of deaths on the first day compared to the worst day has to be 100% (since the first day is, by definition, the worst day so far). On the next day, there might be more deaths than on the day before, a known pattern we see in reality and in simulations of early epidemics. Exponential growth, an always increasing curve we aim to flatten by reducing contact between infected and susceptible (individuals that are not infected but able to catch the infection). So on day two, two times as many individuals might die which makes the second day the worst day with a proportion of 100%. At the same time, the proportion of deaths on day one decreases from 100% to 50%. This way of transforming the data enables to see if we are still facing (exponential) growth or if we, at least for now, over the peak if deaths.&lt;/p&gt;
@@ -155,19 +155,19 @@ You can find the codes for my submission to the &lt;a href=&#34;https://communit
     
     <item>
       <title>Comparing the Extent of the Australian Bushfires 2019/20</title>
-      <link>https://cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/</link>
+      <link>http://localhost:4321/2020/01/09/australian-bushfires-comparison-europe-world/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/</guid>
+      <guid>http://localhost:4321/2020/01/09/australian-bushfires-comparison-europe-world/</guid>
       <description>&lt;p style=&#34;font-size:14px&#34;&gt;Header image by &lt;a href=&#34;https://unsplash.com/photos/OjA6F3pSccw&#34;&gt;Michael Barth via Unsplash&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;During a series of massive bushfires across Australia, large areas have been burned and the fires are still burning. The bushfire is one of the worst wildfires globally seen in decades. Although Australia always experiences a fire season during the summer, this time it has been worse than usually: &lt;a href=&#34;https://edition.cnn.com/2020/01/01/australia/australia-fires-explainer-intl-hnk-scli/index.html&#34;&gt;27 people died and more than 2,000 homes have been destroyed or damaged alone in the worst-hit state of New South Wales&lt;/a&gt;. 800 million animals have been affected since bushfires in NSW have started with an estimate of one billion animals impacted nationally say &lt;a href=&#34;https://sydney.edu.au/news-opinion/news/2020/01/03/a-statement-about-the-480-million-animals-killed-in-nsw-bushfire.html&#34;&gt;ecologists from Sydney University&lt;/a&gt;. Thick smoke is drifting over the Pacific Ocean towards New Zealand and the South American continent. The massive fires have been fuelled by dry organic matter caused by extraordinary high temperatures and a prolonged period of drought which created excellent fire conditions.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;extents-of-burnt-land-and-plume-of-smoke-in-comparison-to-european-countries&#34;&gt;Extents of burnt land and plume of smoke in comparison to European countries&lt;/h3&gt;
 &lt;p&gt;As of the 6th of January, the estimated area burnt in Australia was &lt;a href=&#34;https://www.bbc.com/news/world-australia-50951043&#34;&gt;63,000 square kilometres (~24,000 square miles)&lt;/a&gt;—an area as large as the Latvian country in Europe. The plume of smoke created by the bushfires covered &lt;a href=&#34;https://www.independent.co.uk/news/world/australasia/australia-fires-latest-smoke-forecast-nsw-victoria-food-water-a9266846.html&#34;&gt;an area of 5.5 million square kilometer (2.1 million square miles)&lt;/a&gt; and &lt;a href=&#34;https://www.businessinsider.de/international/australia-wildfires-space-satellite-pictures-smoke-new-zealand-2020-1/?r=US&amp;amp;IR=T&#34;&gt;can be seen from space&lt;/a&gt;. This area is as large as the area of Denmark including Greenland and the Faroe Islands, France, Spain, Sweden, Norway, Germany, Finland, Poland &amp;amp; Italy together!&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/2020_02_AustralianFires_blog.png&#34; alt=&#34;map-burnt-land-smoke-europe&#34; style=&#34;width:100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/tidytuesday/2020_02_AustralianFires_blog.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;http://localhost:4321/img/dataviz-posts/2020_02_AustralianFires_blog.png&#34; alt=&#34;map-burnt-land-smoke-europe&#34; style=&#34;width:100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/tidytuesday/2020_02_AustralianFires_blog.png&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;figcaption&gt;Extent of burnt land and smoke caused by the Australian bushfires in relation to European countries.&lt;/figcaption&gt;
 &lt;h3 id=&#34;how-much-of-your-countrys-area-would-have-been-burnt-if-the-bushfires-had-raged-there&#34;&gt;How much of your country&amp;rsquo;s area would have been burnt if the bushfires had raged there?&lt;/h3&gt;
 &lt;p&gt;As of 8th of January, the land burnt increased to &lt;a href=&#34;https://www.theguardian.com/australia-news/datablog/ng-interactive/2019/dec/07/how-big-are-the-fires-burning-on-the-east-coast-of-australia-interactive-map&#34;&gt;107,000 square kilometres (41,300 square miles)&lt;/a&gt;. To imagine how large the area is, it might be simpler to compare the area to a country you are familiar with:&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/2020_02_AustralianFires_Global_blog.png&#34; alt=&#34;map-burnt-land-world&#34; style=&#34;width:100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/tidytuesday/2020_02_AustralianFires_Global_blog.png&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;http://localhost:4321/img/dataviz-posts/2020_02_AustralianFires_Global_blog.png&#34; alt=&#34;map-burnt-land-world&#34; style=&#34;width:100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/tidytuesday/2020_02_AustralianFires_Global_blog.png&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;figcaption&gt;Burnt area in relation to countries worldwide.&lt;/figcaption&gt;
 &lt;h3 id=&#34;how-to-help-victims-of-australias-fires&#34;&gt;How to help victims of Australia’s fires&lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&#34;https://www.nytimes.com/2020/01/06/world/australia/help-australia-fires.html&#34;&gt;NY Times lists several organizations&lt;/a&gt; that are currently helping to provide support, emergency grants, and housing. You can support them too by donating money or clothing and household goods.&lt;/p&gt;
@@ -178,10 +178,10 @@ You can find the codes for my submission to the &lt;a href=&#34;https://communit
     
     <item>
       <title>My Contributions to the First 30DayMapChallenge</title>
-      <link>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</link>
+      <link>http://localhost:4321/2019/12/15/contributions-first-30daymapchallenge-2019/</link>
       <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</guid>
+      <guid>http://localhost:4321/2019/12/15/contributions-first-30daymapchallenge-2019/</guid>
       <description>&lt;h2 id=&#34;whats-the-30daymapchallenge&#34;&gt;What&amp;rsquo;s the #30DayMapChallenge?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayMapChallenge&lt;/strong&gt; which was &lt;a href=&#34;https://twitter.com/tjukanov/status/1187713840550744066&#34;&gt;initiated by Topi Tjukanov in 2019&lt;/a&gt;. The goal is to create a map each day of November with a broad topic provided by Topi, no matter which tool, and to share it with the &lt;a href=&#34;https://twitter.com/search?q=%2330DayMapChallenge&#34;&gt;hashtag &amp;ldquo;#30DayMapChallenge&amp;rdquo; on Twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/30DayMapChallenge2019/main/data/30daymapchallenge.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -265,7 +265,7 @@ Me on first of December: &amp;ldquo;Uff, what a month!&amp;rdquo;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge was exciting! I learned so many new things, especially about map projections, new standards of geodata processing in R, and data sources. I extensively used the &lt;a href=&#34;https://r-spatial.github.io/sf/&#34;&gt;&lt;code&gt;{sf}&lt;/code&gt; package&lt;/a&gt; and rarely something else. I found the &lt;a href=&#34;https://www.naturalearthdata.com/&#34;&gt;Natural Earth page&lt;/a&gt; which provides public domain map data sets. And there is an R package called &lt;a href=&#34;https://cran.r-project.org/web/packages/rnaturalearth/README.html&#34;&gt;&lt;code&gt;{rnaturalearth}&lt;/code&gt;&lt;/a&gt; as well that will from now on my first choice of getting geodata into R—its usage is so simple! I also worked a lot with &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Main_Page&#34;&gt;OpenStreetMap (OSM) data&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/mapchallenge-geoms.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:4321/img/dataviz-posts/mapchallenge-geoms.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Overall, I feel way more confident to work with spatial data in R now thanks to the challenge. And this extends to all things related to #rspatial:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;searching, loading, and processing geodata&lt;/li&gt;

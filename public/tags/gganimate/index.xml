@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gganimate on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/gganimate/</link>
+    <link>http://localhost:4321/tags/gganimate/</link>
     <description>Recent content in Gganimate on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/gganimate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/gganimate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing Temperatures in Berlin with Bar Chart Races</title>
-      <link>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</link>
+      <link>http://localhost:4321/2019/09/17/bar-chart-race-temperatures-berlin/</link>
       <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
+      <guid>http://localhost:4321/2019/09/17/bar-chart-race-temperatures-berlin/</guid>
       <description>&lt;p style=&#34;font-size:14px&#34;&gt;Header image by &lt;a href=&#34;https://www.instagram.com/richard.strozynski/?hl=en&#34;&gt;Richard Strozynski&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;sunday&#34;&gt;Sunday&lt;/h4&gt;
 &lt;p&gt;Two days ago, I was sitting in the sun with a friend working in &lt;em&gt;UX and Graphic Design&lt;/em&gt;, chatting about DataViz:&lt;/p&gt;
@@ -30,19 +30,19 @@ She: &amp;ldquo;&amp;hellip; and I wondered if you could have done this in R?&am
 &lt;p&gt;I mean, they have &lt;em&gt;drawn each bar separately&lt;/em&gt; during their progress which took them hours to do!&lt;/p&gt;
 &lt;p&gt;To demonstrate the capability of R, I immediately sat down after the family went to bed and copied the &lt;a href=&#34;https://github.com/amrrs/animated_bar_charts_in_R&#34;&gt;example provided by Abdul Majed Raja&lt;/a&gt; using the great &lt;a href=&#34;https://gganimate.com/&#34;&gt;&lt;code&gt;{gganimate}&lt;/code&gt; 📦&lt;/a&gt; (what else?!) by &lt;a href=&#34;https://www.data-imaginist.com/about/&#34;&gt;Thomas Lin Pedersen&lt;/a&gt; (who else?!) to create a smooth and colorful bar chart race with some &lt;em&gt;own&lt;/em&gt; data.&lt;/p&gt;
 &lt;p&gt;I am playing around with Berlin weather data from the &lt;a href=&#34;https://www.dwd.de/DE/leistungen/klimadatendeutschland/klarchivtagmonat.html&#34;&gt;DWD (Deutscher Wetterdienst)&lt;/a&gt; for a few days now—for example &lt;a href=&#34;https://twitter.com/CedScherer/status/1170674809983905792&#34;&gt;my contribution to the #SWDchallenge on &amp;ldquo;Visualizing Uncertainty&amp;rdquo;&lt;/a&gt;—so this was an easy choice. I created the &lt;a href=&#34;https://twitter.com/jburnmurdoch/status/1107552367795412992?lang=en&#34;&gt;usual bar chart race as introduced by John Burn-Murdoch&lt;/a&gt; visualizing the daily maximum temperature in Berlin-Dahlem (one of many stations in Berlin), averaged for each month. 15 to 30 minutes later (okay, add one more hour for playing around with different time periods and frame rates) I was very happy  about this gif:
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_max_viridis_short.gif&#34; alt=&#34;GIF Chart Race Maximum Temperatures (viridis)&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_max_viridis_short.gif&#34; alt=&#34;GIF Chart Race Maximum Temperatures (viridis)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Even though I love the &lt;a href=&#34;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&#34;&gt;viridis color palettes&lt;/a&gt; and they are my default color choice (here: option &lt;code&gt;inferno&lt;/code&gt; because it fits the topic), I gave it another try. The &lt;a href=&#34;https://github.com/thomasp85/scico&#34;&gt;&lt;code&gt;{scico}&lt;/code&gt; 📦&lt;/a&gt; is another great color palette package, again maintained by Thomas Lin Pedersen, and there is one particular palette that couldn&amp;rsquo;t match my animation better - it&amp;rsquo;s blue-redish and called &lt;strong&gt;berlin&lt;/strong&gt;!
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_max_scico_short.gif&#34; alt=&#34;GIF Chart Race Maximum Temperatures (scico)&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_max_scico_short.gif&#34; alt=&#34;GIF Chart Race Maximum Temperatures (scico)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It was already late and I had to stop. I&amp;rsquo;ve mailed her the animations and while going to bed, I was already thinking about other cool stuff one could use a bar chart race for in this context.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;monday&#34;&gt;Monday&lt;/h4&gt;
 &lt;p&gt;In the morning, on my way to work, I coded an unusual bar chart race (or maybe it doesn&amp;rsquo;t even fit this definition any more?) showing the difference of monthly average temperatures to the 1951–1980 period, and thus both positive and negative values. While showing the general seasonal pattern in the northern hemisphere with summer months being warmer and winter months being colder than average, this illustrates nicely increasing temperatures in more recent years during the summer months and also in spring and autumn:
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_diff_yrs_short.gif&#34; alt=&#34;GIF Chart Race Difference Temperatures (years)&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_diff_yrs_short.gif&#34; alt=&#34;GIF Chart Race Difference Temperatures (years)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I again depicted only the period from 1980 until now since the animation became too long&lt;a href=&#34;#section2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;.&lt;p id=&#34;back2&#34;&gt;&lt;/p&gt;
 To visualize the trend over the whole period (1876–2018), I decided to group the data per decade (to do so in R with &lt;code&gt;{dplyr}&lt;/code&gt; use: &lt;code&gt;mutate(decade = year %/% 10 * 10)&lt;/code&gt;) and visualize the difference in average monthly temperatures:&lt;br&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_diff_dec.gif&#34; alt=&#34;GIF Chart Race Difference Temperatures (decades)&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_diff_dec.gif&#34; alt=&#34;GIF Chart Race Difference Temperatures (decades)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Finally, so that the locals can understand it too, I&amp;rsquo;ve created a version in German:
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_diff_dec_ger.gif&#34; alt=&#34;GIF Chart Race Temperaturunterschiede (Dekaden)&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_diff_dec_ger.gif&#34; alt=&#34;GIF Chart Race Temperaturunterschiede (Dekaden)&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;tuesday&#34;&gt;Tuesday&lt;/h4&gt;
 &lt;p&gt;So, now I am sitting here watching bar chart races on my laptop in various forms, colors, languages, and time periods.&lt;/p&gt;
@@ -58,9 +58,9 @@ Also me: Next time, my friend&amp;rsquo;s agency hopefully contacts someone who 
 &lt;h5 id=&#34;footnotes&#34;&gt;&lt;em&gt;Footnotes&lt;/em&gt;&lt;/h5&gt;
 &lt;p id=&#34;section1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt; see for example: the &lt;a href=&#34;https://twitter.com/jburnmurdoch/status/1107552367795412992?lang=en&#34;&gt;already famous bar chart race from John Burn-Murdoch&lt;/a&gt;, the &lt;a href=&#34;https://twitter.com/JonTheGeek/status/1172259966260064258&#34;&gt;#TidyTuesday contribution by Jon &#39;The Geek&#39; Harmon&lt;/a&gt;, a &lt;a href=&#34;https://www.youtube.com/watch?v=Qvz6xEkSp94&#34;&gt;bar chart race about the popularity of bar chart races on Reddit&lt;/a&gt; and the &lt;a href=&#34;https://twitter.com/bizweekgraphics/status/1169232409767886848&#34;&gt;&#34;Bar Chart Race of Bart Chart Races&#34;&lt;/a&gt;.   &lt;a href=&#34;#back1&#34;&gt;&lt;i&gt;Go back&lt;/i&gt; ↑&lt;/a&gt;&lt;/p&gt;
 &lt;p id=&#34;section2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt; Here is the long version showing monthly average temperatures for all years (1876–2018):&lt;/a&gt;&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_max_scico_long_fast.gif&#34; alt=&#34;GIF Chart Race Maximum Temperatures (all years)&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_max_scico_long_fast.gif&#34; alt=&#34;GIF Chart Race Maximum Temperatures (all years)&#34;&gt;
 &lt;p&gt;&amp;hellip; and differences in monthly temperatures to the 1951-1980 average:
-&lt;img src=&#34;https://cedricscherer.com/img/bar-races/dwd_anim_diff_yrs_long.gif&#34; alt=&#34;GIF Chart Race Difference Temperatures (all years)&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:4321/img/bar-races/dwd_anim_diff_yrs_long.gif&#34; alt=&#34;GIF Chart Race Difference Temperatures (all years)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#back2&#34;&gt;&lt;i&gt;Go back&lt;/i&gt; ↑&lt;/a&gt;&lt;/p&gt;
 &lt;p id=&#34;section3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt; Probably I am already too late to catch that train... &lt;a href=&#34;#back3&#34;&gt;&lt;i&gt;Go back&lt;/i&gt; ↑&lt;/a&gt;&lt;/p&gt;
 </description>
