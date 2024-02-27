@@ -12,10 +12,12 @@
   }
 </style>
 
-Selected data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. The visualizations are generated with a code-first approach and almost all of them do not involve any manual post-processing steps.
+<span style='font-family:Canicule Display;'>&nbsp;&nbsp;&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span><a href='https://www.cedricscherer.com/files/cedric-scherer-data-visualizaiton-portfolio.pdf'>Download Portfolio Slides</a>
+
+Collection of  data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Most visualizations are generated with a code-first approach and many of them do not involve any manual post-processing steps.
 
 
-###### [Client Projects](#clients)
+###### [<b style='color:black;'>Client Projects</b>](#clients)
 
   * [Escalating Drought (Scientific American)](#SciAm)
   * [Q Vadis? Q Anon Activity on Telegram](#pyramids)
@@ -23,14 +25,14 @@ Selected data visualizations, maps and other designs I have produced for clients
   * [Afrozensus 2020](#afrozensus)
   * [Visualizations for Various Projects](#variousclients)
 
-###### [Challenge Contributions](#challenges)
+###### [<b style='color:black;'>Challenge Contributions</b>](#challenges)
 
   * [#TidyTuesday](#tidytuesday)
   * [#30DayChartChallenge](#chartchallenge)
   * [#30DayMapChallenge](#mapchallenge)
   * [Other Challenges](#miscchallenges)
 
-###### [Personal Projects](#personal)
+###### [<b style='color:black;'>Personal Projects</b>](#personal)
 <br>
 
 <hr>
@@ -124,8 +126,6 @@ illustrating the demographic change in Germany over 30 years from various perspe
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_29/2020_29_Astronauts_blur_color.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100683383/Travelling-to-Outer-Space', 'blank');"/>
 
 <img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2020_27/2020_27_Xmen_annotated.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/100640345/Appearance-of-Popular-X-Men-Characters', 'blank');"/>
-
-<img src="https://raw.githubusercontent.com/z3tt/TidyTuesday/main/plots/2022_36/2022_36_LEGO_bricks_sd.png" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://www.behance.net/gallery/155819967/The-LEGO-Color-Explosion', 'blank');"/>
 
 {{< gallery dir="img/gallery-tidytuesday/" />}} {{< load-photoswipe >}}
 
