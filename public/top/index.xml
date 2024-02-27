@@ -31,7 +31,7 @@
 &lt;p&gt;By applying a &lt;a style=&#39;font-weight:820;&#39; href=&#39;https://www.cedricscherer.com/top/about/#codefirst&#39;&gt;code–first approach&lt;/a&gt;, I ensure reproducible and efficient workflows to create all kind of data products such as &lt;b style=&#39;font-weight:820;&#39;&gt;static and interactive visualizations, dynamic reports, and web applications&lt;/b&gt;.&lt;/p&gt;
 &lt;p&gt;I frequently engage as a &lt;a style=&#39;font-weight:820;&#39; href=&#39;https://www.cedricscherer.com/top/about/#teaching&#39;&gt;workshop trainer&lt;/a&gt; and &lt;a style=&#39;font-weight:820;&#39; href=&#39;https://www.cedricscherer.com/top/about/#presentations&#39;&gt;speaker&lt;/a&gt; on topics such as effective and engaging data visualization design, code-driven graphics with {ggplot2}, and reproducible data science workflows in R.&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#39;font-family:Canicule Display;&#39;&gt;    →  &lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/top/dataviz&#39;&gt;Data Visualization Gallery&lt;/a&gt;&lt;br&gt;
-&lt;span style=&#39;font-family:Canicule Display;&#39;&gt;    →  &lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/files/cedric-scherer-data-visualizaiton-portfolio.pdf&#39;&gt;Portfolio Slides&lt;/a&gt;&lt;br&gt;
+&lt;span style=&#39;font-family:Canicule Display;&#39;&gt;    →  &lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/files/cedric-scherer-data-visualization-portfolio.pdf&#39;&gt;Portfolio Slides&lt;/a&gt;&lt;br&gt;
 &lt;span style=&#39;font-family:Canicule Display;&#39;&gt;    →  &lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/top/cv&#39;&gt;Curriculum Vitae&lt;/a&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -644,7 +644,7 @@ If those published comments could be construed as a threat, and the perpetrator 
     font-size:2.5rem;
   }
 &lt;/style&gt;
-&lt;p&gt;&lt;span style=&#39;font-family:Canicule Display;&#39;&gt;    →  &lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/files/cedric-scherer-data-visualizaiton-portfolio.pdf&#39;&gt;Download Portfolio Slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#39;font-family:Canicule Display;&#39;&gt;    →  &lt;/span&gt;&lt;a href=&#39;https://www.cedricscherer.com/files/cedric-scherer-data-visualization-portfolio.pdf&#39;&gt;Download Portfolio Slides&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Collection of  data visualizations, maps and other designs I have produced for clients, as challenge contributions or in my spare time. Most visualizations are generated with a code-first approach and many of them do not involve any manual post-processing steps.&lt;/p&gt;
 &lt;h6 id=&#34;b-stylecolorblackclient-projectsbclients&#34;&gt;&lt;a href=&#34;#clients&#34;&gt;&lt;b style=&#39;color:black;&#39;&gt;Client Projects&lt;/b&gt;&lt;/a&gt;&lt;/h6&gt;
 &lt;ul&gt;
@@ -1894,7 +1894,7 @@ illustrating the demographic change in Germany over 30 years from various perspe
 &lt;/p&gt;
 &lt;h2 id=&#34;personal&#34;&gt;Personal Projects&lt;/h2&gt;
 &lt;img src=&#34;https://cedricscherer.com/img/dataviz-portfolio/2022_06_speech_speed_language_families_raincloud.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://twitter.com/CedScherer/status/1537169626257317894&#39;, &#39;blank&#39;);&#34;/&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/paygap_eu_dumbbell.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg&#39;, &#39;blank&#39;);&#34;/&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/dataviz-portfolio/paygap_eu_dumbbell.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://www.cedricscherer.com/img/paygap-europe/paygap_eu_dumbbell.jpg&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;img src=&#34;https://cedricscherer.com/img/dataviz-portfolio/2021_Twitter_10K_Folllowers.jpg&#34; style=&#34;height: 100%; width: 100%; object-fit: contain&#34; onclick=&#34;window.open(&#39;https://twitter.com/CedScherer/status/1433138076356853767&#39;, &#39;blank&#39;);&#34;/&gt;
 &lt;p&gt;
 

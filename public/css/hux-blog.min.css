@@ -1193,7 +1193,6 @@ a.about-bold:hover {
 }
 .highlight a:before {
   content: '';
-  background: #28a87d;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -1204,6 +1203,7 @@ a.about-bold:hover {
 }
 .highlight a:hover {
   background-position: 0;
+  text-decoration: none
 }
 .highlight a:hover::before {
   width: 100%;
