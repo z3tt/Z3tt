@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automation on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/automation/</link>
+    <link>http://localhost:4321/tags/automation/</link>
     <description>Recent content in Automation on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Efficiency and Consistency: Automate Subset Graphics with ggplot2 and purrr</title>
-      <link>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</link>
+      <link>http://localhost:4321/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</guid>
+      <guid>http://localhost:4321/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</guid>
       <description>
 
 
@@ -85,7 +85,7 @@ mpg &amp;lt;-
   labs(x = &amp;quot;Highway miles per gallon&amp;quot;, y = &amp;quot;Displacement in litres&amp;quot;, color = NULL)
 
 g + geom_point(aes(color = manufacturer), alpha = .5, size = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-all-color-1.png&#34; width=&#34;768&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-all-color-1.png&#34; width=&#34;768&#34; /&gt;
 &lt;figcaption&gt;
 A (too) colorful scatterplot of displacement versus highway miles per gallon with points colored by manufacturer.
 &lt;/figcaption&gt;
@@ -98,7 +98,7 @@ A (too) colorful scatterplot of displacement versus highway miles per gallon wit
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt; g + 
   geom_point(alpha = .5, size = 2) +
   facet_wrap(~ manufacturer, ncol = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-facet-1.png&#34; width=&#34;960&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-facet-1.png&#34; width=&#34;960&#34; /&gt;
 &lt;figcaption&gt;
 Small multiples visualizing the relationship of displacement versus highway miles per gallon per manufaturer as a grid of scatter plots.
 &lt;/figcaption&gt;
@@ -113,7 +113,7 @@ Small multiples visualizing the relationship of displacement versus highway mile
              shape = 1, color = &amp;quot;grey45&amp;quot;, size = 2) +
   ## add title manually
   ggtitle(&amp;quot;Audi&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-single-audi-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/scatter-single-audi-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 A scatterplot highlighting the car models manufactured by Audi. The grey circles represent all other car models featured in the data set.
 &lt;/figcaption&gt;
@@ -143,7 +143,7 @@ A scatterplot highlighting the car models manufactured by Audi. The grey circles
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## run function for specific subsets
 plot_manufacturer(&amp;quot;Audi&amp;quot;)
 plot_manufacturer(&amp;quot;Chevrolet&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-highlight-plot-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Using the custom function, we can create plots for specific manufacturers without the need to copy-paste and adjust the ggplot code manually.
 &lt;/figcaption&gt;
@@ -153,7 +153,7 @@ Using the custom function, we can create plots for specific manufacturers withou
 &lt;p&gt;The final step is simple: we use the &lt;code&gt;map()&lt;/code&gt; function from the &lt;code&gt;{purrr}&lt;/code&gt; package to iterate over a vector of manufacturers and pass the elements to our &lt;code&gt;plot_manufacturer()&lt;/code&gt; function:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;groups &amp;lt;- unique(mpg$manufacturer)
 map(groups, ~plot_manufacturer(group = .x))&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-highlight-plots-1.png&#34; width=&#34;1920&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-highlight-plots-1.png&#34; width=&#34;1920&#34; /&gt;
 &lt;figcaption&gt;
 All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
 &lt;/figcaption&gt;
@@ -218,12 +218,12 @@ All 15 scatter plots for the manufacturers featured in the 2008 car fuel data.
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now we can apply the function to manufacturers line by line:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal(&amp;quot;Dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-dodge-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-dodge-1.png&#34; width=&#34;864&#34; /&gt;
 &lt;figcaption&gt;
 There are 11 cars listed that are produced by Dodge: 5 minivans, 12 pickups, and 4 SUVs.
 &lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_manufacturer_marginal(&amp;quot;Nissan&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-nissan-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-function-scatter-boxplots-nissan-1.png&#34; width=&#34;864&#34; /&gt;
 &lt;figcaption&gt;
 The 7 Nissan cars belong either to the midsize or the SUV class.
 &lt;/figcaption&gt;
@@ -311,17 +311,17 @@ Unfold to see &lt;code&gt;{{ }}&lt;/code&gt; example
   return(g)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-1-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 An example using the function with embracing without passing a color column.
 &lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = cyl)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-2-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 An example using the function with embracing, passing a &lt;b&gt;quantitative variable&lt;/b&gt; to color.
 &lt;/figcaption&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_scatter_lm_embraced(data = mpg, var1 = displ, var2 = hwy, color = class)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/run-embraced-function-3-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 An example using the function with embracing, passing a &lt;b&gt;qualitative variable&lt;/b&gt; to color.
 &lt;/figcaption&gt;
@@ -340,7 +340,7 @@ An example using the function with embracing, passing a &lt;b&gt;qualitative var
     color = &amp;quot;cyl&amp;quot;, pointsize = 3.5
   )
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png&#34; width=&#34;1440&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-plots-1.png&#34; width=&#34;1440&#34; /&gt;
 &lt;figcaption&gt;
 Scatter plot showing the linear trends for different combinations of &lt;code&gt;displ&lt;/code&gt;, &lt;code&gt;cty&lt;/code&gt;, and &lt;code&gt;hwy&lt;/code&gt; for the 2008 car fuel data. As the number of cylinders is encoded as numeric, the sequential green-purple viridis scale is applied to the points.
 &lt;/figcaption&gt;
@@ -358,7 +358,7 @@ pmap(
     var1 = .x, var2 = .y, color = &amp;quot;species&amp;quot;
   )
 )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png&#34; width=&#34;1920&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/purrr-function-scatter-lm-penguins-plots-1.png&#34; width=&#34;1920&#34; /&gt;
 &lt;figcaption&gt;
 Scatter plots for each combination of four numeric variables of the Palmer penguins data set. Passing the categorical variable species to &lt;code&gt;color&lt;/code&gt; in our custom function returns linear smoothing lines for each of the three groups which are encoded with a categorical palette from the ColorBrewer project.
 &lt;/figcaption&gt;
@@ -368,7 +368,7 @@ Scatter plots for each combination of four numeric variables of the Palmer pengu
 &lt;h5&gt;&lt;code&gt;plot()&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;I am not a fan of base R plots but one big advantage is the behavior when applying the &lt;code&gt;plot()&lt;/code&gt; function to a full data set. The output is a grid of plots showing the relationship of all variable combinations:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(penguins)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/base-plot-data-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;figcaption&gt;
 Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatter plots visualizing the x-y relationships of all possible combinations of variables.
 &lt;/figcaption&gt;
@@ -383,7 +383,7 @@ Running &lt;code&gt;plot()&lt;/code&gt; on a data frame returns a grid of scatte
   ggforce::geom_autodensity(aes(color = species, fill = after_scale(color)), alpha = .7) +
   scale_color_brewer(palette = &amp;quot;Set2&amp;quot;, name = NULL) +
   ggforce::facet_matrix(vars(names), layer.lower = 2, layer.diag = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;https://cedricscherer.com/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/facet-matrix-layers-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;http://localhost:4321/post/2023-07-07-automate-plotting-ggplot-purrr_files/figure-html/facet-matrix-layers-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 &lt;code&gt;facet_matrix()&lt;/code&gt; from the &lt;code&gt;{ggforce}&lt;/code&gt; package offers a great way to generate similar grids with &lt;code&gt;{ggplot2}&lt;/code&gt;, allowing for the usual flexibility in terms of fine-tuning and polishing. By specifying different layers for the three areas , we can combine all kind of chart types to visualize the relationships of the variables.
 &lt;/figcaption&gt;

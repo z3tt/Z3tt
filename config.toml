@@ -118,6 +118,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   href =  "https://www.heurekalabs.org/"
   
   [[params.bookmark_link]]
+  title = "Curiculum Vitae"
+  href =  "https://www.cedricscherer.com/top/cv"
+  [[params.bookmark_link]]
+  title = "Portfolio Slides"
+  href =  "https://www.cedricscherer.com/files/cedric-scherer-data-visualization-portfolio.pdf"
+  [[params.bookmark_link]]
   title = "ggplot2 Tutorial"
   href =  "https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/"
   [[params.bookmark_link]]
