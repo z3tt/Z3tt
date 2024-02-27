@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Canicule Display";
   src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
@@ -152,7 +151,7 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 3.9rem;
+  font-size: .1rem;
 }
 h3 {
   font-weight: 720;
@@ -1206,13 +1205,13 @@ a.about-bold:hover {
 .highlight a:hover {
   background-position: 0;
 }
-.highlight. a:hover::before {
+.highlight a:hover::before {
   width: 100%;
 }
 
 .emphasize {
   font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
-  font-size: 2.85rem;
+  font-size: 2.7rem;
   font-weight: 600;
   line-height: 1.15;
 }
@@ -1228,8 +1227,8 @@ a.about-bold:hover {
     font-size: 2.6rem;
   }
   .emphasize {
-  font-size: 2.95rem;
-  line-height: 1.3;
+    font-size: 2.95rem;
+    line-height: 1.3;
   }
 }
 
