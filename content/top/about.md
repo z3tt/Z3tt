@@ -118,12 +118,15 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
   
   <li class='about'>“Communicating insights with engaging data visualizations and dashboards”<br>
   <span class='subline'>2-Day Workshop – <a href="https://supercell.com/en/" target="_blank">Supercell</a> – 02|2024 – Helsinki, Finland</span>
+
+  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>ggplot2</code>”<br>
+  <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en" target="_blank">University of Uppsala</a> – 11|2021, 12|2022 + 11|2023 – remote</span></li>
   
   <li class='about'>“Designing charts in R: reproducible chart design with {ggplot2}”<br>
   <span class='subline'>4-Hour Workshop – <a href="https://www.eventbrite.com/cc/dvs-masterclass-1933699" target="_blank">DVS Masterclass</a> presented by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 03|2023 – Berlin/remote</span><br>
   <a class='about-bold' href="https://z3tt.github.io/ggplot-dvs/slides.html" target="_blank">> Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ggplot-dvs" target="_blank">> Course Materials</a></b></li>
 
-  <li class='about'>“Color palette choice and customization in R and ggplot2”<br>
+  <li class='about'>“Color palette choice and customization in R and {ggplot2}”<br>
   <span class='subline'>2-Hour Workshop – <a href="https://sites.google.com/view/dariia-mykhailyshyna/main/r-workshops-for-ukraine" target="_blank">Workshops for Ukraine</a> – 01|2023 – remote</span><br>
   <a class='about-bold' href="https://z3tt.github.io/ukraine_colors_workshop/slides" target="_blank">> Slides</a>&ensp; <a class='about-bold' href="https://github.com/z3tt/ukraine_colors_workshop" target="_blank">> Course Materials</a></b></li>
 
@@ -136,9 +139,6 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
 
   <li class='about'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br>
   <span class='subline'>5-hour Live Training – <a href='https://www.oreilly.com/live-events/'>Pearson–O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
-
-  <li class='about'>“Data visualization in science: how to create beautiful charts with {ggplot2}”<br>
-  <span class='subline'>1/2-Day Workshop – <a href="https://www.uu.se/en">University of Uppsala</a> – 11|2021  12|2022 – remote</span></li>
 
   <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
   <span class='subline'>1/2-Day Workshop –  <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 11|2021 – remote</span></li>
