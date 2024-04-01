@@ -6,7 +6,7 @@ date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
 twitterImg: img/banner/mapchallenge-artsy.png
 layout: post
-description: ""
+description: "We are thrilled to announce the fourth edition of the 30DayChartChallenge! Even though I will not dedicate myself to all days, I aim to contribute to a few prompts. The goal: exploration of the DataWrapper chart builder."
 tags:
     - DataViz
     - 30DayChartChallenge
@@ -34,5 +34,4 @@ I will not participate on every day this year as there are too many other respon
 #### Day 1: Part-to-Whole
 
 <br>
-<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
+<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
