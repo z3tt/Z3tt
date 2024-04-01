@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design on Cédric Scherer</title>
-    <link>http://localhost:4321/tags/design/</link>
+    <link>https://cedricscherer.com/tags/design/</link>
     <description>Recent content in Design on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>International Women&#39;s Day 2022: The Pay Gap in Europe</title>
-      <link>http://localhost:4321/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</link>
+      <link>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</guid>
+      <guid>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Sadly, inequality between women and men is still an issue. A metric that is one of the most used to illustrate the inequality is the pay gap. In its simplest, unadjusted form, the pay gap shows the difference between the average gross hourly earnings of men and women, expressed as a percentage of the average gross hourly earnings of men.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;In 2020, women&amp;rsquo;s gross hourly earnings were on average 13.0 percentage point (pp) below those of male paid employees in the European Union. This is still a significant gap, but at least it was decreasing over the last years. Unfortunately, this is not the case for all countries in the EU: Latvia, Portugal, Croatia, and Malta have decreasing trends compared to the average pay gap from 2002–2010. Disappointingly, only five out of the 28 EU countries Eurostat provides data for have a pay gap that is smaller than 5 pp (Luxembourg, Romania, Slovenia, Italia, and Poland) with Luxembourg being closest to zero (0.7 pp).&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=en&#34;&gt;Eurostat provides the metric&lt;/a&gt; for all EU countries except Iceland and Greece between 2002 and 2020 (but number of years included differ per country). It also provides gropuped metrics for all EU countries and for the 19 countries of the Euro area. The indicator includes all employees working in firms with ten or more employees, without restrictions for age and hours worked. &lt;a href=&#34;https://twitter.com/EU_Eurostat/status/1501840155489013762&#34;&gt;Samples contain about 12 million employees EU-wide and the gross hourly earnings are estimated with high precision at total economy level (sampling error below 1%)&lt;/a&gt;.&lt;/p&gt;
@@ -21,40 +21,40 @@
 &lt;p&gt;As the slope chart was very difficult to read due to the many overlapping lines (an interactive version may be better), I decided to create a &lt;em&gt;dumbbell chart&lt;/em&gt; with the drawback that I had to aggregate the data as showing all the data points made the graphic too overloaded. I decided to choose a reference period by averaging the values provided between 2002 and 2010 and to encode the sample size in the dot size.&lt;/p&gt;
 &lt;p&gt;For the first time, I also created a colorful, eye-catching version with larger fonts and less detail to share it on my &lt;a href=&#34;https://www.instagram.com/cedscherer/&#34;&gt;Instagram&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:4321/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cedricscherer.com/css/hugo-easy-gallery.css&#34; /&gt;
 
 &lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; alt=&#34;Pay Gap in Europe for Instagram 1&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; alt=&#34;Pay Gap in Europe for Instagram 1&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Pay Gap in Europe for Instagram 1&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_1.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; alt=&#34;Pay Gap in Europe for Instagram 2&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; alt=&#34;Pay Gap in Europe for Instagram 2&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Pay Gap in Europe for Instagram 2&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_2.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; alt=&#34;Pay Gap in Europe for Instagram 3&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; alt=&#34;Pay Gap in Europe for Instagram 3&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Pay Gap in Europe for Instagram 3&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;http://localhost:4321/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://cedricscherer.com/img/paygap-europe/insta/Pay_Gap_in_Europe_for_Instagram_3.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 &lt;/div&gt;
@@ -66,7 +66,7 @@
  
  
  &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;http://localhost:4321/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;https://cedricscherer.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
  
  
  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
@@ -170,10 +170,10 @@
     
     <item>
       <title>The World&#39;s Countries Colored by Their First Letter</title>
-      <link>http://localhost:4321/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
+      <link>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
+      <guid>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Next month, I am going to give a live training session for Pearson and O&amp;rsquo;Reilly called  “Hands-On Data Visualization with ggplot2”. For this course, I want to cover mapping with R and &lt;code&gt;{ggplot2}&lt;/code&gt; for the first time. While searching for a cool variable to illustrate how to create &lt;a href=&#34;https://www.data-to-viz.com/graph/choropleth.html&#34;&gt;choropleth maps&lt;/a&gt;, I came up with the idea to visualize name of each country. But not the full name—that would be too silly and not insightful at all—but the first letter of each country.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;While drafting the first map, it quickly became obvious that mapping color to all 26 letters (or better 25 letters since there is no country starting with X) is not helpful at all. A quick search showed that there are a few colorful maps, struggling with the same problem (&lt;a href=&#34;https://www.reddit.com/r/Maps/comments/jfudnt/map_of_the_world_painted_according_to_the_first/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/mapporncirclejerk/comments/oujs8i/if_every_country_that_has_the_same_first_letter/&#34;&gt;here&lt;/a&gt;) or that do not permit to see the complete data by &lt;a href=&#34;http://alphabetpassport.com/world.png&#34;&gt;aggregating rare letters&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;So I quickly came up to use small multiples, which would allow for an easy identification of all countries starting with a particular letter and the landmass covered by these countries. Thanks to &lt;code&gt;{ggplot2}&lt;/code&gt;’s facet functionality, it was super–easy to turn it into small multiples.&lt;/p&gt;
@@ -231,10 +231,10 @@
     
     <item>
       <title>Colors and Emotions in Data Visualization</title>
-      <link>http://localhost:4321/2021/06/08/colors-and-emotions-in-data-visualization/</link>
+      <link>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
+      <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
       <description>
 
 

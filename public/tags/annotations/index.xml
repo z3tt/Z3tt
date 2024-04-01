@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Annotations on Cédric Scherer</title>
-    <link>http://localhost:4321/tags/annotations/</link>
+    <link>https://cedricscherer.com/tags/annotations/</link>
     <description>Recent content in Annotations on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/annotations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/annotations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yet Another How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>http://localhost:4321/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
+      <link>https://cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>
 
 
@@ -74,14 +74,14 @@ diamonds |&amp;gt;
   mutate(cut = forcats::fct_reorder(cut, prop)) |&amp;gt; 
   ggplot(aes(prop, cut)) +
   geom_col()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The default horizontal bar chart, ranked by shares.
 &lt;/figcaption&gt;
 &lt;p&gt;Alternatively, you can transform the complete data set on the fly instead of calculating shares first:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(y = cut, x = after_stat(count / sum(count)))) +
   geom_bar()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-after-stat-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/basic-after-stat-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The same default horizontal bar chart, this time created with &lt;code&gt;geom_bar()&lt;/code&gt; and &lt;code&gt;after_stat()&lt;/code&gt;.
 &lt;/figcaption&gt;
@@ -110,7 +110,7 @@ diamonds |&amp;gt;
     labels = scales::label_percent(),
     name = &amp;quot;Proportion&amp;quot;
   ) &lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/theming-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/theming-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The same bar chart with a modified theme and a polished x axis.
 &lt;/figcaption&gt;
@@ -129,7 +129,7 @@ The same bar chart with a modified theme and a polished x axis.
     expand = c(0, 0), limits = c(0, .4),
     labels = scales::label_percent(),
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-default-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-default-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Creating small multiples based on the variable mapped to the y axis leads to a set of mostly empty panels with redundant labels by default.
 &lt;/figcaption&gt;
@@ -144,7 +144,7 @@ Creating small multiples based on the variable mapped to the y axis leads to a s
     name = &amp;quot;Proportion&amp;quot;, expand = c(0, 0), 
     limits = c(0, .4), labels = scales::label_percent()
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-adjust-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/facet-adjust-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Now, our facets looks like a regular bar chart. However, we have redundant labels which we remove in the next step.
 &lt;/figcaption&gt;
@@ -166,7 +166,7 @@ Now, our facets looks like a regular bar chart. However, we have redundant label
     hjust = 0, margin = margin(1, 0, 1, 0), 
     size = rel(1.1), face = &amp;quot;bold&amp;quot;
   ))&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/strip-text-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The polished new y axis labels, originally strip text of small multiples, replace the original axis labels.
 &lt;/figcaption&gt;
@@ -188,7 +188,7 @@ The polished new y axis labels, originally strip text of small multiples, replac
     hjust = 0, margin = margin(1, 0, 1, 0), 
     size = rel(1.1), face = &amp;quot;bold&amp;quot;
   ))&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/expansion-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/expansion-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 The final version with polished category labels by adjusting the strip text of the facets.
 &lt;/figcaption&gt;
@@ -218,7 +218,7 @@ The final version with polished category labels by adjusting the strip text of t
   ))
 
 p&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/color-encoding-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/color-encoding-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Drawing attention to the top-ranked category by using a different fill color.
 &lt;/figcaption&gt;
@@ -233,7 +233,7 @@ Drawing attention to the top-ranked category by using a different fill color.
     size = 4, fontface = &amp;quot;bold&amp;quot;, family = &amp;quot;Spline Sans&amp;quot;
   ) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/percentage-labels-a-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 Now, the bars are labelled directly including a rule that automatically places the labels inside the bars as long as they are wide enough to fit the label.
 &lt;/figcaption&gt;
@@ -256,7 +256,7 @@ Now, the bars are labelled directly including a rule that automatically places t
   ) +
   scale_x_continuous(guide = &amp;quot;none&amp;quot;, name = NULL, expand = c(0, 0)) +
   scale_color_manual(values = c(&amp;quot;black&amp;quot;, &amp;quot;white&amp;quot;), guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/no-x-axis-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/no-x-axis-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 A version in which the x axis has been removed as it shows redundant information.
 &lt;/figcaption&gt;
@@ -281,7 +281,7 @@ A version in which the x axis has been removed as it shows redundant information
     name = &amp;quot;Proportion&amp;quot;
   ) +
   scale_y_discrete(guide = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/alternative-1.png&#34; width=&#34;576&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/alternative-1.png&#34; width=&#34;576&#34; /&gt;
 &lt;figcaption&gt;
 An example using &lt;code&gt;geom_text()&lt;/code&gt; to place the category labels in combination with &lt;code&gt;vjust&lt;/code&gt;.
 &lt;/figcaption&gt;
@@ -330,14 +330,14 @@ p2 &amp;lt;-
 
 library(patchwork)
 p1 + p2&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-1-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-1-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Applying both codes to a different data set illustrates nicely the differences of the two approaches to place labels on top. The facet approach (left) ensures that labels are placed above, while the bars get thinner. The geom approach (right) uses a fixed bar width and thus the labels overlap at some point.
 &lt;/figcaption&gt;
 &lt;p&gt;Both approaches have their pros and cons. In circumstances, where you can tweak the exact setting of bar widths, font sizes, and vertical justification, the &lt;code&gt;geom_text()&lt;/code&gt; approach might be easier to set up.&lt;/p&gt;
 &lt;p&gt;Using the &lt;code&gt;facet_wrap()&lt;/code&gt; approach ensures that the labels are always above the bars and that the labels are not clipped by the panel or plot border. This is especially powerful in case the data changes and charts need to be updated without any further modifications. Or if you want to apply a function to multiple data sets without the need to include further arguments to modify the widths and spacing. At the same time, the thinner bars make it more difficult to place labels inside the bars. However, the same issue would pop up when adjusting the widths and font sizes in the &lt;code&gt;geom_text()&lt;/code&gt; example.&lt;/p&gt;
 &lt;p&gt;Finally, I should note that also the facet approach will break at some point: if the figure height is not sufficient, no bars are visible at all. But scaling the figure height based on the number of categories is something one can easy automate as well.&lt;/p&gt;
-&lt;img src=&#34;http://localhost:4321/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-2-1.png&#34; width=&#34;1152&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2023-10-26-how-to-label-bar-graphs-in-ggplot2-yet-again_files/figure-html/compare-2-1.png&#34; width=&#34;1152&#34; /&gt;
 &lt;figcaption&gt;
 Both approaches, the facet approach on the left and the geom approach on the right, need sufficient figure height to work nicely.
 &lt;/figcaption&gt;
@@ -384,10 +384,10 @@ R Session Info
     
     <item>
       <title>A Quick How-to on Labelling Bar Graphs in ggplot2</title>
-      <link>http://localhost:4321/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
+      <link>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</guid>
       <description>
 
 
@@ -491,7 +491,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
   ## change plot appearance
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;how-to-1&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;How to Calculate the Percentage Values&lt;/h5&gt;
@@ -540,7 +540,7 @@ mpg_sum&lt;/code&gt;&lt;/pre&gt;
   ## add percentage labels
   geom_text(aes(label = perc)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-with-labels-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;And in case you want to add some more description to one of the bars, you can use an &lt;code&gt;if_else()&lt;/code&gt; (or an &lt;code&gt;ifelse()&lt;/code&gt;) statement like this:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;- mpg_sum |&amp;gt; 
   dplyr::mutate(
@@ -555,7 +555,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   ## make sure labels doesn&amp;#39;t get cut
   scale_x_continuous(limits = c(NA, 24)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/perc-label-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To illustrate how to create and place the labels on the fly, here is an example with labels showing counts per manufacturer (with percentage labels it gets a bit more complicated). We use &lt;code&gt;geom_bar()&lt;/code&gt; instead of &lt;code&gt;geom_col()&lt;/code&gt; which takes not two but only one variable and calculates counts by default. To add the labels, we again use &lt;code&gt;geom_text()&lt;/code&gt; but this time we overwrite the default statistical transformation &lt;code&gt;stat = &#34;identity&#34;&lt;/code&gt; with &lt;code&gt;stat = &#34;count&#34;&lt;/code&gt; (the same as the default for &lt;code&gt;geom_bar()&lt;/code&gt;).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## prepare non-aggregated data set with lumped and ordered factors
 mpg_fct &amp;lt;- mpg |&amp;gt; 
@@ -581,7 +581,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   ## rotate plot
   coord_flip()  +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-summary-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, the default settings of &lt;code&gt;geom_text()&lt;/code&gt; place the labels exactly on the border. To make it look good, we need to adjust the positioning of the labels. So let’s move on to the next question!&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -601,7 +601,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
     hjust = 1, nudge_x = -.5
   ) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-inside-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In case you want to put the next to the bars, you often need to adjust the plot margin and/or the limits to avoid that the labels are cut off. The drawback of using limits is that you have to define them manually. Thus, I prefer to use the first approach. You can make sure that labels are not truncated by the panel by adding &lt;code&gt;clip = &#34;off&#34;&lt;/code&gt; to any coordinate system.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -619,7 +619,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   theme_minimal() +
   ## make sure labels doesn&amp;#39;t get cut, part 2
   theme(plot.margin = margin(r = 120))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Increase space on the right via &lt;code&gt;scale_x_continuous(limits)&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg_sum, aes(x = n, y = manufacturer)) +
   geom_col(fill = &amp;quot;gray70&amp;quot;) +
@@ -630,7 +630,7 @@ ggplot(mpg_fct, aes(x = manufacturer)) +
   ## make sure labels doesn&amp;#39;t get cut
   scale_x_continuous(limits = c(NA, 30)) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-labels-outside-2-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -656,7 +656,7 @@ We can use the &lt;code&gt;length&lt;/code&gt; of the manufacturer column for al
   ## add custom colors
   scale_fill_manual(values = pal, guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-color-manual-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One could also add the color to the data set and map the fill to that column and use &lt;code&gt;scale_fill_identity()&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum &amp;lt;-
   mpg_sum |&amp;gt; 
@@ -680,7 +680,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   ## add custom colors
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/palette-as-col-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This approach is less error-prone since the color is tied to the properties of the data. Thus, in case we update the data, the colors are still applied correctly.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -715,7 +715,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   ) +
   scale_fill_identity(guide = &amp;quot;none&amp;quot;) +
   theme_minimal()&lt;/code&gt;&lt;/pre&gt;
-&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -737,7 +737,7 @@ ggplot(mpg_sum, aes(x = n, y = manufacturer, fill = color)) +
   theme_void() +
   theme(axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
         plot.margin = margin(rep(15, 4)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/full-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You can find the full code to create the final plot in this &lt;a href=&#34;https://gist.github.com/z3tt/7bc5d9822a7fff409085073c601f29d5&#34;&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
@@ -762,7 +762,7 @@ We can replace &lt;code&gt;geom_text()&lt;/code&gt; with &lt;code&gt;geom_label(
     axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
     plot.margin = margin(rep(15, 4))
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-geom-label-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version with different label placement:&lt;/strong&gt;
 I like the idea of placing only those labels inside that mess up the aspect ratio due to their length. In our case, that’s only the first entry. We can place the labels differently by mapping a new created column &lt;code&gt;place&lt;/code&gt; to the &lt;code&gt;hjust&lt;/code&gt; argument. Since we cannot map a variable to &lt;code&gt;nudge_x&lt;/code&gt;, we cannot use it to offset the labels. To add some spacing, I simply add some white space to the begin and end of each percentage label.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum |&amp;gt; 
@@ -786,7 +786,7 @@ I like the idea of placing only those labels inside that mess up the aspect rati
     axis.text.y = element_text(size = 14, hjust = 1, family = &amp;quot;Fira Sans&amp;quot;),
     plot.margin = margin(rep(15, 4))
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-alternating-labs-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version placing the long label not at the top:&lt;/strong&gt;
 We could also add the “of all car models” bit to a bar that is short enough to ensure that the label does not extend beyond the usual width of the plot. In our example, the second bar in our case fulfills this condition:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg_sum |&amp;gt; 
@@ -812,7 +812,7 @@ We could also add the “of all car models” bit to a bar that is short enough 
     ## make sure labels doesn&amp;#39;t get cut, part 2
     plot.margin = margin(15, 30, 15, 15)
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-07-05-how-to-label-bar-graphs-in-ggplot2_files/figure-html/plot-bars-lab-2nd-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Of course, you could add that information also to the title, figure caption or simply leave it out. But that’s not what the request was about 🤷&lt;/p&gt;
 &lt;details&gt;
 &lt;summary style=&#34;font-size:10pt;&#34;&gt;
