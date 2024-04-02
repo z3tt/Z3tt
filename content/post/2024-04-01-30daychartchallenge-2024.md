@@ -34,4 +34,14 @@ I will not participate on every day this year as there are too many other respon
 #### Day 1: Part-to-Whole {#day1}
 
 <br>
-<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+
+#### Day 2: Neo {#day2}
+
+<br>
+<iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="551" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+<span style='font-size:10pt;'>Note: The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's idea was "neon colors".</span>
