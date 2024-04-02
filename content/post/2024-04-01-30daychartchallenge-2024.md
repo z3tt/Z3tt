@@ -4,7 +4,7 @@ title: My Contributions to the 30DayChartChallenge 2024
 author: Cédric
 date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
-twitterImg: img/banner/mapchallenge-artsy.png
+twitterImg: img/banner/30daychartchallenge-announcement.png
 layout: post
 description: "We're excited to announce the fourth edition of the 30DayChartChallenge! Sadly, I won't be able to participate in all prompts due to prior commitments. For the topics I can contribute to, I'll be focusing on exploring the capabilities of the DataWrapper chart builder."
 tags:
