@@ -36,6 +36,7 @@ I will not participate on every day this year as there are too many other respon
 <br>
 <iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
+<br><br>
 
 
 #### Day 2: Neo {#day2}
