@@ -42,7 +42,15 @@ I will not participate on every day this year as there are too many other respon
 #### Day 2: Neo {#day2}
 
 <br>
-<iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="551" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+<iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="570" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
-<span style='font-size:10pt;'>Note: The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's idea was "neon colors".</span>
+<span style='font-size:11pt;'>The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's idea was "neon colors".</span>
+<br><br>
+
+
+#### Day 4: Waffle {#day4}
+
+<br>
+<iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="486" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
