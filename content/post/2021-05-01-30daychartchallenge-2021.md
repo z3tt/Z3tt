@@ -1,6 +1,6 @@
 ---
 URL: /2021/05/09/contributions-30daychartchallenge-2021/
-title: My Contributions to the First 30DayChartChallenge
+title: My Contributions to the First 30 Day Chart Challenge
 author: Cédric
 date: "2021-05-09"
 image: img/banner/chartchallenge-artsy.png

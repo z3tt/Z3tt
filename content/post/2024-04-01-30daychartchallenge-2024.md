@@ -1,6 +1,6 @@
 ---
 URL: /2024/04/01/contributions-30daychartchallenge-2024/
-title: My Contributions to the 30DayChartChallenge 2024
+title: My Contributions to the 30 Day Chart Challenge 2024
 author: Cédric
 date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
@@ -25,7 +25,15 @@ Find out more about the history of the challenge and explore inspirational contr
 
 <hr>
 
-I will not participate on every day this year as there are too many other responsibilities I am involved in currently. But for the few prompts I am participating in, my goal is to explore the possibilities to create interactive, responsive visualizations with [DataWrapper](https://www.datawrapper.de/).
+I will not participate on every day this year as there are too many other responsibilities I am involved in currently. But for the few prompts I am participating in, my goal is to explore the possibilities to create interactive, responsive visualizations with [DataWrapper](https://www.datawrapper.de/). And to keep it simple so I've decided to set some constraints for my contributions.
+
+##### Self-Imposed Rules
+
+-  **Data:** visualize the data set of [guest stars on "The Simpsons" (Season 1-30)](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-27/simpsons-guests.csv)
+-  **Tool:** use [DataWrapper](https://www.datawrapper.de/) to create the charts (and resist to use ggplot2 👀)
+-  **Fun:** pick a Simpsons quote for the title
+
+
 
 <hr>
 
@@ -34,23 +42,32 @@ I will not participate on every day this year as there are too many other respon
 #### Day 1: Part-to-Whole {#day1}
 
 <br>
-<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="454" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="475" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 <br><br>
 
 
-#### Day 2: Neo {#day2}
+#### Day 2: Neo* {#day2}
 
 <br>
-<iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="570" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+<iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/7/?v=9" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="572" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
-<span style='font-size:11pt;'>The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's idea was "neon colors".</span>
+<span style='font-size:11pt;'>* The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's original idea was "neon colors" :)</span>
 <br><br>
 
 
 #### Day 4: Waffle {#day4}
 
 <br>
-<iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="486" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+<iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
+<br><br>
+
+
+#### Day 5: Diverging {#day4}
+
+<br>
+<iframe title="Welcome to Diversity Tales" aria-label="Split Bars" id="datawrapper-chart-m6S0p" src="https://datawrapper.dwcdn.net/m6S0p/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1104" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
