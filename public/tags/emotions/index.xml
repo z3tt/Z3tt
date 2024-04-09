@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emotions on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/emotions/</link>
+    <link>http://localhost:4321/tags/emotions/</link>
     <description>Recent content in Emotions on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/emotions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/emotions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Colors and Emotions in Data Visualization</title>
-      <link>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</link>
+      <link>http://localhost:4321/2021/06/08/colors-and-emotions-in-data-visualization/</link>
       <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
+      <guid>http://localhost:4321/2021/06/08/colors-and-emotions-in-data-visualization/</guid>
       <description>
 
 

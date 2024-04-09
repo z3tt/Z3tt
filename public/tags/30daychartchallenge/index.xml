@@ -1,23 +1,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>30DayChartChallenge on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
+    <link>http://localhost:4321/tags/30daychartchallenge/</link>
     <description>Recent content in 30DayChartChallenge on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/30daychartchallenge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/30daychartchallenge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Contributions to the 30 Day Chart Challenge 2024</title>
-      <link>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</link>
+      <link>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</guid>
+      <guid>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</guid>
       <description>&lt;h2 id=&#34;whats-the-challenge-about&#34;&gt;What&amp;rsquo;s the Challenge About?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations. This year, Dominic and I are hosting the fourth edition with a new set of prompts:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/banner/30daychartchallenge-prompts.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Find out more about the history of the challenge and explore inspirational contributions in my &lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34;&gt;Nightingale article from last year&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;I will not participate on every day this year as there are too many other responsibilities I am involved in currently. But for the few prompts I am participating in, my goal is to explore the possibilities to create interactive, responsive visualizations with &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I will not participate on every day this year as there are too many other responsibilities I am involved in currently. But for the few prompts I am participating in, my goal is to explore the possibilities to create interactive, responsive visualizations with &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt;. And to keep it simple so I&amp;rsquo;ve decided to set some constraints for my contributions.&lt;/p&gt;
+&lt;h5 id=&#34;self-imposed-rules&#34;&gt;Self-Imposed Rules&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data:&lt;/strong&gt; visualize the data set of &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-27/simpsons-guests.csv&#34;&gt;guest stars on &amp;ldquo;The Simpsons&amp;rdquo; (Season 1-30)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool:&lt;/strong&gt; use &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt; to create the charts (and resist to use ggplot2 👀)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fun:&lt;/strong&gt; pick a Simpsons quote for the title&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;category-comparisons&#34;&gt;Category &amp;ldquo;Comparisons&amp;rdquo;&lt;/h2&gt;
 &lt;h4 id=&#34;day1&#34;&gt;Day 1: Part-to-Whole&lt;/h4&gt;
@@ -25,29 +31,35 @@
 &lt;iframe title=&#34;Ah, geez!!!&#34; aria-label=&#34;Donut Chart&#34; id=&#34;datawrapper-chart-n0YjQ&#34; src=&#34;https://datawrapper.dwcdn.net/n0YjQ/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;475&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
 &lt;/script&gt;
 &lt;br&gt;&lt;br&gt;
-&lt;h4 id=&#34;day2&#34;&gt;Day 2: Neo&lt;/h4&gt;
+&lt;h4 id=&#34;day2&#34;&gt;Day 2: Neo*&lt;/h4&gt;
 &lt;br&gt;
-&lt;iframe title=&#34;Hello! Hello, Springfield! Look at me and my purple hair!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-M99F9&#34; src=&#34;https://datawrapper.dwcdn.net/M99F9/7/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;572&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
+&lt;iframe title=&#34;Hello! Hello, Springfield! Look at me and my purple hair!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-M99F9&#34; src=&#34;https://datawrapper.dwcdn.net/M99F9/7/?v=9&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;572&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
 &lt;/script&gt;
-&lt;p&gt;&lt;span style=&#39;font-size:11pt;&#39;&gt;The prompt was often interpreted as &amp;ldquo;new&amp;rdquo; (or &amp;ldquo;Neo&amp;rdquo; from &amp;ldquo;Matrix&amp;rdquo;) but Dominic&amp;rsquo;s original idea was &amp;ldquo;neon colors&amp;rdquo; :)&lt;/span&gt;
+&lt;p&gt;&lt;span style=&#39;font-size:11pt;&#39;&gt;* The prompt was often interpreted as &amp;ldquo;new&amp;rdquo; (or &amp;ldquo;Neo&amp;rdquo; from &amp;ldquo;Matrix&amp;rdquo;) but Dominic&amp;rsquo;s original idea was &amp;ldquo;neon colors&amp;rdquo; :)&lt;/span&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h4 id=&#34;day4&#34;&gt;Day 4: Waffle&lt;/h4&gt;
 &lt;br&gt;
-&lt;iframe title=&#34;I want more bananas on my waffles!!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-n66UU&#34; src=&#34;https://datawrapper.dwcdn.net/n66UU/6/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;468&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
+&lt;iframe title=&#34;I want more bananas on my waffles!!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-n66UU&#34; src=&#34;https://datawrapper.dwcdn.net/n66UU/7/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;468&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
 &lt;/script&gt;
 &lt;br&gt;&lt;br&gt;
-&lt;h4 id=&#34;day4&#34;&gt;Day 5: Diiverging&lt;/h4&gt;
-&lt;p&gt;&lt;br&gt;&lt;iframe title=&#34;Welcome to Diversity Tales&#34; aria-label=&#34;Split Bars&#34; id=&#34;datawrapper-chart-m6S0p&#34; src=&#34;https://datawrapper.dwcdn.net/m6S0p/3/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;1073&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&amp;ldquo;use strict&amp;rdquo;;window.addEventListener(&amp;ldquo;message&amp;rdquo;,(function(a){if(void 0!==a.data[&amp;ldquo;datawrapper-height&amp;rdquo;]){var e=document.querySelectorAll(&amp;ldquo;iframe&amp;rdquo;);for(var t in a.data[&amp;ldquo;datawrapper-height&amp;rdquo;])for(var r=0;r&amp;lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&amp;ldquo;datawrapper-height&amp;rdquo;][t]+&amp;ldquo;px&amp;rdquo;;e[r].style.height=i}}}))}();
-&lt;/script&gt;&lt;/p&gt;
+&lt;h4 id=&#34;day4&#34;&gt;Day 5: Diverging&lt;/h4&gt;
+&lt;br&gt;
+&lt;iframe title=&#34;Welcome to Diversity Tales&#34; aria-label=&#34;Split Bars&#34; id=&#34;datawrapper-chart-m6S0p&#34; src=&#34;https://datawrapper.dwcdn.net/m6S0p/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;1104&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
+&lt;/script&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;h4 id=&#34;day9&#34;&gt;Day 9: Major/minor&lt;/h4&gt;
+&lt;br&gt;
+&lt;iframe title=&#34;We happen to be watching this very educational cartoon.&#34; aria-label=&#34;Interactive line chart&#34; id=&#34;datawrapper-chart-gUrI7&#34; src=&#34;https://datawrapper.dwcdn.net/gUrI7/1/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;520&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
+&lt;/script&gt;
 </description>
     </item>
     
     <item>
       <title>The 30DayChartChallenge is Ready to Kick Off</title>
-      <link>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</link>
+      <link>http://localhost:4321/2021/05/09/the-30daychartchallenge-year-three-kick-off/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</guid>
+      <guid>http://localhost:4321/2021/05/09/the-30daychartchallenge-year-three-kick-off/</guid>
       <description>&lt;p&gt;This blog post originally appeared as a &lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34;&gt;post on &amp;ldquo;Nightingale&amp;rdquo;&lt;/a&gt;, the &lt;a href=&#34;https://nightingaledvs.com/&#34;&gt;journal of the Data Visualization Society&lt;/a&gt;. Thanks to Claire Santos for all the helpful comments on and revisions of the draft!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;The &lt;a href=&#39;https://twitter.com/30daychartchall&#39; style=&#39;font-weight:800;&#39;&gt;#30DayChartChallenge&lt;/a&gt; is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. The challenge began in April 2021 and has continued every year since. Indeed, the third edition of the #30DayChartChallenge starts in a few days—and we have just shared this year’s prompts, if you want to get a head start!&lt;/strong&gt;&lt;/p&gt;
@@ -88,10 +100,10 @@
     
     <item>
       <title>My Contributions to the First 30 Day Chart Challenge</title>
-      <link>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</link>
+      <link>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</guid>
+      <guid>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</guid>
       <description>&lt;h2 id=&#34;whats-the-30daychartchallenge&#34;&gt;What&amp;rsquo;s the #30DayChartChallenge?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/banner.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -185,9 +197,9 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of &lt;strong&gt;1,960 contributions&lt;/strong&gt; (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;All 1,960 contributions (as of May 9) as stacked bar chart, per category.&lt;/figcaption&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.&lt;/figcaption&gt;
 &lt;p&gt;By the way, for more charts about the #30DayChartChallenge, have a look at &lt;a href=&#34;https://github.com/gkaramanis/30DayChartChallenge&#34;&gt;Georgios Karamanis&amp;rsquo; collection of meta-contributions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We have seen contributions from all around the world, using a wide variety of tools. It was also great to see the different approaches and interpretations of the topics. Many participants connected with each other and exchanged tips and tricks on finding data, chart types, and tools.&lt;/p&gt;

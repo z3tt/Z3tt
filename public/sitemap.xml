@@ -2,262 +2,262 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cedricscherer.com/tags/30daychartchallenge/</loc>
+    <loc>http://localhost:4321/tags/30daychartchallenge/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/</loc>
+    <loc>http://localhost:4321/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/dataviz/</loc>
+    <loc>http://localhost:4321/tags/dataviz/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/datawrapper/</loc>
+    <loc>http://localhost:4321/tags/datawrapper/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</loc>
+    <loc>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/post/</loc>
+    <loc>http://localhost:4321/post/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/r/</loc>
+    <loc>http://localhost:4321/tags/r/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/</loc>
+    <loc>http://localhost:4321/tags/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/annotations/</loc>
+    <loc>http://localhost:4321/tags/annotations/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/ggplot2/</loc>
+    <loc>http://localhost:4321/tags/ggplot2/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/tidyverse/</loc>
+    <loc>http://localhost:4321/tags/tidyverse/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/tutorial/</loc>
+    <loc>http://localhost:4321/tags/tutorial/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
+    <loc>http://localhost:4321/2023/10/26/yet-another-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/automation/</loc>
+    <loc>http://localhost:4321/tags/automation/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/efficiency/</loc>
+    <loc>http://localhost:4321/tags/efficiency/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</loc>
+    <loc>http://localhost:4321/2023/07/05/efficiency-and-consistency-automate-subset-graphics-with-ggplot2-and-purrr/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/tips/</loc>
+    <loc>http://localhost:4321/tags/tips/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/workflow/</loc>
+    <loc>http://localhost:4321/tags/workflow/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/challenge/</loc>
+    <loc>http://localhost:4321/tags/challenge/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/community/</loc>
+    <loc>http://localhost:4321/tags/community/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/nightingale/</loc>
+    <loc>http://localhost:4321/tags/nightingale/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/social-media/</loc>
+    <loc>http://localhost:4321/tags/social-media/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</loc>
+    <loc>http://localhost:4321/2021/05/09/the-30daychartchallenge-year-three-kick-off/</loc>
     <lastmod>2023-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</loc>
+    <loc>http://localhost:4321/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/rstats/</loc>
+    <loc>http://localhost:4321/tags/rstats/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/workshop/</loc>
+    <loc>http://localhost:4321/tags/workshop/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/design/</loc>
+    <loc>http://localhost:4321/tags/design/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/equality/</loc>
+    <loc>http://localhost:4321/tags/equality/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/europe/</loc>
+    <loc>http://localhost:4321/tags/europe/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</loc>
+    <loc>http://localhost:4321/2022/03/08/international-womens-day-2022-the-pay-gap-in-europe/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/paygap/</loc>
+    <loc>http://localhost:4321/tags/paygap/</loc>
     <lastmod>2022-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/maps/</loc>
+    <loc>http://localhost:4321/tags/maps/</loc>
     <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</loc>
+    <loc>http://localhost:4321/2021/08/27/the-worlds-countries-colored-by-their-first-letter/</loc>
     <lastmod>2021-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
+    <loc>http://localhost:4321/2021/07/05/a-quick-how-to-on-labelling-bar-graphs-in-ggplot2/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/climate/</loc>
+    <loc>http://localhost:4321/tags/climate/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/colors/</loc>
+    <loc>http://localhost:4321/tags/colors/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/06/08/colors-and-emotions-in-data-visualization/</loc>
+    <loc>http://localhost:4321/2021/06/08/colors-and-emotions-in-data-visualization/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/covid19/</loc>
+    <loc>http://localhost:4321/tags/covid19/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/cultures/</loc>
+    <loc>http://localhost:4321/tags/cultures/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/emotions/</loc>
+    <loc>http://localhost:4321/tags/emotions/</loc>
     <lastmod>2021-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/chart-selection/</loc>
+    <loc>http://localhost:4321/tags/chart-selection/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/distributions/</loc>
+    <loc>http://localhost:4321/tags/distributions/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</loc>
+    <loc>http://localhost:4321/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/figma/</loc>
+    <loc>http://localhost:4321/tags/figma/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/flourish/</loc>
+    <loc>http://localhost:4321/tags/flourish/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</loc>
+    <loc>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</loc>
     <lastmod>2021-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/correlaid/</loc>
+    <loc>http://localhost:4321/tags/correlaid/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2021/01/01/review-2020-personal-dataviz-highlights/</loc>
+    <loc>http://localhost:4321/2021/01/01/review-2020-personal-dataviz-highlights/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/rstudio-table-contest/</loc>
+    <loc>http://localhost:4321/tags/rstudio-table-contest/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/tidytuesday/</loc>
+    <loc>http://localhost:4321/tags/tidytuesday/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/contest/</loc>
+    <loc>http://localhost:4321/tags/contest/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/gt/</loc>
+    <loc>http://localhost:4321/tags/gt/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/imdb/</loc>
+    <loc>http://localhost:4321/tags/imdb/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/table/</loc>
+    <loc>http://localhost:4321/tags/table/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/tv-shows/</loc>
+    <loc>http://localhost:4321/tags/tv-shows/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2020/11/01/imdb-top-250-series-table-contest-rstudio/</loc>
+    <loc>http://localhost:4321/2020/11/01/imdb-top-250-series-table-contest-rstudio/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/animations/</loc>
+    <loc>http://localhost:4321/tags/animations/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/heatmap/</loc>
+    <loc>http://localhost:4321/tags/heatmap/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/swdchallenge/</loc>
+    <loc>http://localhost:4321/tags/swdchallenge/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</loc>
+    <loc>http://localhost:4321/2020/03/31/corona-COVID-19-death-tolls-worst-day-so-far/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/climate-change/</loc>
+    <loc>http://localhost:4321/tags/climate-change/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2020/01/09/australian-bushfires-comparison-europe-world/</loc>
+    <loc>http://localhost:4321/2020/01/09/australian-bushfires-comparison-europe-world/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/nature/</loc>
+    <loc>http://localhost:4321/tags/nature/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/weather/</loc>
+    <loc>http://localhost:4321/tags/weather/</loc>
     <lastmod>2020-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/12/30/best-tidytuesday-2019/</loc>
+    <loc>http://localhost:4321/2019/12/30/best-tidytuesday-2019/</loc>
     <lastmod>2019-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/berlin/</loc>
+    <loc>http://localhost:4321/tags/berlin/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/christmas/</loc>
+    <loc>http://localhost:4321/tags/christmas/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/12/24/merry-white-christmas-Berlin-snow-history/</loc>
+    <loc>http://localhost:4321/2019/12/24/merry-white-christmas-Berlin-snow-history/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/30daymapchallenge/</loc>
+    <loc>http://localhost:4321/tags/30daymapchallenge/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/12/15/contributions-first-30daymapchallenge-2019/</loc>
+    <loc>http://localhost:4321/2019/12/15/contributions-first-30daymapchallenge-2019/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/gganimate/</loc>
+    <loc>http://localhost:4321/tags/gganimate/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
+    <loc>http://localhost:4321/2019/09/17/bar-chart-race-temperatures-berlin/</loc>
     <lastmod>2019-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</loc>
+    <loc>http://localhost:4321/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/</loc>
     <lastmod>2019-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/ggplot-evolution/</loc>
+    <loc>http://localhost:4321/tags/ggplot-evolution/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot/</loc>
+    <loc>http://localhost:4321/2019/05/17/the-evolution-of-a-ggplot/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/05/06/tidytuesday_intro/</loc>
+    <loc>http://localhost:4321/2019/05/06/tidytuesday_intro/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/tags/announcement/</loc>
+    <loc>http://localhost:4321/tags/announcement/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/2019/05/04/welcome/</loc>
+    <loc>http://localhost:4321/2019/05/04/welcome/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cedricscherer.com/search/placeholder/</loc>
+    <loc>http://localhost:4321/search/placeholder/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/about/</loc>
+    <loc>http://localhost:4321/top/about/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/challenges/</loc>
+    <loc>http://localhost:4321/top/challenges/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/conduct/</loc>
+    <loc>http://localhost:4321/top/conduct/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/cv/</loc>
+    <loc>http://localhost:4321/top/cv/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/dataviz/</loc>
+    <loc>http://localhost:4321/top/dataviz/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/impressum/</loc>
+    <loc>http://localhost:4321/top/impressum/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/links/</loc>
+    <loc>http://localhost:4321/top/links/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/research/</loc>
+    <loc>http://localhost:4321/top/research/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/categories/</loc>
+    <loc>http://localhost:4321/categories/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/search/</loc>
+    <loc>http://localhost:4321/search/</loc>
   </url><url>
-    <loc>https://cedricscherer.com/top/</loc>
+    <loc>http://localhost:4321/top/</loc>
   </url>
 </urlset>
