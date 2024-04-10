@@ -50,14 +50,13 @@ I will not participate on every day this year as there are too many other respon
 
 <br><iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="502" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-<span style='font-size:11pt;lineheight:.9;'>* The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's original idea was "neon colors" :)</span>
+<div style='font-size:11pt;line-height:1.2;'>* The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's original idea was "neon colors" :)</div>
 <br><br>
 
 
 #### Day 4: Waffle {#day4}
 
-<br><iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script><br><br>
+<br><iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="496" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script><br><br>
 
 
 #### Day 5: Diverging {#day4}
@@ -70,5 +69,4 @@ I will not participate on every day this year as there are too many other respon
 
 #### Day 9: Major/minor {#day9}
 
-<br>
-<iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+<br><iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
