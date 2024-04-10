@@ -1,6 +1,6 @@
 ---
 URL: /2024/04/01/contributions-30daychartchallenge-2024/
-title: My Contributions to the 30 Day Chart Challenge 2024
+title: My Contributions to the 30DayChartChallenge 2024
 author: Cédric
 date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
