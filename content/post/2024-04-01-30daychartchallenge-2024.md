@@ -6,7 +6,7 @@ date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
 twitterImg: img/banner/30daychartchallenge-announcement.png
 layout: post
-description: "We're excited to announce the fourth edition of the 30DayChartChallenge! Sadly, I won't be able to participate in all prompts due to prior commitments. For the topics I can contribute to, I'll be focusing on exploring the capabilities of the DataWrapper chart builder."
+description: "We're excited to announce the fourth edition of the 30DayChartChallenge! Sadly, I won't be able to participate in all prompts due to prior commitments. For the topics I can contribute to, I'll be focusing on exploring the capabilities of the DataWrapper chart builder to create interactive and responsive visualizations."
 tags:
     - DataViz
     - 30DayChartChallenge
@@ -29,9 +29,10 @@ I will not participate on every day this year as there are too many other respon
 
 ##### Self-Imposed Rules
 
--  **Data:** visualize the data set of [guest stars on "The Simpsons" (Season 1-30)](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-27/simpsons-guests.csv)
+-  **Data:** visualize a "The Simpsons" data set ([1](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-27/simpsons-guests.csv), [2](https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes#endnote_april), and [3](https://github.com/jcrodriguez1989/thesimpsons))
 -  **Tool:** use [DataWrapper](https://www.datawrapper.de/) to create the charts (and resist to use ggplot2 👀)
--  **Fun:** pick a Simpsons quote for the title
+-  **Colors:** pick colors from "The Simpsons" ([1](https://www.designboom.com/design/did-the-simpsons-predict-every-pantone-color-of-the-year-12-23-2019/) and [2](https://hypebeast.com/2015/9/the-simpsons-pantone))
+-  **Fun:** choose a suitable Simpsons quote for the title
 
 
 
@@ -41,40 +42,33 @@ I will not participate on every day this year as there are too many other respon
 
 #### Day 1: Part-to-Whole {#day1}
 
-<br>
-<iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="475" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-<br><br>
+<br><iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="475" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script><br><br>
 
 
 #### Day 2: Neo* {#day2}
 
-<br>
-<iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/7/?v=9" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="572" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
+<br><iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="502" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-<span style='font-size:11pt;'>* The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's original idea was "neon colors" :)</span>
+<span style='font-size:11pt;lineheight:.9;'>* The prompt was often interpreted as "new" (or "Neo" from "Matrix") but Dominic's original idea was "neon colors" :)</span>
 <br><br>
 
 
 #### Day 4: Waffle {#day4}
 
-<br>
-<iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-<br><br>
+<br><iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="468" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script><br><br>
 
 
 #### Day 5: Diverging {#day4}
 
-<br>
-<iframe title="Welcome to Diversity Tales" aria-label="Split Bars" id="datawrapper-chart-m6S0p" src="https://datawrapper.dwcdn.net/m6S0p/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1104" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
-<br><br>
+<br><iframe title="Welcome to Diversity Tales" aria-label="Split Bars" id="datawrapper-chart-m6S0p" src="https://datawrapper.dwcdn.net/m6S0p/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1104" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script><br><br>
 
+
+## Category "Relationships"
 
 #### Day 9: Major/minor {#day9}
 
 <br>
-<iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="520" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-</script>
+<iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
