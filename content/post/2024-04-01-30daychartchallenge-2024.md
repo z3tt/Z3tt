@@ -1,6 +1,6 @@
 ---
 URL: /2024/04/01/contributions-30daychartchallenge-2024/
-title: Interactive Charts about "The Simpsons" for the 30DayChartChallenge 2024
+title: Visualizing "The Simpsons" with DataWrapper for the 30DayChartChallenge 2024
 author: Cédric
 date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
@@ -63,7 +63,7 @@ I will not participate on every day this year as there are too many other respon
 <hr>
 
 
-#### Day 5: Diverging {#day4}
+##### Day 5: Diverging {#day4}
 
 <iframe title="Welcome to Diversity Tales" aria-label="Split Bars" id="datawrapper-chart-m6S0p" src="https://datawrapper.dwcdn.net/m6S0p/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1104" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
@@ -72,9 +72,9 @@ I will not participate on every day this year as there are too many other respon
 
 ## Category "Relationships"
 
-#### Day 9: Major/minor {#day9}
+##### Day 9: Major/minor {#day9}
 
-<iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+<iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <hr>
 
