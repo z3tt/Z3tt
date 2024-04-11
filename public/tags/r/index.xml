@@ -7,7 +7,7 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Contributions to the 30 Day Chart Challenge 2024</title>
+      <title>My Contributions to the 30DayChartChallenge 2024</title>
       <link>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
@@ -23,38 +23,36 @@
 &lt;li&gt;&lt;strong&gt;Data:&lt;/strong&gt; visualize a &amp;ldquo;The Simpsons&amp;rdquo; data set (&lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-27/simpsons-guests.csv&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes#endnote_april&#34;&gt;2&lt;/a&gt;, and &lt;a href=&#34;https://github.com/jcrodriguez1989/thesimpsons&#34;&gt;3&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Tool:&lt;/strong&gt; use &lt;a href=&#34;https://www.datawrapper.de/&#34;&gt;DataWrapper&lt;/a&gt; to create the charts (and resist to use ggplot2 👀)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Colors:&lt;/strong&gt; pick colors from &amp;ldquo;The Simpsons&amp;rdquo; (&lt;a href=&#34;https://www.designboom.com/design/did-the-simpsons-predict-every-pantone-color-of-the-year-12-23-2019/&#34;&gt;1&lt;/a&gt; and &lt;a href=&#34;https://hypebeast.com/2015/9/the-simpsons-pantone&#34;&gt;2&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fun:&lt;/strong&gt; choose a suitable Simpsons quote for the title&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fun:&lt;/strong&gt; choose a suitable quote from &amp;ldquo;The Simpsons&amp;rdquo; for the title&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;category-comparisons&#34;&gt;Category &amp;ldquo;Comparisons&amp;rdquo;&lt;/h2&gt;
-&lt;h4 id=&#34;day1&#34;&gt;Day 1: Part-to-Whole&lt;/h4&gt;
-&lt;p&gt;&lt;br&gt;&lt;iframe title=&#34;Ah, geez!!!&#34; aria-label=&#34;Donut Chart&#34; id=&#34;datawrapper-chart-n0YjQ&#34; src=&#34;https://datawrapper.dwcdn.net/n0YjQ/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;475&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&amp;ldquo;use strict&amp;rdquo;;window.addEventListener(&amp;ldquo;message&amp;rdquo;,(function(a){if(void 0!==a.data[&amp;ldquo;datawrapper-height&amp;rdquo;]){var e=document.querySelectorAll(&amp;ldquo;iframe&amp;rdquo;);for(var t in a.data[&amp;ldquo;datawrapper-height&amp;rdquo;])for(var r=0;r&amp;lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&amp;ldquo;datawrapper-height&amp;rdquo;][t]+&amp;ldquo;px&amp;rdquo;;e[r].style.height=i}}}))}();
-&lt;/script&gt;&lt;/p&gt;
+&lt;h5 id=&#34;day1&#34;&gt;Day 1: Part-to-Whole&lt;/h5&gt;
+&lt;iframe title=&#34;Ah, geez!!!&#34; aria-label=&#34;Donut Chart&#34; id=&#34;datawrapper-chart-n0YjQ&#34; src=&#34;https://datawrapper.dwcdn.net/n0YjQ/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;475&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
+&lt;/script&gt;
 &lt;hr&gt;
-&lt;h4 id=&#34;day2&#34;&gt;Day 2: Neo*&lt;/h4&gt;
-&lt;br&gt;
-&lt;iframe title=&#34;Hello! Hello, Springfield! Look at me and my purple hair!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-M99F9&#34; src=&#34;https://datawrapper.dwcdn.net/M99F9/9/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;502&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
+&lt;h5 id=&#34;day2&#34;&gt;Day 2: Neo*&lt;/h5&gt;
+&lt;iframe title=&#34;Hello! Hello, Springfield! Look at me and my purple hair!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-M99F9&#34; src=&#34;https://datawrapper.dwcdn.net/M99F9/9/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;502&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;&lt;br&gt;&lt;br&gt;
 &lt;div style=&#39;font-size:11pt;line-height:1.2;&#39;&gt;* The prompt was often interpreted as &#34;new&#34; (or &#34;Neo&#34; from &#34;Matrix&#34;) but Dominic&#39;s original idea was &#34;neon colors&#34; :)&lt;/div&gt;
 &lt;hr&gt;
-&lt;h4 id=&#34;day4&#34;&gt;Day 4: Waffle&lt;/h4&gt;
-&lt;br&gt;
+&lt;h5 id=&#34;day4&#34;&gt;Day 4: Waffle&lt;/h5&gt;
 &lt;iframe title=&#34;I want more bananas on my waffles!!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-n66UU&#34; src=&#34;https://datawrapper.dwcdn.net/n66UU/11/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;496&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
 &lt;/script&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;day4&#34;&gt;Day 5: Diverging&lt;/h4&gt;
-&lt;br&gt;
 &lt;iframe title=&#34;Welcome to Diversity Tales&#34; aria-label=&#34;Split Bars&#34; id=&#34;datawrapper-chart-m6S0p&#34; src=&#34;https://datawrapper.dwcdn.net/m6S0p/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;1104&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[
 &lt;hr&gt;
 &lt;h2 id=&#34;category-relationships&#34;&gt;Category &amp;ldquo;Relationships&amp;rdquo;&lt;/h2&gt;
 &lt;h4 id=&#34;day9&#34;&gt;Day 9: Major/minor&lt;/h4&gt;
-&lt;br&gt;
 &lt;iframe title=&#34;We happen to be watching this very educational cartoon.&#34; aria-label=&#34;Interactive line chart&#34; id=&#34;datawrapper-chart-gUrI7&#34; src=&#34;https://datawrapper.dwcdn.net/gUrI7/8/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;525&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
 &lt;/script&gt;
 &lt;hr&gt;
-&lt;h4 id=&#34;day10&#34;&gt;Day 10: Physical&lt;/h4&gt;
-&lt;br&gt;
+&lt;h5 id=&#34;day10&#34;&gt;Day 10: Physical&lt;/h5&gt;
 &lt;iframe title=&#34;Home Sweet Homediddly-Dum-Doodily&#34; aria-label=&#34;Range Plot&#34; id=&#34;datawrapper-chart-gD19A&#34; src=&#34;https://datawrapper.dwcdn.net/gD19A/7/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;586&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
-</description>
+&lt;hr&gt;
+&lt;h5 id=&#34;day11&#34;&gt;Day 11: Mobile-friendly&lt;/h5&gt;
+&lt;iframe title=&#34;I&#39;d rather call you by your normal name, if that&#39;s okay.&#34; aria-label=&#34;Multiple Pies&#34; id=&#34;datawrapper-chart-MTNQJ&#34; src=&#34;https://datawrapper.dwcdn.net/MTNQJ/1/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;796&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();
+&lt;/script&gt;</description>
     </item>
     
     <item>
