@@ -1,6 +1,6 @@
 ---
 URL: /2024/04/01/contributions-30daychartchallenge-2024/
-title: Visualizing "The Simpsons" with DataWrapper for the 30DayChartChallenge 2024
+title: Exploring "The Simpsons" with DataWrapper for the 30DayChartChallenge 2024
 author: Cédric
 date: "2024-04-01"
 image: img/banner/30daychartchallenge-gradient.png
