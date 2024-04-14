@@ -83,6 +83,8 @@ I will not participate on every day this year as there are too many other respon
 
 <iframe title="Home Sweet Homediddly-Dum-Doodily" aria-label="Range Plot" id="datawrapper-chart-gD19A" src="https://datawrapper.dwcdn.net/gD19A/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="586" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
+<div style='line-height:1.3;'><br><b>Note:</b> While trying to create a lollipop chart, I ended up with this column chart with gradient fills—it's actually a <a href='https://www.datawrapper.de/charts/range-plot' target="_blank">range plot</a></div>
+
 <hr>
 
 
@@ -103,9 +105,13 @@ I will not participate on every day this year as there are too many other respon
 
 <iframe title="He gets it from your side of the family, you know. No monsters on my side." aria-label="Scatter Plot" id="datawrapper-chart-ZHm4s" src="https://datawrapper.dwcdn.net/ZHm4s/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="612" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
+<div style='line-height:1.3;'><br><b>Note:</b> The family tree is build with a <a href='https://academy.datawrapper.de/article/146-customizing-your-scatter-plot-annotate' target="_blank">scatter plot with lots of custom annotation lines</a>.</div>
+
 <hr>
 
 ##### Day 14: Heatmap
 
 <iframe title="Hey, what do you want from me? I do a kid show! And it's a classic." aria-label="Map" id="datawrapper-chart-4fprx" src="https://datawrapper.dwcdn.net/4fprx/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="945" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+<div style='line-height:1.3;'><br><b>Note:</b> The chart is actually a <a href='https://www.datawrapper.de/maps/choropleth-map' target="_blank">choropleth map</a> to ensure that the heatmap looks good independent of the screen width.</div>
 
