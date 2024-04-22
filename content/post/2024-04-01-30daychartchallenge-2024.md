@@ -114,7 +114,7 @@ I will not participate on every day this year as there are too many other respon
 
 ##### Day 14: Heatmap {#day14}
 
-<iframe title="Hey, what do you want from me? I do a kid show! And it's a classic." aria-label="Map" id="datawrapper-chart-4fprx" src="https://datawrapper.dwcdn.net/4fprx/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="942" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+<iframe title="Hey, what do you want from me? I do a kid show! And it's a classic." aria-label="Map" id="datawrapper-chart-4fprx" src="https://datawrapper.dwcdn.net/4fprx/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="969" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <div style='line-height:1.3;'><br><b>Note:</b> The chart is actually a <a href='https://www.datawrapper.de/maps/choropleth-map' target="_blank">choropleth map</a> to ensure that the heatmap looks good independent of the screen width.</div>
 
