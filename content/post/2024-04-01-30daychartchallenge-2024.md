@@ -38,7 +38,7 @@ I will not participate on every day this year as there are too many other respon
 
 <hr>
 
-## Category "Comparisons"
+## Category "Comparisons" {#comparisons}
 
 ##### Day 1: Part-to-Whole {#day1}
 
@@ -67,10 +67,10 @@ I will not participate on every day this year as there are too many other respon
 
 <iframe title="Welcome to Diversity Tales" aria-label="Split Bars" id="datawrapper-chart-m6S0p" src="https://datawrapper.dwcdn.net/m6S0p/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1104" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-<hr>
+<hr><br>
 
 
-## Category "Relationships"
+## Category "Distributions" {#distributions}
 
 ##### Day 9: Major/minor {#day9}
 
@@ -98,8 +98,10 @@ I will not participate on every day this year as there are too many other respon
 
 <iframe title="I'd rather call you by your normal name, if that's okay." aria-label="Stacked Bars" id="datawrapper-chart-S0ggI" src="https://datawrapper.dwcdn.net/S0ggI/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="483" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-<hr>
+<hr><br>
 
+
+## Category "Relationships" {#relationships}
 
 ##### Day 13: Family {#day13}
 
@@ -116,8 +118,10 @@ I will not participate on every day this year as there are too many other respon
 
 <div style='line-height:1.3;'><br><b>Note:</b> The chart is actually a <a href='https://www.datawrapper.de/maps/choropleth-map' target="_blank">choropleth map</a> to ensure that the heatmap looks good independent of the screen width.</div>
 
-<hr>
+<hr><br>
 
+
+## Category "Timeseries" {#timeseries}
 
 ##### Day 20: Correlation {#day20}
 
