@@ -38,16 +38,14 @@ I will not participate on every day this year as there are too many other respon
 
 <hr>
 
-## Category "Comparisons" {#comparisons}
-
-##### Day 1: Part-to-Whole {#day1}
+### Day 1: Part-to-Whole {#day1}
 
 <iframe title="Ah, geez!!!" aria-label="Donut Chart" id="datawrapper-chart-n0YjQ" src="https://datawrapper.dwcdn.net/n0YjQ/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="492" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <hr>
 
 
-##### Day 2: Neo* {#day2}
+### Day 2: Neo* {#day2}
 
 <iframe title="Hello! Hello, Springfield! Look at me and my purple hair!" aria-label="Scatter Plot" id="datawrapper-chart-M99F9" src="https://datawrapper.dwcdn.net/M99F9/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="502" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script><br><br>
 
@@ -56,30 +54,28 @@ I will not participate on every day this year as there are too many other respon
 <hr>
 
 
-##### Day 4: Waffle {#day4}
+### Day 4: Waffle {#day4}
 
 <iframe title="I want more bananas on my waffles!!" aria-label="Scatter Plot" id="datawrapper-chart-n66UU" src="https://datawrapper.dwcdn.net/n66UU/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="513" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <hr>
 
 
-##### Day 5: Diverging {#day4}
+### Day 5: Diverging {#day4}
 
 <iframe title="Welcome to Diversity Tales" aria-label="Split Bars" id="datawrapper-chart-m6S0p" src="https://datawrapper.dwcdn.net/m6S0p/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1104" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-<hr><br>
+<hr>
 
 
-## Category "Distributions" {#distributions}
-
-##### Day 9: Major/minor {#day9}
+### Day 9: Major/minor {#day9}
 
 <iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <hr>
 
 
-##### Day 10: Physical {#day10}
+### Day 10: Physical {#day10}
 
 <iframe title="Home Sweet Homediddly-Dum-Doodily" aria-label="Range Plot" id="datawrapper-chart-gD19A" src="https://datawrapper.dwcdn.net/gD19A/15/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="604" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
@@ -88,7 +84,7 @@ I will not participate on every day this year as there are too many other respon
 <hr>
 
 
-##### Day 11: Mobile-friendly {#day11}
+### Day 11: Mobile-friendly {#day11}
 
 <iframe title="I'd rather call you by your normal name, if that's okay." aria-label="Multiple Pies" id="datawrapper-chart-MTNQJ" src="https://datawrapper.dwcdn.net/MTNQJ/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="427" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
@@ -98,12 +94,10 @@ I will not participate on every day this year as there are too many other respon
 
 <iframe title="I'd rather call you by your normal name, if that's okay." aria-label="Stacked Bars" id="datawrapper-chart-S0ggI" src="https://datawrapper.dwcdn.net/S0ggI/6/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="483" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
-<hr><br>
+<hr>
 
 
-## Category "Relationships" {#relationships}
-
-##### Day 13: Family {#day13}
+### Day 13: Family {#day13}
 
 <iframe title="He gets it from your side of the family, you know. No monsters on my side." aria-label="Scatter Plot" id="datawrapper-chart-ZHm4s" src="https://datawrapper.dwcdn.net/ZHm4s/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="612" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
@@ -112,25 +106,30 @@ I will not participate on every day this year as there are too many other respon
 <hr>
 
 
-##### Day 14: Heatmap {#day14}
+### Day 14: Heatmap {#day14}
 
-<iframe title="Hey, what do you want from me? I do a kid show! And it's a classic." aria-label="Map" id="datawrapper-chart-4fprx" src="https://datawrapper.dwcdn.net/4fprx/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="969" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+<iframe title="Hey, what do you want from me? I do a kid show! And it's a classic." aria-label="Map" id="datawrapper-chart-4fprx" src="https://datawrapper.dwcdn.net/4fprx/12/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="952" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <div style='line-height:1.3;'><br><b>Note:</b> The chart is actually a <a href='https://www.datawrapper.de/maps/choropleth-map' target="_blank">choropleth map</a> to ensure that the heatmap looks good independent of the screen width.</div>
-
-<hr><br>
-
-
-## Category "Timeseries" {#timeseries}
-
-##### Day 20: Correlation {#day20}
-
-<iframe title="Now, at the risk of being unpopular, this reporter places the blame for all this squarely on you, the viewers." aria-label="Scatter Plot" id="datawrapper-chart-GukTP" src="https://datawrapper.dwcdn.net/GukTP/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="614" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
 <hr>
 
 
-##### Day 22: Mobility {#day22}
+### Day 19: Dinosaurs {#day19}
+
+<iframe title="I'm starting to think we'll never see him again." aria-label="Multiple Lines" id="datawrapper-chart-c0kk2" src="https://datawrapper.dwcdn.net/c0kk2/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="970" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+<hr>
+
+
+### Day 20: Correlation {#day20}
+
+<iframe title="Now, at the risk of being unpopular, this reporter places the blame for all this squarely on you, the viewers." aria-label="Scatter Plot" id="datawrapper-chart-GukTP" src="https://datawrapper.dwcdn.net/GukTP/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="614" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+<hr>
+
+
+### Day 22: Mobility {#day22}
 
 <iframe title="Beep beep! Out of my way! I’m a motorist!" aria-label="Table" id="datawrapper-chart-yp6fa" src="https://datawrapper.dwcdn.net/yp6fa/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="878" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
