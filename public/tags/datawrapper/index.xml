@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DataWrapper on Cédric Scherer</title>
-    <link>http://localhost:4321/tags/datawrapper/</link>
+    <link>https://cedricscherer.com/tags/datawrapper/</link>
     <description>Recent content in DataWrapper on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/datawrapper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/datawrapper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring &#34;The Simpsons&#34; with DataWrapper for the 30DayChartChallenge 2024</title>
-      <link>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</link>
+      <link>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</guid>
+      <guid>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</guid>
       <description>&lt;h2 id=&#34;whats-the-challenge-about&#34;&gt;What&amp;rsquo;s the Challenge About?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations. This year, Dominic and I are hosting the fourth edition with a new set of prompts:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/banner/30daychartchallenge-prompts.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -25,62 +25,65 @@
 &lt;li&gt;&lt;strong&gt;Colors:&lt;/strong&gt; pick colors from &amp;ldquo;The Simpsons&amp;rdquo; (&lt;a href=&#34;https://www.designboom.com/design/did-the-simpsons-predict-every-pantone-color-of-the-year-12-23-2019/&#34;&gt;1&lt;/a&gt; and &lt;a href=&#34;https://hypebeast.com/2015/9/the-simpsons-pantone&#34;&gt;2&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Fun:&lt;/strong&gt; choose a suitable quote from &amp;ldquo;The Simpsons&amp;rdquo; for the title&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/30daychartchallenge-wrap-up.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;comparisons&#34;&gt;Category &amp;ldquo;Comparisons&amp;rdquo;&lt;/h2&gt;
-&lt;h5 id=&#34;day1&#34;&gt;Day 1: Part-to-Whole&lt;/h5&gt;
+&lt;h3 id=&#34;day1&#34;&gt;Day 1: Part-to-Whole&lt;/h3&gt;
 &lt;iframe title=&#34;Ah, geez!!!&#34; aria-label=&#34;Donut Chart&#34; id=&#34;datawrapper-chart-n0YjQ&#34; src=&#34;https://datawrapper.dwcdn.net/n0YjQ/5/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;492&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day2&#34;&gt;Day 2: Neo*&lt;/h5&gt;
+&lt;h3 id=&#34;day2&#34;&gt;Day 2: Neo*&lt;/h3&gt;
 &lt;iframe title=&#34;Hello! Hello, Springfield! Look at me and my purple hair!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-M99F9&#34; src=&#34;https://datawrapper.dwcdn.net/M99F9/11/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;502&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;&lt;br&gt;&lt;br&gt;
 &lt;div style=&#39;font-size:11pt;line-height:1.2;&#39;&gt;* The prompt was often interpreted as &#34;new&#34; (or &#34;Neo&#34; from &#34;Matrix&#34;) but Dominic&#39;s original idea was &#34;neon colors&#34; :)&lt;/div&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day4&#34;&gt;Day 4: Waffle&lt;/h5&gt;
+&lt;h3 id=&#34;day4&#34;&gt;Day 4: Waffle&lt;/h3&gt;
 &lt;iframe title=&#34;I want more bananas on my waffles!!&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-n66UU&#34; src=&#34;https://datawrapper.dwcdn.net/n66UU/12/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;513&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day4&#34;&gt;Day 5: Diverging&lt;/h5&gt;
+&lt;h3 id=&#34;day4&#34;&gt;Day 5: Diverging&lt;/h3&gt;
 &lt;iframe title=&#34;Welcome to Diversity Tales&#34; aria-label=&#34;Split Bars&#34; id=&#34;datawrapper-chart-m6S0p&#34; src=&#34;https://datawrapper.dwcdn.net/m6S0p/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;1104&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
-&lt;hr&gt;&lt;br&gt;
-&lt;h2 id=&#34;distributions&#34;&gt;Category &amp;ldquo;Distributions&amp;rdquo;&lt;/h2&gt;
-&lt;h5 id=&#34;day9&#34;&gt;Day 9: Major/minor&lt;/h5&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;day9&#34;&gt;Day 9: Major/Minor&lt;/h3&gt;
 &lt;iframe title=&#34;We happen to be watching this very educational cartoon.&#34; aria-label=&#34;Interactive line chart&#34; id=&#34;datawrapper-chart-gUrI7&#34; src=&#34;https://datawrapper.dwcdn.net/gUrI7/10/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;525&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day10&#34;&gt;Day 10: Physical&lt;/h5&gt;
+&lt;h3 id=&#34;day10&#34;&gt;Day 10: Physical&lt;/h3&gt;
 &lt;iframe title=&#34;Home Sweet Homediddly-Dum-Doodily&#34; aria-label=&#34;Range Plot&#34; id=&#34;datawrapper-chart-gD19A&#34; src=&#34;https://datawrapper.dwcdn.net/gD19A/15/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;604&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;div style=&#39;line-height:1.3;&#39;&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; While trying to create a lollipop chart, I ended up with this column chart with gradient fills—it&#39;s actually a &lt;a href=&#39;https://www.datawrapper.de/charts/range-plot&#39; target=&#34;_blank&#34;&gt;range plot&lt;/a&gt;&lt;/div&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day11&#34;&gt;Day 11: Mobile-friendly&lt;/h5&gt;
+&lt;h3 id=&#34;day11&#34;&gt;Day 11: Mobile-friendly&lt;/h3&gt;
 &lt;iframe title=&#34;I&#39;d rather call you by your normal name, if that&#39;s okay.&#34; aria-label=&#34;Multiple Pies&#34; id=&#34;datawrapper-chart-MTNQJ&#34; src=&#34;https://datawrapper.dwcdn.net/MTNQJ/7/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;427&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;br&gt;
 &lt;h5 id=&#34;stacked-bars-for-members-of-the-no-pie-chart-gang&#34;&gt;Stacked Bars for Members of the &amp;ldquo;No Pie Chart Gang&amp;rdquo;&lt;/h5&gt;
 &lt;iframe title=&#34;I&#39;d rather call you by your normal name, if that&#39;s okay.&#34; aria-label=&#34;Stacked Bars&#34; id=&#34;datawrapper-chart-S0ggI&#34; src=&#34;https://datawrapper.dwcdn.net/S0ggI/6/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;483&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
-&lt;hr&gt;&lt;br&gt;
-&lt;h2 id=&#34;relationships&#34;&gt;Category &amp;ldquo;Relationships&amp;rdquo;&lt;/h2&gt;
-&lt;h5 id=&#34;day13&#34;&gt;Day 13: Family&lt;/h5&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;day13&#34;&gt;Day 13: Family&lt;/h3&gt;
 &lt;iframe title=&#34;He gets it from your side of the family, you know. No monsters on my side.&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-ZHm4s&#34; src=&#34;https://datawrapper.dwcdn.net/ZHm4s/12/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;612&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;div style=&#39;line-height:1.3;&#39;&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; The family tree is build with a &lt;a href=&#39;https://academy.datawrapper.de/article/146-customizing-your-scatter-plot-annotate&#39; target=&#34;_blank&#34;&gt;scatter plot with lots of custom annotation lines&lt;/a&gt;.&lt;/div&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day14&#34;&gt;Day 14: Heatmap&lt;/h5&gt;
+&lt;h3 id=&#34;day14&#34;&gt;Day 14: Heatmap&lt;/h3&gt;
 &lt;iframe title=&#34;Hey, what do you want from me? I do a kid show! And it&#39;s a classic.&#34; aria-label=&#34;Map&#34; id=&#34;datawrapper-chart-4fprx&#34; src=&#34;https://datawrapper.dwcdn.net/4fprx/12/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;952&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;div style=&#39;line-height:1.3;&#39;&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; The chart is actually a &lt;a href=&#39;https://www.datawrapper.de/maps/choropleth-map&#39; target=&#34;_blank&#34;&gt;choropleth map&lt;/a&gt; to ensure that the heatmap looks good independent of the screen width.&lt;/div&gt;
-&lt;hr&gt;&lt;br&gt;
-&lt;h2 id=&#34;timeseries&#34;&gt;Category &amp;ldquo;Timeseries&amp;rdquo;&lt;/h2&gt;
-&lt;h5 id=&#34;day19&#34;&gt;Day 19: Dinosaurs&lt;/h5&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;day19&#34;&gt;Day 19: Dinosaurs&lt;/h3&gt;
 &lt;iframe title=&#34;I&#39;m starting to think we&#39;ll never see him again.&#34; aria-label=&#34;Multiple Lines&#34; id=&#34;datawrapper-chart-c0kk2&#34; src=&#34;https://datawrapper.dwcdn.net/c0kk2/3/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;970&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day20&#34;&gt;Day 20: Correlation&lt;/h5&gt;
+&lt;h3 id=&#34;day20&#34;&gt;Day 20: Correlation&lt;/h3&gt;
 &lt;iframe title=&#34;Now, at the risk of being unpopular, this reporter places the blame for all this squarely on you, the viewers.&#34; aria-label=&#34;Scatter Plot&#34; id=&#34;datawrapper-chart-GukTP&#34; src=&#34;https://datawrapper.dwcdn.net/GukTP/5/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;614&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;day22&#34;&gt;Day 22: Mobility&lt;/h5&gt;
+&lt;h3 id=&#34;day22&#34;&gt;Day 22: Mobility&lt;/h3&gt;
 &lt;iframe title=&#34;Beep beep! Out of my way! I’m a motorist!&#34; aria-label=&#34;Table&#34; id=&#34;datawrapper-chart-yp6fa&#34; src=&#34;https://datawrapper.dwcdn.net/yp6fa/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;878&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;day28&#34;&gt;Day 28: Trend&lt;/h3&gt;
+&lt;iframe title=&#34;You talk too much. Abraca-blab-ra.&#34; aria-label=&#34;Interactive line chart&#34; id=&#34;datawrapper-chart-rF4Vr&#34; src=&#34;https://datawrapper.dwcdn.net/rF4Vr/3/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;585&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;day29&#34;&gt;Day 29: Black&amp;rsquo;n&amp;rsquo;White &lt;b style=&#39;color:#818181;&#39;&gt;(or Day 27: Good/Bad)&lt;/b&gt;&lt;/h3&gt;
+&lt;iframe title=&#34;Why should I spend half my Sunday hearing about how I&#39;m going to Hell?&#34; aria-label=&#34;Grouped Columns&#34; id=&#34;datawrapper-chart-PQxAx&#34; src=&#34;https://datawrapper.dwcdn.net/PQxAx/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;560&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 </description>
     </item>
     
     <item>
       <title>My Contributions to the First 30 Day Chart Challenge</title>
-      <link>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</link>
+      <link>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</guid>
+      <guid>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</guid>
       <description>&lt;h2 id=&#34;whats-the-30daychartchallenge&#34;&gt;What&amp;rsquo;s the #30DayChartChallenge?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/banner.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -174,9 +177,9 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of &lt;strong&gt;1,960 contributions&lt;/strong&gt; (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!&lt;/p&gt;
-&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;All 1,960 contributions (as of May 9) as stacked bar chart, per category.&lt;/figcaption&gt;
-&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.&lt;/figcaption&gt;
 &lt;p&gt;By the way, for more charts about the #30DayChartChallenge, have a look at &lt;a href=&#34;https://github.com/gkaramanis/30DayChartChallenge&#34;&gt;Georgios Karamanis&amp;rsquo; collection of meta-contributions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We have seen contributions from all around the world, using a wide variety of tools. It was also great to see the different approaches and interpretations of the topics. Many participants connected with each other and exchanged tips and tricks on finding data, chart types, and tools.&lt;/p&gt;

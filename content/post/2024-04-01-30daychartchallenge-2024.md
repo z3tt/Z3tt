@@ -27,6 +27,7 @@ Find out more about the history of the challenge and explore inspirational contr
 
 I will not participate on every day this year as there are too many other responsibilities I am involved in currently. But for the few prompts I am participating in, my goal is to explore the possibilities to create interactive, responsive visualizations with [DataWrapper](https://www.datawrapper.de/). And to keep it simple so I've decided to set some constraints for my contributions.
 
+
 ##### Self-Imposed Rules
 
 -  **Data:** visualize a "The Simpsons" data set ([1](https://github.com/rfordatascience/tidytuesday/blob/master/data/2019/2019-08-27/simpsons-guests.csv), [2](https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes#endnote_april), and [3](https://github.com/jcrodriguez1989/thesimpsons))
@@ -34,6 +35,7 @@ I will not participate on every day this year as there are too many other respon
 -  **Colors:** pick colors from "The Simpsons" ([1](https://www.designboom.com/design/did-the-simpsons-predict-every-pantone-color-of-the-year-12-23-2019/) and [2](https://hypebeast.com/2015/9/the-simpsons-pantone))
 -  **Fun:** choose a suitable quote from "The Simpsons" for the title
 
+![](/img/dataviz-posts/30daychartchallenge-wrap-up.png)
 
 
 <hr>
@@ -68,7 +70,7 @@ I will not participate on every day this year as there are too many other respon
 <hr>
 
 
-### Day 9: Major/minor {#day9}
+### Day 9: Major/Minor {#day9}
 
 <iframe title="We happen to be watching this very educational cartoon." aria-label="Interactive line chart" id="datawrapper-chart-gUrI7" src="https://datawrapper.dwcdn.net/gUrI7/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
@@ -132,4 +134,18 @@ I will not participate on every day this year as there are too many other respon
 ### Day 22: Mobility {#day22}
 
 <iframe title="Beep beep! Out of my way! I’m a motorist!" aria-label="Table" id="datawrapper-chart-yp6fa" src="https://datawrapper.dwcdn.net/yp6fa/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="878" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+<hr>
+
+
+### Day 28: Trend {#day28}
+
+<iframe title="You talk too much. Abraca-blab-ra." aria-label="Interactive line chart" id="datawrapper-chart-rF4Vr" src="https://datawrapper.dwcdn.net/rF4Vr/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="585" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+<hr>
+
+
+### Day 29: Black'n'White <b style='color:#818181;'>(or Day 27: Good/Bad)</b> {#day29}
+
+<iframe title="Why should I spend half my Sunday hearing about how I'm going to Hell?" aria-label="Grouped Columns" id="datawrapper-chart-PQxAx" src="https://datawrapper.dwcdn.net/PQxAx/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="560" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
 
