@@ -3,8 +3,8 @@
 ##### Angaben gem&auml;&szlig; &sect; 5 TMG
 
 <p>C&eacute;dric Scherer<br />
-Birkenstra&szlig;e 18<br />
-10559 Berlin</p>
+Bahnhofsgasse 5<br />
+16348 Wandlitz</p>
 
 ##### Kontakt
 
@@ -14,8 +14,8 @@ E-Mail: hello@cedricscherer.com</p>
 ##### Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV
 
 <p>C&eacute;dric Scherer<br />
-Birkenstra&szlig;e 18<br />
-10559 Berlin</p>
+Bahnhofsgasse 5<br />
+16348 Wandlitz</p>
 
 ##### EU-Streitschlichtung
 
