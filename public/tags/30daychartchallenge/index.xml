@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>30DayChartChallenge on Cédric Scherer</title>
-    <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
+    <link>http://localhost:4321/tags/30daychartchallenge/</link>
     <description>Recent content in 30DayChartChallenge on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/30daychartchallenge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/30daychartchallenge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring &#34;The Simpsons&#34; with DataWrapper for the 30DayChartChallenge 2024</title>
-      <link>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</link>
+      <link>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/</guid>
+      <guid>http://localhost:4321/2024/04/01/contributions-30daychartchallenge-2024/</guid>
       <description>&lt;h2 id=&#34;whats-the-challenge-about&#34;&gt;What&amp;rsquo;s the Challenge About?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations. This year, Dominic and I are hosting the fourth edition with a new set of prompts:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/banner/30daychartchallenge-prompts.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -25,7 +25,7 @@
 &lt;li&gt;&lt;strong&gt;Colors:&lt;/strong&gt; pick colors from &amp;ldquo;The Simpsons&amp;rdquo; (&lt;a href=&#34;https://www.designboom.com/design/did-the-simpsons-predict-every-pantone-color-of-the-year-12-23-2019/&#34;&gt;1&lt;/a&gt; and &lt;a href=&#34;https://hypebeast.com/2015/9/the-simpsons-pantone&#34;&gt;2&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Fun:&lt;/strong&gt; choose a suitable quote from &amp;ldquo;The Simpsons&amp;rdquo; for the title&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/img/dataviz-posts/30daychartchallenge-wrap-up.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:4321/img/dataviz-posts/30daychartchallenge-wrap-up.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;day1&#34;&gt;Day 1: Part-to-Whole&lt;/h3&gt;
 &lt;iframe title=&#34;Ah, geez!!!&#34; aria-label=&#34;Donut Chart&#34; id=&#34;datawrapper-chart-n0YjQ&#34; src=&#34;https://datawrapper.dwcdn.net/n0YjQ/5/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;492&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
@@ -74,16 +74,16 @@
 &lt;iframe title=&#34;You talk too much. Abraca-blab-ra.&#34; aria-label=&#34;Interactive line chart&#34; id=&#34;datawrapper-chart-rF4Vr&#34; src=&#34;https://datawrapper.dwcdn.net/rF4Vr/3/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;585&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;day29&#34;&gt;Day 29: Black&amp;rsquo;n&amp;rsquo;White &lt;b style=&#39;color:#818181;&#39;&gt;(or Day 27: Good/Bad)&lt;/b&gt;&lt;/h3&gt;
-&lt;iframe title=&#34;Why should I spend half my Sunday hearing about how I&#39;m going to Hell?&#34; aria-label=&#34;Grouped Columns&#34; id=&#34;datawrapper-chart-PQxAx&#34; src=&#34;https://datawrapper.dwcdn.net/PQxAx/4/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;560&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
+&lt;iframe title=&#34;Why should I spend half my Sunday hearing about how I&#39;m going to Hell?&#34; aria-label=&#34;Grouped Columns&#34; id=&#34;datawrapper-chart-PQxAx&#34; src=&#34;https://datawrapper.dwcdn.net/PQxAx/5/&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;width: 0; min-width: 100% !important; border: none;&#34; height=&#34;560&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;&lt;script type=&#34;text/javascript&#34;&gt;!function(){&#34;use strict&#34;;window.addEventListener(&#34;message&#34;,(function(a){if(void 0!==a.data[&#34;datawrapper-height&#34;]){var e=document.querySelectorAll(&#34;iframe&#34;);for(var t in a.data[&#34;datawrapper-height&#34;])for(var r=0;r&lt;e.length;r++)if(e[r].contentWindow===a.source){var i=a.data[&#34;datawrapper-height&#34;][t]+&#34;px&#34;;e[r].style.height=i}}}))}();&lt;/script&gt;
 </description>
     </item>
     
     <item>
       <title>The 30DayChartChallenge is Ready to Kick Off</title>
-      <link>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</link>
+      <link>http://localhost:4321/2021/05/09/the-30daychartchallenge-year-three-kick-off/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/05/09/the-30daychartchallenge-year-three-kick-off/</guid>
+      <guid>http://localhost:4321/2021/05/09/the-30daychartchallenge-year-three-kick-off/</guid>
       <description>&lt;p&gt;This blog post originally appeared as a &lt;a href=&#34;https://nightingaledvs.com/the-30daychartchallenge-year-three/&#34;&gt;post on &amp;ldquo;Nightingale&amp;rdquo;&lt;/a&gt;, the &lt;a href=&#34;https://nightingaledvs.com/&#34;&gt;journal of the Data Visualization Society&lt;/a&gt;. Thanks to Claire Santos for all the helpful comments on and revisions of the draft!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;The &lt;a href=&#39;https://twitter.com/30daychartchall&#39; style=&#39;font-weight:800;&#39;&gt;#30DayChartChallenge&lt;/a&gt; is a data visualization community challenge with the aim of creating a data visualization on a particular theme for each day in April. The challenge began in April 2021 and has continued every year since. Indeed, the third edition of the #30DayChartChallenge starts in a few days—and we have just shared this year’s prompts, if you want to get a head start!&lt;/strong&gt;&lt;/p&gt;
@@ -124,10 +124,10 @@
     
     <item>
       <title>My Contributions to the First 30 Day Chart Challenge</title>
-      <link>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</link>
+      <link>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/</guid>
+      <guid>http://localhost:4321/2021/05/09/contributions-30daychartchallenge-2021/</guid>
       <description>&lt;h2 id=&#34;whats-the-30daychartchallenge&#34;&gt;What&amp;rsquo;s the #30DayChartChallenge?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;#30DayChartChallenge&lt;/strong&gt; is a data visualization challenge with the aim to create a data visualization on a certain topic for each day of April. Anyone is welcome to contribute, no matter which data source or tool is used to create the visualizations.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/z3tt/30DayChartChallenge_Collection2021/main/img/banner.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -221,9 +221,9 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
 &lt;p&gt;The challenge is over and we are very, very happy about the great success! Thank you everyone for participating in our challenge with a total of &lt;strong&gt;1,960 contributions&lt;/strong&gt; (and more are still coming in while people are catching up). On the first day, we had the all-time record of 135 contributions!&lt;/p&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_category.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;All 1,960 contributions (as of May 9) as stacked bar chart, per category.&lt;/figcaption&gt;
-&lt;img src=&#34;https://cedricscherer.com/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
+&lt;img src=&#34;http://localhost:4321/img/chart-challenge/timeseries_weekday.png&#34; style=&#34;height: 100%; width: 100%; object-fit: contain;&#34;&gt;
 &lt;figcaption&gt;The same stacked bar chart of all 1,960 contributions, this time sorted by weekday.&lt;/figcaption&gt;
 &lt;p&gt;By the way, for more charts about the #30DayChartChallenge, have a look at &lt;a href=&#34;https://github.com/gkaramanis/30DayChartChallenge&#34;&gt;Georgios Karamanis&amp;rsquo; collection of meta-contributions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We have seen contributions from all around the world, using a wide variety of tools. It was also great to see the different approaches and interpretations of the topics. Many participants connected with each other and exchanged tips and tricks on finding data, chart types, and tools.&lt;/p&gt;
