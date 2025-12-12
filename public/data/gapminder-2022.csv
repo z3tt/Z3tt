@@ -1,198 +1,198 @@
 country,iso_a3,country_name,continent,region,region_un,year,pop,gdp_pcap,life_exp,income_daily,co2_pcap,fertility
-Afghanistan,AFG,Afghanistan,Asia,South Asia,Asia,2022,40600000,1390,62.6,3.17,0.28400000000000003,4.930000000000001
-Albania,ALB,Albania,Europe,Europe & Central Asia,Europe,2022,2829999.9999999995,15500,76.1,16.3,2.1,1.36
-Algeria,DZA,Algeria,Africa,Middle East & North Africa,Africa,2022,45500000,11200,76.8,9.29,3.88,2.82
-Angola,AGO,Angola,Africa,Sub-Saharan Africa,Africa,2022,35600000,5910,64.5,4.71,1.23,5.21
-Argentina,ARG,Argentina,Americas,Latin America & Caribbean,Americas,2022,45400000,22400,75.4,22.1,3.8499999999999996,1.48
-Australia,AUS,Australia,Oceania,East Asia & Pacific,Oceania,2022,26200000,51200,83.4,67.2,13.9,1.6400000000000001
-Austria,AUT,Austria,Europe,Europe & Central Asia,Europe,2022,9060000,56200,82.7,71.8,9.2,1.41
-Bahrain,BHR,Bahrain,Asia,Middle East & North Africa,Asia,2022,1530000,51900,76.3,53.2,16,1.84
-Bangladesh,BGD,Bangladesh,Asia,South Asia,Asia,2022,169000000,6260,75.5,4.94,0.8440000000000001,2.18
-Belgium,BEL,Belgium,Europe,Europe & Central Asia,Europe,2022,11600000,52900,81.9,63.7,16.9,1.55
-Benin,BEN,Benin,Africa,Sub-Saharan Africa,Africa,2022,13800000,3440,64,5.26,0.71,4.63
-Bolivia,BOL,Bolivia,Americas,Latin America & Caribbean,Americas,2022,12100000,8240,68.9,19.9,1.99,2.58
-Bosnia and Herzegovina,BIH,Bosnia and Herzegovina,Europe,Europe & Central Asia,Europe,2022,3200000,16800,75,32.4,6.45,1.48
-Botswana,BWA,Botswana,Africa,Sub-Saharan Africa,Africa,2022,2440000,15500,62.7,10,5.1,2.79
-Brazil,BRA,Brazil,Americas,Latin America & Caribbean,Americas,2022,210000000,15100,73.9,19.6,2.11,1.6300000000000001
-Bulgaria,BGR,Bulgaria,Europe,Europe & Central Asia,Europe,2022,6830000,27000,69.9,36.8,5.819999999999999,1.77
-Burkina Faso,BFA,Burkina Faso,Africa,Sub-Saharan Africa,Africa,2022,22500000,2160,61.4,4.5,0.306,4.28
-Burundi,BDI,Burundi,Africa,Sub-Saharan Africa,Africa,2022,13300000,708,63.5,1.97,0.051000000000000004,4.98
-Cambodia,KHM,Cambodia,Asia,East Asia & Pacific,Asia,2022,17200000,4530,69.1,5.92,2.55,2.62
-Cameroon,CMR,Cameroon,Africa,Sub-Saharan Africa,Africa,2022,27600000,3730,62.7,6.08,0.40800000000000003,4.4
-Canada,CAN,Canada,Americas,North America,Americas,2022,38800000,49200,82.7,65.4,13.2,1.37
-Central African Republic,CAF,Central African Republic,Africa,Sub-Saharan Africa,Africa,2022,5100000,823,51.8,2.19,0.07100000000000001,6.02
-Chad,TCD,Chad,Africa,Sub-Saharan Africa,Africa,2022,18500000,1420,60.1,3.4499999999999997,0.07200000000000001,6.22
-Chile,CHL,Chile,Americas,Latin America & Caribbean,Americas,2022,19600000,25800,79.3,28.7,4.54,1.26
 China,CHN,China,Asia,East Asia & Pacific,Asia,2022,1430000000,18200,78.2,15.2,7.38,1.03
-Colombia,COL,Colombia,Americas,Latin America & Caribbean,Americas,2022,51700000,15600,77,15.1,2.3899999999999997,1.6600000000000001
-Comoros,COM,Comoros,Africa,Sub-Saharan Africa,Africa,2022,834000,3250,68.3,6.55,0.28700000000000003,3.94
-"Congo, Dem. Rep.",COD,"Congo, Dem. Rep.",Africa,Sub-Saharan Africa,Africa,2022,102000000,1130,64.5,2.55,0.026000000000000002,6.109999999999999
-"Congo, Rep.",COG,"Congo, Rep.",Africa,Sub-Saharan Africa,Africa,2022,6040000,3210,65.8,2.9899999999999998,0.6739999999999999,4.22
-Costa Rica,CRI,Costa Rica,Americas,Latin America & Caribbean,Americas,2022,5080000,22000,78,24.5,2.38,1.34
-Cote d'Ivoire,CIV,Cote d'Ivoire,Africa,Sub-Saharan Africa,Africa,2022,30400000,5510,63.8,6.34,0.596,4.35
-Croatia,HRV,Croatia,Europe,Europe & Central Asia,Europe,2022,3909999.9999999995,34200,79.2,38.3,5.94,1.53
-Cuba,CUB,Cuba,Americas,Latin America & Caribbean,Americas,2022,11100000,8760,79.2,11.1,2.55,1.41
-Czech Republic,CZE,Czech Republic,Europe,Europe & Central Asia,Europe,2022,10700000,41100,78.3,43.2,9.84,1.62
-Denmark,DNK,Denmark,Europe,Europe & Central Asia,Europe,2022,5900000,59100,81.6,69.4,7.68,1.56
-Djibouti,DJI,Djibouti,Africa,Middle East & North Africa,Africa,2022,1140000.0000000002,5030,66.6,6.1,0.734,2.65
-Dominican Republic,DOM,Dominican Republic,Americas,Latin America & Caribbean,Americas,2022,11200000,19300,73.8,14.6,3.11,2.27
-Ecuador,ECU,Ecuador,Americas,Latin America & Caribbean,Americas,2022,17800000,11200,77,15.2,2.7,1.86
-Egypt,EGY,Egypt,Africa,Middle East & North Africa,Africa,2022,113000000,12800,69.8,7.33,2.4,2.75
-El Salvador,SLV,El Salvador,Americas,Latin America & Caribbean,Americas,2022,6280000,9420,74.6,13.1,1.47,1.79
-Equatorial Guinea,GNQ,Equatorial Guinea,Africa,Sub-Saharan Africa,Africa,2022,1800000,14800,65.5,14.9,4.75,4.17
-Eritrea,ERI,Eritrea,Africa,Sub-Saharan Africa,Africa,2022,3409999.9999999995,1950,63.1,3.2800000000000002,0.234,3.79
-Ethiopia,ETH,Ethiopia,Africa,Sub-Saharan Africa,Africa,2022,125000000,2380,68.6,5.09,0.188,4.08
-Finland,FIN,Finland,Europe,Europe & Central Asia,Europe,2022,5570000,49200,82.3,61.6,8.76,1.32
-France,FRA,France,Europe,Europe & Central Asia,Europe,2022,66300000,46000,83.4,62.5,6.07,1.76
-Gabon,GAB,Gabon,Africa,Sub-Saharan Africa,Africa,2022,2429999.9999999995,13900,66.9,11.9,2.7600000000000002,3.71
-Gambia,GMB,Gambia,Africa,Sub-Saharan Africa,Africa,2022,2640000,2130,65.8,5.29,0.29300000000000004,4.08
-Germany,DEU,Germany,Europe,Europe & Central Asia,Europe,2022,84100000,53800,80.6,65.5,9.3,1.46
-Ghana,GHA,Ghana,Africa,Sub-Saharan Africa,Africa,2022,33100000,5530,65.5,6.01,0.773,3.4299999999999997
-Greece,GRC,Greece,Europe,Europe & Central Asia,Europe,2022,10400000,31600,80.3,33.5,5.2700000000000005,1.31
-Guatemala,GTM,Guatemala,Americas,Latin America & Caribbean,Americas,2022,17800000,9160,68.2,10.8,1.34,2.34
-Guinea,GIN,Guinea,Africa,Sub-Saharan Africa,Africa,2022,14100000,2700,60.5,4.8,0.47200000000000003,4.3
-Guinea-Bissau,GNB,Guinea-Bissau,Africa,Sub-Saharan Africa,Africa,2022,2110000,1870,59.9,4.21,0.198,3.9099999999999997
-Haiti,HTI,Haiti,Americas,Latin America & Caribbean,Americas,2022,11500000,2800,63.3,3.57,0.272,2.7
-Honduras,HND,Honduras,Americas,Latin America & Caribbean,Americas,2022,10500000,5720,69.9,10.3,0.8760000000000001,2.52
-"Hong Kong, China",HKG,Hong Kong,Asia,East Asia & Pacific,Asia,2022,7470000.000000001,58400,NA,60.9,10.2,0.71
-Hungary,HUN,Hungary,Europe,Europe & Central Asia,Europe,2022,9680000,35400,75.1,33.8,6.41,1.55
-Iceland,ISL,Iceland,Europe,Europe & Central Asia,Europe,2022,380000,56300,84.5,62.3,9.99,1.59
 India,IND,India,Asia,South Asia,Asia,2022,1430000000,7100,67.6,5.21,1.87,1.99
-Indonesia,IDN,Indonesia,Asia,East Asia & Pacific,Asia,2022,279000000,12400,69.1,7.81,2.36,2.15
-Iran,IRN,Iran,Asia,Middle East & North Africa,Asia,2022,89500000,15500,76.2,15.7,7.67,1.7
-Iraq,IRQ,Iraq,Asia,Middle East & North Africa,Asia,2022,44100000,9250,73,11.2,5.76,3.29
-Ireland,IRL,Ireland,Europe,Europe & Central Asia,Europe,2022,5109999.999999999,110000,82.5,72.3,8.59,1.59
-Israel,ISR,Israel,Asia,Middle East & North Africa,Asia,2022,9100000,44400,82.8,45,8.6,2.94
-Italy,ITA,Italy,Europe,Europe & Central Asia,Europe,2022,59600000,43900,83.6,55.7,6.92,1.24
-Jamaica,JAM,Jamaica,Americas,Latin America & Caribbean,Americas,2022,2840000,10100,75,15.1,2.4299999999999997,1.37
-Japan,JPN,Japan,Asia,East Asia & Pacific,Asia,2022,125000000,41600,85.2,52.4,9.99,1.26
-Jordan,JOR,Jordan,Asia,Middle East & North Africa,Asia,2022,11300000,9310,76.3,13.3,2.9,2.68
-Kenya,KEN,Kenya,Africa,Sub-Saharan Africa,Africa,2022,54300000,4880,65.6,3.69,0.562,3.2600000000000002
-Kuwait,KWT,Kuwait,Asia,Middle East & North Africa,Asia,2022,4590000,48200,82.1,50.1,24,1.55
-Lebanon,LBN,Lebanon,Asia,Middle East & North Africa,Asia,2022,5740000,13100,72,21.1,3.92,2.2600000000000002
-Lesotho,LSO,Lesotho,Africa,Sub-Saharan Africa,Africa,2022,2290000,2300,50.7,4.119999999999999,1.3800000000000001,2.72
-Liberia,LBR,Liberia,Africa,Sub-Saharan Africa,Africa,2022,5370000,1460,66.1,3.72,0.354,4.02
-Libya,LBY,Libya,Africa,Middle East & North Africa,Africa,2022,7220000,20300,75.6,19.6,8.84,2.4
-Madagascar,MDG,Madagascar,Africa,Sub-Saharan Africa,Africa,2022,30400000,1500,64.8,1.6,0.20900000000000002,4.04
-Malawi,MWI,Malawi,Africa,Sub-Saharan Africa,Africa,2022,20600000,1470,63.5,2,0.139,3.72
-Malaysia,MYS,Malaysia,Asia,East Asia & Pacific,Asia,2022,34700000,28300,75.5,34.6,7.5,1.55
-Mali,MLI,Mali,Africa,Sub-Saharan Africa,Africa,2022,23100000,2130,61.6,4.81,0.20400000000000001,5.6899999999999995
-Mauritania,MRT,Mauritania,Africa,Sub-Saharan Africa,Africa,2022,4880000,5500,69.7,6.83,0.6609999999999999,4.7700000000000005
-Mauritius,MUS,Mauritius,Africa,Sub-Saharan Africa,Africa,2022,1280000,22800,74.3,17,4.88,1.27
-Mexico,MEX,Mexico,Americas,Latin America & Caribbean,Americas,2022,129000000,19700,76.3,14.9,3.64,1.94
-Mongolia,MNG,Mongolia,Asia,East Asia & Pacific,Asia,2022,3389999.9999999995,12100,68.9,9.860000000000001,14.2,2.75
-Montenegro,MNE,Montenegro,Europe,Europe & Central Asia,Europe,2022,615000,22100,75.7,18.1,3.17,1.8800000000000001
-Morocco,MAR,Morocco,Africa,Middle East & North Africa,Africa,2022,37300000,8080,74,11.6,2,2.2600000000000002
-Mozambique,MOZ,Mozambique,Africa,Sub-Saharan Africa,Africa,2022,32700000.000000004,1250,56.9,2.03,0.456,4.84
-Myanmar,MMR,Myanmar,Asia,East Asia & Pacific,Asia,2022,53800000,4170,70.1,6.29,0.549,2.13
-Namibia,NAM,Namibia,Africa,Sub-Saharan Africa,Africa,2022,2889999.9999999995,9560,60,10.2,3.9699999999999998,3.25
-Nepal,NPL,Nepal,Asia,South Asia,Asia,2022,29700000,4000,72,7.75,0.922,2
-Netherlands,NLD,Netherlands,Europe,Europe & Central Asia,Europe,2022,17900000,58500,82.2,69.3,8.77,1.51
-New Zealand,NZL,New Zealand,Oceania,East Asia & Pacific,Oceania,2022,5130000,45200,82.2,45.3,7.51,1.6700000000000002
-Nicaragua,NIC,Nicaragua,Americas,Latin America & Caribbean,Americas,2022,6730000,5820,76,12.7,0.9440000000000001,2.24
-Niger,NER,Niger,Africa,Sub-Saharan Africa,Africa,2022,25300000,1280,61.7,3.05,0.113,6.14
-Nigeria,NGA,Nigeria,Africa,Sub-Saharan Africa,Africa,2022,223000000,4960,65.2,3.56,0.692,4.55
-Norway,NOR,Norway,Europe,Europe & Central Asia,Europe,2022,5460000,67300,83.3,76.9,8.719999999999999,1.42
-Oman,OMN,Oman,Asia,Middle East & North Africa,Asia,2022,4730000,35300,70.1,35,14.9,2.4499999999999997
-Pakistan,PAK,Pakistan,Asia,South Asia,Asia,2022,244000000,5380,65.5,5.3,1.1,3.66
-Panama,PAN,Panama,Americas,Latin America & Caribbean,Americas,2022,4400000,33300,79,33.8,4.02,2.14
-Paraguay,PRY,Paraguay,Americas,Latin America & Caribbean,Americas,2022,6760000,13500,73.3,18.5,2,2.44
-Peru,PER,Peru,Americas,Latin America & Caribbean,Americas,2022,33500000,12700,77.3,12.3,2.01,2
-Philippines,PHL,Philippines,Asia,East Asia & Pacific,Asia,2022,114000000,8580,72.2,8.15,1.61,1.93
-Poland,POL,Poland,Europe,Europe & Central Asia,Europe,2022,38400000,37800,77.2,31,8.01,1.26
-Portugal,PRT,Portugal,Europe,Europe & Central Asia,Europe,2022,10400000,35800,82.3,40.9,4.6,1.45
-Romania,ROU,Romania,Europe,Europe & Central Asia,Europe,2022,19200000,32400,73.2,27.1,4.359999999999999,1.72
-Rwanda,RWA,Rwanda,Africa,Sub-Saharan Africa,Africa,2022,13700000,2360,69.4,3.8299999999999996,0.17900000000000002,3.7800000000000002
-Sao Tome and Principe,STP,Sao Tome and Principe,Africa,Sub-Saharan Africa,Africa,2022,226000,3980,71.2,5.57,0.641,3.7
-Saudi Arabia,SAU,Saudi Arabia,Asia,Middle East & North Africa,Asia,2022,32200000.000000004,49400,75.1,51,18.4,2.14
-Senegal,SEN,Senegal,Africa,Sub-Saharan Africa,Africa,2022,17700000,3550,67.9,6.33,1.02,3.86
-Serbia,SRB,Serbia,Europe,Europe & Central Asia,Europe,2022,6790000,20900,73.1,21.6,5.109999999999999,1.52
-Sierra Leone,SLE,Sierra Leone,Africa,Sub-Saharan Africa,Africa,2022,8279999.999999999,1630,61.9,3.9499999999999997,0.15400000000000003,3.88
-Singapore,SGP,Singapore,Asia,East Asia & Pacific,Asia,2022,5649999.999999999,108000,85.2,128,25.4,0.9400000000000001
-Slovak Republic,SVK,Slovak Republic,Europe,Europe & Central Asia,Europe,2022,5470000.000000001,33200,75.2,27,7.37,1.56
-Slovenia,SVN,Slovenia,Europe,Europe & Central Asia,Europe,2022,2120000,40900,81.9,51.8,8.46,1.57
-Somalia,SOM,Somalia,Africa,Sub-Saharan Africa,Africa,2022,17800000,1130,57.5,2.8099999999999996,0.051000000000000004,6.26
-South Africa,ZAF,South Africa,Africa,Sub-Saharan Africa,Africa,2022,62400000,13500,60.5,11.5,5.18,2.23
-Spain,ESP,Spain,Europe,Europe & Central Asia,Europe,2022,47800000,39800,83.5,52,5.659999999999999,1.21
-Sri Lanka,LKA,Sri Lanka,Asia,South Asia,Asia,2022,22800000,12300,77.9,8.27,1.76,1.98
-Sudan,SDN,Sudan,Africa,Sub-Saharan Africa,Africa,2022,49400000,3570,70.2,3.4099999999999997,0.55,4.38
-Sweden,SWE,Sweden,Europe,Europe & Central Asia,Europe,2022,10500000,54800,83.3,62.8,5.96,1.54
-Switzerland,CHE,Switzerland,Europe,Europe & Central Asia,Europe,2022,8790000,71300,84.5,78.6,11.6,1.4
-Syria,SYR,Syria,Asia,Middle East & North Africa,Asia,2022,22500000,3350,74.4,2.98,1.85,2.75
-Taiwan,TWN,Taiwan,Asia,East Asia & Pacific,NA,2022,23400000,58700,80.9,57.2,12.5,0.8700000000000001
-Tanzania,TZA,Tanzania,Africa,Sub-Saharan Africa,Africa,2022,64700000,2620,67,3.44,0.311,4.67
-Thailand,THA,Thailand,Asia,East Asia & Pacific,Asia,2022,71700000,17500,79.1,17,3.92,1.22
-Togo,TGO,Togo,Africa,Sub-Saharan Africa,Africa,2022,9090000,2210,65.8,4.96,0.906,4.25
-Trinidad and Tobago,TTO,Trinidad and Tobago,Americas,Latin America & Caribbean,Americas,2022,1500000,23300,75.4,24.2,17.7,1.54
-Tunisia,TUN,Tunisia,Africa,Middle East & North Africa,Africa,2022,12100000,10600,75.9,13.6,2.2600000000000002,1.85
-Turkey,TUR,Turkey,Europe,Europe & Central Asia,Asia,2022,87100000,32900,79,26,4.95,1.6300000000000001
-Uganda,UGA,Uganda,Africa,Sub-Saharan Africa,Africa,2022,47300000,2280,66.9,3.56,0.183,4.39
-Uruguay,URY,Uruguay,Americas,Latin America & Caribbean,Americas,2022,3389999.9999999995,24400,78,28.4,3.21,1.43
-Venezuela,VEN,Venezuela,Americas,Latin America & Caribbean,Americas,2022,28200000,6160,74,3.9499999999999997,0.6729999999999999,2.09
-Vietnam,VNM,Vietnam,Asia,East Asia & Pacific,Asia,2022,99700000,11400,75,16.4,2.17,1.93
-Zambia,ZMB,Zambia,Africa,Sub-Saharan Africa,Africa,2022,20200000,3310,62.2,2.92,0.42400000000000004,4.18
-Zimbabwe,ZWE,Zimbabwe,Africa,Sub-Saharan Africa,Africa,2022,16100000.000000002,2210,59.1,4.38,0.804,3.77
-Andorra,AND,Andorra,Europe,Europe & Central Asia,Europe,2022,79700,56400,82.7,61.6,5.91,1.07
-UAE,ARE,United Arab Emirates,Asia,Middle East & North Africa,Asia,2022,10200000,74600,73.4,81.8,21.1,1.1500000000000001
-Armenia,ARM,Armenia,Asia,Europe & Central Asia,Asia,2022,2880000,16000,73.7,8.79,2.7,1.72
-Antigua and Barbuda,ATG,Antigua and Barbuda,Americas,Latin America & Caribbean,Americas,2022,92800,21700,76.8,21.1,5.94,1.58
-Azerbaijan,AZE,Azerbaijan,Asia,Europe & Central Asia,Asia,2022,10300000,15100,71.4,20,3.84,1.6900000000000002
-Bahamas,BHS,Bahamas,Americas,Latin America & Caribbean,Americas,2022,398000,33100,76.6,33.8,4.75,1.3800000000000001
-Belarus,BLR,Belarus,Europe,Europe & Central Asia,Europe,2022,9170000,19100,73,19.2,6.319999999999999,1.33
-Belize,BLZ,Belize,Americas,Latin America & Caribbean,Americas,2022,403000,9400,71.5,9.27,1.52,1.95
-Barbados,BRB,Barbados,Americas,Latin America & Caribbean,Americas,2022,282000,15600,76.6,15.2,4.52,1.71
-Brunei,BRN,Brunei,Asia,East Asia & Pacific,Asia,2022,455000,58700,74.2,61.2,24.5,1.76
-Bhutan,BTN,Bhutan,Asia,South Asia,Asia,2022,781000,11400,74,15.8,1.8,1.48
-Cape Verde,CPV,Cape Verde,Africa,Sub-Saharan Africa,Africa,2022,520000,7670,72.5,10.9,1.26,1.53
-Cyprus,CYP,Cyprus,Europe,Europe & Central Asia,Asia,2022,1330000,43200,81.3,58.5,5.619999999999999,1.3900000000000001
-Dominica,DMA,Dominica,Americas,Latin America & Caribbean,Americas,2022,66800,11500,71.8,12,2.57,1.48
-Estonia,EST,Estonia,Europe,Europe & Central Asia,Europe,2022,1350000,38000,78.5,45.2,10.4,1.41
-Fiji,FJI,Fiji,Oceania,East Asia & Pacific,Oceania,2022,919000,12400,68.8,7.14,2.6,2.3099999999999996
-"Micronesia, Fed. Sts.",FSM,Micronesia (Federated States of),Oceania,East Asia & Pacific,Oceania,2022,112000,3260,64,5.359999999999999,1.45,2.79
-UK,GBR,United Kingdom,Europe,Europe & Central Asia,Europe,2022,68200000,46400,81.5,61.6,6.930000000000001,1.56
-Georgia,GEO,Georgia,Asia,Europe & Central Asia,Asia,2022,3790000,17200,71.5,8.3,3.77,1.82
-Grenada,GRD,Grenada,Americas,Latin America & Caribbean,Americas,2022,117000,14600,73.8,14.6,2.4499999999999997,1.5
-Guyana,GUY,Guyana,Americas,Latin America & Caribbean,Americas,2022,822000,35700,64.3,39.2,3.15,2.44
-Holy See,VAT,Vatican,Europe,Europe & Central Asia,Europe,2022,NA,NA,NA,NA,NA,1
-Kazakhstan,KAZ,Kazakhstan,Asia,Europe & Central Asia,Asia,2022,20000000,26300,69.8,12.7,9.66,3.05
-Kyrgyz Republic,KGZ,Kyrgyzstan,Asia,Europe & Central Asia,Asia,2022,6960000,5220,72.7,7.09,2.8099999999999996,2.8099999999999996
-Kiribati,KIR,Kiribati,Oceania,East Asia & Pacific,Oceania,2022,130000,2050,61.2,6.37,0.65,3.18
-St. Kitts and Nevis,KNA,Saint Kitts and Nevis,Americas,Latin America & Caribbean,Americas,2022,46700,29200,72.6,28.3,4.659999999999999,1.51
-South Korea,KOR,South Korea,Asia,East Asia & Pacific,Asia,2022,51800000,45500,83.3,49.3,13.5,0.7799999999999999
-Lao,LAO,Lao PDR,Asia,East Asia & Pacific,Asia,2022,7560000,7950,69.8,6.87,3.3,2.46
-St. Lucia,LCA,Saint Lucia,Americas,Latin America & Caribbean,Americas,2022,179000,15400,72.9,20.4,2.34,1.3900000000000001
-Liechtenstein,LIE,Liechtenstein,Europe,Europe & Central Asia,Europe,2022,39300,NA,NA,NA,3.8899999999999997,1.53
-Lithuania,LTU,Lithuania,Europe,Europe & Central Asia,Europe,2022,2820000,39800,74.3,46.5,7.21,1.27
-Luxembourg,LUX,Luxembourg,Europe,Europe & Central Asia,Europe,2022,653000,115000,83.4,96.5,12.7,1.3900000000000001
-Latvia,LVA,Latvia,Europe,Europe & Central Asia,Europe,2022,1880000,33100,76.3,38,7.57,1.47
-Monaco,MCO,Monaco,Europe,Europe & Central Asia,Europe,2022,38900,214000,80.4,74.4,NA,2.11
-Moldova,MDA,Moldova,Europe,Europe & Central Asia,Europe,2022,3040000,13200,71.9,11.5,1.25,1.6900000000000002
-Maldives,MDV,Maldives,Asia,South Asia,Asia,2022,524000,21300,79.8,19.1,3.3099999999999996,1.58
-Marshall Islands,MHL,Marshall Islands,Oceania,East Asia & Pacific,Oceania,2022,40100,5990,65.9,12.5,2.79,2.94
-North Macedonia,MKD,"Macedonia, North",Europe,Europe & Central Asia,Europe,2022,1840000,17100,71.1,15.3,3.51,1.59
-Malta,MLT,Malta,Europe,Middle East & North Africa,Europe,2022,528000,48100,83.1,67,17.3,1.1
-Nauru,NRU,Nauru,Oceania,East Asia & Pacific,Oceania,2022,11800,11100,63.9,8.49,5.09,3.38
-Palau,PLW,Palau,Oceania,East Asia & Pacific,Oceania,2022,17800,13700,68.1,14.1,14.2,1.93
-Papua New Guinea,PNG,Papua New Guinea,Oceania,East Asia & Pacific,Oceania,2022,10200000,3790,65.1,4.24,0.986,3.17
-North Korea,PRK,North Korea,Asia,East Asia & Pacific,Asia,2022,26300000,1800,73.5,3.27,1.32,1.8
-Palestine,PSE,Palestine,Asia,Middle East & North Africa,Asia,2022,5310000,5730,73,12.3,0.733,3.38
-Qatar,QAT,Qatar,Asia,Middle East & North Africa,Asia,2022,2889999.9999999995,96500,76.8,112,27.3,1.74
-Russia,RUS,Russia,Europe,Europe & Central Asia,Europe,2022,146000000,27700,69.2,23.4,9.97,1.45
-Solomon Islands,SLB,Solomon Islands,Oceania,East Asia & Pacific,Oceania,2022,781000,2400,59.5,3.58,0.29500000000000004,3.62
-San Marino,SMR,San Marino,Europe,Europe & Central Asia,Europe,2022,34100,64500,82.6,64.7,NA,1.1400000000000001
-South Sudan,SSD,South Sudan,Africa,Sub-Saharan Africa,Africa,2022,11000000,365,63.4,1.6600000000000001,0.186,3.96
-Suriname,SUR,Suriname,Americas,Latin America & Caribbean,Americas,2022,623000,15000,70.7,15.1,3.3899999999999997,2.27
-Eswatini,SWZ,Eswatini,Africa,Sub-Saharan Africa,Africa,2022,1220000,8830,54.2,6.34,1.1500000000000001,2.8
-Seychelles,SYC,Seychelles,Africa,Sub-Saharan Africa,Africa,2022,126000,26300,71.2,23.6,7.38,2.17
-Tajikistan,TJK,Tajikistan,Asia,Europe & Central Asia,Asia,2022,10200000,4140,70,9.11,1.47,3.13
-Turkmenistan,TKM,Turkmenistan,Asia,Europe & Central Asia,Asia,2022,7230000,15500,71.2,12.6,15.5,2.73
-Timor-Leste,TLS,Timor-Leste,Asia,East Asia & Pacific,Asia,2022,1370000,3940,71.4,4.38,0.461,2.8
-Tonga,TON,Tonga,Oceania,East Asia & Pacific,Oceania,2022,105000,5970,73.4,9.04,1.42,3.17
-Tuvalu,TUV,Tuvalu,Oceania,East Asia & Pacific,Oceania,2022,9990,4590,68.5,11.5,1.09,3.24
-Ukraine,UKR,Ukraine,Europe,Europe & Central Asia,Europe,2022,41000000,10800,67.9,12.4,4.35,0.9
 USA,USA,United States,Americas,North America,Americas,2022,342000000,64599.99999999999,78,89.1,16.4,1.6700000000000002
-Uzbekistan,UZB,Uzbekistan,Asia,Europe & Central Asia,Asia,2022,34900000,8070,68.8,3.71,2.8,3.4
-St. Vincent and the Grenadines,VCT,Saint Vincent and the Grenadines,Americas,Latin America & Caribbean,Americas,2022,102000,14900,69.1,14.8,2.05,1.79
-Vanuatu,VUT,Vanuatu,Oceania,East Asia & Pacific,Oceania,2022,313000,2790,66,4.930000000000001,0.5720000000000001,3.65
-Samoa,WSM,Samoa,Oceania,East Asia & Pacific,Oceania,2022,215000,5160,70.9,9.219999999999999,1.43,3.88
+Indonesia,IDN,Indonesia,Asia,East Asia & Pacific,Asia,2022,279000000,12400,69.1,7.81,2.36,2.15
+Pakistan,PAK,Pakistan,Asia,South Asia,Asia,2022,244000000,5380,65.5,5.3,1.1,3.66
+Nigeria,NGA,Nigeria,Africa,Sub-Saharan Africa,Africa,2022,223000000,4960,65.2,3.56,0.692,4.55
+Brazil,BRA,Brazil,Americas,Latin America & Caribbean,Americas,2022,210000000,15100,73.9,19.6,2.11,1.63
+Bangladesh,BGD,Bangladesh,Asia,South Asia,Asia,2022,169000000,6260,75.5,4.94,0.8440000000000001,2.18
+Russia,RUS,Russia,Europe,Europe & Central Asia,Europe,2022,146000000,27700,69.2,23.4,9.97,1.45
+Mexico,MEX,Mexico,Americas,Latin America & Caribbean,Americas,2022,129000000,19700,76.3,14.9,3.64,1.94
+Ethiopia,ETH,Ethiopia,Africa,Sub-Saharan Africa,Africa,2022,125000000,2380,68.6,5.09,0.188,4.08
+Japan,JPN,Japan,Asia,East Asia & Pacific,Asia,2022,125000000,41600,85.2,52.4,9.99,1.26
+Philippines,PHL,Philippines,Asia,East Asia & Pacific,Asia,2022,114000000,8580,72.2,8.15,1.61,1.93
+Egypt,EGY,Egypt,Africa,Middle East & North Africa,Africa,2022,113000000,12800,69.8,7.33,2.4,2.75
+"Congo, Dem. Rep.",COD,"Congo, Dem. Rep.",Africa,Sub-Saharan Africa,Africa,2022,102000000,1130,64.5,2.55,0.026,6.109999999999999
+Vietnam,VNM,Vietnam,Asia,East Asia & Pacific,Asia,2022,99700000,11400,75,16.4,2.17,1.93
+Iran,IRN,Iran,Asia,Middle East & North Africa,Asia,2022,89500000,15500,76.2,15.7,7.67,1.7
+Turkey,TUR,Turkey,Europe,Europe & Central Asia,Asia,2022,87100000,32900,79,26,4.95,1.63
+Germany,DEU,Germany,Europe,Europe & Central Asia,Europe,2022,84100000,53800,80.6,65.5,9.3,1.46
+Thailand,THA,Thailand,Asia,East Asia & Pacific,Asia,2022,71700000,17500,79.1,17,3.92,1.22
+UK,GBR,United Kingdom,Europe,Europe & Central Asia,Europe,2022,68200000,46400,81.5,61.6,6.930000000000001,1.56
+France,FRA,France,Europe,Europe & Central Asia,Europe,2022,66300000,46000,83.4,62.5,6.07,1.76
+Tanzania,TZA,Tanzania,Africa,Sub-Saharan Africa,Africa,2022,64700000,2620,67,3.44,0.311,4.67
+South Africa,ZAF,South Africa,Africa,Sub-Saharan Africa,Africa,2022,62400000,13500,60.5,11.5,5.18,2.23
+Italy,ITA,Italy,Europe,Europe & Central Asia,Europe,2022,59600000,43900,83.6,55.7,6.92,1.24
+Kenya,KEN,Kenya,Africa,Sub-Saharan Africa,Africa,2022,54300000,4880,65.6,3.69,0.562,3.26
+Myanmar,MMR,Myanmar,Asia,East Asia & Pacific,Asia,2022,53800000,4170,70.1,6.29,0.549,2.13
+South Korea,KOR,South Korea,Asia,East Asia & Pacific,Asia,2022,51800000,45500,83.3,49.3,13.5,0.7799999999999999
+Colombia,COL,Colombia,Americas,Latin America & Caribbean,Americas,2022,51700000,15600,77,15.1,2.3899999999999997,1.66
+Sudan,SDN,Sudan,Africa,Sub-Saharan Africa,Africa,2022,49400000,3570,70.2,3.4099999999999997,0.55,4.38
+Spain,ESP,Spain,Europe,Europe & Central Asia,Europe,2022,47800000,39800,83.5,52,5.659999999999999,1.21
+Uganda,UGA,Uganda,Africa,Sub-Saharan Africa,Africa,2022,47300000,2280,66.9,3.56,0.183,4.39
+Algeria,DZA,Algeria,Africa,Middle East & North Africa,Africa,2022,45500000,11200,76.8,9.29,3.88,2.82
+Argentina,ARG,Argentina,Americas,Latin America & Caribbean,Americas,2022,45400000,22400,75.4,22.1,3.85,1.48
+Iraq,IRQ,Iraq,Asia,Middle East & North Africa,Asia,2022,44100000,9250,73,11.2,5.76,3.29
+Ukraine,UKR,Ukraine,Europe,Europe & Central Asia,Europe,2022,41000000,10800,67.9,12.4,4.35,0.9
+Afghanistan,AFG,Afghanistan,Asia,South Asia,Asia,2022,40600000,1390,62.6,3.17,0.28400000000000003,4.930000000000001
+Canada,CAN,Canada,Americas,North America,Americas,2022,38800000,49200,82.7,65.4,13.2,1.37
+Poland,POL,Poland,Europe,Europe & Central Asia,Europe,2022,38400000,37800,77.2,31,8.01,1.26
 Yemen,YEM,Yemen,Asia,Middle East & North Africa,Asia,2022,38200000,1720,66.3,2.16,0.395,4.59
+Morocco,MAR,Morocco,Africa,Middle East & North Africa,Africa,2022,37300000,8080,74,11.6,2,2.26
+Angola,AGO,Angola,Africa,Sub-Saharan Africa,Africa,2022,35600000,5910,64.5,4.71,1.23,5.21
+Uzbekistan,UZB,Uzbekistan,Asia,Europe & Central Asia,Asia,2022,34900000,8070,68.8,3.71,2.8,3.4
+Malaysia,MYS,Malaysia,Asia,East Asia & Pacific,Asia,2022,34700000,28300,75.5,34.6,7.5,1.55
+Peru,PER,Peru,Americas,Latin America & Caribbean,Americas,2022,33500000,12700,77.3,12.3,2.01,2
+Ghana,GHA,Ghana,Africa,Sub-Saharan Africa,Africa,2022,33100000,5530,65.5,6.01,0.773,3.4299999999999997
+Mozambique,MOZ,Mozambique,Africa,Sub-Saharan Africa,Africa,2022,32700000.000000004,1250,56.9,2.03,0.456,4.84
+Saudi Arabia,SAU,Saudi Arabia,Asia,Middle East & North Africa,Asia,2022,32200000.000000004,49400,75.1,51,18.4,2.14
+Cote d'Ivoire,CIV,Cote d'Ivoire,Africa,Sub-Saharan Africa,Africa,2022,30400000,5510,63.8,6.34,0.596,4.35
+Madagascar,MDG,Madagascar,Africa,Sub-Saharan Africa,Africa,2022,30400000,1500,64.8,1.6,0.209,4.04
+Nepal,NPL,Nepal,Asia,South Asia,Asia,2022,29700000,4000,72,7.75,0.922,2
+Venezuela,VEN,Venezuela,Americas,Latin America & Caribbean,Americas,2022,28200000,6160,74,3.95,0.6729999999999999,2.09
+Cameroon,CMR,Cameroon,Africa,Sub-Saharan Africa,Africa,2022,27600000,3730,62.7,6.08,0.408,4.4
+North Korea,PRK,North Korea,Asia,East Asia & Pacific,Asia,2022,26300000,1800,73.5,3.27,1.32,1.8
+Australia,AUS,Australia,Oceania,East Asia & Pacific,Oceania,2022,26200000,51200,83.4,67.2,13.9,1.64
+Niger,NER,Niger,Africa,Sub-Saharan Africa,Africa,2022,25300000,1280,61.7,3.05,0.113,6.14
+Taiwan,TWN,Taiwan,Asia,East Asia & Pacific,NA,2022,23400000,58700,80.9,57.2,12.5,0.8700000000000001
+Mali,MLI,Mali,Africa,Sub-Saharan Africa,Africa,2022,23100000,2130,61.6,4.81,0.204,5.6899999999999995
+Sri Lanka,LKA,Sri Lanka,Asia,South Asia,Asia,2022,22800000,12300,77.9,8.27,1.76,1.98
+Burkina Faso,BFA,Burkina Faso,Africa,Sub-Saharan Africa,Africa,2022,22500000,2160,61.4,4.5,0.306,4.28
+Syria,SYR,Syria,Asia,Middle East & North Africa,Asia,2022,22500000,3350,74.4,2.98,1.85,2.75
+Malawi,MWI,Malawi,Africa,Sub-Saharan Africa,Africa,2022,20600000,1470,63.5,2,0.139,3.72
+Zambia,ZMB,Zambia,Africa,Sub-Saharan Africa,Africa,2022,20200000,3310,62.2,2.92,0.424,4.18
+Kazakhstan,KAZ,Kazakhstan,Asia,Europe & Central Asia,Asia,2022,20000000,26300,69.8,12.7,9.66,3.05
+Chile,CHL,Chile,Americas,Latin America & Caribbean,Americas,2022,19600000,25800,79.3,28.7,4.54,1.26
+Romania,ROU,Romania,Europe,Europe & Central Asia,Europe,2022,19200000,32400,73.2,27.1,4.359999999999999,1.72
+Chad,TCD,Chad,Africa,Sub-Saharan Africa,Africa,2022,18500000,1420,60.1,3.4499999999999997,0.07200000000000001,6.22
+Netherlands,NLD,Netherlands,Europe,Europe & Central Asia,Europe,2022,17900000,58500,82.2,69.3,8.77,1.51
+Ecuador,ECU,Ecuador,Americas,Latin America & Caribbean,Americas,2022,17800000,11200,77,15.2,2.7,1.86
+Guatemala,GTM,Guatemala,Americas,Latin America & Caribbean,Americas,2022,17800000,9160,68.2,10.8,1.34,2.34
+Somalia,SOM,Somalia,Africa,Sub-Saharan Africa,Africa,2022,17800000,1130,57.5,2.8099999999999996,0.051,6.26
+Senegal,SEN,Senegal,Africa,Sub-Saharan Africa,Africa,2022,17700000,3550,67.9,6.33,1.02,3.86
+Cambodia,KHM,Cambodia,Asia,East Asia & Pacific,Asia,2022,17200000,4530,69.1,5.92,2.55,2.62
+Zimbabwe,ZWE,Zimbabwe,Africa,Sub-Saharan Africa,Africa,2022,16100000.000000002,2210,59.1,4.38,0.804,3.77
+Guinea,GIN,Guinea,Africa,Sub-Saharan Africa,Africa,2022,14100000,2700,60.5,4.8,0.472,4.3
+Benin,BEN,Benin,Africa,Sub-Saharan Africa,Africa,2022,13800000,3440,64,5.26,0.71,4.63
+Rwanda,RWA,Rwanda,Africa,Sub-Saharan Africa,Africa,2022,13700000,2360,69.4,3.83,0.17900000000000002,3.78
+Burundi,BDI,Burundi,Africa,Sub-Saharan Africa,Africa,2022,13300000,708,63.5,1.97,0.051,4.98
+Bolivia,BOL,Bolivia,Americas,Latin America & Caribbean,Americas,2022,12100000,8240,68.9,19.9,1.99,2.58
+Tunisia,TUN,Tunisia,Africa,Middle East & North Africa,Africa,2022,12100000,10600,75.9,13.6,2.26,1.85
+Belgium,BEL,Belgium,Europe,Europe & Central Asia,Europe,2022,11600000,52900,81.9,63.7,16.9,1.55
+Haiti,HTI,Haiti,Americas,Latin America & Caribbean,Americas,2022,11500000,2800,63.3,3.57,0.272,2.7
+Jordan,JOR,Jordan,Asia,Middle East & North Africa,Asia,2022,11300000,9310,76.3,13.3,2.9,2.68
+Dominican Republic,DOM,Dominican Republic,Americas,Latin America & Caribbean,Americas,2022,11200000,19300,73.8,14.6,3.11,2.27
+Cuba,CUB,Cuba,Americas,Latin America & Caribbean,Americas,2022,11100000,8760,79.2,11.1,2.55,1.41
+South Sudan,SSD,South Sudan,Africa,Sub-Saharan Africa,Africa,2022,11000000,365,63.4,1.66,0.186,3.96
+Czech Republic,CZE,Czech Republic,Europe,Europe & Central Asia,Europe,2022,10700000,41100,78.3,43.2,9.84,1.62
+Honduras,HND,Honduras,Americas,Latin America & Caribbean,Americas,2022,10500000,5720,69.9,10.3,0.8760000000000001,2.52
+Sweden,SWE,Sweden,Europe,Europe & Central Asia,Europe,2022,10500000,54800,83.3,62.8,5.96,1.54
+Greece,GRC,Greece,Europe,Europe & Central Asia,Europe,2022,10400000,31600,80.3,33.5,5.2700000000000005,1.31
+Portugal,PRT,Portugal,Europe,Europe & Central Asia,Europe,2022,10400000,35800,82.3,40.9,4.6,1.45
+Azerbaijan,AZE,Azerbaijan,Asia,Europe & Central Asia,Asia,2022,10300000,15100,71.4,20,3.84,1.6900000000000002
+UAE,ARE,United Arab Emirates,Asia,Middle East & North Africa,Asia,2022,10200000,74600,73.4,81.8,21.1,1.15
+Papua New Guinea,PNG,Papua New Guinea,Oceania,East Asia & Pacific,Oceania,2022,10200000,3790,65.1,4.24,0.986,3.17
+Tajikistan,TJK,Tajikistan,Asia,Europe & Central Asia,Asia,2022,10200000,4140,70,9.11,1.47,3.13
+Hungary,HUN,Hungary,Europe,Europe & Central Asia,Europe,2022,9680000,35400,75.1,33.8,6.41,1.55
+Belarus,BLR,Belarus,Europe,Europe & Central Asia,Europe,2022,9170000,19100,73,19.2,6.319999999999999,1.33
+Israel,ISR,Israel,Asia,Middle East & North Africa,Asia,2022,9100000,44400,82.8,45,8.6,2.94
+Togo,TGO,Togo,Africa,Sub-Saharan Africa,Africa,2022,9090000,2210,65.8,4.96,0.906,4.25
+Austria,AUT,Austria,Europe,Europe & Central Asia,Europe,2022,9060000,56200,82.7,71.8,9.2,1.41
+Switzerland,CHE,Switzerland,Europe,Europe & Central Asia,Europe,2022,8790000,71300,84.5,78.6,11.6,1.4
+Sierra Leone,SLE,Sierra Leone,Africa,Sub-Saharan Africa,Africa,2022,8279999.999999999,1630,61.9,3.95,0.15400000000000005,3.88
+Lao,LAO,Lao PDR,Asia,East Asia & Pacific,Asia,2022,7560000,7950,69.8,6.87,3.3,2.46
+"Hong Kong, China",HKG,Hong Kong,Asia,East Asia & Pacific,Asia,2022,7470000.000000001,58400,NA,60.9,10.2,0.71
+Turkmenistan,TKM,Turkmenistan,Asia,Europe & Central Asia,Asia,2022,7230000,15500,71.2,12.6,15.5,2.73
+Libya,LBY,Libya,Africa,Middle East & North Africa,Africa,2022,7220000,20300,75.6,19.6,8.84,2.4
+Kyrgyz Republic,KGZ,Kyrgyzstan,Asia,Europe & Central Asia,Asia,2022,6960000,5220,72.7,7.09,2.8099999999999996,2.8099999999999996
+Bulgaria,BGR,Bulgaria,Europe,Europe & Central Asia,Europe,2022,6830000,27000,69.9,36.8,5.819999999999999,1.77
+Serbia,SRB,Serbia,Europe,Europe & Central Asia,Europe,2022,6790000,20900,73.1,21.6,5.109999999999999,1.52
+Paraguay,PRY,Paraguay,Americas,Latin America & Caribbean,Americas,2022,6760000,13500,73.3,18.5,2,2.44
+Nicaragua,NIC,Nicaragua,Americas,Latin America & Caribbean,Americas,2022,6730000,5820,76,12.7,0.944,2.24
+El Salvador,SLV,El Salvador,Americas,Latin America & Caribbean,Americas,2022,6280000,9420,74.6,13.1,1.47,1.79
+"Congo, Rep.",COG,"Congo, Rep.",Africa,Sub-Saharan Africa,Africa,2022,6040000,3210,65.8,2.99,0.6739999999999999,4.22
+Denmark,DNK,Denmark,Europe,Europe & Central Asia,Europe,2022,5900000,59100,81.6,69.4,7.68,1.56
+Lebanon,LBN,Lebanon,Asia,Middle East & North Africa,Asia,2022,5740000,13100,72,21.1,3.92,2.26
+Singapore,SGP,Singapore,Asia,East Asia & Pacific,Asia,2022,5649999.999999999,108000,85.2,128,25.4,0.94
+Finland,FIN,Finland,Europe,Europe & Central Asia,Europe,2022,5570000,49200,82.3,61.6,8.76,1.32
+Slovak Republic,SVK,Slovak Republic,Europe,Europe & Central Asia,Europe,2022,5470000.000000001,33200,75.2,27,7.37,1.56
+Norway,NOR,Norway,Europe,Europe & Central Asia,Europe,2022,5460000,67300,83.3,76.9,8.719999999999999,1.42
+Liberia,LBR,Liberia,Africa,Sub-Saharan Africa,Africa,2022,5370000,1460,66.1,3.72,0.354,4.02
+Palestine,PSE,Palestine,Asia,Middle East & North Africa,Asia,2022,5310000,5730,73,12.3,0.733,3.38
+New Zealand,NZL,New Zealand,Oceania,East Asia & Pacific,Oceania,2022,5130000,45200,82.2,45.3,7.51,1.6700000000000002
+Ireland,IRL,Ireland,Europe,Europe & Central Asia,Europe,2022,5109999.999999999,110000,82.5,72.3,8.59,1.59
+Central African Republic,CAF,Central African Republic,Africa,Sub-Saharan Africa,Africa,2022,5100000,823,51.8,2.19,0.07100000000000001,6.02
+Costa Rica,CRI,Costa Rica,Americas,Latin America & Caribbean,Americas,2022,5080000,22000,78,24.5,2.38,1.34
+Mauritania,MRT,Mauritania,Africa,Sub-Saharan Africa,Africa,2022,4880000,5500,69.7,6.83,0.6609999999999999,4.7700000000000005
+Oman,OMN,Oman,Asia,Middle East & North Africa,Asia,2022,4730000,35300,70.1,35,14.9,2.4499999999999997
+Kuwait,KWT,Kuwait,Asia,Middle East & North Africa,Asia,2022,4590000,48200,82.1,50.1,24,1.55
+Panama,PAN,Panama,Americas,Latin America & Caribbean,Americas,2022,4400000,33300,79,33.8,4.02,2.14
+Croatia,HRV,Croatia,Europe,Europe & Central Asia,Europe,2022,3909999.999999999,34200,79.2,38.3,5.94,1.53
+Georgia,GEO,Georgia,Asia,Europe & Central Asia,Asia,2022,3790000,17200,71.5,8.3,3.77,1.82
+Eritrea,ERI,Eritrea,Africa,Sub-Saharan Africa,Africa,2022,3409999.9999999995,1950,63.1,3.28,0.234,3.79
+Mongolia,MNG,Mongolia,Asia,East Asia & Pacific,Asia,2022,3389999.9999999995,12100,68.9,9.86,14.2,2.75
+Uruguay,URY,Uruguay,Americas,Latin America & Caribbean,Americas,2022,3389999.9999999995,24400,78,28.4,3.21,1.43
+Bosnia and Herzegovina,BIH,Bosnia and Herzegovina,Europe,Europe & Central Asia,Europe,2022,3200000,16800,75,32.4,6.45,1.48
+Moldova,MDA,Moldova,Europe,Europe & Central Asia,Europe,2022,3040000,13200,71.9,11.5,1.25,1.6900000000000002
+Namibia,NAM,Namibia,Africa,Sub-Saharan Africa,Africa,2022,2889999.9999999995,9560,60,10.2,3.97,3.25
+Qatar,QAT,Qatar,Asia,Middle East & North Africa,Asia,2022,2889999.9999999995,96500,76.8,112,27.3,1.74
+Armenia,ARM,Armenia,Asia,Europe & Central Asia,Asia,2022,2880000,16000,73.7,8.79,2.7,1.72
+Jamaica,JAM,Jamaica,Americas,Latin America & Caribbean,Americas,2022,2840000,10100,75,15.1,2.4299999999999997,1.37
+Albania,ALB,Albania,Europe,Europe & Central Asia,Europe,2022,2829999.9999999995,15500,76.1,16.3,2.1,1.36
+Lithuania,LTU,Lithuania,Europe,Europe & Central Asia,Europe,2022,2820000,39800,74.3,46.5,7.21,1.27
+Gambia,GMB,Gambia,Africa,Sub-Saharan Africa,Africa,2022,2640000,2130,65.8,5.29,0.29300000000000004,4.08
+Botswana,BWA,Botswana,Africa,Sub-Saharan Africa,Africa,2022,2440000,15500,62.7,10,5.1,2.79
+Gabon,GAB,Gabon,Africa,Sub-Saharan Africa,Africa,2022,2429999.9999999995,13900,66.9,11.9,2.76,3.71
+Lesotho,LSO,Lesotho,Africa,Sub-Saharan Africa,Africa,2022,2290000,2300,50.7,4.119999999999999,1.38,2.72
+Slovenia,SVN,Slovenia,Europe,Europe & Central Asia,Europe,2022,2120000,40900,81.9,51.8,8.46,1.57
+Guinea-Bissau,GNB,Guinea-Bissau,Africa,Sub-Saharan Africa,Africa,2022,2110000,1870,59.9,4.21,0.198,3.91
+Latvia,LVA,Latvia,Europe,Europe & Central Asia,Europe,2022,1880000,33100,76.3,38,7.57,1.47
+North Macedonia,MKD,"Macedonia, North",Europe,Europe & Central Asia,Europe,2022,1840000,17100,71.1,15.3,3.51,1.59
+Equatorial Guinea,GNQ,Equatorial Guinea,Africa,Sub-Saharan Africa,Africa,2022,1800000,14800,65.5,14.9,4.75,4.17
+Bahrain,BHR,Bahrain,Asia,Middle East & North Africa,Asia,2022,1530000,51900,76.3,53.2,16,1.84
+Trinidad and Tobago,TTO,Trinidad and Tobago,Americas,Latin America & Caribbean,Americas,2022,1500000,23300,75.4,24.2,17.7,1.54
+Timor-Leste,TLS,Timor-Leste,Asia,East Asia & Pacific,Asia,2022,1370000,3940,71.4,4.38,0.461,2.8
+Estonia,EST,Estonia,Europe,Europe & Central Asia,Europe,2022,1350000,38000,78.5,45.2,10.4,1.41
+Cyprus,CYP,Cyprus,Europe,Europe & Central Asia,Asia,2022,1330000,43200,81.3,58.5,5.619999999999999,1.39
+Mauritius,MUS,Mauritius,Africa,Sub-Saharan Africa,Africa,2022,1280000,22800,74.3,17,4.88,1.27
+Eswatini,SWZ,Eswatini,Africa,Sub-Saharan Africa,Africa,2022,1220000,8830,54.2,6.34,1.15,2.8
+Djibouti,DJI,Djibouti,Africa,Middle East & North Africa,Africa,2022,1140000.0000000002,5030,66.6,6.1,0.734,2.65
+Fiji,FJI,Fiji,Oceania,East Asia & Pacific,Oceania,2022,919000,12400,68.8,7.14,2.6,2.3099999999999996
+Comoros,COM,Comoros,Africa,Sub-Saharan Africa,Africa,2022,834000,3250,68.3,6.55,0.28700000000000003,3.94
+Guyana,GUY,Guyana,Americas,Latin America & Caribbean,Americas,2022,822000,35700,64.3,39.2,3.15,2.44
+Bhutan,BTN,Bhutan,Asia,South Asia,Asia,2022,781000,11400,74,15.8,1.8,1.48
+Solomon Islands,SLB,Solomon Islands,Oceania,East Asia & Pacific,Oceania,2022,781000,2400,59.5,3.58,0.29500000000000004,3.62
+Luxembourg,LUX,Luxembourg,Europe,Europe & Central Asia,Europe,2022,653000,115000,83.4,96.5,12.7,1.39
+Suriname,SUR,Suriname,Americas,Latin America & Caribbean,Americas,2022,623000,15000,70.7,15.1,3.3899999999999997,2.27
+Montenegro,MNE,Montenegro,Europe,Europe & Central Asia,Europe,2022,615000,22100,75.7,18.1,3.17,1.88
+Malta,MLT,Malta,Europe,Middle East & North Africa,Europe,2022,528000,48100,83.1,67,17.3,1.1
+Maldives,MDV,Maldives,Asia,South Asia,Asia,2022,524000,21300,79.8,19.1,3.3099999999999996,1.58
+Cape Verde,CPV,Cape Verde,Africa,Sub-Saharan Africa,Africa,2022,520000,7670,72.5,10.9,1.26,1.53
+Brunei,BRN,Brunei,Asia,East Asia & Pacific,Asia,2022,455000,58700,74.2,61.2,24.5,1.76
+Belize,BLZ,Belize,Americas,Latin America & Caribbean,Americas,2022,403000,9400,71.5,9.27,1.52,1.95
+Bahamas,BHS,Bahamas,Americas,Latin America & Caribbean,Americas,2022,398000,33100,76.6,33.8,4.75,1.38
+Iceland,ISL,Iceland,Europe,Europe & Central Asia,Europe,2022,380000,56300,84.5,62.3,9.99,1.59
+Vanuatu,VUT,Vanuatu,Oceania,East Asia & Pacific,Oceania,2022,313000,2790,66,4.930000000000001,0.5720000000000001,3.65
+Barbados,BRB,Barbados,Americas,Latin America & Caribbean,Americas,2022,282000,15600,76.6,15.2,4.52,1.71
+Sao Tome and Principe,STP,Sao Tome and Principe,Africa,Sub-Saharan Africa,Africa,2022,226000,3980,71.2,5.57,0.641,3.7
+Samoa,WSM,Samoa,Oceania,East Asia & Pacific,Oceania,2022,215000,5160,70.9,9.22,1.43,3.88
+St. Lucia,LCA,Saint Lucia,Americas,Latin America & Caribbean,Americas,2022,179000,15400,72.9,20.4,2.34,1.39
+Kiribati,KIR,Kiribati,Oceania,East Asia & Pacific,Oceania,2022,130000,2050,61.2,6.37,0.65,3.18
+Seychelles,SYC,Seychelles,Africa,Sub-Saharan Africa,Africa,2022,126000,26300,71.2,23.6,7.38,2.17
+Grenada,GRD,Grenada,Americas,Latin America & Caribbean,Americas,2022,117000,14600,73.8,14.6,2.4499999999999997,1.5
+"Micronesia, Fed. Sts.",FSM,Micronesia (Federated States of),Oceania,East Asia & Pacific,Oceania,2022,112000,3260,64,5.359999999999999,1.45,2.79
+Tonga,TON,Tonga,Oceania,East Asia & Pacific,Oceania,2022,105000,5970,73.4,9.04,1.42,3.17
+St. Vincent and the Grenadines,VCT,Saint Vincent and the Grenadines,Americas,Latin America & Caribbean,Americas,2022,102000,14900,69.1,14.8,2.05,1.79
+Antigua and Barbuda,ATG,Antigua and Barbuda,Americas,Latin America & Caribbean,Americas,2022,92800,21700,76.8,21.1,5.94,1.58
+Andorra,AND,Andorra,Europe,Europe & Central Asia,Europe,2022,79700,56400,82.7,61.6,5.91,1.07
+Dominica,DMA,Dominica,Americas,Latin America & Caribbean,Americas,2022,66800,11500,71.8,12,2.57,1.48
+St. Kitts and Nevis,KNA,Saint Kitts and Nevis,Americas,Latin America & Caribbean,Americas,2022,46700,29200,72.6,28.3,4.659999999999999,1.51
+Marshall Islands,MHL,Marshall Islands,Oceania,East Asia & Pacific,Oceania,2022,40100,5990,65.9,12.5,2.79,2.94
+Liechtenstein,LIE,Liechtenstein,Europe,Europe & Central Asia,Europe,2022,39300,NA,NA,NA,3.89,1.53
+Monaco,MCO,Monaco,Europe,Europe & Central Asia,Europe,2022,38900,214000,80.4,74.4,NA,2.11
+San Marino,SMR,San Marino,Europe,Europe & Central Asia,Europe,2022,34100,64500,82.6,64.7,NA,1.14
+Palau,PLW,Palau,Oceania,East Asia & Pacific,Oceania,2022,17800,13700,68.1,14.1,14.2,1.93
+Nauru,NRU,Nauru,Oceania,East Asia & Pacific,Oceania,2022,11800,11100,63.9,8.49,5.09,3.38
+Tuvalu,TUV,Tuvalu,Oceania,East Asia & Pacific,Oceania,2022,9990,4590,68.5,11.5,1.09,3.24
+Holy See,VAT,Vatican,Europe,Europe & Central Asia,Europe,2022,NA,NA,NA,NA,NA,1

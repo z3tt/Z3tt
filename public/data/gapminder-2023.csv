@@ -1,0 +1,198 @@
+country,iso_a3,country_name,continent,region,region_un,year,pop,gdp_pcap,life_exp,income_daily,co2_pcap,fertility
+India,IND,India,Asia,South Asia,Asia,2023,1440000000,7570,71.9,5.49,NA,1.98
+China,CHN,China,Asia,East Asia & Pacific,Asia,2023,1420000000,19200,78.4,16,NA,1
+USA,USA,United States,Americas,North America,Americas,2023,343000000,65900,79.5,90.5,NA,1.62
+Indonesia,IDN,Indonesia,Asia,East Asia & Pacific,Asia,2023,281000000,12900,72,8.12,NA,2.13
+Pakistan,PAK,Pakistan,Asia,South Asia,Asia,2023,248000000,5270,66.4,5.18,NA,3.61
+Nigeria,NGA,Nigeria,Africa,Sub-Saharan Africa,Africa,2023,228000000,4990,65.5,3.58,NA,4.48
+Brazil,BRA,Brazil,Americas,Latin America & Caribbean,Americas,2023,211000000,15500,76.7,20.1,NA,1.62
+Bangladesh,BGD,Bangladesh,Asia,South Asia,Asia,2023,171000000,6560,75.8,5.1899999999999995,NA,2.16
+Russia,RUS,Russia,Europe,Europe & Central Asia,Europe,2023,145000000,28800,73.6,22.4,NA,1.45
+Mexico,MEX,Mexico,Americas,Latin America & Caribbean,Americas,2023,130000000,20200,76.5,15.2,NA,1.91
+Ethiopia,ETH,Ethiopia,Africa,Sub-Saharan Africa,Africa,2023,129000000,2470,69.7,5.31,NA,3.99
+Japan,JPN,Japan,Asia,East Asia & Pacific,Asia,2023,124000000,42600,85.3,53.6,NA,1.21
+Egypt,EGY,Egypt,Africa,Middle East & North Africa,Africa,2023,115000000,13100,70.4,7.49,NA,2.75
+Philippines,PHL,Philippines,Asia,East Asia & Pacific,Asia,2023,115000000,8920,72.3,8.48,NA,1.92
+"Congo, Dem. Rep.",COD,"Congo, Dem. Rep.",Africa,Sub-Saharan Africa,Africa,2023,106000000,1190,65.4,2.63,NA,6.05
+Vietnam,VNM,Vietnam,Asia,East Asia & Pacific,Asia,2023,100000000,11900,75.1,17,NA,1.91
+Iran,IRN,Iran,Asia,Middle East & North Africa,Asia,2023,90600000,16100.000000000002,78.6,16,NA,1.7
+Turkey,TUR,Turkey,Europe,Europe & Central Asia,Asia,2023,87300000,34200,79.3,26.7,NA,1.63
+Germany,DEU,Germany,Europe,Europe & Central Asia,Europe,2023,84500000,53200,81.8,65.1,NA,1.44
+Thailand,THA,Thailand,Asia,East Asia & Pacific,Asia,2023,71700000,17800,79.3,17.5,NA,1.21
+UK,GBR,United Kingdom,Europe,Europe & Central Asia,Europe,2023,68700000,46000,81.7,61.6,NA,1.56
+Tanzania,TZA,Tanzania,Africa,Sub-Saharan Africa,Africa,2023,66599999.99999999,2680,67.8,3.52,NA,4.609999999999999
+France,FRA,France,Europe,Europe & Central Asia,Europe,2023,66400000.00000001,46100,83.5,63,NA,1.64
+South Africa,ZAF,South Africa,Africa,Sub-Saharan Africa,Africa,2023,63200000,13400,61.9,11.4,NA,2.22
+Italy,ITA,Italy,Europe,Europe & Central Asia,Europe,2023,59500000,44400,83.8,56.3,NA,1.2
+Kenya,KEN,Kenya,Africa,Sub-Saharan Africa,Africa,2023,55300000,5050,66.9,3.81,NA,3.21
+Myanmar,MMR,Myanmar,Asia,East Asia & Pacific,Asia,2023,54100000,4180,70.3,6.42,NA,2.12
+Colombia,COL,Colombia,Americas,Latin America & Caribbean,Americas,2023,52300000,15700,81,15.2,NA,1.65
+South Korea,KOR,South Korea,Asia,East Asia & Pacific,Asia,2023,51700000,46100,83.4,50.1,NA,0.72
+Sudan,SDN,Sudan,Africa,Sub-Saharan Africa,Africa,2023,50000000,3060,70.7,2.72,NA,4.319999999999999
+Uganda,UGA,Uganda,Africa,Sub-Saharan Africa,Africa,2023,48700000,2330,67.1,3.62,NA,4.28
+Spain,ESP,Spain,Europe,Europe & Central Asia,Europe,2023,47900000,40300,83.6,53.1,NA,1.21
+Algeria,DZA,Algeria,Africa,Middle East & North Africa,Africa,2023,46200000,11500,77.1,9.5,NA,2.77
+Argentina,ARG,Argentina,Americas,Latin America & Caribbean,Americas,2023,45500000,21800,77.3,21.3,NA,1.5
+Iraq,IRQ,Iraq,Asia,Middle East & North Africa,Asia,2023,45100000,8780,73.8,10.7,NA,3.25
+Afghanistan,AFG,Afghanistan,Asia,South Asia,Asia,2023,41500000,1360,64,3.1,NA,4.84
+Yemen,YEM,Yemen,Asia,Middle East & North Africa,Asia,2023,39400000,1650,67.2,2.16,NA,4.59
+Canada,CAN,Canada,Americas,North America,Americas,2023,39300000,48200,82.8,64.7,NA,1.35
+Poland,POL,Poland,Europe,Europe & Central Asia,Europe,2023,38800000,38000,78.8,31.2,NA,1.3
+Morocco,MAR,Morocco,Africa,Middle East & North Africa,Africa,2023,37700000,8250,74.3,11.7,NA,2.23
+Ukraine,UKR,Ukraine,Europe,Europe & Central Asia,Europe,2023,37700000,11700,72.3,10.8,NA,0.98
+Angola,AGO,Angola,Africa,Sub-Saharan Africa,Africa,2023,36700000,5780,65.9,4.63,NA,5.119999999999999
+Uzbekistan,UZB,Uzbekistan,Asia,Europe & Central Asia,Asia,2023,35700000,8380,68.9,3.83,NA,3.5
+Malaysia,MYS,Malaysia,Asia,East Asia & Pacific,Asia,2023,35100000,29000,75.7,35.5,NA,1.55
+Ghana,GHA,Ghana,Africa,Sub-Saharan Africa,Africa,2023,33800000,5590,66.1,5.930000000000001,NA,3.4
+Peru,PER,Peru,Americas,Latin America & Caribbean,Americas,2023,33800000,12600,81.1,12.3,NA,1.98
+Mozambique,MOZ,Mozambique,Africa,Sub-Saharan Africa,Africa,2023,33600000,1270,59.5,2.12,NA,4.76
+Saudi Arabia,SAU,Saudi Arabia,Asia,Middle East & North Africa,Asia,2023,33299999.999999996,48400,75.3,50.4,NA,2.28
+Cote d'Ivoire,CIV,Cote d'Ivoire,Africa,Sub-Saharan Africa,Africa,2023,31200000,5730,65.1,6.56,NA,4.28
+Madagascar,MDG,Madagascar,Africa,Sub-Saharan Africa,Africa,2023,31200000,1530,66,1.62,NA,3.97
+Nepal,NPL,Nepal,Asia,South Asia,Asia,2023,29700000,4030,72.3,7.7,NA,1.98
+Cameroon,CMR,Cameroon,Africa,Sub-Saharan Africa,Africa,2023,28400000,3780,63.7,6.17,NA,4.319999999999999
+Venezuela,VEN,Venezuela,Americas,Latin America & Caribbean,Americas,2023,28300000,6500,75.8,4.319999999999999,NA,2.08
+Australia,AUS,Australia,Oceania,East Asia & Pacific,Oceania,2023,26500000,51600,83.5,67.6,NA,1.64
+North Korea,PRK,North Korea,Asia,East Asia & Pacific,Asia,2023,26400000,1800,73.7,3.28,NA,1.78
+Niger,NER,Niger,Africa,Sub-Saharan Africa,Africa,2023,26200000,1260,62.5,3.06,NA,6.06
+Mali,MLI,Mali,Africa,Sub-Saharan Africa,Africa,2023,23800000,2170,62.2,4.87,NA,5.609999999999999
+Syria,SYR,Syria,Asia,Middle East & North Africa,Asia,2023,23600000,3170,74.5,2.8099999999999996,NA,2.71
+Taiwan,TWN,Taiwan,Asia,East Asia & Pacific,NA,2023,23300000,59500,81.1,57.7,NA,0.8700000000000001
+Burkina Faso,BFA,Burkina Faso,Africa,Sub-Saharan Africa,Africa,2023,23000000,2170,62.2,4.57,NA,4.1899999999999995
+Sri Lanka,LKA,Sri Lanka,Asia,South Asia,Asia,2023,23000000,12100,78.1,8.639999999999999,NA,1.97
+Malawi,MWI,Malawi,Africa,Sub-Saharan Africa,Africa,2023,21100000,1450,64.3,1.98,NA,3.65
+Zambia,ZMB,Zambia,Africa,Sub-Saharan Africa,Africa,2023,20700000,3410,63.4,2.94,NA,4.1
+Kazakhstan,KAZ,Kazakhstan,Asia,Europe & Central Asia,Asia,2023,20300000,27300,70.7,13.1,NA,3.01
+Chile,CHL,Chile,Americas,Latin America & Caribbean,Americas,2023,19700000,25800,81,28.4,NA,1.1700000000000002
+Chad,TCD,Chad,Africa,Sub-Saharan Africa,Africa,2023,19300000,1430,60.9,3.48,NA,6.119999999999999
+Romania,ROU,Romania,Europe,Europe & Central Asia,Europe,2023,19100000,33100,74.2,27.7,NA,1.71
+Somalia,SOM,Somalia,Africa,Sub-Saharan Africa,Africa,2023,18400000,1130,58.8,2.8099999999999996,NA,6.13
+Guatemala,GTM,Guatemala,Americas,Latin America & Caribbean,Americas,2023,18100000,9350,69.6,11,NA,2.3099999999999996
+Netherlands,NLD,Netherlands,Europe,Europe & Central Asia,Europe,2023,18100000,58000,82.3,69.3,NA,1.43
+Senegal,SEN,Senegal,Africa,Sub-Saharan Africa,Africa,2023,18100000,3590,69.3,6.41,NA,3.82
+Ecuador,ECU,Ecuador,Americas,Latin America & Caribbean,Americas,2023,18000000,11300,77.2,15.2,NA,1.82
+Cambodia,KHM,Cambodia,Asia,East Asia & Pacific,Asia,2023,17400000,4730,70.7,6.1899999999999995,NA,2.58
+Zimbabwe,ZWE,Zimbabwe,Africa,Sub-Saharan Africa,Africa,2023,16300000,2270,61.7,4.46,NA,3.72
+Guinea,GIN,Guinea,Africa,Sub-Saharan Africa,Africa,2023,14400000,2820,61.1,4.96,NA,4.22
+Benin,BEN,Benin,Africa,Sub-Saharan Africa,Africa,2023,14100000,3560,64.5,5.4,NA,4.56
+Rwanda,RWA,Rwanda,Africa,Sub-Saharan Africa,Africa,2023,14000000,2500,69.6,3.99,NA,3.7
+Burundi,BDI,Burundi,Africa,Sub-Saharan Africa,Africa,2023,13700000,708,64,1.97,NA,4.88
+Bolivia,BOL,Bolivia,Americas,Latin America & Caribbean,Americas,2023,12200000,8330,73,20,NA,2.55
+Tunisia,TUN,Tunisia,Africa,Middle East & North Africa,Africa,2023,12200000,10500,78.7,13.6,NA,1.83
+Belgium,BEL,Belgium,Europe,Europe & Central Asia,Europe,2023,11700000,53000,82,64,NA,1.38
+Haiti,HTI,Haiti,Americas,Latin America & Caribbean,Americas,2023,11600000,2710,64.3,3.47,NA,2.66
+South Sudan,SSD,South Sudan,Africa,Sub-Saharan Africa,Africa,2023,11500000,354,64.4,1.6700000000000002,NA,3.86
+Jordan,JOR,Jordan,Asia,Middle East & North Africa,Asia,2023,11400000,9510,77.2,13.6,NA,2.64
+Dominican Republic,DOM,Dominican Republic,Americas,Latin America & Caribbean,Americas,2023,11300000,19600,74,14.9,NA,2.24
+Cuba,CUB,Cuba,Americas,Latin America & Caribbean,Americas,2023,11000000,8840,79.4,11.2,NA,1.44
+Czech Republic,CZE,Czech Republic,Europe,Europe & Central Asia,Europe,2023,10800000,40200,80,42.6,NA,1.45
+Honduras,HND,Honduras,Americas,Latin America & Caribbean,Americas,2023,10600000,5830,72.7,10.4,NA,2.5
+Sweden,SWE,Sweden,Europe,Europe & Central Asia,Europe,2023,10600000,54500,83.4,60.7,NA,1.43
+UAE,ARE,United Arab Emirates,Asia,Middle East & North Africa,Asia,2023,10600000,76500,74.6,82.9,NA,1.2
+Portugal,PRT,Portugal,Europe,Europe & Central Asia,Europe,2023,10400000,36200,82.4,41.7,NA,1.51
+Papua New Guinea,PNG,Papua New Guinea,Oceania,East Asia & Pacific,Oceania,2023,10400000,3820,65.3,4.28,NA,3.1
+Tajikistan,TJK,Tajikistan,Asia,Europe & Central Asia,Asia,2023,10400000,4400,70.1,9.53,NA,3.07
+Azerbaijan,AZE,Azerbaijan,Asia,Europe & Central Asia,Asia,2023,10300000,15300,71.5,20.2,NA,1.6700000000000002
+Greece,GRC,Greece,Europe,Europe & Central Asia,Europe,2023,10200000,32500,81.7,34.3,NA,1.33
+Hungary,HUN,Hungary,Europe,Europe & Central Asia,Europe,2023,9690000,35300,77.3,33.7,NA,1.49
+Togo,TGO,Togo,Africa,Sub-Saharan Africa,Africa,2023,9300000,2300,66,5.109999999999999,NA,4.1899999999999995
+Israel,ISR,Israel,Asia,Middle East & North Africa,Asia,2023,9260000,44400,83.6,45.8,NA,2.8299999999999996
+Austria,AUT,Austria,Europe,Europe & Central Asia,Europe,2023,9129999.999999998,55200,82.8,71.5,NA,1.32
+Belarus,BLR,Belarus,Europe,Europe & Central Asia,Europe,2023,9120000,19900,74.8,18.4,NA,1.21
+Switzerland,CHE,Switzerland,Europe,Europe & Central Asia,Europe,2023,8870000.000000002,71200,84.6,78.7,NA,1.43
+Sierra Leone,SLE,Sierra Leone,Africa,Sub-Saharan Africa,Africa,2023,8460000,1660,62.3,3.97,NA,3.79
+Lao,LAO,Lao PDR,Asia,East Asia & Pacific,Asia,2023,7659999.999999999,8130,70.1,7.04,NA,2.42
+"Hong Kong, China",HKG,Hong Kong,Asia,East Asia & Pacific,Asia,2023,7440000,58700,NA,63.1,NA,0.72
+Turkmenistan,TKM,Turkmenistan,Asia,Europe & Central Asia,Asia,2023,7359999.999999999,15600,71.4,12.7,NA,2.69
+Libya,LBY,Libya,Africa,Middle East & North Africa,Africa,2023,7310000,19800,76.8,21.8,NA,2.36
+Kyrgyz Republic,KGZ,Kyrgyzstan,Asia,Europe & Central Asia,Asia,2023,7070000,5440,73.3,7.1899999999999995,NA,2.8
+Paraguay,PRY,Paraguay,Americas,Latin America & Caribbean,Americas,2023,6840000,14000,77.1,19,NA,2.42
+Nicaragua,NIC,Nicaragua,Americas,Latin America & Caribbean,Americas,2023,6819999.999999999,6000,76.1,12.9,NA,2.22
+Bulgaria,BGR,Bulgaria,Europe,Europe & Central Asia,Europe,2023,6800000,27600,71.2,37.7,NA,1.75
+Serbia,SRB,Serbia,Europe,Europe & Central Asia,Europe,2023,6770000,21500,74.2,22.1,NA,1.5
+El Salvador,SLV,El Salvador,Americas,Latin America & Caribbean,Americas,2023,6310000,9700,76.6,13.3,NA,1.78
+"Congo, Rep.",COG,"Congo, Rep.",Africa,Sub-Saharan Africa,Africa,2023,6180000,3200,66,3.04,NA,4.159999999999999
+Denmark,DNK,Denmark,Europe,Europe & Central Asia,Europe,2023,5950000,59800,81.7,70.3,NA,1.51
+Singapore,SGP,Singapore,Asia,East Asia & Pacific,Asia,2023,5790000,104000,85.4,129,NA,0.94
+Lebanon,LBN,Lebanon,Asia,Middle East & North Africa,Asia,2023,5770000,13500,73.6,21.2,NA,2.24
+Finland,FIN,Finland,Europe,Europe & Central Asia,Europe,2023,5600000,48500,82.5,60.8,NA,1.28
+Norway,NOR,Norway,Europe,Europe & Central Asia,Europe,2023,5520000,66900,83.5,78.2,NA,1.41
+Slovak Republic,SVK,Slovak Republic,Europe,Europe & Central Asia,Europe,2023,5520000,33800,78.2,27.3,NA,1.56
+Liberia,LBR,Liberia,Africa,Sub-Saharan Africa,Africa,2023,5490000,1500,67.1,3.8,NA,3.95
+Palestine,PSE,Palestine,Asia,Middle East & North Africa,Asia,2023,5410000,5290,73.8,12.4,NA,3.3099999999999996
+Ireland,IRL,Ireland,Europe,Europe & Central Asia,Europe,2023,5200000,104000,82.6,72.5,NA,1.6
+New Zealand,NZL,New Zealand,Oceania,East Asia & Pacific,Oceania,2023,5170000,44600,82.4,45.2,NA,1.6700000000000002
+Central African Republic,CAF,Central African Republic,Africa,Sub-Saharan Africa,Africa,2023,5149999.999999999,807,52.8,2.21,NA,6.01
+Costa Rica,CRI,Costa Rica,Americas,Latin America & Caribbean,Americas,2023,5109999.999999999,23000,80.9,25.3,NA,1.33
+Oman,OMN,Oman,Asia,Middle East & North Africa,Asia,2023,5050000,35300,74.9,34.3,NA,2.53
+Mauritania,MRT,Mauritania,Africa,Sub-Saharan Africa,Africa,2023,5020000,5540,70.5,6.99,NA,4.7
+Kuwait,KWT,Kuwait,Asia,Middle East & North Africa,Asia,2023,4840000,46700,82.3,48.8,NA,1.53
+Panama,PAN,Panama,Americas,Latin America & Caribbean,Americas,2023,4460000,35200,80.8,35.3,NA,2.12
+Croatia,HRV,Croatia,Europe,Europe & Central Asia,Europe,2023,3900000,35300,79.3,39.4,NA,1.47
+Georgia,GEO,Georgia,Asia,Europe & Central Asia,Asia,2023,3809999.999999999,18200,72.4,8.84,NA,1.81
+Eritrea,ERI,Eritrea,Africa,Sub-Saharan Africa,Africa,2023,3469999.9999999995,2020,63.8,3.3899999999999997,NA,3.71
+Mongolia,MNG,Mongolia,Asia,East Asia & Pacific,Asia,2023,3429999.9999999995,12700,69.1,10.3,NA,2.69
+Uruguay,URY,Uruguay,Americas,Latin America & Caribbean,Americas,2023,3389999.9999999995,24500,78.2,28.6,NA,1.41
+Bosnia and Herzegovina,BIH,Bosnia and Herzegovina,Europe,Europe & Central Asia,Europe,2023,3190000,17200,75.9,33.1,NA,1.49
+Moldova,MDA,Moldova,Europe,Europe & Central Asia,Europe,2023,3070000,13600,72.8,10.6,NA,1.73
+Qatar,QAT,Qatar,Asia,Middle East & North Africa,Asia,2023,2980000,88800,77,113,NA,1.73
+Namibia,NAM,Namibia,Africa,Sub-Saharan Africa,Africa,2023,2960000,9820,61.6,10.3,NA,3.21
+Armenia,ARM,Armenia,Asia,Europe & Central Asia,Asia,2023,2940000,17500,76.5,9.41,NA,1.71
+Lithuania,LTU,Lithuania,Europe,Europe & Central Asia,Europe,2023,2849999.9999999995,39100,76.9,46.9,NA,1.2
+Jamaica,JAM,Jamaica,Americas,Latin America & Caribbean,Americas,2023,2840000,10300,76.9,15.4,NA,1.36
+Albania,ALB,Albania,Europe,Europe & Central Asia,Europe,2023,2809999.9999999995,16200,77.3,16.9,NA,1.35
+Gambia,GMB,Gambia,Africa,Sub-Saharan Africa,Africa,2023,2700000,2180,67.1,5.42,NA,4.01
+Botswana,BWA,Botswana,Africa,Sub-Saharan Africa,Africa,2023,2480000,15600,62.8,10.2,NA,2.73
+Gabon,GAB,Gabon,Africa,Sub-Saharan Africa,Africa,2023,2480000,14000,67.4,12.1,NA,3.65
+Lesotho,LSO,Lesotho,Africa,Sub-Saharan Africa,Africa,2023,2309999.9999999995,2290,52.5,4.159999999999999,NA,2.69
+Guinea-Bissau,GNB,Guinea-Bissau,Africa,Sub-Saharan Africa,Africa,2023,2150000,1910,60.6,4.31,NA,3.84
+Slovenia,SVN,Slovenia,Europe,Europe & Central Asia,Europe,2023,2120000,41400,82.1,52.7,NA,1.58
+Latvia,LVA,Latvia,Europe,Europe & Central Asia,Europe,2023,1880000,33000,76.4,38.3,NA,1.34
+Equatorial Guinea,GNQ,Equatorial Guinea,Africa,Sub-Saharan Africa,Africa,2023,1850000,13600,66.3,13.6,NA,4.08
+North Macedonia,MKD,"Macedonia, North",Europe,Europe & Central Asia,Europe,2023,1830000,17500,72.4,15.6,NA,1.47
+Bahrain,BHR,Bahrain,Asia,Middle East & North Africa,Asia,2023,1570000,52700,77.7,53.3,NA,1.82
+Trinidad and Tobago,TTO,Trinidad and Tobago,Americas,Latin America & Caribbean,Americas,2023,1500000,23700,75.5,24.7,NA,1.53
+Timor-Leste,TLS,Timor-Leste,Asia,East Asia & Pacific,Asia,2023,1380000,3320,71.7,2.24,NA,2.71
+Estonia,EST,Estonia,Europe,Europe & Central Asia,Europe,2023,1370000,36400,78.7,44.2,NA,1.35
+Cyprus,CYP,Cyprus,Europe,Europe & Central Asia,Asia,2023,1340000,43500,81.5,58.8,NA,1.39
+Mauritius,MUS,Mauritius,Africa,Sub-Saharan Africa,Africa,2023,1270000,24400,76,17.9,NA,1.24
+Eswatini,SWZ,Eswatini,Africa,Sub-Saharan Africa,Africa,2023,1230000,9190,55.5,6.46,NA,2.75
+Djibouti,DJI,Djibouti,Africa,Middle East & North Africa,Africa,2023,1150000.0000000002,5290,67.5,6.319999999999999,NA,2.61
+Fiji,FJI,Fiji,Oceania,East Asia & Pacific,Oceania,2023,924000,13300,68.9,7.63,NA,2.28
+Comoros,COM,Comoros,Africa,Sub-Saharan Africa,Africa,2023,850000,3270,69.8,6.51,NA,3.88
+Guyana,GUY,Guyana,Americas,Latin America & Caribbean,Americas,2023,826000,47100,68,48.9,NA,2.4099999999999997
+Solomon Islands,SLB,Solomon Islands,Oceania,East Asia & Pacific,Oceania,2023,800000,2420,59.6,3.58,NA,3.56
+Bhutan,BTN,Bhutan,Asia,South Asia,Asia,2023,786000,12400,74.3,16.4,NA,1.46
+Luxembourg,LUX,Luxembourg,Europe,Europe & Central Asia,Europe,2023,665000,111000,83.5,94.4,NA,1.4
+Montenegro,MNE,Montenegro,Europe,Europe & Central Asia,Europe,2023,634000,23500,76.6,18.9,NA,1.8
+Suriname,SUR,Suriname,Americas,Latin America & Caribbean,Americas,2023,629000,15200,73.3,15.2,NA,2.25
+Malta,MLT,Malta,Europe,Middle East & North Africa,Europe,2023,533000,48800,83.2,69.1,NA,1.1
+Maldives,MDV,Maldives,Asia,South Asia,Asia,2023,526000,22200,80,20.3,NA,1.58
+Cape Verde,CPV,Cape Verde,Africa,Sub-Saharan Africa,Africa,2023,522000,7990,74.6,11.3,NA,1.52
+Brunei,BRN,Brunei,Asia,East Asia & Pacific,Asia,2023,459000,59000,74.2,60.7,NA,1.75
+Belize,BLZ,Belize,Americas,Latin America & Caribbean,Americas,2023,411000,9700,75.2,9.46,NA,2.01
+Bahamas,BHS,Bahamas,Americas,Latin America & Caribbean,Americas,2023,399000,33800,76.8,34.9,NA,1.37
+Iceland,ISL,Iceland,Europe,Europe & Central Asia,Europe,2023,388000,56800,84.6,62.5,NA,1.54
+Vanuatu,VUT,Vanuatu,Oceania,East Asia & Pacific,Oceania,2023,320000,2780,66.2,4.84,NA,3.6
+Barbados,BRB,Barbados,Americas,Latin America & Caribbean,Americas,2023,282000,16300,76.8,15.9,NA,1.71
+Sao Tome and Principe,STP,Sao Tome and Principe,Africa,Sub-Saharan Africa,Africa,2023,231000,3880,71.3,5.48,NA,3.64
+Samoa,WSM,Samoa,Oceania,East Asia & Pacific,Oceania,2023,217000,5490,71.1,9.9,NA,3.83
+St. Lucia,LCA,Saint Lucia,Americas,Latin America & Caribbean,Americas,2023,179000,15800,75.8,20.9,NA,1.38
+Kiribati,KIR,Kiribati,Oceania,East Asia & Pacific,Oceania,2023,133000,2100,61.4,6.44,NA,3.15
+Seychelles,SYC,Seychelles,Africa,Sub-Saharan Africa,Africa,2023,128000,27200,74.4,24.4,NA,2.13
+Grenada,GRD,Grenada,Americas,Latin America & Caribbean,Americas,2023,117000,15200,73.9,15.1,NA,1.49
+"Micronesia, Fed. Sts.",FSM,Micronesia (Federated States of),Oceania,East Asia & Pacific,Oceania,2023,113000,3260,64.3,5.49,NA,2.75
+Tonga,TON,Tonga,Oceania,East Asia & Pacific,Oceania,2023,105000,5800,73.5,9.29,NA,3.13
+St. Vincent and the Grenadines,VCT,Saint Vincent and the Grenadines,Americas,Latin America & Caribbean,Americas,2023,101000,15800,70.4,15.7,NA,1.78
+Antigua and Barbuda,ATG,Antigua and Barbuda,Americas,Latin America & Caribbean,Americas,2023,93300,22400,77,22,NA,1.58
+Andorra,AND,Andorra,Europe,Europe & Central Asia,Europe,2023,80900,55300,82.9,61.3,NA,1.08
+Dominica,DMA,Dominica,Americas,Latin America & Caribbean,Americas,2023,66500,11900,73,12.5,NA,1.48
+St. Kitts and Nevis,KNA,Saint Kitts and Nevis,Americas,Latin America & Caribbean,Americas,2023,46800,30200,72.7,29.4,NA,1.51
+Liechtenstein,LIE,Liechtenstein,Europe,Europe & Central Asia,Europe,2023,39600,NA,NA,NA,NA,1.54
+Monaco,MCO,Monaco,Europe,Europe & Central Asia,Europe,2023,39000,218000,80.5,75.8,NA,2.11
+Marshall Islands,MHL,Marshall Islands,Oceania,East Asia & Pacific,Oceania,2023,38800,6120,66,12.8,NA,2.92
+San Marino,SMR,San Marino,Europe,Europe & Central Asia,Europe,2023,33700,68800,82.8,66,NA,1.15
+Palau,PLW,Palau,Oceania,East Asia & Pacific,Oceania,2023,17700,13800,68.3,14.2,NA,1.91
+Nauru,NRU,Nauru,Oceania,East Asia & Pacific,Oceania,2023,11900,11100,64.1,8.370000000000001,NA,3.3299999999999996
+Tuvalu,TUV,Tuvalu,Oceania,East Asia & Pacific,Oceania,2023,9820,4730,68.8,11.9,NA,3.21
+Holy See,VAT,Vatican,Europe,Europe & Central Asia,Europe,2023,NA,NA,NA,NA,NA,1
