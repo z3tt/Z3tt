@@ -1,0 +1,521 @@
+/*-- scss:defaults --*/
+
+/**@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');**/
+
+@font-face {
+  font-family: "Anormal Sans";
+  src: url("./Anormal-Variable[wght,wdth].ttf") format("truetype-variations");
+  font-weight: 100 800;
+  font-feature-settings: "ss02" 1, "ss03" 1;
+}
+
+@font-face {
+  font-family: "Recursive";
+  src: url("./Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-variation-settings: "MONO" 0;
+}
+
+@font-face {
+  font-family: "Recursive Mono";
+  src: url("../Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-variation-settings: "MONO" 1;
+}
+
+
+$font-family-main:     'Recursive', 'Asap', 'Asap Condensed', 'Tahoma', 'Arial', sans-serif;
+$font-family-display:  'Anormal Sans', 'Bodoni MT', 'Bodoni 72', 'Georgia', 'Times', serif;
+$font-family-mono:     'Recursive Mono', 'Spline Sans Mono', 'Consolas', monospace;
+$font-family-display:  $font-family-display;
+$font-family-serif:    $font-family-display;
+
+$font-size-root:     .95em;
+$font-size-small:    $font-size-root * .82;
+$font-size-code:     $font-size-root * .62;
+$font-size-tiny:     $font-size-root * .6;
+$font-size-title:    $font-size-root * 1.2;
+$font-size-h1:       $font-size-root * 2.1;
+$font-size-h2:       $font-size-root * 1.45;
+$font-size-h3:       $font-size-root * 1.3;
+$font-size-h4:       $font-size-root * 1.07;
+$font-size-caption:  $font-size-root * .35;
+
+$color-black:           #212121;
+$color-grey-dark:       #606060;
+$color-grey-medium:     #878787;
+$color-grey-light:      #BBBBBB;
+$color-grey-pale:       #F8F8F8;
+$color-inverse:         #EDCBA0;
+$color-jungle:          #28A87D;
+$color-jungle-dark:     #1D785A;
+$color-jungle-light:    #C9F2E4;
+$color-jungle-bright:   #79DFBD;
+$color-yellow:          #FFD166;
+$color-yellow-dark:     #B48200;
+$color-yellow-light:    #FFEDC2;
+$color-purple:          #9C55E3;
+$color-purple-dark:     #663399;
+$color-purple-light:    #E6D9F2;
+$color-purple-pale:     #CDA9F1;
+
+$link-color:               $color-jungle;
+$link-color-hover:         $color-jungle-dark;
+$link-color-visited:       $color-jungle;
+$link-color-dark:          $color-inverse;
+$link-color-hover-dark:    $color-jungle-bright;
+$link-color-visited-dark:  $color-inverse;
+
+$presentation-selection-background-color: #C2D8D0;
+$presentation-title-slide-text-align: "left";
+$presentation-block-margin: .0375rem;
+
+
+/*-- scss:rules --*/
+
+h3, h4, body, div, p, a, li, figcaption {
+  font-family: $font-family-main !important;
+  font-variation-settings: "CASL" .33;
+}
+
+.reveal p {
+  font-family: $font-family-main;
+  font-size: $font-size-small;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.small {
+  font-size: .75rem;
+}
+
+.reveal pre {
+  height: 98.1%
+}
+
+blockquote {
+  font-size: $font-size-small;
+  color: $color-black;
+}
+
+/*-- title page --*/
+
+h1.title {
+  font-family: $font-family-display;
+  font-feature-settings: "ss02" 1, "ss03" 1;
+  font-size: $font-size-h1;
+  font-weight: 700;
+  color: $color-grey-pale;
+  line-height: 1.03;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
+p.subtitle {
+  font-size: $font-size-h4;
+  color: $color-grey-pale;
+  font-weight: 800;
+  font-variation-settings: "CASL" .67;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.quarto-title-authors {
+  font-family: $font-family-main;
+  font-size: $font-size-tiny;
+  font-weight: 400;
+  color: $color-grey-light;
+  /*font-style: italic;*/
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*-- section pages --*/
+
+.reveal .title-slide h1 {
+  font-family: $font-family-display;
+  font-feature-settings: "ss02" 1, "ss03" 1;
+  font-size: $font-size-h1;
+  color: $color-jungle-dark;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.07;
+  padding-bottom: 150px;
+}
+
+/*-- slide headers --*/
+
+.reveal h2 {
+  font-family: $font-family-display;
+  font-feature-settings: "ss02" 1, "ss03" 1;
+  font-size: $font-size-h2;
+  color: $color-black;
+  font-weight: 700;
+  margin-bottom: 2.8px;
+}
+
+.center h2 {
+  text-align: center;
+}
+
+h2 > code {
+  font-size: .95rem; 
+  margin-bottom: 2.8px;
+}
+
+.reveal h3 {
+  font-size: $font-size-h3;
+  margin-bottom: 2.8px;
+  font-weight: bold;
+}
+
+.reveal h4 {
+  font-size: $font-size-h4;
+  margin-bottom: 2.8px;
+  font-weight: bold;
+  color: $color-grey-dark;
+}
+
+.reveal h5 {
+  font-family: $font-family-main;
+  font-size: $font-size-root;
+  margin-top: 72px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: $color-yellow-dark;
+}
+
+/*-- footer --*/
+
+.footer p {
+  font-size: $font-size-root;
+  font-weight: 550;
+  color: #878787;
+}
+
+.reveal .footer a {
+  font-weight: 550;
+}
+
+.reveal .footer.has-light-background a {
+  color: $link-color !important;
+}
+
+.reveal .slide-logo {
+  max-height: 3.4rem !important;
+  padding-bottom: 10px !important;
+}
+
+/*-- lists --*/
+
+.reveal li {
+  font-size: .7em !important;
+}
+
+.reveal li>li {
+  font-size: 1.5rem !important;
+}
+
+/*-- 
+.reveal li {
+  font-size: 2.1rem;
+}
+
+.reveal li li, li li li {
+  font-size: 1.75rem;
+}
+--*/
+
+/*-- backgrounds --*/
+
+.backgrounds {
+  background-color: $color-grey-pale
+}
+
+.backgrounds .title-slide {
+  background-color: $color-jungle-light
+}
+
+/*-- tables --*/
+
+.reveal table {
+  font-size: $font-size-small;
+  font-family: $font-family-mono;
+  font-variation-settings: "MONO" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.lightable-minimal.lightable-hover tbody tr:hover { 
+  background-color: $color-jungle !important;
+  color: $color-grey-pale;
+}
+
+/*-- images --*/
+
+.reveal .slide figure>figcaption, .reveal .slide img.stretch+p.caption, .reveal .slide img.r-stretch+p.caption  {
+  font-size: $font-size-caption;
+  color: $color-grey-medium;
+  text-align: center;
+  margin-top: 1;
+}
+
+/*-- details --*/
+
+details {
+  margin-bottom: 5px;
+}
+
+details>summary {
+  font-family: $font-family-mono;
+  font-variation-settings: "MONO" 1;
+  font-size: 1.25rem;
+  color: $color-grey-dark;
+}
+
+/*-- code chunks --*/
+
+code>a, code>span {
+  font-family: $font-family-mono;
+  font-variation-settings: "MONO" 1;
+  font-size: $font-size-small;
+}
+
+.cell-output {
+  font-size: $font-size-h4;
+}
+
+.cell {
+  margin-bottom: 12px;
+}
+
+.reveal pre, .reveal pre > code {
+  font-size: $font-size-code;
+  font-family: $font-family-mono;
+  line-height: 1;
+  font-variation-settings: "MONO" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.hscroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/*-- links --*/
+
+a:link,a:visited {
+  color: $link-color;
+}
+
+a:hov {
+  color: $link-color-hover-dark;
+}
+
+.panel-tabset li>a {
+  color: $color-grey-dark;
+  font-size: .6em;
+  font-weight: bold;
+}
+
+/*-- dark mode --*/
+
+section.has-dark-background {
+  color: $color-grey-pale;
+}
+
+section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background a, .reveal .footer.has-dark-background a {
+  color: $color-inverse !important;
+}
+
+section.has-dark-background a:hover, .reveal .footer.has-dark-background a:hover {
+  color: $link-color-hover-dark !important;
+}
+
+/*-- slide themes --*/
+
+.reveal .slide .question {
+  background: $color-yellow-light;
+  border-left: 7px solid $color-yellow;
+  padding: 0.6rem 0.8rem 0.4rem 1.3rem;
+  margin-top: 2.5rem;
+  font-size: $font-size-root * .9;
+}
+
+.reveal .slide .exercise {
+  background: $color-purple-light;
+  border-left: 7px solid $color-purple;
+  padding: 0.6rem 0.8rem 0.4rem 1.3rem;
+  margin-top: 2.5rem;
+  font-size: $font-size-root * .9;
+}
+
+.reveal .slide .recap {
+  background: $color-jungle-light;
+  border-left: 7px solid $color-jungle;
+  padding: 0.6rem 0.8rem 0.4rem 1.3rem;
+  margin-top: 2.5rem;
+  font-size: $font-size-root * .9;
+}
+
+/*-- decoration --*/
+
+.gradient {
+  background: linear-gradient(to right, $color-purple-dark, $color-jungle-dark, $color-jungle);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-rev {
+  background: linear-gradient(to right, $color-jungle-dark, $color-purple-dark, $color-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-alt {
+  background: linear-gradient(to right, $color-yellow-dark, $color-purple, $color-purple-dark);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-exercise {
+  background: linear-gradient(to right, $color-purple-dark, $color-purple, $color-yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-light {
+  background: linear-gradient(to right, $color-yellow-light, $color-jungle-light, $color-jungle-bright);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.simple-highlight-grn {
+ background-color: $color-jungle-bright;
+ padding: 0.1em 0.2em;
+ font-weight: 700;
+}
+
+.simple-highlight-ylw {
+ background-color: $color-yellow;
+ padding: 0.1em 0.2em;
+ font-weight: 700;
+}
+
+.simple-highlight-prpl {
+ background-color: $color-purple-pale;
+ padding: 0.1em 0.2em;
+ font-weight: 700;
+}
+
+.circle-highlight {
+  position: relative;
+}
+
+.circle-highlight:before {
+  content: "";
+  z-index: -1;
+  left: -0.3em;
+  top: -0.06em;
+  border-width: 2.7px;
+  border-style: solid;
+  border-color: $color-jungle;
+  position: absolute;
+  border-right-color: transparent;
+  width: 100%;
+  height: 1em;
+  transform: rotate(2deg);
+  opacity: 0.65;
+  border-radius: 75%;
+  padding: 0.1em 0.25em;
+}
+
+.circle-highlight:after {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: 0.06em;
+  padding: 0.05em 0.29em;
+  border-width: 2.7px;
+  border-style: solid;
+  border-color: $color-jungle;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position:absolute;
+  width: 100%;
+  height: 1em;
+  transform: rotate(-1deg);
+  opacity: 0.65;
+  border-radius: 80%;
+}
+
+/*-- scrollbar --*/
+
+.reveal .slide body::-webkit-scrollbar {
+  display: none;
+}
+
+.hscroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/*--
+.center-xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
+}
+--*/
+
+.title-on-ylw {
+  font-size: $font-size-root;
+  color: $color-yellow-dark;
+}
+
+.title-byline {
+  font-family: Recursive;
+  font-size: .5em;
+  font-weight: 700;
+  line-height: 1 !important;
+  color: $color-yellow-dark;
+}
+
+.citation {
+  line-height: 1.3;
+  text-align: center;
+  font-size: 1.05em;
+  color: $color-grey-light;
+  font-weight: 500;
+}
+
+.citation > .emphasis {
+  color: $color-inverse;
+  font-weight: 700;
+  font-variation-settings: "CASL" 1;
+}
+
+.citation > .author {
+  font-size: .7em;
+  font-weight: 400;
+  line-height: .5;
+}
+
+.citation > a {
+  font-size: .5em;
+  font-weight: 300;
+}
+
+.definition {
+  font-family: Recursive;
+  color: #e2e2e2;
+  font-size: .9em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -120px;
+  line-height: 1.15;
+}
