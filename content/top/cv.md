@@ -609,32 +609,32 @@ Plot twist: adding interactivity to the elegance of {ggplot2} with {ggiraph}<br>
   <span class='subline'>Talk – <a href="https://www.isop.org/home" target="_blank">useR 2025 Conference</a> – 06|2025 – remote</span><br>
   <a class='about-bold' href="https://z3tt.github.io/ggiraph-user-2025/slides.html" target="_blank">> Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=GnDjRxyO-7Ag" target="_blank">> Recording</a> &ensp; <a class='about-bold' href="https://github.com/z3tt/ggiraph-user-2025" target="_blank">> Scripts</a></b></li>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> & W Shijia (2022)</span> DataViz challenges: a fun way to learn and build a portfolio and network.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> & W Shijia (2022)</span> DataViz challenges: a fun way to learn and build a portfolio and network<br>
   <span class='subline'>Panel Discussion – <a href="https://outlierconf.com/" target="_blank">DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
 
-  <li class='about'><span class='authors'>A Guček & <u style='font-weight:700;'>C Scherer</u> (2022)</span> Data visualization in non-dataviz research.<br>
+  <li class='about'><span class='authors'>A Guček & <u style='font-weight:700;'>C Scherer</u> (2022)</span> Data visualization in non-dataviz research<br>
   <span class='subline'>Panel Discussion – <a href="https://outlierconf.com/" target="_blank">DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot wizardry: my favorite tricks and secrets for beautiful plots in R.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2021)</span> ggplot wizardry: my favorite tricks and secrets for beautiful plots in R<br>
   <span class='subline'>Talks + Coding Session – <a href="https://2021.outlierconf.com/" target="_blank">DVS Outlier Conference 2021</a> – 02|2022 – remote</span><br>
   <a class='about-bold' href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf" target="_blank">> Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/7UjA_5gNvdw" target="_blank">> Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/OutlierConf2021/" target="_blank">> Hands-On Tutorial</a></b> 
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2019)</span>: Effects of movement behaviour on disease persistence<br>
   <span class='subline'>Poster – Gordon Research Conference on Movement Ecology of Animals – 03|2019 – Lucca, Italy</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: zhe case of classical swine fever in wild boar.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, M Franz, C Staubach, S Müller,  H-H Thulke, N Blaum, V Grimm & S Kramer-Schadt (2018)</span> Effects of movement behaviour on disease persistence: zhe case of classical swine fever in wild boar<br>
   <span class='subline'>Talk – 1st International BioMove Symposium – 09|2018 – Potsdam, Germany</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: combining movement ecology and epidemiological models.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Individual movement decisions shape disease dynamics: combining movement ecology and epidemiological models<br>
   <span class='subline'>Talk – Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09|2016 – Marburg, Germany</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, F Jeltsch, V Grimm & N Blaum (2014)</span>: Can we use functional types to predict responses of birds to changes in African savannas? an individual-based modelling approach.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, F Jeltsch, V Grimm & N Blaum (2014)</span>: Can we use functional types to predict responses of birds to changes in African savannas? an individual-based modelling approach<br>
   <span class='subline'>Talk – Annual Meeting of the Ecological Society of Germany, Austria & Switzerland (GfOe) – 09|2014 – Hildesheim, Germany</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, N Blaum, V Grimm & S Kramer-Schadt (2017)</span>: Infection on the move: combining movement ecology and epidemiological models.  <br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, N Blaum, V Grimm & S Kramer-Schadt (2017)</span>: Infection on the move: combining movement ecology and epidemiological models<br>
   <span class='subline'>Poster – Gordon Research Conference on Movement Ecology of Animals – 03|2017 – Ventura, CA, USA</span>
 
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Combined effects of land-use and individual movement decisions shape disease dynamics.<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, V Radchuk, N Blaum, V Grimm, F Jeltsch & S Kramer-Schadt (2016)</span>: Combined effects of land-use and individual movement decisions shape disease dynamics<br>
   <span class='subline'>Poster – CAnMove Animal Movement International Symposium – 02|2016 – Lund, Sweden</span>
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u>, I Sonnenmann, S Wurst & F Jeltsch (2015)</span>: Modelling the vertical and horizontal migration of wireworms: how does timing and intensity of root herbivore pressure impact grassland communities?<br>
