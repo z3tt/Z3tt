@@ -9,7 +9,7 @@
   }
 </style>
 
-<b style='font-size:1.25em;line-height:.75;'>As an information designer and data scientist, I support people to <b class='simple-highlight-ylw'>effectively communicate data</b> — with confidence, clarity, and creativity.</b>
+<b style='font-size:1.25em;line-height:.75;'>As an independent information designer and data scientist, I support people to <b class='simple-highlight-ylw'>effectively communicate data</b> — with confidence, clarity, and creativity.</b>
 
 <div class='highlightbox'>
   <span class='highlight'>Want to hire me for a project or training?<br>
