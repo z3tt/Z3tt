@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rstats on Cédric Scherer</title>
-    <link>http://localhost:4321/tags/rstats/</link>
+    <link>https://cedricscherer.com/tags/rstats/</link>
     <description>Recent content in Rstats on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/rstats/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/rstats/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2-Day Workshop on &#34;Graphic Design with ggplot2&#34; at rstudio::conf 2022</title>
-      <link>http://localhost:4321/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</link>
+      <link>https://cedricscherer.com/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</guid>
+      <guid>https://cedricscherer.com/2022/08/09/2-day-workshop-on-graphic-design-with-ggplot2-at-rstudioconf-2022/</guid>
       <description>&lt;img src=&#34;https://raw.githubusercontent.com/rstudio-conf-2022/ggplot2-graphic-design/main/images/logo.png&#34; style=&#34;float:right;padding: 0 0 0 10px;margin: 20px -10px 0 0 &#34; fig-alt=&#34;Course Hex Logo&#34; width=&#34;175&#34;&gt;
 &lt;p&gt;&lt;strong&gt;End of July, I had the honor to teach a &lt;a href=&#39;https://www.rstudio.com/blog/rstudio-conf-2022-workshops/&#39; style=&#39;font-weight:800;&#39;&gt;2-day, in-person workshop on &amp;ldquo;Graphic Design with ggplot2&amp;rdquo; at the rstudio::conf(2022)&lt;/a&gt; in Washington DC. Invited by RStudio (now named &lt;a href=&#39;https://posit.co/&#39; style=&#39;font-weight:800;&#39;&gt;Posit&lt;/a&gt;), I developed a new course that covers the most important steps and helpful tips to create visually appealing, engaging and complex graphics with ggplot2. The course focused on the main concepts of the grammar of graphics and used hands-on examples to explore ggplot2’s utility to create multi-layered, more complex graphs. &lt;a href=&#39;https://rstudio-conf-2022.github.io/ggplot2-graphic-design/&#39; style=&#39;font-weight:800;&#39;&gt;All course resources are available as open-source material on the course page.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The course webpage as well ass the slidedecks and the exercises and solutions were developed with the new open-source scientific and technical publishing system &lt;a href=&#39;https://quarto.org/&#39; target=&#34;_blank&#34;&gt;Quarto&lt;/a&gt;. The new workshop development was a perfect opportunity to give it a try and the experience was overall wonderful—the &lt;a href=&#39;https://revealjs.com/&#39; target=&#34;_blank&#34;&gt;reveal.js&lt;/a&gt; integration for the slides works perfect and allows for a lot of customization. Thanks to Marco Sciaini for helping me setting up the course webpage which was, after learning about a few quirks, a smooth experience as well.&lt;/p&gt;

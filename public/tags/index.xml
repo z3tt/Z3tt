@@ -1,188 +1,188 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cédric Scherer</title>
-    <link>http://localhost:4321/tags/</link>
+    <link>https://cedricscherer.com/tags/</link>
     <description>Recent content in Tags on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>30DayChartChallenge</title>
-      <link>http://localhost:4321/tags/30daychartchallenge/</link>
+      <link>https://cedricscherer.com/tags/30daychartchallenge/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/30daychartchallenge/</guid>
+      <guid>https://cedricscherer.com/tags/30daychartchallenge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataViz</title>
-      <link>http://localhost:4321/tags/dataviz/</link>
+      <link>https://cedricscherer.com/tags/dataviz/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/dataviz/</guid>
+      <guid>https://cedricscherer.com/tags/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DataWrapper</title>
-      <link>http://localhost:4321/tags/datawrapper/</link>
+      <link>https://cedricscherer.com/tags/datawrapper/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/datawrapper/</guid>
+      <guid>https://cedricscherer.com/tags/datawrapper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://localhost:4321/tags/r/</link>
+      <link>https://cedricscherer.com/tags/r/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/r/</guid>
+      <guid>https://cedricscherer.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Annotations</title>
-      <link>http://localhost:4321/tags/annotations/</link>
+      <link>https://cedricscherer.com/tags/annotations/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/annotations/</guid>
+      <guid>https://cedricscherer.com/tags/annotations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ggplot2</title>
-      <link>http://localhost:4321/tags/ggplot2/</link>
+      <link>https://cedricscherer.com/tags/ggplot2/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/ggplot2/</guid>
+      <guid>https://cedricscherer.com/tags/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidyverse</title>
-      <link>http://localhost:4321/tags/tidyverse/</link>
+      <link>https://cedricscherer.com/tags/tidyverse/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/tidyverse/</guid>
+      <guid>https://cedricscherer.com/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>http://localhost:4321/tags/tutorial/</link>
+      <link>https://cedricscherer.com/tags/tutorial/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/tutorial/</guid>
+      <guid>https://cedricscherer.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automation</title>
-      <link>http://localhost:4321/tags/automation/</link>
+      <link>https://cedricscherer.com/tags/automation/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/automation/</guid>
+      <guid>https://cedricscherer.com/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Efficiency</title>
-      <link>http://localhost:4321/tags/efficiency/</link>
+      <link>https://cedricscherer.com/tags/efficiency/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/efficiency/</guid>
+      <guid>https://cedricscherer.com/tags/efficiency/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips</title>
-      <link>http://localhost:4321/tags/tips/</link>
+      <link>https://cedricscherer.com/tags/tips/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/tips/</guid>
+      <guid>https://cedricscherer.com/tags/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Workflow</title>
-      <link>http://localhost:4321/tags/workflow/</link>
+      <link>https://cedricscherer.com/tags/workflow/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/workflow/</guid>
+      <guid>https://cedricscherer.com/tags/workflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Challenge</title>
-      <link>http://localhost:4321/tags/challenge/</link>
+      <link>https://cedricscherer.com/tags/challenge/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/challenge/</guid>
+      <guid>https://cedricscherer.com/tags/challenge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Community</title>
-      <link>http://localhost:4321/tags/community/</link>
+      <link>https://cedricscherer.com/tags/community/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/community/</guid>
+      <guid>https://cedricscherer.com/tags/community/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nightingale</title>
-      <link>http://localhost:4321/tags/nightingale/</link>
+      <link>https://cedricscherer.com/tags/nightingale/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/nightingale/</guid>
+      <guid>https://cedricscherer.com/tags/nightingale/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Social Media</title>
-      <link>http://localhost:4321/tags/social-media/</link>
+      <link>https://cedricscherer.com/tags/social-media/</link>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/social-media/</guid>
+      <guid>https://cedricscherer.com/tags/social-media/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rstats</title>
-      <link>http://localhost:4321/tags/rstats/</link>
+      <link>https://cedricscherer.com/tags/rstats/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/rstats/</guid>
+      <guid>https://cedricscherer.com/tags/rstats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Workshop</title>
-      <link>http://localhost:4321/tags/workshop/</link>
+      <link>https://cedricscherer.com/tags/workshop/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/workshop/</guid>
+      <guid>https://cedricscherer.com/tags/workshop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design</title>
-      <link>http://localhost:4321/tags/design/</link>
+      <link>https://cedricscherer.com/tags/design/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/design/</guid>
+      <guid>https://cedricscherer.com/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Equality</title>
-      <link>http://localhost:4321/tags/equality/</link>
+      <link>https://cedricscherer.com/tags/equality/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/tags/equality/</guid>
+      <guid>https://cedricscherer.com/tags/equality/</guid>
       <description></description>
     </item>
     

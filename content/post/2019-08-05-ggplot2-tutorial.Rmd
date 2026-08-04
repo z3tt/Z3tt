@@ -26,6 +26,12 @@ Header image by <a href="https://www.instagram.com/richard.strozynski/?hl=en">Ri
 
 *Last update: 2023-05-05*
 
+<div class='highlightbox'>
+  <span class='highlight'>Tired of learning by reading?<br>
+  <a href="https://www.ggplot2-uncharted.com" target="_blank">Take our interactive online course "ggplot2 uncharted"!</a><br></span>
+</div>
+
+
 ## Introductory Words
 
 [I don't care, just show me the content!](#toc)

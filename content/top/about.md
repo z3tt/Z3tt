@@ -9,7 +9,7 @@
   }
 </style>
 
-<b class='emphasize'>I assist organizations, research teams, and businesses in <b class='simple-highlight-ylw'>effectively communicating insights</b> through engaging data visualizations and graphical storytelling.</b>
+<b style='font-size:1.25em;line-height:.75;'>As an information designer and data scientist, I support people to <b class='simple-highlight-ylw'>effectively communicate data</b> — with confidence, clarity, and creativity.</b>
 
 <div class='highlightbox'>
   <span class='highlight'>Want to hire me for a project or training?<br>
@@ -69,6 +69,20 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
 ## Selected Presentations {#presentations}
 
 <ul>  
+  
+  <li class='about'>“Guide the view: design that makes data easier to read and communicate”<br>
+  <span class='subline'><a href="https://https://www.linkedin.com/in/morgandepenbusch//" target="_blank">DataViz Seminars by Morgan Depenbusch</a> – 04|2026 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/Scherer_DataViz_GuideTheView_2026.pdf" target="_blank">> Slides</a> &ensp; <a class='about-bold' href="https://drive.google.com/file/d/1s5y9AgaqIeZQa0yq52ge1MRazAdNdKE9/view" target="_blank">> Recording</a></a></b></li>
+  
+  <li class='about'>“Plot twist: adding interactivity to the elegance of {ggplot2} with {ggiraph}”<br>
+  <span class='subline'><a href="https://www.isop.org/home" target="_blank">useR 2025 Conference</a> – 06|2025 – remote, in collaboration with Tanya Shapiro</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/ggiraph-user-2025/slides.html" target="_blank">> Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=GnDjRxyO-7Ag" target="_blank">> Recording</a> &ensp; <a class='about-bold' href="https://github.com/z3tt/ggiraph-user-2025" target="_blank">> Scripts</a></b></li>
+  
+  <li class='about'>“Effective data communication: visualize information in a meaningful way”<br>
+  <span class='subline'><a href="https://www.isop.org/home" target="_blank">International Society of Pharmacometrics (ISoP)</a> – 06|2025 – remote</span></li>
+  
+  <li class='about'>“Print's (not) dead: Creating graphics for reports and books”<br>
+  <span class='subline'><a href="https://data-2-speak.com/conference" target="_blank">Data2Speak</a> – 05|2024 – remote conference</span></li>
 
   <li class='about'>“(Even more) exciting data visualizations with ggplot2 extensions”<br>
   <span class='subline'><a href="https://www.meetup.com/berlin-r-users-group/events/296352038/" target="_blank">Berlin useR Group</a> and <a href="https://www.meetup.com/rladies-rome/events/296857565/" target="_blank">R Ladies Rome</a> – 10+11|2023 – Berlin, Germany, and remote</span><br>
@@ -95,11 +109,7 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
 
   <li class='about'>“ggplot wizardry: my favorite tricks and secrets for beautiful plots in R.”<br>
   <span class='subline'>Talks + Coding Session</a> – <a href='https://2021.outlierconf.com/'>DVS Outlier Conference 2021</a> – 02|2021 – remote</span><br>
-  <a class='about-bold' href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">> Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/7UjA_5gNvdw">> Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/OutlierConf2021/">> Hands-On Tutorial</a> </b>   
-
-  <li class='about'>“Effective data visualization: how to design impactful and aesthetically pleasing charts.”<br>
-  <span class='subline'><a href='https://www.heurekalabs.org/'>Heureka Labs</a> & <a href='https://datascience.duke.edu/'>Duke+DataScience</a> – 10|2020 – Duke University, Durham, USA (Webinar)<br>
-  <a class='about-bold' href="https://raw.githubusercontent.com/Z3tt/bespokeDS/master/docs/presentation.pdf">> Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=swzFdMc6WPk">> Recording</a></li>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/OutlierConf2021_ggplot-wizardry.pdf">> Slides</a> &ensp; <a class='about-bold' href="https://youtu.be/7UjA_5gNvdw">> Recording</a> &ensp; <a class='about-bold' href="https://z3tt.github.io/OutlierConf2021/">> Hands-On Tutorial</a> </b>
 
   <p style='margin-top:25px;'><span style='font-family:Canicule Display;'>&rarr;&nbsp;&nbsp;</span><a href="https://www.cedricscherer.com/top/cv/#talks">Complete List of Presentations</a></p>
 
@@ -115,12 +125,31 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
 ## Selected Trainings {#teaching}
 
 <ul>
+
+  <li class='about'>“Effective data visualization: purposeful design to communicate scientific insights with confidence”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://www.imprs-life.mpg.de/home" target="_blank">International Max Planck Research School on Learning, Institutions, and Future Evolution</a> – 07|2026 – Berlin, Germany</span>
+
+  <li class='about'>“Communicating data effectively: creating advanced data visualizations, reports, and posters with ggplot2, ggiraph, and Quarto”<br>
+  <span class='subline'>1-Day Workshop + 1-Day Sparring Session – <a href="https://www.aok.de/pk/bw/" target="_blank">AOK Baden-Württemberg</a> – 12|2025 – Stuttgart, Germany</span>
+
+  <li class='about'>“Workflows for creating publication-ready data visualizations: exploring advanced techniques with {ggplot2}”<br>
+  <span class='subline'>3-Hour Workshop – <a href="https://www.mdc-berlin.de/" target="_blank">Max Delbrück Center for Molecular Medicine</a> – 09|2025 – Berlin, Germany</span>
+
+  <li class='about'>“Data communication & visual storytelling: principles of effective data visualization”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://kpmg.com/de/en.html" target="_blank">KPMG</a> – 09|2025 – Berlin, Germany</span>
+
+  <li class='about'>“Effective data visualizations for analytical reporting: from theory to practice”<br>
+  <span class='subline'>2-Day Workshop – <a href="https://www.fanniemae.com/" target="_blank">Fannie Mae</a> – 08|2024 – Washington, D.C., USA</span>
+
+  <li class='about'>“Data visualization & graphical storytelling for data analysts and data scientists”<br>
+  <span class='subline'>4 Interactive Training Sessions – <a href="https://www.helloheart.com/" target="_blank">Hello heart</a> – 03|2024 – remote</span>
   
   <li class='about'>“Communicating insights with engaging data visualizations and dashboards”<br>
   <span class='subline'>2-Day Workshop – <a href="https://supercell.com/en/" target="_blank">Supercell</a> – 02|2024 – Helsinki, Finland</span>
 
-  <li class='about'>“Data visualization in science: how to create beautiful charts with <code>ggplot2</code>”<br>
-  <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en" target="_blank">University of Uppsala</a> – 11|2021, 12|2022 + 11|2023 – remote</span></li>
+  <li class='about'>“Engaging and beautiful data visualizations with {ggplot2}”<br>
+  <span class='subline'>1-Day Conference Workshop – <a href="https://posit.co/conference/" target="_blank">posit::conf(2023)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 09|2023 – Chicago, IL, USA</span><br>
+  <a class='about-bold' href="https://posit-conf-2023.github.io/dataviz-ggplot2/" target="_blank">> Course Webpage</a></b></li>
   
   <li class='about'>“Designing charts in R: reproducible chart design with {ggplot2}”<br>
   <span class='subline'>4-Hour Workshop – <a href="https://www.eventbrite.com/cc/dvs-masterclass-1933699" target="_blank">DVS Masterclass</a> presented by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 03|2023 – Berlin/remote</span><br>
@@ -134,17 +163,8 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
   <span class='subline'>2-Day Conference Workshop – <a href='https://www.rstudio.com/conference/'>rstudio::conf(2022)</a> by <a href='https://posit.co/'>Posit</a> – 07|2022 – Washington, D.C., USA</span><br>
   <a class='about-bold' href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/" target="_blank">> Course Webpage</a></b></li>
 
-  <li class='about'>“Mastering scientific data visualizations: principles and practice with {ggplot2}”<br>
-  <span class='subline'>2x 1/2-Day Conference Workshops – <a href='https://empseb.wordpress.com/'>European Meeting for PhD Students in Evolutionary Biology (EMPSEB)</a> – 05|2022 – Espoo, Finland</span></li>
-
   <li class='about'>“Hands-on data visualization with ggplot2: how to create engaging and well-designed visualizations in R”<br>
   <span class='subline'>5-hour Live Training – <a href='https://www.oreilly.com/live-events/'>Pearson–O'Reilly Live Training Event</a> – 09|2021, 12|2021 + 04|2022 – remote</span></li>
-
-  <li class='about'>“Effective data visualization: convert information into visual forms—and tell a story”<br>
-  <span class='subline'>1/2-Day Workshop –  <a href="https://www.senckenberg.de/en/science/young-scientists-2/">Senckenberg Young Scientists</a> – 11|2021 – remote</span></li>
-
-  <li class='about'>“Data visualization in R (Beginner + Advanced)”<br>
-  <span class='subline'>Two 2-Day Workshops for <a href="http://rbzs.be/workshops2021/">Royal Zoological Society of Belgium (RZSB)</a> and <a href="https://www.vvsor.nl/">Statistics Communication Section of the Netherlands Society for Statistics and Operations Research</a> – remote – 10|2021 + 12|2021</span></li>
 
   <li class='about'>“Data visualisation techniques for data scientists</code>”<br>
   <span class='subline'>2-Day Internal Training – <a href="https://www.msc.org/">Marine Stewardship Council (MSC)</a> – 02|2021 – remote</span></li>

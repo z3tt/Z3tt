@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distributions on Cédric Scherer</title>
-    <link>http://localhost:4321/tags/distributions/</link>
+    <link>https://cedricscherer.com/tags/distributions/</link>
     <description>Recent content in Distributions on Cédric Scherer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:4321/tags/distributions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cedricscherer.com/tags/distributions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visualizing Distributions with Raincloud Plots (and How to Create Them with ggplot2)</title>
-      <link>http://localhost:4321/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</link>
+      <link>https://cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:4321/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</guid>
+      <guid>https://cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-and-how-to-create-them-with-ggplot2/</guid>
       <description>
 
 
@@ -110,7 +110,7 @@ theme_update(
 &lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &amp;quot;grey92&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to generate same sample data.&lt;/i&gt;
@@ -136,7 +136,7 @@ Are there underlying patterns in the data?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Difficult to answer.&lt;/p&gt;
 &lt;p&gt;Sure, adding a note on the sample size might be considered good practice but it still doesn’t tell you much about the actual pattern.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-n-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show code.&lt;/i&gt;
@@ -163,7 +163,7 @@ ggplot(data, aes(x = group, y = value)) +
 &lt;p&gt;Alternatively, one can “map” the width of the box to the sample size which indicates difference in the sample size but the exact numbers and distributions are still hidden:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) +
   geom_boxplot(fill = &amp;quot;grey92&amp;quot;, varwidth = TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-varwidth-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-with-varwidth-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;rawdata&#34; class=&#34;section level2&#34;&gt;
@@ -183,10 +183,10 @@ ggplot(data, aes(x = group, y = value)) +
       seed = 1, width = .2
     )
   )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Oh, the patterns are very different! Values of Group 1 are uniformly distributed. The values in Group 2 are clustered with a distinct gap around the group’s median! And the few observations of Group 3 are all integers.&lt;/p&gt;
 &lt;p&gt;We can improve the look a bit further by plotting the raw data points according to their distribution with either &lt;code&gt;ggbeeswarm::geom_quasirandom()&lt;/code&gt; or &lt;code&gt;ggforce::geom_sina()&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-distribution-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/boxplot-raw-distribution-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show codes.&lt;/i&gt;
@@ -220,10 +220,10 @@ ggplot(data, aes(x = group, y = value)) +
 &lt;p&gt;Violin plots can be used to visualize the distribution of numeric variables. It’s basically a mirrored density curve, representing the number of data points along a continuous axis.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) +
   geom_violin(fill = &amp;quot;grey92&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;By default, the violin plot can look a bit odd. The default setting (&lt;code&gt;scale = &#34;area&#34;&lt;/code&gt;) is misleading. Group 1 looks almost the same as Group 3, while consisting of four times as many observations. Also, the default standard deviation of the smoothing kernel is not optimal in our case since it hides the true pattern by smoothing out areas without any data.&lt;/p&gt;
 &lt;p&gt;We can manipulate both defaults by setting the width to the number of observations via &lt;code&gt;scale = &#34;count&#34;&lt;/code&gt; and adjusting the bandwidth (&lt;code&gt;bw&lt;/code&gt;). Aesthetically, I prefer to remove the default outline:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-custom-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show code.&lt;/i&gt;
@@ -240,7 +240,7 @@ ggplot(data, aes(x = group, y = value)) +
   )&lt;/code&gt;&lt;/pre&gt;
 &lt;/details&gt;
 &lt;p&gt;The violin plot allows an explicit representation of the distribution but doesn’t provide summary statistics. To get the best of both worlds, it is often mixed with a box plot—either a complete box plot with whiskers and outliers or only the box indicating the median and interquartile range (IQR):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-box-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/violin-box-plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show codes.&lt;/i&gt;
@@ -312,13 +312,13 @@ ggplot(data, aes(x = group, y = value)) +
   ) + 
   ## remove white space on the sides
   coord_cartesian(xlim = c(1.3, 2.9))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Here, I combine two layers from the &lt;a href=&#34;https://mjskay.github.io/ggdist/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;{ggdist}&lt;/code&gt; package&lt;/a&gt;, namely &lt;code&gt;stat_dots()&lt;/code&gt; to draw the rain and &lt;code&gt;stat_halfeye()&lt;/code&gt; to draw the cloud. Both are plotted with some justification to place them next to each other and make room for the box plot. I also remove the slab interval from the halfeye by setting &lt;code&gt;.width&lt;/code&gt; to zero and &lt;code&gt;point_colour&lt;/code&gt; to &lt;code&gt;NA&lt;/code&gt;. The plot needs some manual styling and the values for justification and the number of bins depends a lot on the data. To get rid of the white space on the left and right, we simply add a limit the x axis.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
 &lt;i&gt;Expand to show plot without limit adjustment.&lt;/i&gt;
 &lt;/summary&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-no-lim-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-no-lim-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;p&gt;One can also solely rely on layers from the &lt;code&gt;{ggdist}&lt;/code&gt; package by using the default halfeye which consists of a density curve and a slab interval. The later is replacing the boxplot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
@@ -335,7 +335,7 @@ ggplot(data, aes(x = group, y = value)) +
     binwidth = .5
   ) +
   coord_cartesian(xlim = c(1.2, 2.9))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-slab-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-slab-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;While I love the reduced design and the possibility to indicate two different ranges (here the interquartile range and the 95% quantile) I admit that this alternative is less intuitive and potentially even misleading since they look more like credible intervals than box plots. Maybe a bit like the &lt;a href=&#34;http://motioninsocial.com/tufte/#minimal-boxplot&#34; target=&#34;_blank&#34;&gt;minimal box plots proposed by Edward Tufte&lt;/a&gt; but still I definitely would add a note to be sure the reader understands what the slabs show.&lt;/p&gt;
 &lt;p&gt;Of course, one could also add a true jitter instead of a dot plot or even a barcode. Now, I use &lt;code&gt;geom_half_dotplot()&lt;/code&gt; from the &lt;a href=&#34;https://erocoar.github.io/gghalves/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;{gghalves}&lt;/code&gt; package&lt;/a&gt;. Why? Because it comes with the possibility to add some justification which is not possible for the default layers &lt;code&gt;geom_point()&lt;/code&gt; and &lt;code&gt;geom_jitter()&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
@@ -360,7 +360,7 @@ ggplot(data, aes(x = group, y = value)) +
     alpha = .2
   ) +
   coord_cartesian(xlim = c(1.2, 2.9), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Note that the &lt;code&gt;{gghalves}&lt;/code&gt; packages adds also some jitter along the y axis which is far from optimal. This becomes especially obvious in group 3 with its usually integer values.&lt;/p&gt;
 &lt;p&gt;The packages provides a &lt;a href=&#34;https://camo.githubusercontent.com/763daaddffeefed1fbad498721526bc739326da7822df84f09b153bd6c48d3c4/68747470733a2f2f692e696d6775722e636f6d2f374150787831742e706e67&#34; target=&#34;_blank&#34;&gt;half–box plot alternative&lt;/a&gt; as well but I personally will never consider or recommend these as an option&lt;a href=&#34;#section2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;. Also, note that the &lt;code&gt;{gghalves}&lt;/code&gt; package is not available on CRAN (yet) as well.&lt;/p&gt;
 &lt;p id=&#34;back2&#34;&gt;
@@ -384,7 +384,7 @@ ggplot(data, aes(x = group, y = value)) +
     )
   ) + 
   coord_cartesian(xlim = c(1.2, 2.9), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-on-top-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-on-top-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As a last alternative, I also like to use barcode strips instead of jittered points:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data, aes(x = group, y = value)) + 
   ggdist::stat_halfeye(
@@ -406,7 +406,7 @@ ggplot(data, aes(x = group, y = value)) +
     color = &amp;quot;#1D785A&amp;quot;
   ) +
   coord_cartesian(xlim = c(1.2, 2.9), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-barcode-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-halves-barcode-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, it’s not optimal here since the actual values of Group 3 are hard to spot because they fall exactly along the summary stats provided by the box plot. One could use &lt;code&gt;geom_half_point()&lt;/code&gt;, however, I want to avoid the added jittering along the y axis.&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;
@@ -436,14 +436,14 @@ ggplot(data, aes(x = group, y = value)) +
     alpha = .2
   ) +
   coord_cartesian(xlim = c(1.2, NA), clip = &amp;quot;off&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-barcode-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/raincloud-barcode-halves-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;hr /&gt;
 &lt;/div&gt;
 &lt;div id=&#34;polish&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Next: Let Your Plot Shine&lt;/h2&gt;
 &lt;p&gt;Stay tuned, in &lt;s&gt;the upcoming&lt;/s&gt; &lt;span style=&#34;color:#ff7202;&#34;&gt;a potential&lt;/span&gt; follow-up post I am going to show you how to polish such a raincloud plot and, if you like, how to turn it into a colorful version with annotations and added illustrations:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:4321/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/polished-penguins-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cedricscherer.com/post/2021-06-06-visualizing-distributions-violin-raincloud_files/figure-html/polished-penguins-1.png&#34; width=&#34;960&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note: Due to other duties and shifting priorities, I still haven’t finalized this blog post. Sorry. But you can find the code to create the polished penguins raincloud plot &lt;a href=&#39;https://gist.github.com/z3tt/8b2a06d05e8fae308abbf027ce357f01&#39; target = &#34;_blank&#34;&gt;in this gist&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div id=&#34;footnotes&#34; class=&#34;section level5&#34;&gt;

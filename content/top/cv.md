@@ -131,14 +131,64 @@
 ### Teaching {#teaching}
 
 <ul>
+
+  <li class='about'>“Effective data visualization: purposeful design to communicate scientific insights with confidence”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://www.imprs-life.mpg.de/home" target="_blank">International Max Planck Research School on Learning, Institutions, and Future Evolution</a> – 07|2026 – Berlin, Germany</span>
+
+  <li class='about'>“Communicating data effectively: creating advanced reports and posters with ggplot2, ggiraph, and Quarto”<br>
+  <span class='subline'>1-Day Sparring Session – <a href="https://www.aok.de/pk/bw/" target="_blank">AOK Baden-Württemberg</a> – 12|2025 – Stuttgart, Germany</span>
   
+  <li class='about'>“Communicating data effectively: principles of purposeful visualizations and reproducible graphics with ggplot2”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://www.aok.de/pk/bw/" target="_blank">AOK Baden-Württemberg</a> – 12|2025 – Stuttgart, Germany</span>
+
+  <li class='about'>“Data visualization in science: how to create beautiful charts with {ggplot2}”<br>
+  <span class='subline'>2x 2-Hour Workshops – <a href="https://www.uu.se/en" target="_blank">University of Uppsala</a> – 11|2021, 12|2022, 11|2023, 11|2024, 11|2025 – remote</span></li>
+
+  <li class='about'>“Workflows for creating publication-ready data visualizations: exploring advanced techniques with {ggplot2}”<br>
+  <span class='subline'>3-Hour Workshop – <a href="https://www.mdc-berlin.de/" target="_blank">Max Delbrück Center for Molecular Medicine</a> – 09|2025 – Berlin, Germany</span>
+
+  <li class='about'>“Data analysis & visualisation according to FAIR principles”<br>
+  <span class='subline'>1.5-Hour Workshop – <a href="https://www.nfdi4biodiversity.org/en/" target="_blank">NFDI4Biodiversity & HeFDI & iDiv Seasonal School</a> – 10|2025 – remote</span><br>
+  <a class='about-bold' href="https://zenodo.org/records/17303036?preview_file=nfdi-dataviz-2025.pdf" target="_blank">> Slides</a>&ensp; <a class='about-bold' href="https://zenodo.org/records/17303036?preview_file=nfdi-dataviz-2025.ipynb" target="_blank">> Notebook </a></b></li>
+
+  <li class='about'>“Data communication & visual storytelling: principles of effective data visualization”<br>
+  <span class='subline'>1-Day Workshop – <a href="https://kpmg.com/de/en.html" target="_blank">KPMG</a> – 09|2025 – Berlin, Germany</span>
+
+  <li class='about'>“Crafting data visualizations with code: A comprehensive overview of ggplot2”<br>
+  <span class='subline'>4-Hour Workshop – <a href="https://gpw-online.de/en/" target="_blank">DFG Research Unit Chemodiversity</a> – 09|2025 – Großbeeren, Germany</span></li>
+  
+  <li class='about'>“Visualization techniques to communicate scientific findings”<br>
+  <span class='subline'>3x 4-Hour Training Sessions – <a href="https://www.sail.nrw/" target="_blank">RPTU University Kaiserslautern-Landau</a> – 06+07|2025 – remote</span>
+
+  <li class='about'>“Crafting engaging visualizations for effective data storytelling”<br>
+  <span class='subline'>2x 3-Hour Workshops – <a href="https://www.sail.nrw/" target="_blank">SAIL Colloquium</a> – 06|2025 – remote</span>
+
+  <li class='about'>“Crafting publication-ready data visualizations with ggplot2”<br>
+  <span class='subline'>2-Day Workshop – <a href="https://www.idiv.de/en/ydiv.html" target="_blank">German Centre for Integrative Biodiversity Research (iDiv)</a> – 04|2025 – Leipzig, Germany</span></li>
+
+  <li class='about'>“Creating graphical abstracts for academic manuscripts”<br>
+  <span class='subline'>3-Hour Workshop – <a href="https://gpw-online.de/en/" target="_blank">German Society of Agronomy</a> – 03|2025 – Berlin, Germany</span>
+
+  <li class='about'>“Data analysis & visualisation according to FAIR principles”<br>
+  <span class='subline'>1.5-Hour Workshop – <a href="https://www.nfdi4biodiversity.org/en/" target="_blank">NFDI4Biodiversity Seasonal School</a> – 12|2024 – remote</span><br>
+  <a class='about-bold' href="https://zenodo.org/records/14275834?preview_file=nfdi-dataviz-2024.pdf" target="_blank">> Slides</a>&ensp; <a class='about-bold' href="https://zenodo.org/records/14275834?preview_file=nfdi-dataviz-2024.ipynb" target="_blank">> Notebook </a></b></li>
+
+  <li class='about'>“Effective data visualizations for analytical reporting: from theory to practice”<br>
+  <span class='subline'>2-Day Workshop – <a href="https://www.fanniemae.com/" target="_blank">Fannie Mae</a> – 08|2024 – Washington, D.C., USA</span>
+
+  <li class='about'>“Engaging data visualizations for graphical storytelling: principles and hands-on”<br>
+  <span class='subline'>2.5-Day Workshop – <a href="https://www.nic.br/about-nic-br/" target="_blank">NIC.br</a> – 08|2024 – Saõ Paulo, Brazil</span>
+
+  <li class='about'>“Advanced reporting with R: Shiny dashboards, Quarto documents, and more”<br>
+  <span class='subline'>3-Hour Workshop – <a href="https://www.pharmagenesis.com/" target="_blank">Oxford Pharmagenesis</a> – 06|2024 – remote</span>
+
+  <li class='about'>“Data visualization & graphical storytelling for data analysts and data scientists”<br>
+  <span class='subline'>4 Interactive Training Sessions – <a href="https://www.helloheart.com/" target="_blank">Hello heart</a> – 03|2024 – remote</span>
+
   <li class='about'>“Communicating insights with engaging data visualizations and dashboards”<br>
   <span class='subline'>2-Day Workshop – <a href="https://supercell.com/en/" target="_blank">Supercell</a> – 02|2024 – Helsinki, Finland</span>
 
   <li class='about'>“Engaging & reproducible data visualization: from theory to implementation with {ggplot2}”<br><span class='subline'>2-Day Workshop – <a href="https://www.uni-bielefeld.de/biologie/crc212/" target="_blank">NC<sup>3</sup> Collaborative Research Centre</a> – 01|2024 – remote</span></li>
-
-  <li class='about'>“Data visualization in science: how to create beautiful charts with {ggplot2}”<br>
-  <span class='subline'>2x 1/2-Day Workshop – <a href="https://www.uu.se/en" target="_blank">University of Uppsala</a> – 11|2021, 12|2022 + 11|2023 – remote</span></li>
   
   <li class='about'>“Engaging & reproducible data visualization: from theory to implementation with {ggplot2}”<br>
   <span class='subline'>1-Day Workshop – <a href="https://www.tum.de/en/" target="_blank">TU Munich</a> – 10|2023 – Freising, Germany</span>
@@ -178,7 +228,7 @@
   <span class='subline'>2-Day Workshop – <a href="https://www.bsio-cancerschool.de/" target="_blank">Berlin School of Integrative Oncology (BSIO), Charité University Hospital</a> – 12|2022 – Berlin, Germany</span></li>
   
   <li class='about'>“Designing charts in R: reproducible chart design with {ggplot2}”<br>
-  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/" target="_blank">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 11|2022 – Washington DC</span></li>
+  <span class='subline'>3-Hour Workshop & 2-Hour Coding Session – <a href="https://www.informationisbeautifulawards.com/" target="_blank">Intersections Workshop "Information is Beautiful" Awards</a> by <a href="https://www.datavisualizationsociety.org/" target="_blank">Data Visualization Society</a> – 11|2022 – Washington, D.C., USA</span></li>
   
   <li class='about'>“Data visualization in R with {ggplot2}”<br>
   <span class='subline'>4x 5-Day Workshop – <a href="https://www.physalia-courses.org/" target="_blank">Physalia Courses</a> – 03|2020, 11|2020, 11|2021 + 11|2022 – Berlin/remote</span></li>
@@ -196,7 +246,7 @@
   <span class='subline'>1.5-Day Workshop – <a href="https://www.idiv.de/en/ydiv.html" target="_blank">German Centre for Integrative Biodiversity Research (iDiv)</a> – 09|2022 – Leipzig, Germany</span></li>
 
   <li class='about'>“Graphic design with {ggplot2}: how to create engaging and complex visualizations in R”<br>
-  <span class='subline'>2-Day Conference Workshop – <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf(2022)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 07|2022 – Washington, DC, USA</span><br>
+  <span class='subline'>2-Day Conference Workshop – <a href="https://www.rstudio.com/conference/" target="_blank">rstudio::conf(2022)</a> by <a href="https://posit.co/" target="_blank">Posit</a> – 07|2022 – Washington, D.C., USA</span><br>
   <a class='about-bold' href="https://rstudio-conf-2022.github.io/ggplot2-graphic-design/" target="_blank">> Course Webpage</a></b></li>
 
   <li class='about'>“Data visualization in R: how to create engaging charts with {ggplot2}”<br>
@@ -447,8 +497,36 @@
 
 <ul>
   
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2026)</span> Data visualization skills & principles: communicate scientific insights effectively<br>
+  <span class='subline'><a href="https://georg-speyer-haus.de/en/" target="_blank">Georg-Speyer-Haus</a> – 07|2026 – Wiesbaden, Germany</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2026)</span> Guide the view: design that makes data easier to read and communicate<br>
+  <span class='subline'><a href="https://https://www.linkedin.com/in/morgandepenbusch//" target="_blank">DataViz Seminars by Morgan Depenbusch</a> – 04|2026 – remote</span><br>
+  <a class='about-bold' href="https://www.cedricscherer.com/slides/Scherer_DataViz_GuideTheView_2026.pdf" target="_blank">> Slides</a> &ensp; <a class='about-bold' href="https://drive.google.com/file/d/1s5y9AgaqIeZQa0yq52ge1MRazAdNdKE9/view" target="_blank">> Recording</a></a></b></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2026)</span> Effektive Datenvisualisierung: Wissenschaftliche Erkenntnisse überzeugend kommunizieren (Revamped Version)<br>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">German Society for Internal Medicine (DGIM)</a> – 02|2026 – Berlin, Germany</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2025)</span> Effective data communication: visualize information in a meaningful way<br>
+  <span class='subline'><a href="https://www.isop.org/home" target="_blank">International Society of Pharmacometrics (ISoP)</a> – 06|2025 – remote</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2025)</span> Effektive Datenvisualisierung: Kommunizieren statt konfrontieren, gestalten statt generieren<br>
+  <span class='subline'><a href="https://www.dgvs.de/" target="_blank">German Society for Gastroenterology, Digestive and Metabolic Diseases (DGVS)</a> – 06|2025 – Berlin, Germany</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2025)</span> Effektive Datenvisualisierung: Wissenschaftliche Erkenntnisse überzeugend kommunizieren<br>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">German Society for Internal Medicine (DGIM)</a> – 02|2025 – Berlin, Germany</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Transform your ideas into graphs — creative inspirations to create compelling narratives<br>
+  <span class='subline'><a href="https://infra4nextgen.com/events/hackathon-visualize-data/" target="_blank">Data Visualization Hackathon by ESS ERIC</a> – 12|2024 – remote</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Print's (not) dead: Creating graphics for reports and books<br>
+  <span class='subline'><a href="https://data-2-speak.com/conference" target="_blank">Data2Speak</a> – 05|2024 – remote conference</span></li>
+  
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Blühende Datenlandschaften: Was uns Daten erzählen, wie man ihre Geschichten schreibt – und warum man ihnen nicht alles glauben sollte<br>
+  <span class='subline'><a href="https://taz.de/programm/2024/tazlab2024/de/speakers/2099.html" target="_blank">taz lab 2024</a> (public congresss of the German newspaper <a href="https://taz.de/" target="_blank">taz</a> – 04|2024 – Berlin, Germany</span></li>
+  
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Datenvisualisierung—wie mache ich das richtig?<br>
-  <span class='subline'><a href="https://www.dgim.de/" target="_blank">Deutsche Gesellschaft für Innere Medizin (German Society for Gastroenterology, Digestive and Metabolic Diseases, DGVS)</a> – 11|2023 – Berlin, Germany</span></li>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">German Society for Internal Medicine (DGIM)</a> – 11|2023 – Berlin, Germany</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> (Even more) exciting data visualizations with {ggplot2} extensions<br>
   <span class='subline'><a href="https://www.meetup.com/rladies-rome/events/296857565/" target="_blank">R Ladies Rome</a> – 11|2023 – remote</span><br>
@@ -466,7 +544,7 @@
   <span class='subline'><a href="https://www.senckenberg.de/en/science/young-scientists-2/" target="_blank">Senckenberg Young Scientists</a> – 06|2023 – remote</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Datenvisualisierung—wie mache ich das richtig?<br>
-  <span class='subline'><a href="https://www.dgim.de/" target="_blank">Deutsche Gesellschaft für Gastroenterologie, Verdauungs- und Stoffwechselkrankheiten (German Society of Internal Medicine, DGVS)</a> – 05|2023 – Berlin, Germany</span></li>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">German Society of Internal Medicine (DGVS)</a> – 05|2023 – Berlin, Germany</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href="https://foes.de/en-us/" target="_blank">Forum Ökologisch-Soziale Marktwirtschaft e.V. (economic think tank)</a> – 01|2023 – remote</span></li>
@@ -525,9 +603,14 @@
 ##### Conference Presentations {#conferences}
 
 <ul>
+  
+  <li class='about'><span class='authors'>T Shapiro & <u style='font-weight:700;'>C Scherer</u> (2025)</span> 
+Plot twist: adding interactivity to the elegance of {ggplot2} with {ggiraph}<br>
+  <span class='subline'>Talk – <a href="https://www.isop.org/home" target="_blank">useR 2025 Conference</a> – 06|2025 – remote</span><br>
+  <a class='about-bold' href="https://z3tt.github.io/ggiraph-user-2025/slides.html" target="_blank">> Slides</a> &ensp; <a class='about-bold' href="https://www.youtube.com/watch?v=GnDjRxyO-7Ag" target="_blank">> Recording</a> &ensp; <a class='about-bold' href="https://github.com/z3tt/ggiraph-user-2025" target="_blank">> Scripts</a></b></li>
 
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> & W Shijia (2022)</span> DataViz challenges: a fun way to learn and build a portfolio and network.<br>
-  <span class='subline'>Panel Discussion</a> – <a href="https://outlierconf.com/" target="_blank">DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
+  <span class='subline'>Panel Discussion – <a href="https://outlierconf.com/" target="_blank">DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
 
   <li class='about'><span class='authors'>A Guček & <u style='font-weight:700;'>C Scherer</u> (2022)</span> Data visualization in non-dataviz research.<br>
   <span class='subline'>Panel Discussion – <a href="https://outlierconf.com/" target="_blank">DVS Outlier Conference 2022</a> – 02|2022 – remote</span> 
@@ -617,6 +700,8 @@
 ##### Podcasts
 
 <ul>
+
+  <li class='about'><a href="https://www.linkedin.com/pulse/when-why-would-you-take-code-first-approach-data-bill-shander-z7o3c/" target="_blank">“Lesson & Listen: When and Why Would You Take A Code-First Approach to Data Visualization?”</a> hosted by Bill Shander</li>
 
   <li class='about'><a href="https://policyviz.com/podcast/episode-212-dr-cedric-scherer/" target="_blank">“PolicyViz Episode #212”</a> hosted by Jon Schwabish</li>
 
