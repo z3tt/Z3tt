@@ -519,7 +519,7 @@
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Transform your ideas into graphs — creative inspirations to create compelling narratives<br>
   <span class='subline'><a href="https://infra4nextgen.com/events/hackathon-visualize-data/" target="_blank">Data Visualization Hackathon by ESS ERIC</a> – 12|2024 – remote</span></li>
   
-  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Print's (not) dead: Creating graphics for reports and books<br>
+  <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Print's (not) dead: creating graphics for reports and books<br>
   <span class='subline'><a href="https://data-2-speak.com/conference" target="_blank">Data2Speak</a> – 05|2024 – remote conference</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2024)</span> Blühende Datenlandschaften: Was uns Daten erzählen, wie man ihre Geschichten schreibt – und warum man ihnen nicht alles glauben sollte<br>
@@ -544,7 +544,7 @@
   <span class='subline'><a href="https://www.senckenberg.de/en/science/young-scientists-2/" target="_blank">Senckenberg Young Scientists</a> – 06|2023 – remote</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2023)</span> Datenvisualisierung—wie mache ich das richtig?<br>
-  <span class='subline'><a href="https://www.dgim.de/" target="_blank">German Society of Internal Medicine (DGVS)</a> – 05|2023 – Berlin, Germany</span></li>
+  <span class='subline'><a href="https://www.dgim.de/" target="_blank">German Society of Internal Medicine (DGIM)</a> – 05|2023 – Berlin, Germany</span></li>
   
   <li class='about'><span class='authors'><u style='font-weight:700;'>C Scherer</u> (2022)</span> Engaging visualization design to successfully communicate data.<br>
   <span class='subline'><a href="https://foes.de/en-us/" target="_blank">Forum Ökologisch-Soziale Marktwirtschaft e.V. (economic think tank)</a> – 01|2023 – remote</span></li>

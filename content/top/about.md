@@ -81,7 +81,7 @@ To visualize data I mainly utilize the [{ggplot2} graphics library](https://ggpl
   <li class='about'>“Effective data communication: visualize information in a meaningful way”<br>
   <span class='subline'><a href="https://www.isop.org/home" target="_blank">International Society of Pharmacometrics (ISoP)</a> – 06|2025 – remote</span></li>
   
-  <li class='about'>“Print's (not) dead: Creating graphics for reports and books”<br>
+  <li class='about'>“Print's (not) dead: creating graphics for reports and books”<br>
   <span class='subline'><a href="https://data-2-speak.com/conference" target="_blank">Data2Speak</a> – 05|2024 – remote conference</span></li>
 
   <li class='about'>“(Even more) exciting data visualizations with ggplot2 extensions”<br>
